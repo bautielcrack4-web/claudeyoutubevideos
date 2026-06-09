@@ -1,0 +1,270 @@
+// beatsheet.mjs — UNA sola fuente de verdad por video (nicho doc-broll).
+//
+// El problema que resuelve: hoy el prompts.json (qué imágenes generar) y los cues
+// (cómo se cablean en Main) se escriben por separado → se desincronizan, hay que
+// tipear cada nombre dos veces y wirear 150 cues a mano. Eso es de donde sale el
+// caos y el gasto de tokens. Acá un único beatsheet/<video>.json describe CADA beat
+// (timing + componente + props + el prompt para generar su asset), y este script
+// DERIVA automáticamente:
+//   1) public/img/prompts_<video>.json   (imágenes + láminas/diagramas a generar)
+//   2) public/vid/clips_<video>.json     (clips img2video a generar)
+//   3) src/VideoEdit/cues_<video>.gen.tsx (export CUES + REFRAME, listo para importar)
+//
+// Flujo optimizado (1 pasada):
+//   node beatsheet.mjs beatsheet/termitas.json
+//   node gen_deapi.mjs public/img/prompts_termitas.json    # genera TODO el lote
+//   node gen_video.mjs public/vid/clips_termitas.json      # genera TODOS los clips
+//   # en Main_<video>.tsx:  import { CUES, REFRAME } from "./cues_<video>.gen";
+//   TMP=C:\rtmp TEMP=C:\rtmp npx remotion render <Comp> out/x.mp4 --concurrency=16
+//
+// ── Esquema beatsheet/<video>.json ───────────────────────────────────────────
+// {
+//   "video": "termitas",
+//   "avatar": "termitas_opt.mp4",
+//   "beats": [
+//     // foto/clip crudo full-bleed (RawShot). gen.type "image" o "clip".
+//     { "id":"m01","start":0.4,"dur":3.2,"kind":"raw","src":"vid/caja_polvo.mp4",
+//       "hue":"amber","kicker":"El polvo de la caja",
+//       "gen":{"type":"clip","image":"caja_polvo","prompt":"...","frames":90} },
+//     { "id":"m03","start":6.0,"dur":2.4,"kind":"raw","src":"img/ferreteria.png",
+//       "hue":"amber","kicker":"~1000 pesos",
+//       "gen":{"type":"image","name":"ferreteria","prompt":"Realistic handheld..."} },
+//
+//     // ★ DIAGRAM BOARD (AvatarPresentation) — el mejor componente, usalo MUCHO.
+//     // avatar chico arriba-derecha + láminas gpt-image-2 grandes que explican.
+//     { "id":"d1","start":120,"dur":9,"kind":"diagram","eyebrow":"Cómo actúa el bórax",
+//       "hue":"amber","accent":"accent",
+//       "slides":[
+//         {"image":"img/diag_borax_1.png","title":"La obrera come madera",
+//          "gen":{"type":"image","name":"diag_borax_1","prompt":"clean explanatory diagram, flat vector, labels in Spanish, ..."}},
+//         {"image":"img/diag_borax_2.png","title":"Lleva el bórax al nido",
+//          "gen":{"type":"image","name":"diag_borax_2","prompt":"clean explanatory diagram ..."}}
+//       ] },
+//
+//     // cita cinética sobre imagen (KineticQuote). *palabra* = resaltada.
+//     { "id":"q1","start":47,"dur":3,"kind":"quote","image":"img/borax.png",
+//       "eyebrow":"Lo que tengo en la caja","text":"No es un *veneno*",
+//       "accent":"danger","hue":"cold","fontSize":104 },
+//
+//     // chips sobre imagen (ChipsCluster)
+//     { "id":"c1","start":69,"dur":3,"kind":"chips","bg":"image","image":"img/termita.png",
+//       "title":"Mata una sola cosa","chips":["lo que MUERDE","la madera"],"hue":"red" },
+//
+//     // lista lado-a-lado (SplitList). palette = token de color: A|G|D|B.
+//     { "id":"s1","start":135,"dur":3.5,"kind":"splitlist","title":"Te venden la madera así",
+//       "items":["Sin tratar","Sin protección","Lista para que la coman"],"palette":"D","cross":true },
+//
+//     // split avatar+contenido: agregá "reframe": true a CUALQUIER beat con
+//     // componente que viva en la mitad libre → genera la ventana REFRAME (avatar
+//     // se achica a la derecha). (raw es full-bleed: NO le pongas reframe.)
+//     { "id":"sp1","start":200,"dur":8,"kind":"splitlist","reframe":true, "...":"..." },
+//
+//     // avatar hablando a pantalla completa: no emite cue (es documentación).
+//     { "id":"talk1","start":80,"dur":10,"kind":"talk" }
+//   ]
+// }
+import fs from "fs";
+import path from "path";
+
+const bsArg = process.argv[2];
+if (!bsArg) {
+  console.error("Uso: node beatsheet.mjs beatsheet/<video>.json");
+  process.exit(1);
+}
+if (!fs.existsSync(bsArg)) {
+  console.error("No existe el beatsheet:", bsArg);
+  process.exit(1);
+}
+const bs = JSON.parse(fs.readFileSync(bsArg, "utf8"));
+const VIDEO = bs.video || path.basename(bsArg).replace(/\.json$/, "");
+const AVATAR = bs.avatar || "avatar.mp4";
+const beats = bs.beats || [];
+
+// ── 1+2) extraer assets a generar (dedup por nombre) ─────────────────────────
+const images = new Map(); // name -> {name,prompt,width?,height?}
+const clips = new Map(); // name -> {name,image,prompt,frames?}
+const addImage = (g) => {
+  if (!g || g.type !== "image" || !g.name || images.has(g.name)) return;
+  const o = { name: g.name, prompt: g.prompt };
+  if (g.width) o.width = g.width;
+  if (g.height) o.height = g.height;
+  images.set(g.name, o);
+};
+const addClip = (g) => {
+  if (!g || g.type !== "clip" || !g.image || clips.has(g.image)) return;
+  const o = { name: g.image, image: g.image, prompt: g.prompt };
+  if (g.frames) o.frames = g.frames;
+  clips.set(g.image, o);
+};
+for (const b of beats) {
+  addImage(b.gen);
+  addClip(b.gen);
+  for (const s of b.slides || []) addImage(s.gen);
+}
+
+// ── validaciones suaves (avisos, no frenan) ──────────────────────────────────
+const warnings = [];
+// solapamiento de ventanas de cue
+const cueBeats = beats.filter((b) => b.kind && b.kind !== "talk");
+const sorted = [...cueBeats].sort((a, b) => a.start - b.start);
+for (let i = 1; i < sorted.length; i++) {
+  const prevEnd = sorted[i - 1].start + sorted[i - 1].dur;
+  if (sorted[i].start < prevEnd - 1e-6) {
+    warnings.push(
+      `solapan: ${sorted[i - 1].id} (${sorted[i - 1].start}–${prevEnd.toFixed(1)}) y ${sorted[i].id} (desde ${sorted[i].start})`
+    );
+  }
+}
+// assets referenciados que no se generan ni existen en disco
+const exists = (rel) => fs.existsSync(path.join("public", rel));
+const refs = [];
+for (const b of beats) {
+  if (b.src) refs.push(b.src);
+  if (b.image && b.kind !== "diagram") refs.push(b.image);
+  for (const s of b.slides || []) if (s.image) refs.push(s.image);
+}
+const willGen = new Set([
+  ...[...images.keys()].map((n) => `img/${n}.png`),
+  ...[...clips.keys()].map((n) => `vid/${n}.mp4`),
+]);
+for (const r of [...new Set(refs)]) {
+  if (!willGen.has(r) && !exists(r)) warnings.push(`asset sin generar ni en disco: ${r}`);
+}
+
+// ── 3) emitir cues_<video>.gen.tsx ───────────────────────────────────────────
+const j = (v) => JSON.stringify(v); // string/num/array/obj -> literal JS válido en JSX
+const cleanSlides = (slides) =>
+  (slides || []).map((s) => {
+    const o = {};
+    if (s.image) o.image = s.image;
+    if (s.title) o.title = s.title;
+    if (s.note) o.note = s.note;
+    return o;
+  });
+
+function renderEl(b) {
+  switch (b.kind) {
+    case "raw":
+      return (
+        `<RawShot durationInFrames={d} src=${j(b.src)}` +
+        (b.hue ? ` hue=${j(b.hue)}` : ``) +
+        (b.kicker ? ` kicker=${j(b.kicker)}` : ``) +
+        (b.accent ? ` accent=${j(b.accent)}` : ``) +
+        (b.darken != null ? ` darken={${b.darken}}` : ``) +
+        (b.blur != null ? ` blur={${b.blur}}` : ``) +
+        (b.zoom != null ? ` zoom={${b.zoom}}` : ``) +
+        ` />`
+      );
+    case "diagram":
+      return (
+        `<AvatarPresentation durationInFrames={d}` +
+        (b.eyebrow ? ` eyebrow=${j(b.eyebrow)}` : ``) +
+        (b.hue ? ` hue=${j(b.hue)}` : ``) +
+        (b.accent ? ` accent=${j(b.accent)}` : ``) +
+        ` avatar=${j(AVATAR)} avatarFrom={sec(${b.start})}` +
+        ` slides={${j(cleanSlides(b.slides))}} />`
+      );
+    case "quote":
+      return (
+        `<KineticQuote durationInFrames={d}` +
+        (b.image ? ` image=${j(b.image)}` : ``) +
+        (b.eyebrow ? ` eyebrow=${j(b.eyebrow)}` : ``) +
+        ` words={parseQuote(${j(b.text || "")})}` +
+        (b.accent ? ` accent=${j(b.accent)}` : ``) +
+        (b.hue ? ` hue=${j(b.hue)}` : ``) +
+        (b.fontSize ? ` fontSize={${b.fontSize}}` : ``) +
+        ` />`
+      );
+    case "chips":
+      return (
+        `<ChipsCluster durationInFrames={d}` +
+        (b.bg ? ` bg=${j(b.bg)}` : ``) +
+        (b.image ? ` image=${j(b.image)}` : ``) +
+        (b.title ? ` title=${j(b.title)}` : ``) +
+        ` chips={${j(b.chips || [])}}` +
+        (b.hue ? ` hue=${j(b.hue)}` : ``) +
+        ` />`
+      );
+    case "splitlist": {
+      const pal = { A: "A", G: "G", D: "D", B: "B" }[b.palette] || "A";
+      return (
+        `<SplitList durationInFrames={d}` +
+        (b.title ? ` title=${j(b.title)}` : ``) +
+        ` items={${j(b.items || [])}}` +
+        ` accent={${pal}}` +
+        (b.cross ? ` cross` : ``) +
+        ` />`
+      );
+    }
+    default:
+      return null; // talk
+  }
+}
+
+const cueLines = [];
+const reframe = [];
+for (const b of beats) {
+  if (b.reframe && b.kind !== "talk") reframe.push({ start: b.start, end: b.start + b.dur });
+  const el = renderEl(b);
+  if (!el) continue;
+  cueLines.push(`  { key: ${j(b.id)}, start: ${b.start}, dur: ${b.dur}, el: (d) => ${el} },`);
+}
+
+// imports + consts de paleta CONDICIONALES: solo lo que los kinds presentes usan
+// (así no quedan unused-vars / unused-imports → tsc con noUnusedLocals limpio).
+const kinds = new Set(cueBeats.map((b) => b.kind));
+const usedPal = new Set();
+for (const b of beats) {
+  if (b.kind === "splitlist") usedPal.add({ A: "A", G: "G", D: "D", B: "B" }[b.palette] || "A");
+}
+const palTok = { A: "COLORS.accent", G: "COLORS.good", D: "COLORS.danger", B: "COLORS.cold" };
+const themeImports = [];
+if (kinds.has("diagram")) themeImports.push("sec");
+if (usedPal.size) themeImports.push("COLORS");
+const imports = [`import { ReactNode } from "react";`];
+if (themeImports.length) imports.push(`import { ${themeImports.join(", ")} } from "./theme";`);
+if (kinds.has("raw")) imports.push(`import { RawShot } from "./scenes/RawShot";`);
+if (kinds.has("quote")) imports.push(`import { KineticQuote, parseQuote } from "./scenes/KineticQuote";`);
+if (kinds.has("chips")) imports.push(`import { ChipsCluster } from "./scenes/ReframeContent";`);
+if (kinds.has("splitlist")) imports.push(`import { SplitList } from "./scenes/SplitList";`);
+if (kinds.has("diagram")) imports.push(`import { AvatarPresentation } from "./scenes/AvatarPresentation";`);
+const palLine = usedPal.size
+  ? `\nconst ${[...usedPal].map((t) => `${t} = ${palTok[t]}`).join(", ")};\n`
+  : "";
+
+const header = `// cues_${VIDEO}.gen.tsx — GENERADO por beatsheet.mjs desde ${path.basename(bsArg)}.
+// NO editar a mano: cambiá el beatsheet y re-corré  node beatsheet.mjs ${bsArg}
+${imports.join("\n")}
+${palLine}
+export type Cue = { key: string; start: number; dur: number; el: (d: number) => ReactNode };
+
+export const CUES: Cue[] = [
+${cueLines.join("\n")}
+];
+
+export const REFRAME: { start: number; end: number }[] = ${j(reframe)};
+`;
+
+const outTsx = path.join("src", "VideoEdit", `cues_${VIDEO}.gen.tsx`);
+fs.writeFileSync(outTsx, header);
+
+const imgList = [...images.values()];
+const clipList = [...clips.values()];
+const promptsPath = path.join("public", "img", `prompts_${VIDEO}.json`);
+const clipsPath = path.join("public", "vid", `clips_${VIDEO}.json`);
+fs.writeFileSync(promptsPath, JSON.stringify(imgList, null, 2));
+fs.writeFileSync(clipsPath, JSON.stringify(clipList, null, 2));
+
+// ── resumen ──────────────────────────────────────────────────────────────────
+console.log(`=== beatsheet ${VIDEO} ===`);
+console.log(`beats: ${beats.length}  ·  cues: ${cueLines.length}  ·  reframe: ${reframe.length}`);
+console.log(`imágenes a generar: ${imgList.length}  ·  clips: ${clipList.length}`);
+console.log(`→ ${outTsx}`);
+console.log(`→ ${promptsPath}`);
+console.log(`→ ${clipsPath}`);
+if (warnings.length) {
+  console.log(`\n⚠ ${warnings.length} avisos:`);
+  for (const w of warnings) console.log(`  · ${w}`);
+} else {
+  console.log(`sin avisos (timing sin solapes, assets consistentes).`);
+}

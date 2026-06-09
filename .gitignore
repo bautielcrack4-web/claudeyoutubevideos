@@ -5,3 +5,19 @@ dist
 
 # Ignore the output video from Git but not videos you import into src/.
 out
+
+# --- render-farm: NO subir assets pesados ni binarios al repo público ---
+# (los assets viajan como release asset; el workflow recrea public/ al renderizar)
+public/
+whisper.cpp/
+*.log
+*.wav
+*.mp4
+*.mov
+*.webm
+*.MP3
+rtmp/
+chunks/
+*.tar
+img_index*.json
+vid_index*.json

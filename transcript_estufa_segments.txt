@@ -1,0 +1,173 @@
+[00:00.1] 0.1s  Hay una estufa de barro en el rincón del galpón de mi casa.
+[00:04.2] 4.2s  La hizo mi viejo en 1979 con la tierra que sacamos al cavar el pozo del aljibe.
+[00:11.1] 11.1s  Le pusimos dos baldes de arcilla, tres baldes de tierra del propio terreno, un puñado de paja seca y agua hasta que la mezcla quedó como masa de pan.
+[00:21.8] 21.8s  La levantamos en una tarde.
+[00:24.3] 24.3s  Se secó en una semana.
+[00:25.9] 25.9s  Lleva 46 años prendiéndose todos los inviernos sin un solo arreglo serio.
+[00:31.7] 31.7s  No tiene gas, no tiene garrafa, no tiene leña gruesa, no tiene electricidad.
+[00:38.9] 38.9s  Funciona con cinco ramitas finas.
+[00:42.1] 42.1s  Cinco.
+[00:43.6] 43.6s  De esas que junta cualquier chico en el jardín en dos minutos.
+[00:47.3] 47.3s  Del podado del paraíso.
+[00:49.4] 49.4s  Del laurel.
+[00:50.6] 50.6s  De las que caen solas del fondo.
+[00:53.1] 53.1s  Con cinco ramitas esa estufa me calienta el galpón entero durante seis horas.
+[00:58.0] 58.0s  Y la chimenea no echa humo negro.
+[01:00.9] 60.9s  Echa una columna de aire transparente, casi invisible, porque la combustión es tan completa que lo único que sale es vapor de agua y dióxido de carbono.
+[01:10.7] 70.7s  Esto no es una opinión mía.
+[01:13.7] 73.7s  Es un dato verificable con cualquier medidor de gases.
+[01:18.0] 78.0s  Una estufa de este tipo, bien construida, quema a más de mil grados centígrados en la cámara interna.
+[01:24.3] 84.3s  Y a esa temperatura no queda nada sin quemar.
+[01:27.9] 87.9s  Cero hojín.
+[01:30.6] 90.6s  Cero alquitrán.
+[01:33.1] 93.1s  Cero ceniza pesada.
+[01:36.5] 96.5s  Es la combustión más limpia que puede hacer un humano con un fuego abierto.
+[01:41.2] 101.2s  Y la idea original se inventó hace tres mil años en algún lugar de Asia Central.
+[01:46.7] 106.7s  Mi nombre no importa.
+[01:48.8] 108.8s  Llevo treinta y dos años construyendo.
+[01:51.4] 111.4s  Y aprendí esto del mismo modo que aprendí todo.
+[01:55.3] 115.3s  Mirando a alguien mayor mientras hacía algo bien.
+[01:58.9] 118.9s  En este caso, mi viejo, en el galpón del fondo.
+[02:03.7] 123.7s  Un sábado a la tarde, con las manos llenas de barro y un libro alemán de los años cincuenta.
+[02:11.0] 131.0s  Abierto en una página que él había traducido con un diccionario porque no entendía alemán, pero entendía dibujos.
+[02:19.4] 139.4s  El libro hablaba de una cosa que en castellano no tenía nombre todavía.
+[02:24.3] 144.3s  Que después le pusieron estufa cohete por la forma en que arde el fuego adentro, hacia arriba.
+[02:31.2] 151.2s  Como si fuera el escape de un motor.
+[02:34.0] 154.0s  La eficiencia térmica de este sistema está medida en laboratorios de la Universidad de Aprovecho, en Oregón, desde los años ochenta.
+[02:43.5] 163.5s  Aprovecha entre el ochenta y el noventa por ciento del calor del combustible.
+[02:48.4] 168.4s  Una salamandra a leña común aprovecha el treinta por ciento.
+[02:52.7] 172.7s  Una estufa a gas natural aprovecha el sesenta.
+[02:56.7] 176.7s  El resto, en todos los casos, se va por la chimenea, calentando el cielo que no necesita calefacción.
+[03:05.9] 185.9s  Voy a mostrarte cómo se construye esta estufa, paso a paso, con la tierra de tu propio terreno.
+[03:13.8] 193.8s  Sin comprar ladrillo refractario, sin comprar chapacara, sin contratar a nadie.
+[03:21.1] 201.1s  Te va a costar menos que una sola carga de garrafa.
+[03:24.9] 204.9s  Te va a durar más que la casa donde la pongas.
+[03:28.0] 208.0s  Y después te voy a contar la parte que las empresas de gas y las empresas de garrafa de este país no quieren que escuches.
+[03:36.1] 216.1s  Que es que el costo total de calefaccionar una vivienda media en invierno, comparado entre los tres sistemas, es de aproximadamente ochocientos mil pesos por temporada con gas natural, un millón y medio con garrafa y cero pesos con esto que te estoy mostrando.
+[03:53.3] 233.3s  Cero.
+[03:54.3] 234.3s  Porque las ramitas las junta tu hijo en el patio mientras juega.
+[03:58.2] 238.2s  Quédate conmigo.
+[03:59.7] 239.7s  Para el final del video vas a saber cómo tener esta estufa funcionando antes del invierno que viene.
+[04:05.6] 245.6s  Con la tierra que ya tenés debajo de los pies, empiezo con el error más grande.
+[04:11.3] 251.3s  El que arruina cualquier intento de calefacción a leña en una casa argentina.
+[04:16.9] 256.9s  La gente piensa que el calor de una estufa viene del tamaño del fuego.
+[04:22.1] 262.1s  Haces un fuego grande, calienta mucho, fuego chico, calienta poco, eso es lo que parece.
+[04:30.2] 270.2s  Y por eso, la gente compra salamandras enormes, las llena de leña gruesa, las prende fuerte, y se decepciona cuando ven que el galpón sigue helado y la garrafa se sigue gastando.
+[04:43.3] 283.3s  El calor de un fuego no viene del tamaño, viene de dos cosas que casi nadie entiende.
+[04:50.3] 290.3s  La temperatura de combustión y el tiempo de retención del calor en la masa.
+[04:55.1] 295.1s  Y la estufa rocket le gana a todas las demás en las dos al mismo tiempo, no en una sola.
+[05:01.5] 301.5s  Te explico la temperatura de combustión primero.
+[05:04.9] 304.9s  Cuando vos prendes una salamandra común, la leña arde a más o menos 500 grados, que parece mucho pero no es suficiente para quemar todos los gases que salen de la madera.
+[05:16.7] 316.7s  La madera al quemarse no es simple.
+[05:19.6] 319.6s  Suelta gases pesados, alquitranes, vapores que arden a temperaturas más altas que la madera misma.
+[05:27.9] 327.9s  En una salamandra común, esos gases salen sin quemarse, suben por la chimenea, y se condensan en las paredes del caño como una pasta marrón y negra que se llama creosota.
+[05:41.5] 341.5s  La creosota es lo que hace que las chimeneas se prendan fuego, lo que hace que el humo sea negro y huela mal, y lo que hace que la mitad de la energía de la leña se vaya literalmente por el techo.
+[05:55.7] 355.7s  En una rocket, esos mismos gases pasan por una cámara interna, donde la temperatura es el doble, 1,100 grados, 1,200 grados a veces, y ahí terminan de quemarse completamente.
+[06:11.5] 371.5s  Por eso, de la chimenea de una rocket bien hecha, sale humo casi transparente.
+[06:17.4] 377.4s  Y por eso, con cinco ramitas calentás, lo que con una salamandra necesitarías media bolsa de leña.
+[06:24.1] 384.1s  Ahora, el tiempo de retención.
+[06:26.5] 386.5s  Una salamandra de chapa calienta mientras está prendida, y diez minutos después de que se apaga.
+[06:33.1] 393.1s  Una estufa rocket bien construida tiene atrás de la cámara de combustión un banco de barro, un cajón macizo lleno de tierra y arena por donde pasan los caños del humo antes de salir afuera.
+[06:45.7] 405.7s  Toda esa masa, 200, 300, 500 kilos de tierra y barro, se va calentando lentamente mientras el fuego está prendido.
+[06:56.3] 416.3s  Y después, cuando el fuego se apagó, porque ya quemaste tus cinco ramitas, esa masa sigue irradiando calor durante seis, ocho, diez horas.
+[07:08.7] 428.7s  Es el mismo principio del horno de barro para hacer pizza.
+[07:12.8] 432.8s  Prendes fuego adentro durante una hora, lo apagás, y el horno cocina solo durante el resto de la noche porque la masa del barro acumuló todo el calor.
+[07:23.0] 443.0s  La rocket es eso mismo aplicado a una habitación.
+[07:26.6] 446.6s  Calentás barro con un fuego chico y rápido, y el barro te calienta a vos durante medio día.
+[07:32.7] 452.7s  Esa es la física, y es física vieja, conocida, medida, repetida en cientos de laboratorios y miles de casas en el mundo.
+[07:43.3] 463.3s  No hay nada nuevo acá.
+[07:45.4] 465.4s  Lo único raro es que en este país, donde el gas se puso impagable y la leña gruesa también, casi nadie está hablando de esto.
+[07:55.2] 475.2s  Eso me hace pensar dos cosas, pero las dejo para el final.
+[08:00.1] 480.1s  Vamos a la construcción.
+[08:02.7] 482.7s  Vas a necesitar tres cosas para empezar, y todo lo podés conseguir gratis o casi gratis.
+[08:09.3] 489.3s  La primera es tierra.
+[08:11.8] 491.8s  Tierra del propio terreno, sacada de cavar un pozo o de nivelar el patio.
+[08:17.1] 497.1s  Pero no cualquier tierra.
+[08:19.1] 499.1s  La tierra tiene que tener arcilla, que es lo que pega y endurece al secar.
+[08:24.1] 504.1s  Si tu tierra es muy arenosa, la mezcla se va a desmenuzar.
+[08:28.7] 508.7s  Si es muy puro humus, lo mismo.
+[08:32.2] 512.2s  Hay una prueba que se hace con un frasco de mermelada vacío, llenándolo hasta la mitad con tierra y el resto con agua, agitándolo bien y dejándolo 20 minutos quieto.
+[08:44.2] 524.2s  La tierra se va a separar en tres capas.
+[08:46.9] 526.9s  Arena abajo, limo en el medio, arcilla arriba flotando en el agua turbia.
+[08:55.0] 535.0s  Si la capa de arcilla, la de arriba, es por lo menos un tercio del total, tu tierra sirve.
+[09:01.6] 541.6s  Si es menos, tenés que mezclar tu tierra con arcilla comprada o sacada de algún otro lado del terreno donde haya más, generalmente en las zonas más bajas donde se acumula con la lluvia.
+[09:14.9] 554.9s  Esa prueba del frasco, con el dibujo de las tres capas y las tres correcciones posibles según el resultado, está en el módulo 5 de una guía que armé para mis hijos y que dejo siempre en la descripción del video.
+[09:30.4] 570.4s  La nombro acá, porque sin esa prueba, la mitad de la gente arma la mezcla mal y la estufa se le agrieta en el primer encendido fuerte.
+[09:39.7] 579.7s  Es información concreta que necesitas antes de empezar, no es contenido extra ni publicidad.
+[09:46.3] 586.3s  Está abajo, gratis, son seis módulos en PDF, te lo bajás y lo imprimís.
+[09:53.1] 593.1s  La segunda cosa es arena, arena fina, no la arena gruesa de albañilería, la de filtro, la de reboque fino.
+[10:03.1] 603.1s  Sale dos pesos en cualquier corralón, la arena le da resistencia a la mezcla y evita que se contraiga demasiado al secar.
+[10:11.7] 611.7s  La proporción que mi viejo usaba, y que después confirmé en el libro alemán, es de dos partes de tierra arcillosa por una parte de arena.
+[10:23.3] 623.3s  Si tu tierra ya tiene mucha arena propia, bajás un poco la proporción, si es muy pura arcilla, subís.
+[10:32.4] 632.4s  La tercera cosa es paja, paja seca, larga, sin moho, la de los fardos de avena o trigo es perfecta, sale poco.
+[10:44.0] 644.0s  Un fardo de 20 kilos te alcanza para construir tres estufas, la paja se corta en pedacitos de 5 a 10 centímetros y se mezcla con la tierra y la arena.
+[10:55.2] 655.2s  Hace exactamente la misma función que el hierro de construcción en el hormigón.
+[11:01.5] 661.5s  Le da resistencia a la tracción al barro, evita que se agriete cuando la masa se mueve por el calor.
+[11:08.5] 668.5s  Sin paja la estufa te dura un invierno, con paja te dura una vida.
+[11:14.7] 674.7s  La mezcla se hace pisándola con los pies descalzos sobre una lona vieja o una bolsa de arpillera.
+[11:21.2] 681.2s  Dos partes de tierra arcillosa, una parte de arena, una manojada generosa de paja por cada balde de mezcla.
+[11:29.2] 689.2s  Y agua de a poco hasta que la masa quede como masa de pan cruda.
+[11:33.5] 693.5s  Tiene que tener consistencia, no chorrear, pero tampoco quebrarse cuando haces una bola y la apretás.
+[11:41.0] 701.0s  Esto se aprende pisando.
+[11:43.3] 703.3s  La primera mezcla casi siempre te queda con demasiada agua, la segunda te queda mejor, la tercera te sale bien sin pensar.
+[11:52.7] 712.7s  Ahora, la forma de la estufa.
+[11:55.6] 715.6s  Una rocket básica tiene cuatro partes.
+[11:59.3] 719.3s  La boca, que es donde metes las ramitas hacia arriba o de costado según el modelo.
+[12:06.3] 726.3s  El túnel de combustión, que es un caño horizontal de barro de unos 20 centímetros de largo por donde el fuego entra hacia la cámara central.
+[12:15.8] 735.8s  La torre de combustión, que es un tubo vertical de barro de unos 60 centímetros de alto, forrado por dentro con un caño de chapa o con ladrillos refractarios apilados, donde se hace la combustión a alta temperatura.
+[12:30.7] 750.7s  Y el banco de masa, que es un cajón macizo de barro de un metro y medio o dos metros de largo, lleno de tierra y atravesado por un caño de chapa galvanizada de cuatro pulgadas que conduce el humo en zigzag antes de mandarlo afuera por una chimenea corta.
+[12:49.8] 769.8s  El fuego entra por la boca, baja por el túnel, sube por la torre quemándose a mil grados, baja de nuevo por afuera de la torre, entra al caño que atraviesa el banco de masa, lo recorre todo, calienta toda la masa y sale ya frío por la chimenea.
+[13:09.9] 789.9s  Cuando vos tocas la chimenea con la mano, debe estar tibia, no caliente.
+[13:16.4] 796.4s  Si está caliente, perdiste energía.
+[13:20.1] 800.1s  Una rocket bien hecha tiene la chimenea apenas tibia y el banco de barro a 50 grados, que es la temperatura ideal para sentarse encima como hacían en China, en Corea, en Alemania, en todos los lugares fríos del mundo, donde inventaron variantes de esto mismo durante los últimos 2000 años.
+[13:41.9] 821.9s  La construcción te lleva tres días si trabajas solo, uno si trabajas con un hijo o un vecino.
+[13:48.9] 828.9s  Primer día, levantás los moldes con ladrillos comunes o con tablas y aplicás la primera capa de mezcla de barro alrededor del molde, dándole forma a la torre y al banco.
+[14:01.8] 841.8s  Segundo día, sacás los moldes y aplicás la segunda capa por dentro y por fuera, alisando bien todas las uniones.
+[14:11.3] 851.3s  Tercer día, encajás los caños de chapa por donde va a circular el humo, los cubrís completamente con más mezcla y dejás secar al aire durante una semana, sin prender fuego, dejando que la humedad del barro evapore lentamente.
+[14:29.4] 869.4s  Si la prendes antes, el vapor de adentro de la masa hace presión y te raja la estufa.
+[14:35.2] 875.2s  Esto es paciencia y nada más.
+[14:38.1] 878.1s  Una semana, sin tocar.
+[14:41.4] 881.4s  Al octavo día prendes un fuego chico, con apenas tres ramitas, durante diez minutos y la apagás.
+[14:48.4] 888.4s  Al noveno día, otro fuego un poco más grande.
+[14:51.9] 891.9s  Al décimo día ya podés usar la normal.
+[14:54.8] 894.8s  Ese ritual de encendidos progresivos es lo que termina de curar la mezcla y la deja como cerámica.
+[15:01.0] 901.0s  Después de eso, la podés usar tres veces por día durante 40 años, como la de mi viejo.
+[15:07.4] 907.4s  El costo total, tierra, gratis si la sacás del terreno, arena, alrededor del costo de una pizza por las dos bolsas que te hacen falta, paja, la mitad de eso por el fardo, caños de chapa galvanizada de 4 pulgadas, lo más caro, dependiendo del largo del banco.
+[15:28.2] 928.2s  Te va alrededor del precio de una carga grande de garrafa, ladrillos comunes para el molde, prestados si tenés un vecino con obra, o sacados del fondo de tu propio galpón.
+[15:40.4] 940.4s  Total, redondeando para arriba, te queda en menos de lo que pagás, por dos meses, de gas natural en invierno.
+[15:49.0] 949.0s  La estufa te dura por lo menos 40 años, probablemente más.
+[15:54.3] 954.3s  Hagamos la cuenta tranquilos, 40 años por seis meses de invierno son 200, 40 meses de calefacción.
+[16:02.5] 962.5s  Dividís el costo total por 240, y te queda un costo mensual de calefacción de aproximadamente el precio de una taza de café, para siempre.
+[16:14.3] 974.3s  Sin factura, sin garrafa que pesa 20 kilos y hay que cargar desde el camión.
+[16:21.0] 981.0s  Sin corte de servicio, sin aumento de tarifa, sin nada que dependa de nadie más que vos y de cinco ramitas que junta el chico en el patio.
+[16:30.2] 990.2s  Acá viene la parte que va más allá del bolsillo, y la quiero decir porque me parece que importa.
+[16:36.4] 996.4s  Las casas en este país se diseñan hace 50 años, suponiendo que siempre va a haber gas barato.
+[16:43.6] 1003.6s  Paredes finas, ventanas chicas, sin orientación al sol, sin masa térmica, sin aislación seria.
+[16:52.1] 1012.1s  Toda la cultura de la construcción argentina moderna depende de que la red de gas funcione y de que el gas sea apagable.
+[17:00.9] 1020.9s  Cuando una de esas dos cosas falla, y las dos están fallando ahora, la gente se queda con casas, que son básicamente carpas con paredes de ladrillo, imposibles de calentar de manera eficiente.
+[17:15.0] 1035.0s  La salida que ofrece el sistema es comprar más.
+[17:18.8] 1038.8s  Garrafa, caloventores eléctricos, estufas catalíticas.
+[17:23.7] 1043.7s  Todos productos que dependen de seguir pagando todos los meses para seguir teniendo calor.
+[17:29.7] 1049.7s  La salida que ofrecían los que construían casas antes de que hubiera red de gas, en los años 20 y 30, era distinta.
+[17:38.0] 1058.0s  Se diseñaban la casa para retener el calor y dentro de la casa ponían una masa térmica grande que se calentaba con un fuego chico y eficiente y que devolvía ese calor lentamente durante el día y la noche.
+[17:52.4] 1072.4s  La Rocket es la versión moderna de esa idea, optimizada con lo que aprendimos de combustión en los últimos 100 años.
+[18:01.5] 1081.5s  No es alternativa hippie, no es decoración rústica, es la respuesta de ingeniería más eficiente que existe a la pregunta de cómo calentar un espacio cerrado con biomasa.
+[18:13.4] 1093.4s  La gente que construyó este país con las manos sabía estas cosas.
+[18:18.1] 1098.1s  Mi abuelo, en la chacra de Junín, calentaba la casa entera con una cocina económica de hierro fundido, que era un primo cercano de esto.
+[18:28.2] 1108.2s  Mi tío, en Bariloche, con un quemador de aserrín que diseñó el mismo en los años 70.
+[18:35.1] 1115.1s  La generación de mi viejo todavía sabía improvisar soluciones, leer un libro alemán traducido con diccionario, mezclar barro con los pies y armar algo que funcionara 40 años.
+[18:48.1] 1128.1s  La generación nuestra olvidó casi todo eso, porque durante un par de décadas el gas fue barato y nadie necesitó saber.
+[18:59.1] 1139.1s  Pero el gas ya no es barato y nadie va a venir a recordárnoslo.
+[19:04.1] 1144.1s  Tenemos que recordarlo nosotros, los que estamos viendo este video, los que tenemos un terreno con tierra suficiente para sacar dos baldes y empezar a probar.
+[19:14.0] 1154.0s  Contame en los comentarios de qué zona del país sos, qué tipo de tierra tenés en tu terreno.
+[19:20.1] 1160.1s  Si es muy arcillosa, muy arenosa, muy oscura, muy clara, los que están en zona pampeana generalmente tienen tierra buena para esto.
+[19:31.3] 1171.3s  Los que están en Cuyo, en zona de piedra, tienen que conseguir arcilla.
+[19:37.8] 1177.8s  Aparte, los que están en el norte, en zona de tierra colorada, tienen exceso de arcilla y necesitan más arena.
+[19:46.8] 1186.8s  Cada zona del país tiene su receta propia y entre todos los que comentan abajo armamos un mapa de lo que funciona en cada lugar.
+[19:56.5] 1196.5s  Mejor que cualquier manual escrito.
+[19:59.0] 1199.0s  Yo leo todos los comentarios y respondo lo que puedo.
+[20:02.8] 1202.8s  La próxima les voy a mostrar algo que armaba mi viejo en el verano.
+[20:07.3] 1207.3s  Para los días de calor pesado del enero pampeano, cuando no había aire acondicionado, no había ventilador eléctrico, no había nada.
+[20:18.0] 1218.0s  Una caja de madera con dos valdes de barro adentro y un trapo mojado al frente, que enfriaba el galpón 15 grados respecto de la temperatura de afuera, sin enchufar nada, sin gastar nada, pura física.
+[20:33.0] 1233.0s  La misma que usaban los persas hace 2000 años para enfriar palacios en el desierto, adaptada a una caja que cualquiera arma en una tarde con tablas viejas.
+[20:45.8] 1245.8s  Hasta entonces, cuídate, cuida la casa y acordate que los que vinieron antes que nosotros no eran tontos, solo sabían cosas que nosotros estamos empezando a recordar.

@@ -1,0 +1,89 @@
+# Render distribuido GRATIS en GitHub Actions (repo PÚBLICO = minutos ilimitados).
+# Parte el video en N rangos de frames, los renderiza en paralelo (matrix), y une
+# todo con ffmpeg. Entrega el mp4 final como ARTIFACT descargable (NO sube a YouTube).
+#
+# Assets: el orquestador sube un tarball como RELEASE asset "assets-<slug>" (avatar
+# _opt.mp4 + .wav + img/ + vid/). Cada job de render lo baja y extrae a public/.
+# El CÓDIGO (Main_<slug>.tsx, cues, componentes) ya está en el repo.
+#
+# Disparo manual o por API:
+#   gh workflow run render.yml -f slug=fly -f comp_id=Fly -f total_frames=43380 -f chunks=24
+name: render
+
+on:
+  workflow_dispatch:
+    inputs:
+      slug:        { description: "slug del video (ej: fly)", required: true }
+      comp_id:     { description: "id de composicion Remotion (ej: Fly)", required: true }
+      total_frames:{ description: "frames totales (ej: 43380)", required: true }
+      chunks:      { description: "en cuantos pedazos partir", required: false, default: "24" }
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.m.outputs.matrix }}
+    steps:
+      - id: m
+        run: |
+          N=${{ github.event.inputs.chunks }}
+          LIST=$(node -e "console.log(JSON.stringify(Array.from({length:$N},(_,i)=>i)))")
+          echo "matrix=$LIST" >> "$GITHUB_OUTPUT"
+
+  render:
+    needs: prepare
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        idx: ${{ fromJSON(needs.prepare.outputs.matrix) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: "20" }
+      - run: npm ci
+      # bajar y extraer los assets (release asset subido por el orquestador)
+      - name: download assets
+        env: { GH_TOKEN: "${{ github.token }}" }
+        run: |
+          gh release download "assets-${{ github.event.inputs.slug }}" \
+            --pattern "assets-${{ github.event.inputs.slug }}.tar" --dir .
+          mkdir -p public
+          tar -xf "assets-${{ github.event.inputs.slug }}.tar" -C public
+      # calcular el rango de frames de este pedazo
+      - name: frame range
+        id: r
+        run: node scripts/chunkmath.mjs ${{ github.event.inputs.total_frames }} ${{ github.event.inputs.chunks }} ${{ matrix.idx }} >> "$GITHUB_OUTPUT"
+      - name: render chunk
+        run: |
+          mkdir -p out
+          TMPDIR=/dev/shm npx remotion render "${{ github.event.inputs.comp_id }}" \
+            "out/chunk_${{ matrix.idx }}.mp4" \
+            --frames=${{ steps.r.outputs.start }}-${{ steps.r.outputs.end }} \
+            --concurrency=2 --timeout=120000
+      - uses: actions/upload-artifact@v4
+        with:
+          name: chunk-${{ matrix.idx }}
+          path: out/chunk_${{ matrix.idx }}.mp4
+          retention-days: 3
+
+  stitch:
+    needs: render
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with: { path: chunks, pattern: "chunk-*", merge-multiple: true }
+      # ordenar por indice y concatenar (todos comparten codec → -c copy, sin recodificar)
+      - name: concat
+        run: |
+          ls chunks
+          for i in $(seq 0 $(( ${{ github.event.inputs.chunks }} - 1 ))); do
+            echo "file '$PWD/chunks/chunk_$i.mp4'" >> list.txt
+          done
+          cat list.txt
+          ffmpeg -y -f concat -safe 0 -i list.txt -c copy "${{ github.event.inputs.slug }}.mp4"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: final-${{ github.event.inputs.slug }}
+          path: ${{ github.event.inputs.slug }}.mp4
+          retention-days: 7
