@@ -15,7 +15,7 @@ on:
     inputs:
       slug:        { description: "slug del video (ej: fly)", required: true }
       comp_id:     { description: "id de composicion Remotion (ej: Fly)", required: true }
-      total_frames:{ description: "frames totales (ej: 43380)", required: true }
+      total_frames: { description: "frames totales (ej: 43380)", required: true }
       chunks:      { description: "en cuantos pedazos partir", required: false, default: "24" }
 
 jobs:
