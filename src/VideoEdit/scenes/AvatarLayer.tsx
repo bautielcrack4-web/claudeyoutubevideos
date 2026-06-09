@@ -37,13 +37,16 @@ export const AvatarLayer: React.FC<{
   src: string; // staticFile path del video del presentador (con su audio)
   windows: AvatarWindow[]; // ordenadas por start
   accent?: string;
-}> = ({ src, windows, accent = COLORS.accent }) => {
+  wav?: string; // wav para el borde audio-reactive; default = derivado del src
+}> = ({ src, windows, accent = COLORS.accent, wav }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const t = frame; // frames
 
-  // AUDIO-REACTIVE: el borde del recuadro late con la amplitud de la voz
-  const audio = useAudioData(staticFile("estufa.wav"));
+  // AUDIO-REACTIVE: el borde del recuadro late con la amplitud de la voz.
+  // Derivado del src (fly_opt.mp4 → fly.wav) salvo que se pase `wav` explícito.
+  const wavSrc = wav ?? src.replace(/_opt\.mp4$/i, ".wav").replace(/\.mp4$/i, ".wav");
+  const audio = useAudioData(staticFile(wavSrc));
   let amp = 0;
   if (audio) {
     const bins = visualizeAudio({ fps, frame, audioData: audio, numberOfSamples: 16 });

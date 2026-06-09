@@ -33,6 +33,7 @@ const wav = `public/${slug}.wav`;
 for (const f of [avatar, wav]) if (!fs.existsSync(f)) { console.error("falta:", f); process.exit(1); }
 // rutas relativas a public/ (el workflow extrae con -C public)
 let items = [`${slug}_opt.mp4`, `${slug}.wav`];
+if (fs.existsSync("public/sfx")) items.push("sfx"); // camas ambientales + efectos (siempre)
 if (pref) {
   // solo lo de este video + diagramas (gpt-image, prefijo dg_)
   const img = fs.readdirSync("public/img").filter((f) => f.startsWith(pref) || f.startsWith("dg_"));
