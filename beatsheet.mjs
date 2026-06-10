@@ -238,6 +238,94 @@ function renderEl(b) {
         (b.hue ? ` hue=${j(b.hue)}` : ``) +
         ` />`
       );
+    case "headline":
+      return (
+        `<KineticHeadline durationInFrames={d} tokens={${j(b.tokens || [])}}` +
+        (b.eyebrow ? ` eyebrow=${j(b.eyebrow)}` : ``) +
+        (b.hue ? ` hue=${j(b.hue)}` : ``) +
+        (b.size ? ` size={${b.size}}` : ``) +
+        (b.bg ? ` bg=${j(b.bg)}` : ``) +
+        (b.image ? ` image=${j(b.image)}` : ``) +
+        ` />`
+      );
+    case "aged":
+      return (
+        `<AgedDoc durationInFrames={d} heading=${j(b.heading || "")} lines={${j(b.lines || [])}}` +
+        (b.eyebrow ? ` eyebrow=${j(b.eyebrow)}` : ``) +
+        (b.image ? ` image=${j(b.image)}` : ``) +
+        (b.accent ? ` accent=${j(b.accent)}` : ``) +
+        (b.hue ? ` hue=${j(b.hue)}` : ``) +
+        ` />`
+      );
+    case "bars":
+      return (
+        `<BarCompare durationInFrames={d} bars={${j(b.bars || [])}}` +
+        (b.eyebrow ? ` eyebrow=${j(b.eyebrow)}` : ``) +
+        (b.title ? ` title=${j(b.title)}` : ``) +
+        (b.orientation ? ` orientation=${j(b.orientation)}` : ``) +
+        (b.unit ? ` unit=${j(b.unit)}` : ``) +
+        (b.accent ? ` accent=${j(b.accent)}` : ``) +
+        (b.hue ? ` hue=${j(b.hue)}` : ``) +
+        ` />`
+      );
+    case "cross":
+      return (
+        `<CrossSection durationInFrames={d} layers={${j(b.layers || [])}}` +
+        (b.eyebrow ? ` eyebrow=${j(b.eyebrow)}` : ``) +
+        (b.title ? ` title=${j(b.title)}` : ``) +
+        (b.marker !== undefined ? ` marker={${j(b.marker)}}` : ``) +
+        (b.hue ? ` hue=${j(b.hue)}` : ``) +
+        ` />`
+      );
+    case "process":
+      return (
+        `<ProcessSteps durationInFrames={d} steps={${j(b.steps || [])}}` +
+        (b.eyebrow ? ` eyebrow=${j(b.eyebrow)}` : ``) +
+        (b.title ? ` title=${j(b.title)}` : ``) +
+        (b.accent ? ` accent=${j(b.accent)}` : ``) +
+        (b.hue ? ` hue=${j(b.hue)}` : ``) +
+        ` />`
+      );
+    case "checklist":
+      return (
+        `<Checklist durationInFrames={d} title=${j(b.title || "")} items={${j(b.items || [])}}` +
+        (b.eyebrow ? ` eyebrow=${j(b.eyebrow)}` : ``) +
+        (b.accent ? ` accent=${j(b.accent)}` : ``) +
+        (b.hue ? ` hue=${j(b.hue)}` : ``) +
+        (b.image ? ` image=${j(b.image)}` : ``) +
+        ` />`
+      );
+    case "rule":
+      return (
+        `<RuleNumberScene durationInFrames={d} number=${j(b.number || "01")} title=${j(b.title || "")}` +
+        (b.label ? ` label=${j(b.label)}` : ``) +
+        (b.hue ? ` hue=${j(b.hue)}` : ``) +
+        ` />`
+      );
+    case "annotated":
+      return (
+        `<AnnotatedImage durationInFrames={d} image=${j(b.image)} annotations={${j(b.annotations || [])}}` +
+        (b.eyebrow ? ` eyebrow=${j(b.eyebrow)}` : ``) +
+        (b.caption ? ` caption=${j(b.caption)}` : ``) +
+        (b.hue ? ` hue=${j(b.hue)}` : ``) +
+        ` />`
+      );
+    case "callout":
+      return (
+        `<CalloutMark durationInFrames={d} figure=${j(b.figure || "")}` +
+        (b.image ? ` image=${j(b.image)}` : ``) +
+        (b.eyebrow ? ` eyebrow=${j(b.eyebrow)}` : ``) +
+        (b.caption ? ` caption=${j(b.caption)}` : ``) +
+        (b.accent ? ` accent=${j(b.accent)}` : ``) +
+        (b.hue ? ` hue=${j(b.hue)}` : ``) +
+        ` />`
+      );
+    case "infzoom":
+      return (
+        `<InfiniteZoom durationInFrames={d} images={${j(b.images || [])}}` +
+        (b.accent ? ` accent=${j(b.accent)}` : ``) +
+        ` />`
+      );
     default:
       return null; // talk
   }
@@ -249,7 +337,7 @@ for (const b of beats) {
   if (b.reframe && b.kind !== "talk") reframe.push({ start: b.start, end: b.start + b.dur });
   const el = renderEl(b);
   if (!el) continue;
-  cueLines.push(`  { key: ${j(b.id)}, start: ${b.start}, dur: ${b.dur}, el: (d) => ${el} },`);
+  cueLines.push(`  { key: ${j(b.id)}, start: ${b.start}, dur: ${b.dur}, kind: ${j(b.kind)}, el: (d) => ${el} },`);
 }
 
 // imports + consts de paleta CONDICIONALES: solo lo que los kinds presentes usan
@@ -274,6 +362,16 @@ if (kinds.has("stat")) imports.push(`import { StatBig } from "./scenes/StatBig";
 if (kinds.has("impact")) imports.push(`import { ImpactReveal } from "./scenes/ImpactReveal";`);
 if (kinds.has("journey")) imports.push(`import { JourneyCanvas } from "./scenes/JourneyCanvas";`);
 if (kinds.has("float")) imports.push(`import { FloatingInsert } from "./scenes/FloatingInsert";`);
+if (kinds.has("headline")) imports.push(`import { KineticHeadline } from "./scenes/KineticHeadline";`);
+if (kinds.has("aged")) imports.push(`import { AgedDoc } from "./scenes/AgedDoc";`);
+if (kinds.has("bars")) imports.push(`import { BarCompare } from "./scenes/BarCompare";`);
+if (kinds.has("cross")) imports.push(`import { CrossSection } from "./scenes/CrossSection";`);
+if (kinds.has("process")) imports.push(`import { ProcessSteps } from "./scenes/ProcessSteps";`);
+if (kinds.has("checklist")) imports.push(`import { Checklist } from "./scenes/Checklist";`);
+if (kinds.has("rule")) imports.push(`import { RuleNumberScene } from "./scenes/RuleNumberScene";`);
+if (kinds.has("annotated")) imports.push(`import { AnnotatedImage } from "./scenes/AnnotatedImage";`);
+if (kinds.has("callout")) imports.push(`import { CalloutMark } from "./scenes/CalloutMark";`);
+if (kinds.has("infzoom")) imports.push(`import { InfiniteZoom } from "./scenes/InfiniteZoom";`);
 const palLine = usedPal.size
   ? `\nconst ${[...usedPal].map((t) => `${t} = ${palTok[t]}`).join(", ")};\n`
   : "";
@@ -282,7 +380,7 @@ const header = `// cues_${VIDEO}.gen.tsx — GENERADO por beatsheet.mjs desde ${
 // NO editar a mano: cambiá el beatsheet y re-corré  node beatsheet.mjs ${bsArg}
 ${imports.join("\n")}
 ${palLine}
-export type Cue = { key: string; start: number; dur: number; el: (d: number) => ReactNode };
+export type Cue = { key: string; start: number; dur: number; kind: string; el: (d: number) => ReactNode };
 
 export const CUES: Cue[] = [
 ${cueLines.join("\n")}

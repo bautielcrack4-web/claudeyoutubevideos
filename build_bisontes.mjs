@@ -599,6 +599,103 @@ layReal(905, 1020, [V("pex_wolf", "cold", "Lobos reales"), V("pex_wolf_pack", "c
 layReal(1024, 1158, [V("pex_grizzly", "amber", "Oso pardo real"), V("pex_bear_walk", "amber"), V("pex_wolf_forest", "cold"), V("pex_ice_melt", "cold"), V("pex_snow_forest", "cold"), V("pex_blizzard", "cold")], 4.5);
 layReal(1238, 1520, [V("pex_winter_valley", "cold"), V("pex_mountains_winter", "cold")], 4.5);
 
+// =============================================================================
+// ★ DIVERSIDAD DE EDICIÓN — muchos componentes distintos (regla dura #4) ★
+// Componentes full-bleed anclados (rule/headline/aged/bars/cross/process/checklist/
+// annotated/callout/infzoom) en cifras, lugares, cronologías y separadores. Cada uno
+// "carve-out" saca los raws de su ventana (más abajo). El avatar se oculta bajo ellos.
+// =============================================================================
+const G = (start, kind, dur, props) => beats.push({ id: id(kind.slice(0, 2)), start, kind, _dur: dur, ...props });
+const RULE = (start, number, title, o = {}) => G(start, "rule", o.dur || 3, { number, title, ...(o.label ? { label: o.label } : {}), hue: o.hue || "amber" });
+const HEADLINE = (start, tokens, o = {}) => G(start, "headline", o.dur || 4, { tokens, ...(o.eyebrow ? { eyebrow: o.eyebrow } : {}), hue: o.hue || "amber", ...(o.size ? { size: o.size } : {}), ...(o.bg ? { bg: o.bg } : {}), ...(o.image ? { image: o.image } : {}) });
+const AGED = (start, heading, lines, o = {}) => G(start, "aged", o.dur || 6, { heading, lines, ...(o.eyebrow ? { eyebrow: o.eyebrow } : {}), ...(o.image ? { image: o.image } : {}), accent: o.accent || "amber", hue: o.hue || "amber" });
+const BARS = (start, bars, o = {}) => G(start, "bars", o.dur || 6, { bars, ...(o.eyebrow ? { eyebrow: o.eyebrow } : {}), ...(o.title ? { title: o.title } : {}), ...(o.orientation ? { orientation: o.orientation } : {}), ...(o.unit ? { unit: o.unit } : {}), accent: o.accent || "good", hue: o.hue || "amber" });
+const CROSS = (start, layers, o = {}) => G(start, "cross", o.dur || 8, { layers, ...(o.eyebrow ? { eyebrow: o.eyebrow } : {}), ...(o.title ? { title: o.title } : {}), ...(o.marker !== undefined ? { marker: o.marker } : {}), hue: o.hue || "cold" });
+const PROCESS = (start, steps, o = {}) => G(start, "process", o.dur || 12, { steps, ...(o.eyebrow ? { eyebrow: o.eyebrow } : {}), ...(o.title ? { title: o.title } : {}), accent: o.accent || "amber", hue: o.hue || "amber" });
+const CHECK = (start, title, items, o = {}) => G(start, "checklist", o.dur || 6, { title, items, ...(o.eyebrow ? { eyebrow: o.eyebrow } : {}), accent: o.accent || "good", hue: o.hue || "cold", ...(o.image ? { image: o.image } : {}) });
+const ANNOT = (start, image, annotations, o = {}) => G(start, "annotated", o.dur || 5, { image, annotations, ...(o.eyebrow ? { eyebrow: o.eyebrow } : {}), ...(o.caption ? { caption: o.caption } : {}), hue: o.hue || "cold" });
+const CALLOUT = (start, figure, o = {}) => G(start, "callout", o.dur || 4, { figure, ...(o.image ? { image: o.image } : {}), ...(o.eyebrow ? { eyebrow: o.eyebrow } : {}), ...(o.caption ? { caption: o.caption } : {}), accent: o.accent || "amber", hue: o.hue || "amber" });
+const INFZOOM = (start, images, o = {}) => G(start, "infzoom", o.dur || 7, { images, accent: o.accent || "accent" });
+
+// — separadores de sección (RuleNumberScene) —
+RULE(54.5, "01", "El reino del bisonte", { hue: "amber", dur: 3 });
+RULE(268.5, "02", "El regreso", { hue: "blue", dur: 3 });
+RULE(685.5, "03", "Contra todo pronóstico", { hue: "amber", dur: 3 });
+RULE(912.0, "04", "El misterio", { hue: "red", dur: 3 });
+RULE(1238.6, "05", "El presente", { hue: "blue", dur: 3 });
+// — abundancia: headline de cifra + anatomía anotada —
+HEADLINE(84.0, [{ t: "Hasta " }, { t: "60 millones", good: true }, { t: " de bisontes" }], { eyebrow: "Antes de la colonización", hue: "amber", dur: 4 });
+ANNOT(100.0, "real/real_woodbison_1.jpg", [
+  { kind: "circle", x: 0.46, y: 0.34, w: 0.16, label: "Joroba enorme" },
+  { kind: "arrow", x: 0.62, y: 0.6, fromX: 0.85, fromY: 0.78, label: "Pelaje grueso" },
+], { eyebrow: "El bisonte de bosque", caption: "El animal terrestre más grande de Norteamérica", hue: "cold", dur: 5 });
+// — matanza: callout de fecha sobre foto real + doc envejecido emotivo —
+CALLOUT(129.0, "1870–1890", { image: "real/real_skullpile_1.jpg", eyebrow: "La masacre", caption: "Casi exterminados en 20 años", accent: "danger", hue: "red", dur: 4 });
+AGED(256.0, "Una generación sin bisontes", [
+  { text: "Los abuelos contaban cómo cazarlos." },
+  { text: "Los nietos no los vieron nunca.", mark: true },
+], { eyebrow: "Los pueblos del norte", image: "real/real_dene_1.jpg", accent: "amber", hue: "amber", dur: 6 });
+// — redescubrimiento: callout 1957 —
+CALLOUT(288.0, "1957", { image: "real/real_floatplane_1.jpg", eyebrow: "Se daba por extinto", caption: "Hasta que algo cambió todo", accent: "cold", hue: "cold", dur: 4 });
+// — plan: checklist del valle limpio —
+CHECK(440.0, "Necesitaban un valle así", [
+  { text: "Sin enfermedades", state: "done" },
+  { text: "Aislado, sin contacto con otras manadas", state: "done" },
+  { text: "Solo accesible por avión", state: "done" },
+], { eyebrow: "La búsqueda", accent: "good", hue: "cold", dur: 6.5 });
+// — operativo: ProcessSteps del traslado (nodos imagen) —
+PROCESS(517.0, [
+  { title: "Selección", desc: "28 en Elk Island", image: "img/bi_p_selected_bison.png" },
+  { title: "Sedación y tag", desc: "ID individual", image: "img/bi_a066.png" },
+  { title: "Cajón a medida", desc: "+1000 kg c/u", image: "img/bi_a069.png" },
+  { title: "Carga", desc: "Al Hércules", image: "img/bi_a073.png" },
+  { title: "Vuelo", desc: "Pista de tierra", image: "img/bi_p_dirt_strip.png" },
+  { title: "Liberación", desc: "Junio de 1980", image: "img/bi_a080.png" },
+], { eyebrow: "El operativo", title: "De Alberta al Ártico", accent: "amber", hue: "amber", dur: 13 });
+// — explosión: barras 28→960 + headline "milagro" —
+BARS(766.0, [
+  { label: "1980", value: 28, display: "28" },
+  { label: "2004", value: 403, display: "403" },
+  { label: "2017", value: 960, display: "960", winner: true },
+], { eyebrow: "El conteo aéreo", title: "De 28 a 960", accent: "good", hue: "amber", dur: 6 });
+HEADLINE(866.0, [{ t: "Un " }, { t: "milagro", good: true }, { t: " de la conservación" }], { eyebrow: "Caso Nahanni", hue: "amber", dur: 4 });
+// — clima: corte transversal hielo/pasto (rain-on-snow) —
+CROSS(1060.0, [
+  { label: "Placa de hielo", depth: "sellado", color: "#cfe0e6", weight: 0.8 },
+  { label: "Nieve", depth: "", color: "#eef3f5", weight: 2.4 },
+  { label: "Pasto atrapado", depth: "comida", color: "#6E8B47", weight: 1.4 },
+  { label: "Suelo", depth: "", color: "#5b4a35", weight: 3.2 },
+], { eyebrow: "Rain on snow", title: "Comida bajo el hielo", marker: { label: "No pueden romperla", atDepth: 1, color: "danger" }, hue: "cold", dur: 8 });
+// — presente: checklist de monitoreo —
+CHECK(1256.5, "Cómo lo cuidan hoy", [
+  { text: "Monitoreo satelital", state: "doing" },
+  { text: "Collares GPS", state: "doing" },
+  { text: "Muestras desde helicóptero", state: "doing" },
+], { eyebrow: "Conservación activa", accent: "cold", hue: "cold", dur: 6 });
+// — cierre: doc envejecido + recap infinite-zoom —
+INFZOOM(1428.0, [
+  { src: "img/bi_im_200.png", label: "200" },
+  { src: "img/bi_im_960.png", label: "960" },
+  { src: "img/bi_im_544.png", label: "≈500" },
+], { accent: "accent", dur: 7 });
+AGED(1352.0, "Un éxito incierto", [
+  { text: "Complicado." },
+  { text: "Incierto." },
+  { text: "Pero un éxito.", mark: true },
+], { eyebrow: "La lección de Nahanni", accent: "good", hue: "amber", dur: 6 });
+
+// ── CARVE-OUT: los componentes full-bleed anclados se quedan con su ventana →
+// borro los raws que caen dentro (si no, el tiling los acortaría o se superpondrían).
+{
+  const FULLBLEED = new Set(["rule", "headline", "aged", "bars", "cross", "process", "checklist", "annotated", "callout", "infzoom"]);
+  const anchors = beats.filter((b) => FULLBLEED.has(b.kind)).map((b) => [b.start, b.start + b._dur]);
+  for (let i = beats.length - 1; i >= 0; i--) {
+    const b = beats[i];
+    if (b.kind !== "raw") continue;
+    if (anchors.some(([s, e]) => b.start >= s - 0.05 && b.start < e - 0.05)) beats.splice(i, 1);
+  }
+}
+
 // ── THINNING: separación mínima entre tomas; ante colisión gana el footage REAL
 // (real-video > real-foto > clip-IA > foto-IA). Evita el "machine-gun" (<2.8s) y
 // asegura que lo real desplace a la IA, no al revés. ──────────────────────────
@@ -646,7 +743,7 @@ const all = [...beats, ...extraImgs];
 // clean internal fields
 const out = { video: "bisontes", avatar: AVATAR, beats: all.map((b) => {
   const c = { id: b.id, start: b.start, dur: b.dur != null ? b.dur : (b._dur || 3), kind: b.kind };
-  for (const k of ["src", "side", "hue", "kicker", "image", "setup", "impact", "impactAccent", "hitAt", "boom", "darken", "value", "prefix", "suffix", "decimals", "label", "eyebrow", "accent", "text", "fontSize", "title", "items", "palette", "cross", "chips", "bg", "slides", "waypoints", "worldImage", "gen"]) {
+  for (const k of ["src", "side", "hue", "kicker", "image", "setup", "impact", "impactAccent", "hitAt", "boom", "darken", "value", "prefix", "suffix", "decimals", "label", "eyebrow", "accent", "text", "fontSize", "title", "items", "palette", "cross", "chips", "bg", "slides", "waypoints", "worldImage", "gen", "number", "tokens", "heading", "lines", "bars", "layers", "marker", "steps", "annotations", "figure", "images", "caption", "size", "orientation", "unit"]) {
     if (b[k] !== undefined) c[k] = b[k];
   }
   if (b._skipcue) c._skipcue = true;

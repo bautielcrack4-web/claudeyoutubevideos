@@ -44,10 +44,13 @@ const AMBIENT: { from: number; to: number; src: string; vol: number }[] = [
   { from: 1238, to: SECONDS, src: WINTER, vol: 0.035 },   // cierre helado
 ];
 
-// ── float inserts (key "f"): se renderizan ENCIMA del avatar full-screen ──────
-const FLOAT_CUES = CUES.filter((c) => c.key.startsWith("f"));
-const BASE_CUES = CUES.filter((c) => !c.key.startsWith("f"));
+// ── float inserts (kind "float"): se renderizan ENCIMA del avatar full-screen ──
+const FLOAT_CUES = CUES.filter((c) => c.kind === "float");
+const BASE_CUES = CUES.filter((c) => c.kind !== "float");
 const FLOAT_SPANS = FLOAT_CUES.map((c) => ({ s: c.start, e: c.start + c.dur }));
+// el avatar va en PiP esquina solo sobre b-roll/numeros/citas; OCULTO bajo cualquier
+// gráfico full-bleed (diagramas, timeline, barras, proceso, headline, etc.).
+const PIP_KINDS = new Set(["raw", "stat", "quote", "chips"]);
 // aperturas de sección: el avatar ABRE cada acto a pantalla completa unos segundos.
 const OPENER = 5; // s de avatar full al inicio de cada acto
 const OPENER_SPANS = ACTS.filter((t) => t > 0).map((t) => ({ s: t, e: t + OPENER }));
@@ -59,11 +62,13 @@ const OPENER_SPANS = ACTS.filter((t) => t > 0).map((t) => ({ s: t, e: t + OPENER
 function modeAt(t: number): AvatarWindow["mode"] {
   if (t < 53) return "hidden";
   for (const f of FLOAT_SPANS) if (t >= f.s && t < f.e) return "full";
-  for (const a of OPENER_SPANS) if (t >= a.s && t < a.e) return "full";
   const c = BASE_CUES.find((c) => t >= c.start && t < c.start + c.dur);
+  // un gráfico full-bleed (diagrama/timeline/barras/proceso/headline/etc.) SIEMPRE
+  // oculta el avatar, aunque caiga en una apertura de acto (si no, lo taparía).
+  if (c && !PIP_KINDS.has(c.kind)) return "hidden";
+  for (const a of OPENER_SPANS) if (t >= a.s && t < a.e) return "full"; // apertura → full
   if (!c) return "full"; // hueco → habla full
-  if (/^[dij]/.test(c.key)) return "hidden"; // diagram/impact/journey = full-bleed
-  return "cornerTR"; // raw/stat/quote → PiP sobre el b-roll
+  return "cornerTR"; // raw/stat/quote/chips → PiP sobre el b-roll
 }
 function buildAvatarWindows(): AvatarWindow[] {
   // muestreo en todas las fronteras (starts/ends de cues + spans + actos)
