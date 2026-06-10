@@ -106,7 +106,8 @@ for (const b of beats) {
 const warnings = [];
 // solapamiento de ventanas de cue
 const cueBeats = beats.filter((b) => b.kind && b.kind !== "talk");
-const sorted = [...cueBeats].sort((a, b) => a.start - b.start);
+// floats son overlay INTENCIONAL sobre el avatar full → no cuentan como solape
+const sorted = [...cueBeats].filter((b) => b.kind !== "float").sort((a, b) => a.start - b.start);
 for (let i = 1; i < sorted.length; i++) {
   const prevEnd = sorted[i - 1].start + sorted[i - 1].dur;
   if (sorted[i].start < prevEnd - 1e-6) {
@@ -229,6 +230,14 @@ function renderEl(b) {
         (b.accent ? ` accent=${j(b.accent)}` : ``) +
         ` waypoints={${j(b.waypoints || [])}} />`
       );
+    case "float":
+      return (
+        `<FloatingInsert durationInFrames={d} src=${j(b.src)}` +
+        (b.side ? ` side=${j(b.side)}` : ``) +
+        (b.kicker ? ` kicker=${j(b.kicker)}` : ``) +
+        (b.hue ? ` hue=${j(b.hue)}` : ``) +
+        ` />`
+      );
     default:
       return null; // talk
   }
@@ -264,6 +273,7 @@ if (kinds.has("diagram")) imports.push(`import { AvatarPresentation } from "./sc
 if (kinds.has("stat")) imports.push(`import { StatBig } from "./scenes/StatBig";`);
 if (kinds.has("impact")) imports.push(`import { ImpactReveal } from "./scenes/ImpactReveal";`);
 if (kinds.has("journey")) imports.push(`import { JourneyCanvas } from "./scenes/JourneyCanvas";`);
+if (kinds.has("float")) imports.push(`import { FloatingInsert } from "./scenes/FloatingInsert";`);
 const palLine = usedPal.size
   ? `\nconst ${[...usedPal].map((t) => `${t} = ${palTok[t]}`).join(", ")};\n`
   : "";

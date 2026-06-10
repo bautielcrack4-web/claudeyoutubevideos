@@ -39,8 +39,15 @@ if (pref) {
   const img = fs.readdirSync("public/img").filter((f) => f.startsWith(pref) || f.startsWith("dg_"));
   const vid = fs.existsSync("public/vid") ? fs.readdirSync("public/vid").filter((f) => f.startsWith(pref)) : [];
   items.push(...img.map((f) => `img/${f}`), ...vid.map((f) => `vid/${f}`));
+  // footage REAL: fotos de archivo (public/real/*) + video de stock (public/broll/*)
+  if (fs.existsSync("public/real"))
+    items.push(...fs.readdirSync("public/real").filter((f) => /\.(jpg|jpeg|png|webp)$/i.test(f)).map((f) => `real/${f}`));
+  if (fs.existsSync("public/broll"))
+    items.push(...fs.readdirSync("public/broll").filter((f) => /\.(mp4|jpg|jpeg|png)$/i.test(f)).map((f) => `broll/${f}`));
 } else {
   items.push("img", "vid");
+  if (fs.existsSync("public/real")) items.push("real");
+  if (fs.existsSync("public/broll")) items.push("broll");
 }
 fs.writeFileSync("_assets_list.txt", items.join("\n"));
 console.log(`empaquetando ${items.length} entradas → ${tar} ...`);
