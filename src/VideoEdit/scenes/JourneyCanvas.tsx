@@ -76,7 +76,8 @@ export const JourneyCanvas: React.FC<{
   if (frame < arr[0]) {
     // entrada: arranca un poco alejada mirando el primer nodo
     const e = easeIO(interpolate(frame, [0, arr[0]], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }));
-    camX = waypoints[0].x; camY = waypoints[0].y; camS = lerp(travelScale * 0.85, focusScale, e);
+    // entra "wide" (llega a travelScale); el punch-in lo hace el dwell → sin pop al posarse
+    camX = waypoints[0].x; camY = waypoints[0].y; camS = lerp(travelScale * 0.85, travelScale, e);
   } else if (frame >= endStart) {
     // salida: pull-back para ver el recorrido entero
     const e = easeIO(interpolate(frame, [endStart, endEnd], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }));
@@ -98,11 +99,15 @@ export const JourneyCanvas: React.FC<{
       camY = lerp(waypoints[i].y, waypoints[Math.min(n - 1, i + 1)].y, look);
       camS = interpolate(la, [0, sec(0.4), dwell], [travelScale, focusScale, focusScale * 1.02], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.out(Easing.cubic) });
     } else {
-      // VIAJE de i → i+1
+      // VIAJE de i → i+1 — CONTINUO con el dwell (sin saltos):
+      // · la posición arranca desde la anticipación del dwell (0.12) y llega a 1.0
+      // · el zoom sale de focusScale y baja monótono a travelScale (llega "wide");
+      //   el próximo dwell hace el punch-in → ni pop de zoom ni snap de posición.
       const tp = easeIO(interpolate(frame, [arr[i] + dwell, arr[i + 1]], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }));
-      camX = lerp(waypoints[i].x, waypoints[i + 1].x, tp);
-      camY = lerp(waypoints[i].y, waypoints[i + 1].y, tp);
-      camS = lerp(focusScale, travelScale, Math.sin(tp * Math.PI));
+      const prog = lerp(0.12, 1, tp); // 0.12 = el `look` con el que terminó el dwell
+      camX = lerp(waypoints[i].x, waypoints[i + 1].x, prog);
+      camY = lerp(waypoints[i].y, waypoints[i + 1].y, prog);
+      camS = lerp(focusScale, travelScale, tp);
     }
   }
 
@@ -160,7 +165,7 @@ export const JourneyCanvas: React.FC<{
                 <div style={{ position: "relative", width: cardW, height: cardH, borderRadius: 20 * m.s, overflow: "hidden", border: `${3 * m.s}px solid ${accent}`, boxShadow: `0 ${22 * m.s}px ${50 * m.s}px rgba(0,0,0,0.5)`, background: COLORS.bg2 }}>
                   <Media src={w.image} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
                   <div style={{ position: "absolute", inset: 0, boxShadow: "inset 0 -40px 50px rgba(0,0,0,0.35)" }} />
-                  <div style={{ position: "absolute", top: -14 * m.s, left: -14 * m.s, width: 46 * m.s, height: 46 * m.s, borderRadius: 30 * m.s, background: COLORS.bg0, border: `${3 * m.s}px solid ${accent}`, color: accent, fontSize: 25 * m.s, fontWeight: 900, display: "flex", alignItems: "center", justifyContent: "center" }}>{w.num ?? i + 1}</div>
+                  <div style={{ position: "absolute", top: -14 * m.s, left: -14 * m.s, minWidth: 46 * m.s, height: 46 * m.s, padding: `0 ${13 * m.s}px`, borderRadius: 23 * m.s, background: COLORS.bg0, border: `${3 * m.s}px solid ${accent}`, color: accent, fontSize: 24 * m.s, fontWeight: 900, display: "flex", alignItems: "center", justifyContent: "center", whiteSpace: "nowrap", boxSizing: "border-box" }}>{w.num ?? i + 1}</div>
                 </div>
                 {w.label && <div style={{ marginTop: 14 * m.s, fontSize: 33 * m.s, fontWeight: 800, color: COLORS.text, textAlign: "center" }}>{w.label}</div>}
                 {w.sub && <div style={{ marginTop: 3, fontSize: 21 * m.s, fontWeight: 600, color: COLORS.textSoft, textAlign: "center" }}>{w.sub}</div>}
