@@ -38,6 +38,7 @@ export const RawShot: React.FC<{
       imageBlur={blur}
       imageDarken={darken}
       zoom={zoom}
+      noReveal
       contentStyle={{ alignItems: "flex-start", justifyContent: "flex-start" }}
     >
       {kicker && (

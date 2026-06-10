@@ -6,8 +6,8 @@ import {
   spring,
   staticFile,
   AbsoluteFill,
+  OffthreadVideo,
 } from "remotion";
-import { Video } from "@remotion/media";
 import { COLORS, FONT_STACK, SPRING_SOFT, SPRING_SNAPPY, sec } from "../theme";
 import { Media } from "../components/Media";
 import { TechBackground } from "../components/TechBackground";
@@ -224,7 +224,7 @@ export const AvatarPresentation: React.FC<{
         }}
       >
         {avatar ? (
-          <Video
+          <OffthreadVideo
             src={staticFile(avatar)}
             trimBefore={avatarFrom}
             muted

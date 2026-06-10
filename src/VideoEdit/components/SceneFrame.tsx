@@ -25,6 +25,7 @@ export const SceneFrame: React.FC<{
   imageBlur?: number;
   imageDarken?: number;
   imageTint?: string;
+  noReveal?: boolean; // RawShot: HARD-CUT, sin fade/blur de entrada NI salida (regla del nicho)
 }> = ({
   durationInFrames,
   children,
@@ -39,10 +40,16 @@ export const SceneFrame: React.FC<{
   imageBlur,
   imageDarken,
   imageTint,
+  noReveal = false,
 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const { opacity, scale, blur } = useReveal(frame, fps, durationInFrames);
+  const reveal = useReveal(frame, fps, durationInFrames);
+  // noReveal = corte duro: opacidad plena, sin scale-spring ni blur de transición.
+  // Se mantiene el Ken-Burns interno (cam), que NO es una transición sino movimiento vivo.
+  const opacity = noReveal ? 1 : reveal.opacity;
+  const scale = noReveal ? 1 : reveal.scale;
+  const blur = noReveal ? 0 : reveal.blur;
   const cam = kenBurns(frame, durationInFrames, zoom[0], zoom[1]);
 
   // parallax 2.5D: deriva de perspectiva muy sutil → la foto se siente con profundidad
