@@ -1,0 +1,1810 @@
+{
+  "video": "hipos",
+  "avatar": "hipos_opt.mp4",
+  "beats": [
+    {
+      "id": "hip_c001",
+      "start": 0,
+      "dur": 4.75,
+      "kind": "raw",
+      "src": "vid/hip_c001.mp4",
+      "hue": "cold",
+      "gen": {
+        "type": "clip",
+        "image": "hip_c001",
+        "prompt": "the hippo slowly rises, water dripping, ripples spreading across the murky river",
+        "frames": 110
+      },
+      "kicker": "Río Magdalena, Colombia"
+    },
+    {
+      "id": "i002",
+      "start": 4.75,
+      "dur": 3.6,
+      "kind": "impact",
+      "image": "img/hip_im_hook.png",
+      "setup": "Pablo Escobar trajo 4. Hoy son",
+      "impact": "MÁS DE 200",
+      "impactAccent": "danger",
+      "hitAt": 1.1,
+      "boom": 2
+    },
+    {
+      "id": "hip_p003",
+      "start": 8.35,
+      "dur": 3.35,
+      "kind": "raw",
+      "src": "img/hip_p003.png",
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "hip_p003",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a faded vintage 1980s photo of Pablo Escobar standing in front of a lavish hacienda with exotic animals, sun-faded colors, archival snapshot. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio portrait, cinematic lighting, overly saturated, cartoon, CGI, 3D render, watermark, logo, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style."
+      }
+    },
+    {
+      "id": "hip_p004",
+      "start": 11.7,
+      "dur": 3.35,
+      "kind": "raw",
+      "src": "img/hip_p004.png",
+      "hue": "cold",
+      "gen": {
+        "type": "image",
+        "name": "hip_p004",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a group of more than a dozen hippos crowded along a Colombian riverbank seen from a distance, overcast tropical light. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio product photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, dramatic shadows, watermark, logo overlay, fantasy style, illustration."
+      }
+    },
+    {
+      "id": "hip_c005",
+      "start": 15.05,
+      "dur": 4.47,
+      "kind": "raw",
+      "src": "vid/hip_c005.mp4",
+      "hue": "red",
+      "gen": {
+        "type": "clip",
+        "image": "hip_c005",
+        "prompt": "the hippo lunges forward with open jaws, big splash of muddy water",
+        "frames": 100
+      },
+      "kicker": "Atacan pescadores"
+    },
+    {
+      "id": "hip_p006",
+      "start": 19.52,
+      "dur": 3.08,
+      "kind": "raw",
+      "src": "img/hip_p006.png",
+      "hue": "red",
+      "gen": {
+        "type": "image",
+        "name": "hip_p006",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of dead fish floating belly-up at the edge of a green algae-covered river, environmental damage documentary photo. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, cute mascot, anthropomorphic, watermark, logo, fantasy style, illustration, extra limbs, distorted anatomy."
+      },
+      "kicker": "Contaminan el agua"
+    },
+    {
+      "id": "i007",
+      "start": 22.6,
+      "dur": 3.4,
+      "kind": "impact",
+      "image": "img/hip_im_kill80.png",
+      "setup": "Y el gobierno acaba de decidir",
+      "impact": "MATAR A 80",
+      "impactAccent": "danger",
+      "hitAt": 1,
+      "boom": 1
+    },
+    {
+      "id": "hip_p008",
+      "start": 26,
+      "dur": 3.35,
+      "kind": "raw",
+      "src": "img/hip_p008.png",
+      "hue": "red",
+      "gen": {
+        "type": "image",
+        "name": "hip_p008",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of two hippos fighting in churning muddy water, spray flying, dramatic wildlife documentary frame. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio product photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, dramatic shadows, watermark, logo overlay, fantasy style, illustration."
+      }
+    },
+    {
+      "id": "hip_p009",
+      "start": 29.35,
+      "dur": 3.63,
+      "kind": "raw",
+      "src": "img/hip_p009.png",
+      "hue": "cold",
+      "gen": {
+        "type": "image",
+        "name": "hip_p009",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a lone fisherman in a small wooden canoe on a wide tropical river at dawn, nets in hand, misty water. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio product photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, dramatic shadows, watermark, logo overlay, fantasy style, illustration."
+      },
+      "kicker": "La peor invasión de Sudamérica"
+    },
+    {
+      "id": "hip_p010",
+      "start": 33,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p010.png",
+      "hue": "cold",
+      "gen": {
+        "type": "image",
+        "name": "hip_p010",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a wide aerial view of the Magdalena river winding through green Colombian lowlands, brown water, tropical vegetation, overcast. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio product photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, dramatic shadows, watermark, logo overlay, fantasy style, illustration."
+      },
+      "kicker": "1.500 km de río"
+    },
+    {
+      "id": "hip_c011",
+      "start": 40,
+      "dur": 7,
+      "kind": "raw",
+      "src": "vid/hip_c011.mp4",
+      "hue": "cold",
+      "gen": {
+        "type": "clip",
+        "image": "hip_c011",
+        "prompt": "the heavy hippo lumbers slowly out of the water onto the muddy grass",
+        "frames": 110
+      }
+    },
+    {
+      "id": "hip_p012",
+      "start": 47,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p012.png",
+      "hue": "cold",
+      "gen": {
+        "type": "image",
+        "name": "hip_p012",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a weathered paper map of Colombia with the Magdalena river highlighted in blue running south to north, marker annotations. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio product photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, dramatic shadows, watermark, logo overlay, fantasy style, illustration."
+      },
+      "kicker": "El 2º río más importante"
+    },
+    {
+      "id": "s013",
+      "start": 54,
+      "dur": 4,
+      "kind": "stat",
+      "value": 200,
+      "prefix": "+",
+      "label": "hipopótamos salvajes en Colombia",
+      "eyebrow": "Hoy, en 2026",
+      "accent": "danger",
+      "hue": "red"
+    },
+    {
+      "id": "hip_p014",
+      "start": 58,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p014.png",
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "hip_p014",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of the entrance gate of Hacienda Napoles with a small replica airplane mounted above the gate, faded 1980s look. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio product photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, dramatic shadows, watermark, logo overlay, fantasy style, illustration."
+      },
+      "kicker": "Hacienda Nápoles"
+    },
+    {
+      "id": "hip_p015",
+      "start": 65,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p015.png",
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "hip_p015",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a vast green estate seen from above with a private airstrip, a lake and scattered buildings, tropical Colombian countryside, sun-faded. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio product photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, dramatic shadows, watermark, logo overlay, fantasy style, illustration."
+      },
+      "kicker": "3.000 hectáreas"
+    },
+    {
+      "id": "hip_c016",
+      "start": 72,
+      "dur": 7,
+      "kind": "raw",
+      "src": "vid/hip_c016.mp4",
+      "hue": "cold",
+      "gen": {
+        "type": "clip",
+        "image": "hip_c016",
+        "prompt": "gentle ripples, one hippo opens its mouth in a wide yawn",
+        "frames": 100
+      }
+    },
+    {
+      "id": "hip_p017",
+      "start": 79,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p017.png",
+      "hue": "cold",
+      "gen": {
+        "type": "image",
+        "name": "hip_p017",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of dense riverside jungle vegetation reflected in still brown water, Colombian tropical wetland, muted natural light. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio product photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, dramatic shadows, watermark, logo overlay, fantasy style, illustration."
+      }
+    },
+    {
+      "id": "hip_p018",
+      "start": 86,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p018.png",
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "hip_p018",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a worn scientific clipboard with hippo population count numbers and a hippo silhouette stamp, research desk. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio product photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, dramatic shadows, watermark, logo overlay, fantasy style, illustration."
+      }
+    },
+    {
+      "id": "hip_p019",
+      "start": 93,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p019.png",
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "hip_p019",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a Colombian riverside village with simple houses near the brown water, overcast tropical day, casual snapshot. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio product photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, dramatic shadows, watermark, logo overlay, fantasy style, illustration."
+      }
+    },
+    {
+      "id": "hip_p020",
+      "start": 100,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p020.png",
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "hip_p020",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of hippo tracks and churned mud along a tropical riverbank, large footprints, documentary detail. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio product photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, dramatic shadows, watermark, logo overlay, fantasy style, illustration."
+      }
+    },
+    {
+      "id": "hip_c021",
+      "start": 107,
+      "dur": 7,
+      "kind": "raw",
+      "src": "vid/hip_c021.mp4",
+      "hue": "cold",
+      "gen": {
+        "type": "clip",
+        "image": "hip_c021",
+        "prompt": "the hippo drifts slowly, nostrils flaring, gentle ripples",
+        "frames": 100
+      }
+    },
+    {
+      "id": "hip_p022",
+      "start": 114,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p022.png",
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "hip_p022",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a wide melancholic shot of the Magdalena river at golden hour, lush banks, calm water. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio product photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, dramatic shadows, watermark, logo overlay, fantasy style, illustration."
+      }
+    },
+    {
+      "id": "hip_p023",
+      "start": 146,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p023.png",
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "hip_p023",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of the famous bullet-riddled vintage white Cadillac displayed as a trophy at Hacienda Napoles, full of bullet holes, faded photo. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio product photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, dramatic shadows, watermark, logo overlay, fantasy style, illustration."
+      },
+      "kicker": "El Cadillac a balazos"
+    },
+    {
+      "id": "hip_p024",
+      "start": 153,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p024.png",
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "hip_p024",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a 1980s private zoo enclosure with giraffes and zebras in a tropical Colombian setting, sun-faded archival snapshot. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, cute mascot, anthropomorphic, watermark, logo, fantasy style, illustration, extra limbs, distorted anatomy."
+      }
+    },
+    {
+      "id": "hip_p025",
+      "start": 160,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p025.png",
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "hip_p025",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of an old concrete bullring arena overgrown with weeds, abandoned, tropical climate, faded. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio product photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, dramatic shadows, watermark, logo overlay, fantasy style, illustration."
+      }
+    },
+    {
+      "id": "hip_p026",
+      "start": 167,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p026.png",
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "hip_p026",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a vintage collection of classic cars in an open shed at a luxury estate, 1980s, faded colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio product photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, dramatic shadows, watermark, logo overlay, fantasy style, illustration."
+      }
+    },
+    {
+      "id": "hip_c027",
+      "start": 174,
+      "dur": 7,
+      "kind": "raw",
+      "src": "vid/hip_c027.mp4",
+      "hue": "amber",
+      "gen": {
+        "type": "clip",
+        "image": "hip_c027",
+        "prompt": "ground crew move crates near the plane, dust drifting in the headlights",
+        "frames": 110
+      },
+      "kicker": "Aviones que volvían de Miami"
+    },
+    {
+      "id": "hip_p028",
+      "start": 181,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p028.png",
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "hip_p028",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of stacks of cocaine bricks wrapped in plastic inside an aircraft hold, gritty 1980s smuggling documentary. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio product photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, dramatic shadows, watermark, logo overlay, fantasy style, illustration."
+      },
+      "kicker": "Iban llenos de droga al norte"
+    },
+    {
+      "id": "hip_p029",
+      "start": 188,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p029.png",
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "hip_p029",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of wooden shipping crates stamped with stencil letters in a dim warehouse, exotic animal transport boxes, gritty. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio product photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, dramatic shadows, watermark, logo overlay, fantasy style, illustration."
+      },
+      "kicker": "Y volvían llenos de animales"
+    },
+    {
+      "id": "hip_p030",
+      "start": 195,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p030.png",
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "hip_p030",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a sedated hippopotamus lying in a large reinforced crate inside an aircraft cargo hold, veterinary documentary. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, cute mascot, anthropomorphic, watermark, logo, fantasy style, illustration, extra limbs, distorted anatomy."
+      }
+    },
+    {
+      "id": "hip_p031",
+      "start": 202,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p031.png",
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "hip_p031",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of exotic animals mixed together, elephants, zebras, ostriches, flamingos in a lush private estate, faded 1980s color. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, cute mascot, anthropomorphic, watermark, logo, fantasy style, illustration, extra limbs, distorted anatomy."
+      }
+    },
+    {
+      "id": "s032",
+      "start": 209,
+      "dur": 4,
+      "kind": "stat",
+      "value": 100000,
+      "prefix": "$",
+      "label": "costaba cada hipopótamo en los 80",
+      "eyebrow": "Una fortuna",
+      "accent": "amber",
+      "hue": "amber"
+    },
+    {
+      "id": "hip_c033",
+      "start": 213,
+      "dur": 7,
+      "kind": "raw",
+      "src": "vid/hip_c033.mp4",
+      "hue": "cold",
+      "gen": {
+        "type": "clip",
+        "image": "hip_c033",
+        "prompt": "the hippos slide into the water, big splashes, ripples spreading",
+        "frames": 100
+      },
+      "kicker": "Un macho, tres hembras"
+    },
+    {
+      "id": "hip_p034",
+      "start": 220,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p034.png",
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "hip_p034",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of an old yellowed invoice document with handwritten figures around 100000 dollars for animal purchase, aged paper. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio product photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, dramatic shadows, watermark, logo overlay, fantasy style, illustration."
+      }
+    },
+    {
+      "id": "hip_p035",
+      "start": 227,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p035.png",
+      "hue": "cold",
+      "gen": {
+        "type": "image",
+        "name": "hip_p035",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a single hippo grazing on bright green Colombian grass beside a pond, tropical warm afternoon, casual snapshot. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio product photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, dramatic shadows, watermark, logo overlay, fantasy style, illustration."
+      }
+    },
+    {
+      "id": "hip_p036",
+      "start": 234,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p036.png",
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "hip_p036",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of Pablo Escobar appearing in an old Forbes-style magazine page about the richest men, faded print archival. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio portrait, cinematic lighting, overly saturated, cartoon, CGI, 3D render, watermark, logo, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style."
+      },
+      "kicker": "Para él, una propina"
+    },
+    {
+      "id": "i037",
+      "start": 272,
+      "dur": 3.4,
+      "kind": "impact",
+      "image": "img/hip_im_death.png",
+      "setup": "2 de diciembre de 1993",
+      "impact": "ESCOBAR MUERE",
+      "impactAccent": "danger",
+      "hitAt": 1,
+      "boom": 2
+    },
+    {
+      "id": "hip_p038",
+      "start": 275.4,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p038.png",
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "hip_p038",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a faded newspaper front page in Spanish announcing the death of a drug lord, old print, grainy black and white. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio product photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, dramatic shadows, watermark, logo overlay, fantasy style, illustration."
+      }
+    },
+    {
+      "id": "hip_p039",
+      "start": 282.4,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p039.png",
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "hip_p039",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of the Hacienda Napoles mansion abandoned and looted, broken windows, weeds growing through cracks, decay, overcast. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio product photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, dramatic shadows, watermark, logo overlay, fantasy style, illustration."
+      },
+      "kicker": "Confiscada y abandonada"
+    },
+    {
+      "id": "hip_p040",
+      "start": 289.4,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p040.png",
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "hip_p040",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of empty rusted zoo cages with open doors overgrown by tropical vegetation, abandoned animal enclosures. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio product photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, dramatic shadows, watermark, logo overlay, fantasy style, illustration."
+      }
+    },
+    {
+      "id": "hip_p041",
+      "start": 296.4,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p041.png",
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "hip_p041",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a looted ransacked luxury room with graffiti and debris, abandoned narco mansion, gritty. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio product photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, dramatic shadows, watermark, logo overlay, fantasy style, illustration."
+      },
+      "kicker": "Saqueada por bandas"
+    },
+    {
+      "id": "hip_c042",
+      "start": 303.4,
+      "dur": 7,
+      "kind": "raw",
+      "src": "vid/hip_c042.mp4",
+      "hue": "amber",
+      "gen": {
+        "type": "clip",
+        "image": "hip_c042",
+        "prompt": "handlers guide the elephant up the ramp, dust in the air",
+        "frames": 100
+      }
+    },
+    {
+      "id": "hip_p043",
+      "start": 310.4,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p043.png",
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "hip_p043",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a lone starving giraffe in a neglected enclosure with dry ground, sad abandoned zoo, muted colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, cute mascot, anthropomorphic, watermark, logo, fantasy style, illustration, extra limbs, distorted anatomy."
+      },
+      "kicker": "Las jirafas no sobrevivieron"
+    },
+    {
+      "id": "hip_p044",
+      "start": 317.4,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p044.png",
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "hip_p044",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of an empty zebra enclosure with a broken fence, abandoned, tropical overgrowth, faded. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio product photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, dramatic shadows, watermark, logo overlay, fantasy style, illustration."
+      }
+    },
+    {
+      "id": "hip_p045",
+      "start": 324.4,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p045.png",
+      "hue": "cold",
+      "gen": {
+        "type": "image",
+        "name": "hip_p045",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a hippo standing alone in a half-drained algae-covered concrete pond, neglected, overcast. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio product photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, dramatic shadows, watermark, logo overlay, fantasy style, illustration."
+      },
+      "kicker": "Los hipopótamos: otro problema"
+    },
+    {
+      "id": "s046",
+      "start": 331.4,
+      "dur": 3.8,
+      "kind": "stat",
+      "value": 3000,
+      "suffix": " kg",
+      "label": "pesa un hipopótamo adulto",
+      "eyebrow": "Imposible de mover",
+      "accent": "amber",
+      "hue": "amber"
+    },
+    {
+      "id": "hip_p047",
+      "start": 335.2,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p047.png",
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "hip_p047",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a heavy crane and reinforced cage prepared to move a large animal, complex logistics, documentary. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio product photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, dramatic shadows, watermark, logo overlay, fantasy style, illustration."
+      }
+    },
+    {
+      "id": "hip_p048",
+      "start": 342.2,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p048.png",
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "hip_p048",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of rusted broken fence wire collapsed into tall grass beside a stream, abandoned barrier, tropical overgrowth. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio product photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, dramatic shadows, watermark, logo overlay, fantasy style, illustration."
+      },
+      "kicker": "Las cercas cediendo"
+    },
+    {
+      "id": "hip_c049",
+      "start": 349.2,
+      "dur": 7,
+      "kind": "raw",
+      "src": "vid/hip_c049.mp4",
+      "hue": "cold",
+      "gen": {
+        "type": "clip",
+        "image": "hip_c049",
+        "prompt": "the hippos walk slowly along the trail, tails swaying",
+        "frames": 110
+      },
+      "kicker": "Caminaron hacia afuera"
+    },
+    {
+      "id": "hip_p050",
+      "start": 356.2,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p050.png",
+      "hue": "cold",
+      "gen": {
+        "type": "image",
+        "name": "hip_p050",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a small jungle stream connecting to a wider river, brown water flowing through green banks, Colombian lowlands. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio product photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, dramatic shadows, watermark, logo overlay, fantasy style, illustration."
+      }
+    },
+    {
+      "id": "hip_p051",
+      "start": 363.2,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p051.png",
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "hip_p051",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of overgrown weeds erasing an old dirt road at an abandoned estate, slow decay, tropical, muted. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio product photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, dramatic shadows, watermark, logo overlay, fantasy style, illustration."
+      },
+      "kicker": "Una erosión lenta"
+    },
+    {
+      "id": "hip_c052",
+      "start": 370.2,
+      "dur": 7,
+      "kind": "raw",
+      "src": "vid/hip_c052.mp4",
+      "hue": "cold",
+      "gen": {
+        "type": "clip",
+        "image": "hip_c052",
+        "prompt": "the hippo wades into the wider river, ripples spreading outward",
+        "frames": 100
+      }
+    },
+    {
+      "id": "hip_p053",
+      "start": 454,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p053.png",
+      "hue": "cold",
+      "gen": {
+        "type": "image",
+        "name": "hip_p053",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of the wide warm Magdalena river at golden hour, lush banks, calm brown water, paradise-like tropical scene. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio product photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, dramatic shadows, watermark, logo overlay, fantasy style, illustration."
+      },
+      "kicker": "El paraíso del hipopótamo"
+    },
+    {
+      "id": "hip_c054",
+      "start": 461,
+      "dur": 7,
+      "kind": "raw",
+      "src": "vid/hip_c054.mp4",
+      "hue": "cold",
+      "gen": {
+        "type": "clip",
+        "image": "hip_c054",
+        "prompt": "the hippo surfaces, water sheeting off its back, slow ripples",
+        "frames": 110
+      }
+    },
+    {
+      "id": "d055",
+      "start": 468,
+      "dur": 9,
+      "kind": "diagram",
+      "eyebrow": "Por qué explotó la población",
+      "hue": "cold",
+      "accent": "accent",
+      "slides": [
+        {
+          "image": "img/hip_dg_55_1.png",
+          "title": "En África: freno natural"
+        },
+        {
+          "image": "img/hip_dg_55_2.png",
+          "title": "En Colombia: sin frenos"
+        }
+      ]
+    },
+    {
+      "id": "hip_p056",
+      "start": 477,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p056.png",
+      "hue": "cold",
+      "gen": {
+        "type": "image",
+        "name": "hip_p056",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a mother hippo with a tiny newborn calf in shallow water close beside her, tender wildlife documentary frame. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, cute mascot, anthropomorphic, watermark, logo, fantasy style, illustration, extra limbs, distorted anatomy."
+      },
+      "kicker": "Crías cada año, no cada 3"
+    },
+    {
+      "id": "hip_p057",
+      "start": 484,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p057.png",
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "hip_p057",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a biologist in field clothes observing hippos through binoculars from a riverbank, documentary. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio portrait, cinematic lighting, overly saturated, cartoon, CGI, 3D render, watermark, logo, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style."
+      }
+    },
+    {
+      "id": "j058",
+      "start": 491,
+      "dur": 18,
+      "kind": "journey",
+      "eyebrow": "La invasión, año por año",
+      "title": "De 4 a más de 200",
+      "accent": "#B0503C",
+      "worldImage": "img/hip_jy_river_world.png",
+      "waypoints": [
+        {
+          "x": 500,
+          "y": 820,
+          "z": 0.7,
+          "image": "img/hip_jy_2007.png",
+          "label": "2007 · ~20",
+          "num": "1",
+          "dwell": 2.6,
+          "travel": 1.6
+        },
+        {
+          "x": 1550,
+          "y": 480,
+          "z": 0.45,
+          "image": "img/hip_jy_2014.png",
+          "label": "2014 · ~40",
+          "num": "2",
+          "dwell": 2.6,
+          "travel": 1.8
+        },
+        {
+          "x": 2650,
+          "y": 1020,
+          "z": 0.8,
+          "image": "img/hip_jy_2020.png",
+          "label": "2020 · ~90",
+          "num": "3",
+          "dwell": 2.6,
+          "travel": 1.8
+        },
+        {
+          "x": 3750,
+          "y": 520,
+          "z": 0.5,
+          "image": "img/hip_jy_2026.png",
+          "label": "2026 · +200",
+          "num": "4",
+          "dwell": 3,
+          "travel": 1.8
+        }
+      ]
+    },
+    {
+      "id": "s059",
+      "start": 509,
+      "dur": 4,
+      "kind": "stat",
+      "value": 3,
+      "suffix": " años",
+      "label": "edad reproductiva en Colombia (en África: 7-9)",
+      "eyebrow": "La mitad del tiempo",
+      "accent": "danger",
+      "hue": "red"
+    },
+    {
+      "id": "hip_c060",
+      "start": 513,
+      "dur": 7,
+      "kind": "raw",
+      "src": "vid/hip_c060.mp4",
+      "hue": "cold",
+      "gen": {
+        "type": "clip",
+        "image": "hip_c060",
+        "prompt": "slow aerial drift over the crowded hippos, slight water movement",
+        "frames": 110
+      }
+    },
+    {
+      "id": "hip_p061",
+      "start": 520,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p061.png",
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "hip_p061",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of two scientific journal covers titled Biological Conservation and Scientific Reports on a researcher desk. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio product photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, dramatic shadows, watermark, logo overlay, fantasy style, illustration."
+      }
+    },
+    {
+      "id": "hip_p062",
+      "start": 527,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p062.png",
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "hip_p062",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of hippos at night caught by a wildlife camera trap, greenish night-vision glow, eyes reflecting, grainy. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, cute mascot, anthropomorphic, watermark, logo, fantasy style, illustration, extra limbs, distorted anatomy."
+      },
+      "kicker": "Nocturnos, difíciles de contar"
+    },
+    {
+      "id": "hip_p063",
+      "start": 534,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p063.png",
+      "hue": "red",
+      "gen": {
+        "type": "image",
+        "name": "hip_p063",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a hand-drawn exponential curve on aged paper climbing steeply, ominous projection graphic. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio product photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, dramatic shadows, watermark, logo overlay, fantasy style, illustration."
+      }
+    },
+    {
+      "id": "i064",
+      "start": 541,
+      "dur": 3.8,
+      "kind": "impact",
+      "image": "img/hip_im_proj7000.png",
+      "setup": "Si nadie hace nada, para 2050",
+      "impact": "SERÁN 7.000",
+      "impactAccent": "danger",
+      "hitAt": 1.1,
+      "boom": 2
+    },
+    {
+      "id": "hip_p065",
+      "start": 544.8,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p065.png",
+      "hue": "cold",
+      "gen": {
+        "type": "image",
+        "name": "hip_p065",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a wide shot of the Magdalena river basin with green wetlands stretching to the horizon, overcast tropical sky. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio product photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, dramatic shadows, watermark, logo overlay, fantasy style, illustration."
+      },
+      "kicker": "Colonización de toda la cuenca"
+    },
+    {
+      "id": "hip_c066",
+      "start": 698,
+      "dur": 7,
+      "kind": "raw",
+      "src": "vid/hip_c066.mp4",
+      "hue": "cold",
+      "gen": {
+        "type": "clip",
+        "image": "hip_c066",
+        "prompt": "the hippo opens its mouth in a slow huge yawn, water dripping from teeth",
+        "frames": 100
+      },
+      "kicker": "Parecen inofensivos"
+    },
+    {
+      "id": "hip_c067",
+      "start": 705,
+      "dur": 7,
+      "kind": "raw",
+      "src": "vid/hip_c067.mp4",
+      "hue": "amber",
+      "gen": {
+        "type": "clip",
+        "image": "hip_c067",
+        "prompt": "the hippo chews grass slowly, head moving, night ambience",
+        "frames": 100
+      }
+    },
+    {
+      "id": "s068",
+      "start": 712,
+      "dur": 3.8,
+      "kind": "stat",
+      "value": 40,
+      "suffix": " kg",
+      "label": "de vegetación come por noche, cada uno",
+      "eyebrow": "Una máquina de procesar",
+      "accent": "amber",
+      "hue": "amber"
+    },
+    {
+      "id": "d069",
+      "start": 715.8,
+      "dur": 10,
+      "kind": "diagram",
+      "eyebrow": "Cómo envenena el río",
+      "hue": "red",
+      "accent": "danger",
+      "slides": [
+        {
+          "image": "img/hip_dg_69_1.png",
+          "title": "1. Come en la orilla"
+        },
+        {
+          "image": "img/hip_dg_69_2.png",
+          "title": "2. Devuelve todo al agua"
+        },
+        {
+          "image": "img/hip_dg_69_3.png",
+          "title": "3. Algas y cero oxígeno"
+        }
+      ]
+    },
+    {
+      "id": "hip_p070",
+      "start": 725.8,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p070.png",
+      "hue": "red",
+      "gen": {
+        "type": "image",
+        "name": "hip_p070",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a tropical river surface covered in thick green algae bloom, stagnant water, polluted wetland, overcast. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio product photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, dramatic shadows, watermark, logo overlay, fantasy style, illustration."
+      },
+      "kicker": "Florecen las algas"
+    },
+    {
+      "id": "hip_p071",
+      "start": 732.8,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p071.png",
+      "hue": "red",
+      "gen": {
+        "type": "image",
+        "name": "hip_p071",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of dead fish floating belly-up at the edge of a green algae-covered river, environmental damage photo. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, cute mascot, anthropomorphic, watermark, logo, fantasy style, illustration, extra limbs, distorted anatomy."
+      }
+    },
+    {
+      "id": "hip_c072",
+      "start": 739.8,
+      "dur": 7,
+      "kind": "raw",
+      "src": "vid/hip_c072.mp4",
+      "hue": "cold",
+      "gen": {
+        "type": "clip",
+        "image": "hip_c072",
+        "prompt": "particles drift in the murky green water, slow current",
+        "frames": 100
+      }
+    },
+    {
+      "id": "hip_p073",
+      "start": 746.8,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p073.png",
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "hip_p073",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a Colombian artisanal fisherman holding up a nearly empty net with two small fish, disappointed, riverbank. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio portrait, cinematic lighting, overly saturated, cartoon, CGI, 3D render, watermark, logo, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style."
+      },
+      "kicker": "Antes 30 kg, hoy 2"
+    },
+    {
+      "id": "hip_p074",
+      "start": 753.8,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p074.png",
+      "hue": "cold",
+      "gen": {
+        "type": "image",
+        "name": "hip_p074",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of native bocachico fish and a striped catfish laid on a wooden table, river fish documentary photo. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, cute mascot, anthropomorphic, watermark, logo, fantasy style, illustration, extra limbs, distorted anatomy."
+      }
+    },
+    {
+      "id": "hip_p075",
+      "start": 760.8,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p075.png",
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "hip_p075",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of an empty fish market stall by a river, few fish, struggling local economy, overcast. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio product photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, dramatic shadows, watermark, logo overlay, fantasy style, illustration."
+      },
+      "kicker": "Pueblos que viven del río"
+    },
+    {
+      "id": "hip_p076",
+      "start": 767.8,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p076.png",
+      "hue": "cold",
+      "gen": {
+        "type": "image",
+        "name": "hip_p076",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a Caribbean manatee swimming in clouded river water, gentle endangered animal, murky documentary frame. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, cute mascot, anthropomorphic, watermark, logo, fantasy style, illustration, extra limbs, distorted anatomy."
+      },
+      "kicker": "El manatí, en peligro crítico"
+    },
+    {
+      "id": "hip_p077",
+      "start": 774.8,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p077.png",
+      "hue": "cold",
+      "gen": {
+        "type": "image",
+        "name": "hip_p077",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a capybara standing on a muddy riverbank looking displaced, tropical wetland, overcast. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, cute mascot, anthropomorphic, watermark, logo, fantasy style, illustration, extra limbs, distorted anatomy."
+      }
+    },
+    {
+      "id": "hip_p078",
+      "start": 781.8,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p078.png",
+      "hue": "cold",
+      "gen": {
+        "type": "image",
+        "name": "hip_p078",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a Magdalena river turtle on a sandy bank near eggs, fragile native species, documentary. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, cute mascot, anthropomorphic, watermark, logo, fantasy style, illustration, extra limbs, distorted anatomy."
+      }
+    },
+    {
+      "id": "hip_c079",
+      "start": 788.8,
+      "dur": 7,
+      "kind": "raw",
+      "src": "vid/hip_c079.mp4",
+      "hue": "amber",
+      "gen": {
+        "type": "clip",
+        "image": "hip_c079",
+        "prompt": "muddy water laps at the eroded crumbling bank",
+        "frames": 100
+      },
+      "kicker": "Orillas pisoteadas"
+    },
+    {
+      "id": "hip_p080",
+      "start": 795.8,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p080.png",
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "hip_p080",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a drying wetland with cracked mud and dead aquatic plants, ecosystem collapse, muted tones. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio product photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, dramatic shadows, watermark, logo overlay, fantasy style, illustration."
+      }
+    },
+    {
+      "id": "hip_p081",
+      "start": 802.8,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p081.png",
+      "hue": "cold",
+      "gen": {
+        "type": "image",
+        "name": "hip_p081",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of endemic aquatic plants disappearing from a riverbank, sparse vegetation, documentary detail, muted. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio product photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, dramatic shadows, watermark, logo overlay, fantasy style, illustration."
+      },
+      "kicker": "Plantas que solo existen acá"
+    },
+    {
+      "id": "i082",
+      "start": 935,
+      "dur": 3.8,
+      "kind": "impact",
+      "image": "img/hip_im_deaths500.png",
+      "setup": "En África matan más que los leones",
+      "impact": "500 MUERTES AL AÑO",
+      "impactAccent": "danger",
+      "hitAt": 1.1,
+      "boom": 2
+    },
+    {
+      "id": "hip_c083",
+      "start": 938.8,
+      "dur": 7,
+      "kind": "raw",
+      "src": "vid/hip_c083.mp4",
+      "hue": "red",
+      "gen": {
+        "type": "clip",
+        "image": "hip_c083",
+        "prompt": "the hippo charges forward fast, mud flying, very threatening",
+        "frames": 90
+      },
+      "kicker": "30 km/h en tierra"
+    },
+    {
+      "id": "s084",
+      "start": 945.8,
+      "dur": 3.6,
+      "kind": "stat",
+      "value": 30,
+      "suffix": " km/h",
+      "label": "alcanza un hipopótamo en tierra",
+      "eyebrow": "Y son impredecibles",
+      "accent": "danger",
+      "hue": "red"
+    },
+    {
+      "id": "hip_p085",
+      "start": 949.4,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p085.png",
+      "hue": "red",
+      "gen": {
+        "type": "image",
+        "name": "hip_p085",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of an overturned small wooden fishing canoe near a riverbank, abandoned, ripples, ominous documentary scene. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio product photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, dramatic shadows, watermark, logo overlay, fantasy style, illustration."
+      }
+    },
+    {
+      "id": "hip_p086",
+      "start": 956.4,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p086.png",
+      "hue": "cold",
+      "gen": {
+        "type": "image",
+        "name": "hip_p086",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a rural Colombian dirt road at dawn with a large hippo crossing it, houses in the background, surreal everyday scene. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio product photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, dramatic shadows, watermark, logo overlay, fantasy style, illustration."
+      },
+      "kicker": "Cruzan la carretera"
+    },
+    {
+      "id": "hip_p087",
+      "start": 963.4,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p087.png",
+      "hue": "red",
+      "gen": {
+        "type": "image",
+        "name": "hip_p087",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of hand-painted warning signs in Spanish about hippos near a riverside village, danger sign, tropical setting. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio product photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, dramatic shadows, watermark, logo overlay, fantasy style, illustration."
+      }
+    },
+    {
+      "id": "hip_c088",
+      "start": 970.4,
+      "dur": 7,
+      "kind": "raw",
+      "src": "vid/hip_c088.mp4",
+      "hue": "amber",
+      "gen": {
+        "type": "clip",
+        "image": "hip_c088",
+        "prompt": "the hippo shifts its weight, ears twitching, slow menacing presence",
+        "frames": 100
+      }
+    },
+    {
+      "id": "hip_p089",
+      "start": 977.4,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p089.png",
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "hip_p089",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of fishermen of the Magdalena medio gathered talking with worried faces on a riverbank at dawn, group photo. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio portrait, cinematic lighting, overly saturated, cartoon, CGI, 3D render, watermark, logo, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style."
+      }
+    },
+    {
+      "id": "hip_p090",
+      "start": 984.4,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p090.png",
+      "hue": "red",
+      "gen": {
+        "type": "image",
+        "name": "hip_p090",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a child running away from a large hippo seen in the distance in a rural backyard, tense documentary moment. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio portrait, cinematic lighting, overly saturated, cartoon, CGI, 3D render, watermark, logo, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style."
+      },
+      "kicker": "Chicos que salen corriendo"
+    },
+    {
+      "id": "hip_p091",
+      "start": 991.4,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p091.png",
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "hip_p091",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a small town sign reading Puerto Triunfo on a rural Colombian road, everyday documentary photo. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio product photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, dramatic shadows, watermark, logo overlay, fantasy style, illustration."
+      },
+      "kicker": "Doradal · Puerto Triunfo"
+    },
+    {
+      "id": "hip_p092",
+      "start": 998.4,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p092.png",
+      "hue": "cold",
+      "gen": {
+        "type": "image",
+        "name": "hip_p092",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a hippo resting in a roadside ditch beside a rural highway, locals passing, surreal everyday scene, overcast. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio product photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, dramatic shadows, watermark, logo overlay, fantasy style, illustration."
+      },
+      "kicker": "Ya es parte de la vida diaria"
+    },
+    {
+      "id": "hip_p093",
+      "start": 1110,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p093.png",
+      "hue": "cold",
+      "gen": {
+        "type": "image",
+        "name": "hip_p093",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a tourist boat full of people taking photos of a hippo in a lake near Hacienda Napoles, sunny tourism scene. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio portrait, cinematic lighting, overly saturated, cartoon, CGI, 3D render, watermark, logo, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style."
+      },
+      "kicker": "Atracción turística"
+    },
+    {
+      "id": "hip_p094",
+      "start": 1117,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p094.png",
+      "hue": "cold",
+      "gen": {
+        "type": "image",
+        "name": "hip_p094",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a small town restaurant sign with a cartoon hippo logo painted on it, rural Colombian street, casual snapshot. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio product photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, dramatic shadows, watermark, logo overlay, fantasy style, illustration."
+      }
+    },
+    {
+      "id": "hip_p095",
+      "start": 1124,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p095.png",
+      "hue": "cold",
+      "gen": {
+        "type": "image",
+        "name": "hip_p095",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of children near a riverbank pointing happily at a distant hippo, rural Colombian village, warm afternoon. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio portrait, cinematic lighting, overly saturated, cartoon, CGI, 3D render, watermark, logo, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style."
+      },
+      "kicker": "Para ellos, vecinos"
+    },
+    {
+      "id": "hip_p096",
+      "start": 1131,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p096.png",
+      "hue": "cold",
+      "gen": {
+        "type": "image",
+        "name": "hip_p096",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a souvenir stall selling hippo plush toys and trinkets in a Colombian town, tourism documentary. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio product photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, dramatic shadows, watermark, logo overlay, fantasy style, illustration."
+      }
+    },
+    {
+      "id": "d097",
+      "start": 1138,
+      "dur": 10,
+      "kind": "diagram",
+      "eyebrow": "Las soluciones que probaron",
+      "hue": "cold",
+      "accent": "cold",
+      "slides": [
+        {
+          "image": "img/hip_dg_97_1.png",
+          "title": "Esterilizar"
+        },
+        {
+          "image": "img/hip_dg_97_2.png",
+          "title": "Anticonceptivos por dardo"
+        },
+        {
+          "image": "img/hip_dg_97_3.png",
+          "title": "Trasladar al exterior"
+        }
+      ]
+    },
+    {
+      "id": "hip_c098",
+      "start": 1148,
+      "dur": 7,
+      "kind": "raw",
+      "src": "vid/hip_c098.mp4",
+      "hue": "amber",
+      "gen": {
+        "type": "clip",
+        "image": "hip_c098",
+        "prompt": "vets move around the sedated hippo carefully, equipment handling",
+        "frames": 110
+      },
+      "kicker": "$20.000 por esterilización"
+    },
+    {
+      "id": "hip_p099",
+      "start": 1155,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p099.png",
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "hip_p099",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a wildlife officer aiming a dart rifle toward a hippo in water from a boat, conservation operation. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio portrait, cinematic lighting, overly saturated, cartoon, CGI, 3D render, watermark, logo, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style."
+      }
+    },
+    {
+      "id": "hip_p100",
+      "start": 1162,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p100.png",
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "hip_p100",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a huge reinforced steel crate with a hippo inside being lifted by a crane for transport, logistics scene. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, cute mascot, anthropomorphic, watermark, logo, fantasy style, illustration, extra limbs, distorted anatomy."
+      },
+      "kicker": "$200.000 por traslado"
+    },
+    {
+      "id": "hip_p101",
+      "start": 1169,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p101.png",
+      "hue": "cold",
+      "gen": {
+        "type": "image",
+        "name": "hip_p101",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a world map on aged paper with arrows from Colombia to Mexico and India, animal relocation plan graphic. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio product photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, dramatic shadows, watermark, logo overlay, fantasy style, illustration."
+      }
+    },
+    {
+      "id": "hip_p102",
+      "start": 1176,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p102.png",
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "hip_p102",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a frustrated official looking at rising hippo population charts in an office, documentary still. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio portrait, cinematic lighting, overly saturated, cartoon, CGI, 3D render, watermark, logo, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style."
+      },
+      "kicker": "Mientras tanto, se reproducían"
+    },
+    {
+      "id": "hip_p103",
+      "start": 1280,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p103.png",
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "hip_p103",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of an official Colombian government document in Spanish declaring the hippo an invasive species, stamped 2022, aged paper. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio product photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, dramatic shadows, watermark, logo overlay, fantasy style, illustration."
+      },
+      "kicker": "2022: especie invasora"
+    },
+    {
+      "id": "hip_p104",
+      "start": 1287,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p104.png",
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "hip_p104",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a hand-drawn timeline graphic on aged paper from 1981 to 2026 marking key events, archival data graphic. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio product photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, dramatic shadows, watermark, logo overlay, fantasy style, illustration."
+      }
+    },
+    {
+      "id": "i105",
+      "start": 1294,
+      "dur": 3.6,
+      "kind": "impact",
+      "image": "img/hip_im_plan2026.png",
+      "setup": "Y para 2026, lo inevitable",
+      "impact": "UN PLAN DE CONTROL",
+      "impactAccent": "amber",
+      "hitAt": 1,
+      "boom": 1
+    },
+    {
+      "id": "i106",
+      "start": 1321,
+      "dur": 3.8,
+      "kind": "impact",
+      "image": "img/hip_im_euthan.png",
+      "setup": "Por primera vez, sin eufemismos",
+      "impact": "EUTANASIA DE 80",
+      "impactAccent": "danger",
+      "hitAt": 1,
+      "boom": 2
+    },
+    {
+      "id": "hip_p107",
+      "start": 1324.8,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p107.png",
+      "hue": "cold",
+      "gen": {
+        "type": "image",
+        "name": "hip_p107",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of animal rights activists protesting in a Colombian city street with signs in Spanish defending hippos, crowd photo. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio portrait, cinematic lighting, overly saturated, cartoon, CGI, 3D render, watermark, logo, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style."
+      },
+      "kicker": "La reacción: feroz"
+    },
+    {
+      "id": "hip_p108",
+      "start": 1331.8,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p108.png",
+      "hue": "cold",
+      "gen": {
+        "type": "image",
+        "name": "hip_p108",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a handwritten protest sign in Spanish saying the hippos are not guilty, held up at a demonstration, gritty. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio product photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, dramatic shadows, watermark, logo overlay, fantasy style, illustration."
+      }
+    },
+    {
+      "id": "hip_p109",
+      "start": 1338.8,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p109.png",
+      "hue": "cold",
+      "gen": {
+        "type": "image",
+        "name": "hip_p109",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a large protest crowd in Bogota with banners, animal rights demonstration, documentary. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio portrait, cinematic lighting, overly saturated, cartoon, CGI, 3D render, watermark, logo, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style."
+      }
+    },
+    {
+      "id": "hip_p110",
+      "start": 1345.8,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p110.png",
+      "hue": "cold",
+      "gen": {
+        "type": "image",
+        "name": "hip_p110",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a phone screen showing an international online petition to save the hippos, social media documentary. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio product photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, dramatic shadows, watermark, logo overlay, fantasy style, illustration."
+      },
+      "kicker": "Cartas de todo el mundo"
+    },
+    {
+      "id": "hip_p111",
+      "start": 1352.8,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p111.png",
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "hip_p111",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a lawyer holding legal documents outside a Colombian courthouse about animal rights, documentary still. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio portrait, cinematic lighting, overly saturated, cartoon, CGI, 3D render, watermark, logo, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style."
+      }
+    },
+    {
+      "id": "hip_p112",
+      "start": 1359.8,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p112.png",
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "hip_p112",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of scientists pointing at charts and river data in a field office discussing hippo control, documentary still. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio portrait, cinematic lighting, overly saturated, cartoon, CGI, 3D render, watermark, logo, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style."
+      },
+      "kicker": "La ciencia: datos contundentes"
+    },
+    {
+      "id": "s113",
+      "start": 1366.8,
+      "dur": 4,
+      "kind": "stat",
+      "value": 1500,
+      "prefix": "+",
+      "label": "ejemplares en menos de 2 décadas si no se actúa",
+      "eyebrow": "La proyección",
+      "accent": "danger",
+      "hue": "red"
+    },
+    {
+      "id": "hip_p114",
+      "start": 1370.8,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p114.png",
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "hip_p114",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of weary Magdalena fishermen standing by their boats demanding action, worried determined faces, overcast. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio portrait, cinematic lighting, overly saturated, cartoon, CGI, 3D render, watermark, logo, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style."
+      },
+      "kicker": "Los pescadores: acción urgente"
+    },
+    {
+      "id": "hip_c115",
+      "start": 1377.8,
+      "dur": 7,
+      "kind": "raw",
+      "src": "vid/hip_c115.mp4",
+      "hue": "cold",
+      "gen": {
+        "type": "clip",
+        "image": "hip_c115",
+        "prompt": "the hippos drift slowly, only eyes above water, gentle current",
+        "frames": 110
+      },
+      "kicker": "Indiferentes al debate"
+    },
+    {
+      "id": "hip_p116",
+      "start": 1384.8,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p116.png",
+      "hue": "cold",
+      "gen": {
+        "type": "image",
+        "name": "hip_p116",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of hippos at dusk expanding further along a new stretch of river, exploring new territory, documentary. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio product photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, dramatic shadows, watermark, logo overlay, fantasy style, illustration."
+      },
+      "kicker": "Se expanden hacia el norte"
+    },
+    {
+      "id": "hip_p117",
+      "start": 1391.8,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p117.png",
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "hip_p117",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a distant town reporting a hippo sighting for the first time, rural Colombia, surprised locals, overcast. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio portrait, cinematic lighting, overly saturated, cartoon, CGI, 3D render, watermark, logo, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style."
+      }
+    },
+    {
+      "id": "j118",
+      "start": 1398.8,
+      "dur": 16,
+      "kind": "journey",
+      "eyebrow": "Cómo un capricho se volvió crisis",
+      "title": "1981 → hoy",
+      "accent": "#A9794A",
+      "worldImage": "img/hip_jy_time_world.png",
+      "waypoints": [
+        {
+          "x": 500,
+          "y": 800,
+          "z": 0.65,
+          "image": "img/hip_jy_t_import.png",
+          "label": "1981 · Llegan 4",
+          "num": "1",
+          "dwell": 2.4,
+          "travel": 1.5
+        },
+        {
+          "x": 1500,
+          "y": 500,
+          "z": 0.45,
+          "image": "img/hip_jy_t_death.png",
+          "label": "1993 · Muere Escobar",
+          "num": "2",
+          "dwell": 2.4,
+          "travel": 1.6
+        },
+        {
+          "x": 2550,
+          "y": 1000,
+          "z": 0.8,
+          "image": "img/hip_jy_t_escape.png",
+          "label": "~2000 · Escapan",
+          "num": "3",
+          "dwell": 2.4,
+          "travel": 1.6
+        },
+        {
+          "x": 3600,
+          "y": 540,
+          "z": 0.5,
+          "image": "img/hip_jy_t_today.png",
+          "label": "2026 · +200",
+          "num": "4",
+          "dwell": 2.8,
+          "travel": 1.6
+        }
+      ]
+    },
+    {
+      "id": "hip_p119",
+      "start": 1414.8,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p119.png",
+      "hue": "cold",
+      "gen": {
+        "type": "image",
+        "name": "hip_p119",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of the Hacienda Napoles today turned into a colorful theme park with visitors, tourism documentary photo. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio portrait, cinematic lighting, overly saturated, cartoon, CGI, 3D render, watermark, logo, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style."
+      },
+      "kicker": "Hoy: un parque temático"
+    },
+    {
+      "id": "hip_p120",
+      "start": 1421.8,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p120.png",
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "hip_p120",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a faded portrait of Pablo Escobar dissolving into archival texture, somber legacy imagery, sun-faded. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio portrait, cinematic lighting, overly saturated, cartoon, CGI, 3D render, watermark, logo, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style."
+      },
+      "kicker": "Su legado más resistente"
+    },
+    {
+      "id": "i121",
+      "start": 1428.8,
+      "dur": 4,
+      "kind": "impact",
+      "image": "img/hip_im_legacy4.png",
+      "setup": "No fue su fortuna ni su cartel. Fueron",
+      "impact": "CUATRO HIPOPÓTAMOS",
+      "impactAccent": "amber",
+      "hitAt": 1.2,
+      "boom": 0
+    },
+    {
+      "id": "hip_c122",
+      "start": 1432.8,
+      "dur": 7,
+      "kind": "raw",
+      "src": "vid/hip_c122.mp4",
+      "hue": "cold",
+      "gen": {
+        "type": "clip",
+        "image": "hip_c122",
+        "prompt": "the tiny calf bobs up next to the mother, gentle ripples, dawn glow",
+        "frames": 120
+      },
+      "kicker": "Y nace otra cría"
+    },
+    {
+      "id": "hip_p123",
+      "start": 1439.8,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p123.png",
+      "hue": "cold",
+      "gen": {
+        "type": "image",
+        "name": "hip_p123",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a mother hippo nudging her newborn calf in calm dawn water, tender, soft golden light, documentary. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, cute mascot, anthropomorphic, watermark, logo, fantasy style, illustration, extra limbs, distorted anatomy."
+      }
+    },
+    {
+      "id": "hip_p124",
+      "start": 1446.8,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p124.png",
+      "hue": "cold",
+      "gen": {
+        "type": "image",
+        "name": "hip_p124",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of lawyers and activists debating outside a building while a hippo floats in a river, split worlds, documentary. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio portrait, cinematic lighting, overly saturated, cartoon, CGI, 3D render, watermark, logo, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style."
+      },
+      "kicker": "Mientras los humanos discuten"
+    },
+    {
+      "id": "hip_c125",
+      "start": 1453.8,
+      "dur": 7,
+      "kind": "raw",
+      "src": "vid/hip_c125.mp4",
+      "hue": "amber",
+      "gen": {
+        "type": "clip",
+        "image": "hip_c125",
+        "prompt": "the river glows at sunset, hippo silhouettes drift slowly, water shimmering",
+        "frames": 120
+      },
+      "kicker": "La invasión se acelera"
+    },
+    {
+      "id": "hip_p126",
+      "start": 1460.8,
+      "dur": 7,
+      "kind": "raw",
+      "src": "img/hip_p126.png",
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "hip_p126",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a single hippo silhouette under a tropical sunset on the Magdalena river, lonely reflective closing frame. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio product photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, dramatic shadows, watermark, logo overlay, fantasy style, illustration."
+      },
+      "kicker": "Un final sin escribir"
+    }
+  ]
+}

@@ -122,6 +122,8 @@ for (const b of beats) {
   if (b.src) refs.push(b.src);
   if (b.image && b.kind !== "diagram") refs.push(b.image);
   for (const s of b.slides || []) if (s.image) refs.push(s.image);
+  if (b.worldImage) refs.push(b.worldImage);
+  for (const wp of b.waypoints || []) if (wp.image) refs.push(wp.image);
 }
 const willGen = new Set([
   ...[...images.keys()].map((n) => `img/${n}.png`),
@@ -196,6 +198,37 @@ function renderEl(b) {
         ` />`
       );
     }
+    case "stat":
+      return (
+        `<StatBig durationInFrames={d} value={${b.value}}` +
+        (b.prefix ? ` prefix=${j(b.prefix)}` : ``) +
+        (b.suffix ? ` suffix=${j(b.suffix)}` : ``) +
+        (b.decimals != null ? ` decimals={${b.decimals}}` : ``) +
+        (b.label ? ` label=${j(b.label)}` : ``) +
+        (b.eyebrow ? ` eyebrow=${j(b.eyebrow)}` : ``) +
+        (b.accent ? ` accent=${j(b.accent)}` : ``) +
+        (b.hue ? ` hue=${j(b.hue)}` : ``) +
+        ` />`
+      );
+    case "impact":
+      return (
+        `<ImpactReveal durationInFrames={d} image=${j(b.image)} impact=${j(b.impact)}` +
+        (b.setup ? ` setup=${j(b.setup)}` : ``) +
+        (b.impactAccent ? ` impactAccent=${j(b.impactAccent)}` : ``) +
+        (b.hitAt != null ? ` hitAt={${b.hitAt}}` : ``) +
+        (b.boom != null ? ` boom={${b.boom}}` : ``) +
+        (b.darken != null ? ` darken={${b.darken}}` : ``) +
+        ` />`
+      );
+    case "journey":
+      return (
+        `<JourneyCanvas durationInFrames={d}` +
+        (b.eyebrow ? ` eyebrow=${j(b.eyebrow)}` : ``) +
+        (b.title ? ` title=${j(b.title)}` : ``) +
+        (b.worldImage ? ` worldImage=${j(b.worldImage)}` : ``) +
+        (b.accent ? ` accent=${j(b.accent)}` : ``) +
+        ` waypoints={${j(b.waypoints || [])}} />`
+      );
     default:
       return null; // talk
   }
@@ -228,6 +261,9 @@ if (kinds.has("quote")) imports.push(`import { KineticQuote, parseQuote } from "
 if (kinds.has("chips")) imports.push(`import { ChipsCluster } from "./scenes/ReframeContent";`);
 if (kinds.has("splitlist")) imports.push(`import { SplitList } from "./scenes/SplitList";`);
 if (kinds.has("diagram")) imports.push(`import { AvatarPresentation } from "./scenes/AvatarPresentation";`);
+if (kinds.has("stat")) imports.push(`import { StatBig } from "./scenes/StatBig";`);
+if (kinds.has("impact")) imports.push(`import { ImpactReveal } from "./scenes/ImpactReveal";`);
+if (kinds.has("journey")) imports.push(`import { JourneyCanvas } from "./scenes/JourneyCanvas";`);
 const palLine = usedPal.size
   ? `\nconst ${[...usedPal].map((t) => `${t} = ${palTok[t]}`).join(", ")};\n`
   : "";
