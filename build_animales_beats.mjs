@@ -171,7 +171,7 @@ export function authorBeats(ctx) {
   HEAD("sin tocar las plantas", [{ t: "Camina" }, { t: "entre" }, { t: "las" }, { t: "plantas" }, { t: "comiendo" }, { t: "bichos", good: true }], { eyebrow: "No rasca la tierra como la gallina", hue: "amber", bg: "image", image: "img/p_garden_src.png" });
   // agua
   PROC("el pato necesita agua", [
-    { title: "Un recipiente con agua", desc: "una tina, una pileta o un balde cortado", image: "img/p_water.png" },
+    { title: "Un recipiente con agua", desc: "una tina, una pileta o un balde cortado", image: "img/p_water_src.png" },
     { title: "Mete la cabeza y chapotea", desc: "no necesita laguna", image: "img/p_garden_src.png" },
     { title: "El agua sucia riega las plantas", desc: "llena de nutrientes", image: "img/p_egg.png" },
   ], { title: "Eso sí: necesita agua", eyebrow: "Todo se conecta", hue: "cold", accent: "cold", _dur: 8 });
