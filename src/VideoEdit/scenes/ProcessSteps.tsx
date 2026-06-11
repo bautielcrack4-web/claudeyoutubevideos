@@ -108,10 +108,12 @@ export const ProcessSteps: React.FC<{
   for (let k = 0; k < n; k++) if (frame >= reveals[k]) active = k;
   const endStart = lastAt + sec(1.3);
   const endEnd = lastAt + sec(2.6);
-  const HOLD = sec(0.85); // cuánto sostiene el zoom sobre el nodo recién llegado
-  const Z_PUNCH = 1.46; // gran zoom al aterrizar
-  const Z_HOLD = 1.24; // zoom sostenido
-  const Z_TRAVEL = 1.08; // pull-back mientras viaja por la línea
+  // ★ SUAVE (feedback usuario jun 2026): zoom y rebote contenidos (antes 1.46/1.24/1.08
+  // = brusco, mismo "raro" del JourneyCanvas viejo). Movimiento limpio y continuo.
+  const HOLD = sec(0.95);
+  const Z_PUNCH = 1.2;
+  const Z_HOLD = 1.12;
+  const Z_TRAVEL = 1.0;
 
   let fx: number, fy: number, z: number, camBlur = 0;
   const la = frame - reveals[active]; // tiempo local desde que llegó el nodo activo
@@ -125,14 +127,14 @@ export const ProcessSteps: React.FC<{
     // ATERRIZAJE: la cámara EMPUJA hacia adentro a la vez que la imagen aparece
     // (zoom y aparición coinciden), llega al gran zoom y luego decae a sostenido.
     fx = pts[active].x; fy = pts[active].y;
-    z = interpolate(la, [0, sec(0.3), sec(0.62), HOLD], [Z_TRAVEL, Z_PUNCH, Z_HOLD, Z_HOLD], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.out(Easing.cubic) });
+    z = interpolate(la, [0, sec(0.5), HOLD], [Z_TRAVEL, Z_PUNCH, Z_HOLD], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.inOut(Easing.cubic) });
   } else {
-    // VIAJE por la línea hacia el siguiente nodo, con pull-back + MOTION BLUR
+    // VIAJE por la línea hacia el siguiente nodo, con leve pull-back + blur sutil
     const tp = easeIO(interpolate(frame, [reveals[active] + HOLD, reveals[active + 1]], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }));
     fx = lerp(pts[active].x, pts[active + 1].x, tp);
     fy = lerp(pts[active].y, pts[active + 1].y, tp);
-    z = lerp(Z_HOLD, Z_TRAVEL, Math.sin(tp * Math.PI)); // baja a la mitad del viaje y sube al llegar
-    camBlur = Math.sin(tp * Math.PI) * 5; // se desenfoca al pasar rápido entre nodos
+    z = lerp(Z_HOLD, Z_TRAVEL, Math.sin(tp * Math.PI));
+    camBlur = Math.sin(tp * Math.PI) * 1.8; // desenfoque sutil al pasar (antes 5px)
   }
   const camTransform = `scale(${z}) translate(${CXC - fx}px, ${CYC - fy}px)`;
 
@@ -165,7 +167,8 @@ export const ProcessSteps: React.FC<{
               pathLength={1}
               strokeDasharray={1}
               strokeDashoffset={1 - lineDraw}
-              style={{ filter: `drop-shadow(0 0 9px ${C}88)` }}
+              opacity={0.8}
+              style={{ filter: `drop-shadow(0 0 4px ${C}55)` }}
             />
           </svg>
 
@@ -174,19 +177,18 @@ export const ProcessSteps: React.FC<{
             const s = spring({ frame: frame - t0, fps, config: SPRING_SNAPPY });
             // opacidad rápida e independiente del spring → visible cuando llega el zoom
             const appear = interpolate(frame - t0, [sec(0.04), sec(0.34)], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
-            const floatY = Math.sin(frame / 28 + i * 1.7) * 9;
-            const floatX = Math.cos(frame / 34 + i) * 5;
-            const tilt = Math.sin(frame / 46 + i) * 5; // rotateY sutil → 3D
-            const popScale = interpolate(s, [0, 1], [0.4, 1]);
+            const floatY = Math.sin(frame / 34 + i * 1.7) * 5;
+            const floatX = Math.cos(frame / 40 + i) * 3;
+            const tilt = Math.sin(frame / 52 + i) * 3; // rotateY muy sutil → 3D leve
+            const popScale = interpolate(s, [0, 1], [0.8, 1]); // entra suave (antes 0.4 = pop fuerte)
             const isActive = i === active && frame < endStart;
-            const emphasis = isActive ? 1.06 : 1;
+            const emphasis = isActive ? 1.04 : 1;
             const p = pts[i];
-            // DEPTH OF FIELD: el nodo activo nítido; los demás con blur + desaturados
-            // (foco selectivo de lente real). En el plano abierto final, todo nítido.
+            // DEPTH OF FIELD suave: activo nítido; el resto blur leve + leve desaturado.
             const focused = isActive || wide;
-            const dofBlur = focused ? 0 : 4.5;
-            const dofSat = focused ? 1 : 0.66;
-            const dofDim = focused ? 1 : 0.82;
+            const dofBlur = focused ? 0 : 2.8;
+            const dofSat = focused ? 1 : 0.8;
+            const dofDim = focused ? 1 : 0.9;
 
             return (
               <div

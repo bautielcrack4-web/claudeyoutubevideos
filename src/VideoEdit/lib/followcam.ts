@@ -28,10 +28,12 @@ type CamOpts = {
 function posAt(o: CamOpts, frame: number): { fx: number; fy: number; z: number } {
   const { fps, targets, cx, cy } = o;
   const sec = (s: number) => Math.round(s * fps);
+  // ★ SUAVE (feedback usuario jun 2026): zoom-punch y rebote contenidos (antes
+  // zPunch 1.4 / zHold 1.2 / zTravel 1.06 = brusco y robótico). Movimiento limpio.
   const hold = sec(o.hold ?? 0.8);
-  const zPunch = o.zPunch ?? 1.4;
-  const zHold = o.zHold ?? 1.2;
-  const zTravel = o.zTravel ?? 1.06;
+  const zPunch = o.zPunch ?? 1.2;
+  const zHold = o.zHold ?? 1.12;
+  const zTravel = o.zTravel ?? 1.0;
   const zoomOut = o.zoomOut ?? 1.0;
   const n = targets.length;
   if (n === 0) return { fx: cx, fy: cy, z: 1 };
@@ -49,9 +51,9 @@ function posAt(o: CamOpts, frame: number): { fx: number; fy: number; z: number }
     return { fx: lerp(targets[active].x, cx, e), fy: lerp(targets[active].y, cy, e), z: lerp(zHold, zoomOut, e) };
   }
   if (la < hold || active === n - 1) {
-    // aterrizaje con OVERSHOOT: zoom pasa el punto y rebota (cámara real, no robot)
-    const z = interpolate(la, [0, sec(0.26), sec(0.46), sec(0.7), hold], [zTravel, zPunch, zHold * 0.978, zHold * 1.006, zHold], {
-      extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.out(Easing.cubic),
+    // aterrizaje SUAVE: leve overshoot apenas perceptible (antes rebotaba feo)
+    const z = interpolate(la, [0, sec(0.34), sec(0.6), hold], [zTravel, zPunch, zHold * 1.003, zHold], {
+      extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.inOut(Easing.cubic),
     });
     return { fx: targets[active].x, fy: targets[active].y, z };
   }
@@ -75,7 +77,8 @@ export function followCam(opts: CamOpts): { transform: string; active: number; z
   const prev = posAt(opts, frame - 1);
   // velocidad en px de pantalla (incluye el zoom) → motion blur direccional breve
   const vel = Math.hypot((cur.fx - prev.fx) * cur.z, (cur.fy - prev.fy) * cur.z) + Math.abs(cur.z - prev.z) * 600;
-  const blur = Math.min(7, Math.max(0, vel * 0.05 - 0.3));
+  // motion-blur SUTIL (antes hasta 7px = smeary/raro): tope 2.5px, rampa más alta
+  const blur = Math.min(2.5, Math.max(0, vel * 0.03 - 0.5));
 
   return {
     transform: `scale(${cur.z}) translate(${cx - cur.fx}px, ${cy - cur.fy}px)`,
