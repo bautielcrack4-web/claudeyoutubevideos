@@ -54,6 +54,12 @@ export const AgedDoc: React.FC<{
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const C = TONES[accent];
+  // ★ legibilidad: sobre FOTO el texto va CREMA + scrim oscuro + sombra fuerte
+  // (la tinta marrón se camuflaba con la foto). Sobre papel (sin image) = tinta oscura.
+  const onImage = !!image;
+  const inkColor = onImage ? COLORS.bg0 : "#3A2C16";
+  const eyebrowColor = onImage ? "rgba(245,237,211,0.85)" : "rgba(58,44,22,0.6)";
+  const textShadow = onImage ? "0 2px 14px rgba(0,0,0,0.9), 0 1px 3px rgba(0,0,0,0.95)" : "none";
 
   const paperIn = interpolate(frame, [0, sec(0.7)], [0, 1], { extrapolateRight: "clamp" });
   const kb = 1.05 + (frame / Math.max(1, durationInFrames)) * 0.08;
@@ -98,11 +104,15 @@ export const AgedDoc: React.FC<{
           {/* foxing / stain vignette + fibre lines for an aged feel */}
           <div style={{ position: "absolute", inset: 0, background: "radial-gradient(110% 110% at 50% 40%, transparent 55%, rgba(80,55,20,0.34) 100%)" }} />
           <div style={{ position: "absolute", inset: 0, opacity: 0.5, background: "repeating-linear-gradient(91deg, rgba(90,65,25,0.05) 0 1px, transparent 1px 7px)" }} />
+          {/* ★ scrim oscuro SOLO sobre foto, para que el texto crema se lea siempre */}
+          {onImage && (
+            <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(20,15,8,0.34) 0%, rgba(20,15,8,0.6) 100%)" }} />
+          )}
 
           {/* text block on the page */}
-          <div style={{ position: "absolute", inset: 0, padding: "78px 86px", color: "#3A2C16" }}>
+          <div style={{ position: "absolute", inset: 0, padding: "78px 86px", color: inkColor, textShadow }}>
             {eyebrow && (
-              <div style={{ letterSpacing: 5, fontSize: 18, fontWeight: 700, textTransform: "uppercase", color: "rgba(58,44,22,0.6)", opacity: headSpring, marginBottom: 14 }}>
+              <div style={{ letterSpacing: 5, fontSize: 18, fontWeight: 700, textTransform: "uppercase", color: eyebrowColor, opacity: headSpring, marginBottom: 14 }}>
                 {eyebrow}
               </div>
             )}
