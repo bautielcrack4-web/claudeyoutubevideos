@@ -45,9 +45,9 @@ export const JourneyCanvas: React.FC<{
   eyebrow?: string;
   title?: string;
   accent?: string;
-  focusScale?: number; // zoom al posarse (default 1.35)
-  travelScale?: number; // zoom durante el viaje (default 0.92)
-}> = ({ durationInFrames, waypoints, worldImage, eyebrow, title, accent = COLORS.accent, focusScale = 1.35, travelScale = 0.92 }) => {
+  focusScale?: number; // zoom al posarse (default 1.18 — suave)
+  travelScale?: number; // zoom durante el viaje (default 0.98 — suave)
+}> = ({ durationInFrames, waypoints, worldImage, eyebrow, title, accent = COLORS.accent, focusScale = 1.18, travelScale = 0.98 }) => {
   const frame = useCurrentFrame();
   const { width, height } = useVideoConfig();
   const CX = width * 0.5, CY = height * 0.54;
@@ -93,29 +93,31 @@ export const JourneyCanvas: React.FC<{
     const dwell = sec(waypoints[i].dwell ?? 2.4);
     const la = frame - arr[i];
     if (la < dwell || i === n - 1) {
-      // POSADO en nodo i (con leve push-in + anticipación al final del dwell)
-      const look = i < n - 1 ? interpolate(la, [dwell - sec(0.45), dwell], [0, 0.12], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }) : 0;
+      // POSADO en nodo i (push-in suave + leve anticipación al final del dwell).
+      // camS sostiene focusScale SIN micro-creep (antes *1.02 → pop al arrancar el viaje).
+      const look = i < n - 1 ? interpolate(la, [dwell - sec(0.5), dwell], [0, 0.1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: easeIO }) : 0;
       camX = lerp(waypoints[i].x, waypoints[Math.min(n - 1, i + 1)].x, look);
       camY = lerp(waypoints[i].y, waypoints[Math.min(n - 1, i + 1)].y, look);
-      camS = interpolate(la, [0, sec(0.4), dwell], [travelScale, focusScale, focusScale * 1.02], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.out(Easing.cubic) });
+      camS = interpolate(la, [0, sec(0.55), dwell], [travelScale, focusScale, focusScale], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.inOut(Easing.cubic) });
     } else {
       // VIAJE de i → i+1 — CONTINUO con el dwell (sin saltos):
-      // · la posición arranca desde la anticipación del dwell (0.12) y llega a 1.0
-      // · el zoom sale de focusScale y baja monótono a travelScale (llega "wide");
-      //   el próximo dwell hace el punch-in → ni pop de zoom ni snap de posición.
+      // posición arranca desde la anticipación (0.1) y llega a 1.0; zoom sale de
+      // focusScale y baja suave a travelScale; el próximo dwell hace el push-in.
       const tp = easeIO(interpolate(frame, [arr[i] + dwell, arr[i + 1]], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }));
-      const prog = lerp(0.12, 1, tp); // 0.12 = el `look` con el que terminó el dwell
+      const prog = lerp(0.1, 1, tp);
       camX = lerp(waypoints[i].x, waypoints[i + 1].x, prog);
       camY = lerp(waypoints[i].y, waypoints[i + 1].y, prog);
       camS = lerp(focusScale, travelScale, tp);
     }
   }
 
-  // mapeo mundo→pantalla con parallax por profundidad
-  const df = (z: number) => 0.72 + (z ?? 0.5) * 0.6; // cerca se mueve más
+  // mapeo mundo→pantalla con parallax por profundidad — SUAVE: el diferencial por z
+  // se mantiene chico para que las tarjetas no se muevan/escalen de forma dispar
+  // (eso era lo que se veía "raro"). Profundidad sutil, no caótica.
+  const df = (z: number) => 0.9 + (z ?? 0.5) * 0.2; // 0.9..1.1 (antes 0.72..1.32)
   const map = (w: Waypoint) => {
     const z = w.z ?? 0.5;
-    return { sx: CX + (w.x - camX) * camS * df(z), sy: CY + (w.y - camY) * camS * df(z), s: camS * (0.5 + z * 0.85), z };
+    return { sx: CX + (w.x - camX) * camS * df(z), sy: CY + (w.y - camY) * camS * df(z), s: camS * (0.82 + z * 0.32), z };
   };
   const pts = waypoints.map(map);
   const pathD = smoothPath(pts.map((p) => ({ x: p.sx, y: p.sy })));
@@ -142,10 +144,10 @@ export const JourneyCanvas: React.FC<{
 
       {/* PATH + chispa (SVG en coords de pantalla) */}
       <svg width={width} height={height} style={{ position: "absolute", inset: 0 }}>
-        <defs><filter id="jglow"><feGaussianBlur stdDeviation="5" /></filter></defs>
-        <path d={pathD} fill="none" stroke="rgba(42,38,32,0.16)" strokeWidth={6 * camS} strokeLinecap="round" />
-        <path d={pathD} fill="none" stroke={accent} strokeWidth={5 * camS} strokeLinecap="round" pathLength={1} strokeDasharray={1} strokeDashoffset={1 - reveal} style={{ filter: "url(#jglow)" }} />
-        {/* chispa guía sobre la estela */}
+        <defs><filter id="jglow"><feGaussianBlur stdDeviation="3" /></filter></defs>
+        <path d={pathD} fill="none" stroke="rgba(42,38,32,0.10)" strokeWidth={3 * camS} strokeLinecap="round" />
+        <path d={pathD} fill="none" stroke={accent} strokeWidth={2.4 * camS} strokeLinecap="round" pathLength={1} strokeDasharray={1} strokeDashoffset={1 - reveal} opacity={0.75} />
+        {/* chispa guía sobre la estela — pequeña y sutil */}
         <CometOnPath pts={pts} prog={Math.min(0.999, reveal + 0.04)} color={accent} scale={camS} />
       </svg>
 
@@ -153,13 +155,17 @@ export const JourneyCanvas: React.FC<{
       {waypoints.map((w, i) => {
         const m = pts[i];
         const dist = Math.hypot(m.sx - CX, m.sy - CY);
-        const blur = Math.min(7, Math.max(0, dist / 230 - 0.4)); // rack-focus
-        const dim = interpolate(blur, [0, 6], [1, 0.6]);
-        const appear = interpolate(frame - (arr[i] - sec(0.5)), [0, sec(0.4)], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
-        const float = Math.sin(frame / 30 + i * 1.7) * 6 * m.z;
+        // rack-focus SUAVE: blur tope 4px y rampa larga (antes 7px y saltaba)
+        const blur = Math.min(4, Math.max(0, dist / 300 - 0.5));
+        // entra con fundido (0.6s antes de llegar) y SALE con fundido por distancia
+        // → enter/exit limpios, sin tarjetas lejanas borrosas colgando ni pops
+        const appear = interpolate(frame - (arr[i] - sec(0.6)), [0, sec(0.6)], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: easeIO });
+        const distFade = interpolate(dist, [560, 1000], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+        const dim = appear * distFade;
+        const float = Math.sin(frame / 38 + i * 1.7) * 4 * m.z;
         const cardW = 250 * m.s, cardH = 176 * m.s;
         return (
-          <div key={i} style={{ position: "absolute", left: m.sx, top: m.sy + float, transform: "translate(-50%,-50%)", opacity: appear * dim, filter: `blur(${blur}px)`, zIndex: Math.round(m.z * 100), pointerEvents: "none" }}>
+          <div key={i} style={{ position: "absolute", left: m.sx, top: m.sy + float, transform: "translate(-50%,-50%)", opacity: dim, filter: blur > 0.25 ? `blur(${blur}px)` : undefined, zIndex: Math.round(m.z * 100), pointerEvents: "none" }}>
             {w.image ? (
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
                 <div style={{ position: "relative", width: cardW, height: cardH, borderRadius: 20 * m.s, overflow: "hidden", border: `${3 * m.s}px solid ${accent}`, boxShadow: `0 ${22 * m.s}px ${50 * m.s}px rgba(0,0,0,0.5)`, background: COLORS.bg2 }}>
@@ -206,8 +212,8 @@ const CometOnPath: React.FC<{ pts: { sx: number; sy: number }[]; prog: number; c
   const x = a.sx + (b.sx - a.sx) * t, y = a.sy + (b.sy - a.sy) * t;
   return (
     <g>
-      <circle cx={x} cy={y} r={16 * scale} fill={color} style={{ filter: "url(#jglow)" }} opacity={0.9} />
-      <circle cx={x} cy={y} r={7 * scale} fill="#FFF6E4" />
+      <circle cx={x} cy={y} r={9 * scale} fill={color} style={{ filter: "url(#jglow)" }} opacity={0.45} />
+      <circle cx={x} cy={y} r={4 * scale} fill="#FFF6E4" opacity={0.9} />
     </g>
   );
 };
