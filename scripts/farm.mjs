@@ -13,8 +13,10 @@
 // Uso:
 //   node scripts/farm.mjs <slug> <comp_id> <total_frames> [chunks=24] [prefijoAssets]
 //   ej:  node scripts/farm.mjs fly Fly 43380 24 fl
-// (prefijoAssets opcional: si lo pasás, solo empaqueta img/<pref>* y vid/<pref>* +
-//  los diagramas dg_*; si no, empaqueta img/ y vid/ enteros.)
+// (prefijoAssets opcional:
+//   - "@archivo.txt"  → lista EXPLÍCITA de entradas (rutas relativas a public/, una por línea)
+//   - "pref"          → solo img/<pref>* y vid/<pref>* + diagramas dg_*
+//   - sin pref        → empaqueta img/ y vid/ enteros.)
 import { execSync, execFileSync } from "node:child_process";
 import fs from "node:fs";
 
@@ -34,7 +36,11 @@ for (const f of [avatar, wav]) if (!fs.existsSync(f)) { console.error("falta:", 
 // rutas relativas a public/ (el workflow extrae con -C public)
 let items = [`${slug}_opt.mp4`, `${slug}.wav`];
 if (fs.existsSync("public/sfx")) items.push("sfx"); // camas ambientales + efectos (siempre)
-if (pref) {
+if (pref && pref.startsWith("@")) {
+  // lista EXPLÍCITA de entradas (rutas relativas a public/), una por línea
+  const explicit = fs.readFileSync(pref.slice(1), "utf8").split(/\r?\n/).map((s) => s.trim()).filter(Boolean);
+  items = [...new Set([...items, ...explicit])];
+} else if (pref) {
   // solo lo de este video + diagramas (gpt-image, prefijo dg_)
   const img = fs.readdirSync("public/img").filter((f) => f.startsWith(pref) || f.startsWith("dg_"));
   const vid = fs.existsSync("public/vid") ? fs.readdirSync("public/vid").filter((f) => f.startsWith(pref)) : [];
