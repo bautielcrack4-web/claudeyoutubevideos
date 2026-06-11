@@ -21,7 +21,13 @@ export const ImageBackdrop: React.FC<{
   // <name>_blur.jpg (lo genera preblur.mjs) con blur 0 → el gaussiano sale del path
   // por-frame, pixel-idéntico. Para video (mp4/webm/mov) se mantiene el blur en vivo.
   const isVideo = /\.(mp4|webm|mov)$/i.test(src);
-  const useBaked = blur > 0 && !isVideo;
+  // El hermano horneado _blur.jpg SOLO existe para fotos de public/img (lo hace
+  // preblur.mjs, que SALTA dg_* y _avatar_ref). Para real/ y broll/ (que NO se
+  // pre-blurean) y para diagramas, usamos blur EN VIVO; si no, 404 al buscar el
+  // hermano inexistente y se cae el render.
+  const baseName = src.split("/").pop() || "";
+  const hasBaked = src.includes("img/") && !baseName.startsWith("dg_") && !baseName.startsWith("_avatar_ref");
+  const useBaked = blur > 0 && !isVideo && hasBaked;
   const finalSrc = useBaked ? src.replace(/\.(png|jpe?g)$/i, "_blur.jpg") : src;
   return (
     <AbsoluteFill>
