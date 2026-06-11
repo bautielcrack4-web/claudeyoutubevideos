@@ -1,0 +1,3979 @@
+{
+  "video": "animales",
+  "avatar": "animales_opt.mp4",
+  "end": 1764.36,
+  "beats": [
+    {
+      "id": "im001",
+      "kind": "impact",
+      "image": "img/hk_eggs_price.png",
+      "impact": "el DOBLE que hace un año",
+      "setup": "Doce huevos…",
+      "impactAccent": "danger",
+      "hitAt": 0.9,
+      "boom": 2,
+      "darken": 0.45,
+      "start": 1.83,
+      "dur": 1.99
+    },
+    {
+      "id": "hk_cart",
+      "kind": "raw",
+      "src": "vid/hk_cart_src.mp4",
+      "hue": "red",
+      "gen": {
+        "type": "clip",
+        "image": "hk_cart_src",
+        "prompt": "point of view pushing a half-full shopping cart down a bright supermarket aisle, slow motion",
+        "frames": 90
+      },
+      "start": 3.82,
+      "dur": 1.76
+    },
+    {
+      "id": "hk_eggshelf",
+      "kind": "raw",
+      "src": "img/hk_eggshelf.png",
+      "hue": "red",
+      "kicker": "Mirás el precio",
+      "gen": {
+        "type": "image",
+        "name": "hk_eggshelf",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of rows of egg cartons on a refrigerated supermarket shelf, a small price sign, NO readable text. natural soft outdoor daylight, slightly overcast, muted natural colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 5.58,
+      "dur": 8.34
+    },
+    {
+      "id": "hk_eggs_price",
+      "kind": "raw",
+      "src": "img/hk_eggs_price.png",
+      "hue": "red",
+      "kicker": "Doce huevos, lo que cueste",
+      "gen": {
+        "type": "image",
+        "name": "hk_eggs_price",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a hand reaching for a carton of a dozen eggs on a supermarket shelf, a price tag below, refrigerated dairy aisle, NO readable text, price not legible. indoor fluorescent supermarket lighting, muted colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 13.92,
+      "dur": 5.95
+    },
+    {
+      "id": "hk_meat",
+      "kind": "raw",
+      "src": "img/hk_meat.png",
+      "hue": "red",
+      "kicker": "Lo que cueste",
+      "gen": {
+        "type": "image",
+        "name": "hk_meat",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of packages of fresh ground beef and a whole raw chicken in a refrigerated supermarket meat case, price stickers, NO readable text. indoor fluorescent supermarket lighting, muted colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 19.87,
+      "dur": 7.77
+    },
+    {
+      "id": "hk_cheese",
+      "kind": "raw",
+      "src": "img/hk_cheese.png",
+      "hue": "red",
+      "gen": {
+        "type": "image",
+        "name": "hk_cheese",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a block of fresh white cheese in plastic wrap on a refrigerated supermarket shelf, NO readable text. natural soft outdoor daylight, slightly overcast, muted natural colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 27.64,
+      "dur": 4.28
+    },
+    {
+      "id": "hk_scanner",
+      "kind": "raw",
+      "src": "vid/hk_scanner_src.mp4",
+      "hue": "red",
+      "gen": {
+        "type": "clip",
+        "image": "hk_scanner_src",
+        "prompt": "close up of a barcode scanner beeping groceries at a supermarket checkout, items sliding, slow motion",
+        "frames": 90
+      },
+      "start": 31.92,
+      "dur": 2.88
+    },
+    {
+      "id": "hk_checkout",
+      "kind": "raw",
+      "src": "img/hk_checkout.png",
+      "hue": "red",
+      "kicker": "Te duele un poco",
+      "gen": {
+        "type": "image",
+        "name": "hk_checkout",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of an older customer's hands holding a worn wallet at a supermarket checkout, a small payment terminal screen, NO readable numbers. indoor fluorescent supermarket lighting, muted colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 34.8,
+      "dur": 2.72
+    },
+    {
+      "id": "q002",
+      "kind": "quote",
+      "text": "Pagas porque *no hay otra opción*. O eso te dijeron",
+      "image": "img/hk_checkout.png",
+      "accent": "danger",
+      "hue": "red",
+      "fontSize": 76,
+      "start": 37.52,
+      "dur": 7
+    },
+    {
+      "id": "hk_fridge",
+      "kind": "raw",
+      "src": "img/hk_fridge.png",
+      "hue": "amber",
+      "kicker": "Volvés a tu casa",
+      "start": 44.52,
+      "dur": 4.61
+    },
+    {
+      "id": "hk_yard",
+      "kind": "raw",
+      "src": "img/hk_yard.png",
+      "hue": "cold",
+      "kicker": "Que no usás para nada",
+      "gen": {
+        "type": "image",
+        "name": "hk_yard",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of an empty unused corner of a suburban backyard against a fence, overgrown weeds and grass, a strip of bare dirt, ordinary documentary. natural soft outdoor daylight, slightly overcast, muted natural colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 49.13,
+      "dur": 3.69
+    },
+    {
+      "id": "hk_fence",
+      "kind": "raw",
+      "src": "img/hk_fence.png",
+      "hue": "cold",
+      "kicker": "Donde crece la hierba mala",
+      "gen": {
+        "type": "image",
+        "name": "hk_fence",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a fence corner in a backyard where tall weeds grow, neglected ground, documentary. natural soft outdoor daylight, slightly overcast, muted natural colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 52.82,
+      "dur": 3.52
+    },
+    {
+      "id": "hk_garage",
+      "kind": "raw",
+      "src": "img/hk_garage.png",
+      "hue": "cold",
+      "gen": {
+        "type": "image",
+        "name": "hk_garage",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of the narrow side of a home garage where a car does not fit, a strip of unused ground with weeds, documentary. natural soft outdoor daylight, slightly overcast, muted natural colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 56.34,
+      "dur": 3.54
+    },
+    {
+      "id": "hk_lawn",
+      "kind": "raw",
+      "src": "img/hk_lawn.png",
+      "hue": "cold",
+      "kicker": "Que cortás cada quince días",
+      "gen": {
+        "type": "image",
+        "name": "hk_lawn",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a plain backyard lawn that is mowed but unused, ordinary grass, documentary. natural soft outdoor daylight, slightly overcast, muted natural colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 59.88,
+      "dur": 7.45
+    },
+    {
+      "id": "h003",
+      "kind": "headline",
+      "tokens": [
+        {
+          "t": "Ese"
+        },
+        {
+          "t": "espacio"
+        },
+        {
+          "t": "vale"
+        },
+        {
+          "t": "más",
+          "good": true
+        },
+        {
+          "t": "que"
+        },
+        {
+          "t": "todo"
+        },
+        {
+          "t": "el"
+        },
+        {
+          "t": "súper"
+        }
+      ],
+      "eyebrow": "Y nadie te lo dijo",
+      "hue": "amber",
+      "bg": "image",
+      "image": "img/hk_yard.png",
+      "start": 67.33,
+      "dur": 6.99
+    },
+    {
+      "id": "ab_campo",
+      "kind": "raw",
+      "src": "img/ab_campo.png",
+      "hue": "amber",
+      "kicker": "Yo soy viejo",
+      "gen": {
+        "type": "image",
+        "name": "ab_campo",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a faded vintage archival photograph of a faded vintage archival photograph of a rural country house yard decades ago, chickens pecking, a simple wooden fence, warm nostalgic, scratched grain, sun-faded yellowed sepia tones. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 74.32,
+      "dur": 3.54
+    },
+    {
+      "id": "ab_store_old",
+      "kind": "raw",
+      "src": "img/ab_store_old.png",
+      "hue": "amber",
+      "kicker": "Azúcar, sal y aceite",
+      "gen": {
+        "type": "image",
+        "name": "ab_store_old",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a faded vintage archival photograph of a faded vintage photo of a tiny old general store counter with sacks of sugar, salt and a tin of oil, sepia, scratched grain, sun-faded yellowed sepia tones. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 77.86,
+      "dur": 7.07
+    },
+    {
+      "id": "ab_eggs_basket",
+      "kind": "raw",
+      "src": "img/ab_eggs_basket.png",
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "ab_eggs_basket",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of an old enamel bowl of fresh eggs on a rustic wooden table in a country kitchen, documentary. natural soft outdoor daylight, slightly overcast, muted natural colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 84.93,
+      "dur": 1.83
+    },
+    {
+      "id": "ab_rabbits_old",
+      "kind": "raw",
+      "src": "img/ab_rabbits_old.png",
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "ab_rabbits_old",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of rabbits in a simple old wooden hutch in a rural backyard, documentary. natural soft outdoor daylight, slightly overcast, muted natural colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 86.76,
+      "dur": 2.6
+    },
+    {
+      "id": "ab_goat_old",
+      "kind": "raw",
+      "src": "img/ab_goat_old.png",
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "ab_goat_old",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a goat being milked by hand into a metal pail in a rustic farmyard, documentary. natural soft outdoor daylight, slightly overcast, muted natural colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 89.36,
+      "dur": 3.35
+    },
+    {
+      "id": "ch004",
+      "kind": "chips",
+      "chips": [
+        "Huevos → gallinas",
+        "Carne → conejos",
+        "Leche → cabra",
+        "Abono → lombrices",
+        "Miel → abejas"
+      ],
+      "title": "Todo venía del fondo de la casa",
+      "image": "img/ab_campo.png",
+      "bg": "image",
+      "hue": "amber",
+      "start": 92.71,
+      "dur": 9
+    },
+    {
+      "id": "q005",
+      "kind": "quote",
+      "text": "Lo *raro* es pagarle a una corporación lo que tu abuelo hacía solo",
+      "eyebrow": "Eso era lo normal",
+      "accent": "danger",
+      "hue": "red",
+      "fontSize": 60,
+      "start": 104.79,
+      "dur": 9
+    },
+    {
+      "id": "pr_patio",
+      "kind": "half",
+      "src": "img/pr_patio.png",
+      "hue": "amber",
+      "kicker": "En tu patio, tu terraza, tu balcón",
+      "gen": {
+        "type": "image",
+        "name": "pr_patio",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a modest backyard with space for animals, a small coop and a vegetable garden, golden light, hopeful documentary. natural soft outdoor daylight, slightly overcast, muted natural colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 115.2,
+      "dur": 4.47
+    },
+    {
+      "id": "recap_him",
+      "kind": "raw",
+      "src": "img/recap_him.png",
+      "hue": "amber",
+      "kicker": "El sistema completo",
+      "start": 119.67,
+      "dur": 9
+    },
+    {
+      "id": "ch006",
+      "kind": "chips",
+      "chips": [
+        "Huevos",
+        "Carne",
+        "Leche",
+        "Fertilizante",
+        "Miel"
+      ],
+      "title": "Siete animales para tu patio",
+      "image": "img/pr_patio.png",
+      "bg": "image",
+      "hue": "amber",
+      "start": 129.94,
+      "dur": 7.06
+    },
+    {
+      "id": "iz007",
+      "kind": "infzoom",
+      "images": [
+        {
+          "src": "img/t7_gallina.png",
+          "label": "Gallina"
+        },
+        {
+          "src": "img/t7_conejo.png",
+          "label": "Conejo"
+        },
+        {
+          "src": "img/t7_codorniz.png",
+          "label": "Codorniz"
+        },
+        {
+          "src": "img/t7_abeja.png",
+          "label": "Abeja"
+        }
+      ],
+      "accent": "amber",
+      "start": 137,
+      "dur": 4.43
+    },
+    {
+      "id": "q008",
+      "kind": "quote",
+      "text": "El último es el *más rentable* — y casi nadie lo cría",
+      "eyebrow": "Requiere paciencia y un poco de coraje",
+      "accent": "danger",
+      "hue": "red",
+      "fontSize": 66,
+      "start": 141.43,
+      "dur": 9
+    },
+    {
+      "id": "h009",
+      "kind": "headline",
+      "tokens": [
+        {
+          "t": "¿Cuál"
+        },
+        {
+          "t": "crees"
+        },
+        {
+          "t": "que"
+        },
+        {
+          "t": "es"
+        },
+        {
+          "t": "el"
+        },
+        {
+          "t": "más",
+          "good": true
+        },
+        {
+          "t": "rentable?"
+        }
+      ],
+      "eyebrow": "Anótalo mentalmente",
+      "hue": "amber",
+      "bg": "black",
+      "start": 153.98,
+      "dur": 9
+    },
+    {
+      "id": "pr_comments",
+      "kind": "raw",
+      "src": "img/pr_comments.png",
+      "hue": "amber",
+      "kicker": "Al final te digo cuál es",
+      "gen": {
+        "type": "image",
+        "name": "pr_comments",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a hand writing a single word on a small notepad on a kitchen table, documentary close up, NO readable text. natural soft outdoor daylight, slightly overcast, muted natural colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 164.94,
+      "dur": 3.19
+    },
+    {
+      "id": "t7010",
+      "kind": "top7",
+      "rank": 1,
+      "name": "La gallina ponedora",
+      "benefit": "Huevos todo el año — la puerta de entrada",
+      "image": "img/t7_gallina.png",
+      "accent": "good",
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "t7_gallina",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a healthy brown Isa Brown laying hen standing on green grass in a backyard, close documentary portrait, soft daylight. natural soft outdoor daylight, slightly overcast, muted natural colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 168.13,
+      "dur": 5.5,
+      "items": [
+        {
+          "name": "La gallina ponedora",
+          "benefit": "Huevos todo el año — la puerta de entrada",
+          "image": "img/t7_gallina.png",
+          "accent": "good"
+        },
+        {
+          "name": "El conejo",
+          "benefit": "Carne + fertilizante — la máquina más eficiente",
+          "image": "img/t7_conejo.png",
+          "accent": "amber"
+        },
+        {
+          "name": "La codorniz",
+          "benefit": "Huevos premium en mínimo espacio",
+          "image": "img/t7_codorniz.png",
+          "accent": "accent"
+        },
+        {
+          "name": "El pato",
+          "benefit": "Huevos + control de plagas del huerto",
+          "image": "img/t7_pato.png",
+          "accent": "cold"
+        },
+        {
+          "name": "La cabra enana",
+          "benefit": "Leche y queso fresco todos los días",
+          "image": "img/t7_cabra.png",
+          "accent": "good"
+        },
+        {
+          "name": "La lombriz roja",
+          "benefit": "Fertilizante que se multiplica solo",
+          "image": "img/t7_lombriz.png",
+          "accent": "danger"
+        },
+        {
+          "name": "La abeja",
+          "benefit": "Miel, cera, propóleo… y poliniza todo",
+          "image": "img/t7_abeja.png",
+          "accent": "amber"
+        }
+      ]
+    },
+    {
+      "id": "g_coop",
+      "kind": "half",
+      "src": "img/g_coop.png",
+      "hue": "amber",
+      "kicker": "Es la puerta",
+      "gen": {
+        "type": "image",
+        "name": "g_coop",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of three brown laying hens inside a simple small backyard wooden coop with wire mesh, documentary. natural soft outdoor daylight, slightly overcast, muted natural colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 176.31,
+      "dur": 5.62
+    },
+    {
+      "id": "g_hen_grass",
+      "kind": "raw",
+      "src": "vid/g_hen_grass_src.mp4",
+      "hue": "amber",
+      "gen": {
+        "type": "clip",
+        "image": "g_hen_grass_src",
+        "prompt": "a brown hen pecking and scratching in green grass in a backyard, free range, slow motion documentary",
+        "frames": 90
+      },
+      "start": 181.93,
+      "dur": 4.23
+    },
+    {
+      "id": "ch011",
+      "kind": "chips",
+      "chips": [
+        "Isa Brown",
+        "Rhode Island",
+        "Sussex"
+      ],
+      "title": "Razas ponedoras de verdad",
+      "image": "img/t7_gallina.png",
+      "bg": "image",
+      "hue": "amber",
+      "start": 186.16,
+      "dur": 6.09
+    },
+    {
+      "id": "st012",
+      "kind": "stat",
+      "value": 300,
+      "prefix": "250–",
+      "label": "huevos por año, de buena raza",
+      "eyebrow": "Una gallina ponedora",
+      "accent": "good",
+      "hue": "amber",
+      "start": 192.25,
+      "dur": 3.53
+    },
+    {
+      "id": "ca013",
+      "kind": "callout",
+      "figure": "20–25",
+      "image": "img/g_hen_grass_src.png",
+      "eyebrow": "Por gallina, al mes",
+      "caption": "Tres gallinas = 5–6 docenas",
+      "accent": "amber",
+      "hue": "amber",
+      "start": 195.78,
+      "dur": 6.9
+    },
+    {
+      "id": "ba014",
+      "kind": "bars",
+      "bars": [
+        {
+          "label": "Lo que pone 1 gallina/mes",
+          "value": 25,
+          "display": "20–25",
+          "tone": "amber"
+        },
+        {
+          "label": "Lo que come una familia/mes",
+          "value": 60,
+          "display": "lo cubre",
+          "winner": true,
+          "tone": "good"
+        }
+      ],
+      "title": "Te sobra",
+      "eyebrow": "Familia de cuatro",
+      "orientation": "horizontal",
+      "accent": "amber",
+      "hue": "amber",
+      "start": 202.68,
+      "dur": 5.32
+    },
+    {
+      "id": "g_basket",
+      "kind": "raw",
+      "src": "img/g_basket.png",
+      "hue": "amber",
+      "kicker": "El vecino te toca la puerta",
+      "start": 208,
+      "dur": 8.06
+    },
+    {
+      "id": "g_feedbag",
+      "kind": "raw",
+      "src": "img/g_feedbag.png",
+      "hue": "red",
+      "kicker": "Alimento balanceado comprado",
+      "gen": {
+        "type": "image",
+        "name": "g_feedbag",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a large bag of commercial poultry feed pellets in a pet store, expensive feed, NO readable text, price not legible. indoor store lighting, muted colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 216.06,
+      "dur": 9
+    },
+    {
+      "id": "g_feed_pour",
+      "kind": "raw",
+      "src": "vid/g_feed_pour_src.mp4",
+      "hue": "red",
+      "gen": {
+        "type": "clip",
+        "image": "g_feed_pour_src",
+        "prompt": "commercial feed pellets pouring from a scoop into a metal feeder, slow motion close up",
+        "frames": 80
+      },
+      "start": 227.24,
+      "dur": 9
+    },
+    {
+      "id": "q015",
+      "kind": "quote",
+      "text": "Gastas *más* en alimento de lo que ahorras en huevos",
+      "image": "img/g_feedbag.png",
+      "eyebrow": "Y ahí la mayoría se frustra",
+      "accent": "danger",
+      "hue": "red",
+      "fontSize": 60,
+      "start": 236.33,
+      "dur": 9
+    },
+    {
+      "id": "h016",
+      "kind": "headline",
+      "tokens": [
+        {
+          "t": "El"
+        },
+        {
+          "t": "problema"
+        },
+        {
+          "t": "es"
+        },
+        {
+          "t": "lo"
+        },
+        {
+          "t": "que"
+        },
+        {
+          "t": "le"
+        },
+        {
+          "t": "das",
+          "danger": true
+        },
+        {
+          "t": "de"
+        },
+        {
+          "t": "comer"
+        }
+      ],
+      "eyebrow": "No es la gallina",
+      "hue": "red",
+      "bg": "image",
+      "image": "img/g_feed_pour_src.png",
+      "start": 247.3,
+      "dur": 5.75
+    },
+    {
+      "id": "sp017",
+      "kind": "splitlist",
+      "title": "De qué se alimenta GRATIS",
+      "items": [
+        "Pasto y trébol",
+        "Insectos y larvas",
+        "Restos de cocina",
+        "Verdura pasada y cáscaras",
+        "Semillas"
+      ],
+      "palette": "G",
+      "start": 253.05,
+      "dur": 3.26
+    },
+    {
+      "id": "g_scraps",
+      "kind": "raw",
+      "src": "vid/g_scraps_src.mp4",
+      "hue": "amber",
+      "gen": {
+        "type": "clip",
+        "image": "g_scraps_src",
+        "prompt": "kitchen vegetable scraps being tossed to hens in a backyard, the hens rushing to peck, slow motion",
+        "frames": 90
+      },
+      "start": 256.31,
+      "dur": 9
+    },
+    {
+      "id": "g_forage",
+      "kind": "raw",
+      "src": "img/g_forage.png",
+      "hue": "amber",
+      "kicker": "Casi nada de alimento comprado",
+      "gen": {
+        "type": "image",
+        "name": "g_forage",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a brown hen foraging freely in a lush green backyard, finding bugs and seeds in the grass, content, documentary. natural soft outdoor daylight, slightly overcast, muted natural colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 269.75,
+      "dur": 6.65
+    },
+    {
+      "id": "d018",
+      "kind": "diagram",
+      "eyebrow": "El secreto NO es la gallina: es la tierra",
+      "hue": "amber",
+      "accent": "accent",
+      "slides": [
+        {
+          "image": "img/dg_g_soil.png",
+          "title": "Se alimenta casi sola"
+        }
+      ],
+      "start": 276.4,
+      "dur": 8.17
+    },
+    {
+      "id": "g_clover",
+      "kind": "raw",
+      "src": "img/g_clover.png",
+      "hue": "cold",
+      "kicker": "Lombrices, insectos, trébol",
+      "gen": {
+        "type": "image",
+        "name": "g_clover",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of close up of green clover and grass with worms and insects in fertile dark soil, a hen's feet nearby, documentary macro. natural soft outdoor daylight, slightly overcast, muted natural colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 284.57,
+      "dur": 9
+    },
+    {
+      "id": "q019",
+      "kind": "quote",
+      "text": "Revivir tierra muerta por *un dólar*… pero eso es otro tema",
+      "image": "img/g_clover.png",
+      "eyebrow": "Algo que vamos a ver más adelante",
+      "accent": "danger",
+      "hue": "red",
+      "fontSize": 58,
+      "start": 294.38,
+      "dur": 9
+    },
+    {
+      "id": "ck020",
+      "kind": "checklist",
+      "title": "Lo que necesitas para arrancar",
+      "items": [
+        {
+          "text": "3 gallinas de buena raza",
+          "state": "done"
+        },
+        {
+          "text": "1 m² de gallinero techado y ventilado",
+          "state": "done"
+        },
+        {
+          "text": "Acceso a un pedazo de pasto",
+          "state": "done"
+        },
+        {
+          "text": "Los restos de tu cocina",
+          "state": "done"
+        }
+      ],
+      "eyebrow": "Inversión baja, mantenimiento casi nulo",
+      "accent": "amber",
+      "hue": "amber",
+      "image": "img/g_coop.png",
+      "start": 304.4,
+      "dur": 1.2
+    },
+    {
+      "id": "g_him_coop",
+      "kind": "raw",
+      "src": "img/g_him_coop.png",
+      "hue": "amber",
+      "kicker": "Su gallinero",
+      "start": 305.5,
+      "dur": 9
+    },
+    {
+      "id": "g_coop_morning",
+      "kind": "raw",
+      "src": "img/g_coop_morning.png",
+      "hue": "amber",
+      "kicker": "Mantenimiento casi nulo",
+      "gen": {
+        "type": "image",
+        "name": "g_coop_morning",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of soft morning light on a tidy small backyard chicken coop, hens stirring, an egg in the nest box, documentary. natural soft outdoor daylight, slightly overcast, muted natural colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 317.68,
+      "dur": 6.48
+    },
+    {
+      "id": "q021",
+      "kind": "quote",
+      "text": "La base. Pero *no* es la más rentable",
+      "image": "img/t7_gallina.png",
+      "accent": "amber",
+      "hue": "amber",
+      "fontSize": 82,
+      "start": 324.16,
+      "dur": 2.84
+    },
+    {
+      "id": "t7022",
+      "kind": "top7",
+      "rank": 2,
+      "name": "El conejo",
+      "benefit": "Carne + fertilizante — la máquina más eficiente",
+      "image": "img/t7_conejo.png",
+      "accent": "amber",
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "t7_conejo",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a calm grey-brown meat rabbit sitting in a clean wire hutch in a backyard, documentary portrait, soft daylight. natural soft outdoor daylight, slightly overcast, muted natural colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 327,
+      "dur": 5.5,
+      "items": [
+        {
+          "name": "La gallina ponedora",
+          "benefit": "Huevos todo el año — la puerta de entrada",
+          "image": "img/t7_gallina.png",
+          "accent": "good"
+        },
+        {
+          "name": "El conejo",
+          "benefit": "Carne + fertilizante — la máquina más eficiente",
+          "image": "img/t7_conejo.png",
+          "accent": "amber"
+        },
+        {
+          "name": "La codorniz",
+          "benefit": "Huevos premium en mínimo espacio",
+          "image": "img/t7_codorniz.png",
+          "accent": "accent"
+        },
+        {
+          "name": "El pato",
+          "benefit": "Huevos + control de plagas del huerto",
+          "image": "img/t7_pato.png",
+          "accent": "cold"
+        },
+        {
+          "name": "La cabra enana",
+          "benefit": "Leche y queso fresco todos los días",
+          "image": "img/t7_cabra.png",
+          "accent": "good"
+        },
+        {
+          "name": "La lombriz roja",
+          "benefit": "Fertilizante que se multiplica solo",
+          "image": "img/t7_lombriz.png",
+          "accent": "danger"
+        },
+        {
+          "name": "La abeja",
+          "benefit": "Miel, cera, propóleo… y poliniza todo",
+          "image": "img/t7_abeja.png",
+          "accent": "amber"
+        }
+      ]
+    },
+    {
+      "id": "c_hutch",
+      "kind": "half",
+      "src": "img/c_hutch.png",
+      "hue": "amber",
+      "kicker": "El más subestimado",
+      "gen": {
+        "type": "image",
+        "name": "c_hutch",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a backyard rabbit hutch with several rabbits, wooden and wire construction, documentary. natural soft outdoor daylight, slightly overcast, muted natural colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 334.2,
+      "dur": 5.73
+    },
+    {
+      "id": "c_pet",
+      "kind": "raw",
+      "src": "img/c_pet.png",
+      "hue": "cold",
+      "kicker": "La gente lo ve como mascota",
+      "gen": {
+        "type": "image",
+        "name": "c_pet",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a cute pet rabbit held by a child at a fair, documentary. natural soft outdoor daylight, slightly overcast, muted natural colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 339.93,
+      "dur": 4.98
+    },
+    {
+      "id": "h023",
+      "kind": "headline",
+      "tokens": [
+        {
+          "t": "Una"
+        },
+        {
+          "t": "máquina",
+          "good": true
+        },
+        {
+          "t": "de"
+        },
+        {
+          "t": "producir"
+        },
+        {
+          "t": "carne"
+        }
+      ],
+      "eyebrow": "De la forma más eficiente de la naturaleza",
+      "hue": "amber",
+      "bg": "image",
+      "image": "img/c_hutch.png",
+      "start": 344.91,
+      "dur": 9
+    },
+    {
+      "id": "st024",
+      "kind": "stat",
+      "value": 40,
+      "prefix": "25–",
+      "label": "crías por año, de UNA sola coneja",
+      "eyebrow": "Escúchame este número",
+      "accent": "amber",
+      "hue": "amber",
+      "start": 356.27,
+      "dur": 4.27
+    },
+    {
+      "id": "c_grow",
+      "kind": "raw",
+      "src": "vid/c_grow_src.mp4",
+      "hue": "amber",
+      "gen": {
+        "type": "clip",
+        "image": "c_grow_src",
+        "prompt": "young rabbits growing in a clean hutch, time of growth, slow motion documentary",
+        "frames": 80
+      },
+      "start": 360.54,
+      "dur": 4.02
+    },
+    {
+      "id": "ba025",
+      "kind": "bars",
+      "bars": [
+        {
+          "label": "Conejo",
+          "value": 3,
+          "display": "3 meses",
+          "winner": true,
+          "tone": "good"
+        },
+        {
+          "label": "Cerdo",
+          "value": 6,
+          "display": "6 meses",
+          "tone": "amber"
+        },
+        {
+          "label": "Novillo",
+          "value": 24,
+          "display": "2 años",
+          "tone": "danger"
+        }
+      ],
+      "title": "Tiempo hasta peso de faena",
+      "eyebrow": "El conejo: 90 días",
+      "orientation": "horizontal",
+      "unit": "",
+      "accent": "amber",
+      "hue": "amber",
+      "start": 364.56,
+      "dur": 9
+    },
+    {
+      "id": "ca026",
+      "kind": "callout",
+      "figure": "1,5–2,5 kg",
+      "image": "img/t7_conejo.png",
+      "eyebrow": "Carne limpia por conejo",
+      "caption": "Haz la cuenta",
+      "accent": "amber",
+      "hue": "amber",
+      "start": 373.72,
+      "dur": 9
+    },
+    {
+      "id": "ba027",
+      "kind": "bars",
+      "bars": [
+        {
+          "label": "1 coneja madre",
+          "value": 100,
+          "display": "40–100 kg/año",
+          "tone": "amber"
+        },
+        {
+          "label": "2 conejas madre",
+          "value": 200,
+          "display": "≈200 kg/año",
+          "winner": true,
+          "tone": "good"
+        }
+      ],
+      "title": "Carne al año",
+      "eyebrow": "Más de la que una familia necesita",
+      "orientation": "horizontal",
+      "unit": " kg",
+      "accent": "amber",
+      "hue": "amber",
+      "start": 385.44,
+      "dur": 9
+    },
+    {
+      "id": "d028",
+      "kind": "diagram",
+      "eyebrow": "La carne más sana que existe",
+      "hue": "amber",
+      "accent": "accent",
+      "slides": [
+        {
+          "image": "img/dg_c_health.png",
+          "title": "Conejo vs pollo vs res"
+        }
+      ],
+      "start": 394.74,
+      "dur": 9
+    },
+    {
+      "id": "an090",
+      "kind": "annotated",
+      "image": "img/c_meat.png",
+      "annotations": [
+        {
+          "kind": "circle",
+          "x": 50,
+          "y": 52,
+          "w": 34,
+          "label": "más proteína, menos grasa"
+        }
+      ],
+      "eyebrow": "La recomiendan los médicos",
+      "caption": "Cardíacos · diabéticos · gente mayor",
+      "hue": "amber",
+      "start": 408.87,
+      "dur": 5.25
+    },
+    {
+      "id": "c_meat",
+      "kind": "raw",
+      "src": "img/c_meat.png",
+      "hue": "amber",
+      "kicker": "Tierna, sabor suave",
+      "gen": {
+        "type": "image",
+        "name": "c_meat",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of lean fresh rabbit meat on a wooden cutting board in a home kitchen, documentary, healthy white meat. natural soft outdoor daylight, slightly overcast, muted natural colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 414.12,
+      "dur": 9
+    },
+    {
+      "id": "c_cage1",
+      "kind": "raw",
+      "src": "img/c_cage1.png",
+      "hue": "amber",
+      "kicker": "Por conejo reproductor",
+      "gen": {
+        "type": "image",
+        "name": "c_cage1",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a single wire breeding cage for a rabbit, one meter by sixty centimeters, in a backyard, documentary. natural soft outdoor daylight, slightly overcast, muted natural colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 423.96,
+      "dur": 9
+    },
+    {
+      "id": "cr029",
+      "kind": "cross",
+      "layers": [
+        {
+          "label": "2 conejas madre",
+          "color": "#7C8A5A",
+          "weight": 2
+        },
+        {
+          "label": "1 macho reproductor",
+          "color": "#A9794A",
+          "weight": 1
+        },
+        {
+          "label": "Crías en jaulas de engorde",
+          "color": "#6E8B47",
+          "weight": 3
+        }
+      ],
+      "title": "Un plantel en 3 × 2 metros",
+      "eyebrow": "Menos que un armario grande",
+      "marker": {
+        "label": "entra en un garaje",
+        "atDepth": 3,
+        "color": "accent"
+      },
+      "hue": "amber",
+      "start": 435.12,
+      "dur": 8.43
+    },
+    {
+      "id": "c_him_hold",
+      "kind": "raw",
+      "src": "img/c_him_hold.png",
+      "hue": "amber",
+      "kicker": "Su plantel de conejos",
+      "start": 443.55,
+      "dur": 2.33
+    },
+    {
+      "id": "c_balcony",
+      "kind": "raw",
+      "src": "img/c_balcony.png",
+      "hue": "amber",
+      "kicker": "En un balcón, en un garaje",
+      "gen": {
+        "type": "image",
+        "name": "c_balcony",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of rabbit hutches fitting neatly on a small apartment balcony, compact backyard setup, documentary. natural soft outdoor daylight, slightly overcast, muted natural colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 445.88,
+      "dur": 9
+    },
+    {
+      "id": "c_eat_leaves",
+      "kind": "raw",
+      "src": "vid/c_eat_leaves_src.mp4",
+      "hue": "cold",
+      "gen": {
+        "type": "clip",
+        "image": "c_eat_leaves_src",
+        "prompt": "a rabbit nibbling fresh fruit tree leaves and dandelion greens held in a hand, slow motion macro",
+        "frames": 80
+      },
+      "start": 458.38,
+      "dur": 3.21
+    },
+    {
+      "id": "ch030",
+      "kind": "chips",
+      "chips": [
+        "Alfalfa",
+        "Diente de león",
+        "Hojas de zanahoria",
+        "Tallos de apio",
+        "Heno y pasto"
+      ],
+      "title": "Alimento: gratis del patio",
+      "image": "img/c_hutch.png",
+      "bg": "image",
+      "hue": "amber",
+      "start": 461.59,
+      "dur": 5.22
+    },
+    {
+      "id": "c_feedleaves",
+      "kind": "raw",
+      "src": "vid/c_feedleaves_src.mp4",
+      "hue": "cold",
+      "gen": {
+        "type": "clip",
+        "image": "c_feedleaves_src",
+        "prompt": "fresh dandelion greens and carrot tops being placed into a rabbit hutch, a rabbit nibbling, slow motion",
+        "frames": 80
+      },
+      "start": 466.81,
+      "dur": 9
+    },
+    {
+      "id": "c_manure",
+      "kind": "raw",
+      "src": "img/c_manure.png",
+      "hue": "cold",
+      "kicker": "No quema las plantas",
+      "start": 476.8,
+      "dur": 8.7
+    },
+    {
+      "id": "c_garden_grow",
+      "kind": "raw",
+      "src": "img/c_garden_grow.png",
+      "hue": "cold",
+      "kicker": "El estiércol va directo",
+      "gen": {
+        "type": "image",
+        "name": "c_garden_grow",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of lush vegetables growing in a dark, rich garden bed fertilized with rabbit manure, documentary. natural soft outdoor daylight, slightly overcast, muted natural colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 485.5,
+      "dur": 7.3
+    },
+    {
+      "id": "q031",
+      "kind": "quote",
+      "text": "El conejo te da carne *y* fertilizante",
+      "image": "img/c_manure.png",
+      "accent": "good",
+      "hue": "amber",
+      "fontSize": 70,
+      "start": 492.8,
+      "dur": 8.7
+    },
+    {
+      "id": "ag032",
+      "kind": "aged",
+      "heading": "Lo que me dijo mi abuelo",
+      "lines": [
+        {
+          "text": "La diferencia entre depender y no depender…",
+          "mark": false
+        },
+        {
+          "text": "…es una sola habilidad que te da vergüenza aprender",
+          "mark": true
+        }
+      ],
+      "eyebrow": "A alguno le da impresión faenar",
+      "accent": "amber",
+      "hue": "amber",
+      "start": 501.5,
+      "dur": 8
+    },
+    {
+      "id": "c_wisdom",
+      "kind": "raw",
+      "src": "img/c_wisdom.png",
+      "hue": "amber",
+      "kicker": "Una habilidad que da vergüenza aprender",
+      "gen": {
+        "type": "image",
+        "name": "c_wisdom",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of an old man's weathered hands resting calmly, a quiet rustic moment, documentary close up. natural soft outdoor daylight, slightly overcast, muted natural colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 513.56,
+      "dur": 7.96
+    },
+    {
+      "id": "c_calm",
+      "kind": "raw",
+      "src": "vid/c_calm_src.mp4",
+      "hue": "amber",
+      "gen": {
+        "type": "clip",
+        "image": "c_calm_src",
+        "prompt": "a calm rabbit being held gently in a backyard, slow motion documentary",
+        "frames": 80
+      },
+      "start": 521.52,
+      "dur": 9
+    },
+    {
+      "id": "q033",
+      "kind": "quote",
+      "text": "Carne de primera todo el año, *sin pagar* en la carnicería",
+      "image": "img/c_meat.png",
+      "accent": "good",
+      "hue": "amber",
+      "fontSize": 60,
+      "start": 531.97,
+      "dur": 2.79
+    },
+    {
+      "id": "t7034",
+      "kind": "top7",
+      "rank": 3,
+      "name": "La codorniz",
+      "benefit": "Huevos premium en mínimo espacio",
+      "image": "img/t7_codorniz.png",
+      "accent": "accent",
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "t7_codorniz",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a small Coturnix japonica quail held gently in a person's open hands, tiny brown speckled bird the size of a fist, documentary. natural soft outdoor daylight, slightly overcast, muted natural colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 534.76,
+      "dur": 5.5,
+      "items": [
+        {
+          "name": "La gallina ponedora",
+          "benefit": "Huevos todo el año — la puerta de entrada",
+          "image": "img/t7_gallina.png",
+          "accent": "good"
+        },
+        {
+          "name": "El conejo",
+          "benefit": "Carne + fertilizante — la máquina más eficiente",
+          "image": "img/t7_conejo.png",
+          "accent": "amber"
+        },
+        {
+          "name": "La codorniz",
+          "benefit": "Huevos premium en mínimo espacio",
+          "image": "img/t7_codorniz.png",
+          "accent": "accent"
+        },
+        {
+          "name": "El pato",
+          "benefit": "Huevos + control de plagas del huerto",
+          "image": "img/t7_pato.png",
+          "accent": "cold"
+        },
+        {
+          "name": "La cabra enana",
+          "benefit": "Leche y queso fresco todos los días",
+          "image": "img/t7_cabra.png",
+          "accent": "good"
+        },
+        {
+          "name": "La lombriz roja",
+          "benefit": "Fertilizante que se multiplica solo",
+          "image": "img/t7_lombriz.png",
+          "accent": "danger"
+        },
+        {
+          "name": "La abeja",
+          "benefit": "Miel, cera, propóleo… y poliniza todo",
+          "image": "img/t7_abeja.png",
+          "accent": "amber"
+        }
+      ]
+    },
+    {
+      "id": "q_flock",
+      "kind": "raw",
+      "src": "vid/q_flock_src.mp4",
+      "hue": "amber",
+      "gen": {
+        "type": "clip",
+        "image": "q_flock_src",
+        "prompt": "several small speckled quail moving and pecking inside a compact cage, slow motion documentary",
+        "frames": 80
+      },
+      "start": 540.78,
+      "dur": 6.76
+    },
+    {
+      "id": "q_hand",
+      "kind": "raw",
+      "src": "img/q_hand.png",
+      "hue": "amber",
+      "kicker": "Del tamaño de tu puño",
+      "start": 547.54,
+      "dur": 1.72
+    },
+    {
+      "id": "q_lay",
+      "kind": "raw",
+      "src": "vid/q_lay_src.mp4",
+      "hue": "amber",
+      "gen": {
+        "type": "clip",
+        "image": "q_lay_src",
+        "prompt": "a quail in a small cage with a freshly laid speckled egg beneath it, slow motion documentary",
+        "frames": 80
+      },
+      "start": 549.26,
+      "dur": 8.29
+    },
+    {
+      "id": "st035",
+      "kind": "stat",
+      "value": 360,
+      "label": "huevos al año — uno por día",
+      "eyebrow": "Una sola codorniz",
+      "accent": "good",
+      "hue": "amber",
+      "start": 557.55,
+      "dur": 5.13
+    },
+    {
+      "id": "ba036",
+      "kind": "bars",
+      "bars": [
+        {
+          "label": "Codorniz",
+          "value": 360,
+          "display": "360",
+          "winner": true,
+          "tone": "good"
+        },
+        {
+          "label": "Gallina",
+          "value": 250,
+          "display": "250",
+          "tone": "amber"
+        }
+      ],
+      "title": "Huevos al año, por ave",
+      "eyebrow": "Y en una fracción del espacio",
+      "orientation": "horizontal",
+      "unit": "",
+      "accent": "amber",
+      "hue": "amber",
+      "start": 562.68,
+      "dur": 9
+    },
+    {
+      "id": "q_cage",
+      "kind": "half",
+      "src": "img/q_cage.png",
+      "hue": "amber",
+      "kicker": "Cinco en una caja de zapatos",
+      "gen": {
+        "type": "image",
+        "name": "q_cage",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of five small quails inside a compact wire cage the size of a large shoebox, on a shelf in a garage, documentary. natural soft outdoor daylight, slightly overcast, muted natural colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 574.72,
+      "dur": 1.96
+    },
+    {
+      "id": "an037",
+      "kind": "annotated",
+      "image": "img/q_cage.png",
+      "annotations": [
+        {
+          "kind": "circle",
+          "x": 50,
+          "y": 50,
+          "w": 30,
+          "label": "10 = el espacio de 1 gallina"
+        },
+        {
+          "kind": "arrow",
+          "x": 28,
+          "y": 28,
+          "fromX": 10,
+          "fromY": 12,
+          "label": "10 huevos por día"
+        }
+      ],
+      "eyebrow": "Setenta huevos por semana",
+      "hue": "amber",
+      "start": 576.68,
+      "dur": 5.07
+    },
+    {
+      "id": "q_him_egg",
+      "kind": "raw",
+      "src": "img/q_him_egg.png",
+      "hue": "amber",
+      "kicker": "Diez huevos por día",
+      "start": 581.75,
+      "dur": 8.94
+    },
+    {
+      "id": "q_eggs_market",
+      "kind": "raw",
+      "src": "img/q_eggs_market.png",
+      "hue": "amber",
+      "kicker": "Producto premium",
+      "gen": {
+        "type": "image",
+        "name": "q_eggs_market",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of tiny speckled quail eggs in a small premium carton at a natural food market, NO readable text. natural soft outdoor daylight, slightly overcast, muted natural colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 590.69,
+      "dur": 9
+    },
+    {
+      "id": "d038",
+      "kind": "diagram",
+      "eyebrow": "Por qué es premium",
+      "hue": "amber",
+      "accent": "accent",
+      "slides": [
+        {
+          "image": "img/dg_q_premium.png",
+          "title": "Más nutrientes, proporcional"
+        }
+      ],
+      "start": 604.59,
+      "dur": 8.5
+    },
+    {
+      "id": "ck039",
+      "kind": "checklist",
+      "title": "Dónde se puede criar",
+      "items": [
+        {
+          "text": "En un departamento",
+          "state": "done"
+        },
+        {
+          "text": "En un lavadero o garaje cerrado",
+          "state": "done"
+        },
+        {
+          "text": "Con luz artificial y ventilación",
+          "state": "done"
+        },
+        {
+          "text": "Sin sol, sin tierra, sin patio",
+          "state": "done"
+        }
+      ],
+      "eyebrow": "El animal perfecto para la ciudad",
+      "accent": "amber",
+      "hue": "amber",
+      "image": "img/q_cage.png",
+      "start": 616.24,
+      "dur": 9
+    },
+    {
+      "id": "q_laundry",
+      "kind": "raw",
+      "src": "img/q_laundry.png",
+      "hue": "amber",
+      "kicker": "En un lavadero, un garaje",
+      "gen": {
+        "type": "image",
+        "name": "q_laundry",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a small quail cage sitting in a tiny home laundry room, compact urban setup, documentary. natural soft outdoor daylight, slightly overcast, muted natural colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 625.33,
+      "dur": 5.47
+    },
+    {
+      "id": "q_light",
+      "kind": "raw",
+      "src": "img/q_light.png",
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "q_light",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of quail cage under a warm artificial light in a closed garage at night, documentary. natural soft outdoor daylight, slightly overcast, muted natural colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 630.8,
+      "dur": 7.43
+    },
+    {
+      "id": "ch091",
+      "kind": "chips",
+      "chips": [
+        "Departamento",
+        "Lavadero",
+        "Garaje cerrado",
+        "Una habitación que no uses"
+      ],
+      "title": "El animal perfecto para la ciudad",
+      "image": "img/q_laundry.png",
+      "bg": "image",
+      "hue": "amber",
+      "start": 638.23,
+      "dur": 7.77
+    },
+    {
+      "id": "q_feed",
+      "kind": "raw",
+      "src": "vid/q_feed_src.mp4",
+      "hue": "amber",
+      "gen": {
+        "type": "clip",
+        "image": "q_feed_src",
+        "prompt": "fine poultry feed crumble being poured into a quail feeder, the birds eating, slow motion macro",
+        "frames": 80
+      },
+      "start": 646,
+      "dur": 9
+    },
+    {
+      "id": "ca040",
+      "kind": "callout",
+      "figure": "20–25 g",
+      "image": "img/q_hand.png",
+      "eyebrow": "Lo que come por día",
+      "caption": "Diez comen menos que una gallina",
+      "accent": "accent",
+      "hue": "amber",
+      "start": 656.57,
+      "dur": 9
+    },
+    {
+      "id": "ca092",
+      "kind": "callout",
+      "figure": "×3",
+      "image": "img/q_eggs_market.png",
+      "eyebrow": "Huevos, proporcionalmente",
+      "caption": "Comen menos que una gallina",
+      "accent": "good",
+      "hue": "amber",
+      "start": 665.7,
+      "dur": 9
+    },
+    {
+      "id": "q_coturnix",
+      "kind": "raw",
+      "src": "img/q_coturnix.png",
+      "hue": "amber",
+      "kicker": "Coturnix Japonica",
+      "gen": {
+        "type": "image",
+        "name": "q_coturnix",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a close documentary portrait of a Coturnix japonica quail, brown speckled feathers, soft daylight. natural soft outdoor daylight, slightly overcast, muted natural colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 678.86,
+      "dur": 2.59
+    },
+    {
+      "id": "q041",
+      "kind": "quote",
+      "text": "La *Coturnix Japonica* merece su propio video entero",
+      "image": "img/t7_codorniz.png",
+      "eyebrow": "El animal más eficiente por m²",
+      "accent": "amber",
+      "hue": "amber",
+      "fontSize": 58,
+      "start": 681.45,
+      "dur": 9
+    },
+    {
+      "id": "q_stack",
+      "kind": "raw",
+      "src": "vid/q_stack_src.mp4",
+      "hue": "amber",
+      "kicker": "Máxima producción, mínimo trabajo",
+      "gen": {
+        "type": "clip",
+        "image": "q_stack_src",
+        "prompt": "a tall efficient stacked quail breeding rack with many cages, slow motion documentary",
+        "frames": 80
+      },
+      "start": 691.57,
+      "dur": 8.76
+    },
+    {
+      "id": "an093",
+      "kind": "annotated",
+      "image": "img/q_cage.png",
+      "annotations": [
+        {
+          "kind": "circle",
+          "x": 50,
+          "y": 50,
+          "w": 36,
+          "label": "más huevos por m² que nada"
+        }
+      ],
+      "eyebrow": "Más que la gallina. Mucho más",
+      "hue": "amber",
+      "start": 700.33,
+      "dur": 8.95
+    },
+    {
+      "id": "t7042",
+      "kind": "top7",
+      "rank": 4,
+      "name": "El pato",
+      "benefit": "Huevos + control de plagas del huerto",
+      "image": "img/t7_pato.png",
+      "accent": "cold",
+      "hue": "cold",
+      "gen": {
+        "type": "image",
+        "name": "t7_pato",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a Khaki Campbell duck standing in a backyard vegetable garden near a water basin, brown plumage, documentary portrait. natural soft outdoor daylight, slightly overcast, muted natural colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 709.28,
+      "dur": 5.5,
+      "items": [
+        {
+          "name": "La gallina ponedora",
+          "benefit": "Huevos todo el año — la puerta de entrada",
+          "image": "img/t7_gallina.png",
+          "accent": "good"
+        },
+        {
+          "name": "El conejo",
+          "benefit": "Carne + fertilizante — la máquina más eficiente",
+          "image": "img/t7_conejo.png",
+          "accent": "amber"
+        },
+        {
+          "name": "La codorniz",
+          "benefit": "Huevos premium en mínimo espacio",
+          "image": "img/t7_codorniz.png",
+          "accent": "accent"
+        },
+        {
+          "name": "El pato",
+          "benefit": "Huevos + control de plagas del huerto",
+          "image": "img/t7_pato.png",
+          "accent": "cold"
+        },
+        {
+          "name": "La cabra enana",
+          "benefit": "Leche y queso fresco todos los días",
+          "image": "img/t7_cabra.png",
+          "accent": "good"
+        },
+        {
+          "name": "La lombriz roja",
+          "benefit": "Fertilizante que se multiplica solo",
+          "image": "img/t7_lombriz.png",
+          "accent": "danger"
+        },
+        {
+          "name": "La abeja",
+          "benefit": "Miel, cera, propóleo… y poliniza todo",
+          "image": "img/t7_abeja.png",
+          "accent": "amber"
+        }
+      ]
+    },
+    {
+      "id": "p_pond",
+      "kind": "half",
+      "src": "img/p_pond.png",
+      "hue": "cold",
+      "kicker": "Todos creen que es decorativo",
+      "gen": {
+        "type": "image",
+        "name": "p_pond",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a duck on a decorative garden pond, the common cliché, documentary. natural soft outdoor daylight, slightly overcast, muted natural colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 720.53,
+      "dur": 9
+    },
+    {
+      "id": "p_garden",
+      "kind": "raw",
+      "src": "vid/p_garden_src.mp4",
+      "hue": "cold",
+      "gen": {
+        "type": "clip",
+        "image": "p_garden_src",
+        "prompt": "a brown duck walking between rows of vegetable plants in a backyard garden, hunting pests, slow motion",
+        "frames": 90
+      },
+      "start": 734.3,
+      "dur": 9
+    },
+    {
+      "id": "st043",
+      "kind": "stat",
+      "value": 320,
+      "prefix": "280–",
+      "label": "huevos por año — más que la gallina",
+      "eyebrow": "Una pata Khaki Campbell",
+      "accent": "good",
+      "hue": "cold",
+      "start": 746.35,
+      "dur": 4.47
+    },
+    {
+      "id": "ba044",
+      "kind": "bars",
+      "bars": [
+        {
+          "label": "Pato (Khaki Campbell)",
+          "value": 320,
+          "display": "280–320",
+          "winner": true,
+          "tone": "good"
+        },
+        {
+          "label": "Gallina ponedora promedio",
+          "value": 270,
+          "display": "≈250–280",
+          "tone": "amber"
+        }
+      ],
+      "title": "Mejor ponedor de lo que crees",
+      "orientation": "horizontal",
+      "unit": "",
+      "accent": "amber",
+      "hue": "cold",
+      "start": 750.82,
+      "dur": 3.31
+    },
+    {
+      "id": "p_egg",
+      "kind": "raw",
+      "src": "img/p_egg.png",
+      "hue": "amber",
+      "kicker": "Más grande, más yema",
+      "gen": {
+        "type": "image",
+        "name": "p_egg",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a large duck egg next to a chicken egg on a wooden table for size comparison, documentary macro. natural soft outdoor daylight, slightly overcast, muted natural colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 754.13,
+      "dur": 5.95
+    },
+    {
+      "id": "ch045",
+      "kind": "chips",
+      "chips": [
+        "Pan artesanal",
+        "Repostería",
+        "Más estructura en la masa"
+      ],
+      "title": "Los panaderos lo buscan",
+      "image": "img/p_egg.png",
+      "bg": "image",
+      "hue": "amber",
+      "start": 760.08,
+      "dur": 9
+    },
+    {
+      "id": "p_eggs_basket",
+      "kind": "raw",
+      "src": "img/p_eggs_basket.png",
+      "hue": "amber",
+      "kicker": "Pero la gracia no es solo el huevo",
+      "gen": {
+        "type": "image",
+        "name": "p_eggs_basket",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a basket of large pale duck eggs on a rustic wooden table, documentary. natural soft outdoor daylight, slightly overcast, muted natural colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 773.65,
+      "dur": 2.25
+    },
+    {
+      "id": "p_slug",
+      "kind": "raw",
+      "src": "vid/p_slug_src.mp4",
+      "hue": "cold",
+      "kicker": "Babosas, caracoles, larvas",
+      "gen": {
+        "type": "clip",
+        "image": "p_slug_src",
+        "prompt": "a duck eating a slug among garden plants, close documentary shot, pest control in action, slow motion",
+        "frames": 80
+      },
+      "start": 775.9,
+      "dur": 9
+    },
+    {
+      "id": "d046",
+      "kind": "diagram",
+      "eyebrow": "Un pesticida con patas",
+      "hue": "cold",
+      "accent": "accent",
+      "slides": [
+        {
+          "image": "img/dg_p_pest.png",
+          "title": "Se come las plagas, no las plantas"
+        }
+      ],
+      "start": 786.71,
+      "dur": 4.65
+    },
+    {
+      "id": "p_him_garden",
+      "kind": "raw",
+      "src": "img/p_him_garden.png",
+      "hue": "cold",
+      "kicker": "Sus patos en el huerto",
+      "start": 791.36,
+      "dur": 4.93
+    },
+    {
+      "id": "h047",
+      "kind": "headline",
+      "tokens": [
+        {
+          "t": "Camina"
+        },
+        {
+          "t": "entre"
+        },
+        {
+          "t": "las"
+        },
+        {
+          "t": "plantas"
+        },
+        {
+          "t": "comiendo"
+        },
+        {
+          "t": "bichos",
+          "good": true
+        }
+      ],
+      "eyebrow": "No rasca la tierra como la gallina",
+      "hue": "amber",
+      "bg": "image",
+      "image": "img/p_garden_src.png",
+      "start": 796.29,
+      "dur": 9
+    },
+    {
+      "id": "p_eggs_nest",
+      "kind": "raw",
+      "src": "img/p_eggs_nest.png",
+      "hue": "cold",
+      "kicker": "Un pesticida con patas",
+      "gen": {
+        "type": "image",
+        "name": "p_eggs_nest",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of duck eggs in a simple straw nest in a backyard, documentary. natural soft outdoor daylight, slightly overcast, muted natural colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 810.16,
+      "dur": 3.32
+    },
+    {
+      "id": "pr048",
+      "kind": "process",
+      "steps": [
+        {
+          "title": "Un recipiente con agua",
+          "desc": "una tina, una pileta o un balde cortado",
+          "image": "img/p_water.png"
+        },
+        {
+          "title": "Mete la cabeza y chapotea",
+          "desc": "no necesita laguna",
+          "image": "img/p_garden_src.png"
+        },
+        {
+          "title": "El agua sucia riega las plantas",
+          "desc": "llena de nutrientes",
+          "image": "img/p_egg.png"
+        }
+      ],
+      "title": "Eso sí: necesita agua",
+      "eyebrow": "Todo se conecta",
+      "accent": "cold",
+      "hue": "cold",
+      "start": 813.48,
+      "dur": 6.44
+    },
+    {
+      "id": "p_water",
+      "kind": "raw",
+      "src": "vid/p_water_src.mp4",
+      "hue": "cold",
+      "gen": {
+        "type": "clip",
+        "image": "p_water_src",
+        "prompt": "a brown duck splashing and dunking its head in a half plastic tub of water in a backyard, slow motion",
+        "frames": 90
+      },
+      "start": 819.92,
+      "dur": 9
+    },
+    {
+      "id": "p_water_plants",
+      "kind": "raw",
+      "src": "vid/p_water_plants_src.mp4",
+      "hue": "cold",
+      "kicker": "El agua sucia riega el huerto",
+      "gen": {
+        "type": "clip",
+        "image": "p_water_plants_src",
+        "prompt": "nutrient-rich greenish duck water being poured from a bucket onto thriving garden plants, slow motion",
+        "frames": 80
+      },
+      "start": 833.8,
+      "dur": 2.92
+    },
+    {
+      "id": "t7049",
+      "kind": "top7",
+      "rank": 5,
+      "name": "La cabra enana",
+      "benefit": "Leche y queso fresco todos los días",
+      "image": "img/t7_cabra.png",
+      "accent": "good",
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "t7_cabra",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a small friendly Nigerian dwarf goat standing in a backyard pen, the size of a medium dog, documentary portrait. natural soft outdoor daylight, slightly overcast, muted natural colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 836.72,
+      "dur": 5.5,
+      "items": [
+        {
+          "name": "La gallina ponedora",
+          "benefit": "Huevos todo el año — la puerta de entrada",
+          "image": "img/t7_gallina.png",
+          "accent": "good"
+        },
+        {
+          "name": "El conejo",
+          "benefit": "Carne + fertilizante — la máquina más eficiente",
+          "image": "img/t7_conejo.png",
+          "accent": "amber"
+        },
+        {
+          "name": "La codorniz",
+          "benefit": "Huevos premium en mínimo espacio",
+          "image": "img/t7_codorniz.png",
+          "accent": "accent"
+        },
+        {
+          "name": "El pato",
+          "benefit": "Huevos + control de plagas del huerto",
+          "image": "img/t7_pato.png",
+          "accent": "cold"
+        },
+        {
+          "name": "La cabra enana",
+          "benefit": "Leche y queso fresco todos los días",
+          "image": "img/t7_cabra.png",
+          "accent": "good"
+        },
+        {
+          "name": "La lombriz roja",
+          "benefit": "Fertilizante que se multiplica solo",
+          "image": "img/t7_lombriz.png",
+          "accent": "danger"
+        },
+        {
+          "name": "La abeja",
+          "benefit": "Miel, cera, propóleo… y poliniza todo",
+          "image": "img/t7_abeja.png",
+          "accent": "amber"
+        }
+      ]
+    },
+    {
+      "id": "k_doubt",
+      "kind": "raw",
+      "src": "img/k_doubt.png",
+      "hue": "cold",
+      "kicker": "La gente piensa que es complicado",
+      "gen": {
+        "type": "image",
+        "name": "k_doubt",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a person looking unsure at a large goat, misconception, documentary. natural soft outdoor daylight, slightly overcast, muted natural colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 843.17,
+      "dur": 9
+    },
+    {
+      "id": "k_nigerian",
+      "kind": "raw",
+      "src": "img/k_nigerian.png",
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "k_nigerian",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a close documentary portrait of a small Nigerian dwarf goat in a backyard pen, friendly, soft daylight. natural soft outdoor daylight, slightly overcast, muted natural colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 852.56,
+      "dur": 4.71
+    },
+    {
+      "id": "k_pen",
+      "kind": "raw",
+      "src": "img/k_pen.png",
+      "hue": "amber",
+      "kicker": "Te da leche todos los días",
+      "start": 857.27,
+      "dur": 4.07
+    },
+    {
+      "id": "k_him_milk",
+      "kind": "raw",
+      "src": "img/k_him_milk.png",
+      "hue": "amber",
+      "kicker": "Ordeñando la cabra",
+      "start": 861.34,
+      "dur": 1.78
+    },
+    {
+      "id": "k_milk_pour",
+      "kind": "raw",
+      "src": "vid/k_milk_pour_src.mp4",
+      "hue": "amber",
+      "gen": {
+        "type": "clip",
+        "image": "k_milk_pour_src",
+        "prompt": "fresh goat milk being poured from a metal pail into a glass jar in a rustic kitchen, slow motion",
+        "frames": 80
+      },
+      "start": 863.12,
+      "dur": 1.2
+    },
+    {
+      "id": "st050",
+      "kind": "stat",
+      "value": 2,
+      "prefix": "1–",
+      "suffix": " L",
+      "label": "de leche por día — alcanza para tu familia",
+      "eyebrow": "Una cabra enana nigeriana",
+      "accent": "good",
+      "hue": "amber",
+      "start": 864.22,
+      "dur": 9
+    },
+    {
+      "id": "d051",
+      "kind": "diagram",
+      "eyebrow": "Por qué cae mejor que la de vaca",
+      "hue": "amber",
+      "accent": "accent",
+      "slides": [
+        {
+          "image": "img/dg_k_milk.png",
+          "title": "Sin caseína A1"
+        }
+      ],
+      "start": 878.54,
+      "dur": 9
+    },
+    {
+      "id": "k_milk_glass",
+      "kind": "raw",
+      "src": "img/k_milk_glass.png",
+      "hue": "amber",
+      "kicker": "Más digestiva que la de vaca",
+      "gen": {
+        "type": "image",
+        "name": "k_milk_glass",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a glass of fresh goat milk on a rustic kitchen table, soft natural light, documentary. natural soft outdoor daylight, slightly overcast, muted natural colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 892.84,
+      "dur": 4.73
+    },
+    {
+      "id": "k_cheese",
+      "kind": "half",
+      "src": "img/k_cheese.png",
+      "hue": "amber",
+      "kicker": "Producto premium",
+      "gen": {
+        "type": "image",
+        "name": "k_cheese",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a round of fresh white goat cheese on a wooden board in a farmers market stall, documentary. natural soft outdoor daylight, slightly overcast, muted natural colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 897.57,
+      "dur": 9
+    },
+    {
+      "id": "k_cheese_make",
+      "kind": "raw",
+      "src": "vid/k_cheese_make_src.mp4",
+      "hue": "amber",
+      "gen": {
+        "type": "clip",
+        "image": "k_cheese_make_src",
+        "prompt": "hands shaping and pressing fresh white goat cheese in a rustic kitchen, slow motion documentary",
+        "frames": 80
+      },
+      "start": 909.82,
+      "dur": 3.85
+    },
+    {
+      "id": "ba052",
+      "kind": "bars",
+      "bars": [
+        {
+          "label": "Leche cruda",
+          "value": 30,
+          "display": "barata",
+          "tone": "amber"
+        },
+        {
+          "label": "Queso fresco de cabra",
+          "value": 100,
+          "display": "se vende caro",
+          "winner": true,
+          "tone": "good"
+        }
+      ],
+      "title": "Con 2 litros, un queso de 200 g",
+      "eyebrow": "Que en la tienda vale una fortuna",
+      "orientation": "horizontal",
+      "accent": "amber",
+      "hue": "amber",
+      "start": 913.67,
+      "dur": 9
+    },
+    {
+      "id": "k_brush",
+      "kind": "raw",
+      "src": "vid/k_brush_src.mp4",
+      "hue": "cold",
+      "kicker": "Te limpia el terreno gratis",
+      "gen": {
+        "type": "clip",
+        "image": "k_brush_src",
+        "prompt": "a dwarf goat eating weeds and brush in an overgrown corner of a yard, natural brush clearing, slow motion",
+        "frames": 80
+      },
+      "start": 928.3,
+      "dur": 9
+    },
+    {
+      "id": "sp053",
+      "kind": "splitlist",
+      "title": "La cabra come lo que otros no",
+      "items": [
+        "Pasto y maleza",
+        "Ramas y hojas",
+        "Hierbas malas",
+        "Te limpia el terreno gratis"
+      ],
+      "palette": "G",
+      "start": 938.02,
+      "dur": 9
+    },
+    {
+      "id": "k_corral",
+      "kind": "raw",
+      "src": "img/k_corral.png",
+      "hue": "amber",
+      "kicker": "Menos que un cajón de estacionamiento",
+      "gen": {
+        "type": "image",
+        "name": "k_corral",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a small simple goat pen of about four square meters with a little wooden roof in a backyard, documentary. natural soft outdoor daylight, slightly overcast, muted natural colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 952.39,
+      "dur": 9
+    },
+    {
+      "id": "k_kids",
+      "kind": "raw",
+      "src": "img/k_kids.png",
+      "hue": "amber",
+      "kicker": "Los niños la adoran",
+      "gen": {
+        "type": "image",
+        "name": "k_kids",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a friendly dwarf goat being petted by children in a backyard, affectionate, documentary. natural soft outdoor daylight, slightly overcast, muted natural colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 964.34,
+      "dur": 5.9
+    },
+    {
+      "id": "q094",
+      "kind": "quote",
+      "text": "Sociable, cariñosa, inteligente — *como un perro*",
+      "image": "img/k_kids.png",
+      "eyebrow": "Los niños la adoran",
+      "accent": "good",
+      "hue": "amber",
+      "fontSize": 56,
+      "start": 970.24,
+      "dur": 5.09
+    },
+    {
+      "id": "ck054",
+      "kind": "checklist",
+      "title": "El único cuidado especial",
+      "items": [
+        {
+          "text": "Necesitas al menos DOS",
+          "state": "done",
+          "note": "la sola se deprime"
+        },
+        {
+          "text": "Un corral de ~4 m² con techito",
+          "state": "done"
+        },
+        {
+          "text": "Pasto y maleza para comer",
+          "state": "done"
+        },
+        {
+          "text": "Estiércol directo a la tierra",
+          "state": "done"
+        }
+      ],
+      "eyebrow": "Menos que un cajón de estacionamiento",
+      "accent": "amber",
+      "hue": "amber",
+      "image": "img/k_pen.png",
+      "start": 975.33,
+      "dur": 9
+    },
+    {
+      "id": "t7055",
+      "kind": "top7",
+      "rank": 6,
+      "name": "La lombriz roja",
+      "benefit": "Fertilizante que se multiplica solo",
+      "image": "img/t7_lombriz.png",
+      "accent": "danger",
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "t7_lombriz",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a handful of dark rich soil full of red California earthworms held in two cupped hands, macro documentary, vermicompost. natural soft outdoor daylight, slightly overcast, muted natural colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 989.8,
+      "dur": 5.5,
+      "items": [
+        {
+          "name": "La gallina ponedora",
+          "benefit": "Huevos todo el año — la puerta de entrada",
+          "image": "img/t7_gallina.png",
+          "accent": "good"
+        },
+        {
+          "name": "El conejo",
+          "benefit": "Carne + fertilizante — la máquina más eficiente",
+          "image": "img/t7_conejo.png",
+          "accent": "amber"
+        },
+        {
+          "name": "La codorniz",
+          "benefit": "Huevos premium en mínimo espacio",
+          "image": "img/t7_codorniz.png",
+          "accent": "accent"
+        },
+        {
+          "name": "El pato",
+          "benefit": "Huevos + control de plagas del huerto",
+          "image": "img/t7_pato.png",
+          "accent": "cold"
+        },
+        {
+          "name": "La cabra enana",
+          "benefit": "Leche y queso fresco todos los días",
+          "image": "img/t7_cabra.png",
+          "accent": "good"
+        },
+        {
+          "name": "La lombriz roja",
+          "benefit": "Fertilizante que se multiplica solo",
+          "image": "img/t7_lombriz.png",
+          "accent": "danger"
+        },
+        {
+          "name": "La abeja",
+          "benefit": "Miel, cera, propóleo… y poliniza todo",
+          "image": "img/t7_abeja.png",
+          "accent": "amber"
+        }
+      ]
+    },
+    {
+      "id": "h056",
+      "kind": "headline",
+      "tokens": [
+        {
+          "t": "Sin"
+        },
+        {
+          "t": "ojos."
+        },
+        {
+          "t": "Sin"
+        },
+        {
+          "t": "patas."
+        },
+        {
+          "t": "Cabe"
+        },
+        {
+          "t": "en"
+        },
+        {
+          "t": "un"
+        },
+        {
+          "t": "balde",
+          "good": true
+        }
+      ],
+      "eyebrow": "El que nadie espera en una lista así",
+      "hue": "amber",
+      "bg": "image",
+      "image": "img/t7_lombriz.png",
+      "start": 996.96,
+      "dur": 9
+    },
+    {
+      "id": "q057",
+      "kind": "quote",
+      "text": "El *más rentable por metro cuadrado* del planeta",
+      "eyebrow": "No carne ni huevos: fertilizante",
+      "accent": "danger",
+      "hue": "red",
+      "fontSize": 62,
+      "start": 1006.03,
+      "dur": 9
+    },
+    {
+      "id": "l_feed",
+      "kind": "raw",
+      "src": "vid/l_feed_src.mp4",
+      "hue": "amber",
+      "kicker": "Restos de cocina, cáscaras, café",
+      "gen": {
+        "type": "clip",
+        "image": "l_feed_src",
+        "prompt": "kitchen scraps, vegetable peels and coffee grounds being added on top of a worm bin, worms underneath, slow motion macro",
+        "frames": 80
+      },
+      "start": 1020.91,
+      "dur": 9
+    },
+    {
+      "id": "d058",
+      "kind": "diagram",
+      "eyebrow": "De residuo a humus de lombriz",
+      "hue": "amber",
+      "accent": "accent",
+      "slides": [
+        {
+          "image": "img/dg_l_humus_d.png",
+          "title": "Come tu basura, hace oro negro"
+        }
+      ],
+      "start": 1030.32,
+      "dur": 9
+    },
+    {
+      "id": "l_humus",
+      "kind": "raw",
+      "src": "img/l_humus.png",
+      "hue": "amber",
+      "kicker": "Un kilo de humus",
+      "start": 1040.5,
+      "dur": 9
+    },
+    {
+      "id": "st059",
+      "kind": "stat",
+      "value": 1,
+      "suffix": " kg",
+      "label": "de humus por m² cada SEMANA",
+      "eyebrow": "Sin hacer nada más",
+      "accent": "good",
+      "hue": "amber",
+      "start": 1050.59,
+      "dur": 9
+    },
+    {
+      "id": "l_worms_move",
+      "kind": "raw",
+      "src": "vid/l_worms_move_src.mp4",
+      "hue": "cold",
+      "gen": {
+        "type": "clip",
+        "image": "l_worms_move_src",
+        "prompt": "red California earthworms moving and writhing in rich dark soil, macro slow motion",
+        "frames": 80
+      },
+      "start": 1066.69,
+      "dur": 3.67
+    },
+    {
+      "id": "l_bin_full",
+      "kind": "half",
+      "src": "img/l_bin_full.png",
+      "hue": "amber",
+      "kicker": "Mil → cuatro mil → dieciséis mil",
+      "gen": {
+        "type": "image",
+        "name": "l_bin_full",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a wooden worm bin teeming with red California earthworms in dark moist soil, macro documentary. natural soft outdoor daylight, slightly overcast, muted natural colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 1070.36,
+      "dur": 4.94
+    },
+    {
+      "id": "ba060",
+      "kind": "bars",
+      "bars": [
+        {
+          "label": "Hoy",
+          "value": 1,
+          "display": "1.000",
+          "tone": "amber"
+        },
+        {
+          "label": "6 meses",
+          "value": 4,
+          "display": "4.000",
+          "tone": "good"
+        },
+        {
+          "label": "1 año",
+          "value": 16,
+          "display": "16.000",
+          "winner": true,
+          "tone": "good"
+        }
+      ],
+      "title": "Se duplica cada 3 meses",
+      "eyebrow": "Y las lombrices también se venden",
+      "orientation": "horizontal",
+      "unit": "",
+      "accent": "amber",
+      "hue": "amber",
+      "start": 1075.3,
+      "dur": 5.86
+    },
+    {
+      "id": "l_sell",
+      "kind": "raw",
+      "src": "img/l_sell.png",
+      "hue": "cold",
+      "kicker": "Un negocio que se multiplica solo",
+      "gen": {
+        "type": "image",
+        "name": "l_sell",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of red worms in a small container ready to sell for fishing and composting, documentary macro. natural soft outdoor daylight, slightly overcast, muted natural colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 1081.16,
+      "dur": 9
+    },
+    {
+      "id": "l_corner",
+      "kind": "raw",
+      "src": "img/l_corner.png",
+      "hue": "amber",
+      "kicker": "Sin sol, sin ruido, sin olor",
+      "gen": {
+        "type": "image",
+        "name": "l_corner",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a small worm bin tucked in a dark damp corner under a kitchen sink, documentary. natural soft outdoor daylight, slightly overcast, muted natural colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 1096.47,
+      "dur": 1.97
+    },
+    {
+      "id": "ck062",
+      "kind": "checklist",
+      "title": "Todo lo que necesita",
+      "items": [
+        {
+          "text": "Una caja de madera con agujeros abajo",
+          "state": "done"
+        },
+        {
+          "text": "Tierra y restos de cocina",
+          "state": "done"
+        },
+        {
+          "text": "Mil lombrices para arrancar",
+          "state": "done"
+        },
+        {
+          "text": "Un rincón oscuro y húmedo",
+          "state": "done"
+        }
+      ],
+      "eyebrow": "Sin sol, sin ruido, sin veterinario, sin olor",
+      "accent": "amber",
+      "hue": "amber",
+      "image": "img/l_humus.png",
+      "start": 1098.44,
+      "dur": 9
+    },
+    {
+      "id": "cr061",
+      "kind": "cross",
+      "layers": [
+        {
+          "label": "Restos de cocina encima",
+          "color": "#A9794A",
+          "weight": 1
+        },
+        {
+          "label": "Lombrices trabajando",
+          "color": "#B0503C",
+          "weight": 2
+        },
+        {
+          "label": "Tierra y humus abajo",
+          "color": "#2A2620",
+          "weight": 3
+        }
+      ],
+      "title": "Una caja de 60 × 40 cm con agujeros",
+      "eyebrow": "En un balcón, un garaje, bajo el fregadero",
+      "marker": {
+        "label": "humus en 3 meses",
+        "atDepth": 3,
+        "color": "good"
+      },
+      "hue": "amber",
+      "start": 1112.24,
+      "dur": 7.57
+    },
+    {
+      "id": "l_him_bin",
+      "kind": "raw",
+      "src": "img/l_him_bin.png",
+      "hue": "amber",
+      "kicker": "Su lombricero",
+      "start": 1119.81,
+      "dur": 5
+    },
+    {
+      "id": "l_humus_garden",
+      "kind": "raw",
+      "src": "vid/l_humus_garden_src.mp4",
+      "hue": "cold",
+      "gen": {
+        "type": "clip",
+        "image": "l_humus_garden_src",
+        "prompt": "dark worm humus being spread over a thriving green garden bed, slow motion documentary",
+        "frames": 80
+      },
+      "start": 1124.81,
+      "dur": 1.62
+    },
+    {
+      "id": "l_jar",
+      "kind": "raw",
+      "src": "img/l_jar.png",
+      "hue": "cold",
+      "kicker": "Para pesca, para compostaje",
+      "gen": {
+        "type": "image",
+        "name": "l_jar",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a jar full of red worms ready to sell for fishing and composting, documentary macro. natural soft outdoor daylight, slightly overcast, muted natural colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 1126.43,
+      "dur": 9
+    },
+    {
+      "id": "g_soil_world",
+      "kind": "raw",
+      "src": "img/g_soil_world.png",
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "g_soil_world",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a top-down view of dark fertile garden soil with green seedlings sprouting, rich healthy earth, documentary. natural soft outdoor daylight, slightly overcast, muted natural colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 1138.36,
+      "dur": 9
+    },
+    {
+      "id": "l_manure_bin",
+      "kind": "raw",
+      "src": "img/l_manure_bin.png",
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "l_manure_bin",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of animal manure and kitchen scraps being added on top of a worm composting bin, documentary. natural soft outdoor daylight, slightly overcast, muted natural colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 1148.08,
+      "dur": 6.16
+    },
+    {
+      "id": "jn063",
+      "kind": "journey",
+      "eyebrow": "Cada animal alimenta al siguiente",
+      "title": "El sistema se alimenta solo",
+      "waypoints": [
+        {
+          "x": 0.18,
+          "y": 0.3,
+          "z": 0,
+          "image": "img/t7_lombriz.png",
+          "num": "1",
+          "label": "Lombrices",
+          "sub": "hacen el fertilizante",
+          "dwell": 3,
+          "travel": 1.8
+        },
+        {
+          "x": 0.55,
+          "y": 0.2,
+          "z": 0.1,
+          "image": "img/g_soil_world.png",
+          "num": "2",
+          "label": "Tierra fértil",
+          "sub": "pasto y verduras",
+          "dwell": 3,
+          "travel": 1.8
+        },
+        {
+          "x": 0.82,
+          "y": 0.42,
+          "z": 0,
+          "image": "img/t7_gallina.png",
+          "num": "3",
+          "label": "Los animales",
+          "sub": "comen del patio",
+          "dwell": 3,
+          "travel": 1.8
+        },
+        {
+          "x": 0.6,
+          "y": 0.7,
+          "z": 0.1,
+          "image": "img/c_manure.png",
+          "num": "4",
+          "label": "El estiércol",
+          "sub": "vuelve a la tierra",
+          "dwell": 3,
+          "travel": 1.8
+        },
+        {
+          "x": 0.25,
+          "y": 0.62,
+          "z": 0,
+          "image": "img/l_humus.png",
+          "num": "5",
+          "label": "Y otra vez",
+          "sub": "no se tira nada",
+          "dwell": 3.2,
+          "travel": 1.6
+        }
+      ],
+      "accent": "good",
+      "start": 1154.24,
+      "dur": 15.72
+    },
+    {
+      "id": "ag064",
+      "kind": "aged",
+      "heading": "Mi abuelo no le ponía nombre",
+      "lines": [
+        {
+          "text": "No lo llamaba permacultura ni economía circular",
+          "mark": false
+        },
+        {
+          "text": "Simplemente así se hacía",
+          "mark": true
+        },
+        {
+          "text": "Lo que sobraba de un lado iba al otro",
+          "mark": true
+        }
+      ],
+      "eyebrow": "Es un círculo",
+      "accent": "amber",
+      "hue": "amber",
+      "start": 1169.96,
+      "dur": 8
+    },
+    {
+      "id": "ab_circle_old",
+      "kind": "raw",
+      "src": "img/ab_circle_old.png",
+      "hue": "amber",
+      "kicker": "Nada se tira, nada se compra",
+      "gen": {
+        "type": "image",
+        "name": "ab_circle_old",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a faded vintage archival photograph of a faded vintage photo of a self-sufficient old country homestead where nothing is wasted, sepia, scratched grain, sun-faded yellowed sepia tones. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 1183.72,
+      "dur": 2.76
+    },
+    {
+      "id": "q095",
+      "kind": "quote",
+      "text": "Nadie le pagaba a nadie de afuera, porque *no hacía falta*",
+      "eyebrow": "Economía circular sin nombre",
+      "accent": "good",
+      "hue": "amber",
+      "fontSize": 58,
+      "start": 1186.48,
+      "dur": 4.56
+    },
+    {
+      "id": "t7065",
+      "kind": "top7",
+      "rank": 7,
+      "name": "La abeja",
+      "benefit": "Miel, cera, propóleo… y poliniza todo",
+      "image": "img/t7_abeja.png",
+      "accent": "amber",
+      "hue": "amber",
+      "label": "EL TOP 7 · LA CORONA",
+      "gen": {
+        "type": "image",
+        "name": "t7_abeja",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a beekeeper's gloved hands holding a wooden hive frame covered in honeybees in a backyard apiary, documentary. natural soft outdoor daylight, slightly overcast, muted natural colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 1191.04,
+      "dur": 6,
+      "items": [
+        {
+          "name": "La gallina ponedora",
+          "benefit": "Huevos todo el año — la puerta de entrada",
+          "image": "img/t7_gallina.png",
+          "accent": "good"
+        },
+        {
+          "name": "El conejo",
+          "benefit": "Carne + fertilizante — la máquina más eficiente",
+          "image": "img/t7_conejo.png",
+          "accent": "amber"
+        },
+        {
+          "name": "La codorniz",
+          "benefit": "Huevos premium en mínimo espacio",
+          "image": "img/t7_codorniz.png",
+          "accent": "accent"
+        },
+        {
+          "name": "El pato",
+          "benefit": "Huevos + control de plagas del huerto",
+          "image": "img/t7_pato.png",
+          "accent": "cold"
+        },
+        {
+          "name": "La cabra enana",
+          "benefit": "Leche y queso fresco todos los días",
+          "image": "img/t7_cabra.png",
+          "accent": "good"
+        },
+        {
+          "name": "La lombriz roja",
+          "benefit": "Fertilizante que se multiplica solo",
+          "image": "img/t7_lombriz.png",
+          "accent": "danger"
+        },
+        {
+          "name": "La abeja",
+          "benefit": "Miel, cera, propóleo… y poliniza todo",
+          "image": "img/t7_abeja.png",
+          "accent": "amber"
+        }
+      ]
+    },
+    {
+      "id": "b_swarm",
+      "kind": "raw",
+      "src": "vid/b_swarm_src.mp4",
+      "hue": "amber",
+      "gen": {
+        "type": "clip",
+        "image": "b_swarm_src",
+        "prompt": "honeybees crawling densely over the frames of an open hive, slightly intimidating, slow motion macro",
+        "frames": 80
+      },
+      "start": 1201.23,
+      "dur": 3.13
+    },
+    {
+      "id": "q066",
+      "kind": "quote",
+      "text": "Las abejas *no* son lo que piensas",
+      "image": "img/t7_abeja.png",
+      "eyebrow": "El más rentable por hora de trabajo",
+      "accent": "danger",
+      "hue": "red",
+      "fontSize": 64,
+      "start": 1204.36,
+      "dur": 7.08
+    },
+    {
+      "id": "sp067",
+      "kind": "splitlist",
+      "title": "Lo que nadie te dice de las abejas",
+      "items": [
+        "No te atacan si sabes lo que haces",
+        "No necesitan un campo",
+        "No necesitan flores especiales",
+        "Se cuidan solas el 90% del tiempo"
+      ],
+      "palette": "G",
+      "start": 1211.44,
+      "dur": 9
+    },
+    {
+      "id": "b_honey_gold",
+      "kind": "raw",
+      "src": "img/b_honey_gold.png",
+      "hue": "amber",
+      "kicker": "Más por kilo que todo lo demás",
+      "gen": {
+        "type": "image",
+        "name": "b_honey_gold",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of rows of glowing golden honey jars on a rustic table, premium product, warm light, documentary. natural soft outdoor daylight, slightly overcast, muted natural colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 1226.11,
+      "dur": 5.02
+    },
+    {
+      "id": "b_hive",
+      "kind": "half",
+      "src": "img/b_hive.png",
+      "hue": "amber",
+      "kicker": "Una sola colmena",
+      "gen": {
+        "type": "image",
+        "name": "b_hive",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a single white wooden beehive box standing in a backyard corner near flowers, documentary. natural soft outdoor daylight, slightly overcast, muted natural colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 1231.13,
+      "dur": 2.86
+    },
+    {
+      "id": "st068",
+      "kind": "stat",
+      "value": 40,
+      "prefix": "20–",
+      "suffix": " kg",
+      "label": "de miel por año, una sola colmena",
+      "eyebrow": "Según zona y floración",
+      "accent": "good",
+      "hue": "amber",
+      "start": 1233.99,
+      "dur": 6.13
+    },
+    {
+      "id": "b_honey_jar",
+      "kind": "raw",
+      "src": "vid/b_honey_jar_src.mp4",
+      "hue": "amber",
+      "kicker": "Se vende muy bien",
+      "gen": {
+        "type": "clip",
+        "image": "b_honey_jar_src",
+        "prompt": "golden honey being poured into a glass jar in a backyard, thick slow pour, slow motion macro",
+        "frames": 80
+      },
+      "start": 1240.12,
+      "dur": 1.2
+    },
+    {
+      "id": "b_him_honey",
+      "kind": "raw",
+      "src": "img/b_him_honey.png",
+      "hue": "amber",
+      "kicker": "Su miel",
+      "start": 1241.22,
+      "dur": 6.95
+    },
+    {
+      "id": "ba069",
+      "kind": "bars",
+      "bars": [
+        {
+          "label": "Trabajo de 10 gallinas",
+          "value": 100,
+          "display": "todo el año",
+          "tone": "amber"
+        },
+        {
+          "label": "Una colmena",
+          "value": 100,
+          "display": "más $ / año",
+          "winner": true,
+          "tone": "good"
+        }
+      ],
+      "title": "Más que 10 gallinas juntas",
+      "eyebrow": "Y solo 15–20 horas… AL AÑO",
+      "orientation": "horizontal",
+      "accent": "amber",
+      "hue": "amber",
+      "start": 1248.17,
+      "dur": 7.37
+    },
+    {
+      "id": "ca070",
+      "kind": "callout",
+      "figure": "15–20 h",
+      "image": "img/b_hive.png",
+      "eyebrow": "Trabajo real de manejo",
+      "caption": "Por año. No por mes",
+      "accent": "amber",
+      "hue": "amber",
+      "start": 1255.54,
+      "dur": 9
+    },
+    {
+      "id": "b_flower",
+      "kind": "raw",
+      "src": "vid/b_flower_src.mp4",
+      "hue": "amber",
+      "kicker": "Van de flor en flor",
+      "gen": {
+        "type": "clip",
+        "image": "b_flower_src",
+        "prompt": "a honeybee landing on a flower in a backyard garden, pollination close up, slow motion macro",
+        "frames": 80
+      },
+      "start": 1269.52,
+      "dur": 9
+    },
+    {
+      "id": "d071",
+      "kind": "diagram",
+      "eyebrow": "El bonus: polinizan el huerto",
+      "hue": "amber",
+      "accent": "accent",
+      "slides": [
+        {
+          "image": "img/dg_b_pollin.png",
+          "title": "+30 a 50% de producción"
+        }
+      ],
+      "start": 1284.06,
+      "dur": 9
+    },
+    {
+      "id": "b_orchard",
+      "kind": "raw",
+      "src": "vid/b_orchard_src.mp4",
+      "hue": "amber",
+      "gen": {
+        "type": "clip",
+        "image": "b_orchard_src",
+        "prompt": "fruit trees heavy with ripe fruit in a backyard orchard, abundant, slow motion documentary",
+        "frames": 80
+      },
+      "start": 1296.72,
+      "dur": 6.64
+    },
+    {
+      "id": "b_garden_lush",
+      "kind": "raw",
+      "src": "img/b_garden_lush.png",
+      "hue": "amber",
+      "kicker": "+30 a 50% de producción",
+      "gen": {
+        "type": "image",
+        "name": "b_garden_lush",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a lush, highly productive backyard vegetable garden with bees visiting flowers, documentary. natural soft outdoor daylight, slightly overcast, muted natural colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 1303.36,
+      "dur": 6.68
+    },
+    {
+      "id": "ch072",
+      "kind": "chips",
+      "chips": [
+        "Miel",
+        "Cera (velas, cosmética)",
+        "Propóleo (antibiótico natural)",
+        "Polen (superalimento)",
+        "Jalea real (lo más caro por gramo)"
+      ],
+      "title": "La miel no es lo único",
+      "image": "img/b_hive.png",
+      "bg": "image",
+      "hue": "amber",
+      "start": 1310.04,
+      "dur": 8.08
+    },
+    {
+      "id": "b_propolis",
+      "kind": "raw",
+      "src": "img/b_propolis.png",
+      "hue": "amber",
+      "kicker": "Propóleo",
+      "gen": {
+        "type": "image",
+        "name": "b_propolis",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a small jar of dark bee propolis on a natural products shelf, documentary, NO readable text. natural soft outdoor daylight, slightly overcast, muted natural colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 1318.12,
+      "dur": 8.65
+    },
+    {
+      "id": "b_pollen",
+      "kind": "raw",
+      "src": "img/b_pollen.png",
+      "hue": "amber",
+      "kicker": "Polen: superalimento",
+      "gen": {
+        "type": "image",
+        "name": "b_pollen",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of colorful bee pollen granules in a small wooden bowl, macro documentary. natural soft outdoor daylight, slightly overcast, muted natural colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 1326.77,
+      "dur": 5.35
+    },
+    {
+      "id": "b_products",
+      "kind": "raw",
+      "src": "img/b_products.png",
+      "hue": "amber",
+      "kicker": "Cuatro productos más",
+      "gen": {
+        "type": "image",
+        "name": "b_products",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of honeycomb, a block of beeswax, a small jar of propolis and bee pollen arranged on a rustic table, documentary. natural soft outdoor daylight, slightly overcast, muted natural colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 1332.12,
+      "dur": 9
+    },
+    {
+      "id": "b_suit",
+      "kind": "raw",
+      "src": "img/b_suit.png",
+      "hue": "amber",
+      "kicker": "Requiere aprender",
+      "start": 1341.16,
+      "dur": 9
+    },
+    {
+      "id": "pr073",
+      "kind": "process",
+      "steps": [
+        {
+          "title": "Un traje y un ahumador",
+          "desc": "inversión baja",
+          "image": "img/b_suit.png"
+        },
+        {
+          "title": "Un núcleo y una colmena armada",
+          "desc": "y un poco de conocimiento",
+          "image": "img/b_hive.png"
+        },
+        {
+          "title": "Una revisión cada 2–3 semanas",
+          "desc": "en invierno las dejas tranquilas",
+          "image": "img/b_frame.png"
+        }
+      ],
+      "title": "Qué necesitás para arrancar",
+      "eyebrow": "El mantenimiento es mínimo",
+      "accent": "amber",
+      "hue": "amber",
+      "start": 1351.4,
+      "dur": 8
+    },
+    {
+      "id": "b_inspect",
+      "kind": "raw",
+      "src": "vid/b_inspect_src.mp4",
+      "hue": "amber",
+      "gen": {
+        "type": "clip",
+        "image": "b_inspect_src",
+        "prompt": "a beekeeper in a white suit lifting and inspecting a honeycomb frame from a hive in spring, slow motion",
+        "frames": 80
+      },
+      "start": 1362.53,
+      "dur": 3.85
+    },
+    {
+      "id": "b_winter_hive",
+      "kind": "raw",
+      "src": "img/b_winter_hive.png",
+      "hue": "cold",
+      "kicker": "En invierno, tranquilas",
+      "gen": {
+        "type": "image",
+        "name": "b_winter_hive",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a quiet beehive in a frosty winter backyard, dormant, soft cold light, documentary. natural soft outdoor daylight, slightly overcast, muted natural colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 1366.38,
+      "dur": 9
+    },
+    {
+      "id": "q074",
+      "kind": "quote",
+      "text": "La *corona*. El último porque pide la mayor paciencia",
+      "image": "img/t7_abeja.png",
+      "accent": "amber",
+      "hue": "amber",
+      "fontSize": 62,
+      "start": 1376.72,
+      "dur": 9
+    },
+    {
+      "id": "b_frame",
+      "kind": "raw",
+      "src": "img/b_frame.png",
+      "hue": "amber",
+      "kicker": "La corona",
+      "start": 1388.88,
+      "dur": 6.22
+    },
+    {
+      "id": "jn075",
+      "kind": "journey",
+      "eyebrow": "Lo que acabamos de recorrer",
+      "title": "Siete animales, un sistema",
+      "waypoints": [
+        {
+          "x": 0.14,
+          "y": 0.28,
+          "z": 0,
+          "image": "img/t7_gallina.png",
+          "num": "1",
+          "label": "Gallina",
+          "sub": "huevos",
+          "dwell": 2.4,
+          "travel": 1.3
+        },
+        {
+          "x": 0.4,
+          "y": 0.18,
+          "z": 0.1,
+          "image": "img/t7_conejo.png",
+          "num": "2",
+          "label": "Conejo",
+          "sub": "carne",
+          "dwell": 2.4,
+          "travel": 1.3
+        },
+        {
+          "x": 0.66,
+          "y": 0.26,
+          "z": 0,
+          "image": "img/t7_codorniz.png",
+          "num": "3",
+          "label": "Codorniz",
+          "sub": "huevos premium",
+          "dwell": 2.4,
+          "travel": 1.3
+        },
+        {
+          "x": 0.86,
+          "y": 0.46,
+          "z": 0.1,
+          "image": "img/t7_pato.png",
+          "num": "4",
+          "label": "Pato",
+          "sub": "huevos + plagas",
+          "dwell": 2.4,
+          "travel": 1.3
+        },
+        {
+          "x": 0.64,
+          "y": 0.66,
+          "z": 0,
+          "image": "img/t7_cabra.png",
+          "num": "5",
+          "label": "Cabra",
+          "sub": "leche y queso",
+          "dwell": 2.4,
+          "travel": 1.3
+        },
+        {
+          "x": 0.38,
+          "y": 0.72,
+          "z": 0.1,
+          "image": "img/t7_lombriz.png",
+          "num": "6",
+          "label": "Lombriz",
+          "sub": "fertilizante",
+          "dwell": 2.4,
+          "travel": 1.3
+        },
+        {
+          "x": 0.16,
+          "y": 0.56,
+          "z": 0,
+          "image": "img/t7_abeja.png",
+          "num": "7",
+          "label": "Abeja",
+          "sub": "miel + poliniza",
+          "dwell": 3,
+          "travel": 1.3
+        }
+      ],
+      "accent": "good",
+      "start": 1395.1,
+      "dur": 21
+    },
+    {
+      "id": "recap_table",
+      "kind": "raw",
+      "src": "img/recap_table.png",
+      "hue": "amber",
+      "kicker": "Todo sale de tu patio",
+      "gen": {
+        "type": "image",
+        "name": "recap_table",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a rustic wooden table laid with fresh eggs, meat, a wheel of cheese, a jar of honey and dark worm humus, everything from the backyard, documentary. natural soft outdoor daylight, slightly overcast, muted natural colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 1419.15,
+      "dur": 9
+    },
+    {
+      "id": "recap_yard",
+      "kind": "raw",
+      "src": "img/recap_yard.png",
+      "hue": "amber",
+      "kicker": "Lo que tenía tu abuelo",
+      "gen": {
+        "type": "image",
+        "name": "recap_yard",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a backyard with hens, a rabbit hutch, a small goat and a beehive together, a complete home system, documentary. natural soft outdoor daylight, slightly overcast, muted natural colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 1428.28,
+      "dur": 3.57
+    },
+    {
+      "id": "h076",
+      "kind": "headline",
+      "tokens": [
+        {
+          "t": "Junta"
+        },
+        {
+          "t": "tres"
+        },
+        {
+          "t": "o"
+        },
+        {
+          "t": "cuatro…"
+        },
+        {
+          "t": "y"
+        },
+        {
+          "t": "tienes"
+        },
+        {
+          "t": "lo"
+        },
+        {
+          "t": "de"
+        },
+        {
+          "t": "tu"
+        },
+        {
+          "t": "abuelo",
+          "good": true
+        }
+      ],
+      "eyebrow": "Cada desecho alimenta al siguiente",
+      "hue": "amber",
+      "bg": "image",
+      "image": "img/g_soil_world.png",
+      "start": 1431.85,
+      "dur": 9
+    },
+    {
+      "id": "ba096",
+      "kind": "bars",
+      "bars": [
+        {
+          "label": "Hoy: del supermercado",
+          "value": 100,
+          "display": "todo",
+          "tone": "danger"
+        },
+        {
+          "label": "Con tu patio",
+          "value": 45,
+          "display": "la mitad o menos",
+          "winner": true,
+          "tone": "good"
+        }
+      ],
+      "title": "Tu dependencia del súper",
+      "eyebrow": "Azúcar, sal y aceite los seguís comprando",
+      "orientation": "horizontal",
+      "accent": "amber",
+      "hue": "cold",
+      "start": 1442.07,
+      "dur": 8.8
+    },
+    {
+      "id": "q078",
+      "kind": "quote",
+      "text": "El azúcar, la sal y el aceite los seguís comprando. *El resto, no*",
+      "eyebrow": "Tu dependencia cae a la mitad",
+      "accent": "good",
+      "hue": "amber",
+      "fontSize": 56,
+      "start": 1450.87,
+      "dur": 4.65
+    },
+    {
+      "id": "sp077",
+      "kind": "splitlist",
+      "title": "Lo que sale de tu patio",
+      "items": [
+        "Huevos",
+        "Carne",
+        "Leche y queso",
+        "Miel",
+        "Fertilizante"
+      ],
+      "palette": "G",
+      "start": 1455.52,
+      "dur": 9
+    },
+    {
+      "id": "rf_empty",
+      "kind": "raw",
+      "src": "img/rf_empty.png",
+      "hue": "cold",
+      "kicker": "Hoy, vacío",
+      "gen": {
+        "type": "image",
+        "name": "rf_empty",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of an empty unused backyard corner with bare soil and weeds, full of unrealized potential, documentary. natural soft outdoor daylight, slightly overcast, muted natural colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 1464.53,
+      "dur": 9
+    },
+    {
+      "id": "h079",
+      "kind": "headline",
+      "tokens": [
+        {
+          "t": "Crees"
+        },
+        {
+          "t": "que"
+        },
+        {
+          "t": "es"
+        },
+        {
+          "t": "complicado",
+          "danger": true
+        }
+      ],
+      "eyebrow": "Y nada de eso es verdad",
+      "hue": "red",
+      "bg": "black",
+      "start": 1480.59,
+      "dur": 9
+    },
+    {
+      "id": "rf_oldhouse",
+      "kind": "raw",
+      "src": "img/rf_oldhouse.png",
+      "hue": "amber",
+      "kicker": "Tenía gallinas en el fondo",
+      "gen": {
+        "type": "image",
+        "name": "rf_oldhouse",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a faded vintage archival photograph of a faded vintage archival photograph of an ordinary town house a hundred years ago with a few chickens in the back yard, sepia, scratched grain, sun-faded yellowed sepia tones. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 1493.16,
+      "dur": 7.96
+    },
+    {
+      "id": "rf_people_old",
+      "kind": "raw",
+      "src": "img/rf_people_old.png",
+      "hue": "amber",
+      "kicker": "Personas normales",
+      "gen": {
+        "type": "image",
+        "name": "rf_people_old",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a faded vintage archival photograph of a faded vintage group photo of ordinary townspeople a century ago — a teacher, a shopkeeper, a carpenter, sepia, scratched grain, sun-faded yellowed sepia tones. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 1501.12,
+      "dur": 9
+    },
+    {
+      "id": "rf_neighbor_old",
+      "kind": "raw",
+      "src": "img/rf_neighbor_old.png",
+      "hue": "amber",
+      "kicker": "De boca en boca",
+      "gen": {
+        "type": "image",
+        "name": "rf_neighbor_old",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a faded vintage archival photograph of a faded vintage photo of neighbors chatting over a backyard fence with chickens, knowledge passed along, sepia, scratched grain, sun-faded yellowed sepia tones. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 1517.48,
+      "dur": 2.56
+    },
+    {
+      "id": "rf_teach_old",
+      "kind": "raw",
+      "src": "img/rf_teach_old.png",
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "rf_teach_old",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a faded vintage archival photograph of a faded vintage photo of an old woman teaching a child to feed hens in a backyard, sepia nostalgic, scratched grain, sun-faded yellowed sepia tones. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 1520.04,
+      "dur": 9
+    },
+    {
+      "id": "ag080",
+      "kind": "aged",
+      "heading": "La cadena se cortó",
+      "lines": [
+        {
+          "text": "Cuando el súper se puso en la esquina",
+          "mark": false
+        },
+        {
+          "text": "Cuando dejamos de hablar con los viejos",
+          "mark": true
+        },
+        {
+          "text": "Cuando el progreso fue no ensuciarse las manos",
+          "mark": true
+        }
+      ],
+      "eyebrow": "Antes se aprendía mirando al vecino",
+      "image": "img/rf_oldhouse.png",
+      "accent": "danger",
+      "hue": "red",
+      "start": 1532.68,
+      "dur": 8
+    },
+    {
+      "id": "rf_tv",
+      "kind": "raw",
+      "src": "img/rf_tv.png",
+      "hue": "cold",
+      "kicker": "La buena vida era urbana",
+      "gen": {
+        "type": "image",
+        "name": "rf_tv",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a faded vintage archival photograph of a faded vintage photo of a family watching an old TV showing idealized modern urban life, sepia, scratched grain, sun-faded yellowed sepia tones. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 1543.24,
+      "dur": 7.74
+    },
+    {
+      "id": "rf_packaged",
+      "kind": "raw",
+      "src": "img/rf_packaged.png",
+      "hue": "cold",
+      "kicker": "La comida empaquetada",
+      "gen": {
+        "type": "image",
+        "name": "rf_packaged",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of shelves of brightly packaged processed supermarket food, sterile and uniform, documentary, NO readable text. natural soft outdoor daylight, slightly overcast, muted natural colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 1550.98,
+      "dur": 9
+    },
+    {
+      "id": "rf_hands",
+      "kind": "raw",
+      "src": "img/rf_hands.png",
+      "hue": "cold",
+      "kicker": "Ensuciarse las manos",
+      "gen": {
+        "type": "image",
+        "name": "rf_hands",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of close up of an older man's weathered hands working dark garden soil, honest labor, documentary. natural soft outdoor daylight, slightly overcast, muted natural colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 1562.76,
+      "dur": 5.73
+    },
+    {
+      "id": "rf_badfood",
+      "kind": "half",
+      "src": "img/rf_badfood.png",
+      "hue": "cold",
+      "kicker": "Pagamos más por comida peor",
+      "gen": {
+        "type": "image",
+        "name": "rf_badfood",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a pale flavorless supermarket tomato and a pale egg on a plate, food that traveled thousands of kilometers, documentary. natural soft outdoor daylight, slightly overcast, muted natural colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 1568.49,
+      "dur": 9
+    },
+    {
+      "id": "rf_truck",
+      "kind": "raw",
+      "src": "img/rf_truck.png",
+      "hue": "cold",
+      "kicker": "Tres mil kilómetros",
+      "gen": {
+        "type": "image",
+        "name": "rf_truck",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a refrigerated freight truck on a highway carrying produce thousands of kilometers, documentary. natural soft outdoor daylight, slightly overcast, muted natural colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 1580.02,
+      "dur": 9
+    },
+    {
+      "id": "rf_child_food",
+      "kind": "raw",
+      "src": "img/rf_child_food.png",
+      "hue": "amber",
+      "gen": {
+        "type": "image",
+        "name": "rf_child_food",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a faded vintage archival photograph of a faded vintage photo of a child happily eating fresh food from the family garden, warm nostalgic, sepia, scratched grain, sun-faded yellowed sepia tones. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 1593.09,
+      "dur": 6.08
+    },
+    {
+      "id": "q081",
+      "kind": "quote",
+      "text": "No vuelvas al campo: el *campo puede volver a tu casa*",
+      "image": "img/pr_patio.png",
+      "eyebrow": "Con poco espacio y poco dinero",
+      "accent": "good",
+      "hue": "amber",
+      "fontSize": 58,
+      "start": 1599.17,
+      "dur": 9
+    },
+    {
+      "id": "rf_guess",
+      "kind": "raw",
+      "src": "img/rf_guess.png",
+      "hue": "amber",
+      "kicker": "¿Qué anotaste?",
+      "gen": {
+        "type": "image",
+        "name": "rf_guess",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a hand holding a notepad with a single word written, deciding, documentary, NO readable text. natural soft outdoor daylight, slightly overcast, muted natural colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 1619,
+      "dur": 4.28
+    },
+    {
+      "id": "t7082",
+      "kind": "top7",
+      "rank": 7,
+      "name": "La abeja",
+      "benefit": "Por kilo y por hora, no hay nada igual",
+      "image": "img/t7_abeja.png",
+      "accent": "good",
+      "hue": "amber",
+      "label": "LA MÁS RENTABLE",
+      "gen": {
+        "type": "image",
+        "name": "t7_abeja",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a beekeeper's gloved hands holding a wooden hive frame covered in honeybees in a backyard apiary, documentary. natural soft outdoor daylight, slightly overcast, muted natural colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 1623.28,
+      "dur": 6,
+      "items": [
+        {
+          "name": "La gallina ponedora",
+          "benefit": "Huevos todo el año — la puerta de entrada",
+          "image": "img/t7_gallina.png",
+          "accent": "good"
+        },
+        {
+          "name": "El conejo",
+          "benefit": "Carne + fertilizante — la máquina más eficiente",
+          "image": "img/t7_conejo.png",
+          "accent": "amber"
+        },
+        {
+          "name": "La codorniz",
+          "benefit": "Huevos premium en mínimo espacio",
+          "image": "img/t7_codorniz.png",
+          "accent": "accent"
+        },
+        {
+          "name": "El pato",
+          "benefit": "Huevos + control de plagas del huerto",
+          "image": "img/t7_pato.png",
+          "accent": "cold"
+        },
+        {
+          "name": "La cabra enana",
+          "benefit": "Leche y queso fresco todos los días",
+          "image": "img/t7_cabra.png",
+          "accent": "good"
+        },
+        {
+          "name": "La lombriz roja",
+          "benefit": "Fertilizante que se multiplica solo",
+          "image": "img/t7_lombriz.png",
+          "accent": "danger"
+        },
+        {
+          "name": "La abeja",
+          "benefit": "Miel, cera, propóleo… y poliniza todo",
+          "image": "img/t7_abeja.png",
+          "accent": "amber"
+        }
+      ]
+    },
+    {
+      "id": "q083",
+      "kind": "quote",
+      "text": "Pero la *lombriz* le pisa los talones",
+      "image": "img/t7_lombriz.png",
+      "eyebrow": "Humus + venta de lombrices",
+      "accent": "amber",
+      "hue": "amber",
+      "fontSize": 60,
+      "start": 1631.89,
+      "dur": 9
+    },
+    {
+      "id": "ch084",
+      "kind": "chips",
+      "chips": [
+        "¿De qué país nos ves?",
+        "¿Ya tenés alguno?",
+        "¿Estás pensando en arrancar?"
+      ],
+      "title": "Contame en los comentarios",
+      "image": "img/g_basket.png",
+      "bg": "image",
+      "hue": "amber",
+      "start": 1642.12,
+      "dur": 9
+    },
+    {
+      "id": "q085",
+      "kind": "quote",
+      "text": "Todo esto es la *superficie*. Cada animal da para un video",
+      "eyebrow": "El manual está abajo, en la descripción",
+      "accent": "amber",
+      "hue": "amber",
+      "fontSize": 58,
+      "start": 1656.64,
+      "dur": 9
+    },
+    {
+      "id": "cl_series",
+      "kind": "raw",
+      "src": "img/cl_series.png",
+      "hue": "amber",
+      "kicker": "Un video por cada animal",
+      "gen": {
+        "type": "image",
+        "name": "cl_series",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a rustic chalkboard with simple chalk drawings of a hen, rabbit, quail, duck, goat, worm and bee in a row, documentary, NO readable text. natural soft outdoor daylight, slightly overcast, muted natural colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 1670.36,
+      "dur": 6.22
+    },
+    {
+      "id": "ck097",
+      "kind": "checklist",
+      "title": "Lo que viene en el manual",
+      "items": [
+        {
+          "text": "Los números exactos de cada animal",
+          "state": "done"
+        },
+        {
+          "text": "Tablas de alimentación",
+          "state": "done"
+        },
+        {
+          "text": "El plan de 90 días paso a paso",
+          "state": "done"
+        },
+        {
+          "text": "Armado del espacio",
+          "state": "done"
+        }
+      ],
+      "eyebrow": "El link está abajo, en la descripción",
+      "accent": "amber",
+      "hue": "amber",
+      "image": "img/cl_manual.png",
+      "start": 1676.58,
+      "dur": 6.83
+    },
+    {
+      "id": "cl_manual",
+      "kind": "half",
+      "src": "img/cl_manual.png",
+      "hue": "amber",
+      "kicker": "El plan de 90 días",
+      "gen": {
+        "type": "image",
+        "name": "cl_manual",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of a printed homestead manual booklet on a rustic wooden table next to fresh eggs and a jar of honey, documentary, NO readable text. natural soft outdoor daylight, slightly overcast, muted natural colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 1683.41,
+      "dur": 9
+    },
+    {
+      "id": "cl_feedall",
+      "kind": "raw",
+      "src": "vid/cl_feedall_src.mp4",
+      "hue": "amber",
+      "kicker": "Todos necesitan comer",
+      "gen": {
+        "type": "clip",
+        "image": "cl_feedall_src",
+        "prompt": "feeding time in a backyard, hens rabbits and a goat eating greens and kitchen scraps, slow motion montage",
+        "frames": 90
+      },
+      "start": 1701.72,
+      "dur": 5.78
+    },
+    {
+      "id": "h098",
+      "kind": "headline",
+      "tokens": [
+        {
+          "t": "El"
+        },
+        {
+          "t": "alimento"
+        },
+        {
+          "t": "comprado"
+        },
+        {
+          "t": "mata",
+          "danger": true
+        },
+        {
+          "t": "la"
+        },
+        {
+          "t": "rentabilidad"
+        }
+      ],
+      "eyebrow": "Todos estos animales necesitan comer",
+      "hue": "red",
+      "bg": "image",
+      "image": "img/g_feedbag.png",
+      "start": 1707.5,
+      "dur": 5.87
+    },
+    {
+      "id": "im086",
+      "kind": "impact",
+      "image": "img/cl_soil.png",
+      "impact": "por UN dólar",
+      "setup": "Tierra fértil, rica, negra, viva…",
+      "impactAccent": "good",
+      "hitAt": 1.3,
+      "boom": 1,
+      "darken": 0.4,
+      "start": 1713.37,
+      "dur": 5.5
+    },
+    {
+      "id": "cl_soil",
+      "kind": "raw",
+      "src": "img/cl_soil.png",
+      "hue": "amber",
+      "start": 1720.3,
+      "dur": 2.68
+    },
+    {
+      "id": "cl_grass",
+      "kind": "raw",
+      "src": "vid/cl_grass_src.mp4",
+      "hue": "cold",
+      "kicker": "Pasto donde no crecía nada",
+      "gen": {
+        "type": "clip",
+        "image": "cl_grass_src",
+        "prompt": "dry dead soil transforming as green grass sprouts and grows, time lapse feel, slow motion, hopeful",
+        "frames": 90
+      },
+      "start": 1722.98,
+      "dur": 9
+    },
+    {
+      "id": "cl_hen_find",
+      "kind": "raw",
+      "src": "vid/cl_hen_find_src.mp4",
+      "hue": "cold",
+      "kicker": "Lombrices e insectos al rascar",
+      "gen": {
+        "type": "clip",
+        "image": "cl_hen_find_src",
+        "prompt": "a hen scratching rich dark fertile soil and finding worms and insects, slow motion documentary",
+        "frames": 80
+      },
+      "start": 1735.01,
+      "dur": 3.01
+    },
+    {
+      "id": "cl_alfalfa",
+      "kind": "raw",
+      "src": "img/cl_alfalfa.png",
+      "hue": "cold",
+      "kicker": "Sin comprar una sola semilla",
+      "gen": {
+        "type": "image",
+        "name": "cl_alfalfa",
+        "prompt": "Realistic handheld 16:9 documentary-style video frame of fresh alfalfa and dandelion growing abundantly from rich soil in a backyard, documentary macro. natural soft outdoor daylight, slightly overcast, muted natural colors. realistic imperfect handheld camera angle, slightly tilted frame, practical documentary look, no cinematic lighting, no perfect studio setup, natural video compression, low-resolution YouTube documentary screenshot look, not staged, ultra realistic. Negative prompt: clean studio photo, cinematic lighting, overly saturated colors, cartoon, CGI, 3D render, luxury advertisement, sharp perfect text, fake labels, dramatic shadows, watermark, logo overlay, perfect symmetrical face, extra fingers, distorted hands, blurry face, fantasy style, illustration."
+      },
+      "start": 1738.02,
+      "dur": 9
+    },
+    {
+      "id": "d087",
+      "kind": "diagram",
+      "eyebrow": "De nada sirven los animales sin la tierra",
+      "hue": "amber",
+      "accent": "good",
+      "slides": [
+        {
+          "image": "img/dg_cl_next.png",
+          "title": "La mezcla de un dólar"
+        }
+      ],
+      "start": 1752.27,
+      "dur": 5.71
+    },
+    {
+      "id": "h088",
+      "kind": "headline",
+      "tokens": [
+        {
+          "t": "Lo"
+        },
+        {
+          "t": "que"
+        },
+        {
+          "t": "la"
+        },
+        {
+          "t": "tierra"
+        },
+        {
+          "t": "sabe,"
+        },
+        {
+          "t": "la"
+        },
+        {
+          "t": "industria"
+        },
+        {
+          "t": "lo"
+        },
+        {
+          "t": "esconde",
+          "danger": true
+        }
+      ],
+      "eyebrow": "La tierra es la base de todo",
+      "hue": "amber",
+      "bg": "image",
+      "image": "img/cl_soil.png",
+      "start": 1757.98,
+      "dur": 2.7
+    },
+    {
+      "id": "q089",
+      "kind": "quote",
+      "text": "Pero la tierra *no se olvida*. Y nosotros tampoco",
+      "image": "img/cl_soil.png",
+      "accent": "good",
+      "hue": "amber",
+      "fontSize": 80,
+      "start": 1760.68,
+      "dur": 3.68
+    }
+  ]
+}

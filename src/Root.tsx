@@ -5,8 +5,11 @@ import { MainHipos, TOTAL_FRAMES_HIP } from "./VideoEdit/Main_hipos";
 import { MainBisontes, TOTAL_FRAMES_BI } from "./VideoEdit/Main_bisontes";
 import { MainObjetos, TOTAL_FRAMES_OBJ } from "./VideoEdit/Main_objetos";
 import { MainCivil, TOTAL_FRAMES_CIVIL } from "./VideoEdit/Main_civil";
+import { MainImpuestos, TOTAL_FRAMES_IMP } from "./VideoEdit/Main_impuestos";
 import { MographDemo, TOTAL_FRAMES_MOGRAPH } from "./VideoEdit/mograph/MographDemo";
 import { MographShowcase, TOTAL_FRAMES_SHOWCASE } from "./VideoEdit/mograph/MographShowcase";
+import { Top7Demo, TOTAL_FRAMES_TOP7DEMO } from "./VideoEdit/Top7Demo";
+import { MainAnimales, TOTAL_FRAMES_ANIM } from "./VideoEdit/Main_animales";
 
 // ── SOLO el proyecto activo (Estufa) + el demo del efecto Impact Reveal ──
 // Las composiciones viejas (Termitas, Beduinos, Mongoles, Doodle, etc.) quedan
@@ -52,6 +55,32 @@ export const RemotionRoot: React.FC = () => {
         id="Civil"
         component={MainCivil}
         durationInFrames={TOTAL_FRAMES_CIVIL}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
+      <Composition
+        id="Impuestos"
+        component={MainImpuestos}
+        durationInFrames={TOTAL_FRAMES_IMP}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
+      {/* VIDEO ACTIVO — 7 Animales Más Rentables (abuelo) */}
+      <Composition
+        id="Animales"
+        component={MainAnimales}
+        durationInFrames={TOTAL_FRAMES_ANIM}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
+      {/* preview de la tarjeta de revelación del video "7 Animales" */}
+      <Composition
+        id="Top7Demo"
+        component={Top7Demo}
+        durationInFrames={TOTAL_FRAMES_TOP7DEMO}
         fps={30}
         width={1920}
         height={1080}

@@ -14,7 +14,11 @@ import { COLORS } from "../theme";
 //   · "hidden"   → fuera de vista (solo se oye), el b-roll manda a pantalla completa
 // Las transiciones entre modos hacen fade-in-place + lerp de geometría.
 
-export type AvatarMode = "full" | "right" | "left" | "cornerTR" | "hidden";
+export type AvatarMode =
+  | "full" | "right" | "left"
+  | "halfL" | "halfR" // split 50/50 flush (avatar media pantalla, imagen la otra mitad)
+  | "cornerTR" | "cornerTL" | "cornerBR" | "cornerBL"
+  | "hidden";
 export type AvatarWindow = { start: number; mode: AvatarMode }; // start en SEGUNDOS
 
 const W = 1920;
@@ -23,11 +27,21 @@ const TRANS = 16; // frames de transición entre modos
 
 type Geom = { x: number; y: number; w: number; h: number; r: number; op: number; chrome: number };
 
+// PiP de esquina: mismo tamaño en las 4 esquinas (margen 54). Recuadros laterales
+// grandes (left/right) = look "split" avatar a un lado + b-roll al otro.
+const CW = 384, CH = 512, M = 54;
 const G: Record<Exclude<AvatarMode, "hidden">, Geom> = {
   full: { x: 0, y: 0, w: W, h: H, r: 0, op: 1, chrome: 0 },
   right: { x: W - 760 - 70, y: 40, w: 760, h: 1000, r: 30, op: 1, chrome: 1 },
   left: { x: 70, y: 40, w: 760, h: 1000, r: 30, op: 1, chrome: 1 },
-  cornerTR: { x: W - 384 - 54, y: 54, w: 384, h: 512, r: 32, op: 1, chrome: 1 },
+  // split 50/50 FLUSH (estilo Elias Yoder): avatar ocupa media pantalla, borde recto,
+  // sin chrome → la imagen (HalfShot) llena la otra mitad pegada.
+  halfL: { x: 0, y: 0, w: W / 2, h: H, r: 0, op: 1, chrome: 0 },
+  halfR: { x: W / 2, y: 0, w: W / 2, h: H, r: 0, op: 1, chrome: 0 },
+  cornerTR: { x: W - CW - M, y: M, w: CW, h: CH, r: 32, op: 1, chrome: 1 },
+  cornerTL: { x: M, y: M, w: CW, h: CH, r: 32, op: 1, chrome: 1 },
+  cornerBR: { x: W - CW - M, y: H - CH - M, w: CW, h: CH, r: 32, op: 1, chrome: 1 },
+  cornerBL: { x: M, y: H - CH - M, w: CW, h: CH, r: 32, op: 1, chrome: 1 },
 };
 
 const geomOf = (m: AvatarMode): Geom => (m === "hidden" ? G.cornerTR : G[m]);
@@ -114,11 +128,13 @@ export const AvatarLayer: React.FC<{
           borderRadius: r,
           overflow: "hidden",
           opacity: op,
+          // PiP "inset" limpio: sombra suave + hairline crema fino + glow de acento
+          // MUY sutil que respira con la voz (sin anillo neón pulsante).
           boxShadow:
             chrome > 0.02
-              ? `0 ${30 * chrome}px ${80 * chrome}px rgba(0,0,0,${0.55 * chrome}), 0 0 0 ${(2 + amp * 2.5) * chrome}px ${accent}${Math.round((0.4 + amp * 0.5) * 255).toString(16).padStart(2, "0")}, 0 0 ${(10 + amp * 34) * chrome}px ${accent}${Math.round(amp * 160).toString(16).padStart(2, "0")}`
+              ? `0 ${26 * chrome}px ${70 * chrome}px rgba(0,0,0,${0.5 * chrome}), 0 0 0 ${1.5 * chrome}px rgba(255,247,232,${0.5 * chrome}), 0 0 ${(8 + amp * 18) * chrome}px ${accent}${Math.round(amp * 70).toString(16).padStart(2, "0")}`
               : "none",
-          border: chrome > 0.02 ? `1px solid rgba(255,255,255,${0.18 * chrome})` : "none",
+          border: chrome > 0.02 ? `1px solid rgba(42,38,32,${0.22 * chrome})` : "none",
           willChange: "left, top, width, height",
         }}
       >

@@ -158,15 +158,18 @@ function renderEl(b) {
         (b.zoom != null ? ` zoom={${b.zoom}}` : ``) +
         ` />`
       );
-    case "diagram":
+    case "diagram": {
+      // DIAGRAMA ESTÁTICO (regla dura del nicho): DiagramBoard = lámina quieta +
+      // avatar PiP esquina, hard-cut entre páginas, SIN zoom/Ken-Burns. Calmo y pro.
+      const pages = (b.slides || []).map((s) => ({ image: s.image, eyebrow: s.title || s.eyebrow || b.eyebrow }));
+      // clip CORTO del avatar (recortado a esta ventana por split_avatar_diagrams.mjs)
+      // → DiagramBoard lo reproduce desde frame 0, sin deep-seek (no sale negro en el farm).
       return (
-        `<AvatarPresentation durationInFrames={d}` +
-        (b.eyebrow ? ` eyebrow=${j(b.eyebrow)}` : ``) +
-        (b.hue ? ` hue=${j(b.hue)}` : ``) +
-        (b.accent ? ` accent=${j(b.accent)}` : ``) +
-        ` avatar=${j(AVATAR)} avatarFrom={sec(${b.start})}` +
-        ` slides={${j(cleanSlides(b.slides))}} />`
+        `<DiagramBoard durationInFrames={d}` +
+        ` clip=${j(`avatar_clips/${b.id}.mp4`)}` +
+        ` pages={${j(pages)}} />`
       );
+    }
     case "quote":
       return (
         `<KineticQuote durationInFrames={d}` +
@@ -326,6 +329,23 @@ function renderEl(b) {
         (b.accent ? ` accent=${j(b.accent)}` : ``) +
         ` />`
       );
+    case "half":
+      return (
+        `<HalfShot durationInFrames={d} src=${j(b.src)}` +
+        (b.side ? ` side=${j(b.side)}` : ``) +
+        (b.kicker ? ` kicker=${j(b.kicker)}` : ``) +
+        (b.hue ? ` hue=${j(b.hue)}` : ``) +
+        ` />`
+      );
+    case "top7":
+      return (
+        `<Top7Ladder durationInFrames={d} rank={${b.rank}}` +
+        (b.total != null ? ` total={${b.total}}` : ``) +
+        ` items={${j(b.items || [])}}` +
+        (b.hue ? ` hue=${j(b.hue)}` : ``) +
+        (b.label ? ` label=${j(b.label)}` : ``) +
+        ` />`
+      );
     default:
       return null; // talk
   }
@@ -349,7 +369,6 @@ for (const b of beats) {
 }
 const palTok = { A: "COLORS.accent", G: "COLORS.good", D: "COLORS.danger", B: "COLORS.cold" };
 const themeImports = [];
-if (kinds.has("diagram")) themeImports.push("sec");
 if (usedPal.size) themeImports.push("COLORS");
 const imports = [`import { ReactNode } from "react";`];
 if (themeImports.length) imports.push(`import { ${themeImports.join(", ")} } from "./theme";`);
@@ -357,7 +376,7 @@ if (kinds.has("raw")) imports.push(`import { RawShot } from "./scenes/RawShot";`
 if (kinds.has("quote")) imports.push(`import { KineticQuote, parseQuote } from "./scenes/KineticQuote";`);
 if (kinds.has("chips")) imports.push(`import { ChipsCluster } from "./scenes/ReframeContent";`);
 if (kinds.has("splitlist")) imports.push(`import { SplitList } from "./scenes/SplitList";`);
-if (kinds.has("diagram")) imports.push(`import { AvatarPresentation } from "./scenes/AvatarPresentation";`);
+if (kinds.has("diagram")) imports.push(`import { DiagramBoard } from "./scenes/DiagramBoard";`);
 if (kinds.has("stat")) imports.push(`import { StatBig } from "./scenes/StatBig";`);
 if (kinds.has("impact")) imports.push(`import { ImpactReveal } from "./scenes/ImpactReveal";`);
 if (kinds.has("journey")) imports.push(`import { JourneyCanvas } from "./scenes/JourneyCanvas";`);
@@ -372,6 +391,8 @@ if (kinds.has("rule")) imports.push(`import { RuleNumberScene } from "./scenes/R
 if (kinds.has("annotated")) imports.push(`import { AnnotatedImage } from "./scenes/AnnotatedImage";`);
 if (kinds.has("callout")) imports.push(`import { CalloutMark } from "./scenes/CalloutMark";`);
 if (kinds.has("infzoom")) imports.push(`import { InfiniteZoom } from "./scenes/InfiniteZoom";`);
+if (kinds.has("top7")) imports.push(`import { Top7Ladder } from "./scenes/Top7Ladder";`);
+if (kinds.has("half")) imports.push(`import { HalfShot } from "./scenes/HalfShot";`);
 const palLine = usedPal.size
   ? `\nconst ${[...usedPal].map((t) => `${t} = ${palTok[t]}`).join(", ")};\n`
   : "";

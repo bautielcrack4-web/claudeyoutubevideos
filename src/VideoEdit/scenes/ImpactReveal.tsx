@@ -68,7 +68,9 @@ export const ImpactReveal: React.FC<{
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const C = TONE[impactAccent];
-  const hit = sec(hitAt);
+  // el golpe NUNCA puede caer en/after el final (si el _dur se clampeó corto, el
+  // rango [hit, durationInFrames] debe seguir siendo creciente → no crashear).
+  const hit = Math.max(1, Math.min(sec(hitAt), durationInFrames - 2));
 
   // ── imagen: SPEED-RAMP — el zoom ACELERA hacia el golpe y FRENA en seco ─────
   // antes del hit: ease-in fuerte (acelera) hasta el ~92% del recorrido; en el

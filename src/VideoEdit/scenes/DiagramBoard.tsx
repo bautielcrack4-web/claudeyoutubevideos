@@ -1,4 +1,4 @@
-import { useCurrentFrame, useVideoConfig, interpolate, staticFile, AbsoluteFill } from "remotion";
+import { useCurrentFrame, useVideoConfig, interpolate, staticFile, AbsoluteFill, OffthreadVideo } from "remotion";
 import { Video } from "@remotion/media";
 import { Media } from "../components/Media";
 import { COLORS, FONT_STACK, sec } from "../theme";
@@ -25,8 +25,10 @@ export const DiagramBoard: React.FC<{
   pages: DiagramPage[];
   avatar?: string;
   avatarFrom?: number;
+  clip?: string; // clip CORTO del avatar (ya recortado a esta ventana) → se reproduce
+  // desde el frame 0 SIN trimBefore (evita el deep-seek que sale negro en el farm).
   fit?: "cover" | "contain";
-}> = ({ durationInFrames, pages, avatar, avatarFrom, fit = "contain" }) => {
+}> = ({ durationInFrames, pages, avatar, avatarFrom, clip, fit = "contain" }) => {
   const frame = useCurrentFrame();
   const { width } = useVideoConfig();
   const n = Math.max(1, pages.length);
@@ -54,7 +56,7 @@ export const DiagramBoard: React.FC<{
       )}
 
       {/* AVATAR chico, esquina superior DERECHA, estático */}
-      {avatar && (
+      {(clip || avatar) && (
         <div
           style={{
             position: "absolute",
@@ -69,7 +71,12 @@ export const DiagramBoard: React.FC<{
             boxShadow: `0 18px 50px rgba(0,0,0,0.45), 0 0 0 1px ${COLORS.accent}44`,
           }}
         >
-          <Video src={staticFile(avatar)} trimBefore={avatarFrom} muted style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+          {clip ? (
+            // clip ya recortado a la ventana → desde frame 0, seek robusto en el farm
+            <OffthreadVideo src={staticFile(clip)} muted style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+          ) : (
+            <Video src={staticFile(avatar!)} trimBefore={avatarFrom} muted style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+          )}
         </div>
       )}
 
