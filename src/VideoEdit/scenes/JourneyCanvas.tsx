@@ -72,12 +72,16 @@ export const JourneyCanvas: React.FC<{
   const endEnd = durationInFrames - sec(0.4);
 
   // ── cámara: posición mundo + escala, continua a través de los waypoints ──
+  // journeyProg = avance de la cámara en unidades de segmento (0..n-1) → la línea
+  // se TRAZA exactamente hasta acá (crece de nodo a nodo mientras la cámara viaja).
   let camX: number, camY: number, camS: number;
+  let journeyProg = 0;
   if (frame < arr[0]) {
     // entrada: arranca un poco alejada mirando el primer nodo
     const e = easeIO(interpolate(frame, [0, arr[0]], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }));
     // entra "wide" (llega a travelScale); el punch-in lo hace el dwell → sin pop al posarse
     camX = waypoints[0].x; camY = waypoints[0].y; camS = lerp(travelScale * 0.85, travelScale, e);
+    journeyProg = 0;
   } else if (frame >= endStart) {
     // salida: pull-back para ver el recorrido entero
     const e = easeIO(interpolate(frame, [endStart, endEnd], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }));
@@ -86,6 +90,7 @@ export const JourneyCanvas: React.FC<{
     const spanX = Math.max(...waypoints.map((w) => w.x)) - Math.min(...waypoints.map((w) => w.x)) || 1;
     const fit = Math.min(0.9, (width * 0.78) / spanX);
     camX = lerp(waypoints[n - 1].x, midX, e); camY = lerp(waypoints[n - 1].y, midY, e); camS = lerp(focusScale, fit, e);
+    journeyProg = n - 1; // línea ya completa en el pull-back final
   } else {
     // encontrar fase activa
     let i = 0;
@@ -99,6 +104,7 @@ export const JourneyCanvas: React.FC<{
       camX = lerp(waypoints[i].x, waypoints[Math.min(n - 1, i + 1)].x, look);
       camY = lerp(waypoints[i].y, waypoints[Math.min(n - 1, i + 1)].y, look);
       camS = interpolate(la, [0, sec(0.55), dwell], [travelScale, focusScale, focusScale], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.inOut(Easing.cubic) });
+      journeyProg = i; // posado: la línea llega justo hasta este nodo
     } else {
       // VIAJE de i → i+1 — CONTINUO con el dwell (sin saltos):
       // posición arranca desde la anticipación (0.1) y llega a 1.0; zoom sale de
@@ -108,6 +114,7 @@ export const JourneyCanvas: React.FC<{
       camX = lerp(waypoints[i].x, waypoints[i + 1].x, prog);
       camY = lerp(waypoints[i].y, waypoints[i + 1].y, prog);
       camS = lerp(focusScale, travelScale, tp);
+      journeyProg = i + tp; // viaje: la línea crece de i hacia i+1
     }
   }
 
@@ -120,9 +127,17 @@ export const JourneyCanvas: React.FC<{
     return { sx: CX + (w.x - camX) * camS * df(z), sy: CY + (w.y - camY) * camS * df(z), s: camS * (0.82 + z * 0.32), z };
   };
   const pts = waypoints.map(map);
-  const pathD = smoothPath(pts.map((p) => ({ x: p.sx, y: p.sy })));
-  // longitud de estela dibujada y posición de la chispa (un poco adelante)
-  const reveal = interpolate(frame, [arr[0], endStart], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  // ── la línea se TRAZA solo hasta el avance real de la cámara (journeyProg) ──
+  // construimos un path PARCIAL: nodos completos hasta el actual + un punto
+  // interpolado hacia el próximo → la línea CRECE de imagen a imagen al viajar
+  // (antes estaba dibujada entera y solo aparecían las fotos encima).
+  const segIdx = Math.floor(journeyProg);
+  const segT = journeyProg - segIdx;
+  const drawnPts = pts.slice(0, segIdx + 1).map((p) => ({ x: p.sx, y: p.sy }));
+  if (segT > 0.001 && segIdx < n - 1) {
+    drawnPts.push({ x: lerp(pts[segIdx].sx, pts[segIdx + 1].sx, segT), y: lerp(pts[segIdx].sy, pts[segIdx + 1].sy, segT) });
+  }
+  const pathD = drawnPts.length >= 2 ? smoothPath(drawnPts) : "";
 
   return (
     <AbsoluteFill style={{ fontFamily: FONT_STACK, background: COLORS.bg1, overflow: "hidden" }}>
@@ -144,11 +159,14 @@ export const JourneyCanvas: React.FC<{
 
       {/* PATH + chispa (SVG en coords de pantalla) */}
       <svg width={width} height={height} style={{ position: "absolute", inset: 0 }}>
-        <defs><filter id="jglow"><feGaussianBlur stdDeviation="3" /></filter></defs>
-        <path d={pathD} fill="none" stroke="rgba(42,38,32,0.10)" strokeWidth={3 * camS} strokeLinecap="round" />
-        <path d={pathD} fill="none" stroke={accent} strokeWidth={2.4 * camS} strokeLinecap="round" pathLength={1} strokeDasharray={1} strokeDashoffset={1 - reveal} opacity={0.75} />
-        {/* chispa guía sobre la estela — pequeña y sutil */}
-        <CometOnPath pts={pts} prog={Math.min(0.999, reveal + 0.04)} color={accent} scale={camS} />
+        {/* línea trazándose: el path es SOLO la porción ya recorrida (crece sola),
+            se dibuja completa sin dash ni chispa → limpio. */}
+        {pathD && (
+          <>
+            <path d={pathD} fill="none" stroke="rgba(42,38,32,0.10)" strokeWidth={3 * camS} strokeLinecap="round" strokeLinejoin="round" />
+            <path d={pathD} fill="none" stroke={accent} strokeWidth={2.4 * camS} strokeLinecap="round" strokeLinejoin="round" opacity={0.78} />
+          </>
+        )}
       </svg>
 
       {/* NODOS (tarjetas-foto con DoF por distancia al centro) */}
@@ -202,18 +220,3 @@ export const JourneyCanvas: React.FC<{
   );
 };
 
-// chispa-cometa que viaja sobre la estela (interpola entre los puntos de pantalla)
-const CometOnPath: React.FC<{ pts: { sx: number; sy: number }[]; prog: number; color: string; scale: number }> = ({ pts, prog, color, scale }) => {
-  if (pts.length < 2) return null;
-  const seg = pts.length - 1;
-  const f = Math.max(0, Math.min(seg - 0.001, prog * seg));
-  const i = Math.floor(f), t = f - i;
-  const a = pts[i], b = pts[i + 1];
-  const x = a.sx + (b.sx - a.sx) * t, y = a.sy + (b.sy - a.sy) * t;
-  return (
-    <g>
-      <circle cx={x} cy={y} r={9 * scale} fill={color} style={{ filter: "url(#jglow)" }} opacity={0.45} />
-      <circle cx={x} cy={y} r={4 * scale} fill="#FFF6E4" opacity={0.9} />
-    </g>
-  );
-};
