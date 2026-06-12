@@ -77,8 +77,9 @@ const fetchRetry = async (url, opts, label, tries = 6) => {
 };
 
 // texto→imagen
-const generate = async (prompt, size) => {
+const generate = async (prompt, size, bg) => {
   const body = { model: MODEL, prompt, size, quality: QUALITY, n: 1 };
+  if (bg) body.background = bg;
   const res = await fetchRetry(
     "https://api.openai.com/v1/images/generations",
     {
@@ -92,13 +93,14 @@ const generate = async (prompt, size) => {
 };
 
 // imagen(es) de referencia + prompt → imagen (mantiene la persona)
-const edit = async (prompt, size, refs) => {
+const edit = async (prompt, size, refs, bg) => {
   const form = new FormData();
   form.append("model", MODEL);
   form.append("prompt", prompt);
   form.append("size", size);
   form.append("quality", QUALITY);
   form.append("n", "1");
+  if (bg) form.append("background", bg);
   for (const r of refs) {
     const file = resolveRef(r);
     if (!fs.existsSync(file)) throw new Error(`ref no existe: ${file}`);
@@ -121,7 +123,7 @@ const genOne = async (item) => {
     return { name, prompt, file: `${name}.png`, skipped: true };
   }
   const useRef = Array.isArray(ref) && ref.length > 0;
-  const data = useRef ? await edit(prompt, size, ref) : await generate(prompt, size);
+  const data = useRef ? await edit(prompt, size, ref, item.bg) : await generate(prompt, size, item.bg);
   const b64 = data?.data?.[0]?.b64_json;
   if (!b64) throw new Error("respuesta sin b64_json");
   const buf = Buffer.from(b64, "base64");

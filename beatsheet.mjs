@@ -346,6 +346,64 @@ function renderEl(b) {
         (b.label ? ` label=${j(b.label)}` : ``) +
         ` />`
       );
+    case "riskclock":
+      return (
+        `<RiskClock durationInFrames={d} steps={${j(b.steps || [])}}` +
+        (b.eyebrow ? ` eyebrow=${j(b.eyebrow)}` : ``) +
+        (b.title ? ` title=${j(b.title)}` : ``) +
+        (b.hue ? ` hue=${j(b.hue)}` : ``) +
+        ` />`
+      );
+    case "moat":
+      return (
+        `<TickLineMoat durationInFrames={d}` +
+        (b.eyebrow ? ` eyebrow=${j(b.eyebrow)}` : ``) +
+        (b.title ? ` title=${j(b.title)}` : ``) +
+        (b.hue ? ` hue=${j(b.hue)}` : ``) +
+        ` />`
+      );
+    case "sizescale":
+      return (
+        `<SizeScale durationInFrames={d} items={${j(b.items || [])}}` +
+        (b.eyebrow ? ` eyebrow=${j(b.eyebrow)}` : ``) +
+        (b.title ? ` title=${j(b.title)}` : ``) +
+        (b.hue ? ` hue=${j(b.hue)}` : ``) +
+        ` />`
+      );
+    case "spreadmap":
+      return (
+        `<SpreadMap durationInFrames={d} mapImage=${j(b.mapImage)}` +
+        (b.origin ? ` origin={${j(b.origin)}}` : ``) +
+        (b.yearFrom != null ? ` yearFrom={${b.yearFrom}}` : ``) +
+        (b.yearTo != null ? ` yearTo={${b.yearTo}}` : ``) +
+        (b.eyebrow ? ` eyebrow=${j(b.eyebrow)}` : ``) +
+        (b.title ? ` title=${j(b.title)}` : ``) +
+        (b.hue ? ` hue=${j(b.hue)}` : ``) +
+        ` />`
+      );
+    case "costtally":
+      return (
+        `<CostTally durationInFrames={d} left={${j(b.left)}} right={${j(b.right)}}` +
+        (b.eyebrow ? ` eyebrow=${j(b.eyebrow)}` : ``) +
+        (b.title ? ` title=${j(b.title)}` : ``) +
+        (b.hue ? ` hue=${j(b.hue)}` : ``) +
+        ` />`
+      );
+    case "scent":
+      return (
+        `<ScentConfuse durationInFrames={d}` +
+        (b.eyebrow ? ` eyebrow=${j(b.eyebrow)}` : ``) +
+        (b.title ? ` title=${j(b.title)}` : ``) +
+        (b.hue ? ` hue=${j(b.hue)}` : ``) +
+        ` />`
+      );
+    case "depthtext":
+      return (
+        `<DepthText durationInFrames={d} back=${j(b.back)} fore=${j(b.fore)} title=${j(b.title || "")}` +
+        (b.accent ? ` accent=${j(b.accent)}` : ``) +
+        (b.fontSize ? ` fontSize={${b.fontSize}}` : ``) +
+        ` />`
+      );
     default:
       return null; // talk
   }
@@ -393,6 +451,13 @@ if (kinds.has("callout")) imports.push(`import { CalloutMark } from "./scenes/Ca
 if (kinds.has("infzoom")) imports.push(`import { InfiniteZoom } from "./scenes/InfiniteZoom";`);
 if (kinds.has("top7")) imports.push(`import { Top7Ladder } from "./scenes/Top7Ladder";`);
 if (kinds.has("half")) imports.push(`import { HalfShot } from "./scenes/HalfShot";`);
+if (kinds.has("riskclock")) imports.push(`import { RiskClock } from "./scenes/RiskClock";`);
+if (kinds.has("moat")) imports.push(`import { TickLineMoat } from "./scenes/TickLineMoat";`);
+if (kinds.has("sizescale")) imports.push(`import { SizeScale } from "./scenes/SizeScale";`);
+if (kinds.has("spreadmap")) imports.push(`import { SpreadMap } from "./scenes/SpreadMap";`);
+if (kinds.has("costtally")) imports.push(`import { CostTally } from "./scenes/CostTally";`);
+if (kinds.has("scent")) imports.push(`import { ScentConfuse } from "./scenes/ScentConfuse";`);
+if (kinds.has("depthtext")) imports.push(`import { DepthText } from "./scenes/DepthText";`);
 const palLine = usedPal.size
   ? `\nconst ${[...usedPal].map((t) => `${t} = ${palTok[t]}`).join(", ")};\n`
   : "";
