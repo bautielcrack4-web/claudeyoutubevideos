@@ -1,6 +1,7 @@
 import "./index.css";
 import { Composition } from "remotion";
 import { MainEstiercol, TOTAL_FRAMES_EST } from "./VideoEdit/Main_estiercol";
+import { MainWasp, TOTAL_FRAMES_WASP } from "./VideoEdit/Main_wasp";
 
 // ── SOLO los videos ACTIVOS quedan registrados ──
 // Las composiciones viejas (Fly, Hipos, Bisontes, Objetos, Civil, Top7Demo,
@@ -10,7 +11,16 @@ import { MainEstiercol, TOTAL_FRAMES_EST } from "./VideoEdit/Main_estiercol";
 export const RemotionRoot: React.FC = () => {
   return (
     <>
-      {/* VIDEO ACTIVO — Reviví tu tierra muerta con $1 (estiércol, bajo esfuerzo) */}
+      {/* VIDEO ACTIVO — KILL EVERY Wasp On Your Property (The Amish Way) */}
+      <Composition
+        id="Wasp"
+        component={MainWasp}
+        durationInFrames={TOTAL_FRAMES_WASP}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
+      {/* Reviví tu tierra muerta con $1 (estiércol, bajo esfuerzo) */}
       <Composition
         id="Estiercol"
         component={MainEstiercol}
