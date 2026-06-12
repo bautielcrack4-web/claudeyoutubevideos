@@ -132,11 +132,11 @@
       "gen": { "type": "image", "name": "tk_study_paper", "prompt": "Realistic handheld 16:9 documentary video frame of an old typed agricultural research bulletin on a desk with a magnifying glass, aged paper, soft daylight, shallow focus, realistic imperfect handheld camera angle slightly tilted, practical documentary look, no cinematic lighting, natural video compression, low-resolution YouTube documentary screenshot look, ultra realistic. Negative prompt: studio photo, cinematic lighting, oversaturated, CGI, 3D render, readable body text, watermark." } },
 
     { "id": "c01", "start": 980.0, "dur": 5.0, "kind": "raw", "src": "img/tk_av_evening_check_kids.png", "hue": "amber", "kicker": "Every evening: yourself, the children, the dog" },
-    { "id": "c02", "start": 1010.0, "dur": 8.5, "kind": "journey", "eyebrow": "Three minutes a person", "title": "The evening check", "accent": "amber",
-      "waypoints": [
-        { "x": 0, "y": 0, "z": 0, "image": "img/tk_check_scalp.png", "label": "Scalp & behind the ears", "num": "1", "dwell": 1.8, "travel": 1.0 },
-        { "x": 950, "y": -200, "z": 1, "image": "img/tk_check_armpit.png", "label": "Neck, collar, armpits", "num": "2", "dwell": 1.8, "travel": 1.0 },
-        { "x": 1900, "y": 120, "z": 0, "image": "img/tk_check_knee.png", "label": "Waistband & backs of knees", "num": "3", "dwell": 1.8, "travel": 1.0 }
+    { "id": "c02", "start": 1010.0, "dur": 8.5, "kind": "process", "eyebrow": "Three minutes a person", "title": "The evening check", "accent": "amber", "hue": "amber",
+      "steps": [
+        { "title": "Scalp & behind the ears", "image": "img/tk_check_scalp.png" },
+        { "title": "Neck, collar, armpits", "image": "img/tk_check_armpit.png" },
+        { "title": "Waistband & backs of knees", "image": "img/tk_check_knee.png" }
       ] },
     { "id": "c03", "start": 1020.0, "dur": 9.0, "kind": "diagram", "eyebrow": "If you find one", "hue": "red", "accent": "danger",
       "slides": [ { "image": "img/dg_removal.png", "title": "Fine tweezers, close to the skin, pull straight up — never twist or burn" } ] },

@@ -13,6 +13,7 @@ import { JourneyCanvas } from "./scenes/JourneyCanvas";
 import { KineticHeadline } from "./scenes/KineticHeadline";
 import { AgedDoc } from "./scenes/AgedDoc";
 import { BarCompare } from "./scenes/BarCompare";
+import { ProcessSteps } from "./scenes/ProcessSteps";
 import { Checklist } from "./scenes/Checklist";
 import { RuleNumberScene } from "./scenes/RuleNumberScene";
 import { CalloutMark } from "./scenes/CalloutMark";
@@ -93,7 +94,7 @@ export const CUES: Cue[] = [
   { key: "d05", start: 905, dur: 7, kind: "stat", el: (d) => <StatBig durationInFrames={d} value={90} suffix="%" label="fewer ticks in the active yard — sulfur line + tick line combined" eyebrow="Something like" accent="good" hue="amber" /> },
   { key: "d06", start: 938, dur: 6.5, kind: "aged", el: (d) => <AgedDoc durationInFrames={d} heading="40 years of measurements" lines={[{"text":"85–95% fewer nymphal ticks","mark":true},{"text":"No product to sell — so nobody quotes it."}]} eyebrow="Connecticut Agricultural Experiment Station" image="img/tk_study_paper.png" accent="cold" hue="cold" /> },
   { key: "c01", start: 980, dur: 5, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/tk_av_evening_check_kids.png" hue="amber" kicker="Every evening: yourself, the children, the dog" /> },
-  { key: "c02", start: 1010, dur: 8.5, kind: "journey", el: (d) => <JourneyCanvas durationInFrames={d} eyebrow="Three minutes a person" title="The evening check" accent="amber" waypoints={[{"x":0,"y":0,"z":0,"image":"img/tk_check_scalp.png","label":"Scalp & behind the ears","num":"1","dwell":1.8,"travel":1},{"x":950,"y":-200,"z":1,"image":"img/tk_check_armpit.png","label":"Neck, collar, armpits","num":"2","dwell":1.8,"travel":1},{"x":1900,"y":120,"z":0,"image":"img/tk_check_knee.png","label":"Waistband & backs of knees","num":"3","dwell":1.8,"travel":1}]} /> },
+  { key: "c02", start: 1010, dur: 8.5, kind: "process", el: (d) => <ProcessSteps durationInFrames={d} steps={[{"title":"Scalp & behind the ears","image":"img/tk_check_scalp.png"},{"title":"Neck, collar, armpits","image":"img/tk_check_armpit.png"},{"title":"Waistband & backs of knees","image":"img/tk_check_knee.png"}]} eyebrow="Three minutes a person" title="The evening check" accent="amber" hue="amber" /> },
   { key: "c03", start: 1020, dur: 9, kind: "diagram", el: (d) => <DiagramBoard durationInFrames={d} clip="avatar_clips/c03.mp4" pages={[{"image":"img/dg_removal.png","eyebrow":"Fine tweezers, close to the skin, pull straight up — never twist or burn"}]} /> },
   { key: "c04", start: 1032, dur: 6, kind: "checklist", el: (d) => <Checklist durationInFrames={d} title="Removing a tick the right way" items={[{"text":"Fine-tipped tweezers, close to skin","state":"done"},{"text":"Pull straight up, slow and steady","state":"done"},{"text":"No twisting, no alcohol, no match","state":"done"},{"text":"Tape it in a dated envelope","state":"done"}]} accent="good" hue="amber" /> },
   { key: "c05", start: 1039, dur: 4.5, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/tk_tweezers_envelope.png" hue="amber" kicker="Save her — the Lyme test is better with the tick" /> },
