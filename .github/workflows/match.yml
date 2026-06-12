@@ -1,0 +1,84 @@
+# Matcher CLIP distribuido GRATIS en GitHub Actions (repo PÚBLICO).
+# Reparte los beats del match list en N runners en paralelo; cada uno baja proxies
+# 240p de los candidatos de YouTube, puntúa los frames con CLIP local (transformers.js)
+# y elige el clip+segundo que mejor MUESTRA el concepto. El agregador une todo en
+# clips_<slug>_matched.json (artifact descargable). NO usa tu PC ni tokens de Claude.
+#
+# El match list viaja como RELEASE asset "match-<slug>" (match_<slug>.json), subido
+# por el orquestador scripts/matchfarm.mjs. El CÓDIGO (match_runner.mjs) está en el repo.
+#
+# Disparo:  gh workflow run match.yml -f slug=estiercol -f chunks=20
+name: match
+
+on:
+  workflow_dispatch:
+    inputs:
+      slug:
+        description: "slug del video (ej: estiercol)"
+        required: true
+      chunks:
+        description: "en cuantos runners repartir"
+        required: false
+        default: "20"
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.m.outputs.matrix }}
+    steps:
+      - id: m
+        run: |
+          N=${{ github.event.inputs.chunks }}
+          LIST=$(node -e "console.log(JSON.stringify(Array.from({length:$N},(_,i)=>i)))")
+          echo "matrix=$LIST" >> "$GITHUB_OUTPUT"
+
+  match:
+    needs: prepare
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        idx: ${{ fromJSON(needs.prepare.outputs.matrix) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - run: npm ci
+      - name: install yt-dlp + ffmpeg
+        run: |
+          sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp
+          sudo chmod a+rx /usr/local/bin/yt-dlp
+          sudo apt-get update && sudo apt-get install -y ffmpeg
+      - name: download match list
+        env:
+          GH_TOKEN: "${{ github.token }}"
+        run: |
+          gh release download "match-${{ github.event.inputs.slug }}" \
+            --pattern "match_${{ github.event.inputs.slug }}.json" --dir .
+      - name: match shard
+        run: node scripts/match_runner.mjs "${{ github.event.inputs.slug }}" ${{ matrix.idx }} ${{ github.event.inputs.chunks }} "match_${{ github.event.inputs.slug }}.json"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: matchpart-${{ matrix.idx }}
+          path: out/match_part_${{ matrix.idx }}.json
+          retention-days: 3
+
+  aggregate:
+    needs: match
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          path: parts
+          pattern: "matchpart-*"
+          merge-multiple: true
+      - name: merge
+        run: node scripts/match_merge.mjs "${{ github.event.inputs.slug }}" parts
+      - uses: actions/upload-artifact@v4
+        with:
+          name: matched-${{ github.event.inputs.slug }}
+          path: clips_${{ github.event.inputs.slug }}_matched.json
+          retention-days: 7

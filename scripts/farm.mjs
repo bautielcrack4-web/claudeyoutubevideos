@@ -76,6 +76,9 @@ execSync("sleep 8 2>/dev/null || ping -n 9 127.0.0.1 >NUL", { stdio: "ignore", s
 const runId = out(`gh run list --workflow=render.yml --limit 1 --json databaseId --jq ".[0].databaseId"`);
 console.log("corrida:", runId, "— siguiendo (esto tarda según los pedazos)...");
 try { sh(`gh run watch ${runId} --exit-status`); } catch { console.error("la corrida fallo; revisá: gh run view " + runId); process.exit(1); }
-fs.mkdirSync("out", { recursive: true });
-sh(`gh run download ${runId} -n final-${slug} -D out`);
-console.log(`\n✅ listo → out/${slug}.mp4`);
+// destino fijo en el disco grande (D:) para no quedarse sin espacio en C: al
+// extraer el mp4 (~1.5 GB). Override con env VIDEO_OUT si hace falta.
+const DEST = process.env.VIDEO_OUT || "D:\\videosdeclaude";
+fs.mkdirSync(DEST, { recursive: true });
+sh(`gh run download ${runId} -n final-${slug} -D "${DEST}"`);
+console.log(`\n✅ listo → ${DEST}\\${slug}.mp4`);

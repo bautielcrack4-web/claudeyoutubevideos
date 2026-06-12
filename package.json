@@ -6,6 +6,7 @@
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
+    "@huggingface/transformers": "^4.2.0",
     "@remotion/captions": "4.0.472",
     "@remotion/cli": "4.0.472",
     "@remotion/google-fonts": "4.0.472",
