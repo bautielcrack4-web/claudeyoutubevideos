@@ -1,95 +1,20 @@
 import "./index.css";
 import { Composition } from "remotion";
-import { MainFly, TOTAL_FRAMES_FLY } from "./VideoEdit/Main_fly";
-import { MainHipos, TOTAL_FRAMES_HIP } from "./VideoEdit/Main_hipos";
-import { MainBisontes, TOTAL_FRAMES_BI } from "./VideoEdit/Main_bisontes";
-import { MainObjetos, TOTAL_FRAMES_OBJ } from "./VideoEdit/Main_objetos";
-import { MainCivil, TOTAL_FRAMES_CIVIL } from "./VideoEdit/Main_civil";
-import { MographDemo, TOTAL_FRAMES_MOGRAPH } from "./VideoEdit/mograph/MographDemo";
-import { MographShowcase, TOTAL_FRAMES_SHOWCASE } from "./VideoEdit/mograph/MographShowcase";
-import { Top7Demo, TOTAL_FRAMES_TOP7DEMO } from "./VideoEdit/Top7Demo";
-import { MainAnimales, TOTAL_FRAMES_ANIM } from "./VideoEdit/Main_animales";
+import { MainEstiercol, TOTAL_FRAMES_EST } from "./VideoEdit/Main_estiercol";
 
-// ── SOLO el proyecto activo (Estufa) + el demo del efecto Impact Reveal ──
-// Las composiciones viejas (Termitas, Beduinos, Mongoles, Doodle, etc.) quedan
-// DESREGISTRADAS para que Remotion Studio no las cargue ni consuma RAM. Sus
-// archivos siguen en src/VideoEdit/ — para reactivar una, volvé a importarla y
-// agregá su <Composition> acá.
+// ── SOLO los videos ACTIVOS quedan registrados ──
+// Las composiciones viejas (Fly, Hipos, Bisontes, Objetos, Civil, Top7Demo,
+// Mograph, MographShowcase, etc.) quedan DESREGISTRADAS para que Studio no las
+// cargue ni tire 404 de audios que ya no están en disco. Sus archivos siguen en
+// src/VideoEdit/ — para reactivar una, volvé a importarla y agregá su <Composition>.
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      {/* VIDEO ACTIVO — Reviví tu tierra muerta con $1 (estiércol, bajo esfuerzo) */}
       <Composition
-        id="Fly"
-        component={MainFly}
-        durationInFrames={TOTAL_FRAMES_FLY}
-        fps={30}
-        width={1920}
-        height={1080}
-      />
-      <Composition
-        id="Hipos"
-        component={MainHipos}
-        durationInFrames={TOTAL_FRAMES_HIP}
-        fps={30}
-        width={1920}
-        height={1080}
-      />
-      <Composition
-        id="Bisontes"
-        component={MainBisontes}
-        durationInFrames={TOTAL_FRAMES_BI}
-        fps={30}
-        width={1920}
-        height={1080}
-      />
-      <Composition
-        id="Objetos"
-        component={MainObjetos}
-        durationInFrames={TOTAL_FRAMES_OBJ}
-        fps={30}
-        width={1920}
-        height={1080}
-      />
-      <Composition
-        id="Civil"
-        component={MainCivil}
-        durationInFrames={TOTAL_FRAMES_CIVIL}
-        fps={30}
-        width={1920}
-        height={1080}
-      />
-      {/* VIDEO ACTIVO — 7 Animales Más Rentables (abuelo) */}
-      <Composition
-        id="Animales"
-        component={MainAnimales}
-        durationInFrames={TOTAL_FRAMES_ANIM}
-        fps={30}
-        width={1920}
-        height={1080}
-      />
-      {/* preview de la tarjeta de revelación del video "7 Animales" */}
-      <Composition
-        id="Top7Demo"
-        component={Top7Demo}
-        durationInFrames={TOTAL_FRAMES_TOP7DEMO}
-        fps={30}
-        width={1920}
-        height={1080}
-      />
-      {/* mograph kit — broadcast-style component demo (cyan/magenta/dark) */}
-      <Composition
-        id="Mograph"
-        component={MographDemo}
-        durationInFrames={TOTAL_FRAMES_MOGRAPH}
-        fps={30}
-        width={1920}
-        height={1080}
-      />
-      {/* real-footage showcase — Mairi + Knapdale, the competitor look end to end */}
-      <Composition
-        id="MographShowcase"
-        component={MographShowcase}
-        durationInFrames={TOTAL_FRAMES_SHOWCASE}
+        id="Estiercol"
+        component={MainEstiercol}
+        durationInFrames={TOTAL_FRAMES_EST}
         fps={30}
         width={1920}
         height={1080}
