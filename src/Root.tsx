@@ -3,7 +3,6 @@ import { Composition } from "remotion";
 import { MainEstiercol, TOTAL_FRAMES_EST } from "./VideoEdit/Main_estiercol";
 import { MainWasp, TOTAL_FRAMES_WASP } from "./VideoEdit/Main_wasp";
 import { MainTick, TOTAL_FRAMES_TICK } from "./VideoEdit/Main_tick";
-import { MainSabana, TOTAL_FRAMES_SABANA } from "./VideoEdit/Main_sabana";
 
 // ── SOLO los videos ACTIVOS quedan registrados ──
 // Las composiciones viejas (Fly, Hipos, Bisontes, Objetos, Civil, Top7Demo,
@@ -27,15 +26,6 @@ export const RemotionRoot: React.FC = () => {
         id="Tick"
         component={MainTick}
         durationInFrames={TOTAL_FRAMES_TICK}
-        fps={30}
-        width={1920}
-        height={1080}
-      />
-      {/* PROTOTIPO documental fauna (Serengeti · babuinos) — clips reales + narración re-espaciada */}
-      <Composition
-        id="Sabana"
-        component={MainSabana}
-        durationInFrames={TOTAL_FRAMES_SABANA}
         fps={30}
         width={1920}
         height={1080}
