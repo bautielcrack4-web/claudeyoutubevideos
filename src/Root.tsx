@@ -9,6 +9,7 @@ import { MainDomingos, TOTAL_FRAMES_DOM } from "./VideoEdit/Main_domingos";
 import { MainCocina, TOTAL_FRAMES_COC } from "./VideoEdit/Main_cocina";
 import { MainEstufaRocket, TOTAL_FRAMES_ER } from "./VideoEdit/Main_estufarocket";
 import { MainBorax, TOTAL_FRAMES_BX } from "./VideoEdit/Main_borax";
+import { MainBarrera, TOTAL_FRAMES_BRR } from "./VideoEdit/Main_barrera";
 
 // ── SOLO los videos ACTIVOS quedan registrados ──
 // Las composiciones viejas (Fly, Hipos, Bisontes, Objetos, Civil, Top7Demo,
@@ -62,6 +63,8 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="EstufaRocket" component={MainEstufaRocket} durationInFrames={TOTAL_FRAMES_ER} fps={30} width={1920} height={1080} />
       {/* VIDEO 2 · EL CONSTRUCTOR LIBRE — Madera sin termitas (bórax + aceite) */}
       <Composition id="Borax" component={MainBorax} durationInFrames={TOTAL_FRAMES_BX} fps={30} width={1920} height={1080} />
+      {/* VIDEO 3 · EL CONSTRUCTOR LIBRE — 2 metales = 0 plagas (barrera galvánica) */}
+      <Composition id="Barrera" component={MainBarrera} durationInFrames={TOTAL_FRAMES_BRR} fps={30} width={1920} height={1080} />
       {/* Reviví tu tierra muerta con $1 (estiércol, bajo esfuerzo) */}
       <Composition
         id="Estiercol"

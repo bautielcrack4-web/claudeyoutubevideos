@@ -1,0 +1,1255 @@
+{
+ "video": "barrera",
+ "avatar": "barrera_opt.mp4",
+ "tutorial": true,
+ "beats": [
+  {
+   "id": "hook_0",
+   "start": 1.3,
+   "dur": 5.63,
+   "kind": "talk",
+   "hue": "amber"
+  },
+  {
+   "id": "hook_1",
+   "start": 6.93,
+   "dur": 13.05,
+   "kind": "raw",
+   "src": "img/bg_dos_lechugas.png",
+   "hue": "red",
+   "kicker": "Misma tierra, mismo sol",
+   "hold": true,
+   "gen": {
+    "type": "image",
+    "name": "bg_dos_lechugas",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). dos plantas de lechuga lado a lado en un cantero, la de la izquierda comida y llena de agujeros, la de la derecha sana y entera. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "hook_2",
+   "start": 19.98,
+   "dur": 7.67,
+   "kind": "raw",
+   "src": "img/bg_lechuga_comida.png",
+   "hue": "blue",
+   "gen": {
+    "type": "image",
+    "name": "bg_lechuga_comida",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). una lechuga destrozada por babosas, hojas hechas un encaje de agujeros. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "hook_3",
+   "start": 27.65,
+   "dur": 7.68,
+   "kind": "raw",
+   "src": "img/bg_lechuga_sana.png",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "bg_lechuga_sana",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). una lechuga perfecta y sana, hojas firmes, lista para la mesa. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "hook_4",
+   "start": 35.33,
+   "dur": 7.67,
+   "kind": "raw",
+   "src": "img/bg_anillo_metales.png",
+   "hue": "red",
+   "kicker": "Un anillo de $5",
+   "gen": {
+    "type": "image",
+    "name": "bg_anillo_metales",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). un anillo de dos metales distintos (cobre y zinc) rodeando una planta en el cantero, primer plano. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "hook_5",
+   "start": 43,
+   "dur": 7.68,
+   "kind": "raw",
+   "src": "img/bg_babosa_rastro.png",
+   "hue": "blue",
+   "gen": {
+    "type": "image",
+    "name": "bg_babosa_rastro",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). el rastro plateado y los agujeros que deja una babosa en las hojas, de noche. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "hook_6",
+   "start": 50.68,
+   "dur": 7.67,
+   "kind": "raw",
+   "src": "vid/bgv_babosa_retira.mp4",
+   "hue": "amber",
+   "kicker": "Se da media vuelta",
+   "gen": {
+    "type": "clip",
+    "image": "bgv_babosa_retira",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). una babosa tocando una cinta de metal y dándose media vuelta, retirándose, sobre tierra húmeda de noche. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 90
+   }
+  },
+  {
+   "id": "hook_7",
+   "start": 58.35,
+   "dur": 7.68,
+   "kind": "raw",
+   "src": "img/bg_perro_huerta.png",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "bg_perro_huerta",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). un perro tranquilo en la huerta y chicos descalzos al fondo, todo seguro sin veneno. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "hook_8",
+   "start": 66.03,
+   "dur": 7.67,
+   "kind": "raw",
+   "src": "img/bg_abeja_flor.png",
+   "hue": "blue",
+   "gen": {
+    "type": "image",
+    "name": "bg_abeja_flor",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). una abeja trabajando una flor de la huerta, sana, sin veneno. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "ident_0",
+   "start": 73.7,
+   "dur": 23.3,
+   "kind": "raw",
+   "src": "img/bg_tomas_huerta.png",
+   "hue": "red",
+   "kicker": "Tomás",
+   "hold": true,
+   "gen": {
+    "type": "image",
+    "name": "bg_tomas_huerta",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). un hombre rural de unos 45 años, pelo oscuro y barba corta canosa, piel curtida, camisa de trabajo verde oliva y delantal de cuero marrón, parado en su huerta llena de verduras, mirada tranquila, en una huerta rural de la Patagonia. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "ident_1",
+   "start": 97,
+   "dur": 9.59,
+   "kind": "quote",
+   "image": "img/bg_manos_tierra.png",
+   "text": "No soy agrónomo. Soy un *hombre que prueba cosas*.",
+   "hue": "blue"
+  },
+  {
+   "id": "ident_2",
+   "start": 106.59,
+   "dur": 13.71,
+   "kind": "raw",
+   "src": "img/bg_tomas_incomoda.png",
+   "hue": "amber",
+   "kicker": "La parte que te va a dar bronca",
+   "gen": {
+    "type": "image",
+    "name": "bg_tomas_incomoda",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). un hombre rural de unos 45 años, pelo oscuro y barba corta canosa, piel curtida, camisa de trabajo verde oliva y delantal de cuero marrón, inclinado hacia la cámara con gesto serio entre las plantas, en una huerta rural de la Patagonia. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "promesa_0",
+   "start": 120.3,
+   "dur": 4.34,
+   "kind": "stat",
+   "value": 5,
+   "prefix": "US$ ",
+   "label": "lo que cuesta proteger tu huerta",
+   "eyebrow": "Te lo prometo",
+   "hue": "blue"
+  },
+  {
+   "id": "promesa_1",
+   "start": 124.64,
+   "dur": 4.35,
+   "kind": "chips",
+   "bg": "image",
+   "image": "img/bg_tomas_huerta.png",
+   "imageDarken": 0.6,
+   "title": "Lo que vas a saber",
+   "chips": [
+    "Barrera de 2 metales",
+    "Bórax para hormigas",
+    "Spray de ajo",
+    "Tierra de diatomeas"
+   ],
+   "hue": "amber"
+  },
+  {
+   "id": "promesa_2",
+   "start": 128.99,
+   "dur": 6.51,
+   "kind": "raw",
+   "src": "img/bg_frasco_veneno_no.png",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "bg_frasco_veneno_no",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). un frasco de veneno para plantas con un signo de prohibido, concepto de no usar veneno. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "problema_0",
+   "start": 135.5,
+   "dur": 24.46,
+   "kind": "diagram",
+   "eyebrow": "Barrera, no batalla",
+   "slides": [
+    {
+     "image": "img/dg_bg_barrera.png",
+     "eyebrow": "Defendé el territorio, no pelees cuerpo a cuerpo"
+    }
+   ],
+   "hue": "amber"
+  },
+  {
+   "id": "problema_1",
+   "start": 159.96,
+   "dur": 15.29,
+   "kind": "raw",
+   "src": "img/bg_rociar_veneno.png",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "bg_rociar_veneno",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). una mano rociando veneno con un pulverizador sobre una planta, gotas en las hojas. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "problema_2",
+   "start": 175.25,
+   "dur": 15.3,
+   "kind": "raw",
+   "src": "vid/bgv_plaga_vuelve.mp4",
+   "hue": "blue",
+   "kicker": "Y a los días vuelve",
+   "gen": {
+    "type": "clip",
+    "image": "bgv_plaga_vuelve",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). pulgones volviendo a una hoja pocos días después, plaga que regresa. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 80
+   }
+  },
+  {
+   "id": "problema_3",
+   "start": 190.55,
+   "dur": 11.21,
+   "kind": "splitlist",
+   "title": "La guerra sin fin",
+   "items": [
+    "Rociás veneno",
+    "Se evapora o lo lava la lluvia",
+    "Volvés a comprar"
+   ],
+   "palette": "D",
+   "cross": true,
+   "hue": "amber"
+  },
+  {
+   "id": "problema_4",
+   "start": 201.76,
+   "dur": 12.74,
+   "kind": "bars",
+   "title": "Cuánto dura",
+   "unit": "",
+   "bars": [
+    {
+     "label": "Veneno (semanas)",
+     "value": 3,
+     "tone": "danger"
+    },
+    {
+     "label": "Barrera (años)",
+     "value": 40,
+     "winner": true
+    }
+   ],
+   "hue": "red"
+  },
+  {
+   "id": "barrera_que_0",
+   "start": 214.5,
+   "dur": 9.82,
+   "kind": "rule",
+   "number": "01",
+   "title": "La barrera galvánica de $5",
+   "hue": "red"
+  },
+  {
+   "id": "barrera_que_1",
+   "start": 224.32,
+   "dur": 25.05,
+   "kind": "raw",
+   "src": "img/bg_babosa_baba.png",
+   "hue": "blue",
+   "kicker": "Babosas y caracoles",
+   "hold": true,
+   "gen": {
+    "type": "image",
+    "name": "bg_babosa_baba",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). una babosa con su cuerpo cubierto de baba húmeda y brillante, primer plano, sobre una hoja. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "barrera_que_2",
+   "start": 249.37,
+   "dur": 23.57,
+   "kind": "diagram",
+   "eyebrow": "La física de la barrera",
+   "slides": [
+    {
+     "image": "img/dg_bg_fisica.png",
+     "eyebrow": "Su cuerpo húmedo cierra el circuito = una pila"
+    }
+   ],
+   "hue": "amber"
+  },
+  {
+   "id": "barrera_que_3",
+   "start": 272.94,
+   "dur": 14.74,
+   "kind": "raw",
+   "src": "img/bg_pila_natural.png",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "bg_pila_natural",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). dos metales distintos unidos por algo húmedo generando una corriente, concepto de pila natural. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "barrera_que_4",
+   "start": 287.68,
+   "dur": 9.82,
+   "kind": "callout",
+   "image": "img/bg_anillo_macro.png",
+   "figure": "US$ 5",
+   "caption": "Una vez. Dura años.",
+   "accent": "amber",
+   "hue": "blue"
+  },
+  {
+   "id": "barrera_receta_0",
+   "start": 297.5,
+   "dur": 6.4,
+   "kind": "annotated",
+   "image": "img/bg_materiales_barrera.png",
+   "eyebrow": "Lo que necesitás",
+   "caption": "Cobre y zinc, monedas",
+   "annotations": [
+    {
+     "kind": "circle",
+     "x": 30,
+     "y": 55,
+     "label": "Cinta de cobre"
+    },
+    {
+     "kind": "circle",
+     "x": 70,
+     "y": 55,
+     "label": "Chapa galvanizada (zinc)"
+    }
+   ],
+   "hue": "blue"
+  },
+  {
+   "id": "barrera_receta_1",
+   "start": 303.9,
+   "dur": 7.38,
+   "kind": "raw",
+   "src": "img/bg_cinta_cobre.png",
+   "hue": "amber",
+   "kicker": "1 · Cobre",
+   "gen": {
+    "type": "image",
+    "name": "bg_cinta_cobre",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). una cinta adhesiva de cobre brillante, rollo, primer plano. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "barrera_receta_2",
+   "start": 311.28,
+   "dur": 7.38,
+   "kind": "raw",
+   "src": "img/bg_chapa_zinc.png",
+   "hue": "red",
+   "kicker": "2 · Zinc (chapa galvanizada)",
+   "gen": {
+    "type": "image",
+    "name": "bg_chapa_zinc",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). un pedazo de chapa galvanizada cubierta de zinc, gris mate. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "barrera_receta_3",
+   "start": 318.66,
+   "dur": 7.38,
+   "kind": "raw",
+   "src": "img/bg_pegar_cobre.png",
+   "hue": "blue",
+   "gen": {
+    "type": "image",
+    "name": "bg_pegar_cobre",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). una mano pegando la cinta de cobre en el borde de una maceta de madera. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "barrera_receta_4",
+   "start": 326.04,
+   "dur": 7.38,
+   "kind": "raw",
+   "src": "img/bg_pegar_zinc.png",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "bg_pegar_zinc",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). una mano colocando la tira de zinc justo al lado del cobre, paralelas. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "barrera_receta_5",
+   "start": 333.42,
+   "dur": 7.38,
+   "kind": "raw",
+   "src": "broll/rb_copper_tape.mp4",
+   "hue": "red",
+   "kicker": "3 · Rodear el cantero"
+  },
+  {
+   "id": "barrera_receta_6",
+   "start": 340.8,
+   "dur": 7.38,
+   "kind": "raw",
+   "src": "img/bg_anillo_cerrado.png",
+   "hue": "blue",
+   "kicker": "Un anillo cerrado, los dos metales juntos",
+   "gen": {
+    "type": "image",
+    "name": "bg_anillo_cerrado",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). un anillo cerrado de cobre y zinc juntos rodeando una maceta, sin huecos. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "barrera_receta_7",
+   "start": 348.18,
+   "dur": 7.38,
+   "kind": "raw",
+   "src": "vid/bgv_babosa_calambre.mp4",
+   "hue": "amber",
+   "kicker": "Toca los dos, recibe el calambre, se va",
+   "gen": {
+    "type": "clip",
+    "image": "bgv_babosa_calambre",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). una babosa tocando los dos metales y retrocediendo de golpe por la pequeña descarga, de noche. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 85
+   }
+  },
+  {
+   "id": "barrera_receta_8",
+   "start": 355.56,
+   "dur": 5.42,
+   "kind": "float",
+   "src": "img/bg_monedas_cobre.png",
+   "side": "right",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "bg_monedas_cobre",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). monedas viejas de cobre como alternativa barata para la barrera. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "barrera_receta_9",
+   "start": 360.98,
+   "dur": 5.9,
+   "kind": "checklist",
+   "title": "La barrera galvánica",
+   "items": [
+    {
+     "text": "Cobre + zinc juntos",
+     "state": "done"
+    },
+    {
+     "text": "Anillo cerrado sin huecos",
+     "state": "done"
+    },
+    {
+     "text": "Alrededor de la planta",
+     "state": "done"
+    },
+    {
+     "text": "Dura años, sin recomprar",
+     "state": "done"
+    }
+   ],
+   "hue": "blue"
+  },
+  {
+   "id": "inject1_0",
+   "start": 366.88,
+   "dur": 35.54,
+   "kind": "diagram",
+   "eyebrow": "Los 35 sistemas, paso a paso",
+   "slides": [
+    {
+     "image": "img/dg_bg_manual.png",
+     "eyebrow": "Las medidas exactas, en el manual"
+    }
+   ],
+   "hue": "amber"
+  },
+  {
+   "id": "inject1_1",
+   "start": 402.42,
+   "dur": 19.25,
+   "kind": "half",
+   "src": "img/bg_manual_huerta.png",
+   "side": "right",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "bg_manual_huerta",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). un manual abierto con diagramas de huerta y barreras sobre una mesa de jardín. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   },
+   "kicker": "Todo documentado"
+  },
+  {
+   "id": "hormigas_0",
+   "start": 421.67,
+   "dur": 0.4,
+   "kind": "rule",
+   "number": "02",
+   "title": "El bórax contra las hormigas",
+   "hue": "red"
+  },
+  {
+   "id": "hormigas_1",
+   "start": 422.07,
+   "dur": 0.61,
+   "kind": "raw",
+   "src": "img/bg_fila_hormigas.png",
+   "hue": "blue",
+   "kicker": "Las hormigas",
+   "gen": {
+    "type": "image",
+    "name": "bg_fila_hormigas",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). una fila de hormigas caminando por el borde de un cantero, primer plano. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "hormigas_2",
+   "start": 422.68,
+   "dur": 0.6,
+   "kind": "raw",
+   "src": "img/bg_borax_azucar.png",
+   "hue": "amber",
+   "kicker": "Bórax + azúcar",
+   "gen": {
+    "type": "image",
+    "name": "bg_borax_azucar",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). bórax blanco y azúcar sobre una cuchara, los dos ingredientes del cebo. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "hormigas_3",
+   "start": 423.28,
+   "dur": 0.61,
+   "kind": "raw",
+   "src": "img/bg_borax_cebo.png",
+   "hue": "red",
+   "kicker": "Mezclar en una pasta dulce",
+   "gen": {
+    "type": "image",
+    "name": "bg_borax_cebo",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). una mano mezclando bórax con azúcar y un poco de agua hasta hacer un cebo dulce pegajoso. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "hormigas_4",
+   "start": 423.89,
+   "dur": 0.6,
+   "kind": "raw",
+   "src": "img/bg_cebo_cerca.png",
+   "hue": "blue",
+   "gen": {
+    "type": "image",
+    "name": "bg_cebo_cerca",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). el cebo dulce colocado cerca de donde entran las hormigas, en una tapita. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "hormigas_5",
+   "start": 424.49,
+   "dur": 0.61,
+   "kind": "raw",
+   "src": "vid/bgv_hormigas_cebo.mp4",
+   "hue": "amber",
+   "kicker": "Se lo llevan al hormiguero",
+   "gen": {
+    "type": "clip",
+    "image": "bgv_hormigas_cebo",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). hormigas llevándose el cebo dulce a su hormiguero, fila cargando. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 80
+   }
+  },
+  {
+   "id": "hormigas_6",
+   "start": 425.1,
+   "dur": 0.6,
+   "kind": "raw",
+   "src": "img/bg_borax_linea.png",
+   "hue": "red",
+   "kicker": "Y una línea seca de barrera",
+   "gen": {
+    "type": "image",
+    "name": "bg_borax_linea",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). una línea de polvo de bórax seco como barrera alrededor del cantero. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "hormigas_7",
+   "start": 425.7,
+   "dur": 0.97,
+   "kind": "diagram",
+   "eyebrow": "Cómo cae el hormiguero",
+   "slides": [
+    {
+     "image": "img/dg_bg_hormiga.png",
+     "eyebrow": "Colapsa desde adentro, sin cavar"
+    }
+   ],
+   "hue": "blue"
+  },
+  {
+   "id": "ajo_0",
+   "start": 426.67,
+   "dur": 60.83,
+   "kind": "rule",
+   "number": "03",
+   "title": "El spray de ajo contra los pulgones",
+   "hue": "blue"
+  },
+  {
+   "id": "ajo_1",
+   "start": 487.5,
+   "dur": 9.58,
+   "kind": "raw",
+   "src": "img/bg_dientes_ajo.png",
+   "hue": "amber",
+   "kicker": "Unos dientes de ajo",
+   "gen": {
+    "type": "image",
+    "name": "bg_dientes_ajo",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). varios dientes de ajo pelados sobre la mesada, listos para machacar. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "ajo_2",
+   "start": 497.08,
+   "dur": 9.58,
+   "kind": "raw",
+   "src": "img/bg_ajo_machacar.png",
+   "hue": "red",
+   "kicker": "Machacado",
+   "gen": {
+    "type": "image",
+    "name": "bg_ajo_machacar",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). ajo machacado en un mortero, listo para el agua. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "ajo_3",
+   "start": 506.66,
+   "dur": 9.58,
+   "kind": "raw",
+   "src": "img/bg_ajo_reposar.png",
+   "hue": "blue",
+   "kicker": "Reposar una noche",
+   "gen": {
+    "type": "image",
+    "name": "bg_ajo_reposar",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). un frasco de agua con ajo reposando una noche sobre la mesada. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "ajo_4",
+   "start": 516.24,
+   "dur": 9.58,
+   "kind": "raw",
+   "src": "img/bg_colar_spray.png",
+   "hue": "amber",
+   "kicker": "Colar y al pulverizador",
+   "gen": {
+    "type": "image",
+    "name": "bg_colar_spray",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). colando el líquido de ajo en un pulverizador, para que no tape la boquilla. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "ajo_5",
+   "start": 525.82,
+   "dur": 9.58,
+   "kind": "raw",
+   "src": "broll/rb_spray_leaves.mp4",
+   "hue": "red",
+   "kicker": "Rociar el REVERSO de las hojas"
+  },
+  {
+   "id": "ajo_6",
+   "start": 535.4,
+   "dur": 8.3,
+   "kind": "annotated",
+   "image": "img/bg_pulgon_reverso.png",
+   "eyebrow": "El truco",
+   "caption": "Abajo de la hoja, nunca las flores",
+   "annotations": [
+    {
+     "kind": "arrow",
+     "x": 40,
+     "y": 60,
+     "label": "Reverso: ahí están"
+    },
+    {
+     "kind": "circle",
+     "x": 75,
+     "y": 30,
+     "label": "Flor: NO (las abejas)"
+    }
+   ],
+   "hue": "blue"
+  },
+  {
+   "id": "ajo_7",
+   "start": 543.7,
+   "dur": 7.03,
+   "kind": "splitlist",
+   "title": "La regla de oro del ajo",
+   "items": [
+    "Rociar el reverso",
+    "Nunca las flores abiertas",
+    "Repetir tras la lluvia"
+   ],
+   "palette": "G",
+   "hue": "amber"
+  },
+  {
+   "id": "diatomeas_0",
+   "start": 550.73,
+   "dur": 6.36,
+   "kind": "rule",
+   "number": "04",
+   "title": "La tierra de diatomeas",
+   "hue": "amber"
+  },
+  {
+   "id": "diatomeas_1",
+   "start": 557.09,
+   "dur": 9.54,
+   "kind": "raw",
+   "src": "img/bg_diatomeas_polvo.png",
+   "hue": "red",
+   "kicker": "Polvo finísimo",
+   "gen": {
+    "type": "image",
+    "name": "bg_diatomeas_polvo",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). un polvo blanco finísimo como talco en la mano, tierra de diatomeas. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "diatomeas_2",
+   "start": 566.63,
+   "dur": 15.26,
+   "kind": "diagram",
+   "eyebrow": "Por qué mata insectos",
+   "slides": [
+    {
+     "image": "img/dg_bg_diat.png",
+     "eyebrow": "Suave para vos, filoso para el bicho"
+    }
+   ],
+   "hue": "blue"
+  },
+  {
+   "id": "diatomeas_3",
+   "start": 581.89,
+   "dur": 9.53,
+   "kind": "raw",
+   "src": "img/bg_diat_espolvorear.png",
+   "hue": "amber",
+   "kicker": "Espolvorear alrededor",
+   "gen": {
+    "type": "image",
+    "name": "bg_diat_espolvorear",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). una mano espolvoreando el polvo blanco de diatomeas alrededor de las plantas. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "diatomeas_4",
+   "start": 591.42,
+   "dur": 9.54,
+   "kind": "raw",
+   "src": "img/bg_diat_linea.png",
+   "hue": "red",
+   "kicker": "Una barrera que no cruzan",
+   "gen": {
+    "type": "image",
+    "name": "bg_diat_linea",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). una línea de polvo blanco de diatomeas alrededor de una planta en el cantero. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "diatomeas_5",
+   "start": 600.96,
+   "dur": 9.54,
+   "kind": "raw",
+   "src": "vid/bgv_diat_lluvia.mp4",
+   "hue": "blue",
+   "kicker": "Repetir después de la lluvia",
+   "gen": {
+    "type": "clip",
+    "image": "bgv_diat_lluvia",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). lluvia apelmazando una línea de polvo blanco, recordando que hay que repetir. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 70
+   }
+  },
+  {
+   "id": "cuatro_0",
+   "start": 610.5,
+   "dur": 14.94,
+   "kind": "chips",
+   "bg": "image",
+   "image": "img/bg_tomas_huerta.png",
+   "imageDarken": 0.6,
+   "title": "Cuatro defensas, ningún veneno",
+   "chips": [
+    "Babosas → 2 metales",
+    "Hormigas → bórax",
+    "Pulgones → ajo",
+    "Todo → diatomeas"
+   ],
+   "hue": "amber"
+  },
+  {
+   "id": "cuatro_1",
+   "start": 625.44,
+   "dur": 38.1,
+   "kind": "raw",
+   "src": "img/bg_huerta_sana.png",
+   "hue": "blue",
+   "kicker": "Seguro para abejas, mariposas y chicos",
+   "hold": true,
+   "gen": {
+    "type": "image",
+    "name": "bg_huerta_sana",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). una huerta entera sana y productiva, abejas y mariposas, sin veneno. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "inject2_0",
+   "start": 663.54,
+   "dur": 27.29,
+   "kind": "costtally",
+   "left": {
+    "label": "El veneno",
+    "note": "se gasta, comprás de nuevo cada mes",
+    "total": 95,
+    "bad": true
+   },
+   "right": {
+    "label": "Constructor Libre",
+    "note": "barreras que duran años",
+    "total": 5
+   },
+   "hue": "blue"
+  },
+  {
+   "id": "inject2_1",
+   "start": 690.83,
+   "dur": 26.05,
+   "kind": "quote",
+   "image": "img/bg_veneno_abeja.png",
+   "text": "Ese veneno mata también a las *abejas* que dan tu comida.",
+   "accent": "danger",
+   "hue": "amber"
+  },
+  {
+   "id": "empezar_0",
+   "start": 716.88,
+   "dur": 24.7,
+   "kind": "process",
+   "title": "Empezá por tu peor plaga",
+   "eyebrow": "Sin abrumarte",
+   "steps": [
+    {
+     "title": "Babosas",
+     "desc": "la barrera de 2 metales",
+     "image": "img/bg_anillo_metales.png"
+    },
+    {
+     "title": "Hormigas",
+     "desc": "el cebo de bórax",
+     "image": "img/bg_borax_cebo.png"
+    },
+    {
+     "title": "Pulgones",
+     "desc": "el spray de ajo",
+     "image": "img/bg_ajo_machacar.png"
+    }
+   ],
+   "hue": "amber"
+  },
+  {
+   "id": "empezar_1",
+   "start": 741.58,
+   "dur": 41.99,
+   "kind": "raw",
+   "src": "img/bg_huerta_castigada.png",
+   "hue": "red",
+   "kicker": "Ganá una batalla primero",
+   "hold": true,
+   "gen": {
+    "type": "image",
+    "name": "bg_huerta_castigada",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). una planta castigada por plagas en la huerta, la peor del cantero. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "aliados_0",
+   "start": 783.57,
+   "dur": 8.18,
+   "kind": "raw",
+   "src": "img/bg_mariquita.png",
+   "hue": "red",
+   "kicker": "La mariquita come cientos por día",
+   "gen": {
+    "type": "image",
+    "name": "bg_mariquita",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). una mariquita (vaquita de San Antonio) comiendo pulgones en una hoja, primer plano. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "aliados_1",
+   "start": 791.75,
+   "dur": 8.19,
+   "kind": "raw",
+   "src": "img/bg_sapo.png",
+   "hue": "blue",
+   "gen": {
+    "type": "image",
+    "name": "bg_sapo",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). un sapo escondido bajo una maceta dada vuelta en la huerta, cazador de babosas. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "aliados_2",
+   "start": 799.94,
+   "dur": 8.18,
+   "kind": "raw",
+   "src": "img/bg_arana_jardin.png",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "bg_arana_jardin",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). una araña de jardín en su tela entre las plantas, cazadora natural. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "aliados_3",
+   "start": 808.12,
+   "dur": 8.19,
+   "kind": "raw",
+   "src": "img/bg_pajaro_huerta.png",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "bg_pajaro_huerta",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). un pájaro comiendo orugas en la huerta, aliado natural. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "aliados_4",
+   "start": 816.31,
+   "dur": 8.18,
+   "kind": "raw",
+   "src": "img/bg_refugio_sapo.png",
+   "hue": "blue",
+   "kicker": "Dales un refugio",
+   "gen": {
+    "type": "image",
+    "name": "bg_refugio_sapo",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). una piedra plana y una maceta rota puestas como refugio para sapos en la huerta. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "aliados_5",
+   "start": 824.49,
+   "dur": 13.1,
+   "kind": "diagram",
+   "eyebrow": "Una huerta viva se defiende sola",
+   "slides": [
+    {
+     "image": "img/dg_bg_ecos.png",
+     "eyebrow": "Cuando dejás el veneno, vuelve el ejército"
+    }
+   ],
+   "hue": "amber"
+  },
+  {
+   "id": "panorama_0",
+   "start": 837.59,
+   "dur": 34.32,
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "Comida"
+    },
+    {
+     "t": "sana"
+    },
+    {
+     "t": "a"
+    },
+    {
+     "t": "unos"
+    },
+    {
+     "t": "pasos"
+    },
+    {
+     "t": "de"
+    },
+    {
+     "t": "tu"
+    },
+    {
+     "t": "cocina",
+     "hl": true
+    }
+   ],
+   "eyebrow": "Lo más valioso",
+   "bg": "image",
+   "image": "img/bg_huerta_sana.png",
+   "hue": "blue"
+  },
+  {
+   "id": "panorama_1",
+   "start": 871.91,
+   "dur": 36.03,
+   "kind": "quote",
+   "image": "img/bg_manos_cosecha.png",
+   "text": "Cultivaban sin un solo químico de laboratorio. Y *comían*.",
+   "hue": "amber"
+  },
+  {
+   "id": "plan_0",
+   "start": 907.94,
+   "dur": 14.51,
+   "kind": "checklist",
+   "title": "Tu fin de semana",
+   "items": [
+    {
+     "text": "Cobre y zinc para la barrera",
+     "state": "todo"
+    },
+    {
+     "text": "Una caja de bórax",
+     "state": "todo"
+    },
+    {
+     "text": "Ajo en agua esta noche",
+     "state": "todo"
+    }
+   ],
+   "hue": "amber"
+  },
+  {
+   "id": "plan_1",
+   "start": 922.45,
+   "dur": 18.14,
+   "kind": "raw",
+   "src": "img/bg_tomas_arma_barrera.png",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "bg_tomas_arma_barrera",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). un hombre rural de unos 45 años, pelo oscuro y barba corta canosa, piel curtida, camisa de trabajo verde oliva y delantal de cuero marrón, armando el anillo de cobre y zinc alrededor de una planta en su huerta, en una huerta rural de la Patagonia. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "inject3_0",
+   "start": 940.59,
+   "dur": 27.02,
+   "kind": "diagram",
+   "eyebrow": "Todo, ordenado y probado",
+   "slides": [
+    {
+     "image": "img/dg_bg_stack.png",
+     "eyebrow": "Vale 158 — hoy 27, para siempre"
+    }
+   ],
+   "hue": "red"
+  },
+  {
+   "id": "inject3_1",
+   "start": 967.61,
+   "dur": 14.07,
+   "kind": "bars",
+   "title": "El valor",
+   "unit": "US$",
+   "bars": [
+    {
+     "label": "Por separado",
+     "value": 158,
+     "tone": "danger"
+    },
+    {
+     "label": "Hoy",
+     "value": 27,
+     "winner": true
+    }
+   ],
+   "hue": "blue"
+  },
+  {
+   "id": "inject3_2",
+   "start": 981.68,
+   "dur": 11.82,
+   "kind": "quote",
+   "image": "img/bg_manual_celular.png",
+   "text": "Si no te sirve, te devuelvo *todo*. El riesgo lo pongo yo.",
+   "accent": "good",
+   "hue": "amber"
+  },
+  {
+   "id": "coment_0",
+   "start": 993.5,
+   "dur": 19.89,
+   "kind": "raw",
+   "src": "img/bg_tomas_camara.png",
+   "hue": "blue",
+   "kicker": "¿Qué plaga te arruina la huerta?",
+   "gen": {
+    "type": "image",
+    "name": "bg_tomas_camara",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). un hombre rural de unos 45 años, pelo oscuro y barba corta canosa, piel curtida, camisa de trabajo verde oliva y delantal de cuero marrón, hablando cálido a la cámara en su huerta, invitando, en una huerta rural de la Patagonia. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "cierre_0",
+   "start": 1013.39,
+   "dur": 19.31,
+   "kind": "quote",
+   "image": "img/bg_huerta_sana.png",
+   "text": "Dejás de ser un cliente y volvés a ser un *hombre que sabe*.",
+   "hue": "amber"
+  },
+  {
+   "id": "cierre_1",
+   "start": 1032.7,
+   "dur": 47.8,
+   "kind": "journey",
+   "eyebrow": "La verdadera cosecha",
+   "title": "Tu huerta libre",
+   "waypoints": [
+    {
+     "x": 0,
+     "y": 0,
+     "z": 0,
+     "image": "img/bg_anillo_metales.png",
+     "label": "La barrera",
+     "num": "1",
+     "dwell": 2.6,
+     "travel": 1.6
+    },
+    {
+     "x": 1.2,
+     "y": -0.4,
+     "z": 0.3,
+     "image": "img/bg_mariquita.png",
+     "label": "Los aliados",
+     "num": "2",
+     "dwell": 2.6,
+     "travel": 1.6
+    },
+    {
+     "x": 2.4,
+     "y": 0.3,
+     "z": -0.2,
+     "image": "img/bg_huerta_sana.png",
+     "label": "La huerta sana",
+     "num": "3",
+     "dwell": 3,
+     "travel": 1.4
+    }
+   ]
+  },
+  {
+   "id": "proximo_0",
+   "start": 1080.5,
+   "dur": 17.77,
+   "kind": "raw",
+   "src": "img/bg_tierra_negra.png",
+   "hue": "red",
+   "kicker": "La próxima: revivir tierra muerta con $1",
+   "gen": {
+    "type": "image",
+    "name": "bg_tierra_negra",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). tierra negra rica y esponjosa en las manos vs tierra muerta y dura, comparación. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "proximo_1",
+   "start": 1098.27,
+   "dur": 30.2,
+   "kind": "raw",
+   "src": "img/bg_tomas_firma.png",
+   "hue": "blue",
+   "hold": true,
+   "gen": {
+    "type": "image",
+    "name": "bg_tomas_firma",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). un hombre rural de unos 45 años, pelo oscuro y barba corta canosa, piel curtida, camisa de trabajo verde oliva y delantal de cuero marrón, mirando cálido a la cámara en la huerta, hora dorada, en una huerta rural de la Patagonia. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  }
+ ],
+ "extraImages": [
+  {
+   "name": "bg_manos_tierra",
+   "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). manos curtidas sosteniendo tierra oscura de huerta, primer plano. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "bg_anillo_macro",
+   "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). primer plano del anillo de cobre y zinc alrededor de una planta, gotas de rocío. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "bg_materiales_barrera",
+   "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). una cinta de cobre y un pedazo de chapa galvanizada sobre una mesa de huerta, vista cenital. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "bg_pulgon_reverso",
+   "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). el reverso de una hoja con pulgones escondidos, primer plano de la parte de abajo. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "bg_veneno_abeja",
+   "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). una abeja muerta junto a una flor rociada con veneno, primer plano triste. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "bg_manos_cosecha",
+   "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). manos viejas cosechando tomates en una huerta, gesto de oficio. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "bg_manual_celular",
+   "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). un teléfono mostrando un manual digital abierto sobre una mesa de jardín, luz cálida. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+  }
+ ]
+}
