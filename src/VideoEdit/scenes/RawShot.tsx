@@ -34,15 +34,17 @@ export const RawShot: React.FC<{
   // repetitivo. Si el caller pasa `zoom` explícito, se respeta.
   let seed = 0;
   for (let i = 0; i < src.length; i++) seed = (seed * 31 + src.charCodeAt(i)) >>> 0;
+  // Ken-Burns SUAVE (feedback usuario: los zooms eran muy fuertes y rápidos).
+  // Magnitud máx ~+7% (antes +20%) → movimiento lento y sutil, no un punch.
   const MOTIONS: [number, number][] = [
-    [1.03, 1.15], // in suave
-    [1.17, 1.04], // out fuerte
-    [1.06, 1.20], // in fuerte
-    [1.13, 1.02], // out suave
-    [1.02, 1.11], // in muy suave
-    [1.15, 1.07], // out leve
-    [1.08, 1.18], // in medio
-    [1.10, 1.01], // out medio
+    [1.015, 1.055], // in muy suave
+    [1.055, 1.015], // out muy suave
+    [1.02, 1.065], // in suave
+    [1.065, 1.02], // out suave
+    [1.01, 1.045], // in mínimo
+    [1.05, 1.012], // out leve
+    [1.03, 1.07], // in medio
+    [1.04, 1.008], // out medio
   ];
   const ORIGINS = ["50% 50%", "32% 30%", "70% 38%", "38% 70%", "66% 62%", "30% 55%", "60% 30%", "50% 72%"];
   const motion = zoom ?? MOTIONS[seed % MOTIONS.length];

@@ -14,7 +14,9 @@ export const ImageBackdrop: React.FC<{
   durationInFrames?: number;
 }> = ({ src, blur = 7, darken = 0.55, tint, durationInFrames = 300 }) => {
   const frame = useCurrentFrame();
-  const scale = interpolate(frame, [0, durationInFrames], [1.08, 1.18], {
+  // casi estático: el movimiento principal lo da el Ken-Burns suave de SceneFrame.
+  // (antes 1.08→1.18 se SUMABA al Ken-Burns y los zooms quedaban muy fuertes/rápidos)
+  const scale = interpolate(frame, [0, durationInFrames], [1.0, 1.03], {
     extrapolateRight: "clamp",
   });
   // FAST PATH: si es una FOTO (png/jpg) y hay blur, usamos el hermano pre-horneado
@@ -29,15 +31,25 @@ export const ImageBackdrop: React.FC<{
   const hasBaked = src.includes("img/") && !baseName.startsWith("dg_") && !baseName.startsWith("_avatar_ref");
   const useBaked = blur > 0 && !isVideo && hasBaked;
   const finalSrc = useBaked ? src.replace(/\.(png|jpe?g)$/i, "_blur.jpg") : src;
+  // GRADE unificador para clips reales rippeados (broll/*.mp4): vienen de fuentes
+  // distintas con colores dispares → bajamos saturación + push sepia/cálido para
+  // que se fundan con la paleta terrosa y se sienta UNA sola película.
+  const isClip = isVideo && src.includes("broll/");
+  const gradeFilter = isClip ? "saturate(0.8) contrast(1.04) sepia(0.2) brightness(0.97)" : "";
+  const blurFilter = !useBaked && blur > 0 ? `blur(${blur}px)` : "";
+  const mediaFilter = [blurFilter, gradeFilter].filter(Boolean).join(" ") || undefined;
   return (
     <AbsoluteFill>
       <AbsoluteFill style={{ transform: `scale(${scale})` }}>
         <Media
           src={finalSrc}
-          style={{ width: "100%", height: "100%", objectFit: "cover", filter: !useBaked && blur > 0 ? `blur(${blur}px)` : undefined }}
+          style={{ width: "100%", height: "100%", objectFit: "cover", filter: mediaFilter }}
         />
       </AbsoluteFill>
       <AbsoluteFill style={{ background: `rgba(0,0,0,${darken})` }} />
+      {isClip && (
+        <AbsoluteFill style={{ background: "linear-gradient(180deg, rgba(169,121,74,0.12) 0%, rgba(124,138,90,0.10) 100%)", mixBlendMode: "soft-light" }} />
+      )}
       {tint && <AbsoluteFill style={{ background: tint, mixBlendMode: "overlay" }} />}
       {/* vignette for density */}
       <AbsoluteFill

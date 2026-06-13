@@ -5,85 +5,97 @@
   {
    "id": "intro_0",
    "start": 0.1,
-   "dur": 11.95,
+   "dur": 9.58,
+   "kind": "impact",
+   "image": "img/jb_barra_mano.png",
+   "setup": "Esta barra no la compré en ningún lado",
+   "impact": "Y NO VAS A CREER DE QUÉ ESTÁ HECHA",
+   "impactAccent": "danger",
+   "hitAt": 1.3,
+   "hue": "amber"
+  },
+  {
+   "id": "intro_1",
+   "start": 9.68,
+   "dur": 7.84,
    "kind": "raw",
-   "src": "broll/sp_hold_soap.jpg",
+   "src": "img/jb_jabon_mano2.png",
    "hue": "amber",
    "kicker": "No la compré en ningún lado"
   },
   {
-   "id": "intro_1",
-   "start": 12.05,
-   "dur": 8.54,
+   "id": "intro_2",
+   "start": 17.52,
+   "dur": 6.54,
    "kind": "raw",
-   "src": "broll/sp_soap_natural.jpg",
+   "src": "img/jb_jabon_tabla.png",
    "hue": "amber"
   },
   {
-   "id": "intro_2",
-   "start": 20.59,
-   "dur": 6.25,
+   "id": "intro_3",
+   "start": 24.06,
+   "dur": 4.79,
    "kind": "float",
-   "src": "broll/sp_ash.jpg",
+   "src": "img/jb_ceniza_fogon.png",
    "side": "right",
    "kicker": "Ceniza del fogón",
    "w": 0.5,
    "hue": "amber"
   },
   {
-   "id": "intro_3",
-   "start": 26.84,
-   "dur": 8.54,
+   "id": "intro_4",
+   "start": 28.85,
+   "dur": 6.53,
    "kind": "raw",
-   "src": "broll/sp_lard.jpg",
+   "src": "broll/jb_lard_fat.mp4",
    "hue": "amber",
    "kicker": "Grasa que iba a la basura"
   },
   {
-   "id": "intro_4",
+   "id": "intro_5",
    "start": 35.38,
    "dur": 1.1,
    "kind": "quote",
-   "image": "broll/sp_soap_bars.jpg",
+   "image": "img/jb_lavar_manos.png",
    "text": "Más suave con su piel que los jabones de colores del *supermercado*.",
    "hue": "amber"
   },
   {
-   "id": "intro_5",
+   "id": "intro_6",
    "start": 36.48,
    "dur": 2.68,
    "kind": "raw",
-   "src": "broll/sp_lather_v.mp4",
-   "hue": "amber"
-  },
-  {
-   "id": "intro_6",
-   "start": 39.16,
-   "dur": 0.94,
-   "kind": "raw",
-   "src": "broll/sp_wash_hands_p.jpg",
+   "src": "broll/jb_soap_lather.mp4",
    "hue": "amber"
   },
   {
    "id": "intro_7",
-   "start": 40.1,
-   "dur": 6.85,
-   "kind": "quote",
-   "image": "broll/sp_money_coins.jpg",
-   "text": "No es solo que sea barato. Es que *dura* años.",
+   "start": 39.16,
+   "dur": 0.94,
+   "kind": "raw",
+   "src": "broll/jb_wash_laundry.mp4",
    "hue": "amber"
   },
   {
    "id": "intro_8",
+   "start": 40.1,
+   "dur": 6.85,
+   "kind": "quote",
+   "image": "img/jb_monedas.png",
+   "text": "No es solo que sea barato. Es que *dura* años.",
+   "hue": "amber"
+  },
+  {
+   "id": "intro_9",
    "start": 46.95,
    "dur": 16.64,
    "kind": "raw",
-   "src": "broll/sp_supermarket.jpg",
+   "src": "broll/jb_supermarket_soap.mp4",
    "hue": "amber",
    "kicker": "Mes a mes, toda la vida"
   },
   {
-   "id": "intro_9",
+   "id": "intro_10",
    "start": 63.59,
    "dur": 6.53,
    "kind": "headline",
@@ -104,7 +116,7 @@
    ],
    "eyebrow": "Lo que tu bisabuela sabía",
    "bg": "image",
-   "image": "broll/sp_soap_stack.jpg",
+   "image": "img/jb_pila_curado.png",
    "hue": "amber"
   },
   {
@@ -112,7 +124,7 @@
    "start": 70.12,
    "dur": 7.02,
    "kind": "raw",
-   "src": "broll/sp_country_house.jpg",
+   "src": "vid/jb_casa_campo.mp4",
    "hue": "blue",
    "kicker": "Hace veinte años dejé la ciudad"
   },
@@ -121,7 +133,7 @@
    "start": 77.14,
    "dur": 2.48,
    "kind": "raw",
-   "src": "broll/sp_woman_cooking.jpg",
+   "src": "broll/jb_old_kitchen.mp4",
    "hue": "blue"
   },
   {
@@ -129,7 +141,7 @@
    "start": 79.62,
    "dur": 7.27,
    "kind": "quote",
-   "image": "broll/sp_grandma_hands.jpg",
+   "image": "img/jb_manos_viejas.png",
    "text": "La primera tanda me salió mal, se lo confieso. Y la segunda *también*.",
    "hue": "blue"
   },
@@ -138,7 +150,7 @@
    "start": 86.89,
    "dur": 6.23,
    "kind": "raw",
-   "src": "broll/sp_kitchen.jpg",
+   "src": "img/jb_jabon_feo.png",
    "hue": "blue"
   },
   {
@@ -158,7 +170,7 @@
      "text": "Cocinar, cortar y curar el jabón."
     }
    ],
-   "image": "broll/sp_soap_mold.jpg",
+   "image": "img/jb_pasos_mesa.png",
    "hue": "blue"
   },
   {
@@ -166,7 +178,7 @@
    "start": 101.43,
    "dur": 7.61,
    "kind": "float",
-   "src": "broll/sp_hold_soap.jpg",
+   "src": "img/jb_barra_sol.png",
    "side": "left",
    "kicker": "Una cosa menos que comprar",
    "hue": "blue"
@@ -187,7 +199,7 @@
    "start": 115.97,
    "dur": 17.65,
    "kind": "raw",
-   "src": "broll/sp_freedom_field.jpg",
+   "src": "vid/jb_hombre_campo.mp4",
    "hue": "blue"
   },
   {
@@ -215,7 +227,7 @@
    ],
    "eyebrow": "Entendé esto y nunca le temés",
    "bg": "image",
-   "image": "broll/sp_soap_bars.jpg",
+   "image": "img/jb_barra_corte.png",
    "hue": "amber"
   },
   {
@@ -223,7 +235,7 @@
    "start": 136.75,
    "dur": 2.58,
    "kind": "raw",
-   "src": "broll/sp_lard.jpg",
+   "src": "img/jb_grasa_cuchara.png",
    "hue": "amber",
    "kicker": "Una grasa"
   },
@@ -232,23 +244,23 @@
    "start": 139.33,
    "dur": 2.58,
    "kind": "raw",
-   "src": "broll/sp_ash.jpg",
+   "src": "vid/jb_ceniza_mano.mp4",
    "hue": "amber",
    "kicker": "Un álcali"
   },
   {
    "id": "quees_3",
    "start": 141.91,
-   "dur": 7.59,
+   "dur": 6.24,
    "kind": "quote",
-   "image": "broll/sp_stir_pot_v.mp4",
+   "image": "img/jb_olla_mezcla.png",
    "text": "Es lo que pasa cuando uno junta una grasa con un *álcali* fuerte.",
    "hue": "amber"
   },
   {
    "id": "quees_4",
-   "start": 149.5,
-   "dur": 18.44,
+   "start": 148.15,
+   "dur": 21.21,
    "kind": "raw",
    "src": "img/dg_saponificacion.png",
    "hue": "amber",
@@ -260,8 +272,8 @@
   },
   {
    "id": "quees_5",
-   "start": 167.94,
-   "dur": 7.96,
+   "start": 169.36,
+   "dur": 6.54,
    "kind": "splitlist",
    "title": "El jabón sale de dos cosas",
    "items": [
@@ -276,7 +288,7 @@
    "start": 175.9,
    "dur": 6.77,
    "kind": "quote",
-   "image": "broll/sp_fireplace.jpg",
+   "image": "img/jb_fuego_noche.png",
    "text": "No hay magia. Es química vieja, de hace cinco *mil* años.",
    "hue": "amber"
   },
@@ -310,7 +322,7 @@
    "start": 204.84,
    "dur": 7.9,
    "kind": "quote",
-   "image": "broll/sp_fireplace.jpg",
+   "image": "img/jb_fogon_brasas.png",
    "text": "El álcali salió de un solo lugar, gratis: del fondo del *fogón*.",
    "hue": "blue"
   },
@@ -319,7 +331,7 @@
    "start": 212.74,
    "dur": 19.18,
    "kind": "raw",
-   "src": "broll/sp_wood_fire_v.mp4",
+   "src": "broll/jb_fire_wood.mp4",
    "hue": "blue"
   },
   {
@@ -327,7 +339,7 @@
    "start": 231.92,
    "dur": 11.28,
    "kind": "raw",
-   "src": "broll/sp_ash_pour_v.mp4",
+   "src": "broll/jb_ash_bucket.mp4",
    "hue": "blue",
    "kicker": "La ceniza guarda el álcali"
   },
@@ -337,7 +349,7 @@
    "dur": 7.53,
    "kind": "chips",
    "bg": "image",
-   "image": "broll/sp_wood_oak.jpg",
+   "image": "img/jb_roble_lena.png",
    "title": "La mejor ceniza",
    "chips": [
     "madera dura",
@@ -366,14 +378,14 @@
    "start": 259,
    "dur": 5.9,
    "kind": "quote",
-   "image": "broll/sp_ash.jpg",
+   "image": "img/jb_ceniza_fina.png",
    "text": "Madera limpia, ceniza limpia. Eso es *ley*.",
    "hue": "blue"
   },
   {
    "id": "lejia_0",
    "start": 264.9,
-   "dur": 5.42,
+   "dur": 4.48,
    "kind": "headline",
    "tokens": [
     {
@@ -389,22 +401,22 @@
    ],
    "eyebrow": "El agua fuerte de los antiguos",
    "bg": "image",
-   "image": "broll/sp_barrel.jpg",
+   "image": "img/jb_barril_ceniza.png",
    "hue": "amber"
   },
   {
    "id": "lejia_1",
-   "start": 270.32,
-   "dur": 4.88,
+   "start": 269.38,
+   "dur": 4.03,
    "kind": "raw",
-   "src": "broll/sp_barrel.jpg",
+   "src": "img/jb_balde_paja.png",
    "hue": "amber",
    "kicker": "Un balde o un barril"
   },
   {
    "id": "lejia_2",
-   "start": 275.2,
-   "dur": 13.83,
+   "start": 273.41,
+   "dur": 11.43,
    "kind": "raw",
    "src": "img/dg_lixiviado.png",
    "hue": "amber",
@@ -416,54 +428,54 @@
   },
   {
    "id": "lejia_3",
-   "start": 289.03,
-   "dur": 13.83,
+   "start": 284.84,
+   "dur": 11.43,
    "kind": "raw",
-   "src": "broll/sp_pour_water_v.mp4",
+   "src": "broll/jb_pour_water.mp4",
    "hue": "amber",
    "kicker": "Agua de lluvia tibia"
   },
   {
    "id": "lejia_4",
-   "start": 302.86,
-   "dur": 8.14,
+   "start": 296.27,
+   "dur": 17.13,
    "kind": "raw",
-   "src": "broll/sp_drip_v.mp4",
+   "src": "broll/jb_lye_leach.mp4",
    "hue": "amber",
    "kicker": "Sale oscura y resbalosa"
   },
   {
    "id": "lejia_5",
-   "start": 311,
-   "dur": 8.14,
+   "start": 313.4,
+   "dur": 6.73,
    "kind": "process",
    "title": "Sacar la lejía",
    "steps": [
     {
      "title": "Paja en el fondo",
-     "image": "broll/sp_barrel.jpg"
+     "image": "img/jb_paja_fondo.png"
     },
     {
      "title": "Ceniza encima",
-     "image": "broll/sp_ash.jpg"
+     "image": "img/jb_ceniza_encima.png"
     },
     {
      "title": "Echar agua",
-     "image": "broll/sp_pour_water_v.mp4"
+     "image": "img/jb_echar_agua.png"
     },
     {
      "title": "Gotea la lejía",
-     "image": "broll/sp_drip_v.mp4"
+     "image": "img/jb_gota_lejia.png"
     }
    ],
    "hue": "amber"
   },
   {
    "id": "lejia_6",
-   "start": 319.14,
-   "dur": 5.69,
+   "start": 320.13,
+   "dur": 4.7,
    "kind": "quote",
-   "image": "broll/sp_drops_water.jpg",
+   "image": "img/jb_lejia_frasco.png",
    "text": "Ese líquido jabonoso entre los dedos, *es* la lejía.",
    "hue": "amber"
   },
@@ -492,7 +504,7 @@
    ],
    "eyebrow": "Sin instrumentos, como los viejos",
    "bg": "image",
-   "image": "broll/sp_egg_glass.jpg",
+   "image": "img/jb_huevo_lejia.png",
    "hue": "blue"
   },
   {
@@ -500,7 +512,7 @@
    "start": 325.7,
    "dur": 2.22,
    "kind": "raw",
-   "src": "broll/sp_egg_glass.jpg",
+   "src": "broll/jb_egg_float.mp4",
    "hue": "blue",
    "kicker": "La prueba del huevo"
   },
@@ -522,7 +534,7 @@
    "start": 330.14,
    "dur": 15.34,
    "kind": "quote",
-   "image": "broll/sp_egg_glass.jpg",
+   "image": "img/jb_huevo_flota.png",
    "text": "El huevo flota y asoma un pedacito del tamaño de una *moneda*.",
    "hue": "blue"
   },
@@ -531,7 +543,7 @@
    "start": 345.48,
    "dur": 21.9,
    "kind": "raw",
-   "src": "broll/sp_feather.jpg",
+   "src": "broll/jb_feather.mp4",
    "hue": "blue",
    "kicker": "La pluma se empieza a deshacer"
   },
@@ -540,25 +552,25 @@
    "start": 367.38,
    "dur": 19.72,
    "kind": "annotated",
-   "image": "broll/sp_gloves.jpg",
+   "image": "img/jb_guantes_lejia.png",
    "caption": "La lejía quema: respeto, no pánico",
    "annotations": [
     {
      "kind": "circle",
      "x": 30,
-     "y": 40,
+     "y": 45,
      "label": "Guantes"
     },
     {
      "kind": "circle",
-     "x": 68,
-     "y": 38,
+     "x": 66,
+     "y": 35,
      "label": "Proteja los ojos"
     },
     {
      "kind": "circle",
      "x": 50,
-     "y": 75,
+     "y": 78,
      "label": "Lugar ventilado"
     }
    ],
@@ -569,7 +581,7 @@
    "start": 387.1,
    "dur": 17.18,
    "kind": "quote",
-   "image": "broll/sp_gloves.jpg",
+   "image": "img/jb_cuchillo_filo.png",
    "text": "No le tenga pánico. Téngale *respeto*. Como al fuego.",
    "hue": "blue"
   },
@@ -578,7 +590,7 @@
    "start": 404.28,
    "dur": 14.72,
    "kind": "raw",
-   "src": "broll/sp_gloves.jpg",
+   "src": "img/jb_balde_tapado.png",
    "hue": "blue"
   },
   {
@@ -598,7 +610,7 @@
      "text": "todo medido y probado en mi cocina."
     }
    ],
-   "image": "broll/sp_parchment.jpg",
+   "image": "img/jb_cuaderno.png",
    "hue": "amber"
   },
   {
@@ -606,7 +618,7 @@
    "start": 426.98,
    "dur": 7.32,
    "kind": "float",
-   "src": "broll/sp_soap_stack.jpg",
+   "src": "img/jb_manual_jabon.png",
    "side": "right",
    "kicker": "Todo junto en el manual",
    "hue": "amber"
@@ -616,7 +628,7 @@
    "start": 434.3,
    "dur": 6.98,
    "kind": "raw",
-   "src": "broll/sp_parchment.jpg",
+   "src": "img/jb_estante_frascos.png",
    "hue": "amber"
   },
   {
@@ -624,7 +636,7 @@
    "start": 441.28,
    "dur": 13.72,
    "kind": "quote",
-   "image": "broll/sp_kitchen.jpg",
+   "image": "img/jb_olla_humea.png",
    "text": "Ahora viene la grasa, y no le voy a esconder ni un solo *paso*.",
    "hue": "amber"
   },
@@ -653,7 +665,7 @@
    ],
    "eyebrow": "Lo que también se tira",
    "bg": "image",
-   "image": "broll/sp_lard.jpg",
+   "image": "img/jb_sebo_bowl.png",
    "hue": "red"
   },
   {
@@ -661,7 +673,7 @@
    "start": 463.25,
    "dur": 7.42,
    "kind": "raw",
-   "src": "broll/sp_meat_raw.jpg",
+   "src": "broll/jb_fat_trim.mp4",
    "hue": "red",
    "kicker": "Grasa que le saca a la carne"
   },
@@ -670,7 +682,7 @@
    "start": 470.67,
    "dur": 21.03,
    "kind": "raw",
-   "src": "broll/sp_lard.jpg",
+   "src": "img/jb_manteca_cerdo.png",
    "hue": "red"
   },
   {
@@ -679,7 +691,7 @@
    "dur": 8.24,
    "kind": "chips",
    "bg": "image",
-   "image": "broll/sp_meat_raw.jpg",
+   "image": "img/jb_grasas_varias.png",
    "title": "Cualquier grasa sirve",
    "chips": [
     "sebo de vaca",
@@ -693,7 +705,7 @@
    "start": 499.94,
    "dur": 21.03,
    "kind": "raw",
-   "src": "broll/sp_melt_v.mp4",
+   "src": "broll/jb_melt_fat.mp4",
    "hue": "red",
    "kicker": "Se derrite en agua"
   },
@@ -706,19 +718,19 @@
    "steps": [
     {
      "title": "Grasa + agua al fuego",
-     "image": "broll/sp_melt_v.mp4"
+     "image": "img/jb_grasa_agua.png"
     },
     {
      "title": "Enfriar toda la noche",
-     "image": "broll/sp_pot_stove.jpg"
+     "image": "img/jb_olla_reposa.png"
     },
     {
      "title": "Sube y se solidifica",
-     "image": "broll/sp_lard.jpg"
+     "image": "img/jb_capa_grasa.png"
     },
     {
      "title": "Raspar lo sucio",
-     "image": "broll/sp_knife_cut.jpg"
+     "image": "img/jb_raspar_grasa.png"
     }
    ],
    "hue": "red"
@@ -728,7 +740,7 @@
    "start": 533.34,
    "dur": 8.66,
    "kind": "raw",
-   "src": "broll/sp_pot_stove.jpg",
+   "src": "img/jb_grasa_limpia.png",
    "hue": "red"
   },
   {
@@ -736,41 +748,41 @@
    "start": 542,
    "dur": 3,
    "kind": "quote",
-   "image": "broll/sp_lard.jpg",
+   "image": "img/jb_grasa_brillo.png",
    "text": "La grasa más limpia da el jabón más blanco y más *suave*.",
    "hue": "red"
   },
   {
    "id": "coccion_0",
    "start": 545,
-   "dur": 3.66,
+   "dur": 3.38,
    "kind": "quote",
-   "image": "broll/sp_stir_pot_v.mp4",
+   "image": "img/jb_olla_revolver.png",
    "text": "Esta es la parte donde se hace el jabón de *verdad*.",
    "hue": "amber"
   },
   {
    "id": "coccion_1",
-   "start": 548.66,
-   "dur": 3.13,
+   "start": 548.38,
+   "dur": 2.9,
    "kind": "raw",
-   "src": "broll/sp_melt_v.mp4",
+   "src": "broll/jb_melt_fat.mp4",
    "hue": "amber",
    "kicker": "Grasa tibia, no hirviendo"
   },
   {
    "id": "coccion_2",
-   "start": 551.79,
-   "dur": 8.88,
+   "start": 551.28,
+   "dur": 11.51,
    "kind": "raw",
-   "src": "broll/sp_stir_pot_v.mp4",
+   "src": "vid/jb_verter_lejia.mp4",
    "hue": "amber",
    "kicker": "La lejía de a poco, revolviendo"
   },
   {
    "id": "coccion_3",
-   "start": 560.67,
-   "dur": 8.88,
+   "start": 562.79,
+   "dur": 8.21,
    "kind": "raw",
    "src": "img/dg_proceso.png",
    "hue": "amber",
@@ -782,19 +794,19 @@
   },
   {
    "id": "coccion_4",
-   "start": 569.55,
-   "dur": 5.22,
+   "start": 571,
+   "dur": 4.84,
    "kind": "raw",
-   "src": "broll/sp_ladle_pot.jpg",
+   "src": "vid/jb_mezcla_espesa.mp4",
    "hue": "amber",
    "kicker": "Se pone cremosa, espesa"
   },
   {
    "id": "coccion_5",
-   "start": 574.77,
-   "dur": 4.7,
+   "start": 575.84,
+   "dur": 4.35,
    "kind": "annotated",
-   "image": "broll/sp_wood_spoon.jpg",
+   "image": "img/jb_rastro_cuchara.png",
    "caption": "La prueba del rastro",
    "annotations": [
     {
@@ -806,7 +818,7 @@
     {
      "kind": "circle",
      "x": 50,
-     "y": 75,
+     "y": 78,
      "label": "= llegó al punto"
     }
    ],
@@ -814,8 +826,8 @@
   },
   {
    "id": "coccion_6",
-   "start": 579.47,
-   "dur": 4.36,
+   "start": 580.19,
+   "dur": 4.03,
    "kind": "checklist",
    "title": "Si quiere, al final",
    "items": [
@@ -836,18 +848,18 @@
   },
   {
    "id": "coccion_7",
-   "start": 583.83,
-   "dur": 2.61,
+   "start": 584.22,
+   "dur": 2.41,
    "kind": "raw",
-   "src": "broll/sp_salt_v.mp4",
+   "src": "broll/jb_salt_add.mp4",
    "hue": "amber"
   },
   {
    "id": "coccion_8",
-   "start": 586.44,
-   "dur": 2.61,
+   "start": 586.63,
+   "dur": 2.42,
    "kind": "raw",
-   "src": "broll/sp_lavender.jpg",
+   "src": "broll/jb_lavender.mp4",
    "hue": "amber"
   },
   {
@@ -855,7 +867,7 @@
    "start": 589.05,
    "dur": 54.05,
    "kind": "quote",
-   "image": "broll/sp_stir_pot_v.mp4",
+   "image": "img/jb_brazo_revuelve.png",
    "text": "El mismo movimiento del brazo que hicieron millones de manos antes que la *suya*.",
    "hue": "amber"
   },
@@ -864,7 +876,7 @@
    "start": 643.1,
    "dur": 23.03,
    "kind": "raw",
-   "src": "broll/sp_soap_mold.jpg",
+   "src": "broll/jb_soap_pour.mp4",
    "hue": "blue",
    "kicker": "Verter en moldes"
   },
@@ -873,7 +885,7 @@
    "start": 666.13,
    "dur": 13.55,
    "kind": "raw",
-   "src": "broll/sp_knife_cut.jpg",
+   "src": "broll/jb_soap_cut.mp4",
    "hue": "blue",
    "kicker": "Cortar en barras"
   },
@@ -882,7 +894,7 @@
    "start": 679.68,
    "dur": 8.13,
    "kind": "raw",
-   "src": "broll/sp_soap_stack.jpg",
+   "src": "vid/jb_barras_frescas.mp4",
    "hue": "blue"
   },
   {
@@ -909,7 +921,7 @@
    "start": 699.1,
    "dur": 4.93,
    "kind": "quote",
-   "image": "broll/sp_soap_natural.jpg",
+   "image": "img/jb_curado_estante.png",
    "text": "El jabón curado, viejo, es el *mejor* jabón.",
    "hue": "blue"
   },
@@ -918,7 +930,7 @@
    "start": 704.03,
    "dur": 7.04,
    "kind": "raw",
-   "src": "broll/sp_towel_fold.jpg",
+   "src": "broll/jb_soap_cure.mp4",
    "hue": "blue",
    "kicker": "Secar al aire, separadas"
   },
@@ -927,7 +939,7 @@
    "start": 711.07,
    "dur": 4.93,
    "kind": "quote",
-   "image": "broll/sp_soap_bars.jpg",
+   "image": "img/jb_jabon_viejo.png",
    "text": "La prisa es la enemiga del *buen* jabón.",
    "hue": "blue"
   },
@@ -962,7 +974,7 @@
    ],
    "eyebrow": "La parte incómoda",
    "bg": "image",
-   "image": "broll/sp_supermarket.jpg",
+   "image": "img/jb_gondola2.png",
    "hue": "red"
   },
   {
@@ -970,7 +982,7 @@
    "start": 720.96,
    "dur": 12.64,
    "kind": "raw",
-   "src": "broll/sp_shop_cart.jpg",
+   "src": "img/jb_jabon_marca.png",
    "hue": "red",
    "kicker": "Un producto con marca y publicidad"
   },
@@ -979,7 +991,7 @@
    "start": 733.6,
    "dur": 5.2,
    "kind": "quote",
-   "image": "broll/sp_money_coins.jpg",
+   "image": "img/jb_caja_registr.png",
    "text": "Con algo gratis que sale de la ceniza, nadie gana *dinero*.",
    "hue": "red"
   },
@@ -1007,7 +1019,7 @@
    "start": 745,
    "dur": 11.78,
    "kind": "quote",
-   "image": "broll/sp_supermarket.jpg",
+   "image": "img/jb_abuela_ensena.png",
    "text": "Alcanza con que deje de enseñarse una sola *generación*.",
    "hue": "red"
   },
@@ -1016,7 +1028,7 @@
    "start": 756.78,
    "dur": 10.1,
    "kind": "raw",
-   "src": "broll/sp_money_coins.jpg",
+   "src": "img/jb_manos_jabon_viejo.png",
    "hue": "red"
   },
   {
@@ -1033,7 +1045,7 @@
      "text": "Para devolverle el saber que le sacaron."
     }
    ],
-   "image": "broll/sp_parchment.jpg",
+   "image": "img/jb_cuaderno2.png",
    "hue": "red"
   },
   {
@@ -1045,7 +1057,7 @@
    "items": [
     "Empiece por el jabón",
     "Después saque su lejía",
-    "Empiece por donde se sienta cómodo"
+    "Vaya a su ritmo"
    ],
    "palette": "G",
    "hue": "amber"
@@ -1055,7 +1067,7 @@
    "start": 799.11,
    "dur": 15.35,
    "kind": "raw",
-   "src": "broll/sp_gloves.jpg",
+   "src": "img/jb_principiante.png",
    "hue": "amber"
   },
   {
@@ -1063,7 +1075,7 @@
    "start": 814.46,
    "dur": 11.58,
    "kind": "quote",
-   "image": "broll/sp_kitchen.jpg",
+   "image": "img/jb_tanda_fallida.png",
    "text": "Le va a salir mal alguna vez, y no pasa nada. Cada error le *enseña*.",
    "hue": "amber"
   },
@@ -1072,7 +1084,7 @@
    "start": 826.04,
    "dur": 9.93,
    "kind": "raw",
-   "src": "broll/sp_hold_soap.jpg",
+   "src": "vid/jb_jabon_usos.mp4",
    "hue": "amber"
   },
   {
@@ -1081,7 +1093,7 @@
    "dur": 11.03,
    "kind": "chips",
    "bg": "image",
-   "image": "broll/sp_lather_v.mp4",
+   "image": "img/jb_jabon_rallado.png",
    "title": "Una sola receta sirve para",
    "chips": [
     "manos y cuerpo",
@@ -1096,7 +1108,7 @@
    "start": 847,
    "dur": 1.87,
    "kind": "quote",
-   "image": "broll/sp_soap_stack.jpg",
+   "image": "img/jb_lavar_platos.png",
    "text": "Una sola receta le resuelve la limpieza entera de su *hogar*.",
    "hue": "amber"
   },
@@ -1105,7 +1117,7 @@
    "start": 848.87,
    "dur": 1.6,
    "kind": "raw",
-   "src": "broll/sp_dishes_v.mp4",
+   "src": "broll/jb_wash_dishes.mp4",
    "hue": "amber"
   },
   {
@@ -1113,7 +1125,7 @@
    "start": 850.47,
    "dur": 4.53,
    "kind": "raw",
-   "src": "broll/sp_laundry_v.mp4",
+   "src": "vid/jb_ropa_tendida.mp4",
    "hue": "amber"
   },
   {
@@ -1121,7 +1133,7 @@
    "start": 855,
    "dur": 9,
    "kind": "quote",
-   "image": "broll/sp_country_house.jpg",
+   "image": "img/jb_pan_casero.png",
    "text": "El jabón, el pan, conservar la comida… dejamos de *enseñarlas*.",
    "hue": "blue"
   },
@@ -1130,7 +1142,7 @@
    "start": 864,
    "dur": 21.86,
    "kind": "raw",
-   "src": "broll/sp_woman_cooking.jpg",
+   "src": "vid/jb_mujer_amasa.mp4",
    "hue": "blue"
   },
   {
@@ -1152,7 +1164,7 @@
    "start": 895.29,
    "dur": 7.71,
    "kind": "raw",
-   "src": "broll/sp_hold_soap.jpg",
+   "src": "vid/jb_despensa_llena.mp4",
    "hue": "blue"
   },
   {
@@ -1160,7 +1172,7 @@
    "start": 903,
    "dur": 1.32,
    "kind": "quote",
-   "image": "broll/sp_freedom_field.jpg",
+   "image": "img/jb_hombre_ventana.png",
    "text": "Esa tranquilidad de saber que podría hacerlo… no la compra el *dinero*.",
    "hue": "blue"
   },
@@ -1169,7 +1181,7 @@
    "start": 904.32,
    "dur": 3.21,
    "kind": "raw",
-   "src": "broll/sp_freedom_field.jpg",
+   "src": "vid/jb_campo_atardecer.mp4",
    "hue": "blue"
   },
   {
@@ -1203,7 +1215,7 @@
    "start": 917.8,
    "dur": 6.16,
    "kind": "raw",
-   "src": "broll/sp_ash.jpg",
+   "src": "img/jb_frasco_grasa.png",
    "hue": "amber"
   },
   {
@@ -1211,7 +1223,7 @@
    "start": 923.96,
    "dur": 6.16,
    "kind": "raw",
-   "src": "broll/sp_lard.jpg",
+   "src": "broll/jb_ash_bucket.mp4",
    "hue": "amber"
   },
   {
@@ -1219,7 +1231,7 @@
    "start": 930.12,
    "dur": 6.16,
    "kind": "raw",
-   "src": "broll/sp_gloves.jpg",
+   "src": "img/jb_guantes_mesa.png",
    "hue": "amber"
   },
   {
@@ -1234,7 +1246,7 @@
      "x": 0,
      "y": 0,
      "z": 0,
-     "image": "broll/sp_ash.jpg",
+     "image": "img/jb_jrn_ceniza.png",
      "label": "Ceniza",
      "num": "1",
      "dwell": 2.4,
@@ -1244,7 +1256,7 @@
      "x": 1.2,
      "y": -0.3,
      "z": 0.3,
-     "image": "broll/sp_drip_v.mp4",
+     "image": "img/jb_jrn_lejia.png",
      "label": "Lejía",
      "num": "2",
      "dwell": 2.4,
@@ -1254,7 +1266,7 @@
      "x": 2.4,
      "y": 0.2,
      "z": -0.2,
-     "image": "broll/sp_stir_pot_v.mp4",
+     "image": "img/jb_jrn_cocina.png",
      "label": "Cocinar",
      "num": "3",
      "dwell": 2.4,
@@ -1264,7 +1276,7 @@
      "x": 3.6,
      "y": -0.2,
      "z": 0.2,
-     "image": "broll/sp_soap_stack.jpg",
+     "image": "img/jb_jrn_curar.png",
      "label": "Curar",
      "num": "4",
      "dwell": 2.6,
@@ -1277,7 +1289,7 @@
    "start": 956,
    "dur": 2,
    "kind": "quote",
-   "image": "broll/sp_hold_soap.jpg",
+   "image": "img/jb_primera_barra.png",
    "text": "Es una sensación que no se *compra*.",
    "hue": "amber"
   },
@@ -1298,7 +1310,7 @@
      "text": "y cómo arreglar una tanda que salió mal."
     }
    ],
-   "image": "broll/sp_parchment.jpg",
+   "image": "img/jb_manual_abierto.png",
    "hue": "red"
   },
   {
@@ -1306,7 +1318,7 @@
    "start": 966.64,
    "dur": 18.36,
    "kind": "raw",
-   "src": "broll/sp_soap_stack.jpg",
+   "src": "broll/jb_soap_stack.mp4",
    "hue": "red"
   },
   {
@@ -1333,7 +1345,7 @@
    "start": 994,
    "dur": 9.65,
    "kind": "quote",
-   "image": "broll/sp_hold_soap.jpg",
+   "image": "img/jb_jabon_regalo.png",
    "text": "Si no es para usted, le devuelvo cada centavo. Todo el riesgo lo pongo *yo*.",
    "hue": "red"
   },
@@ -1342,7 +1354,7 @@
    "start": 1003.65,
    "dur": 10.1,
    "kind": "float",
-   "src": "broll/sp_soap_natural.jpg",
+   "src": "img/jb_pocas_copias.png",
    "side": "left",
    "kicker": "Quedan pocas copias",
    "hue": "red"
@@ -1352,7 +1364,7 @@
    "start": 1013.75,
    "dur": 9.98,
    "kind": "quote",
-   "image": "broll/sp_kitchen.jpg",
+   "image": "img/jb_abuela_jabon.png",
    "text": "Cuénteme si su abuela lo hacía. Esas historias me *encantan*.",
    "hue": "blue"
   },
@@ -1361,7 +1373,7 @@
    "start": 1023.73,
    "dur": 8.55,
    "kind": "raw",
-   "src": "broll/sp_grandma_hands.jpg",
+   "src": "vid/jb_manos_arrugadas.mp4",
    "hue": "blue"
   },
   {
@@ -1389,7 +1401,7 @@
    ],
    "eyebrow": "La próxima vez",
    "bg": "image",
-   "image": "broll/sp_ash.jpg",
+   "image": "img/jb_ceniza_tacho.png",
    "hue": "blue"
   },
   {
@@ -1397,25 +1409,25 @@
    "start": 1041.78,
    "dur": 24.22,
    "kind": "raw",
-   "src": "broll/sp_ash_pour_v.mp4",
+   "src": "broll/jb_rain_barrel.mp4",
    "hue": "blue",
    "kicker": "Fertilizante, limpieza, plagas"
   },
   {
    "id": "cierre_4",
    "start": 1066,
-   "dur": 1.32,
+   "dur": 0.84,
    "kind": "quote",
-   "image": "broll/sp_freedom_field.jpg",
+   "image": "img/jb_oficio_manos.png",
    "text": "No es magia. Es *oficio*. Y todavía se puede aprender.",
    "hue": "blue"
   },
   {
    "id": "cierre_5",
-   "start": 1067.32,
-   "dur": 3.2,
+   "start": 1066.84,
+   "dur": 3.68,
    "kind": "raw",
-   "src": "broll/sp_hold_soap.jpg",
+   "src": "vid/jb_barra_final.mp4",
    "hue": "blue"
   }
  ]
