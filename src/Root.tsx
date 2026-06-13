@@ -4,6 +4,7 @@ import { MainEstiercol, TOTAL_FRAMES_EST } from "./VideoEdit/Main_estiercol";
 import { MainWasp, TOTAL_FRAMES_WASP } from "./VideoEdit/Main_wasp";
 import { MainTick, TOTAL_FRAMES_TICK } from "./VideoEdit/Main_tick";
 import { MainMeriendas, TOTAL_FRAMES_MER } from "./VideoEdit/Main_meriendas";
+import { MainPostres, TOTAL_FRAMES_POS } from "./VideoEdit/Main_postres";
 
 // ── SOLO los videos ACTIVOS quedan registrados ──
 // Las composiciones viejas (Fly, Hipos, Bisontes, Objetos, Civil, Top7Demo,
@@ -36,6 +37,15 @@ export const RemotionRoot: React.FC = () => {
         id="Meriendas"
         component={MainMeriendas}
         durationInFrames={TOTAL_FRAMES_MER}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
+      {/* VIDEO ACTIVO — 20 Postres de la Abuela Que Desaparecieron (Video 2 cadena) */}
+      <Composition
+        id="Postres"
+        component={MainPostres}
+        durationInFrames={TOTAL_FRAMES_POS}
         fps={30}
         width={1920}
         height={1080}
