@@ -329,6 +329,13 @@ function renderEl(b) {
         (b.accent ? ` accent=${j(b.accent)}` : ``) +
         ` />`
       );
+    case "teasecards":
+      return (
+        `<FoodTeaseCards durationInFrames={d} cards={${j(b.cards || [])}}` +
+        (b.eyebrow ? ` eyebrow=${j(b.eyebrow)}` : ``) +
+        (b.title ? ` title=${j(b.title)}` : ``) +
+        ` />`
+      );
     case "half":
       return (
         `<HalfShot durationInFrames={d} src=${j(b.src)}` +
@@ -449,6 +456,7 @@ if (kinds.has("rule")) imports.push(`import { RuleNumberScene } from "./scenes/R
 if (kinds.has("annotated")) imports.push(`import { AnnotatedImage } from "./scenes/AnnotatedImage";`);
 if (kinds.has("callout")) imports.push(`import { CalloutMark } from "./scenes/CalloutMark";`);
 if (kinds.has("infzoom")) imports.push(`import { InfiniteZoom } from "./scenes/InfiniteZoom";`);
+if (kinds.has("teasecards")) imports.push(`import { FoodTeaseCards } from "./scenes/FoodTeaseCards";`);
 if (kinds.has("top7")) imports.push(`import { Top7Ladder } from "./scenes/Top7Ladder";`);
 if (kinds.has("half")) imports.push(`import { HalfShot } from "./scenes/HalfShot";`);
 if (kinds.has("riskclock")) imports.push(`import { RiskClock } from "./scenes/RiskClock";`);

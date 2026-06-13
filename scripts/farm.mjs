@@ -32,9 +32,12 @@ const out = (c) => execSync(c, { encoding: "utf8" }).trim();
 const tar = `assets-${slug}.tar`;
 const avatar = `public/${slug}_opt.mp4`;
 const wav = `public/${slug}.wav`;
-for (const f of [avatar, wav]) if (!fs.existsSync(f)) { console.error("falta:", f); process.exit(1); }
+if (!fs.existsSync(wav)) { console.error("falta:", wav); process.exit(1); }
+const hasAvatar = fs.existsSync(avatar); // videos FACELESS (sin avatar) no tienen _opt.mp4
+if (!hasAvatar) console.warn(`(faceless) sin ${avatar} — empaqueto solo la narración`);
 // rutas relativas a public/ (el workflow extrae con -C public)
-let items = [`${slug}_opt.mp4`, `${slug}.wav`];
+let items = [`${slug}.wav`];
+if (hasAvatar) items.unshift(`${slug}_opt.mp4`);
 if (fs.existsSync("public/sfx")) items.push("sfx"); // camas ambientales + efectos (siempre)
 if (pref && pref.startsWith("@")) {
   // lista EXPLÍCITA de entradas (rutas relativas a public/), una por línea
