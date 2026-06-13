@@ -5,6 +5,8 @@ import { MainWasp, TOTAL_FRAMES_WASP } from "./VideoEdit/Main_wasp";
 import { MainTick, TOTAL_FRAMES_TICK } from "./VideoEdit/Main_tick";
 import { MainMeriendas, TOTAL_FRAMES_MER } from "./VideoEdit/Main_meriendas";
 import { MainPostres, TOTAL_FRAMES_POS } from "./VideoEdit/Main_postres";
+import { MainDomingos, TOTAL_FRAMES_DOM } from "./VideoEdit/Main_domingos";
+import { MainCocina, TOTAL_FRAMES_COC } from "./VideoEdit/Main_cocina";
 
 // ── SOLO los videos ACTIVOS quedan registrados ──
 // Las composiciones viejas (Fly, Hipos, Bisontes, Objetos, Civil, Top7Demo,
@@ -50,6 +52,10 @@ export const RemotionRoot: React.FC = () => {
         width={1920}
         height={1080}
       />
+      {/* VIDEO ACTIVO — 15 Costumbres de los Domingos (Video 3 cadena) */}
+      <Composition id="Domingos" component={MainDomingos} durationInFrames={TOTAL_FRAMES_DOM} fps={30} width={1920} height={1080} />
+      {/* VIDEO ACTIVO — Así se Cocinaba Antes de los Supermercados (Video 4 cadena) */}
+      <Composition id="Cocina" component={MainCocina} durationInFrames={TOTAL_FRAMES_COC} fps={30} width={1920} height={1080} />
       {/* Reviví tu tierra muerta con $1 (estiércol, bajo esfuerzo) */}
       <Composition
         id="Estiercol"
