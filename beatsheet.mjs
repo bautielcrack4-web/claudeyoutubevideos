@@ -155,7 +155,7 @@ function renderEl(b) {
         (b.accent ? ` accent=${j(b.accent)}` : ``) +
         (b.darken != null ? ` darken={${b.darken}}` : ``) +
         (b.blur != null ? ` blur={${b.blur}}` : ``) +
-        (b.zoom != null ? ` zoom={${b.zoom}}` : ``) +
+        (b.zoom != null ? ` zoom={${j(b.zoom)}}` : ``) +
         ` />`
       );
     case "diagram": {

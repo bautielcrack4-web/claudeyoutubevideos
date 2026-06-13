@@ -10,6 +10,7 @@ import { MainCocina, TOTAL_FRAMES_COC } from "./VideoEdit/Main_cocina";
 import { MainEstufaRocket, TOTAL_FRAMES_ER } from "./VideoEdit/Main_estufarocket";
 import { MainBorax, TOTAL_FRAMES_BX } from "./VideoEdit/Main_borax";
 import { MainBarrera, TOTAL_FRAMES_BRR } from "./VideoEdit/Main_barrera";
+import { MainJabon, TOTAL_FRAMES_JABON } from "./VideoEdit/Main_jabon";
 
 // ── SOLO los videos ACTIVOS quedan registrados ──
 // Las composiciones viejas (Fly, Hipos, Bisontes, Objetos, Civil, Top7Demo,
@@ -19,6 +20,15 @@ import { MainBarrera, TOTAL_FRAMES_BRR } from "./VideoEdit/Main_barrera";
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      {/* VIDEO ACTIVO — Nunca Más Compres Jabón (ceniza+grasa) · Constructor Libre v4 · faceless */}
+      <Composition
+        id="Jabon"
+        component={MainJabon}
+        durationInFrames={TOTAL_FRAMES_JABON}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
       {/* VIDEO ACTIVO — KILL EVERY Wasp On Your Property (The Amish Way) */}
       <Composition
         id="Wasp"
