@@ -45,8 +45,8 @@ export const SectionStinger: React.FC<{ durationInFrames?: number }> = ({ durati
   const flash = interpolate(p, [0, 0.25, 1], [0, 0.5, 0]);
   return (
     <AbsoluteFill style={{ pointerEvents: "none", overflow: "hidden" }}>
-      {/* bump de exposición cálido */}
-      <AbsoluteFill style={{ background: "rgba(255,225,170,1)", opacity: flash * 0.5, mixBlendMode: "screen" }} />
+      {/* bump de exposición cálido (sutil — corte elegante, no llamativo) */}
+      <AbsoluteFill style={{ background: "rgba(255,225,170,1)", opacity: flash * 0.26, mixBlendMode: "screen" }} />
       {/* light-leak diagonal */}
       <div
         style={{
@@ -59,7 +59,7 @@ export const SectionStinger: React.FC<{ durationInFrames?: number }> = ({ durati
           background: "linear-gradient(90deg, rgba(255,200,140,0) 0%, rgba(255,210,150,0.85) 45%, rgba(255,235,190,0.95) 55%, rgba(255,200,140,0) 100%)",
           filter: "blur(28px)",
           mixBlendMode: "screen",
-          opacity: interpolate(p, [0, 0.15, 0.85, 1], [0, 1, 1, 0]),
+          opacity: interpolate(p, [0, 0.15, 0.85, 1], [0, 0.6, 0.6, 0]),
         }}
       />
     </AbsoluteFill>

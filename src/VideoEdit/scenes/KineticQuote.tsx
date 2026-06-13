@@ -22,12 +22,29 @@ const TONES = {
 const BOX_W = 1480;
 const BOX_H = 720;
 
-// split a plain string into words, marking the ones inside *asterisks* as emphasized
-export const parseQuote = (s: string): QuoteWord[] =>
-  s.split(/\s+/).filter(Boolean).map((w) => {
-    const em = w.startsWith("*") && w.endsWith("*");
-    return { text: em ? w.slice(1, -1) : w, em };
-  });
+// split a plain string into words, marking the ones inside *asterisks* as emphasized.
+// Soporta énfasis MULTI-PALABRA: *exención para adultos mayores* marca TODAS las
+// palabras entre el * de apertura y el de cierre (no solo palabras sueltas), y
+// nunca deja un asterisco literal en pantalla.
+export const parseQuote = (s: string): QuoteWord[] => {
+  const out: QuoteWord[] = [];
+  let em = false;
+  let cur = "";
+  const flush = () => { if (cur) { out.push({ text: cur, em }); cur = ""; } };
+  for (const ch of s) {
+    if (ch === "*") { flush(); em = !em; continue; } // toggle énfasis (sirve pegado a puntuación)
+    if (/\s/.test(ch)) { flush(); continue; }
+    cur += ch;
+  }
+  flush();
+  // fusionar puntuación suelta (ej. "?" que quedó tras un *cierre*) con la palabra previa
+  const merged: QuoteWord[] = [];
+  for (const w of out) {
+    if (/^[?!.,;:»)]+$/.test(w.text) && merged.length) merged[merged.length - 1].text += w.text;
+    else merged.push({ ...w });
+  }
+  return merged;
+};
 
 export const KineticQuote: React.FC<{
   durationInFrames: number;
@@ -60,6 +77,14 @@ export const KineticQuote: React.FC<{
   const { fps } = useVideoConfig();
   const C = TONES[accent];
   const onImage = !!image; // sobre foto → texto CLARO (crema) + scrim + sombra fuerte
+  // ANCHO SEGURO: el texto se mantiene en una columna central angosta y SIEMPRE
+  // envuelve a 2-3 líneas (bloque vertical-centrado) → nunca invade la esquina
+  // sup-der donde va el PiP del avatar (cornerTR). Antes, con maxWidth ancho, una
+  // cita larga quedaba en una línea que se metía bajo el avatar y se cortaba.
+  const SAFE_W = 1120;
+  const charCount = words.reduce((a, w) => a + w.text.length + 1, 0);
+  // auto-fit: para citas muy largas, achica para no pasar de ~3 líneas
+  const fitFs = Math.min(fontSize, Math.max(42, Math.round((SAFE_W * 6) / Math.max(charCount, 12))));
   const head = spring({ frame, fps, config: SPRING_SNAPPY });
 
   const lastWordAt = startAt + (words.length - 1) * perWord;
@@ -131,7 +156,7 @@ export const KineticQuote: React.FC<{
             justifyContent: "center",
             alignItems: "baseline",
             gap: "0.18em 0.5em",
-            maxWidth: BOX_W - 120,
+            maxWidth: SAFE_W,
             lineHeight: 1.18,
             textAlign: "center",
           }}
@@ -146,7 +171,7 @@ export const KineticQuote: React.FC<{
                 key={i}
                 style={{
                   display: "inline-block",
-                  fontSize: w.em ? fontSize * 1.06 : fontSize,
+                  fontSize: w.em ? fitFs * 1.06 : fitFs,
                   fontWeight: w.em ? 900 : 600,
                   color: w.em ? C : onImage ? COLORS.bg0 : COLORS.text,
                   opacity: s,

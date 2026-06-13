@@ -1,0 +1,1622 @@
+{
+ "video": "borax",
+ "avatar": "borax_opt.mp4",
+ "tutorial": true,
+ "beats": [
+  {
+   "id": "hook_0",
+   "start": 1.3,
+   "dur": 4.59,
+   "kind": "talk",
+   "hue": "amber"
+  },
+  {
+   "id": "hook_1",
+   "start": 5.89,
+   "dur": 6.25,
+   "kind": "raw",
+   "src": "img/bx_viga_maciza.png",
+   "hue": "red",
+   "kicker": "20 años, intacta",
+   "gen": {
+    "type": "image",
+    "name": "bx_viga_maciza",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). una viga de madera vieja sosteniendo el techo de una casa de campo, madera maciza y sana pese a los años, cerca del suelo húmedo. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "hook_2",
+   "start": 12.14,
+   "dur": 6.26,
+   "kind": "raw",
+   "src": "img/bx_viga_golpe.png",
+   "hue": "blue",
+   "gen": {
+    "type": "image",
+    "name": "bx_viga_golpe",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). una mano golpeando con los nudillos una viga de madera maciza, sin agujeros ni podredumbre. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "hook_3",
+   "start": 18.4,
+   "dur": 6.25,
+   "kind": "raw",
+   "src": "img/bx_viga_sana_cerca.png",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "bx_viga_sana_cerca",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). primer plano de la superficie de una viga vieja pero sana, vetas firmes, sin daño. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "hook_4",
+   "start": 24.65,
+   "dur": 6.26,
+   "kind": "raw",
+   "src": "img/bx_termita_madera.png",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "bx_termita_madera",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). termitas sobre un trozo de madera, primer plano, bichos pálidos. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "hook_5",
+   "start": 30.91,
+   "dur": 6.25,
+   "kind": "raw",
+   "src": "img/bx_zona_humeda.png",
+   "hue": "blue",
+   "gen": {
+    "type": "image",
+    "name": "bx_zona_humeda",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). la base de una casa de madera en una zona húmeda con niebla de mañana, suelo mojado. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "hook_6",
+   "start": 37.16,
+   "dur": 6.26,
+   "kind": "raw",
+   "src": "img/bx_caja_borax.png",
+   "hue": "amber",
+   "kicker": "Cuesta monedas",
+   "gen": {
+    "type": "image",
+    "name": "bx_caja_borax",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). una caja de bórax en polvo blanco sobre una mesa de taller rural. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "hook_7",
+   "start": 43.42,
+   "dur": 6.25,
+   "kind": "raw",
+   "src": "vid/bxv_aceite_cae.mp4",
+   "hue": "red",
+   "gen": {
+    "type": "clip",
+    "image": "bxv_aceite_cae",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). aceite ámbar cayendo lento sobre una tabla de madera, brillo cálido. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 90
+   }
+  },
+  {
+   "id": "hook_8",
+   "start": 49.67,
+   "dur": 6.26,
+   "kind": "raw",
+   "src": "img/bx_madera_podrida_otra.png",
+   "hue": "blue",
+   "kicker": "Lo normal sin tratar",
+   "gen": {
+    "type": "image",
+    "name": "bx_madera_podrida_otra",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). una viga sin tratar comida y podrida, blanda y oscura, deshaciéndose. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "hook_9",
+   "start": 55.93,
+   "dur": 6.25,
+   "kind": "raw",
+   "src": "img/bx_fumigadora_no.png",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "bx_fumigadora_no",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). un camión de fumigación con un signo de prohibido, concepto de no llamar a la empresa. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "hook_10",
+   "start": 62.18,
+   "dur": 6.26,
+   "kind": "raw",
+   "src": "img/bx_casa_madera_full.png",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "bx_casa_madera_full",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). una casa de madera rústica construida a mano en el campo, tablas gastadas. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "ident_0",
+   "start": 68.44,
+   "dur": 24.26,
+   "kind": "raw",
+   "src": "img/bx_tomas_retrato.png",
+   "hue": "red",
+   "kicker": "Tomás",
+   "hold": true,
+   "gen": {
+    "type": "image",
+    "name": "bx_tomas_retrato",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). un hombre rural de unos 45 años, pelo oscuro y barba corta canosa, piel curtida, camisa de trabajo verde oliva y delantal de cuero marrón, parado frente a su casa de madera hecha a mano, mirada tranquila, en una chacra rural de la Patagonia. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "ident_1",
+   "start": 92.7,
+   "dur": 9.99,
+   "kind": "quote",
+   "image": "img/bx_manos_madera.png",
+   "text": "No soy químico. Soy un *hombre que prueba cosas*.",
+   "hue": "blue"
+  },
+  {
+   "id": "ident_2",
+   "start": 102.69,
+   "dur": 14.27,
+   "kind": "raw",
+   "src": "img/bx_tomas_incomoda.png",
+   "hue": "amber",
+   "kicker": "La parte que te va a dar bronca",
+   "gen": {
+    "type": "image",
+    "name": "bx_tomas_incomoda",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). un hombre rural de unos 45 años, pelo oscuro y barba corta canosa, piel curtida, camisa de trabajo verde oliva y delantal de cuero marrón, inclinado hacia la cámara con gesto serio en su taller, lámpara de aceite detrás, en una chacra rural de la Patagonia. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "promesa_0",
+   "start": 116.96,
+   "dur": 3.75,
+   "kind": "stat",
+   "value": 2,
+   "prefix": "US$ ",
+   "label": "lo que cuesta tratar tu madera",
+   "eyebrow": "Te lo prometo",
+   "hue": "blue"
+  },
+  {
+   "id": "promesa_1",
+   "start": 120.71,
+   "dur": 3.75,
+   "kind": "chips",
+   "bg": "image",
+   "image": "img/bx_casa_madera_full.png",
+   "imageDarken": 0.6,
+   "title": "Lo que vas a saber",
+   "chips": [
+    "Bórax contra termitas",
+    "Aceite contra el agua",
+    "Cal de 5000 años"
+   ],
+   "hue": "amber"
+  },
+  {
+   "id": "promesa_2",
+   "start": 124.46,
+   "dur": 5.62,
+   "kind": "raw",
+   "src": "img/bx_galpon_madera.png",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "bx_galpon_madera",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). un galpón de madera rural en buen estado, tablas tratadas, día nublado. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "problema_0",
+   "start": 130.08,
+   "dur": 13.76,
+   "kind": "diagram",
+   "eyebrow": "La madera tiene DOS enemigos",
+   "slides": [
+    {
+     "image": "img/dg_bx_dos.png",
+     "eyebrow": "Bichos por dentro, agua por fuera"
+    }
+   ],
+   "hue": "amber"
+  },
+  {
+   "id": "problema_1",
+   "start": 143.84,
+   "dur": 7.45,
+   "kind": "annotated",
+   "image": "img/bx_termita_galeria.png",
+   "eyebrow": "Por dentro",
+   "caption": "Las galerías que no ves",
+   "annotations": [
+    {
+     "kind": "circle",
+     "x": 45,
+     "y": 50,
+     "label": "Túneles"
+    },
+    {
+     "kind": "arrow",
+     "x": 70,
+     "y": 65,
+     "label": "Polvillo"
+    }
+   ],
+   "hue": "red"
+  },
+  {
+   "id": "problema_2",
+   "start": 151.29,
+   "dur": 8.59,
+   "kind": "raw",
+   "src": "img/bx_carcoma_bicho.png",
+   "hue": "blue",
+   "kicker": "La carcoma",
+   "gen": {
+    "type": "image",
+    "name": "bx_carcoma_bicho",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). un escarabajo de carcoma sobre madera con agujeritos, primer plano. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "problema_3",
+   "start": 159.88,
+   "dur": 8.6,
+   "kind": "raw",
+   "src": "img/bx_hormiga_carpintera.png",
+   "hue": "amber",
+   "kicker": "La hormiga carpintera",
+   "gen": {
+    "type": "image",
+    "name": "bx_hormiga_carpintera",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). hormigas carpinteras grandes excavando un nido en una viga de madera. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "problema_4",
+   "start": 168.48,
+   "dur": 8.2,
+   "kind": "raw",
+   "src": "img/bx_madera_humeda.png",
+   "hue": "red",
+   "kicker": "Y la humedad",
+   "gen": {
+    "type": "image",
+    "name": "bx_madera_humeda",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). una viga de madera mojada y oscura por la humedad cerca del suelo, gotas. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "problema_5",
+   "start": 176.68,
+   "dur": 8.2,
+   "kind": "raw",
+   "src": "vid/bxv_madera_podrida.mp4",
+   "hue": "blue",
+   "kicker": "El agua y los hongos",
+   "gen": {
+    "type": "clip",
+    "image": "bxv_madera_podrida",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). una madera podrida y blanda deshaciéndose, manchas oscuras de hongo, húmeda. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 80
+   }
+  },
+  {
+   "id": "problema_6",
+   "start": 184.88,
+   "dur": 8.2,
+   "kind": "raw",
+   "src": "img/bx_hongo_blanco.png",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "bx_hongo_blanco",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). hongos blancos de pudrición creciendo sobre madera húmeda, primer plano. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "problema_7",
+   "start": 193.08,
+   "dur": 5.47,
+   "kind": "chips",
+   "bg": "image",
+   "image": "img/bx_galpon_madera.png",
+   "imageDarken": 0.62,
+   "title": "Dos defensas, no una",
+   "chips": [
+    "Una contra los bichos",
+    "Otra contra el agua"
+   ],
+   "hue": "red"
+  },
+  {
+   "id": "problema_8",
+   "start": 198.55,
+   "dur": 6.01,
+   "kind": "splitlist",
+   "title": "Por qué fallan los productos caros",
+   "items": [
+    "Atacan UNA sola cosa",
+    "Se evaporan en meses",
+    "Hay que comprar de nuevo"
+   ],
+   "palette": "D",
+   "cross": true,
+   "hue": "blue"
+  },
+  {
+   "id": "borax_que_0",
+   "start": 204.56,
+   "dur": 2.9,
+   "kind": "rule",
+   "number": "01",
+   "title": "El bórax contra termitas y hongos",
+   "hue": "red"
+  },
+  {
+   "id": "borax_que_1",
+   "start": 207.46,
+   "dur": 7.39,
+   "kind": "raw",
+   "src": "img/bx_borax_mineral.png",
+   "hue": "blue",
+   "kicker": "Un mineral natural",
+   "hold": true,
+   "gen": {
+    "type": "image",
+    "name": "bx_borax_mineral",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). polvo de bórax blanco mineral en un cuenco, textura granulada. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "borax_que_2",
+   "start": 214.85,
+   "dur": 4.34,
+   "kind": "raw",
+   "src": "img/bx_borax_mina.png",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "bx_borax_mina",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). un depósito de mineral de bórax blanco en la tierra, de donde se extrae. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "borax_que_3",
+   "start": 219.19,
+   "dur": 4.35,
+   "kind": "raw",
+   "src": "img/bx_borax_lavanderia.png",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "bx_borax_lavanderia",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). una caja vieja de bórax en la sección de lavandería, producto de abuela. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "borax_que_4",
+   "start": 223.54,
+   "dur": 4.34,
+   "kind": "raw",
+   "src": "img/bx_borax_mano.png",
+   "hue": "blue",
+   "gen": {
+    "type": "image",
+    "name": "bx_borax_mano",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). una mano dejando caer polvo de bórax entre los dedos, textura fina. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "borax_que_5",
+   "start": 227.88,
+   "dur": 2.9,
+   "kind": "callout",
+   "image": "img/bx_borax_cucharada.png",
+   "figure": "US$ 2",
+   "caption": "Una caja te dura años.",
+   "accent": "amber",
+   "hue": "amber"
+  },
+  {
+   "id": "borax_que_6",
+   "start": 230.78,
+   "dur": 2.9,
+   "kind": "chips",
+   "bg": "image",
+   "image": "img/bx_borax_mineral.png",
+   "imageDarken": 0.62,
+   "title": "Mata bichos Y hongos",
+   "chips": [
+    "No es de laboratorio",
+    "Sal mineral",
+    "Seguro para vos"
+   ],
+   "hue": "amber"
+  },
+  {
+   "id": "borax_como_0",
+   "start": 233.68,
+   "dur": 15.13,
+   "kind": "diagram",
+   "eyebrow": "Cómo actúa el bórax",
+   "slides": [
+    {
+     "image": "img/dg_bx_mata.png",
+     "eyebrow": "La termita que muerde, muere"
+    },
+    {
+     "image": "img/dg_bx_queda.png",
+     "eyebrow": "Y queda en la fibra, permanente"
+    }
+   ],
+   "hue": "blue"
+  },
+  {
+   "id": "borax_como_1",
+   "start": 248.81,
+   "dur": 9.46,
+   "kind": "raw",
+   "src": "img/bx_termita_come.png",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "bx_termita_come",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). una termita mordiendo y comiendo una fibra de madera, macro. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "borax_como_2",
+   "start": 258.27,
+   "dur": 9.46,
+   "kind": "raw",
+   "src": "img/bx_termita_muerta.png",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "bx_termita_muerta",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). una termita muerta junto a una madera tratada, primer plano. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "borax_como_3",
+   "start": 267.73,
+   "dur": 9.45,
+   "kind": "raw",
+   "src": "img/bx_carcoma_agujeros.png",
+   "hue": "blue",
+   "gen": {
+    "type": "image",
+    "name": "bx_carcoma_agujeros",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). madera con agujeritos de carcoma y polvillo fino debajo. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "borax_como_4",
+   "start": 277.18,
+   "dur": 9.46,
+   "kind": "raw",
+   "src": "img/bx_borax_cristales.png",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "bx_borax_cristales",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). cristales de bórax metidos en la fibra de la madera vistos de cerca. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "borax_receta_0",
+   "start": 286.64,
+   "dur": 3.51,
+   "kind": "annotated",
+   "image": "img/bx_mesa_productos.png",
+   "eyebrow": "Lo que necesitás",
+   "caption": "Todo de ferretería, monedas",
+   "annotations": [
+    {
+     "kind": "circle",
+     "x": 25,
+     "y": 55,
+     "label": "Bórax"
+    },
+    {
+     "kind": "circle",
+     "x": 55,
+     "y": 55,
+     "label": "Agua caliente"
+    },
+    {
+     "kind": "circle",
+     "x": 80,
+     "y": 55,
+     "label": "Pincel"
+    }
+   ],
+   "hue": "amber"
+  },
+  {
+   "id": "borax_receta_1",
+   "start": 290.15,
+   "dur": 5.88,
+   "kind": "raw",
+   "src": "img/bx_agua_caliente.png",
+   "hue": "red",
+   "kicker": "1 · Agua bien caliente",
+   "gen": {
+    "type": "image",
+    "name": "bx_agua_caliente",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). una olla con agua bien caliente casi hirviendo sobre una cocina rural. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "borax_receta_2",
+   "start": 296.03,
+   "dur": 5.88,
+   "kind": "raw",
+   "src": "img/bx_caja_abrir.png",
+   "hue": "blue",
+   "gen": {
+    "type": "image",
+    "name": "bx_caja_abrir",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). una mano abriendo una caja de bórax en polvo, polvo blanco visible adentro. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "borax_receta_3",
+   "start": 301.91,
+   "dur": 5.89,
+   "kind": "raw",
+   "src": "img/bx_echar_borax.png",
+   "hue": "amber",
+   "kicker": "2 · Echar el bórax",
+   "gen": {
+    "type": "image",
+    "name": "bx_echar_borax",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). una mano echando una cucharada de polvo de bórax dentro de la olla de agua caliente. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "borax_receta_4",
+   "start": 307.8,
+   "dur": 5.88,
+   "kind": "raw",
+   "src": "vid/bxv_revolver.mp4",
+   "hue": "red",
+   "kicker": "Revolver hasta disolver",
+   "gen": {
+    "type": "clip",
+    "image": "bxv_revolver",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). una cuchara de madera revolviendo bórax en agua caliente, el polvo disolviéndose. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 80
+   }
+  },
+  {
+   "id": "borax_receta_5",
+   "start": 313.68,
+   "dur": 5.88,
+   "kind": "raw",
+   "src": "img/bx_borax_fondo.png",
+   "hue": "blue",
+   "kicker": "Hasta que quede polvo en el fondo",
+   "gen": {
+    "type": "image",
+    "name": "bx_borax_fondo",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). un poco de polvo de bórax sin disolver en el fondo de la olla, solución saturada. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "borax_receta_6",
+   "start": 319.56,
+   "dur": 4.32,
+   "kind": "float",
+   "src": "img/bx_balde_solucion.png",
+   "side": "right",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "bx_balde_solucion",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). un balde con la solución de bórax lista y un pincel apoyado al lado, taller. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "borax_receta_7",
+   "start": 323.88,
+   "dur": 5.88,
+   "kind": "raw",
+   "src": "broll/rb_brush_wood.mp4",
+   "hue": "red",
+   "kicker": "3 · Pincelar la madera"
+  },
+  {
+   "id": "borax_receta_8",
+   "start": 329.76,
+   "dur": 5.88,
+   "kind": "raw",
+   "src": "img/bx_puntas_madera.png",
+   "hue": "blue",
+   "kicker": "Las puntas primero",
+   "gen": {
+    "type": "image",
+    "name": "bx_puntas_madera",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). el extremo de una viga de madera donde se ven los anillos, absorbiendo el líquido como un sorbete. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "borax_receta_9",
+   "start": 335.64,
+   "dur": 5.88,
+   "kind": "raw",
+   "src": "img/bx_uniones.png",
+   "hue": "amber",
+   "kicker": "Y las uniones",
+   "gen": {
+    "type": "image",
+    "name": "bx_uniones",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). las uniones y juntas de dos maderas, un pincel mojando bien el rincón. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "borax_receta_10",
+   "start": 341.52,
+   "dur": 5.1,
+   "kind": "annotated",
+   "image": "img/bx_viga_tratada.png",
+   "eyebrow": "Dos manos",
+   "caption": "Dejá secar entre mano y mano",
+   "annotations": [
+    {
+     "kind": "arrow",
+     "x": 30,
+     "y": 40,
+     "label": "1ª mano"
+    },
+    {
+     "kind": "arrow",
+     "x": 65,
+     "y": 60,
+     "label": "2ª mano"
+    }
+   ],
+   "hue": "red"
+  },
+  {
+   "id": "borax_receta_11",
+   "start": 346.62,
+   "dur": 5.88,
+   "kind": "raw",
+   "src": "vid/bxv_secar.mp4",
+   "hue": "blue",
+   "kicker": "Dejar secar",
+   "gen": {
+    "type": "clip",
+    "image": "bxv_secar",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). una viga tratada secándose al aire libre, la superficie evaporando despacio. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 75
+   }
+  },
+  {
+   "id": "borax_receta_12",
+   "start": 352.5,
+   "dur": 4.71,
+   "kind": "checklist",
+   "title": "La receta del bórax",
+   "items": [
+    {
+     "text": "Agua caliente",
+     "state": "done"
+    },
+    {
+     "text": "Bórax hasta saturar",
+     "state": "done"
+    },
+    {
+     "text": "Mojar bien las puntas",
+     "state": "done"
+    },
+    {
+     "text": "Dos manos, dejar secar",
+     "state": "done"
+    }
+   ],
+   "hue": "amber"
+  },
+  {
+   "id": "inject1_0",
+   "start": 357.21,
+   "dur": 24.01,
+   "kind": "diagram",
+   "eyebrow": "Los 35 sistemas, paso a paso",
+   "slides": [
+    {
+     "image": "img/dg_bx_manual.png",
+     "eyebrow": "Las proporciones exactas, en el manual"
+    }
+   ],
+   "hue": "red"
+  },
+  {
+   "id": "inject1_1",
+   "start": 381.22,
+   "dur": 13,
+   "kind": "half",
+   "src": "img/bx_manual_madera.png",
+   "side": "right",
+   "hue": "blue",
+   "gen": {
+    "type": "image",
+    "name": "bx_manual_madera",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). un manual abierto con diagramas de tratamiento de madera sobre una mesa de taller. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   },
+   "kicker": "Todo documentado"
+  },
+  {
+   "id": "punto_debil_0",
+   "start": 394.22,
+   "dur": 14.74,
+   "kind": "raw",
+   "src": "vid/bxv_lluvia_madera.mp4",
+   "hue": "blue",
+   "kicker": "El agua puede lavar el bórax",
+   "gen": {
+    "type": "clip",
+    "image": "bxv_lluvia_madera",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). gotas de lluvia cayendo sobre una madera a la intemperie, el agua lavando la superficie. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 80
+   }
+  },
+  {
+   "id": "punto_debil_1",
+   "start": 408.96,
+   "dur": 9.83,
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "Hace"
+    },
+    {
+     "t": "falta"
+    },
+    {
+     "t": "una"
+    },
+    {
+     "t": "segunda"
+    },
+    {
+     "t": "defensa",
+     "hl": true
+    }
+   ],
+   "eyebrow": "Contra el agua",
+   "bg": "image",
+   "image": "img/bx_galpon_madera.png",
+   "hue": "amber"
+  },
+  {
+   "id": "aceite_0",
+   "start": 418.79,
+   "dur": 4.2,
+   "kind": "rule",
+   "number": "02",
+   "title": "El líquido de $2 contra el agua",
+   "hue": "amber"
+  },
+  {
+   "id": "aceite_1",
+   "start": 422.99,
+   "dur": 6.29,
+   "kind": "raw",
+   "src": "img/bx_lino_planta.png",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "bx_lino_planta",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). una planta de lino con flores azules en el campo, de donde sale el aceite. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "aceite_2",
+   "start": 429.28,
+   "dur": 16,
+   "kind": "raw",
+   "src": "img/bx_lino_semilla.png",
+   "hue": "blue",
+   "kicker": "Aceite de linaza",
+   "gen": {
+    "type": "image",
+    "name": "bx_lino_semilla",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). semillas de lino y una botella de aceite de linaza sobre madera, luz cálida. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "aceite_3",
+   "start": 445.28,
+   "dur": 16,
+   "kind": "raw",
+   "src": "img/bx_pino_resina.png",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "bx_pino_resina",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). resina goteando del tronco de un pino, de donde sale la trementina. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "aceite_4",
+   "start": 461.28,
+   "dur": 16,
+   "kind": "raw",
+   "src": "img/bx_trementina.png",
+   "hue": "red",
+   "kicker": "Trementina de los pinos",
+   "gen": {
+    "type": "image",
+    "name": "bx_trementina",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). una lata vieja de trementina junto a un pincel, taller rural. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "aceite_5",
+   "start": 477.28,
+   "dur": 25.6,
+   "kind": "diagram",
+   "eyebrow": "Cómo sella el aceite",
+   "slides": [
+    {
+     "image": "img/dg_bx_sella.png",
+     "eyebrow": "Penetra, endurece, sella desde adentro"
+    }
+   ],
+   "hue": "blue"
+  },
+  {
+   "id": "aceite_receta_0",
+   "start": 502.88,
+   "dur": 7.36,
+   "kind": "raw",
+   "src": "img/bx_verter_aceite.png",
+   "hue": "red",
+   "kicker": "Mitad aceite",
+   "gen": {
+    "type": "image",
+    "name": "bx_verter_aceite",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). vertiendo aceite de linaza ámbar dentro de un frasco de vidrio, taller. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "aceite_receta_1",
+   "start": 510.24,
+   "dur": 7.35,
+   "kind": "raw",
+   "src": "img/bx_verter_trementina.png",
+   "hue": "blue",
+   "gen": {
+    "type": "image",
+    "name": "bx_verter_trementina",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). vertiendo trementina transparente dentro del mismo frasco con aceite. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "aceite_receta_2",
+   "start": 517.59,
+   "dur": 7.36,
+   "kind": "raw",
+   "src": "img/bx_mezcla_mitad.png",
+   "hue": "amber",
+   "kicker": "Mitad y mitad",
+   "gen": {
+    "type": "image",
+    "name": "bx_mezcla_mitad",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). un frasco con aceite de linaza y trementina, una varilla de madera revolviendo la mezcla. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "aceite_receta_3",
+   "start": 524.95,
+   "dur": 5.39,
+   "kind": "float",
+   "src": "img/bx_pincel_cargar.png",
+   "side": "left",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "bx_pincel_cargar",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). un pincel cargándose con la mezcla de aceite y trementina del frasco. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "aceite_receta_4",
+   "start": 530.34,
+   "dur": 7.36,
+   "kind": "raw",
+   "src": "broll/rb_oil_wood.mp4",
+   "hue": "blue",
+   "kicker": "Pincelar sobre el bórax seco"
+  },
+  {
+   "id": "aceite_receta_5",
+   "start": 537.7,
+   "dur": 7.35,
+   "kind": "raw",
+   "src": "img/bx_madera_bebe.png",
+   "hue": "amber",
+   "kicker": "La madera lo bebe",
+   "gen": {
+    "type": "image",
+    "name": "bx_madera_bebe",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). la madera bebiéndose el aceite, la mezcla penetrando en la fibra seca. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "aceite_receta_6",
+   "start": 545.05,
+   "dur": 7.36,
+   "kind": "raw",
+   "src": "vid/bxv_gota_pato.mp4",
+   "hue": "red",
+   "kicker": "El agua resbala como en un pato",
+   "gen": {
+    "type": "clip",
+    "image": "bxv_gota_pato",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). una gota de agua resbalando y cayendo de una madera sellada sin penetrar, como en la espalda de un pato. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 80
+   }
+  },
+  {
+   "id": "aceite_receta_7",
+   "start": 552.41,
+   "dur": 7.35,
+   "kind": "raw",
+   "src": "img/bx_madera_sellada.png",
+   "hue": "blue",
+   "kicker": "Sellada por dentro",
+   "gen": {
+    "type": "image",
+    "name": "bx_madera_sellada",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). una madera recién aceitada con brillo satinado parejo, sellada y protegida. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "aceite_receta_8",
+   "start": 559.76,
+   "dur": 6.38,
+   "kind": "annotated",
+   "image": "img/bx_dos_defensas.png",
+   "eyebrow": "Las dos juntas",
+   "caption": "El bórax mata, el aceite lo encierra",
+   "annotations": [
+    {
+     "kind": "circle",
+     "x": 35,
+     "y": 50,
+     "label": "Bórax adentro"
+    },
+    {
+     "kind": "arrow",
+     "x": 70,
+     "y": 35,
+     "label": "Aceite sella"
+    }
+   ],
+   "hue": "amber"
+  },
+  {
+   "id": "cal_0",
+   "start": 566.14,
+   "dur": 9.89,
+   "kind": "raw",
+   "src": "img/bx_cal_balde.png",
+   "hue": "blue",
+   "gen": {
+    "type": "image",
+    "name": "bx_cal_balde",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). un balde con cal blanca disuelta y un pincel grueso al lado, finca vieja. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "cal_1",
+   "start": 576.03,
+   "dur": 9.89,
+   "kind": "raw",
+   "src": "img/bx_cal_pintar.png",
+   "hue": "amber",
+   "kicker": "La cal: 5000 años",
+   "gen": {
+    "type": "image",
+    "name": "bx_cal_pintar",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). un pincel pintando de blanco con cal el tronco de un árbol, finca vieja. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "cal_2",
+   "start": 585.92,
+   "dur": 9.89,
+   "kind": "raw",
+   "src": "img/bx_postes_blancos.png",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "bx_postes_blancos",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). una hilera de postes de madera con la base pintada de cal blanca, campo. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "cal_3",
+   "start": 595.81,
+   "dur": 9.89,
+   "kind": "raw",
+   "src": "vid/bxv_madera_quemada.mp4",
+   "hue": "blue",
+   "kicker": "Quemar la punta enterrada",
+   "gen": {
+    "type": "clip",
+    "image": "bxv_madera_quemada",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). la superficie de una madera siendo quemada ligeramente con fuego hasta quedar negra, técnica shou sugi ban. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 90
+   }
+  },
+  {
+   "id": "cal_4",
+   "start": 605.7,
+   "dur": 9.89,
+   "kind": "raw",
+   "src": "img/bx_poste_enterrar.png",
+   "hue": "amber",
+   "kicker": "Quemar, aceitar, enterrar",
+   "gen": {
+    "type": "image",
+    "name": "bx_poste_enterrar",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). un poste de madera con la punta quemada y aceitada, listo para enterrar en la tierra. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "cal_5",
+   "start": 615.59,
+   "dur": 6.6,
+   "kind": "chips",
+   "bg": "image",
+   "image": "img/bx_postes_blancos.png",
+   "imageDarken": 0.6,
+   "title": "La cal protege hace 5000 años",
+   "chips": [
+    "Vuelve la madera alcalina",
+    "Refleja el sol",
+    "Templos antiguos"
+   ],
+   "hue": "amber"
+  },
+  {
+   "id": "cal_6",
+   "start": 622.19,
+   "dur": 7.25,
+   "kind": "splitlist",
+   "title": "Para la madera enterrada",
+   "items": [
+    "Quemar la superficie",
+    "Aceitar encima",
+    "Enterrar"
+   ],
+   "palette": "A",
+   "hue": "blue"
+  },
+  {
+   "id": "credibilidad_0",
+   "start": 629.44,
+   "dur": 8.65,
+   "kind": "aged",
+   "heading": "Conocimiento viejo, probado",
+   "lines": [
+    {
+     "text": "El aceite de linaza protege barcos hace siglos."
+    },
+    {
+     "text": "El bórax trata madera a nivel industrial.",
+     "mark": true
+    }
+   ],
+   "image": "img/bx_barco_madera.png",
+   "hue": "amber"
+  },
+  {
+   "id": "credibilidad_1",
+   "start": 638.09,
+   "dur": 10.81,
+   "kind": "raw",
+   "src": "img/bx_barco_madera.png",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "bx_barco_madera",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). un barco de madera viejo con casco aceitado y brillante, puerto rústico. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "credibilidad_2",
+   "start": 648.9,
+   "dur": 10.81,
+   "kind": "raw",
+   "src": "img/bx_herramientas_aceitadas.png",
+   "hue": "blue",
+   "gen": {
+    "type": "image",
+    "name": "bx_herramientas_aceitadas",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). herramientas viejas de mango de madera aceitado, colgadas en un taller. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "credibilidad_3",
+   "start": 659.71,
+   "dur": 10.81,
+   "kind": "raw",
+   "src": "img/bx_aserradero_industrial.png",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "bx_aserradero_industrial",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). tablones de madera de construcción apilados tratados a nivel industrial. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "inject2_0",
+   "start": 670.52,
+   "dur": 29.15,
+   "kind": "costtally",
+   "left": {
+    "label": "El barniz que falla",
+    "note": "se descascara, comprás de nuevo",
+    "total": 120,
+    "bad": true
+   },
+   "right": {
+    "label": "Constructor Libre",
+    "note": "bórax + aceite, una vez",
+    "total": 4
+   },
+   "hue": "red"
+  },
+  {
+   "id": "inject2_1",
+   "start": 699.67,
+   "dur": 27.82,
+   "kind": "quote",
+   "image": "img/bx_barniz_descascarado.png",
+   "text": "El negocio es que tu madera se arruine *cada dos años*.",
+   "accent": "danger",
+   "hue": "blue"
+  },
+  {
+   "id": "empezar_0",
+   "start": 727.49,
+   "dur": 18.73,
+   "kind": "process",
+   "title": "Empezá con una pieza",
+   "eyebrow": "Sin miedo",
+   "steps": [
+    {
+     "title": "Bórax",
+     "desc": "agua caliente, 2 manos",
+     "image": "img/bx_echar_borax.png"
+    },
+    {
+     "title": "Secar",
+     "desc": "un día entero",
+     "image": "img/bx_viga_tratada.png"
+    },
+    {
+     "title": "Aceite",
+     "desc": "mitad y mitad, 2 manos",
+     "image": "img/bx_mezcla_mitad.png"
+    }
+   ],
+   "hue": "blue"
+  },
+  {
+   "id": "empezar_1",
+   "start": 746.22,
+   "dur": 18.74,
+   "kind": "raw",
+   "src": "img/bx_pieza_practica.png",
+   "hue": "amber",
+   "kicker": "Empezá con algo chico",
+   "gen": {
+    "type": "image",
+    "name": "bx_pieza_practica",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). una pequeña maceta o banquito de madera sin tratar, para practicar el tratamiento. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "empezar_2",
+   "start": 764.96,
+   "dur": 18.73,
+   "kind": "raw",
+   "src": "img/bx_poste_cerca.png",
+   "hue": "red",
+   "kicker": "O un poste de cerca",
+   "gen": {
+    "type": "image",
+    "name": "bx_poste_cerca",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). un poste de cerca de madera clavado en la tierra, tratado en la base. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "empezar_3",
+   "start": 783.69,
+   "dur": 31.85,
+   "kind": "raw",
+   "src": "img/bx_dos_tablas.png",
+   "hue": "blue",
+   "kicker": "Compará a los 2 meses",
+   "hold": true,
+   "gen": {
+    "type": "image",
+    "name": "bx_dos_tablas",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). dos tablas de madera lado a lado a la intemperie, una tratada firme y una sin tratar gris y partida. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "empezar_4",
+   "start": 815.54,
+   "dur": 15.61,
+   "kind": "bars",
+   "title": "Cuánto dura la madera",
+   "unit": "años",
+   "bars": [
+    {
+     "label": "Sin tratar",
+     "value": 3,
+     "tone": "danger"
+    },
+    {
+     "label": "Barniz caro",
+     "value": 8
+    },
+    {
+     "label": "Bórax + aceite",
+     "value": 40,
+     "winner": true
+    }
+   ],
+   "hue": "amber"
+  },
+  {
+   "id": "objeciones_0",
+   "start": 831.15,
+   "dur": 18.21,
+   "kind": "chips",
+   "bg": "image",
+   "image": "img/bx_viga_tratada.png",
+   "imageDarken": 0.6,
+   "title": "¿Queda pegajoso o con olor?",
+   "chips": [
+    "No, si seca bien",
+    "Olor suave a madera",
+    "Cura en días"
+   ],
+   "hue": "blue"
+  },
+  {
+   "id": "objeciones_1",
+   "start": 849.36,
+   "dur": 27.31,
+   "kind": "raw",
+   "src": "img/bx_tabla_cocina.png",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "bx_tabla_cocina",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). una tabla de cocina de madera aceitada con aceite de linaza puro. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "objeciones_2",
+   "start": 876.67,
+   "dur": 18.21,
+   "kind": "chips",
+   "bg": "image",
+   "image": "img/bx_tabla_cocina.png",
+   "imageDarken": 0.6,
+   "title": "Seguro para comida",
+   "chips": [
+    "Aceite de linaza puro",
+    "Bien curado",
+    "Sin químicos"
+   ],
+   "hue": "blue"
+  },
+  {
+   "id": "panorama_0",
+   "start": 894.88,
+   "dur": 30.73,
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "Lo"
+    },
+    {
+     "t": "más"
+    },
+    {
+     "t": "caro"
+    },
+    {
+     "t": "lo"
+    },
+    {
+     "t": "come"
+    },
+    {
+     "t": "un"
+    },
+    {
+     "t": "bicho",
+     "hl": true
+    }
+   ],
+   "eyebrow": "Una casa, un galpón",
+   "bg": "image",
+   "image": "img/bx_termita_madera.png",
+   "hue": "red"
+  },
+  {
+   "id": "panorama_1",
+   "start": 925.61,
+   "dur": 32.26,
+   "kind": "quote",
+   "image": "img/bx_manos_viejas_madera.png",
+   "text": "Hacían durar una viga *cien años* con aceite y minerales.",
+   "hue": "blue"
+  },
+  {
+   "id": "plan_0",
+   "start": 957.87,
+   "dur": 15.24,
+   "kind": "checklist",
+   "title": "Tu fin de semana",
+   "items": [
+    {
+     "text": "Conseguir bórax, aceite, trementina",
+     "state": "todo"
+    },
+    {
+     "text": "Tratar una pieza de prueba",
+     "state": "todo"
+    },
+    {
+     "text": "Dejarla a la intemperie y comparar",
+     "state": "todo"
+    }
+   ],
+   "hue": "blue"
+  },
+  {
+   "id": "plan_1",
+   "start": 973.11,
+   "dur": 19.05,
+   "kind": "raw",
+   "src": "img/bx_tomas_taller.png",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "bx_tomas_taller",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). un hombre rural de unos 45 años, pelo oscuro y barba corta canosa, piel curtida, camisa de trabajo verde oliva y delantal de cuero marrón, en su taller con una caja de bórax y una lata de aceite, listo para tratar madera, en una chacra rural de la Patagonia. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "inject3_0",
+   "start": 992.16,
+   "dur": 25.08,
+   "kind": "diagram",
+   "eyebrow": "Todo, ordenado y probado",
+   "slides": [
+    {
+     "image": "img/dg_bx_stack.png",
+     "eyebrow": "Vale 158 — hoy 27, para siempre"
+    }
+   ],
+   "hue": "amber"
+  },
+  {
+   "id": "inject3_1",
+   "start": 1017.24,
+   "dur": 13.07,
+   "kind": "bars",
+   "title": "El valor",
+   "unit": "US$",
+   "bars": [
+    {
+     "label": "Por separado",
+     "value": 158,
+     "tone": "danger"
+    },
+    {
+     "label": "Hoy",
+     "value": 27,
+     "winner": true
+    }
+   ],
+   "hue": "red"
+  },
+  {
+   "id": "inject3_2",
+   "start": 1030.31,
+   "dur": 10.97,
+   "kind": "quote",
+   "image": "img/bx_manual_celular.png",
+   "text": "Si no te sirve, te devuelvo *todo*. El riesgo lo pongo yo.",
+   "accent": "good",
+   "hue": "blue"
+  },
+  {
+   "id": "coment_0",
+   "start": 1041.28,
+   "dur": 19.98,
+   "kind": "raw",
+   "src": "img/bx_tomas_camara.png",
+   "hue": "red",
+   "kicker": "¿Qué querés proteger?",
+   "gen": {
+    "type": "image",
+    "name": "bx_tomas_camara",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). un hombre rural de unos 45 años, pelo oscuro y barba corta canosa, piel curtida, camisa de trabajo verde oliva y delantal de cuero marrón, hablando cálido a la cámara en su taller, invitando, en una chacra rural de la Patagonia. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "cierre_0",
+   "start": 1061.26,
+   "dur": 10.11,
+   "kind": "raw",
+   "src": "img/bx_techo_vigas.png",
+   "hue": "blue",
+   "kicker": "El mismo techo",
+   "gen": {
+    "type": "image",
+    "name": "bx_techo_vigas",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). el techo de una casa con vigas de madera sanas y macizas, vista desde abajo. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "cierre_1",
+   "start": 1071.37,
+   "dur": 10.11,
+   "kind": "raw",
+   "src": "img/bx_hijo_madera.png",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "bx_hijo_madera",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). un hombre joven mirando una viga de madera de la casa familiar, gesto de orgullo. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "cierre_2",
+   "start": 1081.48,
+   "dur": 7.08,
+   "kind": "quote",
+   "image": "img/bx_viga_maciza.png",
+   "text": "Esta viga la va a heredar mi hijo. Es *herencia*, no gasto.",
+   "hue": "red"
+  },
+  {
+   "id": "cierre_3",
+   "start": 1088.56,
+   "dur": 17.52,
+   "kind": "journey",
+   "eyebrow": "Hacelo durar",
+   "title": "Tres generaciones",
+   "waypoints": [
+    {
+     "x": 0,
+     "y": 0,
+     "z": 0,
+     "image": "img/bx_caja_borax.png",
+     "label": "Bórax",
+     "num": "1",
+     "dwell": 2.6,
+     "travel": 1.6
+    },
+    {
+     "x": 1.2,
+     "y": -0.4,
+     "z": 0.3,
+     "image": "img/bx_mezcla_mitad.png",
+     "label": "Aceite de $2",
+     "num": "2",
+     "dwell": 2.6,
+     "travel": 1.6
+    },
+    {
+     "x": 2.4,
+     "y": 0.3,
+     "z": -0.2,
+     "image": "img/bx_viga_maciza.png",
+     "label": "Madera para siempre",
+     "num": "3",
+     "dwell": 3,
+     "travel": 1.4
+    }
+   ]
+  },
+  {
+   "id": "proximo_0",
+   "start": 1106.08,
+   "dur": 11.35,
+   "kind": "raw",
+   "src": "img/bx_barrera_metales.png",
+   "hue": "amber",
+   "kicker": "La próxima: 2 metales = 0 plagas",
+   "gen": {
+    "type": "image",
+    "name": "bx_barrera_metales",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). dos tiras de metal distinto rodeando una planta de huerta, cobre y zinc, primer plano. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "proximo_1",
+   "start": 1117.43,
+   "dur": 19.3,
+   "kind": "raw",
+   "src": "img/bx_tomas_firma.png",
+   "hue": "red",
+   "hold": true,
+   "gen": {
+    "type": "image",
+    "name": "bx_tomas_firma",
+    "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). un hombre rural de unos 45 años, pelo oscuro y barba corta canosa, piel curtida, camisa de trabajo verde oliva y delantal de cuero marrón, mirando cálido a la cámara en la puerta del taller, hora dorada, en una chacra rural de la Patagonia. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  }
+ ],
+ "extraImages": [
+  {
+   "name": "bx_manos_madera",
+   "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). manos curtidas apoyadas sobre una viga de madera, primer plano. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "bx_termita_galeria",
+   "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). galerías de termitas dentro de una madera carcomida, túneles y polvillo fino. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "bx_borax_cucharada",
+   "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). una cucharada de polvo de bórax sobre una mesa de madera, primer plano. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "bx_mesa_productos",
+   "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). una caja de bórax, una olla de agua y un pincel apoyados sobre una mesa de madera de taller, vista cenital. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "bx_viga_tratada",
+   "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). una viga de madera mojada con solución de bórax, brillo húmedo en la superficie. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "bx_dos_defensas",
+   "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). una viga de madera tratada y sellada, superficie firme y protegida, taller. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "bx_barniz_descascarado",
+   "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). un barniz industrial descascarándose de una madera vieja, lascas levantadas. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "bx_manos_viejas_madera",
+   "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). manos viejas curtidas pasando aceite a una viga de madera, gesto de oficio. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "bx_manual_celular",
+   "prompt": "Foto documental muy realista, formato HORIZONTAL apaisado, relación de aspecto EXACTA 16:9 (1792x1024). un teléfono mostrando un manual digital abierto sobre un banco de taller, luz cálida. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+  }
+ ]
+}

@@ -64,7 +64,8 @@ export const SFX = {
   ambTaller: "sfx/amb_taller.mp3",
   ambFuego: "sfx/amb_fuego.mp3",
   ambCampo: "sfx/amb_campo.mp3",
-  ambInvierno: "sfx/amb_invierno.mp3",
+  // amb_invierno / cold_winter_wind ELIMINADOS — el viento de invierno suena muy mal,
+  // NO usar (decisión del usuario jun 2026). No re-agregar una cama de viento/invierno.
 } as const;
 
 // Golpes graves para revelaciones — rotar para que no suenen idénticos.

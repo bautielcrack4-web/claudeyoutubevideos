@@ -72,7 +72,9 @@ export const AvatarLayer: React.FC<{
   let i = 0;
   for (let k = 0; k < windows.length; k++) if (t >= starts[k]) i = k;
   const curMode = windows[i].mode;
-  const prevMode = i > 0 ? windows[i - 1].mode : "hidden";
+  // ★ La PRIMERA ventana NO hace fade-in desde "hidden": el avatar tiene que estar
+  // presente, lleno y nítido DESDE EL FRAME 0 (regla dura: el avatar abre el video).
+  const prevMode = i > 0 ? windows[i - 1].mode : windows[0].mode;
 
   // geometrías "from" y "to" para fade-in-place (oculto = misma caja con op 0)
   const toGeom: Geom = curMode === "hidden" ? { ...geomOf(prevMode), op: 0 } : geomOf(curMode);

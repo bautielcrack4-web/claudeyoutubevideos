@@ -25,8 +25,8 @@ const TONES = {
   danger: COLORS.danger,
 } as const;
 
-const BOX_W = 1360;
-const BOX_H = 820;
+const BOX_W = 1620;
+const BOX_H = 980;
 
 export const AgedDoc: React.FC<{
   durationInFrames: number;
@@ -78,8 +78,8 @@ export const AgedDoc: React.FC<{
         <div
           style={{
             position: "relative",
-            width: 1040,
-            height: 700,
+            width: 1520,
+            height: 870,
             transform: `scale(${0.96 + paperIn * 0.04}) rotate(-0.6deg)`,
             opacity: paperIn,
             borderRadius: 10,
@@ -110,19 +110,19 @@ export const AgedDoc: React.FC<{
           )}
 
           {/* text block on the page */}
-          <div style={{ position: "absolute", inset: 0, padding: "78px 86px", color: inkColor, textShadow }}>
+          <div style={{ position: "absolute", inset: 0, padding: "104px 118px", color: inkColor, textShadow }}>
             {eyebrow && (
-              <div style={{ letterSpacing: 5, fontSize: 18, fontWeight: 700, textTransform: "uppercase", color: eyebrowColor, opacity: headSpring, marginBottom: 14 }}>
+              <div style={{ letterSpacing: 6, fontSize: 23, fontWeight: 700, textTransform: "uppercase", color: eyebrowColor, opacity: headSpring, marginBottom: 20 }}>
                 {eyebrow}
               </div>
             )}
             <div
               style={{
                 fontFamily: FONT_STACK,
-                fontSize: 64,
+                fontSize: 84,
                 fontWeight: 800,
                 lineHeight: 1.06,
-                marginBottom: 34,
+                marginBottom: 44,
                 clipPath: `inset(0 ${100 - headWipe}% 0 0)`,
                 WebkitClipPath: `inset(0 ${100 - headWipe}% 0 0)`,
               }}
@@ -141,7 +141,7 @@ export const AgedDoc: React.FC<{
                   key={i}
                   style={{
                     fontFamily: FONT_STACK,
-                    fontSize: 33,
+                    fontSize: 43,
                     fontWeight: ln.mark ? 700 : 500,
                     lineHeight: 1.5,
                     opacity: s,

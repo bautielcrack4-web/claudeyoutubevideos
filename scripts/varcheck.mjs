@@ -31,8 +31,14 @@ const structCount = STRUCT.reduce((a, k) => a + (count[k] || 0), 0);
 const nonRawDistinct = Object.keys(count).filter((k) => !k.startsWith("raw")).length;
 
 // ── umbrales (la regla dura) ────────────────────────────────────────────────
+// Modo TUTORIAL (videos how-to con literalidad de imagen por micro-acción, estilo
+// competidor): el tope de fotos sube a 65% PORQUE las muchas imágenes literales son
+// intencionales y suben comprensión. Se mantienen TODOS los demás guards de variedad
+// para que no sea spam perezoso. Activar con `"tutorial": true` en el beatsheet.
+const TUTORIAL = !!bs.tutorial || process.env.VARCHECK_TUTORIAL === "1";
+const RAW_CAP = TUTORIAL ? 0.65 : 0.55;
 const RULES = [
-  { ok: rawShare <= 0.55, msg: `fotos/clips full-screen = ${(rawShare * 100).toFixed(0)}% (debe ser ≤55% — no llenar todo de RawShot)` },
+  { ok: rawShare <= RAW_CAP, msg: `fotos/clips full-screen = ${(rawShare * 100).toFixed(0)}% (debe ser ≤${(RAW_CAP * 100).toFixed(0)}%${TUTORIAL ? " · modo tutorial" : ""})` },
   { ok: nonRawDistinct >= 11, msg: `tipos NO-raw distintos = ${nonRawDistinct} (debe ser ≥11 — usá más del catálogo)` },
   { ok: structKinds.length >= 6, msg: `formatos estructurados presentes = ${structKinds.length}/${STRUCT.length} [${structKinds.join(",")}] (≥6; faltan: ${STRUCT.filter(k=>!count[k]).join(",")})` },
   { ok: structCount / tot >= 0.12, msg: `peso de estructurados = ${(100 * structCount / tot).toFixed(0)}% (≥12% — bars/cross/process/journey/etc. no pueden ser migajas)` },

@@ -68,8 +68,11 @@ export const JourneyCanvas: React.FC<{
     arr[i] = i === 0 ? intro : arr[i - 1] + dw + tv;
   }
   const lastDwell = sec(waypoints[n - 1]?.dwell ?? 2.4);
-  const endStart = arr[n - 1] + lastDwell;
   const endEnd = durationInFrames - sec(0.4);
+  // BLINDAJE: si la duración es muy corta para todos los waypoints, el pull-back
+  // arrancaría DESPUÉS de terminar → interpolate con rango no-monótono crashea el
+  // render. Clampeamos endStart < endEnd siempre (el pull-back se acorta, no rompe).
+  const endStart = Math.min(arr[n - 1] + lastDwell, endEnd - 1);
 
   // ── cámara: posición mundo + escala, continua a través de los waypoints ──
   // journeyProg = avance de la cámara en unidades de segmento (0..n-1) → la línea
@@ -180,10 +183,15 @@ export const JourneyCanvas: React.FC<{
         const appear = interpolate(frame - (arr[i] - sec(0.6)), [0, sec(0.6)], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: easeIO });
         const distFade = interpolate(dist, [560, 1000], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
         const dim = appear * distFade;
+        // GATE POR TIEMPO de la etiqueta: visible SOLO durante el dwell de su nodo
+        // (se funde en viajes y en el pull-back) → nunca se superponen dos labels.
+        const dwellI = sec(waypoints[i].dwell ?? 2.4);
+        const winEnd = i === n - 1 ? endStart : arr[i] + dwellI;
+        const labelFocus = interpolate(frame, [arr[i] - sec(0.4), arr[i], winEnd - sec(0.4), winEnd], [0, 1, 1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: easeIO });
         const float = Math.sin(frame / 38 + i * 1.7) * 4 * m.z;
         const cardW = 250 * m.s, cardH = 176 * m.s;
         return (
-          <div key={i} style={{ position: "absolute", left: m.sx, top: m.sy + float, transform: "translate(-50%,-50%)", opacity: dim, filter: blur > 0.25 ? `blur(${blur}px)` : undefined, zIndex: Math.round(m.z * 100), pointerEvents: "none" }}>
+          <div key={i} style={{ position: "absolute", left: m.sx, top: m.sy + float, transform: "translate(-50%,-50%)", opacity: w.image ? dim : dim * labelFocus, filter: blur > 0.25 ? `blur(${blur}px)` : undefined, zIndex: Math.round(m.z * 100), pointerEvents: "none" }}>
             {w.image ? (
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
                 <div style={{ position: "relative", width: cardW, height: cardH, borderRadius: 20 * m.s, overflow: "hidden", border: `${3 * m.s}px solid ${accent}`, boxShadow: `0 ${22 * m.s}px ${50 * m.s}px rgba(0,0,0,0.5)`, background: COLORS.bg2 }}>
@@ -191,8 +199,8 @@ export const JourneyCanvas: React.FC<{
                   <div style={{ position: "absolute", inset: 0, boxShadow: "inset 0 -40px 50px rgba(0,0,0,0.35)" }} />
                   <div style={{ position: "absolute", top: -14 * m.s, left: -14 * m.s, minWidth: 46 * m.s, height: 46 * m.s, padding: `0 ${13 * m.s}px`, borderRadius: 23 * m.s, background: COLORS.bg0, border: `${3 * m.s}px solid ${accent}`, color: accent, fontSize: 24 * m.s, fontWeight: 900, display: "flex", alignItems: "center", justifyContent: "center", whiteSpace: "nowrap", boxSizing: "border-box" }}>{w.num ?? i + 1}</div>
                 </div>
-                {w.label && <div style={{ marginTop: 14 * m.s, fontSize: 33 * m.s, fontWeight: 800, color: COLORS.text, textAlign: "center" }}>{w.label}</div>}
-                {w.sub && <div style={{ marginTop: 3, fontSize: 21 * m.s, fontWeight: 600, color: COLORS.textSoft, textAlign: "center" }}>{w.sub}</div>}
+                {w.label && <div style={{ marginTop: 14 * m.s, fontSize: 33 * m.s, fontWeight: 800, color: COLORS.text, textAlign: "center", opacity: labelFocus }}>{w.label}</div>}
+                {w.sub && <div style={{ marginTop: 3, fontSize: 21 * m.s, fontWeight: 600, color: COLORS.textSoft, textAlign: "center", opacity: labelFocus }}>{w.sub}</div>}
               </div>
             ) : (
               w.label && <div style={{ fontSize: 40 * m.s, fontWeight: 900, color: COLORS.text }}>{w.label}</div>

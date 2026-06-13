@@ -51,6 +51,12 @@ if (!fs.existsSync(PROMPTS)) {
 }
 const list = JSON.parse(fs.readFileSync(PROMPTS, "utf8"));
 
+// ── throttle global (~5 req/min, el rate-limit de gpt-image-2) + reintento 429 ──
+const GAP = Number(process.env.OPENAI_IMAGE_GAP_MS) || 12500; // ms entre requests (≈5/min)
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+let gate = Promise.resolve();
+const slot = () => { const p = gate.then(() => sleep(GAP)); gate = p.catch(() => {}); return p; };
+
 const genOne = async (item) => {
   const { name, prompt, size = DEFAULT_SIZE } = item;
   const dest = path.join(OUT, `${name}.png`);
@@ -59,13 +65,24 @@ const genOne = async (item) => {
     return { name, prompt, file: `${name}.png`, skipped: true };
   }
   const body = { model: MODEL, prompt, size, quality: QUALITY, n: 1 };
-  const res = await fetch("https://api.openai.com/v1/images/generations", {
-    method: "POST",
-    headers: { "Content-Type": "application/json", Authorization: `Bearer ${KEY}` },
-    body: JSON.stringify(body),
-  });
-  if (!res.ok) {
+  let res, attempt = 0;
+  while (true) {
+    await slot(); // espaciado global
+    res = await fetch("https://api.openai.com/v1/images/generations", {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Authorization: `Bearer ${KEY}` },
+      body: JSON.stringify(body),
+    });
+    if (res.ok) break;
     const txt = (await res.text()).slice(0, 200);
+    if ((res.status === 429 || res.status >= 500) && attempt < 6) {
+      const ra = Number(res.headers.get("retry-after"));
+      const wait = (ra > 0 ? ra * 1000 : 0) || Math.min(60000, 8000 * Math.pow(1.6, attempt));
+      console.log(`  …429/${res.status} en ${name}, espero ${(wait / 1000).toFixed(0)}s (intento ${attempt + 1})`);
+      await sleep(wait);
+      attempt++;
+      continue;
+    }
     throw new Error(`API ${res.status} ${txt}`);
   }
   const data = await res.json();

@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 import { useCurrentFrame, useVideoConfig, spring } from "remotion";
-import { COLORS, FONT_STACK, SPRING_SOFT, SPRING_SNAPPY, glass, sec } from "../theme";
+import { COLORS, FONT_STACK, SPRING_SOFT, SPRING_SNAPPY, sec } from "../theme";
 import { SceneFrame } from "../components/SceneFrame";
 import { SfxCue, SFX } from "../components/Sfx";
 
@@ -54,6 +54,14 @@ export const Checklist: React.FC<{
   const { fps } = useVideoConfig();
   const C = TONES[accent];
   const card = spring({ frame, fps, config: SPRING_SOFT });
+  // Brand light: tarjeta PARCHMENT clara sobre fondo (tinta oscura legible); sobre
+  // FOTO, tarjeta de tinta oscura + texto CREMA. Limpio y suave, sin glow pesado.
+  const onImage = !!image;
+  const cardBg = onImage
+    ? { background: "rgba(26,22,18,0.82)", boxShadow: "0 30px 80px rgba(0,0,0,0.5)", border: "1px solid rgba(255,247,232,0.14)" }
+    : { background: COLORS.bg1, boxShadow: "0 26px 64px rgba(42,38,32,0.16)", border: `1px solid ${COLORS.bg2}` };
+  const inkMain = onImage ? COLORS.bg0 : COLORS.text;
+  const inkDim = onImage ? "rgba(255,247,232,0.55)" : COLORS.textDim;
   const rowH = 92;
   const cardH = 150 + items.length * rowH + 40;
   const side = pin ?? (image ? "right" : "center");
@@ -82,13 +90,11 @@ export const Checklist: React.FC<{
         <div
           style={{
             width: BOX_W,
-            ...glass("dark"),
-            // over a photo the card needs to be more opaque so text reads
-            ...(image ? { background: "rgba(14,13,18,0.82)", boxShadow: "0 36px 90px rgba(0,0,0,0.6)" } : null),
+            ...cardBg,
             borderRadius: 34,
             padding: "44px 52px",
             opacity: card,
-            transform: `scale(${0.92 + card * 0.08}) translateY(${(1 - card) * 26}px)`,
+            transform: `scale(${0.94 + card * 0.06}) translateY(${(1 - card) * 22}px)`,
             minHeight: cardH,
           }}
         >
@@ -98,7 +104,7 @@ export const Checklist: React.FC<{
               {eyebrow}
             </div>
           )}
-          <div style={{ fontSize: 46, fontWeight: 900, color: COLORS.text, textTransform: "uppercase", letterSpacing: 0.5, marginTop: 6, marginBottom: 26, opacity: card }}>
+          <div style={{ fontSize: 46, fontWeight: 900, color: inkMain, textTransform: "uppercase", letterSpacing: 0.5, marginTop: 6, marginBottom: 26, opacity: card }}>
             {title}
           </div>
 
@@ -112,7 +118,7 @@ export const Checklist: React.FC<{
             // ✓ draws on shortly after the row appears
             const tick = spring({ frame: frame - (t0 + sec(0.2)), fps, config: { damping: 200, mass: 1, stiffness: 80 } });
             const pulse = isDoing ? 0.5 + 0.5 * Math.sin(frame / 10) : 0;
-            const boxColor = isDone ? C : isDoing ? C : COLORS.textDim;
+            const boxColor = isDone ? C : isDoing ? C : inkDim;
 
             return (
               <div
@@ -133,25 +139,23 @@ export const Checklist: React.FC<{
                     y={4}
                     width={44}
                     height={44}
-                    rx={12}
-                    fill={isDone ? `${C}22` : "transparent"}
+                    rx={13}
+                    fill={isDone ? C : "transparent"}
                     stroke={boxColor}
-                    strokeWidth={3.5}
+                    strokeWidth={3}
                     opacity={isDoing ? 0.55 + pulse * 0.45 : 1}
-                    style={isDoing ? { filter: `drop-shadow(0 0 ${6 + pulse * 10}px ${C})` } : undefined}
                   />
                   {isDone && (
                     <path
                       d="M 14 27 L 23 36 L 39 17"
                       fill="none"
-                      stroke={C}
+                      stroke={onImage ? COLORS.bg0 : "#FBF6E9"}
                       strokeWidth={5}
                       strokeLinecap="round"
                       strokeLinejoin="round"
                       pathLength={1}
                       strokeDasharray={1}
                       strokeDashoffset={1 - tick}
-                      style={{ filter: `drop-shadow(0 0 6px ${C}aa)` }}
                     />
                   )}
                 </svg>
@@ -162,15 +166,13 @@ export const Checklist: React.FC<{
                     style={{
                       fontSize: 32,
                       fontWeight: 700,
-                      color: isDone ? COLORS.textSoft : COLORS.text,
-                      textDecoration: isDone ? "line-through" : "none",
-                      textDecorationColor: `${C}99`,
+                      color: inkMain,
                     }}
                   >
                     {it.text}
                   </span>
                   {it.note && (
-                    <span style={{ fontSize: 20, fontWeight: 600, color: COLORS.textDim }}>{it.note}</span>
+                    <span style={{ fontSize: 20, fontWeight: 600, color: inkDim, marginTop: 2 }}>{it.note}</span>
                   )}
                 </div>
               </div>

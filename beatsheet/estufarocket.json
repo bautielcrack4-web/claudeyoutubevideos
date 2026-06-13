@@ -1,0 +1,1544 @@
+{
+ "video": "estufarocket",
+ "avatar": "estufarocket_opt.mp4",
+ "beats": [
+  {
+   "id": "hook_0",
+   "start": 1.3,
+   "dur": 11.76,
+   "kind": "talk",
+   "hue": "amber"
+  },
+  {
+   "id": "hook_1",
+   "start": 13.06,
+   "dur": 6.74,
+   "kind": "raw",
+   "src": "broll/rb_kindling_hand.mp4",
+   "hue": "red",
+   "kicker": "Un puñado de ramitas",
+   "hold": true
+  },
+  {
+   "id": "hook_2",
+   "start": 19.8,
+   "dur": 3.96,
+   "kind": "raw",
+   "src": "img/er_estufa_brasas.png",
+   "hue": "blue",
+   "kicker": "Calienta toda la casa",
+   "gen": {
+    "type": "image",
+    "name": "er_estufa_brasas",
+    "prompt": "Foto documental muy realista, 16:9. a glowing rusty rocket stove burning a tiny handful of thin twigs inside a cozy dim cabin, warm fire glow. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "hook_3",
+   "start": 23.76,
+   "dur": 3.96,
+   "kind": "raw",
+   "src": "vid/erv_nieve_ventana.mp4",
+   "hue": "amber",
+   "gen": {
+    "type": "clip",
+    "image": "img/erv_nieve_ventana.png",
+    "prompt": "Foto documental muy realista, 16:9. frost and snow building on a small cabin window from inside, cold blue outside warm inside. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 75
+   }
+  },
+  {
+   "id": "hook_4",
+   "start": 27.72,
+   "dur": 3.96,
+   "kind": "raw",
+   "src": "img/er_ramitas_caben.png",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "er_ramitas_caben",
+    "prompt": "Foto documental muy realista, 16:9. a single open palm holding just a few thin twigs, close-up, that's all the fuel. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "hook_5",
+   "start": 31.68,
+   "dur": 3.97,
+   "kind": "raw",
+   "src": "img/er_termometro_22.png",
+   "hue": "blue",
+   "gen": {
+    "type": "image",
+    "name": "er_termometro_22",
+    "prompt": "Foto documental muy realista, 16:9. an old analog room thermometer on a wooden cabin wall reading a warm temperature, frost on the window behind. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "hook_6",
+   "start": 35.65,
+   "dur": 3.96,
+   "kind": "raw",
+   "src": "img/er_tomas_mangas.png",
+   "hue": "amber",
+   "kicker": "En mangas de camisa",
+   "gen": {
+    "type": "image",
+    "name": "er_tomas_mangas",
+    "prompt": "Foto documental muy realista, 16:9. un hombre rural de unos 45 años, pelo oscuro y barba corta canosa, piel curtida, camisa de trabajo verde oliva y delantal de cuero marrón, in shirt sleeves inside a warm wooden cabin while snow falls outside the window, relaxed, en una chacra rural de la Patagonia. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "hook_7",
+   "start": 39.61,
+   "dur": 3.96,
+   "kind": "raw",
+   "src": "img/er_garrafa_polvo.png",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "er_garrafa_polvo",
+    "prompt": "Foto documental muy realista, 16:9. a dusty unused gas cylinder bottle in a corner of a shed, cobwebs, untouched all winter. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "hook_8",
+   "start": 43.57,
+   "dur": 2.64,
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "La"
+    },
+    {
+     "t": "cuenta"
+    },
+    {
+     "t": "de"
+    },
+    {
+     "t": "gas:"
+    },
+    {
+     "t": "cero",
+     "hl": true
+    }
+   ],
+   "eyebrow": "Todo el invierno",
+   "bg": "image",
+   "image": "img/er_factura_gas.png",
+   "hue": "blue"
+  },
+  {
+   "id": "hook_9",
+   "start": 46.21,
+   "dur": 3.97,
+   "kind": "raw",
+   "src": "img/er_estufa_barro_full.png",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "er_estufa_barro_full",
+    "prompt": "Foto documental muy realista, 16:9. a finished cob rocket mass heater with a metal drum top in a rustic cabin, the whole system, warm. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "hook_10",
+   "start": 50.18,
+   "dur": 3.96,
+   "kind": "raw",
+   "src": "broll/rb_snow_cabin.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "hook_11",
+   "start": 54.14,
+   "dur": 3.96,
+   "kind": "raw",
+   "src": "img/er_tomas_hook_senala.png",
+   "hue": "blue",
+   "kicker": "Mirá esto",
+   "gen": {
+    "type": "image",
+    "name": "er_tomas_hook_senala",
+    "prompt": "Foto documental muy realista, 16:9. un hombre rural de unos 45 años, pelo oscuro y barba corta canosa, piel curtida, camisa de trabajo verde oliva y delantal de cuero marrón, pointing at his rocket stove with a confident look, inviting the viewer to watch, en una chacra rural de la Patagonia. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "ident_0",
+   "start": 58.1,
+   "dur": 16.86,
+   "kind": "raw",
+   "src": "img/er_tomas_retrato.png",
+   "hue": "red",
+   "kicker": "Tomás",
+   "hold": true,
+   "gen": {
+    "type": "image",
+    "name": "er_tomas_retrato",
+    "prompt": "Foto documental muy realista, 16:9. un hombre rural de unos 45 años, pelo oscuro y barba corta canosa, piel curtida, camisa de trabajo verde oliva y delantal de cuero marrón, documentary portrait standing in front of a hand-built wooden house he made, calm confident gaze, en una chacra rural de la Patagonia. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "ident_1",
+   "start": 74.96,
+   "dur": 9.92,
+   "kind": "raw",
+   "src": "img/er_tomas_construyo.png",
+   "hue": "blue",
+   "gen": {
+    "type": "image",
+    "name": "er_tomas_construyo",
+    "prompt": "Foto documental muy realista, 16:9. un hombre rural de unos 45 años, pelo oscuro y barba corta canosa, piel curtida, camisa de trabajo verde oliva y delantal de cuero marrón, younger version building a wooden cabin wall by hand twenty years ago, sawdust, tools, en una chacra rural de la Patagonia. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "ident_2",
+   "start": 84.88,
+   "dur": 6.95,
+   "kind": "quote",
+   "image": "img/er_manos_trabajo.png",
+   "text": "No soy ingeniero. Soy un *hombre que prueba cosas*.",
+   "hue": "amber"
+  },
+  {
+   "id": "ident_3",
+   "start": 91.83,
+   "dur": 9.92,
+   "kind": "raw",
+   "src": "img/er_tomas_incomoda.png",
+   "hue": "red",
+   "kicker": "La parte que te va a incomodar",
+   "gen": {
+    "type": "image",
+    "name": "er_tomas_incomoda",
+    "prompt": "Foto documental muy realista, 16:9. un hombre rural de unos 45 años, pelo oscuro y barba corta canosa, piel curtida, camisa de trabajo verde oliva y delantal de cuero marrón, leaning toward camera with a serious knowing look inside his workshop, oil lamp behind, en una chacra rural de la Patagonia. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "ident_4",
+   "start": 101.75,
+   "dur": 6.61,
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "Probé"
+    },
+    {
+     "t": "lo"
+    },
+    {
+     "t": "que"
+    },
+    {
+     "t": "funciona."
+    },
+    {
+     "t": "El"
+    },
+    {
+     "t": "resto"
+    },
+    {
+     "t": "lo"
+    },
+    {
+     "t": "tiré",
+     "hl": true
+    }
+   ],
+   "eyebrow": "20 años",
+   "bg": "grid",
+   "hue": "amber"
+  },
+  {
+   "id": "promesa_0",
+   "start": 108.36,
+   "dur": 4.9,
+   "kind": "raw",
+   "src": "img/er_pila_lena_fina.png",
+   "hue": "blue",
+   "gen": {
+    "type": "image",
+    "name": "er_pila_lena_fina",
+    "prompt": "Foto documental muy realista, 16:9. a neat pile of thin dry kindling twigs gathered next to a stone wall, soft daylight. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "promesa_1",
+   "start": 113.26,
+   "dur": 3.27,
+   "kind": "stat",
+   "value": 1,
+   "prefix": "< ",
+   "suffix": " mes de gas",
+   "label": "lo que cuesta armar todo el sistema",
+   "eyebrow": "Te lo prometo",
+   "hue": "amber"
+  },
+  {
+   "id": "promesa_2",
+   "start": 116.53,
+   "dur": 3.27,
+   "kind": "chips",
+   "bg": "image",
+   "image": "img/er_estufa_barro_full.png",
+   "imageDarken": 0.6,
+   "title": "Lo que vas a saber al final",
+   "chips": [
+    "Estufa rocket",
+    "Muro Trombe",
+    "Sin combustible que comprar"
+   ],
+   "hue": "amber"
+  },
+  {
+   "id": "promesa_3",
+   "start": 119.8,
+   "dur": 4.9,
+   "kind": "raw",
+   "src": "img/er_cabana_humo.png",
+   "hue": "blue",
+   "gen": {
+    "type": "image",
+    "name": "er_cabana_humo",
+    "prompt": "Foto documental muy realista, 16:9. a small wooden patagonian cabin with a thin wisp of smoke from its chimney, snowy field, overcast. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "problema_0",
+   "start": 124.7,
+   "dur": 6.29,
+   "kind": "raw",
+   "src": "vid/erv_chimenea_humo.mp4",
+   "hue": "amber",
+   "kicker": "Pagás por calentar el cielo",
+   "gen": {
+    "type": "clip",
+    "image": "img/erv_chimenea_humo.png",
+    "prompt": "Foto documental muy realista, 16:9. thick smoke pouring out of a tall metal chimney into a grey sky, heat escaping. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 90
+   }
+  },
+  {
+   "id": "problema_1",
+   "start": 130.99,
+   "dur": 10.07,
+   "kind": "diagram",
+   "eyebrow": "A dónde se va tu calor",
+   "slides": [
+    {
+     "image": "img/dg_er_perdida.png",
+     "eyebrow": "El calor se escapa antes de quedarse"
+    }
+   ],
+   "hue": "red"
+  },
+  {
+   "id": "problema_2",
+   "start": 141.06,
+   "dur": 5.25,
+   "kind": "bars",
+   "title": "Cuánto calor aprovechás",
+   "unit": "%",
+   "bars": [
+    {
+     "label": "Hogar abierto",
+     "value": 10,
+     "tone": "danger"
+    },
+    {
+     "label": "Salamandra común",
+     "value": 50
+    },
+    {
+     "label": "Estufa rocket",
+     "value": 90,
+     "winner": true
+    }
+   ],
+   "hue": "blue"
+  },
+  {
+   "id": "problema_3",
+   "start": 146.31,
+   "dur": 6.29,
+   "kind": "raw",
+   "src": "broll/rb_woodstove_fire.mp4",
+   "hue": "amber",
+   "kicker": "La salamandra común"
+  },
+  {
+   "id": "problema_4",
+   "start": 152.6,
+   "dur": 6.3,
+   "kind": "raw",
+   "src": "img/er_hogar_abierto.png",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "er_hogar_abierto",
+    "prompt": "Foto documental muy realista, 16:9. an open fireplace with a roaring fire, most heat visibly going up the chimney, drafty old room. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "problema_5",
+   "start": 158.9,
+   "dur": 6.29,
+   "kind": "raw",
+   "src": "vid/erv_humo_caño.mp4",
+   "hue": "blue",
+   "gen": {
+    "type": "clip",
+    "image": "img/erv_humo_caño.png",
+    "prompt": "Foto documental muy realista, 16:9. smoke and heat shimmer rising fast out of a stovepipe into cold air, wasted warmth. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 75
+   }
+  },
+  {
+   "id": "problema_6",
+   "start": 165.19,
+   "dur": 4.2,
+   "kind": "chips",
+   "bg": "image",
+   "image": "img/er_hogar_abierto.png",
+   "imageDarken": 0.62,
+   "title": "El problema no es el frío",
+   "chips": [
+    "El calor",
+    "se escapa",
+    "antes de quedarse"
+   ],
+   "hue": "red"
+  },
+  {
+   "id": "problema_7",
+   "start": 169.39,
+   "dur": 6.29,
+   "kind": "raw",
+   "src": "img/er_lena_apilada.png",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "er_lena_apilada",
+    "prompt": "Foto documental muy realista, 16:9. a large pile of chopped thick firewood logs stacked by a wall, the old expensive way. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "ancestral_0",
+   "start": 175.68,
+   "dur": 9.82,
+   "kind": "aged",
+   "heading": "La pared que abriga",
+   "lines": [
+    {
+     "text": "Quemar poco, muy caliente."
+    },
+    {
+     "text": "Guardar el calor en una masa de barro."
+    }
+   ],
+   "image": "img/er_abuelo_pared.png",
+   "hue": "red"
+  },
+  {
+   "id": "ancestral_1",
+   "start": 185.5,
+   "dur": 8.19,
+   "kind": "chips",
+   "bg": "image",
+   "image": "img/er_estufa_europa.png",
+   "imageDarken": 0.62,
+   "title": "El secreto de siempre",
+   "chips": [
+    "Quemar poco",
+    "Muy caliente",
+    "Guardar en masa"
+   ],
+   "hue": "amber"
+  },
+  {
+   "id": "ancestral_2",
+   "start": 193.69,
+   "dur": 12.27,
+   "kind": "raw",
+   "src": "img/er_estufa_europa.png",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "er_estufa_europa",
+    "prompt": "Foto documental muy realista, 16:9. a traditional european masonry tile stove (kachelofen) in an old alpine home, centuries old. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "ancestral_3",
+   "start": 205.96,
+   "dur": 12.28,
+   "kind": "raw",
+   "src": "img/er_pared_masa.png",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "er_pared_masa",
+    "prompt": "Foto documental muy realista, 16:9. a massive earthen thermal mass wall in an old farmhouse, thick and warm, hand worn. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "ancestral_4",
+   "start": 218.24,
+   "dur": 8.18,
+   "kind": "callout",
+   "image": "img/er_piso_coreano.png",
+   "figure": "2.000 años",
+   "caption": "Calentar la casa con el humo del fuego.",
+   "hue": "blue"
+  },
+  {
+   "id": "ancestral_5",
+   "start": 226.42,
+   "dur": 12.28,
+   "kind": "raw",
+   "src": "vid/erv_brasa_barro.mp4",
+   "hue": "amber",
+   "gen": {
+    "type": "clip",
+    "image": "img/erv_brasa_barro.png",
+    "prompt": "Foto documental muy realista, 16:9. embers glowing inside a thick earthen mass, heat slowly radiating, warm. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 75
+   }
+  },
+  {
+   "id": "rocket_mat_0",
+   "start": 238.7,
+   "dur": 3.34,
+   "kind": "rule",
+   "number": "01",
+   "title": "La estufa rocket de barro",
+   "hue": "blue"
+  },
+  {
+   "id": "rocket_mat_1",
+   "start": 242.04,
+   "dur": 5.02,
+   "kind": "raw",
+   "src": "img/er_ladrillos_pila.png",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "er_ladrillos_pila",
+    "prompt": "Foto documental muy realista, 16:9. a stack of common red clay bricks and a pile of mud mortar on the ground of a rural yard. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "rocket_mat_2",
+   "start": 247.06,
+   "dur": 5.01,
+   "kind": "raw",
+   "src": "broll/rb_adobe_brick.mp4",
+   "hue": "red",
+   "kicker": "Adobe del propio patio"
+  },
+  {
+   "id": "rocket_mat_3",
+   "start": 252.07,
+   "dur": 5.02,
+   "kind": "raw",
+   "src": "broll/rb_cob_mix.mp4",
+   "hue": "blue",
+   "kicker": "Barro, arena y paja"
+  },
+  {
+   "id": "rocket_mat_4",
+   "start": 257.09,
+   "dur": 5.01,
+   "kind": "raw",
+   "src": "img/er_tambor_metal.png",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "er_tambor_metal",
+    "prompt": "Foto documental muy realista, 16:9. an old empty 200-liter metal oil drum lying in a rural shed, rusty, reused. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "rocket_mat_5",
+   "start": 262.1,
+   "dur": 5.02,
+   "kind": "raw",
+   "src": "img/er_materiales_juntos.png",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "er_materiales_juntos",
+    "prompt": "Foto documental muy realista, 16:9. bricks, an old metal drum, stovepipe and a bucket of mud laid out together on the ground, ready to build. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "rocket_mat_6",
+   "start": 267.12,
+   "dur": 3.34,
+   "kind": "chips",
+   "bg": "image",
+   "image": "img/er_materiales_juntos.png",
+   "imageDarken": 0.6,
+   "title": "Casi todo recuperado",
+   "chips": [
+    "Ladrillos / adobe",
+    "Tambor viejo",
+    "Caño de chapa",
+    "Barro del patio"
+   ],
+   "hue": "amber"
+  },
+  {
+   "id": "rocket_mat_7",
+   "start": 270.46,
+   "dur": 3.68,
+   "kind": "half",
+   "src": "img/er_cano_chapa.png",
+   "side": "right",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "er_cano_chapa",
+    "prompt": "Foto documental muy realista, 16:9. a length of galvanized sheet metal stovepipe leaning against a wooden wall. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   },
+   "kicker": "El caño de chapa"
+  },
+  {
+   "id": "rocket_jota_0",
+   "start": 274.14,
+   "dur": 15.28,
+   "kind": "diagram",
+   "eyebrow": "El corazón: la jota de fuego",
+   "slides": [
+    {
+     "image": "img/dg_er_jota.png",
+     "eyebrow": "El aire entra, baja y sube con fuerza"
+    },
+    {
+     "image": "img/dg_er_tiro.png",
+     "eyebrow": "Quema casi completo, casi sin humo"
+    }
+   ],
+   "hue": "amber"
+  },
+  {
+   "id": "rocket_jota_1",
+   "start": 289.42,
+   "dur": 16.24,
+   "kind": "raw",
+   "src": "broll/rb_rocket_burn.mp4",
+   "hue": "red",
+   "kicker": "Suena como un cohete",
+   "hold": true
+  },
+  {
+   "id": "rocket_jota_2",
+   "start": 305.66,
+   "dur": 9.55,
+   "kind": "raw",
+   "src": "broll/rb_feed_twigs.mp4",
+   "hue": "blue",
+   "kicker": "Ramitas finas, paradas"
+  },
+  {
+   "id": "rocket_jota_3",
+   "start": 315.21,
+   "dur": 8.27,
+   "kind": "annotated",
+   "image": "img/er_riser_caliente.png",
+   "eyebrow": "El riser caliente",
+   "caption": "Acá quema casi sin humo, a 1000°",
+   "annotations": [
+    {
+     "kind": "arrow",
+     "x": 50,
+     "y": 34,
+     "label": "Llama hacia arriba"
+    }
+   ],
+   "hue": "amber"
+  },
+  {
+   "id": "rocket_jota_4",
+   "start": 323.48,
+   "dur": 8.28,
+   "kind": "annotated",
+   "image": "img/er_jota_corte.png",
+   "eyebrow": "La jota de fuego",
+   "caption": "El aire entra, baja y sube con fuerza",
+   "annotations": [
+    {
+     "kind": "arrow",
+     "x": 24,
+     "y": 30,
+     "label": "Entra la leña"
+    },
+    {
+     "kind": "circle",
+     "x": 50,
+     "y": 70,
+     "label": "Túnel"
+    },
+    {
+     "kind": "arrow",
+     "x": 72,
+     "y": 28,
+     "label": "Riser caliente"
+    }
+   ],
+   "hue": "red"
+  },
+  {
+   "id": "rocket_jota_5",
+   "start": 331.76,
+   "dur": 9.55,
+   "kind": "raw",
+   "src": "img/er_ramitas_vs_tronco.png",
+   "hue": "blue",
+   "gen": {
+    "type": "image",
+    "name": "er_ramitas_vs_tronco",
+    "prompt": "Foto documental muy realista, 16:9. a small handful of thin twigs next to one big log on a wooden surface, size comparison. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "rocket_jota_6",
+   "start": 341.31,
+   "dur": 9.55,
+   "kind": "raw",
+   "src": "img/er_chimenea_sin_humo.png",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "er_chimenea_sin_humo",
+    "prompt": "Foto documental muy realista, 16:9. a chimney top of a rocket stove emitting only faint clear heat shimmer, no smoke, clean burn. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "rocket_banco_0",
+   "start": 350.86,
+   "dur": 9.61,
+   "kind": "raw",
+   "src": "img/er_tomas_tambor.png",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "er_tomas_tambor",
+    "prompt": "Foto documental muy realista, 16:9. un hombre rural de unos 45 años, pelo oscuro y barba corta canosa, piel curtida, camisa de trabajo verde oliva y delantal de cuero marrón, placing an upturned metal drum over the brick heat riser of a rocket mass heater he is building, en una chacra rural de la Patagonia. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "rocket_banco_1",
+   "start": 360.47,
+   "dur": 8.02,
+   "kind": "cross",
+   "title": "El banco de masa térmica",
+   "eyebrow": "Por dónde viaja el calor",
+   "layers": [
+    {
+     "label": "Tambor (calor inmediato)",
+     "color": "#A9794A",
+     "weight": 2
+    },
+    {
+     "label": "Caño serpenteando",
+     "color": "#7C8A5A",
+     "weight": 3
+    },
+    {
+     "label": "Banco de barro macizo",
+     "color": "#6F8478",
+     "weight": 4
+    },
+    {
+     "label": "Chimenea (humo frío)",
+     "color": "#6E8B47",
+     "weight": 1
+    }
+   ],
+   "hue": "blue"
+  },
+  {
+   "id": "rocket_banco_2",
+   "start": 368.49,
+   "dur": 9.61,
+   "kind": "raw",
+   "src": "img/er_cano_serpentea.png",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "er_cano_serpentea",
+    "prompt": "Foto documental muy realista, 16:9. a stovepipe snaking back and forth inside a half-built cob bench before being covered with clay. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "rocket_banco_3",
+   "start": 378.1,
+   "dur": 16.34,
+   "kind": "raw",
+   "src": "broll/rb_mass_heater.mp4",
+   "hue": "red",
+   "kicker": "El banco de barro",
+   "hold": true
+  },
+  {
+   "id": "rocket_banco_4",
+   "start": 394.44,
+   "dur": 9.62,
+   "kind": "raw",
+   "src": "vid/erv_mano_banco_tibio.mp4",
+   "hue": "blue",
+   "gen": {
+    "type": "clip",
+    "image": "img/erv_mano_banco_tibio.png",
+    "prompt": "Foto documental muy realista, 16:9. a hand resting on a warm earthen bench surface, feeling the gentle heat, cozy night. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 75
+   }
+  },
+  {
+   "id": "rocket_banco_5",
+   "start": 404.06,
+   "dur": 6.41,
+   "kind": "stat",
+   "value": 12,
+   "suffix": " horas",
+   "label": "sigue tibio después de que el fuego se apagó",
+   "eyebrow": "El banco de masa",
+   "hue": "amber"
+  },
+  {
+   "id": "rocket_banco_6",
+   "start": 410.47,
+   "dur": 16.34,
+   "kind": "raw",
+   "src": "img/er_tomas_banco_sentado.png",
+   "hue": "red",
+   "kicker": "Tibio 10-12 horas después",
+   "hold": true,
+   "gen": {
+    "type": "image",
+    "name": "er_tomas_banco_sentado",
+    "prompt": "Foto documental muy realista, 16:9. un hombre rural de unos 45 años, pelo oscuro y barba corta canosa, piel curtida, camisa de trabajo verde oliva y delantal de cuero marrón, sitting relaxed on a warm earthen mass bench at night, calm, cabin lit by lamp, en una chacra rural de la Patagonia. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "inject1_0",
+   "start": 426.81,
+   "dur": 24.71,
+   "kind": "diagram",
+   "eyebrow": "Los 35 sistemas, paso a paso",
+   "slides": [
+    {
+     "image": "img/dg_er_manual.png",
+     "eyebrow": "Las medidas exactas, en el manual"
+    }
+   ],
+   "hue": "blue"
+  },
+  {
+   "id": "inject1_1",
+   "start": 451.52,
+   "dur": 15.45,
+   "kind": "raw",
+   "src": "img/er_manual_medidas.png",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "er_manual_medidas",
+    "prompt": "Foto documental muy realista, 16:9. an open hand-drawn technical manual page with stove measurement diagrams, ruler and pencil, warm desk light, text not legible. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "seguridad_0",
+   "start": 466.97,
+   "dur": 16.41,
+   "kind": "raw",
+   "src": "img/er_detector_co.png",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "er_detector_co",
+    "prompt": "Foto documental muy realista, 16:9. a small round carbon monoxide detector mounted on a wooden cabin wall, simple, practical. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "seguridad_1",
+   "start": 483.38,
+   "dur": 13.12,
+   "kind": "checklist",
+   "title": "Reglas que NO se negocian",
+   "items": [
+    {
+     "text": "Chimenea que saca bien los gases",
+     "state": "done"
+    },
+    {
+     "text": "Detector de monóxido a pilas",
+     "state": "done"
+    },
+    {
+     "text": "Quema limpia y caliente",
+     "state": "done"
+    }
+   ],
+   "hue": "red"
+  },
+  {
+   "id": "seguridad_2",
+   "start": 496.5,
+   "dur": 16.41,
+   "kind": "raw",
+   "src": "img/er_tomas_chimenea.png",
+   "hue": "blue",
+   "gen": {
+    "type": "image",
+    "name": "er_tomas_chimenea",
+    "prompt": "Foto documental muy realista, 16:9. un hombre rural de unos 45 años, pelo oscuro y barba corta canosa, piel curtida, camisa de trabajo verde oliva y delantal de cuero marrón, checking a metal chimney pipe going through a cabin roof, practical safety check, en una chacra rural de la Patagonia. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "seguridad_3",
+   "start": 512.91,
+   "dur": 12.03,
+   "kind": "splitlist",
+   "title": "El fuego se respeta",
+   "items": [
+    "Quema limpia = menos monóxido",
+    "Recorrido sellado",
+    "Detector siempre"
+   ],
+   "palette": "G",
+   "hue": "amber"
+  },
+  {
+   "id": "trombe_0",
+   "start": 524.94,
+   "dur": 11.85,
+   "kind": "rule",
+   "number": "02",
+   "title": "El muro Trombe solar",
+   "hue": "red"
+  },
+  {
+   "id": "trombe_1",
+   "start": 536.79,
+   "dur": 17.77,
+   "kind": "raw",
+   "src": "vid/erv_sol_invierno.mp4",
+   "hue": "blue",
+   "kicker": "El sol calienta gratis",
+   "gen": {
+    "type": "clip",
+    "image": "img/erv_sol_invierno.png",
+    "prompt": "Foto documental muy realista, 16:9. bright winter sun low over a snowy field hitting the wall of a rural house, cold clear day. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 90
+   }
+  },
+  {
+   "id": "trombe_2",
+   "start": 554.56,
+   "dur": 28.44,
+   "kind": "diagram",
+   "eyebrow": "Cómo funciona el muro Trombe",
+   "slides": [
+    {
+     "image": "img/dg_er_trombe1.png",
+     "eyebrow": "El muro se carga de sol todo el día"
+    },
+    {
+     "image": "img/dg_er_trombe2.png",
+     "eyebrow": "De noche te lo devuelve, sin electricidad"
+    }
+   ],
+   "hue": "amber"
+  },
+  {
+   "id": "trombe_3",
+   "start": 583,
+   "dur": 17.78,
+   "kind": "raw",
+   "src": "img/er_muro_oscuro.png",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "er_muro_oscuro",
+    "prompt": "Foto documental muy realista, 16:9. a house wall painted dark, almost black, on the sunny side of a rural home, glass panel in front. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "trombe_4",
+   "start": 600.78,
+   "dur": 17.77,
+   "kind": "raw",
+   "src": "img/er_vidrio_marco.png",
+   "hue": "blue",
+   "gen": {
+    "type": "image",
+    "name": "er_vidrio_marco",
+    "prompt": "Foto documental muy realista, 16:9. a simple wooden-framed glass panel mounted a few centimeters in front of a dark wall, air gap visible. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "trombe_5",
+   "start": 618.55,
+   "dur": 17.78,
+   "kind": "raw",
+   "src": "broll/rb_sun_window.mp4",
+   "hue": "amber",
+   "kicker": "El sol entra por el vidrio"
+  },
+  {
+   "id": "trombe_6",
+   "start": 636.33,
+   "dur": 17.77,
+   "kind": "raw",
+   "src": "img/er_aberturas_muro.png",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "er_aberturas_muro",
+    "prompt": "Foto documental muy realista, 16:9. two vents, one high one low, in a Trombe wall, warm air rising out the top into a room. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "trombe_7",
+   "start": 654.1,
+   "dur": 11.85,
+   "kind": "chips",
+   "bg": "image",
+   "image": "img/er_muro_oscuro.png",
+   "imageDarken": 0.6,
+   "title": "Combustible: el sol",
+   "chips": [
+    "Muro oscuro",
+    "Vidrio delante",
+    "Cámara de aire",
+    "Cero electricidad"
+   ],
+   "hue": "amber"
+  },
+  {
+   "id": "trombe_8",
+   "start": 665.95,
+   "dur": 15.41,
+   "kind": "infzoom",
+   "images": [
+    {
+     "src": "img/er_muro_oscuro.png"
+    },
+    {
+     "src": "img/er_vidrio_marco.png"
+    },
+    {
+     "src": "img/er_aberturas_muro.png"
+    }
+   ],
+   "hue": "amber"
+  },
+  {
+   "id": "trombe_9",
+   "start": 681.36,
+   "dur": 17.77,
+   "kind": "raw",
+   "src": "img/er_tomas_mano_muro.png",
+   "hue": "red",
+   "kicker": "Caliente al atardecer, sin gastar nada",
+   "gen": {
+    "type": "image",
+    "name": "er_tomas_mano_muro",
+    "prompt": "Foto documental muy realista, 16:9. un hombre rural de unos 45 años, pelo oscuro y barba corta canosa, piel curtida, camisa de trabajo verde oliva y delantal de cuero marrón, placing a palm on a dark Trombe wall at dusk feeling the stored warmth, satisfied expression, en una chacra rural de la Patagonia. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "inject2_0",
+   "start": 699.13,
+   "dur": 20.56,
+   "kind": "costtally",
+   "left": {
+    "label": "El sistema actual",
+    "note": "factura cada mes, para siempre",
+    "total": 480,
+    "bad": true
+   },
+   "right": {
+    "label": "Constructor Libre",
+    "note": "sol y barro, gratis",
+    "total": 0
+   },
+   "hue": "blue"
+  },
+  {
+   "id": "inject2_1",
+   "start": 719.69,
+   "dur": 19.63,
+   "kind": "quote",
+   "image": "img/er_corporacion_factura.png",
+   "text": "Que dejes de *depender de ellos*.",
+   "accent": "danger",
+   "hue": "amber"
+  },
+  {
+   "id": "empezar_0",
+   "start": 739.32,
+   "dur": 59.32,
+   "kind": "process",
+   "title": "Empezá chico",
+   "eyebrow": "Sin miedo",
+   "steps": [
+    {
+     "title": "Estufa de prueba",
+     "desc": "4 ladrillos y una lata",
+     "image": "img/er_prueba_ladrillos.png"
+    },
+    {
+     "title": "Sentí el tiro",
+     "desc": "3 ramitas, mucho calor",
+     "image": "img/er_prueba_llama.png"
+    },
+    {
+     "title": "La pared del sol",
+     "desc": "tu futuro muro Trombe",
+     "image": "img/er_pared_sol.png"
+    }
+   ],
+   "hue": "amber"
+  },
+  {
+   "id": "empezar_1",
+   "start": 798.64,
+   "dur": 47.46,
+   "kind": "aged",
+   "heading": "Dale tiempo al barro",
+   "lines": [
+    {
+     "text": "Mi primera estufa la apuré y se rajó.",
+     "mark": true
+    },
+    {
+     "text": "La segunda la dejé secar dos semanas: 15 años entera."
+    }
+   ],
+   "image": "img/er_barro_secando.png",
+   "hue": "red"
+  },
+  {
+   "id": "lena_0",
+   "start": 846.1,
+   "dur": 18.45,
+   "kind": "raw",
+   "src": "vid/erv_juntar_lena.mp4",
+   "hue": "red",
+   "kicker": "Lo que el campo te regala",
+   "gen": {
+    "type": "clip",
+    "image": "img/erv_juntar_lena.png",
+    "prompt": "Foto documental muy realista, 16:9. gathering thin fallen branches in a field after pruning, slow motion, hands picking sticks. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 90
+   }
+  },
+  {
+   "id": "lena_1",
+   "start": 864.55,
+   "dur": 13.52,
+   "kind": "splitlist",
+   "title": "La leña de la rocket",
+   "items": [
+    "Ramitas finas y secas",
+    "Palitos del grosor de un dedo",
+    "NO troncos gruesos"
+   ],
+   "palette": "A",
+   "hue": "blue"
+  },
+  {
+   "id": "lena_2",
+   "start": 878.07,
+   "dur": 12.3,
+   "kind": "chips",
+   "bg": "image",
+   "image": "img/er_banco_largo.png",
+   "imageDarken": 0.6,
+   "title": "El tamaño manda",
+   "chips": [
+    "Pieza chica = banco corto",
+    "Pieza grande = más masa",
+    "En la duda, más masa"
+   ],
+   "hue": "blue"
+  },
+  {
+   "id": "lena_3",
+   "start": 890.37,
+   "dur": 18.45,
+   "kind": "raw",
+   "src": "img/er_banco_largo.png",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "er_banco_largo",
+    "prompt": "Foto documental muy realista, 16:9. a long massive cob heating bench in a larger room vs a short one in a small room, mass comparison. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "panorama_0",
+   "start": 908.82,
+   "dur": 22.59,
+   "kind": "stat",
+   "value": 480,
+   "prefix": "US$ ",
+   "suffix": "/año",
+   "label": "lo que se va en gas de calefacción",
+   "eyebrow": "El gasto que no vuelve",
+   "hue": "blue"
+  },
+  {
+   "id": "panorama_1",
+   "start": 931.41,
+   "dur": 22.59,
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "El"
+    },
+    {
+     "t": "gasto"
+    },
+    {
+     "t": "que"
+    },
+    {
+     "t": "no"
+    },
+    {
+     "t": "vuelve",
+     "hl": true
+    }
+   ],
+   "eyebrow": "Medio año, toda la vida",
+   "bg": "image",
+   "image": "img/er_billetes_humo.png",
+   "hue": "amber"
+  },
+  {
+   "id": "panorama_2",
+   "start": 954,
+   "dur": 23.72,
+   "kind": "quote",
+   "image": "img/er_manos_viejas_fuego.png",
+   "text": "Los que construyeron este país lo hacían con *barro y sol*.",
+   "hue": "red"
+  },
+  {
+   "id": "plan_0",
+   "start": 977.72,
+   "dur": 12.1,
+   "kind": "checklist",
+   "title": "Tu fin de semana",
+   "items": [
+    {
+     "text": "Estufa de prueba (4 ladrillos)",
+     "state": "todo"
+    },
+    {
+     "text": "Encontrar la pared del sol",
+     "state": "todo"
+    },
+    {
+     "text": "Juntar ladrillos, tambor y caño",
+     "state": "todo"
+    }
+   ],
+   "hue": "amber"
+  },
+  {
+   "id": "plan_1",
+   "start": 989.82,
+   "dur": 15.12,
+   "kind": "raw",
+   "src": "img/er_tomas_taller_plan.png",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "er_tomas_taller_plan",
+    "prompt": "Foto documental muy realista, 16:9. un hombre rural de unos 45 años, pelo oscuro y barba corta canosa, piel curtida, camisa de trabajo verde oliva y delantal de cuero marrón, in his workshop gathering bricks, an old drum and stovepipe, ready to build, determined, en una chacra rural de la Patagonia. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "plan_2",
+   "start": 1004.94,
+   "dur": 10.08,
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "No"
+    },
+    {
+     "t": "tenés"
+    },
+    {
+     "t": "que"
+    },
+    {
+     "t": "terminar."
+    },
+    {
+     "t": "Tenés"
+    },
+    {
+     "t": "que"
+    },
+    {
+     "t": "empezar",
+     "hl": true
+    }
+   ],
+   "eyebrow": "Este fin de semana",
+   "bg": "grid",
+   "hue": "amber"
+  },
+  {
+   "id": "inject3_0",
+   "start": 1015.02,
+   "dur": 22.06,
+   "kind": "diagram",
+   "eyebrow": "Todo, ordenado y probado",
+   "slides": [
+    {
+     "image": "img/dg_er_stack.png",
+     "eyebrow": "Vale 158 — hoy 27, para siempre"
+    }
+   ],
+   "hue": "red"
+  },
+  {
+   "id": "inject3_1",
+   "start": 1037.08,
+   "dur": 11.49,
+   "kind": "bars",
+   "title": "El valor",
+   "unit": "US$",
+   "bars": [
+    {
+     "label": "Por separado",
+     "value": 158,
+     "tone": "danger"
+    },
+    {
+     "label": "Hoy",
+     "value": 27,
+     "winner": true
+    }
+   ],
+   "hue": "blue"
+  },
+  {
+   "id": "inject3_2",
+   "start": 1048.57,
+   "dur": 9.65,
+   "kind": "quote",
+   "image": "img/er_manual_celular.png",
+   "text": "Si no te sirve, te devuelvo *todo*. El riesgo lo pongo yo.",
+   "accent": "good",
+   "hue": "amber"
+  },
+  {
+   "id": "coment_0",
+   "start": 1058.22,
+   "dur": 12.79,
+   "kind": "raw",
+   "src": "img/er_tomas_camara.png",
+   "hue": "blue",
+   "kicker": "¿Cuánto pagás de calefacción?",
+   "gen": {
+    "type": "image",
+    "name": "er_tomas_camara",
+    "prompt": "Foto documental muy realista, 16:9. un hombre rural de unos 45 años, pelo oscuro y barba corta canosa, piel curtida, camisa de trabajo verde oliva y delantal de cuero marrón, talking warmly to camera in his workshop, inviting, friendly, en una chacra rural de la Patagonia. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "coment_1",
+   "start": 1071.01,
+   "dur": 8.53,
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "Contame"
+    },
+    {
+     "t": "de"
+    },
+    {
+     "t": "dónde"
+    },
+    {
+     "t": "sos",
+     "hl": true
+    }
+   ],
+   "eyebrow": "Leo todos los comentarios",
+   "bg": "grid",
+   "hue": "amber"
+  },
+  {
+   "id": "cierre_0",
+   "start": 1079.54,
+   "dur": 15.61,
+   "kind": "quote",
+   "image": "img/er_noche_banco.png",
+   "text": "El calor de mi casa era *mío*. No dependía de nadie.",
+   "hue": "amber"
+  },
+  {
+   "id": "cierre_1",
+   "start": 1095.15,
+   "dur": 38.67,
+   "kind": "journey",
+   "eyebrow": "Tu camino a la independencia",
+   "title": "Empezá hoy",
+   "waypoints": [
+    {
+     "x": 0,
+     "y": 0,
+     "z": 0,
+     "image": "img/er_j_prueba.png",
+     "label": "La estufa de prueba",
+     "num": "1",
+     "dwell": 2.6,
+     "travel": 1.6
+    },
+    {
+     "x": 1.2,
+     "y": -0.4,
+     "z": 0.3,
+     "image": "img/er_j_muro.png",
+     "label": "El muro del sol",
+     "num": "2",
+     "dwell": 2.6,
+     "travel": 1.6
+    },
+    {
+     "x": 2.4,
+     "y": 0.3,
+     "z": -0.2,
+     "image": "img/er_j_estufa.png",
+     "label": "La estufa grande",
+     "num": "3",
+     "dwell": 2.6,
+     "travel": 1.6
+    },
+    {
+     "x": 3.6,
+     "y": -0.2,
+     "z": 0.2,
+     "image": "img/er_j_libre.png",
+     "label": "Libre",
+     "num": "4",
+     "dwell": 3,
+     "travel": 1.4
+    }
+   ]
+  },
+  {
+   "id": "proximo_0",
+   "start": 1133.82,
+   "dur": 12.59,
+   "kind": "raw",
+   "src": "broll/rb_oven_fire.mp4",
+   "hue": "red",
+   "kicker": "La próxima: el horno de barro"
+  },
+  {
+   "id": "proximo_1",
+   "start": 1146.41,
+   "dur": 21.41,
+   "kind": "raw",
+   "src": "img/er_tomas_firma.png",
+   "hue": "blue",
+   "hold": true,
+   "gen": {
+    "type": "image",
+    "name": "er_tomas_firma",
+    "prompt": "Foto documental muy realista, 16:9. un hombre rural de unos 45 años, pelo oscuro y barba corta canosa, piel curtida, camisa de trabajo verde oliva y delantal de cuero marrón, looking warmly at camera at the cabin door, closing the video, golden hour, en una chacra rural de la Patagonia. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  }
+ ],
+ "extraImages": [
+  {
+   "name": "er_factura_gas",
+   "prompt": "Foto documental muy realista, 16:9. an old crumpled gas utility bill on a rough wooden table, numbers not legible, dim kitchen light. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "er_manos_trabajo",
+   "prompt": "Foto documental muy realista, 16:9. close-up of rough calloused working hands resting on a wooden beam, dirt under nails. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "er_abuelo_pared",
+   "prompt": "Foto documental muy realista, 16:9. a very old sepia photo feel of an elderly man beside a massive masonry heating wall in an old farmhouse. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "er_piso_coreano",
+   "prompt": "Foto documental muy realista, 16:9. a traditional korean ondol heated floor room, warm stone floor, old house. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "er_riser_caliente",
+   "prompt": "Foto documental muy realista, 16:9. the inner heat riser of a rocket stove glowing hot, clean flame rising fast, almost no smoke. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "er_jota_corte",
+   "prompt": "Foto documental muy realista, 16:9. a clean side cutaway of a brick rocket stove J-shaped firebox, feed tube, tunnel and riser visible. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "er_corporacion_factura",
+   "prompt": "Foto documental muy realista, 16:9. a faceless utility company office building, cold corporate, grey overcast, NO readable signage. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "er_prueba_ladrillos",
+   "prompt": "Foto documental muy realista, 16:9. a tiny test rocket stove made of four stacked bricks and a tin can in a backyard, small flame. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "er_prueba_llama",
+   "prompt": "Foto documental muy realista, 16:9. a small strong flame roaring up from a four-brick test rocket stove, hand feeling the heat. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "er_pared_sol",
+   "prompt": "Foto documental muy realista, 16:9. a sunny exterior wall of a rural house at midday, the future Trombe wall. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "er_barro_secando",
+   "prompt": "Foto documental muy realista, 16:9. a freshly built cob rocket stove drying, earthen surface. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "er_billetes_humo",
+   "prompt": "Foto documental muy realista, 16:9. money bills dissolving into smoke rising from a chimney. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "er_manos_viejas_fuego",
+   "prompt": "Foto documental muy realista, 16:9. old weathered hands warming over a small efficient fire, dignified, rural. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "er_manual_celular",
+   "prompt": "Foto documental muy realista, 16:9. a phone showing an open ebook manual on a wooden workbench, warm light. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "er_noche_banco",
+   "prompt": "Foto documental muy realista, 16:9. a man sleeping peacefully in a warm cabin at night, glow of embers, snow outside window, serene. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "er_j_prueba",
+   "prompt": "Foto documental muy realista, 16:9. a four-brick test rocket stove with a small flame. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "er_j_muro",
+   "prompt": "Foto documental muy realista, 16:9. a dark Trombe wall on a sunny house wall. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "er_j_estufa",
+   "prompt": "Foto documental muy realista, 16:9. a finished cob rocket mass heater with bench, warm fire. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "er_j_libre",
+   "prompt": "Foto documental muy realista, 16:9. a man content in front of his warm self-sufficient cabin in winter. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+  }
+ ]
+}
