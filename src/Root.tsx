@@ -13,6 +13,7 @@ import { MainBarrera, TOTAL_FRAMES_BRR } from "./VideoEdit/Main_barrera";
 import { MainJabon, TOTAL_FRAMES_JABON } from "./VideoEdit/Main_jabon";
 import { MainCeniza, TOTAL_FRAMES_CENIZA } from "./VideoEdit/Main_ceniza";
 import { MainRatas, TOTAL_FRAMES_RATAS } from "./VideoEdit/Main_ratas";
+import { MainMelon, TOTAL_FRAMES_MELON } from "./VideoEdit/Main_melon";
 
 // ── SOLO los videos ACTIVOS quedan registrados ──
 // Las composiciones viejas (Fly, Hipos, Bisontes, Objetos, Civil, Top7Demo,
@@ -40,6 +41,15 @@ export const RemotionRoot: React.FC = () => {
         id="Wasp"
         component={MainWasp}
         durationInFrames={TOTAL_FRAMES_WASP}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
+      {/* VIDEO ACTIVO — How to Pick the Sweetest Watermelon (Claudio Yoder · canal nuevo EN) */}
+      <Composition
+        id="Melon"
+        component={MainMelon}
+        durationInFrames={TOTAL_FRAMES_MELON}
         fps={30}
         width={1920}
         height={1080}

@@ -14,10 +14,11 @@ import { useCurrentFrame, AbsoluteFill } from "remotion";
 const NOISE =
   "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>\")";
 
-export const CinematicWrap: React.FC<{ children: React.ReactNode; handheld?: number; grain?: number }> = ({
+export const CinematicWrap: React.FC<{ children: React.ReactNode; handheld?: number; grain?: number; vignette?: number }> = ({
   children,
   handheld = 0.8,
   grain = 0.06,
+  vignette = 1,
 }) => {
   const frame = useCurrentFrame();
 
@@ -34,8 +35,10 @@ export const CinematicWrap: React.FC<{ children: React.ReactNode; handheld?: num
         {children}
       </AbsoluteFill>
 
-      {/* viñeta filmica */}
-      <AbsoluteFill style={{ background: "radial-gradient(125% 105% at 50% 48%, rgba(0,0,0,0) 56%, rgba(8,6,4,0.42) 100%)", pointerEvents: "none" }} />
+      {/* viñeta filmica (escalable; vignette=0 la desactiva) */}
+      {vignette > 0.001 && (
+        <AbsoluteFill style={{ background: `radial-gradient(125% 105% at 50% 48%, rgba(0,0,0,0) 56%, rgba(8,6,4,${0.42 * vignette}) 100%)`, pointerEvents: "none" }} />
+      )}
 
       {/* grano animado (jitter de posición = grano que se mueve, barato) */}
       <AbsoluteFill
