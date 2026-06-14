@@ -1,0 +1,112 @@
+// cues_ratas.gen.tsx — GENERADO por beatsheet.mjs desde ratas.json.
+// NO editar a mano: cambiá el beatsheet y re-corré  node beatsheet.mjs beatsheet/ratas.json
+import { ReactNode } from "react";
+import { COLORS } from "./theme";
+import { RawShot } from "./scenes/RawShot";
+import { KineticQuote, parseQuote } from "./scenes/KineticQuote";
+import { ChipsCluster } from "./scenes/ReframeContent";
+import { SplitList } from "./scenes/SplitList";
+import { JourneyCanvas } from "./scenes/JourneyCanvas";
+import { FloatingInsert } from "./scenes/FloatingInsert";
+import { KineticHeadline } from "./scenes/KineticHeadline";
+import { AgedDoc } from "./scenes/AgedDoc";
+import { BarCompare } from "./scenes/BarCompare";
+import { ProcessSteps } from "./scenes/ProcessSteps";
+import { Checklist } from "./scenes/Checklist";
+import { AnnotatedImage } from "./scenes/AnnotatedImage";
+
+const D = COLORS.danger, A = COLORS.accent, G = COLORS.good;
+
+export type Cue = { key: string; start: number; dur: number; kind: string; el: (d: number) => ReactNode };
+
+export const CUES: Cue[] = [
+  { key: "intro_0", start: 11, dur: 22.07, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/rt_rata_pared.png" hue="red" kicker="Ese ruido en la pared, de noche" /> },
+  { key: "intro_1", start: 33.07, dur: 18.92, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/rt_bolsa_mordida.png" hue="red" kicker="Bolsas mordidas, cables roídos" /> },
+  { key: "intro_2", start: 51.99, dur: 15.76, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/rt_bolitas.png" hue="red" /> },
+  { key: "intro_3", start: 67.75, dur: 22.07, kind: "quote", el: (d) => <KineticQuote durationInFrames={d} image="img/rt_veneno_caja.png" words={parseQuote("El veneno puede matar a tu perro, a tus gallinas, a un *chico*.")} hue="red" /> },
+  { key: "intro_4", start: 89.82, dur: 15.76, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/rt_perro_campo.png" hue="red" kicker="Y nunca soluciona el fondo" /> },
+  { key: "intro_5", start: 105.58, dur: 53.6, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/rt_galpon_limpio.png" hue="red" /> },
+  { key: "intro_6", start: 159.18, dur: 21.02, kind: "headline", el: (d) => <KineticHeadline durationInFrames={d} tokens={[{"t":"Ratas"},{"t":"fuera"},{"t":"con"},{"t":"$1","hl":true}]} eyebrow="Sin veneno, sin trampas, sin gato" hue="red" bg="image" image="img/rt_granero.png" /> },
+  { key: "tomas_0", start: 180.2, dur: 44.76, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/rt_casa_campo.png" hue="blue" kicker="Hace veinte años dejé la ciudad" /> },
+  { key: "tomas_1", start: 224.96, dur: 10.5, kind: "quote", el: (d) => <KineticQuote durationInFrames={d} image="img/rt_manos_tomas.png" words={parseQuote("Entendí cómo piensa una rata y cómo se la saca de verdad, para *siempre*.")} hue="blue" /> },
+  { key: "tomas_2", start: 235.46, dur: 12, kind: "aged", el: (d) => <AgedDoc durationInFrames={d} heading="Lo más importante" lines={[{"text":"No es matarlas."},{"text":"Es lo que viene después, y casi nadie lo hace."}]} image="img/rt_galpon_interior.png" hue="blue" /> },
+  { key: "tomas_3", start: 247.46, dur: 25.51, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/rt_hombre_galpon.png" hue="blue" /> },
+  { key: "enemigo_0", start: 272.97, dur: 16.2, kind: "headline", el: (d) => <KineticHeadline durationInFrames={d} tokens={[{"t":"Entendé"},{"t":"a"},{"t":"tu"},{"t":"enemigo","hl":true}]} eyebrow="Vienen por tres cosas" hue="amber" bg="image" image="img/rt_rata_mira.png" /> },
+  { key: "enemigo_1", start: 289.17, dur: 41.3, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/dg_rt_tres.png" hue="amber" zoom={[1,1.05]} /> },
+  { key: "enemigo_2", start: 330.47, dur: 17.82, kind: "splitlist", el: (d) => <SplitList durationInFrames={d} title="Una rata viene por" items={["Comida fácil","Agua para beber","Un refugio calentito"]} accent={D} /> },
+  { key: "enemigo_3", start: 348.29, dur: 17.01, kind: "quote", el: (d) => <KineticQuote durationInFrames={d} image="img/rt_nido.png" words={parseQuote("Mientras tu casa les convenga, van a venir *nuevas* siempre.")} hue="amber" /> },
+  { key: "comida_0", start: 365.3, dur: 9.06, kind: "headline", el: (d) => <KineticHeadline durationInFrames={d} tokens={[{"t":"Primero"},{"t":":"},{"t":"quitá"},{"t":"la"},{"t":"comida","hl":true}]} eyebrow="Esto cambia todo" hue="blue" bg="image" image="img/rt_grano_suelto.png" /> },
+  { key: "comida_1", start: 374.36, dur: 23.11, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/rt_tacho_metal.png" hue="blue" kicker="Todo en metal con tapa" /> },
+  { key: "comida_2", start: 397.47, dur: 8.16, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/rt_plato_perro.png" hue="blue" kicker="Levantá el plato de noche" /> },
+  { key: "comida_3", start: 405.63, dur: 5.32, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/rf_tacho_metal.png" hue="blue" kicker="En metal con tapa" /> },
+  { key: "comida_4", start: 410.95, dur: 10.55, kind: "checklist", el: (d) => <Checklist durationInFrames={d} title="Cortarles el suministro" items={[{"text":"Granos en metal con tapa","state":"done"},{"text":"Comida del perro: levantar de noche","state":"done"},{"text":"Arreglar canillas que gotean","state":"done"},{"text":"Tapar el compost","state":"done"}]} hue="blue" /> },
+  { key: "comida_5", start: 421.5, dur: 7.6, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/rt_drip_tap.mp4" hue="blue" kicker="Sin agua, se mudan" /> },
+  { key: "comida_6", start: 429.1, dur: 4.88, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/rf_plato_perro.png" hue="blue" kicker="Levantá el plato de noche" /> },
+  { key: "comida_7", start: 433.98, dur: 8.12, kind: "quote", el: (d) => <KineticQuote durationInFrames={d} image="img/rt_galpon_orden.png" words={parseQuote("Sin comida ni agua, la rata se muda sola sin matar a *nadie*.")} hue="blue" /> },
+  { key: "comida_8", start: 442.1, dur: 42.49, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/rf_canilla_gotea.png" hue="blue" kicker="Cortá el agua" /> },
+  { key: "cebo_0", start: 484.59, dur: 12.81, kind: "headline", el: (d) => <KineticHeadline durationInFrames={d} tokens={[{"t":"El"},{"t":"cebo"},{"t":"de"},{"t":"$1","hl":true}]} eyebrow="Sin veneno químico" hue="red" bg="image" image="img/rt_harina_yeso.png" /> },
+  { key: "cebo_1", start: 497.4, dur: 7.07, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/rf_harina_yeso.png" hue="red" kicker="Mitad harina, mitad yeso" /> },
+  { key: "cebo_2", start: 504.47, dur: 16.82, kind: "process", el: (d) => <ProcessSteps durationInFrames={d} steps={[{"title":"Mitad harina","image":"img/rt_harina.png"},{"title":"Mitad yeso","image":"img/rt_yeso.png"},{"title":"Un poco de azúcar","image":"img/rt_azucar.png"},{"title":"En tapitas, junto a agua","image":"img/rt_tapitas.png"}]} title="El cebo de harina y yeso" hue="red" /> },
+  { key: "cebo_3", start: 521.29, dur: 13.25, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/rf_cebo_tapita.png" hue="red" kicker="Pegado a la pared" /> },
+  { key: "cebo_4", start: 534.54, dur: 18.93, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/rt_pared_camino.png" hue="red" kicker="Pegado a la pared, por donde pasan" /> },
+  { key: "cebo_5", start: 553.47, dur: 22.08, kind: "quote", el: (d) => <KineticQuote durationInFrames={d} image="img/rt_agua_recip.png" words={parseQuote("Come la mezcla, toma agua, el yeso fragua adentro. Sin sangre, sin *cadáver*.")} hue="red" /> },
+  { key: "cebo_6", start: 575.55, dur: 23.14, kind: "splitlist", el: (d) => <SplitList durationInFrames={d} title="Otra versión casera" items={["Bicarbonato + harina + azúcar","La rata no puede largar los gases","También de centavos"]} accent={A} /> },
+  { key: "cebo_7", start: 598.69, dur: 51.81, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/rf_bicarbonato.png" hue="red" kicker="O con bicarbonato" /> },
+  { key: "injerto1_0", start: 650.5, dur: 19.46, kind: "aged", el: (d) => <AgedDoc durationInFrames={d} heading="Uno de 35 sistemas" lines={[{"text":"Las proporciones de cada cebo,"},{"text":"dónde ponerlos y dónde es inútil,"},{"text":"cada cuánto renovarlos. Todo probado."}]} image="img/rt_cuaderno.png" hue="amber" /> },
+  { key: "injerto1_1", start: 669.96, dur: 17.84, kind: "float", el: (d) => <FloatingInsert durationInFrames={d} src="img/rt_manual.png" side="right" kicker="Todo junto en el manual" hue="amber" /> },
+  { key: "injerto1_2", start: 687.8, dur: 13.5, kind: "quote", el: (d) => <KineticQuote durationInFrames={d} image="img/rt_galpon_tarde.png" words={parseQuote("Pero quédese, que ahora viene cómo hacer que se vayan *solas*.")} hue="amber" /> },
+  { key: "olores_0", start: 701.3, dur: 26.3, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/rt_mint.mp4" hue="blue" kicker="La menta las espanta" /> },
+  { key: "olores_1", start: 727.6, dur: 7.05, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/rf_menta_algodon.png" hue="blue" kicker="Algodón con menta" /> },
+  { key: "olores_2", start: 734.65, dur: 28.55, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/rt_algodon_menta.png" hue="blue" kicker="Algodón con menta en los rincones" /> },
+  { key: "olores_3", start: 763.2, dur: 11.2, kind: "chips", el: (d) => <ChipsCluster durationInFrames={d} bg="image" image="img/rt_rincon_galpon.png" title="Olores que no soportan" chips={["menta fuerte","amoníaco","laurel","olor a gato"]} hue="blue" /> },
+  { key: "olores_4", start: 774.4, dur: 16.2, kind: "quote", el: (d) => <KineticQuote durationInFrames={d} image="img/rt_gato_arena.png" words={parseQuote("El olor del depredador las pone nerviosas y las hace *irse*.")} hue="blue" /> },
+  { key: "trampa_0", start: 790.6, dur: 16.33, kind: "headline", el: (d) => <KineticHeadline durationInFrames={d} tokens={[{"t":"La"},{"t":"trampa"},{"t":"de"},{"t":"balde","hl":true}]} eyebrow="La más justa, de $1" hue="amber" bg="image" image="img/rt_balde_trampa.png" /> },
+  { key: "trampa_1", start: 806.93, dur: 7.43, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/rf_lata_manteca.png" hue="amber" kicker="Lata con manteca de maní" /> },
+  { key: "trampa_2", start: 814.36, dur: 30.08, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/dg_rt_trampa.png" hue="amber" zoom={[1,1.05]} /> },
+  { key: "trampa_3", start: 844.44, dur: 10.62, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/rt_lata_cebo.png" hue="amber" kicker="Lata giratoria con cebo" /> },
+  { key: "trampa_4", start: 855.06, dur: 19.14, kind: "quote", el: (d) => <KineticQuote durationInFrames={d} image="img/rt_balde_rampa.png" words={parseQuote("La lata vuelve sola: una trampa atrapa varias en una *noche*.")} hue="amber" /> },
+  { key: "cerrar_0", start: 874.2, dur: 20.47, kind: "headline", el: (d) => <KineticHeadline durationInFrames={d} tokens={[{"t":"Cerrá"},{"t":"la"},{"t":"casa","hl":true}]} eyebrow="Lo que casi nadie hace" hue="blue" bg="image" image="img/rt_agujero_pared.png" /> },
+  { key: "cerrar_1", start: 894.67, dur: 18.43, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/rt_agujero_cano.png" hue="blue" kicker="Por un agujero del tamaño de una moneda" /> },
+  { key: "cerrar_2", start: 913.1, dur: 4.63, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/rf_agujero_moneda.png" hue="blue" kicker="Del tamaño de una moneda" /> },
+  { key: "cerrar_3", start: 917.73, dur: 18.72, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/rt_steel_wool.mp4" hue="blue" kicker="Lana de acero, no la pueden roer" /> },
+  { key: "cerrar_4", start: 936.45, dur: 11.01, kind: "process", el: (d) => <ProcessSteps durationInFrames={d} steps={[{"title":"Encontrá el agujero","image":"img/rt_buscar_agujero.png"},{"title":"Rellená con lana de acero","image":"img/rt_rellenar.png"},{"title":"Tapá con cemento","image":"img/rt_cemento.png"}]} title="Sellar las entradas" hue="blue" /> },
+  { key: "cerrar_5", start: 947.46, dur: 9.44, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/rf_lana_acero.png" hue="blue" kicker="Lana de acero" /> },
+  { key: "cerrar_6", start: 956.9, dur: 31, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/rf_cemento_sella.png" hue="blue" kicker="Y cemento encima" /> },
+  { key: "cerrar_7", start: 987.9, dur: 16.1, kind: "quote", el: (d) => <KineticQuote durationInFrames={d} image="img/rt_pared_sellada.png" words={parseQuote("Cada agujero que cerrás es una puerta menos para *siempre*.")} hue="blue" /> },
+  { key: "detective_0", start: 1004, dur: 12.1, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/rt_marca_grasa.png" hue="amber" kicker="Marcas de grasa = autopista" /> },
+  { key: "detective_1", start: 1016.1, dur: 6.19, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/rf_bolitas.png" hue="amber" kicker="Las bolitas" /> },
+  { key: "detective_2", start: 1022.29, dur: 17.56, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/rf_marca_grasa.png" hue="amber" kicker="Marcas de grasa = autopista" /> },
+  { key: "detective_3", start: 1039.85, dur: 37.64, kind: "annotated", el: (d) => <AnnotatedImage durationInFrames={d} image="img/rt_rastros.png" annotations={[{"kind":"circle","x":28,"y":40,"label":"Bolitas: por dónde pasan"},{"kind":"circle","x":70,"y":38,"label":"Grasa: autopista"},{"kind":"circle","x":50,"y":78,"label":"Olor a amoníaco: dónde orinan"}]} caption="Leé los rastros" hue="amber" /> },
+  { key: "detective_4", start: 1077.49, dur: 3.98, kind: "quote", el: (d) => <KineticQuote durationInFrames={d} image="img/rt_linterna.png" words={parseQuote("Un buen cazador primero rastrea, después *actúa*.")} hue="amber" /> },
+  { key: "injerto2_0", start: 1081.47, dur: 27.85, kind: "headline", el: (d) => <KineticHeadline durationInFrames={d} tokens={[{"t":"El"},{"t":"negocio"},{"t":"del"},{"t":"veneno","hl":true}]} eyebrow="La parte incómoda" hue="red" bg="image" image="img/rt_gondola_veneno.png" /> },
+  { key: "injerto2_1", start: 1109.32, dur: 10.09, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/rf_veneno_caja.png" hue="red" kicker="El negocio del veneno" /> },
+  { key: "injerto2_2", start: 1119.41, dur: 16.82, kind: "quote", el: (d) => <KineticQuote durationInFrames={d} image="img/rt_caja_veneno2.png" words={parseQuote("Te da un alivio corto y te garantiza que volvés a *comprar*.")} hue="red" /> },
+  { key: "injerto2_3", start: 1136.23, dur: 20.02, kind: "bars", el: (d) => <BarCompare durationInFrames={d} bars={[{"label":"Veneno: vuelven al mes","value":12},{"label":"Cerrar y limpiar: una vez","value":1}]} title="Alivio corto vs solución" hue="red" /> },
+  { key: "injerto2_4", start: 1156.25, dur: 19.22, kind: "aged", el: (d) => <AgedDoc durationInFrames={d} heading="El remedio real es gratis" lines={[{"text":"Sacar la comida, cerrar los agujeros."},{"text":"Eso no le deja ganancia a nadie."}]} image="img/rt_lana_cemento.png" hue="red" /> },
+  { key: "preguntas_0", start: 1175.47, dur: 44.46, kind: "splitlist", el: (d) => <SplitList durationInFrames={d} title="¿Sirve en la ciudad?" items={["El principio es el mismo","Comida, agua, refugio, sellar","Cerrando tu casa, no anidan adentro"]} accent={G} /> },
+  { key: "preguntas_1", start: 1219.93, dur: 36.37, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/rt_casa_ciudad.png" hue="amber" /> },
+  { key: "preguntas_2", start: 1256.3, dur: 8.28, kind: "quote", el: (d) => <KineticQuote durationInFrames={d} image="img/rt_empezar.png" words={parseQuote("Empezá por la comida y el agua hoy: en una semana ya se nota *menos*.")} hue="amber" /> },
+  { key: "preguntas_3", start: 1264.58, dur: 7.09, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/rt_metal_tachos.png" hue="amber" /> },
+  { key: "gallinero_0", start: 1271.67, dur: 8.12, kind: "headline", el: (d) => <KineticHeadline durationInFrames={d} tokens={[{"t":"Gallinero"},{"t":"y"},{"t":"granero","hl":true}]} eyebrow="Los más difíciles" hue="blue" bg="image" image="img/rt_gallinero.png" /> },
+  { key: "gallinero_1", start: 1279.79, dur: 20.7, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/rt_comedero.png" hue="blue" kicker="Levantá el comedero de noche" /> },
+  { key: "gallinero_2", start: 1300.49, dur: 6.87, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/rf_comedero_gallinas.png" hue="blue" kicker="Comedero arriba de noche" /> },
+  { key: "gallinero_3", start: 1307.36, dur: 9.81, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/rt_alambre_enterrado.png" hue="blue" kicker="Alambre enterrado: cavan" /> },
+  { key: "gallinero_4", start: 1317.17, dur: 13.63, kind: "checklist", el: (d) => <Checklist durationInFrames={d} title="Granero a prueba de ratas" items={[{"text":"Grano en silos o tambores de metal","state":"done"},{"text":"Nada en bolsa en el piso","state":"done"},{"text":"Todo despegado de la pared","state":"done"}]} hue="blue" /> },
+  { key: "gallinero_5", start: 1330.8, dur: 26.65, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/rf_silo_grano.png" hue="blue" kicker="Grano en metal sellado" /> },
+  { key: "gallinero_6", start: 1357.45, dur: 7.15, kind: "quote", el: (d) => <KineticQuote durationInFrames={d} image="img/rt_silo.png" words={parseQuote("Si el grano es inalcanzable, la rata se cansa y se *va*.")} hue="blue" /> },
+  { key: "panorama_0", start: 1364.6, dur: 18.02, kind: "quote", el: (d) => <KineticQuote durationInFrames={d} image="img/rt_rata_sola.png" words={parseQuote("No te tiene rencor. Te tiene de *proveedor*.")} hue="blue" /> },
+  { key: "panorama_1", start: 1382.62, dur: 43.76, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/rt_granero_viejo.png" hue="blue" /> },
+  { key: "panorama_2", start: 1426.38, dur: 18.88, kind: "splitlist", el: (d) => <SplitList durationInFrames={d} title="Curá la causa, no el síntoma" items={["No pelees cada rata","Quitales la razón de venir","Una vez, no para siempre"]} accent={A} /> },
+  { key: "accion_0", start: 1445.26, dur: 11.94, kind: "checklist", el: (d) => <Checklist durationInFrames={d} title="Esta semana" items={[{"text":"Todo el alimento en metal con tapa","state":"done"},{"text":"Lana de acero en cada agujero","state":"done"},{"text":"Cebo de harina y yeso, o menta","state":"done"}]} hue="amber" /> },
+  { key: "accion_1", start: 1457.2, dur: 22.94, kind: "journey", el: (d) => <JourneyCanvas durationInFrames={d} eyebrow="El sistema completo" title="En este orden" waypoints={[{"x":0,"y":0,"z":0,"image":"img/rt_jrn_comida.png","label":"Quitar comida","num":"1","dwell":2.4,"travel":1.5},{"x":1.2,"y":-0.3,"z":0.3,"image":"img/rt_jrn_sellar.png","label":"Sellar","num":"2","dwell":2.4,"travel":1.5},{"x":2.4,"y":0.2,"z":-0.2,"image":"img/rt_jrn_cebo.png","label":"Cebo $1","num":"3","dwell":2.4,"travel":1.5},{"x":3.6,"y":-0.2,"z":0.2,"image":"img/rt_jrn_limpio.png","label":"Recuperar","num":"4","dwell":2.6,"travel":1.4}]} /> },
+  { key: "accion_2", start: 1480.14, dur: 24.36, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/rt_galpon_recuperado.png" hue="amber" /> },
+  { key: "injerto3_0", start: 1504.5, dur: 21.24, kind: "aged", el: (d) => <AgedDoc durationInFrames={d} heading="Todo en el manual" lines={[{"text":"Las recetas de cada cebo, el mapa de entradas,"},{"text":"los olores repelentes,"},{"text":"cómo proteger gallinero y granero."}]} image="img/rt_manual_abierto.png" hue="red" /> },
+  { key: "injerto3_1", start: 1525.74, dur: 22.13, kind: "bars", el: (d) => <BarCompare durationInFrames={d} bars={[{"label":"Por separado","value":158},{"label":"Hoy","value":27}]} title="El precio de hoy" hue="red" /> },
+  { key: "injerto3_2", start: 1547.87, dur: 18.23, kind: "quote", el: (d) => <KineticQuote durationInFrames={d} image="img/rt_manos_lana.png" words={parseQuote("Si no es para usted, le devuelvo cada centavo. El riesgo lo pongo *yo*.")} hue="red" /> },
+  { key: "cierre_0", start: 1566.1, dur: 15.66, kind: "quote", el: (d) => <KineticQuote durationInFrames={d} image="img/rt_galpon_paz.png" words={parseQuote("No pelees el síntoma. Curá la *causa*.")} hue="blue" /> },
+  { key: "cierre_1", start: 1581.76, dur: 14.91, kind: "headline", el: (d) => <KineticHeadline durationInFrames={d} tokens={[{"t":"Comida"},{"t":"6"},{"t":"meses"},{"t":"sin"},{"t":"heladera","hl":true}]} eyebrow="La próxima vez" hue="blue" bg="image" image="img/rt_despensa.png" /> },
+  { key: "cierre_2", start: 1596.67, dur: 38.03, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/rt_zanahorias.png" hue="blue" kicker="Sin enchufar nada" /> },
+  { key: "cierre_3", start: 1634.7, dur: 4.3, kind: "quote", el: (d) => <KineticQuote durationInFrames={d} image="img/rt_oficio.png" words={parseQuote("No es magia. Es *oficio*. Y todavía se puede aprender.")} hue="blue" /> },
+];
+
+export const REFRAME: { start: number; end: number }[] = [];

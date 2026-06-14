@@ -12,6 +12,7 @@ import { MainBorax, TOTAL_FRAMES_BX } from "./VideoEdit/Main_borax";
 import { MainBarrera, TOTAL_FRAMES_BRR } from "./VideoEdit/Main_barrera";
 import { MainJabon, TOTAL_FRAMES_JABON } from "./VideoEdit/Main_jabon";
 import { MainCeniza, TOTAL_FRAMES_CENIZA } from "./VideoEdit/Main_ceniza";
+import { MainRatas, TOTAL_FRAMES_RATAS } from "./VideoEdit/Main_ratas";
 
 // ── SOLO los videos ACTIVOS quedan registrados ──
 // Las composiciones viejas (Fly, Hipos, Bisontes, Objetos, Civil, Top7Demo,
@@ -32,6 +33,8 @@ export const RemotionRoot: React.FC = () => {
       />
       {/* VIDEO ACTIVO — No Tires La Ceniza · Constructor Libre v5 · faceless */}
       <Composition id="Ceniza" component={MainCeniza} durationInFrames={TOTAL_FRAMES_CENIZA} fps={30} width={1920} height={1080} />
+      {/* VIDEO ACTIVO — Saca las ratas con $1 · Constructor Libre v6 · AVATAR */}
+      <Composition id="Ratas" component={MainRatas} durationInFrames={TOTAL_FRAMES_RATAS} fps={30} width={1920} height={1080} />
       {/* VIDEO ACTIVO — KILL EVERY Wasp On Your Property (The Amish Way) */}
       <Composition
         id="Wasp"

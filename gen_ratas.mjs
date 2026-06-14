@@ -20,7 +20,7 @@ const W = { raw: 1.5, quote: 1.05, headline: 1.0, rule: 1.05, stat: 1.0, aged: 1
 
 const SECTIONS = [
   { key: "intro", start: 0.1, hue: "red", beats: [
-    c("impact", { image: IM("rt_rata_pared", "Una rata gris asomando de un agujero en la pared de un galpón de campo, penumbra, primer plano."), setup: "Conocés ese ruido en la pared de noche…", impact: "SACALAS PARA SIEMPRE CON SÓLO $1", impactAccent: "danger", hitAt: 1.3 }),
+    r(IM("rt_rata_pared", "Una rata gris asomando de un agujero en la pared de un galpón de campo, penumbra, primer plano."), { kicker: "Ese ruido en la pared, de noche", w: 0.7 }),
     r(IM("rt_bolsa_mordida", "Una bolsa de alimento de animales mordida y vaciada por ratas en un granero, granos desparramados."), { kicker: "Bolsas mordidas, cables roídos", w: 0.6 }),
     r(IM("rt_bolitas", "Bolitas negras de excremento de rata sobre una repisa de madera en un galpón."), { w: 0.5 }),
     c("quote", { image: IM("rt_veneno_caja", "Una caja de veneno para ratas de colores sobre un estante, advertencia, luz fría."), text: "El veneno puede matar a tu perro, a tus gallinas, a un *chico*." }),
@@ -143,7 +143,28 @@ const SECTIONS = [
     c("quote", { image: IM("rt_oficio", "Las manos de un hombre de campo trabajando con dignidad, oficio, luz de taller."), text: "No es magia. Es *oficio*. Y todavía se puede aprender." }),
   ]},
 ];
-const VIDEO_END = 810;
+// tiempos REALES de sección (de tu lectura del avatar, 27.3 min)
+const REAL = { intro: 11, tomas: 180.2, enemigo: 272.97, comida: 365.3, cebo: 484.59, injerto1: 650.5, olores: 701.3, trampa: 790.6, cerrar: 874.2, detective: 1004, injerto2: 1081.47, preguntas: 1175.47, gallinero: 1271.67, panorama: 1364.6, accion: 1445.26, injerto3: 1504.5, cierre: 1566.1 };
+for (const s of SECTIONS) if (REAL[s.key] != null) s.start = REAL[s.key];
+const VIDEO_END = 1639;
+const FLUX = [
+  { sec: "comida", src: "img/rf_tacho_metal.png", at: "guardados en recipientes de metal", kicker: "En metal con tapa" },
+  { sec: "comida", src: "img/rf_plato_perro.png", at: "La comida del perro no la deje", kicker: "Levantá el plato de noche" },
+  { sec: "comida", src: "img/rf_canilla_gotea.png", at: "arregle las canillas que gotean", kicker: "Cortá el agua" },
+  { sec: "cebo", src: "img/rf_harina_yeso.png", at: "harina o avena o semola", kicker: "Mitad harina, mitad yeso" },
+  { sec: "cebo", src: "img/rf_cebo_tapita.png", at: "lo pone en tapitas", kicker: "Pegado a la pared" },
+  { sec: "cebo", src: "img/rf_bicarbonato.png", at: "con bicarbonato de sodio mezclado", kicker: "O con bicarbonato" },
+  { sec: "olores", src: "img/rf_menta_algodon.png", at: "unas gotas en bolitas de algodon", kicker: "Algodón con menta" },
+  { sec: "trampa", src: "img/rf_lata_manteca.png", at: "una lata vacia", kicker: "Lata con manteca de maní" },
+  { sec: "cerrar", src: "img/rf_agujero_moneda.png", at: "del tamano de una moneda", kicker: "Del tamaño de una moneda" },
+  { sec: "cerrar", src: "img/rf_lana_acero.png", at: "rellenandolos bien apretados con lana", kicker: "Lana de acero" },
+  { sec: "cerrar", src: "img/rf_cemento_sella.png", at: "un poco de cemento", kicker: "Y cemento encima" },
+  { sec: "detective", src: "img/rf_bolitas.png", at: "Busque las bolitas negras", kicker: "Las bolitas" },
+  { sec: "detective", src: "img/rf_marca_grasa.png", at: "Busque las marcas de grasa", kicker: "Marcas de grasa = autopista" },
+  { sec: "injerto2", src: "img/rf_veneno_caja.png", at: "vuelve a la ferreteria y compra otra", kicker: "El negocio del veneno" },
+  { sec: "gallinero", src: "img/rf_comedero_gallinas.png", at: "levante los comederos al atardecer", kicker: "Comedero arriba de noche" },
+  { sec: "gallinero", src: "img/rf_silo_grano.png", at: "el grano va en silos", kicker: "Grano en metal sellado" },
+];
 
 let CW = [];
 try { const C = JSON.parse(fs.readFileSync("public/captions_ratas.json", "utf8")); CW = (C.words || C).map((x) => ({ t: x.text.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9 ]/g, " ").replace(/\s+/g, " ").trim(), s: (x.startMs || 0) / 1000 })); } catch { CW = []; }
@@ -151,6 +172,17 @@ const normTok = (p) => p.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").
 const matchAt = (p, i) => { let ok = 0; for (let j = 0; j < p.length; j++) if (CW[i + j] && CW[i + j].t === p[j]) ok++; return ok; };
 const findMs = (phrase, after) => { if (!CW.length) return null; const full = normTok(phrase); for (const len of [6, 5, 4, 3]) { const p = full.slice(0, len); if (p.length < 3) continue; for (let i = 0; i < CW.length - p.length; i++) { if (CW[i].s < after) continue; if (matchAt(p, i) >= Math.ceil(p.length * 0.8)) return CW[i].s; } } return null; };
 const pinPhrase = (b) => b.at || (b.t === "quote" && b.text ? b.text.replace(/\*/g, "") : null);
+
+// insertar FLUX (con at:) y re-ordenar cada sección por tiempo de ancla
+for (const fx of FLUX) { const s = SECTIONS.find((x) => x.key === fx.sec); if (s) s.beats.push({ t: "raw", src: fx.src, at: fx.at, w: 0.42, ...(fx.kicker ? { kicker: fx.kicker } : {}) }); }
+for (let si = 0; si < SECTIONS.length; si++) {
+  const sec = SECTIONS[si];
+  const end = si + 1 < SECTIONS.length ? SECTIONS[si + 1].start : VIDEO_END;
+  const n = sec.beats.length;
+  const eff = sec.beats.map((b, i) => { if (i === 0) return sec.start; const ph = pinPhrase(b); const t = ph ? findMs(ph, sec.start + 0.3) : null; return t != null && t > sec.start && t < end ? t : sec.start + ((i + 0.5) / n) * (end - sec.start); });
+  const order = sec.beats.map((b, i) => i).sort((a, b) => eff[a] - eff[b] || a - b);
+  sec.beats = order.map((i) => sec.beats[i]);
+}
 
 const beats = [];
 for (let si = 0; si < SECTIONS.length; si++) {
