@@ -164,7 +164,7 @@ export const CUES: Cue[] = [
   { key: "mel159", start: 846.6, dur: 4.2, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/mel159.png" hue="cold" /> },
   { key: "mel160", start: 850.8, dur: 4.63, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/mel160.png" hue="cold" /> },
   { key: "mel161", start: 855.43, dur: 4.64, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/mel161.png" hue="cold" /> },
-  { key: "mel162", start: 860.07, dur: 4.63, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/mc_cut_uneven.mp4" hue="cold" /> },
+  { key: "mel162", start: 860.07, dur: 4.63, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/mel162.png" hue="cold" /> },
   { key: "mel163", start: 864.7, dur: 6.3, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/mel163.png" hue="cold" /> },
   { key: "mel164", start: 871, dur: 3.5, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/mel164.png" hue="amber" /> },
   { key: "mel165", start: 874.5, dur: 4.6, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/mel165.png" hue="amber" /> },
