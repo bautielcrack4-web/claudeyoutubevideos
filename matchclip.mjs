@@ -40,9 +40,17 @@ const TMP = "_match";
 fs.mkdirSync(TMP, { recursive: true });
 const vidId = (u) => (u.match(/(?:v=|youtu\.be\/|shorts\/|embed\/)([A-Za-z0-9_-]{11})/) || u.match(/([A-Za-z0-9_-]{11})/) || [])[1];
 
-const ytSearch = (q, n = 3) => {
-  const r = spawnSync(YTDLP, [`ytsearch${n}:${q}`, "--skip-download", "--no-warnings", "--print", "%(id)s"], { encoding: "utf8" });
-  return (r.stdout || "").trim().split(/\r?\n/).filter(Boolean).map((id) => `https://youtu.be/${id}`);
+const CANDS = +(process.env.MATCH_CANDS || 5); // más candidatos = mejor match (def 5)
+// filtro de CALIDAD: nada de shorts (<40s, suelen ser verticales/baja calidad), nada de
+// videos larguísimos (>45min, descarga lenta), ni en vivo. Busca el doble y filtra.
+const ytSearch = (q, n = CANDS) => {
+  const r = spawnSync(YTDLP, [
+    `ytsearch${n * 2}:${q}`, "--skip-download", "--no-warnings",
+    "--match-filter", "duration>40 & duration<2700 & !is_live",
+    "--print", "%(id)s",
+  ], { encoding: "utf8" });
+  const ids = (r.stdout || "").trim().split(/\r?\n/).filter(Boolean).slice(0, n);
+  return ids.map((id) => `https://youtu.be/${id}`);
 };
 
 // baja proxy 240p de [after, after+scan] y extrae frames cada step seg → [{file, t}]
@@ -68,30 +76,43 @@ const proxyFrames = (url, after, scan, step, tag) => {
   return files.map((f, i) => ({ file: path.join(fdir, f), t: +(a + i * step).toFixed(1) }));
 };
 
-console.log("cargando CLIP local...");
-const clf = await pipeline("zero-shot-image-classification", "Xenova/clip-vit-base-patch32");
+// Modelo CLIP: base patch32 = rápido (default). Para más PRECISIÓN de match (más lento en
+// CPU) → MATCH_MODEL=Xenova/clip-vit-large-patch14. Corre en CPU (no toca la GPU de 6GB).
+const MODEL = process.env.MATCH_MODEL || "Xenova/clip-vit-base-patch32";
+console.log(`cargando CLIP local (${MODEL}, q8, CPU)...`);
+const clf = await pipeline("zero-shot-image-classification", MODEL, { dtype: "q8" });
 // puntaje de 1 frame: softmax del concepto contra un PANEL de distractores que son
 // justo nuestros modos de fallo (presentador hablando, cartel de título, logo, interior
 // neutro). Así el score discrimina de verdad y los planos "cabeza parlante"/intro pierden.
 const DISTRACTORS = [
   "a person talking to the camera, a talking head",
-  "a title screen or text overlay",
-  "a channel logo or watermark",
   "a blurry or unrelated indoor scene",
 ];
+// ★ frames a RECHAZAR por texto/marca quemada (el usuario odia los clips con texto
+// gigante / subtítulos / watermark de otro canal). Se penalizan FUERTE, no compiten.
+const TEXT_LABELS = [
+  "a title card or large bold text overlay across the screen",
+  "big subtitles or captions text on screen",
+  "a channel logo, watermark or banner",
+];
 const scoreFrame = async (file, concept) => {
-  const out = await clf(file, [concept, ...DISTRACTORS]);
-  const hit = out.find((o) => o.label === concept);
-  return hit ? hit.score : 0;
+  const out = await clf(file, [concept, ...DISTRACTORS, ...TEXT_LABELS]);
+  const get = (l) => out.find((o) => o.label === l)?.score || 0;
+  const c = get(concept);
+  const textMax = Math.max(...TEXT_LABELS.map(get));
+  // si hay texto/marca prominente en el frame → casi descartado (×0.12)
+  return c * (textMax > 0.16 ? 0.12 : 1);
 };
 
 const results = [];
+const usedIds = new Set(); // diversidad: no repetir el mismo video de YT entre beats
 for (const b of beats) {
   const { name, concept, dur = 6, after = 0, scan = 180, step = 2, lead = 1.0 } = b;
-  const urls = b.urls || (b.query ? ytSearch(b.query, 3) : []);
+  const queries = b.urls ? null : (Array.isArray(b.query) ? b.query : [b.query]);
+  const urls = b.urls || [...new Set((queries || []).flatMap((q) => (q ? ytSearch(q) : [])))];
   if (!urls.length) { console.log(`✗ ${name}: sin candidatos`); continue; }
   process.stdout.write(`• ${name}  "${concept}"  (${urls.length} candidatos)\n`);
-  let best = { score: -1 };
+  const cands = [];
   for (let i = 0; i < urls.length; i++) {
     const frames = proxyFrames(urls[i], after, scan, step, `${name}_${i}`);
     if (!frames.length) { console.log(`    cand ${i + 1}: sin frames`); continue; }
@@ -101,11 +122,19 @@ for (const b of beats) {
       if (s > bf.score) bf = { score: s, t: fr.t };
     }
     console.log(`    cand ${i + 1} (${vidId(urls[i])}): mejor ${bf.score.toFixed(3)} @ ${bf.t}s`);
-    if (bf.score > best.score) best = { ...bf, url: urls[i] };
+    cands.push({ ...bf, url: urls[i], id: vidId(urls[i]) });
   }
+  if (!cands.length) { console.log(`✗ ${name}: sin frames en ningún candidato`); continue; }
+  cands.sort((a, b2) => b2.score - a.score);
+  // DIVERSIDAD: si hay un video todavía no usado con score decente (≥88% del top), preferirlo
+  // → evita que el mismo clip de YouTube se repita en varios beats.
+  let best = cands[0];
+  const fresh = cands.find((c) => c.id && !usedIds.has(c.id) && c.score >= cands[0].score * 0.88);
+  if (fresh) best = fresh;
+  if (best.id) usedIds.add(best.id);
   const start = Math.max(0, +(best.t - lead).toFixed(1));
   const flag = best.score < 0.55 ? "  ⚠ DUDOSO" : "";
-  console.log(`  → ${name}: ${best.score.toFixed(3)} @ ${best.t}s  start=${start}${flag}`);
+  console.log(`  → ${name}: ${best.score.toFixed(3)} @ ${best.t}s  start=${start}${flag}${fresh ? " (diverso)" : ""}`);
   results.push({ name, url: best.url, start, dur, _score: +best.score.toFixed(3) });
 }
 
