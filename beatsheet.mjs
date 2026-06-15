@@ -231,6 +231,7 @@ function renderEl(b) {
         (b.title ? ` title=${j(b.title)}` : ``) +
         (b.worldImage ? ` worldImage=${j(b.worldImage)}` : ``) +
         (b.accent ? ` accent=${j(b.accent)}` : ``) +
+        (b.dark ? ` dark` : ``) +
         ` waypoints={${j(b.waypoints || [])}} />`
       );
     case "float":
@@ -501,6 +502,41 @@ function renderEl(b) {
         (b.eyebrow ? ` eyebrow=${j(b.eyebrow)}` : ``) +
         ` />`
       );
+    case "keyphrase":
+      return (
+        `<KeyPhrase durationInFrames={d} text=${j(b.text || "")}` +
+        (b.src ? ` src=${j(b.src)}` : ``) +
+        (b.blur === false ? ` blur={false}` : ``) +
+        (b.accent ? ` accent=${j(b.accent)}` : ``) +
+        (b.fontSize ? ` fontSize={${b.fontSize}}` : ``) +
+        (b.position ? ` position=${j(b.position)}` : ``) +
+        (b.times ? ` times={${j(b.times)}}` : ``) +
+        ` />`
+      );
+    case "statpills":
+      return (
+        `<StatPills durationInFrames={d} pills={${j(b.pills || [])}}` +
+        (b.accent ? ` accent=${j(b.accent)}` : ``) +
+        (b.slider === false ? ` slider={false}` : ``) +
+        ` />`
+      );
+    case "floatprop":
+      return (
+        `<FloatingProp durationInFrames={d} src=${j(b.src)}` +
+        (b.bg ? ` bg=${j(b.bg)}` : ``) +
+        (b.caption ? ` caption=${j(b.caption)}` : ``) +
+        (b.accent ? ` accent=${j(b.accent)}` : ``) +
+        (b.scale != null ? ` scale={${b.scale}}` : ``) +
+        ` />`
+      );
+    case "diorama":
+      return (
+        `<PngDiorama durationInFrames={d} src=${j(b.src)}` +
+        (b.text ? ` text=${j(b.text)}` : ``) +
+        (b.accent ? ` accent=${j(b.accent)}` : ``) +
+        (b.tint ? ` tint=${j(b.tint)}` : ``) +
+        ` />`
+      );
     case "nextvideo":
       return (
         `<NextVideoEndcard durationInFrames={d} title=${j(b.title)}` +
@@ -576,6 +612,10 @@ if (kinds.has("signature")) imports.push(`import { SignaturePhrase } from "./sce
 if (kinds.has("vsmed")) imports.push(`import { MedicareVsMedicaid } from "./scenes/MedicareVsMedicaid";`);
 if (kinds.has("action")) imports.push(`import { ActionStepCard } from "./scenes/ActionStepCard";`);
 if (kinds.has("nextvideo")) imports.push(`import { NextVideoEndcard } from "./scenes/NextVideoEndcard";`);
+if (kinds.has("keyphrase")) imports.push(`import { KeyPhrase } from "./scenes/KeyPhrase";`);
+if (kinds.has("statpills")) imports.push(`import { StatPills } from "./scenes/StatPills";`);
+if (kinds.has("floatprop")) imports.push(`import { FloatingProp } from "./scenes/FloatingProp";`);
+if (kinds.has("diorama")) imports.push(`import { PngDiorama } from "./scenes/PngDiorama";`);
 const palLine = usedPal.size
   ? `\nconst ${[...usedPal].map((t) => `${t} = ${palTok[t]}`).join(", ")};\n`
   : "";

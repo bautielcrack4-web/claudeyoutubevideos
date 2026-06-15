@@ -26,13 +26,14 @@ const H = { "User-Agent": UA, "Accept-Language": "en-US,en;q=0.9" };
 const STOCK =
   /shutterstock|dreamstime|istockphoto|gettyimages|alamy|123rf|depositphotos|stock\.adobe|adobestock|ftcdn\.net|fotolia|envato|bigstock|stockcake|pngtree|favpng|kindpng|pngitem|cleanpng|rawpixel|vecteezy|freepik|pond5|pixabay|canstock|lovepik|pikbest|seekpng/i;
 
-// calidad mínima: foto real apaisada, no recorte/cuadrado/IA chico
+// calidad mínima — FILTRO DURO (feedback usuario: maxear lo gratis): foto real apaisada,
+// resolución decente, sin cuadrados/verticales (cutouts) ni ultrapanorámicas.
 function goodPhoto(o) {
-  if (!o.w || !o.h) return true; // sin datos → dejar pasar
-  if (o.w < 700) return false; // muy chica
-  if (o.w === 512 && o.h === 512) return false; // típico cuadrado IA/stockcake
+  if (!o.w || !o.h) return false; // sin datos de tamaño → descartar (no arriesgar)
+  if (o.w < 820 || o.h < 460) return false; // muy chica
   const ar = o.w / o.h;
-  if (ar < 0.8) return false; // vertical extremo (pinterest/cutouts) → fuera (queremos ~16:9)
+  if (ar < 1.1) return false; // cuadrado o vertical → fuera (queremos apaisado ~16:9)
+  if (ar > 2.6) return false; // banner ultrapanorámico → fuera
   return true;
 }
 
@@ -114,7 +115,7 @@ const FORCE_PNG = process.env.ASPNG === "1"; // guardar como <name>.png (el nave
 fs.mkdirSync(OUT, { recursive: true });
 const shots = JSON.parse(fs.readFileSync(arg, "utf8").replace(/^﻿/, ""));
 const RANK = process.env.RANK !== "0";
-const RANK_CANDS = +(process.env.RANK_CANDS || 14); // candidatos a puntuar por toma
+const RANK_CANDS = +(process.env.RANK_CANDS || 24); // candidatos a puntuar por toma (gratis → maxeado)
 
 // ── CLIP local (mismo setup que matchclip.mjs): rankea relevancia + castiga marca/ texto ──
 let clf = null;
@@ -141,7 +142,7 @@ const scoreImage = async (file, concept) => {
   const out = await clf(file, [concept, ...DISTRACTORS, ...TEXT_LABELS]);
   const get = (l) => out.find((o) => o.label === l)?.score || 0;
   const textMax = Math.max(...TEXT_LABELS.map(get));
-  return get(concept) * (textMax > 0.18 ? 0.12 : 1); // marca/texto prominente → casi descartado
+  return get(concept) * (textMax > 0.14 ? 0.06 : 1); // marca/texto prominente → casi descartado (filtro duro)
 };
 
 const TMP = "_bingtmp";

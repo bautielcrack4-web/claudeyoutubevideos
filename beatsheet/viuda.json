@@ -1,0 +1,1566 @@
+{
+ "video": "viuda",
+ "avatar": "viuda_opt.mp4",
+ "beats": [
+  {
+   "id": "hook_0",
+   "start": 1.4,
+   "dur": 9.25,
+   "kind": "talk",
+   "hue": "red"
+  },
+  {
+   "id": "hook_1",
+   "start": 10.65,
+   "dur": 4.37,
+   "kind": "raw",
+   "src": "broll/vc_pareja_feliz.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "hook_2",
+   "start": 15.02,
+   "dur": 5.3,
+   "kind": "keyphrase",
+   "text": "Si tu *PAREJA* falta…",
+   "src": "broll/vc_pareja_feliz.mp4",
+   "w": 0.45,
+   "hue": "blue"
+  },
+  {
+   "id": "hook_3",
+   "start": 20.32,
+   "dur": 1.9,
+   "kind": "raw",
+   "src": "broll/vc_sello_gov.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "hook_4",
+   "start": 22.22,
+   "dur": 2.3,
+   "kind": "keyphrase",
+   "text": "Una sorpresa del *gobierno*",
+   "src": "broll/vc_sello_gov.mp4",
+   "w": 0.45,
+   "hue": "amber"
+  },
+  {
+   "id": "hook_5",
+   "start": 24.52,
+   "dur": 7,
+   "kind": "keyphrase",
+   "text": "*MILES* por año, toda la vida",
+   "src": "broll/vc_calculadora.mp4",
+   "w": 0.45,
+   "at": "miles de dolares por año",
+   "hue": "blue"
+  },
+  {
+   "id": "hook_5_fill",
+   "start": 31.52,
+   "dur": 4.76,
+   "kind": "raw",
+   "src": "broll/vc_pareja_feliz.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "hook_6",
+   "start": 36.28,
+   "dur": 4.3,
+   "kind": "raw",
+   "src": "broll/vc_persona_sola.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "hook_7",
+   "start": 40.58,
+   "dur": 7,
+   "kind": "statpills",
+   "pills": [
+    "MENOS ingreso",
+    "MÁS impuesto"
+   ],
+   "slider": false,
+   "hue": "amber"
+  },
+  {
+   "id": "hook_7_fill",
+   "start": 47.58,
+   "dur": 4.56,
+   "kind": "raw",
+   "src": "broll/vc_calculadora.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "hook_8",
+   "start": 52.14,
+   "dur": 3.03,
+   "kind": "raw",
+   "src": "broll/vc_viuda_ventana.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "hook_9",
+   "start": 55.17,
+   "dur": 4.07,
+   "kind": "keyphrase",
+   "text": "La *penalidad de la viuda*",
+   "src": "img/vd_viuda_sola.png",
+   "w": 0.5,
+   "hue": "red",
+   "times": [
+    13994,
+    13998,
+    14012,
+    14016,
+    14020
+   ]
+  },
+  {
+   "id": "hook_10",
+   "start": 59.24,
+   "dur": 14.8,
+   "kind": "raw",
+   "src": "broll/vc_manos_pareja.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "hook_11",
+   "start": 74.04,
+   "dur": 7.54,
+   "kind": "keyphrase",
+   "text": "Se podía *evitar*",
+   "src": "broll/vc_pareja_cafe.mp4",
+   "w": 0.45,
+   "at": "se podia evitar",
+   "hue": "blue",
+   "times": [
+    9,
+    16,
+    23
+   ]
+  },
+  {
+   "id": "hook_12",
+   "start": 81.58,
+   "dur": 6.22,
+   "kind": "raw",
+   "src": "broll/vc_irs_form.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "hook_13",
+   "start": 87.8,
+   "dur": 15.56,
+   "kind": "goldvault",
+   "state": "locked",
+   "label": "UNA DECISIÓN",
+   "caption": "Tomada a tiempo, salva decenas de miles — al final",
+   "hue": "amber"
+  },
+  {
+   "id": "benintro_0",
+   "start": 103.36,
+   "dur": 8.86,
+   "kind": "raw",
+   "src": "img/vd_ben_cocina.png",
+   "hue": "amber",
+   "kicker": "Soy Ben",
+   "hold": true,
+   "gen": {
+    "type": "image",
+    "name": "vd_ben_cocina",
+    "prompt": "Foto documental realista, 16:9. un hombre latino de unos 68 años, pelo gris, anteojos, camisa a cuadros, expresión cálida, sitting at his kitchen table, warm and serious, talking to camera, en su casa. Como una foto real: imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+   }
+  },
+  {
+   "id": "benintro_1",
+   "start": 112.22,
+   "dur": 7,
+   "kind": "keyphrase",
+   "text": "Lo primero que pensé fue en *mi esposa*",
+   "src": "img/vd_ben_cocina.png",
+   "blur": true,
+   "w": 0.7,
+   "hue": "blue",
+   "times": [
+    9,
+    14,
+    21,
+    29,
+    38,
+    43,
+    47,
+    52
+   ]
+  },
+  {
+   "id": "benintro_1_fill",
+   "start": 119.22,
+   "dur": 12.06,
+   "kind": "raw",
+   "src": "broll/vc_persona_sola.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "tieprev_0",
+   "start": 131.28,
+   "dur": 7,
+   "kind": "floatprop",
+   "src": "img/vd_casa_prop.png",
+   "caption": "Aquel video: *la casa*",
+   "accent": "good",
+   "scale": 0.8,
+   "bg": "broll/vc_pareja_feliz.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "tieprev_0_fill",
+   "start": 138.28,
+   "dur": 11.87,
+   "kind": "raw",
+   "src": "broll/vc_manos_pareja.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "tieprev_1",
+   "start": 150.15,
+   "dur": 7,
+   "kind": "keyphrase",
+   "text": "Este: *la persona* que se queda",
+   "src": "img/vd_ben_cocina.png",
+   "w": 0.7,
+   "hue": "red"
+  },
+  {
+   "id": "tieprev_1_fill",
+   "start": 157.15,
+   "dur": 5.33,
+   "kind": "raw",
+   "src": "broll/vc_irs_form.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "elena_0",
+   "start": 162.48,
+   "dur": 8.78,
+   "kind": "rule",
+   "number": "01",
+   "title": "Elena y Manuel",
+   "hue": "red"
+  },
+  {
+   "id": "elena_1",
+   "start": 171.26,
+   "dur": 24.59,
+   "kind": "journey",
+   "dark": true,
+   "eyebrow": "46 años juntos",
+   "title": "Elena y Manuel",
+   "waypoints": [
+    {
+     "x": 0,
+     "y": 0,
+     "z": 0,
+     "image": "img/vd_pareja_joven.png",
+     "label": "Se casaron jóvenes",
+     "num": "1",
+     "dwell": 2.6,
+     "travel": 1.5
+    },
+    {
+     "x": 1.3,
+     "y": -0.3,
+     "z": 0.3,
+     "image": "img/vd_cartero.png",
+     "label": "Él, cartero",
+     "num": "2",
+     "dwell": 2.5,
+     "travel": 1.5
+    },
+    {
+     "x": 2.6,
+     "y": 0.3,
+     "z": -0.2,
+     "image": "img/vd_pareja_casa.png",
+     "label": "La casa pagada",
+     "num": "3",
+     "dwell": 2.7,
+     "travel": 1.5
+    },
+    {
+     "x": 3.9,
+     "y": -0.2,
+     "z": 0.2,
+     "image": "img/vd_pareja_porche.png",
+     "label": "“Hicimos los números”",
+     "num": "4",
+     "dwell": 2.9,
+     "travel": 1.4
+    }
+   ]
+  },
+  {
+   "id": "elena_2",
+   "start": 195.85,
+   "dur": 7.99,
+   "kind": "raw",
+   "src": "broll/vc_manos_pareja.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "elena_3",
+   "start": 203.84,
+   "dur": 12.3,
+   "kind": "infzoom",
+   "images": [
+    {
+     "src": "img/vd_pareja_joven.png"
+    },
+    {
+     "src": "img/vd_pareja_casa.png"
+    },
+    {
+     "src": "img/vd_pareja_porche.png"
+    }
+   ],
+   "hue": "red"
+  },
+  {
+   "id": "manuel_0",
+   "start": 216.14,
+   "dur": 21.5,
+   "kind": "raw",
+   "src": "img/vd_silla_vacia.png",
+   "hue": "amber",
+   "kicker": "Una primavera",
+   "hold": true,
+   "gen": {
+    "type": "image",
+    "name": "vd_silla_vacia",
+    "prompt": "Foto documental realista, 16:9. an empty armchair by a window, soft melancholic light, absence. Como una foto real: imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+   }
+  },
+  {
+   "id": "manuel_1",
+   "start": 237.64,
+   "dur": 10.12,
+   "kind": "raw",
+   "src": "broll/vc_viuda_ventana.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "manuel_2",
+   "start": 247.76,
+   "dur": 7,
+   "kind": "keyphrase",
+   "text": "Ella creyó que del dinero iba a estar *bien*",
+   "src": "img/vd_silla_vacia.png",
+   "w": 0.7,
+   "hue": "red"
+  },
+  {
+   "id": "manuel_2_fill",
+   "start": 254.76,
+   "dur": 2.54,
+   "kind": "raw",
+   "src": "broll/vc_sello_gov.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "shock_0",
+   "start": 257.3,
+   "dur": 7,
+   "kind": "floatprop",
+   "src": "img/vd_papeles_impuestos.png",
+   "caption": "“Vas a pagar *MÁS*”",
+   "accent": "accent",
+   "bg": "broll/vc_calculadora.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "shock_0_fill",
+   "start": 264.3,
+   "dur": 6.49,
+   "kind": "raw",
+   "src": "broll/vc_cheque.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "shock_1",
+   "start": 270.79,
+   "dur": 13.49,
+   "kind": "annotated",
+   "image": "img/vd_form_1040.png",
+   "eyebrow": "El mismo formulario",
+   "caption": "Ahora como soltera",
+   "annotations": [
+    {
+     "kind": "circle",
+     "x": 60,
+     "y": 45,
+     "label": "MÁS impuesto"
+    }
+   ],
+   "hue": "red"
+  },
+  {
+   "id": "shock_2",
+   "start": 284.28,
+   "dur": 8.82,
+   "kind": "keyphrase",
+   "text": "¿*Más*? Si ahora entra *menos*…",
+   "src": "img/vd_viuda_sola.png",
+   "w": 0.7,
+   "hue": "amber"
+  },
+  {
+   "id": "trampa_0",
+   "start": 293.1,
+   "dur": 6.64,
+   "kind": "raw",
+   "src": "img/vd_ben_explica.png",
+   "hue": "red",
+   "kicker": "El primer golpe",
+   "gen": {
+    "type": "image",
+    "name": "vd_ben_explica",
+    "prompt": "Foto documental realista, 16:9. un hombre latino de unos 68 años, pelo gris, anteojos, camisa a cuadros, expresión cálida, explaining seriously, raised finger, concerned, en su casa. Como una foto real: imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+   }
+  },
+  {
+   "id": "trampa_1",
+   "start": 299.74,
+   "dur": 3.31,
+   "kind": "raw",
+   "src": "broll/vc_irs_form.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "trampa_2",
+   "start": 303.05,
+   "dur": 10.21,
+   "kind": "diagram",
+   "eyebrow": "Cómo te clasifican",
+   "slides": [
+    {
+     "image": "img/dg_vd_filing.png",
+     "eyebrow": "Cómo te clasifican"
+    }
+   ],
+   "hue": "blue"
+  },
+  {
+   "id": "trampa_3",
+   "start": 313.26,
+   "dur": 3.32,
+   "kind": "raw",
+   "src": "broll/vc_sello_gov.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "pareja_0",
+   "start": 316.58,
+   "dur": 7,
+   "kind": "keyphrase",
+   "text": "Casados = tramos *anchos*, deducción *grande*",
+   "src": "img/vd_pareja_porche.png",
+   "w": 0.8,
+   "hue": "amber"
+  },
+  {
+   "id": "pareja_0_fill",
+   "start": 323.58,
+   "dur": 7.27,
+   "kind": "raw",
+   "src": "broll/vc_pareja_mesa.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "pareja_1",
+   "start": 330.85,
+   "dur": 11.59,
+   "kind": "raw",
+   "src": "broll/vc_pareja_feliz.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "soltero_0",
+   "start": 342.44,
+   "dur": 10.38,
+   "kind": "twomoments",
+   "eyebrow": "El mismo dinero, otra categoría",
+   "leftLabel": "EN PAREJA",
+   "leftSub": "Tramos anchos · deducción doble",
+   "rightLabel": "SOLTERO/A",
+   "rightSub": "Tramos a la mitad",
+   "hue": "blue"
+  },
+  {
+   "id": "soltero_1",
+   "start": 352.82,
+   "dur": 4.96,
+   "kind": "raw",
+   "src": "broll/vc_persona_sola.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "soltero_2",
+   "start": 357.78,
+   "dur": 6.78,
+   "kind": "keyphrase",
+   "text": "No te bajan a la mitad: te cambian las *reglas en contra*",
+   "src": "img/vd_papeles_impuestos.png",
+   "w": 0.7,
+   "hue": "amber"
+  },
+  {
+   "id": "deduccion_0",
+   "start": 364.56,
+   "dur": 7,
+   "kind": "statpills",
+   "pills": [
+    "$30,000",
+    "$15,000"
+   ],
+   "accent": "accent",
+   "hue": "red"
+  },
+  {
+   "id": "deduccion_0_fill",
+   "start": 371.56,
+   "dur": 8.66,
+   "kind": "raw",
+   "src": "broll/vc_pareja_charla.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "deduccion_1",
+   "start": 380.22,
+   "dur": 16.78,
+   "kind": "bars",
+   "title": "Deducción estándar",
+   "unit": "US$",
+   "bars": [
+    {
+     "label": "En pareja",
+     "value": 30000,
+     "tone": "good"
+    },
+    {
+     "label": "Soltero/a",
+     "value": 15000,
+     "tone": "danger"
+    }
+   ],
+   "hue": "amber"
+  },
+  {
+   "id": "deduccion_2",
+   "start": 397,
+   "dur": 7,
+   "kind": "callout",
+   "image": "img/vd_deduccion_doc.png",
+   "figure": "−50%",
+   "caption": "La deducción, a la mitad",
+   "accent": "danger",
+   "hue": "blue"
+  },
+  {
+   "id": "deduccion_2_fill",
+   "start": 404,
+   "dur": 7.54,
+   "kind": "raw",
+   "src": "broll/vc_ss_oficina.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "deduccion_3",
+   "start": 411.54,
+   "dur": 9.4,
+   "kind": "keyphrase",
+   "text": "Perdió *la mitad* de la deducción",
+   "src": "img/vd_viuda_sola.png",
+   "w": 0.6,
+   "hue": "red"
+  },
+  {
+   "id": "tramos_0",
+   "start": 420.94,
+   "dur": 11,
+   "kind": "diagram",
+   "eyebrow": "Los escalones de impuestos",
+   "slides": [
+    {
+     "image": "img/dg_vd_brackets.png",
+     "eyebrow": "Los escalones de impuestos"
+    }
+   ],
+   "hue": "amber"
+  },
+  {
+   "id": "tramos_0_fill",
+   "start": 431.94,
+   "dur": 3.3,
+   "kind": "raw",
+   "src": "broll/vc_abogado_pareja.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "tramos_1",
+   "start": 435.24,
+   "dur": 10.73,
+   "kind": "bars",
+   "title": "El mismo ingreso, la tasa",
+   "unit": "%",
+   "bars": [
+    {
+     "label": "En pareja",
+     "value": 12,
+     "tone": "good"
+    },
+    {
+     "label": "Soltero/a",
+     "value": 22,
+     "tone": "danger"
+    }
+   ],
+   "hue": "blue"
+  },
+  {
+   "id": "tramos_2",
+   "start": 445.97,
+   "dur": 9.29,
+   "kind": "callout",
+   "image": "img/vd_form_1040.png",
+   "figure": "22%",
+   "caption": "La tasa de soltero",
+   "accent": "danger",
+   "hue": "red"
+  },
+  {
+   "id": "tramos_3",
+   "start": 455.26,
+   "dur": 5.26,
+   "kind": "keyphrase",
+   "text": "No le subió el ingreso. Le subió *la tasa*.",
+   "src": "img/vd_papeles_impuestos.png",
+   "w": 0.7,
+   "hue": "amber",
+   "times": [
+    9,
+    17,
+    23,
+    31,
+    38,
+    61,
+    68,
+    77,
+    85
+   ]
+  },
+  {
+   "id": "ss_0",
+   "start": 460.52,
+   "dur": 6.6,
+   "kind": "raw",
+   "src": "img/vd_ben_ss.png",
+   "hue": "blue",
+   "kicker": "El tercer golpe",
+   "gen": {
+    "type": "image",
+    "name": "vd_ben_ss",
+    "prompt": "Foto documental realista, 16:9. un hombre latino de unos 68 años, pelo gris, anteojos, camisa a cuadros, expresión cálida, pointing, serious, this hurts the most expression, en su casa. Como una foto real: imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+   }
+  },
+  {
+   "id": "ss_1",
+   "start": 467.12,
+   "dur": 4.72,
+   "kind": "raw",
+   "src": "broll/vc_ss_oficina.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "ss_2",
+   "start": 471.84,
+   "dur": 11,
+   "kind": "diagram",
+   "eyebrow": "Los dos cheques",
+   "slides": [
+    {
+     "image": "img/dg_vd_ss.png",
+     "eyebrow": "Los dos cheques"
+    }
+   ],
+   "hue": "amber"
+  },
+  {
+   "id": "ss_2_fill",
+   "start": 482.84,
+   "dur": 3.5,
+   "kind": "raw",
+   "src": "broll/vc_pareja_preocupada.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "ss_3",
+   "start": 486.34,
+   "dur": 7,
+   "kind": "statpills",
+   "pills": [
+    "2 cheques",
+    "1 cheque"
+   ],
+   "slider": false,
+   "hue": "blue"
+  },
+  {
+   "id": "ss_3_fill",
+   "start": 493.34,
+   "dur": 3.16,
+   "kind": "raw",
+   "src": "broll/vc_viuda_ventana.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "ss_4",
+   "start": 496.5,
+   "dur": 6.6,
+   "kind": "raw",
+   "src": "broll/vc_cheque.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "ss_5",
+   "start": 503.1,
+   "dur": 9.43,
+   "kind": "callout",
+   "image": "img/vd_dos_cheques.png",
+   "figure": "−1 cheque",
+   "caption": "Desaparece el más chico",
+   "accent": "danger",
+   "hue": "amber"
+  },
+  {
+   "id": "ss_6",
+   "start": 512.53,
+   "dur": 6.09,
+   "kind": "keyphrase",
+   "text": "Pierde *un tercio* de lo que entraba",
+   "src": "img/vd_viuda_sola.png",
+   "w": 0.6,
+   "hue": "blue"
+  },
+  {
+   "id": "resumen3_0",
+   "start": 518.62,
+   "dur": 7,
+   "kind": "keyphrase",
+   "text": "*Menos* ingreso. *Más* impuesto. Esa es la trampa.",
+   "src": "broll/vc_calculadora.mp4",
+   "fontSize": 84,
+   "hue": "red"
+  },
+  {
+   "id": "resumen3_0_fill",
+   "start": 525.62,
+   "dur": 2.83,
+   "kind": "raw",
+   "src": "broll/vc_pareja_cafe.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "resumen3_1",
+   "start": 528.45,
+   "dur": 6.39,
+   "kind": "raw",
+   "src": "broll/vc_calculadora.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "cta_dos_0",
+   "start": 534.84,
+   "dur": 34.44,
+   "kind": "raw",
+   "src": "img/vd_ben_cta1.png",
+   "hue": "amber",
+   "kicker": "Escriban “los dos”",
+   "gen": {
+    "type": "image",
+    "name": "vd_ben_cta1",
+    "prompt": "Foto documental realista, 16:9. un hombre latino de unos 68 años, pelo gris, anteojos, camisa a cuadros, expresión cálida, warmly asking the viewer to comment, friendly, en su casa. Como una foto real: imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+   }
+  },
+  {
+   "id": "irmaa_0",
+   "start": 569.28,
+   "dur": 19.87,
+   "kind": "mistake",
+   "number": "4°",
+   "title": "El recargo de Medicare (IRMAA)",
+   "desc": "El límite para soltero es casi la mitad → el mismo ingreso lo cruza.",
+   "eyebrow": "GOLPE",
+   "hue": "blue"
+  },
+  {
+   "id": "irmaa_1",
+   "start": 589.15,
+   "dur": 12.92,
+   "kind": "raw",
+   "src": "broll/vc_medicare.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "irmaa_2",
+   "start": 602.07,
+   "dur": 7,
+   "kind": "callout",
+   "image": "img/vd_deduccion_doc.png",
+   "figure": "÷2",
+   "caption": "El límite, a la mitad",
+   "accent": "danger",
+   "hue": "amber"
+  },
+  {
+   "id": "irmaa_2_fill",
+   "start": 609.07,
+   "dur": 11.45,
+   "kind": "raw",
+   "src": "broll/vc_pareja_feliz.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "rmd_0",
+   "start": 620.52,
+   "dur": 7,
+   "kind": "floatprop",
+   "src": "img/vd_alcancia.png",
+   "caption": "Retiros *obligatorios*, tasa de soltero",
+   "accent": "accent",
+   "scale": 0.8,
+   "bg": "broll/vc_irs_form.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "rmd_0_fill",
+   "start": 627.52,
+   "dur": 12.15,
+   "kind": "raw",
+   "src": "broll/vc_calculadora.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "rmd_1",
+   "start": 639.67,
+   "dur": 7,
+   "kind": "keyphrase",
+   "text": "El ahorro se vuelve, en parte, una *carga*",
+   "src": "img/vd_papeles_impuestos.png",
+   "w": 0.7,
+   "hue": "amber"
+  },
+  {
+   "id": "rmd_1_fill",
+   "start": 646.67,
+   "dur": 5.51,
+   "kind": "raw",
+   "src": "broll/vc_persona_sola.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "todojunto_0",
+   "start": 652.18,
+   "dur": 15.08,
+   "kind": "checklist",
+   "title": "La penalidad de la viuda",
+   "items": [
+    {
+     "text": "Pierde un cheque del Seguro Social",
+     "state": "done"
+    },
+    {
+     "text": "Deducción a la mitad",
+     "state": "done"
+    },
+    {
+     "text": "Salta a un tramo más alto",
+     "state": "done"
+    },
+    {
+     "text": "Medicare más caro",
+     "state": "done"
+    },
+    {
+     "text": "Retiros obligatorios más gravados",
+     "state": "done"
+    }
+   ],
+   "hue": "amber"
+  },
+  {
+   "id": "todojunto_1",
+   "start": 667.26,
+   "dur": 15.08,
+   "kind": "bars",
+   "title": "Lo que entra al hogar",
+   "unit": "%",
+   "bars": [
+    {
+     "label": "Con los dos",
+     "value": 100,
+     "tone": "good"
+    },
+    {
+     "label": "Cuando queda uno",
+     "value": 65,
+     "tone": "danger"
+    }
+   ],
+   "hue": "blue"
+  },
+  {
+   "id": "todojunto_2",
+   "start": 682.34,
+   "dur": 8.44,
+   "kind": "keyphrase",
+   "text": "Todo, por pasar de *dos* a *una*",
+   "src": "img/vd_viuda_sola.png",
+   "w": 0.6,
+   "hue": "red"
+  },
+  {
+   "id": "promesa_0",
+   "start": 690.78,
+   "dur": 16.92,
+   "kind": "raw",
+   "src": "img/vd_ben_promesa.png",
+   "hue": "blue",
+   "kicker": "Hoy: 3 cosas",
+   "gen": {
+    "type": "image",
+    "name": "vd_ben_promesa",
+    "prompt": "Foto documental realista, 16:9. un hombre latino de unos 68 años, pelo gris, anteojos, camisa a cuadros, expresión cálida, earnest, leaning in, promising to help, en su casa. Como una foto real: imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+   }
+  },
+  {
+   "id": "promesa_1",
+   "start": 707.7,
+   "dur": 16.92,
+   "kind": "goldvault",
+   "state": "locked",
+   "label": "EL ORO",
+   "caption": "Lo más importante, al final",
+   "hue": "red"
+  },
+  {
+   "id": "errores_0",
+   "start": 724.62,
+   "dur": 5.68,
+   "kind": "rule",
+   "number": "02",
+   "title": "Los errores que lo empeoran",
+   "hue": "red"
+  },
+  {
+   "id": "errores_1",
+   "start": 730.3,
+   "dur": 5.16,
+   "kind": "raw",
+   "src": "broll/vc_pareja_preocupada.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "error1_0",
+   "start": 735.46,
+   "dur": 17.5,
+   "kind": "mistake",
+   "number": "1",
+   "title": "“Ya hicimos los números”",
+   "desc": "Pero los hicieron para DOS, no para el que queda solo.",
+   "eyebrow": "ERROR",
+   "hue": "amber"
+  },
+  {
+   "id": "error1_1",
+   "start": 752.96,
+   "dur": 11.38,
+   "kind": "raw",
+   "src": "broll/vc_pareja_mesa.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "error2_0",
+   "start": 764.34,
+   "dur": 15.03,
+   "kind": "mistake",
+   "number": "2",
+   "title": "Esperar",
+   "desc": "Casi todo solo se puede hacer mientras los DOS viven.",
+   "eyebrow": "ERROR",
+   "hue": "blue"
+  },
+  {
+   "id": "error2_1",
+   "start": 779.37,
+   "dur": 7,
+   "kind": "floatprop",
+   "src": "img/vd_reloj.png",
+   "caption": "Las puertas se *cierran*",
+   "accent": "accent",
+   "scale": 0.7,
+   "bg": "broll/vc_persona_sola.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "error2_1_fill",
+   "start": 786.37,
+   "dur": 9.11,
+   "kind": "raw",
+   "src": "broll/vc_manos_pareja.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "error3_0",
+   "start": 795.48,
+   "dur": 12.07,
+   "kind": "mistake",
+   "number": "3",
+   "title": "Todo en cuentas sin gravar",
+   "desc": "Le dejás al que queda la cuenta más cara.",
+   "eyebrow": "ERROR",
+   "hue": "red"
+  },
+  {
+   "id": "error3_1",
+   "start": 807.55,
+   "dur": 7,
+   "kind": "floatprop",
+   "src": "img/vd_cuenta_pesada.png",
+   "caption": "La cuenta *más cara*",
+   "accent": "accent",
+   "scale": 0.7,
+   "bg": "broll/vc_pareja_charla.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "error3_1_fill",
+   "start": 814.55,
+   "dur": 5.93,
+   "kind": "raw",
+   "src": "broll/vc_irs_form.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "error4_0",
+   "start": 820.48,
+   "dur": 22.84,
+   "kind": "mistake",
+   "number": "4",
+   "title": "No hablarlo en pareja",
+   "desc": "El que queda no solo está de duelo: está perdido.",
+   "eyebrow": "ERROR",
+   "hue": "amber"
+  },
+  {
+   "id": "error4_1",
+   "start": 843.32,
+   "dur": 14.84,
+   "kind": "raw",
+   "src": "broll/vc_pareja_charla.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "cta_sub_0",
+   "start": 858.16,
+   "dur": 35.86,
+   "kind": "raw",
+   "src": "img/vd_ben_sub.png",
+   "hue": "blue",
+   "kicker": "De jubilado a jubilado",
+   "gen": {
+    "type": "image",
+    "name": "vd_ben_sub",
+    "prompt": "Foto documental realista, 16:9. un hombre latino de unos 68 años, pelo gris, anteojos, camisa a cuadros, expresión cálida, warmly inviting to subscribe, hand near chest, en su casa. Como una foto real: imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+   }
+  },
+  {
+   "id": "soluciones_0",
+   "start": 894.02,
+   "dur": 17,
+   "kind": "goldvault",
+   "state": "open",
+   "label": "EL ORO",
+   "caption": "Lo que protege al que queda",
+   "hue": "red"
+  },
+  {
+   "id": "soluciones_1",
+   "start": 911.02,
+   "dur": 17,
+   "kind": "raw",
+   "src": "img/vd_ben_sol.png",
+   "hue": "amber",
+   "kicker": "Ahora sí: qué hacer",
+   "gen": {
+    "type": "image",
+    "name": "vd_ben_sol",
+    "prompt": "Foto documental realista, 16:9. un hombre latino de unos 68 años, pelo gris, anteojos, camisa a cuadros, expresión cálida, hopeful, serious, about to reveal solutions, en su casa. Como una foto real: imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+   }
+  },
+  {
+   "id": "tool1_0",
+   "start": 928.02,
+   "dur": 19.09,
+   "kind": "tool",
+   "number": "1",
+   "nameEs": "Conversión a Roth",
+   "nameEn": "Roth Conversion",
+   "how": "Mientras los dos viven (tasa barata), pasás de a poco el ahorro a una cuenta Roth: libre de impuestos para siempre.",
+   "eyebrow": "Herramienta",
+   "hue": "amber"
+  },
+  {
+   "id": "tool1_1",
+   "start": 947.11,
+   "dur": 11,
+   "kind": "diagram",
+   "eyebrow": "Cómo blinda al que queda",
+   "slides": [
+    {
+     "image": "img/dg_vd_roth.png",
+     "eyebrow": "Cómo blinda al que queda"
+    }
+   ],
+   "hue": "blue"
+  },
+  {
+   "id": "tool1_1_fill",
+   "start": 958.11,
+   "dur": 14.46,
+   "kind": "raw",
+   "src": "broll/vc_sello_gov.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "tool1_2",
+   "start": 972.57,
+   "dur": 19.09,
+   "kind": "bars",
+   "title": "Pagar el impuesto…",
+   "unit": "%",
+   "bars": [
+    {
+     "label": "Hoy, en pareja",
+     "value": 12,
+     "tone": "good",
+     "winner": true
+    },
+    {
+     "label": "Mañana, viuda sola",
+     "value": 22,
+     "tone": "danger"
+    }
+   ],
+   "hue": "red"
+  },
+  {
+   "id": "tool1_3",
+   "start": 991.66,
+   "dur": 22.91,
+   "kind": "process",
+   "title": "Cómo se hace",
+   "eyebrow": "Con tiempo",
+   "steps": [
+    {
+     "title": "Cuenta tradicional",
+     "desc": "sin gravar",
+     "image": "img/vd_cuenta_trad.png"
+    },
+    {
+     "title": "Convertir de a poco",
+     "desc": "años en pareja, tasa baja",
+     "image": "img/vd_conversion.png"
+    },
+    {
+     "title": "Cuenta Roth",
+     "desc": "libre de impuestos",
+     "image": "img/vd_roth.png"
+    }
+   ],
+   "hue": "amber"
+  },
+  {
+   "id": "tool1_4",
+   "start": 1014.57,
+   "dur": 7,
+   "kind": "keyphrase",
+   "text": "Hacelo con *5 años* de anticipación",
+   "src": "img/vd_pareja_porche.png",
+   "w": 0.7,
+   "hue": "blue"
+  },
+  {
+   "id": "tool1_4_fill",
+   "start": 1021.57,
+   "dur": 5.47,
+   "kind": "raw",
+   "src": "broll/vc_cheque.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "tool2_0",
+   "start": 1027.04,
+   "dur": 25.62,
+   "kind": "tool",
+   "number": "2",
+   "nameEs": "Llenar los escalones bajos",
+   "nameEn": "Bracket filling",
+   "how": "En los años de ingreso bajo, sacás un poco a tasa barata en vez de dejar el escalón vacío.",
+   "eyebrow": "Herramienta",
+   "hue": "blue"
+  },
+  {
+   "id": "tool2_1",
+   "start": 1052.66,
+   "dur": 7,
+   "kind": "keyphrase",
+   "text": "Pagás *barato hoy*, no caro mañana",
+   "src": "img/vd_pareja_porche.png",
+   "w": 0.7,
+   "hue": "red"
+  },
+  {
+   "id": "tool2_1_fill",
+   "start": 1059.66,
+   "dur": 9.74,
+   "kind": "raw",
+   "src": "broll/vc_pareja_mesa.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "tool3_0",
+   "start": 1069.4,
+   "dur": 9.58,
+   "kind": "tool",
+   "number": "3",
+   "nameEs": "Donación calificada (QCD)",
+   "nameEn": "Qualified Charitable Distribution",
+   "how": "Donás directo desde la cuenta de retiro: no cuenta como ingreso y baja los retiros obligatorios.",
+   "eyebrow": "Herramienta",
+   "hue": "red"
+  },
+  {
+   "id": "tool3_1",
+   "start": 1078.98,
+   "dur": 7,
+   "kind": "floatprop",
+   "src": "img/vd_corazon.png",
+   "accent": "good",
+   "scale": 0.6,
+   "bg": "broll/vc_pareja_cafe.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "tool3_1_fill",
+   "start": 1085.98,
+   "dur": 2.58,
+   "kind": "raw",
+   "src": "broll/vc_pareja_charla.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "tool4_0",
+   "start": 1088.56,
+   "dur": 15.26,
+   "kind": "tool",
+   "number": "4",
+   "nameEs": "Seguro de vida con cabeza",
+   "nameEn": "Life insurance",
+   "how": "Algo que el día que uno falte le dé al que queda una cantidad libre de impuestos, para tapar el cheque perdido.",
+   "eyebrow": "Herramienta",
+   "hue": "amber"
+  },
+  {
+   "id": "tool4_1",
+   "start": 1103.82,
+   "dur": 7,
+   "kind": "floatprop",
+   "src": "img/vd_paraguas.png",
+   "caption": "Tapa el *cheque perdido*",
+   "accent": "good",
+   "scale": 0.7,
+   "bg": "broll/vc_manos_pareja.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "tool4_1_fill",
+   "start": 1110.82,
+   "dur": 8.26,
+   "kind": "raw",
+   "src": "broll/vc_ss_oficina.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "tool5_0",
+   "start": 1119.08,
+   "dur": 12.27,
+   "kind": "tool",
+   "number": "5",
+   "nameEs": "Estrategia del Seguro Social",
+   "nameEn": "Claiming strategy",
+   "how": "El que ganó más espera hasta los 70: su cheque crece, y crece el que hereda el sobreviviente. Gratis.",
+   "eyebrow": "Herramienta",
+   "hue": "blue"
+  },
+  {
+   "id": "tool5_1",
+   "start": 1131.35,
+   "dur": 11,
+   "kind": "diagram",
+   "eyebrow": "Esperar hasta los 70",
+   "slides": [
+    {
+     "image": "img/dg_vd_ss70.png",
+     "eyebrow": "Esperar hasta los 70"
+    }
+   ],
+   "hue": "red"
+  },
+  {
+   "id": "tool5_1_fill",
+   "start": 1142.35,
+   "dur": 5.35,
+   "kind": "raw",
+   "src": "broll/vc_abogado_pareja.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "paso_0",
+   "start": 1147.7,
+   "dur": 16.28,
+   "kind": "action",
+   "eyebrow": "Esta semana",
+   "step": "Siéntense los dos con un café",
+   "question": "Si mañana falta uno de los dos, ¿cómo le quedan las cuentas al que se queda?",
+   "hue": "red"
+  },
+  {
+   "id": "paso_1",
+   "start": 1163.98,
+   "dur": 16.27,
+   "kind": "annotated",
+   "image": "img/vd_pareja_porche.png",
+   "eyebrow": "La mejor protección",
+   "caption": "Hablarlo HOY, los dos",
+   "annotations": [
+    {
+     "kind": "circle",
+     "x": 50,
+     "y": 50,
+     "label": "Juntos"
+    }
+   ],
+   "hue": "amber"
+  },
+  {
+   "id": "paso_2",
+   "start": 1180.25,
+   "dur": 9.87,
+   "kind": "raw",
+   "src": "broll/vc_pareja_cafe.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "paso_3",
+   "start": 1190.12,
+   "dur": 8.47,
+   "kind": "raw",
+   "src": "broll/vc_abogado_pareja.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "paso_4",
+   "start": 1198.59,
+   "dur": 7,
+   "kind": "keyphrase",
+   "text": "No es el dinero. Es el *tiempo*.",
+   "src": "img/vd_pareja_porche.png",
+   "w": 0.7,
+   "hue": "amber"
+  },
+  {
+   "id": "paso_4_fill",
+   "start": 1205.59,
+   "dur": 3.63,
+   "kind": "raw",
+   "src": "broll/vc_pareja_preocupada.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "recap_0",
+   "start": 1209.22,
+   "dur": 21.86,
+   "kind": "splitlist",
+   "title": "Pareja vs. el que queda",
+   "items": [
+    "Deducción doble → a la mitad",
+    "Tramos anchos → angostos",
+    "Dos cheques → uno"
+   ],
+   "palette": "D",
+   "cross": true,
+   "hue": "amber"
+  },
+  {
+   "id": "recap_1",
+   "start": 1231.08,
+   "dur": 25.22,
+   "kind": "checklist",
+   "title": "Repaso",
+   "items": [
+    {
+     "text": "De pareja a soltero = deducción a la mitad + tramos angostos",
+     "state": "done"
+    },
+    {
+     "text": "Se pierde un cheque del Seguro Social",
+     "state": "done"
+    },
+    {
+     "text": "Medicare más caro + retiros más gravados",
+     "state": "done"
+    },
+    {
+     "text": "Arma: Roth, orden de cuentas, estrategia de SS",
+     "state": "done"
+    }
+   ],
+   "hue": "blue"
+  },
+  {
+   "id": "firma_0",
+   "start": 1256.3,
+   "dur": 24.56,
+   "kind": "signature",
+   "eyebrow": "Para que te quede",
+   "lines": [
+    {
+     "text": "En la jubilación"
+    },
+    {
+     "text": "el dinero no se gana de nuevo,"
+    },
+    {
+     "text": "solo se deja de perder.",
+     "gold": true
+    }
+   ],
+   "hue": "blue"
+  },
+  {
+   "id": "firma_1",
+   "start": 1280.86,
+   "dur": 7,
+   "kind": "keyphrase",
+   "text": "Cuidarle las cuentas al que queda es decir *te amo*",
+   "src": "img/vd_pareja_porche.png",
+   "w": 0.8,
+   "hue": "red"
+  },
+  {
+   "id": "firma_1_fill",
+   "start": 1287.86,
+   "dur": 9.18,
+   "kind": "raw",
+   "src": "broll/vc_viuda_ventana.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "cta_final_0",
+   "start": 1297.04,
+   "dur": 18.14,
+   "kind": "raw",
+   "src": "img/vd_ben_cta2.png",
+   "hue": "red",
+   "kicker": "¿Lo sabías?",
+   "gen": {
+    "type": "image",
+    "name": "vd_ben_cta2",
+    "prompt": "Foto documental realista, 16:9. un hombre latino de unos 68 años, pelo gris, anteojos, camisa a cuadros, expresión cálida, warm final question to the viewer, curious, en su casa. Como una foto real: imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+   }
+  },
+  {
+   "id": "tease_0",
+   "start": 1315.18,
+   "dur": 32.24,
+   "kind": "nextvideo",
+   "kicker": "Próximo video",
+   "title": "La regla de los 10 años",
+   "sub": "Lo que el IRS hace con tu cuenta de retiro cuando la heredan tus hijos.",
+   "hue": "amber"
+  },
+  {
+   "id": "outro_0",
+   "start": 1347.42,
+   "dur": 13.14,
+   "kind": "raw",
+   "src": "img/vd_ben_outro.png",
+   "hue": "blue",
+   "kicker": "Soy Ben, de Ben retirado",
+   "hold": true,
+   "gen": {
+    "type": "image",
+    "name": "vd_ben_outro",
+    "prompt": "Foto documental realista, 16:9. un hombre latino de unos 68 años, pelo gris, anteojos, camisa a cuadros, expresión cálida, warm goodbye, kind smile, golden hour, en su casa. Como una foto real: imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+   }
+  }
+ ],
+ "extraImages": [
+  {
+   "name": "vd_pareja_joven",
+   "prompt": "Foto documental realista, 16:9. an older latino couple as a young married couple decades ago, vintage photo. Como una foto real: imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+  },
+  {
+   "name": "vd_cartero",
+   "prompt": "Foto documental realista, 16:9. an older man as a mailman postal worker, proud, vintage. Como una foto real: imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+  },
+  {
+   "name": "vd_pareja_casa",
+   "prompt": "Foto documental realista, 16:9. an older latino couple proud in front of their modest paid-off house, sunset. Como una foto real: imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+  },
+  {
+   "name": "vd_pareja_porche",
+   "prompt": "Foto documental realista, 16:9. an older couple holding hands on a porch, content, golden hour. Como una foto real: imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+  },
+  {
+   "name": "vd_form_1040",
+   "prompt": "Foto documental realista, 16:9. a US 1040 tax form with numbers, single filer, highlighted total. Como una foto real: imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+  },
+  {
+   "name": "vd_deduccion_doc",
+   "prompt": "Foto documental realista, 16:9. a tax deduction worksheet, pencil, numbers. Como una foto real: imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+  },
+  {
+   "name": "vd_dos_cheques",
+   "prompt": "Foto documental realista, 16:9. two social security checks on a table, one larger one smaller. Como una foto real: imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+  },
+  {
+   "name": "vd_cuenta_trad",
+   "prompt": "Foto documental realista, 16:9. a traditional IRA retirement account statement. Como una foto real: imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+  },
+  {
+   "name": "vd_conversion",
+   "prompt": "Foto documental realista, 16:9. money moving between two account jars, conversion concept. Como una foto real: imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+  },
+  {
+   "name": "vd_roth",
+   "prompt": "Foto documental realista, 16:9. a Roth account labeled, green checkmark, tax free. Como una foto real: imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+  },
+  {
+   "name": "vd_pareja_porche",
+   "prompt": "Foto documental realista, 16:9. an older couple holding hands on a porch, content, golden hour. Como una foto real: imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+  }
+ ]
+}

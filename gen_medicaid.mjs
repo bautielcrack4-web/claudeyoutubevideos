@@ -52,7 +52,7 @@ const SECTIONS = [
   { key: "rafael", phrase: "A dos casas de la mia", beats: [
     c("rule", { number: "01", title: "La historia de Don Rafael" }),
     real("rbc_barrio", "a quiet old neighborhood street, slow pan", "old neighborhood street slow pan", { w: 0.6 }),
-    c("journey", { eyebrow: "Una vida entera", title: "Don Rafael", waypoints: [
+    c("journey", { dark: true, eyebrow: "Una vida entera", title: "Don Rafael", waypoints: [
       { x: 0, y: 0, z: 0, image: r("rb_rafael_fabrica", "an older latino man working in a factory decades ago, vintage").gen.name, label: "41 años trabajando", num: "1", dwell: 2.6, travel: 1.5, _genImg: "rb_rafael_fabrica", _prompt: P("an older latino man working in a factory decades ago, vintage") },
       { x: 1.3, y: -0.3, z: 0.3, image: r("rb_rafael_mecanico", "a man's greasy hands working as a mechanic, proud").gen.name, label: "Mecánico por su cuenta", num: "2", dwell: 2.6, travel: 1.5, _genImg: "rb_rafael_mecanico", _prompt: P("a man's greasy hands working as a mechanic, proud") },
       { x: 2.6, y: 0.3, z: -0.2, image: r("rb_rafael_casa", "a humble older man proud in front of his small house, sunset").gen.name, label: "Casa pagada a los 62", num: "3", dwell: 2.8, travel: 1.5, _genImg: "rb_rafael_casa", _prompt: P("a humble older man proud in front of his small house, sunset") },

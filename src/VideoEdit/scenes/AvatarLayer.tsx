@@ -102,7 +102,18 @@ export const AvatarLayer: React.FC<{
   // cover-sizing del video 16:9 dentro de la caja (sesgo a la cara)
   const ratio = 16 / 9;
   const kb = 1 + 0.05 * smallness * (0.5 + 0.5 * Math.sin(frame / 90));
-  let coverW = Math.max(w, h * ratio) * kb;
+  // ★ PUSH-IN lento y sutil cuando el avatar habla SOLO a pantalla completa (full), solo
+  // en ventanas LARGAS (>4s) → "a veces". Alterna push-in / pull-out por ventana para que
+  // no sea siempre igual. Le da vida al plano-presentador sin que se note brusco.
+  const winEnd = i + 1 < starts.length ? starts[i + 1] : starts[i] + 99999;
+  const winLen = winEnd - starts[i];
+  let fullZoom = 1;
+  if (curMode === "full" && winLen > fps * 4) {
+    const prog = interpolate(t - starts[i], [0, winLen], [0, 1], { extrapolateRight: "clamp" });
+    fullZoom = i % 2 === 0 ? 1 + 0.05 * prog : 1.05 - 0.05 * prog; // 1.00→1.05 ó 1.05→1.00
+  }
+  const zoom = curMode === "full" ? fullZoom : kb;
+  let coverW = Math.max(w, h * ratio) * zoom;
   let coverH = coverW / ratio;
   const offX = (w - coverW) / 2;
   const offY = (h - coverH) * (0.28 + 0.04 * smallness); // mostrar la cara

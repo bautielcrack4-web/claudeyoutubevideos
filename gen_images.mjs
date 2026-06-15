@@ -58,13 +58,14 @@ let gate = Promise.resolve();
 const slot = () => { const p = gate.then(() => sleep(GAP)); gate = p.catch(() => {}); return p; };
 
 const genOne = async (item) => {
-  const { name, prompt, size = DEFAULT_SIZE } = item;
+  const { name, prompt, size = DEFAULT_SIZE, transparent } = item;
   const dest = path.join(OUT, `${name}.png`);
   if (fs.existsSync(dest)) {
     console.log(`= ya existe  ${name}.png`);
     return { name, prompt, file: `${name}.png`, skipped: true };
   }
   const body = { model: MODEL, prompt, size, quality: QUALITY, n: 1 };
+  if (transparent) body.background = "transparent"; // PNG con alpha (props para FloatingProp)
   let res, attempt = 0;
   while (true) {
     await slot(); // espaciado global
