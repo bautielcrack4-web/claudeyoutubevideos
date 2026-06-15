@@ -1,0 +1,2750 @@
+{
+ "video": "estafas",
+ "avatar": "estafas_opt.mp4",
+ "beats": [
+  {
+   "id": "hook_0",
+   "start": 1.5,
+   "dur": 10.59,
+   "kind": "talk",
+   "hue": "red"
+  },
+  {
+   "id": "hook_1",
+   "start": 12.09,
+   "dur": 6.09,
+   "kind": "keyphrase",
+   "text": "Una *llamada* te puede vaciar la cuenta",
+   "hue": "amber"
+  },
+  {
+   "id": "hook_2",
+   "start": 18.18,
+   "dur": 6.28,
+   "kind": "raw",
+   "src": "broll/ec_call_center.mp4",
+   "hue": "blue",
+   "broll": true
+  },
+  {
+   "id": "hook_3",
+   "start": 24.46,
+   "dur": 8.5,
+   "kind": "keyphrase",
+   "text": "No es un loco. Es un *negocio*.",
+   "src": "broll/ec_call_center.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "hook_3_f0",
+   "start": 32.96,
+   "dur": 4.04,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_anciano_tel.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "hook_4",
+   "start": 37,
+   "dur": 4.77,
+   "kind": "statpills",
+   "pills": [
+    "MIEDO",
+    "APURO"
+   ],
+   "slider": false,
+   "hue": "amber"
+  },
+  {
+   "id": "hook_5",
+   "start": 41.77,
+   "dur": 6.75,
+   "kind": "annotated",
+   "image": "img/dg_es_callid.png",
+   "eyebrow": "Suena el teléfono",
+   "caption": "Así empieza, siempre",
+   "annotations": [
+    {
+     "kind": "circle",
+     "x": 0.5,
+     "y": 0.3,
+     "w": 0.22,
+     "label": "DESCONOCIDO"
+    }
+   ],
+   "hue": "blue"
+  },
+  {
+   "id": "hook_6",
+   "start": 48.52,
+   "dur": 8.5,
+   "kind": "keyphrase",
+   "text": "No con un arma: con una *llamada amable*",
+   "src": "broll/ec_anciano_tel.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "hook_6_f0",
+   "start": 57.02,
+   "dur": 2.34,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_compu.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "hook_7",
+   "start": 59.36,
+   "dur": 10.6,
+   "kind": "raw",
+   "src": "broll/ec_anciano_tel.mp4",
+   "hue": "amber",
+   "broll": true
+  },
+  {
+   "id": "hook_8",
+   "start": 69.96,
+   "dur": 10.02,
+   "kind": "keyphrase",
+   "text": "No le pasa a los *tontos*. Le pasa a *cualquiera*.",
+   "src": "img/es_medico_jub.png",
+   "hue": "blue"
+  },
+  {
+   "id": "hook_9",
+   "start": 79.98,
+   "dur": 9.9,
+   "kind": "raw",
+   "src": "img/es_medico_jub.png",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "es_medico_jub",
+    "prompt": "Foto documental realista, 16:9. a retired doctor and a retired teacher, intelligent dignified seniors. Como una foto real: imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+   }
+  },
+  {
+   "id": "hook_10",
+   "start": 89.88,
+   "dur": 8.5,
+   "kind": "keyphrase",
+   "text": "No ataca tu *cabeza*. Ataca tu *corazón*.",
+   "src": "img/es_corazon.png",
+   "hue": "amber"
+  },
+  {
+   "id": "hook_10_f0",
+   "start": 98.38,
+   "dur": 2.31,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_dinero.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "hook_11",
+   "start": 100.69,
+   "dur": 10.69,
+   "kind": "raw",
+   "src": "img/es_corazon.png",
+   "hue": "blue",
+   "gen": {
+    "type": "image",
+    "name": "es_corazon",
+    "prompt": "Foto documental realista, 16:9. an older person's hands over their heart, emotional, warm light. Como una foto real: imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+   }
+  },
+  {
+   "id": "hook_12",
+   "start": 111.38,
+   "dur": 8.5,
+   "kind": "callout",
+   "image": "img/es_mapa_hispano.png",
+   "figure": "TODOS los países",
+   "caption": "México, Argentina, Colombia, España…",
+   "accent": "amber",
+   "hue": "red"
+  },
+  {
+   "id": "hook_12_f0",
+   "start": 119.88,
+   "dur": 7.5,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_pareja.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "hook_12_f1",
+   "start": 127.38,
+   "dur": 7.5,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_telefono.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "hook_12_f2",
+   "start": 134.88,
+   "dur": 1.46,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_tarjeta.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "hook_13",
+   "start": 136.34,
+   "dur": 8.5,
+   "kind": "goldvault",
+   "state": "locked",
+   "label": "UNA REGLA",
+   "caption": "Una sola frase las detiene a todas — al final",
+   "hue": "amber"
+  },
+  {
+   "id": "hook_13_f0",
+   "start": 144.84,
+   "dur": 5.74,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_whatsapp.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "hook_14",
+   "start": 150.58,
+   "dur": 6.98,
+   "kind": "keyphrase",
+   "text": "Quédate hasta el *final*",
+   "src": "broll/ec_dinero.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "benintro_0",
+   "start": 157.56,
+   "dur": 6.1,
+   "kind": "raw",
+   "src": "img/es_ben_camara.png",
+   "hue": "amber",
+   "kicker": "Soy Ben, también jubilado",
+   "hold": true,
+   "gen": {
+    "type": "image",
+    "name": "es_ben_camara",
+    "prompt": "Foto documental realista, 16:9. un hombre latino de unos 68 años, pelo gris, anteojos, camisa a cuadros, expresión cálida, talking warmly to camera, serious and caring, en su casa. Como una foto real: imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+   }
+  },
+  {
+   "id": "benintro_1",
+   "start": 163.66,
+   "dur": 8.5,
+   "kind": "keyphrase",
+   "text": "Lo vi de cerca, con gente que *quiero*",
+   "src": "img/es_ben_camara.png",
+   "hue": "blue"
+  },
+  {
+   "id": "benintro_1_f0",
+   "start": 172.16,
+   "dur": 4.46,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_anciana_sola.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "aldo_0",
+   "start": 176.62,
+   "dur": 2.89,
+   "kind": "rule",
+   "number": "",
+   "title": "La tarde que llamó “el nieto”",
+   "hue": "blue"
+  },
+  {
+   "id": "aldo_1",
+   "start": 179.51,
+   "dur": 5.57,
+   "kind": "raw",
+   "src": "img/es_aldo.png",
+   "hue": "red",
+   "kicker": "Don Aldo, 74",
+   "hold": true,
+   "gen": {
+    "type": "image",
+    "name": "es_aldo",
+    "prompt": "Foto documental realista, 16:9. an older latino man, 74, ex truck driver, alert kind face, alone at home. Como una foto real: imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+   }
+  },
+  {
+   "id": "aldo_2",
+   "start": 185.08,
+   "dur": 6.82,
+   "kind": "keyphrase",
+   "text": "“A mí no me la *cuentan*”",
+   "src": "img/es_aldo.png",
+   "hue": "amber",
+   "times": [
+    0,
+    5,
+    9,
+    16,
+    20,
+    27
+   ]
+  },
+  {
+   "id": "aldo_3",
+   "start": 191.9,
+   "dur": 9,
+   "kind": "raw",
+   "src": "broll/ec_telefono.mp4",
+   "hue": "blue",
+   "broll": true
+  },
+  {
+   "id": "aldo_3_f0",
+   "start": 200.9,
+   "dur": 2.42,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_call_center.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "aldo_4",
+   "start": 203.32,
+   "dur": 8.5,
+   "kind": "keyphrase",
+   "text": "“Abuelo… tuve un *accidente*”",
+   "src": "broll/ec_anciano_tel.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "aldo_4_f0",
+   "start": 211.82,
+   "dur": 5.66,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_anciano_tel.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "aldo_5",
+   "start": 217.48,
+   "dur": 8.5,
+   "kind": "keyphrase",
+   "text": "Era la voz de su *nieto*. Idéntica.",
+   "src": "img/es_aldo.png",
+   "hue": "amber"
+  },
+  {
+   "id": "aldo_5_f0",
+   "start": 225.98,
+   "dur": 7.5,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_compu.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "aldo_5_f1",
+   "start": 233.48,
+   "dur": 3.94,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_dinero.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "aldo_6",
+   "start": 237.42,
+   "dur": 9,
+   "kind": "raw",
+   "src": "img/es_abogado.png",
+   "hue": "blue",
+   "gen": {
+    "type": "image",
+    "name": "es_abogado",
+    "prompt": "Foto documental realista, 16:9. a calm serious man in a suit on the phone, dim office, ominous. Como una foto real: imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+   }
+  },
+  {
+   "id": "aldo_6_f0",
+   "start": 246.42,
+   "dur": 7.5,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_pareja.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "aldo_6_f1",
+   "start": 253.92,
+   "dur": 1.6,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_telefono.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "aldo_7",
+   "start": 255.52,
+   "dur": 8.5,
+   "kind": "keyphrase",
+   "text": "“Hay que pagar. *Rápido*. En efectivo.”",
+   "src": "img/es_abogado.png",
+   "hue": "red"
+  },
+  {
+   "id": "aldo_7_f0",
+   "start": 264.02,
+   "dur": 7.5,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_tarjeta.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "aldo_7_f1",
+   "start": 271.52,
+   "dur": 4.46,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_whatsapp.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "aldo_8",
+   "start": 275.98,
+   "dur": 7.03,
+   "kind": "raw",
+   "src": "broll/ec_dinero.mp4",
+   "hue": "amber",
+   "broll": true
+  },
+  {
+   "id": "aldo_9",
+   "start": 283.01,
+   "dur": 14,
+   "kind": "journey",
+   "dark": true,
+   "eyebrow": "Cómo se desarmó, paso a paso",
+   "accent": "accent",
+   "waypoints": [
+    {
+     "x": 0,
+     "y": 0,
+     "image": "img/es_j_telefono.png",
+     "label": "Suena el teléfono",
+     "num": "1",
+     "dwell": 2.4,
+     "travel": 1.3
+    },
+    {
+     "x": 1.3,
+     "y": -0.3,
+     "image": "img/es_j_llanto.png",
+     "label": "“Soy yo, tuve un accidente”",
+     "num": "2",
+     "dwell": 2.5,
+     "travel": 1.4
+    },
+    {
+     "x": 2.6,
+     "y": 0.3,
+     "image": "img/es_j_pago.png",
+     "label": "Pagó todo en una hora",
+     "num": "3",
+     "dwell": 2.5,
+     "travel": 1.4
+    },
+    {
+     "x": 3.9,
+     "y": -0.2,
+     "image": "img/es_j_sano.png",
+     "label": "El nieto estaba sano",
+     "num": "4",
+     "dwell": 2.7,
+     "travel": 1.3
+    }
+   ]
+  },
+  {
+   "id": "aldo_9_f0",
+   "start": 297.01,
+   "dur": 7.5,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_anciana_sola.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "aldo_9_f1",
+   "start": 304.51,
+   "dur": 7.5,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_call_center.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "aldo_9_f2",
+   "start": 312.01,
+   "dur": 3.47,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_anciano_tel.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "aldo_10",
+   "start": 315.48,
+   "dur": 8.5,
+   "kind": "keyphrase",
+   "text": "Habló con un *estafador*. La voz era *idéntica*.",
+   "src": "img/es_aldo.png",
+   "hue": "red"
+  },
+  {
+   "id": "aldo_10_f0",
+   "start": 323.98,
+   "dur": 2.76,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_compu.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "voz_0",
+   "start": 326.74,
+   "dur": 2.18,
+   "kind": "diagram",
+   "eyebrow": "La voz copiada",
+   "slides": [
+    {
+     "image": "img/dg_es_voz.png",
+     "eyebrow": "La voz copiada"
+    }
+   ],
+   "hue": "red"
+  },
+  {
+   "id": "voz_1",
+   "start": 328.92,
+   "dur": 8.54,
+   "kind": "keyphrase",
+   "text": "Unos *segundos* de audio bastan",
+   "src": "broll/ec_compu.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "voz_2",
+   "start": 337.46,
+   "dur": 5.42,
+   "kind": "raw",
+   "src": "broll/ec_compu.mp4",
+   "hue": "blue",
+   "broll": true
+  },
+  {
+   "id": "voz_3",
+   "start": 342.88,
+   "dur": 9.52,
+   "kind": "keyphrase",
+   "text": "Ya no alcanza con *reconocer la voz*",
+   "src": "broll/ec_compu.mp4",
+   "hue": "red",
+   "times": [
+    9,
+    14,
+    20,
+    34,
+    41,
+    59,
+    64
+   ]
+  },
+  {
+   "id": "voz_4",
+   "start": 352.4,
+   "dur": 9,
+   "kind": "raw",
+   "src": "img/es_aldo_triste.png",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "es_aldo_triste",
+    "prompt": "Foto documental realista, 16:9. an older man with a broken sad expression, looking down, regret. Como una foto real: imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+   }
+  },
+  {
+   "id": "voz_4_f0",
+   "start": 361.4,
+   "dur": 5.04,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_dinero.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "voz_5",
+   "start": 366.44,
+   "dur": 8.5,
+   "kind": "keyphrase",
+   "text": "“No fuiste un *tonto*. Te tendieron una *trampa*.”",
+   "src": "img/es_aldo_triste.png",
+   "hue": "blue"
+  },
+  {
+   "id": "voz_5_f0",
+   "start": 374.94,
+   "dur": 7.5,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_pareja.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "voz_5_f1",
+   "start": 382.44,
+   "dur": 7.5,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_telefono.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "voz_5_f2",
+   "start": 389.94,
+   "dur": 7.5,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_tarjeta.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "voz_5_f3",
+   "start": 397.44,
+   "dur": 3.36,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_whatsapp.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "rosa_0",
+   "start": 400.8,
+   "dur": 8.44,
+   "kind": "raw",
+   "src": "img/es_rosa.png",
+   "hue": "amber",
+   "kicker": "Doña Rosa, viuda",
+   "hold": true,
+   "gen": {
+    "type": "image",
+    "name": "es_rosa",
+    "prompt": "Foto documental realista, 16:9. an older latina widow, sweet kind face, alone at home with a phone. Como una foto real: imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+   }
+  },
+  {
+   "id": "rosa_1",
+   "start": 409.24,
+   "dur": 2.86,
+   "kind": "raw",
+   "src": "broll/ec_anciana_sola.mp4",
+   "hue": "blue",
+   "broll": true
+  },
+  {
+   "id": "rosa_2",
+   "start": 412.1,
+   "dur": 8.5,
+   "kind": "keyphrase",
+   "text": "Las tardes *largas*. La casa en *silencio*.",
+   "src": "broll/ec_anciana_sola.mp4",
+   "hue": "red",
+   "times": [
+    0,
+    0,
+    0,
+    9,
+    14,
+    21,
+    31
+   ]
+  },
+  {
+   "id": "rosa_2_f0",
+   "start": 420.6,
+   "dur": 7.5,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_anciana_sola.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "rosa_2_f1",
+   "start": 428.1,
+   "dur": 3.16,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_call_center.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "rosa_3",
+   "start": 431.26,
+   "dur": 3.78,
+   "kind": "keyphrase",
+   "text": "Por fin alguien la *escuchaba*",
+   "src": "img/es_rosa.png",
+   "hue": "amber"
+  },
+  {
+   "id": "rosa_4",
+   "start": 435.04,
+   "dur": 15.52,
+   "kind": "journey",
+   "dark": true,
+   "eyebrow": "El “amor” de Doña Rosa, paso a paso",
+   "accent": "accent",
+   "waypoints": [
+    {
+     "x": 0,
+     "y": 0,
+     "image": "img/es_jr_chat.png",
+     "label": "“Buenos días” todas las mañanas",
+     "num": "1",
+     "dwell": 2.4,
+     "travel": 1.3
+    },
+    {
+     "x": 1.3,
+     "y": -0.3,
+     "image": "img/es_jr_meses.png",
+     "label": "Meses de cariño",
+     "num": "2",
+     "dwell": 2.4,
+     "travel": 1.4
+    },
+    {
+     "x": 2.6,
+     "y": 0.3,
+     "image": "img/es_jr_pedido.png",
+     "label": "“Necesito que me mandes dinero”",
+     "num": "3",
+     "dwell": 2.5,
+     "travel": 1.4
+    },
+    {
+     "x": 3.9,
+     "y": -0.2,
+     "image": "img/es_jr_borrado.png",
+     "label": "Desapareció. Nunca existió.",
+     "num": "4",
+     "dwell": 2.6,
+     "travel": 1.3
+    }
+   ]
+  },
+  {
+   "id": "rosa_5",
+   "start": 450.56,
+   "dur": 8.5,
+   "kind": "floatprop",
+   "src": "img/es_corazon_roto.png",
+   "caption": "El amor que *no existía*",
+   "accent": "accent",
+   "scale": 0.6,
+   "bg": "broll/ec_telefono.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "rosa_5_f0",
+   "start": 459.06,
+   "dur": 7.5,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_anciano_tel.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "rosa_5_f1",
+   "start": 466.56,
+   "dur": 7.5,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_compu.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "rosa_5_f2",
+   "start": 474.06,
+   "dur": 7.5,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_dinero.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "rosa_5_f3",
+   "start": 481.56,
+   "dur": 4.78,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_pareja.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "rosa_6",
+   "start": 486.34,
+   "dur": 8.76,
+   "kind": "keyphrase",
+   "text": "Un *libreto*. Para una mujer *sola*.",
+   "src": "img/es_rosa.png",
+   "hue": "amber"
+  },
+  {
+   "id": "bridge_0",
+   "start": 495.1,
+   "dur": 5.6,
+   "kind": "raw",
+   "src": "img/es_ben_puertas.png",
+   "hue": "blue",
+   "kicker": "Por ahí entra el estafador",
+   "gen": {
+    "type": "image",
+    "name": "es_ben_puertas",
+    "prompt": "Foto documental realista, 16:9. un hombre latino de unos 68 años, pelo gris, anteojos, camisa a cuadros, expresión cálida, explaining, two open doors metaphor, serious, en su casa. Como una foto real: imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+   }
+  },
+  {
+   "id": "bridge_1",
+   "start": 500.7,
+   "dur": 8.5,
+   "kind": "splitlist",
+   "title": "Las dos puertas",
+   "items": [
+    "El miedo (una emergencia)",
+    "La soledad (un cariño falso)"
+   ],
+   "palette": "D",
+   "hue": "red"
+  },
+  {
+   "id": "bridge_1_f0",
+   "start": 509.2,
+   "dur": 7.5,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_telefono.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "bridge_1_f1",
+   "start": 516.7,
+   "dur": 4.64,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_tarjeta.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "bridge_2",
+   "start": 521.34,
+   "dur": 4.74,
+   "kind": "keyphrase",
+   "text": "Conocer la trampa = *media defensa*",
+   "src": "img/es_ben_puertas.png",
+   "hue": "amber"
+  },
+  {
+   "id": "estafa1_0",
+   "start": 526.08,
+   "dur": 8.5,
+   "kind": "mistake",
+   "number": "1",
+   "title": "El falso familiar en problemas",
+   "desc": "Emergencia + apuro + “no le digas a nadie”. Ahora con la voz copiada.",
+   "eyebrow": "ESTAFA",
+   "hue": "red"
+  },
+  {
+   "id": "estafa1_0_f0",
+   "start": 534.58,
+   "dur": 7.5,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_whatsapp.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "estafa1_0_f1",
+   "start": 542.08,
+   "dur": 4.76,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_anciana_sola.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "estafa1_1",
+   "start": 546.84,
+   "dur": 8.5,
+   "kind": "callout",
+   "image": "img/es_call_panic.png",
+   "figure": "Emoción + Apuro + Secreto",
+   "caption": "“No le digas a nadie” = trampa",
+   "accent": "accent",
+   "hue": "amber"
+  },
+  {
+   "id": "estafa1_1_f0",
+   "start": 555.34,
+   "dur": 7.5,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_call_center.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "estafa1_1_f1",
+   "start": 562.84,
+   "dur": 4.46,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_anciano_tel.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "estafa1_2",
+   "start": 567.3,
+   "dur": 9.1,
+   "kind": "keyphrase",
+   "text": "Dinero *urgente* y en *secreto*",
+   "src": "broll/ec_anciano_tel.mp4",
+   "hue": "blue",
+   "times": [
+    22,
+    53,
+    78,
+    82,
+    90
+   ]
+  },
+  {
+   "id": "estafa2_0",
+   "start": 576.4,
+   "dur": 8.5,
+   "kind": "mistake",
+   "number": "2",
+   "title": "El falso banco",
+   "desc": "“Confirme su clave / pase su dinero a una cuenta segura.” El banco NUNCA pide eso.",
+   "eyebrow": "ESTAFA",
+   "hue": "amber"
+  },
+  {
+   "id": "estafa2_0_f0",
+   "start": 584.9,
+   "dur": 7,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_compu.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "estafa2_1",
+   "start": 591.9,
+   "dur": 8.5,
+   "kind": "annotated",
+   "image": "img/dg_es_banco.png",
+   "eyebrow": "El mensaje del “banco”",
+   "caption": "Todo esto lo delata",
+   "annotations": [
+    {
+     "kind": "circle",
+     "x": 0.5,
+     "y": 0.38,
+     "w": 0.16,
+     "label": "Pide tu CLAVE"
+    },
+    {
+     "kind": "arrow",
+     "x": 0.5,
+     "y": 0.66,
+     "fromX": 0.18,
+     "fromY": 0.85,
+     "label": "“Cuenta segura” = la de ELLOS"
+    }
+   ],
+   "hue": "blue"
+  },
+  {
+   "id": "estafa2_1_f0",
+   "start": 600.4,
+   "dur": 5.16,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_dinero.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "estafa2_2",
+   "start": 605.56,
+   "dur": 8.5,
+   "kind": "keyphrase",
+   "text": "Ningún banco te pide la *clave* por teléfono",
+   "src": "broll/ec_tarjeta.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "estafa2_2_f0",
+   "start": 614.06,
+   "dur": 4.48,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_pareja.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "estafa2_3",
+   "start": 618.54,
+   "dur": 3.32,
+   "kind": "keyphrase",
+   "text": "Quien la pide es el *ladrón*",
+   "src": "broll/ec_tarjeta.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "estafa2_4",
+   "start": 621.86,
+   "dur": 1.68,
+   "kind": "splitlist",
+   "title": "El banco de verdad…",
+   "items": [
+    "NUNCA pide tu clave completa",
+    "NUNCA te pasa a “otra cuenta”",
+    "Vos llamás al dorso de la tarjeta"
+   ],
+   "palette": "D",
+   "cross": true,
+   "hue": "blue"
+  },
+  {
+   "id": "estafa3_0",
+   "start": 623.54,
+   "dur": 8.5,
+   "kind": "mistake",
+   "number": "3",
+   "title": "El premio o la herencia",
+   "desc": "“Ganó un sorteo / apareció una herencia. Pague un pequeño impuesto para recibirlo.”",
+   "eyebrow": "ESTAFA",
+   "hue": "blue"
+  },
+  {
+   "id": "estafa3_0_f0",
+   "start": 632.04,
+   "dur": 7.18,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_telefono.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "estafa3_1",
+   "start": 639.22,
+   "dur": 8.5,
+   "kind": "floatprop",
+   "src": "img/es_trofeo.png",
+   "caption": "Siempre hay una *condición*",
+   "accent": "amber",
+   "scale": 0.6,
+   "bg": "broll/ec_compu.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "estafa3_1_f0",
+   "start": 647.72,
+   "dur": 7.5,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_tarjeta.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "estafa3_1_f1",
+   "start": 655.22,
+   "dur": 0.9,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_whatsapp.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "estafa3_2",
+   "start": 656.12,
+   "dur": 8.5,
+   "kind": "callout",
+   "image": "img/es_premio.png",
+   "figure": "¿Pagar para COBRAR?",
+   "caption": "Jamás se paga para recibir dinero",
+   "accent": "accent",
+   "hue": "amber"
+  },
+  {
+   "id": "estafa3_2_f0",
+   "start": 664.62,
+   "dur": 7.5,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_anciana_sola.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "estafa3_2_f1",
+   "start": 672.12,
+   "dur": 1.82,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_call_center.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "estafa4_0",
+   "start": 673.94,
+   "dur": 4.6,
+   "kind": "mistake",
+   "number": "4",
+   "title": "El falso soporte técnico",
+   "desc": "“Su equipo tiene un virus, deme acceso / instale esto.” → entran a tu banco.",
+   "eyebrow": "ESTAFA",
+   "hue": "red"
+  },
+  {
+   "id": "estafa4_1",
+   "start": 678.54,
+   "dur": 8.5,
+   "kind": "annotated",
+   "image": "img/dg_es_virus.png",
+   "eyebrow": "El cartel falso",
+   "caption": "Todo es para asustarte",
+   "annotations": [
+    {
+     "kind": "circle",
+     "x": 0.5,
+     "y": 0.42,
+     "w": 0.22,
+     "label": "FALSO"
+    },
+    {
+     "kind": "underline",
+     "x": 0.5,
+     "y": 0.7,
+     "w": 0.28,
+     "label": "“llame ya”"
+    }
+   ],
+   "hue": "amber"
+  },
+  {
+   "id": "estafa4_1_f0",
+   "start": 687.04,
+   "dur": 7.5,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_anciano_tel.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "estafa4_1_f1",
+   "start": 694.54,
+   "dur": 3.2,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_compu.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "estafa4_2",
+   "start": 697.74,
+   "dur": 8.5,
+   "kind": "callout",
+   "image": "img/es_acceso.png",
+   "figure": "DAME ACCESO",
+   "caption": "Si entran, te vacían el banco",
+   "accent": "accent",
+   "hue": "blue"
+  },
+  {
+   "id": "estafa4_2_f0",
+   "start": 706.24,
+   "dur": 6.14,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_dinero.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "estafa4_3",
+   "start": 712.38,
+   "dur": 8.5,
+   "kind": "keyphrase",
+   "text": "Nadie te llama por un *virus*",
+   "src": "broll/ec_compu.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "estafa4_3_f0",
+   "start": 720.88,
+   "dur": 3.04,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_pareja.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "estafa5_0",
+   "start": 723.92,
+   "dur": 9.86,
+   "kind": "mistake",
+   "number": "5",
+   "title": "El amor por internet",
+   "desc": "Compañía durante meses → una emergencia → pide dinero. Nunca se vieron en persona.",
+   "eyebrow": "ESTAFA",
+   "hue": "amber"
+  },
+  {
+   "id": "estafa5_1",
+   "start": 733.78,
+   "dur": 9,
+   "kind": "raw",
+   "src": "broll/ec_anciana_sola.mp4",
+   "hue": "blue",
+   "broll": true
+  },
+  {
+   "id": "estafa5_1_f0",
+   "start": 742.78,
+   "dur": 7.5,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_telefono.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "estafa5_1_f1",
+   "start": 750.28,
+   "dur": 4.02,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_tarjeta.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "estafa5_2",
+   "start": 754.3,
+   "dur": 5.71,
+   "kind": "callout",
+   "image": "img/es_romance.png",
+   "figure": "NUNCA en persona",
+   "caption": "Gana tu confianza… y pide dinero",
+   "accent": "accent",
+   "hue": "red"
+  },
+  {
+   "id": "estafa5_3",
+   "start": 760.01,
+   "dur": 4.99,
+   "kind": "splitlist",
+   "title": "La señal del amor falso",
+   "items": [
+    "Lo conociste por una pantalla",
+    "Nunca se vieron en persona",
+    "En algún momento pide dinero"
+   ],
+   "palette": "D",
+   "cross": true,
+   "hue": "amber"
+  },
+  {
+   "id": "estafa6_0",
+   "start": 765,
+   "dur": 8.5,
+   "kind": "mistake",
+   "number": "6",
+   "title": "El falso funcionario",
+   "desc": "“Tiene una deuda/multa, pague YA o lo detienen.” Pura amenaza para asustar.",
+   "eyebrow": "ESTAFA",
+   "hue": "blue"
+  },
+  {
+   "id": "estafa6_0_f0",
+   "start": 773.5,
+   "dur": 7.5,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_whatsapp.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "estafa6_0_f1",
+   "start": 781,
+   "dur": 3.94,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_anciana_sola.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "estafa6_1",
+   "start": 784.94,
+   "dur": 8.5,
+   "kind": "callout",
+   "image": "img/es_amenaza.png",
+   "figure": "“PAGUE YA O…”",
+   "caption": "Ninguna autoridad amenaza por teléfono",
+   "accent": "accent",
+   "hue": "red"
+  },
+  {
+   "id": "estafa6_1_f0",
+   "start": 793.44,
+   "dur": 7.5,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_call_center.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "estafa6_1_f1",
+   "start": 800.94,
+   "dur": 3.7,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_anciano_tel.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "estafa6_2",
+   "start": 804.64,
+   "dur": 9.96,
+   "kind": "splitlist",
+   "title": "La autoridad real…",
+   "items": [
+    "Avisa por escrito, con tiempo",
+    "No te amenaza con la cárcel",
+    "Nunca exige pago inmediato"
+   ],
+   "palette": "D",
+   "cross": true,
+   "hue": "amber"
+  },
+  {
+   "id": "estafa7_0",
+   "start": 814.6,
+   "dur": 8.5,
+   "kind": "mistake",
+   "number": "7",
+   "title": "“Hola mamá, cambié de número”",
+   "desc": "Mensaje de un número nuevo desconocido → enseguida pide una transferencia.",
+   "eyebrow": "ESTAFA",
+   "hue": "red"
+  },
+  {
+   "id": "estafa7_0_f0",
+   "start": 823.1,
+   "dur": 3.2,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_compu.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "estafa7_1",
+   "start": 826.3,
+   "dur": 8.5,
+   "kind": "annotated",
+   "image": "img/dg_es_whatsapp.png",
+   "eyebrow": "El mensaje del “hijo”",
+   "caption": "Número nuevo + apuro = alerta",
+   "annotations": [
+    {
+     "kind": "circle",
+     "x": 0.5,
+     "y": 0.18,
+     "w": 0.2,
+     "label": "Número DESCONOCIDO"
+    },
+    {
+     "kind": "underline",
+     "x": 0.5,
+     "y": 0.74,
+     "w": 0.3,
+     "label": "“transferencia urgente”"
+    }
+   ],
+   "hue": "amber"
+  },
+  {
+   "id": "estafa7_1_f0",
+   "start": 834.8,
+   "dur": 7.5,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_dinero.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "estafa7_1_f1",
+   "start": 842.3,
+   "dur": 7.5,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_pareja.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "estafa7_1_f2",
+   "start": 849.8,
+   "dur": 6.76,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_telefono.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "estafa7_2",
+   "start": 856.56,
+   "dur": 2.1,
+   "kind": "keyphrase",
+   "text": "Número nuevo → enseguida pide *plata*",
+   "src": "broll/ec_whatsapp.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "estafa8_0",
+   "start": 858.66,
+   "dur": 2.84,
+   "kind": "mistake",
+   "number": "8",
+   "title": "La inversión milagrosa",
+   "desc": "“Duplicá tu jubilación.” Mucho, rápido y sin riesgo = mentira.",
+   "eyebrow": "ESTAFA",
+   "hue": "amber"
+  },
+  {
+   "id": "estafa8_1",
+   "start": 861.5,
+   "dur": 8.5,
+   "kind": "floatprop",
+   "src": "img/es_grafico_falso.png",
+   "caption": "“Duplicá tu *jubilación*”",
+   "accent": "amber",
+   "scale": 0.7,
+   "bg": "broll/ec_dinero.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "estafa8_1_f0",
+   "start": 870,
+   "dur": 7.5,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_tarjeta.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "estafa8_1_f1",
+   "start": 877.5,
+   "dur": 7.5,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_whatsapp.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "estafa8_1_f2",
+   "start": 885,
+   "dur": 7.5,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_anciana_sola.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "estafa8_2",
+   "start": 892.62,
+   "dur": 0.6,
+   "kind": "bars",
+   "eyebrow": "La promesa vs la realidad",
+   "title": "Si promete eso, es mentira",
+   "unit": "%",
+   "bars": [
+    {
+     "label": "Inversión honesta",
+     "value": 6,
+     "sub": "al año, despacio",
+     "display": "~6%",
+     "tone": "good"
+    },
+    {
+     "label": "La “milagrosa”",
+     "value": 300,
+     "sub": "que te promete",
+     "display": "300%",
+     "winner": true
+    }
+   ],
+   "hue": "red"
+  },
+  {
+   "id": "estafa8_3",
+   "start": 893.22,
+   "dur": 0.6,
+   "kind": "callout",
+   "image": "img/es_plataforma.png",
+   "figure": "Y un día… DESAPARECE",
+   "caption": "La plataforma y tu dinero, juntos",
+   "accent": "accent",
+   "hue": "amber"
+  },
+  {
+   "id": "estafa8_4",
+   "start": 893.82,
+   "dur": 8.2,
+   "kind": "keyphrase",
+   "text": "El dinero honesto crece *despacio*",
+   "src": "broll/ec_dinero.mp4",
+   "hue": "blue",
+   "times": [
+    9,
+    13,
+    22,
+    50,
+    61
+   ]
+  },
+  {
+   "id": "patron_0",
+   "start": 902.02,
+   "dur": 10.16,
+   "kind": "raw",
+   "src": "img/es_ben_patron.png",
+   "hue": "blue",
+   "kicker": "El patrón de TODAS",
+   "hold": true,
+   "gen": {
+    "type": "image",
+    "name": "es_ben_patron",
+    "prompt": "Foto documental realista, 16:9. un hombre latino de unos 68 años, pelo gris, anteojos, camisa a cuadros, expresión cálida, explaining the key insight, pointing, intense, en su casa. Como una foto real: imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+   }
+  },
+  {
+   "id": "patron_1",
+   "start": 912.18,
+   "dur": 3.2,
+   "kind": "diagram",
+   "eyebrow": "Las 3 señales",
+   "slides": [
+    {
+     "image": "img/dg_es_patron.png",
+     "eyebrow": "Las 3 señales"
+    }
+   ],
+   "hue": "red"
+  },
+  {
+   "id": "patron_2",
+   "start": 915.38,
+   "dur": 8.5,
+   "kind": "keyphrase",
+   "text": "1. Te despiertan una *emoción* fuerte",
+   "src": "broll/ec_anciano_tel.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "patron_2_f0",
+   "start": 923.88,
+   "dur": 3.34,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_call_center.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "patron_3",
+   "start": 927.22,
+   "dur": 7.14,
+   "kind": "keyphrase",
+   "text": "2. Te *apuran*: tiene que ser YA",
+   "src": "broll/ec_telefono.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "patron_4",
+   "start": 934.36,
+   "dur": 1.4,
+   "kind": "keyphrase",
+   "text": "3. Te *aíslan*: no le digas a nadie",
+   "src": "broll/ec_anciana_sola.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "patron_5",
+   "start": 935.76,
+   "dur": 4.4,
+   "kind": "process",
+   "eyebrow": "Cómo entra, siempre",
+   "title": "Los 3 ingredientes",
+   "steps": [
+    {
+     "title": "Emoción",
+     "desc": "miedo o ilusión"
+    },
+    {
+     "title": "Apuro",
+     "desc": "tiene que ser YA"
+    },
+    {
+     "title": "Silencio",
+     "desc": "no le digas a nadie"
+    }
+   ],
+   "hue": "amber"
+  },
+  {
+   "id": "patron_6",
+   "start": 940.16,
+   "dur": 8.5,
+   "kind": "splitlist",
+   "title": "Las 3 juntas = estafa",
+   "items": [
+    "Emoción (miedo o ilusión)",
+    "Apuro (tiene que ser YA)",
+    "Silencio (no le digas a nadie)"
+   ],
+   "palette": "D",
+   "cross": true,
+   "hue": "blue"
+  },
+  {
+   "id": "patron_6_f0",
+   "start": 948.66,
+   "dur": 2.24,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_anciano_tel.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "patron_7",
+   "start": 950.9,
+   "dur": 2.62,
+   "kind": "keyphrase",
+   "text": "No importa quién diga que es. Es *estafa*.",
+   "src": "img/es_ben_patron.png",
+   "hue": "red"
+  },
+  {
+   "id": "cta_share_0",
+   "start": 953.52,
+   "dur": 9,
+   "kind": "raw",
+   "src": "img/es_ben_share.png",
+   "hue": "red",
+   "kicker": "Mandáselo a quien lo necesite",
+   "gen": {
+    "type": "image",
+    "name": "es_ben_share",
+    "prompt": "Foto documental realista, 16:9. un hombre latino de unos 68 años, pelo gris, anteojos, camisa a cuadros, expresión cálida, warmly asking to share the video, caring hand gesture, en su casa. Como una foto real: imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+   }
+  },
+  {
+   "id": "cta_share_0_f0",
+   "start": 962.52,
+   "dur": 7.5,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_compu.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "cta_share_0_f1",
+   "start": 970.02,
+   "dur": 2.34,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_dinero.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "cta_share_1",
+   "start": 972.36,
+   "dur": 8.5,
+   "kind": "keyphrase",
+   "text": "Reenvíalo. Puede evitar el *peor día*",
+   "src": "img/es_ben_share.png",
+   "hue": "amber"
+  },
+  {
+   "id": "cta_share_1_f0",
+   "start": 980.86,
+   "dur": 7.5,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_pareja.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "cta_share_1_f1",
+   "start": 988.36,
+   "dur": 0.76,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_telefono.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "cta_sub_0",
+   "start": 989.12,
+   "dur": 9,
+   "kind": "raw",
+   "src": "img/es_ben_sub.png",
+   "hue": "amber",
+   "kicker": "De jubilado a jubilado",
+   "gen": {
+    "type": "image",
+    "name": "es_ben_sub",
+    "prompt": "Foto documental realista, 16:9. un hombre latino de unos 68 años, pelo gris, anteojos, camisa a cuadros, expresión cálida, warmly inviting to subscribe, hand near chest, en su casa. Como una foto real: imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+   }
+  },
+  {
+   "id": "cta_sub_0_f0",
+   "start": 998.12,
+   "dur": 7.5,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_tarjeta.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "cta_sub_0_f1",
+   "start": 1005.62,
+   "dur": 3.48,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_whatsapp.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "cta_sub_1",
+   "start": 1009.1,
+   "dur": 8.5,
+   "kind": "keyphrase",
+   "text": "Lo más *importante* viene ahora",
+   "src": "img/es_ben_sub.png",
+   "hue": "blue"
+  },
+  {
+   "id": "cta_sub_1_f0",
+   "start": 1017.6,
+   "dur": 7.5,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_anciana_sola.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "cta_sub_1_f1",
+   "start": 1025.1,
+   "dur": 7.5,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_call_center.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "cta_sub_1_f2",
+   "start": 1032.6,
+   "dur": 0.9,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_anciano_tel.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "regla_0",
+   "start": 1033.5,
+   "dur": 1.24,
+   "kind": "goldvault",
+   "state": "open",
+   "label": "LA REGLA",
+   "caption": "Cuando algo te apura, vos FRENÁS",
+   "hue": "blue"
+  },
+  {
+   "id": "regla_1",
+   "start": 1034.74,
+   "dur": 8.14,
+   "kind": "keyphrase",
+   "text": "Cuando algo te *apura*, vos *frenás*",
+   "src": "img/es_ben_camara.png",
+   "hue": "red"
+  },
+  {
+   "id": "regla_2",
+   "start": 1042.88,
+   "dur": 7.2,
+   "kind": "keyphrase",
+   "text": "Él necesita tu *miedo*. Vos, tu *calma*.",
+   "src": "img/es_ben_camara.png",
+   "hue": "amber"
+  },
+  {
+   "id": "regla_3",
+   "start": 1050.08,
+   "dur": 5.86,
+   "kind": "process",
+   "eyebrow": "Tu defensa, en pasos",
+   "title": "Fácil de recordar",
+   "steps": [
+    {
+     "title": "Frená y colgá",
+     "desc": "ante cualquier pedido"
+    },
+    {
+     "title": "Verificá por otro camino",
+     "desc": "vos llamás"
+    },
+    {
+     "title": "Palabra clave familiar",
+     "desc": "le gana a la voz copiada"
+    }
+   ],
+   "hue": "blue"
+  },
+  {
+   "id": "regla_4",
+   "start": 1055.94,
+   "dur": 4.56,
+   "kind": "splitlist",
+   "title": "Solo necesitás un minuto",
+   "items": [
+    "Él trabaja con tu apuro",
+    "Vos ganás con tu calma",
+    "Un minuto frena cualquier estafa"
+   ],
+   "palette": "D",
+   "hue": "red"
+  },
+  {
+   "id": "def1_0",
+   "start": 1060.5,
+   "dur": 1.62,
+   "kind": "tool",
+   "number": "1",
+   "nameEs": "Cortá. Colgá.",
+   "how": "Ante cualquier pedido de dinero o datos, cortá. No es mala educación, es defensa propia.",
+   "eyebrow": "Defensa",
+   "hue": "red"
+  },
+  {
+   "id": "def1_1",
+   "start": 1062.12,
+   "dur": 10.16,
+   "kind": "keyphrase",
+   "text": "Colgar NO es *mala educación*",
+   "src": "broll/ec_telefono.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "def1_2",
+   "start": 1072.28,
+   "dur": 7.3,
+   "kind": "keyphrase",
+   "text": "El que se *enoja* porque colgás… es el *ladrón*",
+   "src": "broll/ec_anciano_tel.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "def2_0",
+   "start": 1079.58,
+   "dur": 3.8,
+   "kind": "tool",
+   "number": "2",
+   "nameEs": "Verificá por otro camino",
+   "how": "Colgá y llamá VOS al número que ya tenés: tu nieto, tu banco. Nunca al que te dieron.",
+   "eyebrow": "Defensa",
+   "hue": "amber"
+  },
+  {
+   "id": "def2_1",
+   "start": 1083.38,
+   "dur": 10.68,
+   "kind": "diagram",
+   "eyebrow": "Verificá vos",
+   "slides": [
+    {
+     "image": "img/dg_es_verificar.png",
+     "eyebrow": "Verificá vos"
+    }
+   ],
+   "hue": "blue"
+  },
+  {
+   "id": "def2_2",
+   "start": 1094.06,
+   "dur": 3.36,
+   "kind": "keyphrase",
+   "text": "Llamá VOS al número del *dorso de la tarjeta*",
+   "src": "broll/ec_tarjeta.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "def2_3",
+   "start": 1097.42,
+   "dur": 8.5,
+   "kind": "keyphrase",
+   "text": "Nunca al número que *ellos* te dieron",
+   "src": "broll/ec_telefono.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "def2_3_f0",
+   "start": 1105.92,
+   "dur": 7.5,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_compu.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "def2_3_f1",
+   "start": 1113.42,
+   "dur": 2.92,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_dinero.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "def3_0",
+   "start": 1116.34,
+   "dur": 3.72,
+   "kind": "tool",
+   "number": "3",
+   "nameEs": "Palabra clave familiar",
+   "nameEn": "Le gana a la voz copiada",
+   "how": "Acuerden una palabra secreta. Si un familiar pide dinero, preguntá la palabra. El estafador no la sabe.",
+   "eyebrow": "Defensa",
+   "hue": "blue"
+  },
+  {
+   "id": "def3_1",
+   "start": 1120.06,
+   "dur": 3.24,
+   "kind": "keyphrase",
+   "text": "Junten a hijos y nietos *hoy mismo*",
+   "src": "broll/ec_pareja.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "def3_2",
+   "start": 1123.3,
+   "dur": 8.5,
+   "kind": "floatprop",
+   "src": "img/es_llave.png",
+   "caption": "Girasol, el mate, el primer perro…",
+   "accent": "good",
+   "scale": 0.6,
+   "bg": "broll/ec_anciano_tel.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "def3_2_f0",
+   "start": 1131.8,
+   "dur": 6.6,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_pareja.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "def3_3",
+   "start": 1138.4,
+   "dur": 7.32,
+   "kind": "keyphrase",
+   "text": "Le preguntás, tranquilo, *la palabra*",
+   "src": "img/es_llave.png",
+   "hue": "blue"
+  },
+  {
+   "id": "def3_4",
+   "start": 1145.72,
+   "dur": 3.8,
+   "kind": "keyphrase",
+   "text": "Aunque tenga la voz *idéntica*, no la sabe",
+   "src": "broll/ec_telefono.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "def3_5",
+   "start": 1149.52,
+   "dur": 9.28,
+   "kind": "keyphrase",
+   "text": "Una palabra y se cae *todo*",
+   "src": "img/es_llave.png",
+   "hue": "amber"
+  },
+  {
+   "id": "def4_0",
+   "start": 1158.8,
+   "dur": 3.78,
+   "kind": "tool",
+   "number": "4",
+   "nameEs": "Nunca des clave ni acceso",
+   "how": "Ni al banco, ni a la policía, ni a soporte. La gente honesta no te lo pide jamás.",
+   "eyebrow": "Defensa",
+   "hue": "red"
+  },
+  {
+   "id": "def4_1",
+   "start": 1162.58,
+   "dur": 10.24,
+   "kind": "keyphrase",
+   "text": "Ni *clave*, ni *contraseña*, ni *acceso*",
+   "src": "broll/ec_compu.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "def4_2",
+   "start": 1172.82,
+   "dur": 4.88,
+   "kind": "keyphrase",
+   "text": "La gente *honesta* no te lo pide jamás",
+   "src": "broll/ec_pareja.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "def5_0",
+   "start": 1177.7,
+   "dur": 1.52,
+   "kind": "tool",
+   "number": "5",
+   "nameEs": "Nunca pagues para recibir",
+   "how": "Premio, herencia, préstamo o trabajo: si hay que poner plata para cobrar, es mentira.",
+   "eyebrow": "Defensa",
+   "hue": "amber"
+  },
+  {
+   "id": "def5_1",
+   "start": 1179.22,
+   "dur": 4.62,
+   "kind": "keyphrase",
+   "text": "Ni premios, ni herencias, ni *préstamos*",
+   "src": "broll/ec_dinero.mp4",
+   "hue": "blue",
+   "times": [
+    9,
+    14,
+    37,
+    42,
+    74,
+    80
+   ]
+  },
+  {
+   "id": "def5_2",
+   "start": 1183.84,
+   "dur": 9.22,
+   "kind": "keyphrase",
+   "text": "¿Poner plata para *cobrar* plata? *Mentira*",
+   "src": "broll/ec_dinero.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "def6_0",
+   "start": 1193.06,
+   "dur": 2.04,
+   "kind": "tool",
+   "number": "6",
+   "nameEs": "Si te piden secreto, es estafa",
+   "how": "“No le digas a nadie” es la frase del ladrón. Hacé lo contrario: hablá, consultá, llamá.",
+   "eyebrow": "Defensa",
+   "hue": "blue"
+  },
+  {
+   "id": "def6_1",
+   "start": 1195.1,
+   "dur": 8.5,
+   "kind": "keyphrase",
+   "text": "“No le digas a nadie” = la frase del *ladrón*",
+   "src": "broll/ec_anciano_tel.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "def6_1_f0",
+   "start": 1203.6,
+   "dur": 2.78,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_telefono.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "def6_2",
+   "start": 1206.38,
+   "dur": 9.98,
+   "kind": "keyphrase",
+   "text": "Te exigen silencio → hacé lo *contrario*",
+   "src": "broll/ec_pareja.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "def6_3",
+   "start": 1216.36,
+   "dur": 2.3,
+   "kind": "keyphrase",
+   "text": "La estafa se muere a la *luz del día*",
+   "src": "broll/ec_pareja.mp4",
+   "hue": "blue",
+   "times": [
+    9,
+    14,
+    23,
+    30,
+    36,
+    40,
+    44,
+    48,
+    55
+   ]
+  },
+  {
+   "id": "def6_4",
+   "start": 1218.66,
+   "dur": 5.7,
+   "kind": "checklist",
+   "title": "Tu defensa, en 6",
+   "items": [
+    {
+     "text": "1. Cortá y colgá",
+     "state": "done"
+    },
+    {
+     "text": "2. Verificá por otro camino",
+     "state": "done"
+    },
+    {
+     "text": "3. Palabra clave familiar",
+     "state": "done"
+    },
+    {
+     "text": "4. Nunca clave ni acceso",
+     "state": "done"
+    },
+    {
+     "text": "5. Nunca pagues para recibir",
+     "state": "done"
+    },
+    {
+     "text": "6. Si piden secreto, es estafa",
+     "state": "done"
+    }
+   ],
+   "hue": "red"
+  },
+  {
+   "id": "yacaiste_0",
+   "start": 1224.36,
+   "dur": 10.86,
+   "kind": "raw",
+   "src": "img/es_ben_apoyo.png",
+   "hue": "red",
+   "kicker": "¿Ya te pasó? No es tu culpa.",
+   "hold": true,
+   "gen": {
+    "type": "image",
+    "name": "es_ben_apoyo",
+    "prompt": "Foto documental realista, 16:9. un hombre latino de unos 68 años, pelo gris, anteojos, camisa a cuadros, expresión cálida, compassionate reassuring expression, no shame, kind, en su casa. Como una foto real: imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+   }
+  },
+  {
+   "id": "yacaiste_1",
+   "start": 1235.22,
+   "dur": 3.98,
+   "kind": "keyphrase",
+   "text": "No es tu *culpa*. No te *avergüences*.",
+   "src": "img/es_ben_apoyo.png",
+   "hue": "amber"
+  },
+  {
+   "id": "yacaiste_2",
+   "start": 1239.2,
+   "dur": 6.82,
+   "kind": "keyphrase",
+   "text": "Le pasó a *Don Aldo*. A *Doña Rosa*. A *millones*.",
+   "src": "img/es_aldo_triste.png",
+   "hue": "blue"
+  },
+  {
+   "id": "yacaiste_3",
+   "start": 1246.02,
+   "dur": 10.7,
+   "kind": "keyphrase",
+   "text": "La *vergüenza* es lo que usan para que calles",
+   "src": "broll/ec_anciana_sola.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "yacaiste_4",
+   "start": 1256.72,
+   "dur": 8.5,
+   "kind": "process",
+   "eyebrow": "Si acaba de pasar, rápido",
+   "title": "Actuá ya",
+   "steps": [
+    {
+     "title": "Llamá a tu banco",
+     "desc": "frenar / reportar"
+    },
+    {
+     "title": "Cambiá tus claves",
+     "desc": "todas"
+    },
+    {
+     "title": "Contalo",
+     "desc": "familia + denuncia"
+    }
+   ],
+   "hue": "amber"
+  },
+  {
+   "id": "yacaiste_4_f0",
+   "start": 1265.22,
+   "dur": 5.56,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_tarjeta.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "yacaiste_5",
+   "start": 1270.78,
+   "dur": 2.4,
+   "kind": "checklist",
+   "title": "Si caíste, hoy",
+   "items": [
+    {
+     "text": "No te avergüences: te tendieron una trampa",
+     "state": "done"
+    },
+    {
+     "text": "Banco + claves, ya",
+     "state": "done"
+    },
+    {
+     "text": "Contalo: tu voz salva a otro",
+     "state": "done"
+    }
+   ],
+   "hue": "blue"
+  },
+  {
+   "id": "yacaiste_6",
+   "start": 1273.18,
+   "dur": 4.92,
+   "kind": "keyphrase",
+   "text": "El silencio protege al *ladrón*. Tu voz, a *los demás*.",
+   "src": "broll/ec_pareja.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "paso_0",
+   "start": 1278.1,
+   "dur": 7.38,
+   "kind": "action",
+   "eyebrow": "Hoy mismo",
+   "step": "Acordá la palabra clave familiar",
+   "question": "Si les llega un mensaje mío de un número nuevo pidiendo plata, llámenme antes de hacer nada.",
+   "hue": "amber"
+  },
+  {
+   "id": "paso_1",
+   "start": 1285.48,
+   "dur": 9,
+   "kind": "raw",
+   "src": "broll/ec_pareja.mp4",
+   "hue": "blue",
+   "broll": true
+  },
+  {
+   "id": "paso_1_f0",
+   "start": 1294.48,
+   "dur": 3.7,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_whatsapp.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "paso_2",
+   "start": 1298.18,
+   "dur": 5.94,
+   "kind": "keyphrase",
+   "text": "“Llámenme *antes* de hacer nada”",
+   "src": "broll/ec_pareja.mp4",
+   "hue": "red",
+   "times": [
+    9,
+    24,
+    33,
+    41,
+    48
+   ]
+  },
+  {
+   "id": "paso_3",
+   "start": 1304.12,
+   "dur": 2.18,
+   "kind": "keyphrase",
+   "text": "Esa charla de 5 min vale más que una *cerradura*",
+   "src": "broll/ec_pareja.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "paso_4",
+   "start": 1306.3,
+   "dur": 4.22,
+   "kind": "keyphrase",
+   "text": "No lo dejes para *mañana*. La estafa *no avisa*.",
+   "src": "broll/ec_telefono.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "paso_5",
+   "start": 1310.52,
+   "dur": 6.98,
+   "kind": "keyphrase",
+   "text": "Llega un *martes cualquiera*, a la siesta",
+   "src": "broll/ec_anciano_tel.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "paso_6",
+   "start": 1317.5,
+   "dur": 8.5,
+   "kind": "keyphrase",
+   "text": "El preparado *cuelga y se ríe*. El otro, *pierde todo*.",
+   "src": "broll/ec_dinero.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "paso_6_f0",
+   "start": 1326,
+   "dur": 3.88,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_anciana_sola.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "paso_7",
+   "start": 1329.88,
+   "dur": 5.64,
+   "kind": "keyphrase",
+   "text": "La diferencia es haberlo *pensado antes*",
+   "src": "img/es_ben_camara.png",
+   "hue": "blue",
+   "times": [
+    9,
+    14,
+    31,
+    39,
+    53,
+    64
+   ]
+  },
+  {
+   "id": "recap_0",
+   "start": 1335.52,
+   "dur": 8.5,
+   "kind": "infzoom",
+   "accent": "accent",
+   "images": [
+    {
+     "src": "img/es_call_panic.png",
+     "label": "Falso nieto"
+    },
+    {
+     "src": "img/dg_es_banco.png",
+     "label": "Falso banco"
+    },
+    {
+     "src": "img/es_premio.png",
+     "label": "Premio / herencia"
+    },
+    {
+     "src": "img/es_acceso.png",
+     "label": "Soporte técnico"
+    },
+    {
+     "src": "img/es_romance.png",
+     "label": "Amor online"
+    },
+    {
+     "src": "img/es_amenaza.png",
+     "label": "Falso funcionario"
+    },
+    {
+     "src": "img/dg_es_whatsapp.png",
+     "label": "“Cambié de número”"
+    },
+    {
+     "src": "img/es_plataforma.png",
+     "label": "Inversión milagrosa"
+    }
+   ],
+   "hue": "blue"
+  },
+  {
+   "id": "recap_0_f0",
+   "start": 1344.02,
+   "dur": 2.82,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_call_center.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "recap_1",
+   "start": 1346.84,
+   "dur": 8.5,
+   "kind": "splitlist",
+   "title": "Las 8, una por una",
+   "items": [
+    "Falso nieto",
+    "Falso banco",
+    "Premio / herencia",
+    "Soporte técnico",
+    "Amor online",
+    "Falso funcionario",
+    "“Cambié de número”",
+    "Inversión milagrosa"
+   ],
+   "palette": "D",
+   "hue": "red"
+  },
+  {
+   "id": "recap_1_f0",
+   "start": 1355.34,
+   "dur": 4.78,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_anciano_tel.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "recap_2",
+   "start": 1360.12,
+   "dur": 2.98,
+   "kind": "checklist",
+   "title": "Para no olvidar",
+   "items": [
+    {
+     "text": "Toda estafa: emoción + apuro + secreto",
+     "state": "done"
+    },
+    {
+     "text": "Frená, colgá, verificá por tu cuenta",
+     "state": "done"
+    },
+    {
+     "text": "Palabra clave: le gana a la voz copiada",
+     "state": "done"
+    },
+    {
+     "text": "Nunca clave, acceso, ni pagar para recibir",
+     "state": "done"
+    }
+   ],
+   "hue": "amber"
+  },
+  {
+   "id": "recap_3",
+   "start": 1363.1,
+   "dur": 1.83,
+   "kind": "keyphrase",
+   "text": "Frená, colgá y verificá por tu *propia cuenta*",
+   "src": "broll/ec_telefono.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "recap_4",
+   "start": 1364.93,
+   "dur": 4.63,
+   "kind": "bars",
+   "eyebrow": "La diferencia no es ser más vivo",
+   "title": "Es haberlo pensado antes",
+   "unit": "min",
+   "bars": [
+    {
+     "label": "Calma que te salva",
+     "value": 1,
+     "sub": "un minuto",
+     "display": "1 min",
+     "tone": "good"
+    },
+    {
+     "label": "Perder todo",
+     "value": 10,
+     "sub": "si te apuran",
+     "display": "10 min",
+     "winner": true
+    }
+   ],
+   "hue": "red"
+  },
+  {
+   "id": "recap_5",
+   "start": 1369.56,
+   "dur": 7.48,
+   "kind": "keyphrase",
+   "text": "La palabra clave le gana hasta a la *voz copiada*",
+   "src": "broll/ec_telefono.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "firma_0",
+   "start": 1377.04,
+   "dur": 8.46,
+   "kind": "signature",
+   "eyebrow": "Para llevarte",
+   "lines": [
+    {
+     "text": "El estafador trabaja con tu apuro."
+    },
+    {
+     "text": "Vos defendete"
+    },
+    {
+     "text": "con tu calma.",
+     "gold": true
+    }
+   ],
+   "hue": "red"
+  },
+  {
+   "id": "firma_1",
+   "start": 1385.5,
+   "dur": 4.52,
+   "kind": "keyphrase",
+   "text": "Nadie honesto te exige decidir *en este segundo*",
+   "src": "img/es_ben_camara.png",
+   "hue": "amber"
+  },
+  {
+   "id": "firma_2",
+   "start": 1390.02,
+   "dur": 3.26,
+   "kind": "keyphrase",
+   "text": "El *apuro* es la huella de la *mentira*",
+   "src": "img/es_ben_camara.png",
+   "hue": "blue"
+  },
+  {
+   "id": "epi_0",
+   "start": 1393.28,
+   "dur": 9.46,
+   "kind": "raw",
+   "src": "img/es_aldo_avisa.png",
+   "hue": "amber",
+   "kicker": "Hoy Don Aldo avisa a todos",
+   "gen": {
+    "type": "image",
+    "name": "es_aldo_avisa",
+    "prompt": "Foto documental realista, 16:9. the older man now warning his friends, sharing his story, dignified. Como una foto real: imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+   }
+  },
+  {
+   "id": "epi_1",
+   "start": 1402.74,
+   "dur": 7.04,
+   "kind": "keyphrase",
+   "text": "Hoy él es el *primero* que avisa a todos",
+   "src": "img/es_aldo_avisa.png",
+   "hue": "blue"
+  },
+  {
+   "id": "epi_2",
+   "start": 1409.78,
+   "dur": 9,
+   "kind": "raw",
+   "src": "img/es_rosa_bien.png",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "es_rosa_bien",
+    "prompt": "Foto documental realista, 16:9. an older latina woman at peace, healed, dignified, warm light. Como una foto real: imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+   }
+  },
+  {
+   "id": "epi_2_f0",
+   "start": 1418.78,
+   "dur": 7.16,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_compu.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "epi_3",
+   "start": 1425.94,
+   "dur": 9,
+   "kind": "raw",
+   "src": "img/es_ben_final.png",
+   "hue": "amber",
+   "kicker": "¿Ya tienen su palabra clave?",
+   "gen": {
+    "type": "image",
+    "name": "es_ben_final",
+    "prompt": "Foto documental realista, 16:9. un hombre latino de unos 68 años, pelo gris, anteojos, camisa a cuadros, expresión cálida, warm curious final question to the viewer, kind smile, en su casa. Como una foto real: imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+   }
+  },
+  {
+   "id": "epi_3_f0",
+   "start": 1434.94,
+   "dur": 2.88,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_dinero.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "tease_0",
+   "start": 1437.82,
+   "dur": 8.5,
+   "kind": "nextvideo",
+   "kicker": "Próximo video",
+   "title": "Los gastos hormiga",
+   "sub": "Lo que te saca dinero todos los meses, en silencio — y cómo cortarlo en una sola tarde.",
+   "hue": "blue"
+  },
+  {
+   "id": "tease_0_f0",
+   "start": 1446.32,
+   "dur": 7.5,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_pareja.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "tease_0_f1",
+   "start": 1453.82,
+   "dur": 7.5,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_telefono.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "tease_0_f2",
+   "start": 1461.32,
+   "dur": 4.82,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_tarjeta.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "outro_0",
+   "start": 1466.14,
+   "dur": 9,
+   "kind": "raw",
+   "src": "img/es_ben_outro.png",
+   "hue": "red",
+   "kicker": "Soy Ben, de Ben retirado",
+   "hold": true,
+   "gen": {
+    "type": "image",
+    "name": "es_ben_outro",
+    "prompt": "Foto documental realista, 16:9. un hombre latino de unos 68 años, pelo gris, anteojos, camisa a cuadros, expresión cálida, warm goodbye, kind smile to camera, en su casa. Como una foto real: imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+   }
+  },
+  {
+   "id": "outro_0_f0",
+   "start": 1475.14,
+   "dur": 3.98,
+   "kind": "raw",
+   "broll": true,
+   "src": "broll/ec_whatsapp.mp4",
+   "hue": "red"
+  }
+ ],
+ "extraImages": [
+  {
+   "name": "es_mapa_hispano",
+   "prompt": "Foto documental realista, 16:9. a world map highlighting Latin America and Spain, glowing dots over cities. Como una foto real: imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+  },
+  {
+   "name": "es_j_telefono",
+   "prompt": "Foto documental realista, 16:9. a ringing phone close-up, dramatic. Como una foto real: imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+  },
+  {
+   "name": "es_j_llanto",
+   "prompt": "Foto documental realista, 16:9. a crying young man on a phone, distress. Como una foto real: imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+  },
+  {
+   "name": "es_j_pago",
+   "prompt": "Foto documental realista, 16:9. hands handing over a stack of cash, urgent. Como una foto real: imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+  },
+  {
+   "name": "es_j_sano",
+   "prompt": "Foto documental realista, 16:9. a young man laughing safe at home, healthy. Como una foto real: imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+  },
+  {
+   "name": "es_jr_chat",
+   "prompt": "Foto documental realista, 16:9. an older woman smiling at a sweet phone chat, hopeful. Como una foto real: imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+  },
+  {
+   "name": "es_jr_meses",
+   "prompt": "Foto documental realista, 16:9. a calendar pages turning, months of messages. Como una foto real: imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+  },
+  {
+   "name": "es_jr_pedido",
+   "prompt": "Foto documental realista, 16:9. a phone message asking for money, an emergency. Como una foto real: imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+  },
+  {
+   "name": "es_jr_borrado",
+   "prompt": "Foto documental realista, 16:9. a deleted blank profile, vanished, empty. Como una foto real: imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+  },
+  {
+   "name": "es_call_panic",
+   "prompt": "Foto documental realista, 16:9. an older person panicking on the phone, hand on forehead. Como una foto real: imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+  },
+  {
+   "name": "es_premio",
+   "prompt": "Foto documental realista, 16:9. a fake lottery prize letter with confetti, too good to be true. Como una foto real: imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+  },
+  {
+   "name": "es_acceso",
+   "prompt": "Foto documental realista, 16:9. a hand giving remote access to a computer, hacker silhouette behind. Como una foto real: imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+  },
+  {
+   "name": "es_romance",
+   "prompt": "Foto documental realista, 16:9. a phone with a romantic chat and a fake profile photo, hearts. Como una foto real: imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+  },
+  {
+   "name": "es_amenaza",
+   "prompt": "Foto documental realista, 16:9. a phone showing a threatening official call, police badge, intimidating. Como una foto real: imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+  },
+  {
+   "name": "es_plataforma",
+   "prompt": "Foto documental realista, 16:9. a fake crypto investment platform on a screen that vanishes, empty. Como una foto real: imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+  }
+ ]
+}

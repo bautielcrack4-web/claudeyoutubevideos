@@ -16,6 +16,7 @@ import { MainRatas, TOTAL_FRAMES_RATAS } from "./VideoEdit/Main_ratas";
 import { MainMelon, TOTAL_FRAMES_MELON } from "./VideoEdit/Main_melon";
 import { MainMedicaid, TOTAL_FRAMES_MED } from "./VideoEdit/Main_medicaid";
 import { MainViuda, TOTAL_FRAMES_VD } from "./VideoEdit/Main_viuda";
+import { MainEstafas, TOTAL_FRAMES_ES } from "./VideoEdit/Main_estafas";
 
 // ── SOLO los videos ACTIVOS quedan registrados ──
 // Las composiciones viejas (Fly, Hipos, Bisontes, Objetos, Civil, Top7Demo,
@@ -25,6 +26,8 @@ import { MainViuda, TOTAL_FRAMES_VD } from "./VideoEdit/Main_viuda";
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      {/* VIDEO ACTIVO — Ben retirado · "Las estafas que vacían la cuenta" · AVATAR · look ALARMA */}
+      <Composition id="Estafas" component={MainEstafas} durationInFrames={TOTAL_FRAMES_ES} fps={30} width={1920} height={1080} />
       {/* VIDEO ACTIVO — Ben retirado · "La trampa de la viuda" · AVATAR · look ALARMA */}
       <Composition id="Viuda" component={MainViuda} durationInFrames={TOTAL_FRAMES_VD} fps={30} width={1920} height={1080} />
       {/* VIDEO ACTIVO — Ben retirado · "¿Casa PAGADA? Medicaid se la QUEDA" · AVATAR · look ALARMA */}
