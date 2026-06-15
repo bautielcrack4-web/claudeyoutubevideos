@@ -34,6 +34,7 @@ const FULL = 1600;
 const QUALITY = 3;
 
 let made = 0, skipped = 0;
+const failed = [];
 for (const DIR of DIRS) {
   const files = readdirSync(DIR).filter((f) => /\.(jpe?g|png)$/i.test(f) && !skipName(f));
   for (const f of files) {
@@ -43,12 +44,17 @@ for (const DIR of DIRS) {
       skipped++;
       continue;
     }
-    execFileSync(
-      FFMPEG,
-      ["-y", "-i", src, "-vf", `scale=${SMALL}:-1:flags=area,scale=${FULL}:-1:flags=bilinear`, "-q:v", String(QUALITY), out],
-      { stdio: ["ignore", "ignore", "ignore"] },
-    );
-    made++;
+    try {
+      execFileSync(
+        FFMPEG,
+        ["-y", "-i", src, "-vf", `scale=${SMALL}:-1:flags=area,scale=${FULL}:-1:flags=bilinear`, "-q:v", String(QUALITY), out],
+        { stdio: ["ignore", "ignore", "ignore"] },
+      );
+      made++;
+    } catch {
+      failed.push(f); // archivo ilegible (descarga corrupta / formato raro) → no frena el resto
+    }
   }
 }
-console.log(`preblur: done (${made} baked, ${skipped} up-to-date).`);
+console.log(`preblur: done (${made} baked, ${skipped} up-to-date, ${failed.length} fallaron).`);
+if (failed.length) console.log("  ⚠ ilegibles:", failed.join(", "));

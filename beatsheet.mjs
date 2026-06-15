@@ -411,6 +411,103 @@ function renderEl(b) {
         (b.fontSize ? ` fontSize={${b.fontSize}}` : ``) +
         ` />`
       );
+    // ── componentes a medida del canal "Ben retirado" (look ALARMA) ──
+    case "estateletter":
+      return (
+        `<EstateRecoveryLetter durationInFrames={d} amount=${j(b.amount)}` +
+        (b.eyebrow ? ` eyebrow=${j(b.eyebrow)}` : ``) +
+        (b.label ? ` label=${j(b.label)}` : ``) +
+        (b.hitAt != null ? ` hitAt={${b.hitAt}}` : ``) +
+        ` />`
+      );
+    case "twomoments":
+      return (
+        `<TwoMomentsSplit durationInFrames={d}` +
+        (b.eyebrow ? ` eyebrow=${j(b.eyebrow)}` : ``) +
+        (b.leftLabel ? ` leftLabel=${j(b.leftLabel)}` : ``) +
+        (b.leftSub ? ` leftSub=${j(b.leftSub)}` : ``) +
+        (b.rightLabel ? ` rightLabel=${j(b.rightLabel)}` : ``) +
+        (b.rightSub ? ` rightSub=${j(b.rightSub)}` : ``) +
+        ` />`
+      );
+    case "mistake":
+      return (
+        `<MistakeCard durationInFrames={d} number=${j(b.number)} title=${j(b.title)}` +
+        (b.desc ? ` desc=${j(b.desc)}` : ``) +
+        (b.eyebrow ? ` eyebrow=${j(b.eyebrow)}` : ``) +
+        (b.image ? ` image=${j(b.image)}` : ``) +
+        ` />`
+      );
+    case "goldvault":
+      return (
+        `<GoldVault durationInFrames={d}` +
+        (b.state ? ` state=${j(b.state)}` : ``) +
+        (b.label ? ` label=${j(b.label)}` : ``) +
+        (b.caption ? ` caption=${j(b.caption)}` : ``) +
+        ` />`
+      );
+    case "lookback":
+      return (
+        `<LookbackTimeline durationInFrames={d}` +
+        (b.years != null ? ` years={${b.years}}` : ``) +
+        (b.eyebrow ? ` eyebrow=${j(b.eyebrow)}` : ``) +
+        (b.title ? ` title=${j(b.title)}` : ``) +
+        (b.flags ? ` flags={${j(b.flags)}}` : ``) +
+        ` />`
+      );
+    case "tool":
+      return (
+        `<ProtectionTool durationInFrames={d} nameEs=${j(b.nameEs)} how=${j(b.how)}` +
+        (b.number ? ` number=${j(b.number)}` : ``) +
+        (b.nameEn ? ` nameEn=${j(b.nameEn)}` : ``) +
+        (b.eyebrow ? ` eyebrow=${j(b.eyebrow)}` : ``) +
+        (b.image ? ` image=${j(b.image)}` : ``) +
+        ` />`
+      );
+    case "deed":
+      return (
+        `<DeedStamp durationInFrames={d}` +
+        (b.title ? ` title=${j(b.title)}` : ``) +
+        (b.stampText ? ` stampText=${j(b.stampText)}` : ``) +
+        (b.caption ? ` caption=${j(b.caption)}` : ``) +
+        (b.hitAt != null ? ` hitAt={${b.hitAt}}` : ``) +
+        ` />`
+      );
+    case "odometer":
+      return (
+        `<CostOdometer durationInFrames={d} to={${b.to}}` +
+        (b.prefix ? ` prefix=${j(b.prefix)}` : ``) +
+        (b.suffix ? ` suffix=${j(b.suffix)}` : ``) +
+        (b.eyebrow ? ` eyebrow=${j(b.eyebrow)}` : ``) +
+        (b.label ? ` label=${j(b.label)}` : ``) +
+        (b.repeat ? ` repeat=${j(b.repeat)}` : ``) +
+        ` />`
+      );
+    case "signature":
+      return (
+        `<SignaturePhrase durationInFrames={d} lines={${j(b.lines || [])}}` +
+        (b.eyebrow ? ` eyebrow=${j(b.eyebrow)}` : ``) +
+        ` />`
+      );
+    case "vsmed":
+      return (
+        `<MedicareVsMedicaid durationInFrames={d} leftTitle=${j(b.leftTitle)} leftItems={${j(b.leftItems || [])}} rightTitle=${j(b.rightTitle)} rightItems={${j(b.rightItems || [])}}` +
+        (b.eyebrow ? ` eyebrow=${j(b.eyebrow)}` : ``) +
+        ` />`
+      );
+    case "action":
+      return (
+        `<ActionStepCard durationInFrames={d} step=${j(b.step)} question=${j(b.question)}` +
+        (b.eyebrow ? ` eyebrow=${j(b.eyebrow)}` : ``) +
+        ` />`
+      );
+    case "nextvideo":
+      return (
+        `<NextVideoEndcard durationInFrames={d} title=${j(b.title)}` +
+        (b.kicker ? ` kicker=${j(b.kicker)}` : ``) +
+        (b.sub ? ` sub=${j(b.sub)}` : ``) +
+        ` />`
+      );
     default:
       return null; // talk
   }
@@ -466,6 +563,19 @@ if (kinds.has("spreadmap")) imports.push(`import { SpreadMap } from "./scenes/Sp
 if (kinds.has("costtally")) imports.push(`import { CostTally } from "./scenes/CostTally";`);
 if (kinds.has("scent")) imports.push(`import { ScentConfuse } from "./scenes/ScentConfuse";`);
 if (kinds.has("depthtext")) imports.push(`import { DepthText } from "./scenes/DepthText";`);
+// ── kinds a medida del canal "Ben retirado" ──
+if (kinds.has("estateletter")) imports.push(`import { EstateRecoveryLetter } from "./scenes/EstateRecoveryLetter";`);
+if (kinds.has("twomoments")) imports.push(`import { TwoMomentsSplit } from "./scenes/TwoMomentsSplit";`);
+if (kinds.has("mistake")) imports.push(`import { MistakeCard } from "./scenes/MistakeCard";`);
+if (kinds.has("goldvault")) imports.push(`import { GoldVault } from "./scenes/GoldVault";`);
+if (kinds.has("lookback")) imports.push(`import { LookbackTimeline } from "./scenes/LookbackTimeline";`);
+if (kinds.has("tool")) imports.push(`import { ProtectionTool } from "./scenes/ProtectionTool";`);
+if (kinds.has("deed")) imports.push(`import { DeedStamp } from "./scenes/DeedStamp";`);
+if (kinds.has("odometer")) imports.push(`import { CostOdometer } from "./scenes/CostOdometer";`);
+if (kinds.has("signature")) imports.push(`import { SignaturePhrase } from "./scenes/SignaturePhrase";`);
+if (kinds.has("vsmed")) imports.push(`import { MedicareVsMedicaid } from "./scenes/MedicareVsMedicaid";`);
+if (kinds.has("action")) imports.push(`import { ActionStepCard } from "./scenes/ActionStepCard";`);
+if (kinds.has("nextvideo")) imports.push(`import { NextVideoEndcard } from "./scenes/NextVideoEndcard";`);
 const palLine = usedPal.size
   ? `\nconst ${[...usedPal].map((t) => `${t} = ${palTok[t]}`).join(", ")};\n`
   : "";

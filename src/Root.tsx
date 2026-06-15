@@ -14,6 +14,7 @@ import { MainJabon, TOTAL_FRAMES_JABON } from "./VideoEdit/Main_jabon";
 import { MainCeniza, TOTAL_FRAMES_CENIZA } from "./VideoEdit/Main_ceniza";
 import { MainRatas, TOTAL_FRAMES_RATAS } from "./VideoEdit/Main_ratas";
 import { MainMelon, TOTAL_FRAMES_MELON } from "./VideoEdit/Main_melon";
+import { MainMedicaid, TOTAL_FRAMES_MED } from "./VideoEdit/Main_medicaid";
 
 // ── SOLO los videos ACTIVOS quedan registrados ──
 // Las composiciones viejas (Fly, Hipos, Bisontes, Objetos, Civil, Top7Demo,
@@ -23,6 +24,8 @@ import { MainMelon, TOTAL_FRAMES_MELON } from "./VideoEdit/Main_melon";
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      {/* VIDEO ACTIVO — Ben retirado · "¿Casa PAGADA? Medicaid se la QUEDA" · AVATAR · look ALARMA */}
+      <Composition id="Medicaid" component={MainMedicaid} durationInFrames={TOTAL_FRAMES_MED} fps={30} width={1920} height={1080} />
       {/* VIDEO ACTIVO — Nunca Más Compres Jabón (ceniza+grasa) · Constructor Libre v4 · faceless */}
       <Composition
         id="Jabon"
