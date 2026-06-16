@@ -110,7 +110,7 @@
    "start": 33.79,
    "dur": 4.28,
    "kind": "raw",
-   "src": "broll/co_abuela_cocina.mp4",
+   "src": "broll/cv2_prairie_4k.mp4",
    "hue": "amber"
   },
   {
@@ -180,7 +180,7 @@
    "start": 72.8,
    "dur": 4.7,
    "kind": "raw",
-   "src": "broll/co_almacen.mp4",
+   "src": "broll/cv2_prairie_sunset_4k.mp4",
    "hue": "amber"
   },
   {
@@ -524,7 +524,7 @@
    "start": 223.55,
    "dur": 3.85,
    "kind": "raw",
-   "src": "broll/co_balanza.mp4",
+   "src": "broll/cv2_winter_prairie.mp4",
    "hue": "amber"
   },
   {
@@ -548,7 +548,7 @@
    "start": 237.75,
    "dur": 3.55,
    "kind": "raw",
-   "src": "broll/co_caldo.mp4",
+   "src": "broll/cv_cloning.mp4",
    "hue": "blue"
   },
   {
@@ -656,7 +656,7 @@
    "start": 282.16,
    "dur": 4.04,
    "kind": "raw",
-   "src": "broll/co_canasta_verdura.mp4",
+   "src": "broll/cv_clouds_shadow.mp4",
    "hue": "blue"
   },
   {
@@ -742,7 +742,7 @@
    "start": 325.5,
    "dur": 3.7,
    "kind": "raw",
-   "src": "broll/co_cocina_lena.mp4",
+   "src": "broll/cv_dawn_mist.mp4",
    "hue": "amber"
   },
   {
@@ -790,7 +790,7 @@
    "start": 355.63,
    "dur": 4.84,
    "kind": "raw",
-   "src": "broll/co_croquetas.mp4",
+   "src": "broll/cv_dry_earth.mp4",
    "hue": "amber"
   },
   {
@@ -798,7 +798,7 @@
    "start": 360.47,
    "dur": 4.83,
    "kind": "raw",
-   "src": "broll/co_despensa.mp4",
+   "src": "broll/cv_grass_backlit.mp4",
    "hue": "amber"
   },
   {
@@ -918,7 +918,7 @@
    "start": 424.03,
    "dur": 4.32,
    "kind": "raw",
-   "src": "broll/co_duraznos.mp4",
+   "src": "broll/cv_night_stars.mp4",
    "hue": "amber"
   },
   {
@@ -926,7 +926,7 @@
    "start": 428.35,
    "dur": 4.33,
    "kind": "raw",
-   "src": "broll/co_embutidos.mp4",
+   "src": "broll/cv_plains_aerial.mp4",
    "hue": "amber"
   },
   {
@@ -956,7 +956,7 @@
    "start": 442.43,
    "dur": 4.64,
    "kind": "raw",
-   "src": "broll/co_fiambrera.mp4",
+   "src": "broll/cv_radio_track.mp4",
    "hue": "blue"
   },
   {
@@ -964,7 +964,7 @@
    "start": 447.07,
    "dur": 4.63,
    "kind": "raw",
-   "src": "broll/co_gallina_campo.mp4",
+   "src": "broll/cv_snow_blow.mp4",
    "hue": "blue"
   },
   {
@@ -980,7 +980,7 @@
    "start": 456.27,
    "dur": 4.56,
    "kind": "raw",
-   "src": "broll/co_gallinero.mp4",
+   "src": "broll/cv_storm_timelapse.mp4",
    "hue": "amber"
   },
   {
@@ -988,7 +988,7 @@
    "start": 460.83,
    "dur": 4.57,
    "kind": "raw",
-   "src": "broll/co_granel.mp4",
+   "src": "broll/cv_sunrise_prairie.mp4",
    "hue": "amber"
   },
   {
@@ -1044,7 +1044,7 @@
    "start": 488.2,
    "dur": 4.1,
    "kind": "raw",
-   "src": "broll/co_huerta.mp4",
+   "src": "broll/cv_sunset_prairie.mp4",
    "hue": "blue"
   },
   {
@@ -1052,7 +1052,7 @@
    "start": 492.3,
    "dur": 4.1,
    "kind": "raw",
-   "src": "broll/co_huevos_juntar.mp4",
+   "src": "broll/cv_vaccinate.mp4",
    "hue": "blue"
   },
   {
@@ -1103,7 +1103,7 @@
    "start": 517.13,
    "dur": 5.37,
    "kind": "raw",
-   "src": "broll/co_huevo_yema.mp4",
+   "src": "broll/cv_wildflowers.mp4",
    "hue": "blue"
   },
   {
@@ -1151,7 +1151,7 @@
    "start": 543.81,
    "dur": 4.9,
    "kind": "raw",
-   "src": "broll/doc_baboon_forage_hands.mp4",
+   "src": "broll/hu_spotlight_clip.mp4",
    "hue": "amber"
   },
   {
@@ -1159,7 +1159,7 @@
    "start": 548.71,
    "dur": 4.9,
    "kind": "raw",
-   "src": "broll/doc_baboon_hands.mp4",
+   "src": "broll/nw_biologist_handle.mp4",
    "hue": "amber"
   },
   {
@@ -1167,7 +1167,7 @@
    "start": 553.61,
    "dur": 4.9,
    "kind": "raw",
-   "src": "broll/doc_baboon_survey.mp4",
+   "src": "broll/nw_release2.mp4",
    "hue": "amber"
   },
   {
@@ -1211,7 +1211,7 @@
    "start": 564.51,
    "dur": 4.99,
    "kind": "raw",
-   "src": "broll/co_leche_botella.mp4",
+   "src": "broll/hu_colonia_perritos.mp4",
    "hue": "red"
   },
   {
@@ -1219,7 +1219,7 @@
    "start": 569.5,
    "dur": 4.98,
    "kind": "raw",
-   "src": "broll/co_leche_tambo.mp4",
+   "src": "broll/hu_crias_recien.mp4",
    "hue": "red"
   },
   {
@@ -1241,7 +1241,7 @@
    "start": 580.48,
    "dur": 5.41,
    "kind": "raw",
-   "src": "broll/co_lechuga.mp4",
+   "src": "broll/hu_cria_crece.mp4",
    "hue": "blue"
   },
   {
@@ -1249,7 +1249,7 @@
    "start": 585.89,
    "dur": 5.41,
    "kind": "raw",
-   "src": "broll/co_manos_tierra.mp4",
+   "src": "broll/hu_cria_salvaje.mp4",
    "hue": "blue"
   },
   {
@@ -1281,7 +1281,7 @@
    "start": 607.25,
    "dur": 5.25,
    "kind": "raw",
-   "src": "broll/co_mercado_viejo.mp4",
+   "src": "broll/hu_dos_animales.mp4",
    "hue": "blue"
   },
   {
@@ -1313,7 +1313,7 @@
    "start": 625.43,
    "dur": 4.34,
    "kind": "raw",
-   "src": "broll/hu_spotlight_clip.mp4",
+   "src": "broll/nw_release_wild.mp4",
    "hue": "red"
   },
   {
@@ -1321,7 +1321,7 @@
    "start": 629.77,
    "dur": 4.33,
    "kind": "raw",
-   "src": "broll/jb_wash_hands.mp4",
+   "src": "broll/st2_field_bio.mp4",
    "hue": "red"
   },
   {
@@ -1425,7 +1425,7 @@
    "start": 696.3,
    "dur": 4.7,
    "kind": "raw",
-   "src": "broll/co_nata.mp4",
+   "src": "broll/hu_elizabeth.mp4",
    "hue": "red"
   },
   {
@@ -1433,7 +1433,7 @@
    "start": 701,
    "dur": 4.7,
    "kind": "raw",
-   "src": "broll/co_olla_fuego.mp4",
+   "src": "broll/hu_elizabeth2.mp4",
    "hue": "red"
   },
   {
@@ -1483,7 +1483,7 @@
    "start": 720.77,
    "dur": 3.53,
    "kind": "raw",
-   "src": "broll/co_pan_amasar.mp4",
+   "src": "broll/hu_ganado_pradera.mp4",
    "hue": "amber"
   },
   {
@@ -1519,7 +1519,7 @@
    "start": 730.3,
    "dur": 4.5,
    "kind": "raw",
-   "src": "broll/co_pan_horno.mp4",
+   "src": "broll/hu_jaula_abre.mp4",
    "hue": "red"
   },
   {
@@ -1584,7 +1584,7 @@
    "start": 755.46,
    "dur": 4.04,
    "kind": "raw",
-   "src": "broll/co_pan_reparto.mp4",
+   "src": "broll/hu_liberacion_equipo.mp4",
    "hue": "red"
   },
   {
@@ -1810,7 +1810,7 @@
    "start": 878.2,
    "dur": 4.3,
    "kind": "raw",
-   "src": "broll/co_salar_carne.mp4",
+   "src": "broll/hu_ojos_verdes.mp4",
    "hue": "red"
   },
   {
@@ -1818,7 +1818,7 @@
    "start": 882.5,
    "dur": 4.3,
    "kind": "raw",
-   "src": "broll/co_sobras.mp4",
+   "src": "broll/hu_perrito_pradera.mp4",
    "hue": "red"
   },
   {
@@ -1914,7 +1914,7 @@
    "start": 947.1,
    "dur": 4.2,
    "kind": "raw",
-   "src": "broll/co_supermercado.mp4",
+   "src": "broll/hu_prairie_wind_clip.mp4",
    "hue": "blue"
   },
   {
@@ -1922,7 +1922,7 @@
    "start": 951.3,
    "dur": 4.2,
    "kind": "raw",
-   "src": "broll/co_tomate_planta.mp4",
+   "src": "broll/hu_snow_prairie_clip.mp4",
    "hue": "blue"
   },
   {
@@ -1958,7 +1958,7 @@
    "start": 961.5,
    "dur": 5.2,
    "kind": "raw",
-   "src": "broll/co_verduleria.mp4",
+   "src": "broll/hu_storm_clip.mp4",
    "hue": "amber"
   },
   {
@@ -1966,7 +1966,7 @@
    "start": 966.7,
    "dur": 5.2,
    "kind": "raw",
-   "src": "broll/co_verduras_temporada.mp4",
+   "src": "broll/hu_vacuna.mp4",
    "hue": "amber"
   },
   {
@@ -1982,7 +1982,7 @@
    "start": 976.15,
    "dur": 4.25,
    "kind": "raw",
-   "src": "broll/cv2_prairie_4k.mp4",
+   "src": "broll/hu_willa.mp4",
    "hue": "red"
   },
   {
@@ -2310,7 +2310,7 @@
    "start": 1133.5,
    "dur": 5.1,
    "kind": "raw",
-   "src": "broll/cv2_prairie_sunset_4k.mp4",
+   "src": "broll/hu_willa_eliz.mp4",
    "hue": "amber"
   },
   {
@@ -2318,7 +2318,7 @@
    "start": 1138.6,
    "dur": 5.1,
    "kind": "raw",
-   "src": "broll/cv2_winter_prairie.mp4",
+   "src": "broll/nw_captive_program.mp4",
    "hue": "amber"
   },
   {
@@ -2404,7 +2404,7 @@
    "start": 1192.27,
    "dur": 4.48,
    "kind": "raw",
-   "src": "broll/mc_fieldspot1.mp4",
+   "src": "broll/st2_night_field.mp4",
    "hue": "red"
   },
   {
@@ -2412,7 +2412,7 @@
    "start": 1196.75,
    "dur": 4.47,
    "kind": "raw",
-   "src": "broll/mc_fieldspot2.mp4",
+   "src": "broll/st2_release_box.mp4",
    "hue": "red"
   },
   {
@@ -2420,7 +2420,7 @@
    "start": 1201.22,
    "dur": 4.48,
    "kind": "raw",
-   "src": "broll/mc_fieldspot3.mp4",
+   "src": "broll/st_fog_field.mp4",
    "hue": "red"
   },
   {
@@ -2513,7 +2513,7 @@
    "start": 1248.7,
    "dur": 3.9,
    "kind": "raw",
-   "src": "broll/mc_fieldspot_compare.mp4",
+   "src": "broll/st_rain_field.mp4",
    "hue": "amber"
   },
   {
@@ -2545,7 +2545,7 @@
    "start": 1267.45,
    "dur": 5.45,
    "kind": "raw",
-   "src": "broll/mc_fieldspot_creamy.mp4",
+   "src": "real/nwi_release_1.png",
    "hue": "blue"
   },
   {
@@ -2561,7 +2561,7 @@
    "start": 1278.13,
    "dur": 5.24,
    "kind": "raw",
-   "src": "broll/mc_fieldspot_white.mp4",
+   "src": "real/nwi_release_2.png",
    "hue": "amber"
   },
   {
@@ -2569,7 +2569,7 @@
    "start": 1283.37,
    "dur": 5.23,
    "kind": "raw",
-   "src": "broll/mc_field_boy.mp4",
+   "src": "broll/cv2_spotlight_eyes.mp4",
    "hue": "amber"
   },
   {
@@ -2607,7 +2607,7 @@
    "start": 1307.52,
    "dur": 3.88,
    "kind": "raw",
-   "src": "broll/cvb_aegean_sea.mp4",
+   "src": "broll/nw_kits_breeding.mp4",
    "hue": "amber"
   },
   {
@@ -2623,7 +2623,7 @@
    "start": 1315.85,
    "dur": 4.45,
    "kind": "raw",
-   "src": "broll/cvb_brush_artifact.mp4",
+   "src": "broll/nw_last_18.mp4",
    "hue": "red"
   },
   {
@@ -2639,7 +2639,7 @@
    "start": 1324.5,
    "dur": 4.2,
    "kind": "raw",
-   "src": "broll/mc_field_many.mp4",
+   "src": "broll/cv_counting_survey.mp4",
    "hue": "blue"
   },
   {
@@ -2647,7 +2647,7 @@
    "start": 1328.7,
    "dur": 4.2,
    "kind": "raw",
-   "src": "broll/mc_field_rows1.mp4",
+   "src": "broll/cv_field_notebook.mp4",
    "hue": "blue"
   },
   {
@@ -2677,7 +2677,7 @@
    "start": 1338.9,
    "dur": 6.8,
    "kind": "raw",
-   "src": "broll/cvb_canyon_aerial.mp4",
+   "src": "broll/nw_meeteetse.mp4",
    "hue": "amber"
   },
   {
@@ -2839,7 +2839,7 @@
    "start": 1428.75,
    "dur": 3.66,
    "kind": "raw",
-   "src": "broll/cvb_clay_tablet.mp4",
+   "src": "broll/nw_natgeo.mp4",
    "hue": "amber"
   },
   {

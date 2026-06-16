@@ -341,7 +341,10 @@ const THEMES = {
   archival: /archival|homesteader|ranch|cattle|taxiderm|veneno|dog_farm/i,
 };
 const themeOf = (src) => { const n = (src || "").toLowerCase(); for (const [k, re] of Object.entries(THEMES)) if (re.test(n)) return k; return "landscape"; };
-const allClips = fexists("broll") ? fs.readdirSync("public/broll").filter((f) => f.endsWith(".mp4")).map((f) => `broll/${f}`) : [];
+// ⚠ SOLO clips del HURÓN (broll/ es compartida entre videos → si no, se cuelan clips de otros
+// videos que NO están en el tarball del farm → 404 en el render).
+const HU_CLIP = /^(hu_|cv_|cv2_|nw_|st_|st2_|v3_)/;
+const allClips = fexists("broll") ? fs.readdirSync("public/broll").filter((f) => f.endsWith(".mp4") && HU_CLIP.test(f)).map((f) => `broll/${f}`) : [];
 const newsImgs = fexists("real") ? fs.readdirSync("public/real").filter((f) => /^nwi_.*\.png$/.test(f)).map((f) => `real/${f}`) : [];
 const themePools = {}; for (const c of [...allClips, ...newsImgs]) { const t = themeOf(c); (themePools[t] = themePools[t] || []).push(c); }
 const usage = {};
