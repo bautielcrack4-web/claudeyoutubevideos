@@ -1,9 +1,10 @@
-// match_runner.mjs — versión FARM (cross-platform) del matcher CLIP. Corre en un
-// runner de GitHub Actions: procesa un SHARD de beats (i % N === idx) del match list,
-// puntúa con CLIP local y escribe out/match_part_<idx>.json. El agregador los une.
+// match_runner.mjs — versión FARM (cross-platform) del matcher CLIP. Corre en un runner
+// de GitHub Actions: procesa un SHARD de beats (i % N === idx) del match list, puntúa con
+// CLIP local y escribe out/match_part_<idx>.json. El agregador los une.
 //
-// Diferencias con matchclip.mjs (local Windows): usa `yt-dlp` y `ffmpeg` del PATH
-// (no el .exe de bin/ ni el ffmpeg de Remotion). Todo lo demás (CLIP) es igual.
+// v2 — misma lógica de búsqueda mejorada que matchclip.mjs (búsqueda ancha + re-rank por
+// título, escaneo del video entero coarse→fine, penalización de texto graduada). Diferencia:
+// usa `yt-dlp`/`ffmpeg` del PATH (no el .exe de bin/ ni el ffmpeg de Remotion).
 //
 // Uso:  node scripts/match_runner.mjs <slug> <idx> <total> [matchListPath]
 import fs from "fs";
@@ -25,65 +26,134 @@ const allBeats = JSON.parse(fs.readFileSync(LIST, "utf8").replace(/^﻿/, ""));
 const beats = allBeats.filter((_, i) => i % TOTAL === IDX);
 console.log(`shard ${IDX}/${TOTAL}: ${beats.length} beats`);
 
+const CANDS = +(process.env.MATCH_CANDS || 6);
+const POOL = +(process.env.MATCH_POOL || 16);
+const MAXSPAN = +(process.env.MATCH_MAXSPAN || 360);
+const COARSE = +(process.env.MATCH_COARSE || 44);
+const FINE = +(process.env.MATCH_FINE || 0.5);
+const HEAD = +(process.env.MATCH_HEAD || 6);
+const TAIL = 0.06;
+
 const TMP = "_match";
 fs.mkdirSync(TMP, { recursive: true });
 const vidId = (u) => (u.match(/(?:v=|youtu\.be\/|shorts\/|embed\/)([A-Za-z0-9_-]{11})/) || u.match(/([A-Za-z0-9_-]{11})/) || [])[1];
 
-const ytSearch = (q, n = 3) => {
-  const r = spawnSync(YTDLP, [`ytsearch${n}:${q}`, "--skip-download", "--no-warnings", "--print", "%(id)s"], { encoding: "utf8" });
-  return (r.stdout || "").trim().split(/\r?\n/).filter(Boolean).map((id) => `https://youtu.be/${id}`);
+const STOP = new Set(("a an the of to in on at by for with and or from into is are was were be " +
+  "being this that it its as close up shot footage video clip hd 4k uhd full real best top").split(/\s+/));
+const kw = (s) => [...new Set((s || "").toLowerCase().replace(/[^a-z0-9\s]/g, " ").split(/\s+/)
+  .filter((w) => w.length > 2 && !STOP.has(w)))];
+const BAD = /(reaction|react|podcast|full episode|interview|tier list|gameplay|let'?s play|trailer|unboxing|vlog|prank)/i;
+
+const searchRanked = (queries, concept, limit = CANDS) => {
+  const want = new Set([...kw(concept), ...queries.flatMap(kw)]);
+  const seen = new Map();
+  for (const q of queries) {
+    if (!q) continue;
+    const r = spawnSync(YTDLP, [
+      `ytsearch${POOL}:${q}`, "--skip-download", "--no-warnings",
+      "--match-filter", "duration>40 & duration<3000 & !is_live",
+      "--print", "%(id)s\t%(title)s\t%(duration)s",
+    ], { encoding: "utf8", maxBuffer: 1 << 26 });
+    const lines = (r.stdout || "").trim().split(/\r?\n/).filter(Boolean);
+    lines.forEach((line, ri) => {
+      const [id, title = "", durS = ""] = line.split("\t");
+      if (!id) return;
+      if (seen.has(id)) { const e = seen.get(id); e.rank = Math.min(e.rank, ri); return; }
+      const t = title.toLowerCase();
+      const lex = [...want].reduce((n, w) => n + (t.includes(w) ? 1 : 0), 0);
+      const pen = BAD.test(t) ? 3 : 0;
+      seen.set(id, { url: `https://youtu.be/${id}`, id, title, dur: +durS || 0, rank: ri, lex: lex - pen });
+    });
+  }
+  return [...seen.values()].sort((a, b) => (b.lex - a.lex) || (a.rank - b.rank)).slice(0, limit);
 };
 
-const proxyFrames = (url, after, scan, step, tag) => {
+const dlProxy = (url, a, b, tag) => {
   const proxy = path.join(TMP, `${tag}.mp4`);
-  const a = Math.max(0, after), b = after + scan;
   const dl = spawnSync(YTDLP, [
-    url, "--download-sections", `*${a}-${b}`, "--force-keyframes-at-cuts",
+    url, "--download-sections", `*${Math.max(0, a)}-${b}`, "--force-keyframes-at-cuts",
     "-f", "bv*[height<=240]/wv*/w", "--merge-output-format", "mp4", "--no-playlist",
     "-o", proxy, "--force-overwrites", "--quiet", "--no-warnings",
   ], { encoding: "utf8" });
-  if (dl.status !== 0 || !fs.existsSync(proxy)) return [];
+  return (dl.status === 0 && fs.existsSync(proxy)) ? proxy : null;
+};
+const extract = (proxy, baseT, step, maxF, tag, ss = 0) => {
   const fdir = path.join(TMP, `${tag}_f`);
   fs.rmSync(fdir, { recursive: true, force: true });
   fs.mkdirSync(fdir, { recursive: true });
-  const maxF = Math.ceil(scan / step) + 2;
-  spawnSync(FF, ["-y", "-i", proxy, "-r", String(1 / step), "-frames:v", String(maxF), path.join(fdir, "f%04d.png")], { encoding: "utf8" });
+  const args = ["-y"];
+  if (ss > 0) args.push("-ss", String(ss));
+  args.push("-i", proxy, "-r", String(1 / step), "-frames:v", String(maxF), path.join(fdir, "f%04d.png"));
+  spawnSync(FF, args, { encoding: "utf8" });
   const files = fs.existsSync(fdir) ? fs.readdirSync(fdir).filter((f) => f.endsWith(".png")).sort() : [];
-  return files.map((f, i) => ({ file: path.join(fdir, f), t: +(a + i * step).toFixed(1) }));
+  return files.map((f, i) => ({ file: path.join(fdir, f), t: +(baseT + i * step).toFixed(1) }));
 };
 
-console.log("cargando CLIP...");
-const clf = await pipeline("zero-shot-image-classification", "Xenova/clip-vit-base-patch32");
+console.log("cargando CLIP (q8)...");
+const clf = await pipeline("zero-shot-image-classification", "Xenova/clip-vit-base-patch32", { dtype: "q8" });
 const DISTRACTORS = [
   "a person talking to the camera, a talking head",
-  "a title screen or text overlay",
-  "a channel logo or watermark",
   "a blurry or unrelated indoor scene",
 ];
+const TEXT_LABELS = [
+  "a title card or large bold text overlay across the screen",
+  "big subtitles or captions text on screen",
+  "a channel logo, watermark or banner",
+];
 const scoreFrame = async (file, concept) => {
-  const out = await clf(file, [concept, ...DISTRACTORS]);
-  const hit = out.find((o) => o.label === concept);
-  return hit ? hit.score : 0;
+  const out = await clf(file, [concept, ...DISTRACTORS, ...TEXT_LABELS]);
+  const get = (l) => out.find((o) => o.label === l)?.score || 0;
+  const c = get(concept);
+  const textMax = Math.max(...TEXT_LABELS.map(get));
+  const penalty = textMax <= 0.10 ? 1 : textMax >= 0.30 ? 0.10 : 1 - ((textMax - 0.10) / 0.20) * 0.90;
+  return c * penalty;
+};
+
+const analyze = async (cand, beat, tag) => {
+  const explicitWindow = beat.after != null || beat.scan != null;
+  const a0 = explicitWindow ? (beat.after ?? 0) : HEAD;
+  const dur = cand.dur || 0;
+  const end = explicitWindow
+    ? a0 + (beat.scan ?? 180)
+    : Math.min(a0 + MAXSPAN, dur ? Math.floor(dur * (1 - TAIL)) : a0 + MAXSPAN);
+  const span = Math.max(2, end - a0);
+  const proxy = dlProxy(cand.url, a0, end, tag);
+  if (!proxy) return null;
+  const coarseStep = explicitWindow ? (beat.step || 2) : Math.max(2, +(span / COARSE).toFixed(2));
+  const coarse = extract(proxy, a0, coarseStep, Math.ceil(span / coarseStep) + 2, tag + "_c");
+  if (!coarse.length) return null;
+  let bf = { score: -1, t: a0 };
+  for (const fr of coarse) { const s = await scoreFrame(fr.file, beat.concept); if (s > bf.score) bf = { score: s, t: fr.t }; }
+  if (coarseStep > FINE) {
+    const fa = Math.max(a0, +(bf.t - coarseStep).toFixed(2));
+    const fb = Math.min(end, +(bf.t + coarseStep).toFixed(2));
+    const fine = extract(proxy, fa, FINE, Math.ceil((fb - fa) / FINE) + 2, tag + "_x", fa - a0);
+    for (const fr of fine) { const s = await scoreFrame(fr.file, beat.concept); if (s > bf.score) bf = { score: s, t: fr.t }; }
+  }
+  return { score: bf.score, t: bf.t, url: cand.url, id: cand.id };
 };
 
 const results = [];
+const usedIds = new Set();
 for (const b of beats) {
-  const { name, concept, dur = 6, after = 0, scan = 180, step = 2, lead = 1.0 } = b;
-  const urls = b.urls || (b.query ? ytSearch(b.query, 3) : []);
-  if (!urls.length) { console.log(`✗ ${name}: sin candidatos`); continue; }
-  let best = { score: -1 };
-  for (let i = 0; i < urls.length; i++) {
-    const frames = proxyFrames(urls[i], after, scan, step, `${name}_${i}`);
-    if (!frames.length) continue;
-    let bf = { score: -1 };
-    for (const fr of frames) {
-      const s = await scoreFrame(fr.file, concept);
-      if (s > bf.score) bf = { score: s, t: fr.t };
-    }
-    if (bf.score > best.score) best = { ...bf, url: urls[i] };
+  const { name, concept, dur = 6, lead = 1.0 } = b;
+  let cands;
+  if (b.urls) cands = b.urls.map((u) => ({ url: u, id: vidId(u), title: "", dur: 0 }));
+  else cands = searchRanked(Array.isArray(b.query) ? b.query : [b.query], concept);
+  if (!cands.length) { console.log(`✗ ${name}: sin candidatos`); continue; }
+  const scored = [];
+  for (let i = 0; i < cands.length; i++) {
+    const res = await analyze(cands[i], b, `${name}_${i}`);
+    if (res) scored.push(res);
   }
+  if (!scored.length) { console.log(`✗ ${name}: sin frames`); continue; }
+  scored.sort((a, b2) => b2.score - a.score);
+  let best = scored[0];
+  const fresh = scored.find((c) => c.id && !usedIds.has(c.id) && c.score >= scored[0].score * 0.88);
+  if (fresh) best = fresh;
+  if (best.id) usedIds.add(best.id);
   const start = Math.max(0, +(best.t - lead).toFixed(1));
-  console.log(`  ${name}: ${best.score.toFixed(3)} @ ${best.t}s (${vidId(best.url || "")})`);
+  console.log(`  ${name}: ${best.score.toFixed(3)} @ ${best.t}s (${best.id})`);
   results.push({ name, url: best.url, start, dur, _score: +best.score.toFixed(3) });
 }
 
