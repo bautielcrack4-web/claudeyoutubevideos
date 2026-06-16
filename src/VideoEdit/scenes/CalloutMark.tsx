@@ -79,7 +79,7 @@ export const CalloutMark: React.FC<{
         {/* vintage photo background (or sepia fallback) with Ken Burns */}
         <div style={{ position: "absolute", inset: 0, transform: `scale(${kb})`, opacity: photoIn }}>
           {image ? (
-            <Media src={image} style={{ width: "100%", height: "100%", objectFit: "cover", filter: "sepia(0.45) contrast(1.05) brightness(0.82)" }} />
+            <Media src={image} style={{ width: "100%", height: "100%", objectFit: "cover", filter: "brightness(0.86)" }} />
           ) : (
             <div style={{ width: "100%", height: "100%", background: "radial-gradient(120% 120% at 30% 20%, #6b5836, #2a2118 70%, #161109)" }} />
           )}

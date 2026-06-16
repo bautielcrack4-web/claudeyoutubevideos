@@ -1,0 +1,3178 @@
+{
+ "video": "huron",
+ "beats": [
+  {
+   "id": "teaser_0",
+   "start": 0,
+   "dur": 1.5,
+   "kind": "raw",
+   "src": "broll/st_eyes_animal.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "teaser_1",
+   "start": 1.5,
+   "dur": 1.3,
+   "kind": "raw",
+   "src": "broll/cv2_ferret_4k.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "teaser_2",
+   "start": 2.8,
+   "dur": 1.2,
+   "kind": "raw",
+   "src": "broll/cv_ferret_run.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "intro_0",
+   "start": 4.2,
+   "dur": 1.98,
+   "kind": "raw",
+   "src": "broll/st_grassland_sunset.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "intro_1",
+   "start": 6.18,
+   "dur": 3.22,
+   "kind": "raw",
+   "src": "broll/st_ranch.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "intro_2",
+   "start": 9.4,
+   "dur": 1.4,
+   "kind": "raw",
+   "src": "broll/st_dusk_field.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "intro_3",
+   "start": 10.8,
+   "dur": 1.96,
+   "kind": "raw",
+   "src": "broll/st_grass_wind.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "intro_4",
+   "start": 12.76,
+   "dur": 2.74,
+   "kind": "raw",
+   "src": "broll/st_night_sky.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "intro_5",
+   "start": 15.5,
+   "dur": 2.1,
+   "kind": "raw",
+   "src": "broll/cv_ranch_dog.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "intro_6",
+   "start": 17.6,
+   "dur": 2.1,
+   "kind": "raw",
+   "src": "broll/st_dog_farm.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "intro_7",
+   "start": 19.7,
+   "dur": 5.6,
+   "kind": "raw",
+   "src": "broll/st_grass_wind.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "intro_8",
+   "start": 25.3,
+   "dur": 4.2,
+   "kind": "raw",
+   "src": "real/hu_pradera_noche.png",
+   "hue": "blue"
+  },
+  {
+   "id": "intro_9_0",
+   "start": 29.5,
+   "dur": 4.29,
+   "kind": "raw",
+   "src": "img/hu_porche_cuerpo.png",
+   "hue": "amber"
+  },
+  {
+   "id": "intro_9_1",
+   "start": 33.79,
+   "dur": 4.28,
+   "kind": "raw",
+   "src": "broll/co_abuela_cocina.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "intro_10",
+   "start": 38.07,
+   "dur": 4.67,
+   "kind": "quote",
+   "text": "Su perro lo había dejado ahí, como un *regalo*.",
+   "image": "broll/cv_ranch_dog.mp4",
+   "gen": {
+    "type": "image",
+    "name": "hu_perro_mira",
+    "prompt": "Foto documental real, 16:9 horizontal apaisado. Un perro de campo sentado en un porche mirando a cámara Como un fotograma de un documental viejo de naturaleza: con imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+   },
+   "hue": "red"
+  },
+  {
+   "id": "intro_11_0",
+   "start": 42.74,
+   "dur": 3.65,
+   "kind": "raw",
+   "src": "broll/cv2_ferret_4k.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "intro_11_1",
+   "start": 46.39,
+   "dur": 3.65,
+   "kind": "raw",
+   "src": "broll/cv_ferret_face.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "intro_12",
+   "start": 50.04,
+   "dur": 6.86,
+   "kind": "raw",
+   "src": "broll/cv2_ferret_4k.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "intro_13",
+   "start": 56.9,
+   "dur": 6.8,
+   "kind": "raw",
+   "src": "broll/st_hands_animal.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "intro_14",
+   "start": 63.7,
+   "dur": 4.4,
+   "kind": "raw",
+   "src": "broll/cv2_ferret_4k.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "intro_15_0",
+   "start": 68.1,
+   "dur": 4.7,
+   "kind": "raw",
+   "src": "real/hu_pradera_noche.png",
+   "hue": "amber"
+  },
+  {
+   "id": "intro_15_1",
+   "start": 72.8,
+   "dur": 4.7,
+   "kind": "raw",
+   "src": "broll/co_almacen.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "intro_16_0",
+   "start": 77.5,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/st_lab_blue.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "intro_16_1",
+   "start": 82.5,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/cv2_lab_genetics.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "intro_17_0",
+   "start": 87.5,
+   "dur": 4.55,
+   "kind": "raw",
+   "src": "broll/cv2_ferret_night_wild.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "intro_17_1",
+   "start": 92.05,
+   "dur": 4.55,
+   "kind": "raw",
+   "src": "broll/cv_ferret_groom.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "regreso_0",
+   "start": 96.6,
+   "dur": 3.78,
+   "kind": "raw",
+   "src": "real/hu_huron_ojos.png",
+   "hue": "red"
+  },
+  {
+   "id": "regreso_1",
+   "start": 100.38,
+   "dur": 2.12,
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "Regresó"
+    },
+    {
+     "t": "de"
+    },
+    {
+     "t": "entre"
+    },
+    {
+     "t": "los"
+    },
+    {
+     "t": "muertos",
+     "hl": true
+    }
+   ],
+   "eyebrow": "Y acababa de",
+   "bg": "image",
+   "image": "broll/cv2_ferret_4k.mp4",
+   "gen": {
+    "type": "image",
+    "name": "hu_huron_pasto",
+    "prompt": "Foto documental real, 16:9 horizontal apaisado. Un hurón de patas negras entre el pasto al atardecer Como un fotograma de un documental viejo de naturaleza: con imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+   },
+   "hue": "blue"
+  },
+  {
+   "id": "regreso_2",
+   "start": 102.5,
+   "dur": 4.3,
+   "kind": "raw",
+   "src": "broll/cv_archival_prairie.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "regreso_3_0",
+   "start": 106.8,
+   "dur": 3.75,
+   "kind": "raw",
+   "src": "broll/cv_ferret_portrait.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "regreso_3_1",
+   "start": 110.55,
+   "dur": 3.75,
+   "kind": "raw",
+   "src": "broll/cv_ferret_held.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "quien_0",
+   "start": 114.3,
+   "dur": 4.7,
+   "kind": "raw",
+   "src": "broll/cv2_ferret_4k.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "quien_1",
+   "start": 119,
+   "dur": 6.1,
+   "kind": "raw",
+   "src": "img/hu_map_rango.png",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "hu_map_rango",
+    "prompt": "Mapa ilustrado vintage, estilo cartografía de atlas antiguo, 16:9 horizontal apaisado. Mapa de Norteamérica y las Grandes Llanuras centrales, con la enorme franja de pastizal del centro del continente resaltada suavemente en verde salvia. Papel de mapa envejecido color crema, líneas de tinta marrón, relieve y ríos suaves, una pequeña rosa de los vientos, hermoso y detallado, sin texto ilegible."
+   }
+  },
+  {
+   "id": "quien_2",
+   "start": 125.1,
+   "dur": 3.62,
+   "kind": "raw",
+   "src": "broll/cv2_ferret_night_wild.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "quien_3",
+   "start": 128.72,
+   "dur": 2.68,
+   "kind": "raw",
+   "src": "broll/cv2_ferret_night_wild.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "quien_4",
+   "start": 131.4,
+   "dur": 3.86,
+   "kind": "raw",
+   "src": "broll/cv_ferret_portrait.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "quien_5",
+   "start": 135.26,
+   "dur": 4.64,
+   "kind": "annotated",
+   "caption": "Pero dependía de otro animal",
+   "annotations": [
+    {
+     "kind": "circle",
+     "x": 50,
+     "y": 38,
+     "label": "Máscara"
+    },
+    {
+     "kind": "circle",
+     "x": 62,
+     "y": 70,
+     "label": "Patas negras"
+    }
+   ],
+   "image": "img/hu_huron_anat.png",
+   "gen": {
+    "type": "image",
+    "name": "hu_huron_anat",
+    "prompt": "Foto documental real, 16:9 horizontal apaisado. Hurón de patas negras de perfil sobre fondo neutro Como un fotograma de un documental viejo de naturaleza: con imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+   },
+   "hue": "red"
+  },
+  {
+   "id": "quien_6",
+   "start": 139.9,
+   "dur": 2.3,
+   "kind": "raw",
+   "src": "broll/cv2_pdog_closeup.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "perritos_0_0",
+   "start": 142.2,
+   "dur": 5.05,
+   "kind": "raw",
+   "src": "broll/cv2_pdog_colony_4k.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "perritos_0_1",
+   "start": 147.25,
+   "dur": 5.05,
+   "kind": "raw",
+   "src": "broll/cv2_burrow_entrance.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "perritos_1_0",
+   "start": 152.3,
+   "dur": 3.6,
+   "kind": "raw",
+   "src": "broll/st_burrow_hole.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "perritos_1_1",
+   "start": 155.9,
+   "dur": 3.6,
+   "kind": "raw",
+   "src": "broll/cv2_pdog_alarm.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "perritos_2",
+   "start": 159.5,
+   "dur": 7.2,
+   "kind": "splitlist",
+   "title": "El hurón lo necesitaba TODO de ellos",
+   "items": [
+    "Comía perritos de las praderas",
+    "Vivía en sus túneles",
+    "Criaba bajo su tierra"
+   ],
+   "palette": "G",
+   "hue": "blue"
+  },
+  {
+   "id": "perritos_3",
+   "start": 166.7,
+   "dur": 1.6,
+   "kind": "raw",
+   "src": "broll/cv2_pdog_closeup.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "perritos_4",
+   "start": 168.3,
+   "dur": 2.6,
+   "kind": "raw",
+   "src": "img/hu_perrito_pradera.png",
+   "hue": "red"
+  },
+  {
+   "id": "perritos_5",
+   "start": 170.9,
+   "dur": 3.9,
+   "kind": "raw",
+   "src": "broll/cv2_ferret_pups.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "perritos_6_0",
+   "start": 174.8,
+   "dur": 5.02,
+   "kind": "raw",
+   "src": "broll/cv_ferret_hunt.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "perritos_6_1",
+   "start": 179.82,
+   "dur": 5.02,
+   "kind": "raw",
+   "src": "broll/cv_ferret_kit.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "perritos_7_0",
+   "start": 184.84,
+   "dur": 4.36,
+   "kind": "raw",
+   "src": "broll/cv_homesteaders.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "perritos_7_1",
+   "start": 189.2,
+   "dur": 4.36,
+   "kind": "raw",
+   "src": "broll/st2_ranch2.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "perritos_7_2",
+   "start": 193.56,
+   "dur": 4.36,
+   "kind": "raw",
+   "src": "broll/st_cattle.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "perritos_8",
+   "start": 197.92,
+   "dur": 4.18,
+   "kind": "raw",
+   "src": "broll/cv_cattle.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "exterminio_0_0",
+   "start": 202.1,
+   "dur": 4.07,
+   "kind": "raw",
+   "src": "broll/cv_homesteaders.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "exterminio_0_1",
+   "start": 206.17,
+   "dur": 4.06,
+   "kind": "raw",
+   "src": "broll/cv_cattle.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "exterminio_0_2",
+   "start": 210.23,
+   "dur": 4.07,
+   "kind": "raw",
+   "src": "broll/cv_old_ranch.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "exterminio_1",
+   "start": 214.3,
+   "dur": 5.4,
+   "kind": "raw",
+   "src": "real/hu_pradera_vacia.png",
+   "hue": "blue"
+  },
+  {
+   "id": "exterminio_2_0",
+   "start": 219.7,
+   "dur": 3.85,
+   "kind": "raw",
+   "src": "broll/cv_empty_town.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "exterminio_2_1",
+   "start": 223.55,
+   "dur": 3.85,
+   "kind": "raw",
+   "src": "broll/co_balanza.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "exterminio_3",
+   "start": 227.4,
+   "dur": 6.8,
+   "kind": "raw",
+   "src": "broll/cv_empty_town.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "exterminio_4_0",
+   "start": 234.2,
+   "dur": 3.55,
+   "kind": "raw",
+   "src": "broll/st_dry_earth.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "exterminio_4_1",
+   "start": 237.75,
+   "dur": 3.55,
+   "kind": "raw",
+   "src": "broll/co_caldo.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "exterminio_5",
+   "start": 241.3,
+   "dur": 3.4,
+   "kind": "quote",
+   "text": "El fantasma de las llanuras se quedaba sin praderas que *cazar*.",
+   "image": "broll/st_dry_earth.mp4",
+   "gen": {
+    "type": "image",
+    "name": "hu_pradera_vacia",
+    "prompt": "Foto documental real, 16:9 horizontal apaisado. Pradera vacía y silenciosa al atardecer Como un fotograma de un documental viejo de naturaleza: con imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+   },
+   "hue": "amber"
+  },
+  {
+   "id": "extincion_0_0",
+   "start": 244.7,
+   "dur": 3.85,
+   "kind": "raw",
+   "src": "broll/st_field_research.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "extincion_0_1",
+   "start": 248.55,
+   "dur": 3.85,
+   "kind": "raw",
+   "src": "broll/cv2_spotlight_eyes.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "extincion_1_0",
+   "start": 252.4,
+   "dur": 3.75,
+   "kind": "raw",
+   "src": "broll/cv_archival_prairie.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "extincion_1_1",
+   "start": 256.15,
+   "dur": 3.75,
+   "kind": "raw",
+   "src": "broll/st2_ranch2.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "extincion_2_0",
+   "start": 259.9,
+   "dur": 4.07,
+   "kind": "raw",
+   "src": "broll/cv_archival_prairie.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "extincion_2_1",
+   "start": 263.97,
+   "dur": 4.06,
+   "kind": "raw",
+   "src": "broll/st_cattle.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "extincion_2_2",
+   "start": 268.03,
+   "dur": 4.07,
+   "kind": "raw",
+   "src": "broll/st_dog_farm.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "extincion_2_3",
+   "start": 272.1,
+   "dur": 4.06,
+   "kind": "raw",
+   "src": "broll/st_ranch.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "extincion_3",
+   "start": 276.16,
+   "dur": 6,
+   "kind": "aged",
+   "heading": "Especie extinta",
+   "lines": [
+    {
+     "text": "Los expertos cerraron los libros."
+    },
+    {
+     "text": "Una nota triste en la lista de lo que el hombre borró."
+    }
+   ],
+   "image": "img/hu_archivo_ficha.png",
+   "gen": {
+    "type": "image",
+    "name": "hu_archivo_ficha",
+    "prompt": "Foto documental real, 16:9 horizontal apaisado. Ficha científica antigua con la palabra extinto, papel amarillento Como un fotograma de un documental viejo de naturaleza: con imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+   },
+   "hue": "blue"
+  },
+  {
+   "id": "extincion_3f0",
+   "start": 282.16,
+   "dur": 4.04,
+   "kind": "raw",
+   "src": "broll/co_canasta_verdura.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "extincion_4_0",
+   "start": 286.2,
+   "dur": 3.65,
+   "kind": "raw",
+   "src": "broll/cv2_ferret_night_wild.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "extincion_4_1",
+   "start": 289.85,
+   "dur": 3.65,
+   "kind": "raw",
+   "src": "broll/cv_ferret_night.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "taxidermista_0_0",
+   "start": 293.5,
+   "dur": 5.4,
+   "kind": "raw",
+   "src": "real/hu_taxidermista.png",
+   "hue": "amber"
+  },
+  {
+   "id": "taxidermista_0_1",
+   "start": 298.9,
+   "dur": 5.4,
+   "kind": "raw",
+   "src": "broll/cv_cattle.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "taxidermista_1_0",
+   "start": 304.3,
+   "dur": 5.45,
+   "kind": "raw",
+   "src": "broll/cv2_ferret_4k.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "taxidermista_1_1",
+   "start": 309.75,
+   "dur": 5.45,
+   "kind": "raw",
+   "src": "broll/cv_ferret_peek.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "taxidermista_2",
+   "start": 315.2,
+   "dur": 4.3,
+   "kind": "raw",
+   "src": "broll/cv_old_ranch.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "taxidermista_3",
+   "start": 319.5,
+   "dur": 6,
+   "kind": "annotated",
+   "caption": "Tenía que haber más",
+   "image": "img/hu_map_wyoming.png",
+   "gen": {
+    "type": "image",
+    "name": "hu_map_wyoming",
+    "prompt": "Mapa ilustrado vintage, estilo cartografía de atlas antiguo, 16:9 horizontal apaisado. Mapa del estado de Wyoming y las llanuras del norte de Estados Unidos, con sus límites, estilo atlas antiguo hermoso. Papel de mapa envejecido color crema, líneas de tinta marrón, relieve y ríos suaves, una pequeña rosa de los vientos, hermoso y detallado, sin texto ilegible."
+   },
+   "annotations": [
+    {
+     "kind": "circle",
+     "x": 50,
+     "y": 44,
+     "label": "Wyoming"
+    }
+   ],
+   "hue": "amber"
+  },
+  {
+   "id": "taxidermista_3f0",
+   "start": 325.5,
+   "dur": 3.7,
+   "kind": "raw",
+   "src": "broll/co_cocina_lena.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "taxidermista_4",
+   "start": 329.2,
+   "dur": 5.9,
+   "kind": "raw",
+   "src": "broll/cv2_ferret_head_out.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "busqueda_0",
+   "start": 335.1,
+   "dur": 5.2,
+   "kind": "raw",
+   "src": "broll/st_flashlight_night.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "busqueda_1_0",
+   "start": 340.3,
+   "dur": 5.25,
+   "kind": "raw",
+   "src": "broll/cv_night_vehicle.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "busqueda_1_1",
+   "start": 345.55,
+   "dur": 5.25,
+   "kind": "raw",
+   "src": "broll/cv_counting_survey.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "busqueda_2_0",
+   "start": 350.8,
+   "dur": 4.83,
+   "kind": "raw",
+   "src": "real/hu_linterna_noche.png",
+   "hue": "amber"
+  },
+  {
+   "id": "busqueda_2_1",
+   "start": 355.63,
+   "dur": 4.84,
+   "kind": "raw",
+   "src": "broll/co_croquetas.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "busqueda_2_2",
+   "start": 360.47,
+   "dur": 4.83,
+   "kind": "raw",
+   "src": "broll/co_despensa.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "busqueda_3",
+   "start": 365.3,
+   "dur": 5.8,
+   "kind": "raw",
+   "src": "real/hu_linterna_noche.png",
+   "hue": "red"
+  },
+  {
+   "id": "colonia_0",
+   "start": 371.1,
+   "dur": 5.5,
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "La"
+    },
+    {
+     "t": "encontraron",
+     "hl": true
+    }
+   ],
+   "eyebrow": "Dos puntos verdes",
+   "bg": "image",
+   "image": "broll/cv2_ferret_night_wild.mp4",
+   "gen": {
+    "type": "image",
+    "name": "hu_huron_noche2",
+    "prompt": "Foto documental real, 16:9 horizontal apaisado. Un hurón saliendo de una madriguera de noche, ojos brillando Como un fotograma de un documental viejo de naturaleza: con imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+   },
+   "hue": "blue"
+  },
+  {
+   "id": "colonia_1",
+   "start": 376.6,
+   "dur": 7,
+   "kind": "raw",
+   "src": "broll/cv2_ferret_night_wild.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "colonia_2",
+   "start": 383.6,
+   "dur": 3.2,
+   "kind": "raw",
+   "src": "real/hu_huron_familia.png",
+   "hue": "red"
+  },
+  {
+   "id": "colonia_3_0",
+   "start": 386.8,
+   "dur": 4.07,
+   "kind": "raw",
+   "src": "broll/cv_ferret_motherkits.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "colonia_3_1",
+   "start": 390.87,
+   "dur": 4.06,
+   "kind": "raw",
+   "src": "broll/cv_ferret_release_tube.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "colonia_3_2",
+   "start": 394.93,
+   "dur": 4.07,
+   "kind": "raw",
+   "src": "broll/cv_ferret_run.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "colonia_4_0",
+   "start": 399,
+   "dur": 5.15,
+   "kind": "raw",
+   "src": "broll/cv2_ferret_breeding.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "colonia_4_1",
+   "start": 404.15,
+   "dur": 5.15,
+   "kind": "raw",
+   "src": "broll/cv_ferret_scan.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "colonia_5_0",
+   "start": 409.3,
+   "dur": 5.2,
+   "kind": "raw",
+   "src": "broll/cv_ferret_portrait.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "colonia_5_1",
+   "start": 414.5,
+   "dur": 5.2,
+   "kind": "raw",
+   "src": "broll/cv_ferret_sniff.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "doble_0_0",
+   "start": 419.7,
+   "dur": 4.33,
+   "kind": "raw",
+   "src": "broll/st_storm_clouds.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "doble_0_1",
+   "start": 424.03,
+   "dur": 4.32,
+   "kind": "raw",
+   "src": "broll/co_duraznos.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "doble_0_2",
+   "start": 428.35,
+   "dur": 4.33,
+   "kind": "raw",
+   "src": "broll/co_embutidos.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "doble_1",
+   "start": 432.68,
+   "dur": 5.12,
+   "kind": "quote",
+   "text": "Todos los huevos están en una sola *canasta*.",
+   "image": "broll/cv_empty_town.mp4",
+   "gen": {
+    "type": "image",
+    "name": "hu_colonia_aislada",
+    "prompt": "Foto documental real, 16:9 horizontal apaisado. Una pequeña colonia de madrigueras aislada en la llanura inmensa Como un fotograma de un documental viejo de naturaleza: con imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+   },
+   "hue": "red"
+  },
+  {
+   "id": "doble_2_0",
+   "start": 437.8,
+   "dur": 4.63,
+   "kind": "raw",
+   "src": "broll/st_clouds_timelapse.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "doble_2_1",
+   "start": 442.43,
+   "dur": 4.64,
+   "kind": "raw",
+   "src": "broll/co_fiambrera.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "doble_2_2",
+   "start": 447.07,
+   "dur": 4.63,
+   "kind": "raw",
+   "src": "broll/co_gallina_campo.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "doble_3_0",
+   "start": 451.7,
+   "dur": 4.57,
+   "kind": "raw",
+   "src": "broll/cv_empty_town.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "doble_3_1",
+   "start": 456.27,
+   "dur": 4.56,
+   "kind": "raw",
+   "src": "broll/co_gallinero.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "doble_3_2",
+   "start": 460.83,
+   "dur": 4.57,
+   "kind": "raw",
+   "src": "broll/co_granel.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "moquillo_0_0",
+   "start": 465.4,
+   "dur": 3.85,
+   "kind": "raw",
+   "src": "broll/hu_huron_enfermo.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "moquillo_0_1",
+   "start": 469.25,
+   "dur": 3.85,
+   "kind": "raw",
+   "src": "broll/cv_ferret_snow.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "moquillo_1",
+   "start": 473.1,
+   "dur": 4.3,
+   "kind": "raw",
+   "src": "broll/cv2_ferret_curious.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "moquillo_2",
+   "start": 477.4,
+   "dur": 3.3,
+   "kind": "raw",
+   "src": "broll/cv2_ferret_handled.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "moquillo_3",
+   "start": 480.7,
+   "dur": 3.4,
+   "kind": "raw",
+   "src": "broll/cv_empty_town.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "peste_0_0",
+   "start": 484.1,
+   "dur": 4.1,
+   "kind": "raw",
+   "src": "broll/cv_empty_town.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "peste_0_1",
+   "start": 488.2,
+   "dur": 4.1,
+   "kind": "raw",
+   "src": "broll/co_huerta.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "peste_0_2",
+   "start": 492.3,
+   "dur": 4.1,
+   "kind": "raw",
+   "src": "broll/co_huevos_juntar.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "peste_1",
+   "start": 496.4,
+   "dur": 4.4,
+   "kind": "raw",
+   "src": "broll/cv2_pdog_colony_4k.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "peste_2_0",
+   "start": 500.8,
+   "dur": 5.17,
+   "kind": "raw",
+   "src": "broll/st_burrow_hole.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "peste_2_1",
+   "start": 505.97,
+   "dur": 5.16,
+   "kind": "raw",
+   "src": "broll/cv_burrow_holes.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "peste_3",
+   "start": 511.13,
+   "dur": 6,
+   "kind": "bars",
+   "title": "La única colonia se derrumba",
+   "unit": "",
+   "bars": [
+    {
+     "label": "Antes",
+     "value": 129
+    },
+    {
+     "label": "Meses después",
+     "value": 20
+    }
+   ],
+   "hue": "blue"
+  },
+  {
+   "id": "peste_3f0",
+   "start": 517.13,
+   "dur": 5.37,
+   "kind": "raw",
+   "src": "broll/co_huevo_yema.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "peste_4",
+   "start": 522.5,
+   "dur": 1.7,
+   "kind": "raw",
+   "src": "broll/st_dry_earth.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "decision_0_0",
+   "start": 524.2,
+   "dur": 4.9,
+   "kind": "raw",
+   "src": "real/hu_biologos_debate.png",
+   "hue": "amber"
+  },
+  {
+   "id": "decision_0_1",
+   "start": 529.1,
+   "dur": 4.9,
+   "kind": "raw",
+   "src": "broll/cv_field_notebook.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "decision_0_2",
+   "start": 534,
+   "dur": 4.9,
+   "kind": "raw",
+   "src": "broll/cv_gloved_hands.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "decision_0_3",
+   "start": 538.9,
+   "dur": 4.91,
+   "kind": "raw",
+   "src": "broll/cv_spotlight_field.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "decision_0_4",
+   "start": 543.81,
+   "dur": 4.9,
+   "kind": "raw",
+   "src": "broll/doc_baboon_forage_hands.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "decision_0_5",
+   "start": 548.71,
+   "dur": 4.9,
+   "kind": "raw",
+   "src": "broll/doc_baboon_hands.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "decision_0_6",
+   "start": 553.61,
+   "dur": 4.9,
+   "kind": "raw",
+   "src": "broll/doc_baboon_survey.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "decision_1",
+   "start": 558.51,
+   "dur": 6,
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "¿Qué"
+    },
+    {
+     "t": "hacés"
+    },
+    {
+     "t": "cuando"
+    },
+    {
+     "t": "todo"
+    },
+    {
+     "t": "se"
+    },
+    {
+     "t": "muere",
+     "hl": true
+    }
+   ],
+   "eyebrow": "La decisión más difícil",
+   "bg": "image",
+   "image": "broll/st_storm_clouds.mp4",
+   "gen": {
+    "type": "image",
+    "name": "hu_pradera_gris",
+    "prompt": "Foto documental real, 16:9 horizontal apaisado. Pradera bajo cielo gris plomizo Como un fotograma de un documental viejo de naturaleza: con imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+   },
+   "hue": "red"
+  },
+  {
+   "id": "decision_1f0",
+   "start": 564.51,
+   "dur": 4.99,
+   "kind": "raw",
+   "src": "broll/co_leche_botella.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "decision_1f1",
+   "start": 569.5,
+   "dur": 4.98,
+   "kind": "raw",
+   "src": "broll/co_leche_tambo.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "decision_2",
+   "start": 574.48,
+   "dur": 6,
+   "kind": "splitlist",
+   "title": "Dos caminos, ninguno seguro",
+   "items": [
+    "No intervenir y rezar",
+    "Capturar a TODOS los últimos"
+   ],
+   "palette": "B",
+   "cross": true,
+   "hue": "blue"
+  },
+  {
+   "id": "decision_2f0",
+   "start": 580.48,
+   "dur": 5.41,
+   "kind": "raw",
+   "src": "broll/co_lechuga.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "decision_2f1",
+   "start": 585.89,
+   "dur": 5.41,
+   "kind": "raw",
+   "src": "broll/co_manos_tierra.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "decision_3",
+   "start": 591.3,
+   "dur": 6.8,
+   "kind": "raw",
+   "src": "broll/cv_set_trap.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "captura_0",
+   "start": 598.1,
+   "dur": 3.9,
+   "kind": "raw",
+   "src": "broll/cv_set_trap.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "captura_1_0",
+   "start": 602,
+   "dur": 5.25,
+   "kind": "raw",
+   "src": "broll/st_flashlight_night.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "captura_1_1",
+   "start": 607.25,
+   "dur": 5.25,
+   "kind": "raw",
+   "src": "broll/co_mercado_viejo.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "captura_2_0",
+   "start": 612.5,
+   "dur": 4.3,
+   "kind": "raw",
+   "src": "broll/cv2_ferret_handled.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "captura_2_1",
+   "start": 616.8,
+   "dur": 4.3,
+   "kind": "raw",
+   "src": "broll/cv_ferret_yawn.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "captura_3_0",
+   "start": 621.1,
+   "dur": 4.33,
+   "kind": "raw",
+   "src": "broll/st_snow_field.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "captura_3_1",
+   "start": 625.43,
+   "dur": 4.34,
+   "kind": "raw",
+   "src": "broll/hu_spotlight_clip.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "captura_3_2",
+   "start": 629.77,
+   "dur": 4.33,
+   "kind": "raw",
+   "src": "broll/jb_wash_hands.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "los18_0",
+   "start": 634.1,
+   "dur": 6.8,
+   "kind": "raw",
+   "src": "real/hu_18_cajas.png",
+   "hue": "blue"
+  },
+  {
+   "id": "los18_1_0",
+   "start": 640.9,
+   "dur": 3.9,
+   "kind": "raw",
+   "src": "broll/hu_huron_caja.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "los18_1_1",
+   "start": 644.8,
+   "dur": 3.9,
+   "kind": "raw",
+   "src": "broll/hu_huron_amanece.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "los18_2_0",
+   "start": 648.7,
+   "dur": 4.18,
+   "kind": "raw",
+   "src": "broll/cv_ferret_tube.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "los18_2_1",
+   "start": 652.88,
+   "dur": 4.17,
+   "kind": "raw",
+   "src": "broll/hu_huron_anat.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "los18_2_2",
+   "start": 657.05,
+   "dur": 4.18,
+   "kind": "raw",
+   "src": "broll/hu_huron_atardecer.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "los18_2_3",
+   "start": 661.23,
+   "dur": 4.17,
+   "kind": "raw",
+   "src": "broll/hu_huron_capturado.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "los7_0_0",
+   "start": 665.4,
+   "dur": 4.7,
+   "kind": "raw",
+   "src": "broll/cv_ferret_portrait.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "los7_0_1",
+   "start": 670.1,
+   "dur": 4.7,
+   "kind": "raw",
+   "src": "broll/hu_huron_caza.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "los7_1",
+   "start": 674.8,
+   "dur": 11.8,
+   "kind": "foundertree",
+   "eyebrow": "De siete corazones, toda una especie",
+   "hue": "red"
+  },
+  {
+   "id": "los7_2",
+   "start": 686.6,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/cv_ferret_portrait.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "cautiverio_0_0",
+   "start": 691.6,
+   "dur": 4.7,
+   "kind": "raw",
+   "src": "broll/cv_conservation_center.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "cautiverio_0_1",
+   "start": 696.3,
+   "dur": 4.7,
+   "kind": "raw",
+   "src": "broll/co_nata.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "cautiverio_0_2",
+   "start": 701,
+   "dur": 4.7,
+   "kind": "raw",
+   "src": "broll/co_olla_fuego.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "cautiverio_1_0",
+   "start": 705.7,
+   "dur": 4.54,
+   "kind": "raw",
+   "src": "broll/st_lab_tech.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "cautiverio_1_1",
+   "start": 710.24,
+   "dur": 4.53,
+   "kind": "raw",
+   "src": "broll/cv_cryo_vials.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "cautiverio_2",
+   "start": 714.77,
+   "dur": 6,
+   "kind": "checklist",
+   "title": "Lo que el programa controlaba",
+   "items": [
+    {
+     "text": "Los ciclos de las hembras",
+     "state": "done"
+    },
+    {
+     "text": "La luz y la temperatura",
+     "state": "done"
+    },
+    {
+     "text": "La alimentación",
+     "state": "done"
+    },
+    {
+     "text": "Conteniendo la respiración",
+     "state": "done"
+    }
+   ],
+   "hue": "amber"
+  },
+  {
+   "id": "cautiverio_2f0",
+   "start": 720.77,
+   "dur": 3.53,
+   "kind": "raw",
+   "src": "broll/co_pan_amasar.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "cautiverio_3",
+   "start": 724.3,
+   "dur": 6,
+   "kind": "annotated",
+   "caption": "Imitaron las madrigueras",
+   "image": "real/hu_recinto_tubos.png",
+   "gen": {
+    "type": "image",
+    "name": "hu_recinto_tubos",
+    "prompt": "Foto documental real, 16:9 horizontal apaisado. Recinto de cría de hurones con tubos de plástico imitando túneles Como un fotograma de un documental viejo de naturaleza: con imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+   },
+   "annotations": [
+    {
+     "kind": "circle",
+     "x": 30,
+     "y": 45,
+     "label": "Tubos como túneles"
+    },
+    {
+     "kind": "circle",
+     "x": 65,
+     "y": 55,
+     "label": "Nido bajo tierra"
+    }
+   ],
+   "hue": "red"
+  },
+  {
+   "id": "cautiverio_3f0",
+   "start": 730.3,
+   "dur": 4.5,
+   "kind": "raw",
+   "src": "broll/co_pan_horno.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "camada_0",
+   "start": 734.8,
+   "dur": 4.1,
+   "kind": "raw",
+   "src": "broll/cv2_ferret_pups.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "camada_1_0",
+   "start": 738.9,
+   "dur": 5.28,
+   "kind": "raw",
+   "src": "broll/cv_ferret_motherkits.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "camada_1_1",
+   "start": 744.18,
+   "dur": 5.28,
+   "kind": "raw",
+   "src": "broll/hu_huron_corre.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "camada_2",
+   "start": 749.46,
+   "dur": 6,
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "Una"
+    },
+    {
+     "t": "bofetada"
+    },
+    {
+     "t": "a"
+    },
+    {
+     "t": "la"
+    },
+    {
+     "t": "extinción",
+     "hl": true
+    }
+   ],
+   "eyebrow": "Cada cría",
+   "bg": "image",
+   "image": "broll/cv2_ferret_pups.mp4",
+   "gen": {
+    "type": "image",
+    "name": "hu_cria_mano",
+    "prompt": "Foto documental real, 16:9 horizontal apaisado. Una cría diminuta de hurón en manos enguantadas Como un fotograma de un documental viejo de naturaleza: con imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+   },
+   "hue": "red"
+  },
+  {
+   "id": "camada_2f0",
+   "start": 755.46,
+   "dur": 4.04,
+   "kind": "raw",
+   "src": "broll/co_pan_reparto.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "camada_3",
+   "start": 759.5,
+   "dur": 5.9,
+   "kind": "raw",
+   "src": "broll/st_incubator.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "camada_4_0",
+   "start": 765.4,
+   "dur": 4.36,
+   "kind": "raw",
+   "src": "broll/cv2_ferret_pups.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "camada_4_1",
+   "start": 769.76,
+   "dur": 4.37,
+   "kind": "raw",
+   "src": "broll/hu_huron_estrellas.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "camada_4_2",
+   "start": 774.13,
+   "dur": 4.36,
+   "kind": "raw",
+   "src": "broll/hu_huron_familia.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "camada_4_3",
+   "start": 778.49,
+   "dur": 4.36,
+   "kind": "raw",
+   "src": "broll/hu_huron_final.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "camada_4_4",
+   "start": 782.85,
+   "dur": 4.36,
+   "kind": "raw",
+   "src": "broll/hu_huron_libre.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "camada_4_5",
+   "start": 787.21,
+   "dur": 4.36,
+   "kind": "raw",
+   "src": "broll/hu_huron_libre2.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "camada_4_6",
+   "start": 791.57,
+   "dur": 4.37,
+   "kind": "raw",
+   "src": "broll/hu_huron_madriguera.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "camada_4_7",
+   "start": 795.94,
+   "dur": 4.36,
+   "kind": "raw",
+   "src": "broll/hu_huron_mascara.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "reintro_0",
+   "start": 800.3,
+   "dur": 2.92,
+   "kind": "raw",
+   "src": "broll/st_grassland_sunrise.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "reintro_1",
+   "start": 803.22,
+   "dur": 7.38,
+   "kind": "quote",
+   "text": "Volver a ver esos ojos verdes brillar libres bajo las *estrellas*.",
+   "image": "broll/st_grassland_sunrise.mp4",
+   "gen": {
+    "type": "image",
+    "name": "hu_amanecer_pradera",
+    "prompt": "Foto documental real, 16:9 horizontal apaisado. Amanecer dorado sobre la pradera abierta, rocío en el pasto Como un fotograma de un documental viejo de naturaleza: con imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+   },
+   "hue": "red"
+  },
+  {
+   "id": "reintro_2",
+   "start": 810.6,
+   "dur": 2.7,
+   "kind": "raw",
+   "src": "broll/cv2_ferret_curious.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "escuela_0",
+   "start": 813.3,
+   "dur": 5.1,
+   "kind": "raw",
+   "src": "broll/cv2_ferret_curious.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "escuela_1_0",
+   "start": 818.4,
+   "dur": 5.67,
+   "kind": "raw",
+   "src": "broll/st_owl.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "escuela_1_1",
+   "start": 824.07,
+   "dur": 5.68,
+   "kind": "raw",
+   "src": "broll/cv2_weasel_wild.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "escuela_2",
+   "start": 829.75,
+   "dur": 14.75,
+   "kind": "process",
+   "title": "Una escuela de supervivencia",
+   "steps": [
+    {
+     "title": "Cazar de verdad",
+     "image": "real/hu_huron_caza.png"
+    },
+    {
+     "title": "Moverse bajo tierra",
+     "image": "img/hu_huron_tunel.png"
+    },
+    {
+     "title": "Esconderse del peligro",
+     "image": "img/hu_huron_alerta.png"
+    }
+   ],
+   "hue": "amber"
+  },
+  {
+   "id": "escuela_3_0",
+   "start": 844.5,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/cv_ferret_hunt.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "escuela_3_1",
+   "start": 849.5,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/hu_huron_pareja.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "liberacion_0",
+   "start": 854.5,
+   "dur": 3.8,
+   "kind": "raw",
+   "src": "broll/cv2_ferret_release_co.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "liberacion_1_0",
+   "start": 858.3,
+   "dur": 4.63,
+   "kind": "raw",
+   "src": "broll/cv2_ferret_run_grass.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "liberacion_1_1",
+   "start": 862.93,
+   "dur": 4.64,
+   "kind": "raw",
+   "src": "broll/hu_huron_pasto.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "liberacion_1_2",
+   "start": 867.57,
+   "dur": 4.63,
+   "kind": "raw",
+   "src": "broll/hu_huron_perfil.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "liberacion_2",
+   "start": 872.2,
+   "dur": 6,
+   "kind": "aged",
+   "heading": "No todo salió bien",
+   "lines": [
+    {
+     "text": "Muchos de los primeros no sobrevivieron."
+    },
+    {
+     "text": "Pero con cada fracaso, aprendían."
+    }
+   ],
+   "image": "broll/st_grass_wind.mp4",
+   "gen": {
+    "type": "image",
+    "name": "hu_pradera_viento",
+    "prompt": "Foto documental real, 16:9 horizontal apaisado. Pasto de la pradera meciéndose con el viento al atardecer Como un fotograma de un documental viejo de naturaleza: con imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+   },
+   "hue": "red"
+  },
+  {
+   "id": "liberacion_2f0",
+   "start": 878.2,
+   "dur": 4.3,
+   "kind": "raw",
+   "src": "broll/co_salar_carne.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "liberacion_2f1",
+   "start": 882.5,
+   "dur": 4.3,
+   "kind": "raw",
+   "src": "broll/co_sobras.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "liberacion_3_0",
+   "start": 886.8,
+   "dur": 5.2,
+   "kind": "raw",
+   "src": "broll/cv2_ferret_pups.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "liberacion_3_1",
+   "start": 892,
+   "dur": 5.2,
+   "kind": "raw",
+   "src": "broll/hu_huron_retrato.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "liberacion_4_0",
+   "start": 897.2,
+   "dur": 3.75,
+   "kind": "raw",
+   "src": "img/hu_huron_corre.png",
+   "hue": "amber"
+  },
+  {
+   "id": "liberacion_4_1",
+   "start": 900.95,
+   "dur": 3.75,
+   "kind": "raw",
+   "src": "broll/hu_huron_solo.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "cuello_0",
+   "start": 904.7,
+   "dur": 2.6,
+   "kind": "raw",
+   "src": "broll/cv2_ferret_den_cam.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "cuello_1",
+   "start": 907.3,
+   "dur": 4.2,
+   "kind": "raw",
+   "src": "broll/cv2_ferret_recovery.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "cuello_2",
+   "start": 911.5,
+   "dur": 2.9,
+   "kind": "raw",
+   "src": "broll/st_dna.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "los7rec_0",
+   "start": 914.4,
+   "dur": 26.7,
+   "kind": "raw",
+   "src": "img/dg_botella.png",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "dg_botella",
+    "prompt": "Infografía horizontal, relación de aspecto EXACTA 16:9 (1792x1024). Ilustración hecha a mano profesional, limpia, editorial, tipo lámina de historia natural antigua. Diagrama de un cuello de botella: muchos hurones arriba pasan por un embudo estrecho de SOLO 7 y vuelven a multiplicarse abajo, todos iguales; poca diversidad genética Fondo marfil claro con textura de papel sutil, líneas marrón oscuro, acentos verde oliva y terracota apagado, papel envejecido. Minimalista, muy clara, se entiende en un segundo. Textos en español, breves."
+   }
+  },
+  {
+   "id": "los7rec_1",
+   "start": 941.1,
+   "dur": 6,
+   "kind": "bars",
+   "title": "Diversidad genética",
+   "unit": "",
+   "bars": [
+    {
+     "label": "Antes",
+     "value": 10
+    },
+    {
+     "label": "Desde los 7",
+     "value": 2
+    }
+   ],
+   "hue": "blue"
+  },
+  {
+   "id": "los7rec_1f0",
+   "start": 947.1,
+   "dur": 4.2,
+   "kind": "raw",
+   "src": "broll/co_supermercado.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "los7rec_1f1",
+   "start": 951.3,
+   "dur": 4.2,
+   "kind": "raw",
+   "src": "broll/co_tomate_planta.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "los7rec_2",
+   "start": 955.5,
+   "dur": 6,
+   "kind": "annotated",
+   "caption": "Como un edificio con un solo tipo de ladrillo",
+   "image": "real/hu_ladrillos.png",
+   "gen": {
+    "type": "image",
+    "name": "hu_ladrillos",
+    "prompt": "Foto documental real, 16:9 horizontal apaisado. Una pared de ladrillos todos idénticos, luz lateral Como un fotograma de un documental viejo de naturaleza: con imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+   },
+   "annotations": [
+    {
+     "kind": "circle",
+     "x": 50,
+     "y": 30,
+     "label": "Una falla…"
+    },
+    {
+     "kind": "circle",
+     "x": 50,
+     "y": 70,
+     "label": "…la tienen todos"
+    }
+   ],
+   "hue": "amber"
+  },
+  {
+   "id": "los7rec_2f0",
+   "start": 961.5,
+   "dur": 5.2,
+   "kind": "raw",
+   "src": "broll/co_verduleria.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "los7rec_2f1",
+   "start": 966.7,
+   "dur": 5.2,
+   "kind": "raw",
+   "src": "broll/co_verduras_temporada.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "los7rec_3_0",
+   "start": 971.9,
+   "dur": 4.25,
+   "kind": "raw",
+   "src": "real/hu_ladrillos.png",
+   "hue": "red"
+  },
+  {
+   "id": "los7rec_3_1",
+   "start": 976.15,
+   "dur": 4.25,
+   "kind": "raw",
+   "src": "broll/cv2_prairie_4k.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "giro_0",
+   "start": 980.4,
+   "dur": 4.2,
+   "kind": "raw",
+   "src": "broll/st_nitrogen.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "giro_1_0",
+   "start": 984.6,
+   "dur": 5.2,
+   "kind": "raw",
+   "src": "broll/cv_ranch_dog.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "giro_1_1",
+   "start": 989.8,
+   "dur": 5.2,
+   "kind": "raw",
+   "src": "broll/cv_old_ranch.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "giro_2",
+   "start": 995,
+   "dur": 6,
+   "kind": "raw",
+   "src": "broll/st_test_tubes.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "giro_3_0",
+   "start": 1001,
+   "dur": 4.25,
+   "kind": "raw",
+   "src": "broll/st_test_tubes.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "giro_3_1",
+   "start": 1005.25,
+   "dur": 4.25,
+   "kind": "raw",
+   "src": "broll/cv_dna.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "giro_4",
+   "start": 1009.5,
+   "dur": 2.5,
+   "kind": "raw",
+   "src": "broll/st_test_tubes.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "willa_0_0",
+   "start": 1012,
+   "dur": 4.54,
+   "kind": "raw",
+   "src": "broll/cv_ferret_body.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "willa_0_1",
+   "start": 1016.54,
+   "dur": 4.55,
+   "kind": "raw",
+   "src": "broll/hu_huron_sombra.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "willa_1",
+   "start": 1021.09,
+   "dur": 5.61,
+   "kind": "aged",
+   "heading": "Sus genes parecían perdidos",
+   "lines": [
+    {
+     "text": "Willa murió sin dejar descendientes."
+    },
+    {
+     "text": "Pero sus células dormían en el frío."
+    }
+   ],
+   "image": "broll/nw_willa_cells.mp4",
+   "gen": {
+    "type": "image",
+    "name": "hu_vial_willa",
+    "prompt": "Foto documental real, 16:9 horizontal apaisado. Un vial congelado etiquetado a mano en nitrógeno líquido, escarcha Como un fotograma de un documental viejo de naturaleza: con imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+   },
+   "hue": "red"
+  },
+  {
+   "id": "willa_2_0",
+   "start": 1026.7,
+   "dur": 4.41,
+   "kind": "raw",
+   "src": "broll/st_test_tubes.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "willa_2_1",
+   "start": 1031.11,
+   "dur": 4.42,
+   "kind": "raw",
+   "src": "broll/cv_incubator.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "willa_2_2",
+   "start": 1035.53,
+   "dur": 4.41,
+   "kind": "raw",
+   "src": "broll/cv_lab_tech.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "willa_2_3",
+   "start": 1039.94,
+   "dur": 4.42,
+   "kind": "raw",
+   "src": "broll/cv_microscope.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "willa_2_4",
+   "start": 1044.36,
+   "dur": 4.41,
+   "kind": "raw",
+   "src": "broll/cv_nitrogen_vapor.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "willa_2_5",
+   "start": 1048.77,
+   "dur": 4.42,
+   "kind": "raw",
+   "src": "broll/cv_petri.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "willa_2_6",
+   "start": 1053.19,
+   "dur": 4.41,
+   "kind": "raw",
+   "src": "broll/hu_clones_varios.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "clonar_0",
+   "start": 1057.6,
+   "dur": 4.1,
+   "kind": "raw",
+   "src": "img/dg_clon.png",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "dg_clon",
+    "prompt": "Infografía horizontal, relación de aspecto EXACTA 16:9 (1792x1024). Ilustración hecha a mano profesional, limpia, editorial, tipo lámina de historia natural antigua. Diagrama del proceso de clonación en 3 pasos: 1) célula congelada de Willa, 2) un óvulo, 3) un hurón idéntico nuevo; flechas claras; título Clonar a Willa Fondo marfil claro con textura de papel sutil, líneas marrón oscuro, acentos verde oliva y terracota apagado, papel envejecido. Minimalista, muy clara, se entiende en un segundo. Textos en español, breves."
+   }
+  },
+  {
+   "id": "clonar_1",
+   "start": 1061.7,
+   "dur": 6.7,
+   "kind": "raw",
+   "src": "broll/st_microscope.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "clonar_2",
+   "start": 1068.4,
+   "dur": 3.9,
+   "kind": "raw",
+   "src": "broll/st_dna.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "clonar_3",
+   "start": 1072.3,
+   "dur": 2.8,
+   "kind": "raw",
+   "src": "broll/st_lab_blue.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "clonar_4",
+   "start": 1075.1,
+   "dur": 3,
+   "kind": "raw",
+   "src": "broll/cv2_kits_incubator.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "elizabeth_0_0",
+   "start": 1078.1,
+   "dur": 4.02,
+   "kind": "raw",
+   "src": "broll/nw_elizabeth_ann.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "elizabeth_0_1",
+   "start": 1082.12,
+   "dur": 4.02,
+   "kind": "raw",
+   "src": "broll/hu_huron_tunel.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "elizabeth_0_2",
+   "start": 1086.14,
+   "dur": 4.02,
+   "kind": "raw",
+   "src": "broll/hu_manos_huron.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "elizabeth_1",
+   "start": 1090.16,
+   "dur": 6.74,
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "El"
+    },
+    {
+     "t": "primer"
+    },
+    {
+     "t": "hurón"
+    },
+    {
+     "t": "clonado",
+     "hl": true
+    },
+    {
+     "t": "de"
+    },
+    {
+     "t": "la"
+    },
+    {
+     "t": "historia"
+    }
+   ],
+   "eyebrow": "Nació",
+   "bg": "image",
+   "image": "broll/nw_elizabeth_ann2.mp4",
+   "gen": {
+    "type": "image",
+    "name": "hu_elizabeth2",
+    "prompt": "Foto documental real, 16:9 horizontal apaisado. Primer plano de una cría de hurón clonada, foto de prensa Como un fotograma de un documental viejo de naturaleza: con imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+   },
+   "hue": "amber"
+  },
+  {
+   "id": "elizabeth_2",
+   "start": 1096.9,
+   "dur": 5.5,
+   "kind": "raw",
+   "src": "broll/nw_elizabeth_ann2.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "elizabeth_3_0",
+   "start": 1102.4,
+   "dur": 5.02,
+   "kind": "raw",
+   "src": "broll/cv2_ferret_pups.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "elizabeth_3_1",
+   "start": 1107.42,
+   "dur": 5.02,
+   "kind": "raw",
+   "src": "broll/nw_ferret_burrow_wild.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "elizabeth_3_2",
+   "start": 1112.44,
+   "dur": 5.02,
+   "kind": "raw",
+   "src": "broll/nw_ferret_center.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "elizabeth_3_3",
+   "start": 1117.46,
+   "dur": 5.02,
+   "kind": "raw",
+   "src": "broll/nw_shep_dog.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "elizabeth_3_4",
+   "start": 1122.48,
+   "dur": 5.02,
+   "kind": "raw",
+   "src": "broll/nw_willa_cells.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "elizabeth_4",
+   "start": 1127.5,
+   "dur": 6,
+   "kind": "quote",
+   "text": "Una madre que nunca conoció a su *gemela*.",
+   "image": "broll/nw_elizabeth_ann.mp4",
+   "gen": {
+    "type": "image",
+    "name": "hu_willa_eliz",
+    "prompt": "Foto documental real, 16:9 horizontal apaisado. Dos hurones de patas negras casi idénticos en composición simbólica Como un fotograma de un documental viejo de naturaleza: con imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+   },
+   "hue": "amber"
+  },
+  {
+   "id": "elizabeth_4f0",
+   "start": 1133.5,
+   "dur": 5.1,
+   "kind": "raw",
+   "src": "broll/cv2_prairie_sunset_4k.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "elizabeth_4f1",
+   "start": 1138.6,
+   "dur": 5.1,
+   "kind": "raw",
+   "src": "broll/cv2_winter_prairie.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "masclones_0",
+   "start": 1143.7,
+   "dur": 6.5,
+   "kind": "raw",
+   "src": "broll/cv_ferret_play.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "masclones_1_0",
+   "start": 1150.2,
+   "dur": 4.17,
+   "kind": "raw",
+   "src": "broll/cv2_kits_incubator.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "masclones_1_1",
+   "start": 1154.37,
+   "dur": 4.18,
+   "kind": "raw",
+   "src": "broll/hu_cryo_clip.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "masclones_1_2",
+   "start": 1158.55,
+   "dur": 4.17,
+   "kind": "raw",
+   "src": "broll/hu_lab_clip.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "masclones_2",
+   "start": 1162.72,
+   "dur": 16.28,
+   "kind": "process",
+   "title": "El plan de rescate genético",
+   "steps": [
+    {
+     "title": "Clonar más copias de Willa",
+     "image": "real/hu_clones_varios.png"
+    },
+    {
+     "title": "Que se reproduzcan",
+     "image": "img/hu_huron_pareja.png"
+    },
+    {
+     "title": "Curar el cuello de botella",
+     "image": "img/hu_huron_sano.png"
+    }
+   ],
+   "hue": "blue"
+  },
+  {
+   "id": "masclones_3_0",
+   "start": 1179,
+   "dur": 4.4,
+   "kind": "raw",
+   "src": "real/hu_clones_varios.png",
+   "hue": "amber"
+  },
+  {
+   "id": "masclones_3_1",
+   "start": 1183.4,
+   "dur": 4.4,
+   "kind": "raw",
+   "src": "broll/nw_antonia_clone.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "llanuras_0_0",
+   "start": 1187.8,
+   "dur": 4.47,
+   "kind": "raw",
+   "src": "broll/cv_release_team.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "llanuras_0_1",
+   "start": 1192.27,
+   "dur": 4.48,
+   "kind": "raw",
+   "src": "broll/mc_fieldspot1.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "llanuras_0_2",
+   "start": 1196.75,
+   "dur": 4.47,
+   "kind": "raw",
+   "src": "broll/mc_fieldspot2.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "llanuras_0_3",
+   "start": 1201.22,
+   "dur": 4.48,
+   "kind": "raw",
+   "src": "broll/mc_fieldspot3.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "llanuras_1",
+   "start": 1205.7,
+   "dur": 1.6,
+   "kind": "raw",
+   "src": "broll/st_syringe.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "llanuras_2_0",
+   "start": 1207.3,
+   "dur": 4.5,
+   "kind": "raw",
+   "src": "broll/cv2_pdog_colony_4k.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "llanuras_2_1",
+   "start": 1211.8,
+   "dur": 4.5,
+   "kind": "raw",
+   "src": "broll/cv_pdog_bark.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "llanuras_3",
+   "start": 1216.3,
+   "dur": 8.4,
+   "kind": "spreadmap",
+   "mapImage": "img/hu_map_reintro.png",
+   "gen": {
+    "type": "image",
+    "name": "hu_map_reintro",
+    "prompt": "Mapa ilustrado vintage, estilo cartografía de atlas antiguo, 16:9 horizontal apaisado. Mapa de las Grandes Llanuras del oeste de Estados Unidos con varios estados (Wyoming, Montana, las Dakotas, Colorado, Arizona), estilo atlas antiguo hermoso. Papel de mapa envejecido color crema, líneas de tinta marrón, relieve y ríos suaves, una pequeña rosa de los vientos, hermoso y detallado, sin texto ilegible."
+   },
+   "origin": [
+    42,
+    40
+   ],
+   "yearFrom": 1991,
+   "yearTo": 2024,
+   "eyebrow": "De vuelta a la naturaleza",
+   "title": "Sitios de reintroducción",
+   "hue": "amber"
+  },
+  {
+   "id": "llanuras_4_0",
+   "start": 1224.7,
+   "dur": 4.6,
+   "kind": "raw",
+   "src": "real/hu_huron_libre.png",
+   "hue": "blue"
+  },
+  {
+   "id": "llanuras_4_1",
+   "start": 1229.3,
+   "dur": 4.6,
+   "kind": "raw",
+   "src": "broll/st_ferret.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "llanuras_4_2",
+   "start": 1233.9,
+   "dur": 4.6,
+   "kind": "raw",
+   "src": "broll/st_ferret_face.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "gente_0",
+   "start": 1238.5,
+   "dur": 6.3,
+   "kind": "raw",
+   "src": "broll/st_field_research.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "gente_1_0",
+   "start": 1244.8,
+   "dur": 3.9,
+   "kind": "raw",
+   "src": "real/hu_biologo_invierno.png",
+   "hue": "amber"
+  },
+  {
+   "id": "gente_1_1",
+   "start": 1248.7,
+   "dur": 3.9,
+   "kind": "raw",
+   "src": "broll/mc_fieldspot_compare.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "gente_2_0",
+   "start": 1252.6,
+   "dur": 4.7,
+   "kind": "raw",
+   "src": "broll/cv2_ferret_handled.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "gente_2_1",
+   "start": 1257.3,
+   "dur": 4.7,
+   "kind": "raw",
+   "src": "broll/v3_ferret_dig.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "gente_3_0",
+   "start": 1262,
+   "dur": 5.45,
+   "kind": "raw",
+   "src": "real/hu_biologo_invierno.png",
+   "hue": "blue"
+  },
+  {
+   "id": "gente_3_1",
+   "start": 1267.45,
+   "dur": 5.45,
+   "kind": "raw",
+   "src": "broll/mc_fieldspot_creamy.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "gente_4_0",
+   "start": 1272.9,
+   "dur": 5.23,
+   "kind": "raw",
+   "src": "broll/cv_release_team.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "gente_4_1",
+   "start": 1278.13,
+   "dur": 5.24,
+   "kind": "raw",
+   "src": "broll/mc_fieldspot_white.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "gente_4_2",
+   "start": 1283.37,
+   "dur": 5.23,
+   "kind": "raw",
+   "src": "broll/mc_field_boy.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "gente_5",
+   "start": 1288.6,
+   "dur": 6.7,
+   "kind": "raw",
+   "src": "broll/cv_homesteaders.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "gente_6",
+   "start": 1295.3,
+   "dur": 6.22,
+   "kind": "raw",
+   "src": "broll/st_hands_animal.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "gente_7",
+   "start": 1301.52,
+   "dur": 6,
+   "kind": "quote",
+   "text": "La misma especie que provocó la tragedia se negó a *aceptarla*.",
+   "image": "broll/nw_biologist_handle.mp4",
+   "gen": {
+    "type": "image",
+    "name": "hu_manos_huron",
+    "prompt": "Foto documental real, 16:9 horizontal apaisado. Manos de un biólogo sosteniendo un hurón Como un fotograma de un documental viejo de naturaleza: con imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+   },
+   "hue": "amber"
+  },
+  {
+   "id": "gente_7f0",
+   "start": 1307.52,
+   "dur": 3.88,
+   "kind": "raw",
+   "src": "broll/cvb_aegean_sea.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "gente_8_0",
+   "start": 1311.4,
+   "dur": 4.45,
+   "kind": "raw",
+   "src": "broll/st_flashlight_night.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "gente_8_1",
+   "start": 1315.85,
+   "dur": 4.45,
+   "kind": "raw",
+   "src": "broll/cvb_brush_artifact.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "gente_9_0",
+   "start": 1320.3,
+   "dur": 4.2,
+   "kind": "raw",
+   "src": "real/hu_biologo_invierno.png",
+   "hue": "blue"
+  },
+  {
+   "id": "gente_9_1",
+   "start": 1324.5,
+   "dur": 4.2,
+   "kind": "raw",
+   "src": "broll/mc_field_many.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "gente_9_2",
+   "start": 1328.7,
+   "dur": 4.2,
+   "kind": "raw",
+   "src": "broll/mc_field_rows1.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "nosalvo_0",
+   "start": 1332.9,
+   "dur": 6,
+   "kind": "aged",
+   "heading": "Todavía no está a salvo",
+   "lines": [
+    {
+     "text": "Sigue siendo de las especies más amenazadas."
+    },
+    {
+     "text": "Pero está vivo. Sigue luchando."
+    }
+   ],
+   "image": "broll/hu_huron_atardecer.mp4",
+   "gen": {
+    "type": "image",
+    "name": "hu_huron_atardecer",
+    "prompt": "Foto documental real, 16:9 horizontal apaisado. Un hurón recortado contra el atardecer de la pradera Como un fotograma de un documental viejo de naturaleza: con imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+   },
+   "hue": "amber"
+  },
+  {
+   "id": "nosalvo_0f0",
+   "start": 1338.9,
+   "dur": 6.8,
+   "kind": "raw",
+   "src": "broll/cvb_canyon_aerial.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "nosalvo_1",
+   "start": 1345.7,
+   "dur": 6,
+   "kind": "raw",
+   "src": "img/hu_huron_atardecer.png",
+   "hue": "red"
+  },
+  {
+   "id": "reflexion_0",
+   "start": 1351.7,
+   "dur": 26.6,
+   "kind": "timeline",
+   "eyebrow": "La cronología del milagro",
+   "title": "De la extinción al regreso",
+   "events": [
+    {
+     "year": "1979",
+     "label": "Declarado extinto",
+     "image": "img/hu_archivo_ficha.png",
+     "accent": "danger"
+    },
+    {
+     "year": "1981",
+     "label": "Un perro lo redescubre",
+     "image": "real/nwi_meeteetse_1.png",
+     "accent": "amber"
+    },
+    {
+     "year": "1985",
+     "label": "Capturan a los últimos 18",
+     "image": "real/hu_18_cajas.png",
+     "accent": "danger"
+    },
+    {
+     "year": "1987",
+     "label": "Nace la primera camada",
+     "image": "real/nwi_kits_1.png",
+     "accent": "accent"
+    },
+    {
+     "year": "1991",
+     "label": "Primeras liberaciones",
+     "image": "real/nwi_release_1.png",
+     "accent": "accent"
+    },
+    {
+     "year": "2020",
+     "label": "Clonan a Elizabeth Ann",
+     "image": "real/nwi_elizabeth1_1.png",
+     "accent": "accent"
+    },
+    {
+     "year": "Hoy",
+     "label": "Cientos viven libres",
+     "image": "real/hu_huron_libre.png",
+     "accent": "accent"
+    }
+   ],
+   "hue": "red"
+  },
+  {
+   "id": "sishep_0",
+   "start": 1378.3,
+   "dur": 7,
+   "kind": "raw",
+   "src": "broll/cv_ranch_dog.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "sishep_1",
+   "start": 1385.3,
+   "dur": 3.4,
+   "kind": "raw",
+   "src": "broll/cv_ferret_burrow_night.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "sishep_2",
+   "start": 1388.7,
+   "dur": 6.4,
+   "kind": "raw",
+   "src": "real/hu_perro_atardecer.png",
+   "hue": "red"
+  },
+  {
+   "id": "sishep_3",
+   "start": 1395.1,
+   "dur": 4.4,
+   "kind": "raw",
+   "src": "real/hu_perro_atardecer.png",
+   "hue": "blue"
+  },
+  {
+   "id": "sishep_4_0",
+   "start": 1399.5,
+   "dur": 3.74,
+   "kind": "raw",
+   "src": "broll/st_test_tubes.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "sishep_4_1",
+   "start": 1403.24,
+   "dur": 3.74,
+   "kind": "raw",
+   "src": "broll/nw_clone_news.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "sishep_5",
+   "start": 1406.98,
+   "dur": 8.22,
+   "kind": "infzoom",
+   "images": [
+    {
+     "src": "real/hu_perro_porche.png"
+    },
+    {
+     "src": "real/hu_huron_mascara.png"
+    },
+    {
+     "src": "real/hu_elizabeth.png"
+    },
+    {
+     "src": "real/hu_huron_libre.png"
+    }
+   ],
+   "hue": "red"
+  },
+  {
+   "id": "sishep_6",
+   "start": 1415.2,
+   "dur": 2.9,
+   "kind": "raw",
+   "src": "broll/cv2_ferret_run_grass.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "sishep_7",
+   "start": 1418.1,
+   "dur": 7,
+   "kind": "raw",
+   "src": "broll/cv_ferret_hunt.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "ensena_0_0",
+   "start": 1425.1,
+   "dur": 3.65,
+   "kind": "raw",
+   "src": "broll/st_grassland_sunrise.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "ensena_0_1",
+   "start": 1428.75,
+   "dur": 3.66,
+   "kind": "raw",
+   "src": "broll/cvb_clay_tablet.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "ensena_1",
+   "start": 1432.41,
+   "dur": 4.09,
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "La"
+    },
+    {
+     "t": "extinción"
+    },
+    {
+     "t": "no"
+    },
+    {
+     "t": "siempre"
+    },
+    {
+     "t": "es"
+    },
+    {
+     "t": "el"
+    },
+    {
+     "t": "final",
+     "hl": true
+    }
+   ],
+   "eyebrow": "Esta historia enseña",
+   "bg": "image",
+   "image": "broll/hu_huron_amanece.mp4",
+   "gen": {
+    "type": "image",
+    "name": "hu_huron_amanece",
+    "prompt": "Foto documental real, 16:9 horizontal apaisado. Un hurón al amanecer en la pradera, luz dorada naciente Como un fotograma de un documental viejo de naturaleza: con imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+   },
+   "hue": "red"
+  },
+  {
+   "id": "ensena_2",
+   "start": 1436.5,
+   "dur": 2.8,
+   "kind": "raw",
+   "src": "broll/st_burrow_hole.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "ensena_3",
+   "start": 1439.3,
+   "dur": 5.8,
+   "kind": "raw",
+   "src": "broll/cv_ranch_dog.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "ensena_4_0",
+   "start": 1445.1,
+   "dur": 4.9,
+   "kind": "raw",
+   "src": "broll/cv2_cryo_bank.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "ensena_4_1",
+   "start": 1450,
+   "dur": 4.9,
+   "kind": "raw",
+   "src": "broll/st2_cryo_freeze.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "ensena_5_0",
+   "start": 1454.9,
+   "dur": 4.15,
+   "kind": "raw",
+   "src": "img/hu_huron_amanece.png",
+   "hue": "blue"
+  },
+  {
+   "id": "ensena_5_1",
+   "start": 1459.05,
+   "dur": 4.15,
+   "kind": "raw",
+   "src": "broll/v3_ferret_eat2.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "ensena_6",
+   "start": 1463.2,
+   "dur": 1.8,
+   "kind": "raw",
+   "src": "broll/cv2_ferret_recovery.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "cierre_0",
+   "start": 1465,
+   "dur": 3,
+   "kind": "raw",
+   "src": "broll/cv_ferret_climb.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "cierre_1",
+   "start": 1468,
+   "dur": 3.3,
+   "kind": "raw",
+   "src": "broll/cv_ranch_dog.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "outro_0",
+   "start": 1471.3,
+   "dur": 6.8,
+   "kind": "raw",
+   "src": "broll/st_grassland_sunrise.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "outro_1",
+   "start": 1478.1,
+   "dur": 2.6,
+   "kind": "raw",
+   "src": "broll/cv2_ferret_recovery.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "outro_2",
+   "start": 1480.7,
+   "dur": 5.3,
+   "kind": "raw",
+   "src": "broll/cv_ferret_eat.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "loc_5",
+   "start": 8.5,
+   "dur": 6,
+   "kind": "loctag",
+   "mapImage": "img/hu_map_us.png",
+   "pinX": 26,
+   "pinY": 36,
+   "place": "Wyoming",
+   "sub": "Estados Unidos",
+   "overlay": true,
+   "gen": {
+    "type": "image",
+    "name": "hu_map_us",
+    "prompt": "Mapa ilustrado vintage, estilo cartografía de atlas antiguo, 16:9 horizontal apaisado. Mapa de los Estados Unidos continentales completo, con los límites de los estados marcados sutilmente, estilo atlas antiguo hermoso. Papel de mapa envejecido color crema, líneas de tinta marrón, relieve y ríos suaves, una pequeña rosa de los vientos, hermoso y detallado, sin texto ilegible."
+   }
+  },
+  {
+   "id": "loc_113",
+   "start": 117,
+   "dur": 6,
+   "kind": "loctag",
+   "mapImage": "img/hu_map_us.png",
+   "pinX": 43,
+   "pinY": 46,
+   "place": "Grandes Llanuras",
+   "sub": "Norteamérica",
+   "overlay": true
+  },
+  {
+   "id": "loc_1216",
+   "start": 1220,
+   "dur": 6.5,
+   "kind": "loctag",
+   "mapImage": "img/hu_map_us.png",
+   "pinX": 31,
+   "pinY": 42,
+   "place": "Sitios de reintroducción",
+   "sub": "Oeste de EE.UU.",
+   "overlay": true
+  },
+  {
+   "id": "stat_257",
+   "start": 260.5,
+   "dur": 5.5,
+   "kind": "stattag",
+   "overlay": true,
+   "text": "1979",
+   "eyebrow": "Declarado extinto",
+   "label": "murió el último hurón conocido",
+   "accent": "danger",
+   "corner": "bl"
+  },
+  {
+   "id": "stat_384",
+   "start": 387.5,
+   "dur": 6,
+   "kind": "stattag",
+   "overlay": true,
+   "value": 129,
+   "eyebrow": "Quedaban",
+   "label": "toda la especie del planeta",
+   "accent": "amber",
+   "corner": "tr"
+  },
+  {
+   "id": "stat_631",
+   "start": 634.6,
+   "dur": 6,
+   "kind": "stattag",
+   "overlay": true,
+   "value": 18,
+   "eyebrow": "Los últimos",
+   "label": "hurones del mundo entero",
+   "accent": "danger",
+   "corner": "tr"
+  },
+  {
+   "id": "stat_666",
+   "start": 670,
+   "dur": 6,
+   "kind": "stattag",
+   "overlay": true,
+   "value": 7,
+   "eyebrow": "Solo",
+   "label": "fundadores de toda la especie",
+   "accent": "danger",
+   "corner": "tr"
+  },
+  {
+   "id": "stat_1023",
+   "start": 1027,
+   "dur": 5.5,
+   "kind": "stattag",
+   "overlay": true,
+   "value": 30,
+   "suffix": " años",
+   "eyebrow": "Dormidas en el frío",
+   "label": "las células de Willa",
+   "accent": "cold",
+   "corner": "br"
+  },
+  {
+   "id": "stat_1075",
+   "start": 1078.5,
+   "dur": 6,
+   "kind": "stattag",
+   "overlay": true,
+   "text": "2021",
+   "eyebrow": "Nace",
+   "label": "Elizabeth Ann, el primer hurón clonado",
+   "accent": "accent",
+   "corner": "bl"
+  },
+  {
+   "id": "stat_1186",
+   "start": 1190,
+   "dur": 6,
+   "kind": "stattag",
+   "overlay": true,
+   "value": 1000,
+   "prefix": "+",
+   "eyebrow": "Desde solo 18 hurones",
+   "label": "crías nacidas en el programa",
+   "accent": "accent",
+   "corner": "tr"
+  },
+  {
+   "id": "name_111",
+   "start": 115,
+   "dur": 6,
+   "kind": "nametag",
+   "overlay": true,
+   "name": "Hurón de patas negras",
+   "sub": "Mustela nigripes",
+   "accent": "amber"
+  },
+  {
+   "id": "name_139",
+   "start": 143,
+   "dur": 5.5,
+   "kind": "nametag",
+   "overlay": true,
+   "name": "Perrito de las praderas",
+   "sub": "Cynomys ludovicianus",
+   "accent": "accent"
+  },
+  {
+   "id": "name_1009",
+   "start": 1013,
+   "dur": 5.5,
+   "kind": "nametag",
+   "overlay": true,
+   "name": "Willa",
+   "sub": "La hembra cuyos genes volverían",
+   "accent": "cold"
+  },
+  {
+   "id": "name_1076",
+   "start": 1079.5,
+   "dur": 5.5,
+   "kind": "nametag",
+   "overlay": true,
+   "name": "Elizabeth Ann",
+   "sub": "El primer hurón clonado de la historia",
+   "accent": "accent"
+  },
+  {
+   "id": "ph_122",
+   "start": 125.5,
+   "dur": 4,
+   "kind": "phrasetag",
+   "overlay": true,
+   "text": "El *fantasma* de las llanuras",
+   "accent": "cold"
+  },
+  {
+   "id": "ph_1427",
+   "start": 1430.9,
+   "dur": 4.5,
+   "kind": "phrasetag",
+   "overlay": true,
+   "text": "Una segunda *oportunidad*",
+   "accent": "accent"
+  },
+  {
+   "id": "meter_pdog",
+   "start": 219.7,
+   "dur": 7,
+   "kind": "metertag",
+   "overlay": true,
+   "label": "Perritos de las praderas",
+   "fromPct": 100,
+   "toPct": 5,
+   "eyebrow": "Mediados del siglo XX",
+   "corner": "tr"
+  }
+ ]
+}

@@ -34,8 +34,8 @@ export const ImageBackdrop: React.FC<{
   // GRADE unificador para clips reales rippeados (broll/*.mp4): vienen de fuentes
   // distintas con colores dispares → bajamos saturación + push sepia/cálido para
   // que se fundan con la paleta terrosa y se sienta UNA sola película.
-  const isClip = isVideo && src.includes("broll/");
-  const gradeFilter = isClip ? "saturate(0.8) contrast(1.04) sepia(0.2) brightness(0.97)" : "";
+  // colores NATURALES (sin grade sepia/retro — preferencia del usuario): clips sin filtro de color.
+  const gradeFilter = "";
   const blurFilter = !useBaked && blur > 0 ? `blur(${blur}px)` : "";
   const mediaFilter = [blurFilter, gradeFilter].filter(Boolean).join(" ") || undefined;
   return (
@@ -47,17 +47,7 @@ export const ImageBackdrop: React.FC<{
         />
       </AbsoluteFill>
       <AbsoluteFill style={{ background: `rgba(0,0,0,${darken})` }} />
-      {isClip && (
-        <AbsoluteFill style={{ background: "linear-gradient(180deg, rgba(169,121,74,0.12) 0%, rgba(124,138,90,0.10) 100%)", mixBlendMode: "soft-light" }} />
-      )}
-      {tint && <AbsoluteFill style={{ background: tint, mixBlendMode: "overlay" }} />}
-      {/* vignette for density */}
-      <AbsoluteFill
-        style={{
-          background:
-            "radial-gradient(80% 80% at 50% 50%, rgba(0,0,0,0) 42%, rgba(0,0,0,0.7) 100%)",
-        }}
-      />
+      {/* SIN viñeta, SIN overlay sepia/cálido, SIN tint de color — footage 100% natural */}
     </AbsoluteFill>
   );
 };

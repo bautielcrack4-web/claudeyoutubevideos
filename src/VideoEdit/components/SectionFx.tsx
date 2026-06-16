@@ -7,29 +7,10 @@ import { sec } from "../theme";
 // un LUT-feel sin tocar los componentes. Se cruza-fundea entre rangos.
 export type GradeRange = { from: number; to: number; tint: string; strength: number; blend?: "soft-light" | "overlay" | "multiply" };
 
-export const SectionGrade: React.FC<{ ranges: GradeRange[] }> = ({ ranges }) => {
-  const frame = useCurrentFrame();
-  const { fps } = useVideoConfig();
-  const t = frame / fps;
-  // rango activo + fundido en los bordes
-  return (
-    <AbsoluteFill style={{ pointerEvents: "none" }}>
-      {ranges.map((r, i) => {
-        const fade = 1.2; // s de cruce
-        const op = interpolate(
-          t,
-          [r.from - fade, r.from, r.to - fade, r.to],
-          [0, r.strength, r.strength, 0],
-          { extrapolateLeft: "clamp", extrapolateRight: "clamp" }
-        );
-        if (op <= 0.001) return null;
-        return (
-          <AbsoluteFill key={i} style={{ background: r.tint, opacity: op, mixBlendMode: r.blend ?? "soft-light" }} />
-        );
-      })}
-    </AbsoluteFill>
-  );
-};
+// ⚠ NEUTRALIZADO (jun 2026): el usuario rechazó TODOS los filtros de color ("no me gustan,
+// ninguno"). SectionGrade ya NO pinta ningún wash — devuelve null en todos los videos.
+// Se deja la firma para no romper imports existentes. Ver feedback_video_no_retro_filter.
+export const SectionGrade: React.FC<{ ranges: GradeRange[] }> = () => null;
 
 // ── SECTION STINGER (whip + light-leak) ───────────────────────────────────────
 // Un barrido de luz cálida diagonal + bump de exposición de ~0.5s para los cambios

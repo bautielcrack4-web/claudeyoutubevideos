@@ -17,8 +17,8 @@ const NOISE =
 export const CinematicWrap: React.FC<{ children: React.ReactNode; handheld?: number; grain?: number; vignette?: number }> = ({
   children,
   handheld = 0.8,
-  grain = 0.06,
-  vignette = 1,
+  grain = 0, // SIN grano por defecto (preferencia del usuario: cero filtros)
+  vignette = 0, // SIN viñeta por defecto
 }) => {
   const frame = useCurrentFrame();
 
@@ -40,17 +40,19 @@ export const CinematicWrap: React.FC<{ children: React.ReactNode; handheld?: num
         <AbsoluteFill style={{ background: `radial-gradient(125% 105% at 50% 48%, rgba(0,0,0,0) 56%, rgba(8,6,4,${0.42 * vignette}) 100%)`, pointerEvents: "none" }} />
       )}
 
-      {/* grano animado (jitter de posición = grano que se mueve, barato) */}
-      <AbsoluteFill
-        style={{
-          backgroundImage: NOISE,
-          backgroundSize: "180px 180px",
-          backgroundPosition: `${(frame * 17) % 180}px ${(frame * 29) % 180}px`,
-          opacity: grain,
-          mixBlendMode: "overlay",
-          pointerEvents: "none",
-        }}
-      />
+      {/* grano animado (jitter de posición). Desactivado si grain=0 */}
+      {grain > 0.001 && (
+        <AbsoluteFill
+          style={{
+            backgroundImage: NOISE,
+            backgroundSize: "180px 180px",
+            backgroundPosition: `${(frame * 17) % 180}px ${(frame * 29) % 180}px`,
+            opacity: grain,
+            mixBlendMode: "overlay",
+            pointerEvents: "none",
+          }}
+        />
+      )}
     </AbsoluteFill>
   );
 };

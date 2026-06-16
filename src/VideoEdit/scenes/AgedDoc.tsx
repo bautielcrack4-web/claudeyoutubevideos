@@ -89,7 +89,7 @@ export const AgedDoc: React.FC<{
         >
           <div style={{ position: "absolute", inset: 0, transform: `scale(${kb})` }}>
             {image ? (
-              <Media src={image} style={{ width: "100%", height: "100%", objectFit: "cover", filter: "sepia(0.3) contrast(1.04) brightness(0.96)" }} />
+              <Media src={image} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
             ) : (
               <div
                 style={{

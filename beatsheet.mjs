@@ -107,7 +107,7 @@ const warnings = [];
 // solapamiento de ventanas de cue
 const cueBeats = beats.filter((b) => b.kind && b.kind !== "talk");
 // floats son overlay INTENCIONAL sobre el avatar full → no cuentan como solape
-const sorted = [...cueBeats].filter((b) => b.kind !== "float").sort((a, b) => a.start - b.start);
+const sorted = [...cueBeats].filter((b) => b.kind !== "float" && !b.overlay).sort((a, b) => a.start - b.start);
 for (let i = 1; i < sorted.length; i++) {
   const prevEnd = sorted[i - 1].start + sorted[i - 1].dur;
   if (sorted[i].start < prevEnd - 1e-6) {
@@ -378,6 +378,68 @@ function renderEl(b) {
         (b.hue ? ` hue=${j(b.hue)}` : ``) +
         ` />`
       );
+    case "loctag":
+      return (
+        `<LocationTag durationInFrames={d} mapImage=${j(b.mapImage)} pinX={${b.pinX}} pinY={${b.pinY}} place=${j(b.place)}` +
+        (b.sub ? ` sub=${j(b.sub)}` : ``) +
+        ` />`
+      );
+    case "chapter":
+      return (
+        `<ChapterTag durationInFrames={d} title=${j(b.title)}` +
+        (b.num ? ` num=${j(b.num)}` : ``) +
+        (b.accent ? ` accent=${j(b.accent)}` : ``) +
+        ` />`
+      );
+    case "nametag":
+      return (
+        `<NameTag durationInFrames={d} name=${j(b.name)}` +
+        (b.sub ? ` sub=${j(b.sub)}` : ``) +
+        (b.accent ? ` accent=${j(b.accent)}` : ``) +
+        ` />`
+      );
+    case "phrasetag":
+      return (
+        `<PhraseTag durationInFrames={d} text=${j(b.text)}` +
+        (b.accent ? ` accent=${j(b.accent)}` : ``) +
+        (b.pos ? ` pos=${j(b.pos)}` : ``) +
+        ` />`
+      );
+    case "metertag":
+      return (
+        `<MeterTag durationInFrames={d} label=${j(b.label)}` +
+        (b.fromPct != null ? ` fromPct={${b.fromPct}}` : ``) +
+        (b.toPct != null ? ` toPct={${b.toPct}}` : ``) +
+        (b.eyebrow ? ` eyebrow=${j(b.eyebrow)}` : ``) +
+        (b.corner ? ` corner=${j(b.corner)}` : ``) +
+        ` />`
+      );
+    case "foundertree":
+      return (
+        `<FounderTree durationInFrames={d}` +
+        (b.eyebrow ? ` eyebrow=${j(b.eyebrow)}` : ``) +
+        ` />`
+      );
+    case "timeline":
+      return (
+        `<SagaTimeline durationInFrames={d} events={${j(b.events || [])}}` +
+        (b.eyebrow ? ` eyebrow=${j(b.eyebrow)}` : ``) +
+        (b.title ? ` title=${j(b.title)}` : ``) +
+        ` />`
+      );
+    case "stattag":
+      return (
+        `<StatTag durationInFrames={d}` +
+        (b.value != null ? ` value={${b.value}}` : ``) +
+        (b.text ? ` text=${j(b.text)}` : ``) +
+        (b.prefix ? ` prefix=${j(b.prefix)}` : ``) +
+        (b.suffix ? ` suffix=${j(b.suffix)}` : ``) +
+        (b.label ? ` label=${j(b.label)}` : ``) +
+        (b.eyebrow ? ` eyebrow=${j(b.eyebrow)}` : ``) +
+        (b.corner ? ` corner=${j(b.corner)}` : ``) +
+        (b.accent ? ` accent=${j(b.accent)}` : ``) +
+        ` />`
+      );
     case "spreadmap":
       return (
         `<SpreadMap durationInFrames={d} mapImage=${j(b.mapImage)}` +
@@ -550,12 +612,14 @@ function renderEl(b) {
 }
 
 const cueLines = [];
+const overlayLines = [];
 const reframe = [];
 for (const b of beats) {
   if (b.reframe && b.kind !== "talk") reframe.push({ start: b.start, end: b.start + b.dur });
   const el = renderEl(b);
   if (!el) continue;
-  cueLines.push(`  { key: ${j(b.id)}, start: ${b.start}, dur: ${b.dur}, kind: ${j(b.kind)}, el: (d) => ${el} },`);
+  const line = `  { key: ${j(b.id)}, start: ${b.start}, dur: ${b.dur}, kind: ${j(b.kind)}, el: (d) => ${el} },`;
+  (b.overlay ? overlayLines : cueLines).push(line);
 }
 
 // imports + consts de paleta CONDICIONALES: solo lo que los kinds presentes usan
@@ -578,6 +642,14 @@ if (kinds.has("diagram")) imports.push(`import { DiagramBoard } from "./scenes/D
 if (kinds.has("stat")) imports.push(`import { StatBig } from "./scenes/StatBig";`);
 if (kinds.has("impact")) imports.push(`import { ImpactReveal } from "./scenes/ImpactReveal";`);
 if (kinds.has("journey")) imports.push(`import { JourneyCanvas } from "./scenes/JourneyCanvas";`);
+if (kinds.has("loctag")) imports.push(`import { LocationTag } from "./scenes/LocationTag";`);
+if (kinds.has("stattag")) imports.push(`import { StatTag } from "./scenes/StatTag";`);
+if (kinds.has("chapter")) imports.push(`import { ChapterTag } from "./scenes/ChapterTag";`);
+if (kinds.has("nametag")) imports.push(`import { NameTag } from "./scenes/NameTag";`);
+if (kinds.has("phrasetag")) imports.push(`import { PhraseTag } from "./scenes/PhraseTag";`);
+if (kinds.has("timeline")) imports.push(`import { SagaTimeline } from "./scenes/SagaTimeline";`);
+if (kinds.has("metertag")) imports.push(`import { MeterTag } from "./scenes/MeterTag";`);
+if (kinds.has("foundertree")) imports.push(`import { FounderTree } from "./scenes/FounderTree";`);
 if (kinds.has("float")) imports.push(`import { FloatingInsert } from "./scenes/FloatingInsert";`);
 if (kinds.has("headline")) imports.push(`import { KineticHeadline } from "./scenes/KineticHeadline";`);
 if (kinds.has("aged")) imports.push(`import { AgedDoc } from "./scenes/AgedDoc";`);
@@ -631,6 +703,10 @@ ${cueLines.join("\n")}
 ];
 
 export const REFRAME: { start: number; end: number }[] = ${j(reframe)};
+
+export const OVERLAYS: Cue[] = [
+${overlayLines.join("\n")}
+];
 `;
 
 const outTsx = path.join("src", "VideoEdit", `cues_${VIDEO}.gen.tsx`);

@@ -18,6 +18,7 @@ import { MainMedicaid, TOTAL_FRAMES_MED } from "./VideoEdit/Main_medicaid";
 import { MainViuda, TOTAL_FRAMES_VD } from "./VideoEdit/Main_viuda";
 import { MainEstafas, TOTAL_FRAMES_ES } from "./VideoEdit/Main_estafas";
 import { MainHormiga, TOTAL_FRAMES_HB } from "./VideoEdit/Main_hormiga";
+import { MainHuron, TOTAL_FRAMES_HUR } from "./VideoEdit/Main_huron";
 
 // ── SOLO los videos ACTIVOS quedan registrados ──
 // Las composiciones viejas (Fly, Hipos, Bisontes, Objetos, Civil, Top7Demo,
@@ -27,6 +28,8 @@ import { MainHormiga, TOTAL_FRAMES_HB } from "./VideoEdit/Main_hormiga";
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      {/* VIDEO ACTIVO — Documental fauna · "El Hurón de Patas Negras" · faceless · voz clonada */}
+      <Composition id="Huron" component={MainHuron} durationInFrames={TOTAL_FRAMES_HUR} fps={30} width={1920} height={1080} />
       {/* VIDEO ACTIVO — Ben retirado · "Los gastos hormiga" · AVATAR · look ALARMA */}
       <Composition id="Hormiga" component={MainHormiga} durationInFrames={TOTAL_FRAMES_HB} fps={30} width={1920} height={1080} />
       {/* VIDEO ACTIVO — Ben retirado · "Las estafas que vacían la cuenta" · AVATAR · look ALARMA */}
