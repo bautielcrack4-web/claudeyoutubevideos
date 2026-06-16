@@ -45,7 +45,14 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "20"
-      - run: npm ci
+      - name: install deps (retry — onnxruntime-node a veces tira ETIMEDOUT al bajar su binario)
+        run: |
+          n=0
+          until npm ci; do
+            n=$((n+1))
+            if [ "$n" -ge 4 ]; then echo "npm ci falló tras $n intentos"; exit 1; fi
+            echo "npm ci reintento $n…"; rm -rf node_modules; sleep 20
+          done
       - name: install yt-dlp + ffmpeg
         run: |
           sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp
