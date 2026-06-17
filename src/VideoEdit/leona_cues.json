@@ -1,0 +1,87 @@
+[
+ {
+  "name": "leona_separa",
+  "start": 0.12,
+  "dur": 8
+ },
+ {
+  "name": "ojos_fijos",
+  "start": 8.12,
+  "dur": 4.48
+ },
+ {
+  "name": "nus_pastan",
+  "start": 12.6,
+  "dur": 5.04
+ },
+ {
+  "name": "cria_torpe",
+  "start": 17.64,
+  "dur": 8.16
+ },
+ {
+  "name": "leona_agacha",
+  "start": 25.8,
+  "dur": 12.12
+ },
+ {
+  "name": "paso_lento",
+  "start": 37.92,
+  "dur": 6.32
+ },
+ {
+  "name": "cria_alerta",
+  "start": 44.24,
+  "dur": 6.32
+ },
+ {
+  "name": "ya_tarde",
+  "start": 50.56,
+  "dur": 5.16
+ },
+ {
+  "name": "explota",
+  "start": 55.72,
+  "dur": 9.74
+ },
+ {
+  "name": "nus_corren",
+  "start": 65.46,
+  "dur": 9.74
+ },
+ {
+  "name": "alcanza",
+  "start": 75.2,
+  "dur": 4.6
+ },
+ {
+  "name": "derriba",
+  "start": 79.8,
+  "dur": 9.24
+ },
+ {
+  "name": "escena_brutal",
+  "start": 89.04,
+  "dur": 4.44
+ },
+ {
+  "name": "supervivencia",
+  "start": 93.48,
+  "dur": 7.98
+ },
+ {
+  "name": "cachorros",
+  "start": 101.46,
+  "dur": 7.98
+ },
+ {
+  "name": "nada_maldad",
+  "start": 109.44,
+  "dur": 3.16
+ },
+ {
+  "name": "hambre",
+  "start": 112.6,
+  "dur": 3.16
+ }
+]

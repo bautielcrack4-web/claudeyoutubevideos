@@ -1,0 +1,487 @@
+[
+ {
+  "name": "piedras_imposibles",
+  "start": 0,
+  "dur": 6.32
+ },
+ {
+  "name": "bloque_edificio",
+  "start": 6.32,
+  "dur": 6.65
+ },
+ {
+  "name": "muro_encaja",
+  "start": 12.97,
+  "dur": 4.52
+ },
+ {
+  "name": "templo_enterrado",
+  "start": 17.49,
+  "dur": 20.26
+ },
+ {
+  "name": "mil_toneladas_q",
+  "start": 37.75,
+  "dur": 3.97
+ },
+ {
+  "name": "cobre_blando",
+  "start": 41.72,
+  "dur": 13
+ },
+ {
+  "name": "patron_mundo",
+  "start": 54.72,
+  "dur": 7.35
+ },
+ {
+  "name": "linea_historia",
+  "start": 62.07,
+  "dur": 12.73
+ },
+ {
+  "name": "piedra_no_miente",
+  "start": 74.8,
+  "dur": 6.75
+ },
+ {
+  "name": "siete_construcciones",
+  "start": 81.55,
+  "dur": 7.02
+ },
+ {
+  "name": "sospecha",
+  "start": 88.57,
+  "dur": 12.11
+ },
+ {
+  "name": "guia_intro",
+  "start": 100.68,
+  "dur": 19.88
+ },
+ {
+  "name": "gt_intro",
+  "start": 120.56,
+  "dur": 5.41
+ },
+ {
+  "name": "gt_linea_vieja",
+  "start": 125.97,
+  "dur": 25.28
+ },
+ {
+  "name": "gt_pan_religion",
+  "start": 151.25,
+  "dur": 8.37
+ },
+ {
+  "name": "gt_rompe",
+  "start": 159.62,
+  "dur": 5.24
+ },
+ {
+  "name": "gt_colina",
+  "start": 164.86,
+  "dur": 9.96
+ },
+ {
+  "name": "gt_pilares",
+  "start": 174.82,
+  "dur": 10.73
+ },
+ {
+  "name": "gt_animales",
+  "start": 185.55,
+  "dur": 27.43
+ },
+ {
+  "name": "gt_once_mil",
+  "start": 212.98,
+  "dur": 4.58
+ },
+ {
+  "name": "gt_mas_antiguo",
+  "start": 217.56,
+  "dur": 18.01
+ },
+ {
+  "name": "gt_cazadores",
+  "start": 235.57,
+  "dur": 22.61
+ },
+ {
+  "name": "gt_organizo",
+  "start": 258.18,
+  "dur": 26.19
+ },
+ {
+  "name": "gt_da_vuelta",
+  "start": 284.37,
+  "dur": 29.38
+ },
+ {
+  "name": "gt_enterraron",
+  "start": 313.75,
+  "dur": 17.35
+ },
+ {
+  "name": "gt_porque",
+  "start": 331.1,
+  "dur": 15.2
+ },
+ {
+  "name": "gt_sin_respuesta",
+  "start": 346.3,
+  "dur": 8.77
+ },
+ {
+  "name": "sx_intro",
+  "start": 355.07,
+  "dur": 6.37
+ },
+ {
+  "name": "sx_fortaleza",
+  "start": 361.44,
+  "dur": 13.69
+ },
+ {
+  "name": "sx_bloques",
+  "start": 375.13,
+  "dur": 22.29
+ },
+ {
+  "name": "sx_calzan",
+  "start": 397.42,
+  "dur": 4.04
+ },
+ {
+  "name": "sx_rompecabezas",
+  "start": 401.46,
+  "dur": 32
+ },
+ {
+  "name": "sx_papel",
+  "start": 433.46,
+  "dur": 10.22
+ },
+ {
+  "name": "sx_terremoto",
+  "start": 443.68,
+  "dur": 13.52
+ },
+ {
+  "name": "sx_paciencia",
+  "start": 457.2,
+  "dur": 22.5
+ },
+ {
+  "name": "sx_cien_ton",
+  "start": 479.7,
+  "dur": 26.03
+ },
+ {
+  "name": "sx_sin_rueda",
+  "start": 505.73,
+  "dur": 10.83
+ },
+ {
+  "name": "sx_vinieron_antes",
+  "start": 516.56,
+  "dur": 27.02
+ },
+ {
+  "name": "bk_intro",
+  "start": 543.58,
+  "dur": 6.14
+ },
+ {
+  "name": "bk_columnas",
+  "start": 549.72,
+  "dur": 10.49
+ },
+ {
+  "name": "bk_debajo",
+  "start": 560.21,
+  "dur": 23.58
+ },
+ {
+  "name": "bk_trilithon",
+  "start": 583.79,
+  "dur": 7.29
+ },
+ {
+  "name": "bk_avion",
+  "start": 591.08,
+  "dur": 16.83
+ },
+ {
+  "name": "bk_embarazada",
+  "start": 607.91,
+  "dur": 15.22
+ },
+ {
+  "name": "bk_mas_grande",
+  "start": 623.13,
+  "dur": 19.32
+ },
+ {
+  "name": "bk_grua_hoy",
+  "start": 642.45,
+  "dur": 24.1
+ },
+ {
+  "name": "bk_pregunta",
+  "start": 666.55,
+  "dur": 38.83
+ },
+ {
+  "name": "bk_silencio",
+  "start": 705.38,
+  "dur": 7.85
+ },
+ {
+  "name": "lg_intro",
+  "start": 713.23,
+  "dur": 5.83
+ },
+ {
+  "name": "lg_campesinos",
+  "start": 719.06,
+  "dur": 12.08
+ },
+ {
+  "name": "lg_bombearon",
+  "start": 731.14,
+  "dur": 9.13
+ },
+ {
+  "name": "lg_caverna",
+  "start": 740.27,
+  "dur": 13.24
+ },
+ {
+  "name": "lg_veinte",
+  "start": 753.51,
+  "dur": 14.46
+ },
+ {
+  "name": "lg_colosal",
+  "start": 767.97,
+  "dur": 25.17
+ },
+ {
+  "name": "lg_donde_roca",
+  "start": 793.14,
+  "dur": 18.99
+ },
+ {
+  "name": "lg_marcas",
+  "start": 812.13,
+  "dur": 29.96
+ },
+ {
+  "name": "lg_sin_registro",
+  "start": 842.09,
+  "dur": 26.23
+ },
+ {
+  "name": "lg_olvidaran",
+  "start": 868.32,
+  "dur": 12.14
+ },
+ {
+  "name": "pp_intro",
+  "start": 880.46,
+  "dur": 5.97
+ },
+ {
+  "name": "pp_altiplano",
+  "start": 886.43,
+  "dur": 15.14
+ },
+ {
+  "name": "pp_maquina",
+  "start": 901.57,
+  "dur": 17.75
+ },
+ {
+  "name": "pp_hbloques",
+  "start": 919.32,
+  "dur": 3.97
+ },
+ {
+  "name": "pp_ranuras",
+  "start": 923.29,
+  "dur": 10.51
+ },
+ {
+  "name": "pp_diorita",
+  "start": 933.8,
+  "dur": 14.37
+ },
+ {
+  "name": "pp_sin_metal",
+  "start": 948.17,
+  "dur": 10.01
+ },
+ {
+  "name": "pp_industrial",
+  "start": 958.18,
+  "dur": 15.6
+ },
+ {
+  "name": "pp_prefab",
+  "start": 973.78,
+  "dur": 24.54
+ },
+ {
+  "name": "pp_techo_mundo",
+  "start": 998.32,
+  "dur": 14.14
+ },
+ {
+  "name": "gp_intro",
+  "start": 1012.46,
+  "dur": 6.21
+ },
+ {
+  "name": "gp_conocemos",
+  "start": 1018.67,
+  "dur": 14.31
+ },
+ {
+  "name": "gp_dos_millones",
+  "start": 1032.98,
+  "dur": 23.81
+ },
+ {
+  "name": "gp_cuenta",
+  "start": 1056.79,
+  "dur": 26.64
+ },
+ {
+  "name": "gp_precision",
+  "start": 1083.43,
+  "dur": 17.57
+ },
+ {
+  "name": "gp_cardinal",
+  "start": 1101,
+  "dur": 8.62
+ },
+ {
+  "name": "gp_espejo",
+  "start": 1109.62,
+  "dur": 17.08
+ },
+ {
+  "name": "gp_cobre",
+  "start": 1126.7,
+  "dur": 16.88
+ },
+ {
+  "name": "gp_estrellas",
+  "start": 1143.58,
+  "dur": 23.65
+ },
+ {
+  "name": "gp_como",
+  "start": 1167.23,
+  "dur": 26.68
+ },
+ {
+  "name": "se_intro",
+  "start": 1193.91,
+  "dur": 4.98
+ },
+ {
+  "name": "se_tunel",
+  "start": 1198.89,
+  "dur": 8.87
+ },
+ {
+  "name": "se_caja",
+  "start": 1207.76,
+  "dur": 13.24
+ },
+ {
+  "name": "se_granito",
+  "start": 1221,
+  "dur": 21.59
+ },
+ {
+  "name": "se_toros",
+  "start": 1242.59,
+  "dur": 21.21
+ },
+ {
+  "name": "se_precision",
+  "start": 1263.8,
+  "dur": 12.68
+ },
+ {
+  "name": "se_miden",
+  "start": 1276.48,
+  "dur": 20.57
+ },
+ {
+  "name": "se_angulos",
+  "start": 1297.05,
+  "dur": 21.36
+ },
+ {
+  "name": "se_cnc",
+  "start": 1318.41,
+  "dur": 12.48
+ },
+ {
+  "name": "se_mover",
+  "start": 1330.89,
+  "dur": 41.1
+ },
+ {
+  "name": "se_silencio",
+  "start": 1371.99,
+  "dur": 15.74
+ },
+ {
+  "name": "cl_hilo",
+  "start": 1387.73,
+  "dur": 24.92
+ },
+ {
+  "name": "cl_supieron",
+  "start": 1412.65,
+  "dur": 4.84
+ },
+ {
+  "name": "cl_perdio",
+  "start": 1417.49,
+  "dur": 33.8
+ },
+ {
+  "name": "cl_patron",
+  "start": 1451.29,
+  "dur": 17.61
+ },
+ {
+  "name": "cl_medio",
+  "start": 1468.9,
+  "dur": 11.38
+ },
+ {
+  "name": "cl_cronicas",
+  "start": 1480.28,
+  "dur": 11.45
+ },
+ {
+  "name": "cl_teaser",
+  "start": 1491.73,
+  "dur": 15.4
+ },
+ {
+  "name": "cl_final",
+  "start": 1507.13,
+  "dur": 10.86
+ }
+]
