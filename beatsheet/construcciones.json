@@ -1,0 +1,3648 @@
+{
+ "video": "construcciones",
+ "beats": [
+  {
+   "id": "c001",
+   "start": 0,
+   "dur": 3.55,
+   "kind": "raw",
+   "src": "broll/piedras_imposibles.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c002",
+   "start": 3.55,
+   "dur": 3.55,
+   "kind": "raw",
+   "src": "broll/bloque_edificio.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c003",
+   "start": 7.09,
+   "dur": 3.55,
+   "kind": "raw",
+   "src": "broll/muro_encaja.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c004",
+   "start": 10.64,
+   "dur": 3.55,
+   "kind": "raw",
+   "src": "broll/templo_enterrado.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c005",
+   "start": 14.18,
+   "dur": 3.55,
+   "kind": "raw",
+   "src": "broll/mil_toneladas_q.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c006",
+   "start": 17.73,
+   "dur": 3.55,
+   "kind": "raw",
+   "src": "broll/cobre_blando.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c007",
+   "start": 21.27,
+   "dur": 3.55,
+   "kind": "raw",
+   "src": "broll/patron_mundo.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c008",
+   "start": 24.82,
+   "dur": 3.55,
+   "kind": "raw",
+   "src": "broll/linea_historia.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c009",
+   "start": 28.37,
+   "dur": 3.55,
+   "kind": "raw",
+   "src": "broll/piedra_no_miente.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c010",
+   "start": 31.91,
+   "dur": 3.55,
+   "kind": "raw",
+   "src": "broll/siete_construcciones.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c011",
+   "start": 35.46,
+   "dur": 3.55,
+   "kind": "raw",
+   "src": "broll/sospecha.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c012",
+   "start": 39,
+   "dur": 3.55,
+   "kind": "raw",
+   "src": "broll/guia_intro.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c013",
+   "start": 42.55,
+   "dur": 3.55,
+   "kind": "raw",
+   "src": "broll/piedras_imposibles.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c014",
+   "start": 46.09,
+   "dur": 3.55,
+   "kind": "raw",
+   "src": "broll/bloque_edificio.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c015",
+   "start": 49.64,
+   "dur": 3.55,
+   "kind": "raw",
+   "src": "broll/muro_encaja.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c016",
+   "start": 53.18,
+   "dur": 3.55,
+   "kind": "raw",
+   "src": "broll/templo_enterrado.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c017",
+   "start": 56.73,
+   "dur": 3.55,
+   "kind": "raw",
+   "src": "broll/mil_toneladas_q.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c018",
+   "start": 60.28,
+   "dur": 3.55,
+   "kind": "raw",
+   "src": "broll/cobre_blando.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c019",
+   "start": 63.82,
+   "dur": 3.55,
+   "kind": "raw",
+   "src": "broll/patron_mundo.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c020",
+   "start": 67.37,
+   "dur": 3.55,
+   "kind": "raw",
+   "src": "broll/linea_historia.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c021",
+   "start": 70.91,
+   "dur": 3.55,
+   "kind": "raw",
+   "src": "broll/piedra_no_miente.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c022",
+   "start": 74.46,
+   "dur": 3.55,
+   "kind": "raw",
+   "src": "broll/siete_construcciones.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c023",
+   "start": 78,
+   "dur": 3.55,
+   "kind": "raw",
+   "src": "broll/sospecha.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "headline024",
+   "start": 81.55,
+   "dur": 6,
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "7",
+     "hl": true
+    },
+    {
+     "t": "construcciones"
+    },
+    {
+     "t": "que"
+    },
+    {
+     "t": "la"
+    },
+    {
+     "t": "ciencia"
+    },
+    {
+     "t": "no"
+    },
+    {
+     "t": "puede"
+    },
+    {
+     "t": "explicar",
+     "hl": true
+    }
+   ],
+   "bg": "image",
+   "image": "real/constr_hero.jpg",
+   "hue": "amber",
+   "size": 92
+  },
+  {
+   "id": "c025",
+   "start": 87.55,
+   "dur": 3.67,
+   "kind": "raw",
+   "src": "broll/piedras_imposibles.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c026",
+   "start": 91.22,
+   "dur": 3.67,
+   "kind": "raw",
+   "src": "broll/bloque_edificio.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c027",
+   "start": 94.89,
+   "dur": 3.67,
+   "kind": "raw",
+   "src": "broll/muro_encaja.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c028",
+   "start": 98.55,
+   "dur": 3.67,
+   "kind": "raw",
+   "src": "broll/templo_enterrado.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c029",
+   "start": 102.22,
+   "dur": 3.67,
+   "kind": "raw",
+   "src": "broll/mil_toneladas_q.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c030",
+   "start": 105.89,
+   "dur": 3.67,
+   "kind": "raw",
+   "src": "broll/cobre_blando.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c031",
+   "start": 109.56,
+   "dur": 3.67,
+   "kind": "raw",
+   "src": "broll/patron_mundo.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c032",
+   "start": 113.22,
+   "dur": 3.67,
+   "kind": "raw",
+   "src": "broll/linea_historia.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c033",
+   "start": 116.89,
+   "dur": 3.67,
+   "kind": "raw",
+   "src": "broll/piedra_no_miente.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "rule034",
+   "start": 120.56,
+   "dur": 4.2,
+   "kind": "rule",
+   "number": "07",
+   "title": "Göbekli Tepe",
+   "label": "Anatolia, Turquía",
+   "hue": "amber"
+  },
+  {
+   "id": "o035",
+   "start": 124.76,
+   "dur": 6,
+   "overlay": true,
+   "kind": "doclabel",
+   "label": "Göbekli Tepe",
+   "sub": "Anatolia, Turquía",
+   "accent": "amber"
+  },
+  {
+   "id": "o036",
+   "start": 124.76,
+   "dur": 230.11,
+   "overlay": true,
+   "kind": "countrail",
+   "total": 7,
+   "rank": 1,
+   "name": "Göbekli Tepe",
+   "accent": "amber"
+  },
+  {
+   "id": "c037",
+   "start": 124.76,
+   "dur": 3.66,
+   "kind": "raw",
+   "src": "broll/gt_intro.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c038",
+   "start": 128.42,
+   "dur": 3.66,
+   "kind": "raw",
+   "src": "broll/gt_linea_vieja.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c039",
+   "start": 132.07,
+   "dur": 3.66,
+   "kind": "raw",
+   "src": "broll/gt_pan_religion.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c040",
+   "start": 135.73,
+   "dur": 3.66,
+   "kind": "raw",
+   "src": "broll/gt_rompe.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c041",
+   "start": 139.38,
+   "dur": 3.66,
+   "kind": "raw",
+   "src": "broll/gt_colina.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c042",
+   "start": 143.04,
+   "dur": 3.66,
+   "kind": "raw",
+   "src": "broll/gt_pilares.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c043",
+   "start": 146.69,
+   "dur": 3.66,
+   "kind": "raw",
+   "src": "broll/gt_animales.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c044",
+   "start": 150.35,
+   "dur": 3.66,
+   "kind": "raw",
+   "src": "broll/gt_once_mil.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c045",
+   "start": 154.01,
+   "dur": 3.66,
+   "kind": "raw",
+   "src": "broll/gt_mas_antiguo.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c046",
+   "start": 157.66,
+   "dur": 3.66,
+   "kind": "raw",
+   "src": "broll/gt_cazadores.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c047",
+   "start": 161.32,
+   "dur": 3.66,
+   "kind": "raw",
+   "src": "broll/gt_organizo.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c048",
+   "start": 164.97,
+   "dur": 3.66,
+   "kind": "raw",
+   "src": "broll/gt_da_vuelta.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c049",
+   "start": 168.63,
+   "dur": 3.66,
+   "kind": "raw",
+   "src": "broll/gt_enterraron.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c050",
+   "start": 172.28,
+   "dur": 3.66,
+   "kind": "raw",
+   "src": "broll/gt_porque.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c051",
+   "start": 175.94,
+   "dur": 3.66,
+   "kind": "raw",
+   "src": "broll/gt_sin_respuesta.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c052",
+   "start": 179.6,
+   "dur": 3.66,
+   "kind": "raw",
+   "src": "broll/gt_intro.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c053",
+   "start": 183.25,
+   "dur": 3.66,
+   "kind": "raw",
+   "src": "broll/gt_linea_vieja.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c054",
+   "start": 186.91,
+   "dur": 3.66,
+   "kind": "raw",
+   "src": "broll/gt_pan_religion.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c055",
+   "start": 190.56,
+   "dur": 3.66,
+   "kind": "raw",
+   "src": "broll/gt_rompe.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c056",
+   "start": 194.22,
+   "dur": 3.66,
+   "kind": "raw",
+   "src": "broll/gt_colina.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c057",
+   "start": 197.87,
+   "dur": 3.66,
+   "kind": "raw",
+   "src": "broll/gt_pilares.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "scalecolossus058",
+   "start": 201.53,
+   "dur": 6,
+   "kind": "scalecolossus",
+   "image": "real/gt_pillar.jpg",
+   "meters": 5,
+   "unit": "m",
+   "eyebrow": "Göbekli Tepe",
+   "label": "de alto · 20 toneladas",
+   "accent": "amber"
+  },
+  {
+   "id": "o059",
+   "start": 201.73,
+   "dur": 5,
+   "overlay": true,
+   "kind": "datestamp",
+   "value": "≈ 9.600 a.C.",
+   "label": "Göbekli Tepe",
+   "accent": "amber"
+  },
+  {
+   "id": "c060",
+   "start": 207.53,
+   "dur": 3.54,
+   "kind": "raw",
+   "src": "broll/gt_intro.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c061",
+   "start": 211.07,
+   "dur": 3.54,
+   "kind": "raw",
+   "src": "broll/gt_linea_vieja.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c062",
+   "start": 214.61,
+   "dur": 3.54,
+   "kind": "raw",
+   "src": "broll/gt_pan_religion.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c063",
+   "start": 218.15,
+   "dur": 3.54,
+   "kind": "raw",
+   "src": "broll/gt_rompe.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c064",
+   "start": 221.68,
+   "dur": 3.54,
+   "kind": "raw",
+   "src": "broll/gt_colina.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c065",
+   "start": 225.22,
+   "dur": 3.54,
+   "kind": "raw",
+   "src": "broll/gt_pilares.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c066",
+   "start": 228.76,
+   "dur": 3.54,
+   "kind": "raw",
+   "src": "broll/gt_animales.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c067",
+   "start": 232.3,
+   "dur": 3.54,
+   "kind": "raw",
+   "src": "broll/gt_once_mil.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c068",
+   "start": 235.84,
+   "dur": 3.54,
+   "kind": "raw",
+   "src": "broll/gt_mas_antiguo.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c069",
+   "start": 239.38,
+   "dur": 3.54,
+   "kind": "raw",
+   "src": "broll/gt_cazadores.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c070",
+   "start": 242.92,
+   "dur": 3.54,
+   "kind": "raw",
+   "src": "broll/gt_organizo.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c071",
+   "start": 246.45,
+   "dur": 3.54,
+   "kind": "raw",
+   "src": "broll/gt_da_vuelta.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c072",
+   "start": 249.99,
+   "dur": 3.54,
+   "kind": "raw",
+   "src": "broll/gt_enterraron.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c073",
+   "start": 253.53,
+   "dur": 3.54,
+   "kind": "raw",
+   "src": "broll/gt_porque.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c074",
+   "start": 257.07,
+   "dur": 3.54,
+   "kind": "raw",
+   "src": "broll/gt_sin_respuesta.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c075",
+   "start": 260.61,
+   "dur": 3.54,
+   "kind": "raw",
+   "src": "broll/gt_intro.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c076",
+   "start": 264.15,
+   "dur": 3.54,
+   "kind": "raw",
+   "src": "broll/gt_linea_vieja.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c077",
+   "start": 267.68,
+   "dur": 3.54,
+   "kind": "raw",
+   "src": "broll/gt_pan_religion.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c078",
+   "start": 271.22,
+   "dur": 3.54,
+   "kind": "raw",
+   "src": "broll/gt_rompe.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c079",
+   "start": 274.76,
+   "dur": 3.54,
+   "kind": "raw",
+   "src": "broll/gt_colina.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "stat080",
+   "start": 278.3,
+   "dur": 5.2,
+   "kind": "stat",
+   "value": 11600,
+   "suffix": " años",
+   "label": "más antiguo que la escritura y la rueda",
+   "eyebrow": "Antes de la agricultura",
+   "accent": "accent",
+   "hue": "amber"
+  },
+  {
+   "id": "c081",
+   "start": 283.5,
+   "dur": 3.58,
+   "kind": "raw",
+   "src": "broll/gt_intro.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c082",
+   "start": 287.08,
+   "dur": 3.58,
+   "kind": "raw",
+   "src": "broll/gt_linea_vieja.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c083",
+   "start": 290.66,
+   "dur": 3.58,
+   "kind": "raw",
+   "src": "broll/gt_pan_religion.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c084",
+   "start": 294.24,
+   "dur": 3.58,
+   "kind": "raw",
+   "src": "broll/gt_rompe.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c085",
+   "start": 297.81,
+   "dur": 3.58,
+   "kind": "raw",
+   "src": "broll/gt_colina.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c086",
+   "start": 301.39,
+   "dur": 3.58,
+   "kind": "raw",
+   "src": "broll/gt_pilares.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c087",
+   "start": 304.97,
+   "dur": 3.58,
+   "kind": "raw",
+   "src": "broll/gt_animales.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c088",
+   "start": 308.55,
+   "dur": 3.58,
+   "kind": "raw",
+   "src": "broll/gt_once_mil.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c089",
+   "start": 312.13,
+   "dur": 3.58,
+   "kind": "raw",
+   "src": "broll/gt_mas_antiguo.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c090",
+   "start": 315.71,
+   "dur": 3.58,
+   "kind": "raw",
+   "src": "broll/gt_cazadores.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c091",
+   "start": 319.28,
+   "dur": 3.58,
+   "kind": "raw",
+   "src": "broll/gt_organizo.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c092",
+   "start": 322.86,
+   "dur": 3.58,
+   "kind": "raw",
+   "src": "broll/gt_da_vuelta.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c093",
+   "start": 326.44,
+   "dur": 3.58,
+   "kind": "raw",
+   "src": "broll/gt_enterraron.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c094",
+   "start": 330.02,
+   "dur": 3.58,
+   "kind": "raw",
+   "src": "broll/gt_porque.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c095",
+   "start": 333.6,
+   "dur": 3.58,
+   "kind": "raw",
+   "src": "broll/gt_sin_respuesta.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c096",
+   "start": 337.18,
+   "dur": 3.58,
+   "kind": "raw",
+   "src": "broll/gt_intro.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c097",
+   "start": 340.76,
+   "dur": 3.58,
+   "kind": "raw",
+   "src": "broll/gt_linea_vieja.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c098",
+   "start": 344.33,
+   "dur": 3.58,
+   "kind": "raw",
+   "src": "broll/gt_pan_religion.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c099",
+   "start": 347.91,
+   "dur": 3.58,
+   "kind": "raw",
+   "src": "broll/gt_rompe.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c100",
+   "start": 351.49,
+   "dur": 3.58,
+   "kind": "raw",
+   "src": "broll/gt_colina.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "rule101",
+   "start": 355.07,
+   "dur": 4.2,
+   "kind": "rule",
+   "number": "06",
+   "title": "Sacsayhuamán",
+   "label": "Cusco, Perú",
+   "hue": "blue"
+  },
+  {
+   "id": "o102",
+   "start": 359.27,
+   "dur": 6,
+   "overlay": true,
+   "kind": "doclabel",
+   "label": "Sacsayhuamán",
+   "sub": "Cusco, Perú",
+   "accent": "blue"
+  },
+  {
+   "id": "o103",
+   "start": 359.27,
+   "dur": 184.11,
+   "overlay": true,
+   "kind": "countrail",
+   "total": 7,
+   "rank": 2,
+   "name": "Sacsayhuamán",
+   "accent": "blue"
+  },
+  {
+   "id": "c104",
+   "start": 359.27,
+   "dur": 3.61,
+   "kind": "raw",
+   "src": "broll/sx_intro.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c105",
+   "start": 362.88,
+   "dur": 3.61,
+   "kind": "raw",
+   "src": "broll/sx_fortaleza.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c106",
+   "start": 366.5,
+   "dur": 3.61,
+   "kind": "raw",
+   "src": "broll/sx_bloques.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c107",
+   "start": 370.11,
+   "dur": 3.61,
+   "kind": "raw",
+   "src": "broll/sx_calzan.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c108",
+   "start": 373.73,
+   "dur": 3.61,
+   "kind": "raw",
+   "src": "broll/sx_rompecabezas.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c109",
+   "start": 377.34,
+   "dur": 3.61,
+   "kind": "raw",
+   "src": "broll/sx_papel.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c110",
+   "start": 380.95,
+   "dur": 3.61,
+   "kind": "raw",
+   "src": "broll/sx_terremoto.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c111",
+   "start": 384.57,
+   "dur": 3.61,
+   "kind": "raw",
+   "src": "broll/sx_paciencia.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c112",
+   "start": 388.18,
+   "dur": 3.61,
+   "kind": "raw",
+   "src": "broll/sx_cien_ton.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c113",
+   "start": 391.8,
+   "dur": 3.61,
+   "kind": "raw",
+   "src": "broll/sx_sin_rueda.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c114",
+   "start": 395.41,
+   "dur": 3.61,
+   "kind": "raw",
+   "src": "broll/sx_vinieron_antes.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c115",
+   "start": 399.02,
+   "dur": 3.61,
+   "kind": "raw",
+   "src": "broll/sx_intro.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c116",
+   "start": 402.64,
+   "dur": 3.61,
+   "kind": "raw",
+   "src": "broll/sx_fortaleza.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c117",
+   "start": 406.25,
+   "dur": 3.61,
+   "kind": "raw",
+   "src": "broll/sx_bloques.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c118",
+   "start": 409.86,
+   "dur": 3.61,
+   "kind": "raw",
+   "src": "broll/sx_calzan.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c119",
+   "start": 413.48,
+   "dur": 3.61,
+   "kind": "raw",
+   "src": "broll/sx_rompecabezas.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c120",
+   "start": 417.09,
+   "dur": 3.61,
+   "kind": "raw",
+   "src": "broll/sx_papel.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "scalecolossus121",
+   "start": 420.71,
+   "dur": 6,
+   "kind": "scalecolossus",
+   "image": "real/sx_wall.jpg",
+   "meters": 125,
+   "unit": "t",
+   "eyebrow": "Sacsayhuamán",
+   "label": "por bloque · encaje perfecto",
+   "accent": "blue"
+  },
+  {
+   "id": "o122",
+   "start": 420.91,
+   "dur": 5,
+   "overlay": true,
+   "kind": "datestamp",
+   "value": "s. XV (o antes)",
+   "label": "Sacsayhuamán",
+   "accent": "blue"
+  },
+  {
+   "id": "c123",
+   "start": 426.71,
+   "dur": 3.7,
+   "kind": "raw",
+   "src": "broll/sx_intro.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c124",
+   "start": 430.4,
+   "dur": 3.7,
+   "kind": "raw",
+   "src": "broll/sx_fortaleza.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c125",
+   "start": 434.1,
+   "dur": 3.7,
+   "kind": "raw",
+   "src": "broll/sx_bloques.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c126",
+   "start": 437.79,
+   "dur": 3.7,
+   "kind": "raw",
+   "src": "broll/sx_calzan.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c127",
+   "start": 441.49,
+   "dur": 3.7,
+   "kind": "raw",
+   "src": "broll/sx_rompecabezas.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c128",
+   "start": 445.19,
+   "dur": 3.7,
+   "kind": "raw",
+   "src": "broll/sx_papel.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c129",
+   "start": 448.88,
+   "dur": 3.7,
+   "kind": "raw",
+   "src": "broll/sx_terremoto.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c130",
+   "start": 452.58,
+   "dur": 3.7,
+   "kind": "raw",
+   "src": "broll/sx_paciencia.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c131",
+   "start": 456.27,
+   "dur": 3.7,
+   "kind": "raw",
+   "src": "broll/sx_cien_ton.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c132",
+   "start": 459.97,
+   "dur": 3.7,
+   "kind": "raw",
+   "src": "broll/sx_sin_rueda.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c133",
+   "start": 463.66,
+   "dur": 3.7,
+   "kind": "raw",
+   "src": "broll/sx_vinieron_antes.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c134",
+   "start": 467.36,
+   "dur": 3.7,
+   "kind": "raw",
+   "src": "broll/sx_intro.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c135",
+   "start": 471.06,
+   "dur": 3.7,
+   "kind": "raw",
+   "src": "broll/sx_fortaleza.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c136",
+   "start": 474.75,
+   "dur": 3.7,
+   "kind": "raw",
+   "src": "broll/sx_bloques.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c137",
+   "start": 478.45,
+   "dur": 3.7,
+   "kind": "raw",
+   "src": "broll/sx_calzan.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "stat138",
+   "start": 482.14,
+   "dur": 5.2,
+   "kind": "stat",
+   "value": 0,
+   "prefix": "0",
+   "suffix": " mm",
+   "label": "no entra ni una hoja entre las piedras",
+   "eyebrow": "Sin mortero",
+   "accent": "accent",
+   "hue": "blue"
+  },
+  {
+   "id": "c139",
+   "start": 487.34,
+   "dur": 3.51,
+   "kind": "raw",
+   "src": "broll/sx_intro.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c140",
+   "start": 490.86,
+   "dur": 3.51,
+   "kind": "raw",
+   "src": "broll/sx_fortaleza.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c141",
+   "start": 494.37,
+   "dur": 3.51,
+   "kind": "raw",
+   "src": "broll/sx_bloques.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c142",
+   "start": 497.89,
+   "dur": 3.51,
+   "kind": "raw",
+   "src": "broll/sx_calzan.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c143",
+   "start": 501.4,
+   "dur": 3.51,
+   "kind": "raw",
+   "src": "broll/sx_rompecabezas.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c144",
+   "start": 504.92,
+   "dur": 3.51,
+   "kind": "raw",
+   "src": "broll/sx_papel.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c145",
+   "start": 508.43,
+   "dur": 3.51,
+   "kind": "raw",
+   "src": "broll/sx_terremoto.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c146",
+   "start": 511.95,
+   "dur": 3.51,
+   "kind": "raw",
+   "src": "broll/sx_paciencia.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c147",
+   "start": 515.46,
+   "dur": 3.51,
+   "kind": "raw",
+   "src": "broll/sx_cien_ton.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c148",
+   "start": 518.98,
+   "dur": 3.51,
+   "kind": "raw",
+   "src": "broll/sx_sin_rueda.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c149",
+   "start": 522.49,
+   "dur": 3.51,
+   "kind": "raw",
+   "src": "broll/sx_vinieron_antes.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c150",
+   "start": 526.01,
+   "dur": 3.51,
+   "kind": "raw",
+   "src": "broll/sx_intro.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c151",
+   "start": 529.52,
+   "dur": 3.51,
+   "kind": "raw",
+   "src": "broll/sx_fortaleza.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c152",
+   "start": 533.04,
+   "dur": 3.51,
+   "kind": "raw",
+   "src": "broll/sx_bloques.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c153",
+   "start": 536.55,
+   "dur": 3.51,
+   "kind": "raw",
+   "src": "broll/sx_calzan.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c154",
+   "start": 540.07,
+   "dur": 3.51,
+   "kind": "raw",
+   "src": "broll/sx_rompecabezas.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "rule155",
+   "start": 543.58,
+   "dur": 4.2,
+   "kind": "rule",
+   "number": "05",
+   "title": "Baalbek",
+   "label": "Valle de la Bekaa, Líbano",
+   "hue": "amber"
+  },
+  {
+   "id": "o156",
+   "start": 547.78,
+   "dur": 6,
+   "overlay": true,
+   "kind": "doclabel",
+   "label": "Baalbek",
+   "sub": "Valle de la Bekaa, Líbano",
+   "accent": "amber"
+  },
+  {
+   "id": "o157",
+   "start": 547.78,
+   "dur": 165.25,
+   "overlay": true,
+   "kind": "countrail",
+   "total": 7,
+   "rank": 3,
+   "name": "Baalbek",
+   "accent": "amber"
+  },
+  {
+   "id": "c158",
+   "start": 547.78,
+   "dur": 3.68,
+   "kind": "raw",
+   "src": "broll/bk_intro.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c159",
+   "start": 551.46,
+   "dur": 3.68,
+   "kind": "raw",
+   "src": "broll/bk_columnas.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c160",
+   "start": 555.13,
+   "dur": 3.68,
+   "kind": "raw",
+   "src": "broll/bk_debajo.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c161",
+   "start": 558.81,
+   "dur": 3.68,
+   "kind": "raw",
+   "src": "broll/bk_trilithon.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c162",
+   "start": 562.49,
+   "dur": 3.68,
+   "kind": "raw",
+   "src": "broll/bk_avion.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c163",
+   "start": 566.16,
+   "dur": 3.68,
+   "kind": "raw",
+   "src": "broll/bk_embarazada.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c164",
+   "start": 569.84,
+   "dur": 3.68,
+   "kind": "raw",
+   "src": "broll/bk_mas_grande.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c165",
+   "start": 573.52,
+   "dur": 3.68,
+   "kind": "raw",
+   "src": "broll/bk_grua_hoy.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c166",
+   "start": 577.19,
+   "dur": 3.68,
+   "kind": "raw",
+   "src": "broll/bk_pregunta.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c167",
+   "start": 580.87,
+   "dur": 3.68,
+   "kind": "raw",
+   "src": "broll/bk_silencio.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c168",
+   "start": 584.55,
+   "dur": 3.68,
+   "kind": "raw",
+   "src": "broll/bk_intro.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c169",
+   "start": 588.22,
+   "dur": 3.68,
+   "kind": "raw",
+   "src": "broll/bk_columnas.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c170",
+   "start": 591.9,
+   "dur": 3.68,
+   "kind": "raw",
+   "src": "broll/bk_debajo.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c171",
+   "start": 595.58,
+   "dur": 3.68,
+   "kind": "raw",
+   "src": "broll/bk_trilithon.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c172",
+   "start": 599.25,
+   "dur": 3.68,
+   "kind": "raw",
+   "src": "broll/bk_avion.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "scalecolossus173",
+   "start": 602.93,
+   "dur": 6,
+   "kind": "scalecolossus",
+   "image": "real/bk_trilithon.jpg",
+   "meters": 1000,
+   "unit": "t",
+   "eyebrow": "Baalbek",
+   "label": "la Piedra Embarazada",
+   "accent": "amber"
+  },
+  {
+   "id": "o174",
+   "start": 603.13,
+   "dur": 5,
+   "overlay": true,
+   "kind": "datestamp",
+   "value": "Pre-romano",
+   "label": "Baalbek",
+   "accent": "amber"
+  },
+  {
+   "id": "c175",
+   "start": 608.93,
+   "dur": 3.51,
+   "kind": "raw",
+   "src": "broll/bk_intro.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c176",
+   "start": 612.44,
+   "dur": 3.51,
+   "kind": "raw",
+   "src": "broll/bk_columnas.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c177",
+   "start": 615.95,
+   "dur": 3.51,
+   "kind": "raw",
+   "src": "broll/bk_debajo.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c178",
+   "start": 619.46,
+   "dur": 3.51,
+   "kind": "raw",
+   "src": "broll/bk_trilithon.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c179",
+   "start": 622.97,
+   "dur": 3.51,
+   "kind": "raw",
+   "src": "broll/bk_avion.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c180",
+   "start": 626.48,
+   "dur": 3.51,
+   "kind": "raw",
+   "src": "broll/bk_embarazada.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c181",
+   "start": 629.99,
+   "dur": 3.51,
+   "kind": "raw",
+   "src": "broll/bk_mas_grande.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c182",
+   "start": 633.51,
+   "dur": 3.51,
+   "kind": "raw",
+   "src": "broll/bk_grua_hoy.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c183",
+   "start": 637.02,
+   "dur": 3.51,
+   "kind": "raw",
+   "src": "broll/bk_pregunta.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c184",
+   "start": 640.53,
+   "dur": 3.51,
+   "kind": "raw",
+   "src": "broll/bk_silencio.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c185",
+   "start": 644.04,
+   "dur": 3.51,
+   "kind": "raw",
+   "src": "broll/bk_intro.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c186",
+   "start": 647.55,
+   "dur": 3.51,
+   "kind": "raw",
+   "src": "broll/bk_columnas.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c187",
+   "start": 651.06,
+   "dur": 3.51,
+   "kind": "raw",
+   "src": "broll/bk_debajo.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c188",
+   "start": 654.57,
+   "dur": 3.51,
+   "kind": "raw",
+   "src": "broll/bk_trilithon.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "stat189",
+   "start": 658.08,
+   "dur": 5.2,
+   "kind": "stat",
+   "value": 1600,
+   "suffix": " toneladas",
+   "label": "el bloque labrado más pesado del mundo antiguo",
+   "eyebrow": "Imposible de mover hoy",
+   "accent": "accent",
+   "hue": "amber"
+  },
+  {
+   "id": "c190",
+   "start": 663.28,
+   "dur": 3.57,
+   "kind": "raw",
+   "src": "broll/bk_intro.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c191",
+   "start": 666.85,
+   "dur": 3.57,
+   "kind": "raw",
+   "src": "broll/bk_columnas.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c192",
+   "start": 670.42,
+   "dur": 3.57,
+   "kind": "raw",
+   "src": "broll/bk_debajo.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c193",
+   "start": 673.98,
+   "dur": 3.57,
+   "kind": "raw",
+   "src": "broll/bk_trilithon.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c194",
+   "start": 677.55,
+   "dur": 3.57,
+   "kind": "raw",
+   "src": "broll/bk_avion.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c195",
+   "start": 681.12,
+   "dur": 3.57,
+   "kind": "raw",
+   "src": "broll/bk_embarazada.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c196",
+   "start": 684.69,
+   "dur": 3.57,
+   "kind": "raw",
+   "src": "broll/bk_mas_grande.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c197",
+   "start": 688.26,
+   "dur": 3.57,
+   "kind": "raw",
+   "src": "broll/bk_grua_hoy.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c198",
+   "start": 691.82,
+   "dur": 3.57,
+   "kind": "raw",
+   "src": "broll/bk_pregunta.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c199",
+   "start": 695.39,
+   "dur": 3.57,
+   "kind": "raw",
+   "src": "broll/bk_silencio.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c200",
+   "start": 698.96,
+   "dur": 3.57,
+   "kind": "raw",
+   "src": "broll/bk_intro.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c201",
+   "start": 702.53,
+   "dur": 3.57,
+   "kind": "raw",
+   "src": "broll/bk_columnas.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c202",
+   "start": 706.09,
+   "dur": 3.57,
+   "kind": "raw",
+   "src": "broll/bk_debajo.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c203",
+   "start": 709.66,
+   "dur": 3.57,
+   "kind": "raw",
+   "src": "broll/bk_trilithon.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "rule204",
+   "start": 713.23,
+   "dur": 4.2,
+   "kind": "rule",
+   "number": "04",
+   "title": "Cuevas de Longyou",
+   "label": "Zhejiang, China",
+   "hue": "blue"
+  },
+  {
+   "id": "o205",
+   "start": 717.43,
+   "dur": 6,
+   "overlay": true,
+   "kind": "doclabel",
+   "label": "Cuevas de Longyou",
+   "sub": "Zhejiang, China",
+   "accent": "blue"
+  },
+  {
+   "id": "o206",
+   "start": 717.43,
+   "dur": 162.83,
+   "overlay": true,
+   "kind": "countrail",
+   "total": 7,
+   "rank": 4,
+   "name": "Cuevas de Longyou",
+   "accent": "blue"
+  },
+  {
+   "id": "c207",
+   "start": 717.43,
+   "dur": 3.62,
+   "kind": "raw",
+   "src": "broll/lg_intro.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c208",
+   "start": 721.05,
+   "dur": 3.62,
+   "kind": "raw",
+   "src": "broll/lg_campesinos.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c209",
+   "start": 724.68,
+   "dur": 3.62,
+   "kind": "raw",
+   "src": "broll/lg_bombearon.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c210",
+   "start": 728.3,
+   "dur": 3.62,
+   "kind": "raw",
+   "src": "broll/lg_caverna.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c211",
+   "start": 731.92,
+   "dur": 3.62,
+   "kind": "raw",
+   "src": "broll/lg_veinte.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c212",
+   "start": 735.54,
+   "dur": 3.62,
+   "kind": "raw",
+   "src": "broll/lg_colosal.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c213",
+   "start": 739.17,
+   "dur": 3.62,
+   "kind": "raw",
+   "src": "broll/lg_donde_roca.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c214",
+   "start": 742.79,
+   "dur": 3.62,
+   "kind": "raw",
+   "src": "broll/lg_marcas.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c215",
+   "start": 746.41,
+   "dur": 3.62,
+   "kind": "raw",
+   "src": "broll/lg_sin_registro.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c216",
+   "start": 750.04,
+   "dur": 3.62,
+   "kind": "raw",
+   "src": "broll/lg_olvidaran.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c217",
+   "start": 753.66,
+   "dur": 3.62,
+   "kind": "raw",
+   "src": "broll/lg_intro.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c218",
+   "start": 757.28,
+   "dur": 3.62,
+   "kind": "raw",
+   "src": "broll/lg_campesinos.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c219",
+   "start": 760.9,
+   "dur": 3.62,
+   "kind": "raw",
+   "src": "broll/lg_bombearon.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c220",
+   "start": 764.53,
+   "dur": 3.62,
+   "kind": "raw",
+   "src": "broll/lg_caverna.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c221",
+   "start": 768.15,
+   "dur": 3.62,
+   "kind": "raw",
+   "src": "broll/lg_veinte.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "scalecolossus222",
+   "start": 771.77,
+   "dur": 6,
+   "kind": "scalecolossus",
+   "image": "real/lg_cave.jpg",
+   "meters": 30,
+   "unit": "m",
+   "eyebrow": "Cuevas de Longyou",
+   "label": "de altura · talladas a mano",
+   "accent": "blue"
+  },
+  {
+   "id": "o223",
+   "start": 771.97,
+   "dur": 5,
+   "overlay": true,
+   "kind": "datestamp",
+   "value": "Desconocida",
+   "label": "Cuevas de Longyou",
+   "accent": "blue"
+  },
+  {
+   "id": "c224",
+   "start": 777.77,
+   "dur": 3.72,
+   "kind": "raw",
+   "src": "broll/lg_intro.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c225",
+   "start": 781.49,
+   "dur": 3.72,
+   "kind": "raw",
+   "src": "broll/lg_campesinos.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c226",
+   "start": 785.21,
+   "dur": 3.72,
+   "kind": "raw",
+   "src": "broll/lg_bombearon.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c227",
+   "start": 788.93,
+   "dur": 3.72,
+   "kind": "raw",
+   "src": "broll/lg_caverna.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c228",
+   "start": 792.65,
+   "dur": 3.72,
+   "kind": "raw",
+   "src": "broll/lg_veinte.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c229",
+   "start": 796.37,
+   "dur": 3.72,
+   "kind": "raw",
+   "src": "broll/lg_colosal.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c230",
+   "start": 800.09,
+   "dur": 3.72,
+   "kind": "raw",
+   "src": "broll/lg_donde_roca.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c231",
+   "start": 803.8,
+   "dur": 3.72,
+   "kind": "raw",
+   "src": "broll/lg_marcas.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c232",
+   "start": 807.52,
+   "dur": 3.72,
+   "kind": "raw",
+   "src": "broll/lg_sin_registro.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c233",
+   "start": 811.24,
+   "dur": 3.72,
+   "kind": "raw",
+   "src": "broll/lg_olvidaran.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c234",
+   "start": 814.96,
+   "dur": 3.72,
+   "kind": "raw",
+   "src": "broll/lg_intro.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c235",
+   "start": 818.68,
+   "dur": 3.72,
+   "kind": "raw",
+   "src": "broll/lg_campesinos.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c236",
+   "start": 822.4,
+   "dur": 3.72,
+   "kind": "raw",
+   "src": "broll/lg_bombearon.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "stat237",
+   "start": 826.12,
+   "dur": 5.2,
+   "kind": "stat",
+   "value": 0,
+   "prefix": "0",
+   "suffix": " registros",
+   "label": "nadie escribió quién las cavó",
+   "eyebrow": "Borradas de la historia",
+   "accent": "danger",
+   "hue": "blue"
+  },
+  {
+   "id": "c238",
+   "start": 831.32,
+   "dur": 3.51,
+   "kind": "raw",
+   "src": "broll/lg_intro.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c239",
+   "start": 834.83,
+   "dur": 3.51,
+   "kind": "raw",
+   "src": "broll/lg_campesinos.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c240",
+   "start": 838.34,
+   "dur": 3.51,
+   "kind": "raw",
+   "src": "broll/lg_bombearon.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c241",
+   "start": 841.85,
+   "dur": 3.51,
+   "kind": "raw",
+   "src": "broll/lg_caverna.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c242",
+   "start": 845.36,
+   "dur": 3.51,
+   "kind": "raw",
+   "src": "broll/lg_veinte.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c243",
+   "start": 848.87,
+   "dur": 3.51,
+   "kind": "raw",
+   "src": "broll/lg_colosal.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c244",
+   "start": 852.38,
+   "dur": 3.51,
+   "kind": "raw",
+   "src": "broll/lg_donde_roca.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c245",
+   "start": 855.89,
+   "dur": 3.51,
+   "kind": "raw",
+   "src": "broll/lg_marcas.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c246",
+   "start": 859.4,
+   "dur": 3.51,
+   "kind": "raw",
+   "src": "broll/lg_sin_registro.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c247",
+   "start": 862.91,
+   "dur": 3.51,
+   "kind": "raw",
+   "src": "broll/lg_olvidaran.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c248",
+   "start": 866.42,
+   "dur": 3.51,
+   "kind": "raw",
+   "src": "broll/lg_intro.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c249",
+   "start": 869.93,
+   "dur": 3.51,
+   "kind": "raw",
+   "src": "broll/lg_campesinos.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c250",
+   "start": 873.44,
+   "dur": 3.51,
+   "kind": "raw",
+   "src": "broll/lg_bombearon.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c251",
+   "start": 876.95,
+   "dur": 3.51,
+   "kind": "raw",
+   "src": "broll/lg_caverna.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "rule252",
+   "start": 880.46,
+   "dur": 4.2,
+   "kind": "rule",
+   "number": "03",
+   "title": "Puma Punku",
+   "label": "Tiahuanaco, Bolivia",
+   "hue": "blue"
+  },
+  {
+   "id": "o253",
+   "start": 884.66,
+   "dur": 6,
+   "overlay": true,
+   "kind": "doclabel",
+   "label": "Puma Punku",
+   "sub": "Tiahuanaco, Bolivia",
+   "accent": "blue"
+  },
+  {
+   "id": "o254",
+   "start": 884.66,
+   "dur": 127.6,
+   "overlay": true,
+   "kind": "countrail",
+   "total": 7,
+   "rank": 5,
+   "name": "Puma Punku",
+   "accent": "blue"
+  },
+  {
+   "id": "c255",
+   "start": 884.66,
+   "dur": 3.55,
+   "kind": "raw",
+   "src": "broll/pp_intro.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c256",
+   "start": 888.21,
+   "dur": 3.55,
+   "kind": "raw",
+   "src": "broll/pp_altiplano.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c257",
+   "start": 891.76,
+   "dur": 3.55,
+   "kind": "raw",
+   "src": "broll/pp_maquina.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c258",
+   "start": 895.31,
+   "dur": 3.55,
+   "kind": "raw",
+   "src": "broll/pp_hbloques.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c259",
+   "start": 898.86,
+   "dur": 3.55,
+   "kind": "raw",
+   "src": "broll/pp_ranuras.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c260",
+   "start": 902.41,
+   "dur": 3.55,
+   "kind": "raw",
+   "src": "broll/pp_diorita.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c261",
+   "start": 905.96,
+   "dur": 3.55,
+   "kind": "raw",
+   "src": "broll/pp_sin_metal.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c262",
+   "start": 909.51,
+   "dur": 3.55,
+   "kind": "raw",
+   "src": "broll/pp_industrial.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c263",
+   "start": 913.06,
+   "dur": 3.55,
+   "kind": "raw",
+   "src": "broll/pp_prefab.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c264",
+   "start": 916.61,
+   "dur": 3.55,
+   "kind": "raw",
+   "src": "broll/pp_techo_mundo.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c265",
+   "start": 920.16,
+   "dur": 3.55,
+   "kind": "raw",
+   "src": "broll/pp_intro.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c266",
+   "start": 923.71,
+   "dur": 3.55,
+   "kind": "raw",
+   "src": "broll/pp_altiplano.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "scalecolossus267",
+   "start": 927.26,
+   "dur": 6,
+   "kind": "scalecolossus",
+   "image": "real/pp_hblock.jpg",
+   "meters": 3850,
+   "unit": "m",
+   "eyebrow": "Puma Punku",
+   "label": "de altitud · cortes de máquina",
+   "accent": "blue"
+  },
+  {
+   "id": "o268",
+   "start": 927.46,
+   "dur": 5,
+   "overlay": true,
+   "kind": "datestamp",
+   "value": "≈ 500 d.C.",
+   "label": "Puma Punku",
+   "accent": "blue"
+  },
+  {
+   "id": "c269",
+   "start": 933.26,
+   "dur": 3.66,
+   "kind": "raw",
+   "src": "broll/pp_intro.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c270",
+   "start": 936.92,
+   "dur": 3.66,
+   "kind": "raw",
+   "src": "broll/pp_altiplano.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c271",
+   "start": 940.58,
+   "dur": 3.66,
+   "kind": "raw",
+   "src": "broll/pp_maquina.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c272",
+   "start": 944.24,
+   "dur": 3.66,
+   "kind": "raw",
+   "src": "broll/pp_hbloques.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c273",
+   "start": 947.9,
+   "dur": 3.66,
+   "kind": "raw",
+   "src": "broll/pp_ranuras.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c274",
+   "start": 951.56,
+   "dur": 3.66,
+   "kind": "raw",
+   "src": "broll/pp_diorita.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c275",
+   "start": 955.22,
+   "dur": 3.66,
+   "kind": "raw",
+   "src": "broll/pp_sin_metal.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c276",
+   "start": 958.88,
+   "dur": 3.66,
+   "kind": "raw",
+   "src": "broll/pp_industrial.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c277",
+   "start": 962.54,
+   "dur": 3.66,
+   "kind": "raw",
+   "src": "broll/pp_prefab.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c278",
+   "start": 966.2,
+   "dur": 3.66,
+   "kind": "raw",
+   "src": "broll/pp_techo_mundo.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "stat279",
+   "start": 969.86,
+   "dur": 5.2,
+   "kind": "stat",
+   "value": 90,
+   "suffix": "° exactos",
+   "label": "ángulos perfectos en diorita durísima",
+   "eyebrow": "Sin metal ni rueda",
+   "accent": "danger",
+   "hue": "blue"
+  },
+  {
+   "id": "c280",
+   "start": 975.06,
+   "dur": 3.74,
+   "kind": "raw",
+   "src": "broll/pp_intro.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c281",
+   "start": 978.8,
+   "dur": 3.74,
+   "kind": "raw",
+   "src": "broll/pp_altiplano.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c282",
+   "start": 982.54,
+   "dur": 3.74,
+   "kind": "raw",
+   "src": "broll/pp_maquina.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c283",
+   "start": 986.28,
+   "dur": 3.74,
+   "kind": "raw",
+   "src": "broll/pp_hbloques.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c284",
+   "start": 990.02,
+   "dur": 3.74,
+   "kind": "raw",
+   "src": "broll/pp_ranuras.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c285",
+   "start": 993.76,
+   "dur": 3.74,
+   "kind": "raw",
+   "src": "broll/pp_diorita.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c286",
+   "start": 997.5,
+   "dur": 3.74,
+   "kind": "raw",
+   "src": "broll/pp_sin_metal.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c287",
+   "start": 1001.24,
+   "dur": 3.74,
+   "kind": "raw",
+   "src": "broll/pp_industrial.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c288",
+   "start": 1004.98,
+   "dur": 3.74,
+   "kind": "raw",
+   "src": "broll/pp_prefab.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c289",
+   "start": 1008.72,
+   "dur": 3.74,
+   "kind": "raw",
+   "src": "broll/pp_techo_mundo.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "rule290",
+   "start": 1012.46,
+   "dur": 4.2,
+   "kind": "rule",
+   "number": "02",
+   "title": "Gran Pirámide de Guiza",
+   "label": "Guiza, Egipto",
+   "hue": "amber"
+  },
+  {
+   "id": "o291",
+   "start": 1016.66,
+   "dur": 6,
+   "overlay": true,
+   "kind": "doclabel",
+   "label": "Gran Pirámide de Guiza",
+   "sub": "Guiza, Egipto",
+   "accent": "amber"
+  },
+  {
+   "id": "o292",
+   "start": 1016.66,
+   "dur": 177.05,
+   "overlay": true,
+   "kind": "countrail",
+   "total": 7,
+   "rank": 6,
+   "name": "Gran Pirámide de Guiza",
+   "accent": "amber"
+  },
+  {
+   "id": "c293",
+   "start": 1016.66,
+   "dur": 3.69,
+   "kind": "raw",
+   "src": "broll/gp_intro.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c294",
+   "start": 1020.35,
+   "dur": 3.69,
+   "kind": "raw",
+   "src": "broll/gp_conocemos.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c295",
+   "start": 1024.05,
+   "dur": 3.69,
+   "kind": "raw",
+   "src": "broll/gp_dos_millones.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c296",
+   "start": 1027.74,
+   "dur": 3.69,
+   "kind": "raw",
+   "src": "broll/gp_cuenta.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c297",
+   "start": 1031.43,
+   "dur": 3.69,
+   "kind": "raw",
+   "src": "broll/gp_precision.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c298",
+   "start": 1035.12,
+   "dur": 3.69,
+   "kind": "raw",
+   "src": "broll/gp_cardinal.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c299",
+   "start": 1038.82,
+   "dur": 3.69,
+   "kind": "raw",
+   "src": "broll/gp_espejo.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c300",
+   "start": 1042.51,
+   "dur": 3.69,
+   "kind": "raw",
+   "src": "broll/gp_cobre.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c301",
+   "start": 1046.2,
+   "dur": 3.69,
+   "kind": "raw",
+   "src": "broll/gp_estrellas.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c302",
+   "start": 1049.89,
+   "dur": 3.69,
+   "kind": "raw",
+   "src": "broll/gp_como.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c303",
+   "start": 1053.59,
+   "dur": 3.69,
+   "kind": "raw",
+   "src": "broll/gp_intro.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c304",
+   "start": 1057.28,
+   "dur": 3.69,
+   "kind": "raw",
+   "src": "broll/gp_conocemos.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c305",
+   "start": 1060.97,
+   "dur": 3.69,
+   "kind": "raw",
+   "src": "broll/gp_dos_millones.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c306",
+   "start": 1064.67,
+   "dur": 3.69,
+   "kind": "raw",
+   "src": "broll/gp_cuenta.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c307",
+   "start": 1068.36,
+   "dur": 3.69,
+   "kind": "raw",
+   "src": "broll/gp_precision.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c308",
+   "start": 1072.05,
+   "dur": 3.69,
+   "kind": "raw",
+   "src": "broll/gp_cardinal.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "scalecolossus309",
+   "start": 1075.74,
+   "dur": 6,
+   "kind": "scalecolossus",
+   "image": "real/gp_pyramid.jpg",
+   "meters": 2300000,
+   "unit": "",
+   "eyebrow": "Gran Pirámide de Guiza",
+   "label": "bloques de piedra",
+   "accent": "amber"
+  },
+  {
+   "id": "o310",
+   "start": 1075.94,
+   "dur": 5,
+   "overlay": true,
+   "kind": "datestamp",
+   "value": "≈ 2.560 a.C.",
+   "label": "Gran Pirámide de Guiza",
+   "accent": "amber"
+  },
+  {
+   "id": "c311",
+   "start": 1081.74,
+   "dur": 3.54,
+   "kind": "raw",
+   "src": "broll/gp_intro.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c312",
+   "start": 1085.28,
+   "dur": 3.54,
+   "kind": "raw",
+   "src": "broll/gp_conocemos.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c313",
+   "start": 1088.82,
+   "dur": 3.54,
+   "kind": "raw",
+   "src": "broll/gp_dos_millones.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c314",
+   "start": 1092.36,
+   "dur": 3.54,
+   "kind": "raw",
+   "src": "broll/gp_cuenta.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c315",
+   "start": 1095.9,
+   "dur": 3.54,
+   "kind": "raw",
+   "src": "broll/gp_precision.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c316",
+   "start": 1099.44,
+   "dur": 3.54,
+   "kind": "raw",
+   "src": "broll/gp_cardinal.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c317",
+   "start": 1102.98,
+   "dur": 3.54,
+   "kind": "raw",
+   "src": "broll/gp_espejo.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c318",
+   "start": 1106.52,
+   "dur": 3.54,
+   "kind": "raw",
+   "src": "broll/gp_cobre.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c319",
+   "start": 1110.05,
+   "dur": 3.54,
+   "kind": "raw",
+   "src": "broll/gp_estrellas.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c320",
+   "start": 1113.59,
+   "dur": 3.54,
+   "kind": "raw",
+   "src": "broll/gp_como.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c321",
+   "start": 1117.13,
+   "dur": 3.54,
+   "kind": "raw",
+   "src": "broll/gp_intro.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c322",
+   "start": 1120.67,
+   "dur": 3.54,
+   "kind": "raw",
+   "src": "broll/gp_conocemos.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c323",
+   "start": 1124.21,
+   "dur": 3.54,
+   "kind": "raw",
+   "src": "broll/gp_dos_millones.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c324",
+   "start": 1127.75,
+   "dur": 3.54,
+   "kind": "raw",
+   "src": "broll/gp_cuenta.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c325",
+   "start": 1131.29,
+   "dur": 3.54,
+   "kind": "raw",
+   "src": "broll/gp_precision.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "stat326",
+   "start": 1134.83,
+   "dur": 5.2,
+   "kind": "stat",
+   "value": 6000000,
+   "suffix": " toneladas",
+   "label": "alineada con las estrellas, casi sin error",
+   "eyebrow": "En unos 20 años",
+   "accent": "danger",
+   "hue": "amber"
+  },
+  {
+   "id": "c327",
+   "start": 1140.03,
+   "dur": 3.59,
+   "kind": "raw",
+   "src": "broll/gp_intro.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c328",
+   "start": 1143.62,
+   "dur": 3.59,
+   "kind": "raw",
+   "src": "broll/gp_conocemos.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c329",
+   "start": 1147.21,
+   "dur": 3.59,
+   "kind": "raw",
+   "src": "broll/gp_dos_millones.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c330",
+   "start": 1150.8,
+   "dur": 3.59,
+   "kind": "raw",
+   "src": "broll/gp_cuenta.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c331",
+   "start": 1154.4,
+   "dur": 3.59,
+   "kind": "raw",
+   "src": "broll/gp_precision.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c332",
+   "start": 1157.99,
+   "dur": 3.59,
+   "kind": "raw",
+   "src": "broll/gp_cardinal.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c333",
+   "start": 1161.58,
+   "dur": 3.59,
+   "kind": "raw",
+   "src": "broll/gp_espejo.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c334",
+   "start": 1165.17,
+   "dur": 3.59,
+   "kind": "raw",
+   "src": "broll/gp_cobre.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c335",
+   "start": 1168.76,
+   "dur": 3.59,
+   "kind": "raw",
+   "src": "broll/gp_estrellas.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c336",
+   "start": 1172.36,
+   "dur": 3.59,
+   "kind": "raw",
+   "src": "broll/gp_como.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c337",
+   "start": 1175.95,
+   "dur": 3.59,
+   "kind": "raw",
+   "src": "broll/gp_intro.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c338",
+   "start": 1179.54,
+   "dur": 3.59,
+   "kind": "raw",
+   "src": "broll/gp_conocemos.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c339",
+   "start": 1183.13,
+   "dur": 3.59,
+   "kind": "raw",
+   "src": "broll/gp_dos_millones.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c340",
+   "start": 1186.73,
+   "dur": 3.59,
+   "kind": "raw",
+   "src": "broll/gp_cuenta.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c341",
+   "start": 1190.32,
+   "dur": 3.59,
+   "kind": "raw",
+   "src": "broll/gp_precision.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "rule342",
+   "start": 1193.91,
+   "dur": 4.2,
+   "kind": "rule",
+   "number": "01",
+   "title": "El Serapeum de Saqqara",
+   "label": "Saqqara, Egipto",
+   "hue": "red"
+  },
+  {
+   "id": "o343",
+   "start": 1198.11,
+   "dur": 6,
+   "overlay": true,
+   "kind": "doclabel",
+   "label": "El Serapeum de Saqqara",
+   "sub": "Saqqara, Egipto",
+   "accent": "red"
+  },
+  {
+   "id": "o344",
+   "start": 1198.11,
+   "dur": 189.42,
+   "overlay": true,
+   "kind": "countrail",
+   "total": 7,
+   "rank": 7,
+   "name": "El Serapeum de Saqqara",
+   "accent": "red"
+  },
+  {
+   "id": "c345",
+   "start": 1198.11,
+   "dur": 3.51,
+   "kind": "raw",
+   "src": "broll/se_intro.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c346",
+   "start": 1201.62,
+   "dur": 3.51,
+   "kind": "raw",
+   "src": "broll/se_tunel.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c347",
+   "start": 1205.13,
+   "dur": 3.51,
+   "kind": "raw",
+   "src": "broll/se_caja.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c348",
+   "start": 1208.64,
+   "dur": 3.51,
+   "kind": "raw",
+   "src": "broll/se_granito.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c349",
+   "start": 1212.16,
+   "dur": 3.51,
+   "kind": "raw",
+   "src": "broll/se_toros.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c350",
+   "start": 1215.67,
+   "dur": 3.51,
+   "kind": "raw",
+   "src": "broll/se_precision.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c351",
+   "start": 1219.18,
+   "dur": 3.51,
+   "kind": "raw",
+   "src": "broll/se_miden.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c352",
+   "start": 1222.69,
+   "dur": 3.51,
+   "kind": "raw",
+   "src": "broll/se_angulos.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c353",
+   "start": 1226.2,
+   "dur": 3.51,
+   "kind": "raw",
+   "src": "broll/se_cnc.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c354",
+   "start": 1229.71,
+   "dur": 3.51,
+   "kind": "raw",
+   "src": "broll/se_mover.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c355",
+   "start": 1233.22,
+   "dur": 3.51,
+   "kind": "raw",
+   "src": "broll/se_silencio.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c356",
+   "start": 1236.74,
+   "dur": 3.51,
+   "kind": "raw",
+   "src": "broll/se_intro.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c357",
+   "start": 1240.25,
+   "dur": 3.51,
+   "kind": "raw",
+   "src": "broll/se_tunel.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c358",
+   "start": 1243.76,
+   "dur": 3.51,
+   "kind": "raw",
+   "src": "broll/se_caja.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c359",
+   "start": 1247.27,
+   "dur": 3.51,
+   "kind": "raw",
+   "src": "broll/se_granito.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c360",
+   "start": 1250.78,
+   "dur": 3.51,
+   "kind": "raw",
+   "src": "broll/se_toros.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c361",
+   "start": 1254.29,
+   "dur": 3.51,
+   "kind": "raw",
+   "src": "broll/se_precision.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c362",
+   "start": 1257.81,
+   "dur": 3.51,
+   "kind": "raw",
+   "src": "broll/se_miden.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "scalecolossus363",
+   "start": 1261.32,
+   "dur": 6,
+   "kind": "scalecolossus",
+   "image": "real/se_box.jpg",
+   "meters": 100,
+   "unit": "t",
+   "eyebrow": "El Serapeum de Saqqara",
+   "label": "por caja de granito",
+   "accent": "red"
+  },
+  {
+   "id": "o364",
+   "start": 1261.52,
+   "dur": 5,
+   "overlay": true,
+   "kind": "datestamp",
+   "value": "≈ 1.300 a.C.",
+   "label": "El Serapeum de Saqqara",
+   "accent": "red"
+  },
+  {
+   "id": "c365",
+   "start": 1267.32,
+   "dur": 3.58,
+   "kind": "raw",
+   "src": "broll/se_intro.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c366",
+   "start": 1270.89,
+   "dur": 3.58,
+   "kind": "raw",
+   "src": "broll/se_tunel.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c367",
+   "start": 1274.47,
+   "dur": 3.58,
+   "kind": "raw",
+   "src": "broll/se_caja.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c368",
+   "start": 1278.04,
+   "dur": 3.58,
+   "kind": "raw",
+   "src": "broll/se_granito.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c369",
+   "start": 1281.62,
+   "dur": 3.58,
+   "kind": "raw",
+   "src": "broll/se_toros.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c370",
+   "start": 1285.19,
+   "dur": 3.58,
+   "kind": "raw",
+   "src": "broll/se_precision.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c371",
+   "start": 1288.77,
+   "dur": 3.58,
+   "kind": "raw",
+   "src": "broll/se_miden.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c372",
+   "start": 1292.34,
+   "dur": 3.58,
+   "kind": "raw",
+   "src": "broll/se_angulos.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c373",
+   "start": 1295.92,
+   "dur": 3.58,
+   "kind": "raw",
+   "src": "broll/se_cnc.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c374",
+   "start": 1299.5,
+   "dur": 3.58,
+   "kind": "raw",
+   "src": "broll/se_mover.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c375",
+   "start": 1303.07,
+   "dur": 3.58,
+   "kind": "raw",
+   "src": "broll/se_silencio.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c376",
+   "start": 1306.65,
+   "dur": 3.58,
+   "kind": "raw",
+   "src": "broll/se_intro.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c377",
+   "start": 1310.22,
+   "dur": 3.58,
+   "kind": "raw",
+   "src": "broll/se_tunel.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c378",
+   "start": 1313.8,
+   "dur": 3.58,
+   "kind": "raw",
+   "src": "broll/se_caja.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c379",
+   "start": 1317.37,
+   "dur": 3.58,
+   "kind": "raw",
+   "src": "broll/se_granito.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c380",
+   "start": 1320.95,
+   "dur": 3.58,
+   "kind": "raw",
+   "src": "broll/se_toros.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "stat381",
+   "start": 1324.52,
+   "dur": 5.2,
+   "kind": "stat",
+   "value": 0,
+   "prefix": "±",
+   "suffix": " mm",
+   "label": "planitud de milésimas, a mano",
+   "eyebrow": "Precisión imposible",
+   "accent": "danger",
+   "hue": "red"
+  },
+  {
+   "id": "c382",
+   "start": 1329.72,
+   "dur": 3.63,
+   "kind": "raw",
+   "src": "broll/se_intro.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c383",
+   "start": 1333.35,
+   "dur": 3.63,
+   "kind": "raw",
+   "src": "broll/se_tunel.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c384",
+   "start": 1336.97,
+   "dur": 3.63,
+   "kind": "raw",
+   "src": "broll/se_caja.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c385",
+   "start": 1340.6,
+   "dur": 3.63,
+   "kind": "raw",
+   "src": "broll/se_granito.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c386",
+   "start": 1344.22,
+   "dur": 3.63,
+   "kind": "raw",
+   "src": "broll/se_toros.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c387",
+   "start": 1347.85,
+   "dur": 3.63,
+   "kind": "raw",
+   "src": "broll/se_precision.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c388",
+   "start": 1351.48,
+   "dur": 3.63,
+   "kind": "raw",
+   "src": "broll/se_miden.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c389",
+   "start": 1355.1,
+   "dur": 3.63,
+   "kind": "raw",
+   "src": "broll/se_angulos.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c390",
+   "start": 1358.73,
+   "dur": 3.63,
+   "kind": "raw",
+   "src": "broll/se_cnc.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c391",
+   "start": 1362.35,
+   "dur": 3.63,
+   "kind": "raw",
+   "src": "broll/se_mover.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c392",
+   "start": 1365.98,
+   "dur": 3.63,
+   "kind": "raw",
+   "src": "broll/se_silencio.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c393",
+   "start": 1369.6,
+   "dur": 3.63,
+   "kind": "raw",
+   "src": "broll/se_intro.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c394",
+   "start": 1373.23,
+   "dur": 3.63,
+   "kind": "raw",
+   "src": "broll/se_tunel.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c395",
+   "start": 1376.85,
+   "dur": 3.63,
+   "kind": "raw",
+   "src": "broll/se_caja.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c396",
+   "start": 1380.48,
+   "dur": 3.63,
+   "kind": "raw",
+   "src": "broll/se_granito.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c397",
+   "start": 1384.1,
+   "dur": 3.63,
+   "kind": "raw",
+   "src": "broll/se_toros.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c398",
+   "start": 1387.73,
+   "dur": 3.53,
+   "kind": "raw",
+   "src": "broll/cl_hilo.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c399",
+   "start": 1391.26,
+   "dur": 3.53,
+   "kind": "raw",
+   "src": "broll/cl_supieron.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c400",
+   "start": 1394.79,
+   "dur": 3.53,
+   "kind": "raw",
+   "src": "broll/cl_perdio.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c401",
+   "start": 1398.32,
+   "dur": 3.53,
+   "kind": "raw",
+   "src": "broll/cl_patron.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c402",
+   "start": 1401.85,
+   "dur": 3.53,
+   "kind": "raw",
+   "src": "broll/cl_medio.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c403",
+   "start": 1405.39,
+   "dur": 3.53,
+   "kind": "raw",
+   "src": "broll/cl_cronicas.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c404",
+   "start": 1408.92,
+   "dur": 3.53,
+   "kind": "raw",
+   "src": "broll/cl_teaser.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c405",
+   "start": 1412.45,
+   "dur": 3.53,
+   "kind": "raw",
+   "src": "broll/cl_final.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c406",
+   "start": 1415.98,
+   "dur": 3.53,
+   "kind": "raw",
+   "src": "broll/cl_hilo.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c407",
+   "start": 1419.51,
+   "dur": 3.53,
+   "kind": "raw",
+   "src": "broll/cl_supieron.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c408",
+   "start": 1423.04,
+   "dur": 3.53,
+   "kind": "raw",
+   "src": "broll/cl_perdio.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c409",
+   "start": 1426.57,
+   "dur": 3.53,
+   "kind": "raw",
+   "src": "broll/cl_patron.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c410",
+   "start": 1430.1,
+   "dur": 3.53,
+   "kind": "raw",
+   "src": "broll/cl_medio.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c411",
+   "start": 1433.63,
+   "dur": 3.53,
+   "kind": "raw",
+   "src": "broll/cl_cronicas.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c412",
+   "start": 1437.17,
+   "dur": 3.53,
+   "kind": "raw",
+   "src": "broll/cl_teaser.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c413",
+   "start": 1440.7,
+   "dur": 3.53,
+   "kind": "raw",
+   "src": "broll/cl_final.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c414",
+   "start": 1444.23,
+   "dur": 3.53,
+   "kind": "raw",
+   "src": "broll/cl_hilo.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c415",
+   "start": 1447.76,
+   "dur": 3.53,
+   "kind": "raw",
+   "src": "broll/cl_supieron.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "timeline416",
+   "start": 1451.29,
+   "dur": 8.5,
+   "kind": "timeline",
+   "eyebrow": "Repartidas por el planeta y los milenios",
+   "title": "Lo imposible, una y otra vez",
+   "events": [
+    {
+     "year": "9600 a.C.",
+     "label": "Göbekli Tepe"
+    },
+    {
+     "year": "2560 a.C.",
+     "label": "Gran Pirámide"
+    },
+    {
+     "year": "1300 a.C.",
+     "label": "Serapeum"
+    },
+    {
+     "year": "500 d.C.",
+     "label": "Puma Punku"
+    },
+    {
+     "year": "s. XV",
+     "label": "Sacsayhuamán"
+    }
+   ]
+  },
+  {
+   "id": "c417",
+   "start": 1459.79,
+   "dur": 3.55,
+   "kind": "raw",
+   "src": "broll/cl_hilo.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c418",
+   "start": 1463.34,
+   "dur": 3.55,
+   "kind": "raw",
+   "src": "broll/cl_supieron.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c419",
+   "start": 1466.89,
+   "dur": 3.55,
+   "kind": "raw",
+   "src": "broll/cl_perdio.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c420",
+   "start": 1470.44,
+   "dur": 3.55,
+   "kind": "raw",
+   "src": "broll/cl_patron.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c421",
+   "start": 1473.99,
+   "dur": 3.55,
+   "kind": "raw",
+   "src": "broll/cl_medio.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c422",
+   "start": 1477.53,
+   "dur": 3.55,
+   "kind": "raw",
+   "src": "broll/cl_cronicas.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c423",
+   "start": 1481.08,
+   "dur": 3.55,
+   "kind": "raw",
+   "src": "broll/cl_teaser.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c424",
+   "start": 1484.63,
+   "dur": 3.55,
+   "kind": "raw",
+   "src": "broll/cl_final.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c425",
+   "start": 1488.18,
+   "dur": 3.55,
+   "kind": "raw",
+   "src": "broll/cl_hilo.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "headline426",
+   "start": 1491.73,
+   "dur": 6,
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "¿Y"
+    },
+    {
+     "t": "si"
+    },
+    {
+     "t": "supieron"
+    },
+    {
+     "t": "más"
+    },
+    {
+     "t": "de"
+    },
+    {
+     "t": "lo"
+    },
+    {
+     "t": "que"
+    },
+    {
+     "t": "creemos?",
+     "hl": true
+    }
+   ],
+   "bg": "image",
+   "image": "real/constr_dark.jpg",
+   "hue": "red",
+   "size": 88
+  },
+  {
+   "id": "c427",
+   "start": 1497.73,
+   "dur": 3.85,
+   "kind": "raw",
+   "src": "broll/cl_hilo.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c428",
+   "start": 1501.58,
+   "dur": 3.85,
+   "kind": "raw",
+   "src": "broll/cl_supieron.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c429",
+   "start": 1505.43,
+   "dur": 3.85,
+   "kind": "raw",
+   "src": "broll/cl_perdio.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c430",
+   "start": 1509.28,
+   "dur": 3.85,
+   "kind": "raw",
+   "src": "broll/cl_patron.mp4",
+   "hue": "amber"
+  }
+ ]
+}
