@@ -22,7 +22,7 @@ export const TermCard: React.FC<{
   return (
     <AbsoluteFill style={{ background: "#06080c", opacity: op }}>
       <AbsoluteFill style={{ transform: "scale(1.05)" }}>
-        <Media src={staticFile(bg)} style={{ width: "100%", height: "100%", objectFit: "cover", filter: `blur(${blur}px) brightness(${bright})` }} />
+        <Media src={bg} style={{ width: "100%", height: "100%", objectFit: "cover", filter: `blur(${blur}px) brightness(${bright})` }} />
       </AbsoluteFill>
       <AbsoluteFill style={{ background: "rgba(4,7,11,0.5)" }} />
       <AbsoluteFill style={{ alignItems: "center", justifyContent: "center" }}>
