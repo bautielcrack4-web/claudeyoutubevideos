@@ -33,6 +33,10 @@ const COARSE = +(process.env.MATCH_COARSE || 44);
 const FINE = +(process.env.MATCH_FINE || 0.5);
 const HEAD = +(process.env.MATCH_HEAD || 6);
 const TAIL = 0.06;
+// Texto QUEMADO grande (carteles/títulos/subtítulos) se penaliza FUERTE en TODOS los nichos
+// (ver scoreFrame). ★ MODO FAUNA (NO_WATERMARK=1) además rechaza DURO logos/marcas de agua,
+// para que el documental se sienta UNA sola fuente (storytelling sin cortes).
+const WM = process.env.NO_WATERMARK === "1";
 
 const TMP = "_match_" + IDX; // temp PROPIO por shard → seguro para correr en paralelo (matchlocal.mjs)
 fs.mkdirSync(TMP, { recursive: true });
@@ -62,6 +66,8 @@ const STOP = new Set(("a an the of to in on at by for with and or from into is a
 const kw = (s) => [...new Set((s || "").toLowerCase().replace(/[^a-z0-9\s]/g, " ").split(/\s+/)
   .filter((w) => w.length > 2 && !STOP.has(w)))];
 const BAD = /(reaction|react|podcast|full episode|interview|tier list|gameplay|let'?s play|trailer|unboxing|vlog|prank)/i;
+// canales muy marcados: su footage casi siempre trae logo/bug → en fauna los penalizamos
+const BRANDED = /(national geographic|nat ?geo|bbc|discovery|animal planet|pbs|smithsonian|earth ?touch)/i;
 
 const searchRanked = (queries, concept, limit = CANDS) => {
   const want = new Set([...kw(concept), ...queries.flatMap(kw)]);
@@ -80,7 +86,7 @@ const searchRanked = (queries, concept, limit = CANDS) => {
       if (seen.has(id)) { const e = seen.get(id); e.rank = Math.min(e.rank, ri); return; }
       const t = title.toLowerCase();
       const lex = [...want].reduce((n, w) => n + (t.includes(w) ? 1 : 0), 0);
-      const pen = BAD.test(t) ? 3 : 0;
+      const pen = (BAD.test(t) ? 3 : 0) + (WM && BRANDED.test(t) ? 2 : 0);
       seen.set(id, { url: `https://youtu.be/${id}`, id, title, dur: +durS || 0, rank: ri, lex: lex - pen });
     });
   }
@@ -124,18 +130,33 @@ const DISTRACTORS = [
   "a person talking to the camera, a talking head",
   "a blurry or unrelated indoor scene",
 ];
+// dos preocupaciones SEPARADAS (misma llamada CLIP → sin recalibrar):
+//   TEXT = texto QUEMADO grande (cartel/título/subtítulos) → FEO EN TODOS LOS NICHOS.
+//   MARK = logo/marca de agua de canal → solo molesta en FAUNA (rompe el storytelling);
+//          en misterio/otros las marcas se toleran (directiva del usuario).
 const TEXT_LABELS = [
   "a title card or large bold text overlay across the screen",
   "big subtitles or captions text on screen",
-  "a channel logo, watermark or banner",
 ];
+const MARK_LABELS = [
+  "a channel logo, watermark or banner",
+  "a semi-transparent tv channel logo bug in the corner",
+];
+// curva de penalización: score×1 si la confianza ≤LO, ×FLOOR si ≥HI, lineal en medio.
+const curve = (x, LO, HI, FLOOR) => (x <= LO ? 1 : x >= HI ? FLOOR : 1 - ((x - LO) / (HI - LO)) * (1 - FLOOR));
 const scoreFrame = async (file, concept) => {
-  const out = await clf(file, [concept, ...DISTRACTORS, ...TEXT_LABELS]);
+  const out = await clf(file, [concept, ...DISTRACTORS, ...TEXT_LABELS, ...MARK_LABELS]);
   const get = (l) => out.find((o) => o.label === l)?.score || 0;
   const c = get(concept);
   const textMax = Math.max(...TEXT_LABELS.map(get));
-  const penalty = textMax <= 0.10 ? 1 : textMax >= 0.30 ? 0.10 : 1 - ((textMax - 0.10) / 0.20) * 0.90;
-  return c * penalty;
+  const markMax = Math.max(...MARK_LABELS.map(get));
+  // TEXTO grande: castigo FUERTE en todos los nichos (queja del usuario: "clips con mucho texto").
+  // Umbrales BAJOS a propósito: CLIP rara vez supera ~0.25 en texto (el frame tiene también escena),
+  // así que pegamos desde confianza moderada → el clip texty cae y lo gana uno limpio (o stockfallback).
+  const tpen = curve(textMax, ...(WM ? [0.05, 0.15, 0.02] : [0.06, 0.18, 0.05]));
+  // MARCA/logo: solo en fauna. En los demás nichos NO penaliza (curva neutra).
+  const mpen = WM ? curve(markMax, 0.05, 0.14, 0.015) : 1;
+  return c * tpen * mpen;
 };
 
 const analyze = async (cand, beat, tag) => {
