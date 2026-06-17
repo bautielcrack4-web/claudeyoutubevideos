@@ -16,7 +16,7 @@ const FadeIn: React.FC<{ children: React.ReactNode; on: boolean }> = ({ children
 // SLICE 1 (cold-open + #7 Uluburún, ~7 min) para sign-off de estilo. Voz clonada
 // (public/barcos.wav) como pista continua desde 0; cada beat anclado al ms real.
 // SIN filtros de color (grano 0, viñeta 0). El video completo dura 34:06.
-const SECONDS = 417; // fin del slice (último beat ~416.3s) + colchón
+const SECONDS = 2048; // video completo (7 barcos + cierre); narración ~34:06
 export const TOTAL_FRAMES_BAR = Math.round(SECONDS * 30);
 
 export const MainBarcos: React.FC = () => {
