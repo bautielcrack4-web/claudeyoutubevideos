@@ -36,6 +36,25 @@ const TAIL = 0.06;
 
 const TMP = "_match_" + IDX; // temp PROPIO por shard → seguro para correr en paralelo (matchlocal.mjs)
 fs.mkdirSync(TMP, { recursive: true });
+
+// COOKIES de cuentas QUEMADAS (logueadas en YouTube) para esquivar el throttle. Rota por
+// shard: cada uno usa una cuenta distinta de cookies/*.txt → el límite se reparte entre
+// cuentas y se puede ir a full sin que YouTube marque bot. Sin carpeta cookies/ → como antes.
+const cookieDir = process.env.COOKIE_DIR || "cookies";
+let COOKIE = [];
+try {
+  const cf = fs.readdirSync(cookieDir).filter((f) => f.endsWith(".txt") && f !== "proxies.txt").sort();
+  if (cf.length) { COOKIE = ["--cookies", path.join(cookieDir, cf[IDX % cf.length])]; console.log(`shard ${IDX}: cookies ${cf[IDX % cf.length]}`); }
+} catch { /* sin cookies */ }
+// PROXY DEDICADO al scraping (NO el de tus canales ni tu IP de casa). yt-dlp lo usa solo
+// para esto. Se EMPAREJA con la cuenta: cookies/proxies.txt = 1 proxy por línea, MISMO orden
+// que cookies/1.txt,2.txt… → cada cuenta sale por SU IP fija (sticky, ideal para no marcar).
+// Fallback: YTPROXY (uno solo para todos). Vacío → IP local.
+let PROXY = process.env.YTPROXY ? ["--proxy", process.env.YTPROXY] : [];
+try {
+  const px = fs.readFileSync(path.join(cookieDir, "proxies.txt"), "utf8").split(/\r?\n/).map((s) => s.trim()).filter((s) => s && !s.startsWith("#"));
+  if (px.length) { PROXY = ["--proxy", px[IDX % px.length]]; console.log(`shard ${IDX}: proxy ${px[IDX % px.length].replace(/\/\/[^@]*@/, "//***@")}`); }
+} catch { /* sin proxies.txt → YTPROXY o IP local */ }
 const vidId = (u) => (u.match(/(?:v=|youtu\.be\/|shorts\/|embed\/)([A-Za-z0-9_-]{11})/) || u.match(/([A-Za-z0-9_-]{11})/) || [])[1];
 
 const STOP = new Set(("a an the of to in on at by for with and or from into is are was were be " +
@@ -50,10 +69,10 @@ const searchRanked = (queries, concept, limit = CANDS) => {
   for (const q of queries) {
     if (!q) continue;
     const r = spawnSync(YTDLP, [
-      `ytsearch${POOL}:${q}`, "--skip-download", "--no-warnings",
-      "--match-filter", "duration>40 & duration<3000 & !is_live",
+      `ytsearch${POOL}:${q}`, "--skip-download", "--no-warnings", ...COOKIE, ...PROXY,
+      "--socket-timeout", "30", "--match-filter", "duration>40 & duration<3000 & !is_live",
       "--print", "%(id)s\t%(title)s\t%(duration)s",
-    ], { encoding: "utf8", maxBuffer: 1 << 26 });
+    ], { encoding: "utf8", maxBuffer: 1 << 26, timeout: 60000, killSignal: "SIGKILL" });
     const lines = (r.stdout || "").trim().split(/\r?\n/).filter(Boolean);
     lines.forEach((line, ri) => {
       const [id, title = "", durS = ""] = line.split("\t");
@@ -74,10 +93,10 @@ const dlProxy = (url, a, b, tag) => {
   // FFMPEG="ffmpeg" (en el PATH) → se omite. Sin esto, yt-dlp no puede cortar la sección.
   const ffloc = /[\\/]/.test(FF) ? ["--ffmpeg-location", path.dirname(FF)] : [];
   const dl = spawnSync(YTDLP, [
-    url, "--download-sections", `*${Math.max(0, a)}-${b}`, "--force-keyframes-at-cuts",
+    url, ...COOKIE, ...PROXY, "--socket-timeout", "30", "--download-sections", `*${Math.max(0, a)}-${b}`, "--force-keyframes-at-cuts",
     "-f", "bv*[height<=240]/wv*/w", ...ffloc, "--merge-output-format", "mp4", "--no-playlist",
     "-o", proxy, "--force-overwrites", "--quiet", "--no-warnings",
-  ], { encoding: "utf8" });
+  ], { encoding: "utf8", timeout: 120000, killSignal: "SIGKILL" });
   return (dl.status === 0 && fs.existsSync(proxy)) ? proxy : null;
 };
 const extract = (proxy, baseT, step, maxF, tag, ss = 0) => {
@@ -87,13 +106,20 @@ const extract = (proxy, baseT, step, maxF, tag, ss = 0) => {
   const args = ["-y"];
   if (ss > 0) args.push("-ss", String(ss));
   args.push("-i", proxy, "-r", String(1 / step), "-frames:v", String(maxF), path.join(fdir, "f%04d.png"));
-  spawnSync(FF, args, { encoding: "utf8" });
+  spawnSync(FF, args, { encoding: "utf8", timeout: 90000, killSignal: "SIGKILL" });
   const files = fs.existsSync(fdir) ? fs.readdirSync(fdir).filter((f) => f.endsWith(".png")).sort() : [];
   return files.map((f, i) => ({ file: path.join(fdir, f), t: +(baseT + i * step).toFixed(1) }));
 };
 
-console.log("cargando CLIP (q8)...");
-const clf = await pipeline("zero-shot-image-classification", "Xenova/clip-vit-base-patch32", { dtype: "q8" });
+// Default = CPU q8 (idéntico a antes, no rompe runs en curso). Opt-in GPU/modelo grande:
+//   CLIP_DEVICE=dml      → corre en la GPU (DirectML, sin CUDA). Sirve p/ modelos GRANDES.
+//   CLIP_MODEL=...       → modelo distinto (ej. clip-vit-large) para MÁS calidad de match.
+//   CLIP_DTYPE=fp32|fp16 → precisión (en GPU default fp32, en CPU default q8).
+const CLIP_MODEL = process.env.CLIP_MODEL || "Xenova/clip-vit-base-patch32";
+const CLIP_DEVICE = process.env.CLIP_DEVICE || "";
+const CLIP_DTYPE = process.env.CLIP_DTYPE || (CLIP_DEVICE ? "fp32" : "q8");
+console.log(`cargando CLIP (${CLIP_MODEL} · ${CLIP_DEVICE || "cpu"} · ${CLIP_DTYPE})...`);
+const clf = await pipeline("zero-shot-image-classification", CLIP_MODEL, CLIP_DEVICE ? { device: CLIP_DEVICE, dtype: CLIP_DTYPE } : { dtype: CLIP_DTYPE });
 const DISTRACTORS = [
   "a person talking to the camera, a talking head",
   "a blurry or unrelated indoor scene",

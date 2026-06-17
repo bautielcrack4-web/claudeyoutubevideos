@@ -64,6 +64,13 @@ jobs:
         run: |
           gh release download "match-${{ github.event.inputs.slug }}" \
             --pattern "match_${{ github.event.inputs.slug }}.json" --dir .
+      - name: inject proxies (esquiva el bloqueo de IPs de GitHub en YouTube)
+        env:
+          YTPROXIES: ${{ secrets.YTPROXIES }}
+        run: |
+          mkdir -p cookies
+          printf '%s\n' "$YTPROXIES" > cookies/proxies.txt
+          echo "proxies inyectados: $(grep -c @ cookies/proxies.txt)"
       - name: match shard
         run: node scripts/match_runner.mjs "${{ github.event.inputs.slug }}" ${{ matrix.idx }} ${{ github.event.inputs.chunks }} "match_${{ github.event.inputs.slug }}.json"
       - uses: actions/upload-artifact@v4
