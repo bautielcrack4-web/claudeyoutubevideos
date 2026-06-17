@@ -72,6 +72,11 @@ jobs:
           printf '%s\n' "$YTPROXIES" > cookies/proxies.txt
           echo "proxies inyectados: $(grep -c @ cookies/proxies.txt)"
       - name: match shard
+        env:
+          MATCH_CANDS: "3"
+          MATCH_MAXSPAN: "90"
+          MATCH_COARSE: "22"
+          MATCH_POOL: "10"
         run: node scripts/match_runner.mjs "${{ github.event.inputs.slug }}" ${{ matrix.idx }} ${{ github.event.inputs.chunks }} "match_${{ github.event.inputs.slug }}.json"
       - uses: actions/upload-artifact@v4
         with:
