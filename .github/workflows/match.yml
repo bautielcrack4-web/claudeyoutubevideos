@@ -73,7 +73,7 @@ jobs:
           echo "proxies inyectados: $(grep -c @ cookies/proxies.txt)"
       - name: match shard
         env:
-          MATCH_CANDS: "3"
+          MATCH_CANDS: "2"
           MATCH_MAXSPAN: "90"
           MATCH_COARSE: "22"
           MATCH_POOL: "10"
