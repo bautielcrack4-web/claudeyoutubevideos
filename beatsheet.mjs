@@ -124,7 +124,12 @@ for (const b of beats) {
   if (b.image && b.kind !== "diagram") refs.push(b.image);
   for (const s of b.slides || []) if (s.image) refs.push(s.image);
   if (b.worldImage) refs.push(b.worldImage);
+  if (b.mapImage) refs.push(b.mapImage);
   for (const wp of b.waypoints || []) if (wp.image) refs.push(wp.image);
+  for (const s of b.steps || []) if (s.image) refs.push(s.image);     // ProcessSteps (rompió un render)
+  for (const e of b.events || []) if (e.image) refs.push(e.image);    // SagaTimeline
+  for (const c of b.cards || []) if (c.src) refs.push(c.src);          // teasecards
+  for (const im of b.images || []) refs.push(typeof im === "string" ? im : im.src); // infzoom
 }
 const willGen = new Set([
   ...[...images.keys()].map((n) => `img/${n}.png`),
@@ -606,6 +611,128 @@ function renderEl(b) {
         (b.sub ? ` sub=${j(b.sub)}` : ``) +
         ` />`
       );
+    // ── SET PIECES de imagen/clip (escenas completas) ──
+    case "expeditionmap":
+      return (
+        `<ExpeditionMap durationInFrames={d} mapImage=${j(b.mapImage)}` +
+        (b.route ? ` route={${j(b.route)}}` : ``) +
+        (b.pins ? ` pins={${j(b.pins)}}` : ``) +
+        (b.eyebrow ? ` eyebrow=${j(b.eyebrow)}` : ``) +
+        (b.title ? ` title=${j(b.title)}` : ``) +
+        (b.accent ? ` accent=${j(b.accent)}` : ``) +
+        ` />`
+      );
+    case "scalecolossus":
+      return (
+        `<ScaleColossus durationInFrames={d} image=${j(b.image)} meters={${b.meters}}` +
+        (b.unit ? ` unit=${j(b.unit)}` : ``) +
+        (b.label ? ` label=${j(b.label)}` : ``) +
+        (b.eyebrow ? ` eyebrow=${j(b.eyebrow)}` : ``) +
+        (b.accent ? ` accent=${j(b.accent)}` : ``) +
+        ` />`
+      );
+    case "evidenceboard":
+      return (
+        `<EvidenceBoard durationInFrames={d} items={${j(b.items || [])}}` +
+        (b.title ? ` title=${j(b.title)}` : ``) +
+        (b.accent ? ` accent=${j(b.accent)}` : ``) +
+        ` />`
+      );
+    case "loupe":
+      return (
+        `<LoupeInspect durationInFrames={d} image=${j(b.image)} focusX={${b.focusX}} focusY={${b.focusY}}` +
+        (b.zoom != null ? ` zoom={${b.zoom}}` : ``) +
+        (b.label ? ` label=${j(b.label)}` : ``) +
+        (b.accent ? ` accent=${j(b.accent)}` : ``) +
+        ` />`
+      );
+    case "thennow":
+      return (
+        `<ThenNow durationInFrames={d} before={${j(b.before)}} after={${j(b.after)}}` +
+        (b.accent ? ` accent=${j(b.accent)}` : ``) +
+        ` />`
+      );
+    case "ghost":
+      return (
+        `<GhostReconstruction durationInFrames={d} real=${j(b.real)} ghost=${j(b.ghost)}` +
+        (b.label ? ` label=${j(b.label)}` : ``) +
+        (b.accent ? ` accent=${j(b.accent)}` : ``) +
+        ` />`
+      );
+    // ── FICHAS EXPLICATIVAS (clip de fondo blur+oscurece → contenido) ──
+    case "focuscard":
+      return (
+        `<FocusCard durationInFrames={d} bg=${j(b.bg)} image=${j(b.image)} title=${j(b.title)} desc=${j(b.desc)}` +
+        (b.eyebrow ? ` eyebrow=${j(b.eyebrow)}` : ``) +
+        (b.imageSide ? ` imageSide=${j(b.imageSide)}` : ``) +
+        (b.accent ? ` accent=${j(b.accent)}` : ``) +
+        ` />`
+      );
+    case "termcard":
+      return (
+        `<TermCard durationInFrames={d} bg=${j(b.bg)} term=${j(b.term)} definition=${j(b.definition)}` +
+        (b.image ? ` image=${j(b.image)}` : ``) +
+        (b.accent ? ` accent=${j(b.accent)}` : ``) +
+        ` />`
+      );
+    case "splitexplain":
+      return (
+        `<SplitExplain durationInFrames={d} bg=${j(b.bg)} image=${j(b.image)} title=${j(b.title)} points={${j(b.points || [])}}` +
+        (b.eyebrow ? ` eyebrow=${j(b.eyebrow)}` : ``) +
+        (b.accent ? ` accent=${j(b.accent)}` : ``) +
+        ` />`
+      );
+    // ── CAPA DOCUMENTAL (overlays sobre los clips) ──
+    case "doclabel":
+      return (
+        `<DocLabel durationInFrames={d} label=${j(b.label || "")}` +
+        (b.sub ? ` sub=${j(b.sub)}` : ``) +
+        (b.accent ? ` accent=${j(b.accent)}` : ``) +
+        (b.corner ? ` corner=${j(b.corner)}` : ``) +
+        ` />`
+      );
+    case "placetag":
+      return (
+        `<PlaceTag durationInFrames={d} place=${j(b.place || "")}` +
+        (b.sub ? ` sub=${j(b.sub)}` : ``) +
+        (b.accent ? ` accent=${j(b.accent)}` : ``) +
+        ` />`
+      );
+    case "datestamp":
+      return (
+        `<DateStamp durationInFrames={d} value=${j(b.value)}` +
+        (b.label ? ` label=${j(b.label)}` : ``) +
+        (b.accent ? ` accent=${j(b.accent)}` : ``) +
+        (b.corner ? ` corner=${j(b.corner)}` : ``) +
+        ` />`
+      );
+    case "countrail":
+      return (
+        `<CountRail durationInFrames={d} rank={${b.rank}}` +
+        (b.total != null ? ` total={${b.total}}` : ``) +
+        ` name=${j(b.name || "")}` +
+        (b.accent ? ` accent=${j(b.accent)}` : ``) +
+        ` />`
+      );
+    case "originpips":
+      return (
+        `<OriginPips durationInFrames={d} items={${j(b.items || [])}}` +
+        (b.accent ? ` accent=${j(b.accent)}` : ``) +
+        ` />`
+      );
+    case "sourcechip":
+      return (
+        `<SourceChip durationInFrames={d} text=${j(b.text || "")}` +
+        (b.accent ? ` accent=${j(b.accent)}` : ``) +
+        ` />`
+      );
+    case "sonarhud":
+      return (
+        `<SonarHUD durationInFrames={d} depth=${j(b.depth || "")}` +
+        (b.coords ? ` coords=${j(b.coords)}` : ``) +
+        (b.accent ? ` accent=${j(b.accent)}` : ``) +
+        ` />`
+      );
     default:
       return null; // talk
   }
@@ -688,6 +815,24 @@ if (kinds.has("keyphrase")) imports.push(`import { KeyPhrase } from "./scenes/Ke
 if (kinds.has("statpills")) imports.push(`import { StatPills } from "./scenes/StatPills";`);
 if (kinds.has("floatprop")) imports.push(`import { FloatingProp } from "./scenes/FloatingProp";`);
 if (kinds.has("diorama")) imports.push(`import { PngDiorama } from "./scenes/PngDiorama";`);
+// ── set pieces de imagen/clip ──
+if (kinds.has("expeditionmap")) imports.push(`import { ExpeditionMap } from "./setpieces/ExpeditionMap";`);
+if (kinds.has("scalecolossus")) imports.push(`import { ScaleColossus } from "./setpieces/ScaleColossus";`);
+if (kinds.has("evidenceboard")) imports.push(`import { EvidenceBoard } from "./setpieces/EvidenceBoard";`);
+if (kinds.has("loupe")) imports.push(`import { LoupeInspect } from "./setpieces/LoupeInspect";`);
+if (kinds.has("thennow")) imports.push(`import { ThenNow } from "./setpieces/ThenNow";`);
+if (kinds.has("ghost")) imports.push(`import { GhostReconstruction } from "./setpieces/GhostReconstruction";`);
+if (kinds.has("focuscard")) imports.push(`import { FocusCard } from "./setpieces/FocusCard";`);
+if (kinds.has("termcard")) imports.push(`import { TermCard } from "./setpieces/TermCard";`);
+if (kinds.has("splitexplain")) imports.push(`import { SplitExplain } from "./setpieces/SplitExplain";`);
+// ── capa documental (overlays) ──
+if (kinds.has("doclabel")) imports.push(`import { DocLabel } from "./overlays/DocLabel";`);
+if (kinds.has("placetag")) imports.push(`import { PlaceTag } from "./overlays/PlaceTag";`);
+if (kinds.has("datestamp")) imports.push(`import { DateStamp } from "./overlays/DateStamp";`);
+if (kinds.has("countrail")) imports.push(`import { CountRail } from "./overlays/CountRail";`);
+if (kinds.has("originpips")) imports.push(`import { OriginPips } from "./overlays/OriginPips";`);
+if (kinds.has("sourcechip")) imports.push(`import { SourceChip } from "./overlays/SourceChip";`);
+if (kinds.has("sonarhud")) imports.push(`import { SonarHUD } from "./overlays/SonarHUD";`);
 const palLine = usedPal.size
   ? `\nconst ${[...usedPal].map((t) => `${t} = ${palTok[t]}`).join(", ")};\n`
   : "";

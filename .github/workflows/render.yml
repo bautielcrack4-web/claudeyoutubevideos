@@ -41,7 +41,14 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with: { node-version: "20" }
-      - run: npm ci
+      - name: install deps (retry — onnxruntime-node a veces tira ETIMEDOUT)
+        run: |
+          n=0
+          until npm ci; do
+            n=$((n+1))
+            if [ "$n" -ge 4 ]; then echo "npm ci falló tras $n intentos"; exit 1; fi
+            echo "npm ci reintento $n…"; rm -rf node_modules; sleep 20
+          done
       # bajar y extraer los assets (release asset subido por el orquestador)
       - name: download assets
         env: { GH_TOKEN: "${{ github.token }}" }

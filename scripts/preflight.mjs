@@ -39,6 +39,12 @@ const KNOWN = new Set([
   "scent", "depthtext", "estateletter", "twomoments", "mistake", "goldvault", "lookback", "tool",
   "deed", "odometer", "signature", "vsmed", "action", "keyphrase", "statpills", "floatprop",
   "diorama", "nextvideo", "talk",
+  // capa documental (overlays)
+  "doclabel", "placetag", "datestamp", "countrail", "originpips", "sourcechip", "sonarhud",
+  // set pieces de imagen/clip
+  "expeditionmap", "scalecolossus", "evidenceboard", "loupe", "thennow", "ghost",
+  // fichas explicativas
+  "focuscard", "termcard", "splitexplain",
 ]);
 
 // deep-walk: junta TODA string que parezca path de asset, sin importar en qué campo
@@ -63,6 +69,12 @@ beats.forEach((b, i) => {
     if (typeof b.start !== "number" || b.start < 0) hard.push(`${id} (${b.kind}): start inválido (${JSON.stringify(b.start)})`);
   }
   if (b.kind && !KNOWN.has(b.kind)) warn.push(`${id}: kind "${b.kind}" desconocido → el beat NO se dibujará (¿typo?)`);
+  // src/image que apunta a una carpeta de assets pero SIN extensión → 404 silencioso en el render
+  for (const k of ["src", "image", "worldImage", "mapImage"]) {
+    const v = b[k];
+    if (typeof v === "string" && /^(img|vid|real|broll|assets|avatar_clips)\//i.test(v) && !ASSET_RE.test(v))
+      hard.push(`${id}: ${k}="${v}" sin extensión de archivo (¿falta .mp4/.jpg/.png?)`);
+  }
 });
 
 // ── 2) assets referenciados que no están en disco ────────────────────────────

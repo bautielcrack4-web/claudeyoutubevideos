@@ -34,7 +34,7 @@ const FINE = +(process.env.MATCH_FINE || 0.5);
 const HEAD = +(process.env.MATCH_HEAD || 6);
 const TAIL = 0.06;
 
-const TMP = "_match";
+const TMP = "_match_" + IDX; // temp PROPIO por shard → seguro para correr en paralelo (matchlocal.mjs)
 fs.mkdirSync(TMP, { recursive: true });
 const vidId = (u) => (u.match(/(?:v=|youtu\.be\/|shorts\/|embed\/)([A-Za-z0-9_-]{11})/) || u.match(/([A-Za-z0-9_-]{11})/) || [])[1];
 
@@ -70,9 +70,12 @@ const searchRanked = (queries, concept, limit = CANDS) => {
 
 const dlProxy = (url, a, b, tag) => {
   const proxy = path.join(TMP, `${tag}.mp4`);
+  // --ffmpeg-location SOLO si FFMPEG es una ruta (local: ffmpeg de Remotion). En el farm
+  // FFMPEG="ffmpeg" (en el PATH) → se omite. Sin esto, yt-dlp no puede cortar la sección.
+  const ffloc = /[\\/]/.test(FF) ? ["--ffmpeg-location", path.dirname(FF)] : [];
   const dl = spawnSync(YTDLP, [
     url, "--download-sections", `*${Math.max(0, a)}-${b}`, "--force-keyframes-at-cuts",
-    "-f", "bv*[height<=240]/wv*/w", "--merge-output-format", "mp4", "--no-playlist",
+    "-f", "bv*[height<=240]/wv*/w", ...ffloc, "--merge-output-format", "mp4", "--no-playlist",
     "-o", proxy, "--force-overwrites", "--quiet", "--no-warnings",
   ], { encoding: "utf8" });
   return (dl.status === 0 && fs.existsSync(proxy)) ? proxy : null;
