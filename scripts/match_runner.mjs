@@ -65,7 +65,7 @@ const STOP = new Set(("a an the of to in on at by for with and or from into is a
   "being this that it its as close up shot footage video clip hd 4k uhd full real best top").split(/\s+/));
 const kw = (s) => [...new Set((s || "").toLowerCase().replace(/[^a-z0-9\s]/g, " ").split(/\s+/)
   .filter((w) => w.length > 2 && !STOP.has(w)))];
-const BAD = /(reaction|react|podcast|full episode|interview|tier list|gameplay|let'?s play|trailer|unboxing|vlog|prank)/i;
+const BAD = /(reaction|react|podcast|full episode|interview|tier list|gameplay|let'?s play|trailer|unboxing|vlog|prank|lyric|lyrics|music video|official video|official music|\bsong\b|cover|remix|karaoke|instrumental|playlist|audio only|full album)/i;
 // canales muy marcados: su footage casi siempre trae logo/bug → en fauna los penalizamos
 const BRANDED = /(national geographic|nat ?geo|bbc|discovery|animal planet|pbs|smithsonian|earth ?touch)/i;
 
@@ -137,6 +137,8 @@ const DISTRACTORS = [
 const TEXT_LABELS = [
   "a title card or large bold text overlay across the screen",
   "big subtitles or captions text on screen",
+  "karaoke style word-by-word captions with a colored highlight box",
+  "a red YouTube subscribe button or social media UI overlay",
 ];
 const MARK_LABELS = [
   "a channel logo, watermark or banner",
@@ -153,10 +155,10 @@ const scoreFrame = async (file, concept) => {
   // TEXTO grande: castigo FUERTE en todos los nichos (queja del usuario: "clips con mucho texto").
   // Umbrales BAJOS a propósito: CLIP rara vez supera ~0.25 en texto (el frame tiene también escena),
   // así que pegamos desde confianza moderada → el clip texty cae y lo gana uno limpio (o stockfallback).
-  const tpen = curve(textMax, ...(WM ? [0.05, 0.15, 0.02] : [0.06, 0.18, 0.05]));
+  const tpen = curve(textMax, ...(WM ? [0.05, 0.15, 0.02] : [0.05, 0.14, 0.03]));
   // MARCA/logo: solo en fauna. En los demás nichos NO penaliza (curva neutra).
   const mpen = WM ? curve(markMax, 0.05, 0.14, 0.015) : 1;
-  return c * tpen * mpen;
+  return { score: c * tpen * mpen, text: textMax };
 };
 
 const analyze = async (cand, beat, tag) => {
@@ -173,14 +175,21 @@ const analyze = async (cand, beat, tag) => {
   const coarse = extract(proxy, a0, coarseStep, Math.ceil(span / coarseStep) + 2, tag + "_c");
   if (!coarse.length) return null;
   let bf = { score: -1, t: a0 };
-  for (const fr of coarse) { const s = await scoreFrame(fr.file, beat.concept); if (s > bf.score) bf = { score: s, t: fr.t }; }
+  let texty = 0, total = 0;
+  for (const fr of coarse) { const r = await scoreFrame(fr.file, beat.concept); total++; if (r.text > 0.08) texty++; if (r.score > bf.score) bf = { score: r.score, t: fr.t }; }
   if (coarseStep > FINE) {
     const fa = Math.max(a0, +(bf.t - coarseStep).toFixed(2));
     const fb = Math.min(end, +(bf.t + coarseStep).toFixed(2));
     const fine = extract(proxy, fa, FINE, Math.ceil((fb - fa) / FINE) + 2, tag + "_x", fa - a0);
-    for (const fr of fine) { const s = await scoreFrame(fr.file, beat.concept); if (s > bf.score) bf = { score: s, t: fr.t }; }
+    for (const fr of fine) { const r = await scoreFrame(fr.file, beat.concept); total++; if (r.text > 0.08) texty++; if (r.score > bf.score) bf = { score: r.score, t: fr.t }; }
   }
-  return { score: bf.score, t: bf.t, url: cand.url, id: cand.id };
+  // PENALIZACIÓN A NIVEL VENTANA: descargamos una VENTANA (no un frame), así que si el
+  // candidato tiene texto quemado en buena parte de sus frames (subtítulos karaoke, botón
+  // subscribe, cartel), el texto aparece igual en el clip → hundimos el candidato entero
+  // para que gane uno LIMPIO. >50% de frames con texto ⇒ ×0.06.
+  const frac = total ? texty / total : 0;
+  const winPen = curve(frac, 0.15, 0.5, 0.06);
+  return { score: +(bf.score * winPen).toFixed(4), t: bf.t, url: cand.url, id: cand.id, _wt: +frac.toFixed(2) };
 };
 
 const results = [];

@@ -67,7 +67,7 @@ const STOP = new Set(("a an the of to in on at by for with and or from into is a
   "being this that it its as close up shot footage video clip hd 4k uhd full real best top").split(/\s+/));
 const kw = (s) => [...new Set((s || "").toLowerCase().replace(/[^a-z0-9\s]/g, " ").split(/\s+/)
   .filter((w) => w.length > 2 && !STOP.has(w)))];
-const BAD = /(reaction|react|podcast|full episode|interview|tier list|gameplay|let'?s play|trailer|unboxing|vlog|prank|asmr mukbang|tutorial how to draw)/i;
+const BAD = /(reaction|react|podcast|full episode|interview|tier list|gameplay|let'?s play|trailer|unboxing|vlog|prank|asmr mukbang|tutorial how to draw|lyric|lyrics|music video|official video|official music|\bsong\b|cover|remix|karaoke|instrumental|playlist|audio only|full album)/i;
 
 // busca varias queries, junta candidatos únicos y los REORDENA por relevancia al concepto.
 // Devuelve [{url,id,title,dur}] (top CANDS). Trae título+duración → re-rank antes de bajar.
