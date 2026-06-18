@@ -32,6 +32,30 @@ jobs:
           N=${{ github.event.inputs.chunks }}
           LIST=$(node -e "console.log(JSON.stringify(Array.from({length:$N},(_,i)=>i)))")
           echo "matrix=$LIST" >> "$GITHUB_OUTPUT"
+      # PREFETCH del modelo CLIP UNA sola vez (los 20 shards lo bajaban a la vez de HF
+      # → rate-limit → fallaban). Acá se baja 1 vez y se cachea; los shards lo restauran.
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: cache node_modules
+        id: nm
+        uses: actions/cache@v4
+        with:
+          path: node_modules
+          key: nm-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
+      - name: install deps (solo si no hay cache)
+        if: steps.nm.outputs.cache-hit != 'true'
+        run: |
+          n=0; until npm ci; do n=$((n+1)); [ "$n" -ge 4 ] && exit 1; rm -rf node_modules; sleep 20; done
+      - name: cache modelo CLIP
+        uses: actions/cache@v4
+        with:
+          path: .cache
+          key: clipmodel-clip-vit-base-patch32
+      - name: prefetch modelo CLIP (1 vez, evita rate-limit de HF en los 20 shards)
+        run: |
+          node -e "import('@huggingface/transformers').then(async t=>{await t.pipeline('zero-shot-image-classification','Xenova/clip-vit-base-patch32',{dtype:'q8'});console.log('modelo CLIP cacheado');}).catch(e=>{console.error(e);process.exit(1)})"
 
   match:
     needs: prepare
@@ -118,6 +142,7 @@ jobs:
 
   aggregate:
     needs: match
+    if: ${{ always() }}   # mergea lo que haya, aunque algún shard falle (no perder todo)
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
