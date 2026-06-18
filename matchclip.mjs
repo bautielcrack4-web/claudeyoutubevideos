@@ -78,9 +78,10 @@ const searchRanked = (queries, concept, limit = CANDS) => {
     if (!q) continue;
     const r = spawnSync(YTDLP, [
       `ytsearch${POOL}:${q}`, "--skip-download", "--no-warnings",
+      "--socket-timeout", "20",
       "--match-filter", "duration>40 & duration<3000 & !is_live",
       "--print", "%(id)s\t%(title)s\t%(duration)s",
-    ], { encoding: "utf8", maxBuffer: 1 << 26 });
+    ], { encoding: "utf8", maxBuffer: 1 << 26, timeout: 60000 });
     const lines = (r.stdout || "").trim().split(/\r?\n/).filter(Boolean);
     lines.forEach((line, ri) => {
       const [id, title = "", durS = ""] = line.split("\t");
@@ -122,9 +123,10 @@ const dlProxy = (url, a, b, tag) => {
   const dl = spawnSync(YTDLP, [
     url, "--download-sections", `*${Math.max(0, a)}-${b}`, "--force-keyframes-at-cuts",
     "-f", "bv*[height<=240]/wv*/w", "--ffmpeg-location", path.dirname(FF),
+    "--socket-timeout", "20",
     "--merge-output-format", "mp4", "--no-playlist", "-o", proxy,
     "--force-overwrites", "--quiet", "--no-warnings",
-  ], { encoding: "utf8" });
+  ], { encoding: "utf8", timeout: 75000 });
   return (dl.status === 0 && fs.existsSync(proxy)) ? proxy : null;
 };
 // extrae frames del proxy. baseT = tiempo REAL del 1er frame. ss = seek dentro del proxy.
@@ -142,8 +144,17 @@ const extract = (proxy, baseT, step, maxF, tag, ss = 0) => {
 };
 
 const MODEL = process.env.MATCH_MODEL || "Xenova/clip-vit-base-patch32";
-console.log(`cargando CLIP local (${MODEL}, q8, CPU)...`);
-const clf = await pipeline("zero-shot-image-classification", MODEL, { dtype: "q8" });
+// GPU por DirectML (Win) por defecto → ~3-4x más rápido que CPU. Override: MATCH_DEVICE=cpu
+const DEVICE = process.env.MATCH_DEVICE || "dml";
+const DTYPE = DEVICE === "cpu" ? "q8" : "fp32";
+console.log(`cargando CLIP local (${MODEL}, ${DTYPE}, ${DEVICE.toUpperCase()})...`);
+let clf;
+try {
+  clf = await pipeline("zero-shot-image-classification", MODEL, { device: DEVICE, dtype: DTYPE });
+} catch (e) {
+  console.log(`(${DEVICE} falló: ${String(e.message || e).slice(0, 60)} → CPU q8)`);
+  clf = await pipeline("zero-shot-image-classification", MODEL, { dtype: "q8" });
+}
 const DISTRACTORS = [
   "a person talking to the camera, a talking head",
   "a blurry or unrelated indoor scene",
@@ -189,10 +200,15 @@ const analyze = async (cand, beat, tag) => {
   return { score: bf.score, t: bf.t, url: cand.url, id: cand.id };
 };
 
-const results = [];
-const usedIds = new Set(); // diversidad: no repetir el mismo video de YT entre beats
+const outPath = `public/broll/clips_${slug}_matched.json`;
+// RESUME: si ya hay matched.json, retomo donde quedó (no re-matcheo lo hecho).
+const results = fs.existsSync(outPath) ? JSON.parse(fs.readFileSync(outPath, "utf8")) : [];
+const doneNames = new Set(results.map((r) => r.name));
+const usedIds = new Set(results.map((r) => vidId(r.url)).filter(Boolean)); // diversidad
+if (doneNames.size) console.log(`resume: ${doneNames.size} beats ya matcheados → los salteo`);
 for (const b of beats) {
   const { name, concept, dur = 6, lead = 1.0 } = b;
+  if (doneNames.has(name)) continue;
   let cands;
   if (b.urls) cands = b.urls.map((u) => ({ url: u, id: vidId(u), title: "", dur: 0 }));
   else {
@@ -219,9 +235,9 @@ for (const b of beats) {
   const flag = best.score < 0.55 ? "  ⚠ DUDOSO" : "";
   console.log(`  → ${name}: ${best.score.toFixed(3)} @ ${best.t}s  start=${start}${flag}${fresh ? " (diverso)" : ""}`);
   results.push({ name, url: best.url, start, dur, _score: +best.score.toFixed(3) });
+  fs.writeFileSync(outPath, JSON.stringify(results, null, 2)); // guardado INCREMENTAL
 }
 
-const outPath = `public/broll/clips_${slug}_matched.json`;
 fs.writeFileSync(outPath, JSON.stringify(results, null, 2));
 console.log(`\n=== ${results.length} beats → ${outPath} ===`);
 console.log("Revisá los _score (números, 0 tokens). Luego: node fetch_clips.mjs " + outPath);
