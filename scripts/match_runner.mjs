@@ -149,16 +149,9 @@ const curve = (x, LO, HI, FLOOR) => (x <= LO ? 1 : x >= HI ? FLOOR : 1 - ((x - L
 const scoreFrame = async (file, concept) => {
   const out = await clf(file, [concept, ...DISTRACTORS, ...TEXT_LABELS, ...MARK_LABELS]);
   const get = (l) => out.find((o) => o.label === l)?.score || 0;
-  const c = get(concept);
-  const textMax = Math.max(...TEXT_LABELS.map(get));
-  const markMax = Math.max(...MARK_LABELS.map(get));
-  // TEXTO grande: castigo FUERTE en todos los nichos (queja del usuario: "clips con mucho texto").
-  // Umbrales BAJOS a propósito: CLIP rara vez supera ~0.25 en texto (el frame tiene también escena),
-  // así que pegamos desde confianza moderada → el clip texty cae y lo gana uno limpio (o stockfallback).
-  const tpen = curve(textMax, ...(WM ? [0.05, 0.15, 0.02] : [0.05, 0.14, 0.03]));
-  // MARCA/logo: solo en fauna. En los demás nichos NO penaliza (curva neutra).
-  const mpen = WM ? curve(markMax, 0.05, 0.14, 0.015) : 1;
-  return { score: c * tpen * mpen, text: textMax };
+  // devolvemos CRUDO: concepto puro + confianza de texto + de marca. La penalización se
+  // aplica DESPUÉS a nivel candidato (ranking), no acá, para no contaminar el _score.
+  return { c: get(concept), text: Math.max(...TEXT_LABELS.map(get)), mark: Math.max(...MARK_LABELS.map(get)) };
 };
 
 const analyze = async (cand, beat, tag) => {
@@ -174,22 +167,22 @@ const analyze = async (cand, beat, tag) => {
   const coarseStep = explicitWindow ? (beat.step || 2) : Math.max(2, +(span / COARSE).toFixed(2));
   const coarse = extract(proxy, a0, coarseStep, Math.ceil(span / coarseStep) + 2, tag + "_c");
   if (!coarse.length) return null;
-  let bf = { score: -1, t: a0 };
-  let texty = 0, total = 0;
-  for (const fr of coarse) { const r = await scoreFrame(fr.file, beat.concept); total++; if (r.text > 0.08) texty++; if (r.score > bf.score) bf = { score: r.score, t: fr.t }; }
+  let bf = { c: -1, t: a0 };
+  let texty = 0, total = 0, markHi = 0;
+  for (const fr of coarse) { const r = await scoreFrame(fr.file, beat.concept); total++; if (r.text > 0.12) texty++; markHi = Math.max(markHi, r.mark); if (r.c > bf.c) bf = { c: r.c, t: fr.t }; }
   if (coarseStep > FINE) {
     const fa = Math.max(a0, +(bf.t - coarseStep).toFixed(2));
     const fb = Math.min(end, +(bf.t + coarseStep).toFixed(2));
     const fine = extract(proxy, fa, FINE, Math.ceil((fb - fa) / FINE) + 2, tag + "_x", fa - a0);
-    for (const fr of fine) { const r = await scoreFrame(fr.file, beat.concept); total++; if (r.text > 0.08) texty++; if (r.score > bf.score) bf = { score: r.score, t: fr.t }; }
+    for (const fr of fine) { const r = await scoreFrame(fr.file, beat.concept); total++; if (r.text > 0.12) texty++; markHi = Math.max(markHi, r.mark); if (r.c > bf.c) bf = { c: r.c, t: fr.t }; }
   }
-  // PENALIZACIÓN A NIVEL VENTANA: descargamos una VENTANA (no un frame), así que si el
-  // candidato tiene texto quemado en buena parte de sus frames (subtítulos karaoke, botón
-  // subscribe, cartel), el texto aparece igual en el clip → hundimos el candidato entero
-  // para que gane uno LIMPIO. >50% de frames con texto ⇒ ×0.06.
+  // TEXTO a nivel VENTANA: la fracción de frames con texto quemado RANKEA candidatos
+  // (preferir el más limpio) SIN destruir el score de concepto → el filtro por _score sigue
+  // siendo "qué tan on-topic" (no perdemos densidad). winPen SUAVE: full-texty ⇒ ×0.3 (demota).
   const frac = total ? texty / total : 0;
-  const winPen = curve(frac, 0.15, 0.5, 0.06);
-  return { score: +(bf.score * winPen).toFixed(4), t: bf.t, url: cand.url, id: cand.id, _wt: +frac.toFixed(2) };
+  const winPen = curve(frac, 0.25, 0.65, 0.3);
+  const markPen = WM ? curve(markHi, 0.05, 0.14, 0.05) : 1; // logo/marca: solo fauna, en el RANK
+  return { score: +bf.c.toFixed(4), rank: +(bf.c * winPen * markPen).toFixed(4), t: bf.t, url: cand.url, id: cand.id, text: +frac.toFixed(2) };
 };
 
 const results = [];
@@ -206,14 +199,16 @@ for (const b of beats) {
     if (res) scored.push(res);
   }
   if (!scored.length) { console.log(`✗ ${name}: sin frames`); continue; }
-  scored.sort((a, b2) => b2.score - a.score);
+  // RANK = concepto × limpieza-de-texto (elige el candidato más limpio y on-topic).
+  scored.sort((a, b2) => b2.rank - a.rank);
   let best = scored[0];
-  const fresh = scored.find((c) => c.id && !usedIds.has(c.id) && c.score >= scored[0].score * 0.88);
+  const fresh = scored.find((c) => c.id && !usedIds.has(c.id) && c.rank >= scored[0].rank * 0.88);
   if (fresh) best = fresh;
   if (best.id) usedIds.add(best.id);
   const start = Math.max(0, +(best.t - lead).toFixed(1));
-  console.log(`  ${name}: ${best.score.toFixed(3)} @ ${best.t}s (${best.id})`);
-  results.push({ name, url: best.url, start, dur, _score: +best.score.toFixed(3) });
+  console.log(`  ${name}: ${best.score.toFixed(3)} @ ${best.t}s (${best.id})${best.text > 0.3 ? ` ⚠txt${best.text}` : ""}`);
+  // _score = concepto puro (para filtrar on-topic). _text = fracción de frames con texto.
+  results.push({ name, url: best.url, start, dur, _score: +best.score.toFixed(3), _text: best.text });
 }
 
 fs.mkdirSync("out", { recursive: true });
