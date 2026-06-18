@@ -80,8 +80,11 @@ export const Checklist: React.FC<{
       drift={0.4}
       bg={image ? "image" : "grid"}
       image={image}
-      imageBlur={image ? imageBlur ?? 5 : undefined}
-      imageDarken={image ? imageDarken ?? 0.42 : undefined}
+      // blur 0 por defecto: carga la imagen REAL (sin depender del hermano _blur.jpg que
+      // 404ea para fotos sin pre-blur → el fondo salía gris). La foto SIEMPRE se ve detrás
+      // de la tarjeta. darken suave para contraste del texto, sin tapar la imagen.
+      imageBlur={image ? imageBlur ?? 0 : undefined}
+      imageDarken={image ? imageDarken ?? 0.3 : undefined}
       contentStyle={contentStyle}
     >
       <div style={{ position: "relative", fontFamily: FONT_STACK }}>

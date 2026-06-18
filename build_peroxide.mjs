@@ -402,23 +402,99 @@ if (MODE === "match") {
   process.exit(0);
 }
 
-// ── MODO BUILD: beatsheet (solo clips ya bajados) ────────────────────────────
+// ── MODO BUILD: beatsheet HÍBRIDO ────────────────────────────────────────────
+// Clip limpio si existe en disco; si no, IMAGEN IA generada (deAPI) con el concepto
+// como prompt (limpia, SIN texto). Así no quedan huecos y el video queda denso.
 const have = (name) => fs.existsSync(`public/broll/${name}.mp4`);
-const present = clips.filter(([t, name]) => have(name));
-const missing = clips.filter(([t, name]) => !have(name)).map((c) => c[1]);
+// Estilo NATURAL puro: color vivo real, nítido, bien iluminado. SIN desaturación, SIN
+// grano, SIN look documental/film (el usuario no quiere NINGÚN filtro/paleta en las fotos).
+const IMG_STYLE = ", realistic color photograph, natural vivid colors, sharp focus, well lit, clean, no text, no captions, no watermark, no logo";
+const nClip = clips.filter((c) => have(c[1])).length;
 
-// boundaries: starts presentes + AV starts + TOTAL
+// boundaries: TODOS los conceptos ahora son beat (clip o imagen) → tiling completo, sin gaps.
 const avStarts = AV_FULL.map(([s]) => s);
-const bounds = [...present.map((c) => c[0]), ...avStarts, TOTAL].sort((a, b) => a - b);
+const bounds = [...clips.map((c) => c[0]), ...avStarts, TOTAL].sort((a, b) => a - b);
 const nextBound = (t) => bounds.find((b) => b > t + 1e-6) ?? TOTAL;
 
-const beats = present.map(([t, name]) => ({
-  id: name,
-  start: t,
-  dur: +(nextBound(t) - t).toFixed(2),
-  kind: "raw",
-  src: `broll/${name}.mp4`,
-}));
+// OVERLAP anti-destello: cada beat se extiende OV seg → se solapa con el siguiente
+// (RawShot hard-cut → el próximo tapa al anterior, corte limpio sin frame de fondo colado)
+// y cubre el fade-in del avatar (~16f) en transiciones a pantalla completa. No pasa de TOTAL.
+const OV = 0.5;
+const beats = clips.map(([t, name, , concept]) => {
+  const dur = +Math.min(nextBound(t) - t + OV, TOTAL - t).toFixed(2);
+  // darken:0 → SIN overlay oscuro sobre la foto/clip (footage 100% natural, sin viñeta/dim)
+  if (have(name)) return { id: name, start: t, dur, kind: "raw", src: `broll/${name}.mp4`, darken: 0 };
+  return { id: name, start: t, dur, kind: "raw", src: `img/${name}.png`, darken: 0, gen: { type: "image", name, prompt: concept + IMG_STYLE } };
+});
+
+// ── FASE 2: COMPONENTES (valor tutorial) — tarjeta de lista/datos SOBRE foto real
+// (no fondo-sólido aburrido). Cada uno reemplaza el beat que cubre su `t` y absorbe ~6s.
+const ck = (text, note) => (note ? { text, note, state: "done" } : { text, state: "done" });
+const COMPONENTS = [
+  { t: 219, id: "cmp_why", kind: "checklist", hue: "amber", accent: "amber",
+    title: "Why it works", eyebrow: "3% hydrogen peroxide",
+    items: [ck("H₂O₂ = water + 1 extra oxygen"), ck("that loose oxygen is the secret"), ck("breaks down to plain water")],
+    bg: "macro of hydrogen peroxide fizzing into clear bubbles" },
+  { t: 408, id: "cmp_seeds", kind: "checklist", hue: "amber", accent: "good",
+    title: "Soak your seeds", eyebrow: "Use #1 — germination",
+    items: [ck("1 tbsp 3% peroxide"), ck("1 cup warm water"), ck("soak 30–60 min")],
+    bg: "vegetable seeds soaking in a glass bowl of water on a wooden table" },
+  { t: 569, id: "cmp_root", kind: "checklist", hue: "amber", accent: "good",
+    title: "Cure root rot", eyebrow: "Use #2 — tired roots",
+    items: [ck("1 tbsp per cup of water"), ck("pour at the base"), ck("oxygenates + kills the rot")],
+    bg: "pouring water at the base of a wilted potted tomato plant" },
+  { t: 672, id: "cmp_spray", kind: "checklist", hue: "cold", accent: "good",
+    title: "Stop fungus & mildew", eyebrow: "Use #3 — leaves",
+    items: [ck("1 part peroxide : 4–5 parts water"), ck("spray tops & undersides"), ck("evening, never midday sun")],
+    bg: "spraying a fine mist over green squash leaves in a garden" },
+  { t: 819, id: "cmp_tools", kind: "checklist", hue: "amber", accent: "good",
+    title: "Clean tools & pots", eyebrow: "Use #4 — stop disease",
+    items: [ck("full strength 3%"), ck("wipe blades between plants"), ck("spray pots before reuse")],
+    bg: "wiping garden pruning shears clean with a cloth on a potting bench" },
+  { t: 922, id: "cmp_gnats", kind: "checklist", hue: "cold", accent: "good",
+    title: "Drive out fungus gnats", eyebrow: "Use #5 — soil pests",
+    items: [ck("1 part peroxide : 4 parts water"), ck("water into the soil"), ck("kills larvae, safe for roots")],
+    bg: "watering the soil of a potted houseplant with a small watering can" },
+  { t: 1002, id: "cmp_tonic", kind: "checklist", hue: "amber", accent: "good",
+    title: "Oxygen tonic", eyebrow: "Use #6 — everyday",
+    items: [ck("1 tbsp per quart of water"), ck("every 3rd watering"), ck("greener all season")],
+    bg: "watering a lush green vegetable garden with a watering can" },
+  { t: 1104, id: "cmp_safety", kind: "checklist", hue: "amber", accent: "danger",
+    title: "Use it right", eyebrow: "Safety",
+    items: [ck("plain 3% only — not 10/35%"), ck("always dilute with water"), ck("morning or evening"), ck("store cool & dark")],
+    bg: "a brown bottle of 3% hydrogen peroxide on a cool dark cellar shelf" },
+  { t: 1310, id: "cmp_recap", kind: "checklist", hue: "amber", accent: "good",
+    title: "The 6 ways", eyebrow: "One $1 bottle",
+    items: [ck("Soak seeds"), ck("Cure root rot"), ck("Stop fungus & mildew"), ck("Clean tools & pots"), ck("Kill fungus gnats"), ck("Oxygen tonic")],
+    bg: "a lush thriving backyard vegetable garden, wide shot" },
+  { t: 172, id: "cmp_cost", kind: "bars", hue: "amber", accent: "good",
+    title: "What it costs", eyebrow: "Same job",
+    bars: [{ label: "Peroxide", value: 1, display: "$1", sub: "brown bottle", winner: true }, { label: "Garden center", value: 40, display: "$40", sub: "the shelf" }],
+    unit: "USD" },
+];
+let nComp = 0;
+for (const c of COMPONENTS) {
+  let idx = -1;
+  for (let i = 0; i < beats.length; i++) { if (beats[i].start <= c.t + 0.01) idx = i; else break; }
+  if (idx < 0) continue;
+  const start = beats[idx].start;
+  const D = 6.2;
+  const ab = { id: c.id, start, dur: D, kind: c.kind, hue: c.hue, accent: c.accent };
+  if (c.kind === "checklist") {
+    Object.assign(ab, { title: c.title, eyebrow: c.eyebrow, items: c.items, image: `img/${c.id}_bg.png`,
+      gen: { type: "image", name: `${c.id}_bg`, prompt: c.bg + IMG_STYLE } });
+  } else if (c.kind === "bars") {
+    Object.assign(ab, { title: c.title, eyebrow: c.eyebrow, bars: c.bars, unit: c.unit });
+  }
+  let rm = 1;
+  while (idx + rm < beats.length && beats[idx + rm].start < start + D - 0.05) rm++;
+  beats.splice(idx, rm, ab);
+  const next = beats[idx + 1];
+  const nextAv = avStarts.filter((s) => s > start + 0.01).sort((a, b) => a - b)[0] ?? TOTAL;
+  // dur capada: no pasa del próximo beat, ni del avatar-full, ni de ~7.5s
+  ab.dur = +(Math.min(next ? next.start : TOTAL, nextAv, start + 7.5) - start).toFixed(2);
+  nComp++;
+}
 
 fs.mkdirSync("beatsheet", { recursive: true });
 fs.writeFileSync("beatsheet/peroxide.json", JSON.stringify({ video: "peroxide", avatar: "peroxide_opt.mp4", beats }, null, 2));
@@ -434,7 +510,7 @@ for (let i = 0; i < beats.length; i++) {
     k++;
   }
 }
-const firstClip = present.length ? present[0][0] : OPEN;
+const firstClip = clips.length ? clips[0][0] : OPEN;
 const modeAt = (t) => {
   if (t < firstClip - 1e-6) return "full";
   if (AV_FULL.some(([s, e]) => t >= s - 1e-6 && t < e - 1e-6)) return "full";
@@ -460,7 +536,6 @@ fs.writeFileSync("src/VideoEdit/avatar_peroxide.gen.ts", avTs);
 
 const avSecs = AV_FULL.reduce((a, [s, e]) => a + (e - s), 0) + OPEN;
 console.log(`=== build_peroxide ===`);
-console.log(`clips presentes: ${beats.length}/${clips.length}  ·  faltan: ${missing.length}`);
-if (missing.length) console.log("  faltantes:", missing.slice(0, 20).join(", ") + (missing.length > 20 ? "…" : ""));
+console.log(`beats: ${beats.length} · clips reales: ${nClip} · imágenes IA: ${beats.length - nClip}`);
 console.log(`avatar-full: ${(avSecs / 60).toFixed(1)}min · PiP: ${pip.length} · windows: ${windows.length}`);
 console.log(`dur min/max: ${beats.length ? Math.min(...beats.map((b) => b.dur)) : 0}s / ${beats.length ? Math.max(...beats.map((b) => b.dur)) : 0}s`);

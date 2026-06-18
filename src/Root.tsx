@@ -14,6 +14,7 @@ import { MainJabon, TOTAL_FRAMES_JABON } from "./VideoEdit/Main_jabon";
 import { MainCeniza, TOTAL_FRAMES_CENIZA } from "./VideoEdit/Main_ceniza";
 import { MainRatas, TOTAL_FRAMES_RATAS } from "./VideoEdit/Main_ratas";
 import { MainMelon, TOTAL_FRAMES_MELON } from "./VideoEdit/Main_melon";
+import { MainPeroxide, TOTAL_FRAMES_PEROXIDE } from "./VideoEdit/Main_peroxide";
 import { MainMedicaid, TOTAL_FRAMES_MED } from "./VideoEdit/Main_medicaid";
 import { MainViuda, TOTAL_FRAMES_VD } from "./VideoEdit/Main_viuda";
 import { MainEstafas, TOTAL_FRAMES_ES } from "./VideoEdit/Main_estafas";
@@ -65,6 +66,15 @@ export const RemotionRoot: React.FC = () => {
         id="Wasp"
         component={MainWasp}
         durationInFrames={TOTAL_FRAMES_WASP}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
+      {/* VIDEO ACTIVO — Hydrogen Peroxide in the Garden (Claudio Yoder #2 · clips-first) */}
+      <Composition
+        id="Peroxide"
+        component={MainPeroxide}
+        durationInFrames={TOTAL_FRAMES_PEROXIDE}
         fps={30}
         width={1920}
         height={1080}
