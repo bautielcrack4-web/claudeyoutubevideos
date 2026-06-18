@@ -28,8 +28,9 @@ if (!slug || !comp || !total) {
 const sh = (c) => execSync(c, { stdio: "inherit" });
 const out = (c) => execSync(c, { encoding: "utf8" }).trim();
 
-// 1) tarball de assets
-const tar = `assets-${slug}.tar`;
+// 1) tarball de assets (TAR_DIR redirige el .tar a otro disco — C: se llena con ~1GB)
+const tarDir = process.env.TAR_DIR || ".";
+const tar = `${tarDir}/assets-${slug}.tar`;
 const avatar = `public/${slug}_opt.mp4`;
 const wav = `public/${slug}.wav`;
 if (!fs.existsSync(wav)) { console.error("falta:", wav); process.exit(1); }
@@ -60,7 +61,9 @@ if (pref && pref.startsWith("@")) {
 }
 fs.writeFileSync("_assets_list.txt", items.join("\n"));
 console.log(`empaquetando ${items.length} entradas → ${tar} ...`);
-execFileSync("tar", ["-cf", tar, "-C", "public", "-T", "_assets_list.txt"], { stdio: "inherit" });
+// --force-local: si TAR_DIR es una ruta Windows (D:\...), tar la trataría como host
+// remoto por el ":" → forzamos local para poder escribir el .tar en otro disco.
+execFileSync("tar", ["--force-local", "-cf", tar, "-C", "public", "-T", "_assets_list.txt"], { stdio: "inherit" });
 fs.rmSync("_assets_list.txt");
 
 // 2) subir como release asset (reemplaza si ya existe)

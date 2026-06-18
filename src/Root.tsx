@@ -15,6 +15,7 @@ import { MainCeniza, TOTAL_FRAMES_CENIZA } from "./VideoEdit/Main_ceniza";
 import { MainRatas, TOTAL_FRAMES_RATAS } from "./VideoEdit/Main_ratas";
 import { MainMelon, TOTAL_FRAMES_MELON } from "./VideoEdit/Main_melon";
 import { MainPeroxide, TOTAL_FRAMES_PEROXIDE } from "./VideoEdit/Main_peroxide";
+import { MainAcpipe, TOTAL_FRAMES_ACPIPE } from "./VideoEdit/Main_acpipe";
 import { MainMedicaid, TOTAL_FRAMES_MED } from "./VideoEdit/Main_medicaid";
 import { MainViuda, TOTAL_FRAMES_VD } from "./VideoEdit/Main_viuda";
 import { MainEstafas, TOTAL_FRAMES_ES } from "./VideoEdit/Main_estafas";
@@ -75,6 +76,15 @@ export const RemotionRoot: React.FC = () => {
         id="Peroxide"
         component={MainPeroxide}
         durationInFrames={TOTAL_FRAMES_PEROXIDE}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
+      {/* VIDEO ACTIVO — $40 Amish Cooling Pipe / earth tube (Claudio · canal nuevo off-grid EN) */}
+      <Composition
+        id="Acpipe"
+        component={MainAcpipe}
+        durationInFrames={TOTAL_FRAMES_ACPIPE}
         fps={30}
         width={1920}
         height={1080}

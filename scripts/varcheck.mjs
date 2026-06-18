@@ -36,14 +36,23 @@ const nonRawDistinct = Object.keys(count).filter((k) => !k.startsWith("raw")).le
 // intencionales y suben comprensión. Se mantienen TODOS los demás guards de variedad
 // para que no sea spam perezoso. Activar con `"tutorial": true` en el beatsheet.
 const TUTORIAL = !!bs.tutorial || process.env.VARCHECK_TUTORIAL === "1";
+// CLIPS-FIRST (documental/tutorial de cientos de clips reales, estilo barcos/huron/
+// peroxide): el footage real ES la espina dorsal → el tope de raw% NO aplica (sería
+// contraproducente: el usuario PIDE cientos de clips). Pero TODOS los guards de
+// anti-monotonía siguen DUROS (≥11 tipos, ≥6 formatos estructurados, bars≥2) y el
+// peso de estructurados se relaja a ≥6% (no pueden ser 1-2 migajas, pero tampoco 12%
+// en un video que es 80% video real). Activar con `"clipsfirst": true` en el beatsheet.
+const CLIPSFIRST = !!bs.clipsfirst || process.env.VARCHECK_CLIPSFIRST === "1";
 const RAW_CAP = TUTORIAL ? 0.65 : 0.55;
+const STRUCT_MIN = CLIPSFIRST ? 0.06 : 0.12;
 const RULES = [
-  { ok: rawShare <= RAW_CAP, msg: `fotos/clips full-screen = ${(rawShare * 100).toFixed(0)}% (debe ser ≤${(RAW_CAP * 100).toFixed(0)}%${TUTORIAL ? " · modo tutorial" : ""})` },
+  { ok: CLIPSFIRST || rawShare <= RAW_CAP, msg: `fotos/clips full-screen = ${(rawShare * 100).toFixed(0)}% (debe ser ≤${(RAW_CAP * 100).toFixed(0)}%${TUTORIAL ? " · modo tutorial" : ""})` },
   { ok: nonRawDistinct >= 11, msg: `tipos NO-raw distintos = ${nonRawDistinct} (debe ser ≥11 — usá más del catálogo)` },
   { ok: structKinds.length >= 6, msg: `formatos estructurados presentes = ${structKinds.length}/${STRUCT.length} [${structKinds.join(",")}] (≥6; faltan: ${STRUCT.filter(k=>!count[k]).join(",")})` },
-  { ok: structCount / tot >= 0.12, msg: `peso de estructurados = ${(100 * structCount / tot).toFixed(0)}% (≥12% — bars/cross/process/journey/etc. no pueden ser migajas)` },
+  { ok: structCount / tot >= STRUCT_MIN, msg: `peso de estructurados = ${(100 * structCount / tot).toFixed(0)}% (≥${(STRUCT_MIN*100).toFixed(0)}% — bars/cross/process/journey/etc. no pueden ser migajas)` },
   { ok: (count.bars || 0) >= 2 && (count.checklist || 0) >= 1, msg: `bars=${count.bars||0} (≥2), checklist=${count.checklist||0} (≥1)` },
 ];
+if (CLIPSFIRST) console.log("(modo CLIPS-FIRST: tope de raw% desactivado; variedad de componentes SÍ exigida)");
 
 console.log(`\n=== variedad de componentes: ${slug} (${tot} beats) ===`);
 for (const [k, v] of Object.entries(count).sort((a, b) => b[1] - a[1]))

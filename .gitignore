@@ -21,3 +21,10 @@ chunks/
 *.tar
 img_index*.json
 vid_index*.json
+.gh_token2
+
+# venv + cuda build + binarios pesados (NO trackear — inflan el push)
+ttsenv/
+whisper_cuda/
+youtube/meta/*.png
+*.tar

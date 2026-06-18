@@ -295,6 +295,19 @@ function renderEl(b) {
         (b.hue ? ` hue=${j(b.hue)}` : ``) +
         ` />`
       );
+    case "earthtube":
+      return (
+        `<EarthTubeDiagram durationInFrames={d}` +
+        (b.eyebrow ? ` eyebrow=${j(b.eyebrow)}` : ``) +
+        (b.title ? ` title=${j(b.title)}` : ``) +
+        (b.intake ? ` intake={${j(b.intake)}}` : ``) +
+        (b.soil ? ` soil={${j(b.soil)}}` : ``) +
+        (b.out ? ` out={${j(b.out)}}` : ``) +
+        (b.depthTag ? ` depthTag=${j(b.depthTag)}` : ``) +
+        (b.lengthTag ? ` lengthTag=${j(b.lengthTag)}` : ``) +
+        (b.drainTag ? ` drainTag=${j(b.drainTag)}` : ``) +
+        ` />`
+      );
     case "checklist":
       return (
         `<Checklist durationInFrames={d} title=${j(b.title || "")} items={${j(b.items || [])}}` +
@@ -784,6 +797,7 @@ if (kinds.has("bars")) imports.push(`import { BarCompare } from "./scenes/BarCom
 if (kinds.has("cross")) imports.push(`import { CrossSection } from "./scenes/CrossSection";`);
 if (kinds.has("process")) imports.push(`import { ProcessSteps } from "./scenes/ProcessSteps";`);
 if (kinds.has("checklist")) imports.push(`import { Checklist } from "./scenes/Checklist";`);
+if (kinds.has("earthtube")) imports.push(`import { EarthTubeDiagram } from "./scenes/EarthTubeDiagram";`);
 if (kinds.has("rule")) imports.push(`import { RuleNumberScene } from "./scenes/RuleNumberScene";`);
 if (kinds.has("annotated")) imports.push(`import { AnnotatedImage } from "./scenes/AnnotatedImage";`);
 if (kinds.has("callout")) imports.push(`import { CalloutMark } from "./scenes/CalloutMark";`);
