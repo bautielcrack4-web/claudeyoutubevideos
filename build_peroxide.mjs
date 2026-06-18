@@ -385,7 +385,7 @@ CLIPS.sort((a, b) => a[0] - b[0]);
 // quita clips que caen dentro de un intervalo de avatar full
 const inFull = (t) => AV_FULL.some(([s, e]) => t >= s - 1e-6 && t < e - 1e-6);
 // espaciado mínimo entre clips → recorta el total a ~220 (presupuesto ~5h matchclip)
-const MINGAP = Number(process.env.PE_MINGAP) || 4.4;
+const MINGAP = Number(process.env.PE_MINGAP) || 3.4; // ~234 clips ≈5.3s/clip (pacing barcos)
 const clips = [];
 let lastT = -99;
 for (const c of CLIPS.filter((c) => !inFull(c[0]))) {
