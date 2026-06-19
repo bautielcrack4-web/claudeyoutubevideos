@@ -188,7 +188,7 @@ export const AnnotatedImage: React.FC<{
                       stroke={`${C}cc`}
                       strokeWidth={2}
                     />
-                    <text x={cx + 10} y={cy + h + 45} fontSize={26} fontWeight={800} fill={COLORS.text} fontFamily={FONT_STACK}>{a.label}</text>
+                    <text x={cx + 10} y={cy + h + 45} fontSize={26} fontWeight={800} fill={COLORS.bg0} fontFamily={FONT_STACK}>{a.label}</text>
                   </g>
                 )}
               </g>
