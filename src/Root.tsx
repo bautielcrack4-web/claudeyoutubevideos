@@ -19,6 +19,7 @@ import { MainAcpipe, TOTAL_FRAMES_ACPIPE } from "./VideoEdit/Main_acpipe";
 import { MainSandia, TOTAL_FRAMES_SANDIA } from "./VideoEdit/Main_sandia";
 import { MainRampump, TOTAL_FRAMES_RAMPUMP } from "./VideoEdit/Main_rampump";
 import { MainLuz, TOTAL_FRAMES_LUZ } from "./VideoEdit/Main_luz";
+import { MainReplantar, TOTAL_FRAMES_REPLANTAR } from "./VideoEdit/Main_replantar";
 import { MainMedicaid, TOTAL_FRAMES_MED } from "./VideoEdit/Main_medicaid";
 import { MainViuda, TOTAL_FRAMES_VD } from "./VideoEdit/Main_viuda";
 import { MainEstafas, TOTAL_FRAMES_ES } from "./VideoEdit/Main_estafas";
@@ -97,6 +98,15 @@ export const RemotionRoot: React.FC = () => {
         id="Rampump"
         component={MainRampump}
         durationInFrames={TOTAL_FRAMES_RAMPUMP}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
+      {/* VIDEO ACTIVO — Replantar verduras del súper (LeviLappJardín · ES · clips-first) */}
+      <Composition
+        id="Replantar"
+        component={MainReplantar}
+        durationInFrames={TOTAL_FRAMES_REPLANTAR}
         fps={30}
         width={1920}
         height={1080}

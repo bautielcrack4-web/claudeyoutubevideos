@@ -1,0 +1,3112 @@
+{
+  "video": "replantar",
+  "avatar": "replantar_opt.mp4",
+  "clipsfirst": true,
+  "beats": [
+    {
+      "id": "b1_rpl_trash_scraps",
+      "start": 2.05,
+      "dur": 6.95,
+      "kind": "raw",
+      "src": "img/rpl_trash_scraps.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_trash_scraps",
+        "prompt": "restos de verdura a la basura, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b6_rpl_pineapple_crown",
+      "start": 8.5,
+      "dur": 8.24,
+      "kind": "raw",
+      "src": "broll/rpl_pineapple_crown.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b12_rpl_jars_window",
+      "start": 16.24,
+      "dur": 1.61,
+      "kind": "raw",
+      "src": "img/rpl_jars_window.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_jars_window",
+        "prompt": "frascos rebrotando en la ventana, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b13_rpl_hand_plant",
+      "start": 17.53,
+      "dur": 6.95,
+      "kind": "raw",
+      "src": "broll/rpl_hand_plant.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b18_rpl_ginger_buds",
+      "start": 23.98,
+      "dur": 1.61,
+      "kind": "raw",
+      "src": "broll/rpl_ginger_buds.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_alive",
+      "start": 25.27,
+      "dur": 6.45,
+      "kind": "impact",
+      "hitAt": 1.2,
+      "boom": 0,
+      "darken": 0.4,
+      "setup": "Eso que llamas basura...",
+      "impact": "sigue VIVA.",
+      "impactAccent": "good",
+      "image": "img/cmp_alive_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "cmp_alive_bg",
+        "prompt": "a vegetable scrap with fresh roots glowing in sunlight on a windowsill, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b24_rpl_seedling_soil",
+      "start": 31.72,
+      "dur": 5.66,
+      "kind": "raw",
+      "src": "broll/rpl_seedling_soil.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_business",
+      "start": 36.88,
+      "dur": 6.45,
+      "kind": "splitlist",
+      "palette": "D",
+      "cross": true,
+      "title": "Por qué te lo vende suelto",
+      "items": [
+        "Para que vuelvas cada semana",
+        "Lo usás una vez y lo tirás",
+        "El negocio es la dependencia"
+      ]
+    },
+    {
+      "id": "b33_rpl_pineapple_plant",
+      "start": 43.33,
+      "dur": 8.23,
+      "kind": "raw",
+      "src": "broll/rpl_pineapple_plant.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b39_rpl_lettuce_stump",
+      "start": 51.06,
+      "dur": 3.08,
+      "kind": "raw",
+      "src": "img/rpl_lettuce_stump.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_lettuce_stump",
+        "prompt": "el tallo de la lechuga cortado, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "cmp_tally",
+      "start": 53.64,
+      "dur": 7.74,
+      "kind": "stat",
+      "hue": "amber",
+      "accent": "good",
+      "value": 16,
+      "suffix": " plantas · 0€",
+      "label": "comida nueva, gratis, desde tu basura",
+      "eyebrow": "Lo que vas a sacar hoy",
+      "image": "img/cmp_tally_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "cmp_tally_bg",
+        "prompt": "a windowsill full of regrowing vegetable cuttings in jars backlit, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b47_rpl_sprout_macro",
+      "start": 61.38,
+      "dur": 3.08,
+      "kind": "raw",
+      "src": "img/rpl_sprout_macro.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_sprout_macro",
+        "prompt": "un brote diminuto asomando, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b49_rpl_hand_plant",
+      "start": 63.96,
+      "dur": 5.66,
+      "kind": "raw",
+      "src": "broll/rpl_hand_plant.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b53_rpl_potato_eyes",
+      "start": 69.12,
+      "dur": 1.61,
+      "kind": "raw",
+      "src": "img/rpl_potato_eyes.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_potato_eyes",
+        "prompt": "una papa brotada en la despensa, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b54_rpl_ginger_buds",
+      "start": 70.41,
+      "dur": 1.61,
+      "kind": "raw",
+      "src": "broll/rpl_ginger_buds.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b55_rpl_basil_roots",
+      "start": 71.7,
+      "dur": 1.66,
+      "kind": "raw",
+      "src": "img/rpl_basil_roots.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_basil_roots",
+        "prompt": "esquejes de albahaca echando raíces, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b56_rpl_potato_dig",
+      "start": 73.03,
+      "dur": 2.68,
+      "kind": "raw",
+      "src": "broll/rpl_potato_dig.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b57_rpl_potato_pile",
+      "start": 75.21,
+      "dur": 2.69,
+      "kind": "raw",
+      "src": "img/rpl_potato_pile.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_potato_pile",
+        "prompt": "una bolsa llena de papas, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b58_rpl_wilt_water",
+      "start": 77.4,
+      "dur": 2.69,
+      "kind": "raw",
+      "src": "img/rpl_wilt_water.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_wilt_water",
+        "prompt": "un esqueje amarillo en agua turbia, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "cmp_teaser11",
+      "start": 79.59,
+      "dur": 6.56,
+      "kind": "regrow",
+      "hue": "amber",
+      "number": "11",
+      "title": "Una sola te da una bolsa de comida",
+      "leftLabel": "Basura",
+      "rightLabel": "Cosecha",
+      "leftImage": "img/cmp_teaser11_l.png",
+      "genL": {
+        "type": "image",
+        "name": "cmp_teaser11_l",
+        "prompt": "a wrinkled sprouting potato in a dim pantry, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      },
+      "rightImage": "img/cmp_teaser11_r.png",
+      "genR": {
+        "type": "image",
+        "name": "cmp_teaser11_r",
+        "prompt": "a big pile of freshly dug potatoes from one plant, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b62_rpl_pepper_seedlings",
+      "start": 86.15,
+      "dur": 2.68,
+      "kind": "raw",
+      "src": "broll/rpl_pepper_seedlings.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b63_rpl_window_lineup",
+      "start": 88.33,
+      "dur": 2.69,
+      "kind": "raw",
+      "src": "img/rpl_window_lineup.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_window_lineup",
+        "prompt": "la ventana llena de frascos, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b64_rpl_clock_calendar",
+      "start": 90.52,
+      "dur": 2.68,
+      "kind": "raw",
+      "src": "img/rpl_clock_calendar.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_clock_calendar",
+        "prompt": "los días pasando, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b65_rpl_satisfied_garden",
+      "start": 92.7,
+      "dur": 2.69,
+      "kind": "raw",
+      "src": "img/rpl_satisfied_garden.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_satisfied_garden",
+        "prompt": "alguien feliz con su cosecha, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "cmp_loop_error",
+      "start": 94.89,
+      "dur": 6.56,
+      "kind": "mistake",
+      "number": "!",
+      "eyebrow": "EN ESTE VIDEO",
+      "title": "El error que mata la mitad de tus plantas",
+      "desc": "Casi todos lo cometen, y creen que no funcionó.",
+      "image": "img/cmp_loop_error_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "cmp_loop_error_bg",
+        "prompt": "a wilting plant cutting dying in cloudy stagnant water, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b69_rpl_roots_clear",
+      "start": 101.45,
+      "dur": 2.69,
+      "kind": "raw",
+      "src": "img/rpl_roots_clear.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_roots_clear",
+        "prompt": "raíces sanas en agua limpia, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b70_rpl_transplant_soil",
+      "start": 103.64,
+      "dur": 2.68,
+      "kind": "raw",
+      "src": "img/rpl_transplant_soil.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_transplant_soil",
+        "prompt": "pasando el esqueje del agua a la tierra, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b71_rpl_pepper_seeds",
+      "start": 105.82,
+      "dur": 2.69,
+      "kind": "raw",
+      "src": "broll/rpl_pepper_seeds.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b72_rpl_pepper_seedlings",
+      "start": 108.01,
+      "dur": 2.69,
+      "kind": "raw",
+      "src": "broll/rpl_pepper_seedlings.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b73_rpl_window_lineup",
+      "start": 110.2,
+      "dur": 2.68,
+      "kind": "raw",
+      "src": "img/rpl_window_lineup.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_window_lineup",
+        "prompt": "la ventana llena de frascos, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b74_rpl_clock_calendar",
+      "start": 112.38,
+      "dur": 2.69,
+      "kind": "raw",
+      "src": "img/rpl_clock_calendar.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_clock_calendar",
+        "prompt": "los días pasando, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b75_rpl_satisfied_garden",
+      "start": 114.57,
+      "dur": 2.68,
+      "kind": "raw",
+      "src": "img/rpl_satisfied_garden.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_satisfied_garden",
+        "prompt": "alguien feliz con su cosecha, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b76_rpl_potato_dig",
+      "start": 116.75,
+      "dur": 2.69,
+      "kind": "raw",
+      "src": "broll/rpl_potato_dig.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b77_rpl_potato_pile",
+      "start": 118.94,
+      "dur": 2.6,
+      "kind": "raw",
+      "src": "img/rpl_potato_pile.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_potato_pile",
+        "prompt": "una bolsa llena de papas, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b78_rpl_cutting_roots",
+      "start": 159.51,
+      "dur": 5.31,
+      "kind": "raw",
+      "src": "img/rpl_cutting_roots.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_cutting_roots",
+        "prompt": "un esqueje echando raíces, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "cmp_savings_bars",
+      "start": 164.32,
+      "dur": 9.6,
+      "kind": "bars",
+      "hue": "amber",
+      "accent": "good",
+      "unit": "EUR",
+      "title": "Hierbas y verduras de hoja",
+      "eyebrow": "Lo que se va al año",
+      "bars": [
+        {
+          "label": "Comprándolas todo el año",
+          "value": 160,
+          "display": "~160€",
+          "tone": "danger"
+        },
+        {
+          "label": "Replantando los restos",
+          "value": 0,
+          "display": "0€",
+          "winner": true
+        }
+      ]
+    },
+    {
+      "id": "b81_rpl_grow_lights",
+      "start": 173.92,
+      "dur": 5.31,
+      "kind": "raw",
+      "src": "img/rpl_grow_lights.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_grow_lights",
+        "prompt": "luces de cultivo artificiales, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b82_rpl_greenhouse",
+      "start": 178.73,
+      "dur": 5.3,
+      "kind": "raw",
+      "src": "broll/rpl_greenhouse.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_solo",
+      "start": 183.53,
+      "dur": 4.8,
+      "kind": "checklist",
+      "hue": "amber",
+      "accent": "good",
+      "title": "Solo necesitas",
+      "eyebrow": "En tu cocina",
+      "items": [
+        {
+          "text": "Un vaso de agua",
+          "state": "done"
+        },
+        {
+          "text": "Un puñado de tierra",
+          "state": "done"
+        },
+        {
+          "text": "Una ventana con luz",
+          "state": "done"
+        }
+      ],
+      "image": "img/cmp_solo_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "cmp_solo_bg",
+        "prompt": "a glass of water with a cutting and a pot of soil on a sunny windowsill, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "cmp_nonecesitas",
+      "start": 188.33,
+      "dur": 9.61,
+      "kind": "splitlist",
+      "palette": "D",
+      "cross": true,
+      "title": "No necesitas nada de esto",
+      "items": [
+        "Semillas caras",
+        "Luces de cultivo",
+        "Invernadero"
+      ]
+    },
+    {
+      "id": "b86_rpl_scraps_ready",
+      "start": 197.94,
+      "dur": 5.3,
+      "kind": "raw",
+      "src": "img/rpl_scraps_ready.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_scraps_ready",
+        "prompt": "restos listos para rebrotar, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b87_rpl_cutting_roots",
+      "start": 202.74,
+      "dur": 5.31,
+      "kind": "raw",
+      "src": "img/rpl_cutting_roots.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_cutting_roots",
+        "prompt": "un esqueje echando raíces, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b88_rpl_root_tip_macro",
+      "start": 207.55,
+      "dur": 5.3,
+      "kind": "raw",
+      "src": "img/rpl_root_tip_macro.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_root_tip_macro",
+        "prompt": "la punta de una raíz viva, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "cmp_anno_cebolla",
+      "start": 212.35,
+      "dur": 9.82,
+      "kind": "annotated",
+      "hue": "amber",
+      "eyebrow": "Cómo se hace",
+      "annotations": [
+        {
+          "kind": "circle",
+          "x": 0.5,
+          "y": 0.78,
+          "w": 0.18,
+          "label": "Raíces al agua",
+          "color": "good"
+        },
+        {
+          "kind": "arrow",
+          "x": 0.5,
+          "y": 0.32,
+          "fromX": 0.78,
+          "fromY": 0.12,
+          "label": "Dejá 3 dedos de tallo",
+          "color": "amber"
+        },
+        {
+          "kind": "circle",
+          "x": 0.5,
+          "y": 0.9,
+          "w": 0.4,
+          "label": "1 dedo de agua",
+          "color": "accent"
+        }
+      ],
+      "image": "img/cmp_anno_cebolla_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "cmp_anno_cebolla_bg",
+        "prompt": "green onion root ends standing in a glass with shallow water on a windowsill, side view, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b91_rpl_o1_glass",
+      "start": 222.17,
+      "dur": 5.5,
+      "kind": "raw",
+      "src": "img/rpl_o1_glass.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o1_glass",
+        "prompt": "metiendo las raíces en un vaso, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b92_rpl_o1_window",
+      "start": 227.17,
+      "dur": 5.51,
+      "kind": "raw",
+      "src": "img/rpl_o1_window.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o1_window",
+        "prompt": "el vaso en la ventana, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b93_rpl_o1_shoots",
+      "start": 232.18,
+      "dur": 5.51,
+      "kind": "raw",
+      "src": "img/rpl_o1_shoots.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o1_shoots",
+        "prompt": "los brotes verdes creciendo, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b94_rpl_o1_change",
+      "start": 237.19,
+      "dur": 5.51,
+      "kind": "raw",
+      "src": "img/rpl_o1_change.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o1_change",
+        "prompt": "cambiando el agua, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b95_rpl_o1_snip",
+      "start": 242.2,
+      "dur": 5.5,
+      "kind": "raw",
+      "src": "img/rpl_o1_snip.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o1_snip",
+        "prompt": "cortando lo que necesitás, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b96_rpl_o1_bunch",
+      "start": 247.2,
+      "dur": 5.51,
+      "kind": "raw",
+      "src": "img/rpl_o1_bunch.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o1_bunch",
+        "prompt": "un manojo fresco de cebolla de verdeo, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b97_rpl_o1_cook",
+      "start": 252.21,
+      "dur": 5.51,
+      "kind": "raw",
+      "src": "img/rpl_o1_cook.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o1_cook",
+        "prompt": "cebolla fresca sobre la comida, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b98_rpl_o1_roots",
+      "start": 257.22,
+      "dur": 5.51,
+      "kind": "raw",
+      "src": "img/rpl_o1_roots.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o1_roots",
+        "prompt": "la base blanca con raíces, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b99_rpl_o1_glass",
+      "start": 262.23,
+      "dur": 5.5,
+      "kind": "raw",
+      "src": "img/rpl_o1_glass.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o1_glass",
+        "prompt": "metiendo las raíces en un vaso, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b100_rpl_o1_window",
+      "start": 267.23,
+      "dur": 5.53,
+      "kind": "raw",
+      "src": "img/rpl_o1_window.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o1_window",
+        "prompt": "el vaso en la ventana, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b101_rpl_o2_core",
+      "start": 272.26,
+      "dur": 5.9,
+      "kind": "raw",
+      "src": "img/rpl_o2_core.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o2_core",
+        "prompt": "el corazón de la lechuga, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b102_rpl_o2_dish",
+      "start": 277.66,
+      "dur": 5.9,
+      "kind": "raw",
+      "src": "img/rpl_o2_dish.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o2_dish",
+        "prompt": "la base en un plato con agua, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b103_rpl_o2_window",
+      "start": 283.06,
+      "dur": 5.9,
+      "kind": "raw",
+      "src": "img/rpl_o2_window.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o2_window",
+        "prompt": "en la ventana con luz, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b104_rpl_o2_leaves",
+      "start": 288.46,
+      "dur": 5.9,
+      "kind": "raw",
+      "src": "img/rpl_o2_leaves.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o2_leaves",
+        "prompt": "hojas tiernas del centro, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b105_rpl_o2_timelapse",
+      "start": 293.86,
+      "dur": 5.9,
+      "kind": "raw",
+      "src": "broll/rpl_o2_timelapse.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b106_rpl_o2_salad",
+      "start": 299.26,
+      "dur": 5.9,
+      "kind": "raw",
+      "src": "img/rpl_o2_salad.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o2_salad",
+        "prompt": "hojas frescas para ensalada, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b107_rpl_o2_supermarket",
+      "start": 304.66,
+      "dur": 5.9,
+      "kind": "raw",
+      "src": "img/rpl_o2_supermarket.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o2_supermarket",
+        "prompt": "lechugas en el súper, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b108_rpl_o2_roots",
+      "start": 310.06,
+      "dur": 5.9,
+      "kind": "raw",
+      "src": "img/rpl_o2_roots.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o2_roots",
+        "prompt": "raicitas formándose abajo, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b109_rpl_o2_pot",
+      "start": 315.46,
+      "dur": 5.9,
+      "kind": "raw",
+      "src": "img/rpl_o2_pot.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o2_pot",
+        "prompt": "pasándola a una maceta, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b110_rpl_o2_honest",
+      "start": 320.86,
+      "dur": 5.9,
+      "kind": "raw",
+      "src": "img/rpl_o2_honest.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o2_honest",
+        "prompt": "comparando con la del súper (honesto), realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b111_rpl_o2_core",
+      "start": 326.26,
+      "dur": 5.9,
+      "kind": "raw",
+      "src": "img/rpl_o2_core.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o2_core",
+        "prompt": "el corazón de la lechuga, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b112_rpl_o2_dish",
+      "start": 331.66,
+      "dur": 5.9,
+      "kind": "raw",
+      "src": "img/rpl_o2_dish.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o2_dish",
+        "prompt": "la base en un plato con agua, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b113_rpl_o2_window",
+      "start": 337.06,
+      "dur": 5.9,
+      "kind": "raw",
+      "src": "img/rpl_o2_window.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o2_window",
+        "prompt": "en la ventana con luz, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b114_rpl_o2_leaves",
+      "start": 342.46,
+      "dur": 5.9,
+      "kind": "raw",
+      "src": "img/rpl_o2_leaves.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o2_leaves",
+        "prompt": "hojas tiernas del centro, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b115_rpl_o2_timelapse",
+      "start": 347.86,
+      "dur": 5.9,
+      "kind": "raw",
+      "src": "broll/rpl_o2_timelapse.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b116_rpl_o2_salad",
+      "start": 353.26,
+      "dur": 5.88,
+      "kind": "raw",
+      "src": "img/rpl_o2_salad.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o2_salad",
+        "prompt": "hojas frescas para ensalada, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b117_rpl_o3_base",
+      "start": 358.64,
+      "dur": 5.39,
+      "kind": "raw",
+      "src": "img/rpl_o3_base.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o3_base",
+        "prompt": "la base del apio, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b118_rpl_o3_water",
+      "start": 363.53,
+      "dur": 5.4,
+      "kind": "raw",
+      "src": "broll/rpl_o3_water.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b119_rpl_o3_center",
+      "start": 368.43,
+      "dur": 5.4,
+      "kind": "raw",
+      "src": "img/rpl_o3_center.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o3_center",
+        "prompt": "brotes del centro, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b120_rpl_o3_roots",
+      "start": 373.33,
+      "dur": 5.4,
+      "kind": "raw",
+      "src": "img/rpl_o3_roots.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o3_roots",
+        "prompt": "raíces naciendo por debajo, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b121_rpl_o3_soil",
+      "start": 378.23,
+      "dur": 5.39,
+      "kind": "raw",
+      "src": "img/rpl_o3_soil.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o3_soil",
+        "prompt": "pasándolo a la tierra, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b122_rpl_o3_shelf",
+      "start": 383.12,
+      "dur": 5.4,
+      "kind": "raw",
+      "src": "broll/rpl_o3_shelf.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b123_rpl_o3_base",
+      "start": 388.02,
+      "dur": 5.4,
+      "kind": "raw",
+      "src": "img/rpl_o3_base.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o3_base",
+        "prompt": "la base del apio, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b124_rpl_o3_water",
+      "start": 392.92,
+      "dur": 5.4,
+      "kind": "raw",
+      "src": "broll/rpl_o3_water.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b125_rpl_o3_center",
+      "start": 397.82,
+      "dur": 5.37,
+      "kind": "raw",
+      "src": "img/rpl_o3_center.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o3_center",
+        "prompt": "brotes del centro, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b126_rpl_o4_base",
+      "start": 402.69,
+      "dur": 4.67,
+      "kind": "raw",
+      "src": "broll/rpl_o4_base.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b127_rpl_o4_water",
+      "start": 406.86,
+      "dur": 4.67,
+      "kind": "raw",
+      "src": "img/rpl_o4_water.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o4_water",
+        "prompt": "el cogollo rebrotando en agua, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b128_rpl_o4_grow",
+      "start": 411.03,
+      "dur": 4.68,
+      "kind": "raw",
+      "src": "broll/rpl_o4_grow.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b129_rpl_o4_soil",
+      "start": 415.21,
+      "dur": 4.67,
+      "kind": "raw",
+      "src": "img/rpl_o4_soil.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o4_soil",
+        "prompt": "a la tierra cuando tiene raíces, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b130_rpl_o4_base",
+      "start": 419.38,
+      "dur": 4.67,
+      "kind": "raw",
+      "src": "broll/rpl_o4_base.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b131_rpl_o4_water",
+      "start": 423.55,
+      "dur": 4.73,
+      "kind": "raw",
+      "src": "img/rpl_o4_water.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o4_water",
+        "prompt": "el cogollo rebrotando en agua, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b132_rpl_o5_roots",
+      "start": 427.78,
+      "dur": 6.01,
+      "kind": "raw",
+      "src": "img/rpl_o5_roots.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o5_roots",
+        "prompt": "la parte blanca con raíces, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b133_rpl_o5_glass",
+      "start": 433.29,
+      "dur": 6.01,
+      "kind": "raw",
+      "src": "img/rpl_o5_glass.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o5_glass",
+        "prompt": "el puerro creciendo en agua, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b134_rpl_o5_window",
+      "start": 438.8,
+      "dur": 6.02,
+      "kind": "raw",
+      "src": "img/rpl_o5_window.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o5_window",
+        "prompt": "en la ventana de la cocina, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b135_rpl_o5_grow",
+      "start": 444.32,
+      "dur": 6.01,
+      "kind": "raw",
+      "src": "img/rpl_o5_grow.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o5_grow",
+        "prompt": "rebrotando hacia arriba, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b136_rpl_o5_cut",
+      "start": 449.83,
+      "dur": 6.01,
+      "kind": "raw",
+      "src": "img/rpl_o5_cut.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o5_cut",
+        "prompt": "cortando para la sopa, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b137_rpl_o5_soup",
+      "start": 455.34,
+      "dur": 6.01,
+      "kind": "raw",
+      "src": "img/rpl_o5_soup.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o5_soup",
+        "prompt": "puerro en un guiso, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b138_rpl_o5_renew",
+      "start": 460.85,
+      "dur": 6.01,
+      "kind": "raw",
+      "src": "broll/rpl_o5_renew.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_herbs",
+      "start": 466.36,
+      "dur": 11.03,
+      "kind": "chips",
+      "hue": "amber",
+      "title": "Las hierbas: donde más ahorrás",
+      "chips": [
+        "Albahaca",
+        "Menta",
+        "Cilantro"
+      ],
+      "image": "img/cmp_herbs_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "cmp_herbs_bg",
+        "prompt": "fresh basil mint and cilantro herb cuttings rooting in glasses of water on a windowsill, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b141_rpl_o5_window",
+      "start": 477.39,
+      "dur": 6.01,
+      "kind": "raw",
+      "src": "img/rpl_o5_window.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o5_window",
+        "prompt": "en la ventana de la cocina, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "cmp_basil_bars",
+      "start": 482.9,
+      "dur": 11,
+      "kind": "bars",
+      "hue": "amber",
+      "accent": "good",
+      "unit": "EUR",
+      "title": "Albahaca fresca",
+      "eyebrow": "Comprarla vs replantarla",
+      "bars": [
+        {
+          "label": "Comprada cada semana",
+          "value": 60,
+          "display": "60€/año",
+          "tone": "danger"
+        },
+        {
+          "label": "De 1 manojo replantado",
+          "value": 0,
+          "display": "0€",
+          "winner": true
+        }
+      ]
+    },
+    {
+      "id": "b144_rpl_o6_bunch",
+      "start": 493.9,
+      "dur": 5.41,
+      "kind": "raw",
+      "src": "img/rpl_o6_bunch.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o6_bunch",
+        "prompt": "un manojo carísimo de albahaca, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b145_rpl_o6_cutting",
+      "start": 498.81,
+      "dur": 5.41,
+      "kind": "raw",
+      "src": "img/rpl_o6_cutting.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o6_cutting",
+        "prompt": "cortando un tallo y sacando hojas de abajo, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b146_rpl_o6_glass",
+      "start": 503.72,
+      "dur": 5.41,
+      "kind": "raw",
+      "src": "broll/rpl_o6_glass.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b147_rpl_o6_roots",
+      "start": 508.63,
+      "dur": 5.42,
+      "kind": "raw",
+      "src": "broll/rpl_o6_roots.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b148_rpl_o6_pot",
+      "start": 513.55,
+      "dur": 5.41,
+      "kind": "raw",
+      "src": "img/rpl_o6_pot.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o6_pot",
+        "prompt": "pasándola a la maceta, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b149_rpl_o6_plants",
+      "start": 518.46,
+      "dur": 5.41,
+      "kind": "raw",
+      "src": "broll/rpl_o6_plants.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b150_rpl_o6_bunch",
+      "start": 523.37,
+      "dur": 5.41,
+      "kind": "raw",
+      "src": "img/rpl_o6_bunch.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o6_bunch",
+        "prompt": "un manojo carísimo de albahaca, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b151_rpl_o6_cutting",
+      "start": 528.28,
+      "dur": 5.42,
+      "kind": "raw",
+      "src": "img/rpl_o6_cutting.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o6_cutting",
+        "prompt": "cortando un tallo y sacando hojas de abajo, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b152_rpl_o7_sprig",
+      "start": 533.2,
+      "dur": 5.57,
+      "kind": "raw",
+      "src": "img/rpl_o7_sprig.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o7_sprig",
+        "prompt": "una ramita de menta, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b153_rpl_o7_cutting",
+      "start": 538.27,
+      "dur": 5.56,
+      "kind": "raw",
+      "src": "img/rpl_o7_cutting.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o7_cutting",
+        "prompt": "esquejes de menta en agua, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b154_rpl_o7_roots",
+      "start": 543.33,
+      "dur": 5.57,
+      "kind": "raw",
+      "src": "img/rpl_o7_roots.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o7_roots",
+        "prompt": "menta enraizando rápido, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b155_rpl_o7_pot",
+      "start": 548.4,
+      "dur": 5.56,
+      "kind": "raw",
+      "src": "img/rpl_o7_pot.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o7_pot",
+        "prompt": "menta en su propia maceta, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b156_rpl_o7_spread",
+      "start": 553.46,
+      "dur": 5.57,
+      "kind": "raw",
+      "src": "img/rpl_o7_spread.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o7_spread",
+        "prompt": "la menta apoderándose del cantero, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b157_rpl_o7_tea",
+      "start": 558.53,
+      "dur": 5.57,
+      "kind": "raw",
+      "src": "img/rpl_o7_tea.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o7_tea",
+        "prompt": "hojas de menta frescas, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b158_rpl_o7_sprig",
+      "start": 563.6,
+      "dur": 5.56,
+      "kind": "raw",
+      "src": "img/rpl_o7_sprig.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o7_sprig",
+        "prompt": "una ramita de menta, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b159_rpl_o7_cutting",
+      "start": 568.66,
+      "dur": 5.57,
+      "kind": "raw",
+      "src": "img/rpl_o7_cutting.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o7_cutting",
+        "prompt": "esquejes de menta en agua, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b160_rpl_o7_roots",
+      "start": 573.73,
+      "dur": 5.58,
+      "kind": "raw",
+      "src": "img/rpl_o7_roots.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o7_roots",
+        "prompt": "menta enraizando rápido, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b161_rpl_e_wilt",
+      "start": 578.81,
+      "dur": 5.99,
+      "kind": "raw",
+      "src": "img/rpl_e_wilt.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_e_wilt",
+        "prompt": "un esqueje muriéndose en el vaso, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b162_rpl_e_murky",
+      "start": 584.3,
+      "dur": 5.99,
+      "kind": "raw",
+      "src": "img/rpl_e_murky.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_e_murky",
+        "prompt": "agua estancada y turbia, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b163_rpl_e_rotroots",
+      "start": 589.79,
+      "dur": 5.99,
+      "kind": "raw",
+      "src": "img/rpl_e_rotroots.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_e_rotroots",
+        "prompt": "raíces podridas en agua sucia, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b164_rpl_e_change",
+      "start": 595.28,
+      "dur": 5.99,
+      "kind": "raw",
+      "src": "img/rpl_e_change.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_e_change",
+        "prompt": "cambiando el agua cada dos días, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b165_rpl_e_clear",
+      "start": 600.77,
+      "dur": 5.99,
+      "kind": "raw",
+      "src": "img/rpl_e_clear.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_e_clear",
+        "prompt": "raíces sanas en agua limpia, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b166_rpl_e_transplant",
+      "start": 606.26,
+      "dur": 5.99,
+      "kind": "raw",
+      "src": "img/rpl_e_transplant.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_e_transplant",
+        "prompt": "pasando a la tierra al ver raíces, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b167_rpl_e_soil_feed",
+      "start": 611.75,
+      "dur": 5.99,
+      "kind": "raw",
+      "src": "img/rpl_e_soil_feed.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_e_soil_feed",
+        "prompt": "la tierra que la alimenta, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b168_rpl_e_compare",
+      "start": 617.24,
+      "dur": 5.99,
+      "kind": "raw",
+      "src": "img/rpl_e_compare.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_e_compare",
+        "prompt": "la sana vs la del vaso eterno, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "cmp_error_fix",
+      "start": 622.73,
+      "dur": 10.99,
+      "kind": "process",
+      "hue": "amber",
+      "accent": "good",
+      "title": "Cómo evitar que mueran",
+      "eyebrow": "Las 2 reglas",
+      "steps": [
+        {
+          "title": "Cambia el agua cada 2-3 días"
+        },
+        {
+          "title": "En cuanto veas raíces, pásala a la tierra"
+        }
+      ]
+    },
+    {
+      "id": "b171_rpl_e_rotroots",
+      "start": 633.72,
+      "dur": 5.99,
+      "kind": "raw",
+      "src": "img/rpl_e_rotroots.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_e_rotroots",
+        "prompt": "raíces podridas en agua sucia, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b172_rpl_e_change",
+      "start": 639.21,
+      "dur": 5.99,
+      "kind": "raw",
+      "src": "img/rpl_e_change.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_e_change",
+        "prompt": "cambiando el agua cada dos días, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b173_rpl_e_clear",
+      "start": 644.7,
+      "dur": 5.99,
+      "kind": "raw",
+      "src": "img/rpl_e_clear.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_e_clear",
+        "prompt": "raíces sanas en agua limpia, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b174_rpl_e_transplant",
+      "start": 650.19,
+      "dur": 5.99,
+      "kind": "raw",
+      "src": "img/rpl_e_transplant.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_e_transplant",
+        "prompt": "pasando a la tierra al ver raíces, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "cmp_water_crew",
+      "start": 655.68,
+      "dur": 10.96,
+      "kind": "checklist",
+      "hue": "amber",
+      "accent": "good",
+      "title": "Solo agua y ventana",
+      "eyebrow": "Los 5 más fáciles",
+      "items": [
+        {
+          "text": "Cebolla de verdeo",
+          "state": "done"
+        },
+        {
+          "text": "Lechuga",
+          "state": "done"
+        },
+        {
+          "text": "Apio",
+          "state": "done"
+        },
+        {
+          "text": "Bok choy",
+          "state": "done"
+        },
+        {
+          "text": "Puerro",
+          "state": "done"
+        }
+      ],
+      "image": "img/cmp_water_crew_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "cmp_water_crew_bg",
+        "prompt": "several vegetable bases regrowing in glasses of water on a sunny windowsill, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b177_rpl_o8_stems",
+      "start": 666.64,
+      "dur": 5.49,
+      "kind": "raw",
+      "src": "img/rpl_o8_stems.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o8_stems",
+        "prompt": "tallos de cilantro con raíz en agua, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b178_rpl_o8_regrow",
+      "start": 671.63,
+      "dur": 5.49,
+      "kind": "raw",
+      "src": "img/rpl_o8_regrow.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o8_regrow",
+        "prompt": "rebrotando hojas frescas, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b179_rpl_o8_flower",
+      "start": 676.62,
+      "dur": 5.48,
+      "kind": "raw",
+      "src": "img/rpl_o8_flower.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o8_flower",
+        "prompt": "cilantro florecido, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b180_rpl_o8_seeds",
+      "start": 681.6,
+      "dur": 5.49,
+      "kind": "raw",
+      "src": "img/rpl_o8_seeds.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o8_seeds",
+        "prompt": "las bolitas: semilla de cilantro, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b181_rpl_o8_plant_seeds",
+      "start": 686.59,
+      "dur": 5.49,
+      "kind": "raw",
+      "src": "img/rpl_o8_plant_seeds.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o8_plant_seeds",
+        "prompt": "sembrando las semillas, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b182_rpl_o8_fresh",
+      "start": 691.58,
+      "dur": 5.49,
+      "kind": "raw",
+      "src": "broll/rpl_o8_fresh.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b183_rpl_o8_stems",
+      "start": 696.57,
+      "dur": 5.49,
+      "kind": "raw",
+      "src": "img/rpl_o8_stems.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o8_stems",
+        "prompt": "tallos de cilantro con raíz en agua, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b184_rpl_o8_regrow",
+      "start": 701.56,
+      "dur": 5.48,
+      "kind": "raw",
+      "src": "img/rpl_o8_regrow.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o8_regrow",
+        "prompt": "rebrotando hojas frescas, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b185_rpl_o8_flower",
+      "start": 706.54,
+      "dur": 5.49,
+      "kind": "raw",
+      "src": "img/rpl_o8_flower.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o8_flower",
+        "prompt": "cilantro florecido, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b186_rpl_o8_seeds",
+      "start": 711.53,
+      "dur": 5.5,
+      "kind": "raw",
+      "src": "img/rpl_o8_seeds.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o8_seeds",
+        "prompt": "las bolitas: semilla de cilantro, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b187_rpl_o9_sprout",
+      "start": 716.53,
+      "dur": 5.63,
+      "kind": "raw",
+      "src": "img/rpl_o9_sprout.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o9_sprout",
+        "prompt": "un diente brotado en el cajón, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b188_rpl_o9_plant",
+      "start": 721.66,
+      "dur": 5.63,
+      "kind": "raw",
+      "src": "broll/rpl_o9_plant.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b189_rpl_o9_greens",
+      "start": 726.79,
+      "dur": 5.64,
+      "kind": "raw",
+      "src": "img/rpl_o9_greens.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o9_greens",
+        "prompt": "brotes de ajo tiernos, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b190_rpl_o9_cook",
+      "start": 731.93,
+      "dur": 5.63,
+      "kind": "raw",
+      "src": "broll/rpl_o9_cook.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b191_rpl_o9_bulb",
+      "start": 737.06,
+      "dur": 5.63,
+      "kind": "raw",
+      "src": "img/rpl_o9_bulb.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o9_bulb",
+        "prompt": "una cabeza entera de ajo, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b192_rpl_o9_field",
+      "start": 742.19,
+      "dur": 5.64,
+      "kind": "raw",
+      "src": "img/rpl_o9_field.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o9_field",
+        "prompt": "ajo creciendo en la huerta, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b193_rpl_o9_sprout",
+      "start": 747.33,
+      "dur": 5.63,
+      "kind": "raw",
+      "src": "img/rpl_o9_sprout.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o9_sprout",
+        "prompt": "un diente brotado en el cajón, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b194_rpl_o9_plant",
+      "start": 752.46,
+      "dur": 5.63,
+      "kind": "raw",
+      "src": "broll/rpl_o9_plant.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_anno_jengibre",
+      "start": 757.59,
+      "dur": 10.07,
+      "kind": "annotated",
+      "hue": "amber",
+      "eyebrow": "Buscá la yema",
+      "annotations": [
+        {
+          "kind": "circle",
+          "x": 0.42,
+          "y": 0.4,
+          "w": 0.16,
+          "label": "Yema (como un ojo)",
+          "color": "good"
+        },
+        {
+          "kind": "arrow",
+          "x": 0.6,
+          "y": 0.6,
+          "fromX": 0.85,
+          "fromY": 0.85,
+          "label": "Cortá con una yema",
+          "color": "amber"
+        }
+      ],
+      "image": "img/cmp_anno_jengibre_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "cmp_anno_jengibre_bg",
+        "prompt": "a knob of fresh ginger root with visible growth bud nodes, macro on a wooden board, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b197_rpl_o10_cut",
+      "start": 767.66,
+      "dur": 5.44,
+      "kind": "raw",
+      "src": "img/rpl_o10_cut.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o10_cut",
+        "prompt": "cortando un trozo con yema, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b198_rpl_o10_dry",
+      "start": 772.6,
+      "dur": 5.45,
+      "kind": "raw",
+      "src": "img/rpl_o10_dry.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o10_dry",
+        "prompt": "dejándolo secar un día, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b199_rpl_o10_plant",
+      "start": 777.55,
+      "dur": 5.44,
+      "kind": "raw",
+      "src": "img/rpl_o10_plant.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o10_plant",
+        "prompt": "enterrándolo poco profundo, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b200_rpl_o10_sprout",
+      "start": 782.49,
+      "dur": 5.44,
+      "kind": "raw",
+      "src": "img/rpl_o10_sprout.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o10_sprout",
+        "prompt": "el brote de jengibre asomando, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b201_rpl_o10_harvest",
+      "start": 787.43,
+      "dur": 5.45,
+      "kind": "raw",
+      "src": "broll/rpl_o10_harvest.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b202_rpl_o10_turmeric",
+      "start": 792.38,
+      "dur": 5.44,
+      "kind": "raw",
+      "src": "img/rpl_o10_turmeric.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o10_turmeric",
+        "prompt": "la cúrcuma, lo mismo, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b203_rpl_o10_buds",
+      "start": 797.32,
+      "dur": 5.44,
+      "kind": "raw",
+      "src": "img/rpl_o10_buds.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o10_buds",
+        "prompt": "las yemas del jengibre, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b204_rpl_o10_cut",
+      "start": 802.26,
+      "dur": 5.45,
+      "kind": "raw",
+      "src": "img/rpl_o10_cut.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o10_cut",
+        "prompt": "cortando un trozo con yema, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b205_rpl_o10_dry",
+      "start": 807.21,
+      "dur": 5.44,
+      "kind": "raw",
+      "src": "img/rpl_o10_dry.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o10_dry",
+        "prompt": "dejándolo secar un día, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b206_rpl_o10_plant",
+      "start": 812.15,
+      "dur": 5.44,
+      "kind": "raw",
+      "src": "img/rpl_o10_plant.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o10_plant",
+        "prompt": "enterrándolo poco profundo, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "cmp_anno_papa",
+      "start": 817.09,
+      "dur": 10.42,
+      "kind": "annotated",
+      "hue": "amber",
+      "eyebrow": "Cada trozo, un ojo",
+      "annotations": [
+        {
+          "kind": "circle",
+          "x": 0.35,
+          "y": 0.4,
+          "w": 0.14,
+          "label": "Los ojos / brotes",
+          "color": "good"
+        },
+        {
+          "kind": "circle",
+          "x": 0.66,
+          "y": 0.55,
+          "w": 0.14,
+          "label": "",
+          "color": "good"
+        },
+        {
+          "kind": "arrow",
+          "x": 0.5,
+          "y": 0.82,
+          "fromX": 0.8,
+          "fromY": 0.95,
+          "label": "Cortá en trozos y dejá secar",
+          "color": "amber"
+        }
+      ],
+      "image": "img/cmp_anno_papa_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "cmp_anno_papa_bg",
+        "prompt": "a sprouting potato with several pale eyes and shoots on a rustic table, macro, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b209_rpl_o11_eyes",
+      "start": 827.51,
+      "dur": 5.96,
+      "kind": "raw",
+      "src": "img/rpl_o11_eyes.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o11_eyes",
+        "prompt": "los ojos de la papa, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b210_rpl_o11_cut",
+      "start": 832.97,
+      "dur": 5.95,
+      "kind": "raw",
+      "src": "img/rpl_o11_cut.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o11_cut",
+        "prompt": "cortándola en trozos con ojos, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b211_rpl_o11_dry",
+      "start": 838.42,
+      "dur": 5.96,
+      "kind": "raw",
+      "src": "img/rpl_o11_dry.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o11_dry",
+        "prompt": "dejando secar los cortes, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b212_rpl_o11_plant",
+      "start": 843.88,
+      "dur": 5.95,
+      "kind": "raw",
+      "src": "img/rpl_o11_plant.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o11_plant",
+        "prompt": "enterrándolos a un palmo, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b213_rpl_o11_grow",
+      "start": 849.33,
+      "dur": 5.95,
+      "kind": "raw",
+      "src": "broll/rpl_o11_grow.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b214_rpl_o11_dig",
+      "start": 854.78,
+      "dur": 5.96,
+      "kind": "raw",
+      "src": "img/rpl_o11_dig.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o11_dig",
+        "prompt": "desenterrando muchas papas, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b215_rpl_o11_bounty",
+      "start": 860.24,
+      "dur": 5.95,
+      "kind": "raw",
+      "src": "img/rpl_o11_bounty.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o11_bounty",
+        "prompt": "una cosecha de una sola papa, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b216_rpl_o11_wrinkle",
+      "start": 865.69,
+      "dur": 5.96,
+      "kind": "raw",
+      "src": "broll/rpl_o11_wrinkle.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_potato_yield",
+      "start": 871.15,
+      "dur": 10.91,
+      "kind": "callout",
+      "hue": "amber",
+      "accent": "good",
+      "figure": "10–15",
+      "eyebrow": "De una sola papa",
+      "caption": "papas nuevas, de una que ibas a tirar"
+    },
+    {
+      "id": "b219_rpl_o11_dry",
+      "start": 882.06,
+      "dur": 5.95,
+      "kind": "raw",
+      "src": "img/rpl_o11_dry.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o11_dry",
+        "prompt": "dejando secar los cortes, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b220_rpl_o11_plant",
+      "start": 887.51,
+      "dur": 5.95,
+      "kind": "raw",
+      "src": "img/rpl_o11_plant.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o11_plant",
+        "prompt": "enterrándolos a un palmo, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "cmp_anno_batata",
+      "start": 892.96,
+      "dur": 11.08,
+      "kind": "annotated",
+      "hue": "amber",
+      "eyebrow": "El truco de los palillos",
+      "annotations": [
+        {
+          "kind": "arrow",
+          "x": 0.5,
+          "y": 0.45,
+          "fromX": 0.8,
+          "fromY": 0.2,
+          "label": "Palillos: mitad en agua",
+          "color": "amber"
+        },
+        {
+          "kind": "circle",
+          "x": 0.5,
+          "y": 0.2,
+          "w": 0.3,
+          "label": "Salen los esquejes",
+          "color": "good"
+        }
+      ],
+      "image": "img/cmp_anno_batata_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "cmp_anno_batata_bg",
+        "prompt": "a sweet potato suspended by toothpicks over a jar of water sprouting leafy slips on top, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b223_rpl_o12_toothpicks",
+      "start": 904.04,
+      "dur": 6.11,
+      "kind": "raw",
+      "src": "broll/rpl_o12_toothpicks.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b224_rpl_o12_slips",
+      "start": 909.65,
+      "dur": 6.11,
+      "kind": "raw",
+      "src": "img/rpl_o12_slips.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o12_slips",
+        "prompt": "los esquejes brotando arriba, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b225_rpl_o12_pull",
+      "start": 915.26,
+      "dur": 6.11,
+      "kind": "raw",
+      "src": "img/rpl_o12_pull.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o12_pull",
+        "prompt": "arrancando un esqueje con cuidado, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b226_rpl_o12_root",
+      "start": 920.87,
+      "dur": 6.11,
+      "kind": "raw",
+      "src": "broll/rpl_o12_root.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b227_rpl_o12_plant",
+      "start": 926.48,
+      "dur": 6.11,
+      "kind": "raw",
+      "src": "broll/rpl_o12_plant.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b228_rpl_o12_sweet",
+      "start": 932.09,
+      "dur": 6.11,
+      "kind": "raw",
+      "src": "img/rpl_o12_sweet.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o12_sweet",
+        "prompt": "una batata, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b229_rpl_o12_toothpicks",
+      "start": 937.7,
+      "dur": 6.11,
+      "kind": "raw",
+      "src": "broll/rpl_o12_toothpicks.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b230_rpl_o12_slips",
+      "start": 943.31,
+      "dur": 6.11,
+      "kind": "raw",
+      "src": "img/rpl_o12_slips.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o12_slips",
+        "prompt": "los esquejes brotando arriba, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b231_rpl_o12_pull",
+      "start": 948.92,
+      "dur": 6.11,
+      "kind": "raw",
+      "src": "img/rpl_o12_pull.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o12_pull",
+        "prompt": "arrancando un esqueje con cuidado, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b232_rpl_o12_root",
+      "start": 954.53,
+      "dur": 6.1,
+      "kind": "raw",
+      "src": "broll/rpl_o12_root.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b233_rpl_o13_tops",
+      "start": 960.13,
+      "dur": 5.87,
+      "kind": "raw",
+      "src": "img/rpl_o13_tops.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o13_tops",
+        "prompt": "cortando los sombreritos de la zanahoria, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b234_rpl_o13_water",
+      "start": 965.5,
+      "dur": 5.87,
+      "kind": "raw",
+      "src": "img/rpl_o13_water.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o13_water",
+        "prompt": "los tops en un dedo de agua, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b235_rpl_o13_regrow",
+      "start": 970.87,
+      "dur": 5.87,
+      "kind": "raw",
+      "src": "img/rpl_o13_regrow.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o13_regrow",
+        "prompt": "rebrotando un penacho de hojas, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b236_rpl_o13_greens",
+      "start": 976.24,
+      "dur": 5.87,
+      "kind": "raw",
+      "src": "img/rpl_o13_greens.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o13_greens",
+        "prompt": "hojas de zanahoria en la sopa, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b237_rpl_o13_plant",
+      "start": 981.61,
+      "dur": 5.87,
+      "kind": "raw",
+      "src": "broll/rpl_o13_plant.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b238_rpl_o13_flower",
+      "start": 986.98,
+      "dur": 5.87,
+      "kind": "raw",
+      "src": "img/rpl_o13_flower.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o13_flower",
+        "prompt": "flores y semillas al año, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b239_rpl_o13_seeds",
+      "start": 992.35,
+      "dur": 5.86,
+      "kind": "raw",
+      "src": "img/rpl_o13_seeds.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o13_seeds",
+        "prompt": "semillas para sembrar de verdad, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b240_rpl_o13_tops",
+      "start": 997.71,
+      "dur": 5.87,
+      "kind": "raw",
+      "src": "img/rpl_o13_tops.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o13_tops",
+        "prompt": "cortando los sombreritos de la zanahoria, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b241_rpl_o13_water",
+      "start": 1003.08,
+      "dur": 5.87,
+      "kind": "raw",
+      "src": "img/rpl_o13_water.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o13_water",
+        "prompt": "los tops en un dedo de agua, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b242_rpl_o13_regrow",
+      "start": 1008.45,
+      "dur": 5.87,
+      "kind": "raw",
+      "src": "img/rpl_o13_regrow.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o13_regrow",
+        "prompt": "rebrotando un penacho de hojas, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b243_rpl_o13_greens",
+      "start": 1013.82,
+      "dur": 5.87,
+      "kind": "raw",
+      "src": "img/rpl_o13_greens.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o13_greens",
+        "prompt": "hojas de zanahoria en la sopa, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b244_rpl_o13_plant",
+      "start": 1019.19,
+      "dur": 5.87,
+      "kind": "raw",
+      "src": "broll/rpl_o13_plant.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b245_rpl_o13_flower",
+      "start": 1024.56,
+      "dur": 5.87,
+      "kind": "raw",
+      "src": "img/rpl_o13_flower.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o13_flower",
+        "prompt": "flores y semillas al año, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b246_rpl_o13_seeds",
+      "start": 1029.93,
+      "dur": 5.85,
+      "kind": "raw",
+      "src": "img/rpl_o13_seeds.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o13_seeds",
+        "prompt": "semillas para sembrar de verdad, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b247_rpl_o14_ripe",
+      "start": 1035.28,
+      "dur": 5.5,
+      "kind": "raw",
+      "src": "img/rpl_o14_ripe.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o14_ripe",
+        "prompt": "un tomate maduro y jugoso, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b248_rpl_o14_slice",
+      "start": 1040.28,
+      "dur": 5.5,
+      "kind": "raw",
+      "src": "img/rpl_o14_slice.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o14_slice",
+        "prompt": "rodajas finas con semillas, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b249_rpl_o14_lay",
+      "start": 1045.28,
+      "dur": 5.5,
+      "kind": "raw",
+      "src": "img/rpl_o14_lay.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o14_lay",
+        "prompt": "apoyando las rodajas sobre la tierra, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b250_rpl_o14_cover",
+      "start": 1050.28,
+      "dur": 5.5,
+      "kind": "raw",
+      "src": "img/rpl_o14_cover.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o14_cover",
+        "prompt": "cubriendo con un dedo de tierra, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b251_rpl_o14_sprout",
+      "start": 1055.28,
+      "dur": 5.5,
+      "kind": "raw",
+      "src": "img/rpl_o14_sprout.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o14_sprout",
+        "prompt": "una fila de plantitas de tomate, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b252_rpl_o14_seedlings",
+      "start": 1060.28,
+      "dur": 5.5,
+      "kind": "raw",
+      "src": "broll/rpl_o14_seedlings.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b253_rpl_o14_sun",
+      "start": 1065.28,
+      "dur": 5.5,
+      "kind": "raw",
+      "src": "img/rpl_o14_sun.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o14_sun",
+        "prompt": "tomate madurado al sol, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b254_rpl_o14_ripe",
+      "start": 1070.28,
+      "dur": 5.5,
+      "kind": "raw",
+      "src": "img/rpl_o14_ripe.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o14_ripe",
+        "prompt": "un tomate maduro y jugoso, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b255_rpl_o14_slice",
+      "start": 1075.28,
+      "dur": 5.5,
+      "kind": "raw",
+      "src": "img/rpl_o14_slice.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o14_slice",
+        "prompt": "rodajas finas con semillas, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b256_rpl_o14_lay",
+      "start": 1080.28,
+      "dur": 5.5,
+      "kind": "raw",
+      "src": "img/rpl_o14_lay.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o14_lay",
+        "prompt": "apoyando las rodajas sobre la tierra, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b257_rpl_o14_cover",
+      "start": 1085.28,
+      "dur": 5.5,
+      "kind": "raw",
+      "src": "img/rpl_o14_cover.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o14_cover",
+        "prompt": "cubriendo con un dedo de tierra, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "cmp_anno_pina",
+      "start": 1090.28,
+      "dur": 10.65,
+      "kind": "annotated",
+      "hue": "amber",
+      "eyebrow": "La corona = una planta",
+      "annotations": [
+        {
+          "kind": "arrow",
+          "x": 0.5,
+          "y": 0.7,
+          "fromX": 0.82,
+          "fromY": 0.9,
+          "label": "Sacá las hojas de abajo",
+          "color": "amber"
+        },
+        {
+          "kind": "circle",
+          "x": 0.5,
+          "y": 0.66,
+          "w": 0.16,
+          "label": "Raíces dormidas",
+          "color": "good"
+        }
+      ],
+      "image": "img/cmp_anno_pina_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "cmp_anno_pina_bg",
+        "prompt": "a pineapple crown with lower leaves removed showing small root bumps, on a table, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b260_rpl_o15_twist",
+      "start": 1100.93,
+      "dur": 6.12,
+      "kind": "raw",
+      "src": "img/rpl_o15_twist.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o15_twist",
+        "prompt": "arrancándola con un giro, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b261_rpl_o15_strip",
+      "start": 1106.55,
+      "dur": 6.12,
+      "kind": "raw",
+      "src": "img/rpl_o15_strip.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o15_strip",
+        "prompt": "sacando hojas hasta ver las raíces dormidas, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b262_rpl_o15_dry",
+      "start": 1112.17,
+      "dur": 6.12,
+      "kind": "raw",
+      "src": "img/rpl_o15_dry.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o15_dry",
+        "prompt": "dejándola secar un par de días, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b263_rpl_o15_water",
+      "start": 1117.79,
+      "dur": 6.13,
+      "kind": "raw",
+      "src": "img/rpl_o15_water.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o15_water",
+        "prompt": "la corona enraizando en agua, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b264_rpl_o15_pot",
+      "start": 1123.42,
+      "dur": 6.12,
+      "kind": "raw",
+      "src": "broll/rpl_o15_pot.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b265_rpl_o15_grow",
+      "start": 1129.04,
+      "dur": 6.12,
+      "kind": "raw",
+      "src": "img/rpl_o15_grow.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o15_grow",
+        "prompt": "una planta de piña de verdad, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b266_rpl_o15_crown",
+      "start": 1134.66,
+      "dur": 6.12,
+      "kind": "raw",
+      "src": "broll/rpl_o15_crown.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b267_rpl_o15_twist",
+      "start": 1140.28,
+      "dur": 6.12,
+      "kind": "raw",
+      "src": "img/rpl_o15_twist.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o15_twist",
+        "prompt": "arrancándola con un giro, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b268_rpl_o15_strip",
+      "start": 1145.9,
+      "dur": 6.13,
+      "kind": "raw",
+      "src": "img/rpl_o15_strip.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o15_strip",
+        "prompt": "sacando hojas hasta ver las raíces dormidas, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b269_rpl_o15_dry",
+      "start": 1151.53,
+      "dur": 6.12,
+      "kind": "raw",
+      "src": "img/rpl_o15_dry.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o15_dry",
+        "prompt": "dejándola secar un par de días, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b270_rpl_o15_water",
+      "start": 1157.15,
+      "dur": 6.12,
+      "kind": "raw",
+      "src": "img/rpl_o15_water.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o15_water",
+        "prompt": "la corona enraizando en agua, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "cmp_quote",
+      "start": 1162.77,
+      "dur": 11.22,
+      "kind": "quote",
+      "hue": "amber",
+      "accent": "amber",
+      "fontSize": 96,
+      "text": "La naturaleza no conoce la palabra *basura*.",
+      "image": "img/cmp_quote_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "cmp_quote_bg",
+        "prompt": "weathered hands holding rich dark soil with a green sprout, golden hour, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b273_rpl_o16_cut",
+      "start": 1173.99,
+      "dur": 5.42,
+      "kind": "raw",
+      "src": "img/rpl_o16_cut.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o16_cut",
+        "prompt": "abriendo un pimiento, las semillas, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b274_rpl_o16_seeds",
+      "start": 1178.91,
+      "dur": 5.43,
+      "kind": "raw",
+      "src": "img/rpl_o16_seeds.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o16_seeds",
+        "prompt": "secando las semillas un día, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b275_rpl_o16_plant",
+      "start": 1183.84,
+      "dur": 5.42,
+      "kind": "raw",
+      "src": "img/rpl_o16_plant.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o16_plant",
+        "prompt": "sembrándolas en una maceta, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b276_rpl_o16_sprout",
+      "start": 1188.76,
+      "dur": 5.43,
+      "kind": "raw",
+      "src": "img/rpl_o16_sprout.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o16_sprout",
+        "prompt": "germinando fácil, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b277_rpl_o16_plant_grown",
+      "start": 1193.69,
+      "dur": 5.42,
+      "kind": "raw",
+      "src": "img/rpl_o16_plant_grown.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o16_plant_grown",
+        "prompt": "una planta con pimientos frescos, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b278_rpl_o16_cut",
+      "start": 1198.61,
+      "dur": 5.43,
+      "kind": "raw",
+      "src": "img/rpl_o16_cut.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o16_cut",
+        "prompt": "abriendo un pimiento, las semillas, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b279_rpl_o16_seeds",
+      "start": 1203.54,
+      "dur": 5.42,
+      "kind": "raw",
+      "src": "img/rpl_o16_seeds.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o16_seeds",
+        "prompt": "secando las semillas un día, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b280_rpl_o16_plant",
+      "start": 1208.46,
+      "dur": 5.43,
+      "kind": "raw",
+      "src": "img/rpl_o16_plant.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o16_plant",
+        "prompt": "sembrándolas en una maceta, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b281_rpl_o16_sprout",
+      "start": 1213.39,
+      "dur": 5.42,
+      "kind": "raw",
+      "src": "img/rpl_o16_sprout.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o16_sprout",
+        "prompt": "germinando fácil, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "cmp_recap",
+      "start": 1218.31,
+      "dur": 9.82,
+      "kind": "checklist",
+      "hue": "amber",
+      "accent": "good",
+      "title": "16 restos = 16 plantas",
+      "eyebrow": "Gratis · desde tu basura",
+      "items": [
+        {
+          "text": "Cebolla, lechuga, apio, bok choy, puerro",
+          "state": "done"
+        },
+        {
+          "text": "Albahaca, menta, cilantro",
+          "state": "done"
+        },
+        {
+          "text": "Ajo, jengibre, papa, batata",
+          "state": "done"
+        },
+        {
+          "text": "Zanahoria, tomate, piña + pimiento",
+          "state": "done"
+        }
+      ],
+      "image": "img/cmp_recap_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "cmp_recap_bg",
+        "prompt": "a wooden table covered with sprouting vegetable scraps and small plants, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "cmp_zero",
+      "start": 1228.13,
+      "dur": 9.79,
+      "kind": "callout",
+      "hue": "amber",
+      "accent": "good",
+      "figure": "0€",
+      "eyebrow": "16 plantas",
+      "caption": "comida que se siembra a sí misma, desde tu basura"
+    },
+    {
+      "id": "b286_rpl_c_grandfather",
+      "start": 1237.92,
+      "dur": 5.39,
+      "kind": "raw",
+      "src": "img/rpl_c_grandfather.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_c_grandfather",
+        "prompt": "así vivían los míos, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b287_rpl_c_return_soil",
+      "start": 1242.81,
+      "dur": 5.39,
+      "kind": "raw",
+      "src": "img/rpl_c_return_soil.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_c_return_soil",
+        "prompt": "todo vuelve a la tierra, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b288_rpl_c_sill_full",
+      "start": 1247.7,
+      "dur": 5.4,
+      "kind": "raw",
+      "src": "img/rpl_c_sill_full.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_c_sill_full",
+        "prompt": "el alféizar lleno de brotes, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b289_rpl_c_store_one",
+      "start": 1252.6,
+      "dur": 5.39,
+      "kind": "raw",
+      "src": "img/rpl_c_store_one.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_c_store_one",
+        "prompt": "la tienda vendiendo de a uno, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b290_rpl_c_harvest",
+      "start": 1257.49,
+      "dur": 5.4,
+      "kind": "raw",
+      "src": "broll/rpl_c_harvest.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b291_rpl_a_scallion",
+      "start": 1262.39,
+      "dur": 5.43,
+      "kind": "raw",
+      "src": "broll/rpl_a_scallion.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b292_rpl_a_shoots4d",
+      "start": 1267.32,
+      "dur": 5.44,
+      "kind": "raw",
+      "src": "broll/rpl_a_shoots4d.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b293_rpl_a_comments",
+      "start": 1272.26,
+      "dur": 5.43,
+      "kind": "raw",
+      "src": "img/rpl_a_comments.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_a_comments",
+        "prompt": "contámelo (comentarios), realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b294_rpl_a_scallion",
+      "start": 1277.19,
+      "dur": 5.43,
+      "kind": "raw",
+      "src": "broll/rpl_a_scallion.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b295_rpl_a_shoots4d",
+      "start": 1282.12,
+      "dur": 5.44,
+      "kind": "raw",
+      "src": "broll/rpl_a_shoots4d.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b296_rpl_a_comments",
+      "start": 1287.06,
+      "dur": 5.43,
+      "kind": "raw",
+      "src": "img/rpl_a_comments.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_a_comments",
+        "prompt": "contámelo (comentarios), realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b297_rpl_a_scallion",
+      "start": 1291.99,
+      "dur": 5.24,
+      "kind": "raw",
+      "src": "broll/rpl_a_scallion.mp4",
+      "darken": 0
+    }
+  ]
+}

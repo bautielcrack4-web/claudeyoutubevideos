@@ -98,6 +98,8 @@ const addClip = (g) => {
 };
 for (const b of beats) {
   addImage(b.gen);
+  addImage(b.genL); // regrow: imagen izquierda (basura)
+  addImage(b.genR); // regrow: imagen derecha (cosecha)
   addClip(b.gen);
   for (const s of b.slides || []) addImage(s.gen);
 }
@@ -122,6 +124,8 @@ const refs = [];
 for (const b of beats) {
   if (b.src) refs.push(b.src);
   if (b.image && b.kind !== "diagram") refs.push(b.image);
+  if (b.leftImage) refs.push(b.leftImage);
+  if (b.rightImage) refs.push(b.rightImage);
   for (const s of b.slides || []) if (s.image) refs.push(s.image);
   if (b.worldImage) refs.push(b.worldImage);
   if (b.mapImage) refs.push(b.mapImage);
@@ -227,6 +231,17 @@ function renderEl(b) {
         (b.hitAt != null ? ` hitAt={${b.hitAt}}` : ``) +
         (b.boom != null ? ` boom={${b.boom}}` : ``) +
         (b.darken != null ? ` darken={${b.darken}}` : ``) +
+        ` />`
+      );
+    case "regrow":
+      return (
+        `<RegrowSplit durationInFrames={d} leftImage=${j(b.leftImage)} rightImage=${j(b.rightImage)}` +
+        (b.number ? ` number=${j(b.number)}` : ``) +
+        (b.title ? ` title=${j(b.title)}` : ``) +
+        (b.leftLabel ? ` leftLabel=${j(b.leftLabel)}` : ``) +
+        (b.rightLabel ? ` rightLabel=${j(b.rightLabel)}` : ``) +
+        (b.accent ? ` accent=${j(b.accent)}` : ``) +
+        (b.hue ? ` hue=${j(b.hue)}` : ``) +
         ` />`
       );
     case "journey":
@@ -853,6 +868,7 @@ if (kinds.has("keyphrase")) imports.push(`import { KeyPhrase } from "./scenes/Ke
 if (kinds.has("statpills")) imports.push(`import { StatPills } from "./scenes/StatPills";`);
 if (kinds.has("floatprop")) imports.push(`import { FloatingProp } from "./scenes/FloatingProp";`);
 if (kinds.has("diorama")) imports.push(`import { PngDiorama } from "./scenes/PngDiorama";`);
+if (kinds.has("regrow")) imports.push(`import { RegrowSplit } from "./scenes/RegrowSplit";`);
 // ── set pieces de imagen/clip ──
 if (kinds.has("expeditionmap")) imports.push(`import { ExpeditionMap } from "./setpieces/ExpeditionMap";`);
 if (kinds.has("scalecolossus")) imports.push(`import { ScaleColossus } from "./setpieces/ScaleColossus";`);

@@ -72,9 +72,10 @@ try { out(`gh release view ${relTag}`); sh(`gh release delete ${relTag} --yes --
 sh(`gh release create ${relTag} ${tar} --title ${relTag} --notes "assets del render"`);
 fs.rmSync(tar);
 
-// 3) disparar el workflow
+// 3) disparar el workflow (FARM_REF = branch a renderizar; default = branch por defecto)
 console.log("disparando render.yml ...");
-sh(`gh workflow run render.yml -f slug=${slug} -f comp_id=${comp} -f total_frames=${total} -f chunks=${chunks}`);
+const refArg = process.env.FARM_REF ? ` --ref ${process.env.FARM_REF}` : "";
+sh(`gh workflow run render.yml${refArg} -f slug=${slug} -f comp_id=${comp} -f total_frames=${total} -f chunks=${chunks}`);
 
 // 4) esperar y descargar el mp4 final
 console.log("esperando que aparezca la corrida ...");
