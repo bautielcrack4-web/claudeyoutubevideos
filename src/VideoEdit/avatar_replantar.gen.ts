@@ -1,6 +1,6 @@
 // avatar_replantar.gen.ts — GENERADO por build_replantar.mjs. NO editar a mano.
 import type { AvatarWindow } from "./scenes/AvatarLayer";
-export const TOTAL_REPLANTAR = 1334.94;
+export const TOTAL_REPLANTAR = 1327.57;
 export const AVATAR_WINDOWS: AvatarWindow[] = [
   {
     "start": 0,
@@ -335,7 +335,7 @@ export const AVATAR_WINDOWS: AvatarWindow[] = [
     "mode": "full"
   },
   {
-    "start": 1334.94,
+    "start": 1327.57,
     "mode": "hidden"
   }
 ];

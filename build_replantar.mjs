@@ -8,7 +8,7 @@
 import fs from "fs";
 
 const MODE = process.argv[2] === "match" ? "match" : "build";
-const TOTAL = 1334.94;
+const TOTAL = 1327.57; // = duración del avatar #3 (D.mp4, 22:07.57). OJO: al swapear avatar, actualizar a su duración exacta (ffprobe).
 const SLUG = "replantar", AVATAR = "replantar_opt.mp4";
 const OPEN = 2.0; // avatar abre full
 const IMG_STYLE = ", realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo";
