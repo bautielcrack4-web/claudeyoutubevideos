@@ -148,78 +148,26 @@
     {
       "id": "b49_rpl_hand_plant",
       "start": 63.96,
-      "dur": 5.66,
+      "dur": 6.95,
       "kind": "raw",
       "src": "broll/rpl_hand_plant.mp4",
       "darken": 0
     },
     {
-      "id": "b53_rpl_potato_eyes",
-      "start": 69.12,
-      "dur": 1.61,
-      "kind": "raw",
-      "src": "img/rpl_potato_eyes.png",
-      "darken": 0,
-      "gen": {
-        "type": "image",
-        "name": "rpl_potato_eyes",
-        "prompt": "una papa brotada en la despensa, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
-      }
-    },
-    {
       "id": "b54_rpl_ginger_buds",
       "start": 70.41,
-      "dur": 1.61,
+      "dur": 3.12,
       "kind": "raw",
       "src": "broll/rpl_ginger_buds.mp4",
       "darken": 0
     },
     {
-      "id": "b55_rpl_basil_roots",
-      "start": 71.7,
-      "dur": 1.66,
-      "kind": "raw",
-      "src": "img/rpl_basil_roots.png",
-      "darken": 0,
-      "gen": {
-        "type": "image",
-        "name": "rpl_basil_roots",
-        "prompt": "esquejes de albahaca echando raíces, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
-      }
-    },
-    {
       "id": "b56_rpl_potato_dig",
       "start": 73.03,
-      "dur": 2.68,
+      "dur": 7.06,
       "kind": "raw",
       "src": "broll/rpl_potato_dig.mp4",
       "darken": 0
-    },
-    {
-      "id": "b57_rpl_potato_pile",
-      "start": 75.21,
-      "dur": 2.69,
-      "kind": "raw",
-      "src": "img/rpl_potato_pile.png",
-      "darken": 0,
-      "gen": {
-        "type": "image",
-        "name": "rpl_potato_pile",
-        "prompt": "una bolsa llena de papas, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
-      }
-    },
-    {
-      "id": "b58_rpl_wilt_water",
-      "start": 77.4,
-      "dur": 2.69,
-      "kind": "raw",
-      "src": "img/rpl_wilt_water.png",
-      "darken": 0,
-      "gen": {
-        "type": "image",
-        "name": "rpl_wilt_water",
-        "prompt": "un esqueje amarillo en agua turbia, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
-      }
     },
     {
       "id": "cmp_teaser11",
@@ -1027,8 +975,13 @@
       "start": 402.69,
       "dur": 4.67,
       "kind": "raw",
-      "src": "broll/rpl_o4_base.mp4",
-      "darken": 0
+      "src": "img/rpl_o4_base.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o4_base",
+        "prompt": "la base del bok choy, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
     },
     {
       "id": "b127_rpl_o4_water",
@@ -1069,8 +1022,13 @@
       "start": 419.38,
       "dur": 4.67,
       "kind": "raw",
-      "src": "broll/rpl_o4_base.mp4",
-      "darken": 0
+      "src": "img/rpl_o4_base.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o4_base",
+        "prompt": "la base del bok choy, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
     },
     {
       "id": "b131_rpl_o4_water",
@@ -1789,8 +1747,13 @@
       "start": 721.66,
       "dur": 5.63,
       "kind": "raw",
-      "src": "broll/rpl_o9_plant.mp4",
-      "darken": 0
+      "src": "img/rpl_o9_plant.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o9_plant",
+        "prompt": "plantando el diente, brote arriba, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
     },
     {
       "id": "b189_rpl_o9_greens",
@@ -1857,8 +1820,13 @@
       "start": 752.46,
       "dur": 5.63,
       "kind": "raw",
-      "src": "broll/rpl_o9_plant.mp4",
-      "darken": 0
+      "src": "img/rpl_o9_plant.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "rpl_o9_plant",
+        "prompt": "plantando el diente, brote arriba, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
     },
     {
       "id": "cmp_anno_jengibre",
