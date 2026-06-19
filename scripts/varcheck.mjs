@@ -25,7 +25,7 @@ for (const b of beats) { const k = kindOf(b); count[k] = (count[k] || 0) + 1; }
 
 const rawShare = ((count.raw_real || 0) + (count.raw_gen || 0) + (count.raw_stock || 0) + (count.raw_clip || 0)) / tot;
 // grupo "estructurado" = los formatos que SIEMPRE se subusan
-const STRUCT = ["bars", "cross", "process", "journey", "infzoom", "annotated", "callout", "checklist", "splitlist", "aged"];
+const STRUCT = ["bars", "cross", "process", "journey", "infzoom", "annotated", "callout", "checklist", "splitlist", "aged", "lielist"];
 const structKinds = STRUCT.filter((k) => count[k] > 0);
 const structCount = STRUCT.reduce((a, k) => a + (count[k] || 0), 0);
 const nonRawDistinct = Object.keys(count).filter((k) => !k.startsWith("raw")).length;

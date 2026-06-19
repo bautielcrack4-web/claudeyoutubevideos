@@ -233,6 +233,14 @@ function renderEl(b) {
         (b.darken != null ? ` darken={${b.darken}}` : ``) +
         ` />`
       );
+    case "lielist":
+      return (
+        `<LieList durationInFrames={d} title=${j(b.title)} items={${j(b.items || [])}}` +
+        (b.image ? ` image=${j(b.image)}` : ``) +
+        (b.accent ? ` accent=${j(b.accent)}` : ``) +
+        (b.hue ? ` hue=${j(b.hue)}` : ``) +
+        ` />`
+      );
     case "regrow":
       return (
         `<RegrowSplit durationInFrames={d} leftImage=${j(b.leftImage)} rightImage=${j(b.rightImage)}` +
@@ -869,6 +877,7 @@ if (kinds.has("statpills")) imports.push(`import { StatPills } from "./scenes/St
 if (kinds.has("floatprop")) imports.push(`import { FloatingProp } from "./scenes/FloatingProp";`);
 if (kinds.has("diorama")) imports.push(`import { PngDiorama } from "./scenes/PngDiorama";`);
 if (kinds.has("regrow")) imports.push(`import { RegrowSplit } from "./scenes/RegrowSplit";`);
+if (kinds.has("lielist")) imports.push(`import { LieList } from "./scenes/LieList";`);
 // ── set pieces de imagen/clip ──
 if (kinds.has("expeditionmap")) imports.push(`import { ExpeditionMap } from "./setpieces/ExpeditionMap";`);
 if (kinds.has("scalecolossus")) imports.push(`import { ScaleColossus } from "./setpieces/ScaleColossus";`);

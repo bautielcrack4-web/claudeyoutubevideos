@@ -46,7 +46,7 @@ const SECT = [
   ["i11", at("llegamos al numero once")],
   ["i12", at("el numero doce es la prima dulce")],
   ["i13", at("el numero trece es la zanahoria")],
-  ["i14", at("el numero 14 es el tomate")],
+  ["i14", at("el numero catorce es el tomate")],
   ["i15", at("llegamos al numero 15")],
   ["i16", at("aqui esta tu regalo")],
   ["close", at("asi que hagamos la cuenta")],
@@ -376,7 +376,7 @@ const COMPONENTS = [
   { t: atc("vuelve a crecer"), id: "cmp_tally", kind: "stat", hue: "amber", accent: "good",
     value: 16, suffix: " plantas · 0€", label: "comida nueva, gratis, desde tu basura", eyebrow: "Lo que vas a sacar hoy",
     bg: "a windowsill full of regrowing vegetable cuttings in jars backlit" },
-  { t: atc("cerca del numero 11"), id: "cmp_teaser11", kind: "regrow", hue: "amber", number: "11",
+  { t: atc("cerca del numero once"), id: "cmp_teaser11", kind: "regrow", hue: "amber", number: "11",
     title: "Una sola te da una bolsa de comida", leftLabel: "Basura", rightLabel: "Cosecha",
     leftBg: "a wrinkled sprouting potato in a dim pantry", rightBg: "a big pile of freshly dug potatoes from one plant" },
   { t: atc("el error silencioso que mata"), id: "cmp_loop_error", kind: "mistake", number: "!", eyebrow: "EN ESTE VIDEO",
@@ -401,8 +401,9 @@ const COMPONENTS = [
 
   // ── COMPONENTES EXTRA (variedad + valor: diagramas del método, ahorro, cita) ──
   // el negocio de la tienda (cross)
-  { t: atc("la tienda te lo vende"), id: "cmp_business", kind: "splitlist", palette: "D", cross: true,
-    title: "Por qué te lo vende suelto", items: ["Para que vuelvas cada semana", "Lo usás una vez y lo tirás", "El negocio es la dependencia"] },
+  { t: atc("la tienda te lo vende"), id: "cmp_business", kind: "lielist", accent: "danger",
+    title: "Por qué te lo vende suelto", items: ["Para que vuelvas cada semana", "Lo usás una vez y lo tirás", "El negocio es la dependencia"],
+    bg: "a busy supermarket checkout aisle, a cashier scanning groceries, shelves of vegetables in the background, slightly cold tone" },
   // barras: lo que se va al año comprando lo que podrías replantar
   { t: atc("una planta no sabe que la compraste"), id: "cmp_savings_bars", kind: "bars", hue: "amber", accent: "good", unit: "EUR",
     title: "Hierbas y verduras de hoja", eyebrow: "Lo que se va al año",

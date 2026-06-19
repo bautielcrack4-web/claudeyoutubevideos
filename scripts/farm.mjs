@@ -37,7 +37,8 @@ if (!fs.existsSync(wav)) { console.error("falta:", wav); process.exit(1); }
 const hasAvatar = fs.existsSync(avatar); // videos FACELESS (sin avatar) no tienen _opt.mp4
 if (!hasAvatar) console.warn(`(faceless) sin ${avatar} — empaqueto solo la narración`);
 // rutas relativas a public/ (el workflow extrae con -C public)
-let items = [`${slug}.wav`];
+// FARM_NOWAV=1 → no empaquetar el .wav (el render usa el audio del _opt.mp4; ahorra ~250MB de upload)
+let items = process.env.FARM_NOWAV ? [] : [`${slug}.wav`];
 if (hasAvatar) items.unshift(`${slug}_opt.mp4`);
 if (fs.existsSync("public/sfx")) items.push("sfx"); // camas ambientales + efectos (siempre)
 if (pref && pref.startsWith("@")) {
