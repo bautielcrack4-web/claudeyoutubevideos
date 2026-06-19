@@ -17,6 +17,8 @@ import { MainMelon, TOTAL_FRAMES_MELON } from "./VideoEdit/Main_melon";
 import { MainPeroxide, TOTAL_FRAMES_PEROXIDE } from "./VideoEdit/Main_peroxide";
 import { MainAcpipe, TOTAL_FRAMES_ACPIPE } from "./VideoEdit/Main_acpipe";
 import { MainSandia, TOTAL_FRAMES_SANDIA } from "./VideoEdit/Main_sandia";
+import { MainRampump, TOTAL_FRAMES_RAMPUMP } from "./VideoEdit/Main_rampump";
+import { MainLuz, TOTAL_FRAMES_LUZ } from "./VideoEdit/Main_luz";
 import { MainMedicaid, TOTAL_FRAMES_MED } from "./VideoEdit/Main_medicaid";
 import { MainViuda, TOTAL_FRAMES_VD } from "./VideoEdit/Main_viuda";
 import { MainEstafas, TOTAL_FRAMES_ES } from "./VideoEdit/Main_estafas";
@@ -77,6 +79,24 @@ export const RemotionRoot: React.FC = () => {
         id="Peroxide"
         component={MainPeroxide}
         durationInFrames={TOTAL_FRAMES_PEROXIDE}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
+      {/* VIDEO ACTIVO — Luz con una llama (off-grid Claudio · EN · clips-first + overlays + WaterLensLight) */}
+      <Composition
+        id="Luz"
+        component={MainLuz}
+        durationInFrames={TOTAL_FRAMES_LUZ}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
+      {/* VIDEO ACTIVO — Ariete hidráulico (off-grid Claudio · EN · clips-first + overlays + RamPumpCycle) */}
+      <Composition
+        id="Rampump"
+        component={MainRampump}
+        durationInFrames={TOTAL_FRAMES_RAMPUMP}
         fps={30}
         width={1920}
         height={1080}

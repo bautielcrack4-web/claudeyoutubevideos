@@ -295,6 +295,28 @@ function renderEl(b) {
         (b.hue ? ` hue=${j(b.hue)}` : ``) +
         ` />`
       );
+    case "waterlens":
+      return (
+        `<WaterLensLight durationInFrames={d}` +
+        (b.eyebrow ? ` eyebrow=${j(b.eyebrow)}` : ``) +
+        (b.title ? ` title=${j(b.title)}` : ``) +
+        (b.flameLabel ? ` flameLabel=${j(b.flameLabel)}` : ``) +
+        (b.lensLabel ? ` lensLabel=${j(b.lensLabel)}` : ``) +
+        (b.poolLabel ? ` poolLabel=${j(b.poolLabel)}` : ``) +
+        ` />`
+      );
+    case "rampump":
+      return (
+        `<RamPumpCycle durationInFrames={d}` +
+        (b.eyebrow ? ` eyebrow=${j(b.eyebrow)}` : ``) +
+        (b.title ? ` title=${j(b.title)}` : ``) +
+        (b.driveTag ? ` driveTag={${j(b.driveTag)}}` : ``) +
+        (b.wasteTag ? ` wasteTag={${j(b.wasteTag)}}` : ``) +
+        (b.airTag ? ` airTag={${j(b.airTag)}}` : ``) +
+        (b.tankTag ? ` tankTag={${j(b.tankTag)}}` : ``) +
+        (b.ratioTag ? ` ratioTag=${j(b.ratioTag)}` : ``) +
+        ` />`
+      );
     case "earthtube":
       return (
         `<EarthTubeDiagram durationInFrames={d}` +
@@ -798,6 +820,8 @@ if (kinds.has("cross")) imports.push(`import { CrossSection } from "./scenes/Cro
 if (kinds.has("process")) imports.push(`import { ProcessSteps } from "./scenes/ProcessSteps";`);
 if (kinds.has("checklist")) imports.push(`import { Checklist } from "./scenes/Checklist";`);
 if (kinds.has("earthtube")) imports.push(`import { EarthTubeDiagram } from "./scenes/EarthTubeDiagram";`);
+if (kinds.has("rampump")) imports.push(`import { RamPumpCycle } from "./scenes/RamPumpCycle";`);
+if (kinds.has("waterlens")) imports.push(`import { WaterLensLight } from "./scenes/WaterLensLight";`);
 if (kinds.has("rule")) imports.push(`import { RuleNumberScene } from "./scenes/RuleNumberScene";`);
 if (kinds.has("annotated")) imports.push(`import { AnnotatedImage } from "./scenes/AnnotatedImage";`);
 if (kinds.has("callout")) imports.push(`import { CalloutMark } from "./scenes/CalloutMark";`);
