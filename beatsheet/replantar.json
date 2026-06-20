@@ -4,11 +4,11 @@
   "clipsfirst": true,
   "beats": [
     {
-      "id": "bh1_rpl_h1_kitchen_scraps_board",
+      "id": "bh1_rpl_cl_scraps_returned_soil",
       "start": 2.05,
       "dur": 6.88,
       "kind": "raw",
-      "src": "broll/rpl_h1_kitchen_scraps_board.mp4",
+      "src": "broll/rpl_cl_scraps_returned_soil.mp4",
       "darken": 0
     },
     {
@@ -92,11 +92,11 @@
       "darken": 0
     },
     {
-      "id": "bh12_rpl_h1_kitchen_scraps_board",
+      "id": "bh12_rpl_cl_scraps_returned_soil",
       "start": 39.5,
       "dur": 4.55,
       "kind": "raw",
-      "src": "broll/rpl_h1_kitchen_scraps_board.mp4",
+      "src": "broll/rpl_cl_scraps_returned_soil.mp4",
       "darken": 0
     },
     {

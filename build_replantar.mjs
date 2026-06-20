@@ -429,7 +429,7 @@ if (MODE === "build") {
     return null;
   };
   const HOOKSEQ = [
-    ["vas a mirar tu cubo de basura", ["rpl_h1_kitchen_scraps_board", "rpl_tr_scraps_lined_up"]],
+    ["vas a mirar tu cubo de basura", ["rpl_cl_scraps_returned_soil", "rpl_tr_scraps_lined_up"]],
     ["para llenar media huerta", ["rpl_h1_harvest_hands_tomatoes", "rpl_h1_fresh_veg_spread_table"]],
     ["el tallo de la lechuga", ["rpl_i2_chopping_lettuce_board", "rpl_i2_lettuce_dish_water", "rpl_i2_harvest_lettuce_hand"]],
     ["la base blanca de la cebolla", ["rpl_h1_green_onion_roots_macro", "rpl_i1_scallion_root_ends"]],
@@ -438,7 +438,7 @@ if (MODE === "build") {
     ["que ya echo un brote verde", ["rpl_h1_sprout_timelapse_soil", "rpl_tr_roots_timelapse"]],
     ["la corona de la pina", ["rpl_h1_pineapple_crown_top", "rpl_i15_pineapple_crown_leafy"]],
     ["la tienda te lo vende", ["rpl_tr_money_saved_jar", "rpl_h1_fresh_veg_spread_table"]],
-    ["lo usas y lo tiras", ["rpl_tr_scraps_lined_up", "rpl_h1_kitchen_scraps_board"]],
+    ["lo usas y lo tiras", ["rpl_tr_scraps_lined_up", "rpl_cl_scraps_returned_soil"]],
     ["esa parte que tu llamas basura", ["rpl_h1_roots_growing_water_macro", "rpl_tr_roots_timelapse"]],
     ["todavia esta viva", ["rpl_i1_scallion_regrow_timelapse", "rpl_h1_sprout_timelapse_soil"]],
     ["vuelve a crecer", ["rpl_tr_roots_timelapse", "rpl_i1_scallion_regrow_timelapse", "rpl_h1_sprout_timelapse_soil"]],

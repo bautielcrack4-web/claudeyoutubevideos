@@ -27,7 +27,7 @@ const D = COLORS.danger;
 export type Cue = { key: string; start: number; dur: number; kind: string; el: (d: number) => ReactNode };
 
 export const CUES: Cue[] = [
-  { key: "bh1_rpl_h1_kitchen_scraps_board", start: 2.05, dur: 6.88, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/rpl_h1_kitchen_scraps_board.mp4" darken={0} /> },
+  { key: "bh1_rpl_cl_scraps_returned_soil", start: 2.05, dur: 6.88, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/rpl_cl_scraps_returned_soil.mp4" darken={0} /> },
   { key: "bh2_rpl_tr_scraps_lined_up", start: 8.43, dur: 6.97, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/rpl_tr_scraps_lined_up.mp4" darken={0} /> },
   { key: "bh3_rpl_h1_harvest_hands_tomatoes", start: 14.9, dur: 2.73, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/rpl_h1_harvest_hands_tomatoes.mp4" darken={0} /> },
   { key: "bh4_rpl_i2_chopping_lettuce_board", start: 17.13, dur: 3.92, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/rpl_i2_chopping_lettuce_board.mp4" darken={0} /> },
@@ -38,7 +38,7 @@ export const CUES: Cue[] = [
   { key: "bh9_rpl_h1_pineapple_crown_top", start: 31.55, dur: 1.87, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/rpl_h1_pineapple_crown_top.mp4" darken={0} /> },
   { key: "bh10_rpl_tr_money_saved_jar", start: 33.05, dur: 3, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/rpl_tr_money_saved_jar.mp4" darken={0} /> },
   { key: "bh11_rpl_tr_scraps_lined_up", start: 35.55, dur: 4.45, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/rpl_tr_scraps_lined_up.mp4" darken={0} /> },
-  { key: "bh12_rpl_h1_kitchen_scraps_board", start: 39.5, dur: 4.55, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/rpl_h1_kitchen_scraps_board.mp4" darken={0} /> },
+  { key: "bh12_rpl_cl_scraps_returned_soil", start: 39.5, dur: 4.55, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/rpl_cl_scraps_returned_soil.mp4" darken={0} /> },
   { key: "cmp_alive", start: 43.55, dur: 6.79, kind: "impact", el: (d) => <ImpactReveal durationInFrames={d} image="img/cmp_alive_bg.png" impact="sigue VIVA." setup="Eso que llamas basura..." impactAccent="good" hitAt={1.2} boom={0} darken={0.4} /> },
   { key: "cmp_tally", start: 50.34, dur: 10.48, kind: "stat", el: (d) => <StatBig durationInFrames={d} value={16} suffix=" plantas · 0€" label="comida nueva, gratis, desde tu basura" eyebrow="Lo que vas a sacar hoy" accent="good" hue="amber" /> },
   { key: "bh16_rpl_i1_scallion_regrow_timelapse", start: 60.82, dur: 11.08, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/rpl_i1_scallion_regrow_timelapse.mp4" darken={0} /> },
