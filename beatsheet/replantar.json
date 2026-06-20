@@ -4,177 +4,105 @@
   "clipsfirst": true,
   "beats": [
     {
-      "id": "b1_rpl_h1_green_onion_roots_macro",
-      "start": 2.04,
-      "dur": 1.19,
-      "kind": "raw",
-      "src": "broll/rpl_h1_green_onion_roots_macro.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b2_rpl_h1_pineapple_crown_top",
-      "start": 2.99,
-      "dur": 1.19,
-      "kind": "raw",
-      "src": "broll/rpl_h1_pineapple_crown_top.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b3_rpl_h1_roots_growing_water_macro",
-      "start": 3.94,
-      "dur": 1.19,
-      "kind": "raw",
-      "src": "broll/rpl_h1_roots_growing_water_macro.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b4_rpl_h1_sprout_timelapse_soil",
-      "start": 4.89,
-      "dur": 1.19,
-      "kind": "raw",
-      "src": "broll/rpl_h1_sprout_timelapse_soil.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b5_rpl_h1_hands_planting_soil",
-      "start": 5.84,
-      "dur": 1.19,
-      "kind": "raw",
-      "src": "broll/rpl_h1_hands_planting_soil.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b6_rpl_h1_kitchen_scraps_board",
-      "start": 6.79,
-      "dur": 1.19,
+      "id": "bh1_rpl_h1_kitchen_scraps_board",
+      "start": 2.05,
+      "dur": 6.88,
       "kind": "raw",
       "src": "broll/rpl_h1_kitchen_scraps_board.mp4",
       "darken": 0
     },
     {
-      "id": "b7_rpl_h1_harvest_hands_tomatoes",
-      "start": 7.74,
-      "dur": 1.19,
-      "kind": "raw",
-      "src": "broll/rpl_h1_harvest_hands_tomatoes.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b8_rpl_h1_fresh_veg_spread_table",
-      "start": 8.69,
-      "dur": 1.19,
-      "kind": "raw",
-      "src": "broll/rpl_h1_fresh_veg_spread_table.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b9_rpl_h2_wilting_plant_cloudy",
-      "start": 9.64,
-      "dur": 1.19,
-      "kind": "raw",
-      "src": "broll/rpl_h2_wilting_plant_cloudy.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b10_rpl_h2_pepper_seedlings",
-      "start": 10.59,
-      "dur": 1.19,
-      "kind": "raw",
-      "src": "broll/rpl_h2_pepper_seedlings.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b11_rpl_h2_seedling_emerging",
-      "start": 11.54,
-      "dur": 1.19,
-      "kind": "raw",
-      "src": "broll/rpl_h2_seedling_emerging.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b12_rpl_h2_pepper_plant_fruit",
-      "start": 12.49,
-      "dur": 1.19,
-      "kind": "raw",
-      "src": "broll/rpl_h2_pepper_plant_fruit.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b13_rpl_tr_greenhouse_interior",
-      "start": 13.44,
-      "dur": 1.19,
-      "kind": "raw",
-      "src": "broll/rpl_tr_greenhouse_interior.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b14_rpl_tr_sun_kitchen_window",
-      "start": 14.39,
-      "dur": 1.19,
-      "kind": "raw",
-      "src": "broll/rpl_tr_sun_kitchen_window.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b15_rpl_tr_scraps_lined_up",
-      "start": 15.34,
-      "dur": 1.19,
+      "id": "bh2_rpl_tr_scraps_lined_up",
+      "start": 8.43,
+      "dur": 6.97,
       "kind": "raw",
       "src": "broll/rpl_tr_scraps_lined_up.mp4",
       "darken": 0
     },
     {
-      "id": "b16_rpl_tr_roots_timelapse",
-      "start": 16.29,
-      "dur": 1.19,
+      "id": "bh3_rpl_h1_harvest_hands_tomatoes",
+      "start": 14.9,
+      "dur": 2.73,
       "kind": "raw",
-      "src": "broll/rpl_tr_roots_timelapse.mp4",
+      "src": "broll/rpl_h1_harvest_hands_tomatoes.mp4",
       "darken": 0
     },
     {
-      "id": "b17_rpl_tr_money_saved_jar",
-      "start": 17.24,
-      "dur": 1.19,
+      "id": "bh4_rpl_i2_chopping_lettuce_board",
+      "start": 17.13,
+      "dur": 3.92,
       "kind": "raw",
-      "src": "broll/rpl_tr_money_saved_jar.mp4",
+      "src": "broll/rpl_i2_chopping_lettuce_board.mp4",
       "darken": 0
     },
     {
-      "id": "b18_rpl_i1_scallion_root_ends",
-      "start": 18.19,
-      "dur": 1.19,
+      "id": "bh5_rpl_h1_green_onion_roots_macro",
+      "start": 20.55,
+      "dur": 2.5,
+      "kind": "raw",
+      "src": "broll/rpl_h1_green_onion_roots_macro.mp4",
+      "darken": 0
+    },
+    {
+      "id": "bh6_rpl_i1_scallion_root_ends",
+      "start": 22.55,
+      "dur": 3.59,
       "kind": "raw",
       "src": "broll/rpl_i1_scallion_root_ends.mp4",
       "darken": 0
     },
     {
-      "id": "b19_rpl_i1_scallion_regrow_timelapse",
-      "start": 19.14,
-      "dur": 1.19,
+      "id": "bh7_rpl_i9_planting_clove_soil",
+      "start": 25.64,
+      "dur": 3.41,
       "kind": "raw",
-      "src": "broll/rpl_i1_scallion_regrow_timelapse.mp4",
+      "src": "broll/rpl_i9_planting_clove_soil.mp4",
       "darken": 0
     },
     {
-      "id": "b20_rpl_i1_snipping_scissors",
-      "start": 20.09,
-      "dur": 1.19,
+      "id": "bh8_rpl_i9_garlic_rows_field",
+      "start": 28.55,
+      "dur": 3.5,
       "kind": "raw",
-      "src": "broll/rpl_i1_snipping_scissors.mp4",
+      "src": "broll/rpl_i9_garlic_rows_field.mp4",
       "darken": 0
     },
     {
-      "id": "b21_rpl_i1_chopped_over_food",
-      "start": 21.04,
-      "dur": 1.19,
+      "id": "bh9_rpl_h1_pineapple_crown_top",
+      "start": 31.55,
+      "dur": 1.87,
       "kind": "raw",
-      "src": "broll/rpl_i1_chopped_over_food.mp4",
+      "src": "broll/rpl_h1_pineapple_crown_top.mp4",
+      "darken": 0
+    },
+    {
+      "id": "bh10_rpl_tr_money_saved_jar",
+      "start": 33.05,
+      "dur": 3,
+      "kind": "raw",
+      "src": "broll/rpl_tr_money_saved_jar.mp4",
+      "darken": 0
+    },
+    {
+      "id": "bh11_rpl_tr_scraps_lined_up",
+      "start": 35.55,
+      "dur": 4.45,
+      "kind": "raw",
+      "src": "broll/rpl_tr_scraps_lined_up.mp4",
+      "darken": 0
+    },
+    {
+      "id": "bh12_rpl_h1_kitchen_scraps_board",
+      "start": 39.5,
+      "dur": 4.55,
+      "kind": "raw",
+      "src": "broll/rpl_h1_kitchen_scraps_board.mp4",
       "darken": 0
     },
     {
       "id": "cmp_alive",
-      "start": 21.99,
-      "dur": 6.65,
+      "start": 43.55,
+      "dur": 6.79,
       "kind": "impact",
       "hitAt": 1.2,
       "boom": 0,
@@ -190,148 +118,9 @@
       }
     },
     {
-      "id": "b29_rpl_i3_celery_water_window",
-      "start": 28.64,
-      "dur": 1.19,
-      "kind": "raw",
-      "src": "broll/rpl_i3_celery_water_window.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b30_rpl_i4_bokchoy_base_water",
-      "start": 29.59,
-      "dur": 1.19,
-      "kind": "raw",
-      "src": "broll/rpl_i4_bokchoy_base_water.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b31_rpl_i4_asian_leafy_greens",
-      "start": 30.54,
-      "dur": 1.19,
-      "kind": "raw",
-      "src": "broll/rpl_i4_asian_leafy_greens.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b32_rpl_i4_bokchoy_window_jar",
-      "start": 31.49,
-      "dur": 1.19,
-      "kind": "raw",
-      "src": "broll/rpl_i4_bokchoy_window_jar.mp4",
-      "darken": 0
-    },
-    {
-      "id": "cmp_business",
-      "start": 32.44,
-      "dur": 6.65,
-      "kind": "lielist",
-      "accent": "danger",
-      "title": "Por qué te lo vende suelto",
-      "items": [
-        "Para que vuelvas cada semana",
-        "Lo usás una vez y lo tirás",
-        "El negocio es la dependencia"
-      ],
-      "image": "img/cmp_business_bg.png",
-      "gen": {
-        "type": "image",
-        "name": "cmp_business_bg",
-        "prompt": "a busy supermarket checkout aisle, a cashier scanning groceries, shelves of vegetables in the background, slightly cold tone, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
-      }
-    },
-    {
-      "id": "b40_rpl_i6_basil_windowsill_plants",
-      "start": 39.09,
-      "dur": 1.19,
-      "kind": "raw",
-      "src": "broll/rpl_i6_basil_windowsill_plants.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b41_rpl_i6_picking_basil_hand",
-      "start": 40.04,
-      "dur": 1.19,
-      "kind": "raw",
-      "src": "broll/rpl_i6_picking_basil_hand.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b42_rpl_i6_basil_timelapse_root",
-      "start": 40.99,
-      "dur": 1.19,
-      "kind": "raw",
-      "src": "broll/rpl_i6_basil_timelapse_root.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b43_rpl_i7_mint_cuttings_water",
-      "start": 41.94,
-      "dur": 1.19,
-      "kind": "raw",
-      "src": "broll/rpl_i7_mint_cuttings_water.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b44_rpl_i7_mint_roots_macro",
-      "start": 42.89,
-      "dur": 1.19,
-      "kind": "raw",
-      "src": "broll/rpl_i7_mint_roots_macro.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b45_rpl_i7_mint_timelapse_grow",
-      "start": 43.84,
-      "dur": 1.19,
-      "kind": "raw",
-      "src": "broll/rpl_i7_mint_timelapse_grow.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b46_rpl_err_pale_wilting_cutting",
-      "start": 44.79,
-      "dur": 1.19,
-      "kind": "raw",
-      "src": "broll/rpl_err_pale_wilting_cutting.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b47_rpl_err_cloudy_stagnant_water",
-      "start": 45.74,
-      "dur": 1.19,
-      "kind": "raw",
-      "src": "broll/rpl_err_cloudy_stagnant_water.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b48_rpl_err_slimy_rotting_roots",
-      "start": 46.69,
-      "dur": 1.19,
-      "kind": "raw",
-      "src": "broll/rpl_err_slimy_rotting_roots.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b49_rpl_err_pouring_old_water",
-      "start": 47.64,
-      "dur": 1.19,
-      "kind": "raw",
-      "src": "broll/rpl_err_pouring_old_water.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b50_rpl_err_transplant_rich_soil",
-      "start": 48.59,
-      "dur": 1.19,
-      "kind": "raw",
-      "src": "broll/rpl_err_transplant_rich_soil.mp4",
-      "darken": 0
-    },
-    {
       "id": "cmp_tally",
-      "start": 49.54,
-      "dur": 6.65,
+      "start": 50.34,
+      "dur": 10.48,
       "kind": "stat",
       "hue": "amber",
       "accent": "good",
@@ -347,163 +136,51 @@
       }
     },
     {
-      "id": "b58_rpl_i8_cilantro_garden_bed",
-      "start": 56.19,
-      "dur": 1.19,
+      "id": "bh16_rpl_i1_scallion_regrow_timelapse",
+      "start": 60.82,
+      "dur": 11.08,
       "kind": "raw",
-      "src": "broll/rpl_i8_cilantro_garden_bed.mp4",
+      "src": "broll/rpl_i1_scallion_regrow_timelapse.mp4",
       "darken": 0
     },
     {
-      "id": "b59_rpl_i9_planting_clove_soil",
-      "start": 57.14,
-      "dur": 1.19,
+      "id": "bh17_rpl_h1_hands_planting_soil",
+      "start": 71.4,
+      "dur": 0.2,
       "kind": "raw",
-      "src": "broll/rpl_i9_planting_clove_soil.mp4",
+      "src": "broll/rpl_h1_hands_planting_soil.mp4",
       "darken": 0
     },
     {
-      "id": "b60_rpl_i9_garlic_rows_field",
-      "start": 58.09,
-      "dur": 1.19,
-      "kind": "raw",
-      "src": "broll/rpl_i9_garlic_rows_field.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b61_rpl_i10_ginger_buds_macro",
-      "start": 59.04,
-      "dur": 1.19,
-      "kind": "raw",
-      "src": "broll/rpl_i10_ginger_buds_macro.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b62_rpl_i10_planting_ginger_soil",
-      "start": 59.99,
-      "dur": 1.19,
-      "kind": "raw",
-      "src": "broll/rpl_i10_planting_ginger_soil.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b63_rpl_i10_ginger_shoot_green",
-      "start": 60.94,
-      "dur": 1.19,
-      "kind": "raw",
-      "src": "broll/rpl_i10_ginger_shoot_green.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b64_rpl_i10_turmeric_root_orange",
-      "start": 61.89,
-      "dur": 1.19,
-      "kind": "raw",
-      "src": "broll/rpl_i10_turmeric_root_orange.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b65_rpl_i10_ginger_pot_plant",
-      "start": 62.84,
-      "dur": 1.19,
-      "kind": "raw",
-      "src": "broll/rpl_i10_ginger_pot_plant.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b66_rpl_i10_ginger_tea_water",
-      "start": 63.79,
-      "dur": 1.19,
-      "kind": "raw",
-      "src": "broll/rpl_i10_ginger_tea_water.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b67_rpl_i10_ginger_market_pile",
-      "start": 64.74,
-      "dur": 1.19,
-      "kind": "raw",
-      "src": "broll/rpl_i10_ginger_market_pile.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b68_rpl_i11_sprouting_potato_pantry",
-      "start": 65.69,
-      "dur": 1.19,
-      "kind": "raw",
-      "src": "broll/rpl_i11_sprouting_potato_pantry.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b69_rpl_i11_cutting_potato_pieces",
-      "start": 66.64,
-      "dur": 1.19,
-      "kind": "raw",
-      "src": "broll/rpl_i11_cutting_potato_pieces.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b70_rpl_i11_potato_pieces_drying",
-      "start": 67.59,
-      "dur": 1.19,
-      "kind": "raw",
-      "src": "broll/rpl_i11_potato_pieces_drying.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b71_rpl_i11_planting_trench_soil",
-      "start": 68.54,
-      "dur": 1.19,
-      "kind": "raw",
-      "src": "broll/rpl_i11_planting_trench_soil.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b72_rpl_i11_potato_plants_rows",
-      "start": 69.49,
-      "dur": 1.19,
-      "kind": "raw",
-      "src": "broll/rpl_i11_potato_plants_rows.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b73_rpl_i11_potato_sprout_macro",
-      "start": 70.44,
-      "dur": 1.21,
-      "kind": "raw",
-      "src": "broll/rpl_i11_potato_sprout_macro.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b74_rpl_i11_potato_plant_timelapse",
+      "id": "b1_rpl_h2_wilting_plant_cloudy",
       "start": 71.41,
       "dur": 2.01,
       "kind": "raw",
-      "src": "broll/rpl_i11_potato_plant_timelapse.mp4",
+      "src": "broll/rpl_h2_wilting_plant_cloudy.mp4",
       "darken": 0
     },
     {
-      "id": "b75_rpl_i11_washing_potatoes_water",
+      "id": "b2_rpl_h2_pepper_seedlings",
       "start": 73.02,
       "dur": 2,
       "kind": "raw",
-      "src": "broll/rpl_i11_washing_potatoes_water.mp4",
+      "src": "broll/rpl_h2_pepper_seedlings.mp4",
       "darken": 0
     },
     {
-      "id": "b76_rpl_i12_sweetpotato_toothpicks_glass",
+      "id": "b3_rpl_h2_wilting_plant_cloudy",
       "start": 74.62,
       "dur": 2,
       "kind": "raw",
-      "src": "broll/rpl_i12_sweetpotato_toothpicks_glass.mp4",
+      "src": "broll/rpl_h2_wilting_plant_cloudy.mp4",
       "darken": 0
     },
     {
-      "id": "b77_rpl_i12_pulling_a_slip",
+      "id": "b4_rpl_h2_seedling_emerging",
       "start": 76.22,
       "dur": 2.01,
       "kind": "raw",
-      "src": "broll/rpl_i12_pulling_a_slip.mp4",
+      "src": "broll/rpl_h2_seedling_emerging.mp4",
       "darken": 0
     },
     {
@@ -530,51 +207,51 @@
       }
     },
     {
-      "id": "b82_rpl_i13_carrot_seeds_hand",
+      "id": "b9_rpl_h2_wilting_plant_cloudy",
       "start": 84.24,
       "dur": 2,
       "kind": "raw",
-      "src": "broll/rpl_i13_carrot_seeds_hand.mp4",
+      "src": "broll/rpl_h2_wilting_plant_cloudy.mp4",
       "darken": 0
     },
     {
-      "id": "b83_rpl_i13_pulling_carrots_soil",
+      "id": "b10_rpl_h2_pepper_seedlings",
       "start": 85.84,
       "dur": 2,
       "kind": "raw",
-      "src": "broll/rpl_i13_pulling_carrots_soil.mp4",
+      "src": "broll/rpl_h2_pepper_seedlings.mp4",
       "darken": 0
     },
     {
-      "id": "b84_rpl_i13_washing_carrots_water",
+      "id": "b11_rpl_h2_pepper_plant_fruit",
       "start": 87.44,
       "dur": 2.01,
       "kind": "raw",
-      "src": "broll/rpl_i13_washing_carrots_water.mp4",
+      "src": "broll/rpl_h2_pepper_plant_fruit.mp4",
       "darken": 0
     },
     {
-      "id": "b85_rpl_i13_carrots_market_bunch",
+      "id": "b12_rpl_h2_seedling_emerging",
       "start": 89.05,
       "dur": 2,
       "kind": "raw",
-      "src": "broll/rpl_i13_carrots_market_bunch.mp4",
+      "src": "broll/rpl_h2_seedling_emerging.mp4",
       "darken": 0
     },
     {
-      "id": "b86_rpl_i13_carrot_seedling_soil",
+      "id": "b13_rpl_h2_wilting_plant_cloudy",
       "start": 90.65,
       "dur": 2,
       "kind": "raw",
-      "src": "broll/rpl_i13_carrot_seedling_soil.mp4",
+      "src": "broll/rpl_h2_wilting_plant_cloudy.mp4",
       "darken": 0
     },
     {
-      "id": "b87_rpl_i14_slicing_tomato_rounds",
+      "id": "b14_rpl_h2_pepper_seedlings",
       "start": 92.25,
       "dur": 2,
       "kind": "raw",
-      "src": "broll/rpl_i14_slicing_tomato_rounds.mp4",
+      "src": "broll/rpl_h2_pepper_seedlings.mp4",
       "darken": 0
     },
     {
@@ -594,119 +271,127 @@
       }
     },
     {
-      "id": "b92_rpl_i14_tomato_timelapse_grow",
+      "id": "b19_rpl_h2_seedling_emerging",
       "start": 100.26,
       "dur": 2.01,
       "kind": "raw",
-      "src": "broll/rpl_i14_tomato_timelapse_grow.mp4",
+      "src": "broll/rpl_h2_seedling_emerging.mp4",
       "darken": 0
     },
     {
-      "id": "b93_rpl_i15_pineapple_crown_leafy",
+      "id": "b20_rpl_h2_pepper_plant_fruit",
       "start": 101.87,
       "dur": 2,
       "kind": "raw",
-      "src": "broll/rpl_i15_pineapple_crown_leafy.mp4",
+      "src": "broll/rpl_h2_pepper_plant_fruit.mp4",
       "darken": 0
     },
     {
-      "id": "b94_rpl_i15_stripping_lower_leaves",
+      "id": "b21_rpl_h2_wilting_plant_cloudy",
       "start": 103.47,
       "dur": 2,
       "kind": "raw",
-      "src": "broll/rpl_i15_stripping_lower_leaves.mp4",
+      "src": "broll/rpl_h2_wilting_plant_cloudy.mp4",
       "darken": 0
     },
     {
-      "id": "b95_rpl_i15_pineapple_crown_drying",
+      "id": "b22_rpl_h2_pepper_seedlings",
       "start": 105.07,
       "dur": 2.01,
       "kind": "raw",
-      "src": "broll/rpl_i15_pineapple_crown_drying.mp4",
+      "src": "broll/rpl_h2_pepper_seedlings.mp4",
       "darken": 0
     },
     {
-      "id": "b96_rpl_i15_crown_rooting_water",
+      "id": "b23_rpl_h2_seedling_emerging",
       "start": 106.68,
       "dur": 2,
       "kind": "raw",
-      "src": "broll/rpl_i15_crown_rooting_water.mp4",
+      "src": "broll/rpl_h2_seedling_emerging.mp4",
       "darken": 0
     },
     {
-      "id": "b97_rpl_i15_mature_pineapple_fruit",
+      "id": "b24_rpl_h2_pepper_plant_fruit",
       "start": 108.28,
       "dur": 2,
       "kind": "raw",
-      "src": "broll/rpl_i15_mature_pineapple_fruit.mp4",
+      "src": "broll/rpl_h2_pepper_plant_fruit.mp4",
       "darken": 0
     },
     {
-      "id": "b98_rpl_i15_pineapple_root_bumps_macro",
+      "id": "b25_rpl_h2_wilting_plant_cloudy",
       "start": 109.88,
       "dur": 2,
       "kind": "raw",
-      "src": "broll/rpl_i15_pineapple_root_bumps_macro.mp4",
+      "src": "broll/rpl_h2_wilting_plant_cloudy.mp4",
       "darken": 0
     },
     {
-      "id": "b99_rpl_i15_pineapple_field_rows",
+      "id": "b26_rpl_h2_pepper_seedlings",
       "start": 111.48,
       "dur": 2.01,
       "kind": "raw",
-      "src": "broll/rpl_i15_pineapple_field_rows.mp4",
+      "src": "broll/rpl_h2_pepper_seedlings.mp4",
       "darken": 0
     },
     {
-      "id": "b100_rpl_i15_planting_crown_soil",
+      "id": "b27_rpl_h2_seedling_emerging",
       "start": 113.09,
       "dur": 2,
       "kind": "raw",
-      "src": "broll/rpl_i15_planting_crown_soil.mp4",
+      "src": "broll/rpl_h2_seedling_emerging.mp4",
       "darken": 0
     },
     {
-      "id": "b101_rpl_i15_pineapple_crown_window",
+      "id": "b28_rpl_h2_pepper_plant_fruit",
       "start": 114.69,
       "dur": 2,
       "kind": "raw",
-      "src": "broll/rpl_i15_pineapple_crown_window.mp4",
+      "src": "broll/rpl_h2_pepper_plant_fruit.mp4",
       "darken": 0
     },
     {
-      "id": "b102_rpl_i15_pineapple_leaves_macro",
+      "id": "b29_rpl_h2_wilting_plant_cloudy",
       "start": 116.29,
       "dur": 2.01,
       "kind": "raw",
-      "src": "broll/rpl_i15_pineapple_leaves_macro.mp4",
+      "src": "broll/rpl_h2_wilting_plant_cloudy.mp4",
       "darken": 0
     },
     {
-      "id": "b103_rpl_i15_cutting_pineapple_top",
+      "id": "b30_rpl_h2_pepper_seedlings",
       "start": 117.9,
       "dur": 2,
       "kind": "raw",
-      "src": "broll/rpl_i15_cutting_pineapple_top.mp4",
+      "src": "broll/rpl_h2_pepper_seedlings.mp4",
       "darken": 0
     },
     {
-      "id": "b104_rpl_i15_pineapple_timelapse_root",
+      "id": "b31_rpl_h2_seedling_emerging",
       "start": 119.5,
-      "dur": 2,
+      "dur": 0.8,
       "kind": "raw",
-      "src": "broll/rpl_i15_pineapple_timelapse_root.mp4",
+      "src": "broll/rpl_h2_seedling_emerging.mp4",
       "darken": 0
     },
     {
-      "id": "b105_rpl_i16_cutting_open_pepper",
+      "id": "bh19_rpl_h1_fresh_veg_spread_table",
+      "start": 120.14,
+      "dur": 1.2,
+      "kind": "raw",
+      "src": "broll/rpl_h1_fresh_veg_spread_table.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b32_rpl_h2_pepper_plant_fruit",
       "start": 121.1,
       "dur": 1.93,
       "kind": "raw",
-      "src": "broll/rpl_i16_cutting_open_pepper.mp4",
+      "src": "broll/rpl_h2_pepper_plant_fruit.mp4",
       "darken": 0
     },
     {
-      "id": "b106_rpl_tr_greenhouse_interior",
+      "id": "b33_rpl_tr_greenhouse_interior",
       "start": 154.62,
       "dur": 3.55,
       "kind": "raw",
@@ -714,7 +399,7 @@
       "darken": 0
     },
     {
-      "id": "b107_rpl_tr_sun_kitchen_window",
+      "id": "b34_rpl_tr_sun_kitchen_window",
       "start": 157.67,
       "dur": 3.56,
       "kind": "raw",
@@ -773,7 +458,7 @@
       "image": "broll/rpl_err_pale_wilting_cutting.mp4"
     },
     {
-      "id": "b112_rpl_tr_sun_kitchen_window",
+      "id": "b39_rpl_tr_sun_kitchen_window",
       "start": 172.94,
       "dur": 3.55,
       "kind": "raw",
@@ -781,7 +466,7 @@
       "darken": 0
     },
     {
-      "id": "b113_rpl_tr_scraps_lined_up",
+      "id": "b40_rpl_tr_scraps_lined_up",
       "start": 175.99,
       "dur": 3.55,
       "kind": "raw",
@@ -789,7 +474,7 @@
       "darken": 0
     },
     {
-      "id": "b114_rpl_tr_roots_timelapse",
+      "id": "b41_rpl_tr_roots_timelapse",
       "start": 179.04,
       "dur": 3.56,
       "kind": "raw",
@@ -811,7 +496,7 @@
       ]
     },
     {
-      "id": "b117_rpl_tr_sun_kitchen_window",
+      "id": "b44_rpl_tr_sun_kitchen_window",
       "start": 188.2,
       "dur": 3.55,
       "kind": "raw",
@@ -849,7 +534,7 @@
       }
     },
     {
-      "id": "b120_rpl_tr_money_saved_jar",
+      "id": "b47_rpl_tr_money_saved_jar",
       "start": 197.36,
       "dur": 3.55,
       "kind": "raw",
@@ -857,7 +542,7 @@
       "darken": 0
     },
     {
-      "id": "b121_rpl_tr_greenhouse_interior",
+      "id": "b48_rpl_tr_greenhouse_interior",
       "start": 200.41,
       "dur": 3.55,
       "kind": "raw",
@@ -865,7 +550,7 @@
       "darken": 0
     },
     {
-      "id": "b122_rpl_tr_sun_kitchen_window",
+      "id": "b49_rpl_tr_sun_kitchen_window",
       "start": 203.46,
       "dur": 3.56,
       "kind": "raw",
@@ -925,7 +610,7 @@
       }
     },
     {
-      "id": "b126_rpl_i1_scallion_regrow_timelapse",
+      "id": "b53_rpl_i1_scallion_regrow_timelapse",
       "start": 215.95,
       "dur": 3.81,
       "kind": "raw",
@@ -933,7 +618,7 @@
       "darken": 0
     },
     {
-      "id": "b127_rpl_i1_snipping_scissors",
+      "id": "b54_rpl_i1_snipping_scissors",
       "start": 219.26,
       "dur": 3.82,
       "kind": "raw",
@@ -941,7 +626,7 @@
       "darken": 0
     },
     {
-      "id": "b128_rpl_i1_chopped_over_food",
+      "id": "b55_rpl_i1_chopped_over_food",
       "start": 222.58,
       "dur": 3.82,
       "kind": "raw",
@@ -949,7 +634,7 @@
       "darken": 0
     },
     {
-      "id": "b129_rpl_i1_slicing_scallions_macro",
+      "id": "b56_rpl_i1_slicing_scallions_macro",
       "start": 225.9,
       "dur": 3.81,
       "kind": "raw",
@@ -957,7 +642,7 @@
       "darken": 0
     },
     {
-      "id": "b130_rpl_i1_chopped_over_food",
+      "id": "b57_rpl_i1_chopped_over_food",
       "start": 229.21,
       "dur": 3.82,
       "kind": "raw",
@@ -965,7 +650,7 @@
       "darken": 0
     },
     {
-      "id": "b131_rpl_i1_scallion_root_ends",
+      "id": "b58_rpl_i1_scallion_root_ends",
       "start": 232.53,
       "dur": 3.81,
       "kind": "raw",
@@ -973,7 +658,7 @@
       "darken": 0
     },
     {
-      "id": "b132_rpl_i1_scallion_regrow_timelapse",
+      "id": "b59_rpl_i1_scallion_regrow_timelapse",
       "start": 235.84,
       "dur": 3.82,
       "kind": "raw",
@@ -981,7 +666,7 @@
       "darken": 0
     },
     {
-      "id": "b133_rpl_i1_snipping_scissors",
+      "id": "b60_rpl_i1_snipping_scissors",
       "start": 239.16,
       "dur": 3.81,
       "kind": "raw",
@@ -989,7 +674,7 @@
       "darken": 0
     },
     {
-      "id": "b134_rpl_i1_slicing_scallions_macro",
+      "id": "b61_rpl_i1_slicing_scallions_macro",
       "start": 242.47,
       "dur": 3.82,
       "kind": "raw",
@@ -997,7 +682,7 @@
       "darken": 0
     },
     {
-      "id": "b135_rpl_i1_scallion_root_ends",
+      "id": "b62_rpl_i1_scallion_root_ends",
       "start": 245.79,
       "dur": 3.82,
       "kind": "raw",
@@ -1005,7 +690,7 @@
       "darken": 0
     },
     {
-      "id": "b136_rpl_i1_scallion_regrow_timelapse",
+      "id": "b63_rpl_i1_scallion_regrow_timelapse",
       "start": 249.11,
       "dur": 3.81,
       "kind": "raw",
@@ -1013,7 +698,7 @@
       "darken": 0
     },
     {
-      "id": "b137_rpl_i1_snipping_scissors",
+      "id": "b64_rpl_i1_snipping_scissors",
       "start": 252.42,
       "dur": 3.82,
       "kind": "raw",
@@ -1021,7 +706,7 @@
       "darken": 0
     },
     {
-      "id": "b138_rpl_i1_chopped_over_food",
+      "id": "b65_rpl_i1_chopped_over_food",
       "start": 255.74,
       "dur": 3.81,
       "kind": "raw",
@@ -1029,7 +714,7 @@
       "darken": 0
     },
     {
-      "id": "b139_rpl_i1_slicing_scallions_macro",
+      "id": "b66_rpl_i1_slicing_scallions_macro",
       "start": 259.05,
       "dur": 3.82,
       "kind": "raw",
@@ -1037,7 +722,7 @@
       "darken": 0
     },
     {
-      "id": "b140_rpl_i1_scallion_root_ends",
+      "id": "b67_rpl_i1_scallion_root_ends",
       "start": 262.37,
       "dur": 3.82,
       "kind": "raw",
@@ -1045,7 +730,7 @@
       "darken": 0
     },
     {
-      "id": "b141_rpl_i1_scallion_regrow_timelapse",
+      "id": "b68_rpl_i1_scallion_regrow_timelapse",
       "start": 265.69,
       "dur": 3.81,
       "kind": "raw",
@@ -1053,7 +738,7 @@
       "darken": 0
     },
     {
-      "id": "b142_rpl_i1_snipping_scissors",
+      "id": "b69_rpl_i1_snipping_scissors",
       "start": 269,
       "dur": 3.82,
       "kind": "raw",
@@ -1072,7 +757,7 @@
       "image": "broll/rpl_i2_lettuce_dish_water.mp4"
     },
     {
-      "id": "b144_rpl_i2_lettuce_dish_water",
+      "id": "b71_rpl_i2_lettuce_dish_water",
       "start": 275.64,
       "dur": 3.87,
       "kind": "raw",
@@ -1080,23 +765,32 @@
       "darken": 0
     },
     {
-      "id": "b145_rpl_i2_lettuce_water_window",
+      "id": "cmp_s2_bars",
       "start": 279.01,
-      "dur": 3.88,
-      "kind": "raw",
-      "src": "broll/rpl_i2_lettuce_water_window.mp4",
-      "darken": 0
+      "dur": 6.75,
+      "kind": "bars",
+      "hue": "amber",
+      "accent": "good",
+      "unit": "EUR",
+      "title": "Verdura de hoja",
+      "eyebrow": "Comprarla todo el año vs replantarla",
+      "bars": [
+        {
+          "label": "Comprada",
+          "value": 140,
+          "display": "~140€/año",
+          "tone": "danger"
+        },
+        {
+          "label": "Replantada",
+          "value": 0,
+          "display": "0€",
+          "winner": true
+        }
+      ]
     },
     {
-      "id": "b146_rpl_i2_harvest_lettuce_hand",
-      "start": 282.39,
-      "dur": 3.87,
-      "kind": "raw",
-      "src": "broll/rpl_i2_harvest_lettuce_hand.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b147_rpl_i2_chopping_lettuce_board",
+      "id": "b74_rpl_i2_chopping_lettuce_board",
       "start": 285.76,
       "dur": 3.88,
       "kind": "raw",
@@ -1104,7 +798,7 @@
       "darken": 0
     },
     {
-      "id": "b148_rpl_i2_lettuce_dish_water",
+      "id": "b75_rpl_i2_lettuce_dish_water",
       "start": 289.14,
       "dur": 3.87,
       "kind": "raw",
@@ -1112,7 +806,7 @@
       "darken": 0
     },
     {
-      "id": "b149_rpl_i2_lettuce_water_window",
+      "id": "b76_rpl_i2_lettuce_water_window",
       "start": 292.51,
       "dur": 3.88,
       "kind": "raw",
@@ -1120,7 +814,7 @@
       "darken": 0
     },
     {
-      "id": "b150_rpl_i2_harvest_lettuce_hand",
+      "id": "b77_rpl_i2_harvest_lettuce_hand",
       "start": 295.89,
       "dur": 3.88,
       "kind": "raw",
@@ -1128,7 +822,7 @@
       "darken": 0
     },
     {
-      "id": "b151_rpl_i2_chopping_lettuce_board",
+      "id": "b78_rpl_i2_chopping_lettuce_board",
       "start": 299.27,
       "dur": 3.87,
       "kind": "raw",
@@ -1136,7 +830,7 @@
       "darken": 0
     },
     {
-      "id": "b152_rpl_i2_lettuce_dish_water",
+      "id": "b79_rpl_i2_lettuce_dish_water",
       "start": 302.64,
       "dur": 3.88,
       "kind": "raw",
@@ -1144,7 +838,7 @@
       "darken": 0
     },
     {
-      "id": "b153_rpl_i2_lettuce_water_window",
+      "id": "b80_rpl_i2_lettuce_water_window",
       "start": 306.02,
       "dur": 3.87,
       "kind": "raw",
@@ -1152,7 +846,7 @@
       "darken": 0
     },
     {
-      "id": "b154_rpl_i2_harvest_lettuce_hand",
+      "id": "b81_rpl_i2_harvest_lettuce_hand",
       "start": 309.39,
       "dur": 3.88,
       "kind": "raw",
@@ -1160,7 +854,7 @@
       "darken": 0
     },
     {
-      "id": "b155_rpl_i2_chopping_lettuce_board",
+      "id": "b82_rpl_i2_chopping_lettuce_board",
       "start": 312.77,
       "dur": 3.87,
       "kind": "raw",
@@ -1168,7 +862,7 @@
       "darken": 0
     },
     {
-      "id": "b156_rpl_i2_lettuce_dish_water",
+      "id": "b83_rpl_i2_lettuce_dish_water",
       "start": 316.14,
       "dur": 3.88,
       "kind": "raw",
@@ -1176,7 +870,7 @@
       "darken": 0
     },
     {
-      "id": "b157_rpl_i2_lettuce_water_window",
+      "id": "b84_rpl_i2_lettuce_water_window",
       "start": 319.52,
       "dur": 3.88,
       "kind": "raw",
@@ -1184,7 +878,7 @@
       "darken": 0
     },
     {
-      "id": "b158_rpl_i2_harvest_lettuce_hand",
+      "id": "b85_rpl_i2_harvest_lettuce_hand",
       "start": 322.9,
       "dur": 3.87,
       "kind": "raw",
@@ -1192,7 +886,7 @@
       "darken": 0
     },
     {
-      "id": "b159_rpl_i2_chopping_lettuce_board",
+      "id": "b86_rpl_i2_chopping_lettuce_board",
       "start": 326.27,
       "dur": 3.88,
       "kind": "raw",
@@ -1200,7 +894,7 @@
       "darken": 0
     },
     {
-      "id": "b160_rpl_i2_lettuce_dish_water",
+      "id": "b87_rpl_i2_lettuce_dish_water",
       "start": 329.65,
       "dur": 3.87,
       "kind": "raw",
@@ -1208,7 +902,7 @@
       "darken": 0
     },
     {
-      "id": "b161_rpl_i2_lettuce_water_window",
+      "id": "b88_rpl_i2_lettuce_water_window",
       "start": 333.02,
       "dur": 3.88,
       "kind": "raw",
@@ -1227,7 +921,7 @@
       "image": "broll/rpl_i3_celery_base_glass.mp4"
     },
     {
-      "id": "b163_rpl_i3_celery_base_glass",
+      "id": "b90_rpl_i3_celery_base_glass",
       "start": 339.77,
       "dur": 3.71,
       "kind": "raw",
@@ -1235,23 +929,28 @@
       "darken": 0
     },
     {
-      "id": "b164_rpl_i3_celery_regrow_timelapse",
+      "id": "cmp_s3_proc",
       "start": 342.98,
-      "dur": 3.72,
-      "kind": "raw",
-      "src": "broll/rpl_i3_celery_regrow_timelapse.mp4",
-      "darken": 0
+      "dur": 6.43,
+      "kind": "process",
+      "hue": "amber",
+      "accent": "good",
+      "title": "El método base",
+      "eyebrow": "Sirve para casi todas",
+      "steps": [
+        {
+          "title": "El resto, en un dedo de agua"
+        },
+        {
+          "title": "Cambiá el agua cada 2-3 días"
+        },
+        {
+          "title": "Con raíces, pasalo a la tierra"
+        }
+      ]
     },
     {
-      "id": "b165_rpl_i3_celery_water_window",
-      "start": 346.2,
-      "dur": 3.71,
-      "kind": "raw",
-      "src": "broll/rpl_i3_celery_water_window.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b166_rpl_i3_celery_base_glass",
+      "id": "b93_rpl_i3_celery_base_glass",
       "start": 349.41,
       "dur": 3.72,
       "kind": "raw",
@@ -1259,7 +958,7 @@
       "darken": 0
     },
     {
-      "id": "b167_rpl_i3_celery_regrow_timelapse",
+      "id": "b94_rpl_i3_celery_regrow_timelapse",
       "start": 352.63,
       "dur": 3.71,
       "kind": "raw",
@@ -1267,7 +966,7 @@
       "darken": 0
     },
     {
-      "id": "b168_rpl_i3_celery_water_window",
+      "id": "b95_rpl_i3_celery_water_window",
       "start": 355.84,
       "dur": 3.71,
       "kind": "raw",
@@ -1275,7 +974,7 @@
       "darken": 0
     },
     {
-      "id": "b169_rpl_i3_celery_base_glass",
+      "id": "b96_rpl_i3_celery_base_glass",
       "start": 359.05,
       "dur": 3.72,
       "kind": "raw",
@@ -1283,23 +982,23 @@
       "darken": 0
     },
     {
-      "id": "b170_rpl_i3_celery_regrow_timelapse",
+      "id": "b97_rpl_i3_celery_water_window",
       "start": 362.27,
       "dur": 3.71,
-      "kind": "raw",
-      "src": "broll/rpl_i3_celery_regrow_timelapse.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b171_rpl_i3_celery_water_window",
-      "start": 365.48,
-      "dur": 3.72,
       "kind": "raw",
       "src": "broll/rpl_i3_celery_water_window.mp4",
       "darken": 0
     },
     {
-      "id": "b172_rpl_i3_celery_base_glass",
+      "id": "b98_rpl_i3_celery_regrow_timelapse",
+      "start": 365.48,
+      "dur": 3.72,
+      "kind": "raw",
+      "src": "broll/rpl_i3_celery_regrow_timelapse.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b99_rpl_i3_celery_base_glass",
       "start": 368.7,
       "dur": 3.71,
       "kind": "raw",
@@ -1307,7 +1006,7 @@
       "darken": 0
     },
     {
-      "id": "b173_rpl_i3_celery_regrow_timelapse",
+      "id": "b100_rpl_i3_celery_regrow_timelapse",
       "start": 371.91,
       "dur": 3.72,
       "kind": "raw",
@@ -1315,7 +1014,7 @@
       "darken": 0
     },
     {
-      "id": "b174_rpl_i3_celery_water_window",
+      "id": "b101_rpl_i3_celery_water_window",
       "start": 375.13,
       "dur": 3.71,
       "kind": "raw",
@@ -1323,7 +1022,7 @@
       "darken": 0
     },
     {
-      "id": "b175_rpl_i3_celery_base_glass",
+      "id": "b102_rpl_i3_celery_base_glass",
       "start": 378.34,
       "dur": 3.71,
       "kind": "raw",
@@ -1342,7 +1041,7 @@
       "image": "broll/rpl_i4_bokchoy_base_water.mp4"
     },
     {
-      "id": "b177_rpl_i4_bokchoy_base_water",
+      "id": "b104_rpl_i4_bokchoy_base_water",
       "start": 384.76,
       "dur": 3.49,
       "kind": "raw",
@@ -1350,23 +1049,18 @@
       "darken": 0
     },
     {
-      "id": "b178_rpl_i4_asian_leafy_greens",
+      "id": "cmp_s4_call",
       "start": 387.75,
-      "dur": 3.48,
-      "kind": "raw",
-      "src": "broll/rpl_i4_asian_leafy_greens.mp4",
-      "darken": 0
+      "dur": 5.97,
+      "kind": "callout",
+      "hue": "amber",
+      "accent": "good",
+      "figure": "semanas",
+      "eyebrow": "De un solo resto",
+      "caption": "cosechás hoja por hoja, sin arrancar la planta"
     },
     {
-      "id": "b179_rpl_i4_bokchoy_window_jar",
-      "start": 390.73,
-      "dur": 3.49,
-      "kind": "raw",
-      "src": "broll/rpl_i4_bokchoy_window_jar.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b180_rpl_i4_bokchoy_base_water",
+      "id": "b107_rpl_i4_bokchoy_base_water",
       "start": 393.72,
       "dur": 3.48,
       "kind": "raw",
@@ -1374,7 +1068,7 @@
       "darken": 0
     },
     {
-      "id": "b181_rpl_i4_asian_leafy_greens",
+      "id": "b108_rpl_i4_asian_leafy_greens",
       "start": 396.7,
       "dur": 3.49,
       "kind": "raw",
@@ -1382,23 +1076,23 @@
       "darken": 0
     },
     {
-      "id": "b182_rpl_i4_bokchoy_window_jar",
+      "id": "b109_rpl_i4_bokchoy_base_water",
       "start": 399.69,
       "dur": 3.49,
-      "kind": "raw",
-      "src": "broll/rpl_i4_bokchoy_window_jar.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b183_rpl_i4_bokchoy_base_water",
-      "start": 402.68,
-      "dur": 3.48,
       "kind": "raw",
       "src": "broll/rpl_i4_bokchoy_base_water.mp4",
       "darken": 0
     },
     {
-      "id": "b184_rpl_i4_asian_leafy_greens",
+      "id": "b110_rpl_i4_bokchoy_window_jar",
+      "start": 402.68,
+      "dur": 3.48,
+      "kind": "raw",
+      "src": "broll/rpl_i4_bokchoy_window_jar.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b111_rpl_i4_asian_leafy_greens",
       "start": 405.66,
       "dur": 3.49,
       "kind": "raw",
@@ -1406,7 +1100,7 @@
       "darken": 0
     },
     {
-      "id": "b185_rpl_i4_bokchoy_window_jar",
+      "id": "b112_rpl_i4_bokchoy_window_jar",
       "start": 408.65,
       "dur": 3.48,
       "kind": "raw",
@@ -1425,7 +1119,7 @@
       "image": "broll/rpl_i5_leek_regrow_upward.mp4"
     },
     {
-      "id": "b187_rpl_i5_leek_regrow_upward",
+      "id": "b114_rpl_i5_leek_regrow_upward",
       "start": 414.64,
       "dur": 3.97,
       "kind": "raw",
@@ -1433,23 +1127,21 @@
       "darken": 0
     },
     {
-      "id": "b188_rpl_i5_leeks_rustic_kitchen",
+      "id": "cmp_s5_split",
       "start": 418.11,
-      "dur": 3.98,
-      "kind": "raw",
-      "src": "broll/rpl_i5_leeks_rustic_kitchen.mp4",
-      "darken": 0
+      "dur": 6.95,
+      "kind": "splitlist",
+      "palette": "D",
+      "cross": true,
+      "title": "Lo que NO necesitás",
+      "items": [
+        "Comprar semillas",
+        "Fertilizante químico",
+        "Luz especial"
+      ]
     },
     {
-      "id": "b189_rpl_i5_leek_root_macro",
-      "start": 421.59,
-      "dur": 3.97,
-      "kind": "raw",
-      "src": "broll/rpl_i5_leek_root_macro.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b190_rpl_i5_leeks_rustic_kitchen",
+      "id": "b117_rpl_i5_leeks_rustic_kitchen",
       "start": 425.06,
       "dur": 3.97,
       "kind": "raw",
@@ -1457,7 +1149,7 @@
       "darken": 0
     },
     {
-      "id": "b191_rpl_i5_leek_root_macro",
+      "id": "b118_rpl_i5_leek_root_macro",
       "start": 428.53,
       "dur": 3.98,
       "kind": "raw",
@@ -1465,7 +1157,7 @@
       "darken": 0
     },
     {
-      "id": "b192_rpl_i5_chopping_leek_macro",
+      "id": "b119_rpl_i5_chopping_leek_macro",
       "start": 432.01,
       "dur": 3.97,
       "kind": "raw",
@@ -1473,7 +1165,7 @@
       "darken": 0
     },
     {
-      "id": "b193_rpl_i5_leek_soup_pot",
+      "id": "b120_rpl_i5_leek_soup_pot",
       "start": 435.48,
       "dur": 3.97,
       "kind": "raw",
@@ -1481,7 +1173,7 @@
       "darken": 0
     },
     {
-      "id": "b194_rpl_i5_washing_leek_water",
+      "id": "b121_rpl_i5_washing_leek_water",
       "start": 438.95,
       "dur": 3.98,
       "kind": "raw",
@@ -1489,7 +1181,7 @@
       "darken": 0
     },
     {
-      "id": "b195_rpl_i5_chopping_leek_macro",
+      "id": "b122_rpl_i5_chopping_leek_macro",
       "start": 442.43,
       "dur": 3.97,
       "kind": "raw",
@@ -1552,7 +1244,7 @@
       ]
     },
     {
-      "id": "b201_rpl_i6_basil_cuttings_glass",
+      "id": "b128_rpl_i6_basil_cuttings_glass",
       "start": 463.26,
       "dur": 3.76,
       "kind": "raw",
@@ -1560,23 +1252,32 @@
       "darken": 0
     },
     {
-      "id": "b202_rpl_i6_basil_windowsill_plants",
+      "id": "cmp_s6_bars",
       "start": 466.52,
-      "dur": 3.76,
-      "kind": "raw",
-      "src": "broll/rpl_i6_basil_windowsill_plants.mp4",
-      "darken": 0
+      "dur": 6.52,
+      "kind": "bars",
+      "hue": "amber",
+      "accent": "good",
+      "unit": "EUR",
+      "title": "Tu factura de verdura",
+      "eyebrow": "Lo que se va al año en lo replantable",
+      "bars": [
+        {
+          "label": "Comprando",
+          "value": 220,
+          "display": "~220€",
+          "tone": "danger"
+        },
+        {
+          "label": "Replantando",
+          "value": 0,
+          "display": "0€",
+          "winner": true
+        }
+      ]
     },
     {
-      "id": "b203_rpl_i6_picking_basil_hand",
-      "start": 469.78,
-      "dur": 3.76,
-      "kind": "raw",
-      "src": "broll/rpl_i6_picking_basil_hand.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b204_rpl_i6_basil_timelapse_root",
+      "id": "b131_rpl_i6_basil_timelapse_root",
       "start": 473.04,
       "dur": 3.76,
       "kind": "raw",
@@ -1584,7 +1285,7 @@
       "darken": 0
     },
     {
-      "id": "b205_rpl_i6_basil_windowsill_plants",
+      "id": "b132_rpl_i6_basil_windowsill_plants",
       "start": 476.3,
       "dur": 3.76,
       "kind": "raw",
@@ -1592,7 +1293,7 @@
       "darken": 0
     },
     {
-      "id": "b206_rpl_i6_basil_cuttings_glass",
+      "id": "b133_rpl_i6_basil_cuttings_glass",
       "start": 479.56,
       "dur": 3.76,
       "kind": "raw",
@@ -1600,7 +1301,7 @@
       "darken": 0
     },
     {
-      "id": "b207_rpl_i6_picking_basil_hand",
+      "id": "b134_rpl_i6_picking_basil_hand",
       "start": 482.82,
       "dur": 3.75,
       "kind": "raw",
@@ -1608,7 +1309,7 @@
       "darken": 0
     },
     {
-      "id": "b208_rpl_i6_basil_timelapse_root",
+      "id": "b135_rpl_i6_basil_timelapse_root",
       "start": 486.07,
       "dur": 3.76,
       "kind": "raw",
@@ -1616,7 +1317,7 @@
       "darken": 0
     },
     {
-      "id": "b209_rpl_i6_basil_cuttings_glass",
+      "id": "b136_rpl_i6_basil_cuttings_glass",
       "start": 489.33,
       "dur": 3.76,
       "kind": "raw",
@@ -1624,7 +1325,7 @@
       "darken": 0
     },
     {
-      "id": "b210_rpl_i6_basil_windowsill_plants",
+      "id": "b137_rpl_i6_basil_windowsill_plants",
       "start": 492.59,
       "dur": 3.76,
       "kind": "raw",
@@ -1632,7 +1333,7 @@
       "darken": 0
     },
     {
-      "id": "b211_rpl_i6_picking_basil_hand",
+      "id": "b138_rpl_i6_picking_basil_hand",
       "start": 495.85,
       "dur": 3.76,
       "kind": "raw",
@@ -1640,7 +1341,7 @@
       "darken": 0
     },
     {
-      "id": "b212_rpl_i6_basil_timelapse_root",
+      "id": "b139_rpl_i6_basil_timelapse_root",
       "start": 499.11,
       "dur": 3.76,
       "kind": "raw",
@@ -1659,7 +1360,7 @@
       "image": "broll/rpl_i7_mint_cuttings_water.mp4"
     },
     {
-      "id": "b214_rpl_i7_mint_cuttings_water",
+      "id": "b141_rpl_i7_mint_cuttings_water",
       "start": 505.63,
       "dur": 3.78,
       "kind": "raw",
@@ -1667,23 +1368,28 @@
       "darken": 0
     },
     {
-      "id": "b215_rpl_i7_mint_roots_macro",
+      "id": "cmp_s7_proc",
       "start": 508.91,
-      "dur": 3.78,
-      "kind": "raw",
-      "src": "broll/rpl_i7_mint_roots_macro.mp4",
-      "darken": 0
+      "dur": 6.56,
+      "kind": "process",
+      "hue": "amber",
+      "accent": "good",
+      "title": "Cuándo pasarla a la tierra",
+      "eyebrow": "La señal exacta",
+      "steps": [
+        {
+          "title": "Esperá raíces de 2-3 cm"
+        },
+        {
+          "title": "Maceta con tierra y buen sol"
+        },
+        {
+          "title": "Regá y dejá que se haga fuerte"
+        }
+      ]
     },
     {
-      "id": "b216_rpl_i7_mint_timelapse_grow",
-      "start": 512.19,
-      "dur": 3.78,
-      "kind": "raw",
-      "src": "broll/rpl_i7_mint_timelapse_grow.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b217_rpl_i7_mint_cuttings_water",
+      "id": "b144_rpl_i7_mint_cuttings_water",
       "start": 515.47,
       "dur": 3.77,
       "kind": "raw",
@@ -1691,7 +1397,7 @@
       "darken": 0
     },
     {
-      "id": "b218_rpl_i7_mint_roots_macro",
+      "id": "b145_rpl_i7_mint_roots_macro",
       "start": 518.74,
       "dur": 3.78,
       "kind": "raw",
@@ -1699,7 +1405,7 @@
       "darken": 0
     },
     {
-      "id": "b219_rpl_i7_mint_timelapse_grow",
+      "id": "b146_rpl_i7_mint_timelapse_grow",
       "start": 522.02,
       "dur": 3.78,
       "kind": "raw",
@@ -1707,7 +1413,7 @@
       "darken": 0
     },
     {
-      "id": "b220_rpl_i7_mint_cuttings_water",
+      "id": "b147_rpl_i7_mint_cuttings_water",
       "start": 525.3,
       "dur": 3.78,
       "kind": "raw",
@@ -1715,7 +1421,7 @@
       "darken": 0
     },
     {
-      "id": "b221_rpl_i7_mint_roots_macro",
+      "id": "b148_rpl_i7_mint_roots_macro",
       "start": 528.58,
       "dur": 3.78,
       "kind": "raw",
@@ -1723,7 +1429,7 @@
       "darken": 0
     },
     {
-      "id": "b222_rpl_i7_mint_timelapse_grow",
+      "id": "b149_rpl_i7_mint_timelapse_grow",
       "start": 531.86,
       "dur": 3.77,
       "kind": "raw",
@@ -1731,7 +1437,7 @@
       "darken": 0
     },
     {
-      "id": "b223_rpl_i7_mint_cuttings_water",
+      "id": "b150_rpl_i7_mint_cuttings_water",
       "start": 535.13,
       "dur": 3.78,
       "kind": "raw",
@@ -1739,7 +1445,7 @@
       "darken": 0
     },
     {
-      "id": "b224_rpl_i7_mint_roots_macro",
+      "id": "b151_rpl_i7_mint_roots_macro",
       "start": 538.41,
       "dur": 3.78,
       "kind": "raw",
@@ -1747,7 +1453,7 @@
       "darken": 0
     },
     {
-      "id": "b225_rpl_i7_mint_timelapse_grow",
+      "id": "b152_rpl_i7_mint_timelapse_grow",
       "start": 541.69,
       "dur": 3.78,
       "kind": "raw",
@@ -1755,7 +1461,7 @@
       "darken": 0
     },
     {
-      "id": "b226_rpl_i7_mint_cuttings_water",
+      "id": "b153_rpl_i7_mint_cuttings_water",
       "start": 544.97,
       "dur": 3.78,
       "kind": "raw",
@@ -1763,7 +1469,7 @@
       "darken": 0
     },
     {
-      "id": "b227_rpl_i7_mint_roots_macro",
+      "id": "b154_rpl_i7_mint_roots_macro",
       "start": 548.25,
       "dur": 3.77,
       "kind": "raw",
@@ -1771,7 +1477,7 @@
       "darken": 0
     },
     {
-      "id": "b228_rpl_i7_mint_timelapse_grow",
+      "id": "b155_rpl_i7_mint_timelapse_grow",
       "start": 551.52,
       "dur": 3.78,
       "kind": "raw",
@@ -1779,7 +1485,7 @@
       "darken": 0
     },
     {
-      "id": "b229_rpl_err_pale_wilting_cutting",
+      "id": "b156_rpl_err_pale_wilting_cutting",
       "start": 554.8,
       "dur": 3.66,
       "kind": "raw",
@@ -1787,7 +1493,7 @@
       "darken": 0
     },
     {
-      "id": "b230_rpl_err_cloudy_stagnant_water",
+      "id": "b157_rpl_err_cloudy_stagnant_water",
       "start": 557.96,
       "dur": 3.67,
       "kind": "raw",
@@ -1795,7 +1501,7 @@
       "darken": 0
     },
     {
-      "id": "b231_rpl_err_slimy_rotting_roots",
+      "id": "b158_rpl_err_slimy_rotting_roots",
       "start": 561.13,
       "dur": 3.66,
       "kind": "raw",
@@ -1803,7 +1509,7 @@
       "darken": 0
     },
     {
-      "id": "b232_rpl_err_pouring_old_water",
+      "id": "b159_rpl_err_pouring_old_water",
       "start": 564.29,
       "dur": 3.67,
       "kind": "raw",
@@ -1811,7 +1517,7 @@
       "darken": 0
     },
     {
-      "id": "b233_rpl_err_transplant_rich_soil",
+      "id": "b160_rpl_err_transplant_rich_soil",
       "start": 567.46,
       "dur": 3.66,
       "kind": "raw",
@@ -1819,7 +1525,7 @@
       "darken": 0
     },
     {
-      "id": "b234_rpl_err_pale_wilting_cutting",
+      "id": "b161_rpl_err_pale_wilting_cutting",
       "start": 570.62,
       "dur": 3.67,
       "kind": "raw",
@@ -1827,7 +1533,7 @@
       "darken": 0
     },
     {
-      "id": "b235_rpl_err_transplant_rich_soil",
+      "id": "b162_rpl_err_transplant_rich_soil",
       "start": 573.79,
       "dur": 3.67,
       "kind": "raw",
@@ -1835,7 +1541,7 @@
       "darken": 0
     },
     {
-      "id": "b236_rpl_err_cloudy_stagnant_water",
+      "id": "b163_rpl_err_cloudy_stagnant_water",
       "start": 576.96,
       "dur": 3.66,
       "kind": "raw",
@@ -1843,7 +1549,7 @@
       "darken": 0
     },
     {
-      "id": "b237_rpl_err_slimy_rotting_roots",
+      "id": "b164_rpl_err_slimy_rotting_roots",
       "start": 580.12,
       "dur": 3.67,
       "kind": "raw",
@@ -1851,7 +1557,7 @@
       "darken": 0
     },
     {
-      "id": "b238_rpl_err_pouring_old_water",
+      "id": "b165_rpl_err_pouring_old_water",
       "start": 583.29,
       "dur": 3.66,
       "kind": "raw",
@@ -1859,7 +1565,7 @@
       "darken": 0
     },
     {
-      "id": "b239_rpl_err_pale_wilting_cutting",
+      "id": "b166_rpl_err_pale_wilting_cutting",
       "start": 586.45,
       "dur": 3.67,
       "kind": "raw",
@@ -1867,7 +1573,7 @@
       "darken": 0
     },
     {
-      "id": "b240_rpl_err_cloudy_stagnant_water",
+      "id": "b167_rpl_err_cloudy_stagnant_water",
       "start": 589.62,
       "dur": 3.66,
       "kind": "raw",
@@ -1875,7 +1581,7 @@
       "darken": 0
     },
     {
-      "id": "b241_rpl_err_slimy_rotting_roots",
+      "id": "b168_rpl_err_slimy_rotting_roots",
       "start": 592.78,
       "dur": 3.67,
       "kind": "raw",
@@ -1883,7 +1589,7 @@
       "darken": 0
     },
     {
-      "id": "b242_rpl_err_pouring_old_water",
+      "id": "b169_rpl_err_pouring_old_water",
       "start": 595.95,
       "dur": 3.67,
       "kind": "raw",
@@ -1891,7 +1597,7 @@
       "darken": 0
     },
     {
-      "id": "b243_rpl_err_transplant_rich_soil",
+      "id": "b170_rpl_err_transplant_rich_soil",
       "start": 599.12,
       "dur": 3.66,
       "kind": "raw",
@@ -1899,7 +1605,7 @@
       "darken": 0
     },
     {
-      "id": "b244_rpl_err_pale_wilting_cutting",
+      "id": "b171_rpl_err_pale_wilting_cutting",
       "start": 602.28,
       "dur": 3.67,
       "kind": "raw",
@@ -1925,7 +1631,7 @@
       ]
     },
     {
-      "id": "b247_rpl_err_pouring_old_water",
+      "id": "b174_rpl_err_pouring_old_water",
       "start": 611.78,
       "dur": 3.66,
       "kind": "raw",
@@ -1933,7 +1639,7 @@
       "darken": 0
     },
     {
-      "id": "b248_rpl_err_transplant_rich_soil",
+      "id": "b175_rpl_err_transplant_rich_soil",
       "start": 614.94,
       "dur": 3.67,
       "kind": "raw",
@@ -1941,7 +1647,7 @@
       "darken": 0
     },
     {
-      "id": "b249_rpl_err_pale_wilting_cutting",
+      "id": "b176_rpl_err_pale_wilting_cutting",
       "start": 618.11,
       "dur": 3.67,
       "kind": "raw",
@@ -1949,7 +1655,7 @@
       "darken": 0
     },
     {
-      "id": "b250_rpl_err_cloudy_stagnant_water",
+      "id": "b177_rpl_err_cloudy_stagnant_water",
       "start": 621.28,
       "dur": 3.66,
       "kind": "raw",
@@ -1957,7 +1663,7 @@
       "darken": 0
     },
     {
-      "id": "b251_rpl_err_slimy_rotting_roots",
+      "id": "b178_rpl_err_slimy_rotting_roots",
       "start": 624.44,
       "dur": 3.67,
       "kind": "raw",
@@ -1965,7 +1671,7 @@
       "darken": 0
     },
     {
-      "id": "b252_rpl_err_pouring_old_water",
+      "id": "b179_rpl_err_pouring_old_water",
       "start": 627.61,
       "dur": 3.66,
       "kind": "raw",
@@ -1973,7 +1679,7 @@
       "darken": 0
     },
     {
-      "id": "b253_rpl_err_transplant_rich_soil",
+      "id": "b180_rpl_err_transplant_rich_soil",
       "start": 630.77,
       "dur": 3.67,
       "kind": "raw",
@@ -1981,7 +1687,7 @@
       "darken": 0
     },
     {
-      "id": "b254_rpl_err_pale_wilting_cutting",
+      "id": "b181_rpl_err_pale_wilting_cutting",
       "start": 633.94,
       "dur": 3.66,
       "kind": "raw",
@@ -1989,7 +1695,7 @@
       "darken": 0
     },
     {
-      "id": "b255_rpl_err_cloudy_stagnant_water",
+      "id": "b182_rpl_err_cloudy_stagnant_water",
       "start": 637.1,
       "dur": 3.67,
       "kind": "raw",
@@ -2046,7 +1752,7 @@
       "image": "broll/rpl_i8_cilantro_stems_water.mp4"
     },
     {
-      "id": "b259_rpl_i8_cilantro_stems_water",
+      "id": "b186_rpl_i8_cilantro_stems_water",
       "start": 649.77,
       "dur": 3.77,
       "kind": "raw",
@@ -2054,23 +1760,21 @@
       "darken": 0
     },
     {
-      "id": "b260_rpl_i8_cilantro_regrow_fresh",
+      "id": "cmp_s8_split",
       "start": 653.04,
-      "dur": 3.76,
-      "kind": "raw",
-      "src": "broll/rpl_i8_cilantro_regrow_fresh.mp4",
-      "darken": 0
+      "dur": 6.53,
+      "kind": "splitlist",
+      "palette": "D",
+      "cross": true,
+      "title": "Mitos que te frenan",
+      "items": [
+        "\"Hace falta jardín\"",
+        "\"Es muy difícil\"",
+        "\"Tarda años\""
+      ]
     },
     {
-      "id": "b261_rpl_i8_cilantro_flowering",
-      "start": 656.3,
-      "dur": 3.77,
-      "kind": "raw",
-      "src": "broll/rpl_i8_cilantro_flowering.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b262_rpl_i8_coriander_seeds_macro",
+      "id": "b189_rpl_i8_coriander_seeds_macro",
       "start": 659.57,
       "dur": 3.77,
       "kind": "raw",
@@ -2078,7 +1782,7 @@
       "darken": 0
     },
     {
-      "id": "b263_rpl_i8_chopping_cilantro",
+      "id": "b190_rpl_i8_chopping_cilantro",
       "start": 662.84,
       "dur": 3.76,
       "kind": "raw",
@@ -2086,7 +1790,7 @@
       "darken": 0
     },
     {
-      "id": "b264_rpl_i8_cilantro_window_jar",
+      "id": "b191_rpl_i8_cilantro_window_jar",
       "start": 666.1,
       "dur": 3.77,
       "kind": "raw",
@@ -2094,7 +1798,7 @@
       "darken": 0
     },
     {
-      "id": "b265_rpl_i8_chopping_cilantro",
+      "id": "b192_rpl_i8_chopping_cilantro",
       "start": 669.37,
       "dur": 3.77,
       "kind": "raw",
@@ -2102,7 +1806,7 @@
       "darken": 0
     },
     {
-      "id": "b266_rpl_i8_cilantro_window_jar",
+      "id": "b193_rpl_i8_cilantro_window_jar",
       "start": 672.64,
       "dur": 3.76,
       "kind": "raw",
@@ -2110,7 +1814,7 @@
       "darken": 0
     },
     {
-      "id": "b267_rpl_i8_cilantro_roots_macro",
+      "id": "b194_rpl_i8_cilantro_roots_macro",
       "start": 675.9,
       "dur": 3.77,
       "kind": "raw",
@@ -2118,7 +1822,7 @@
       "darken": 0
     },
     {
-      "id": "b268_rpl_i8_cilantro_garden_bed",
+      "id": "b195_rpl_i8_cilantro_garden_bed",
       "start": 679.17,
       "dur": 3.77,
       "kind": "raw",
@@ -2126,7 +1830,7 @@
       "darken": 0
     },
     {
-      "id": "b269_rpl_i8_cilantro_stems_water",
+      "id": "b196_rpl_i8_cilantro_stems_water",
       "start": 682.44,
       "dur": 3.76,
       "kind": "raw",
@@ -2134,7 +1838,7 @@
       "darken": 0
     },
     {
-      "id": "b270_rpl_i8_cilantro_regrow_fresh",
+      "id": "b197_rpl_i8_cilantro_regrow_fresh",
       "start": 685.7,
       "dur": 3.77,
       "kind": "raw",
@@ -2142,7 +1846,7 @@
       "darken": 0
     },
     {
-      "id": "b271_rpl_i8_cilantro_flowering",
+      "id": "b198_rpl_i8_cilantro_flowering",
       "start": 688.97,
       "dur": 3.77,
       "kind": "raw",
@@ -2150,7 +1854,7 @@
       "darken": 0
     },
     {
-      "id": "b272_rpl_i8_coriander_seeds_macro",
+      "id": "b199_rpl_i8_coriander_seeds_macro",
       "start": 692.24,
       "dur": 3.76,
       "kind": "raw",
@@ -2169,7 +1873,7 @@
       "image": "broll/rpl_i9_planting_clove_soil.mp4"
     },
     {
-      "id": "b274_rpl_i9_planting_clove_soil",
+      "id": "b201_rpl_i9_planting_clove_soil",
       "start": 698.77,
       "dur": 3.75,
       "kind": "raw",
@@ -2177,7 +1881,7 @@
       "darken": 0
     },
     {
-      "id": "b275_rpl_i9_garlic_rows_field",
+      "id": "b202_rpl_i9_garlic_rows_field",
       "start": 702.02,
       "dur": 3.75,
       "kind": "raw",
@@ -2185,7 +1889,7 @@
       "darken": 0
     },
     {
-      "id": "b276_rpl_i9_planting_clove_soil",
+      "id": "b203_rpl_i9_planting_clove_soil",
       "start": 705.27,
       "dur": 3.75,
       "kind": "raw",
@@ -2193,7 +1897,7 @@
       "darken": 0
     },
     {
-      "id": "b277_rpl_i9_garlic_rows_field",
+      "id": "b204_rpl_i9_garlic_rows_field",
       "start": 708.52,
       "dur": 3.75,
       "kind": "raw",
@@ -2201,7 +1905,7 @@
       "darken": 0
     },
     {
-      "id": "b278_rpl_i9_planting_clove_soil",
+      "id": "b205_rpl_i9_planting_clove_soil",
       "start": 711.77,
       "dur": 3.75,
       "kind": "raw",
@@ -2209,7 +1913,7 @@
       "darken": 0
     },
     {
-      "id": "b279_rpl_i9_garlic_rows_field",
+      "id": "b206_rpl_i9_garlic_rows_field",
       "start": 715.02,
       "dur": 3.75,
       "kind": "raw",
@@ -2217,7 +1921,7 @@
       "darken": 0
     },
     {
-      "id": "b280_rpl_i9_planting_clove_soil",
+      "id": "b207_rpl_i9_planting_clove_soil",
       "start": 718.27,
       "dur": 3.75,
       "kind": "raw",
@@ -2225,7 +1929,7 @@
       "darken": 0
     },
     {
-      "id": "b281_rpl_i9_garlic_rows_field",
+      "id": "b208_rpl_i9_garlic_rows_field",
       "start": 721.52,
       "dur": 3.75,
       "kind": "raw",
@@ -2233,7 +1937,7 @@
       "darken": 0
     },
     {
-      "id": "b282_rpl_i9_planting_clove_soil",
+      "id": "b209_rpl_i9_planting_clove_soil",
       "start": 724.77,
       "dur": 3.75,
       "kind": "raw",
@@ -2241,7 +1945,7 @@
       "darken": 0
     },
     {
-      "id": "b283_rpl_i9_garlic_rows_field",
+      "id": "b210_rpl_i9_garlic_rows_field",
       "start": 728.02,
       "dur": 3.75,
       "kind": "raw",
@@ -2249,7 +1953,7 @@
       "darken": 0
     },
     {
-      "id": "b284_rpl_i9_planting_clove_soil",
+      "id": "b211_rpl_i9_planting_clove_soil",
       "start": 731.27,
       "dur": 3.75,
       "kind": "raw",
@@ -2257,7 +1961,7 @@
       "darken": 0
     },
     {
-      "id": "b285_rpl_i9_garlic_rows_field",
+      "id": "b212_rpl_i9_garlic_rows_field",
       "start": 734.52,
       "dur": 3.75,
       "kind": "raw",
@@ -2265,7 +1969,7 @@
       "darken": 0
     },
     {
-      "id": "b286_rpl_i9_planting_clove_soil",
+      "id": "b213_rpl_i9_planting_clove_soil",
       "start": 737.77,
       "dur": 3.75,
       "kind": "raw",
@@ -2273,7 +1977,7 @@
       "darken": 0
     },
     {
-      "id": "b287_rpl_i9_garlic_rows_field",
+      "id": "b214_rpl_i9_garlic_rows_field",
       "start": 741.02,
       "dur": 3.75,
       "kind": "raw",
@@ -2325,7 +2029,7 @@
       }
     },
     {
-      "id": "b291_rpl_i10_planting_ginger_soil",
+      "id": "b218_rpl_i10_planting_ginger_soil",
       "start": 753.96,
       "dur": 3.69,
       "kind": "raw",
@@ -2333,7 +2037,7 @@
       "darken": 0
     },
     {
-      "id": "b292_rpl_i10_ginger_shoot_green",
+      "id": "b219_rpl_i10_ginger_shoot_green",
       "start": 757.15,
       "dur": 3.69,
       "kind": "raw",
@@ -2341,7 +2045,7 @@
       "darken": 0
     },
     {
-      "id": "b293_rpl_i10_planting_ginger_soil",
+      "id": "b220_rpl_i10_planting_ginger_soil",
       "start": 760.34,
       "dur": 3.69,
       "kind": "raw",
@@ -2349,7 +2053,7 @@
       "darken": 0
     },
     {
-      "id": "b294_rpl_i10_ginger_shoot_green",
+      "id": "b221_rpl_i10_ginger_shoot_green",
       "start": 763.53,
       "dur": 3.69,
       "kind": "raw",
@@ -2357,7 +2061,7 @@
       "darken": 0
     },
     {
-      "id": "b295_rpl_i10_turmeric_root_orange",
+      "id": "b222_rpl_i10_turmeric_root_orange",
       "start": 766.72,
       "dur": 3.69,
       "kind": "raw",
@@ -2365,7 +2069,7 @@
       "darken": 0
     },
     {
-      "id": "b296_rpl_i10_ginger_pot_plant",
+      "id": "b223_rpl_i10_ginger_pot_plant",
       "start": 769.91,
       "dur": 3.69,
       "kind": "raw",
@@ -2373,7 +2077,7 @@
       "darken": 0
     },
     {
-      "id": "b297_rpl_i10_ginger_tea_water",
+      "id": "b224_rpl_i10_ginger_tea_water",
       "start": 773.1,
       "dur": 3.69,
       "kind": "raw",
@@ -2381,7 +2085,7 @@
       "darken": 0
     },
     {
-      "id": "b298_rpl_i10_ginger_pot_plant",
+      "id": "b225_rpl_i10_ginger_pot_plant",
       "start": 776.29,
       "dur": 3.69,
       "kind": "raw",
@@ -2389,7 +2093,7 @@
       "darken": 0
     },
     {
-      "id": "b299_rpl_i10_ginger_tea_water",
+      "id": "b226_rpl_i10_ginger_tea_water",
       "start": 779.48,
       "dur": 3.69,
       "kind": "raw",
@@ -2397,7 +2101,7 @@
       "darken": 0
     },
     {
-      "id": "b300_rpl_i10_ginger_market_pile",
+      "id": "b227_rpl_i10_ginger_market_pile",
       "start": 782.67,
       "dur": 3.69,
       "kind": "raw",
@@ -2405,7 +2109,7 @@
       "darken": 0
     },
     {
-      "id": "b301_rpl_i10_ginger_buds_macro",
+      "id": "b228_rpl_i10_ginger_buds_macro",
       "start": 785.86,
       "dur": 3.69,
       "kind": "raw",
@@ -2413,7 +2117,7 @@
       "darken": 0
     },
     {
-      "id": "b302_rpl_i10_turmeric_root_orange",
+      "id": "b229_rpl_i10_turmeric_root_orange",
       "start": 789.05,
       "dur": 3.69,
       "kind": "raw",
@@ -2421,7 +2125,7 @@
       "darken": 0
     },
     {
-      "id": "b303_rpl_i10_ginger_market_pile",
+      "id": "b230_rpl_i10_ginger_market_pile",
       "start": 792.24,
       "dur": 3.69,
       "kind": "raw",
@@ -2429,7 +2133,7 @@
       "darken": 0
     },
     {
-      "id": "b304_rpl_i10_ginger_buds_macro",
+      "id": "b231_rpl_i10_ginger_buds_macro",
       "start": 795.43,
       "dur": 3.69,
       "kind": "raw",
@@ -2437,7 +2141,7 @@
       "darken": 0
     },
     {
-      "id": "b305_rpl_i10_planting_ginger_soil",
+      "id": "b232_rpl_i10_planting_ginger_soil",
       "start": 798.62,
       "dur": 3.69,
       "kind": "raw",
@@ -2445,7 +2149,7 @@
       "darken": 0
     },
     {
-      "id": "b306_rpl_i10_ginger_shoot_green",
+      "id": "b233_rpl_i10_ginger_shoot_green",
       "start": 801.81,
       "dur": 3.69,
       "kind": "raw",
@@ -2453,7 +2157,7 @@
       "darken": 0
     },
     {
-      "id": "b307_rpl_i10_turmeric_root_orange",
+      "id": "b234_rpl_i10_turmeric_root_orange",
       "start": 805,
       "dur": 3.69,
       "kind": "raw",
@@ -2513,7 +2217,7 @@
       }
     },
     {
-      "id": "b311_rpl_i11_cutting_potato_pieces",
+      "id": "b238_rpl_i11_cutting_potato_pieces",
       "start": 817.92,
       "dur": 3.84,
       "kind": "raw",
@@ -2521,7 +2225,7 @@
       "darken": 0
     },
     {
-      "id": "b312_rpl_i11_potato_pieces_drying",
+      "id": "b239_rpl_i11_potato_pieces_drying",
       "start": 821.26,
       "dur": 3.85,
       "kind": "raw",
@@ -2529,7 +2233,7 @@
       "darken": 0
     },
     {
-      "id": "b313_rpl_i11_planting_trench_soil",
+      "id": "b240_rpl_i11_planting_trench_soil",
       "start": 824.61,
       "dur": 3.84,
       "kind": "raw",
@@ -2537,7 +2241,7 @@
       "darken": 0
     },
     {
-      "id": "b314_rpl_i11_potato_plants_rows",
+      "id": "b241_rpl_i11_potato_plants_rows",
       "start": 827.95,
       "dur": 3.84,
       "kind": "raw",
@@ -2545,7 +2249,7 @@
       "darken": 0
     },
     {
-      "id": "b315_rpl_i11_potato_sprout_macro",
+      "id": "b242_rpl_i11_potato_sprout_macro",
       "start": 831.29,
       "dur": 3.85,
       "kind": "raw",
@@ -2553,7 +2257,7 @@
       "darken": 0
     },
     {
-      "id": "b316_rpl_i11_potato_plant_timelapse",
+      "id": "b243_rpl_i11_potato_plant_timelapse",
       "start": 834.64,
       "dur": 3.84,
       "kind": "raw",
@@ -2561,7 +2265,7 @@
       "darken": 0
     },
     {
-      "id": "b317_rpl_i11_washing_potatoes_water",
+      "id": "b244_rpl_i11_washing_potatoes_water",
       "start": 837.98,
       "dur": 3.85,
       "kind": "raw",
@@ -2569,7 +2273,7 @@
       "darken": 0
     },
     {
-      "id": "b318_rpl_i11_sprouting_potato_pantry",
+      "id": "b245_rpl_i11_sprouting_potato_pantry",
       "start": 841.33,
       "dur": 3.84,
       "kind": "raw",
@@ -2577,7 +2281,7 @@
       "darken": 0
     },
     {
-      "id": "b319_rpl_i11_cutting_potato_pieces",
+      "id": "b246_rpl_i11_cutting_potato_pieces",
       "start": 844.67,
       "dur": 3.84,
       "kind": "raw",
@@ -2585,7 +2289,7 @@
       "darken": 0
     },
     {
-      "id": "b320_rpl_i11_potato_pieces_drying",
+      "id": "b247_rpl_i11_potato_pieces_drying",
       "start": 848.01,
       "dur": 3.85,
       "kind": "raw",
@@ -2593,7 +2297,7 @@
       "darken": 0
     },
     {
-      "id": "b321_rpl_i11_potato_sprout_macro",
+      "id": "b248_rpl_i11_potato_sprout_macro",
       "start": 851.36,
       "dur": 3.84,
       "kind": "raw",
@@ -2601,7 +2305,7 @@
       "darken": 0
     },
     {
-      "id": "b322_rpl_i11_planting_trench_soil",
+      "id": "b249_rpl_i11_planting_trench_soil",
       "start": 854.7,
       "dur": 3.84,
       "kind": "raw",
@@ -2609,7 +2313,7 @@
       "darken": 0
     },
     {
-      "id": "b323_rpl_i11_potato_plant_timelapse",
+      "id": "b250_rpl_i11_potato_plant_timelapse",
       "start": 858.04,
       "dur": 3.85,
       "kind": "raw",
@@ -2617,7 +2321,7 @@
       "darken": 0
     },
     {
-      "id": "b324_rpl_i11_washing_potatoes_water",
+      "id": "b251_rpl_i11_washing_potatoes_water",
       "start": 861.39,
       "dur": 3.84,
       "kind": "raw",
@@ -2625,7 +2329,7 @@
       "darken": 0
     },
     {
-      "id": "b325_rpl_i11_potato_plants_rows",
+      "id": "b252_rpl_i11_potato_plants_rows",
       "start": 864.73,
       "dur": 3.85,
       "kind": "raw",
@@ -2644,7 +2348,7 @@
       "caption": "papas nuevas, de una que ibas a tirar"
     },
     {
-      "id": "b328_rpl_i11_potato_pieces_drying",
+      "id": "b255_rpl_i11_potato_pieces_drying",
       "start": 874.76,
       "dur": 3.85,
       "kind": "raw",
@@ -2652,7 +2356,7 @@
       "darken": 0
     },
     {
-      "id": "b329_rpl_i11_planting_trench_soil",
+      "id": "b256_rpl_i11_planting_trench_soil",
       "start": 878.11,
       "dur": 3.84,
       "kind": "raw",
@@ -2660,7 +2364,7 @@
       "darken": 0
     },
     {
-      "id": "b330_rpl_i11_potato_plants_rows",
+      "id": "b257_rpl_i11_potato_plants_rows",
       "start": 881.45,
       "dur": 3.85,
       "kind": "raw",
@@ -2712,7 +2416,7 @@
       }
     },
     {
-      "id": "b334_rpl_i12_pulling_a_slip",
+      "id": "b261_rpl_i12_pulling_a_slip",
       "start": 894.92,
       "dur": 3.92,
       "kind": "raw",
@@ -2720,7 +2424,7 @@
       "darken": 0
     },
     {
-      "id": "b335_rpl_i12_rooting_slips_water",
+      "id": "b262_rpl_i12_rooting_slips_water",
       "start": 898.34,
       "dur": 3.93,
       "kind": "raw",
@@ -2728,7 +2432,7 @@
       "darken": 0
     },
     {
-      "id": "b336_rpl_i12_pulling_a_slip",
+      "id": "b263_rpl_i12_pulling_a_slip",
       "start": 901.77,
       "dur": 3.93,
       "kind": "raw",
@@ -2736,7 +2440,7 @@
       "darken": 0
     },
     {
-      "id": "b337_rpl_i12_rooting_slips_water",
+      "id": "b264_rpl_i12_rooting_slips_water",
       "start": 905.2,
       "dur": 3.93,
       "kind": "raw",
@@ -2744,7 +2448,7 @@
       "darken": 0
     },
     {
-      "id": "b338_rpl_i12_slips_macro_roots",
+      "id": "b265_rpl_i12_slips_macro_roots",
       "start": 908.63,
       "dur": 3.93,
       "kind": "raw",
@@ -2752,7 +2456,7 @@
       "darken": 0
     },
     {
-      "id": "b339_rpl_i12_sweetpotato_toothpicks_glass",
+      "id": "b266_rpl_i12_sweetpotato_toothpicks_glass",
       "start": 912.06,
       "dur": 3.93,
       "kind": "raw",
@@ -2760,7 +2464,7 @@
       "darken": 0
     },
     {
-      "id": "b340_rpl_i12_slips_macro_roots",
+      "id": "b267_rpl_i12_slips_macro_roots",
       "start": 915.49,
       "dur": 3.93,
       "kind": "raw",
@@ -2768,7 +2472,7 @@
       "darken": 0
     },
     {
-      "id": "b341_rpl_i12_sweetpotato_toothpicks_glass",
+      "id": "b268_rpl_i12_sweetpotato_toothpicks_glass",
       "start": 918.92,
       "dur": 3.93,
       "kind": "raw",
@@ -2776,7 +2480,7 @@
       "darken": 0
     },
     {
-      "id": "b342_rpl_i12_pulling_a_slip",
+      "id": "b269_rpl_i12_pulling_a_slip",
       "start": 922.35,
       "dur": 3.93,
       "kind": "raw",
@@ -2784,7 +2488,7 @@
       "darken": 0
     },
     {
-      "id": "b343_rpl_i12_rooting_slips_water",
+      "id": "b270_rpl_i12_rooting_slips_water",
       "start": 925.78,
       "dur": 3.92,
       "kind": "raw",
@@ -2792,7 +2496,7 @@
       "darken": 0
     },
     {
-      "id": "b344_rpl_i12_slips_macro_roots",
+      "id": "b271_rpl_i12_slips_macro_roots",
       "start": 929.2,
       "dur": 3.93,
       "kind": "raw",
@@ -2800,7 +2504,7 @@
       "darken": 0
     },
     {
-      "id": "b345_rpl_i12_sweetpotato_toothpicks_glass",
+      "id": "b272_rpl_i12_sweetpotato_toothpicks_glass",
       "start": 932.63,
       "dur": 3.93,
       "kind": "raw",
@@ -2808,7 +2512,7 @@
       "darken": 0
     },
     {
-      "id": "b346_rpl_i12_pulling_a_slip",
+      "id": "b273_rpl_i12_pulling_a_slip",
       "start": 936.06,
       "dur": 3.93,
       "kind": "raw",
@@ -2816,7 +2520,7 @@
       "darken": 0
     },
     {
-      "id": "b347_rpl_i12_rooting_slips_water",
+      "id": "b274_rpl_i12_rooting_slips_water",
       "start": 939.49,
       "dur": 3.93,
       "kind": "raw",
@@ -2824,7 +2528,7 @@
       "darken": 0
     },
     {
-      "id": "b348_rpl_i12_slips_macro_roots",
+      "id": "b275_rpl_i12_slips_macro_roots",
       "start": 942.92,
       "dur": 3.93,
       "kind": "raw",
@@ -2843,31 +2547,37 @@
       "image": "broll/rpl_i13_cutting_carrot_tops.mp4"
     },
     {
-      "id": "b350_rpl_i13_cutting_carrot_tops",
+      "id": "cmp_business",
       "start": 949.77,
-      "dur": 3.84,
-      "kind": "raw",
-      "src": "broll/rpl_i13_cutting_carrot_tops.mp4",
-      "darken": 0
+      "dur": 3.34,
+      "kind": "lielist",
+      "accent": "danger",
+      "title": "Por qué te lo vende suelto",
+      "items": [
+        "Para que vuelvas cada semana",
+        "Lo usás una vez y lo tirás",
+        "El negocio es la dependencia"
+      ],
+      "image": "img/cmp_business_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "cmp_business_bg",
+        "prompt": "a busy supermarket checkout aisle, a cashier scanning groceries, shelves of vegetables in the background, slightly cold tone, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
+      }
     },
     {
-      "id": "b351_rpl_i13_carrot_tops_dish_water",
+      "id": "cmp_s13_call",
       "start": 953.11,
-      "dur": 3.83,
-      "kind": "raw",
-      "src": "broll/rpl_i13_carrot_tops_dish_water.mp4",
-      "darken": 0
+      "dur": 6.66,
+      "kind": "callout",
+      "hue": "amber",
+      "accent": "good",
+      "figure": "1 → ∞",
+      "eyebrow": "Un resto que no para",
+      "caption": "vuelve a darte comida una y otra vez"
     },
     {
-      "id": "b352_rpl_i13_carrot_seeds_hand",
-      "start": 956.44,
-      "dur": 3.83,
-      "kind": "raw",
-      "src": "broll/rpl_i13_carrot_seeds_hand.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b353_rpl_i13_pulling_carrots_soil",
+      "id": "b280_rpl_i13_pulling_carrots_soil",
       "start": 959.77,
       "dur": 3.84,
       "kind": "raw",
@@ -2875,7 +2585,7 @@
       "darken": 0
     },
     {
-      "id": "b354_rpl_i13_washing_carrots_water",
+      "id": "b281_rpl_i13_washing_carrots_water",
       "start": 963.11,
       "dur": 3.83,
       "kind": "raw",
@@ -2883,7 +2593,7 @@
       "darken": 0
     },
     {
-      "id": "b355_rpl_i13_carrot_seeds_hand",
+      "id": "b282_rpl_i13_carrot_seeds_hand",
       "start": 966.44,
       "dur": 3.83,
       "kind": "raw",
@@ -2891,7 +2601,7 @@
       "darken": 0
     },
     {
-      "id": "b356_rpl_i13_carrots_market_bunch",
+      "id": "b283_rpl_i13_carrots_market_bunch",
       "start": 969.77,
       "dur": 3.84,
       "kind": "raw",
@@ -2899,7 +2609,7 @@
       "darken": 0
     },
     {
-      "id": "b357_rpl_i13_carrot_seedling_soil",
+      "id": "b284_rpl_i13_carrot_seedling_soil",
       "start": 973.11,
       "dur": 3.83,
       "kind": "raw",
@@ -2907,7 +2617,7 @@
       "darken": 0
     },
     {
-      "id": "b358_rpl_i13_pulling_carrots_soil",
+      "id": "b285_rpl_i13_pulling_carrots_soil",
       "start": 976.44,
       "dur": 3.83,
       "kind": "raw",
@@ -2915,7 +2625,7 @@
       "darken": 0
     },
     {
-      "id": "b359_rpl_i13_cutting_carrot_tops",
+      "id": "b286_rpl_i13_cutting_carrot_tops",
       "start": 979.77,
       "dur": 3.84,
       "kind": "raw",
@@ -2923,7 +2633,7 @@
       "darken": 0
     },
     {
-      "id": "b360_rpl_i13_washing_carrots_water",
+      "id": "b287_rpl_i13_washing_carrots_water",
       "start": 983.11,
       "dur": 3.83,
       "kind": "raw",
@@ -2931,7 +2641,7 @@
       "darken": 0
     },
     {
-      "id": "b361_rpl_i13_carrot_tops_dish_water",
+      "id": "b288_rpl_i13_carrot_tops_dish_water",
       "start": 986.44,
       "dur": 3.83,
       "kind": "raw",
@@ -2939,7 +2649,7 @@
       "darken": 0
     },
     {
-      "id": "b362_rpl_i13_carrots_market_bunch",
+      "id": "b289_rpl_i13_carrots_market_bunch",
       "start": 989.77,
       "dur": 3.84,
       "kind": "raw",
@@ -2947,7 +2657,7 @@
       "darken": 0
     },
     {
-      "id": "b363_rpl_i13_carrot_seedling_soil",
+      "id": "b290_rpl_i13_carrot_seedling_soil",
       "start": 993.11,
       "dur": 3.83,
       "kind": "raw",
@@ -2955,51 +2665,51 @@
       "darken": 0
     },
     {
-      "id": "b364_rpl_i13_cutting_carrot_tops",
+      "id": "b291_rpl_i13_carrots_market_bunch",
       "start": 996.44,
+      "dur": 3.83,
+      "kind": "raw",
+      "src": "broll/rpl_i13_carrots_market_bunch.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b292_rpl_i13_carrot_seedling_soil",
+      "start": 999.77,
+      "dur": 3.84,
+      "kind": "raw",
+      "src": "broll/rpl_i13_carrot_seedling_soil.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b293_rpl_i13_cutting_carrot_tops",
+      "start": 1003.11,
       "dur": 3.83,
       "kind": "raw",
       "src": "broll/rpl_i13_cutting_carrot_tops.mp4",
       "darken": 0
     },
     {
-      "id": "b365_rpl_i13_carrot_tops_dish_water",
-      "start": 999.77,
-      "dur": 3.84,
+      "id": "b294_rpl_i13_carrot_tops_dish_water",
+      "start": 1006.44,
+      "dur": 3.83,
       "kind": "raw",
       "src": "broll/rpl_i13_carrot_tops_dish_water.mp4",
       "darken": 0
     },
     {
-      "id": "b366_rpl_i13_carrot_seeds_hand",
-      "start": 1003.11,
-      "dur": 3.83,
+      "id": "b295_rpl_i13_carrot_seeds_hand",
+      "start": 1009.77,
+      "dur": 3.84,
       "kind": "raw",
       "src": "broll/rpl_i13_carrot_seeds_hand.mp4",
       "darken": 0
     },
     {
-      "id": "b367_rpl_i13_pulling_carrots_soil",
-      "start": 1006.44,
-      "dur": 3.83,
-      "kind": "raw",
-      "src": "broll/rpl_i13_pulling_carrots_soil.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b368_rpl_i13_washing_carrots_water",
-      "start": 1009.77,
-      "dur": 3.84,
-      "kind": "raw",
-      "src": "broll/rpl_i13_washing_carrots_water.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b369_rpl_i13_carrots_market_bunch",
+      "id": "b296_rpl_i13_pulling_carrots_soil",
       "start": 1013.11,
       "dur": 3.83,
       "kind": "raw",
-      "src": "broll/rpl_i13_carrots_market_bunch.mp4",
+      "src": "broll/rpl_i13_pulling_carrots_soil.mp4",
       "darken": 0
     },
     {
@@ -3014,7 +2724,7 @@
       "image": "broll/rpl_i14_slicing_tomato_rounds.mp4"
     },
     {
-      "id": "b371_rpl_i14_slicing_tomato_rounds",
+      "id": "b298_rpl_i14_slicing_tomato_rounds",
       "start": 1019.77,
       "dur": 3.73,
       "kind": "raw",
@@ -3022,23 +2732,32 @@
       "darken": 0
     },
     {
-      "id": "b372_rpl_i14_covering_slices_soil",
+      "id": "cmp_s14_bars",
       "start": 1023,
-      "dur": 3.72,
-      "kind": "raw",
-      "src": "broll/rpl_i14_covering_slices_soil.mp4",
-      "darken": 0
+      "dur": 6.45,
+      "kind": "bars",
+      "hue": "amber",
+      "accent": "good",
+      "unit": "EUR",
+      "title": "El ahorro que se acumula",
+      "eyebrow": "Cada resto que replantás",
+      "bars": [
+        {
+          "label": "Si lo comprás",
+          "value": 90,
+          "display": "~90€/año",
+          "tone": "danger"
+        },
+        {
+          "label": "Si lo replantás",
+          "value": 0,
+          "display": "0€",
+          "winner": true
+        }
+      ]
     },
     {
-      "id": "b373_rpl_i14_tomato_seedlings_row",
-      "start": 1026.22,
-      "dur": 3.73,
-      "kind": "raw",
-      "src": "broll/rpl_i14_tomato_seedlings_row.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b374_rpl_i14_covering_slices_soil",
+      "id": "b301_rpl_i14_covering_slices_soil",
       "start": 1029.45,
       "dur": 3.73,
       "kind": "raw",
@@ -3046,7 +2765,7 @@
       "darken": 0
     },
     {
-      "id": "b375_rpl_i14_tomato_seedlings_row",
+      "id": "b302_rpl_i14_tomato_seedlings_row",
       "start": 1032.68,
       "dur": 3.72,
       "kind": "raw",
@@ -3054,7 +2773,7 @@
       "darken": 0
     },
     {
-      "id": "b376_rpl_i14_seedlings_tray_dozens",
+      "id": "b303_rpl_i14_seedlings_tray_dozens",
       "start": 1035.9,
       "dur": 3.73,
       "kind": "raw",
@@ -3062,7 +2781,7 @@
       "darken": 0
     },
     {
-      "id": "b377_rpl_i14_tomato_seeds_macro",
+      "id": "b304_rpl_i14_tomato_seeds_macro",
       "start": 1039.13,
       "dur": 3.72,
       "kind": "raw",
@@ -3070,7 +2789,7 @@
       "darken": 0
     },
     {
-      "id": "b378_rpl_i14_tomato_timelapse_grow",
+      "id": "b305_rpl_i14_tomato_timelapse_grow",
       "start": 1042.35,
       "dur": 3.73,
       "kind": "raw",
@@ -3078,7 +2797,7 @@
       "darken": 0
     },
     {
-      "id": "b379_rpl_i14_slicing_tomato_rounds",
+      "id": "b306_rpl_i14_slicing_tomato_rounds",
       "start": 1045.58,
       "dur": 3.73,
       "kind": "raw",
@@ -3086,7 +2805,7 @@
       "darken": 0
     },
     {
-      "id": "b380_rpl_i14_seedlings_tray_dozens",
+      "id": "b307_rpl_i14_seedlings_tray_dozens",
       "start": 1048.81,
       "dur": 3.72,
       "kind": "raw",
@@ -3094,7 +2813,7 @@
       "darken": 0
     },
     {
-      "id": "b381_rpl_i14_tomato_timelapse_grow",
+      "id": "b308_rpl_i14_tomato_timelapse_grow",
       "start": 1052.03,
       "dur": 3.73,
       "kind": "raw",
@@ -3102,7 +2821,7 @@
       "darken": 0
     },
     {
-      "id": "b382_rpl_i14_tomato_seeds_macro",
+      "id": "b309_rpl_i14_tomato_seeds_macro",
       "start": 1055.26,
       "dur": 3.73,
       "kind": "raw",
@@ -3110,7 +2829,7 @@
       "darken": 0
     },
     {
-      "id": "b383_rpl_i14_slicing_tomato_rounds",
+      "id": "b310_rpl_i14_slicing_tomato_rounds",
       "start": 1058.49,
       "dur": 3.72,
       "kind": "raw",
@@ -3118,7 +2837,7 @@
       "darken": 0
     },
     {
-      "id": "b384_rpl_i14_covering_slices_soil",
+      "id": "b311_rpl_i14_covering_slices_soil",
       "start": 1061.71,
       "dur": 3.73,
       "kind": "raw",
@@ -3126,7 +2845,7 @@
       "darken": 0
     },
     {
-      "id": "b385_rpl_i14_tomato_seedlings_row",
+      "id": "b312_rpl_i14_tomato_seedlings_row",
       "start": 1064.94,
       "dur": 3.73,
       "kind": "raw",
@@ -3134,7 +2853,7 @@
       "darken": 0
     },
     {
-      "id": "b386_rpl_i14_seedlings_tray_dozens",
+      "id": "b313_rpl_i14_seedlings_tray_dozens",
       "start": 1068.17,
       "dur": 3.72,
       "kind": "raw",
@@ -3142,7 +2861,7 @@
       "darken": 0
     },
     {
-      "id": "b387_rpl_i14_tomato_seeds_macro",
+      "id": "b314_rpl_i14_tomato_seeds_macro",
       "start": 1071.39,
       "dur": 3.73,
       "kind": "raw",
@@ -3150,7 +2869,7 @@
       "darken": 0
     },
     {
-      "id": "b388_rpl_i14_tomato_timelapse_grow",
+      "id": "b315_rpl_i14_tomato_timelapse_grow",
       "start": 1074.62,
       "dur": 3.73,
       "kind": "raw",
@@ -3202,7 +2921,7 @@
       }
     },
     {
-      "id": "b392_rpl_i15_stripping_lower_leaves",
+      "id": "b319_rpl_i15_stripping_lower_leaves",
       "start": 1087.68,
       "dur": 3.88,
       "kind": "raw",
@@ -3210,7 +2929,7 @@
       "darken": 0
     },
     {
-      "id": "b393_rpl_i15_pineapple_crown_drying",
+      "id": "b320_rpl_i15_pineapple_crown_drying",
       "start": 1091.06,
       "dur": 3.88,
       "kind": "raw",
@@ -3218,7 +2937,7 @@
       "darken": 0
     },
     {
-      "id": "b394_rpl_i15_crown_rooting_water",
+      "id": "b321_rpl_i15_crown_rooting_water",
       "start": 1094.44,
       "dur": 3.88,
       "kind": "raw",
@@ -3226,7 +2945,7 @@
       "darken": 0
     },
     {
-      "id": "b395_rpl_i15_mature_pineapple_fruit",
+      "id": "b322_rpl_i15_mature_pineapple_fruit",
       "start": 1097.82,
       "dur": 3.88,
       "kind": "raw",
@@ -3234,7 +2953,7 @@
       "darken": 0
     },
     {
-      "id": "b396_rpl_i15_pineapple_root_bumps_macro",
+      "id": "b323_rpl_i15_pineapple_root_bumps_macro",
       "start": 1101.2,
       "dur": 3.88,
       "kind": "raw",
@@ -3242,7 +2961,7 @@
       "darken": 0
     },
     {
-      "id": "b397_rpl_i15_mature_pineapple_fruit",
+      "id": "b324_rpl_i15_mature_pineapple_fruit",
       "start": 1104.58,
       "dur": 3.88,
       "kind": "raw",
@@ -3250,7 +2969,7 @@
       "darken": 0
     },
     {
-      "id": "b398_rpl_i15_pineapple_root_bumps_macro",
+      "id": "b325_rpl_i15_pineapple_root_bumps_macro",
       "start": 1107.96,
       "dur": 3.87,
       "kind": "raw",
@@ -3258,7 +2977,7 @@
       "darken": 0
     },
     {
-      "id": "b399_rpl_i15_pineapple_field_rows",
+      "id": "b326_rpl_i15_pineapple_field_rows",
       "start": 1111.33,
       "dur": 3.88,
       "kind": "raw",
@@ -3266,7 +2985,7 @@
       "darken": 0
     },
     {
-      "id": "b400_rpl_i15_planting_crown_soil",
+      "id": "b327_rpl_i15_planting_crown_soil",
       "start": 1114.71,
       "dur": 3.88,
       "kind": "raw",
@@ -3274,7 +2993,7 @@
       "darken": 0
     },
     {
-      "id": "b401_rpl_i15_pineapple_crown_window",
+      "id": "b328_rpl_i15_pineapple_crown_window",
       "start": 1118.09,
       "dur": 3.88,
       "kind": "raw",
@@ -3282,7 +3001,7 @@
       "darken": 0
     },
     {
-      "id": "b402_rpl_i15_pineapple_leaves_macro",
+      "id": "b329_rpl_i15_pineapple_leaves_macro",
       "start": 1121.47,
       "dur": 3.88,
       "kind": "raw",
@@ -3290,7 +3009,7 @@
       "darken": 0
     },
     {
-      "id": "b403_rpl_i15_cutting_pineapple_top",
+      "id": "b330_rpl_i15_cutting_pineapple_top",
       "start": 1124.85,
       "dur": 3.88,
       "kind": "raw",
@@ -3298,7 +3017,7 @@
       "darken": 0
     },
     {
-      "id": "b404_rpl_i15_pineapple_timelapse_root",
+      "id": "b331_rpl_i15_pineapple_timelapse_root",
       "start": 1128.23,
       "dur": 3.88,
       "kind": "raw",
@@ -3306,7 +3025,7 @@
       "darken": 0
     },
     {
-      "id": "b405_rpl_i15_pineapple_crown_leafy",
+      "id": "b332_rpl_i15_pineapple_crown_leafy",
       "start": 1131.61,
       "dur": 3.87,
       "kind": "raw",
@@ -3314,7 +3033,7 @@
       "darken": 0
     },
     {
-      "id": "b406_rpl_i15_pineapple_timelapse_root",
+      "id": "b333_rpl_i15_pineapple_timelapse_root",
       "start": 1134.98,
       "dur": 3.88,
       "kind": "raw",
@@ -3322,27 +3041,27 @@
       "darken": 0
     },
     {
-      "id": "b407_rpl_i15_stripping_lower_leaves",
+      "id": "b334_rpl_i15_pineapple_crown_leafy",
       "start": 1138.36,
+      "dur": 3.88,
+      "kind": "raw",
+      "src": "broll/rpl_i15_pineapple_crown_leafy.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b335_rpl_i15_stripping_lower_leaves",
+      "start": 1141.74,
       "dur": 3.88,
       "kind": "raw",
       "src": "broll/rpl_i15_stripping_lower_leaves.mp4",
       "darken": 0
     },
     {
-      "id": "b408_rpl_i15_pineapple_crown_drying",
-      "start": 1141.74,
-      "dur": 3.88,
-      "kind": "raw",
-      "src": "broll/rpl_i15_pineapple_crown_drying.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b409_rpl_i15_crown_rooting_water",
+      "id": "b336_rpl_i15_pineapple_crown_drying",
       "start": 1145.12,
       "dur": 3.88,
       "kind": "raw",
-      "src": "broll/rpl_i15_crown_rooting_water.mp4",
+      "src": "broll/rpl_i15_pineapple_crown_drying.mp4",
       "darken": 0
     },
     {
@@ -3373,7 +3092,7 @@
       }
     },
     {
-      "id": "b413_rpl_i16_cutting_open_pepper",
+      "id": "b340_rpl_i16_cutting_open_pepper",
       "start": 1158.63,
       "dur": 3.78,
       "kind": "raw",
@@ -3381,7 +3100,7 @@
       "darken": 0
     },
     {
-      "id": "b414_rpl_i16_pressing_seeds_soil",
+      "id": "b341_rpl_i16_pressing_seeds_soil",
       "start": 1161.91,
       "dur": 3.77,
       "kind": "raw",
@@ -3389,7 +3108,7 @@
       "darken": 0
     },
     {
-      "id": "b415_rpl_i16_pepper_seedlings_germinate",
+      "id": "b342_rpl_i16_pepper_seedlings_germinate",
       "start": 1165.18,
       "dur": 3.78,
       "kind": "raw",
@@ -3397,7 +3116,7 @@
       "darken": 0
     },
     {
-      "id": "b416_rpl_i16_colorful_peppers_market",
+      "id": "b343_rpl_i16_colorful_peppers_market",
       "start": 1168.46,
       "dur": 3.78,
       "kind": "raw",
@@ -3405,7 +3124,7 @@
       "darken": 0
     },
     {
-      "id": "b417_rpl_i16_pepper_seedling_macro",
+      "id": "b344_rpl_i16_pepper_seedling_macro",
       "start": 1171.74,
       "dur": 3.77,
       "kind": "raw",
@@ -3413,7 +3132,7 @@
       "darken": 0
     },
     {
-      "id": "b418_rpl_i16_watering_pepper_pot",
+      "id": "b345_rpl_i16_watering_pepper_pot",
       "start": 1175.01,
       "dur": 3.78,
       "kind": "raw",
@@ -3421,7 +3140,7 @@
       "darken": 0
     },
     {
-      "id": "b419_rpl_i16_colorful_peppers_market",
+      "id": "b346_rpl_i16_colorful_peppers_market",
       "start": 1178.29,
       "dur": 3.77,
       "kind": "raw",
@@ -3429,7 +3148,7 @@
       "darken": 0
     },
     {
-      "id": "b420_rpl_i16_pepper_seedling_macro",
+      "id": "b347_rpl_i16_pepper_seedling_macro",
       "start": 1181.56,
       "dur": 3.78,
       "kind": "raw",
@@ -3437,7 +3156,7 @@
       "darken": 0
     },
     {
-      "id": "b421_rpl_i16_watering_pepper_pot",
+      "id": "b348_rpl_i16_watering_pepper_pot",
       "start": 1184.84,
       "dur": 3.78,
       "kind": "raw",
@@ -3445,7 +3164,7 @@
       "darken": 0
     },
     {
-      "id": "b422_rpl_i16_picking_pepper_plant",
+      "id": "b349_rpl_i16_picking_pepper_plant",
       "start": 1188.12,
       "dur": 3.77,
       "kind": "raw",
@@ -3453,7 +3172,7 @@
       "darken": 0
     },
     {
-      "id": "b423_rpl_i16_cutting_open_pepper",
+      "id": "b350_rpl_i16_cutting_open_pepper",
       "start": 1191.39,
       "dur": 3.78,
       "kind": "raw",
@@ -3461,7 +3180,7 @@
       "darken": 0
     },
     {
-      "id": "b424_rpl_i16_pressing_seeds_soil",
+      "id": "b351_rpl_i16_pressing_seeds_soil",
       "start": 1194.67,
       "dur": 3.77,
       "kind": "raw",
@@ -3469,7 +3188,7 @@
       "darken": 0
     },
     {
-      "id": "b425_rpl_i16_pepper_seedlings_germinate",
+      "id": "b352_rpl_i16_pepper_seedlings_germinate",
       "start": 1197.94,
       "dur": 3.78,
       "kind": "raw",
@@ -3477,12 +3196,25 @@
       "darken": 0
     },
     {
-      "id": "b426_rpl_i16_picking_pepper_plant",
+      "id": "cmp_close_proc",
       "start": 1201.22,
-      "dur": 3.78,
-      "kind": "raw",
-      "src": "broll/rpl_i16_picking_pepper_plant.mp4",
-      "darken": 0
+      "dur": 3.28,
+      "kind": "process",
+      "hue": "amber",
+      "accent": "good",
+      "title": "El ciclo que no termina",
+      "eyebrow": "Y vuelve a empezar",
+      "steps": [
+        {
+          "title": "Usás la verdura en la cocina"
+        },
+        {
+          "title": "El resto vuelve al agua"
+        },
+        {
+          "title": "Crece y cosechás otra vez"
+        }
+      ]
     },
     {
       "id": "cmp_grid",
@@ -3570,7 +3302,7 @@
       "caption": "comida que se siembra a sí misma, desde tu basura"
     },
     {
-      "id": "b433_rpl_cl_seedlings_windowsill_row",
+      "id": "b360_rpl_cl_seedlings_windowsill_row",
       "start": 1222.61,
       "dur": 3.47,
       "kind": "raw",
@@ -3578,7 +3310,7 @@
       "darken": 0
     },
     {
-      "id": "b434_rpl_cl_child_hands_seedling",
+      "id": "b361_rpl_cl_child_hands_seedling",
       "start": 1225.58,
       "dur": 3.47,
       "kind": "raw",
@@ -3586,7 +3318,7 @@
       "darken": 0
     },
     {
-      "id": "b435_rpl_cl_seedlings_windowsill_row",
+      "id": "b362_rpl_cl_seedlings_windowsill_row",
       "start": 1228.55,
       "dur": 3.47,
       "kind": "raw",
@@ -3594,7 +3326,7 @@
       "darken": 0
     },
     {
-      "id": "b436_rpl_cl_farmer_teaching_child",
+      "id": "b363_rpl_cl_farmer_teaching_child",
       "start": 1231.52,
       "dur": 3.48,
       "kind": "raw",
@@ -3602,7 +3334,7 @@
       "darken": 0
     },
     {
-      "id": "b437_rpl_cl_scraps_returned_soil",
+      "id": "b364_rpl_cl_scraps_returned_soil",
       "start": 1234.5,
       "dur": 3.47,
       "kind": "raw",
@@ -3610,7 +3342,7 @@
       "darken": 0
     },
     {
-      "id": "b438_rpl_cl_child_hands_seedling",
+      "id": "b365_rpl_cl_child_hands_seedling",
       "start": 1237.47,
       "dur": 3.47,
       "kind": "raw",
@@ -3618,7 +3350,7 @@
       "darken": 0
     },
     {
-      "id": "b439_rpl_cl_seedlings_windowsill_row",
+      "id": "b366_rpl_cl_seedlings_windowsill_row",
       "start": 1240.44,
       "dur": 3.47,
       "kind": "raw",
@@ -3626,7 +3358,7 @@
       "darken": 0
     },
     {
-      "id": "b440_rpl_cl_farmer_teaching_child",
+      "id": "b367_rpl_cl_farmer_teaching_child",
       "start": 1243.41,
       "dur": 3.47,
       "kind": "raw",
@@ -3634,7 +3366,7 @@
       "darken": 0
     },
     {
-      "id": "b441_rpl_cl_scraps_returned_soil",
+      "id": "b368_rpl_cl_scraps_returned_soil",
       "start": 1246.38,
       "dur": 3.47,
       "kind": "raw",
@@ -3642,7 +3374,7 @@
       "darken": 0
     },
     {
-      "id": "b442_rpl_ac_scallion_into_glass",
+      "id": "b369_rpl_ac_scallion_into_glass",
       "start": 1249.35,
       "dur": 3.44,
       "kind": "raw",
@@ -3650,7 +3382,7 @@
       "darken": 0
     },
     {
-      "id": "b443_rpl_ac_writing_garden_journal",
+      "id": "b370_rpl_ac_writing_garden_journal",
       "start": 1252.29,
       "dur": 3.45,
       "kind": "raw",
@@ -3658,7 +3390,7 @@
       "darken": 0
     },
     {
-      "id": "b444_rpl_ac_fresh_start_seedlings",
+      "id": "b371_rpl_ac_fresh_start_seedlings",
       "start": 1255.24,
       "dur": 3.44,
       "kind": "raw",
@@ -3666,7 +3398,7 @@
       "darken": 0
     },
     {
-      "id": "b445_rpl_ac_scallion_into_glass",
+      "id": "b372_rpl_ac_scallion_into_glass",
       "start": 1258.18,
       "dur": 3.44,
       "kind": "raw",
@@ -3674,7 +3406,7 @@
       "darken": 0
     },
     {
-      "id": "b446_rpl_ac_writing_garden_journal",
+      "id": "b373_rpl_ac_writing_garden_journal",
       "start": 1261.12,
       "dur": 3.45,
       "kind": "raw",
@@ -3682,7 +3414,7 @@
       "darken": 0
     },
     {
-      "id": "b447_rpl_ac_fresh_start_seedlings",
+      "id": "b374_rpl_ac_fresh_start_seedlings",
       "start": 1264.07,
       "dur": 3.44,
       "kind": "raw",
@@ -3690,7 +3422,7 @@
       "darken": 0
     },
     {
-      "id": "b448_rpl_ac_scallion_into_glass",
+      "id": "b375_rpl_ac_scallion_into_glass",
       "start": 1267.01,
       "dur": 3.44,
       "kind": "raw",
@@ -3698,7 +3430,7 @@
       "darken": 0
     },
     {
-      "id": "b449_rpl_ac_writing_garden_journal",
+      "id": "b376_rpl_ac_writing_garden_journal",
       "start": 1269.95,
       "dur": 3.45,
       "kind": "raw",
@@ -3706,7 +3438,7 @@
       "darken": 0
     },
     {
-      "id": "b450_rpl_ac_fresh_start_seedlings",
+      "id": "b377_rpl_ac_fresh_start_seedlings",
       "start": 1272.9,
       "dur": 3.44,
       "kind": "raw",
@@ -3714,7 +3446,7 @@
       "darken": 0
     },
     {
-      "id": "b451_rpl_ac_scallion_into_glass",
+      "id": "b378_rpl_ac_scallion_into_glass",
       "start": 1275.84,
       "dur": 3.45,
       "kind": "raw",
@@ -3722,7 +3454,7 @@
       "darken": 0
     },
     {
-      "id": "b452_rpl_ac_writing_garden_journal",
+      "id": "b379_rpl_ac_writing_garden_journal",
       "start": 1278.79,
       "dur": 3.44,
       "kind": "raw",
@@ -3730,7 +3462,7 @@
       "darken": 0
     },
     {
-      "id": "b453_rpl_ac_fresh_start_seedlings",
+      "id": "b380_rpl_ac_fresh_start_seedlings",
       "start": 1281.73,
       "dur": 3.44,
       "kind": "raw",
@@ -3738,7 +3470,7 @@
       "darken": 0
     },
     {
-      "id": "b454_rpl_ac_scallion_into_glass",
+      "id": "b381_rpl_ac_scallion_into_glass",
       "start": 1284.67,
       "dur": 3.33,
       "kind": "raw",

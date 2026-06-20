@@ -364,10 +364,13 @@ const have = (nm) => fs.existsSync(`public/broll/${nm}.mp4`);
 const HOOKSEC = new Set(["hook1", "hook2"]);
 const allMatched = MODE === "build" ? [...new Set(Object.values(S).flatMap((ls) => ls.map((s) => s[0])).filter(have))] : [];
 const usage = {}; let lastClip = null;
-const pickClip = (own, secMatched, isHook) => {
+// cada slot = su PROPIO clip (relevante a lo que dice); si no lo tiene, el SIMILAR
+// menos usado de su sección; nunca el mismo en fila. SIN pool global (eso mezclaba
+// clips ajenos a lo que dice → el "cubo de basura" mostraba cualquier cosa).
+const pickClip = (own, secMatched) => {
   if (MODE !== "build") return own; // modo match: emite el concepto para matchear
-  if (!isHook && have(own) && own !== lastClip && (usage[own] || 0) < 3) { usage[own] = (usage[own] || 0) + 1; lastClip = own; return own; }
-  const pool = isHook ? allMatched : (secMatched.length >= 2 ? secMatched : allMatched);
+  if (have(own) && own !== lastClip && (usage[own] || 0) < 3) { usage[own] = (usage[own] || 0) + 1; lastClip = own; return own; }
+  const pool = secMatched.length >= 1 ? secMatched : allMatched;
   let best = null, bu = Infinity;
   for (const nm of pool) { const u = usage[nm] || 0; if (nm !== lastClip && u < bu) { bu = u; best = nm; } }
   if (!best) best = have(own) ? own : (pool[0] || allMatched[0] || own);
@@ -376,21 +379,65 @@ const pickClip = (own, secMatched, isHook) => {
 const CLIPS = [];
 let _bid = 0;
 for (const [key, list] of Object.entries(S)) {
+  if (MODE === "build" && key === "hook1") continue; // hook1 se ancla frase-por-frase (abajo)
   let s0 = SECSTART[key], e0 = secEnd(key);
   if (s0 < OPEN) s0 = OPEN;
   const span = e0 - s0;
   const pace = PACE[key] || 5.5;
   const secMatched = [...new Set(list.map((s) => s[0]).filter(have))];
-  const isHook = HOOKSEC.has(key);
   const desired = Math.max(list.length, Math.round(span / pace));
   for (let i = 0; i < desired; i++) {
     const t = +(s0 + (i + 0.04) * (span / desired)).toFixed(2);
     if (inFull(t)) continue;
     const [own, query, concept] = list[i % list.length];
-    const name = pickClip(own, secMatched, isHook);
+    const name = pickClip(own, secMatched);
     const id = `b${++_bid}_${name}`;
     CLIPS.push([t, id, name, Array.isArray(query) ? query : [query], concept]);
   }
+}
+// ── HOOK1 anclado a la narración: cada clip CAE en el ms EXACTO de su frase ──
+// (estilo barcos: seek a la frase, no distribución pareja → el clip SIEMPRE muestra
+//  lo que el avatar está diciendo; si no hay match exacto, el SIMILAR más cercano).
+if (MODE === "build") {
+  const _at = (p) => { try { return at(p); } catch { return null; } };
+  const hpick = (cands, used) => {
+    for (const c of cands) if (have(c) && !used.has(c)) return c;
+    for (const c of cands) if (have(c)) return c;
+    return null;
+  };
+  const HOOKSEQ = [
+    ["vas a mirar tu cubo de basura", ["rpl_h1_kitchen_scraps_board", "rpl_tr_scraps_lined_up"]],
+    ["para llenar media huerta", ["rpl_h1_harvest_hands_tomatoes", "rpl_h1_fresh_veg_spread_table"]],
+    ["el tallo de la lechuga", ["rpl_i2_chopping_lettuce_board", "rpl_i2_lettuce_dish_water", "rpl_i2_harvest_lettuce_hand"]],
+    ["la base blanca de la cebolla", ["rpl_h1_green_onion_roots_macro", "rpl_i1_scallion_root_ends"]],
+    ["esa con las raices todavia colgando", ["rpl_i1_scallion_root_ends", "rpl_h1_green_onion_roots_macro"]],
+    ["ese diente de ajo", ["rpl_i9_planting_clove_soil", "rpl_i9_garlic_rows_field"]],
+    ["que ya echo un brote verde", ["rpl_h1_sprout_timelapse_soil", "rpl_tr_roots_timelapse"]],
+    ["la corona de la pina", ["rpl_h1_pineapple_crown_top", "rpl_i15_pineapple_crown_leafy"]],
+    ["la tienda te lo vende", ["rpl_tr_money_saved_jar", "rpl_h1_fresh_veg_spread_table"]],
+    ["lo usas y lo tiras", ["rpl_tr_scraps_lined_up", "rpl_h1_kitchen_scraps_board"]],
+    ["esa parte que tu llamas basura", ["rpl_h1_roots_growing_water_macro", "rpl_tr_roots_timelapse"]],
+    ["todavia esta viva", ["rpl_i1_scallion_regrow_timelapse", "rpl_h1_sprout_timelapse_soil"]],
+    ["vuelve a crecer", ["rpl_tr_roots_timelapse", "rpl_i1_scallion_regrow_timelapse", "rpl_h1_sprout_timelapse_soil"]],
+    ["quedate conmigo hasta el final", ["rpl_h1_hands_planting_soil", "rpl_h1_harvest_hands_tomatoes"]],
+    ["asi que no te vayas", ["rpl_h1_hands_planting_soil", "rpl_h1_fresh_veg_spread_table"]],
+  ];
+  const placed = HOOKSEQ.map(([ph, cands]) => ({ t: _at(ph), cands })).filter((x) => x.t != null);
+  placed.sort((a, b) => a.t - b.t);
+  let hid = 0; const usedH = new Set();
+  for (let i = 0; i < placed.length; i++) {
+    const t = i === 0 ? OPEN : placed[i].t; // el 1er clip arranca justo al cerrar el open del avatar (sin blanco)
+    const nm = hpick(placed[i].cands, usedH);
+    if (!nm) continue;
+    usedH.add(nm);
+    CLIPS.push([+(t + 0.05).toFixed(2), `bh${++hid}_${nm}`, nm, [""], "hook"]);
+    const nt = i + 1 < placed.length ? placed[i + 1].t : t + 4;
+    if (nt - t > 5) { // hueco largo: meto un clip alterno on-theme a mitad (no el mismo)
+      const alt = placed[i].cands.find((c) => have(c) && c !== nm) || hpick(placed[i].cands, new Set());
+      if (alt) CLIPS.push([+((t + nt) / 2).toFixed(2), `bh${++hid}_${alt}`, alt, [""], "hook"]);
+    }
+  }
+  console.log(`hook1 anclado: ${placed.length}/${HOOKSEQ.length} frases · ${hid} clips`);
 }
 CLIPS.sort((a, b) => a[0] - b[0]);
 
@@ -423,6 +470,7 @@ let beats = CLIPS.map(([t, id, name, , concept]) => {
 // ── COMPONENTES (escasos · custom en el hook + recaps) ──
 const ck = (text, note) => (note ? { text, note, state: "done" } : { text, state: "done" });
 const atc = (p) => { try { return at(p); } catch { console.warn("⚠ comp anchor missing:", p); return null; } };
+const atO = (p, o = 0) => { const v = atc(p); return v == null ? null : +(v + o).toFixed(2); }; // ancla + offset (caer después del numcard)
 // ── TARJETAS DE NÚMERO para CADA ítem (16), clavadas al "el número X" ──
 const _firstClip = (key) => { for (const [nm] of (SHOTS[key] || [])) if (fs.existsSync(`public/broll/${nm}.mp4`)) return nm; return null; };
 const NUMS = [
@@ -452,10 +500,10 @@ const NUMCARDS = NUMS.map(([ph, num, name, key]) => {
 }).filter(Boolean);
 const COMPONENTS = [
   // HOOK — los mejores, custom:
-  { t: atc("esa con las raices todavia colgando"), id: "cmp_alive", kind: "impact", hitAt: 1.2, boom: 0, darken: 0.4,
+  { t: atc("todavia esta viva"), id: "cmp_alive", kind: "impact", dur: 4.6, hitAt: 1.2, boom: 0, darken: 0.4,
     setup: "Eso que llamas basura...", impact: "sigue VIVA.", impactAccent: "good",
     bg: "a vegetable scrap with fresh roots glowing in sunlight on a windowsill" },
-  { t: atc("vuelve a crecer"), id: "cmp_tally", kind: "stat", hue: "amber", accent: "good",
+  { t: atc("hoy te voy a mostrar"), id: "cmp_tally", kind: "stat", dur: 5.2, hue: "amber", accent: "good",
     value: 16, suffix: " plantas · 0€", label: "comida nueva, gratis, desde tu basura", eyebrow: "Lo que vas a sacar hoy",
     bg: "a windowsill full of regrowing vegetable cuttings in jars backlit" },
   { t: atc("cerca del numero once"), id: "cmp_teaser11", kind: "regrow", hue: "amber", number: "11",
@@ -487,7 +535,7 @@ const COMPONENTS = [
 
   // ── COMPONENTES EXTRA (variedad + valor: diagramas del método, ahorro, cita) ──
   // el negocio de la tienda (cross)
-  { t: atc("la tienda te lo vende"), id: "cmp_business", kind: "lielist", accent: "danger",
+  { t: atc("te venden una mentira"), id: "cmp_business", kind: "lielist", accent: "danger",
     title: "Por qué te lo vende suelto", items: ["Para que vuelvas cada semana", "Lo usás una vez y lo tirás", "El negocio es la dependencia"],
     bg: "a busy supermarket checkout aisle, a cashier scanning groceries, shelves of vegetables in the background, slightly cold tone" },
   // barras: lo que se va al año comprando lo que podrías replantar
@@ -554,6 +602,34 @@ const COMPONENTS = [
   // callout cero euros (cierre)
   { t: atc("mientras la tienda te vende"), id: "cmp_zero", kind: "callout", hue: "amber", accent: "good",
     figure: "0€", eyebrow: "16 plantas", caption: "comida que se siembra a sí misma, desde tu basura" },
+
+  // ── PASE de VALOR: diagramas de método/ahorro por ítem (caen mid-ítem, tras el numcard) ──
+  { t: atO("numero dos es la", 5), id: "cmp_s2_bars", kind: "bars", hue: "amber", accent: "good", unit: "EUR",
+    title: "Verdura de hoja", eyebrow: "Comprarla todo el año vs replantarla",
+    bars: [{ label: "Comprada", value: 140, display: "~140€/año", tone: "danger" }, { label: "Replantada", value: 0, display: "0€", winner: true }] },
+  { t: atO("numero tres es el", 5), id: "cmp_s3_proc", kind: "process", hue: "amber", accent: "good",
+    title: "El método base", eyebrow: "Sirve para casi todas",
+    steps: [{ title: "El resto, en un dedo de agua" }, { title: "Cambiá el agua cada 2-3 días" }, { title: "Con raíces, pasalo a la tierra" }] },
+  { t: atO("numero cuatro es el", 5), id: "cmp_s4_call", kind: "callout", hue: "amber", accent: "good",
+    figure: "semanas", eyebrow: "De un solo resto", caption: "cosechás hoja por hoja, sin arrancar la planta" },
+  { t: atO("numero cinco es el", 5), id: "cmp_s5_split", kind: "splitlist", palette: "D", cross: true,
+    title: "Lo que NO necesitás", items: ["Comprar semillas", "Fertilizante químico", "Luz especial"] },
+  { t: atO("numero seis es la", 5), id: "cmp_s6_bars", kind: "bars", hue: "amber", accent: "good", unit: "EUR",
+    title: "Tu factura de verdura", eyebrow: "Lo que se va al año en lo replantable",
+    bars: [{ label: "Comprando", value: 220, display: "~220€", tone: "danger" }, { label: "Replantando", value: 0, display: "0€", winner: true }] },
+  { t: atO("numero siete es la", 5), id: "cmp_s7_proc", kind: "process", hue: "amber", accent: "good",
+    title: "Cuándo pasarla a la tierra", eyebrow: "La señal exacta",
+    steps: [{ title: "Esperá raíces de 2-3 cm" }, { title: "Maceta con tierra y buen sol" }, { title: "Regá y dejá que se haga fuerte" }] },
+  { t: atO("numero ocho es el", 5), id: "cmp_s8_split", kind: "splitlist", palette: "D", cross: true,
+    title: "Mitos que te frenan", items: ["\"Hace falta jardín\"", "\"Es muy difícil\"", "\"Tarda años\""] },
+  { t: atO("numero trece es la", 5), id: "cmp_s13_call", kind: "callout", hue: "amber", accent: "good",
+    figure: "1 → ∞", eyebrow: "Un resto que no para", caption: "vuelve a darte comida una y otra vez" },
+  { t: atO("numero catorce es el", 5), id: "cmp_s14_bars", kind: "bars", hue: "amber", accent: "good", unit: "EUR",
+    title: "El ahorro que se acumula", eyebrow: "Cada resto que replantás",
+    bars: [{ label: "Si lo comprás", value: 90, display: "~90€/año", tone: "danger" }, { label: "Si lo replantás", value: 0, display: "0€", winner: true }] },
+  { t: atO("hagamos la cuenta", 0), id: "cmp_close_proc", kind: "process", hue: "amber", accent: "good",
+    title: "El ciclo que no termina", eyebrow: "Y vuelve a empezar",
+    steps: [{ title: "Usás la verdura en la cocina" }, { title: "El resto vuelve al agua" }, { title: "Crece y cosechás otra vez" }] },
 , ...NUMCARDS].filter((c) => c.t != null);
 
 let nComp = 0;
