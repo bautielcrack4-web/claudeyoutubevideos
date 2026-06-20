@@ -863,12 +863,15 @@
       "darken": 0
     },
     {
-      "id": "b123_rpl_tr_scraps_lined_up",
+      "id": "cmp_num_1",
       "start": 206.52,
-      "dur": 3.55,
-      "kind": "raw",
-      "src": "broll/rpl_tr_scraps_lined_up.mp4",
-      "darken": 0
+      "dur": 3.05,
+      "kind": "numcard",
+      "number": "1",
+      "name": "Cebolla de verdeo",
+      "accent": "amber",
+      "eyebrow": "Replántalo gratis",
+      "image": "broll/rpl_i1_scallion_root_ends.mp4"
     },
     {
       "id": "cmp_anno_cebolla",
@@ -1048,12 +1051,15 @@
       "darken": 0
     },
     {
-      "id": "b143_rpl_i1_chopped_over_food",
+      "id": "cmp_num_2",
       "start": 272.32,
-      "dur": 3.82,
-      "kind": "raw",
-      "src": "broll/rpl_i1_chopped_over_food.mp4",
-      "darken": 0
+      "dur": 3.32,
+      "kind": "numcard",
+      "number": "2",
+      "name": "Lechuga",
+      "accent": "amber",
+      "eyebrow": "Replántalo gratis",
+      "image": "broll/rpl_i2_lettuce_dish_water.mp4"
     },
     {
       "id": "b144_rpl_i2_lettuce_dish_water",
@@ -1200,12 +1206,15 @@
       "darken": 0
     },
     {
-      "id": "b162_rpl_i2_harvest_lettuce_hand",
+      "id": "cmp_num_3",
       "start": 336.4,
-      "dur": 3.87,
-      "kind": "raw",
-      "src": "broll/rpl_i2_harvest_lettuce_hand.mp4",
-      "darken": 0
+      "dur": 3.37,
+      "kind": "numcard",
+      "number": "3",
+      "name": "Apio",
+      "accent": "amber",
+      "eyebrow": "Replántalo gratis",
+      "image": "broll/rpl_i3_celery_base_glass.mp4"
     },
     {
       "id": "b163_rpl_i3_celery_base_glass",
@@ -1312,12 +1321,15 @@
       "darken": 0
     },
     {
-      "id": "b176_rpl_i3_celery_regrow_timelapse",
+      "id": "cmp_num_4",
       "start": 381.55,
-      "dur": 3.71,
-      "kind": "raw",
-      "src": "broll/rpl_i3_celery_regrow_timelapse.mp4",
-      "darken": 0
+      "dur": 3.21,
+      "kind": "numcard",
+      "number": "4",
+      "name": "Bok choy",
+      "accent": "amber",
+      "eyebrow": "Replántalo gratis",
+      "image": "broll/rpl_i4_bokchoy_base_water.mp4"
     },
     {
       "id": "b177_rpl_i4_bokchoy_base_water",
@@ -1392,12 +1404,15 @@
       "darken": 0
     },
     {
-      "id": "b186_rpl_i4_bokchoy_base_water",
+      "id": "cmp_num_5",
       "start": 411.63,
-      "dur": 3.51,
-      "kind": "raw",
-      "src": "broll/rpl_i4_bokchoy_base_water.mp4",
-      "darken": 0
+      "dur": 3.01,
+      "kind": "numcard",
+      "number": "5",
+      "name": "Puerro",
+      "accent": "amber",
+      "eyebrow": "Replántalo gratis",
+      "image": "broll/rpl_i5_leek_regrow_upward.mp4"
     },
     {
       "id": "b187_rpl_i5_leek_regrow_upward",
@@ -1491,12 +1506,15 @@
       }
     },
     {
-      "id": "b198_rpl_i5_washing_leek_water",
+      "id": "cmp_num_6",
       "start": 452.85,
-      "dur": 3.97,
-      "kind": "raw",
-      "src": "broll/rpl_i5_washing_leek_water.mp4",
-      "darken": 0
+      "dur": 3.47,
+      "kind": "numcard",
+      "number": "6",
+      "name": "Albahaca",
+      "accent": "amber",
+      "eyebrow": "Replántalo gratis",
+      "image": "broll/rpl_i6_basil_cuttings_glass.mp4"
     },
     {
       "id": "cmp_basil_bars",
@@ -1620,12 +1638,15 @@
       "darken": 0
     },
     {
-      "id": "b213_rpl_i6_basil_cuttings_glass",
+      "id": "cmp_num_7",
       "start": 502.37,
-      "dur": 3.76,
-      "kind": "raw",
-      "src": "broll/rpl_i6_basil_cuttings_glass.mp4",
-      "darken": 0
+      "dur": 3.26,
+      "kind": "numcard",
+      "number": "7",
+      "name": "Menta",
+      "accent": "amber",
+      "eyebrow": "Replántalo gratis",
+      "image": "broll/rpl_i7_mint_cuttings_water.mp4"
     },
     {
       "id": "b214_rpl_i7_mint_cuttings_water",
@@ -2004,12 +2025,15 @@
       }
     },
     {
-      "id": "b258_rpl_err_transplant_rich_soil",
+      "id": "cmp_num_8",
       "start": 646.6,
-      "dur": 3.67,
-      "kind": "raw",
-      "src": "broll/rpl_err_transplant_rich_soil.mp4",
-      "darken": 0
+      "dur": 3.17,
+      "kind": "numcard",
+      "number": "8",
+      "name": "Cilantro",
+      "accent": "amber",
+      "eyebrow": "Replántalo gratis",
+      "image": "broll/rpl_i8_cilantro_stems_water.mp4"
     },
     {
       "id": "b259_rpl_i8_cilantro_stems_water",
@@ -2124,12 +2148,15 @@
       "darken": 0
     },
     {
-      "id": "b273_rpl_i8_cilantro_roots_macro",
+      "id": "cmp_num_9",
       "start": 695.5,
-      "dur": 3.77,
-      "kind": "raw",
-      "src": "broll/rpl_i8_cilantro_roots_macro.mp4",
-      "darken": 0
+      "dur": 3.27,
+      "kind": "numcard",
+      "number": "9",
+      "name": "Ajo",
+      "accent": "amber",
+      "eyebrow": "Replántalo gratis",
+      "image": "broll/rpl_i9_planting_clove_soil.mp4"
     },
     {
       "id": "b274_rpl_i9_planting_clove_soil",
@@ -2244,12 +2271,15 @@
       "darken": 0
     },
     {
-      "id": "b288_rpl_i9_planting_clove_soil",
+      "id": "cmp_num_10",
       "start": 744.27,
-      "dur": 3.75,
-      "kind": "raw",
-      "src": "broll/rpl_i9_planting_clove_soil.mp4",
-      "darken": 0
+      "dur": 3.25,
+      "kind": "numcard",
+      "number": "10",
+      "name": "Jengibre",
+      "accent": "amber",
+      "eyebrow": "Replántalo gratis",
+      "image": "broll/rpl_i10_ginger_buds_macro.mp4"
     },
     {
       "id": "cmp_anno_jengibre",
@@ -2421,12 +2451,15 @@
       "darken": 0
     },
     {
-      "id": "b308_rpl_i10_ginger_pot_plant",
+      "id": "cmp_num_11",
       "start": 808.19,
-      "dur": 3.69,
-      "kind": "raw",
-      "src": "broll/rpl_i10_ginger_pot_plant.mp4",
-      "darken": 0
+      "dur": 3.19,
+      "kind": "numcard",
+      "number": "11",
+      "name": "Papa",
+      "accent": "amber",
+      "eyebrow": "Replántalo gratis",
+      "image": "broll/rpl_i11_sprouting_potato_pantry.mp4"
     },
     {
       "id": "cmp_anno_papa",
@@ -2625,12 +2658,15 @@
       "darken": 0
     },
     {
-      "id": "b331_rpl_i11_potato_sprout_macro",
+      "id": "cmp_num_12",
       "start": 884.8,
-      "dur": 3.84,
-      "kind": "raw",
-      "src": "broll/rpl_i11_potato_sprout_macro.mp4",
-      "darken": 0
+      "dur": 3.34,
+      "kind": "numcard",
+      "number": "12",
+      "name": "Batata",
+      "accent": "amber",
+      "eyebrow": "Replántalo gratis",
+      "image": "broll/rpl_i12_sweetpotato_toothpicks_glass.mp4"
     },
     {
       "id": "cmp_anno_batata",
@@ -2786,12 +2822,15 @@
       "darken": 0
     },
     {
-      "id": "b349_rpl_i12_sweetpotato_toothpicks_glass",
+      "id": "cmp_num_13",
       "start": 946.35,
-      "dur": 3.92,
-      "kind": "raw",
-      "src": "broll/rpl_i12_sweetpotato_toothpicks_glass.mp4",
-      "darken": 0
+      "dur": 3.42,
+      "kind": "numcard",
+      "number": "13",
+      "name": "Zanahoria",
+      "accent": "amber",
+      "eyebrow": "Replántalo gratis",
+      "image": "broll/rpl_i13_cutting_carrot_tops.mp4"
     },
     {
       "id": "b350_rpl_i13_cutting_carrot_tops",
@@ -2954,12 +2993,15 @@
       "darken": 0
     },
     {
-      "id": "b370_rpl_i13_carrot_seedling_soil",
+      "id": "cmp_num_14",
       "start": 1016.44,
-      "dur": 3.83,
-      "kind": "raw",
-      "src": "broll/rpl_i13_carrot_seedling_soil.mp4",
-      "darken": 0
+      "dur": 3.33,
+      "kind": "numcard",
+      "number": "14",
+      "name": "Tomate",
+      "accent": "amber",
+      "eyebrow": "Replántalo gratis",
+      "image": "broll/rpl_i14_slicing_tomato_rounds.mp4"
     },
     {
       "id": "b371_rpl_i14_slicing_tomato_rounds",
@@ -3106,12 +3148,15 @@
       "darken": 0
     },
     {
-      "id": "b389_rpl_i14_slicing_tomato_rounds",
+      "id": "cmp_num_15",
       "start": 1077.85,
-      "dur": 3.72,
-      "kind": "raw",
-      "src": "broll/rpl_i14_slicing_tomato_rounds.mp4",
-      "darken": 0
+      "dur": 3.22,
+      "kind": "numcard",
+      "number": "15",
+      "name": "Piña",
+      "accent": "amber",
+      "eyebrow": "Replántalo gratis",
+      "image": "broll/rpl_i15_pineapple_crown_leafy.mp4"
     },
     {
       "id": "cmp_anno_pina",
@@ -3291,12 +3336,15 @@
       "darken": 0
     },
     {
-      "id": "b410_rpl_i15_planting_crown_soil",
+      "id": "cmp_num_16",
       "start": 1148.5,
-      "dur": 3.88,
-      "kind": "raw",
-      "src": "broll/rpl_i15_planting_crown_soil.mp4",
-      "darken": 0
+      "dur": 3.38,
+      "kind": "numcard",
+      "number": "16",
+      "name": "Pimiento",
+      "accent": "good",
+      "eyebrow": "Bonus de regalo",
+      "image": "broll/rpl_i16_cutting_open_pepper.mp4"
     },
     {
       "id": "cmp_quote",

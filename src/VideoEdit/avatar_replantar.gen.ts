@@ -383,7 +383,7 @@ export const AVATAR_WINDOWS: AvatarWindow[] = [
     "mode": "right"
   },
   {
-    "start": 811.88,
+    "start": 811.38,
     "mode": "hidden"
   },
   {
@@ -487,7 +487,7 @@ export const AVATAR_WINDOWS: AvatarWindow[] = [
     "mode": "left"
   },
   {
-    "start": 1081.57,
+    "start": 1081.07,
     "mode": "hidden"
   },
   {

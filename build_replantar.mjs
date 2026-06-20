@@ -376,6 +376,33 @@ let beats = CLIPS.map(([t, id, name, , concept]) => {
 // ── COMPONENTES (escasos · custom en el hook + recaps) ──
 const ck = (text, note) => (note ? { text, note, state: "done" } : { text, state: "done" });
 const atc = (p) => { try { return at(p); } catch { console.warn("⚠ comp anchor missing:", p); return null; } };
+// ── TARJETAS DE NÚMERO para CADA ítem (16), clavadas al "el número X" ──
+const _firstClip = (key) => { for (const [nm] of (SHOTS[key] || [])) if (fs.existsSync(`public/broll/${nm}.mp4`)) return nm; return null; };
+const NUMS = [
+  ["empecemos por el numero uno", "1", "Cebolla de verdeo", "i1"],
+  ["el numero dos es la lechuga", "2", "Lechuga", "i2"],
+  ["el numero tres es el apio", "3", "Apio", "i3"],
+  ["el numero cuatro es el bok choy", "4", "Bok choy", "i4"],
+  ["el numero cinco es el puerro", "5", "Puerro", "i5"],
+  ["el numero seis es la albahaca", "6", "Albahaca", "i6"],
+  ["el numero siete es la menta", "7", "Menta", "i7"],
+  ["el numero ocho es el cilantro", "8", "Cilantro", "i8"],
+  ["el numero nueve es el ajo", "9", "Ajo", "i9"],
+  ["el numero diez es el jengibre", "10", "Jengibre", "i10"],
+  ["llegamos al numero once", "11", "Papa", "i11"],
+  ["el numero doce es la prima dulce", "12", "Batata", "i12"],
+  ["el numero trece es la zanahoria", "13", "Zanahoria", "i13"],
+  ["el numero catorce es el tomate", "14", "Tomate", "i14"],
+  ["llegamos al numero 15", "15", "Piña", "i15"],
+  ["aqui esta tu regalo", "16", "Pimiento", "i16"],
+];
+const NUMCARDS = NUMS.map(([ph, num, name, key]) => {
+  const t = atc(ph); if (t == null) return null;
+  const cb = _firstClip(key);
+  const o = { t, id: `cmp_num_${num}`, kind: "numcard", number: num, name, accent: num === "16" ? "good" : "amber", dur: 3.0, eyebrow: num === "16" ? "Bonus de regalo" : "Replántalo gratis" };
+  if (cb) o.clipBg = cb;
+  return o;
+}).filter(Boolean);
 const COMPONENTS = [
   // HOOK — los mejores, custom:
   { t: atc("esa con las raices todavia colgando"), id: "cmp_alive", kind: "impact", hitAt: 1.2, boom: 0, darken: 0.4,
@@ -476,7 +503,7 @@ const COMPONENTS = [
   // callout cero euros (cierre)
   { t: atc("mientras la tienda te vende"), id: "cmp_zero", kind: "callout", hue: "amber", accent: "good",
     figure: "0€", eyebrow: "16 plantas", caption: "comida que se siembra a sí misma, desde tu basura" },
-].filter((c) => c.t != null);
+, ...NUMCARDS].filter((c) => c.t != null);
 
 let nComp = 0;
 const placed = new Set();
@@ -487,12 +514,13 @@ for (const c of [...COMPONENTS].sort((a, b) => a.t - b.t)) {
   }
   if (idx < 0) continue;
   const start = beats[idx].start;
-  const D = 6.0;
-  const { t, bg, leftBg, rightBg, kind, ...rest } = c;
+  const D = c.dur || 6.0;
+  const { t, bg, leftBg, rightBg, clipBg, kind, ...rest } = c;
   const ab = { id: c.id, start, dur: D, kind };
   delete rest.id;
   Object.assign(ab, rest);
   if (bg) { ab.image = `img/${c.id}_bg.png`; ab.gen = { type: "image", name: `${c.id}_bg`, prompt: bg + IMG_STYLE }; }
+  if (clipBg) ab.image = `broll/${clipBg}.mp4`; // fondo = clip real del ítem (sin gen)
   if (leftBg) { ab.leftImage = `img/${c.id}_l.png`; ab.genL = { type: "image", name: `${c.id}_l`, prompt: leftBg + IMG_STYLE }; }
   if (rightBg) { ab.rightImage = `img/${c.id}_r.png`; ab.genR = { type: "image", name: `${c.id}_r`, prompt: rightBg + IMG_STYLE }; }
   let rm = 1;
@@ -501,7 +529,7 @@ for (const c of [...COMPONENTS].sort((a, b) => a.t - b.t)) {
   placed.add(c.id);
   const next = beats[idx + 1];
   const nextAv = avStarts.filter((s) => s > start + 0.01).sort((a, b) => a - b)[0] ?? TOTAL;
-  ab.dur = +(Math.min(next ? next.start : TOTAL, nextAv, start + 7.0) - start).toFixed(2);
+  ab.dur = +(Math.min(next ? next.start : TOTAL, nextAv, start + D + 1) - start).toFixed(2);
   nComp++;
 }
 

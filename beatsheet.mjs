@@ -233,6 +233,15 @@ function renderEl(b) {
         (b.darken != null ? ` darken={${b.darken}}` : ``) +
         ` />`
       );
+    case "numcard":
+      return (
+        `<NumberCard durationInFrames={d} number=${j(b.number)} name=${j(b.name)}` +
+        (b.image ? ` bg=${j(b.image)}` : ``) +
+        (b.eyebrow ? ` eyebrow=${j(b.eyebrow)}` : ``) +
+        (b.total ? ` total=${j(b.total)}` : ``) +
+        (b.accent ? ` accent=${j(b.accent)}` : ``) +
+        ` />`
+      );
     case "lielist":
       return (
         `<LieList durationInFrames={d} title=${j(b.title)} items={${j(b.items || [])}}` +
@@ -878,6 +887,7 @@ if (kinds.has("floatprop")) imports.push(`import { FloatingProp } from "./scenes
 if (kinds.has("diorama")) imports.push(`import { PngDiorama } from "./scenes/PngDiorama";`);
 if (kinds.has("regrow")) imports.push(`import { RegrowSplit } from "./scenes/RegrowSplit";`);
 if (kinds.has("lielist")) imports.push(`import { LieList } from "./scenes/LieList";`);
+if (kinds.has("numcard")) imports.push(`import { NumberCard } from "./scenes/NumberCard";`);
 // ── set pieces de imagen/clip ──
 if (kinds.has("expeditionmap")) imports.push(`import { ExpeditionMap } from "./setpieces/ExpeditionMap";`);
 if (kinds.has("scalecolossus")) imports.push(`import { ScaleColossus } from "./setpieces/ScaleColossus";`);
