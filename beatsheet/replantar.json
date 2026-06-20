@@ -530,11 +530,11 @@
       "darken": 0
     },
     {
-      "id": "b39_rpl_i1_slicing_scallions_macro",
+      "id": "b39_rpl_i1_scallion_root_ends",
       "start": 224.08,
       "dur": 4.98,
       "kind": "raw",
-      "src": "broll/rpl_i1_slicing_scallions_macro.mp4",
+      "src": "broll/rpl_i1_scallion_root_ends.mp4",
       "darken": 0
     },
     {
@@ -546,107 +546,107 @@
       "darken": 0
     },
     {
-      "id": "b41_rpl_i1_scallion_root_ends",
+      "id": "b41_rpl_i1_scallion_regrow_timelapse",
       "start": 233.5,
       "dur": 2.6,
       "kind": "raw",
-      "src": "broll/rpl_i1_scallion_root_ends.mp4",
+      "src": "broll/rpl_i1_scallion_regrow_timelapse.mp4",
       "darken": 0
     },
     {
-      "id": "b42_rpl_i1_scallion_regrow_timelapse",
+      "id": "b42_rpl_i1_snipping_scissors",
       "start": 235.6,
       "dur": 3.4,
       "kind": "raw",
-      "src": "broll/rpl_i1_scallion_regrow_timelapse.mp4",
+      "src": "broll/rpl_i1_snipping_scissors.mp4",
       "darken": 0
     },
     {
-      "id": "b43_rpl_i1_snipping_scissors",
+      "id": "b43_rpl_i1_scallion_root_ends",
       "start": 238.5,
       "dur": 2.58,
       "kind": "raw",
-      "src": "broll/rpl_i1_snipping_scissors.mp4",
+      "src": "broll/rpl_i1_scallion_root_ends.mp4",
       "darken": 0
     },
     {
-      "id": "b44_rpl_i1_slicing_scallions_macro",
+      "id": "b44_rpl_i1_scallion_regrow_timelapse",
       "start": 240.58,
       "dur": 3.51,
       "kind": "raw",
-      "src": "broll/rpl_i1_slicing_scallions_macro.mp4",
+      "src": "broll/rpl_i1_scallion_regrow_timelapse.mp4",
       "darken": 0
     },
     {
-      "id": "b45_rpl_i1_scallion_root_ends",
+      "id": "b45_rpl_i1_snipping_scissors",
       "start": 243.59,
       "dur": 3.28,
       "kind": "raw",
-      "src": "broll/rpl_i1_scallion_root_ends.mp4",
+      "src": "broll/rpl_i1_snipping_scissors.mp4",
       "darken": 0
     },
     {
-      "id": "b46_rpl_i1_scallion_regrow_timelapse",
+      "id": "b46_rpl_i1_chopped_over_food",
       "start": 246.37,
       "dur": 6.63,
       "kind": "raw",
-      "src": "broll/rpl_i1_scallion_regrow_timelapse.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b47_rpl_i1_snipping_scissors",
-      "start": 252.5,
-      "dur": 4.5,
-      "kind": "raw",
-      "src": "broll/rpl_i1_snipping_scissors.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b48_rpl_i1_chopped_over_food",
-      "start": 256.5,
-      "dur": 3.5,
-      "kind": "raw",
       "src": "broll/rpl_i1_chopped_over_food.mp4",
       "darken": 0
     },
     {
-      "id": "b49_rpl_i1_slicing_scallions_macro",
-      "start": 259.5,
+      "id": "b47_rpl_i1_scallion_root_ends",
+      "start": 252.5,
       "dur": 4.5,
-      "kind": "raw",
-      "src": "broll/rpl_i1_slicing_scallions_macro.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b50_rpl_i1_scallion_root_ends",
-      "start": 263.5,
-      "dur": 3.96,
       "kind": "raw",
       "src": "broll/rpl_i1_scallion_root_ends.mp4",
       "darken": 0
     },
     {
-      "id": "b51_rpl_i1_scallion_regrow_timelapse",
-      "start": 266.96,
-      "dur": 3.18,
+      "id": "b48_rpl_i1_scallion_regrow_timelapse",
+      "start": 256.5,
+      "dur": 3.5,
       "kind": "raw",
       "src": "broll/rpl_i1_scallion_regrow_timelapse.mp4",
       "darken": 0
     },
     {
-      "id": "b52_rpl_i1_snipping_scissors",
-      "start": 269.64,
-      "dur": 4.03,
+      "id": "b49_rpl_i1_snipping_scissors",
+      "start": 259.5,
+      "dur": 4.5,
       "kind": "raw",
       "src": "broll/rpl_i1_snipping_scissors.mp4",
       "darken": 0
     },
     {
-      "id": "b53_rpl_i1_chopped_over_food",
+      "id": "b50_rpl_i1_chopped_over_food",
+      "start": 263.5,
+      "dur": 3.96,
+      "kind": "raw",
+      "src": "broll/rpl_i1_chopped_over_food.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b51_rpl_i1_scallion_root_ends",
+      "start": 266.96,
+      "dur": 3.18,
+      "kind": "raw",
+      "src": "broll/rpl_i1_scallion_root_ends.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b52_rpl_i1_scallion_regrow_timelapse",
+      "start": 269.64,
+      "dur": 4.03,
+      "kind": "raw",
+      "src": "broll/rpl_i1_scallion_regrow_timelapse.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b53_rpl_i1_snipping_scissors",
       "start": 273.17,
       "dur": 2.83,
       "kind": "raw",
-      "src": "broll/rpl_i1_chopped_over_food.mp4",
+      "src": "broll/rpl_i1_snipping_scissors.mp4",
       "darken": 0
     },
     {
@@ -916,59 +916,59 @@
       "image": "broll/rpl_i4_bokchoy_base_water.mp4"
     },
     {
-      "id": "b85_rpl_i4_bokchoy_window_jar",
+      "id": "b85_rpl_i4_bokchoy_base_water",
       "start": 390.84,
       "dur": 2.8,
       "kind": "raw",
-      "src": "broll/rpl_i4_bokchoy_window_jar.mp4",
+      "src": "broll/rpl_i4_bokchoy_base_water.mp4",
       "darken": 0
     },
     {
-      "id": "b86_rpl_i4_bokchoy_base_water",
+      "id": "b86_rpl_i4_bokchoy_window_jar",
       "start": 393.14,
       "dur": 3.86,
       "kind": "raw",
-      "src": "broll/rpl_i4_bokchoy_base_water.mp4",
+      "src": "broll/rpl_i4_bokchoy_window_jar.mp4",
       "darken": 0
     },
     {
-      "id": "b87_rpl_i4_asian_leafy_greens",
+      "id": "b87_rpl_i4_bokchoy_base_water",
       "start": 396.5,
       "dur": 3.34,
       "kind": "raw",
-      "src": "broll/rpl_i4_asian_leafy_greens.mp4",
+      "src": "broll/rpl_i4_bokchoy_base_water.mp4",
       "darken": 0
     },
     {
-      "id": "b88_rpl_i4_bokchoy_base_water",
+      "id": "b88_rpl_i4_bokchoy_window_jar",
       "start": 399.34,
       "dur": 2.25,
+      "kind": "raw",
+      "src": "broll/rpl_i4_bokchoy_window_jar.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b89_rpl_i4_bokchoy_base_water",
+      "start": 401.14,
+      "dur": 7,
       "kind": "raw",
       "src": "broll/rpl_i4_bokchoy_base_water.mp4",
       "darken": 0
     },
     {
-      "id": "b89_rpl_i4_bokchoy_window_jar",
-      "start": 401.14,
-      "dur": 7,
-      "kind": "raw",
-      "src": "broll/rpl_i4_bokchoy_window_jar.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b90_rpl_i4_asian_leafy_greens",
+      "id": "b90_rpl_i4_bokchoy_window_jar",
       "start": 407.64,
       "dur": 3.17,
       "kind": "raw",
-      "src": "broll/rpl_i4_asian_leafy_greens.mp4",
+      "src": "broll/rpl_i4_bokchoy_window_jar.mp4",
       "darken": 0
     },
     {
-      "id": "b91_rpl_i4_bokchoy_window_jar",
+      "id": "b91_rpl_i4_bokchoy_base_water",
       "start": 410.31,
       "dur": 4.69,
       "kind": "raw",
-      "src": "broll/rpl_i4_bokchoy_window_jar.mp4",
+      "src": "broll/rpl_i4_bokchoy_base_water.mp4",
       "darken": 0
     },
     {
@@ -997,11 +997,11 @@
       ]
     },
     {
-      "id": "b95_rpl_i5_leeks_rustic_kitchen",
+      "id": "b95_rpl_i5_leek_regrow_upward",
       "start": 426.05,
       "dur": 5.09,
       "kind": "raw",
-      "src": "broll/rpl_i5_leeks_rustic_kitchen.mp4",
+      "src": "broll/rpl_i5_leek_regrow_upward.mp4",
       "darken": 0
     },
     {
@@ -1021,19 +1021,19 @@
       "darken": 0
     },
     {
-      "id": "b98_rpl_i5_leek_soup_pot",
+      "id": "b98_rpl_i5_leek_regrow_upward",
       "start": 437.5,
       "dur": 4.24,
       "kind": "raw",
-      "src": "broll/rpl_i5_leek_soup_pot.mp4",
+      "src": "broll/rpl_i5_leek_regrow_upward.mp4",
       "darken": 0
     },
     {
-      "id": "b99_rpl_i5_washing_leek_water",
+      "id": "b99_rpl_i5_leek_root_macro",
       "start": 441.24,
       "dur": 2.76,
       "kind": "raw",
-      "src": "broll/rpl_i5_washing_leek_water.mp4",
+      "src": "broll/rpl_i5_leek_root_macro.mp4",
       "darken": 0
     },
     {
@@ -1081,11 +1081,11 @@
       ]
     },
     {
-      "id": "b103_rpl_i5_washing_leek_water",
+      "id": "b103_rpl_i5_chopping_leek_macro",
       "start": 458.94,
       "dur": 4.06,
       "kind": "raw",
-      "src": "broll/rpl_i5_washing_leek_water.mp4",
+      "src": "broll/rpl_i5_chopping_leek_macro.mp4",
       "darken": 0
     },
     {
@@ -1341,107 +1341,107 @@
       "darken": 0
     },
     {
-      "id": "b133_rpl_err_cloudy_stagnant_water",
+      "id": "b133_rpl_err_slimy_rotting_roots",
       "start": 560.5,
       "dur": 5.64,
       "kind": "raw",
-      "src": "broll/rpl_err_cloudy_stagnant_water.mp4",
+      "src": "broll/rpl_err_slimy_rotting_roots.mp4",
       "darken": 0
     },
     {
-      "id": "b134_rpl_err_slimy_rotting_roots",
+      "id": "b134_rpl_err_transplant_rich_soil",
       "start": 565.64,
       "dur": 4.95,
       "kind": "raw",
-      "src": "broll/rpl_err_slimy_rotting_roots.mp4",
+      "src": "broll/rpl_err_transplant_rich_soil.mp4",
       "darken": 0
     },
     {
-      "id": "b135_rpl_err_pouring_old_water",
+      "id": "b135_rpl_err_pale_wilting_cutting",
       "start": 570.09,
       "dur": 4.91,
       "kind": "raw",
-      "src": "broll/rpl_err_pouring_old_water.mp4",
+      "src": "broll/rpl_err_pale_wilting_cutting.mp4",
       "darken": 0
     },
     {
-      "id": "b136_rpl_err_transplant_rich_soil",
+      "id": "b136_rpl_err_slimy_rotting_roots",
       "start": 574.5,
       "dur": 4.5,
       "kind": "raw",
-      "src": "broll/rpl_err_transplant_rich_soil.mp4",
+      "src": "broll/rpl_err_slimy_rotting_roots.mp4",
       "darken": 0
     },
     {
-      "id": "b137_rpl_err_pale_wilting_cutting",
+      "id": "b137_rpl_err_transplant_rich_soil",
       "start": 578.5,
       "dur": 4.5,
       "kind": "raw",
+      "src": "broll/rpl_err_transplant_rich_soil.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b138_rpl_err_pale_wilting_cutting",
+      "start": 582.5,
+      "dur": 3.64,
+      "kind": "raw",
       "src": "broll/rpl_err_pale_wilting_cutting.mp4",
       "darken": 0
     },
     {
-      "id": "b138_rpl_err_transplant_rich_soil",
-      "start": 582.5,
-      "dur": 3.64,
+      "id": "b139_rpl_err_slimy_rotting_roots",
+      "start": 585.64,
+      "dur": 2.77,
+      "kind": "raw",
+      "src": "broll/rpl_err_slimy_rotting_roots.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b140_rpl_err_transplant_rich_soil",
+      "start": 587.91,
+      "dur": 2.48,
       "kind": "raw",
       "src": "broll/rpl_err_transplant_rich_soil.mp4",
       "darken": 0
     },
     {
-      "id": "b139_rpl_err_cloudy_stagnant_water",
-      "start": 585.64,
-      "dur": 2.77,
-      "kind": "raw",
-      "src": "broll/rpl_err_cloudy_stagnant_water.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b140_rpl_err_slimy_rotting_roots",
-      "start": 587.91,
-      "dur": 2.48,
-      "kind": "raw",
-      "src": "broll/rpl_err_slimy_rotting_roots.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b141_rpl_err_pouring_old_water",
+      "id": "b141_rpl_err_pale_wilting_cutting",
       "start": 589.89,
       "dur": 6.12,
-      "kind": "raw",
-      "src": "broll/rpl_err_pouring_old_water.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b142_rpl_err_pale_wilting_cutting",
-      "start": 595.51,
-      "dur": 2.49,
       "kind": "raw",
       "src": "broll/rpl_err_pale_wilting_cutting.mp4",
       "darken": 0
     },
     {
-      "id": "b143_rpl_err_cloudy_stagnant_water",
-      "start": 597.5,
-      "dur": 2.5,
-      "kind": "raw",
-      "src": "broll/rpl_err_cloudy_stagnant_water.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b144_rpl_err_slimy_rotting_roots",
-      "start": 599.5,
-      "dur": 3.64,
+      "id": "b142_rpl_err_slimy_rotting_roots",
+      "start": 595.51,
+      "dur": 2.49,
       "kind": "raw",
       "src": "broll/rpl_err_slimy_rotting_roots.mp4",
       "darken": 0
     },
     {
-      "id": "b145_rpl_err_pouring_old_water",
+      "id": "b143_rpl_err_transplant_rich_soil",
+      "start": 597.5,
+      "dur": 2.5,
+      "kind": "raw",
+      "src": "broll/rpl_err_transplant_rich_soil.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b144_rpl_err_pale_wilting_cutting",
+      "start": 599.5,
+      "dur": 3.64,
+      "kind": "raw",
+      "src": "broll/rpl_err_pale_wilting_cutting.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b145_rpl_err_slimy_rotting_roots",
       "start": 602.64,
       "dur": 3.37,
       "kind": "raw",
-      "src": "broll/rpl_err_pouring_old_water.mp4",
+      "src": "broll/rpl_err_slimy_rotting_roots.mp4",
       "darken": 0
     },
     {
@@ -1463,51 +1463,51 @@
       ]
     },
     {
-      "id": "b148_rpl_err_cloudy_stagnant_water",
+      "id": "b148_rpl_err_slimy_rotting_roots",
       "start": 611.71,
       "dur": 6.38,
-      "kind": "raw",
-      "src": "broll/rpl_err_cloudy_stagnant_water.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b149_rpl_err_slimy_rotting_roots",
-      "start": 617.59,
-      "dur": 3.86,
       "kind": "raw",
       "src": "broll/rpl_err_slimy_rotting_roots.mp4",
       "darken": 0
     },
     {
-      "id": "b150_rpl_err_pouring_old_water",
-      "start": 620.95,
-      "dur": 3.09,
+      "id": "b149_rpl_err_transplant_rich_soil",
+      "start": 617.59,
+      "dur": 3.86,
       "kind": "raw",
-      "src": "broll/rpl_err_pouring_old_water.mp4",
+      "src": "broll/rpl_err_transplant_rich_soil.mp4",
       "darken": 0
     },
     {
-      "id": "b151_rpl_err_transplant_rich_soil",
+      "id": "b150_rpl_err_pale_wilting_cutting",
+      "start": 620.95,
+      "dur": 3.09,
+      "kind": "raw",
+      "src": "broll/rpl_err_pale_wilting_cutting.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b151_rpl_err_slimy_rotting_roots",
       "start": 623.54,
+      "dur": 2.84,
+      "kind": "raw",
+      "src": "broll/rpl_err_slimy_rotting_roots.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b152_rpl_err_transplant_rich_soil",
+      "start": 625.88,
       "dur": 2.84,
       "kind": "raw",
       "src": "broll/rpl_err_transplant_rich_soil.mp4",
       "darken": 0
     },
     {
-      "id": "b152_rpl_err_pale_wilting_cutting",
-      "start": 625.88,
-      "dur": 2.84,
-      "kind": "raw",
-      "src": "broll/rpl_err_pale_wilting_cutting.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b153_rpl_err_cloudy_stagnant_water",
+      "id": "b153_rpl_err_pale_wilting_cutting",
       "start": 628.22,
       "dur": 4.92,
       "kind": "raw",
-      "src": "broll/rpl_err_cloudy_stagnant_water.mp4",
+      "src": "broll/rpl_err_pale_wilting_cutting.mp4",
       "darken": 0
     },
     {
@@ -1519,11 +1519,11 @@
       "darken": 0
     },
     {
-      "id": "b155_rpl_err_pouring_old_water",
+      "id": "b155_rpl_err_transplant_rich_soil",
       "start": 638.9,
       "dur": 3.1,
       "kind": "raw",
-      "src": "broll/rpl_err_pouring_old_water.mp4",
+      "src": "broll/rpl_err_transplant_rich_soil.mp4",
       "darken": 0
     },
     {
@@ -1565,11 +1565,11 @@
       }
     },
     {
-      "id": "b158_rpl_err_cloudy_stagnant_water",
+      "id": "b158_rpl_err_transplant_rich_soil",
       "start": 647.5,
       "dur": 2.64,
       "kind": "raw",
-      "src": "broll/rpl_err_cloudy_stagnant_water.mp4",
+      "src": "broll/rpl_err_transplant_rich_soil.mp4",
       "darken": 0
     },
     {
@@ -1909,75 +1909,75 @@
       "darken": 0
     },
     {
-      "id": "b200_rpl_i10_ginger_market_pile",
+      "id": "b200_rpl_i10_ginger_buds_macro",
       "start": 783.58,
       "dur": 3.11,
-      "kind": "raw",
-      "src": "broll/rpl_i10_ginger_market_pile.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b201_rpl_i10_ginger_buds_macro",
-      "start": 786.19,
-      "dur": 2.74,
       "kind": "raw",
       "src": "broll/rpl_i10_ginger_buds_macro.mp4",
       "darken": 0
     },
     {
-      "id": "b202_rpl_i10_turmeric_root_orange",
-      "start": 788.43,
-      "dur": 3.03,
+      "id": "b201_rpl_i10_turmeric_root_orange",
+      "start": 786.19,
+      "dur": 2.74,
       "kind": "raw",
       "src": "broll/rpl_i10_turmeric_root_orange.mp4",
       "darken": 0
     },
     {
-      "id": "b203_rpl_i10_ginger_market_pile",
-      "start": 790.96,
-      "dur": 2.87,
-      "kind": "raw",
-      "src": "broll/rpl_i10_ginger_market_pile.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b204_rpl_i10_ginger_buds_macro",
-      "start": 793.33,
-      "dur": 3.7,
+      "id": "b202_rpl_i10_ginger_buds_macro",
+      "start": 788.43,
+      "dur": 3.03,
       "kind": "raw",
       "src": "broll/rpl_i10_ginger_buds_macro.mp4",
       "darken": 0
     },
     {
-      "id": "b205_rpl_i10_planting_ginger_soil",
-      "start": 796.53,
-      "dur": 4.61,
+      "id": "b203_rpl_i10_planting_ginger_soil",
+      "start": 790.96,
+      "dur": 2.87,
       "kind": "raw",
       "src": "broll/rpl_i10_planting_ginger_soil.mp4",
       "darken": 0
     },
     {
-      "id": "b206_rpl_i10_ginger_shoot_green",
-      "start": 800.64,
-      "dur": 7.52,
+      "id": "b204_rpl_i10_ginger_shoot_green",
+      "start": 793.33,
+      "dur": 3.7,
       "kind": "raw",
       "src": "broll/rpl_i10_ginger_shoot_green.mp4",
       "darken": 0
     },
     {
-      "id": "b207_rpl_i10_turmeric_root_orange",
-      "start": 807.66,
-      "dur": 4.08,
+      "id": "b205_rpl_i10_turmeric_root_orange",
+      "start": 796.53,
+      "dur": 4.61,
       "kind": "raw",
       "src": "broll/rpl_i10_turmeric_root_orange.mp4",
       "darken": 0
     },
     {
-      "id": "b208_rpl_i10_ginger_pot_plant",
+      "id": "b206_rpl_i10_ginger_pot_plant",
+      "start": 800.64,
+      "dur": 7.52,
+      "kind": "raw",
+      "src": "broll/rpl_i10_ginger_pot_plant.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b207_rpl_i10_ginger_tea_water",
+      "start": 807.66,
+      "dur": 4.08,
+      "kind": "raw",
+      "src": "broll/rpl_i10_ginger_tea_water.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b208_rpl_i10_ginger_buds_macro",
       "start": 811.24,
       "dur": 2.84,
       "kind": "raw",
-      "src": "broll/rpl_i10_ginger_pot_plant.mp4",
+      "src": "broll/rpl_i10_ginger_buds_macro.mp4",
       "darken": 0
     },
     {
@@ -2156,7 +2156,7 @@
       "name": "Batata",
       "accent": "amber",
       "eyebrow": "Replántalo gratis",
-      "image": "broll/rpl_i12_sweetpotato_toothpicks_glass.mp4"
+      "image": "broll/rpl_i12_pulling_a_slip.mp4"
     },
     {
       "id": "cmp_anno_batata",
@@ -2192,11 +2192,11 @@
       }
     },
     {
-      "id": "b229_rpl_i12_rooting_slips_water",
+      "id": "b229_rpl_i12_slips_macro_roots",
       "start": 899.57,
       "dur": 4.42,
       "kind": "raw",
-      "src": "broll/rpl_i12_rooting_slips_water.mp4",
+      "src": "broll/rpl_i12_slips_macro_roots.mp4",
       "darken": 0
     },
     {
@@ -2224,27 +2224,27 @@
       "darken": 0
     },
     {
-      "id": "b233_rpl_i12_sweetpotato_toothpicks_glass",
+      "id": "b233_rpl_i12_pulling_a_slip",
       "start": 918.02,
       "dur": 3.65,
       "kind": "raw",
-      "src": "broll/rpl_i12_sweetpotato_toothpicks_glass.mp4",
+      "src": "broll/rpl_i12_pulling_a_slip.mp4",
       "darken": 0
     },
     {
-      "id": "b234_rpl_i12_slips_macro_roots",
+      "id": "b234_rpl_i12_rooting_slips_water",
       "start": 921.17,
       "dur": 3.47,
       "kind": "raw",
-      "src": "broll/rpl_i12_slips_macro_roots.mp4",
+      "src": "broll/rpl_i12_rooting_slips_water.mp4",
       "darken": 0
     },
     {
-      "id": "b235_rpl_i12_sweetpotato_toothpicks_glass",
+      "id": "b235_rpl_i12_slips_macro_roots",
       "start": 924.14,
       "dur": 3.74,
       "kind": "raw",
-      "src": "broll/rpl_i12_sweetpotato_toothpicks_glass.mp4",
+      "src": "broll/rpl_i12_slips_macro_roots.mp4",
       "darken": 0
     },
     {
@@ -2272,19 +2272,19 @@
       "darken": 0
     },
     {
-      "id": "b239_rpl_i12_sweetpotato_toothpicks_glass",
+      "id": "b239_rpl_i12_pulling_a_slip",
       "start": 934.9,
       "dur": 5.71,
       "kind": "raw",
-      "src": "broll/rpl_i12_sweetpotato_toothpicks_glass.mp4",
+      "src": "broll/rpl_i12_pulling_a_slip.mp4",
       "darken": 0
     },
     {
-      "id": "b240_rpl_i12_pulling_a_slip",
+      "id": "b240_rpl_i12_rooting_slips_water",
       "start": 940.11,
       "dur": 5.91,
       "kind": "raw",
-      "src": "broll/rpl_i12_pulling_a_slip.mp4",
+      "src": "broll/rpl_i12_rooting_slips_water.mp4",
       "darken": 0
     },
     {
@@ -2780,11 +2780,11 @@
       "darken": 0
     },
     {
-      "id": "b300_rpl_i16_watering_pepper_pot",
+      "id": "b300_rpl_i16_picking_pepper_plant",
       "start": 1173.64,
       "dur": 2.61,
       "kind": "raw",
-      "src": "broll/rpl_i16_watering_pepper_pot.mp4",
+      "src": "broll/rpl_i16_picking_pepper_plant.mp4",
       "darken": 0
     },
     {
@@ -2804,11 +2804,11 @@
       "darken": 0
     },
     {
-      "id": "b303_rpl_i16_watering_pepper_pot",
+      "id": "b303_rpl_i16_cutting_open_pepper",
       "start": 1184.36,
       "dur": 3.75,
       "kind": "raw",
-      "src": "broll/rpl_i16_watering_pepper_pot.mp4",
+      "src": "broll/rpl_i16_cutting_open_pepper.mp4",
       "darken": 0
     },
     {
@@ -2844,11 +2844,11 @@
       "darken": 0
     },
     {
-      "id": "b308_rpl_i16_picking_pepper_plant",
+      "id": "b308_rpl_i16_pressing_seeds_soil",
       "start": 1201.52,
       "dur": 3.25,
       "kind": "raw",
-      "src": "broll/rpl_i16_picking_pepper_plant.mp4",
+      "src": "broll/rpl_i16_pressing_seeds_soil.mp4",
       "darken": 0
     },
     {
@@ -3038,19 +3038,19 @@
       "darken": 0
     },
     {
-      "id": "b325_rpl_ac_writing_garden_journal",
+      "id": "b325_rpl_ac_scallion_into_glass",
       "start": 1254.64,
       "dur": 2.67,
       "kind": "raw",
-      "src": "broll/rpl_ac_writing_garden_journal.mp4",
+      "src": "broll/rpl_ac_scallion_into_glass.mp4",
       "darken": 0
     },
     {
-      "id": "b326_rpl_ac_fresh_start_seedlings",
+      "id": "b326_rpl_ac_scallion_into_glass",
       "start": 1256.81,
       "dur": 3.04,
       "kind": "raw",
-      "src": "broll/rpl_ac_fresh_start_seedlings.mp4",
+      "src": "broll/rpl_ac_scallion_into_glass.mp4",
       "darken": 0
     },
     {
@@ -3062,19 +3062,19 @@
       "darken": 0
     },
     {
-      "id": "b328_rpl_ac_writing_garden_journal",
+      "id": "b328_rpl_ac_scallion_into_glass",
       "start": 1262.29,
       "dur": 3.71,
       "kind": "raw",
-      "src": "broll/rpl_ac_writing_garden_journal.mp4",
+      "src": "broll/rpl_ac_scallion_into_glass.mp4",
       "darken": 0
     },
     {
-      "id": "b329_rpl_ac_fresh_start_seedlings",
+      "id": "b329_rpl_ac_scallion_into_glass",
       "start": 1265.5,
       "dur": 4.29,
       "kind": "raw",
-      "src": "broll/rpl_ac_fresh_start_seedlings.mp4",
+      "src": "broll/rpl_ac_scallion_into_glass.mp4",
       "darken": 0
     },
     {
@@ -3086,19 +3086,19 @@
       "darken": 0
     },
     {
-      "id": "b331_rpl_ac_writing_garden_journal",
+      "id": "b331_rpl_ac_scallion_into_glass",
       "start": 1272.64,
       "dur": 4.36,
       "kind": "raw",
-      "src": "broll/rpl_ac_writing_garden_journal.mp4",
+      "src": "broll/rpl_ac_scallion_into_glass.mp4",
       "darken": 0
     },
     {
-      "id": "b332_rpl_ac_fresh_start_seedlings",
+      "id": "b332_rpl_ac_scallion_into_glass",
       "start": 1276.5,
       "dur": 6.63,
       "kind": "raw",
-      "src": "broll/rpl_ac_fresh_start_seedlings.mp4",
+      "src": "broll/rpl_ac_scallion_into_glass.mp4",
       "darken": 0
     },
     {
