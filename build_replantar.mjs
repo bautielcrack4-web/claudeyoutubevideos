@@ -26,6 +26,25 @@ function at(phrase) {
   }
   throw new Error("ANCHOR NOT FOUND: " + phrase);
 }
+// ── kphrase: frase cinética SINCRONIZADA a la transcript EXACTA (ms por palabra) ──
+const capW = caps.map((c) => ({ n: norm(c.text), raw: c.text, ms: c.startMs }));
+let _kid = 0;
+function kphrase(phrase, emph = []) {
+  const tw = norm(phrase).split(" ");
+  for (let i = 0; i <= capW.length - tw.length; i++) {
+    let ok = 1; for (let j = 0; j < tw.length; j++) if (capW[i + j].n !== tw[j]) { ok = 0; break; }
+    if (ok) {
+      const span = capW.slice(i, i + tw.length);
+      const t0 = span[0].ms;
+      const eset = new Set(emph.map((e) => norm(e)));
+      const words = span.map((w) => ({ t: w.raw, at: +((w.ms - t0) / 1000).toFixed(2), ...(eset.has(w.n) ? { hl: true } : {}) }));
+      const dur = +(((span[span.length - 1].ms - t0) / 1000) + 1.7).toFixed(2);
+      return { id: `kl${++_kid}`, start: +(t0 / 1000).toFixed(2), dur, kind: "kineticline", overlay: true, accent: "amber", words };
+    }
+  }
+  console.warn("⚠ kphrase no encontrada:", phrase);
+  return null;
+}
 
 // ── secciones (start de cada una; end = start de la próxima) ──
 const SECT = [
@@ -428,11 +447,15 @@ const COMPONENTS = [
   { t: atc("hay dos partes en el secreto"), id: "cmp_error_fix", kind: "process", hue: "amber", accent: "good",
     title: "Cómo evitar que mueran", eyebrow: "Las 2 reglas",
     steps: [{ title: "Cambia el agua cada 2-3 días" }, { title: "En cuanto veas raíces, pásala a la tierra" }] },
-  // CIERRE — recap de las 16
-  { t: atc("asi que hagamos la cuenta"), id: "cmp_recap", kind: "checklist", hue: "amber", accent: "good",
-    title: "16 restos = 16 plantas", eyebrow: "Gratis · desde tu basura",
-    items: [ck("Cebolla, lechuga, apio, bok choy, puerro"), ck("Albahaca, menta, cilantro"), ck("Ajo, jengibre, papa, batata"), ck("Zanahoria, tomate, piña + pimiento")],
-    bg: "a wooden table covered with sprouting vegetable scraps and small plants" },
+  // CIERRE — recap GRILLA animada de los 16 (cascada)
+  { t: atc("asi que hagamos la cuenta"), id: "cmp_grid", kind: "gridreveal", dur: 7.5,
+    title: "16 restos = 16 plantas", subtitle: "Gratis · desde tu basura",
+    tiles: NUMS.map(([, num, name]) => ({ number: num, name })) },
+  // LA VERDAD — timeline animada del proceso (resto → agua → raíces → tierra → cosecha)
+  { t: atc("una planta no sabe que la compraste"), id: "cmp_growth", kind: "growthtimeline", dur: 6.5,
+    title: "De un resto a una planta",
+    stages: [{ label: "Un resto" }, { label: "En agua", sub: "días" }, { label: "Raíces" }, { label: "A la tierra" }, { label: "Cosecha" }],
+    clipBg: _firstClip("err") || _firstClip("i1") || _firstClip("truth") },
 
   // ── COMPONENTES EXTRA (variedad + valor: diagramas del método, ahorro, cita) ──
   // el negocio de la tienda (cross)
@@ -559,6 +582,19 @@ for (let i = 0; i < beats.length; i++) {
   b.dur = +(Math.max(0.2, Math.min(end + ov, TOTAL) - b.start)).toFixed(2);
 }
 
+// ── frases cinéticas SINCRONIZADAS a la transcript exacta (overlays, encima del b-roll) ──
+const KPHRASES = [
+  kphrase("esa parte que tu llamas basura todavia esta viva", ["viva"]),
+  kphrase("vuelve a crecer gratis", ["gratis"]),
+  kphrase("uno se convierte en diez", ["diez"]),
+  kphrase("de la basura a una bolsa de comida", ["basura", "comida"]),
+  kphrase("cero euros gastados", ["cero", "euros"]),
+  kphrase("para siempre", ["siempre"]),
+  kphrase("tires lo que todavia esta vivo", ["vivo"]),
+].filter(Boolean);
+beats.push(...KPHRASES);
+console.log(`kinetic phrases: ${KPHRASES.length}`);
+
 fs.mkdirSync("beatsheet", { recursive: true });
 fs.writeFileSync(`beatsheet/${SLUG}.json`, JSON.stringify({ video: SLUG, avatar: AVATAR, clipsfirst: true, beats }, null, 2));
 
@@ -566,8 +602,9 @@ fs.writeFileSync(`beatsheet/${SLUG}.json`, JSON.stringify({ video: SLUG, avatar:
 const POS = ["cornerTR", "cornerBL", "cornerTL", "right", "left", "cornerBR"];
 const pip = [];
 let k = 0;
-for (let i = 0; i < beats.length; i++) {
-  if (i % 6 === 4 && !inFull(beats[i].start)) { pip.push([beats[i].start, beats[i].start + Math.min(beats[i].dur, 6), POS[k % POS.length]]); k++; }
+const _bw = beats.filter((b) => !b.overlay); // overlays (frases cinéticas) NO cuentan para el PiP del avatar
+for (let i = 0; i < _bw.length; i++) {
+  if (i % 6 === 4 && !inFull(_bw[i].start)) { pip.push([_bw[i].start, _bw[i].start + Math.min(_bw[i].dur, 6), POS[k % POS.length]]); k++; }
 }
 const firstClip = CLIPS.length ? Math.max(CLIPS[0][0], OPEN) : OPEN;
 const modeAt = (t) => {

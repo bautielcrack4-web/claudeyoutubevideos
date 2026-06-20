@@ -722,17 +722,9 @@
       "darken": 0
     },
     {
-      "id": "b108_rpl_tr_scraps_lined_up",
-      "start": 160.73,
-      "dur": 3.55,
-      "kind": "raw",
-      "src": "broll/rpl_tr_scraps_lined_up.mp4",
-      "darken": 0
-    },
-    {
       "id": "cmp_savings_bars",
-      "start": 163.78,
-      "dur": 6.11,
+      "start": 160.73,
+      "dur": 3.05,
       "kind": "bars",
       "hue": "amber",
       "accent": "good",
@@ -755,12 +747,30 @@
       ]
     },
     {
-      "id": "b111_rpl_tr_greenhouse_interior",
-      "start": 169.89,
-      "dur": 3.55,
-      "kind": "raw",
-      "src": "broll/rpl_tr_greenhouse_interior.mp4",
-      "darken": 0
+      "id": "cmp_growth",
+      "start": 163.78,
+      "dur": 9.16,
+      "kind": "growthtimeline",
+      "title": "De un resto a una planta",
+      "stages": [
+        {
+          "label": "Un resto"
+        },
+        {
+          "label": "En agua",
+          "sub": "días"
+        },
+        {
+          "label": "Raíces"
+        },
+        {
+          "label": "A la tierra"
+        },
+        {
+          "label": "Cosecha"
+        }
+      ],
+      "image": "broll/rpl_err_pale_wilting_cutting.mp4"
     },
     {
       "id": "b112_rpl_tr_sun_kitchen_window",
@@ -3475,46 +3485,78 @@
       "darken": 0
     },
     {
-      "id": "cmp_recap",
+      "id": "cmp_grid",
       "start": 1204.5,
-      "dur": 6.23,
-      "kind": "checklist",
-      "hue": "amber",
-      "accent": "good",
+      "dur": 9.2,
+      "kind": "gridreveal",
       "title": "16 restos = 16 plantas",
-      "eyebrow": "Gratis · desde tu basura",
-      "items": [
+      "subtitle": "Gratis · desde tu basura",
+      "tiles": [
         {
-          "text": "Cebolla, lechuga, apio, bok choy, puerro",
-          "state": "done"
+          "number": "1",
+          "name": "Cebolla de verdeo"
         },
         {
-          "text": "Albahaca, menta, cilantro",
-          "state": "done"
+          "number": "2",
+          "name": "Lechuga"
         },
         {
-          "text": "Ajo, jengibre, papa, batata",
-          "state": "done"
+          "number": "3",
+          "name": "Apio"
         },
         {
-          "text": "Zanahoria, tomate, piña + pimiento",
-          "state": "done"
+          "number": "4",
+          "name": "Bok choy"
+        },
+        {
+          "number": "5",
+          "name": "Puerro"
+        },
+        {
+          "number": "6",
+          "name": "Albahaca"
+        },
+        {
+          "number": "7",
+          "name": "Menta"
+        },
+        {
+          "number": "8",
+          "name": "Cilantro"
+        },
+        {
+          "number": "9",
+          "name": "Ajo"
+        },
+        {
+          "number": "10",
+          "name": "Jengibre"
+        },
+        {
+          "number": "11",
+          "name": "Papa"
+        },
+        {
+          "number": "12",
+          "name": "Batata"
+        },
+        {
+          "number": "13",
+          "name": "Zanahoria"
+        },
+        {
+          "number": "14",
+          "name": "Tomate"
+        },
+        {
+          "number": "15",
+          "name": "Piña"
+        },
+        {
+          "number": "16",
+          "name": "Pimiento"
         }
-      ],
-      "image": "img/cmp_recap_bg.png",
-      "gen": {
-        "type": "image",
-        "name": "cmp_recap_bg",
-        "prompt": "a wooden table covered with sprouting vegetable scraps and small plants, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
-      }
-    },
-    {
-      "id": "b429_rpl_cl_scraps_returned_soil",
-      "start": 1210.73,
-      "dur": 3.47,
-      "kind": "raw",
-      "src": "broll/rpl_cl_scraps_returned_soil.mp4",
-      "darken": 0
+      ]
     },
     {
       "id": "cmp_zero",
@@ -3702,6 +3744,158 @@
       "kind": "raw",
       "src": "broll/rpl_ac_scallion_into_glass.mp4",
       "darken": 0
+    },
+    {
+      "id": "kl1",
+      "start": 43.5,
+      "dur": 4.84,
+      "kind": "kineticline",
+      "overlay": true,
+      "accent": "amber",
+      "words": [
+        {
+          "t": " Esa",
+          "at": 0
+        },
+        {
+          "t": " parte",
+          "at": 0.22
+        },
+        {
+          "t": " que",
+          "at": 0.6
+        },
+        {
+          "t": " tú",
+          "at": 0.83
+        },
+        {
+          "t": " llamas",
+          "at": 1.06
+        },
+        {
+          "t": " basura",
+          "at": 1.51
+        },
+        {
+          "t": " todavía",
+          "at": 2
+        },
+        {
+          "t": " está",
+          "at": 2.72
+        },
+        {
+          "t": " viva.",
+          "at": 3.14,
+          "hl": true
+        }
+      ]
+    },
+    {
+      "id": "kl2",
+      "start": 50.29,
+      "dur": 3.05,
+      "kind": "kineticline",
+      "overlay": true,
+      "accent": "amber",
+      "words": [
+        {
+          "t": " vuelve",
+          "at": 0
+        },
+        {
+          "t": " a",
+          "at": 0.53
+        },
+        {
+          "t": " crecer.",
+          "at": 0.62
+        },
+        {
+          "t": " Gratis.",
+          "at": 1.35,
+          "hl": true
+        }
+      ]
+    },
+    {
+      "id": "kl3",
+      "start": 1214.1,
+      "dur": 2.56,
+      "kind": "kineticline",
+      "overlay": true,
+      "accent": "amber",
+      "words": [
+        {
+          "t": " cero",
+          "at": 0,
+          "hl": true
+        },
+        {
+          "t": " euros",
+          "at": 0.33,
+          "hl": true
+        },
+        {
+          "t": " gastados.",
+          "at": 0.86
+        }
+      ]
+    },
+    {
+      "id": "kl4",
+      "start": 593.18,
+      "dur": 2.09,
+      "kind": "kineticline",
+      "overlay": true,
+      "accent": "amber",
+      "words": [
+        {
+          "t": " para",
+          "at": 0
+        },
+        {
+          "t": " siempre",
+          "at": 0.39,
+          "hl": true
+        }
+      ]
+    },
+    {
+      "id": "kl5",
+      "start": 1323.93,
+      "dur": 3.43,
+      "kind": "kineticline",
+      "overlay": true,
+      "accent": "amber",
+      "words": [
+        {
+          "t": " tires",
+          "at": 0
+        },
+        {
+          "t": " lo",
+          "at": 0.44
+        },
+        {
+          "t": " que",
+          "at": 0.48
+        },
+        {
+          "t": " todavía",
+          "at": 0.71
+        },
+        {
+          "t": " está",
+          "at": 1.33
+        },
+        {
+          "t": " vivo.",
+          "at": 1.73,
+          "hl": true
+        }
+      ]
     }
   ]
 }

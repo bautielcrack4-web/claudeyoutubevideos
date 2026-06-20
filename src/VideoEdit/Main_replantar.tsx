@@ -3,7 +3,7 @@ import { sec, COLORS } from "./theme";
 import { TechBackground } from "./components/TechBackground";
 import { AvatarLayer } from "./scenes/AvatarLayer";
 import { CinematicWrap } from "./components/CinematicWrap";
-import { CUES } from "./cues_replantar.gen";
+import { CUES, OVERLAYS } from "./cues_replantar.gen";
 import { AVATAR_WINDOWS, TOTAL_REPLANTAR } from "./avatar_replantar.gen";
 
 // ── LeviLappJardín (ES) · "15 verduras del súper que puedes replantar gratis" ──
@@ -23,6 +23,12 @@ export const MainReplantar: React.FC = () => {
             </Sequence>
           ))}
           <AvatarLayer src="replantar_opt.mp4" windows={AVATAR_WINDOWS} accent={COLORS.accent} />
+          {/* OVERLAYS (frases cinéticas sincronizadas a la transcript) — encima de todo */}
+          {OVERLAYS.map((cue) => (
+            <Sequence key={cue.key} from={sec(cue.start)} durationInFrames={sec(cue.dur)}>
+              {cue.el(sec(cue.dur))}
+            </Sequence>
+          ))}
         </AbsoluteFill>
       </CinematicWrap>
     </AbsoluteFill>

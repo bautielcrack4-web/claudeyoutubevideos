@@ -233,6 +233,26 @@ function renderEl(b) {
         (b.darken != null ? ` darken={${b.darken}}` : ``) +
         ` />`
       );
+    case "kineticline":
+      return (
+        `<KineticLine durationInFrames={d} words={${j(b.words || [])}}` +
+        (b.accent ? ` accent=${j(b.accent)}` : ``) +
+        ` />`
+      );
+    case "gridreveal":
+      return (
+        `<GridReveal durationInFrames={d} tiles={${j(b.tiles || [])}}` +
+        (b.title ? ` title=${j(b.title)}` : ``) +
+        (b.subtitle ? ` subtitle=${j(b.subtitle)}` : ``) +
+        ` />`
+      );
+    case "growthtimeline":
+      return (
+        `<GrowthTimeline durationInFrames={d} stages={${j(b.stages || [])}}` +
+        (b.title ? ` title=${j(b.title)}` : ``) +
+        (b.image ? ` bg=${j(b.image)}` : ``) +
+        ` />`
+      );
     case "numcard":
       return (
         `<NumberCard durationInFrames={d} number=${j(b.number)} name=${j(b.name)}` +
@@ -888,6 +908,9 @@ if (kinds.has("diorama")) imports.push(`import { PngDiorama } from "./scenes/Png
 if (kinds.has("regrow")) imports.push(`import { RegrowSplit } from "./scenes/RegrowSplit";`);
 if (kinds.has("lielist")) imports.push(`import { LieList } from "./scenes/LieList";`);
 if (kinds.has("numcard")) imports.push(`import { NumberCard } from "./scenes/NumberCard";`);
+if (kinds.has("gridreveal")) imports.push(`import { GridReveal } from "./scenes/GridReveal";`);
+if (kinds.has("growthtimeline")) imports.push(`import { GrowthTimeline } from "./scenes/GrowthTimeline";`);
+if (kinds.has("kineticline")) imports.push(`import { KineticLine } from "./scenes/KineticLine";`);
 // ── set pieces de imagen/clip ──
 if (kinds.has("expeditionmap")) imports.push(`import { ExpeditionMap } from "./setpieces/ExpeditionMap";`);
 if (kinds.has("scalecolossus")) imports.push(`import { ScaleColossus } from "./setpieces/ScaleColossus";`);

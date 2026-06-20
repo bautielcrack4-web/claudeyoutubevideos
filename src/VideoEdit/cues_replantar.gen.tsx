@@ -17,6 +17,9 @@ import { MistakeCard } from "./scenes/MistakeCard";
 import { RegrowSplit } from "./scenes/RegrowSplit";
 import { LieList } from "./scenes/LieList";
 import { NumberCard } from "./scenes/NumberCard";
+import { GridReveal } from "./scenes/GridReveal";
+import { GrowthTimeline } from "./scenes/GrowthTimeline";
+import { KineticLine } from "./scenes/KineticLine";
 
 const D = COLORS.danger;
 
@@ -106,9 +109,8 @@ export const CUES: Cue[] = [
   { key: "b105_rpl_h2_pepper_plant_fruit", start: 121.1, dur: 1.93, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/rpl_h2_pepper_plant_fruit.mp4" darken={0} /> },
   { key: "b106_rpl_tr_greenhouse_interior", start: 154.62, dur: 3.55, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/rpl_tr_greenhouse_interior.mp4" darken={0} /> },
   { key: "b107_rpl_tr_sun_kitchen_window", start: 157.67, dur: 3.56, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/rpl_tr_sun_kitchen_window.mp4" darken={0} /> },
-  { key: "b108_rpl_tr_scraps_lined_up", start: 160.73, dur: 3.55, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/rpl_tr_scraps_lined_up.mp4" darken={0} /> },
-  { key: "cmp_savings_bars", start: 163.78, dur: 6.11, kind: "bars", el: (d) => <BarCompare durationInFrames={d} bars={[{"label":"Comprándolas todo el año","value":160,"display":"~160€","tone":"danger"},{"label":"Replantando los restos","value":0,"display":"0€","winner":true}]} eyebrow="Lo que se va al año" title="Hierbas y verduras de hoja" unit="EUR" accent="good" hue="amber" /> },
-  { key: "b111_rpl_tr_greenhouse_interior", start: 169.89, dur: 3.55, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/rpl_tr_greenhouse_interior.mp4" darken={0} /> },
+  { key: "cmp_savings_bars", start: 160.73, dur: 3.05, kind: "bars", el: (d) => <BarCompare durationInFrames={d} bars={[{"label":"Comprándolas todo el año","value":160,"display":"~160€","tone":"danger"},{"label":"Replantando los restos","value":0,"display":"0€","winner":true}]} eyebrow="Lo que se va al año" title="Hierbas y verduras de hoja" unit="EUR" accent="good" hue="amber" /> },
+  { key: "cmp_growth", start: 163.78, dur: 9.16, kind: "growthtimeline", el: (d) => <GrowthTimeline durationInFrames={d} stages={[{"label":"Un resto"},{"label":"En agua","sub":"días"},{"label":"Raíces"},{"label":"A la tierra"},{"label":"Cosecha"}]} title="De un resto a una planta" bg="broll/rpl_err_pale_wilting_cutting.mp4" /> },
   { key: "b112_rpl_tr_sun_kitchen_window", start: 172.94, dur: 3.55, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/rpl_tr_sun_kitchen_window.mp4" darken={0} /> },
   { key: "b113_rpl_tr_scraps_lined_up", start: 175.99, dur: 3.55, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/rpl_tr_scraps_lined_up.mp4" darken={0} /> },
   { key: "b114_rpl_tr_roots_timelapse", start: 179.04, dur: 3.56, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/rpl_tr_roots_timelapse.mp4" darken={0} /> },
@@ -411,8 +413,7 @@ export const CUES: Cue[] = [
   { key: "b424_rpl_i16_pepper_seedling_macro", start: 1194.67, dur: 3.77, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/rpl_i16_pepper_seedling_macro.mp4" darken={0} /> },
   { key: "b425_rpl_i16_watering_pepper_pot", start: 1197.94, dur: 3.78, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/rpl_i16_watering_pepper_pot.mp4" darken={0} /> },
   { key: "b426_rpl_i16_picking_pepper_plant", start: 1201.22, dur: 3.78, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/rpl_i16_picking_pepper_plant.mp4" darken={0} /> },
-  { key: "cmp_recap", start: 1204.5, dur: 6.23, kind: "checklist", el: (d) => <Checklist durationInFrames={d} title="16 restos = 16 plantas" items={[{"text":"Cebolla, lechuga, apio, bok choy, puerro","state":"done"},{"text":"Albahaca, menta, cilantro","state":"done"},{"text":"Ajo, jengibre, papa, batata","state":"done"},{"text":"Zanahoria, tomate, piña + pimiento","state":"done"}]} eyebrow="Gratis · desde tu basura" accent="good" hue="amber" image="img/cmp_recap_bg.png" /> },
-  { key: "b429_rpl_cl_scraps_returned_soil", start: 1210.73, dur: 3.47, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/rpl_cl_scraps_returned_soil.mp4" darken={0} /> },
+  { key: "cmp_grid", start: 1204.5, dur: 9.2, kind: "gridreveal", el: (d) => <GridReveal durationInFrames={d} tiles={[{"number":"1","name":"Cebolla de verdeo"},{"number":"2","name":"Lechuga"},{"number":"3","name":"Apio"},{"number":"4","name":"Bok choy"},{"number":"5","name":"Puerro"},{"number":"6","name":"Albahaca"},{"number":"7","name":"Menta"},{"number":"8","name":"Cilantro"},{"number":"9","name":"Ajo"},{"number":"10","name":"Jengibre"},{"number":"11","name":"Papa"},{"number":"12","name":"Batata"},{"number":"13","name":"Zanahoria"},{"number":"14","name":"Tomate"},{"number":"15","name":"Piña"},{"number":"16","name":"Pimiento"}]} title="16 restos = 16 plantas" subtitle="Gratis · desde tu basura" /> },
   { key: "cmp_zero", start: 1213.7, dur: 8.91, kind: "callout", el: (d) => <CalloutMark durationInFrames={d} figure="0€" eyebrow="16 plantas" caption="comida que se siembra a sí misma, desde tu basura" accent="good" hue="amber" /> },
   { key: "b433_rpl_cl_scraps_returned_soil", start: 1222.61, dur: 3.47, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/rpl_cl_scraps_returned_soil.mp4" darken={0} /> },
   { key: "b434_rpl_cl_child_hands_seedling", start: 1225.58, dur: 3.47, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/rpl_cl_child_hands_seedling.mp4" darken={0} /> },
@@ -441,5 +442,9 @@ export const CUES: Cue[] = [
 export const REFRAME: { start: number; end: number }[] = [];
 
 export const OVERLAYS: Cue[] = [
-
+  { key: "kl1", start: 43.5, dur: 4.84, kind: "kineticline", el: (d) => <KineticLine durationInFrames={d} words={[{"t":" Esa","at":0},{"t":" parte","at":0.22},{"t":" que","at":0.6},{"t":" tú","at":0.83},{"t":" llamas","at":1.06},{"t":" basura","at":1.51},{"t":" todavía","at":2},{"t":" está","at":2.72},{"t":" viva.","at":3.14,"hl":true}]} accent="amber" /> },
+  { key: "kl2", start: 50.29, dur: 3.05, kind: "kineticline", el: (d) => <KineticLine durationInFrames={d} words={[{"t":" vuelve","at":0},{"t":" a","at":0.53},{"t":" crecer.","at":0.62},{"t":" Gratis.","at":1.35,"hl":true}]} accent="amber" /> },
+  { key: "kl3", start: 1214.1, dur: 2.56, kind: "kineticline", el: (d) => <KineticLine durationInFrames={d} words={[{"t":" cero","at":0,"hl":true},{"t":" euros","at":0.33,"hl":true},{"t":" gastados.","at":0.86}]} accent="amber" /> },
+  { key: "kl4", start: 593.18, dur: 2.09, kind: "kineticline", el: (d) => <KineticLine durationInFrames={d} words={[{"t":" para","at":0},{"t":" siempre","at":0.39,"hl":true}]} accent="amber" /> },
+  { key: "kl5", start: 1323.93, dur: 3.43, kind: "kineticline", el: (d) => <KineticLine durationInFrames={d} words={[{"t":" tires","at":0},{"t":" lo","at":0.44},{"t":" que","at":0.48},{"t":" todavía","at":0.71},{"t":" está","at":1.33},{"t":" vivo.","at":1.73,"hl":true}]} accent="amber" /> },
 ];
