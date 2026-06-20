@@ -6,6 +6,7 @@
 // Modo:  node build_replantar.mjs match  → public/broll/match_replantar.json
 //        node build_replantar.mjs        → beatsheet/replantar.json + avatar_replantar.gen.ts
 import fs from "fs";
+import { SHOTS } from "./shots_replantar.mjs"; // shotlist denso clips-first (queries limpias)
 
 const MODE = process.argv[2] === "match" ? "match" : "build";
 const TOTAL = 1327.57; // = duración del avatar #3 (D.mp4, 22:07.57). OJO: al swapear avatar, actualizar a su duración exacta (ffprobe).
@@ -65,7 +66,8 @@ const AV_FULL = [
 
 // ── SHOTS por sección: [name, query(string|array), concepto] ──
 // queries EN, visuales, ancladas al tema, anti-texto. concepto = qué se ve (ES).
-const S = {
+const S = SHOTS; // ← shotlist denso nuevo (shots_replantar.mjs)
+const _SHOTS_OLD = {
   // ░░ HOOK 1 (0-72s) — "tiras comida viva / está viva / vuelve a crecer gratis" — DENSO ~1.5s ░░
   hook1: [
     ["rpl_trash_scraps", ["vegetable scraps and peels dropped into a kitchen trash bin"], "restos de verdura a la basura"],
@@ -312,11 +314,13 @@ const S = {
 };
 
 // ── densidad por sección (seg/clip): hook hiperdinámico, cuerpo Amish calmo ──
+// PACE DINÁMICO (feedback usuario: "lento y estático, faltan ráfagas de clips").
+// Hook = ráfaga (~1s), cuerpo rápido (~3.3s), nada de holds largos. NO es Amish-calmo.
 const PACE = {
-  hook1: 1.3, hook2: 2.2, truth: 5.0,
-  i1: 5.0, i2: 5.5, i3: 5.0, i4: 4.5, i5: 5.5, i6: 5.0, i7: 5.0,
-  err: 5.5, i8: 5.0, i9: 5.0, i10: 5.0, i11: 5.5, i12: 5.5, i13: 5.5, i14: 5.0, i15: 5.5, i16: 5.0,
-  close: 5.0, action: 5.0,
+  hook1: 0.95, hook2: 1.6, truth: 3.0,
+  i1: 3.3, i2: 3.4, i3: 3.2, i4: 3.0, i5: 3.4, i6: 3.2, i7: 3.2,
+  err: 3.2, i8: 3.2, i9: 3.2, i10: 3.2, i11: 3.4, i12: 3.4, i13: 3.4, i14: 3.2, i15: 3.4, i16: 3.2,
+  close: 3.0, action: 3.0,
 };
 // ── construir CLIPS desde las secciones (densidad = repetir clips curados de la sección) ──
 const inFull = (t) => AV_FULL.some(([s, e]) => t >= s - 1e-6 && t < e - 1e-6);
@@ -327,11 +331,15 @@ for (const [key, list] of Object.entries(S)) {
   if (s0 < OPEN) s0 = OPEN; // recortar dentro del AV_FULL de apertura
   const span = e0 - s0;
   const pace = PACE[key] || 5.5;
-  const desired = Math.max(list.length, Math.round(span / pace));
+  // REAL-FIRST (estilo barcos): si la sección tiene clips reales bajados, usar SOLO
+  // esos (ciclados para la densidad) → casi todo footage real, IA solo donde no hubo match.
+  const matched = list.filter(([nm]) => fs.existsSync(`public/broll/${nm}.mp4`));
+  const pool = matched.length >= 2 ? matched : list;
+  const desired = Math.max(pool.length, Math.round(span / pace));
   for (let i = 0; i < desired; i++) {
     const t = +(s0 + (i + 0.04) * (span / desired)).toFixed(2);
     if (inFull(t)) continue;
-    const [name, query, concept] = list[i % list.length];
+    const [name, query, concept] = pool[i % pool.length];
     const id = `b${++_bid}_${name}`; // id único; reusa el mismo archivo/clip
     CLIPS.push([t, id, name, Array.isArray(query) ? query : [query], concept]);
   }
@@ -499,7 +507,7 @@ for (const c of [...COMPONENTS].sort((a, b) => a.t - b.t)) {
 
 // ── tope de imágenes IA (~95): descarte seguro (hueco resultante ≤8s) ──
 beats.sort((a, b) => a.start - b.start);
-const IMGCAP = Number(process.env.RPL_IMGCAP) || 170; // match rate baja → conservar densidad (imgs ~$0.006 c/u)
+const IMGCAP = Number(process.env.RPL_IMGCAP) || 600; // pacing DINÁMICO reusa mucho los mismos clips/imgs (no genera más, solo más beats) → no podar
 const isImg = (b) => b && b.kind === "raw" && b.gen;
 let safety = 600;
 while (beats.filter(isImg).length > IMGCAP && safety-- > 0) {
