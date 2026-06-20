@@ -26,6 +26,15 @@ function at(phrase) {
   }
   throw new Error("ANCHOR NOT FOUND: " + phrase);
 }
+// ── límites de FRASE del Whisper (ms EXACTO): arranque de cada oración/cláusula —
+//    puntuación o pausa. CADA clip del cuerpo corta acá (método barcos), no por matemática. ──
+const PHRASE_BOUNDS = [];
+for (let i = 0; i < caps.length; i++) {
+  const prev = caps[i - 1];
+  const prevPunct = prev ? /[.,;:!?…]$/.test(prev.text.trim()) : true;
+  const gap = prev ? caps[i].startMs - prev.endMs : 9999;
+  if (i === 0 || prevPunct || gap > 320) PHRASE_BOUNDS.push(caps[i].startMs / 1000);
+}
 // ── kphrase: frase cinética SINCRONIZADA a la transcript EXACTA (ms por palabra) ──
 const capW = caps.map((c) => ({ n: norm(c.text), raw: c.text, ms: c.startMs }));
 let _kid = 0;
@@ -385,14 +394,28 @@ for (const [key, list] of Object.entries(S)) {
   const span = e0 - s0;
   const pace = PACE[key] || 5.5;
   const secMatched = [...new Set(list.map((s) => s[0]).filter(have))];
-  const desired = Math.max(list.length, Math.round(span / pace));
-  for (let i = 0; i < desired; i++) {
-    const t = +(s0 + (i + 0.04) * (span / desired)).toFixed(2);
+  if (MODE === "match") {
+    // match: un beat por concepto (para matchear toda la lista)
+    for (let i = 0; i < list.length; i++) {
+      const t = +(s0 + (i + 0.5) * (span / list.length)).toFixed(2);
+      const [own, query, concept] = list[i];
+      CLIPS.push([t, `b${++_bid}_${own}`, own, Array.isArray(query) ? query : [query], concept]);
+    }
+    continue;
+  }
+  // build (método barcos): CADA clip cae en un límite de FRASE real del Whisper (ms exacto),
+  // separados ≥ minGap (≈ pace) para el ritmo. shot[i] (orden de narración) → frase[i].
+  const minGap = Math.max(0.9, pace * 0.6);
+  const bounds = [];
+  let lastB = -99;
+  for (const t of PHRASE_BOUNDS) { if (t >= s0 - 1e-6 && t < e0 && t - lastB >= minGap) { bounds.push(t); lastB = t; } }
+  if (bounds.length === 0) bounds.push(s0);
+  for (let i = 0; i < bounds.length; i++) {
+    const t = +bounds[i].toFixed(2);
     if (inFull(t)) continue;
     const [own, query, concept] = list[i % list.length];
     const name = pickClip(own, secMatched);
-    const id = `b${++_bid}_${name}`;
-    CLIPS.push([t, id, name, Array.isArray(query) ? query : [query], concept]);
+    CLIPS.push([t, `b${++_bid}_${name}`, name, Array.isArray(query) ? query : [query], concept]);
   }
 }
 // ── HOOK1 anclado a la narración: cada clip CAE en el ms EXACTO de su frase ──
