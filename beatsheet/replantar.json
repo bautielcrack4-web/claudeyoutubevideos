@@ -68,107 +68,107 @@
       "darken": 0
     },
     {
-      "id": "b9_rpl_h1_green_onion_roots_macro",
+      "id": "b9_rpl_h2_wilting_plant_cloudy",
       "start": 9.64,
       "dur": 1.19,
       "kind": "raw",
-      "src": "broll/rpl_h1_green_onion_roots_macro.mp4",
+      "src": "broll/rpl_h2_wilting_plant_cloudy.mp4",
       "darken": 0
     },
     {
-      "id": "b10_rpl_h1_pineapple_crown_top",
+      "id": "b10_rpl_h2_pepper_seedlings",
       "start": 10.59,
       "dur": 1.19,
       "kind": "raw",
-      "src": "broll/rpl_h1_pineapple_crown_top.mp4",
+      "src": "broll/rpl_h2_pepper_seedlings.mp4",
       "darken": 0
     },
     {
-      "id": "b11_rpl_h1_roots_growing_water_macro",
+      "id": "b11_rpl_h2_seedling_emerging",
       "start": 11.54,
       "dur": 1.19,
       "kind": "raw",
-      "src": "broll/rpl_h1_roots_growing_water_macro.mp4",
+      "src": "broll/rpl_h2_seedling_emerging.mp4",
       "darken": 0
     },
     {
-      "id": "b12_rpl_h1_sprout_timelapse_soil",
+      "id": "b12_rpl_h2_pepper_plant_fruit",
       "start": 12.49,
       "dur": 1.19,
       "kind": "raw",
-      "src": "broll/rpl_h1_sprout_timelapse_soil.mp4",
+      "src": "broll/rpl_h2_pepper_plant_fruit.mp4",
       "darken": 0
     },
     {
-      "id": "b13_rpl_h1_hands_planting_soil",
+      "id": "b13_rpl_tr_greenhouse_interior",
       "start": 13.44,
       "dur": 1.19,
       "kind": "raw",
-      "src": "broll/rpl_h1_hands_planting_soil.mp4",
+      "src": "broll/rpl_tr_greenhouse_interior.mp4",
       "darken": 0
     },
     {
-      "id": "b14_rpl_h1_kitchen_scraps_board",
+      "id": "b14_rpl_tr_sun_kitchen_window",
       "start": 14.39,
       "dur": 1.19,
       "kind": "raw",
-      "src": "broll/rpl_h1_kitchen_scraps_board.mp4",
+      "src": "broll/rpl_tr_sun_kitchen_window.mp4",
       "darken": 0
     },
     {
-      "id": "b15_rpl_h1_harvest_hands_tomatoes",
+      "id": "b15_rpl_tr_scraps_lined_up",
       "start": 15.34,
       "dur": 1.19,
       "kind": "raw",
-      "src": "broll/rpl_h1_harvest_hands_tomatoes.mp4",
+      "src": "broll/rpl_tr_scraps_lined_up.mp4",
       "darken": 0
     },
     {
-      "id": "b16_rpl_h1_fresh_veg_spread_table",
+      "id": "b16_rpl_tr_roots_timelapse",
       "start": 16.29,
       "dur": 1.19,
       "kind": "raw",
-      "src": "broll/rpl_h1_fresh_veg_spread_table.mp4",
+      "src": "broll/rpl_tr_roots_timelapse.mp4",
       "darken": 0
     },
     {
-      "id": "b17_rpl_h1_green_onion_roots_macro",
+      "id": "b17_rpl_tr_money_saved_jar",
       "start": 17.24,
       "dur": 1.19,
       "kind": "raw",
-      "src": "broll/rpl_h1_green_onion_roots_macro.mp4",
+      "src": "broll/rpl_tr_money_saved_jar.mp4",
       "darken": 0
     },
     {
-      "id": "b18_rpl_h1_pineapple_crown_top",
+      "id": "b18_rpl_i1_scallion_root_ends",
       "start": 18.19,
       "dur": 1.19,
       "kind": "raw",
-      "src": "broll/rpl_h1_pineapple_crown_top.mp4",
+      "src": "broll/rpl_i1_scallion_root_ends.mp4",
       "darken": 0
     },
     {
-      "id": "b19_rpl_h1_roots_growing_water_macro",
+      "id": "b19_rpl_i1_scallion_regrow_timelapse",
       "start": 19.14,
       "dur": 1.19,
       "kind": "raw",
-      "src": "broll/rpl_h1_roots_growing_water_macro.mp4",
+      "src": "broll/rpl_i1_scallion_regrow_timelapse.mp4",
       "darken": 0
     },
     {
-      "id": "b20_rpl_h1_sprout_timelapse_soil",
+      "id": "b20_rpl_i1_snipping_scissors",
       "start": 20.09,
       "dur": 1.19,
       "kind": "raw",
-      "src": "broll/rpl_h1_sprout_timelapse_soil.mp4",
+      "src": "broll/rpl_i1_snipping_scissors.mp4",
       "darken": 0
     },
     {
-      "id": "b21_rpl_h1_hands_planting_soil",
+      "id": "b21_rpl_i1_chopped_over_food",
       "start": 21.04,
       "dur": 1.19,
       "kind": "raw",
-      "src": "broll/rpl_h1_hands_planting_soil.mp4",
+      "src": "broll/rpl_i1_chopped_over_food.mp4",
       "darken": 0
     },
     {
@@ -190,35 +190,35 @@
       }
     },
     {
-      "id": "b29_rpl_h1_hands_planting_soil",
+      "id": "b29_rpl_i3_celery_water_window",
       "start": 28.64,
       "dur": 1.19,
       "kind": "raw",
-      "src": "broll/rpl_h1_hands_planting_soil.mp4",
+      "src": "broll/rpl_i3_celery_water_window.mp4",
       "darken": 0
     },
     {
-      "id": "b30_rpl_h1_kitchen_scraps_board",
+      "id": "b30_rpl_i4_bokchoy_base_water",
       "start": 29.59,
       "dur": 1.19,
       "kind": "raw",
-      "src": "broll/rpl_h1_kitchen_scraps_board.mp4",
+      "src": "broll/rpl_i4_bokchoy_base_water.mp4",
       "darken": 0
     },
     {
-      "id": "b31_rpl_h1_harvest_hands_tomatoes",
+      "id": "b31_rpl_i4_asian_leafy_greens",
       "start": 30.54,
       "dur": 1.19,
       "kind": "raw",
-      "src": "broll/rpl_h1_harvest_hands_tomatoes.mp4",
+      "src": "broll/rpl_i4_asian_leafy_greens.mp4",
       "darken": 0
     },
     {
-      "id": "b32_rpl_h1_fresh_veg_spread_table",
+      "id": "b32_rpl_i4_bokchoy_window_jar",
       "start": 31.49,
       "dur": 1.19,
       "kind": "raw",
-      "src": "broll/rpl_h1_fresh_veg_spread_table.mp4",
+      "src": "broll/rpl_i4_bokchoy_window_jar.mp4",
       "darken": 0
     },
     {
@@ -241,91 +241,91 @@
       }
     },
     {
-      "id": "b40_rpl_h1_fresh_veg_spread_table",
+      "id": "b40_rpl_i6_basil_windowsill_plants",
       "start": 39.09,
       "dur": 1.19,
       "kind": "raw",
-      "src": "broll/rpl_h1_fresh_veg_spread_table.mp4",
+      "src": "broll/rpl_i6_basil_windowsill_plants.mp4",
       "darken": 0
     },
     {
-      "id": "b41_rpl_h1_green_onion_roots_macro",
+      "id": "b41_rpl_i6_picking_basil_hand",
       "start": 40.04,
       "dur": 1.19,
       "kind": "raw",
-      "src": "broll/rpl_h1_green_onion_roots_macro.mp4",
+      "src": "broll/rpl_i6_picking_basil_hand.mp4",
       "darken": 0
     },
     {
-      "id": "b42_rpl_h1_pineapple_crown_top",
+      "id": "b42_rpl_i6_basil_timelapse_root",
       "start": 40.99,
       "dur": 1.19,
       "kind": "raw",
-      "src": "broll/rpl_h1_pineapple_crown_top.mp4",
+      "src": "broll/rpl_i6_basil_timelapse_root.mp4",
       "darken": 0
     },
     {
-      "id": "b43_rpl_h1_roots_growing_water_macro",
+      "id": "b43_rpl_i7_mint_cuttings_water",
       "start": 41.94,
       "dur": 1.19,
       "kind": "raw",
-      "src": "broll/rpl_h1_roots_growing_water_macro.mp4",
+      "src": "broll/rpl_i7_mint_cuttings_water.mp4",
       "darken": 0
     },
     {
-      "id": "b44_rpl_h1_sprout_timelapse_soil",
+      "id": "b44_rpl_i7_mint_roots_macro",
       "start": 42.89,
       "dur": 1.19,
       "kind": "raw",
-      "src": "broll/rpl_h1_sprout_timelapse_soil.mp4",
+      "src": "broll/rpl_i7_mint_roots_macro.mp4",
       "darken": 0
     },
     {
-      "id": "b45_rpl_h1_hands_planting_soil",
+      "id": "b45_rpl_i7_mint_timelapse_grow",
       "start": 43.84,
       "dur": 1.19,
       "kind": "raw",
-      "src": "broll/rpl_h1_hands_planting_soil.mp4",
+      "src": "broll/rpl_i7_mint_timelapse_grow.mp4",
       "darken": 0
     },
     {
-      "id": "b46_rpl_h1_kitchen_scraps_board",
+      "id": "b46_rpl_err_pale_wilting_cutting",
       "start": 44.79,
       "dur": 1.19,
       "kind": "raw",
-      "src": "broll/rpl_h1_kitchen_scraps_board.mp4",
+      "src": "broll/rpl_err_pale_wilting_cutting.mp4",
       "darken": 0
     },
     {
-      "id": "b47_rpl_h1_harvest_hands_tomatoes",
+      "id": "b47_rpl_err_cloudy_stagnant_water",
       "start": 45.74,
       "dur": 1.19,
       "kind": "raw",
-      "src": "broll/rpl_h1_harvest_hands_tomatoes.mp4",
+      "src": "broll/rpl_err_cloudy_stagnant_water.mp4",
       "darken": 0
     },
     {
-      "id": "b48_rpl_h1_fresh_veg_spread_table",
+      "id": "b48_rpl_err_slimy_rotting_roots",
       "start": 46.69,
       "dur": 1.19,
       "kind": "raw",
-      "src": "broll/rpl_h1_fresh_veg_spread_table.mp4",
+      "src": "broll/rpl_err_slimy_rotting_roots.mp4",
       "darken": 0
     },
     {
-      "id": "b49_rpl_h1_green_onion_roots_macro",
+      "id": "b49_rpl_err_pouring_old_water",
       "start": 47.64,
       "dur": 1.19,
       "kind": "raw",
-      "src": "broll/rpl_h1_green_onion_roots_macro.mp4",
+      "src": "broll/rpl_err_pouring_old_water.mp4",
       "darken": 0
     },
     {
-      "id": "b50_rpl_h1_pineapple_crown_top",
+      "id": "b50_rpl_err_transplant_rich_soil",
       "start": 48.59,
       "dur": 1.19,
       "kind": "raw",
-      "src": "broll/rpl_h1_pineapple_crown_top.mp4",
+      "src": "broll/rpl_err_transplant_rich_soil.mp4",
       "darken": 0
     },
     {
@@ -347,163 +347,163 @@
       }
     },
     {
-      "id": "b58_rpl_h1_pineapple_crown_top",
+      "id": "b58_rpl_i8_cilantro_garden_bed",
       "start": 56.19,
       "dur": 1.19,
       "kind": "raw",
-      "src": "broll/rpl_h1_pineapple_crown_top.mp4",
+      "src": "broll/rpl_i8_cilantro_garden_bed.mp4",
       "darken": 0
     },
     {
-      "id": "b59_rpl_h1_roots_growing_water_macro",
+      "id": "b59_rpl_i9_planting_clove_soil",
       "start": 57.14,
       "dur": 1.19,
       "kind": "raw",
-      "src": "broll/rpl_h1_roots_growing_water_macro.mp4",
+      "src": "broll/rpl_i9_planting_clove_soil.mp4",
       "darken": 0
     },
     {
-      "id": "b60_rpl_h1_sprout_timelapse_soil",
+      "id": "b60_rpl_i9_garlic_rows_field",
       "start": 58.09,
       "dur": 1.19,
       "kind": "raw",
-      "src": "broll/rpl_h1_sprout_timelapse_soil.mp4",
+      "src": "broll/rpl_i9_garlic_rows_field.mp4",
       "darken": 0
     },
     {
-      "id": "b61_rpl_h1_hands_planting_soil",
+      "id": "b61_rpl_i10_ginger_buds_macro",
       "start": 59.04,
       "dur": 1.19,
       "kind": "raw",
-      "src": "broll/rpl_h1_hands_planting_soil.mp4",
+      "src": "broll/rpl_i10_ginger_buds_macro.mp4",
       "darken": 0
     },
     {
-      "id": "b62_rpl_h1_kitchen_scraps_board",
+      "id": "b62_rpl_i10_planting_ginger_soil",
       "start": 59.99,
       "dur": 1.19,
       "kind": "raw",
-      "src": "broll/rpl_h1_kitchen_scraps_board.mp4",
+      "src": "broll/rpl_i10_planting_ginger_soil.mp4",
       "darken": 0
     },
     {
-      "id": "b63_rpl_h1_harvest_hands_tomatoes",
+      "id": "b63_rpl_i10_ginger_shoot_green",
       "start": 60.94,
       "dur": 1.19,
       "kind": "raw",
-      "src": "broll/rpl_h1_harvest_hands_tomatoes.mp4",
+      "src": "broll/rpl_i10_ginger_shoot_green.mp4",
       "darken": 0
     },
     {
-      "id": "b64_rpl_h1_fresh_veg_spread_table",
+      "id": "b64_rpl_i10_turmeric_root_orange",
       "start": 61.89,
       "dur": 1.19,
       "kind": "raw",
-      "src": "broll/rpl_h1_fresh_veg_spread_table.mp4",
+      "src": "broll/rpl_i10_turmeric_root_orange.mp4",
       "darken": 0
     },
     {
-      "id": "b65_rpl_h1_green_onion_roots_macro",
+      "id": "b65_rpl_i10_ginger_pot_plant",
       "start": 62.84,
       "dur": 1.19,
       "kind": "raw",
-      "src": "broll/rpl_h1_green_onion_roots_macro.mp4",
+      "src": "broll/rpl_i10_ginger_pot_plant.mp4",
       "darken": 0
     },
     {
-      "id": "b66_rpl_h1_pineapple_crown_top",
+      "id": "b66_rpl_i10_ginger_tea_water",
       "start": 63.79,
       "dur": 1.19,
       "kind": "raw",
-      "src": "broll/rpl_h1_pineapple_crown_top.mp4",
+      "src": "broll/rpl_i10_ginger_tea_water.mp4",
       "darken": 0
     },
     {
-      "id": "b67_rpl_h1_roots_growing_water_macro",
+      "id": "b67_rpl_i10_ginger_market_pile",
       "start": 64.74,
       "dur": 1.19,
       "kind": "raw",
-      "src": "broll/rpl_h1_roots_growing_water_macro.mp4",
+      "src": "broll/rpl_i10_ginger_market_pile.mp4",
       "darken": 0
     },
     {
-      "id": "b68_rpl_h1_sprout_timelapse_soil",
+      "id": "b68_rpl_i11_sprouting_potato_pantry",
       "start": 65.69,
       "dur": 1.19,
       "kind": "raw",
-      "src": "broll/rpl_h1_sprout_timelapse_soil.mp4",
+      "src": "broll/rpl_i11_sprouting_potato_pantry.mp4",
       "darken": 0
     },
     {
-      "id": "b69_rpl_h1_hands_planting_soil",
+      "id": "b69_rpl_i11_cutting_potato_pieces",
       "start": 66.64,
       "dur": 1.19,
       "kind": "raw",
-      "src": "broll/rpl_h1_hands_planting_soil.mp4",
+      "src": "broll/rpl_i11_cutting_potato_pieces.mp4",
       "darken": 0
     },
     {
-      "id": "b70_rpl_h1_kitchen_scraps_board",
+      "id": "b70_rpl_i11_potato_pieces_drying",
       "start": 67.59,
       "dur": 1.19,
       "kind": "raw",
-      "src": "broll/rpl_h1_kitchen_scraps_board.mp4",
+      "src": "broll/rpl_i11_potato_pieces_drying.mp4",
       "darken": 0
     },
     {
-      "id": "b71_rpl_h1_harvest_hands_tomatoes",
+      "id": "b71_rpl_i11_planting_trench_soil",
       "start": 68.54,
       "dur": 1.19,
       "kind": "raw",
-      "src": "broll/rpl_h1_harvest_hands_tomatoes.mp4",
+      "src": "broll/rpl_i11_planting_trench_soil.mp4",
       "darken": 0
     },
     {
-      "id": "b72_rpl_h1_fresh_veg_spread_table",
+      "id": "b72_rpl_i11_potato_plants_rows",
       "start": 69.49,
       "dur": 1.19,
       "kind": "raw",
-      "src": "broll/rpl_h1_fresh_veg_spread_table.mp4",
+      "src": "broll/rpl_i11_potato_plants_rows.mp4",
       "darken": 0
     },
     {
-      "id": "b73_rpl_h1_green_onion_roots_macro",
+      "id": "b73_rpl_i11_potato_sprout_macro",
       "start": 70.44,
       "dur": 1.21,
       "kind": "raw",
-      "src": "broll/rpl_h1_green_onion_roots_macro.mp4",
+      "src": "broll/rpl_i11_potato_sprout_macro.mp4",
       "darken": 0
     },
     {
-      "id": "b74_rpl_h2_wilting_plant_cloudy",
+      "id": "b74_rpl_i11_potato_plant_timelapse",
       "start": 71.41,
       "dur": 2.01,
       "kind": "raw",
-      "src": "broll/rpl_h2_wilting_plant_cloudy.mp4",
+      "src": "broll/rpl_i11_potato_plant_timelapse.mp4",
       "darken": 0
     },
     {
-      "id": "b75_rpl_h2_pepper_seedlings",
+      "id": "b75_rpl_i11_washing_potatoes_water",
       "start": 73.02,
       "dur": 2,
       "kind": "raw",
-      "src": "broll/rpl_h2_pepper_seedlings.mp4",
+      "src": "broll/rpl_i11_washing_potatoes_water.mp4",
       "darken": 0
     },
     {
-      "id": "b76_rpl_h2_seedling_emerging",
+      "id": "b76_rpl_i12_sweetpotato_toothpicks_glass",
       "start": 74.62,
       "dur": 2,
       "kind": "raw",
-      "src": "broll/rpl_h2_seedling_emerging.mp4",
+      "src": "broll/rpl_i12_sweetpotato_toothpicks_glass.mp4",
       "darken": 0
     },
     {
-      "id": "b77_rpl_h2_pepper_plant_fruit",
+      "id": "b77_rpl_i12_pulling_a_slip",
       "start": 76.22,
       "dur": 2.01,
       "kind": "raw",
-      "src": "broll/rpl_h2_pepper_plant_fruit.mp4",
+      "src": "broll/rpl_i12_pulling_a_slip.mp4",
       "darken": 0
     },
     {
@@ -530,51 +530,51 @@
       }
     },
     {
-      "id": "b82_rpl_h2_wilting_plant_cloudy",
+      "id": "b82_rpl_i13_carrot_seeds_hand",
       "start": 84.24,
       "dur": 2,
       "kind": "raw",
-      "src": "broll/rpl_h2_wilting_plant_cloudy.mp4",
+      "src": "broll/rpl_i13_carrot_seeds_hand.mp4",
       "darken": 0
     },
     {
-      "id": "b83_rpl_h2_pepper_seedlings",
+      "id": "b83_rpl_i13_pulling_carrots_soil",
       "start": 85.84,
       "dur": 2,
       "kind": "raw",
-      "src": "broll/rpl_h2_pepper_seedlings.mp4",
+      "src": "broll/rpl_i13_pulling_carrots_soil.mp4",
       "darken": 0
     },
     {
-      "id": "b84_rpl_h2_seedling_emerging",
+      "id": "b84_rpl_i13_washing_carrots_water",
       "start": 87.44,
       "dur": 2.01,
       "kind": "raw",
-      "src": "broll/rpl_h2_seedling_emerging.mp4",
+      "src": "broll/rpl_i13_washing_carrots_water.mp4",
       "darken": 0
     },
     {
-      "id": "b85_rpl_h2_pepper_plant_fruit",
+      "id": "b85_rpl_i13_carrots_market_bunch",
       "start": 89.05,
       "dur": 2,
       "kind": "raw",
-      "src": "broll/rpl_h2_pepper_plant_fruit.mp4",
+      "src": "broll/rpl_i13_carrots_market_bunch.mp4",
       "darken": 0
     },
     {
-      "id": "b86_rpl_h2_wilting_plant_cloudy",
+      "id": "b86_rpl_i13_carrot_seedling_soil",
       "start": 90.65,
       "dur": 2,
       "kind": "raw",
-      "src": "broll/rpl_h2_wilting_plant_cloudy.mp4",
+      "src": "broll/rpl_i13_carrot_seedling_soil.mp4",
       "darken": 0
     },
     {
-      "id": "b87_rpl_h2_pepper_seedlings",
+      "id": "b87_rpl_i14_slicing_tomato_rounds",
       "start": 92.25,
       "dur": 2,
       "kind": "raw",
-      "src": "broll/rpl_h2_pepper_seedlings.mp4",
+      "src": "broll/rpl_i14_slicing_tomato_rounds.mp4",
       "darken": 0
     },
     {
@@ -594,115 +594,115 @@
       }
     },
     {
-      "id": "b92_rpl_h2_seedling_emerging",
+      "id": "b92_rpl_i14_tomato_timelapse_grow",
       "start": 100.26,
       "dur": 2.01,
       "kind": "raw",
-      "src": "broll/rpl_h2_seedling_emerging.mp4",
+      "src": "broll/rpl_i14_tomato_timelapse_grow.mp4",
       "darken": 0
     },
     {
-      "id": "b93_rpl_h2_pepper_plant_fruit",
+      "id": "b93_rpl_i15_pineapple_crown_leafy",
       "start": 101.87,
       "dur": 2,
       "kind": "raw",
-      "src": "broll/rpl_h2_pepper_plant_fruit.mp4",
+      "src": "broll/rpl_i15_pineapple_crown_leafy.mp4",
       "darken": 0
     },
     {
-      "id": "b94_rpl_h2_wilting_plant_cloudy",
+      "id": "b94_rpl_i15_stripping_lower_leaves",
       "start": 103.47,
       "dur": 2,
       "kind": "raw",
-      "src": "broll/rpl_h2_wilting_plant_cloudy.mp4",
+      "src": "broll/rpl_i15_stripping_lower_leaves.mp4",
       "darken": 0
     },
     {
-      "id": "b95_rpl_h2_pepper_seedlings",
+      "id": "b95_rpl_i15_pineapple_crown_drying",
       "start": 105.07,
       "dur": 2.01,
       "kind": "raw",
-      "src": "broll/rpl_h2_pepper_seedlings.mp4",
+      "src": "broll/rpl_i15_pineapple_crown_drying.mp4",
       "darken": 0
     },
     {
-      "id": "b96_rpl_h2_seedling_emerging",
+      "id": "b96_rpl_i15_crown_rooting_water",
       "start": 106.68,
       "dur": 2,
       "kind": "raw",
-      "src": "broll/rpl_h2_seedling_emerging.mp4",
+      "src": "broll/rpl_i15_crown_rooting_water.mp4",
       "darken": 0
     },
     {
-      "id": "b97_rpl_h2_pepper_plant_fruit",
+      "id": "b97_rpl_i15_mature_pineapple_fruit",
       "start": 108.28,
       "dur": 2,
       "kind": "raw",
-      "src": "broll/rpl_h2_pepper_plant_fruit.mp4",
+      "src": "broll/rpl_i15_mature_pineapple_fruit.mp4",
       "darken": 0
     },
     {
-      "id": "b98_rpl_h2_wilting_plant_cloudy",
+      "id": "b98_rpl_i15_pineapple_root_bumps_macro",
       "start": 109.88,
       "dur": 2,
       "kind": "raw",
-      "src": "broll/rpl_h2_wilting_plant_cloudy.mp4",
+      "src": "broll/rpl_i15_pineapple_root_bumps_macro.mp4",
       "darken": 0
     },
     {
-      "id": "b99_rpl_h2_pepper_seedlings",
+      "id": "b99_rpl_i15_pineapple_field_rows",
       "start": 111.48,
       "dur": 2.01,
       "kind": "raw",
-      "src": "broll/rpl_h2_pepper_seedlings.mp4",
+      "src": "broll/rpl_i15_pineapple_field_rows.mp4",
       "darken": 0
     },
     {
-      "id": "b100_rpl_h2_seedling_emerging",
+      "id": "b100_rpl_i15_planting_crown_soil",
       "start": 113.09,
       "dur": 2,
       "kind": "raw",
-      "src": "broll/rpl_h2_seedling_emerging.mp4",
+      "src": "broll/rpl_i15_planting_crown_soil.mp4",
       "darken": 0
     },
     {
-      "id": "b101_rpl_h2_pepper_plant_fruit",
+      "id": "b101_rpl_i15_pineapple_crown_window",
       "start": 114.69,
       "dur": 2,
       "kind": "raw",
-      "src": "broll/rpl_h2_pepper_plant_fruit.mp4",
+      "src": "broll/rpl_i15_pineapple_crown_window.mp4",
       "darken": 0
     },
     {
-      "id": "b102_rpl_h2_wilting_plant_cloudy",
+      "id": "b102_rpl_i15_pineapple_leaves_macro",
       "start": 116.29,
       "dur": 2.01,
       "kind": "raw",
-      "src": "broll/rpl_h2_wilting_plant_cloudy.mp4",
+      "src": "broll/rpl_i15_pineapple_leaves_macro.mp4",
       "darken": 0
     },
     {
-      "id": "b103_rpl_h2_pepper_seedlings",
+      "id": "b103_rpl_i15_cutting_pineapple_top",
       "start": 117.9,
       "dur": 2,
       "kind": "raw",
-      "src": "broll/rpl_h2_pepper_seedlings.mp4",
+      "src": "broll/rpl_i15_cutting_pineapple_top.mp4",
       "darken": 0
     },
     {
-      "id": "b104_rpl_h2_seedling_emerging",
+      "id": "b104_rpl_i15_pineapple_timelapse_root",
       "start": 119.5,
       "dur": 2,
       "kind": "raw",
-      "src": "broll/rpl_h2_seedling_emerging.mp4",
+      "src": "broll/rpl_i15_pineapple_timelapse_root.mp4",
       "darken": 0
     },
     {
-      "id": "b105_rpl_h2_pepper_plant_fruit",
+      "id": "b105_rpl_i16_cutting_open_pepper",
       "start": 121.1,
       "dur": 1.93,
       "kind": "raw",
-      "src": "broll/rpl_h2_pepper_plant_fruit.mp4",
+      "src": "broll/rpl_i16_cutting_open_pepper.mp4",
       "darken": 0
     },
     {
@@ -957,35 +957,35 @@
       "darken": 0
     },
     {
-      "id": "b130_rpl_i1_scallion_root_ends",
+      "id": "b130_rpl_i1_chopped_over_food",
       "start": 229.21,
       "dur": 3.82,
+      "kind": "raw",
+      "src": "broll/rpl_i1_chopped_over_food.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b131_rpl_i1_scallion_root_ends",
+      "start": 232.53,
+      "dur": 3.81,
       "kind": "raw",
       "src": "broll/rpl_i1_scallion_root_ends.mp4",
       "darken": 0
     },
     {
-      "id": "b131_rpl_i1_scallion_regrow_timelapse",
-      "start": 232.53,
-      "dur": 3.81,
+      "id": "b132_rpl_i1_scallion_regrow_timelapse",
+      "start": 235.84,
+      "dur": 3.82,
       "kind": "raw",
       "src": "broll/rpl_i1_scallion_regrow_timelapse.mp4",
       "darken": 0
     },
     {
-      "id": "b132_rpl_i1_snipping_scissors",
-      "start": 235.84,
-      "dur": 3.82,
-      "kind": "raw",
-      "src": "broll/rpl_i1_snipping_scissors.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b133_rpl_i1_chopped_over_food",
+      "id": "b133_rpl_i1_snipping_scissors",
       "start": 239.16,
       "dur": 3.81,
       "kind": "raw",
-      "src": "broll/rpl_i1_chopped_over_food.mp4",
+      "src": "broll/rpl_i1_snipping_scissors.mp4",
       "darken": 0
     },
     {
@@ -1449,51 +1449,51 @@
       "darken": 0
     },
     {
-      "id": "b190_rpl_i5_chopping_leek_macro",
+      "id": "b190_rpl_i5_leeks_rustic_kitchen",
       "start": 425.06,
+      "dur": 3.97,
+      "kind": "raw",
+      "src": "broll/rpl_i5_leeks_rustic_kitchen.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b191_rpl_i5_leek_root_macro",
+      "start": 428.53,
+      "dur": 3.98,
+      "kind": "raw",
+      "src": "broll/rpl_i5_leek_root_macro.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b192_rpl_i5_chopping_leek_macro",
+      "start": 432.01,
       "dur": 3.97,
       "kind": "raw",
       "src": "broll/rpl_i5_chopping_leek_macro.mp4",
       "darken": 0
     },
     {
-      "id": "b191_rpl_i5_leek_soup_pot",
-      "start": 428.53,
-      "dur": 3.98,
+      "id": "b193_rpl_i5_leek_soup_pot",
+      "start": 435.48,
+      "dur": 3.97,
       "kind": "raw",
       "src": "broll/rpl_i5_leek_soup_pot.mp4",
       "darken": 0
     },
     {
-      "id": "b192_rpl_i5_washing_leek_water",
-      "start": 432.01,
-      "dur": 3.97,
+      "id": "b194_rpl_i5_washing_leek_water",
+      "start": 438.95,
+      "dur": 3.98,
       "kind": "raw",
       "src": "broll/rpl_i5_washing_leek_water.mp4",
       "darken": 0
     },
     {
-      "id": "b193_rpl_i5_leek_regrow_upward",
-      "start": 435.48,
-      "dur": 3.97,
-      "kind": "raw",
-      "src": "broll/rpl_i5_leek_regrow_upward.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b194_rpl_i5_leeks_rustic_kitchen",
-      "start": 438.95,
-      "dur": 3.98,
-      "kind": "raw",
-      "src": "broll/rpl_i5_leeks_rustic_kitchen.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b195_rpl_i5_leek_root_macro",
+      "id": "b195_rpl_i5_chopping_leek_macro",
       "start": 442.43,
       "dur": 3.97,
       "kind": "raw",
-      "src": "broll/rpl_i5_leek_root_macro.mp4",
+      "src": "broll/rpl_i5_chopping_leek_macro.mp4",
       "darken": 0
     },
     {
@@ -1584,19 +1584,19 @@
       "darken": 0
     },
     {
-      "id": "b205_rpl_i6_basil_cuttings_glass",
+      "id": "b205_rpl_i6_basil_windowsill_plants",
       "start": 476.3,
       "dur": 3.76,
       "kind": "raw",
-      "src": "broll/rpl_i6_basil_cuttings_glass.mp4",
+      "src": "broll/rpl_i6_basil_windowsill_plants.mp4",
       "darken": 0
     },
     {
-      "id": "b206_rpl_i6_basil_windowsill_plants",
+      "id": "b206_rpl_i6_basil_cuttings_glass",
       "start": 479.56,
       "dur": 3.76,
       "kind": "raw",
-      "src": "broll/rpl_i6_basil_windowsill_plants.mp4",
+      "src": "broll/rpl_i6_basil_cuttings_glass.mp4",
       "darken": 0
     },
     {
@@ -1827,35 +1827,35 @@
       "darken": 0
     },
     {
-      "id": "b235_rpl_err_cloudy_stagnant_water",
+      "id": "b235_rpl_err_transplant_rich_soil",
       "start": 573.79,
       "dur": 3.67,
+      "kind": "raw",
+      "src": "broll/rpl_err_transplant_rich_soil.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b236_rpl_err_cloudy_stagnant_water",
+      "start": 576.96,
+      "dur": 3.66,
       "kind": "raw",
       "src": "broll/rpl_err_cloudy_stagnant_water.mp4",
       "darken": 0
     },
     {
-      "id": "b236_rpl_err_slimy_rotting_roots",
-      "start": 576.96,
-      "dur": 3.66,
+      "id": "b237_rpl_err_slimy_rotting_roots",
+      "start": 580.12,
+      "dur": 3.67,
       "kind": "raw",
       "src": "broll/rpl_err_slimy_rotting_roots.mp4",
       "darken": 0
     },
     {
-      "id": "b237_rpl_err_pouring_old_water",
-      "start": 580.12,
-      "dur": 3.67,
-      "kind": "raw",
-      "src": "broll/rpl_err_pouring_old_water.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b238_rpl_err_transplant_rich_soil",
+      "id": "b238_rpl_err_pouring_old_water",
       "start": 583.29,
       "dur": 3.66,
       "kind": "raw",
-      "src": "broll/rpl_err_transplant_rich_soil.mp4",
+      "src": "broll/rpl_err_pouring_old_water.mp4",
       "darken": 0
     },
     {
@@ -2094,67 +2094,67 @@
       "darken": 0
     },
     {
-      "id": "b265_rpl_i8_cilantro_roots_macro",
+      "id": "b265_rpl_i8_chopping_cilantro",
       "start": 669.37,
-      "dur": 3.77,
-      "kind": "raw",
-      "src": "broll/rpl_i8_cilantro_roots_macro.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b266_rpl_i8_cilantro_garden_bed",
-      "start": 672.64,
-      "dur": 3.76,
-      "kind": "raw",
-      "src": "broll/rpl_i8_cilantro_garden_bed.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b267_rpl_i8_cilantro_stems_water",
-      "start": 675.9,
-      "dur": 3.77,
-      "kind": "raw",
-      "src": "broll/rpl_i8_cilantro_stems_water.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b268_rpl_i8_cilantro_regrow_fresh",
-      "start": 679.17,
-      "dur": 3.77,
-      "kind": "raw",
-      "src": "broll/rpl_i8_cilantro_regrow_fresh.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b269_rpl_i8_cilantro_flowering",
-      "start": 682.44,
-      "dur": 3.76,
-      "kind": "raw",
-      "src": "broll/rpl_i8_cilantro_flowering.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b270_rpl_i8_coriander_seeds_macro",
-      "start": 685.7,
-      "dur": 3.77,
-      "kind": "raw",
-      "src": "broll/rpl_i8_coriander_seeds_macro.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b271_rpl_i8_chopping_cilantro",
-      "start": 688.97,
       "dur": 3.77,
       "kind": "raw",
       "src": "broll/rpl_i8_chopping_cilantro.mp4",
       "darken": 0
     },
     {
-      "id": "b272_rpl_i8_cilantro_window_jar",
-      "start": 692.24,
+      "id": "b266_rpl_i8_cilantro_window_jar",
+      "start": 672.64,
       "dur": 3.76,
       "kind": "raw",
       "src": "broll/rpl_i8_cilantro_window_jar.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b267_rpl_i8_cilantro_roots_macro",
+      "start": 675.9,
+      "dur": 3.77,
+      "kind": "raw",
+      "src": "broll/rpl_i8_cilantro_roots_macro.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b268_rpl_i8_cilantro_garden_bed",
+      "start": 679.17,
+      "dur": 3.77,
+      "kind": "raw",
+      "src": "broll/rpl_i8_cilantro_garden_bed.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b269_rpl_i8_cilantro_stems_water",
+      "start": 682.44,
+      "dur": 3.76,
+      "kind": "raw",
+      "src": "broll/rpl_i8_cilantro_stems_water.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b270_rpl_i8_cilantro_regrow_fresh",
+      "start": 685.7,
+      "dur": 3.77,
+      "kind": "raw",
+      "src": "broll/rpl_i8_cilantro_regrow_fresh.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b271_rpl_i8_cilantro_flowering",
+      "start": 688.97,
+      "dur": 3.77,
+      "kind": "raw",
+      "src": "broll/rpl_i8_cilantro_flowering.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b272_rpl_i8_coriander_seeds_macro",
+      "start": 692.24,
+      "dur": 3.76,
+      "kind": "raw",
+      "src": "broll/rpl_i8_coriander_seeds_macro.mp4",
       "darken": 0
     },
     {
@@ -2341,83 +2341,83 @@
       "darken": 0
     },
     {
-      "id": "b293_rpl_i10_turmeric_root_orange",
+      "id": "b293_rpl_i10_planting_ginger_soil",
       "start": 760.34,
-      "dur": 3.69,
-      "kind": "raw",
-      "src": "broll/rpl_i10_turmeric_root_orange.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b294_rpl_i10_ginger_pot_plant",
-      "start": 763.53,
-      "dur": 3.69,
-      "kind": "raw",
-      "src": "broll/rpl_i10_ginger_pot_plant.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b295_rpl_i10_ginger_tea_water",
-      "start": 766.72,
-      "dur": 3.69,
-      "kind": "raw",
-      "src": "broll/rpl_i10_ginger_tea_water.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b296_rpl_i10_ginger_market_pile",
-      "start": 769.91,
-      "dur": 3.69,
-      "kind": "raw",
-      "src": "broll/rpl_i10_ginger_market_pile.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b297_rpl_i10_ginger_buds_macro",
-      "start": 773.1,
-      "dur": 3.69,
-      "kind": "raw",
-      "src": "broll/rpl_i10_ginger_buds_macro.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b298_rpl_i10_planting_ginger_soil",
-      "start": 776.29,
       "dur": 3.69,
       "kind": "raw",
       "src": "broll/rpl_i10_planting_ginger_soil.mp4",
       "darken": 0
     },
     {
-      "id": "b299_rpl_i10_ginger_shoot_green",
-      "start": 779.48,
+      "id": "b294_rpl_i10_ginger_shoot_green",
+      "start": 763.53,
       "dur": 3.69,
       "kind": "raw",
       "src": "broll/rpl_i10_ginger_shoot_green.mp4",
       "darken": 0
     },
     {
-      "id": "b300_rpl_i10_turmeric_root_orange",
-      "start": 782.67,
+      "id": "b295_rpl_i10_turmeric_root_orange",
+      "start": 766.72,
       "dur": 3.69,
       "kind": "raw",
       "src": "broll/rpl_i10_turmeric_root_orange.mp4",
       "darken": 0
     },
     {
-      "id": "b301_rpl_i10_ginger_pot_plant",
-      "start": 785.86,
+      "id": "b296_rpl_i10_ginger_pot_plant",
+      "start": 769.91,
       "dur": 3.69,
       "kind": "raw",
       "src": "broll/rpl_i10_ginger_pot_plant.mp4",
       "darken": 0
     },
     {
-      "id": "b302_rpl_i10_ginger_tea_water",
-      "start": 789.05,
+      "id": "b297_rpl_i10_ginger_tea_water",
+      "start": 773.1,
       "dur": 3.69,
       "kind": "raw",
       "src": "broll/rpl_i10_ginger_tea_water.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b298_rpl_i10_ginger_pot_plant",
+      "start": 776.29,
+      "dur": 3.69,
+      "kind": "raw",
+      "src": "broll/rpl_i10_ginger_pot_plant.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b299_rpl_i10_ginger_tea_water",
+      "start": 779.48,
+      "dur": 3.69,
+      "kind": "raw",
+      "src": "broll/rpl_i10_ginger_tea_water.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b300_rpl_i10_ginger_market_pile",
+      "start": 782.67,
+      "dur": 3.69,
+      "kind": "raw",
+      "src": "broll/rpl_i10_ginger_market_pile.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b301_rpl_i10_ginger_buds_macro",
+      "start": 785.86,
+      "dur": 3.69,
+      "kind": "raw",
+      "src": "broll/rpl_i10_ginger_buds_macro.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b302_rpl_i10_turmeric_root_orange",
+      "start": 789.05,
+      "dur": 3.69,
+      "kind": "raw",
+      "src": "broll/rpl_i10_turmeric_root_orange.mp4",
       "darken": 0
     },
     {
@@ -2593,43 +2593,43 @@
       "darken": 0
     },
     {
-      "id": "b321_rpl_i11_planting_trench_soil",
+      "id": "b321_rpl_i11_potato_sprout_macro",
       "start": 851.36,
+      "dur": 3.84,
+      "kind": "raw",
+      "src": "broll/rpl_i11_potato_sprout_macro.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b322_rpl_i11_planting_trench_soil",
+      "start": 854.7,
       "dur": 3.84,
       "kind": "raw",
       "src": "broll/rpl_i11_planting_trench_soil.mp4",
       "darken": 0
     },
     {
-      "id": "b322_rpl_i11_potato_plants_rows",
-      "start": 854.7,
-      "dur": 3.84,
-      "kind": "raw",
-      "src": "broll/rpl_i11_potato_plants_rows.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b323_rpl_i11_potato_sprout_macro",
+      "id": "b323_rpl_i11_potato_plant_timelapse",
       "start": 858.04,
       "dur": 3.85,
-      "kind": "raw",
-      "src": "broll/rpl_i11_potato_sprout_macro.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b324_rpl_i11_potato_plant_timelapse",
-      "start": 861.39,
-      "dur": 3.84,
       "kind": "raw",
       "src": "broll/rpl_i11_potato_plant_timelapse.mp4",
       "darken": 0
     },
     {
-      "id": "b325_rpl_i11_washing_potatoes_water",
+      "id": "b324_rpl_i11_washing_potatoes_water",
+      "start": 861.39,
+      "dur": 3.84,
+      "kind": "raw",
+      "src": "broll/rpl_i11_washing_potatoes_water.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b325_rpl_i11_potato_plants_rows",
       "start": 864.73,
       "dur": 3.85,
       "kind": "raw",
-      "src": "broll/rpl_i11_washing_potatoes_water.mp4",
+      "src": "broll/rpl_i11_potato_plants_rows.mp4",
       "darken": 0
     },
     {
@@ -2728,35 +2728,35 @@
       "darken": 0
     },
     {
-      "id": "b336_rpl_i12_slips_macro_roots",
+      "id": "b336_rpl_i12_pulling_a_slip",
       "start": 901.77,
-      "dur": 3.93,
-      "kind": "raw",
-      "src": "broll/rpl_i12_slips_macro_roots.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b337_rpl_i12_sweetpotato_toothpicks_glass",
-      "start": 905.2,
-      "dur": 3.93,
-      "kind": "raw",
-      "src": "broll/rpl_i12_sweetpotato_toothpicks_glass.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b338_rpl_i12_pulling_a_slip",
-      "start": 908.63,
       "dur": 3.93,
       "kind": "raw",
       "src": "broll/rpl_i12_pulling_a_slip.mp4",
       "darken": 0
     },
     {
-      "id": "b339_rpl_i12_rooting_slips_water",
-      "start": 912.06,
+      "id": "b337_rpl_i12_rooting_slips_water",
+      "start": 905.2,
       "dur": 3.93,
       "kind": "raw",
       "src": "broll/rpl_i12_rooting_slips_water.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b338_rpl_i12_slips_macro_roots",
+      "start": 908.63,
+      "dur": 3.93,
+      "kind": "raw",
+      "src": "broll/rpl_i12_slips_macro_roots.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b339_rpl_i12_sweetpotato_toothpicks_glass",
+      "start": 912.06,
+      "dur": 3.93,
+      "kind": "raw",
+      "src": "broll/rpl_i12_sweetpotato_toothpicks_glass.mp4",
       "darken": 0
     },
     {
@@ -2883,59 +2883,59 @@
       "darken": 0
     },
     {
-      "id": "b355_rpl_i13_carrots_market_bunch",
+      "id": "b355_rpl_i13_carrot_seeds_hand",
       "start": 966.44,
       "dur": 3.83,
-      "kind": "raw",
-      "src": "broll/rpl_i13_carrots_market_bunch.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b356_rpl_i13_carrot_seedling_soil",
-      "start": 969.77,
-      "dur": 3.84,
-      "kind": "raw",
-      "src": "broll/rpl_i13_carrot_seedling_soil.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b357_rpl_i13_cutting_carrot_tops",
-      "start": 973.11,
-      "dur": 3.83,
-      "kind": "raw",
-      "src": "broll/rpl_i13_cutting_carrot_tops.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b358_rpl_i13_carrot_tops_dish_water",
-      "start": 976.44,
-      "dur": 3.83,
-      "kind": "raw",
-      "src": "broll/rpl_i13_carrot_tops_dish_water.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b359_rpl_i13_carrot_seeds_hand",
-      "start": 979.77,
-      "dur": 3.84,
       "kind": "raw",
       "src": "broll/rpl_i13_carrot_seeds_hand.mp4",
       "darken": 0
     },
     {
-      "id": "b360_rpl_i13_pulling_carrots_soil",
-      "start": 983.11,
+      "id": "b356_rpl_i13_carrots_market_bunch",
+      "start": 969.77,
+      "dur": 3.84,
+      "kind": "raw",
+      "src": "broll/rpl_i13_carrots_market_bunch.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b357_rpl_i13_carrot_seedling_soil",
+      "start": 973.11,
+      "dur": 3.83,
+      "kind": "raw",
+      "src": "broll/rpl_i13_carrot_seedling_soil.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b358_rpl_i13_pulling_carrots_soil",
+      "start": 976.44,
       "dur": 3.83,
       "kind": "raw",
       "src": "broll/rpl_i13_pulling_carrots_soil.mp4",
       "darken": 0
     },
     {
-      "id": "b361_rpl_i13_washing_carrots_water",
-      "start": 986.44,
+      "id": "b359_rpl_i13_cutting_carrot_tops",
+      "start": 979.77,
+      "dur": 3.84,
+      "kind": "raw",
+      "src": "broll/rpl_i13_cutting_carrot_tops.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b360_rpl_i13_washing_carrots_water",
+      "start": 983.11,
       "dur": 3.83,
       "kind": "raw",
       "src": "broll/rpl_i13_washing_carrots_water.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b361_rpl_i13_carrot_tops_dish_water",
+      "start": 986.44,
+      "dur": 3.83,
+      "kind": "raw",
+      "src": "broll/rpl_i13_carrot_tops_dish_water.mp4",
       "darken": 0
     },
     {
@@ -3038,51 +3038,51 @@
       "darken": 0
     },
     {
-      "id": "b374_rpl_i14_seedlings_tray_dozens",
+      "id": "b374_rpl_i14_covering_slices_soil",
       "start": 1029.45,
-      "dur": 3.73,
-      "kind": "raw",
-      "src": "broll/rpl_i14_seedlings_tray_dozens.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b375_rpl_i14_tomato_seeds_macro",
-      "start": 1032.68,
-      "dur": 3.72,
-      "kind": "raw",
-      "src": "broll/rpl_i14_tomato_seeds_macro.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b376_rpl_i14_tomato_timelapse_grow",
-      "start": 1035.9,
-      "dur": 3.73,
-      "kind": "raw",
-      "src": "broll/rpl_i14_tomato_timelapse_grow.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b377_rpl_i14_slicing_tomato_rounds",
-      "start": 1039.13,
-      "dur": 3.72,
-      "kind": "raw",
-      "src": "broll/rpl_i14_slicing_tomato_rounds.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b378_rpl_i14_covering_slices_soil",
-      "start": 1042.35,
       "dur": 3.73,
       "kind": "raw",
       "src": "broll/rpl_i14_covering_slices_soil.mp4",
       "darken": 0
     },
     {
-      "id": "b379_rpl_i14_tomato_seedlings_row",
+      "id": "b375_rpl_i14_tomato_seedlings_row",
+      "start": 1032.68,
+      "dur": 3.72,
+      "kind": "raw",
+      "src": "broll/rpl_i14_tomato_seedlings_row.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b376_rpl_i14_seedlings_tray_dozens",
+      "start": 1035.9,
+      "dur": 3.73,
+      "kind": "raw",
+      "src": "broll/rpl_i14_seedlings_tray_dozens.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b377_rpl_i14_tomato_seeds_macro",
+      "start": 1039.13,
+      "dur": 3.72,
+      "kind": "raw",
+      "src": "broll/rpl_i14_tomato_seeds_macro.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b378_rpl_i14_tomato_timelapse_grow",
+      "start": 1042.35,
+      "dur": 3.73,
+      "kind": "raw",
+      "src": "broll/rpl_i14_tomato_timelapse_grow.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b379_rpl_i14_slicing_tomato_rounds",
       "start": 1045.58,
       "dur": 3.73,
       "kind": "raw",
-      "src": "broll/rpl_i14_tomato_seedlings_row.mp4",
+      "src": "broll/rpl_i14_slicing_tomato_rounds.mp4",
       "darken": 0
     },
     {
@@ -3094,19 +3094,19 @@
       "darken": 0
     },
     {
-      "id": "b381_rpl_i14_tomato_seeds_macro",
+      "id": "b381_rpl_i14_tomato_timelapse_grow",
       "start": 1052.03,
       "dur": 3.73,
       "kind": "raw",
-      "src": "broll/rpl_i14_tomato_seeds_macro.mp4",
+      "src": "broll/rpl_i14_tomato_timelapse_grow.mp4",
       "darken": 0
     },
     {
-      "id": "b382_rpl_i14_tomato_timelapse_grow",
+      "id": "b382_rpl_i14_tomato_seeds_macro",
       "start": 1055.26,
       "dur": 3.73,
       "kind": "raw",
-      "src": "broll/rpl_i14_tomato_timelapse_grow.mp4",
+      "src": "broll/rpl_i14_tomato_seeds_macro.mp4",
       "darken": 0
     },
     {
@@ -3242,107 +3242,107 @@
       "darken": 0
     },
     {
-      "id": "b397_rpl_i15_pineapple_field_rows",
+      "id": "b397_rpl_i15_mature_pineapple_fruit",
       "start": 1104.58,
-      "dur": 3.88,
-      "kind": "raw",
-      "src": "broll/rpl_i15_pineapple_field_rows.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b398_rpl_i15_planting_crown_soil",
-      "start": 1107.96,
-      "dur": 3.87,
-      "kind": "raw",
-      "src": "broll/rpl_i15_planting_crown_soil.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b399_rpl_i15_pineapple_crown_window",
-      "start": 1111.33,
-      "dur": 3.88,
-      "kind": "raw",
-      "src": "broll/rpl_i15_pineapple_crown_window.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b400_rpl_i15_pineapple_leaves_macro",
-      "start": 1114.71,
-      "dur": 3.88,
-      "kind": "raw",
-      "src": "broll/rpl_i15_pineapple_leaves_macro.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b401_rpl_i15_cutting_pineapple_top",
-      "start": 1118.09,
-      "dur": 3.88,
-      "kind": "raw",
-      "src": "broll/rpl_i15_cutting_pineapple_top.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b402_rpl_i15_pineapple_timelapse_root",
-      "start": 1121.47,
-      "dur": 3.88,
-      "kind": "raw",
-      "src": "broll/rpl_i15_pineapple_timelapse_root.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b403_rpl_i15_pineapple_crown_leafy",
-      "start": 1124.85,
-      "dur": 3.88,
-      "kind": "raw",
-      "src": "broll/rpl_i15_pineapple_crown_leafy.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b404_rpl_i15_stripping_lower_leaves",
-      "start": 1128.23,
-      "dur": 3.88,
-      "kind": "raw",
-      "src": "broll/rpl_i15_stripping_lower_leaves.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b405_rpl_i15_pineapple_crown_drying",
-      "start": 1131.61,
-      "dur": 3.87,
-      "kind": "raw",
-      "src": "broll/rpl_i15_pineapple_crown_drying.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b406_rpl_i15_crown_rooting_water",
-      "start": 1134.98,
-      "dur": 3.88,
-      "kind": "raw",
-      "src": "broll/rpl_i15_crown_rooting_water.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b407_rpl_i15_mature_pineapple_fruit",
-      "start": 1138.36,
       "dur": 3.88,
       "kind": "raw",
       "src": "broll/rpl_i15_mature_pineapple_fruit.mp4",
       "darken": 0
     },
     {
-      "id": "b408_rpl_i15_pineapple_root_bumps_macro",
-      "start": 1141.74,
-      "dur": 3.88,
+      "id": "b398_rpl_i15_pineapple_root_bumps_macro",
+      "start": 1107.96,
+      "dur": 3.87,
       "kind": "raw",
       "src": "broll/rpl_i15_pineapple_root_bumps_macro.mp4",
       "darken": 0
     },
     {
-      "id": "b409_rpl_i15_pineapple_field_rows",
-      "start": 1145.12,
+      "id": "b399_rpl_i15_pineapple_field_rows",
+      "start": 1111.33,
       "dur": 3.88,
       "kind": "raw",
       "src": "broll/rpl_i15_pineapple_field_rows.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b400_rpl_i15_planting_crown_soil",
+      "start": 1114.71,
+      "dur": 3.88,
+      "kind": "raw",
+      "src": "broll/rpl_i15_planting_crown_soil.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b401_rpl_i15_pineapple_crown_window",
+      "start": 1118.09,
+      "dur": 3.88,
+      "kind": "raw",
+      "src": "broll/rpl_i15_pineapple_crown_window.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b402_rpl_i15_pineapple_leaves_macro",
+      "start": 1121.47,
+      "dur": 3.88,
+      "kind": "raw",
+      "src": "broll/rpl_i15_pineapple_leaves_macro.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b403_rpl_i15_cutting_pineapple_top",
+      "start": 1124.85,
+      "dur": 3.88,
+      "kind": "raw",
+      "src": "broll/rpl_i15_cutting_pineapple_top.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b404_rpl_i15_pineapple_timelapse_root",
+      "start": 1128.23,
+      "dur": 3.88,
+      "kind": "raw",
+      "src": "broll/rpl_i15_pineapple_timelapse_root.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b405_rpl_i15_pineapple_crown_leafy",
+      "start": 1131.61,
+      "dur": 3.87,
+      "kind": "raw",
+      "src": "broll/rpl_i15_pineapple_crown_leafy.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b406_rpl_i15_pineapple_timelapse_root",
+      "start": 1134.98,
+      "dur": 3.88,
+      "kind": "raw",
+      "src": "broll/rpl_i15_pineapple_timelapse_root.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b407_rpl_i15_stripping_lower_leaves",
+      "start": 1138.36,
+      "dur": 3.88,
+      "kind": "raw",
+      "src": "broll/rpl_i15_stripping_lower_leaves.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b408_rpl_i15_pineapple_crown_drying",
+      "start": 1141.74,
+      "dur": 3.88,
+      "kind": "raw",
+      "src": "broll/rpl_i15_pineapple_crown_drying.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b409_rpl_i15_crown_rooting_water",
+      "start": 1145.12,
+      "dur": 3.88,
+      "kind": "raw",
+      "src": "broll/rpl_i15_crown_rooting_water.mp4",
       "darken": 0
     },
     {
@@ -3421,59 +3421,59 @@
       "darken": 0
     },
     {
-      "id": "b419_rpl_i16_picking_pepper_plant",
+      "id": "b419_rpl_i16_colorful_peppers_market",
       "start": 1178.29,
+      "dur": 3.77,
+      "kind": "raw",
+      "src": "broll/rpl_i16_colorful_peppers_market.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b420_rpl_i16_pepper_seedling_macro",
+      "start": 1181.56,
+      "dur": 3.78,
+      "kind": "raw",
+      "src": "broll/rpl_i16_pepper_seedling_macro.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b421_rpl_i16_watering_pepper_pot",
+      "start": 1184.84,
+      "dur": 3.78,
+      "kind": "raw",
+      "src": "broll/rpl_i16_watering_pepper_pot.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b422_rpl_i16_picking_pepper_plant",
+      "start": 1188.12,
       "dur": 3.77,
       "kind": "raw",
       "src": "broll/rpl_i16_picking_pepper_plant.mp4",
       "darken": 0
     },
     {
-      "id": "b420_rpl_i16_cutting_open_pepper",
-      "start": 1181.56,
+      "id": "b423_rpl_i16_cutting_open_pepper",
+      "start": 1191.39,
       "dur": 3.78,
       "kind": "raw",
       "src": "broll/rpl_i16_cutting_open_pepper.mp4",
       "darken": 0
     },
     {
-      "id": "b421_rpl_i16_pressing_seeds_soil",
-      "start": 1184.84,
-      "dur": 3.78,
+      "id": "b424_rpl_i16_pressing_seeds_soil",
+      "start": 1194.67,
+      "dur": 3.77,
       "kind": "raw",
       "src": "broll/rpl_i16_pressing_seeds_soil.mp4",
       "darken": 0
     },
     {
-      "id": "b422_rpl_i16_pepper_seedlings_germinate",
-      "start": 1188.12,
-      "dur": 3.77,
-      "kind": "raw",
-      "src": "broll/rpl_i16_pepper_seedlings_germinate.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b423_rpl_i16_colorful_peppers_market",
-      "start": 1191.39,
-      "dur": 3.78,
-      "kind": "raw",
-      "src": "broll/rpl_i16_colorful_peppers_market.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b424_rpl_i16_pepper_seedling_macro",
-      "start": 1194.67,
-      "dur": 3.77,
-      "kind": "raw",
-      "src": "broll/rpl_i16_pepper_seedling_macro.mp4",
-      "darken": 0
-    },
-    {
-      "id": "b425_rpl_i16_watering_pepper_pot",
+      "id": "b425_rpl_i16_pepper_seedlings_germinate",
       "start": 1197.94,
       "dur": 3.78,
       "kind": "raw",
-      "src": "broll/rpl_i16_watering_pepper_pot.mp4",
+      "src": "broll/rpl_i16_pepper_seedlings_germinate.mp4",
       "darken": 0
     },
     {
@@ -3570,11 +3570,11 @@
       "caption": "comida que se siembra a sí misma, desde tu basura"
     },
     {
-      "id": "b433_rpl_cl_scraps_returned_soil",
+      "id": "b433_rpl_cl_seedlings_windowsill_row",
       "start": 1222.61,
       "dur": 3.47,
       "kind": "raw",
-      "src": "broll/rpl_cl_scraps_returned_soil.mp4",
+      "src": "broll/rpl_cl_seedlings_windowsill_row.mp4",
       "darken": 0
     },
     {
@@ -3894,6 +3894,35 @@
           "t": " vivo.",
           "at": 1.73,
           "hl": true
+        }
+      ]
+    },
+    {
+      "id": "cmp_floatscraps",
+      "start": 18.04,
+      "dur": 16.95,
+      "kind": "floatcards",
+      "overlay": true,
+      "cards": [
+        {
+          "label": "Lechuga",
+          "src": "broll/rpl_i2_lettuce_dish_water.mp4",
+          "at": 0
+        },
+        {
+          "label": "Cebolla",
+          "src": "broll/rpl_i1_scallion_root_ends.mp4",
+          "at": 3.66
+        },
+        {
+          "label": "Ajo",
+          "src": "broll/rpl_i9_planting_clove_soil.mp4",
+          "at": 8.41
+        },
+        {
+          "label": "Piña",
+          "src": "broll/rpl_i15_pineapple_crown_leafy.mp4",
+          "at": 14.35
         }
       ]
     }

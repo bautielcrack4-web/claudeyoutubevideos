@@ -45,6 +45,21 @@ function kphrase(phrase, emph = []) {
   console.warn("⚠ kphrase no encontrada:", phrase);
   return null;
 }
+// ── floatcards: tarjetas flotantes que muestran ítems en el ms EXACTO en que se nombran ──
+function floatcardsBeat(id, items, winFrom, winTo) {
+  const found = items.map((it) => {
+    for (let i = 0; i < capW.length; i++) {
+      const ms = capW[i].ms;
+      if (capW[i].n === norm(it.word) && ms >= winFrom * 1000 && ms <= winTo * 1000 && it.clip && fs.existsSync(`public/broll/${it.clip}.mp4`)) return { ...it, ms };
+    }
+    return null;
+  }).filter(Boolean);
+  if (found.length < 2) { console.warn("⚠ floatcards pocas tarjetas:", id); return null; }
+  const start = Math.min(...found.map((f) => f.ms));
+  const cards = found.map((f) => ({ label: f.label, src: `broll/${f.clip}.mp4`, at: +((f.ms - start) / 1000).toFixed(2) }));
+  const dur = +(((Math.max(...found.map((f) => f.ms)) - start) / 1000) + 2.6).toFixed(2);
+  return { id, start: +(start / 1000).toFixed(2), dur, kind: "floatcards", overlay: true, cards };
+}
 
 // ── secciones (start de cada una; end = start de la próxima) ──
 const SECT = [
@@ -341,25 +356,39 @@ const PACE = {
   err: 3.2, i8: 3.2, i9: 3.2, i10: 3.2, i11: 3.4, i12: 3.4, i13: 3.4, i14: 3.2, i15: 3.4, i16: 3.2,
   close: 3.0, action: 3.0,
 };
-// ── construir CLIPS desde las secciones (densidad = repetir clips curados de la sección) ──
+// ── construir CLIPS: cada slot = un clip DISTINTO y relevante (su match exacto, o el
+//    SIMILAR menos usado; NUNCA el mismo en fila). El hook tira del POOL GLOBAL (montaje
+//    variado). Esto mata la repetición y respeta "un clip sobre lo que dice". ──
 const inFull = (t) => AV_FULL.some(([s, e]) => t >= s - 1e-6 && t < e - 1e-6);
+const have = (nm) => fs.existsSync(`public/broll/${nm}.mp4`);
+const HOOKSEC = new Set(["hook1", "hook2"]);
+const allMatched = MODE === "build" ? [...new Set(Object.values(S).flatMap((ls) => ls.map((s) => s[0])).filter(have))] : [];
+const usage = {}; let lastClip = null;
+const pickClip = (own, secMatched, isHook) => {
+  if (MODE !== "build") return own; // modo match: emite el concepto para matchear
+  if (!isHook && have(own) && own !== lastClip && (usage[own] || 0) < 3) { usage[own] = (usage[own] || 0) + 1; lastClip = own; return own; }
+  const pool = isHook ? allMatched : (secMatched.length >= 2 ? secMatched : allMatched);
+  let best = null, bu = Infinity;
+  for (const nm of pool) { const u = usage[nm] || 0; if (nm !== lastClip && u < bu) { bu = u; best = nm; } }
+  if (!best) best = have(own) ? own : (pool[0] || allMatched[0] || own);
+  usage[best] = (usage[best] || 0) + 1; lastClip = best; return best;
+};
 const CLIPS = [];
 let _bid = 0;
 for (const [key, list] of Object.entries(S)) {
   let s0 = SECSTART[key], e0 = secEnd(key);
-  if (s0 < OPEN) s0 = OPEN; // recortar dentro del AV_FULL de apertura
+  if (s0 < OPEN) s0 = OPEN;
   const span = e0 - s0;
   const pace = PACE[key] || 5.5;
-  // REAL-FIRST (estilo barcos): si la sección tiene clips reales bajados, usar SOLO
-  // esos (ciclados para la densidad) → casi todo footage real, IA solo donde no hubo match.
-  const matched = list.filter(([nm]) => fs.existsSync(`public/broll/${nm}.mp4`));
-  const pool = matched.length >= 2 ? matched : list;
-  const desired = Math.max(pool.length, Math.round(span / pace));
+  const secMatched = [...new Set(list.map((s) => s[0]).filter(have))];
+  const isHook = HOOKSEC.has(key);
+  const desired = Math.max(list.length, Math.round(span / pace));
   for (let i = 0; i < desired; i++) {
     const t = +(s0 + (i + 0.04) * (span / desired)).toFixed(2);
     if (inFull(t)) continue;
-    const [name, query, concept] = pool[i % pool.length];
-    const id = `b${++_bid}_${name}`; // id único; reusa el mismo archivo/clip
+    const [own, query, concept] = list[i % list.length];
+    const name = pickClip(own, secMatched, isHook);
+    const id = `b${++_bid}_${name}`;
     CLIPS.push([t, id, name, Array.isArray(query) ? query : [query], concept]);
   }
 }
@@ -381,7 +410,6 @@ if (MODE === "match") {
 }
 
 // ── modo BUILD ──
-const have = (name) => fs.existsSync(`public/broll/${name}.mp4`);
 const avStarts = AV_FULL.map(([s]) => s);
 const bounds = [...CLIPS.map((c) => c[0]), ...avStarts, TOTAL].sort((a, b) => a - b);
 const nextBound = (t) => bounds.find((b) => b > t + 1e-6) ?? TOTAL;
@@ -594,6 +622,15 @@ const KPHRASES = [
 ].filter(Boolean);
 beats.push(...KPHRASES);
 console.log(`kinetic phrases: ${KPHRASES.length}`);
+
+// ── tarjetas flotantes mostrando los ítems cuando los nombra (hook: la enumeración) ──
+const FC = floatcardsBeat("cmp_floatscraps", [
+  { label: "Lechuga", clip: _firstClip("i2"), word: "lechuga" },
+  { label: "Cebolla", clip: _firstClip("i1"), word: "cebolla" },
+  { label: "Ajo", clip: _firstClip("i9"), word: "ajo" },
+  { label: "Piña", clip: _firstClip("i15"), word: "pina" },
+], 10, 50);
+if (FC) { beats.push(FC); console.log(`floatcards: ${FC.cards.length} tarjetas @ ${FC.start}s`); }
 
 fs.mkdirSync("beatsheet", { recursive: true });
 fs.writeFileSync(`beatsheet/${SLUG}.json`, JSON.stringify({ video: SLUG, avatar: AVATAR, clipsfirst: true, beats }, null, 2));

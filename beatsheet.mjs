@@ -233,6 +233,10 @@ function renderEl(b) {
         (b.darken != null ? ` darken={${b.darken}}` : ``) +
         ` />`
       );
+    case "floatcards":
+      return (
+        `<FloatCards durationInFrames={d} cards={${j(b.cards || [])}} />`
+      );
     case "kineticline":
       return (
         `<KineticLine durationInFrames={d} words={${j(b.words || [])}}` +
@@ -911,6 +915,7 @@ if (kinds.has("numcard")) imports.push(`import { NumberCard } from "./scenes/Num
 if (kinds.has("gridreveal")) imports.push(`import { GridReveal } from "./scenes/GridReveal";`);
 if (kinds.has("growthtimeline")) imports.push(`import { GrowthTimeline } from "./scenes/GrowthTimeline";`);
 if (kinds.has("kineticline")) imports.push(`import { KineticLine } from "./scenes/KineticLine";`);
+if (kinds.has("floatcards")) imports.push(`import { FloatCards } from "./scenes/FloatCards";`);
 // ── set pieces de imagen/clip ──
 if (kinds.has("expeditionmap")) imports.push(`import { ExpeditionMap } from "./setpieces/ExpeditionMap";`);
 if (kinds.has("scalecolossus")) imports.push(`import { ScaleColossus } from "./setpieces/ScaleColossus";`);
