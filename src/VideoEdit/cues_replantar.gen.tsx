@@ -44,7 +44,7 @@ export const CUES: Cue[] = [
   { key: "bh16_rpl_i1_scallion_regrow_timelapse", start: 60.82, dur: 11.08, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/rpl_i1_scallion_regrow_timelapse.mp4" darken={0} /> },
   { key: "bh17_rpl_h1_hands_planting_soil", start: 71.4, dur: 2.69, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/rpl_h1_hands_planting_soil.mp4" darken={0} /> },
   { key: "b1_rpl_h2_wilting_plant_cloudy", start: 73.59, dur: 4.05, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/rpl_h2_wilting_plant_cloudy.mp4" darken={0} /> },
-  { key: "cmp_teaser11", start: 77.14, dur: 7.86, kind: "regrow", el: (d) => <RegrowSplit durationInFrames={d} leftImage="img/cmp_teaser11_l.png" rightImage="img/cmp_teaser11_r.png" number="11" title="Una sola te da una bolsa de comida" leftLabel="Basura" rightLabel="Cosecha" hue="amber" /> },
+  { key: "cmp_teaser11", start: 77.14, dur: 7.86, kind: "regrow", el: (d) => <RegrowSplit durationInFrames={d} leftImage="broll/rpl_i11_potato_pieces_drying.mp4" rightImage="broll/rpl_i11_sprouting_potato_pantry.mp4" number="11" title="Una sola te da una bolsa de comida" leftLabel="Basura" rightLabel="Cosecha" hue="amber" /> },
   { key: "b3_rpl_h2_wilting_plant_cloudy", start: 85, dur: 1.25, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/rpl_h2_wilting_plant_cloudy.mp4" darken={0} /> },
   { key: "b4_rpl_h2_seedling_emerging", start: 86, dur: 2.38, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/rpl_h2_seedling_emerging.mp4" darken={0} /> },
   { key: "b5_rpl_h2_pepper_plant_fruit", start: 87.9, dur: 4.1, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/rpl_h2_pepper_plant_fruit.mp4" darken={0} /> },

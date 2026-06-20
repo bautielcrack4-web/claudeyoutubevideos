@@ -531,7 +531,7 @@ const COMPONENTS = [
     bg: "a windowsill full of regrowing vegetable cuttings in jars backlit" },
   { t: atc("cerca del numero once"), id: "cmp_teaser11", kind: "regrow", hue: "amber", number: "11",
     title: "Una sola te da una bolsa de comida", leftLabel: "Basura", rightLabel: "Cosecha",
-    leftBg: "a wrinkled sprouting potato in a dim pantry", rightBg: "a big pile of freshly dug potatoes from one plant" },
+    leftImage: "broll/rpl_i11_potato_pieces_drying.mp4", rightImage: "broll/rpl_i11_sprouting_potato_pantry.mp4" },
   { t: atc("el error silencioso que mata"), id: "cmp_loop_error", kind: "mistake", number: "!", eyebrow: "EN ESTE VIDEO",
     title: "El error que mata la mitad de tus plantas", desc: "Casi todos lo cometen, y creen que no funcionó.",
     bg: "a wilting plant cutting dying in cloudy stagnant water" },

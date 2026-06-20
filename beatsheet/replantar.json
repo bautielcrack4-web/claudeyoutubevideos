@@ -169,18 +169,8 @@
       "title": "Una sola te da una bolsa de comida",
       "leftLabel": "Basura",
       "rightLabel": "Cosecha",
-      "leftImage": "img/cmp_teaser11_l.png",
-      "genL": {
-        "type": "image",
-        "name": "cmp_teaser11_l",
-        "prompt": "a wrinkled sprouting potato in a dim pantry, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
-      },
-      "rightImage": "img/cmp_teaser11_r.png",
-      "genR": {
-        "type": "image",
-        "name": "cmp_teaser11_r",
-        "prompt": "a big pile of freshly dug potatoes from one plant, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic kitchen or garden, no text, no captions, no watermark, no logo"
-      }
+      "leftImage": "broll/rpl_i11_potato_pieces_drying.mp4",
+      "rightImage": "broll/rpl_i11_sprouting_potato_pantry.mp4"
     },
     {
       "id": "b3_rpl_h2_wilting_plant_cloudy",
