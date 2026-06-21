@@ -1775,56 +1775,40 @@
    "image": "real/mh_manual_phone.png"
   },
   {
-   "id": "cmp_journey_34_0",
-   "start": 1213.15,
-   "dur": 7.2,
-   "kind": "journey",
-   "hue": "red",
-   "k": "comp",
-   "eyebrow": "Tu casa, sana de nuevo",
-   "title": "Empezá hoy",
-   "waypoints": [
-    {
-     "x": 0,
-     "y": 0,
-     "z": 0,
-     "image": "real/mh_j_mancha.png",
-     "label": "La mancha",
-     "num": "1",
-     "dwell": 2.4,
-     "travel": 1.5
-    },
-    {
-     "x": 1.2,
-     "y": -0.3,
-     "z": 0.3,
-     "image": "real/mh_j_rociar.png",
-     "label": "Rociá",
-     "num": "2",
-     "dwell": 2.4,
-     "travel": 1.5
-    },
-    {
-     "x": 2.4,
-     "y": 0.3,
-     "z": -0.2,
-     "image": "real/mh_j_seca.png",
-     "label": "Cortá la humedad",
-     "num": "3",
-     "dwell": 2.4,
-     "travel": 1.5
-    },
-    {
-     "x": 3.6,
-     "y": -0.2,
-     "z": 0.2,
-     "image": "real/mh_j_sana.png",
-     "label": "Casa sana",
-     "num": "4",
-     "dwell": 2.8,
-     "travel": 1.4
-    }
-   ]
+   "id": "mh_j_mancha",
+   "start": 1215.58,
+   "dur": 1.68,
+   "kind": "raw",
+   "src": "real/mh_j_mancha.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "mh_j_rociar",
+   "start": 1216.76,
+   "dur": 3.76,
+   "kind": "raw",
+   "src": "real/mh_j_rociar.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "mh_j_seca",
+   "start": 1220.02,
+   "dur": 2.54,
+   "kind": "raw",
+   "src": "real/mh_j_seca.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "mh_j_sana",
+   "start": 1222.06,
+   "dur": 0.33,
+   "kind": "raw",
+   "src": "real/mh_j_sana.png",
+   "darken": 0,
+   "hue": "red"
   }
  ]
 }

@@ -8,7 +8,6 @@ import { ChipsCluster } from "./scenes/ReframeContent";
 import { SplitList } from "./scenes/SplitList";
 import { DiagramBoard } from "./scenes/DiagramBoard";
 import { StatBig } from "./scenes/StatBig";
-import { JourneyCanvas } from "./scenes/JourneyCanvas";
 import { KineticHeadline } from "./scenes/KineticHeadline";
 import { AgedDoc } from "./scenes/AgedDoc";
 import { BarCompare } from "./scenes/BarCompare";
@@ -189,7 +188,10 @@ export const CUES: Cue[] = [
   { key: "cmp_diagram_33_0", start: 1165.14, dur: 7.2, kind: "diagram", el: (d) => <DiagramBoard durationInFrames={d} clip="avatar_clips/cmp_diagram_33_0.mp4" pages={[{"image":"img/dg_moho_stack.png","eyebrow":"Los dos tomos, 35 sistemas"}]} /> },
   { key: "cmp_bars_33_1", start: 1191, dur: 7.2, kind: "bars", el: (d) => <BarCompare durationInFrames={d} bars={[{"label":"Por separado","value":158,"display":"$158","tone":"danger"},{"label":"Hoy","value":27,"display":"$27","winner":true}]} eyebrow="Hoy" title="El valor" unit="USD" hue="red" /> },
   { key: "cmp_quote_33_2", start: 1202.51, dur: 7.2, kind: "quote", el: (d) => <KineticQuote durationInFrames={d} image="real/mh_manual_phone.png" words={parseQuote("Si no te sirve, te devuelvo *cada centavo*. El riesgo lo pongo yo.")} accent="good" hue="blue" /> },
-  { key: "cmp_journey_34_0", start: 1213.15, dur: 7.2, kind: "journey", el: (d) => <JourneyCanvas durationInFrames={d} eyebrow="Tu casa, sana de nuevo" title="Empezá hoy" waypoints={[{"x":0,"y":0,"z":0,"image":"real/mh_j_mancha.png","label":"La mancha","num":"1","dwell":2.4,"travel":1.5},{"x":1.2,"y":-0.3,"z":0.3,"image":"real/mh_j_rociar.png","label":"Rociá","num":"2","dwell":2.4,"travel":1.5},{"x":2.4,"y":0.3,"z":-0.2,"image":"real/mh_j_seca.png","label":"Cortá la humedad","num":"3","dwell":2.4,"travel":1.5},{"x":3.6,"y":-0.2,"z":0.2,"image":"real/mh_j_sana.png","label":"Casa sana","num":"4","dwell":2.8,"travel":1.4}]} /> },
+  { key: "mh_j_mancha", start: 1215.58, dur: 1.68, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/mh_j_mancha.png" hue="red" darken={0} /> },
+  { key: "mh_j_rociar", start: 1216.76, dur: 3.76, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/mh_j_rociar.png" hue="blue" darken={0} /> },
+  { key: "mh_j_seca", start: 1220.02, dur: 2.54, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/mh_j_seca.png" hue="amber" darken={0} /> },
+  { key: "mh_j_sana", start: 1222.06, dur: 0.33, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/mh_j_sana.png" hue="red" darken={0} /> },
 ];
 
 export const REFRAME: { start: number; end: number }[] = [];

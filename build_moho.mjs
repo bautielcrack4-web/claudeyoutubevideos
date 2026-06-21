@@ -351,13 +351,12 @@ const SECTIONS = [
     X({ kind: "quote", at: "te devuelvo cada centavo", text: "Si no te sirve, te devuelvo *cada centavo*. El riesgo lo pongo yo.", accent: "good",
       _bg: { name: "mh_manual_phone", query: "phone showing ebook workbench", concept: "a phone showing an ebook on a workbench" }, image: "real/mh_manual_phone.png" }),
   ]},
-  // ░░ 33) journey de cierre ░░
+  // ░░ 33) cierre before/after (RawShots — la ventana es ~8.7s, muy corta para un journey) ░░
   { a: "quedate con el agua oxigenada", beats: [
-    X({ kind: "journey", at: "quedate con el agua oxigenada", eyebrow: "Tu casa, sana de nuevo", title: "Empezá hoy", waypoints: [
-      { x: 0, y: 0, z: 0, image: "real/mh_j_mancha.png", label: "La mancha", num: "1", dwell: 2.4, travel: 1.5, _bg: { name: "mh_j_mancha", query: "black mold wall corner", concept: "a black mold wall corner" } },
-      { x: 1.2, y: -0.3, z: 0.3, image: "real/mh_j_rociar.png", label: "Rociá", num: "2", dwell: 2.4, travel: 1.5, _bg: { name: "mh_j_rociar", query: "spraying wall spray bottle", concept: "spraying a wall" } },
-      { x: 2.4, y: 0.3, z: -0.2, image: "real/mh_j_seca.png", label: "Cortá la humedad", num: "3", dwell: 2.4, travel: 1.5, _bg: { name: "mh_j_seca", query: "dry clean wall corner", concept: "a dry clean wall corner" } },
-      { x: 3.6, y: -0.2, z: 0.2, image: "real/mh_j_sana.png", label: "Casa sana", num: "4", dwell: 2.8, travel: 1.4, _bg: { name: "mh_j_sana", query: "clean bright healthy room home", concept: "a clean, bright, healthy home" } } ] }),
+    I("mh_j_mancha", "black mold wall corner", "a black mold wall corner"),
+    I("mh_j_rociar", "spraying wall spray bottle", "spraying a wall with a spray bottle"),
+    I("mh_j_seca", "dry clean wall corner", "a dry clean wall corner"),
+    I("mh_j_sana", "clean bright healthy room home", "a clean, bright, healthy home"),
   ]},
   // ░░ 34) OUTRO (avatar full) ░░
   { a: "haceme la gambeta de suscribirte", full: true, beats: [] },
