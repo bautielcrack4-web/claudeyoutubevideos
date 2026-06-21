@@ -15,6 +15,7 @@ import { MainCeniza, TOTAL_FRAMES_CENIZA } from "./VideoEdit/Main_ceniza";
 import { MainRatas, TOTAL_FRAMES_RATAS } from "./VideoEdit/Main_ratas";
 import { MainMelon, TOTAL_FRAMES_MELON } from "./VideoEdit/Main_melon";
 import { MainPeroxide, TOTAL_FRAMES_PEROXIDE } from "./VideoEdit/Main_peroxide";
+import { MainMoho, TOTAL_FRAMES_MOHO } from "./VideoEdit/Main_moho";
 import { MainAcpipe, TOTAL_FRAMES_ACPIPE } from "./VideoEdit/Main_acpipe";
 import { MainSandia, TOTAL_FRAMES_SANDIA } from "./VideoEdit/Main_sandia";
 import { MainRampump, TOTAL_FRAMES_RAMPUMP } from "./VideoEdit/Main_rampump";
@@ -70,6 +71,15 @@ export const RemotionRoot: React.FC = () => {
         id="Wasp"
         component={MainWasp}
         durationInFrames={TOTAL_FRAMES_WASP}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
+      {/* VIDEO ACTIVO — El Moho NUNCA Vuelve (Constructor Libre · Tomás · clips-first híbrido) */}
+      <Composition
+        id="Moho"
+        component={MainMoho}
+        durationInFrames={TOTAL_FRAMES_MOHO}
         fps={30}
         width={1920}
         height={1080}

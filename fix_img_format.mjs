@@ -8,7 +8,7 @@ import sharp from "sharp";
 
 const listArg = process.argv[2] || "public/real/bing_medicaid.json";
 const list = JSON.parse(fs.readFileSync(listArg, "utf8"));
-const DIR = "public/img";
+const DIR = process.env.IMGDIR || path.dirname(listArg); // imágenes reales viven junto a su lista (public/real)
 let fixed = 0, ok = 0, miss = 0;
 
 for (const { name } of list) {

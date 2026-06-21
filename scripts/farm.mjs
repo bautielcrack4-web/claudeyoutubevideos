@@ -40,6 +40,7 @@ if (!hasAvatar) console.warn(`(faceless) sin ${avatar} — empaqueto solo la nar
 let items = [`${slug}.wav`];
 if (hasAvatar) items.unshift(`${slug}_opt.mp4`);
 if (fs.existsSync("public/sfx")) items.push("sfx"); // camas ambientales + efectos (siempre)
+if (fs.existsSync("public/avatar_clips")) items.push("avatar_clips"); // PiP del avatar en los DiagramBoard (si falta → 404 en el farm)
 if (pref && pref.startsWith("@")) {
   // lista EXPLÍCITA de entradas (rutas relativas a public/), una por línea
   const explicit = fs.readFileSync(pref.slice(1), "utf8").split(/\r?\n/).map((s) => s.trim()).filter(Boolean);
