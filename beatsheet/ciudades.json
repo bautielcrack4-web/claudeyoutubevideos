@@ -445,7 +445,7 @@
    "overlay": true,
    "kind": "countrail",
    "total": 7,
-   "rank": 1,
+   "rank": 7,
    "name": "Pavlopetri",
    "accent": "blue"
   },
@@ -694,7 +694,7 @@
    "overlay": true,
    "kind": "countrail",
    "total": 7,
-   "rank": 2,
+   "rank": 6,
    "name": "Port Royal",
    "accent": "red"
   },
@@ -983,7 +983,7 @@
    "overlay": true,
    "kind": "countrail",
    "total": 7,
-   "rank": 3,
+   "rank": 5,
    "name": "Baiae",
    "accent": "blue"
   },
@@ -1475,7 +1475,7 @@
    "overlay": true,
    "kind": "countrail",
    "total": 7,
-   "rank": 5,
+   "rank": 3,
    "name": "Thonis-Heracleion",
    "accent": "amber"
   },
@@ -1764,7 +1764,7 @@
    "overlay": true,
    "kind": "countrail",
    "total": 7,
-   "rank": 6,
+   "rank": 2,
    "name": "Monumento de Yonaguni",
    "accent": "blue"
   },
@@ -2078,7 +2078,7 @@
    "overlay": true,
    "kind": "countrail",
    "total": 7,
-   "rank": 7,
+   "rank": 1,
    "name": "Estructura sumergida de Cuba",
    "accent": "red"
   },
