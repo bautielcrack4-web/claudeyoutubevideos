@@ -1,0 +1,2771 @@
+{
+ "video": "ciudades",
+ "beats": [
+  {
+   "id": "c001",
+   "start": 0,
+   "dur": 3.61,
+   "kind": "raw",
+   "src": "broll/intro_ciudades.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c002",
+   "start": 3.61,
+   "dur": 3.61,
+   "kind": "raw",
+   "src": "broll/intro_mercados.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c003",
+   "start": 7.22,
+   "dur": 3.61,
+   "kind": "raw",
+   "src": "broll/intro_hundieron.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c004",
+   "start": 10.83,
+   "dur": 3.61,
+   "kind": "raw",
+   "src": "broll/intro_bajando.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c005",
+   "start": 14.44,
+   "dur": 3.61,
+   "kind": "raw",
+   "src": "broll/intro_fondo.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c006",
+   "start": 18.05,
+   "dur": 3.61,
+   "kind": "raw",
+   "src": "broll/intro_leyendas.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c007",
+   "start": 21.66,
+   "dur": 3.61,
+   "kind": "raw",
+   "src": "broll/intro_buzos.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c008",
+   "start": 25.27,
+   "dur": 3.61,
+   "kind": "raw",
+   "src": "broll/intro_calles_lodo.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c009",
+   "start": 28.88,
+   "dur": 3.61,
+   "kind": "raw",
+   "src": "broll/intro_pregunta.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c010",
+   "start": 32.49,
+   "dur": 3.61,
+   "kind": "raw",
+   "src": "broll/intro_como_posible.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c011",
+   "start": 36.1,
+   "dur": 3.61,
+   "kind": "raw",
+   "src": "broll/intro_bajar.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c012",
+   "start": 39.71,
+   "dur": 3.61,
+   "kind": "raw",
+   "src": "broll/intro_siete.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c013",
+   "start": 43.33,
+   "dur": 3.61,
+   "kind": "raw",
+   "src": "broll/intro_planeta.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c014",
+   "start": 46.94,
+   "dur": 3.61,
+   "kind": "raw",
+   "src": "broll/intro_guia.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c015",
+   "start": 50.55,
+   "dur": 3.61,
+   "kind": "raw",
+   "src": "broll/intro_final_teaser.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c016",
+   "start": 54.16,
+   "dur": 3.61,
+   "kind": "raw",
+   "src": "broll/intro_estructura.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c017",
+   "start": 57.77,
+   "dur": 3.61,
+   "kind": "raw",
+   "src": "broll/intro_respira.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c018",
+   "start": 61.38,
+   "dur": 3.61,
+   "kind": "raw",
+   "src": "broll/intro_nivel_mar.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c019",
+   "start": 64.99,
+   "dur": 3.61,
+   "kind": "raw",
+   "src": "broll/intro_no_siempre.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c020",
+   "start": 68.6,
+   "dur": 3.61,
+   "kind": "raw",
+   "src": "broll/intro_edad_hielo.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c021",
+   "start": 72.21,
+   "dur": 3.61,
+   "kind": "raw",
+   "src": "broll/intro_cien_metros.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c022",
+   "start": 75.82,
+   "dur": 3.61,
+   "kind": "raw",
+   "src": "broll/intro_regiones.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c023",
+   "start": 79.43,
+   "dur": 3.61,
+   "kind": "raw",
+   "src": "broll/intro_llanuras.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c024",
+   "start": 83.04,
+   "dur": 3.61,
+   "kind": "raw",
+   "src": "broll/intro_derritio.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "headline025",
+   "start": 86.65,
+   "dur": 6,
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "7",
+     "hl": true
+    },
+    {
+     "t": "ciudades"
+    },
+    {
+     "t": "sumergidas"
+    },
+    {
+     "t": "que"
+    },
+    {
+     "t": "la"
+    },
+    {
+     "t": "ciencia"
+    },
+    {
+     "t": "no"
+    },
+    {
+     "t": "puede"
+    },
+    {
+     "t": "explicar",
+     "hl": true
+    }
+   ],
+   "bg": "image",
+   "image": "real/ciud_hero.jpg",
+   "hue": "blue",
+   "size": 88
+  },
+  {
+   "id": "c026",
+   "start": 92.65,
+   "dur": 3.65,
+   "kind": "raw",
+   "src": "broll/intro_ciudades.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c027",
+   "start": 96.3,
+   "dur": 3.65,
+   "kind": "raw",
+   "src": "broll/intro_mercados.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c028",
+   "start": 99.95,
+   "dur": 3.65,
+   "kind": "raw",
+   "src": "broll/intro_hundieron.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c029",
+   "start": 103.61,
+   "dur": 3.65,
+   "kind": "raw",
+   "src": "broll/intro_bajando.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c030",
+   "start": 107.26,
+   "dur": 3.65,
+   "kind": "raw",
+   "src": "broll/intro_fondo.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c031",
+   "start": 110.91,
+   "dur": 3.65,
+   "kind": "raw",
+   "src": "broll/intro_leyendas.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c032",
+   "start": 114.56,
+   "dur": 3.65,
+   "kind": "raw",
+   "src": "broll/intro_buzos.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c033",
+   "start": 118.22,
+   "dur": 3.65,
+   "kind": "raw",
+   "src": "broll/intro_calles_lodo.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c034",
+   "start": 121.87,
+   "dur": 3.65,
+   "kind": "raw",
+   "src": "broll/intro_pregunta.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c035",
+   "start": 125.52,
+   "dur": 3.65,
+   "kind": "raw",
+   "src": "broll/intro_como_posible.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c036",
+   "start": 129.17,
+   "dur": 3.65,
+   "kind": "raw",
+   "src": "broll/intro_bajar.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c037",
+   "start": 132.82,
+   "dur": 3.65,
+   "kind": "raw",
+   "src": "broll/intro_siete.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c038",
+   "start": 136.48,
+   "dur": 3.65,
+   "kind": "raw",
+   "src": "broll/intro_planeta.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c039",
+   "start": 140.13,
+   "dur": 3.65,
+   "kind": "raw",
+   "src": "broll/intro_guia.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c040",
+   "start": 143.78,
+   "dur": 3.65,
+   "kind": "raw",
+   "src": "broll/intro_final_teaser.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c041",
+   "start": 147.43,
+   "dur": 3.65,
+   "kind": "raw",
+   "src": "broll/intro_estructura.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c042",
+   "start": 151.08,
+   "dur": 3.65,
+   "kind": "raw",
+   "src": "broll/intro_respira.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c043",
+   "start": 154.74,
+   "dur": 3.65,
+   "kind": "raw",
+   "src": "broll/intro_nivel_mar.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c044",
+   "start": 158.39,
+   "dur": 3.65,
+   "kind": "raw",
+   "src": "broll/intro_no_siempre.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c045",
+   "start": 162.04,
+   "dur": 3.65,
+   "kind": "raw",
+   "src": "broll/intro_edad_hielo.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c046",
+   "start": 165.69,
+   "dur": 3.65,
+   "kind": "raw",
+   "src": "broll/intro_cien_metros.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c047",
+   "start": 169.35,
+   "dur": 3.65,
+   "kind": "raw",
+   "src": "broll/intro_regiones.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c048",
+   "start": 173,
+   "dur": 3.65,
+   "kind": "raw",
+   "src": "broll/intro_llanuras.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "rule049",
+   "start": 176.65,
+   "dur": 4.2,
+   "kind": "rule",
+   "number": "07",
+   "title": "Pavlopetri",
+   "label": "Laconia, Grecia",
+   "hue": "blue"
+  },
+  {
+   "id": "o050",
+   "start": 180.85,
+   "dur": 6,
+   "overlay": true,
+   "kind": "doclabel",
+   "label": "Pavlopetri",
+   "sub": "Laconia, Grecia",
+   "accent": "blue"
+  },
+  {
+   "id": "o051",
+   "start": 180.85,
+   "dur": 92.51,
+   "overlay": true,
+   "kind": "countrail",
+   "total": 7,
+   "rank": 1,
+   "name": "Pavlopetri",
+   "accent": "blue"
+  },
+  {
+   "id": "c052",
+   "start": 180.85,
+   "dur": 3.43,
+   "kind": "raw",
+   "src": "broll/pv_intro.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c053",
+   "start": 184.28,
+   "dur": 3.43,
+   "kind": "raw",
+   "src": "broll/pv_profundidad.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c054",
+   "start": 187.72,
+   "dur": 3.43,
+   "kind": "raw",
+   "src": "broll/pv_nombre.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c055",
+   "start": 191.15,
+   "dur": 3.43,
+   "kind": "raw",
+   "src": "broll/pv_no_piedras.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c056",
+   "start": 194.58,
+   "dur": 3.43,
+   "kind": "raw",
+   "src": "broll/pv_trazado.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c057",
+   "start": 198.02,
+   "dur": 3.43,
+   "kind": "raw",
+   "src": "broll/pv_calles.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c058",
+   "start": 201.45,
+   "dur": 3.43,
+   "kind": "raw",
+   "src": "broll/pv_plano.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c059",
+   "start": 204.89,
+   "dur": 3.43,
+   "kind": "raw",
+   "src": "broll/pv_edad.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c060",
+   "start": 208.32,
+   "dur": 3.43,
+   "kind": "raw",
+   "src": "broll/pv_cinco_mil.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "scalecolossus061",
+   "start": 211.75,
+   "dur": 6,
+   "kind": "scalecolossus",
+   "image": "real/pv_layout.jpg",
+   "meters": 4,
+   "unit": "m",
+   "eyebrow": "Pavlopetri",
+   "label": "de profundidad · ciudad entera intacta",
+   "accent": "blue"
+  },
+  {
+   "id": "o062",
+   "start": 211.95,
+   "dur": 5,
+   "overlay": true,
+   "kind": "datestamp",
+   "value": "≈ 3.000 a.C.",
+   "label": "Pavlopetri",
+   "accent": "blue"
+  },
+  {
+   "id": "c063",
+   "start": 217.75,
+   "dur": 3.56,
+   "kind": "raw",
+   "src": "broll/pv_intro.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c064",
+   "start": 221.31,
+   "dur": 3.56,
+   "kind": "raw",
+   "src": "broll/pv_profundidad.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c065",
+   "start": 224.87,
+   "dur": 3.56,
+   "kind": "raw",
+   "src": "broll/pv_nombre.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c066",
+   "start": 228.43,
+   "dur": 3.56,
+   "kind": "raw",
+   "src": "broll/pv_no_piedras.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c067",
+   "start": 231.98,
+   "dur": 3.56,
+   "kind": "raw",
+   "src": "broll/pv_trazado.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c068",
+   "start": 235.54,
+   "dur": 3.56,
+   "kind": "raw",
+   "src": "broll/pv_calles.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c069",
+   "start": 239.1,
+   "dur": 3.56,
+   "kind": "raw",
+   "src": "broll/pv_plano.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "stat070",
+   "start": 242.66,
+   "dur": 5.2,
+   "kind": "stat",
+   "value": 5000,
+   "suffix": " años",
+   "label": "habitada antes de las grandes pirámides",
+   "eyebrow": "Edad de Bronce",
+   "accent": "accent",
+   "hue": "blue"
+  },
+  {
+   "id": "c071",
+   "start": 247.86,
+   "dur": 3.67,
+   "kind": "raw",
+   "src": "broll/pv_intro.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c072",
+   "start": 251.53,
+   "dur": 3.67,
+   "kind": "raw",
+   "src": "broll/pv_profundidad.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c073",
+   "start": 255.2,
+   "dur": 3.67,
+   "kind": "raw",
+   "src": "broll/pv_nombre.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c074",
+   "start": 258.87,
+   "dur": 3.67,
+   "kind": "raw",
+   "src": "broll/pv_no_piedras.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c075",
+   "start": 262.54,
+   "dur": 3.67,
+   "kind": "raw",
+   "src": "broll/pv_trazado.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c076",
+   "start": 266.22,
+   "dur": 3.67,
+   "kind": "raw",
+   "src": "broll/pv_calles.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c077",
+   "start": 269.89,
+   "dur": 3.67,
+   "kind": "raw",
+   "src": "broll/pv_plano.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "rule078",
+   "start": 273.56,
+   "dur": 4.2,
+   "kind": "rule",
+   "number": "06",
+   "title": "Port Royal",
+   "label": "Jamaica, Caribe",
+   "hue": "red"
+  },
+  {
+   "id": "o079",
+   "start": 277.76,
+   "dur": 6,
+   "overlay": true,
+   "kind": "doclabel",
+   "label": "Port Royal",
+   "sub": "Jamaica, Caribe",
+   "accent": "red"
+  },
+  {
+   "id": "o080",
+   "start": 277.76,
+   "dur": 110.84,
+   "overlay": true,
+   "kind": "countrail",
+   "total": 7,
+   "rank": 2,
+   "name": "Port Royal",
+   "accent": "red"
+  },
+  {
+   "id": "c081",
+   "start": 277.76,
+   "dur": 3.7,
+   "kind": "raw",
+   "src": "broll/pr_intro.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c082",
+   "start": 281.46,
+   "dur": 3.7,
+   "kind": "raw",
+   "src": "broll/pr_jamaica.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c083",
+   "start": 285.16,
+   "dur": 3.7,
+   "kind": "raw",
+   "src": "broll/pr_nombre.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c084",
+   "start": 288.86,
+   "dur": 3.7,
+   "kind": "raw",
+   "src": "broll/pr_puerto.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c085",
+   "start": 292.57,
+   "dur": 3.7,
+   "kind": "raw",
+   "src": "broll/pr_malvada.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c086",
+   "start": 296.27,
+   "dur": 3.7,
+   "kind": "raw",
+   "src": "broll/pr_fecha.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c087",
+   "start": 299.97,
+   "dur": 3.7,
+   "kind": "raw",
+   "src": "broll/pr_rugio.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c088",
+   "start": 303.67,
+   "dur": 3.7,
+   "kind": "raw",
+   "src": "broll/pr_terremoto.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c089",
+   "start": 307.37,
+   "dur": 3.7,
+   "kind": "raw",
+   "src": "broll/pr_arena.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c090",
+   "start": 311.07,
+   "dur": 3.7,
+   "kind": "raw",
+   "src": "broll/pr_liquido.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "scalecolossus091",
+   "start": 314.77,
+   "dur": 6,
+   "kind": "scalecolossus",
+   "image": "real/pr_town.jpg",
+   "meters": 12,
+   "unit": "m",
+   "eyebrow": "Port Royal",
+   "label": "bajo el agua · tragada en minutos",
+   "accent": "red"
+  },
+  {
+   "id": "o092",
+   "start": 314.97,
+   "dur": 5,
+   "overlay": true,
+   "kind": "datestamp",
+   "value": "7 jun. 1692",
+   "label": "Port Royal",
+   "accent": "red"
+  },
+  {
+   "id": "c093",
+   "start": 320.77,
+   "dur": 3.45,
+   "kind": "raw",
+   "src": "broll/pr_intro.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c094",
+   "start": 324.22,
+   "dur": 3.45,
+   "kind": "raw",
+   "src": "broll/pr_jamaica.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c095",
+   "start": 327.67,
+   "dur": 3.45,
+   "kind": "raw",
+   "src": "broll/pr_nombre.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c096",
+   "start": 331.11,
+   "dur": 3.45,
+   "kind": "raw",
+   "src": "broll/pr_puerto.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c097",
+   "start": 334.56,
+   "dur": 3.45,
+   "kind": "raw",
+   "src": "broll/pr_malvada.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c098",
+   "start": 338,
+   "dur": 3.45,
+   "kind": "raw",
+   "src": "broll/pr_fecha.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c099",
+   "start": 341.45,
+   "dur": 3.45,
+   "kind": "raw",
+   "src": "broll/pr_rugio.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c100",
+   "start": 344.89,
+   "dur": 3.45,
+   "kind": "raw",
+   "src": "broll/pr_terremoto.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c101",
+   "start": 348.34,
+   "dur": 3.45,
+   "kind": "raw",
+   "src": "broll/pr_arena.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "stat102",
+   "start": 351.79,
+   "dur": 5.2,
+   "kind": "stat",
+   "value": 2000,
+   "suffix": " muertos",
+   "label": "el suelo se volvió líquido y los tragó",
+   "eyebrow": "Licuefacción del terreno",
+   "accent": "accent",
+   "hue": "red"
+  },
+  {
+   "id": "c103",
+   "start": 356.99,
+   "dur": 3.53,
+   "kind": "raw",
+   "src": "broll/pr_intro.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c104",
+   "start": 360.52,
+   "dur": 3.53,
+   "kind": "raw",
+   "src": "broll/pr_jamaica.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c105",
+   "start": 364.06,
+   "dur": 3.53,
+   "kind": "raw",
+   "src": "broll/pr_nombre.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c106",
+   "start": 367.59,
+   "dur": 3.53,
+   "kind": "raw",
+   "src": "broll/pr_puerto.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c107",
+   "start": 371.13,
+   "dur": 3.53,
+   "kind": "raw",
+   "src": "broll/pr_malvada.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c108",
+   "start": 374.66,
+   "dur": 3.53,
+   "kind": "raw",
+   "src": "broll/pr_fecha.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c109",
+   "start": 378.2,
+   "dur": 3.53,
+   "kind": "raw",
+   "src": "broll/pr_rugio.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c110",
+   "start": 381.73,
+   "dur": 3.53,
+   "kind": "raw",
+   "src": "broll/pr_terremoto.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c111",
+   "start": 385.27,
+   "dur": 3.53,
+   "kind": "raw",
+   "src": "broll/pr_arena.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "rule112",
+   "start": 388.8,
+   "dur": 4.2,
+   "kind": "rule",
+   "number": "05",
+   "title": "Baiae",
+   "label": "Bahía de Nápoles, Italia",
+   "hue": "blue"
+  },
+  {
+   "id": "o113",
+   "start": 393,
+   "dur": 6,
+   "overlay": true,
+   "kind": "doclabel",
+   "label": "Baiae",
+   "sub": "Bahía de Nápoles, Italia",
+   "accent": "blue"
+  },
+  {
+   "id": "o114",
+   "start": 393,
+   "dur": 91.43,
+   "overlay": true,
+   "kind": "countrail",
+   "total": 7,
+   "rank": 3,
+   "name": "Baiae",
+   "accent": "blue"
+  },
+  {
+   "id": "c115",
+   "start": 393,
+   "dur": 3.82,
+   "kind": "raw",
+   "src": "broll/ba_intro.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c116",
+   "start": 396.82,
+   "dur": 3.82,
+   "kind": "raw",
+   "src": "broll/ba_lujo.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c117",
+   "start": 400.64,
+   "dur": 3.82,
+   "kind": "raw",
+   "src": "broll/ba_nombre.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c118",
+   "start": 404.45,
+   "dur": 3.82,
+   "kind": "raw",
+   "src": "broll/ba_vegas.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c119",
+   "start": 408.27,
+   "dur": 3.82,
+   "kind": "raw",
+   "src": "broll/ba_poderosos.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c120",
+   "start": 412.09,
+   "dur": 3.82,
+   "kind": "raw",
+   "src": "broll/ba_villas.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c121",
+   "start": 415.91,
+   "dur": 3.82,
+   "kind": "raw",
+   "src": "broll/ba_pecar.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c122",
+   "start": 419.73,
+   "dur": 3.82,
+   "kind": "raw",
+   "src": "broll/ba_problema.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "scalecolossus123",
+   "start": 423.54,
+   "dur": 6,
+   "kind": "scalecolossus",
+   "image": "real/ba_villa.jpg",
+   "meters": 6,
+   "unit": "m",
+   "eyebrow": "Baiae",
+   "label": "bajo el agua · villas imperiales",
+   "accent": "blue"
+  },
+  {
+   "id": "o124",
+   "start": 423.74,
+   "dur": 5,
+   "overlay": true,
+   "kind": "datestamp",
+   "value": "Imperio Romano",
+   "label": "Baiae",
+   "accent": "blue"
+  },
+  {
+   "id": "c125",
+   "start": 429.54,
+   "dur": 3.51,
+   "kind": "raw",
+   "src": "broll/ba_intro.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c126",
+   "start": 433.05,
+   "dur": 3.51,
+   "kind": "raw",
+   "src": "broll/ba_lujo.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c127",
+   "start": 436.56,
+   "dur": 3.51,
+   "kind": "raw",
+   "src": "broll/ba_nombre.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c128",
+   "start": 440.06,
+   "dur": 3.51,
+   "kind": "raw",
+   "src": "broll/ba_vegas.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c129",
+   "start": 443.57,
+   "dur": 3.51,
+   "kind": "raw",
+   "src": "broll/ba_poderosos.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c130",
+   "start": 447.07,
+   "dur": 3.51,
+   "kind": "raw",
+   "src": "broll/ba_villas.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c131",
+   "start": 450.58,
+   "dur": 3.51,
+   "kind": "raw",
+   "src": "broll/ba_pecar.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "stat132",
+   "start": 454.09,
+   "dur": 5.2,
+   "kind": "stat",
+   "value": 0,
+   "prefix": "≈",
+   "suffix": " refugio",
+   "label": "ni el imperio más rico pudo salvarla",
+   "eyebrow": "Hundida por el bradisismo",
+   "accent": "accent",
+   "hue": "blue"
+  },
+  {
+   "id": "c133",
+   "start": 459.29,
+   "dur": 3.62,
+   "kind": "raw",
+   "src": "broll/ba_intro.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c134",
+   "start": 462.91,
+   "dur": 3.62,
+   "kind": "raw",
+   "src": "broll/ba_lujo.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c135",
+   "start": 466.53,
+   "dur": 3.62,
+   "kind": "raw",
+   "src": "broll/ba_nombre.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c136",
+   "start": 470.15,
+   "dur": 3.62,
+   "kind": "raw",
+   "src": "broll/ba_vegas.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c137",
+   "start": 473.77,
+   "dur": 3.62,
+   "kind": "raw",
+   "src": "broll/ba_poderosos.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c138",
+   "start": 477.39,
+   "dur": 3.62,
+   "kind": "raw",
+   "src": "broll/ba_villas.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c139",
+   "start": 481.01,
+   "dur": 3.62,
+   "kind": "raw",
+   "src": "broll/ba_pecar.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "rule140",
+   "start": 484.63,
+   "dur": 4.2,
+   "kind": "rule",
+   "number": "04",
+   "title": "Dwarka",
+   "label": "Golfo de Cambay, India",
+   "hue": "amber"
+  },
+  {
+   "id": "o141",
+   "start": 488.83,
+   "dur": 6,
+   "overlay": true,
+   "kind": "doclabel",
+   "label": "Dwarka",
+   "sub": "Golfo de Cambay, India",
+   "accent": "amber"
+  },
+  {
+   "id": "o142",
+   "start": 488.83,
+   "dur": 95.69,
+   "overlay": true,
+   "kind": "countrail",
+   "total": 7,
+   "rank": 4,
+   "name": "Dwarka",
+   "accent": "amber"
+  },
+  {
+   "id": "c143",
+   "start": 488.83,
+   "dur": 3.55,
+   "kind": "raw",
+   "src": "broll/dw_intro.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c144",
+   "start": 492.38,
+   "dur": 3.55,
+   "kind": "raw",
+   "src": "broll/dw_textos.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c145",
+   "start": 495.93,
+   "dur": 3.55,
+   "kind": "raw",
+   "src": "broll/dw_nombre.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c146",
+   "start": 499.48,
+   "dur": 3.55,
+   "kind": "raw",
+   "src": "broll/dw_urbe.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c147",
+   "start": 503.04,
+   "dur": 3.55,
+   "kind": "raw",
+   "src": "broll/dw_tragada.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c148",
+   "start": 506.59,
+   "dur": 3.55,
+   "kind": "raw",
+   "src": "broll/dw_mitologia.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c149",
+   "start": 510.14,
+   "dur": 3.55,
+   "kind": "raw",
+   "src": "broll/dw_buceo.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c150",
+   "start": 513.69,
+   "dur": 3.55,
+   "kind": "raw",
+   "src": "broll/dw_encontraron.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c151",
+   "start": 517.24,
+   "dur": 3.55,
+   "kind": "raw",
+   "src": "broll/dw_estructuras.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "scalecolossus152",
+   "start": 520.79,
+   "dur": 6,
+   "kind": "scalecolossus",
+   "image": "real/dw_city.jpg",
+   "meters": 20,
+   "unit": "m",
+   "eyebrow": "Dwarka",
+   "label": "bajo el agua · la ciudad de un dios",
+   "accent": "amber"
+  },
+  {
+   "id": "o153",
+   "start": 520.99,
+   "dur": 5,
+   "overlay": true,
+   "kind": "datestamp",
+   "value": "Mito → piedra",
+   "label": "Dwarka",
+   "accent": "amber"
+  },
+  {
+   "id": "c154",
+   "start": 526.79,
+   "dur": 3.71,
+   "kind": "raw",
+   "src": "broll/dw_intro.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c155",
+   "start": 530.5,
+   "dur": 3.71,
+   "kind": "raw",
+   "src": "broll/dw_textos.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c156",
+   "start": 534.21,
+   "dur": 3.71,
+   "kind": "raw",
+   "src": "broll/dw_nombre.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c157",
+   "start": 537.92,
+   "dur": 3.71,
+   "kind": "raw",
+   "src": "broll/dw_urbe.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c158",
+   "start": 541.63,
+   "dur": 3.71,
+   "kind": "raw",
+   "src": "broll/dw_tragada.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c159",
+   "start": 545.34,
+   "dur": 3.71,
+   "kind": "raw",
+   "src": "broll/dw_mitologia.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c160",
+   "start": 549.05,
+   "dur": 3.71,
+   "kind": "raw",
+   "src": "broll/dw_buceo.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "stat161",
+   "start": 552.76,
+   "dur": 5.2,
+   "kind": "stat",
+   "value": 9000,
+   "prefix": "¿",
+   "suffix": " años?",
+   "label": "algunos restos llevan la zona mucho más atrás",
+   "eyebrow": "La leyenda de Krishna",
+   "accent": "accent",
+   "hue": "amber"
+  },
+  {
+   "id": "c162",
+   "start": 557.96,
+   "dur": 3.82,
+   "kind": "raw",
+   "src": "broll/dw_intro.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c163",
+   "start": 561.78,
+   "dur": 3.82,
+   "kind": "raw",
+   "src": "broll/dw_textos.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c164",
+   "start": 565.6,
+   "dur": 3.82,
+   "kind": "raw",
+   "src": "broll/dw_nombre.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c165",
+   "start": 569.43,
+   "dur": 3.82,
+   "kind": "raw",
+   "src": "broll/dw_urbe.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c166",
+   "start": 573.25,
+   "dur": 3.82,
+   "kind": "raw",
+   "src": "broll/dw_tragada.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c167",
+   "start": 577.07,
+   "dur": 3.82,
+   "kind": "raw",
+   "src": "broll/dw_mitologia.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c168",
+   "start": 580.9,
+   "dur": 3.82,
+   "kind": "raw",
+   "src": "broll/dw_buceo.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "rule169",
+   "start": 584.72,
+   "dur": 4.2,
+   "kind": "rule",
+   "number": "03",
+   "title": "Thonis-Heracleion",
+   "label": "Bahía de Abukir, Egipto",
+   "hue": "amber"
+  },
+  {
+   "id": "o170",
+   "start": 588.92,
+   "dur": 6,
+   "overlay": true,
+   "kind": "doclabel",
+   "label": "Thonis-Heracleion",
+   "sub": "Bahía de Abukir, Egipto",
+   "accent": "amber"
+  },
+  {
+   "id": "o171",
+   "start": 588.92,
+   "dur": 109.65,
+   "overlay": true,
+   "kind": "countrail",
+   "total": 7,
+   "rank": 5,
+   "name": "Thonis-Heracleion",
+   "accent": "amber"
+  },
+  {
+   "id": "c172",
+   "start": 588.92,
+   "dur": 3.66,
+   "kind": "raw",
+   "src": "broll/he_intro.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c173",
+   "start": 592.58,
+   "dur": 3.66,
+   "kind": "raw",
+   "src": "broll/he_griegos.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c174",
+   "start": 596.24,
+   "dur": 3.66,
+   "kind": "raw",
+   "src": "broll/he_nilo.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c175",
+   "start": 599.91,
+   "dur": 3.66,
+   "kind": "raw",
+   "src": "broll/he_templos.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c176",
+   "start": 603.57,
+   "dur": 3.66,
+   "kind": "raw",
+   "src": "broll/he_nombres.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c177",
+   "start": 607.23,
+   "dur": 3.66,
+   "kind": "raw",
+   "src": "broll/he_desaparecio.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c178",
+   "start": 610.89,
+   "dur": 3.66,
+   "kind": "raw",
+   "src": "broll/he_sombra.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c179",
+   "start": 614.55,
+   "dur": 3.66,
+   "kind": "raw",
+   "src": "broll/he_dudaban.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c180",
+   "start": 618.21,
+   "dur": 3.66,
+   "kind": "raw",
+   "src": "broll/he_dos_mil.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c181",
+   "start": 621.88,
+   "dur": 3.66,
+   "kind": "raw",
+   "src": "broll/he_perdida.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "scalecolossus182",
+   "start": 625.54,
+   "dur": 6,
+   "kind": "scalecolossus",
+   "image": "real/he_statue.jpg",
+   "meters": 5,
+   "unit": "m",
+   "eyebrow": "Thonis-Heracleion",
+   "label": "de estatuas colosales en el fondo",
+   "accent": "amber"
+  },
+  {
+   "id": "o183",
+   "start": 625.74,
+   "dur": 5,
+   "overlay": true,
+   "kind": "datestamp",
+   "value": "Hallada en 2000",
+   "label": "Thonis-Heracleion",
+   "accent": "amber"
+  },
+  {
+   "id": "c184",
+   "start": 631.54,
+   "dur": 3.4,
+   "kind": "raw",
+   "src": "broll/he_intro.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c185",
+   "start": 634.94,
+   "dur": 3.4,
+   "kind": "raw",
+   "src": "broll/he_griegos.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c186",
+   "start": 638.34,
+   "dur": 3.4,
+   "kind": "raw",
+   "src": "broll/he_nilo.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c187",
+   "start": 641.74,
+   "dur": 3.4,
+   "kind": "raw",
+   "src": "broll/he_templos.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c188",
+   "start": 645.14,
+   "dur": 3.4,
+   "kind": "raw",
+   "src": "broll/he_nombres.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c189",
+   "start": 648.55,
+   "dur": 3.4,
+   "kind": "raw",
+   "src": "broll/he_desaparecio.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c190",
+   "start": 651.95,
+   "dur": 3.4,
+   "kind": "raw",
+   "src": "broll/he_sombra.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c191",
+   "start": 655.35,
+   "dur": 3.4,
+   "kind": "raw",
+   "src": "broll/he_dudaban.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c192",
+   "start": 658.75,
+   "dur": 3.4,
+   "kind": "raw",
+   "src": "broll/he_dos_mil.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "stat193",
+   "start": 662.15,
+   "dur": 5.2,
+   "kind": "stat",
+   "value": 64,
+   "suffix": " barcos",
+   "label": "hundidos junto a la ciudad que se creía un mito",
+   "eyebrow": "Una metrópolis entera",
+   "accent": "danger",
+   "hue": "amber"
+  },
+  {
+   "id": "c194",
+   "start": 667.35,
+   "dur": 3.49,
+   "kind": "raw",
+   "src": "broll/he_intro.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c195",
+   "start": 670.84,
+   "dur": 3.49,
+   "kind": "raw",
+   "src": "broll/he_griegos.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c196",
+   "start": 674.33,
+   "dur": 3.49,
+   "kind": "raw",
+   "src": "broll/he_nilo.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c197",
+   "start": 677.83,
+   "dur": 3.49,
+   "kind": "raw",
+   "src": "broll/he_templos.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c198",
+   "start": 681.32,
+   "dur": 3.49,
+   "kind": "raw",
+   "src": "broll/he_nombres.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c199",
+   "start": 684.81,
+   "dur": 3.49,
+   "kind": "raw",
+   "src": "broll/he_desaparecio.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c200",
+   "start": 688.3,
+   "dur": 3.49,
+   "kind": "raw",
+   "src": "broll/he_sombra.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c201",
+   "start": 691.79,
+   "dur": 3.49,
+   "kind": "raw",
+   "src": "broll/he_dudaban.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c202",
+   "start": 695.28,
+   "dur": 3.49,
+   "kind": "raw",
+   "src": "broll/he_dos_mil.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "rule203",
+   "start": 698.77,
+   "dur": 4.2,
+   "kind": "rule",
+   "number": "02",
+   "title": "Monumento de Yonaguni",
+   "label": "Okinawa, Japón",
+   "hue": "blue"
+  },
+  {
+   "id": "o204",
+   "start": 702.97,
+   "dur": 6,
+   "overlay": true,
+   "kind": "doclabel",
+   "label": "Monumento de Yonaguni",
+   "sub": "Okinawa, Japón",
+   "accent": "blue"
+  },
+  {
+   "id": "o205",
+   "start": 702.97,
+   "dur": 122.89,
+   "overlay": true,
+   "kind": "countrail",
+   "total": 7,
+   "rank": 6,
+   "name": "Monumento de Yonaguni",
+   "accent": "blue"
+  },
+  {
+   "id": "c206",
+   "start": 702.97,
+   "dur": 3.73,
+   "kind": "raw",
+   "src": "broll/yo_intro.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c207",
+   "start": 706.7,
+   "dur": 3.73,
+   "kind": "raw",
+   "src": "broll/yo_japon.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c208",
+   "start": 710.43,
+   "dur": 3.73,
+   "kind": "raw",
+   "src": "broll/yo_buzo.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c209",
+   "start": 714.16,
+   "dur": 3.73,
+   "kind": "raw",
+   "src": "broll/yo_encontro.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c210",
+   "start": 717.89,
+   "dur": 3.73,
+   "kind": "raw",
+   "src": "broll/yo_estructura.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c211",
+   "start": 721.62,
+   "dur": 3.73,
+   "kind": "raw",
+   "src": "broll/yo_terrazas.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c212",
+   "start": 725.35,
+   "dur": 3.73,
+   "kind": "raw",
+   "src": "broll/yo_geometria.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c213",
+   "start": 729.08,
+   "dur": 3.73,
+   "kind": "raw",
+   "src": "broll/yo_monumento.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c214",
+   "start": 732.81,
+   "dur": 3.73,
+   "kind": "raw",
+   "src": "broll/yo_artificial.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c215",
+   "start": 736.54,
+   "dur": 3.73,
+   "kind": "raw",
+   "src": "broll/yo_tierra_seca.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c216",
+   "start": 740.27,
+   "dur": 3.73,
+   "kind": "raw",
+   "src": "broll/yo_diez_mil.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "scalecolossus217",
+   "start": 744,
+   "dur": 6,
+   "kind": "scalecolossus",
+   "image": "real/yo_monument.jpg",
+   "meters": 27,
+   "unit": "m",
+   "eyebrow": "Monumento de Yonaguni",
+   "label": "de altura · terrazas y ángulos rectos",
+   "accent": "blue"
+  },
+  {
+   "id": "o218",
+   "start": 744.2,
+   "dur": 5,
+   "overlay": true,
+   "kind": "datestamp",
+   "value": "¿+10.000 años?",
+   "label": "Monumento de Yonaguni",
+   "accent": "blue"
+  },
+  {
+   "id": "c219",
+   "start": 750,
+   "dur": 3.5,
+   "kind": "raw",
+   "src": "broll/yo_intro.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c220",
+   "start": 753.5,
+   "dur": 3.5,
+   "kind": "raw",
+   "src": "broll/yo_japon.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c221",
+   "start": 757.01,
+   "dur": 3.5,
+   "kind": "raw",
+   "src": "broll/yo_buzo.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c222",
+   "start": 760.51,
+   "dur": 3.5,
+   "kind": "raw",
+   "src": "broll/yo_encontro.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c223",
+   "start": 764.01,
+   "dur": 3.5,
+   "kind": "raw",
+   "src": "broll/yo_estructura.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c224",
+   "start": 767.51,
+   "dur": 3.5,
+   "kind": "raw",
+   "src": "broll/yo_terrazas.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c225",
+   "start": 771.02,
+   "dur": 3.5,
+   "kind": "raw",
+   "src": "broll/yo_geometria.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c226",
+   "start": 774.52,
+   "dur": 3.5,
+   "kind": "raw",
+   "src": "broll/yo_monumento.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c227",
+   "start": 778.02,
+   "dur": 3.5,
+   "kind": "raw",
+   "src": "broll/yo_artificial.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c228",
+   "start": 781.53,
+   "dur": 3.5,
+   "kind": "raw",
+   "src": "broll/yo_tierra_seca.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "stat229",
+   "start": 785.03,
+   "dur": 5.2,
+   "kind": "stat",
+   "value": 10000,
+   "prefix": "¿",
+   "suffix": " años?",
+   "label": "si es artificial, nadie debería haberlo construido",
+   "eyebrow": "¿Natural o humano?",
+   "accent": "danger",
+   "hue": "blue"
+  },
+  {
+   "id": "c230",
+   "start": 790.23,
+   "dur": 3.58,
+   "kind": "raw",
+   "src": "broll/yo_intro.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c231",
+   "start": 793.81,
+   "dur": 3.58,
+   "kind": "raw",
+   "src": "broll/yo_japon.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c232",
+   "start": 797.4,
+   "dur": 3.58,
+   "kind": "raw",
+   "src": "broll/yo_buzo.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c233",
+   "start": 800.98,
+   "dur": 3.58,
+   "kind": "raw",
+   "src": "broll/yo_encontro.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c234",
+   "start": 804.56,
+   "dur": 3.58,
+   "kind": "raw",
+   "src": "broll/yo_estructura.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c235",
+   "start": 808.14,
+   "dur": 3.58,
+   "kind": "raw",
+   "src": "broll/yo_terrazas.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c236",
+   "start": 811.73,
+   "dur": 3.58,
+   "kind": "raw",
+   "src": "broll/yo_geometria.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c237",
+   "start": 815.31,
+   "dur": 3.58,
+   "kind": "raw",
+   "src": "broll/yo_monumento.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c238",
+   "start": 818.89,
+   "dur": 3.58,
+   "kind": "raw",
+   "src": "broll/yo_artificial.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c239",
+   "start": 822.48,
+   "dur": 3.58,
+   "kind": "raw",
+   "src": "broll/yo_tierra_seca.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "rule240",
+   "start": 826.06,
+   "dur": 4.2,
+   "kind": "rule",
+   "number": "01",
+   "title": "Estructura sumergida de Cuba",
+   "label": "Cabo de San Antonio, Cuba",
+   "hue": "red"
+  },
+  {
+   "id": "o241",
+   "start": 830.26,
+   "dur": 6,
+   "overlay": true,
+   "kind": "doclabel",
+   "label": "Estructura sumergida de Cuba",
+   "sub": "Cabo de San Antonio, Cuba",
+   "accent": "red"
+  },
+  {
+   "id": "o242",
+   "start": 830.26,
+   "dur": 159.96,
+   "overlay": true,
+   "kind": "countrail",
+   "total": 7,
+   "rank": 7,
+   "name": "Estructura sumergida de Cuba",
+   "accent": "red"
+  },
+  {
+   "id": "c243",
+   "start": 830.26,
+   "dur": 3.56,
+   "kind": "raw",
+   "src": "broll/cu_intro.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c244",
+   "start": 833.82,
+   "dur": 3.56,
+   "kind": "raw",
+   "src": "broll/cu_no_encaja.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c245",
+   "start": 837.38,
+   "dur": 3.56,
+   "kind": "raw",
+   "src": "broll/cu_caribe.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c246",
+   "start": 840.94,
+   "dur": 3.56,
+   "kind": "raw",
+   "src": "broll/cu_sonar.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c247",
+   "start": 844.5,
+   "dur": 3.56,
+   "kind": "raw",
+   "src": "broll/cu_galeones.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c248",
+   "start": 848.06,
+   "dur": 3.56,
+   "kind": "raw",
+   "src": "broll/cu_pantallas.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c249",
+   "start": 851.61,
+   "dur": 3.56,
+   "kind": "raw",
+   "src": "broll/cu_profundidad.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c250",
+   "start": 855.17,
+   "dur": 3.56,
+   "kind": "raw",
+   "src": "broll/cu_formas.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c251",
+   "start": 858.73,
+   "dur": 3.56,
+   "kind": "raw",
+   "src": "broll/cu_eran_estructuras.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c252",
+   "start": 862.29,
+   "dur": 3.56,
+   "kind": "raw",
+   "src": "broll/cu_bloques.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c253",
+   "start": 865.85,
+   "dur": 3.56,
+   "kind": "raw",
+   "src": "broll/cu_piramides.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c254",
+   "start": 869.41,
+   "dur": 3.56,
+   "kind": "raw",
+   "src": "broll/cu_complejo.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c255",
+   "start": 872.97,
+   "dur": 3.56,
+   "kind": "raw",
+   "src": "broll/cu_problema.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c256",
+   "start": 876.53,
+   "dur": 3.56,
+   "kind": "raw",
+   "src": "broll/cu_tierra_seca.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c257",
+   "start": 880.09,
+   "dur": 3.56,
+   "kind": "raw",
+   "src": "broll/cu_mucho_bajo.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "scalecolossus258",
+   "start": 883.65,
+   "dur": 6,
+   "kind": "scalecolossus",
+   "image": "real/cu_structure.jpg",
+   "meters": 700,
+   "unit": "m",
+   "eyebrow": "Estructura sumergida de Cuba",
+   "label": "de profundidad · imposible para la cronología",
+   "accent": "red"
+  },
+  {
+   "id": "o259",
+   "start": 883.85,
+   "dur": 5,
+   "overlay": true,
+   "kind": "datestamp",
+   "value": "Sonar, 2001",
+   "label": "Estructura sumergida de Cuba",
+   "accent": "red"
+  },
+  {
+   "id": "c260",
+   "start": 889.65,
+   "dur": 3.65,
+   "kind": "raw",
+   "src": "broll/cu_intro.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c261",
+   "start": 893.29,
+   "dur": 3.65,
+   "kind": "raw",
+   "src": "broll/cu_no_encaja.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c262",
+   "start": 896.94,
+   "dur": 3.65,
+   "kind": "raw",
+   "src": "broll/cu_caribe.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c263",
+   "start": 900.58,
+   "dur": 3.65,
+   "kind": "raw",
+   "src": "broll/cu_sonar.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c264",
+   "start": 904.23,
+   "dur": 3.65,
+   "kind": "raw",
+   "src": "broll/cu_galeones.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c265",
+   "start": 907.87,
+   "dur": 3.65,
+   "kind": "raw",
+   "src": "broll/cu_pantallas.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c266",
+   "start": 911.52,
+   "dur": 3.65,
+   "kind": "raw",
+   "src": "broll/cu_profundidad.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c267",
+   "start": 915.16,
+   "dur": 3.65,
+   "kind": "raw",
+   "src": "broll/cu_formas.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c268",
+   "start": 918.81,
+   "dur": 3.65,
+   "kind": "raw",
+   "src": "broll/cu_eran_estructuras.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c269",
+   "start": 922.45,
+   "dur": 3.65,
+   "kind": "raw",
+   "src": "broll/cu_bloques.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c270",
+   "start": 926.1,
+   "dur": 3.65,
+   "kind": "raw",
+   "src": "broll/cu_piramides.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c271",
+   "start": 929.74,
+   "dur": 3.65,
+   "kind": "raw",
+   "src": "broll/cu_complejo.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c272",
+   "start": 933.39,
+   "dur": 3.65,
+   "kind": "raw",
+   "src": "broll/cu_problema.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "stat273",
+   "start": 937.03,
+   "dur": 5.2,
+   "kind": "stat",
+   "value": 700,
+   "suffix": " metros",
+   "label": "demasiado profundo para cualquier ciudad conocida",
+   "eyebrow": "Detectada por sonar en 2001",
+   "accent": "danger",
+   "hue": "red"
+  },
+  {
+   "id": "c274",
+   "start": 942.23,
+   "dur": 3.71,
+   "kind": "raw",
+   "src": "broll/cu_intro.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c275",
+   "start": 945.94,
+   "dur": 3.71,
+   "kind": "raw",
+   "src": "broll/cu_no_encaja.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c276",
+   "start": 949.65,
+   "dur": 3.71,
+   "kind": "raw",
+   "src": "broll/cu_caribe.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c277",
+   "start": 953.35,
+   "dur": 3.71,
+   "kind": "raw",
+   "src": "broll/cu_sonar.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c278",
+   "start": 957.06,
+   "dur": 3.71,
+   "kind": "raw",
+   "src": "broll/cu_galeones.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c279",
+   "start": 960.77,
+   "dur": 3.71,
+   "kind": "raw",
+   "src": "broll/cu_pantallas.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c280",
+   "start": 964.47,
+   "dur": 3.71,
+   "kind": "raw",
+   "src": "broll/cu_profundidad.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c281",
+   "start": 968.18,
+   "dur": 3.71,
+   "kind": "raw",
+   "src": "broll/cu_formas.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c282",
+   "start": 971.89,
+   "dur": 3.71,
+   "kind": "raw",
+   "src": "broll/cu_eran_estructuras.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c283",
+   "start": 975.59,
+   "dur": 3.71,
+   "kind": "raw",
+   "src": "broll/cu_bloques.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c284",
+   "start": 979.3,
+   "dur": 3.71,
+   "kind": "raw",
+   "src": "broll/cu_piramides.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c285",
+   "start": 983.01,
+   "dur": 3.71,
+   "kind": "raw",
+   "src": "broll/cu_complejo.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c286",
+   "start": 986.71,
+   "dur": 3.71,
+   "kind": "raw",
+   "src": "broll/cu_problema.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c287",
+   "start": 990.42,
+   "dur": 3.73,
+   "kind": "raw",
+   "src": "broll/cl_ventanas.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c288",
+   "start": 994.15,
+   "dur": 3.73,
+   "kind": "raw",
+   "src": "broll/cl_pavlopetri.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c289",
+   "start": 997.88,
+   "dur": 3.73,
+   "kind": "raw",
+   "src": "broll/cl_port_royal.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c290",
+   "start": 1001.61,
+   "dur": 3.73,
+   "kind": "raw",
+   "src": "broll/cl_baiae.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c291",
+   "start": 1005.34,
+   "dur": 3.73,
+   "kind": "raw",
+   "src": "broll/cl_dwarka.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c292",
+   "start": 1009.07,
+   "dur": 3.73,
+   "kind": "raw",
+   "src": "broll/cl_heracleion.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c293",
+   "start": 1012.8,
+   "dur": 3.73,
+   "kind": "raw",
+   "src": "broll/cl_yonaguni.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c294",
+   "start": 1016.53,
+   "dur": 3.73,
+   "kind": "raw",
+   "src": "broll/cl_cuba.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c295",
+   "start": 1020.26,
+   "dur": 3.73,
+   "kind": "raw",
+   "src": "broll/cl_doce_mil.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c296",
+   "start": 1023.99,
+   "dur": 3.73,
+   "kind": "raw",
+   "src": "broll/cl_museos.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c297",
+   "start": 1027.72,
+   "dur": 3.73,
+   "kind": "raw",
+   "src": "broll/cl_bajo_agua.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "timeline298",
+   "start": 1031.45,
+   "dur": 8.5,
+   "kind": "timeline",
+   "eyebrow": "Repartidas por el planeta y los milenios",
+   "title": "El mar guardó lo que la tierra perdió",
+   "events": [
+    {
+     "year": "¿remoto?",
+     "label": "Cuba"
+    },
+    {
+     "year": "¿+10.000 a.C.?",
+     "label": "Yonaguni"
+    },
+    {
+     "year": "3.000 a.C.",
+     "label": "Pavlopetri"
+    },
+    {
+     "year": "s. II a.C.",
+     "label": "Heracleion"
+    },
+    {
+     "year": "1692",
+     "label": "Port Royal"
+    }
+   ]
+  },
+  {
+   "id": "c299",
+   "start": 1039.95,
+   "dur": 3.69,
+   "kind": "raw",
+   "src": "broll/cl_ventanas.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c300",
+   "start": 1043.64,
+   "dur": 3.69,
+   "kind": "raw",
+   "src": "broll/cl_pavlopetri.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c301",
+   "start": 1047.34,
+   "dur": 3.69,
+   "kind": "raw",
+   "src": "broll/cl_port_royal.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c302",
+   "start": 1051.03,
+   "dur": 3.69,
+   "kind": "raw",
+   "src": "broll/cl_baiae.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c303",
+   "start": 1054.72,
+   "dur": 3.69,
+   "kind": "raw",
+   "src": "broll/cl_dwarka.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c304",
+   "start": 1058.41,
+   "dur": 3.69,
+   "kind": "raw",
+   "src": "broll/cl_heracleion.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c305",
+   "start": 1062.11,
+   "dur": 3.69,
+   "kind": "raw",
+   "src": "broll/cl_yonaguni.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c306",
+   "start": 1065.8,
+   "dur": 3.69,
+   "kind": "raw",
+   "src": "broll/cl_cuba.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c307",
+   "start": 1069.49,
+   "dur": 3.69,
+   "kind": "raw",
+   "src": "broll/cl_doce_mil.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c308",
+   "start": 1073.18,
+   "dur": 3.69,
+   "kind": "raw",
+   "src": "broll/cl_museos.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c309",
+   "start": 1076.88,
+   "dur": 3.69,
+   "kind": "raw",
+   "src": "broll/cl_bajo_agua.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c310",
+   "start": 1080.57,
+   "dur": 3.69,
+   "kind": "raw",
+   "src": "broll/cl_tierra_seca.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "headline311",
+   "start": 1084.26,
+   "dur": 6,
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "¿Y"
+    },
+    {
+     "t": "si"
+    },
+    {
+     "t": "lo"
+    },
+    {
+     "t": "imposible"
+    },
+    {
+     "t": "duerme"
+    },
+    {
+     "t": "bajo"
+    },
+    {
+     "t": "el"
+    },
+    {
+     "t": "hielo?",
+     "hl": true
+    }
+   ],
+   "bg": "image",
+   "image": "real/ciud_ice.jpg",
+   "hue": "blue",
+   "size": 84
+  },
+  {
+   "id": "c312",
+   "start": 1090.26,
+   "dur": 3.41,
+   "kind": "raw",
+   "src": "broll/cl_ventanas.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c313",
+   "start": 1093.67,
+   "dur": 3.41,
+   "kind": "raw",
+   "src": "broll/cl_pavlopetri.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c314",
+   "start": 1097.08,
+   "dur": 3.41,
+   "kind": "raw",
+   "src": "broll/cl_port_royal.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c315",
+   "start": 1100.5,
+   "dur": 3.41,
+   "kind": "raw",
+   "src": "broll/cl_baiae.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c316",
+   "start": 1103.91,
+   "dur": 3.41,
+   "kind": "raw",
+   "src": "broll/cl_dwarka.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c317",
+   "start": 1107.32,
+   "dur": 3.41,
+   "kind": "raw",
+   "src": "broll/cl_heracleion.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c318",
+   "start": 1110.73,
+   "dur": 3.41,
+   "kind": "raw",
+   "src": "broll/cl_yonaguni.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c319",
+   "start": 1114.15,
+   "dur": 3.41,
+   "kind": "raw",
+   "src": "broll/cl_cuba.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c320",
+   "start": 1117.56,
+   "dur": 3.41,
+   "kind": "raw",
+   "src": "broll/cl_doce_mil.mp4",
+   "hue": "blue"
+  }
+ ]
+}
