@@ -133,9 +133,11 @@ jobs:
           YTCOOKIES2: ${{ secrets.YTCOOKIES2 }}
         run: |
           mkdir -p cookies
-          if [ -n "$YTCOOKIES1" ]; then printf '%s\n' "$YTCOOKIES1" > cookies/1.txt; fi
-          if [ -n "$YTCOOKIES2" ]; then printf '%s\n' "$YTCOOKIES2" > cookies/2.txt; fi
+          # base64 → preserva TABS y CRLF exactos del formato Netscape (printf los rompía)
+          if [ -n "$YTCOOKIES1" ]; then echo "$YTCOOKIES1" | base64 -d > cookies/1.txt; fi
+          if [ -n "$YTCOOKIES2" ]; then echo "$YTCOOKIES2" | base64 -d > cookies/2.txt; fi
           echo "cookies inyectadas: $(ls cookies/*.txt 2>/dev/null | grep -v proxies | wc -l)"
+          head -1 cookies/1.txt
       - name: match shard
         env:
           MATCH_CANDS: "2"
