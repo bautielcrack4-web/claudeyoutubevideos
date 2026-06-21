@@ -70,7 +70,7 @@ for (let di = 0; di < DATA.length; di++) {
   C(secStart, 4.2, { kind: "rule", number: d.n, title: d.name, label: d.loc, hue });
   // overlays persistentes los primeros segundos
   ov(secStart + 4.2, 6.0, { kind: "doclabel", label: d.name, sub: d.loc, accent: hue });
-  ov(secStart + 4.2, next - secStart - 4.4, { kind: "countrail", total: 7, rank: di + 1, name: d.name, accent: hue });
+  ov(secStart + 4.2, next - secStart - 4.4, { kind: "countrail", total: 7, rank: +d.n, name: d.name, accent: hue });
   // 2) densifica el resto de la sección con sus clips, e injerta componentes a 1/3 y 2/3
   const a = secStart + 4.2, b = next;
   const third = a + (b - a) / 3, twoThird = a + 2 * (b - a) / 3;

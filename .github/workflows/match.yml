@@ -20,6 +20,10 @@ on:
         description: "en cuantos runners repartir"
         required: false
         default: "20"
+      nowm:
+        description: "1 = rechazar clips con marca de agua/logo (NO_WATERMARK)"
+        required: false
+        default: "0"
 
 jobs:
   prepare:
@@ -133,6 +137,7 @@ jobs:
           MATCH_MAXSPAN: "90"
           MATCH_COARSE: "22"
           MATCH_POOL: "10"
+          NO_WATERMARK: "${{ github.event.inputs.nowm }}"
         run: node scripts/match_runner.mjs "${{ github.event.inputs.slug }}" ${{ matrix.idx }} ${{ github.event.inputs.chunks }} "match_${{ github.event.inputs.slug }}.json"
       - uses: actions/upload-artifact@v4
         with:
