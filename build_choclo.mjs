@@ -88,10 +88,10 @@ const AV_FULL = [
 
 const S = SHOTS;
 const PACE = {
-  hook1: 0.95, hook2: 1.7, levi: 4.0, truth: 2.6,
-  villain: 3.2, store: 3.2, heirloom: 3.2, heirloom2: 3.2,
-  s1: 3.2, anec1: 3.2, s2: 3.2, s3: 3.2, anec2: 3.2, s4: 3.0, s5: 3.0, anec3: 3.2, s6: 3.2,
-  roast: 3.0, recap: 2.4, emotional: 3.8, cta: 4.0,
+  hook1: 0.95, hook2: 1.6, levi: 4.0, truth: 2.3,
+  villain: 2.8, store: 2.8, heirloom: 2.8, heirloom2: 2.8,
+  s1: 2.8, anec1: 2.8, s2: 2.8, s3: 2.8, anec2: 2.8, s4: 2.6, s5: 2.6, anec3: 2.8, s6: 2.8,
+  roast: 2.6, recap: 2.2, emotional: 3.2, cta: 3.6,
 };
 
 const inFull = (t) => AV_FULL.some(([s, e]) => t >= s - 1e-6 && t < e - 1e-6);
@@ -218,6 +218,39 @@ let beats = CLIPS.map(([t, id, name, , concept, src]) => {
   if (s) return { id, start: t, dur, kind: "raw", src: s, darken: 0 };
   return { id, start: t, dur, kind: "raw", src: `img/${name}.png`, darken: 0, gen: { type: "image", name, prompt: concept + IMG_STYLE } };
 });
+
+// ── ANECSEQ: imágenes BESPOKE del abuelo (gpt-image-2) en el ms EXACTO de cada anécdota ──
+const ANECSEQ = [
+  ["sacaba la mas dulce de la mesa", "corn_gf_pick_stand"],
+  ["lo bastante alto para llegar al canasto", "corn_gf_amos_portrait"],
+  ["la caminata del campo a la cocina", "corn_gf_walk_field"],
+  ["guardaba semilla ano tras ano", "corn_gf_seed_save"],
+  ["no hay nada en esta tierra que sepa como el", "corn_gf_heirloom_hold"],
+  ["agarraba las mazorcas de arriba del monton", "corn_gf_hurried_man"],
+  ["en la sombra del monton", "corn_gf_reach_shade"],
+  ["tres mazorcas con las hojas tan verdes", "corn_gf_hand_over"],
+  ["frotaba los pelos entre dos dedos", "corn_gf_roll_silk"],
+  ["clavaba la una del pulgar en un solo grano", "corn_gf_thumbnail"],
+  ["dejalo en la cana", "corn_gf_check_field"],
+  ["una en cada mano", "corn_gf_weigh_two"],
+  ["con el rocio todavia sobre todo", "corn_gf_dawn_harvest"],
+  ["de la misma forma que sabia su padre", "corn_gf_hands_golden"],
+  ["la comida en su mesa", "corn_gf_table_food"],
+];
+{
+  let n = 0;
+  for (const [ph, img] of ANECSEQ) {
+    if (!fs.existsSync(`public/img/${img}.png`)) continue;
+    let t; try { t = at(ph); } catch { continue; }
+    if (inFull(t)) continue;
+    let idx = -1;
+    for (let i = 0; i < beats.length; i++) { if (beats[i].start <= t + 0.01) idx = i; else break; }
+    if (idx < 0 || beats[idx].kind !== "raw") continue;
+    beats[idx] = { id: beats[idx].id, start: beats[idx].start, dur: beats[idx].dur, kind: "raw", src: `img/${img}.png`, darken: 0, anec: true };
+    n++;
+  }
+  console.log(`anecseq: ${n}/${ANECSEQ.length} imágenes del abuelo ancladas`);
+}
 
 const ck = (text) => ({ text, state: "done" });
 const atc = (p) => { try { return at(p); } catch { console.warn("⚠ comp anchor missing:", p); return null; } };
