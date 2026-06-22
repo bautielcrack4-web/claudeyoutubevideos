@@ -14,6 +14,7 @@ import { MainJabon, TOTAL_FRAMES_JABON } from "./VideoEdit/Main_jabon";
 import { MainCeniza, TOTAL_FRAMES_CENIZA } from "./VideoEdit/Main_ceniza";
 import { MainRatas, TOTAL_FRAMES_RATAS } from "./VideoEdit/Main_ratas";
 import { MainMelon, TOTAL_FRAMES_MELON } from "./VideoEdit/Main_melon";
+import { MainCorn, TOTAL_FRAMES_CORN } from "./VideoEdit/Main_corn";
 import { MainPeroxide, TOTAL_FRAMES_PEROXIDE } from "./VideoEdit/Main_peroxide";
 import { MainMoho, TOTAL_FRAMES_MOHO } from "./VideoEdit/Main_moho";
 import { MainAcpipe, TOTAL_FRAMES_ACPIPE } from "./VideoEdit/Main_acpipe";
@@ -125,6 +126,15 @@ export const RemotionRoot: React.FC = () => {
         id="Acpipe"
         component={MainAcpipe}
         durationInFrames={TOTAL_FRAMES_ACPIPE}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
+      {/* VIDEO ACTIVO — How to Pick the Sweetest Corn (Levi Lapp Jardín · canal nuevo EN) */}
+      <Composition
+        id="Corn"
+        component={MainCorn}
+        durationInFrames={TOTAL_FRAMES_CORN}
         fps={30}
         width={1920}
         height={1080}

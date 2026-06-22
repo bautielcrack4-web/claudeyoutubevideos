@@ -98,6 +98,8 @@ const addClip = (g) => {
 };
 for (const b of beats) {
   addImage(b.gen);
+  addImage(b.genL); // regrow: imagen izquierda (basura)
+  addImage(b.genR); // regrow: imagen derecha (cosecha)
   addClip(b.gen);
   for (const s of b.slides || []) addImage(s.gen);
 }
@@ -122,6 +124,8 @@ const refs = [];
 for (const b of beats) {
   if (b.src) refs.push(b.src);
   if (b.image && b.kind !== "diagram") refs.push(b.image);
+  if (b.leftImage) refs.push(b.leftImage);
+  if (b.rightImage) refs.push(b.rightImage);
   for (const s of b.slides || []) if (s.image) refs.push(s.image);
   if (b.worldImage) refs.push(b.worldImage);
   if (b.mapImage) refs.push(b.mapImage);
@@ -227,6 +231,65 @@ function renderEl(b) {
         (b.hitAt != null ? ` hitAt={${b.hitAt}}` : ``) +
         (b.boom != null ? ` boom={${b.boom}}` : ``) +
         (b.darken != null ? ` darken={${b.darken}}` : ``) +
+        ` />`
+      );
+    case "floatcards":
+      return (
+        `<FloatCards durationInFrames={d} cards={${j(b.cards || [])}} />`
+      );
+    case "kineticline":
+      return (
+        `<KineticLine durationInFrames={d} words={${j(b.words || [])}}` +
+        (b.accent ? ` accent=${j(b.accent)}` : ``) +
+        ` />`
+      );
+    case "blurreveal":
+      return (
+        `<BlurReveal durationInFrames={d} title=${j(b.title)}` +
+        (b.eyebrow ? ` eyebrow=${j(b.eyebrow)}` : ``) +
+        (b.accent ? ` accent=${j(b.accent)}` : ``) +
+        ` />`
+      );
+    case "gridreveal":
+      return (
+        `<GridReveal durationInFrames={d} tiles={${j(b.tiles || [])}}` +
+        (b.title ? ` title=${j(b.title)}` : ``) +
+        (b.subtitle ? ` subtitle=${j(b.subtitle)}` : ``) +
+        ` />`
+      );
+    case "growthtimeline":
+      return (
+        `<GrowthTimeline durationInFrames={d} stages={${j(b.stages || [])}}` +
+        (b.title ? ` title=${j(b.title)}` : ``) +
+        (b.image ? ` bg=${j(b.image)}` : ``) +
+        ` />`
+      );
+    case "numcard":
+      return (
+        `<NumberCard durationInFrames={d} number=${j(b.number)} name=${j(b.name)}` +
+        (b.image ? ` bg=${j(b.image)}` : ``) +
+        (b.eyebrow ? ` eyebrow=${j(b.eyebrow)}` : ``) +
+        (b.total ? ` total=${j(b.total)}` : ``) +
+        (b.accent ? ` accent=${j(b.accent)}` : ``) +
+        ` />`
+      );
+    case "lielist":
+      return (
+        `<LieList durationInFrames={d} title=${j(b.title)} items={${j(b.items || [])}}` +
+        (b.image ? ` image=${j(b.image)}` : ``) +
+        (b.accent ? ` accent=${j(b.accent)}` : ``) +
+        (b.hue ? ` hue=${j(b.hue)}` : ``) +
+        ` />`
+      );
+    case "regrow":
+      return (
+        `<RegrowSplit durationInFrames={d} leftImage=${j(b.leftImage)} rightImage=${j(b.rightImage)}` +
+        (b.number ? ` number=${j(b.number)}` : ``) +
+        (b.title ? ` title=${j(b.title)}` : ``) +
+        (b.leftLabel ? ` leftLabel=${j(b.leftLabel)}` : ``) +
+        (b.rightLabel ? ` rightLabel=${j(b.rightLabel)}` : ``) +
+        (b.accent ? ` accent=${j(b.accent)}` : ``) +
+        (b.hue ? ` hue=${j(b.hue)}` : ``) +
         ` />`
       );
     case "journey":
@@ -853,6 +916,14 @@ if (kinds.has("keyphrase")) imports.push(`import { KeyPhrase } from "./scenes/Ke
 if (kinds.has("statpills")) imports.push(`import { StatPills } from "./scenes/StatPills";`);
 if (kinds.has("floatprop")) imports.push(`import { FloatingProp } from "./scenes/FloatingProp";`);
 if (kinds.has("diorama")) imports.push(`import { PngDiorama } from "./scenes/PngDiorama";`);
+if (kinds.has("regrow")) imports.push(`import { RegrowSplit } from "./scenes/RegrowSplit";`);
+if (kinds.has("lielist")) imports.push(`import { LieList } from "./scenes/LieList";`);
+if (kinds.has("numcard")) imports.push(`import { NumberCard } from "./scenes/NumberCard";`);
+if (kinds.has("gridreveal")) imports.push(`import { GridReveal } from "./scenes/GridReveal";`);
+if (kinds.has("growthtimeline")) imports.push(`import { GrowthTimeline } from "./scenes/GrowthTimeline";`);
+if (kinds.has("kineticline")) imports.push(`import { KineticLine } from "./scenes/KineticLine";`);
+if (kinds.has("blurreveal")) imports.push(`import { BlurReveal } from "./scenes/BlurReveal";`);
+if (kinds.has("floatcards")) imports.push(`import { FloatCards } from "./scenes/FloatCards";`);
 // ── set pieces de imagen/clip ──
 if (kinds.has("expeditionmap")) imports.push(`import { ExpeditionMap } from "./setpieces/ExpeditionMap";`);
 if (kinds.has("scalecolossus")) imports.push(`import { ScaleColossus } from "./setpieces/ScaleColossus";`);
