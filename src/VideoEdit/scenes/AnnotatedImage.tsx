@@ -69,6 +69,33 @@ export const AnnotatedImage: React.FC<{
   const px = (x: number) => x * IMG_W;
   const py = (y: number) => y * IMG_H;
 
+  // ── layout de ETIQUETAS: acotadas DENTRO del cuadro + anti-solape ──
+  const LPAD = 18;
+  const LH = 52;
+  const labelLayout = annotations.map((a) => {
+    if (!a.label) return null;
+    const w = Math.min(IMG_W - LPAD * 2, a.label.length * 15.5 + 44);
+    const h = (a.h ?? a.w ?? 0.12) * IMG_H;
+    let x = px(a.x) - 10;
+    let y = py(a.y) + h + 16;
+    x = Math.max(LPAD, Math.min(x, IMG_W - w - LPAD));
+    y = Math.max(LPAD, Math.min(y, IMG_H - LH - LPAD));
+    return { x, y, w, h: LH };
+  });
+  // empujar las que se pisan con una anterior
+  for (let i = 0; i < labelLayout.length; i++) {
+    const b = labelLayout[i];
+    if (!b) continue;
+    for (let j = 0; j < i; j++) {
+      const p = labelLayout[j];
+      if (!p) continue;
+      if (b.x < p.x + p.w && b.x + b.w > p.x && b.y < p.y + p.h && b.y + b.h > p.y) {
+        b.y = p.y + p.h + 12;
+        if (b.y + b.h > IMG_H - LPAD) b.y = Math.max(LPAD, p.y - b.h - 12);
+      }
+    }
+  }
+
   return (
     <SceneFrame durationInFrames={durationInFrames} hue={hue} glowY={46} drift={0.4}>
       <div style={{ width: BOX_W, height: BOX_H, position: "relative", fontFamily: FONT_STACK }}>
@@ -175,22 +202,24 @@ export const AnnotatedImage: React.FC<{
                   />
                 )}
 
-                {/* label chip near the annotation */}
-                {a.label && (
-                  <g opacity={lab} transform={`translate(0 ${(1 - lab) * 10})`}>
-                    <rect
-                      x={cx - 8}
-                      y={cy + h + 14}
-                      width={a.label.length * 16 + 36}
-                      height={48}
-                      rx={12}
-                      fill="rgba(18,17,22,0.82)"
-                      stroke={`${C}cc`}
-                      strokeWidth={2}
-                    />
-                    <text x={cx + 10} y={cy + h + 45} fontSize={26} fontWeight={800} fill={COLORS.text} fontFamily={FONT_STACK}>{a.label}</text>
-                  </g>
-                )}
+                {/* label chip — acotado dentro del cuadro, texto CLARO, anti-solape */}
+                {a.label && labelLayout[i] && (() => {
+                  const L = labelLayout[i]!;
+                  return (
+                    <g opacity={lab} transform={`translate(0 ${(1 - lab) * 10})`}>
+                      {/* conector fino desde la anotación hasta la pastilla */}
+                      <line x1={cx} y1={cy + h} x2={L.x + 16} y2={L.y} stroke={`${C}aa`} strokeWidth={2.5} strokeLinecap="round" />
+                      <rect x={L.x} y={L.y} width={L.w} height={L.h} rx={13}
+                        fill="rgba(16,14,11,0.92)" stroke={C} strokeWidth={2.5}
+                        style={{ filter: "drop-shadow(0 6px 18px rgba(0,0,0,0.55))" }} />
+                      {/* punto de acento a la izquierda */}
+                      <circle cx={L.x + 18} cy={L.y + L.h / 2} r={5} fill={C} />
+                      <text x={L.x + 34} y={L.y + L.h / 2 + 9} fontSize={27} fontWeight={800}
+                        fill={COLORS.bg0} fontFamily={FONT_STACK}
+                        style={{ paintOrder: "stroke", stroke: "rgba(0,0,0,0.55)", strokeWidth: 3 }}>{a.label}</text>
+                    </g>
+                  );
+                })()}
               </g>
             );
           })}

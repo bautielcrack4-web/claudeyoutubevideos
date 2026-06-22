@@ -11,56 +11,64 @@ export const AVATAR_WINDOWS: AvatarWindow[] = [
     "mode": "hidden"
   },
   {
-    "start": 12.47,
+    "start": 10.81,
     "mode": "cornerTR"
   },
   {
-    "start": 13.94,
+    "start": 12.89,
     "mode": "hidden"
   },
   {
-    "start": 21.89,
+    "start": 18.71,
     "mode": "cornerBL"
   },
   {
-    "start": 23.96,
+    "start": 20.66,
     "mode": "hidden"
   },
   {
-    "start": 36.77,
+    "start": 28.18,
     "mode": "cornerTL"
   },
   {
-    "start": 39.87,
+    "start": 31.07,
     "mode": "hidden"
   },
   {
-    "start": 54.54,
+    "start": 43.83,
     "mode": "right"
   },
   {
-    "start": 56.09,
+    "start": 46.72,
     "mode": "hidden"
   },
   {
-    "start": 63.6,
+    "start": 59.12,
     "mode": "left"
   },
   {
-    "start": 66.92,
+    "start": 61.02,
     "mode": "hidden"
   },
   {
-    "start": 88.54,
+    "start": 71.96,
     "mode": "cornerBR"
   },
   {
-    "start": 90.87,
+    "start": 74.29,
+    "mode": "hidden"
+  },
+  {
+    "start": 90.4,
+    "mode": "cornerTR"
+  },
+  {
+    "start": 93.66,
     "mode": "hidden"
   },
   {
     "start": 103.84,
-    "mode": "cornerTR"
+    "mode": "cornerBL"
   },
   {
     "start": 106.74,
@@ -75,123 +83,115 @@ export const AVATAR_WINDOWS: AvatarWindow[] = [
     "mode": "hidden"
   },
   {
-    "start": 167.16,
-    "mode": "cornerBL"
-  },
-  {
-    "start": 173.16,
-    "mode": "hidden"
-  },
-  {
-    "start": 203.94,
+    "start": 177.22,
     "mode": "cornerTL"
   },
   {
-    "start": 206.94,
+    "start": 179.9,
     "mode": "hidden"
   },
   {
-    "start": 221.38,
+    "start": 216.46,
     "mode": "right"
   },
   {
-    "start": 224.12,
+    "start": 219.18,
     "mode": "hidden"
   },
   {
-    "start": 249.04,
+    "start": 239.44,
     "mode": "left"
   },
   {
-    "start": 255.04,
+    "start": 244.26,
     "mode": "hidden"
   },
   {
-    "start": 279.12,
+    "start": 276.1,
     "mode": "cornerBR"
   },
   {
-    "start": 282,
+    "start": 279.62,
     "mode": "hidden"
   },
   {
-    "start": 300.54,
+    "start": 292.36,
     "mode": "cornerTR"
   },
   {
-    "start": 302.9,
+    "start": 295.94,
     "mode": "hidden"
   },
   {
-    "start": 325.48,
+    "start": 322.26,
     "mode": "cornerBL"
   },
   {
-    "start": 328.4,
+    "start": 325.98,
     "mode": "hidden"
   },
   {
-    "start": 345.88,
+    "start": 336.56,
     "mode": "cornerTL"
   },
   {
-    "start": 348.84,
+    "start": 339.3,
     "mode": "hidden"
   },
   {
-    "start": 366.08,
+    "start": 359.24,
     "mode": "right"
   },
   {
-    "start": 370.28,
+    "start": 362.1,
     "mode": "hidden"
   },
   {
-    "start": 388.08,
+    "start": 377.4,
     "mode": "left"
   },
   {
-    "start": 392.3,
+    "start": 381.04,
     "mode": "hidden"
   },
   {
-    "start": 410.98,
+    "start": 394.06,
     "mode": "cornerBR"
   },
   {
-    "start": 414.28,
+    "start": 399.86,
     "mode": "hidden"
   },
   {
-    "start": 443.5,
+    "start": 429.44,
     "mode": "cornerTR"
   },
   {
-    "start": 446.22,
+    "start": 432.14,
     "mode": "hidden"
   },
   {
-    "start": 470.14,
+    "start": 467.12,
     "mode": "cornerBL"
   },
   {
-    "start": 473.82,
+    "start": 470.64,
     "mode": "hidden"
   },
   {
-    "start": 490.7,
+    "start": 481.32,
     "mode": "cornerTL"
   },
   {
-    "start": 493.68,
+    "start": 484.9,
     "mode": "hidden"
   },
   {
-    "start": 508.16,
+    "start": 502.8,
     "mode": "right"
   },
   {
-    "start": 511.02,
+    "start": 505.32,
     "mode": "hidden"
   },
   {
@@ -203,184 +203,192 @@ export const AVATAR_WINDOWS: AvatarWindow[] = [
     "mode": "hidden"
   },
   {
-    "start": 555.28,
+    "start": 552.78,
     "mode": "cornerBR"
   },
   {
-    "start": 561.28,
+    "start": 555.78,
     "mode": "hidden"
   },
   {
-    "start": 577.7,
+    "start": 574.9,
     "mode": "cornerTR"
   },
   {
-    "start": 580.38,
+    "start": 578.2,
     "mode": "hidden"
   },
   {
-    "start": 603.76,
+    "start": 592.86,
     "mode": "cornerBL"
   },
   {
-    "start": 606.94,
+    "start": 597.84,
     "mode": "hidden"
   },
   {
-    "start": 620.64,
+    "start": 611.32,
     "mode": "cornerTL"
   },
   {
-    "start": 622.62,
+    "start": 616.22,
     "mode": "hidden"
   },
   {
-    "start": 644,
+    "start": 637.84,
     "mode": "right"
   },
   {
-    "start": 648.52,
+    "start": 640.7,
     "mode": "hidden"
   },
   {
-    "start": 663.32,
+    "start": 653.36,
     "mode": "left"
   },
   {
-    "start": 666.4,
+    "start": 656.52,
     "mode": "hidden"
   },
   {
-    "start": 680.98,
+    "start": 673.18,
     "mode": "cornerBR"
   },
   {
-    "start": 684.74,
+    "start": 675.84,
     "mode": "hidden"
   },
   {
-    "start": 699.92,
+    "start": 687.1,
     "mode": "cornerTR"
   },
   {
-    "start": 702.8,
+    "start": 690.9,
     "mode": "hidden"
   },
   {
-    "start": 714.98,
+    "start": 702.3,
     "mode": "cornerBL"
   },
   {
-    "start": 720.98,
+    "start": 704.65,
     "mode": "hidden"
   },
   {
-    "start": 740.72,
+    "start": 723.4,
     "mode": "cornerTL"
   },
   {
-    "start": 745.32,
+    "start": 726.84,
     "mode": "hidden"
   },
   {
-    "start": 761.76,
+    "start": 747.38,
     "mode": "right"
   },
   {
-    "start": 764.28,
+    "start": 750.7,
     "mode": "hidden"
   },
   {
-    "start": 779.9,
+    "start": 763.78,
     "mode": "left"
   },
   {
-    "start": 782.28,
+    "start": 766.8,
+    "mode": "hidden"
+  },
+  {
+    "start": 781.8,
+    "mode": "cornerBR"
+  },
+  {
+    "start": 786.16,
     "mode": "hidden"
   },
   {
     "start": 797.44,
-    "mode": "cornerBR"
+    "mode": "cornerTR"
   },
   {
     "start": 801.82,
     "mode": "hidden"
   },
   {
-    "start": 824.94,
-    "mode": "cornerTR"
-  },
-  {
-    "start": 830.94,
-    "mode": "hidden"
-  },
-  {
-    "start": 847.8,
+    "start": 835.8,
     "mode": "cornerBL"
   },
   {
-    "start": 850.74,
+    "start": 839.3,
     "mode": "hidden"
   },
   {
-    "start": 870.38,
+    "start": 850.24,
     "mode": "cornerTL"
   },
   {
-    "start": 873.68,
+    "start": 853.36,
     "mode": "hidden"
   },
   {
-    "start": 893.44,
+    "start": 876.12,
     "mode": "right"
   },
   {
-    "start": 895.96,
+    "start": 881.42,
     "mode": "hidden"
   },
   {
-    "start": 912.28,
+    "start": 898.62,
     "mode": "left"
   },
   {
-    "start": 918.28,
+    "start": 904.06,
     "mode": "hidden"
   },
   {
-    "start": 942.88,
+    "start": 924.42,
     "mode": "cornerBR"
   },
   {
-    "start": 945.84,
+    "start": 927.92,
     "mode": "hidden"
   },
   {
-    "start": 956.12,
+    "start": 947.2,
     "mode": "cornerTR"
   },
   {
-    "start": 959.4,
+    "start": 949.72,
     "mode": "hidden"
   },
   {
-    "start": 978.84,
+    "start": 958.9,
     "mode": "cornerBL"
   },
   {
-    "start": 981.04,
+    "start": 963.86,
     "mode": "hidden"
   },
   {
-    "start": 992.04,
+    "start": 984.32,
     "mode": "cornerTL"
   },
   {
-    "start": 994.54,
+    "start": 986.14,
+    "mode": "hidden"
+  },
+  {
+    "start": 994.04,
+    "mode": "right"
+  },
+  {
+    "start": 996.66,
     "mode": "hidden"
   },
   {
     "start": 1006.26,
-    "mode": "right"
+    "mode": "left"
   },
   {
     "start": 1008.78,
@@ -388,7 +396,7 @@ export const AVATAR_WINDOWS: AvatarWindow[] = [
   },
   {
     "start": 1027.3,
-    "mode": "left"
+    "mode": "cornerBR"
   },
   {
     "start": 1028.47,
@@ -396,19 +404,15 @@ export const AVATAR_WINDOWS: AvatarWindow[] = [
   },
   {
     "start": 1050.08,
-    "mode": "cornerBR"
+    "mode": "cornerTR"
   },
   {
     "start": 1052.94,
     "mode": "hidden"
   },
   {
-    "start": 1067.04,
-    "mode": "cornerTR"
-  },
-  {
-    "start": 1073.04,
-    "mode": "hidden"
+    "start": 1075.56,
+    "mode": "cornerBL"
   },
   {
     "start": 1080.3,

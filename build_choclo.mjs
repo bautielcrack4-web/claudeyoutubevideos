@@ -472,8 +472,21 @@ const KPHRASES = [
   kphrase("no la peles", ["no"]),
   kphrase("maiz temprano es maiz dulce", ["dulce"]),
 ].filter(Boolean);
-beats.push(...KPHRASES, ...overlayComps);
-console.log(`kinetic: ${KPHRASES.length} · overlay comps: ${overlayComps.length}`);
+// ── overlays (kineticline/blurreveal): SOLO sobre clips, nunca sobre componentes ni
+//    pisándose entre sí (evita el amontonamiento texto+componente poco profesional) ──
+{
+  const comps = beats.filter((b) => !b.overlay && b.kind !== "raw");
+  const overComp = (o) => comps.some((c) => o.start < c.start + c.dur - 0.2 && o.start + o.dur > c.start + 0.2);
+  const all = [...KPHRASES, ...overlayComps].sort((a, b) => a.start - b.start);
+  const kept = [];
+  let dropped = 0;
+  for (const o of all) {
+    if (overComp(o) || kept.some((k) => o.start < k.start + k.dur && o.start + o.dur > k.start)) { dropped++; continue; }
+    kept.push(o);
+  }
+  beats.push(...kept);
+  console.log(`overlays: ${kept.length} sobre clips (${dropped} descartados por chocar con componentes/overlays)`);
+}
 
 fs.mkdirSync("beatsheet", { recursive: true });
 fs.writeFileSync(`beatsheet/${SLUG}.json`, JSON.stringify({ video: SLUG, avatar: AVATAR, clipsfirst: true, beats }, null, 2));
@@ -481,8 +494,9 @@ fs.writeFileSync(`beatsheet/${SLUG}.json`, JSON.stringify({ video: SLUG, avatar:
 // ── avatar windows ──
 const POS = ["cornerTR", "cornerBL", "cornerTL", "right", "left", "cornerBR"];
 const pip = []; let k = 0;
-const _bw = beats.filter((b) => !b.overlay);
-for (let i = 0; i < _bw.length; i++) { if (i % 6 === 4 && !inFull(_bw[i].start)) { pip.push([_bw[i].start, _bw[i].start + Math.min(_bw[i].dur, 6), POS[k % POS.length]]); k++; } }
+// PiP candidato SOLO sobre clips reales (no overlays ni componentes full-screen → quedan limpios)
+const _bw = beats.filter((b) => !b.overlay && b.kind === "raw");
+for (let i = 0; i < _bw.length; i++) { if (i % 5 === 3 && !inFull(_bw[i].start)) { pip.push([_bw[i].start, _bw[i].start + Math.min(_bw[i].dur, 6), POS[k % POS.length]]); k++; } }
 const firstClip = CLIPS.length ? Math.max(CLIPS[0][0], OPEN) : OPEN;
 const modeAt = (t) => {
   if (t < OPEN - 1e-6) return "full";
