@@ -23,6 +23,18 @@
 // 4) DESCARGA: node scripts/fetch_parallel.mjs public/broll/clips_<slug>_matched.json
 //    (por los 6 proxies). Filtrar antes _score<0.45 (matches malos).
 //
+// 4b) ★ FALLBACK WEB-IMAGES (estándar, NO opcional): para TODO concepto que NO matcheó
+//     clip (o cayó por _text>0.85), bajar una IMAGEN REAL de la web con fetch_bing.mjs
+//     (DuckDuckGo, sin key) — castiga DURO texto/marca de agua (textMax>0.14 ⇒ ×0.06) y
+//     rankea con CLIP por la frase, así "encaja perfecto y sin textos". Da variedad on-topic
+//     en vez de REUSAR el mismo clip (queja del usuario: "dejás un clip 40s"). Receta:
+//       node -e '... arma public/real/bing_<slug>.json = [{name,query,count:2}] de los
+//                conceptos SIN public/broll/<name>.mp4 ...'
+//       RANK_CANDS=12 node fetch_bing.mjs public/real/bing_<slug>.json   // → public/real/<name>.jpg
+//     En el BUILD, prioridad por concepto (helper pickSrc): SU clip > SU imagen web > clip
+//     ciclado del pool (último recurso). Así casi no se reusan clips y cae a ~0 IA de b-roll.
+//     fetch_parallel y fetch_bing ambos por proxy/sin-IP. Incluir public/real/* en el tar del farm.
+//
 // 5) AVATAR (si el video lo tiene): full en beats personales + PiP rotando en distintas
 //    posiciones (cornerTR/BL/TL/L/R) sobre el b-roll → "avatar en distintas partes".
 //

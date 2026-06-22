@@ -102,6 +102,18 @@ const PACE = {
 
 const inFull = (t) => AV_FULL.some(([s, e]) => t >= s - 1e-6 && t < e - 1e-6);
 const have = (nm) => fs.existsSync(`public/broll/${nm}.mp4`);
+// imagen REAL de la web (fetch_bing → public/real/<name>.<ext>) para conceptos sin clip
+const REAL_EXT = ["jpg", "jpeg", "png", "webp"];
+const realImg = (nm) => { for (const suf of ["", "_1", "_2"]) for (const e of REAL_EXT) { const p = `real/${nm}${suf}.${e}`; if (fs.existsSync(`public/${p}`)) return p; } return null; };
+// fuente de un concepto: SU clip > SU imagen web (variedad on-topic) > clip ciclado (último recurso)
+const pickSrc = (own, secMatched) => {
+  if (MODE !== "build") return { name: own, src: null };
+  if (have(own)) return { name: own, src: `broll/${own}.mp4` };
+  const ri = realImg(own);
+  if (ri) return { name: own, src: ri };
+  const nm = pickClip(own, secMatched);
+  return { name: nm, src: have(nm) ? `broll/${nm}.mp4` : null };
+};
 const allMatched = MODE === "build" ? [...new Set(Object.values(S).flatMap((ls) => ls.map((s) => s[0])).filter(have))] : [];
 const usage = {}; let lastClip = null;
 const lastN = []; // últimos clips usados (evita repetir en ventana, no solo el inmediato)
@@ -149,8 +161,8 @@ for (const [key] of SECT) {
     const t = +bounds[i].toFixed(2);
     if (inFull(t)) continue;
     const [own, query, concept] = list[i % list.length];
-    const name = pickClip(own, secMatched);
-    CLIPS.push([t, `b${++_bid}_${name}`, name, Array.isArray(query) ? query : [query], concept]);
+    const { name, src } = pickSrc(own, secMatched);
+    CLIPS.push([t, `b${++_bid}_${name}`, name, Array.isArray(query) ? query : [query], concept, src]);
   }
 }
 
@@ -219,9 +231,12 @@ const avStarts = AV_FULL.map(([s]) => s);
 const bounds = [...CLIPS.map((c) => c[0]), ...avStarts, TOTAL].sort((a, b) => a - b);
 const nextBound = (t) => bounds.find((b) => b > t + 1e-6) ?? TOTAL;
 const OV = 0.5;
-let beats = CLIPS.map(([t, id, name, , concept]) => {
+let beats = CLIPS.map(([t, id, name, , concept, src]) => {
   const dur = +Math.min(nextBound(t) - t + OV, TOTAL - t).toFixed(2);
-  if (have(name)) return { id, start: t, dur, kind: "raw", src: `broll/${name}.mp4`, darken: 0 };
+  // src ya resuelto por pickSrc (clip propio / imagen web propia / clip ciclado)
+  const s = src || (have(name) ? `broll/${name}.mp4` : realImg(name));
+  if (s) return { id, start: t, dur, kind: "raw", src: s, darken: 0 };
+  // sin clip ni imagen web → último recurso: imagen IA del concepto
   return { id, start: t, dur, kind: "raw", src: `img/${name}.png`, darken: 0, gen: { type: "image", name, prompt: concept + IMG_STYLE } };
 });
 

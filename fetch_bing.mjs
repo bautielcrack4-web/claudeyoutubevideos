@@ -123,8 +123,10 @@ if (RANK) {
   try {
     const { pipeline } = await import("@huggingface/transformers");
     const MODEL = process.env.MATCH_MODEL || "Xenova/clip-vit-base-patch32";
-    console.log(`cargando CLIP local (${MODEL}, q8, CPU) para re-ranking…`);
-    clf = await pipeline("zero-shot-image-classification", MODEL, { dtype: "q8" });
+    const DEV = process.env.CLIP_DEVICE || ""; // dml = GPU (10x más rápido para lotes grandes)
+    const DTY = process.env.CLIP_DTYPE || (DEV ? "fp16" : "q8");
+    console.log(`cargando CLIP local (${MODEL}, ${DTY}, ${DEV || "CPU"}) para re-ranking…`);
+    clf = await pipeline("zero-shot-image-classification", MODEL, DEV ? { device: DEV, dtype: DTY } : { dtype: DTY });
   } catch (e) {
     console.warn(`(CLIP no disponible: ${e.message} → bajo sin rankear)`);
   }
