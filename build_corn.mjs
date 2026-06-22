@@ -245,6 +245,9 @@ const ck = (text) => ({ text, state: "done" });
 const atc = (p) => { try { return at(p); } catch { console.warn("⚠ comp anchor missing:", p); return null; } };
 const atO = (p, o = 0) => { const v = atc(p); return v == null ? null : +(v + o).toFixed(2); };
 const _firstClip = (key) => { for (const [nm] of (SHOTS[key] || [])) if (fs.existsSync(`public/broll/${nm}.mp4`)) return nm; return null; };
+// fileFor: archivo visual de un concepto (clip propio o imagen web), o el primero disponible de una lista
+const fileFor = (...nms) => { for (const nm of nms) { if (have(nm)) return `broll/${nm}.mp4`; const ri = realImg(nm); if (ri) return ri; } return null; };
+const imgFor = (...nms) => { for (const nm of nms) { const ri = realImg(nm); if (ri) return ri; if (have(nm)) return `broll/${nm}.mp4`; } return null; }; // prefiere imagen fija (loupe/focuscard)
 
 // TARJETAS DE SEÑAL (6) — clavadas al reveal de cada señal, fondo = clip de la sección
 const SIGNS = [
@@ -322,7 +325,7 @@ const COMPONENTS = [
   // SEÑAL 4 — peso (texto/imagen split)
   { t: atc("heavy is fresh"), id: "cmp_weight_half", kind: "half", side: "right", hue: "amber",
     kicker: "Heavy = fresh\nLight = old",
-    rightBg: "a hand weighing two ears of corn, one in each hand, on a farm stand" },
+    srcFile: fileFor("corn_s4_two_ears_balance", "corn_s4_heavy_ear", "corn_h1_weigh_two_ears") },
   // SEÑAL 5 — diagrama anotado del tallo
   { t: atc("pale and moist means new"), id: "cmp_anno_stem", kind: "annotated", hue: "amber", eyebrow: "Flip it over",
     annotations: [
@@ -395,6 +398,42 @@ const COMPONENTS = [
   { t: atc("do those and i promise you"), id: "cmp_proc_bin", kind: "process", hue: "amber", accent: "good", dur: 8.0,
     title: "At the corn bin", eyebrow: "Ten seconds, no peeling",
     steps: [{ title: "Look: green husk, golden silk" }, { title: "Feel: full to the tip, heavy" }, { title: "Flip: pale moist stem — then leave it sealed" }] },
+
+  // ── PASE de CALIDAD: composites imagen+texto con FOTOS REALES (half / splitexplain / loupe / focuscard) ──
+  // half (imagen mitad / texto mitad) — la chala verde
+  { t: atc("a deep living green wrapped tight"), id: "cmp_half_husk", kind: "half", side: "right", hue: "amber",
+    srcFile: fileFor("corn_s1_husk_bright_green", "corn_h1_husk_green_tight"), kicker: "Bright green,\nwrapped tight\n= fresh" },
+  // half — la sombra (anécdota 1)
+  { t: atc("reach into the shade"), id: "cmp_half_shade", kind: "half", side: "left", hue: "amber",
+    srcFile: fileFor("corn_a1_shade_cool_corn", "corn_a1_glowing_green_husk", "corn_a1_reach_under_pile"), kicker: "The good ones\nhide where\nit's cool" },
+  // loupe — zoom a la seda
+  { t: atc("the silk drying to gold"), id: "cmp_loupe_silk", kind: "loupe", accent: "amber",
+    imgFile: imgFor("corn_s2_silk_golden", "corn_s2_silk_tip_macro"), focusX: 0.5, focusY: 0.28, zoom: 1.7, label: "Golden, soft, sticky" },
+  // loupe — zoom a la punta
+  { t: atc("feel all the way up to the tip"), id: "cmp_loupe_tip", kind: "loupe", accent: "good",
+    imgFile: imgFor("corn_s3_tip_full_round", "corn_s3_kernels_pearls"), focusX: 0.8, focusY: 0.5, zoom: 1.8, label: "Full to the tip" },
+  // splitexplain — granos (imagen + bullets)
+  { t: atc("rows of plump little pearls"), id: "cmp_split_kernels", kind: "splitexplain", accent: "good", eyebrow: "Feel the kernels",
+    imgFile: imgFor("corn_s3_kernels_pearls", "corn_s3_press_kernel_give"), title: "Like rows of pearls",
+    points: ["Plump and even", "Firm with slight give", "All the way to the tip"] },
+  // splitexplain — el tallo (imagen + bullets)
+  { t: atc("on a fresh ear"), id: "cmp_split_stem", kind: "splitexplain", accent: "amber", eyebrow: "Flip it over",
+    imgFile: imgFor("corn_s5_stem_pale_moist", "corn_s5_stem_end_macro"), title: "Read the cut end",
+    points: ["Pale & moist = new", "Brown & dry = old", "The stem can't lie"] },
+  // focuscard — la etapa de leche (imagen + tarjeta)
+  { t: atc("white like cream"), id: "cmp_focus_milk", kind: "focuscard", accent: "good", imageSide: "right",
+    imgFileBg: fileFor("corn_a2_kernel_macro_burst", "corn_a2_thumbnail_kernel"), imgFile: imgFor("corn_a2_milky_juice", "corn_a2_kernel_macro_burst"),
+    eyebrow: "The milk stage", title: "Milky = peak sweetness", desc: "Plump, springy, full — exactly what your fingers feel for." },
+  // focuscard — el choclo antiguo (heirloom)
+  { t: atc("one perfect day on the stalk"), id: "cmp_focus_heirloom", kind: "focuscard", accent: "amber", imageSide: "left",
+    imgFileBg: fileFor("corn_hr_heirloom_basket", "corn_hr_dried_seed_corn"), imgFile: imgFor("corn_hr_golden_bantam", "corn_hr_white_corn"),
+    eyebrow: "Heirloom corn", title: "One perfect day", desc: "Too tender to ship — but nothing on earth tastes like it." },
+  // half — el amanecer (anécdota 3)
+  { t: atc("dew still on everything"), id: "cmp_half_dawn", kind: "half", side: "right", hue: "amber",
+    srcFile: fileFor("corn_a3_dawn_field", "corn_a3_sun_rising_corn", "corn_a3_harvest_morning"), kicker: "Sweetest\nat first light" },
+  // half — la mesa (cierre emocional)
+  { t: atc("as good as any"), id: "cmp_half_table", kind: "half", side: "left", hue: "amber",
+    srcFile: fileFor("corn_em_full_table_food", "corn_em_amish_table"), kicker: "As good as\nany king's table" },
 ];
 
 // ── insertar componentes (reemplazan los beats que cubren; respetan AV_FULL) ──
@@ -404,6 +443,11 @@ const overlayComps = [];
 for (const c of [...COMPONENTS].sort((a, b) => (a.t ?? 0) - (b.t ?? 0))) {
   if (c.t == null) continue;
   const { t, bg, leftBg, rightBg, clipBg, kind, overlay, ...rest } = c;
+  // composites con FOTOS REALES (no generar): mapear srcFile/imgFile/imgFileBg → src/image/bg
+  if (["half", "loupe", "splitexplain", "focuscard", "termcard"].includes(kind) && !rest.srcFile && !rest.imgFile) { console.warn("⚠ composite sin archivo, salteado:", c.id); continue; }
+  if (rest.srcFile) { rest.src = rest.srcFile; delete rest.srcFile; }
+  if (rest.imgFile) { rest.image = rest.imgFile; delete rest.imgFile; }
+  if (rest.imgFileBg || (kind === "focuscard" || kind === "splitexplain")) { rest.bg = rest.imgFileBg || rest.image; delete rest.imgFileBg; }
   if (overlay) {
     // overlay: NO reemplaza beats; va encima (como kineticline)
     const ab = { id: c.id, start: +t.toFixed(2), dur: c.dur || 3.0, kind, overlay: true };
