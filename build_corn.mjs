@@ -104,14 +104,22 @@ const inFull = (t) => AV_FULL.some(([s, e]) => t >= s - 1e-6 && t < e - 1e-6);
 const have = (nm) => fs.existsSync(`public/broll/${nm}.mp4`);
 const allMatched = MODE === "build" ? [...new Set(Object.values(S).flatMap((ls) => ls.map((s) => s[0])).filter(have))] : [];
 const usage = {}; let lastClip = null;
+const lastN = []; // últimos clips usados (evita repetir en ventana, no solo el inmediato)
 const pickClip = (own, secMatched) => {
   if (MODE !== "build") return own;
-  if (have(own) && own !== lastClip && (usage[own] || 0) < 3) { usage[own] = (usage[own] || 0) + 1; lastClip = own; return own; }
-  const pool = secMatched.length >= 1 ? secMatched : allMatched;
+  const recent = (nm) => lastN.includes(nm);
+  const take = (nm) => { usage[nm] = (usage[nm] || 0) + 1; lastClip = nm; lastN.push(nm); if (lastN.length > 5) lastN.shift(); return nm; };
+  // 1) clip PROPIO del concepto si está fresco (no usado de más, no reciente)
+  if (have(own) && !recent(own) && (usage[own] || 0) < 2) return take(own);
+  // 2) pool: si la sección tiene ≥3 clips propios, usar esos (on-topic); si no, GLOBAL
+  //    (evita el loop de 1 solo clip cuando la sección bajó pocos matches).
+  const pool = secMatched.length >= 3 ? secMatched : [...new Set([...secMatched, ...allMatched])];
+  // elegir el MENOS usado que no esté en la ventana reciente
   let best = null, bu = Infinity;
-  for (const nm of pool) { const u = usage[nm] || 0; if (nm !== lastClip && u < bu) { bu = u; best = nm; } }
-  if (!best) best = have(own) ? own : (pool[0] || allMatched[0] || own);
-  usage[best] = (usage[best] || 0) + 1; lastClip = best; return best;
+  for (const nm of pool) { const u = usage[nm] || 0; if (!recent(nm) && u < bu) { bu = u; best = nm; } }
+  if (!best) { for (const nm of pool) { const u = usage[nm] || 0; if (nm !== lastClip && u < bu) { bu = u; best = nm; } } }
+  if (!best) best = pool[0] || (have(own) ? own : allMatched[0]) || own;
+  return take(best);
 };
 
 const CLIPS = [];
@@ -179,9 +187,14 @@ if (MODE === "build") {
     usedH.add(nm);
     CLIPS.push([+(t + 0.05).toFixed(2), `bh${++hid}_${nm}`, nm, [""], "hook"]);
     const nt = i + 1 < placed.length ? placed[i + 1].t : t + 4;
-    if (nt - t > 4.5) {
-      const alt = placed[i].cands.find((c) => have(c) && c !== nm) || hpick(placed[i].cands, new Set());
-      if (alt) CLIPS.push([+((t + nt) / 2).toFixed(2), `bh${++hid}_${alt}`, alt, [""], "hook"]);
+    // rellenar huecos: 1 clip alterno cada ~2.5s para que el hook sea RÁFAGA real
+    const gap = nt - t;
+    if (gap > 2.6) {
+      const slots = Math.min(3, Math.floor(gap / 2.4));
+      for (let k = 1; k <= slots; k++) {
+        const alt = pickClip(placed[i].cands.find((c) => have(c)) || placed[i].cands[0], allMatched);
+        if (alt) CLIPS.push([+(t + (gap * k) / (slots + 1)).toFixed(2), `bh${++hid}_${alt}`, alt, [""], "hook"]);
+      }
     }
   }
   console.log(`hook1 anclado: ${placed.length}/${HOOKSEQ.length} frases · ${hid} clips`);
@@ -419,6 +432,31 @@ for (const c of SIGNCARDS) {
   const nextAv = avStarts.filter((s) => s > start + 0.01).sort((a, b) => a - b)[0] ?? TOTAL;
   ab.dur = +(Math.min(next ? next.start : TOTAL, nextAv, start + D + 1) - start).toFixed(2);
   nComp++;
+}
+
+// ── HOOK BURST: partir tarjetas largas (componentes) del primer minuto con clips
+//    de relleno para que el hook NUNCA se quede estático (ráfaga real). ──
+beats.sort((a, b) => a.start - b.start);
+{
+  const fillers = [];
+  for (let i = 0; i < beats.length; i++) {
+    const b = beats[i];
+    if (b.start >= 62 || b.overlay || b.kind === "raw") continue; // solo componentes del minuto 1
+    const nextStart = i + 1 < beats.length ? beats[i + 1].start : TOTAL;
+    let gap = nextStart - b.start;
+    if (gap <= 5.5) continue;
+    // dejar la tarjeta ~4.2s y rellenar el resto con clips de ráfaga ~2.6s
+    let t = +(b.start + 4.2).toFixed(2);
+    while (nextStart - t > 1.6) {
+      const nm = pickClip(allMatched[0], allMatched);
+      if (!nm || !have(nm)) break;
+      fillers.push({ id: `bf_${nm}_${Math.round(t * 10)}`, start: t, dur: 2.4, kind: "raw", src: `broll/${nm}.mp4`, darken: 0 });
+      t = +(t + 2.6).toFixed(2);
+    }
+  }
+  beats.push(...fillers);
+  beats.sort((a, b) => a.start - b.start);
+  if (fillers.length) console.log(`hook burst: +${fillers.length} clips de relleno`);
 }
 
 // ── tiling final: cero pantallas vacías ──
