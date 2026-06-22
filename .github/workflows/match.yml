@@ -114,6 +114,11 @@ jobs:
             chmod a+rx ~/bincache/ffmpeg
           fi
           sudo cp ~/bincache/ffmpeg /usr/local/bin/ffmpeg
+      - name: install deno (resuelve el JS n-challenge de YouTube; sin esto yt-dlp baja "solo imágenes" → 0 matches)
+        run: |
+          curl -fsSL https://deno.land/install.sh | DENO_INSTALL=$HOME/.deno sh
+          echo "$HOME/.deno/bin" >> $GITHUB_PATH
+          $HOME/.deno/bin/deno --version | head -1
       - name: download match list
         env:
           GH_TOKEN: "${{ github.token }}"
