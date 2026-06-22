@@ -247,7 +247,7 @@ const atO = (p, o = 0) => { const v = atc(p); return v == null ? null : +(v + o)
 const _firstClip = (key) => { for (const [nm] of (SHOTS[key] || [])) if (fs.existsSync(`public/broll/${nm}.mp4`)) return nm; return null; };
 // fileFor: archivo visual de un concepto (clip propio o imagen web), o el primero disponible de una lista
 const fileFor = (...nms) => { for (const nm of nms) { if (have(nm)) return `broll/${nm}.mp4`; const ri = realImg(nm); if (ri) return ri; } return null; };
-const imgFor = (...nms) => { for (const nm of nms) { const ri = realImg(nm); if (ri) return ri; if (have(nm)) return `broll/${nm}.mp4`; } return null; }; // prefiere imagen fija (loupe/focuscard)
+const imgFor = (...nms) => { for (const nm of nms) { const ri = realImg(nm); if (ri) return ri; } return null; }; // SOLO imagen fija (loupe/focuscard/splitexplain usan <Img>, NO aceptan .mp4)
 
 // TARJETAS DE SEÑAL (6) — clavadas al reveal de cada señal, fondo = clip de la sección
 const SIGNS = [
@@ -422,11 +422,11 @@ const COMPONENTS = [
     points: ["Pale & moist = new", "Brown & dry = old", "The stem can't lie"] },
   // focuscard — la etapa de leche (imagen + tarjeta)
   { t: atc("white like cream"), id: "cmp_focus_milk", kind: "focuscard", accent: "good", imageSide: "right",
-    imgFileBg: fileFor("corn_a2_kernel_macro_burst", "corn_a2_thumbnail_kernel"), imgFile: imgFor("corn_a2_milky_juice", "corn_a2_kernel_macro_burst"),
+    imgFileBg: imgFor("corn_s3_kernels_pearls", "corn_a2_thumbnail_kernel"), imgFile: imgFor("corn_a2_thumbnail_kernel", "corn_s3_press_kernel_give", "corn_s3_kernels_pearls"),
     eyebrow: "The milk stage", title: "Milky = peak sweetness", desc: "Plump, springy, full — exactly what your fingers feel for." },
   // focuscard — el choclo antiguo (heirloom)
   { t: atc("one perfect day on the stalk"), id: "cmp_focus_heirloom", kind: "focuscard", accent: "amber", imageSide: "left",
-    imgFileBg: fileFor("corn_hr_heirloom_basket", "corn_hr_dried_seed_corn"), imgFile: imgFor("corn_hr_golden_bantam", "corn_hr_white_corn"),
+    imgFileBg: imgFor("corn_hr_heirloom_basket", "corn_hr_dried_seed_corn"), imgFile: imgFor("corn_hr_golden_bantam", "corn_hr_white_corn"),
     eyebrow: "Heirloom corn", title: "One perfect day", desc: "Too tender to ship — but nothing on earth tastes like it." },
   // half — el amanecer (anécdota 3)
   { t: atc("dew still on everything"), id: "cmp_half_dawn", kind: "half", side: "right", hue: "amber",
