@@ -393,6 +393,18 @@ function renderEl(b) {
         (b.drainTag ? ` drainTag=${j(b.drainTag)}` : ``) +
         ` />`
       );
+    case "zeerpot":
+      return (
+        `<ZeerPotDiagram durationInFrames={d}` +
+        (b.eyebrow ? ` eyebrow=${j(b.eyebrow)}` : ``) +
+        (b.title ? ` title=${j(b.title)}` : ``) +
+        (b.inner ? ` inner={${j(b.inner)}}` : ``) +
+        (b.sand ? ` sand={${j(b.sand)}}` : ``) +
+        (b.outer ? ` outer={${j(b.outer)}}` : ``) +
+        (b.dropTag ? ` dropTag=${j(b.dropTag)}` : ``) +
+        (b.gapTag ? ` gapTag=${j(b.gapTag)}` : ``) +
+        ` />`
+      );
     case "checklist":
       return (
         `<Checklist durationInFrames={d} title=${j(b.title || "")} items={${j(b.items || [])}}` +
@@ -883,6 +895,7 @@ if (kinds.has("cross")) imports.push(`import { CrossSection } from "./scenes/Cro
 if (kinds.has("process")) imports.push(`import { ProcessSteps } from "./scenes/ProcessSteps";`);
 if (kinds.has("checklist")) imports.push(`import { Checklist } from "./scenes/Checklist";`);
 if (kinds.has("earthtube")) imports.push(`import { EarthTubeDiagram } from "./scenes/EarthTubeDiagram";`);
+if (kinds.has("zeerpot")) imports.push(`import { ZeerPotDiagram } from "./scenes/ZeerPotDiagram";`);
 if (kinds.has("rampump")) imports.push(`import { RamPumpCycle } from "./scenes/RamPumpCycle";`);
 if (kinds.has("waterlens")) imports.push(`import { WaterLensLight } from "./scenes/WaterLensLight";`);
 if (kinds.has("rule")) imports.push(`import { RuleNumberScene } from "./scenes/RuleNumberScene";`);

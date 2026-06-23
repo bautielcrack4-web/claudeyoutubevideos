@@ -21,6 +21,7 @@ import { MainMoho, TOTAL_FRAMES_MOHO } from "./VideoEdit/Main_moho";
 import { MainAcpipe, TOTAL_FRAMES_ACPIPE } from "./VideoEdit/Main_acpipe";
 import { MainSandia, TOTAL_FRAMES_SANDIA } from "./VideoEdit/Main_sandia";
 import { MainRampump, TOTAL_FRAMES_RAMPUMP } from "./VideoEdit/Main_rampump";
+import { MainZeer, TOTAL_FRAMES_ZEER } from "./VideoEdit/Main_zeer";
 import { MainLuz, TOTAL_FRAMES_LUZ } from "./VideoEdit/Main_luz";
 import { MainMedicaid, TOTAL_FRAMES_MED } from "./VideoEdit/Main_medicaid";
 import { MainViuda, TOTAL_FRAMES_VD } from "./VideoEdit/Main_viuda";
@@ -32,6 +33,7 @@ import { MainLeona, TOTAL_FRAMES_LEONA } from "./VideoEdit/Main_leona";
 import { MainConstrucciones, TOTAL_FRAMES_CONS } from "./VideoEdit/Main_construcciones";
 import { MainAntartida, TOTAL_FRAMES_ANT } from "./VideoEdit/Main_antartida";
 import { MainTuneles, TOTAL_FRAMES_TUN } from "./VideoEdit/Main_tuneles";
+// import { MainPuertas, TOTAL_FRAMES_PUE } from "./VideoEdit/Main_puertas"; // roto: falta cues_puertas.gen
 
 // ── SOLO los videos ACTIVOS quedan registrados ──
 // Las composiciones viejas (Fly, Hipos, Bisontes, Objetos, Civil, Top7Demo,
@@ -53,6 +55,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="Antartida" component={MainAntartida} durationInFrames={TOTAL_FRAMES_ANT} fps={30} width={1920} height={1080} />
       {/* VIDEO 5 Crónicas Perdidas — "7 Túneles Antiguos Que la Ciencia No Puede Explicar" */}
       <Composition id="Tuneles" component={MainTuneles} durationInFrames={TOTAL_FRAMES_TUN} fps={30} width={1920} height={1080} />
+      {/* VIDEO 6 Crónicas Perdidas — "7 Puertas Antiguas..." (deshabilitado: falta cues_puertas.gen) */}
       {/* VIDEO ACTIVO — Ben retirado · "Los gastos hormiga" · AVATAR · look ALARMA */}
       <Composition id="Hormiga" component={MainHormiga} durationInFrames={TOTAL_FRAMES_HB} fps={30} width={1920} height={1080} />
       {/* VIDEO ACTIVO — Ben retirado · "Las estafas que vacían la cuenta" · AVATAR · look ALARMA */}
@@ -133,6 +136,15 @@ export const RemotionRoot: React.FC = () => {
         id="Acpipe"
         component={MainAcpipe}
         durationInFrames={TOTAL_FRAMES_ACPIPE}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
+      {/* VIDEO ACTIVO — Keep food cold with no fridge / zeer pot (Claudio · off-grid EN) */}
+      <Composition
+        id="Zeer"
+        component={MainZeer}
+        durationInFrames={TOTAL_FRAMES_ZEER}
         fps={30}
         width={1920}
         height={1080}

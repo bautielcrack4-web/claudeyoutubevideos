@@ -1,0 +1,1579 @@
+{
+  "video": "zeer",
+  "avatar": "zeer_opt.mp4",
+  "clipsfirst": true,
+  "beats": [
+    {
+      "id": "z_h_reveal",
+      "start": 1.8,
+      "dur": 3.7,
+      "kind": "raw",
+      "src": "img/z_h_reveal.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "z_h_reveal",
+        "prompt": "weathered hands lifting a damp cloth lid off a plain terracotta pot on a sunlit wooden porch, revealing crisp green vegetables, a pat of butter and brown eggs beaded with cool condensation inside, warm afternoon light, realistic color photograph, natural color, cinematic lighting, shallow depth of field, sharp focus, highly detailed, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "z_h_heat",
+      "start": 5,
+      "dur": 3.5,
+      "kind": "raw",
+      "src": "img/z_h_heat.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "z_h_heat",
+        "prompt": "a weathered wooden farmhouse porch baking in harsh afternoon sun, visible heat shimmer in the air, an old analog thermometer on the wall, no appliances anywhere, cinematic, realistic color photograph, natural color, cinematic lighting, shallow depth of field, sharp focus, highly detailed, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "z_h_impact1",
+      "start": 8,
+      "dur": 5,
+      "kind": "impact",
+      "image": "img/z_h_reveal.png",
+      "setup": "94° on the porch.",
+      "impact": "~50° in the pot.",
+      "impactAccent": "cold",
+      "hitAt": 1.9,
+      "boom": 0,
+      "darken": 0.42
+    },
+    {
+      "id": "z_h_pot2",
+      "start": 13,
+      "dur": 5,
+      "kind": "keyphrase",
+      "text": "Nothing is plugged in.",
+      "src": "img/z_h_pot2.png",
+      "accent": "cold",
+      "fontSize": 104,
+      "gen": {
+        "type": "image",
+        "name": "z_h_pot2",
+        "prompt": "a lone plain terracotta pot-in-pot cooler sitting on a porch in full afternoon sun, no cord, no outlet, nothing electric anywhere around it, realistic color photograph, natural color, cinematic lighting, shallow depth of field, sharp focus, highly detailed, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "z_h_food",
+      "start": 18,
+      "dur": 4.5,
+      "kind": "raw",
+      "src": "img/z_h_food.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "z_h_food",
+        "prompt": "macro of crisp green lettuce, a firm pat of butter and brown eggs inside a cool clay pot, droplets of cold condensation on the produce, realistic color photograph, natural color, cinematic lighting, shallow depth of field, sharp focus, highly detailed, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "z_h_butter",
+      "start": 22,
+      "dur": 5.5,
+      "kind": "raw",
+      "src": "img/z_h_butter.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "z_h_butter",
+        "prompt": "extreme close-up of a firm pat of butter and fresh brown eggs resting on a cool clay surface, soft daylight, dewy, realistic color photograph, natural color, cinematic lighting, shallow depth of field, sharp focus, highly detailed, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "z_h_grandma",
+      "start": 27,
+      "dur": 7.5,
+      "kind": "raw",
+      "src": "img/z_h_grandma.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "z_h_grandma",
+        "prompt": "a vintage Amish farmhouse kitchen, an older woman's weathered hands lifting a stoneware crock, no refrigerator anywhere, soft window light, nostalgic, realistic color photograph, natural color, cinematic lighting, shallow depth of field, sharp focus, highly detailed, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "z_h_oldways",
+      "start": 34,
+      "dur": 7.5,
+      "kind": "raw",
+      "src": "img/z_h_oldways.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "z_h_oldways",
+        "prompt": "a dim root cellar lined with stoneware crocks and mason jars, earthen walls, a single soft shaft of light, deeply shadowed and calm, realistic color photograph, natural color, cinematic lighting, shallow depth of field, sharp focus, highly detailed, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "z_h_pot_on_table",
+      "start": 41,
+      "dur": 5.5,
+      "kind": "raw",
+      "src": "img/z_h_pot_on_table.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "z_h_pot_on_table",
+        "prompt": "a finished pot-in-pot clay cooler on a rustic wooden table with a damp burlap lid, warm documentary lighting, humble and real, realistic color photograph, natural color, cinematic lighting, shallow depth of field, sharp focus, highly detailed, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "z_h_springhouse",
+      "start": 46,
+      "dur": 6.7,
+      "kind": "raw",
+      "src": "img/z_h_springhouse.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "z_h_springhouse",
+        "prompt": "a small old stone spring house over a clear running creek in dappled shade, mossy stones, the coldest spot on a farm, cinematic, realistic color photograph, natural color, cinematic lighting, shallow depth of field, sharp focus, highly detailed, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "z_tools",
+      "start": 52.2,
+      "dur": 4.6,
+      "kind": "raw",
+      "src": "broll/z_tools.mp4",
+      "darken": 0
+    },
+    {
+      "id": "z_store",
+      "start": 56.3,
+      "dur": 7.7,
+      "kind": "raw",
+      "src": "broll/z_store.mp4",
+      "darken": 0
+    },
+    {
+      "id": "z_evap_macro",
+      "start": 63.5,
+      "dur": 4.5,
+      "kind": "raw",
+      "src": "broll/z_evap_macro.mp4",
+      "darken": 0
+    },
+    {
+      "id": "z_terracotta",
+      "start": 67.5,
+      "dur": 4.5,
+      "kind": "raw",
+      "src": "real/z_terracotta_1.jpg",
+      "darken": 0
+    },
+    {
+      "id": "z_stack",
+      "start": 71.5,
+      "dur": 4.5,
+      "kind": "raw",
+      "src": "broll/z_stack.mp4",
+      "darken": 0
+    },
+    {
+      "id": "z_garden_center",
+      "start": 75.5,
+      "dur": 4.5,
+      "kind": "raw",
+      "src": "broll/z_garden_center.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_methods",
+      "start": 79.5,
+      "dur": 9,
+      "kind": "splitlist",
+      "palette": "B",
+      "title": "Four ways to keep food cold",
+      "items": [
+        "The clay pot (zeer) — daily produce",
+        "The cold north pantry",
+        "The root cellar",
+        "The spring house — milk & meat"
+      ]
+    },
+    {
+      "id": "z_springhouse1",
+      "start": 88.5,
+      "dur": 4.5,
+      "kind": "raw",
+      "src": "broll/z_springhouse1.mp4",
+      "darken": 0
+    },
+    {
+      "id": "z_cellar_full",
+      "start": 92.5,
+      "dur": 4,
+      "kind": "raw",
+      "src": "broll/z_cellar_full.mp4",
+      "darken": 0
+    },
+    {
+      "id": "z_powerlines",
+      "start": 96,
+      "dur": 3.5,
+      "kind": "raw",
+      "src": "broll/z_powerlines.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_fridge",
+      "start": 105.8,
+      "dur": 6.2,
+      "kind": "callout",
+      "hue": "red",
+      "accent": "danger",
+      "figure": "24 / 7",
+      "eyebrow": "Never rests",
+      "caption": "the one appliance that runs day and night — one of the largest draws on your power bill",
+      "image": "img/cmp_fridge_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "cmp_fridge_bg",
+        "prompt": "a refrigerator humming in a dark kitchen at night, realistic color photograph, natural vivid colors, sharp focus, well lit, clean, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "z_fridge_inside",
+      "start": 112,
+      "dur": 5,
+      "kind": "raw",
+      "src": "broll/z_fridge_inside.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_fridgecost",
+      "start": 116.5,
+      "dur": 10,
+      "kind": "bars",
+      "hue": "amber",
+      "accent": "good",
+      "unit": "USD",
+      "title": "Keeping food cold — 10 years",
+      "eyebrow": "Same job",
+      "bars": [
+        {
+          "label": "The clay pot",
+          "value": 1,
+          "display": "$15 once",
+          "sub": "+ a little water",
+          "winner": true
+        },
+        {
+          "label": "A refrigerator",
+          "value": 55,
+          "display": "$800+",
+          "sub": "the unit + power, 24/7"
+        }
+      ]
+    },
+    {
+      "id": "cmp_blackout",
+      "start": 126.5,
+      "dur": 6.5,
+      "kind": "callout",
+      "hue": "red",
+      "accent": "danger",
+      "figure": "1 day",
+      "eyebrow": "When the power dies",
+      "caption": "your fridge becomes a warm closed cupboard — the food inside begins to spoil",
+      "image": "img/cmp_blackout_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "cmp_blackout_bg",
+        "prompt": "dark storm clouds gathering over a rural house, realistic color photograph, natural vivid colors, sharp focus, well lit, clean, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "z_iceline",
+      "start": 133,
+      "dur": 4,
+      "kind": "raw",
+      "src": "broll/z_iceline.mp4",
+      "darken": 0
+    },
+    {
+      "id": "z_darkfridge",
+      "start": 136.5,
+      "dur": 6.5,
+      "kind": "raw",
+      "src": "broll/z_darkfridge.mp4",
+      "darken": 0
+    },
+    {
+      "id": "z_melting",
+      "start": 142.5,
+      "dur": 7.5,
+      "kind": "raw",
+      "src": "real/z_melting_1.jpg",
+      "darken": 0
+    },
+    {
+      "id": "cmp_fournofail",
+      "start": 149.5,
+      "dur": 9.5,
+      "kind": "chips",
+      "hue": "amber",
+      "title": "Cold that cannot fail",
+      "chips": [
+        "clay",
+        "earth",
+        "water",
+        "shade"
+      ],
+      "image": "img/cmp_fournofail_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "cmp_fournofail_bg",
+        "prompt": "a simple amish farm landscape at golden hour, no power lines, realistic color photograph, natural vivid colors, sharp focus, well lit, clean, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "z_pot_porch",
+      "start": 159,
+      "dur": 4.5,
+      "kind": "raw",
+      "src": "broll/z_pot_porch.mp4",
+      "darken": 0
+    },
+    {
+      "id": "z_potinpot",
+      "start": 163,
+      "dur": 4,
+      "kind": "raw",
+      "src": "broll/z_potinpot.mp4",
+      "darken": 0
+    },
+    {
+      "id": "z_zeer_market",
+      "start": 166.5,
+      "dur": 6.5,
+      "kind": "raw",
+      "src": "real/z_zeer_market_1.jpg",
+      "darken": 0
+    },
+    {
+      "id": "z_sand_pour",
+      "start": 172.5,
+      "dur": 4.5,
+      "kind": "raw",
+      "src": "broll/z_sand_pour.mp4",
+      "darken": 0
+    },
+    {
+      "id": "z_law",
+      "start": 176.5,
+      "dur": 4.5,
+      "kind": "raw",
+      "src": "real/z_law_1.jpg",
+      "darken": 0
+    },
+    {
+      "id": "z_lake",
+      "start": 180.5,
+      "dur": 4.5,
+      "kind": "raw",
+      "src": "real/z_lake_1.jpg",
+      "darken": 0
+    },
+    {
+      "id": "z_steam",
+      "start": 184.5,
+      "dur": 4.5,
+      "kind": "raw",
+      "src": "broll/z_steam.mp4",
+      "darken": 0
+    },
+    {
+      "id": "z_drying",
+      "start": 188.5,
+      "dur": 4.5,
+      "kind": "raw",
+      "src": "broll/z_drying.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_zeer",
+      "start": 192.5,
+      "dur": 8,
+      "kind": "zeerpot",
+      "eyebrow": "How the pot works",
+      "title": "Wet sand, dry air, cold food",
+      "inner": {
+        "text": "Food ~50°F",
+        "sub": "stays cool & crisp"
+      },
+      "sand": {
+        "text": "Wet sand",
+        "sub": "soaks the outer clay"
+      },
+      "outer": {
+        "text": "95°F dry air",
+        "sub": "pulls the moisture out"
+      },
+      "dropTag": "15–25°F cooler",
+      "gapTag": "1–2 in"
+    },
+    {
+      "id": "z_sandwet",
+      "start": 200.5,
+      "dur": 7.5,
+      "kind": "raw",
+      "src": "broll/z_sandwet.mp4",
+      "darken": 0
+    },
+    {
+      "id": "z_vapor",
+      "start": 207.5,
+      "dur": 4.5,
+      "kind": "raw",
+      "src": "real/z_vapor_1.jpg",
+      "darken": 0
+    },
+    {
+      "id": "z_innerfood",
+      "start": 211.5,
+      "dur": 4.5,
+      "kind": "raw",
+      "src": "real/z_innerfood_1.jpg",
+      "darken": 0
+    },
+    {
+      "id": "z_dry_ground",
+      "start": 215.5,
+      "dur": 4.5,
+      "kind": "raw",
+      "src": "real/z_dry_ground_1.jpg",
+      "darken": 0
+    },
+    {
+      "id": "z_blistering",
+      "start": 219.5,
+      "dur": 9,
+      "kind": "raw",
+      "src": "real/z_blistering_1.png",
+      "darken": 0
+    },
+    {
+      "id": "z_water_pour2",
+      "start": 228,
+      "dur": 6,
+      "kind": "raw",
+      "src": "broll/z_water_pour2.mp4",
+      "darken": 0
+    },
+    {
+      "id": "z_build_intro",
+      "start": 233.5,
+      "dur": 4.5,
+      "kind": "raw",
+      "src": "real/z_build_intro_1.jpg",
+      "darken": 0
+    },
+    {
+      "id": "z_materials_lay",
+      "start": 237.5,
+      "dur": 5,
+      "kind": "raw",
+      "src": "real/z_materials_lay_1.png",
+      "darken": 0
+    },
+    {
+      "id": "z_garden_pots",
+      "start": 242,
+      "dur": 5,
+      "kind": "raw",
+      "src": "broll/z_garden_pots.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_shoplist",
+      "start": 246.5,
+      "dur": 8.5,
+      "kind": "checklist",
+      "hue": "amber",
+      "accent": "good",
+      "title": "What to buy",
+      "eyebrow": "≈ $15 total",
+      "items": [
+        {
+          "text": "Large unglazed terracotta pot",
+          "note": "$8–10",
+          "state": "done"
+        },
+        {
+          "text": "Smaller pot that nests inside",
+          "note": "$3–4",
+          "state": "done"
+        },
+        {
+          "text": "A bag of plain sand",
+          "note": "$2",
+          "state": "done"
+        },
+        {
+          "text": "Burlap or a clean cloth + water",
+          "state": "done"
+        }
+      ],
+      "image": "img/cmp_shoplist_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "cmp_shoplist_bg",
+        "prompt": "terracotta pots and a bag of sand at a garden center, realistic color photograph, natural vivid colors, sharp focus, well lit, clean, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "z_smallpot",
+      "start": 255,
+      "dur": 5.5,
+      "kind": "raw",
+      "src": "real/z_smallpot_1.jpg",
+      "darken": 0
+    },
+    {
+      "id": "z_gap",
+      "start": 260,
+      "dur": 4,
+      "kind": "raw",
+      "src": "real/z_gap_1.jpg",
+      "darken": 0
+    },
+    {
+      "id": "z_sandbag",
+      "start": 263.5,
+      "dur": 7.5,
+      "kind": "raw",
+      "src": "broll/z_sandbag.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_steps",
+      "start": 270.5,
+      "dur": 9,
+      "kind": "process",
+      "hue": "amber",
+      "accent": "amber",
+      "title": "The build, step by step",
+      "eyebrow": "One afternoon",
+      "steps": [
+        {
+          "title": "Plug the outer pot's hole"
+        },
+        {
+          "title": "Sand bed + nest the inner pot"
+        },
+        {
+          "title": "Fill the ring with sand"
+        },
+        {
+          "title": "Soak the sand"
+        },
+        {
+          "title": "Damp cloth lid"
+        }
+      ]
+    },
+    {
+      "id": "z_plug",
+      "start": 279.5,
+      "dur": 6.5,
+      "kind": "raw",
+      "src": "broll/z_plug.mp4",
+      "darken": 0
+    },
+    {
+      "id": "z_hold",
+      "start": 285.5,
+      "dur": 6.5,
+      "kind": "raw",
+      "src": "real/z_hold_1.jpg",
+      "darken": 0
+    },
+    {
+      "id": "z_sand_bottom",
+      "start": 291.5,
+      "dur": 6.5,
+      "kind": "raw",
+      "src": "broll/z_sand_bottom.mp4",
+      "darken": 0
+    },
+    {
+      "id": "z_setpot",
+      "start": 297.5,
+      "dur": 5.5,
+      "kind": "raw",
+      "src": "broll/z_setpot.mp4",
+      "darken": 0
+    },
+    {
+      "id": "z_gap_top",
+      "start": 302.5,
+      "dur": 4.5,
+      "kind": "raw",
+      "src": "real/z_gap_top_1.jpg",
+      "darken": 0
+    },
+    {
+      "id": "z_fillring",
+      "start": 306.5,
+      "dur": 5.5,
+      "kind": "raw",
+      "src": "broll/z_fillring.mp4",
+      "darken": 0
+    },
+    {
+      "id": "z_pack",
+      "start": 311.5,
+      "dur": 7.5,
+      "kind": "raw",
+      "src": "real/z_pack_1.png",
+      "darken": 0
+    },
+    {
+      "id": "z_soak",
+      "start": 318.5,
+      "dur": 5.5,
+      "kind": "raw",
+      "src": "real/z_soak_1.jpg",
+      "darken": 0
+    },
+    {
+      "id": "z_darksand",
+      "start": 323.5,
+      "dur": 7.5,
+      "kind": "raw",
+      "src": "real/z_darksand_1.jpg",
+      "darken": 0
+    },
+    {
+      "id": "z_innerempty",
+      "start": 330.5,
+      "dur": 5.5,
+      "kind": "raw",
+      "src": "broll/z_innerempty.mp4",
+      "darken": 0
+    },
+    {
+      "id": "z_clothlid",
+      "start": 335.5,
+      "dur": 5.5,
+      "kind": "raw",
+      "src": "real/z_clothlid_1.jpg",
+      "darken": 0
+    },
+    {
+      "id": "z_wetcloth",
+      "start": 340.5,
+      "dur": 6.5,
+      "kind": "raw",
+      "src": "real/z_wetcloth_1.jpg",
+      "darken": 0
+    },
+    {
+      "id": "cmp_placement",
+      "start": 346.5,
+      "dur": 10,
+      "kind": "callout",
+      "hue": "cold",
+      "accent": "good",
+      "figure": "Shade + breeze",
+      "eyebrow": "Where to put it",
+      "caption": "shade and moving air let the evaporation run — full sun fights against it",
+      "image": "img/cmp_placement_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "cmp_placement_bg",
+        "prompt": "a clay pot cooler in the breezy shade of a porch, realistic color photograph, natural vivid colors, sharp focus, well lit, clean, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "cmp_keeps",
+      "start": 356.5,
+      "dur": 4,
+      "kind": "checklist",
+      "hue": "good",
+      "accent": "good",
+      "title": "What it keeps",
+      "eyebrow": "Days to weeks",
+      "items": [
+        {
+          "text": "Leafy greens — most of a week",
+          "state": "done"
+        },
+        {
+          "text": "Root veg, peppers, tomatoes",
+          "state": "done"
+        },
+        {
+          "text": "Eggs — weeks",
+          "state": "done"
+        },
+        {
+          "text": "Butter firm, soft cheeses hold",
+          "state": "done"
+        }
+      ],
+      "image": "img/cmp_keeps_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "cmp_keeps_bg",
+        "prompt": "fresh greens, eggs, butter and vegetables on a wooden board, realistic color photograph, natural vivid colors, sharp focus, well lit, clean, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "cmp_drop",
+      "start": 360.5,
+      "dur": 3.5,
+      "kind": "stat",
+      "hue": "cold",
+      "accent": "cold",
+      "value": 25,
+      "suffix": "°F",
+      "label": "cooler than the air in dry heat — food that keeps for days or weeks",
+      "eyebrow": "How cold it runs"
+    },
+    {
+      "id": "cmp_chore",
+      "start": 364,
+      "dur": 8,
+      "kind": "stat",
+      "hue": "cold",
+      "accent": "good",
+      "value": 1,
+      "suffix": " min/day",
+      "label": "the only chore — top up the sand with water",
+      "eyebrow": "Maintenance"
+    },
+    {
+      "id": "cmp_keepslong",
+      "start": 387,
+      "dur": 14,
+      "kind": "bars",
+      "hue": "cold",
+      "accent": "good",
+      "unit": "days",
+      "title": "How long leafy greens last",
+      "eyebrow": "In summer heat",
+      "bars": [
+        {
+          "label": "Warm counter",
+          "value": 1,
+          "display": "~1 day",
+          "tone": "amber"
+        },
+        {
+          "label": "In the pot",
+          "value": 6,
+          "display": "~6 days",
+          "winner": true
+        }
+      ]
+    },
+    {
+      "id": "z_greens",
+      "start": 401,
+      "dur": 4.5,
+      "kind": "raw",
+      "src": "real/z_greens_1.jpg",
+      "darken": 0
+    },
+    {
+      "id": "z_rootveg",
+      "start": 405,
+      "dur": 4,
+      "kind": "raw",
+      "src": "broll/z_rootveg.mp4",
+      "darken": 0
+    },
+    {
+      "id": "z_eggsbutter",
+      "start": 408.5,
+      "dur": 3,
+      "kind": "raw",
+      "src": "broll/z_eggsbutter.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_notfreezer",
+      "start": 417.5,
+      "dur": 7.5,
+      "kind": "mistake",
+      "number": "!",
+      "eyebrow": "BE HONEST",
+      "title": "Not a freezer",
+      "desc": "No raw meat or fresh milk in summer heat — it doesn't get cold enough, long enough, to keep those safe.",
+      "image": "img/cmp_notfreezer_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "cmp_notfreezer_bg",
+        "prompt": "raw meat and a jug of fresh milk on a counter, realistic color photograph, natural vivid colors, sharp focus, well lit, clean, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "z_milkjug",
+      "start": 425,
+      "dur": 4,
+      "kind": "raw",
+      "src": "broll/z_milkjug.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_dryair",
+      "start": 428.5,
+      "dur": 9.5,
+      "kind": "callout",
+      "hue": "amber",
+      "accent": "good",
+      "figure": "Dry heat = best",
+      "eyebrow": "Know its limit",
+      "caption": "in a damp, humid climate the evaporation slows down — use it for what it's good at",
+      "image": "img/cmp_dryair_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "cmp_dryair_bg",
+        "prompt": "a dry arid landscape under a clear blue sky, realistic color photograph, natural vivid colors, sharp focus, well lit, clean, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "z_humid",
+      "start": 438,
+      "dur": 5,
+      "kind": "raw",
+      "src": "broll/z_humid.mp4",
+      "darken": 0
+    },
+    {
+      "id": "z_dryfield",
+      "start": 442.5,
+      "dur": 4.5,
+      "kind": "raw",
+      "src": "broll/z_dryfield.mp4",
+      "darken": 0
+    },
+    {
+      "id": "z_reliable",
+      "start": 446.5,
+      "dur": 4.5,
+      "kind": "raw",
+      "src": "real/z_reliable_1.jpg",
+      "darken": 0
+    },
+    {
+      "id": "z_produce",
+      "start": 450.5,
+      "dur": 5.5,
+      "kind": "raw",
+      "src": "broll/z_produce.mp4",
+      "darken": 0
+    },
+    {
+      "id": "z_longstore",
+      "start": 455.5,
+      "dur": 5,
+      "kind": "raw",
+      "src": "real/z_longstore_1.jpg",
+      "darken": 0
+    },
+    {
+      "id": "z_stonehouse",
+      "start": 460,
+      "dur": 6.5,
+      "kind": "raw",
+      "src": "broll/z_stonehouse.mp4",
+      "darken": 0
+    },
+    {
+      "id": "z_pantrycloset",
+      "start": 466,
+      "dur": 4,
+      "kind": "raw",
+      "src": "real/z_pantrycloset_1.jpg",
+      "darken": 0
+    },
+    {
+      "id": "cmp_pantry",
+      "start": 469.5,
+      "dur": 9,
+      "kind": "callout",
+      "hue": "cold",
+      "accent": "good",
+      "figure": "North wall",
+      "eyebrow": "The cold pantry",
+      "caption": "thick stone walls hold the night's cool through the heat of the day — thermal mass",
+      "image": "img/cmp_pantry_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "cmp_pantry_bg",
+        "prompt": "the cool shaded north stone wall of an old farmhouse, realistic color photograph, natural vivid colors, sharp focus, well lit, clean, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "z_thickwall",
+      "start": 478.5,
+      "dur": 4.5,
+      "kind": "raw",
+      "src": "broll/z_thickwall.mp4",
+      "darken": 0
+    },
+    {
+      "id": "z_masonry",
+      "start": 482.5,
+      "dur": 7.5,
+      "kind": "raw",
+      "src": "broll/z_masonry.mp4",
+      "darken": 0
+    },
+    {
+      "id": "z_coolwall",
+      "start": 489.5,
+      "dur": 6.5,
+      "kind": "raw",
+      "src": "real/z_coolwall_1.webp",
+      "darken": 0
+    },
+    {
+      "id": "z_sunwall",
+      "start": 495.5,
+      "dur": 6.5,
+      "kind": "raw",
+      "src": "broll/z_sunwall.mp4",
+      "darken": 0
+    },
+    {
+      "id": "z_coolnight",
+      "start": 501.5,
+      "dur": 5.5,
+      "kind": "raw",
+      "src": "broll/z_coolnight.mp4",
+      "darken": 0
+    },
+    {
+      "id": "z_steadycool",
+      "start": 506.5,
+      "dur": 7.5,
+      "kind": "raw",
+      "src": "real/z_steadycool_1.jpg",
+      "darken": 0
+    },
+    {
+      "id": "z_deepshelves",
+      "start": 513.5,
+      "dur": 6.5,
+      "kind": "raw",
+      "src": "broll/z_deepshelves.mp4",
+      "darken": 0
+    },
+    {
+      "id": "z_vents",
+      "start": 519.5,
+      "dur": 5,
+      "kind": "raw",
+      "src": "real/z_vents_1.jpg",
+      "darken": 0
+    },
+    {
+      "id": "cmp_pantrymake",
+      "start": 524,
+      "dur": 9.5,
+      "kind": "checklist",
+      "hue": "amber",
+      "accent": "good",
+      "title": "Make one today — even renting",
+      "eyebrow": "Cold pantry",
+      "items": [
+        {
+          "text": "North, coldest room or closet",
+          "state": "done"
+        },
+        {
+          "text": "Keep it shut against the warm house",
+          "state": "done"
+        },
+        {
+          "text": "Jars, roots, cheese low on the outer wall",
+          "state": "done"
+        },
+        {
+          "text": "A corner that never sees sun",
+          "state": "done"
+        }
+      ],
+      "image": "img/cmp_pantrymake_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "cmp_pantrymake_bg",
+        "prompt": "a cool dim pantry corner with deep stocked shelves, realistic color photograph, natural vivid colors, sharp focus, well lit, clean, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "z_closet",
+      "start": 533.5,
+      "dur": 5.5,
+      "kind": "raw",
+      "src": "broll/z_closet.mp4",
+      "darken": 0
+    },
+    {
+      "id": "z_corner",
+      "start": 538.5,
+      "dur": 5.5,
+      "kind": "raw",
+      "src": "real/z_corner_1.jpg",
+      "darken": 0
+    },
+    {
+      "id": "z_lowshelf",
+      "start": 543.5,
+      "dur": 6.5,
+      "kind": "raw",
+      "src": "broll/z_lowshelf.mp4",
+      "darken": 0
+    },
+    {
+      "id": "z_cheesecrocks",
+      "start": 549.5,
+      "dur": 6.5,
+      "kind": "raw",
+      "src": "real/z_cheesecrocks_1.jpg",
+      "darken": 0
+    },
+    {
+      "id": "z_pantryfull",
+      "start": 555.5,
+      "dur": 6.5,
+      "kind": "raw",
+      "src": "broll/z_pantryfull.mp4",
+      "darken": 0
+    },
+    {
+      "id": "z_cellarsteps",
+      "start": 561.5,
+      "dur": 4.5,
+      "kind": "raw",
+      "src": "real/z_cellarsteps_1.webp",
+      "darken": 0
+    },
+    {
+      "id": "z_undergroundcool",
+      "start": 565.5,
+      "dur": 7.5,
+      "kind": "raw",
+      "src": "real/z_undergroundcool_1.jpg",
+      "darken": 0
+    },
+    {
+      "id": "z_rootcellar1",
+      "start": 572.5,
+      "dur": 4.5,
+      "kind": "raw",
+      "src": "broll/z_rootcellar1.mp4",
+      "darken": 0
+    },
+    {
+      "id": "z_cellarstore",
+      "start": 576.5,
+      "dur": 4.5,
+      "kind": "raw",
+      "src": "broll/z_cellarstore.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_soil",
+      "start": 580.5,
+      "dur": 9,
+      "kind": "cross",
+      "hue": "cold",
+      "title": "The deeper you go",
+      "eyebrow": "Under your feet",
+      "layers": [
+        {
+          "label": "Surface — swings hot & cold",
+          "color": "#c9a25c",
+          "weight": 1
+        },
+        {
+          "label": "A few feet — the swing fades",
+          "color": "#9c7b46",
+          "weight": 1
+        },
+        {
+          "label": "Cellar depth — ~55°F all year",
+          "color": "#6c5736",
+          "weight": 1.5
+        }
+      ],
+      "marker": {
+        "label": "the cellar",
+        "atDepth": 0.5,
+        "color": "cold"
+      }
+    },
+    {
+      "id": "z_soilpit",
+      "start": 589.5,
+      "dur": 4.5,
+      "kind": "raw",
+      "src": "broll/z_soilpit.mp4",
+      "darken": 0
+    },
+    {
+      "id": "z_coolearth",
+      "start": 593.5,
+      "dur": 5.5,
+      "kind": "raw",
+      "src": "real/z_coolearth_1.jpg",
+      "darken": 0
+    },
+    {
+      "id": "z_seasons",
+      "start": 598.5,
+      "dur": 7.5,
+      "kind": "raw",
+      "src": "real/z_seasons_1.jpg",
+      "darken": 0
+    },
+    {
+      "id": "cmp_cellar4",
+      "start": 605.5,
+      "dur": 9,
+      "kind": "checklist",
+      "hue": "cold",
+      "accent": "good",
+      "title": "A good cellar wants four things",
+      "eyebrow": "Root cellar",
+      "items": [
+        {
+          "text": "Cool — from the earth",
+          "state": "done"
+        },
+        {
+          "text": "Dark — roots won't sprout",
+          "state": "done"
+        },
+        {
+          "text": "A little damp — won't shrivel",
+          "state": "done"
+        },
+        {
+          "text": "Breathing — a low and a high vent",
+          "state": "done"
+        }
+      ],
+      "image": "img/cmp_cellar4_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "cmp_cellar4_bg",
+        "prompt": "the cool earthen interior of a stocked root cellar, realistic color photograph, natural vivid colors, sharp focus, well lit, clean, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "z_earthshelves",
+      "start": 614.5,
+      "dur": 5.5,
+      "kind": "raw",
+      "src": "broll/z_earthshelves.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_holds",
+      "start": 619.5,
+      "dur": 8,
+      "kind": "chips",
+      "hue": "amber",
+      "title": "What a cellar holds",
+      "chips": [
+        "potatoes",
+        "apples",
+        "cabbages",
+        "onions",
+        "squash",
+        "jars"
+      ],
+      "image": "img/cmp_holds_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "cmp_holds_bg",
+        "prompt": "a root cellar full of stored vegetables and canned jars, realistic color photograph, natural vivid colors, sharp focus, well lit, clean, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "z_potatobins",
+      "start": 627.5,
+      "dur": 5.5,
+      "kind": "raw",
+      "src": "broll/z_potatobins.mp4",
+      "darken": 0
+    },
+    {
+      "id": "z_apples",
+      "start": 632.5,
+      "dur": 4.5,
+      "kind": "raw",
+      "src": "real/z_apples_1.jpg",
+      "darken": 0
+    },
+    {
+      "id": "z_hangveg",
+      "start": 636.5,
+      "dur": 6.5,
+      "kind": "raw",
+      "src": "broll/z_hangveg.mp4",
+      "darken": 0
+    },
+    {
+      "id": "z_cannedjars",
+      "start": 642.5,
+      "dur": 10.5,
+      "kind": "raw",
+      "src": "broll/z_cannedjars.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_minicellar",
+      "start": 652.5,
+      "dur": 9,
+      "kind": "callout",
+      "hue": "amber",
+      "accent": "good",
+      "figure": "Start small",
+      "eyebrow": "No barn? No hillside?",
+      "caption": "a clean barrel or tub sunk in the ground with a lid and straw holds a winter's potatoes",
+      "image": "img/cmp_minicellar_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "cmp_minicellar_bg",
+        "prompt": "a clean barrel sunk into the ground with a straw covered lid, realistic color photograph, natural vivid colors, sharp focus, well lit, clean, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "z_straw",
+      "start": 661.5,
+      "dur": 6.5,
+      "kind": "raw",
+      "src": "broll/z_straw.mp4",
+      "darken": 0
+    },
+    {
+      "id": "z_simplehole",
+      "start": 667.5,
+      "dur": 6.5,
+      "kind": "raw",
+      "src": "real/z_simplehole_1.jpg",
+      "darken": 0
+    },
+    {
+      "id": "z_milkcream",
+      "start": 673.5,
+      "dur": 7.5,
+      "kind": "raw",
+      "src": "broll/z_milkcream.mp4",
+      "darken": 0
+    },
+    {
+      "id": "z_springwater1",
+      "start": 680.5,
+      "dur": 4.5,
+      "kind": "raw",
+      "src": "real/z_springwater1_1.png",
+      "darken": 0
+    },
+    {
+      "id": "z_creek",
+      "start": 684.5,
+      "dur": 6.5,
+      "kind": "raw",
+      "src": "real/z_creek_1.png",
+      "darken": 0
+    },
+    {
+      "id": "z_spring_bubble",
+      "start": 690.5,
+      "dur": 5.5,
+      "kind": "raw",
+      "src": "broll/z_spring_bubble.mp4",
+      "darken": 0
+    },
+    {
+      "id": "z_stonehouse_stream",
+      "start": 695.5,
+      "dur": 7.5,
+      "kind": "raw",
+      "src": "broll/z_stonehouse_stream.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_spring",
+      "start": 702.5,
+      "dur": 12,
+      "kind": "callout",
+      "hue": "cold",
+      "accent": "good",
+      "figure": "Running water",
+      "eyebrow": "The coldest method",
+      "caption": "cold spring water comes out at ~50°F and never stops — forever carrying the warmth downstream",
+      "image": "img/cmp_spring_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "cmp_spring_bg",
+        "prompt": "cold clear spring water rushing over mossy rocks, realistic color photograph, natural vivid colors, sharp focus, well lit, clean, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "z_brook",
+      "start": 714.5,
+      "dur": 5.5,
+      "kind": "raw",
+      "src": "real/z_brook_1.jpg",
+      "darken": 0
+    },
+    {
+      "id": "z_coldstream",
+      "start": 719.5,
+      "dur": 8.5,
+      "kind": "raw",
+      "src": "broll/z_coldstream.mp4",
+      "darken": 0
+    },
+    {
+      "id": "z_carryaway",
+      "start": 727.5,
+      "dur": 5.5,
+      "kind": "raw",
+      "src": "broll/z_carryaway.mp4",
+      "darken": 0
+    },
+    {
+      "id": "z_streamloop",
+      "start": 732.5,
+      "dur": 5.5,
+      "kind": "raw",
+      "src": "real/z_streamloop_1.jpg",
+      "darken": 0
+    },
+    {
+      "id": "z_milkcans",
+      "start": 737.5,
+      "dur": 6.5,
+      "kind": "raw",
+      "src": "broll/z_milkcans.mp4",
+      "darken": 0
+    },
+    {
+      "id": "z_stonechannel",
+      "start": 743.5,
+      "dur": 6.5,
+      "kind": "raw",
+      "src": "broll/z_stonechannel.mp4",
+      "darken": 0
+    },
+    {
+      "id": "z_jugscool",
+      "start": 749.5,
+      "dur": 5.5,
+      "kind": "raw",
+      "src": "broll/z_jugscool.mp4",
+      "darken": 0
+    },
+    {
+      "id": "z_milkbutter",
+      "start": 754.5,
+      "dur": 4.5,
+      "kind": "raw",
+      "src": "broll/z_milkbutter.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_springuse",
+      "start": 758.5,
+      "dur": 9.5,
+      "kind": "checklist",
+      "hue": "cold",
+      "accent": "good",
+      "title": "No spring? Borrow the trick",
+      "eyebrow": "Anywhere",
+      "items": [
+        {
+          "text": "A bucket in a cool well",
+          "state": "done"
+        },
+        {
+          "text": "A crock in cold cellar water",
+          "state": "done"
+        },
+        {
+          "text": "A jug in a tub you keep refilling",
+          "state": "done"
+        },
+        {
+          "text": "A wet cloth over the top",
+          "state": "done"
+        }
+      ],
+      "image": "img/cmp_springuse_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "cmp_springuse_bg",
+        "prompt": "a jug standing in a tub of cool water with a wet cloth over it, realistic color photograph, natural vivid colors, sharp focus, well lit, clean, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "z_backyard",
+      "start": 768,
+      "dur": 5.5,
+      "kind": "raw",
+      "src": "real/z_backyard_1.jpg",
+      "darken": 0
+    },
+    {
+      "id": "z_well",
+      "start": 773,
+      "dur": 4.5,
+      "kind": "raw",
+      "src": "broll/z_well.mp4",
+      "darken": 0
+    },
+    {
+      "id": "z_crockwater",
+      "start": 777,
+      "dur": 4.5,
+      "kind": "raw",
+      "src": "broll/z_crockwater.mp4",
+      "darken": 0
+    },
+    {
+      "id": "z_jugcloth",
+      "start": 781,
+      "dur": 8.5,
+      "kind": "raw",
+      "src": "real/z_jugcloth_1.jpg",
+      "darken": 0
+    },
+    {
+      "id": "cmp_system",
+      "start": 789,
+      "dur": 7.5,
+      "kind": "splitlist",
+      "palette": "G",
+      "title": "A whole plain system",
+      "items": [
+        "Clay pot — daily produce",
+        "Cold pantry — jars & cheese",
+        "Root cellar — winter harvest",
+        "Running water — milk & meat"
+      ]
+    },
+    {
+      "id": "z_systemall",
+      "start": 796.5,
+      "dur": 6.5,
+      "kind": "raw",
+      "src": "real/z_systemall_1.jpg",
+      "darken": 0
+    },
+    {
+      "id": "z_potproduce",
+      "start": 802.5,
+      "dur": 5.5,
+      "kind": "raw",
+      "src": "broll/z_potproduce.mp4",
+      "darken": 0
+    },
+    {
+      "id": "z_finishedpot",
+      "start": 807.5,
+      "dur": 5.5,
+      "kind": "raw",
+      "src": "broll/z_finishedpot.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_blackoutproof",
+      "start": 812.5,
+      "dur": 7.5,
+      "kind": "callout",
+      "hue": "amber",
+      "accent": "good",
+      "figure": "No wire to fail",
+      "eyebrow": "Storm-proof",
+      "caption": "never one blackout away from losing your food — cold from clay, earth, water and shade",
+      "image": "img/cmp_blackoutproof_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "cmp_blackoutproof_bg",
+        "prompt": "a calm amish farmstead at dusk, no power lines, realistic color photograph, natural vivid colors, sharp focus, well lit, clean, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "z_stormproof",
+      "start": 820,
+      "dur": 7,
+      "kind": "raw",
+      "src": "real/z_stormproof_1.jpg",
+      "darken": 0
+    },
+    {
+      "id": "z_winterharvest",
+      "start": 826.5,
+      "dur": 4.5,
+      "kind": "raw",
+      "src": "broll/z_winterharvest.mp4",
+      "darken": 0
+    },
+    {
+      "id": "z_runningmilk",
+      "start": 830.5,
+      "dur": 6,
+      "kind": "raw",
+      "src": "broll/z_runningmilk.mp4",
+      "darken": 0
+    },
+    {
+      "id": "z_potquiet",
+      "start": 844.5,
+      "dur": 6.5,
+      "kind": "raw",
+      "src": "real/z_potquiet_1.jpg",
+      "darken": 0
+    },
+    {
+      "id": "cmp_almanac",
+      "start": 850.5,
+      "dur": 8,
+      "kind": "callout",
+      "hue": "amber",
+      "accent": "good",
+      "figure": "The Plain Almanac",
+      "eyebrow": "Below this video",
+      "caption": "the cellar plans, the pantry and dozens more old methods to keep more of what you earn",
+      "image": "img/cmp_almanac_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "cmp_almanac_bg",
+        "prompt": "an old vintage almanac book on a wooden table, warm light, realistic color photograph, natural vivid colors, sharp focus, well lit, clean, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "cmp_next",
+      "start": 858.5,
+      "dur": 10,
+      "kind": "nextvideo",
+      "kicker": "Next time",
+      "title": "Heat a whole house with one stove and a wall of stone",
+      "sub": "No furnace. No propane. No bill. The other half of how we live."
+    },
+    {
+      "id": "z_woodstove",
+      "start": 868.5,
+      "dur": 6.5,
+      "kind": "raw",
+      "src": "broll/z_woodstove.mp4",
+      "darken": 0
+    }
+  ]
+}
