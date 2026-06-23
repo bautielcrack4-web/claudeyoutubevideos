@@ -1,0 +1,2108 @@
+{
+ "video": "tuneles",
+ "beats": [
+  {
+   "id": "c001",
+   "start": 0,
+   "dur": 3.64,
+   "kind": "raw",
+   "src": "broll/intro_pies.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c002",
+   "start": 3.64,
+   "dur": 3.64,
+   "kind": "raw",
+   "src": "broll/intro_arriba.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c003",
+   "start": 7.28,
+   "dur": 3.64,
+   "kind": "raw",
+   "src": "broll/intro_pueblos.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c004",
+   "start": 10.92,
+   "dur": 3.64,
+   "kind": "raw",
+   "src": "broll/intro_escala.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c005",
+   "start": 14.56,
+   "dur": 3.64,
+   "kind": "raw",
+   "src": "broll/intro_tuneles.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c006",
+   "start": 18.21,
+   "dur": 3.64,
+   "kind": "raw",
+   "src": "broll/intro_naturales.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c007",
+   "start": 21.85,
+   "dur": 3.64,
+   "kind": "raw",
+   "src": "broll/intro_redes.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c008",
+   "start": 25.49,
+   "dur": 3.64,
+   "kind": "raw",
+   "src": "broll/intro_pregunta.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "headline009",
+   "start": 29.13,
+   "dur": 6,
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "7",
+     "hl": true
+    },
+    {
+     "t": "túneles"
+    },
+    {
+     "t": "antiguos"
+    },
+    {
+     "t": "que"
+    },
+    {
+     "t": "la"
+    },
+    {
+     "t": "ciencia"
+    },
+    {
+     "t": "no"
+    },
+    {
+     "t": "puede"
+    },
+    {
+     "t": "explicar",
+     "hl": true
+    }
+   ],
+   "bg": "image",
+   "image": "real/tun_hero.jpg",
+   "hue": "amber",
+   "size": 86
+  },
+  {
+   "id": "c010",
+   "start": 35.13,
+   "dur": 3.64,
+   "kind": "raw",
+   "src": "broll/intro_pies.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c011",
+   "start": 38.77,
+   "dur": 3.64,
+   "kind": "raw",
+   "src": "broll/intro_arriba.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c012",
+   "start": 42.41,
+   "dur": 3.64,
+   "kind": "raw",
+   "src": "broll/intro_pueblos.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c013",
+   "start": 46.05,
+   "dur": 3.64,
+   "kind": "raw",
+   "src": "broll/intro_escala.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c014",
+   "start": 49.69,
+   "dur": 3.64,
+   "kind": "raw",
+   "src": "broll/intro_tuneles.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c015",
+   "start": 53.33,
+   "dur": 3.64,
+   "kind": "raw",
+   "src": "broll/intro_naturales.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c016",
+   "start": 56.97,
+   "dur": 3.64,
+   "kind": "raw",
+   "src": "broll/intro_redes.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c017",
+   "start": 60.61,
+   "dur": 3.64,
+   "kind": "raw",
+   "src": "broll/intro_pregunta.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c018",
+   "start": 64.25,
+   "dur": 3.64,
+   "kind": "raw",
+   "src": "broll/intro_porque.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c019",
+   "start": 67.88,
+   "dur": 3.64,
+   "kind": "raw",
+   "src": "broll/intro_bajar.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c020",
+   "start": 71.52,
+   "dur": 3.64,
+   "kind": "raw",
+   "src": "broll/intro_guia.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c021",
+   "start": 75.16,
+   "dur": 3.64,
+   "kind": "raw",
+   "src": "broll/intro_final.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c022",
+   "start": 78.8,
+   "dur": 3.64,
+   "kind": "raw",
+   "src": "broll/intro_ciudad.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c023",
+   "start": 82.44,
+   "dur": 3.64,
+   "kind": "raw",
+   "src": "broll/intro_respira.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c024",
+   "start": 86.08,
+   "dur": 3.64,
+   "kind": "raw",
+   "src": "broll/intro_pies.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c025",
+   "start": 89.72,
+   "dur": 3.64,
+   "kind": "raw",
+   "src": "broll/intro_arriba.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c026",
+   "start": 93.36,
+   "dur": 3.64,
+   "kind": "raw",
+   "src": "broll/intro_pueblos.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c027",
+   "start": 97,
+   "dur": 3.64,
+   "kind": "raw",
+   "src": "broll/intro_escala.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "rule028",
+   "start": 100.64,
+   "dur": 4.2,
+   "kind": "rule",
+   "number": "07",
+   "title": "Hipogeo de Hal Saflieni",
+   "label": "Malta",
+   "hue": "amber"
+  },
+  {
+   "id": "o029",
+   "start": 104.84,
+   "dur": 6,
+   "overlay": true,
+   "kind": "doclabel",
+   "label": "Hipogeo de Hal Saflieni",
+   "sub": "Malta",
+   "accent": "amber"
+  },
+  {
+   "id": "o030",
+   "start": 104.84,
+   "dur": 71.08,
+   "overlay": true,
+   "kind": "countrail",
+   "total": 7,
+   "rank": 7,
+   "name": "Hipogeo de Hal Saflieni",
+   "accent": "amber"
+  },
+  {
+   "id": "c031",
+   "start": 104.84,
+   "dur": 3.39,
+   "kind": "raw",
+   "src": "broll/hs_intro.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c032",
+   "start": 108.23,
+   "dur": 3.39,
+   "kind": "raw",
+   "src": "broll/hs_casa.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c033",
+   "start": 111.63,
+   "dur": 3.39,
+   "kind": "raw",
+   "src": "broll/hs_bajaron.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c034",
+   "start": 115.02,
+   "dur": 3.39,
+   "kind": "raw",
+   "src": "broll/hs_niveles.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c035",
+   "start": 118.42,
+   "dur": 3.39,
+   "kind": "raw",
+   "src": "broll/hs_hipogeo.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c036",
+   "start": 121.81,
+   "dur": 3.39,
+   "kind": "raw",
+   "src": "broll/hs_anos.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c037",
+   "start": 125.21,
+   "dur": 3.39,
+   "kind": "raw",
+   "src": "broll/hs_piel.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "scalecolossus038",
+   "start": 128.6,
+   "dur": 6,
+   "kind": "scalecolossus",
+   "image": "real/hs_chamber.jpg",
+   "meters": 3,
+   "unit": "niveles",
+   "eyebrow": "Hipogeo de Hal Saflieni",
+   "label": "excavados en la roca hace 5.000 años",
+   "accent": "amber"
+  },
+  {
+   "id": "o039",
+   "start": 128.8,
+   "dur": 5,
+   "overlay": true,
+   "kind": "datestamp",
+   "value": "≈ 3.000 a.C.",
+   "label": "Hipogeo de Hal Saflieni",
+   "accent": "amber"
+  },
+  {
+   "id": "c040",
+   "start": 134.6,
+   "dur": 3.55,
+   "kind": "raw",
+   "src": "broll/hs_intro.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c041",
+   "start": 138.15,
+   "dur": 3.55,
+   "kind": "raw",
+   "src": "broll/hs_casa.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c042",
+   "start": 141.7,
+   "dur": 3.55,
+   "kind": "raw",
+   "src": "broll/hs_bajaron.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c043",
+   "start": 145.26,
+   "dur": 3.55,
+   "kind": "raw",
+   "src": "broll/hs_niveles.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c044",
+   "start": 148.81,
+   "dur": 3.55,
+   "kind": "raw",
+   "src": "broll/hs_hipogeo.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "stat045",
+   "start": 152.36,
+   "dur": 5.2,
+   "kind": "stat",
+   "value": 5000,
+   "suffix": " años",
+   "label": "una cámara que amplifica la voz humana",
+   "eyebrow": "Acústica imposible",
+   "accent": "accent",
+   "hue": "amber"
+  },
+  {
+   "id": "c046",
+   "start": 157.56,
+   "dur": 3.71,
+   "kind": "raw",
+   "src": "broll/hs_intro.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c047",
+   "start": 161.27,
+   "dur": 3.71,
+   "kind": "raw",
+   "src": "broll/hs_casa.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c048",
+   "start": 164.98,
+   "dur": 3.71,
+   "kind": "raw",
+   "src": "broll/hs_bajaron.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c049",
+   "start": 168.7,
+   "dur": 3.71,
+   "kind": "raw",
+   "src": "broll/hs_niveles.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c050",
+   "start": 172.41,
+   "dur": 3.71,
+   "kind": "raw",
+   "src": "broll/hs_hipogeo.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "rule051",
+   "start": 176.12,
+   "dur": 4.2,
+   "kind": "rule",
+   "number": "06",
+   "title": "El túnel del inframundo",
+   "label": "Baiae, Italia",
+   "hue": "red"
+  },
+  {
+   "id": "o052",
+   "start": 180.32,
+   "dur": 6,
+   "overlay": true,
+   "kind": "doclabel",
+   "label": "El túnel del inframundo",
+   "sub": "Baiae, Italia",
+   "accent": "red"
+  },
+  {
+   "id": "o053",
+   "start": 180.32,
+   "dur": 75.32,
+   "overlay": true,
+   "kind": "countrail",
+   "total": 7,
+   "rank": 6,
+   "name": "El túnel del inframundo",
+   "accent": "red"
+  },
+  {
+   "id": "c054",
+   "start": 180.32,
+   "dur": 3.6,
+   "kind": "raw",
+   "src": "broll/ba_intro.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c055",
+   "start": 183.92,
+   "dur": 3.6,
+   "kind": "raw",
+   "src": "broll/ba_templo.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c056",
+   "start": 187.51,
+   "dur": 3.6,
+   "kind": "raw",
+   "src": "broll/ba_inframundo.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c057",
+   "start": 191.11,
+   "dur": 3.6,
+   "kind": "raw",
+   "src": "broll/ba_estrecho.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c058",
+   "start": 194.7,
+   "dur": 3.6,
+   "kind": "raw",
+   "src": "broll/ba_recto.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c059",
+   "start": 198.3,
+   "dur": 3.6,
+   "kind": "raw",
+   "src": "broll/ba_orientacion.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c060",
+   "start": 201.9,
+   "dur": 3.6,
+   "kind": "raw",
+   "src": "broll/ba_caliente.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "scalecolossus061",
+   "start": 205.49,
+   "dur": 6,
+   "kind": "scalecolossus",
+   "image": "real/ba_tunnel.jpg",
+   "meters": 200,
+   "unit": "m",
+   "eyebrow": "El túnel del inframundo",
+   "label": "de túnel recto perfecto hacia un río de fuego",
+   "accent": "red"
+  },
+  {
+   "id": "o062",
+   "start": 205.69,
+   "dur": 5,
+   "overlay": true,
+   "kind": "datestamp",
+   "value": "Romano",
+   "label": "El túnel del inframundo",
+   "accent": "red"
+  },
+  {
+   "id": "c063",
+   "start": 211.49,
+   "dur": 3.83,
+   "kind": "raw",
+   "src": "broll/ba_intro.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c064",
+   "start": 215.33,
+   "dur": 3.83,
+   "kind": "raw",
+   "src": "broll/ba_templo.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c065",
+   "start": 219.16,
+   "dur": 3.83,
+   "kind": "raw",
+   "src": "broll/ba_inframundo.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c066",
+   "start": 223,
+   "dur": 3.83,
+   "kind": "raw",
+   "src": "broll/ba_estrecho.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c067",
+   "start": 226.83,
+   "dur": 3.83,
+   "kind": "raw",
+   "src": "broll/ba_recto.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "stat068",
+   "start": 230.67,
+   "dur": 5.2,
+   "kind": "stat",
+   "value": 0,
+   "prefix": "≈0",
+   "suffix": " desviación",
+   "label": "cortado en línea recta perfecta bajo la montaña",
+   "eyebrow": "Entrada al inframundo",
+   "accent": "accent",
+   "hue": "red"
+  },
+  {
+   "id": "c069",
+   "start": 235.87,
+   "dur": 3.33,
+   "kind": "raw",
+   "src": "broll/ba_intro.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c070",
+   "start": 239.2,
+   "dur": 3.33,
+   "kind": "raw",
+   "src": "broll/ba_templo.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c071",
+   "start": 242.52,
+   "dur": 3.33,
+   "kind": "raw",
+   "src": "broll/ba_inframundo.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c072",
+   "start": 245.85,
+   "dur": 3.33,
+   "kind": "raw",
+   "src": "broll/ba_estrecho.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c073",
+   "start": 249.18,
+   "dur": 3.33,
+   "kind": "raw",
+   "src": "broll/ba_recto.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c074",
+   "start": 252.51,
+   "dur": 3.33,
+   "kind": "raw",
+   "src": "broll/ba_orientacion.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "rule075",
+   "start": 255.84,
+   "dur": 4.2,
+   "kind": "rule",
+   "number": "05",
+   "title": "Cuevas de los Tayos",
+   "label": "Ecuador",
+   "hue": "blue"
+  },
+  {
+   "id": "o076",
+   "start": 260.04,
+   "dur": 6,
+   "overlay": true,
+   "kind": "doclabel",
+   "label": "Cuevas de los Tayos",
+   "sub": "Ecuador",
+   "accent": "blue"
+  },
+  {
+   "id": "o077",
+   "start": 260.04,
+   "dur": 77.29,
+   "overlay": true,
+   "kind": "countrail",
+   "total": 7,
+   "rank": 5,
+   "name": "Cuevas de los Tayos",
+   "accent": "blue"
+  },
+  {
+   "id": "c078",
+   "start": 260.04,
+   "dur": 3.69,
+   "kind": "raw",
+   "src": "broll/ta_intro.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c079",
+   "start": 263.73,
+   "dur": 3.69,
+   "kind": "raw",
+   "src": "broll/ta_cuevas.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c080",
+   "start": 267.42,
+   "dur": 3.69,
+   "kind": "raw",
+   "src": "broll/ta_enormes.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c081",
+   "start": 271.11,
+   "dur": 3.69,
+   "kind": "raw",
+   "src": "broll/ta_profundo.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c082",
+   "start": 274.8,
+   "dur": 3.69,
+   "kind": "raw",
+   "src": "broll/ta_biblioteca.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c083",
+   "start": 278.49,
+   "dur": 3.69,
+   "kind": "raw",
+   "src": "broll/ta_expediciones.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c084",
+   "start": 282.18,
+   "dur": 3.69,
+   "kind": "raw",
+   "src": "broll/ta_nunca.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "scalecolossus085",
+   "start": 285.87,
+   "dur": 6,
+   "kind": "scalecolossus",
+   "image": "real/ta_cave.jpg",
+   "meters": 200,
+   "unit": "m",
+   "eyebrow": "Cuevas de los Tayos",
+   "label": "de galerías que se hunden en la selva",
+   "accent": "blue"
+  },
+  {
+   "id": "o086",
+   "start": 286.07,
+   "dur": 5,
+   "overlay": true,
+   "kind": "datestamp",
+   "value": "Desconocida",
+   "label": "Cuevas de los Tayos",
+   "accent": "blue"
+  },
+  {
+   "id": "c087",
+   "start": 291.87,
+   "dur": 3.31,
+   "kind": "raw",
+   "src": "broll/ta_intro.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c088",
+   "start": 295.18,
+   "dur": 3.31,
+   "kind": "raw",
+   "src": "broll/ta_cuevas.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c089",
+   "start": 298.48,
+   "dur": 3.3,
+   "kind": "raw",
+   "src": "broll/ta_enormes.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c090",
+   "start": 301.78,
+   "dur": 3.31,
+   "kind": "raw",
+   "src": "broll/ta_profundo.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c091",
+   "start": 305.09,
+   "dur": 3.31,
+   "kind": "raw",
+   "src": "broll/ta_biblioteca.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c092",
+   "start": 308.39,
+   "dur": 3.31,
+   "kind": "raw",
+   "src": "broll/ta_expediciones.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "stat093",
+   "start": 311.7,
+   "dur": 5.2,
+   "kind": "stat",
+   "value": 0,
+   "prefix": "¿",
+   "suffix": " biblioteca?",
+   "label": "la leyenda de láminas de metal grabadas",
+   "eyebrow": "Cuevas reales, mito incierto",
+   "accent": "accent",
+   "hue": "blue"
+  },
+  {
+   "id": "c094",
+   "start": 316.9,
+   "dur": 3.44,
+   "kind": "raw",
+   "src": "broll/ta_intro.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c095",
+   "start": 320.34,
+   "dur": 3.44,
+   "kind": "raw",
+   "src": "broll/ta_cuevas.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c096",
+   "start": 323.78,
+   "dur": 3.44,
+   "kind": "raw",
+   "src": "broll/ta_enormes.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c097",
+   "start": 327.21,
+   "dur": 3.44,
+   "kind": "raw",
+   "src": "broll/ta_profundo.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c098",
+   "start": 330.65,
+   "dur": 3.44,
+   "kind": "raw",
+   "src": "broll/ta_biblioteca.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c099",
+   "start": 334.09,
+   "dur": 3.44,
+   "kind": "raw",
+   "src": "broll/ta_expediciones.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "rule100",
+   "start": 337.53,
+   "dur": 4.2,
+   "kind": "rule",
+   "number": "04",
+   "title": "Cuevas de Longyou",
+   "label": "Zhejiang, China",
+   "hue": "amber"
+  },
+  {
+   "id": "o101",
+   "start": 341.73,
+   "dur": 6,
+   "overlay": true,
+   "kind": "doclabel",
+   "label": "Cuevas de Longyou",
+   "sub": "Zhejiang, China",
+   "accent": "amber"
+  },
+  {
+   "id": "o102",
+   "start": 341.73,
+   "dur": 81.48,
+   "overlay": true,
+   "kind": "countrail",
+   "total": 7,
+   "rank": 4,
+   "name": "Cuevas de Longyou",
+   "accent": "amber"
+  },
+  {
+   "id": "c103",
+   "start": 341.73,
+   "dur": 3.4,
+   "kind": "raw",
+   "src": "broll/lg_intro.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c104",
+   "start": 345.13,
+   "dur": 3.4,
+   "kind": "raw",
+   "src": "broll/lg_bombas.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c105",
+   "start": 348.54,
+   "dur": 3.4,
+   "kind": "raw",
+   "src": "broll/lg_agua.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c106",
+   "start": 351.94,
+   "dur": 3.4,
+   "kind": "raw",
+   "src": "broll/lg_caverna.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c107",
+   "start": 355.34,
+   "dur": 3.4,
+   "kind": "raw",
+   "src": "broll/lg_veinticuatro.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c108",
+   "start": 358.75,
+   "dur": 3.4,
+   "kind": "raw",
+   "src": "broll/lg_catedral.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c109",
+   "start": 362.15,
+   "dur": 3.4,
+   "kind": "raw",
+   "src": "broll/lg_marcas.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c110",
+   "start": 365.55,
+   "dur": 3.4,
+   "kind": "raw",
+   "src": "broll/lg_nombre.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "scalecolossus111",
+   "start": 368.96,
+   "dur": 6,
+   "kind": "scalecolossus",
+   "image": "real/lg_cavern.jpg",
+   "meters": 24,
+   "unit": "cavernas",
+   "eyebrow": "Cuevas de Longyou",
+   "label": "talladas a mano, del tamaño de catedrales",
+   "accent": "amber"
+  },
+  {
+   "id": "o112",
+   "start": 369.16,
+   "dur": 5,
+   "overlay": true,
+   "kind": "datestamp",
+   "value": "Desconocida",
+   "label": "Cuevas de Longyou",
+   "accent": "amber"
+  },
+  {
+   "id": "c113",
+   "start": 374.96,
+   "dur": 3.54,
+   "kind": "raw",
+   "src": "broll/lg_intro.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c114",
+   "start": 378.49,
+   "dur": 3.54,
+   "kind": "raw",
+   "src": "broll/lg_bombas.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c115",
+   "start": 382.03,
+   "dur": 3.54,
+   "kind": "raw",
+   "src": "broll/lg_agua.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c116",
+   "start": 385.57,
+   "dur": 3.54,
+   "kind": "raw",
+   "src": "broll/lg_caverna.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c117",
+   "start": 389.11,
+   "dur": 3.54,
+   "kind": "raw",
+   "src": "broll/lg_veinticuatro.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c118",
+   "start": 392.65,
+   "dur": 3.54,
+   "kind": "raw",
+   "src": "broll/lg_catedral.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "stat119",
+   "start": 396.18,
+   "dur": 5.2,
+   "kind": "stat",
+   "value": 0,
+   "prefix": "0",
+   "suffix": " registros",
+   "label": "nadie escribió quién las cavó ni para qué",
+   "eyebrow": "Obra titánica, borrada",
+   "accent": "accent",
+   "hue": "amber"
+  },
+  {
+   "id": "c120",
+   "start": 401.38,
+   "dur": 3.67,
+   "kind": "raw",
+   "src": "broll/lg_intro.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c121",
+   "start": 405.05,
+   "dur": 3.67,
+   "kind": "raw",
+   "src": "broll/lg_bombas.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c122",
+   "start": 408.73,
+   "dur": 3.67,
+   "kind": "raw",
+   "src": "broll/lg_agua.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c123",
+   "start": 412.4,
+   "dur": 3.67,
+   "kind": "raw",
+   "src": "broll/lg_caverna.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c124",
+   "start": 416.07,
+   "dur": 3.67,
+   "kind": "raw",
+   "src": "broll/lg_veinticuatro.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c125",
+   "start": 419.74,
+   "dur": 3.67,
+   "kind": "raw",
+   "src": "broll/lg_catedral.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "rule126",
+   "start": 423.41,
+   "dur": 4.2,
+   "kind": "rule",
+   "number": "03",
+   "title": "La red de la Edad de Piedra",
+   "label": "Escocia → Turquía",
+   "hue": "blue"
+  },
+  {
+   "id": "o127",
+   "start": 427.61,
+   "dur": 6,
+   "overlay": true,
+   "kind": "doclabel",
+   "label": "La red de la Edad de Piedra",
+   "sub": "Escocia → Turquía",
+   "accent": "blue"
+  },
+  {
+   "id": "o128",
+   "start": 427.61,
+   "dur": 83.58,
+   "overlay": true,
+   "kind": "countrail",
+   "total": 7,
+   "rank": 3,
+   "name": "La red de la Edad de Piedra",
+   "accent": "blue"
+  },
+  {
+   "id": "c129",
+   "start": 427.61,
+   "dur": 3.49,
+   "kind": "raw",
+   "src": "broll/st_intro.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c130",
+   "start": 431.1,
+   "dur": 3.49,
+   "kind": "raw",
+   "src": "broll/st_europa.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c131",
+   "start": 434.59,
+   "dur": 3.49,
+   "kind": "raw",
+   "src": "broll/st_pasadizos.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c132",
+   "start": 438.08,
+   "dur": 3.49,
+   "kind": "raw",
+   "src": "broll/st_datados.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c133",
+   "start": 441.57,
+   "dur": 3.49,
+   "kind": "raw",
+   "src": "broll/st_edad.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c134",
+   "start": 445.06,
+   "dur": 3.49,
+   "kind": "raw",
+   "src": "broll/st_docemil.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c135",
+   "start": 448.56,
+   "dur": 3.49,
+   "kind": "raw",
+   "src": "broll/st_neolitico.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c136",
+   "start": 452.05,
+   "dur": 3.49,
+   "kind": "raw",
+   "src": "broll/st_refugios.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "scalecolossus137",
+   "start": 455.54,
+   "dur": 6,
+   "kind": "scalecolossus",
+   "image": "real/st_map.jpg",
+   "meters": 3000,
+   "unit": "km",
+   "eyebrow": "La red de la Edad de Piedra",
+   "label": "de túneles repartidos por medio continente",
+   "accent": "blue"
+  },
+  {
+   "id": "o138",
+   "start": 455.74,
+   "dur": 5,
+   "overlay": true,
+   "kind": "datestamp",
+   "value": "≈ 12.000 años",
+   "label": "La red de la Edad de Piedra",
+   "accent": "blue"
+  },
+  {
+   "id": "c139",
+   "start": 461.54,
+   "dur": 3.65,
+   "kind": "raw",
+   "src": "broll/st_intro.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c140",
+   "start": 465.19,
+   "dur": 3.65,
+   "kind": "raw",
+   "src": "broll/st_europa.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c141",
+   "start": 468.85,
+   "dur": 3.65,
+   "kind": "raw",
+   "src": "broll/st_pasadizos.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c142",
+   "start": 472.5,
+   "dur": 3.65,
+   "kind": "raw",
+   "src": "broll/st_datados.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c143",
+   "start": 476.15,
+   "dur": 3.65,
+   "kind": "raw",
+   "src": "broll/st_edad.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c144",
+   "start": 479.81,
+   "dur": 3.65,
+   "kind": "raw",
+   "src": "broll/st_docemil.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "stat145",
+   "start": 483.46,
+   "dur": 5.2,
+   "kind": "stat",
+   "value": 12000,
+   "suffix": " años",
+   "label": "túneles del Neolítico por toda Europa",
+   "eyebrow": "Antes de las pirámides",
+   "accent": "danger",
+   "hue": "blue"
+  },
+  {
+   "id": "c146",
+   "start": 488.66,
+   "dur": 3.79,
+   "kind": "raw",
+   "src": "broll/st_intro.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c147",
+   "start": 492.45,
+   "dur": 3.79,
+   "kind": "raw",
+   "src": "broll/st_europa.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c148",
+   "start": 496.24,
+   "dur": 3.79,
+   "kind": "raw",
+   "src": "broll/st_pasadizos.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c149",
+   "start": 500.03,
+   "dur": 3.79,
+   "kind": "raw",
+   "src": "broll/st_datados.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c150",
+   "start": 503.81,
+   "dur": 3.79,
+   "kind": "raw",
+   "src": "broll/st_edad.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c151",
+   "start": 507.6,
+   "dur": 3.79,
+   "kind": "raw",
+   "src": "broll/st_docemil.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "rule152",
+   "start": 511.39,
+   "dur": 4.2,
+   "kind": "rule",
+   "number": "02",
+   "title": "Los túneles de Ravne",
+   "label": "Bosnia",
+   "hue": "red"
+  },
+  {
+   "id": "o153",
+   "start": 515.59,
+   "dur": 6,
+   "overlay": true,
+   "kind": "doclabel",
+   "label": "Los túneles de Ravne",
+   "sub": "Bosnia",
+   "accent": "red"
+  },
+  {
+   "id": "o154",
+   "start": 515.59,
+   "dur": 75.46,
+   "overlay": true,
+   "kind": "countrail",
+   "total": 7,
+   "rank": 2,
+   "name": "Los túneles de Ravne",
+   "accent": "red"
+  },
+  {
+   "id": "c155",
+   "start": 515.59,
+   "dur": 3.6,
+   "kind": "raw",
+   "src": "broll/rv_intro.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c156",
+   "start": 519.19,
+   "dur": 3.6,
+   "kind": "raw",
+   "src": "broll/rv_sistema.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c157",
+   "start": 522.8,
+   "dur": 3.6,
+   "kind": "raw",
+   "src": "broll/rv_pasadizos.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c158",
+   "start": 526.4,
+   "dur": 3.6,
+   "kind": "raw",
+   "src": "broll/rv_sellados.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c159",
+   "start": 530,
+   "dur": 3.6,
+   "kind": "raw",
+   "src": "broll/rv_bloques.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c160",
+   "start": 533.6,
+   "dur": 3.6,
+   "kind": "raw",
+   "src": "broll/rv_piramide.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c161",
+   "start": 537.21,
+   "dur": 3.6,
+   "kind": "raw",
+   "src": "broll/rv_tuneles.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "scalecolossus162",
+   "start": 540.81,
+   "dur": 6,
+   "kind": "scalecolossus",
+   "image": "real/rv_tunnel.jpg",
+   "meters": 3,
+   "unit": "km",
+   "eyebrow": "Los túneles de Ravne",
+   "label": "de pasadizos sellados a propósito",
+   "accent": "red"
+  },
+  {
+   "id": "o163",
+   "start": 541.01,
+   "dur": 5,
+   "overlay": true,
+   "kind": "datestamp",
+   "value": "Discutida",
+   "label": "Los túneles de Ravne",
+   "accent": "red"
+  },
+  {
+   "id": "c164",
+   "start": 546.81,
+   "dur": 3.84,
+   "kind": "raw",
+   "src": "broll/rv_intro.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c165",
+   "start": 550.65,
+   "dur": 3.84,
+   "kind": "raw",
+   "src": "broll/rv_sistema.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c166",
+   "start": 554.5,
+   "dur": 3.84,
+   "kind": "raw",
+   "src": "broll/rv_pasadizos.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c167",
+   "start": 558.34,
+   "dur": 3.84,
+   "kind": "raw",
+   "src": "broll/rv_sellados.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c168",
+   "start": 562.19,
+   "dur": 3.84,
+   "kind": "raw",
+   "src": "broll/rv_bloques.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "stat169",
+   "start": 566.03,
+   "dur": 5.2,
+   "kind": "stat",
+   "value": 0,
+   "prefix": "¿",
+   "suffix": " sellados?",
+   "label": "kilómetros de túneles tapados deliberadamente",
+   "eyebrow": "¿Quién los cerró?",
+   "accent": "danger",
+   "hue": "red"
+  },
+  {
+   "id": "c170",
+   "start": 571.23,
+   "dur": 3.34,
+   "kind": "raw",
+   "src": "broll/rv_intro.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c171",
+   "start": 574.57,
+   "dur": 3.34,
+   "kind": "raw",
+   "src": "broll/rv_sistema.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c172",
+   "start": 577.9,
+   "dur": 3.34,
+   "kind": "raw",
+   "src": "broll/rv_pasadizos.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c173",
+   "start": 581.24,
+   "dur": 3.34,
+   "kind": "raw",
+   "src": "broll/rv_sellados.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c174",
+   "start": 584.58,
+   "dur": 3.34,
+   "kind": "raw",
+   "src": "broll/rv_bloques.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c175",
+   "start": 587.91,
+   "dur": 3.34,
+   "kind": "raw",
+   "src": "broll/rv_piramide.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "rule176",
+   "start": 591.25,
+   "dur": 4.2,
+   "kind": "rule",
+   "number": "01",
+   "title": "Derinkuyu",
+   "label": "Capadocia, Turquía",
+   "hue": "amber"
+  },
+  {
+   "id": "o177",
+   "start": 595.45,
+   "dur": 6,
+   "overlay": true,
+   "kind": "doclabel",
+   "label": "Derinkuyu",
+   "sub": "Capadocia, Turquía",
+   "accent": "amber"
+  },
+  {
+   "id": "o178",
+   "start": 595.45,
+   "dur": 105.35,
+   "overlay": true,
+   "kind": "countrail",
+   "total": 7,
+   "rank": 1,
+   "name": "Derinkuyu",
+   "accent": "amber"
+  },
+  {
+   "id": "c179",
+   "start": 595.45,
+   "dur": 3.52,
+   "kind": "raw",
+   "src": "broll/dk_intro.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c180",
+   "start": 598.97,
+   "dur": 3.52,
+   "kind": "raw",
+   "src": "broll/dk_capadocia.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c181",
+   "start": 602.49,
+   "dur": 3.52,
+   "kind": "raw",
+   "src": "broll/dk_renovando.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c182",
+   "start": 606,
+   "dur": 3.52,
+   "kind": "raw",
+   "src": "broll/dk_pared.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c183",
+   "start": 609.52,
+   "dur": 3.52,
+   "kind": "raw",
+   "src": "broll/dk_entrada.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c184",
+   "start": 613.04,
+   "dur": 3.52,
+   "kind": "raw",
+   "src": "broll/dk_nombre.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c185",
+   "start": 616.56,
+   "dur": 3.52,
+   "kind": "raw",
+   "src": "broll/dk_niveles.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c186",
+   "start": 620.08,
+   "dur": 3.52,
+   "kind": "raw",
+   "src": "broll/dk_viviendas.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c187",
+   "start": 623.6,
+   "dur": 3.52,
+   "kind": "raw",
+   "src": "broll/dk_cocinas.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c188",
+   "start": 627.12,
+   "dur": 3.52,
+   "kind": "raw",
+   "src": "broll/dk_ventilacion.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "scalecolossus189",
+   "start": 630.63,
+   "dur": 6,
+   "kind": "scalecolossus",
+   "image": "real/dk_city.jpg",
+   "meters": 85,
+   "unit": "m",
+   "eyebrow": "Derinkuyu",
+   "label": "de profundidad · 18 niveles · para 20.000 personas",
+   "accent": "amber"
+  },
+  {
+   "id": "o190",
+   "start": 630.83,
+   "dur": 5,
+   "overlay": true,
+   "kind": "datestamp",
+   "value": "Hallada en 1963",
+   "label": "Derinkuyu",
+   "accent": "amber"
+  },
+  {
+   "id": "c191",
+   "start": 636.63,
+   "dur": 3.65,
+   "kind": "raw",
+   "src": "broll/dk_intro.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c192",
+   "start": 640.28,
+   "dur": 3.65,
+   "kind": "raw",
+   "src": "broll/dk_capadocia.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c193",
+   "start": 643.93,
+   "dur": 3.65,
+   "kind": "raw",
+   "src": "broll/dk_renovando.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c194",
+   "start": 647.58,
+   "dur": 3.65,
+   "kind": "raw",
+   "src": "broll/dk_pared.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c195",
+   "start": 651.23,
+   "dur": 3.65,
+   "kind": "raw",
+   "src": "broll/dk_entrada.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c196",
+   "start": 654.87,
+   "dur": 3.65,
+   "kind": "raw",
+   "src": "broll/dk_nombre.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c197",
+   "start": 658.52,
+   "dur": 3.65,
+   "kind": "raw",
+   "src": "broll/dk_niveles.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c198",
+   "start": 662.17,
+   "dur": 3.65,
+   "kind": "raw",
+   "src": "broll/dk_viviendas.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "stat199",
+   "start": 665.82,
+   "dur": 5.2,
+   "kind": "stat",
+   "value": 20000,
+   "suffix": " personas",
+   "label": "una ciudad entera 85 m bajo tierra",
+   "eyebrow": "Puertas que cierran desde adentro",
+   "accent": "danger",
+   "hue": "amber"
+  },
+  {
+   "id": "c200",
+   "start": 671.02,
+   "dur": 3.75,
+   "kind": "raw",
+   "src": "broll/dk_intro.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c201",
+   "start": 674.76,
+   "dur": 3.75,
+   "kind": "raw",
+   "src": "broll/dk_capadocia.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c202",
+   "start": 678.51,
+   "dur": 3.75,
+   "kind": "raw",
+   "src": "broll/dk_renovando.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c203",
+   "start": 682.26,
+   "dur": 3.75,
+   "kind": "raw",
+   "src": "broll/dk_pared.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c204",
+   "start": 686.01,
+   "dur": 3.75,
+   "kind": "raw",
+   "src": "broll/dk_entrada.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c205",
+   "start": 689.76,
+   "dur": 3.75,
+   "kind": "raw",
+   "src": "broll/dk_nombre.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c206",
+   "start": 693.5,
+   "dur": 3.75,
+   "kind": "raw",
+   "src": "broll/dk_niveles.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c207",
+   "start": 697.25,
+   "dur": 3.75,
+   "kind": "raw",
+   "src": "broll/dk_viviendas.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c208",
+   "start": 701,
+   "dur": 3.48,
+   "kind": "raw",
+   "src": "broll/cl_agujeros.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c209",
+   "start": 704.48,
+   "dur": 3.48,
+   "kind": "raw",
+   "src": "broll/cl_camara.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c210",
+   "start": 707.96,
+   "dur": 3.48,
+   "kind": "raw",
+   "src": "broll/cl_inframundo.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c211",
+   "start": 711.44,
+   "dur": 3.48,
+   "kind": "raw",
+   "src": "broll/cl_biblioteca.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c212",
+   "start": 714.92,
+   "dur": 3.48,
+   "kind": "raw",
+   "src": "broll/cl_catedrales.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c213",
+   "start": 718.4,
+   "dur": 3.48,
+   "kind": "raw",
+   "src": "broll/cl_continente.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c214",
+   "start": 721.88,
+   "dur": 3.48,
+   "kind": "raw",
+   "src": "broll/cl_sellados.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c215",
+   "start": 725.37,
+   "dur": 3.48,
+   "kind": "raw",
+   "src": "broll/cl_ciudad.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c216",
+   "start": 728.85,
+   "dur": 3.48,
+   "kind": "raw",
+   "src": "broll/cl_unaauna.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c217",
+   "start": 732.33,
+   "dur": 3.48,
+   "kind": "raw",
+   "src": "broll/cl_patron.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c218",
+   "start": 735.81,
+   "dur": 3.48,
+   "kind": "raw",
+   "src": "broll/cl_otravez.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c219",
+   "start": 739.29,
+   "dur": 3.48,
+   "kind": "raw",
+   "src": "broll/cl_supiera.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "timeline220",
+   "start": 742.77,
+   "dur": 8.5,
+   "kind": "timeline",
+   "eyebrow": "El ser humano dejó de mirar al cielo",
+   "title": "Una y otra vez, cavó hacia abajo",
+   "events": [
+    {
+     "year": "12.000 a.C.",
+     "label": "Red europea"
+    },
+    {
+     "year": "3.000 a.C.",
+     "label": "Hal Saflieni"
+    },
+    {
+     "year": "¿?",
+     "label": "Longyou"
+    },
+    {
+     "year": "Romano",
+     "label": "Inframundo"
+    },
+    {
+     "year": "1963",
+     "label": "Derinkuyu"
+    }
+   ]
+  },
+  {
+   "id": "c221",
+   "start": 751.27,
+   "dur": 3.55,
+   "kind": "raw",
+   "src": "broll/cl_agujeros.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c222",
+   "start": 754.82,
+   "dur": 3.55,
+   "kind": "raw",
+   "src": "broll/cl_camara.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c223",
+   "start": 758.36,
+   "dur": 3.55,
+   "kind": "raw",
+   "src": "broll/cl_inframundo.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c224",
+   "start": 761.91,
+   "dur": 3.55,
+   "kind": "raw",
+   "src": "broll/cl_biblioteca.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c225",
+   "start": 765.45,
+   "dur": 3.55,
+   "kind": "raw",
+   "src": "broll/cl_catedrales.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c226",
+   "start": 769,
+   "dur": 3.55,
+   "kind": "raw",
+   "src": "broll/cl_continente.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c227",
+   "start": 772.54,
+   "dur": 3.55,
+   "kind": "raw",
+   "src": "broll/cl_sellados.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c228",
+   "start": 776.09,
+   "dur": 3.55,
+   "kind": "raw",
+   "src": "broll/cl_ciudad.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c229",
+   "start": 779.63,
+   "dur": 3.55,
+   "kind": "raw",
+   "src": "broll/cl_unaauna.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "headline230",
+   "start": 783.18,
+   "dur": 6,
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "¿Qué"
+    },
+    {
+     "t": "hay"
+    },
+    {
+     "t": "tras"
+    },
+    {
+     "t": "las"
+    },
+    {
+     "t": "puertas"
+    },
+    {
+     "t": "que"
+    },
+    {
+     "t": "nadie"
+    },
+    {
+     "t": "abrió?",
+     "hl": true
+    }
+   ],
+   "bg": "image",
+   "image": "real/tun_door.jpg",
+   "hue": "red",
+   "size": 82
+  },
+  {
+   "id": "c231",
+   "start": 789.18,
+   "dur": 3.44,
+   "kind": "raw",
+   "src": "broll/cl_agujeros.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c232",
+   "start": 792.62,
+   "dur": 3.44,
+   "kind": "raw",
+   "src": "broll/cl_camara.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c233",
+   "start": 796.06,
+   "dur": 3.44,
+   "kind": "raw",
+   "src": "broll/cl_inframundo.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c234",
+   "start": 799.5,
+   "dur": 3.44,
+   "kind": "raw",
+   "src": "broll/cl_biblioteca.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c235",
+   "start": 802.95,
+   "dur": 3.44,
+   "kind": "raw",
+   "src": "broll/cl_catedrales.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c236",
+   "start": 806.39,
+   "dur": 3.44,
+   "kind": "raw",
+   "src": "broll/cl_continente.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c237",
+   "start": 809.83,
+   "dur": 3.44,
+   "kind": "raw",
+   "src": "broll/cl_sellados.mp4",
+   "hue": "amber"
+  }
+ ]
+}

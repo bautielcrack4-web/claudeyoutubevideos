@@ -1,0 +1,567 @@
+[
+ {
+  "name": "intro_pies",
+  "start": 0,
+  "dur": 3.28
+ },
+ {
+  "name": "intro_arriba",
+  "start": 3.28,
+  "dur": 12.3
+ },
+ {
+  "name": "intro_pueblos",
+  "start": 15.58,
+  "dur": 9.28
+ },
+ {
+  "name": "intro_escala",
+  "start": 24.86,
+  "dur": 4.27
+ },
+ {
+  "name": "intro_tuneles",
+  "start": 29.13,
+  "dur": 1.5
+ },
+ {
+  "name": "intro_naturales",
+  "start": 30.52,
+  "dur": 9.34
+ },
+ {
+  "name": "intro_angulos",
+  "start": 39.86,
+  "dur": 2.79
+ },
+ {
+  "name": "intro_redes",
+  "start": 42.65,
+  "dur": 7.23
+ },
+ {
+  "name": "intro_pregunta",
+  "start": 49.88,
+  "dur": 6.38
+ },
+ {
+  "name": "intro_porque",
+  "start": 56.26,
+  "dur": 10.78
+ },
+ {
+  "name": "intro_bajar",
+  "start": 67.04,
+  "dur": 8.01
+ },
+ {
+  "name": "intro_guia",
+  "start": 75.05,
+  "dur": 2.18
+ },
+ {
+  "name": "intro_final",
+  "start": 77.23,
+  "dur": 5.49
+ },
+ {
+  "name": "intro_ciudad",
+  "start": 82.72,
+  "dur": 15.97
+ },
+ {
+  "name": "intro_respira",
+  "start": 98.69,
+  "dur": 1.95
+ },
+ {
+  "name": "hs_intro",
+  "start": 100.64,
+  "dur": 4.83
+ },
+ {
+  "name": "hs_casa",
+  "start": 105.47,
+  "dur": 9.1
+ },
+ {
+  "name": "hs_bajaron",
+  "start": 114.57,
+  "dur": 3.08
+ },
+ {
+  "name": "hs_niveles",
+  "start": 117.65,
+  "dur": 11.79
+ },
+ {
+  "name": "hs_hipogeo",
+  "start": 129.44,
+  "dur": 2.95
+ },
+ {
+  "name": "hs_anos",
+  "start": 132.39,
+  "dur": 6.07
+ },
+ {
+  "name": "hs_piel",
+  "start": 138.46,
+  "dur": 4.85
+ },
+ {
+  "name": "hs_oraculo",
+  "start": 143.31,
+  "dur": 2.43
+ },
+ {
+  "name": "hs_voz",
+  "start": 145.74,
+  "dur": 19.29
+ },
+ {
+  "name": "hs_nadie",
+  "start": 165.03,
+  "dur": 11.09
+ },
+ {
+  "name": "ba_intro",
+  "start": 176.12,
+  "dur": 6.62
+ },
+ {
+  "name": "ba_templo",
+  "start": 182.74,
+  "dur": 10.72
+ },
+ {
+  "name": "ba_inframundo",
+  "start": 193.46,
+  "dur": 1.8
+ },
+ {
+  "name": "ba_estrecho",
+  "start": 195.26,
+  "dur": 7.8
+ },
+ {
+  "name": "ba_recto",
+  "start": 203.06,
+  "dur": 4.61
+ },
+ {
+  "name": "ba_orientacion",
+  "start": 207.67,
+  "dur": 8.13
+ },
+ {
+  "name": "ba_caliente",
+  "start": 215.8,
+  "dur": 7.86
+ },
+ {
+  "name": "ba_rio",
+  "start": 223.66,
+  "dur": 4.56
+ },
+ {
+  "name": "ba_escena",
+  "start": 228.22,
+  "dur": 10.96
+ },
+ {
+  "name": "ba_muertos",
+  "start": 239.18,
+  "dur": 16.66
+ },
+ {
+  "name": "ta_intro",
+  "start": 255.84,
+  "dur": 11.86
+ },
+ {
+  "name": "ta_cuevas",
+  "start": 267.7,
+  "dur": 3.93
+ },
+ {
+  "name": "ta_enormes",
+  "start": 271.63,
+  "dur": 9.29
+ },
+ {
+  "name": "ta_profundo",
+  "start": 280.92,
+  "dur": 5.35
+ },
+ {
+  "name": "ta_biblioteca",
+  "start": 286.27,
+  "dur": 7.39
+ },
+ {
+  "name": "ta_expediciones",
+  "start": 293.66,
+  "dur": 6.92
+ },
+ {
+  "name": "ta_nunca",
+  "start": 300.58,
+  "dur": 8.28
+ },
+ {
+  "name": "ta_reales",
+  "start": 308.86,
+  "dur": 5.27
+ },
+ {
+  "name": "ta_regularidad",
+  "start": 314.13,
+  "dur": 16.37
+ },
+ {
+  "name": "ta_leyenda",
+  "start": 330.5,
+  "dur": 7.03
+ },
+ {
+  "name": "lg_intro",
+  "start": 337.53,
+  "dur": 6.41
+ },
+ {
+  "name": "lg_bombas",
+  "start": 343.94,
+  "dur": 9.72
+ },
+ {
+  "name": "lg_agua",
+  "start": 353.66,
+  "dur": 5.73
+ },
+ {
+  "name": "lg_caverna",
+  "start": 359.39,
+  "dur": 7.45
+ },
+ {
+  "name": "lg_veinticuatro",
+  "start": 366.84,
+  "dur": 5.41
+ },
+ {
+  "name": "lg_catedral",
+  "start": 372.25,
+  "dur": 5.21
+ },
+ {
+  "name": "lg_marcas",
+  "start": 377.46,
+  "dur": 6.14
+ },
+ {
+  "name": "lg_nombre",
+  "start": 383.6,
+  "dur": 9.25
+ },
+ {
+  "name": "lg_titanica",
+  "start": 392.85,
+  "dur": 7.64
+ },
+ {
+  "name": "lg_documento",
+  "start": 400.49,
+  "dur": 16.23
+ },
+ {
+  "name": "lg_olvidar",
+  "start": 416.72,
+  "dur": 6.69
+ },
+ {
+  "name": "st_intro",
+  "start": 423.41,
+  "dur": 15.08
+ },
+ {
+  "name": "st_europa",
+  "start": 438.49,
+  "dur": 9.15
+ },
+ {
+  "name": "st_pasadizos",
+  "start": 447.64,
+  "dur": 9.31
+ },
+ {
+  "name": "st_datados",
+  "start": 456.95,
+  "dur": 3.04
+ },
+ {
+  "name": "st_edad",
+  "start": 459.99,
+  "dur": 2.71
+ },
+ {
+  "name": "st_docemil",
+  "start": 462.7,
+  "dur": 9.98
+ },
+ {
+  "name": "st_neolitico",
+  "start": 472.68,
+  "dur": 8.8
+ },
+ {
+  "name": "st_refugios",
+  "start": 481.48,
+  "dur": 7.14
+ },
+ {
+  "name": "st_algo",
+  "start": 488.62,
+  "dur": 8.65
+ },
+ {
+  "name": "st_cantidad",
+  "start": 497.27,
+  "dur": 14.12
+ },
+ {
+  "name": "rv_intro",
+  "start": 511.39,
+  "dur": 12.21
+ },
+ {
+  "name": "rv_sistema",
+  "start": 523.6,
+  "dur": 5.47
+ },
+ {
+  "name": "rv_pasadizos",
+  "start": 529.07,
+  "dur": 3.38
+ },
+ {
+  "name": "rv_sellados",
+  "start": 532.45,
+  "dur": 11.99
+ },
+ {
+  "name": "rv_bloques",
+  "start": 544.44,
+  "dur": 10.61
+ },
+ {
+  "name": "rv_piramide",
+  "start": 555.05,
+  "dur": 10.44
+ },
+ {
+  "name": "rv_tuneles",
+  "start": 565.49,
+  "dur": 16.99
+ },
+ {
+  "name": "rv_quien",
+  "start": 582.48,
+  "dur": 8.77
+ },
+ {
+  "name": "dk_intro",
+  "start": 591.25,
+  "dur": 7.92
+ },
+ {
+  "name": "dk_capadocia",
+  "start": 599.17,
+  "dur": 9.26
+ },
+ {
+  "name": "dk_renovando",
+  "start": 608.43,
+  "dur": 2.71
+ },
+ {
+  "name": "dk_pared",
+  "start": 611.14,
+  "dur": 15.84
+ },
+ {
+  "name": "dk_entrada",
+  "start": 626.98,
+  "dur": 1.53
+ },
+ {
+  "name": "dk_nombre",
+  "start": 628.51,
+  "dur": 1.5
+ },
+ {
+  "name": "dk_niveles",
+  "start": 629.26,
+  "dur": 3.99
+ },
+ {
+  "name": "dk_viviendas",
+  "start": 633.25,
+  "dur": 3.37
+ },
+ {
+  "name": "dk_cocinas",
+  "start": 636.62,
+  "dur": 8.62
+ },
+ {
+  "name": "dk_ventilacion",
+  "start": 645.24,
+  "dur": 6.47
+ },
+ {
+  "name": "dk_puertas",
+  "start": 651.71,
+  "dur": 3.53
+ },
+ {
+  "name": "dk_cerrar",
+  "start": 655.24,
+  "dur": 5.36
+ },
+ {
+  "name": "dk_veintemil",
+  "start": 660.6,
+  "dur": 9.79
+ },
+ {
+  "name": "dk_nosola",
+  "start": 670.39,
+  "dur": 9.53
+ },
+ {
+  "name": "dk_respuesta",
+  "start": 679.92,
+  "dur": 3.33
+ },
+ {
+  "name": "dk_escondian",
+  "start": 683.25,
+  "dur": 11.51
+ },
+ {
+  "name": "dk_superficie",
+  "start": 694.76,
+  "dur": 3.15
+ },
+ {
+  "name": "dk_enterrada",
+  "start": 697.91,
+  "dur": 3.09
+ },
+ {
+  "name": "cl_agujeros",
+  "start": 701,
+  "dur": 6.36
+ },
+ {
+  "name": "cl_camara",
+  "start": 707.36,
+  "dur": 2.81
+ },
+ {
+  "name": "cl_inframundo",
+  "start": 710.17,
+  "dur": 3.68
+ },
+ {
+  "name": "cl_biblioteca",
+  "start": 713.85,
+  "dur": 2.41
+ },
+ {
+  "name": "cl_catedrales",
+  "start": 716.26,
+  "dur": 3.75
+ },
+ {
+  "name": "cl_continente",
+  "start": 720.01,
+  "dur": 4.95
+ },
+ {
+  "name": "cl_sellados",
+  "start": 724.96,
+  "dur": 3.4
+ },
+ {
+  "name": "cl_ciudad",
+  "start": 728.36,
+  "dur": 4.78
+ },
+ {
+  "name": "cl_unaauna",
+  "start": 733.14,
+  "dur": 3.87
+ },
+ {
+  "name": "cl_patron",
+  "start": 737.01,
+  "dur": 5.76
+ },
+ {
+  "name": "cl_otravez",
+  "start": 742.77,
+  "dur": 7.01
+ },
+ {
+  "name": "cl_supiera",
+  "start": 749.78,
+  "dur": 2.96
+ },
+ {
+  "name": "cl_pasado",
+  "start": 752.74,
+  "dur": 8.16
+ },
+ {
+  "name": "cl_canal",
+  "start": 760.9,
+  "dur": 8.02
+ },
+ {
+  "name": "cl_puertas",
+  "start": 768.92,
+  "dur": 8.42
+ },
+ {
+  "name": "cl_otrolado",
+  "start": 777.34,
+  "dur": 5.84
+ },
+ {
+  "name": "cl_proximo",
+  "start": 783.18,
+  "dur": 6.99
+ },
+ {
+  "name": "cl_acompanarme",
+  "start": 790.17,
+  "dur": 3.66
+ },
+ {
+  "name": "cl_suscribite",
+  "start": 793.83,
+  "dur": 6.72
+ },
+ {
+  "name": "cl_curiosidad",
+  "start": 800.55,
+  "dur": 6.72
+ },
+ {
+  "name": "cl_final",
+  "start": 807.27,
+  "dur": 13
+ }
+]

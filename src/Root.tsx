@@ -31,6 +31,7 @@ import { MainBarcos, TOTAL_FRAMES_BAR } from "./VideoEdit/Main_barcos";
 import { MainLeona, TOTAL_FRAMES_LEONA } from "./VideoEdit/Main_leona";
 import { MainConstrucciones, TOTAL_FRAMES_CONS } from "./VideoEdit/Main_construcciones";
 import { MainAntartida, TOTAL_FRAMES_ANT } from "./VideoEdit/Main_antartida";
+import { MainTuneles, TOTAL_FRAMES_TUN } from "./VideoEdit/Main_tuneles";
 
 // ── SOLO los videos ACTIVOS quedan registrados ──
 // Las composiciones viejas (Fly, Hipos, Bisontes, Objetos, Civil, Top7Demo,
@@ -50,6 +51,8 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="Construcciones" component={MainConstrucciones} durationInFrames={TOTAL_FRAMES_CONS} fps={30} width={1920} height={1080} />
       {/* VIDEO 4 Crónicas Perdidas — "7 Estructuras Bajo el Hielo de la Antártida" · faceless · voz Trevor */}
       <Composition id="Antartida" component={MainAntartida} durationInFrames={TOTAL_FRAMES_ANT} fps={30} width={1920} height={1080} />
+      {/* VIDEO 5 Crónicas Perdidas — "7 Túneles Antiguos Que la Ciencia No Puede Explicar" */}
+      <Composition id="Tuneles" component={MainTuneles} durationInFrames={TOTAL_FRAMES_TUN} fps={30} width={1920} height={1080} />
       {/* VIDEO ACTIVO — Ben retirado · "Los gastos hormiga" · AVATAR · look ALARMA */}
       <Composition id="Hormiga" component={MainHormiga} durationInFrames={TOTAL_FRAMES_HB} fps={30} width={1920} height={1080} />
       {/* VIDEO ACTIVO — Ben retirado · "Las estafas que vacían la cuenta" · AVATAR · look ALARMA */}
