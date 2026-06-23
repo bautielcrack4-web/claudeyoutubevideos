@@ -35,6 +35,8 @@ export const RuleNumberScene: React.FC<{
 
   return (
     <AbsoluteFill style={{ fontFamily: FONT_STACK }}>
+      {/* base oscura OPACA → la tarjeta se lee aunque el clip de fondo sea blanco brillante (hielo) */}
+      <AbsoluteFill style={{ backgroundColor: "#070b12" }} />
       <TechBackground glowX={50} glowY={38} hue={hue} />
 
       <AbsoluteFill
