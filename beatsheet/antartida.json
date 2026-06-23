@@ -1,0 +1,2323 @@
+{
+ "video": "antartida",
+ "beats": [
+  {
+   "id": "c001",
+   "start": 0,
+   "dur": 3.67,
+   "kind": "raw",
+   "src": "broll/intro_continente.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c002",
+   "start": 3.67,
+   "dur": 3.67,
+   "kind": "raw",
+   "src": "broll/intro_europa.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c003",
+   "start": 7.34,
+   "dur": 3.67,
+   "kind": "raw",
+   "src": "broll/intro_capa.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c004",
+   "start": 11,
+   "dur": 3.67,
+   "kind": "raw",
+   "src": "broll/intro_oficial.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c005",
+   "start": 14.67,
+   "dur": 3.67,
+   "kind": "raw",
+   "src": "broll/intro_detalle.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c006",
+   "start": 18.34,
+   "dur": 3.67,
+   "kind": "raw",
+   "src": "broll/intro_debajo.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c007",
+   "start": 22.01,
+   "dur": 3.67,
+   "kind": "raw",
+   "src": "broll/intro_montanas.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c008",
+   "start": 25.67,
+   "dur": 3.67,
+   "kind": "raw",
+   "src": "broll/intro_datos.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c009",
+   "start": 29.34,
+   "dur": 3.67,
+   "kind": "raw",
+   "src": "broll/intro_acerca.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c010",
+   "start": 33.01,
+   "dur": 3.67,
+   "kind": "raw",
+   "src": "broll/intro_borrosas.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c011",
+   "start": 36.68,
+   "dur": 3.67,
+   "kind": "raw",
+   "src": "broll/intro_cancelan.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c012",
+   "start": 40.34,
+   "dur": 3.67,
+   "kind": "raw",
+   "src": "broll/intro_pregunta.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c013",
+   "start": 44.01,
+   "dur": 3.67,
+   "kind": "raw",
+   "src": "broll/intro_bajar.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c014",
+   "start": 47.68,
+   "dur": 3.67,
+   "kind": "raw",
+   "src": "broll/intro_siete.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c015",
+   "start": 51.35,
+   "dur": 3.67,
+   "kind": "raw",
+   "src": "broll/intro_guia.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c016",
+   "start": 55.01,
+   "dur": 3.67,
+   "kind": "raw",
+   "src": "broll/intro_final.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c017",
+   "start": 58.68,
+   "dur": 3.67,
+   "kind": "raw",
+   "src": "broll/intro_historia.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c018",
+   "start": 62.35,
+   "dur": 3.67,
+   "kind": "raw",
+   "src": "broll/intro_respira.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c019",
+   "start": 66.02,
+   "dur": 3.67,
+   "kind": "raw",
+   "src": "broll/intro_mapa.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c020",
+   "start": 69.68,
+   "dur": 3.67,
+   "kind": "raw",
+   "src": "broll/intro_llanura.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c021",
+   "start": 73.35,
+   "dur": 3.67,
+   "kind": "raw",
+   "src": "broll/intro_relieve.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "headline022",
+   "start": 77.02,
+   "dur": 6,
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "7",
+     "hl": true
+    },
+    {
+     "t": "estructuras"
+    },
+    {
+     "t": "bajo"
+    },
+    {
+     "t": "el"
+    },
+    {
+     "t": "hielo"
+    },
+    {
+     "t": "que"
+    },
+    {
+     "t": "no"
+    },
+    {
+     "t": "deberían"
+    },
+    {
+     "t": "existir",
+     "hl": true
+    }
+   ],
+   "bg": "image",
+   "image": "real/ant_hero.jpg",
+   "hue": "blue",
+   "size": 84
+  },
+  {
+   "id": "c023",
+   "start": 83.02,
+   "dur": 3.66,
+   "kind": "raw",
+   "src": "broll/intro_continente.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c024",
+   "start": 86.68,
+   "dur": 3.66,
+   "kind": "raw",
+   "src": "broll/intro_europa.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c025",
+   "start": 90.34,
+   "dur": 3.66,
+   "kind": "raw",
+   "src": "broll/intro_capa.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c026",
+   "start": 94,
+   "dur": 3.66,
+   "kind": "raw",
+   "src": "broll/intro_oficial.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c027",
+   "start": 97.66,
+   "dur": 3.66,
+   "kind": "raw",
+   "src": "broll/intro_detalle.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c028",
+   "start": 101.32,
+   "dur": 3.66,
+   "kind": "raw",
+   "src": "broll/intro_debajo.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c029",
+   "start": 104.97,
+   "dur": 3.66,
+   "kind": "raw",
+   "src": "broll/intro_montanas.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c030",
+   "start": 108.63,
+   "dur": 3.66,
+   "kind": "raw",
+   "src": "broll/intro_datos.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c031",
+   "start": 112.29,
+   "dur": 3.66,
+   "kind": "raw",
+   "src": "broll/intro_acerca.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c032",
+   "start": 115.95,
+   "dur": 3.66,
+   "kind": "raw",
+   "src": "broll/intro_borrosas.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c033",
+   "start": 119.61,
+   "dur": 3.66,
+   "kind": "raw",
+   "src": "broll/intro_cancelan.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c034",
+   "start": 123.27,
+   "dur": 3.66,
+   "kind": "raw",
+   "src": "broll/intro_pregunta.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c035",
+   "start": 126.93,
+   "dur": 3.66,
+   "kind": "raw",
+   "src": "broll/intro_bajar.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c036",
+   "start": 130.59,
+   "dur": 3.66,
+   "kind": "raw",
+   "src": "broll/intro_siete.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c037",
+   "start": 134.25,
+   "dur": 3.66,
+   "kind": "raw",
+   "src": "broll/intro_guia.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c038",
+   "start": 137.91,
+   "dur": 3.66,
+   "kind": "raw",
+   "src": "broll/intro_final.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c039",
+   "start": 141.57,
+   "dur": 3.66,
+   "kind": "raw",
+   "src": "broll/intro_historia.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c040",
+   "start": 145.22,
+   "dur": 3.66,
+   "kind": "raw",
+   "src": "broll/intro_respira.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c041",
+   "start": 148.88,
+   "dur": 3.66,
+   "kind": "raw",
+   "src": "broll/intro_mapa.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c042",
+   "start": 152.54,
+   "dur": 3.66,
+   "kind": "raw",
+   "src": "broll/intro_llanura.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c043",
+   "start": 156.2,
+   "dur": 3.66,
+   "kind": "raw",
+   "src": "broll/intro_relieve.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c044",
+   "start": 159.86,
+   "dur": 3.66,
+   "kind": "raw",
+   "src": "broll/intro_cadenas.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "rule045",
+   "start": 163.52,
+   "dur": 4.2,
+   "kind": "rule",
+   "number": "07",
+   "title": "Lago Vostok",
+   "label": "Antártida Oriental",
+   "hue": "blue"
+  },
+  {
+   "id": "o046",
+   "start": 167.72,
+   "dur": 6,
+   "overlay": true,
+   "kind": "doclabel",
+   "label": "Lago Vostok",
+   "sub": "Antártida Oriental",
+   "accent": "blue"
+  },
+  {
+   "id": "o047",
+   "start": 167.72,
+   "dur": 84.79,
+   "overlay": true,
+   "kind": "countrail",
+   "total": 7,
+   "rank": 7,
+   "name": "Lago Vostok",
+   "accent": "blue"
+  },
+  {
+   "id": "c048",
+   "start": 167.72,
+   "dur": 3.54,
+   "kind": "raw",
+   "src": "broll/vk_intro.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c049",
+   "start": 171.26,
+   "dur": 3.54,
+   "kind": "raw",
+   "src": "broll/vk_perforando.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c050",
+   "start": 174.8,
+   "dur": 3.54,
+   "kind": "raw",
+   "src": "broll/vk_core.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c051",
+   "start": 178.34,
+   "dur": 3.54,
+   "kind": "raw",
+   "src": "broll/vk_agua.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c052",
+   "start": 181.88,
+   "dur": 3.54,
+   "kind": "raw",
+   "src": "broll/vk_lago.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c053",
+   "start": 185.43,
+   "dur": 3.54,
+   "kind": "raw",
+   "src": "broll/vk_nombre.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c054",
+   "start": 188.97,
+   "dur": 3.54,
+   "kind": "raw",
+   "src": "broll/vk_no_solo.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c055",
+   "start": 192.51,
+   "dur": 3.54,
+   "kind": "raw",
+   "src": "broll/vk_detectado.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "scalecolossus056",
+   "start": 196.05,
+   "dur": 6,
+   "kind": "scalecolossus",
+   "image": "real/vk_lake.jpg",
+   "meters": 4000,
+   "unit": "m",
+   "eyebrow": "Lago Vostok",
+   "label": "de hielo encima · agua de millones de años",
+   "accent": "blue"
+  },
+  {
+   "id": "o057",
+   "start": 196.25,
+   "dur": 5,
+   "overlay": true,
+   "kind": "datestamp",
+   "value": "Sellado ~15M años",
+   "label": "Lago Vostok",
+   "accent": "blue"
+  },
+  {
+   "id": "c058",
+   "start": 202.05,
+   "dur": 3.72,
+   "kind": "raw",
+   "src": "broll/vk_intro.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c059",
+   "start": 205.77,
+   "dur": 3.72,
+   "kind": "raw",
+   "src": "broll/vk_perforando.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c060",
+   "start": 209.49,
+   "dur": 3.72,
+   "kind": "raw",
+   "src": "broll/vk_core.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c061",
+   "start": 213.22,
+   "dur": 3.72,
+   "kind": "raw",
+   "src": "broll/vk_agua.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c062",
+   "start": 216.94,
+   "dur": 3.72,
+   "kind": "raw",
+   "src": "broll/vk_lago.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c063",
+   "start": 220.66,
+   "dur": 3.72,
+   "kind": "raw",
+   "src": "broll/vk_nombre.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "stat064",
+   "start": 224.38,
+   "dur": 5.2,
+   "kind": "stat",
+   "value": 15000000,
+   "suffix": " años",
+   "label": "aislado del mundo, con vida propia",
+   "eyebrow": "Un mundo bajo el hielo",
+   "accent": "accent",
+   "hue": "blue"
+  },
+  {
+   "id": "c065",
+   "start": 229.58,
+   "dur": 3.86,
+   "kind": "raw",
+   "src": "broll/vk_intro.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c066",
+   "start": 233.44,
+   "dur": 3.85,
+   "kind": "raw",
+   "src": "broll/vk_perforando.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c067",
+   "start": 237.29,
+   "dur": 3.85,
+   "kind": "raw",
+   "src": "broll/vk_core.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c068",
+   "start": 241.14,
+   "dur": 3.86,
+   "kind": "raw",
+   "src": "broll/vk_agua.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c069",
+   "start": 245,
+   "dur": 3.86,
+   "kind": "raw",
+   "src": "broll/vk_lago.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c070",
+   "start": 248.86,
+   "dur": 3.85,
+   "kind": "raw",
+   "src": "broll/vk_nombre.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "rule071",
+   "start": 252.71,
+   "dur": 4.2,
+   "kind": "rule",
+   "number": "06",
+   "title": "La anomalía magnética",
+   "label": "Borde del lago Vostok",
+   "hue": "red"
+  },
+  {
+   "id": "o072",
+   "start": 256.91,
+   "dur": 6,
+   "overlay": true,
+   "kind": "doclabel",
+   "label": "La anomalía magnética",
+   "sub": "Borde del lago Vostok",
+   "accent": "red"
+  },
+  {
+   "id": "o073",
+   "start": 256.91,
+   "dur": 72.78,
+   "overlay": true,
+   "kind": "countrail",
+   "total": 7,
+   "rank": 6,
+   "name": "La anomalía magnética",
+   "accent": "red"
+  },
+  {
+   "id": "c074",
+   "start": 256.91,
+   "dur": 3.48,
+   "kind": "raw",
+   "src": "broll/mg_intro.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c075",
+   "start": 260.39,
+   "dur": 3.48,
+   "kind": "raw",
+   "src": "broll/mg_medir.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c076",
+   "start": 263.86,
+   "dur": 3.48,
+   "kind": "raw",
+   "src": "broll/mg_campo.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c077",
+   "start": 267.34,
+   "dur": 3.48,
+   "kind": "raw",
+   "src": "broll/mg_anomalia.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c078",
+   "start": 270.81,
+   "dur": 3.48,
+   "kind": "raw",
+   "src": "broll/mg_region.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c079",
+   "start": 274.29,
+   "dur": 3.48,
+   "kind": "raw",
+   "src": "broll/mg_masivo.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c080",
+   "start": 277.76,
+   "dur": 3.48,
+   "kind": "raw",
+   "src": "broll/mg_mineral.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "scalecolossus081",
+   "start": 281.24,
+   "dur": 6,
+   "kind": "scalecolossus",
+   "image": "real/mg_anomaly.jpg",
+   "meters": 65,
+   "unit": "km",
+   "eyebrow": "La anomalía magnética",
+   "label": "de anomalía que tuerce las brújulas",
+   "accent": "red"
+  },
+  {
+   "id": "o082",
+   "start": 281.44,
+   "dur": 5,
+   "overlay": true,
+   "kind": "datestamp",
+   "value": "Detectada 2001",
+   "label": "La anomalía magnética",
+   "accent": "red"
+  },
+  {
+   "id": "c083",
+   "start": 287.24,
+   "dur": 3.67,
+   "kind": "raw",
+   "src": "broll/mg_intro.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c084",
+   "start": 290.9,
+   "dur": 3.67,
+   "kind": "raw",
+   "src": "broll/mg_medir.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c085",
+   "start": 294.57,
+   "dur": 3.67,
+   "kind": "raw",
+   "src": "broll/mg_campo.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c086",
+   "start": 298.23,
+   "dur": 3.67,
+   "kind": "raw",
+   "src": "broll/mg_anomalia.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c087",
+   "start": 301.9,
+   "dur": 3.67,
+   "kind": "raw",
+   "src": "broll/mg_region.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "stat088",
+   "start": 305.56,
+   "dur": 5.2,
+   "kind": "stat",
+   "value": 0,
+   "prefix": "≈",
+   "suffix": " masa densa",
+   "label": "algo enorme distorsiona el magnetismo",
+   "eyebrow": "Bajo el hielo, sin ver",
+   "accent": "accent",
+   "hue": "red"
+  },
+  {
+   "id": "c089",
+   "start": 310.76,
+   "dur": 3.83,
+   "kind": "raw",
+   "src": "broll/mg_intro.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c090",
+   "start": 314.59,
+   "dur": 3.83,
+   "kind": "raw",
+   "src": "broll/mg_medir.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c091",
+   "start": 318.41,
+   "dur": 3.83,
+   "kind": "raw",
+   "src": "broll/mg_campo.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c092",
+   "start": 322.24,
+   "dur": 3.83,
+   "kind": "raw",
+   "src": "broll/mg_anomalia.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c093",
+   "start": 326.06,
+   "dur": 3.83,
+   "kind": "raw",
+   "src": "broll/mg_region.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "rule094",
+   "start": 329.89,
+   "dur": 4.2,
+   "kind": "rule",
+   "number": "05",
+   "title": "Las pirámides de hielo",
+   "label": "Montañas Ellsworth",
+   "hue": "amber"
+  },
+  {
+   "id": "o095",
+   "start": 334.09,
+   "dur": 6,
+   "overlay": true,
+   "kind": "doclabel",
+   "label": "Las pirámides de hielo",
+   "sub": "Montañas Ellsworth",
+   "accent": "amber"
+  },
+  {
+   "id": "o096",
+   "start": 334.09,
+   "dur": 62.31,
+   "overlay": true,
+   "kind": "countrail",
+   "total": 7,
+   "rank": 5,
+   "name": "Las pirámides de hielo",
+   "accent": "amber"
+  },
+  {
+   "id": "c097",
+   "start": 334.09,
+   "dur": 3.47,
+   "kind": "raw",
+   "src": "broll/pi_intro.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c098",
+   "start": 337.56,
+   "dur": 3.47,
+   "kind": "raw",
+   "src": "broll/pi_montanas.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c099",
+   "start": 341.04,
+   "dur": 3.47,
+   "kind": "raw",
+   "src": "broll/pi_caras.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c100",
+   "start": 344.51,
+   "dur": 3.47,
+   "kind": "raw",
+   "src": "broll/pi_llamo.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c101",
+   "start": 347.98,
+   "dur": 3.47,
+   "kind": "raw",
+   "src": "broll/pi_fotos.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c102",
+   "start": 351.45,
+   "dur": 3.47,
+   "kind": "raw",
+   "src": "broll/pi_geologos.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "scalecolossus103",
+   "start": 354.93,
+   "dur": 6,
+   "kind": "scalecolossus",
+   "image": "real/pi_pyramid.jpg",
+   "meters": 1265,
+   "unit": "m",
+   "eyebrow": "Las pirámides de hielo",
+   "label": "de alto · cuatro caras casi perfectas",
+   "accent": "amber"
+  },
+  {
+   "id": "o104",
+   "start": 355.13,
+   "dur": 5,
+   "overlay": true,
+   "kind": "datestamp",
+   "value": "Erosión (¿?)",
+   "label": "Las pirámides de hielo",
+   "accent": "amber"
+  },
+  {
+   "id": "c105",
+   "start": 360.93,
+   "dur": 3.71,
+   "kind": "raw",
+   "src": "broll/pi_intro.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c106",
+   "start": 364.64,
+   "dur": 3.71,
+   "kind": "raw",
+   "src": "broll/pi_montanas.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c107",
+   "start": 368.35,
+   "dur": 3.71,
+   "kind": "raw",
+   "src": "broll/pi_caras.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c108",
+   "start": 372.05,
+   "dur": 3.71,
+   "kind": "raw",
+   "src": "broll/pi_llamo.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "stat109",
+   "start": 375.76,
+   "dur": 5.2,
+   "kind": "stat",
+   "value": 4,
+   "suffix": " caras",
+   "label": "demasiado simétrica para muchos ojos",
+   "eyebrow": "¿Natural o no?",
+   "accent": "accent",
+   "hue": "amber"
+  },
+  {
+   "id": "c110",
+   "start": 380.96,
+   "dur": 3.91,
+   "kind": "raw",
+   "src": "broll/pi_intro.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c111",
+   "start": 384.87,
+   "dur": 3.91,
+   "kind": "raw",
+   "src": "broll/pi_montanas.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c112",
+   "start": 388.78,
+   "dur": 3.91,
+   "kind": "raw",
+   "src": "broll/pi_caras.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c113",
+   "start": 392.69,
+   "dur": 3.91,
+   "kind": "raw",
+   "src": "broll/pi_llamo.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "rule114",
+   "start": 396.6,
+   "dur": 4.2,
+   "kind": "rule",
+   "number": "04",
+   "title": "Las zonas borrosas",
+   "label": "Coordenadas censuradas",
+   "hue": "blue"
+  },
+  {
+   "id": "o115",
+   "start": 400.8,
+   "dur": 6,
+   "overlay": true,
+   "kind": "doclabel",
+   "label": "Las zonas borrosas",
+   "sub": "Coordenadas censuradas",
+   "accent": "blue"
+  },
+  {
+   "id": "o116",
+   "start": 400.8,
+   "dur": 79.59,
+   "overlay": true,
+   "kind": "countrail",
+   "total": 7,
+   "rank": 4,
+   "name": "Las zonas borrosas",
+   "accent": "blue"
+  },
+  {
+   "id": "c117",
+   "start": 400.8,
+   "dur": 3.8,
+   "kind": "raw",
+   "src": "broll/ge_intro.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c118",
+   "start": 404.6,
+   "dur": 3.8,
+   "kind": "raw",
+   "src": "broll/ge_computadora.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c119",
+   "start": 408.4,
+   "dur": 3.8,
+   "kind": "raw",
+   "src": "broll/ge_rincones.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c120",
+   "start": 412.2,
+   "dur": 3.8,
+   "kind": "raw",
+   "src": "broll/ge_circular.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c121",
+   "start": 416,
+   "dur": 3.8,
+   "kind": "raw",
+   "src": "broll/ge_hallazgos.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c122",
+   "start": 419.8,
+   "dur": 3.8,
+   "kind": "raw",
+   "src": "broll/ge_borroneadas.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c123",
+   "start": 423.6,
+   "dur": 3.8,
+   "kind": "raw",
+   "src": "broll/ge_empresas.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "scalecolossus124",
+   "start": 427.4,
+   "dur": 6,
+   "kind": "scalecolossus",
+   "image": "real/ge_blur.jpg",
+   "meters": 0,
+   "unit": "nítido",
+   "eyebrow": "Las zonas borrosas",
+   "label": "justo donde queremos mirar",
+   "accent": "blue"
+  },
+  {
+   "id": "o125",
+   "start": 427.6,
+   "dur": 5,
+   "overlay": true,
+   "kind": "datestamp",
+   "value": "Mapas satelitales",
+   "label": "Las zonas borrosas",
+   "accent": "blue"
+  },
+  {
+   "id": "c126",
+   "start": 433.4,
+   "dur": 3.43,
+   "kind": "raw",
+   "src": "broll/ge_intro.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c127",
+   "start": 436.83,
+   "dur": 3.43,
+   "kind": "raw",
+   "src": "broll/ge_computadora.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c128",
+   "start": 440.26,
+   "dur": 3.43,
+   "kind": "raw",
+   "src": "broll/ge_rincones.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c129",
+   "start": 443.69,
+   "dur": 3.43,
+   "kind": "raw",
+   "src": "broll/ge_circular.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c130",
+   "start": 447.13,
+   "dur": 3.43,
+   "kind": "raw",
+   "src": "broll/ge_hallazgos.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c131",
+   "start": 450.56,
+   "dur": 3.43,
+   "kind": "raw",
+   "src": "broll/ge_borroneadas.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "stat132",
+   "start": 453.99,
+   "dur": 5.2,
+   "kind": "stat",
+   "value": 0,
+   "prefix": "0",
+   "suffix": " explicación",
+   "label": "lo único borroso de un mapa nítido",
+   "eyebrow": "¿Quién lo borró?",
+   "accent": "accent",
+   "hue": "blue"
+  },
+  {
+   "id": "c133",
+   "start": 459.19,
+   "dur": 3.57,
+   "kind": "raw",
+   "src": "broll/ge_intro.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c134",
+   "start": 462.76,
+   "dur": 3.57,
+   "kind": "raw",
+   "src": "broll/ge_computadora.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c135",
+   "start": 466.33,
+   "dur": 3.57,
+   "kind": "raw",
+   "src": "broll/ge_rincones.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c136",
+   "start": 469.89,
+   "dur": 3.57,
+   "kind": "raw",
+   "src": "broll/ge_circular.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c137",
+   "start": 473.46,
+   "dur": 3.57,
+   "kind": "raw",
+   "src": "broll/ge_hallazgos.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c138",
+   "start": 477.02,
+   "dur": 3.57,
+   "kind": "raw",
+   "src": "broll/ge_borroneadas.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "rule139",
+   "start": 480.59,
+   "dur": 4.2,
+   "kind": "rule",
+   "number": "03",
+   "title": "Las cuevas templadas",
+   "label": "Monte Erebus",
+   "hue": "amber"
+  },
+  {
+   "id": "o140",
+   "start": 484.79,
+   "dur": 6,
+   "overlay": true,
+   "kind": "doclabel",
+   "label": "Las cuevas templadas",
+   "sub": "Monte Erebus",
+   "accent": "amber"
+  },
+  {
+   "id": "o141",
+   "start": 484.79,
+   "dur": 70.35,
+   "overlay": true,
+   "kind": "countrail",
+   "total": 7,
+   "rank": 3,
+   "name": "Las cuevas templadas",
+   "accent": "amber"
+  },
+  {
+   "id": "c142",
+   "start": 484.79,
+   "dur": 3.36,
+   "kind": "raw",
+   "src": "broll/cv_intro.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c143",
+   "start": 488.15,
+   "dur": 3.36,
+   "kind": "raw",
+   "src": "broll/cv_cuevas.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c144",
+   "start": 491.51,
+   "dur": 3.36,
+   "kind": "raw",
+   "src": "broll/cv_talladas.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c145",
+   "start": 494.87,
+   "dur": 3.36,
+   "kind": "raw",
+   "src": "broll/cv_calor.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c146",
+   "start": 498.23,
+   "dur": 3.36,
+   "kind": "raw",
+   "src": "broll/cv_erebus.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c147",
+   "start": 501.59,
+   "dur": 3.36,
+   "kind": "raw",
+   "src": "broll/cv_tuneles.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c148",
+   "start": 504.95,
+   "dur": 3.36,
+   "kind": "raw",
+   "src": "broll/cv_imaginacion.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "scalecolossus149",
+   "start": 508.31,
+   "dur": 6,
+   "kind": "scalecolossus",
+   "image": "real/cv_cave.jpg",
+   "meters": 3794,
+   "unit": "m",
+   "eyebrow": "Las cuevas templadas",
+   "label": "de volcán activo bajo el hielo",
+   "accent": "amber"
+  },
+  {
+   "id": "o150",
+   "start": 508.51,
+   "dur": 5,
+   "overlay": true,
+   "kind": "datestamp",
+   "value": "Volcán activo",
+   "label": "Las cuevas templadas",
+   "accent": "amber"
+  },
+  {
+   "id": "c151",
+   "start": 514.31,
+   "dur": 3.5,
+   "kind": "raw",
+   "src": "broll/cv_intro.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c152",
+   "start": 517.81,
+   "dur": 3.5,
+   "kind": "raw",
+   "src": "broll/cv_cuevas.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c153",
+   "start": 521.31,
+   "dur": 3.5,
+   "kind": "raw",
+   "src": "broll/cv_talladas.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c154",
+   "start": 524.82,
+   "dur": 3.5,
+   "kind": "raw",
+   "src": "broll/cv_calor.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c155",
+   "start": 528.32,
+   "dur": 3.5,
+   "kind": "raw",
+   "src": "broll/cv_erebus.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "stat156",
+   "start": 531.82,
+   "dur": 5.2,
+   "kind": "stat",
+   "value": 25,
+   "suffix": " °C",
+   "label": "cuevas cálidas en el corazón del frío",
+   "eyebrow": "Refugios ocultos",
+   "accent": "danger",
+   "hue": "amber"
+  },
+  {
+   "id": "c157",
+   "start": 537.02,
+   "dur": 3.66,
+   "kind": "raw",
+   "src": "broll/cv_intro.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c158",
+   "start": 540.69,
+   "dur": 3.66,
+   "kind": "raw",
+   "src": "broll/cv_cuevas.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c159",
+   "start": 544.35,
+   "dur": 3.66,
+   "kind": "raw",
+   "src": "broll/cv_talladas.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c160",
+   "start": 548.01,
+   "dur": 3.66,
+   "kind": "raw",
+   "src": "broll/cv_calor.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c161",
+   "start": 551.68,
+   "dur": 3.66,
+   "kind": "raw",
+   "src": "broll/cv_erebus.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "rule162",
+   "start": 555.34,
+   "dur": 4.2,
+   "kind": "rule",
+   "number": "02",
+   "title": "Los ecos de radar",
+   "label": "Bajo cientos de metros de hielo",
+   "hue": "blue"
+  },
+  {
+   "id": "o163",
+   "start": 559.54,
+   "dur": 6,
+   "overlay": true,
+   "kind": "doclabel",
+   "label": "Los ecos de radar",
+   "sub": "Bajo cientos de metros de hielo",
+   "accent": "blue"
+  },
+  {
+   "id": "o164",
+   "start": 559.54,
+   "dur": 83.48,
+   "overlay": true,
+   "kind": "countrail",
+   "total": 7,
+   "rank": 2,
+   "name": "Los ecos de radar",
+   "accent": "blue"
+  },
+  {
+   "id": "c165",
+   "start": 559.54,
+   "dur": 3.49,
+   "kind": "raw",
+   "src": "broll/rd_intro.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c166",
+   "start": 563.03,
+   "dur": 3.49,
+   "kind": "raw",
+   "src": "broll/rd_decadas.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c167",
+   "start": 566.51,
+   "dur": 3.49,
+   "kind": "raw",
+   "src": "broll/rd_barridos.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c168",
+   "start": 570,
+   "dur": 3.49,
+   "kind": "raw",
+   "src": "broll/rd_contornos.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c169",
+   "start": 573.49,
+   "dur": 3.49,
+   "kind": "raw",
+   "src": "broll/rd_estructuras.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c170",
+   "start": 576.97,
+   "dur": 3.49,
+   "kind": "raw",
+   "src": "broll/rd_simetricas.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c171",
+   "start": 580.46,
+   "dur": 3.49,
+   "kind": "raw",
+   "src": "broll/rd_crater.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c172",
+   "start": 583.95,
+   "dur": 3.49,
+   "kind": "raw",
+   "src": "broll/rd_perforar.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "scalecolossus173",
+   "start": 587.43,
+   "dur": 6,
+   "kind": "scalecolossus",
+   "image": "real/rd_radar.jpg",
+   "meters": 800,
+   "unit": "m",
+   "eyebrow": "Los ecos de radar",
+   "label": "de hielo sobre formas demasiado rectas",
+   "accent": "blue"
+  },
+  {
+   "id": "o174",
+   "start": 587.63,
+   "dur": 5,
+   "overlay": true,
+   "kind": "datestamp",
+   "value": "Sin perforar",
+   "label": "Los ecos de radar",
+   "accent": "blue"
+  },
+  {
+   "id": "c175",
+   "start": 593.43,
+   "dur": 3.65,
+   "kind": "raw",
+   "src": "broll/rd_intro.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c176",
+   "start": 597.08,
+   "dur": 3.65,
+   "kind": "raw",
+   "src": "broll/rd_decadas.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c177",
+   "start": 600.73,
+   "dur": 3.65,
+   "kind": "raw",
+   "src": "broll/rd_barridos.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c178",
+   "start": 604.38,
+   "dur": 3.65,
+   "kind": "raw",
+   "src": "broll/rd_contornos.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c179",
+   "start": 608.03,
+   "dur": 3.65,
+   "kind": "raw",
+   "src": "broll/rd_estructuras.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c180",
+   "start": 611.68,
+   "dur": 3.65,
+   "kind": "raw",
+   "src": "broll/rd_simetricas.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "stat181",
+   "start": 615.33,
+   "dur": 5.2,
+   "kind": "stat",
+   "value": 0,
+   "prefix": "?",
+   "suffix": " confirmado",
+   "label": "demasiado caro de perforar para saberlo",
+   "eyebrow": "Formas que no encajan",
+   "accent": "danger",
+   "hue": "blue"
+  },
+  {
+   "id": "c182",
+   "start": 620.53,
+   "dur": 3.78,
+   "kind": "raw",
+   "src": "broll/rd_intro.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c183",
+   "start": 624.31,
+   "dur": 3.78,
+   "kind": "raw",
+   "src": "broll/rd_decadas.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c184",
+   "start": 628.09,
+   "dur": 3.78,
+   "kind": "raw",
+   "src": "broll/rd_barridos.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c185",
+   "start": 631.87,
+   "dur": 3.78,
+   "kind": "raw",
+   "src": "broll/rd_contornos.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c186",
+   "start": 635.66,
+   "dur": 3.78,
+   "kind": "raw",
+   "src": "broll/rd_estructuras.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c187",
+   "start": 639.44,
+   "dur": 3.78,
+   "kind": "raw",
+   "src": "broll/rd_simetricas.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "rule188",
+   "start": 643.22,
+   "dur": 4.2,
+   "kind": "rule",
+   "number": "01",
+   "title": "La Operación Highjump",
+   "label": "Antártida · 1946-47",
+   "hue": "red"
+  },
+  {
+   "id": "o189",
+   "start": 647.42,
+   "dur": 6,
+   "overlay": true,
+   "kind": "doclabel",
+   "label": "La Operación Highjump",
+   "sub": "Antártida · 1946-47",
+   "accent": "red"
+  },
+  {
+   "id": "o190",
+   "start": 647.42,
+   "dur": 137.39,
+   "overlay": true,
+   "kind": "countrail",
+   "total": 7,
+   "rank": 1,
+   "name": "La Operación Highjump",
+   "accent": "red"
+  },
+  {
+   "id": "c191",
+   "start": 647.42,
+   "dur": 3.53,
+   "kind": "raw",
+   "src": "broll/hj_intro.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c192",
+   "start": 650.95,
+   "dur": 3.53,
+   "kind": "raw",
+   "src": "broll/hj_verano.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c193",
+   "start": 654.48,
+   "dur": 3.53,
+   "kind": "raw",
+   "src": "broll/hj_envio.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c194",
+   "start": 658,
+   "dur": 3.53,
+   "kind": "raw",
+   "src": "broll/hj_nombre.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c195",
+   "start": 661.53,
+   "dur": 3.53,
+   "kind": "raw",
+   "src": "broll/hj_escala.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c196",
+   "start": 665.06,
+   "dur": 3.53,
+   "kind": "raw",
+   "src": "broll/hj_flota.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c197",
+   "start": 668.59,
+   "dur": 3.53,
+   "kind": "raw",
+   "src": "broll/hj_cinco_mil.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c198",
+   "start": 672.12,
+   "dur": 3.53,
+   "kind": "raw",
+   "src": "broll/hj_militar.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c199",
+   "start": 675.64,
+   "dur": 3.53,
+   "kind": "raw",
+   "src": "broll/hj_byrd.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c200",
+   "start": 679.17,
+   "dur": 3.53,
+   "kind": "raw",
+   "src": "broll/hj_plan.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c201",
+   "start": 682.7,
+   "dur": 3.53,
+   "kind": "raw",
+   "src": "broll/hj_cancelo.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c202",
+   "start": 686.23,
+   "dur": 3.53,
+   "kind": "raw",
+   "src": "broll/hj_fuerza.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c203",
+   "start": 689.76,
+   "dur": 3.53,
+   "kind": "raw",
+   "src": "broll/hj_clima.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "scalecolossus204",
+   "start": 693.28,
+   "dur": 6,
+   "kind": "scalecolossus",
+   "image": "real/hj_fleet.jpg",
+   "meters": 4700,
+   "unit": "hombres",
+   "eyebrow": "La Operación Highjump",
+   "label": "para un desierto supuestamente vacío",
+   "accent": "red"
+  },
+  {
+   "id": "o205",
+   "start": 693.48,
+   "dur": 5,
+   "overlay": true,
+   "kind": "datestamp",
+   "value": "Replegada en semanas",
+   "label": "La Operación Highjump",
+   "accent": "red"
+  },
+  {
+   "id": "c206",
+   "start": 699.28,
+   "dur": 3.62,
+   "kind": "raw",
+   "src": "broll/hj_intro.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c207",
+   "start": 702.91,
+   "dur": 3.62,
+   "kind": "raw",
+   "src": "broll/hj_verano.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c208",
+   "start": 706.53,
+   "dur": 3.62,
+   "kind": "raw",
+   "src": "broll/hj_envio.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c209",
+   "start": 710.16,
+   "dur": 3.62,
+   "kind": "raw",
+   "src": "broll/hj_nombre.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c210",
+   "start": 713.78,
+   "dur": 3.62,
+   "kind": "raw",
+   "src": "broll/hj_escala.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c211",
+   "start": 717.4,
+   "dur": 3.62,
+   "kind": "raw",
+   "src": "broll/hj_flota.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c212",
+   "start": 721.03,
+   "dur": 3.62,
+   "kind": "raw",
+   "src": "broll/hj_cinco_mil.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c213",
+   "start": 724.65,
+   "dur": 3.62,
+   "kind": "raw",
+   "src": "broll/hj_militar.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c214",
+   "start": 728.27,
+   "dur": 3.62,
+   "kind": "raw",
+   "src": "broll/hj_byrd.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c215",
+   "start": 731.9,
+   "dur": 3.62,
+   "kind": "raw",
+   "src": "broll/hj_plan.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c216",
+   "start": 735.52,
+   "dur": 3.62,
+   "kind": "raw",
+   "src": "broll/hj_cancelo.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "stat217",
+   "start": 739.15,
+   "dur": 5.2,
+   "kind": "stat",
+   "value": 4700,
+   "suffix": " hombres",
+   "label": "y se replegó mucho antes de lo previsto",
+   "eyebrow": "13 barcos · un portaaviones",
+   "accent": "danger",
+   "hue": "red"
+  },
+  {
+   "id": "c218",
+   "start": 744.35,
+   "dur": 3.7,
+   "kind": "raw",
+   "src": "broll/hj_intro.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c219",
+   "start": 748.04,
+   "dur": 3.7,
+   "kind": "raw",
+   "src": "broll/hj_verano.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c220",
+   "start": 751.74,
+   "dur": 3.7,
+   "kind": "raw",
+   "src": "broll/hj_envio.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c221",
+   "start": 755.44,
+   "dur": 3.7,
+   "kind": "raw",
+   "src": "broll/hj_nombre.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c222",
+   "start": 759.13,
+   "dur": 3.7,
+   "kind": "raw",
+   "src": "broll/hj_escala.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c223",
+   "start": 762.83,
+   "dur": 3.7,
+   "kind": "raw",
+   "src": "broll/hj_flota.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c224",
+   "start": 766.53,
+   "dur": 3.7,
+   "kind": "raw",
+   "src": "broll/hj_cinco_mil.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c225",
+   "start": 770.22,
+   "dur": 3.7,
+   "kind": "raw",
+   "src": "broll/hj_militar.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c226",
+   "start": 773.92,
+   "dur": 3.7,
+   "kind": "raw",
+   "src": "broll/hj_byrd.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c227",
+   "start": 777.62,
+   "dur": 3.7,
+   "kind": "raw",
+   "src": "broll/hj_plan.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c228",
+   "start": 781.31,
+   "dur": 3.7,
+   "kind": "raw",
+   "src": "broll/hj_cancelo.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c229",
+   "start": 785.01,
+   "dur": 3.5,
+   "kind": "raw",
+   "src": "broll/cl_bajado.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c230",
+   "start": 788.51,
+   "dur": 3.5,
+   "kind": "raw",
+   "src": "broll/cl_agua.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c231",
+   "start": 792,
+   "dur": 3.5,
+   "kind": "raw",
+   "src": "broll/cl_magnetica.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c232",
+   "start": 795.5,
+   "dur": 3.5,
+   "kind": "raw",
+   "src": "broll/cl_piramide.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c233",
+   "start": 799,
+   "dur": 3.5,
+   "kind": "raw",
+   "src": "broll/cl_borrosas.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c234",
+   "start": 802.49,
+   "dur": 3.5,
+   "kind": "raw",
+   "src": "broll/cl_cuevas.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c235",
+   "start": 805.99,
+   "dur": 3.5,
+   "kind": "raw",
+   "src": "broll/cl_radar.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c236",
+   "start": 809.49,
+   "dur": 3.5,
+   "kind": "raw",
+   "src": "broll/cl_militar.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c237",
+   "start": 812.98,
+   "dur": 3.5,
+   "kind": "raw",
+   "src": "broll/cl_juntalas.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c238",
+   "start": 816.48,
+   "dur": 3.5,
+   "kind": "raw",
+   "src": "broll/cl_desierto.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c239",
+   "start": 819.98,
+   "dur": 3.5,
+   "kind": "raw",
+   "src": "broll/cl_kilometros.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c240",
+   "start": 823.47,
+   "dur": 3.5,
+   "kind": "raw",
+   "src": "broll/cl_razon.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "timeline241",
+   "start": 826.97,
+   "dur": 8.5,
+   "kind": "timeline",
+   "eyebrow": "Un continente que apenas vimos",
+   "title": "Bajo el hielo, una y otra vez",
+   "events": [
+    {
+     "year": "15M años",
+     "label": "Lago Vostok"
+    },
+    {
+     "year": "1946",
+     "label": "Op. Highjump"
+    },
+    {
+     "year": "2001",
+     "label": "Anomalía magn."
+    },
+    {
+     "year": "Hoy",
+     "label": "Ecos de radar"
+    },
+    {
+     "year": "?",
+     "label": "Zonas borrosas"
+    }
+   ]
+  },
+  {
+   "id": "c242",
+   "start": 835.47,
+   "dur": 3.63,
+   "kind": "raw",
+   "src": "broll/cl_bajado.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c243",
+   "start": 839.1,
+   "dur": 3.63,
+   "kind": "raw",
+   "src": "broll/cl_agua.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c244",
+   "start": 842.73,
+   "dur": 3.63,
+   "kind": "raw",
+   "src": "broll/cl_magnetica.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c245",
+   "start": 846.36,
+   "dur": 3.63,
+   "kind": "raw",
+   "src": "broll/cl_piramide.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c246",
+   "start": 849.99,
+   "dur": 3.63,
+   "kind": "raw",
+   "src": "broll/cl_borrosas.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c247",
+   "start": 853.62,
+   "dur": 3.63,
+   "kind": "raw",
+   "src": "broll/cl_cuevas.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c248",
+   "start": 857.25,
+   "dur": 3.63,
+   "kind": "raw",
+   "src": "broll/cl_radar.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c249",
+   "start": 860.89,
+   "dur": 3.63,
+   "kind": "raw",
+   "src": "broll/cl_militar.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c250",
+   "start": 864.52,
+   "dur": 3.63,
+   "kind": "raw",
+   "src": "broll/cl_juntalas.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c251",
+   "start": 868.15,
+   "dur": 3.63,
+   "kind": "raw",
+   "src": "broll/cl_desierto.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c252",
+   "start": 871.78,
+   "dur": 3.63,
+   "kind": "raw",
+   "src": "broll/cl_kilometros.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c253",
+   "start": 875.41,
+   "dur": 3.63,
+   "kind": "raw",
+   "src": "broll/cl_razon.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c254",
+   "start": 879.04,
+   "dur": 3.63,
+   "kind": "raw",
+   "src": "broll/cl_canal.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "headline255",
+   "start": 882.67,
+   "dur": 6,
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "¿Y"
+    },
+    {
+     "t": "si"
+    },
+    {
+     "t": "lo"
+    },
+    {
+     "t": "imposible"
+    },
+    {
+     "t": "duerme"
+    },
+    {
+     "t": "bajo"
+    },
+    {
+     "t": "la"
+    },
+    {
+     "t": "arena?",
+     "hl": true
+    }
+   ],
+   "bg": "image",
+   "image": "real/ant_desert.jpg",
+   "hue": "amber",
+   "size": 84
+  },
+  {
+   "id": "c256",
+   "start": 888.67,
+   "dur": 3.43,
+   "kind": "raw",
+   "src": "broll/cl_bajado.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c257",
+   "start": 892.1,
+   "dur": 3.43,
+   "kind": "raw",
+   "src": "broll/cl_agua.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c258",
+   "start": 895.53,
+   "dur": 3.43,
+   "kind": "raw",
+   "src": "broll/cl_magnetica.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c259",
+   "start": 898.95,
+   "dur": 3.43,
+   "kind": "raw",
+   "src": "broll/cl_piramide.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c260",
+   "start": 902.38,
+   "dur": 3.43,
+   "kind": "raw",
+   "src": "broll/cl_borrosas.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c261",
+   "start": 905.81,
+   "dur": 3.43,
+   "kind": "raw",
+   "src": "broll/cl_cuevas.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c262",
+   "start": 909.24,
+   "dur": 3.43,
+   "kind": "raw",
+   "src": "broll/cl_radar.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c263",
+   "start": 912.66,
+   "dur": 3.43,
+   "kind": "raw",
+   "src": "broll/cl_militar.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c264",
+   "start": 916.09,
+   "dur": 3.43,
+   "kind": "raw",
+   "src": "broll/cl_juntalas.mp4",
+   "hue": "blue"
+  }
+ ]
+}

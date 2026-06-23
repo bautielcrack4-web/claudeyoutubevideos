@@ -1,0 +1,622 @@
+[
+ {
+  "name": "intro_continente",
+  "start": 0,
+  "dur": 3.22
+ },
+ {
+  "name": "intro_europa",
+  "start": 3.22,
+  "dur": 1.5
+ },
+ {
+  "name": "intro_capa",
+  "start": 4.59,
+  "dur": 8.99
+ },
+ {
+  "name": "intro_oficial",
+  "start": 13.58,
+  "dur": 7.74
+ },
+ {
+  "name": "intro_detalle",
+  "start": 21.32,
+  "dur": 4.12
+ },
+ {
+  "name": "intro_debajo",
+  "start": 25.44,
+  "dur": 10.29
+ },
+ {
+  "name": "intro_montanas",
+  "start": 35.73,
+  "dur": 2.13
+ },
+ {
+  "name": "intro_datos",
+  "start": 37.86,
+  "dur": 11.76
+ },
+ {
+  "name": "intro_acerca",
+  "start": 49.62,
+  "dur": 5.17
+ },
+ {
+  "name": "intro_borrosas",
+  "start": 54.79,
+  "dur": 2.4
+ },
+ {
+  "name": "intro_cancelan",
+  "start": 57.19,
+  "dur": 4.07
+ },
+ {
+  "name": "intro_pregunta",
+  "start": 61.26,
+  "dur": 10.87
+ },
+ {
+  "name": "intro_bajar",
+  "start": 72.13,
+  "dur": 4.89
+ },
+ {
+  "name": "intro_siete",
+  "start": 77.02,
+  "dur": 8.38
+ },
+ {
+  "name": "intro_guia",
+  "start": 85.4,
+  "dur": 2.12
+ },
+ {
+  "name": "intro_final",
+  "start": 87.52,
+  "dur": 8.31
+ },
+ {
+  "name": "intro_historia",
+  "start": 95.83,
+  "dur": 17.28
+ },
+ {
+  "name": "intro_respira",
+  "start": 113.11,
+  "dur": 1.71
+ },
+ {
+  "name": "intro_mapa",
+  "start": 114.82,
+  "dur": 7.61
+ },
+ {
+  "name": "intro_llanura",
+  "start": 122.43,
+  "dur": 6.6
+ },
+ {
+  "name": "intro_relieve",
+  "start": 129.03,
+  "dur": 5.01
+ },
+ {
+  "name": "intro_cadenas",
+  "start": 134.04,
+  "dur": 7.36
+ },
+ {
+  "name": "intro_enterrado",
+  "start": 141.4,
+  "dur": 9.97
+ },
+ {
+  "name": "intro_ecos",
+  "start": 151.37,
+  "dur": 7.56
+ },
+ {
+  "name": "intro_raras",
+  "start": 158.93,
+  "dur": 4.59
+ },
+ {
+  "name": "vk_intro",
+  "start": 163.52,
+  "dur": 6.98
+ },
+ {
+  "name": "vk_perforando",
+  "start": 170.5,
+  "dur": 2.15
+ },
+ {
+  "name": "vk_core",
+  "start": 172.65,
+  "dur": 10.47
+ },
+ {
+  "name": "vk_agua",
+  "start": 183.12,
+  "dur": 1.51
+ },
+ {
+  "name": "vk_lago",
+  "start": 184.63,
+  "dur": 13.45
+ },
+ {
+  "name": "vk_nombre",
+  "start": 198.08,
+  "dur": 1.79
+ },
+ {
+  "name": "vk_no_solo",
+  "start": 199.87,
+  "dur": 1.5
+ },
+ {
+  "name": "vk_detectado",
+  "start": 200.99,
+  "dur": 9.5
+ },
+ {
+  "name": "vk_oscuridad",
+  "start": 210.49,
+  "dur": 11.42
+ },
+ {
+  "name": "vk_muestras",
+  "start": 221.91,
+  "dur": 3.26
+ },
+ {
+  "name": "vk_vida",
+  "start": 225.17,
+  "dur": 10.89
+ },
+ {
+  "name": "vk_puerta",
+  "start": 236.06,
+  "dur": 16.65
+ },
+ {
+  "name": "mg_intro",
+  "start": 252.71,
+  "dur": 5.65
+ },
+ {
+  "name": "mg_medir",
+  "start": 258.36,
+  "dur": 9.72
+ },
+ {
+  "name": "mg_campo",
+  "start": 268.08,
+  "dur": 3.36
+ },
+ {
+  "name": "mg_anomalia",
+  "start": 271.44,
+  "dur": 1.92
+ },
+ {
+  "name": "mg_region",
+  "start": 273.36,
+  "dur": 12.41
+ },
+ {
+  "name": "mg_masivo",
+  "start": 285.77,
+  "dur": 6.61
+ },
+ {
+  "name": "mg_mineral",
+  "start": 292.38,
+  "dur": 12.56
+ },
+ {
+  "name": "mg_brujula",
+  "start": 304.94,
+  "dur": 11.26
+ },
+ {
+  "name": "mg_enloquece",
+  "start": 316.2,
+  "dur": 13.69
+ },
+ {
+  "name": "pi_intro",
+  "start": 329.89,
+  "dur": 7.08
+ },
+ {
+  "name": "pi_montanas",
+  "start": 336.97,
+  "dur": 6.96
+ },
+ {
+  "name": "pi_caras",
+  "start": 343.93,
+  "dur": 6.65
+ },
+ {
+  "name": "pi_llamo",
+  "start": 350.58,
+  "dur": 4.4
+ },
+ {
+  "name": "pi_fotos",
+  "start": 354.98,
+  "dur": 2.58
+ },
+ {
+  "name": "pi_geologos",
+  "start": 357.56,
+  "dur": 7.18
+ },
+ {
+  "name": "pi_relieve",
+  "start": 364.74,
+  "dur": 9.9
+ },
+ {
+  "name": "pi_otras",
+  "start": 374.64,
+  "dur": 6.09
+ },
+ {
+  "name": "pi_interesante",
+  "start": 380.73,
+  "dur": 15.87
+ },
+ {
+  "name": "ge_intro",
+  "start": 396.6,
+  "dur": 6.47
+ },
+ {
+  "name": "ge_computadora",
+  "start": 403.07,
+  "dur": 13.23
+ },
+ {
+  "name": "ge_rincones",
+  "start": 416.3,
+  "dur": 6.59
+ },
+ {
+  "name": "ge_circular",
+  "start": 422.89,
+  "dur": 10.35
+ },
+ {
+  "name": "ge_hallazgos",
+  "start": 433.24,
+  "dur": 4.49
+ },
+ {
+  "name": "ge_borroneadas",
+  "start": 437.73,
+  "dur": 11.16
+ },
+ {
+  "name": "ge_empresas",
+  "start": 448.89,
+  "dur": 13.95
+ },
+ {
+  "name": "ge_patron",
+  "start": 462.84,
+  "dur": 17.75
+ },
+ {
+  "name": "cv_intro",
+  "start": 480.59,
+  "dur": 6.68
+ },
+ {
+  "name": "cv_cuevas",
+  "start": 487.27,
+  "dur": 3.7
+ },
+ {
+  "name": "cv_talladas",
+  "start": 490.97,
+  "dur": 3.37
+ },
+ {
+  "name": "cv_calor",
+  "start": 494.34,
+  "dur": 5.74
+ },
+ {
+  "name": "cv_erebus",
+  "start": 500.08,
+  "dur": 4.35
+ },
+ {
+  "name": "cv_tuneles",
+  "start": 504.43,
+  "dur": 14.57
+ },
+ {
+  "name": "cv_imaginacion",
+  "start": 519,
+  "dur": 2.79
+ },
+ {
+  "name": "cv_calidas",
+  "start": 521.79,
+  "dur": 14.18
+ },
+ {
+  "name": "cv_afirmando",
+  "start": 535.97,
+  "dur": 13.86
+ },
+ {
+  "name": "cv_expedicion",
+  "start": 549.83,
+  "dur": 5.51
+ },
+ {
+  "name": "rd_intro",
+  "start": 555.34,
+  "dur": 4.13
+ },
+ {
+  "name": "rd_decadas",
+  "start": 559.47,
+  "dur": 12.74
+ },
+ {
+  "name": "rd_barridos",
+  "start": 572.21,
+  "dur": 4.74
+ },
+ {
+  "name": "rd_contornos",
+  "start": 576.95,
+  "dur": 3.26
+ },
+ {
+  "name": "rd_estructuras",
+  "start": 580.21,
+  "dur": 7.64
+ },
+ {
+  "name": "rd_simetricas",
+  "start": 587.85,
+  "dur": 11.91
+ },
+ {
+  "name": "rd_crater",
+  "start": 599.76,
+  "dur": 14.04
+ },
+ {
+  "name": "rd_perforar",
+  "start": 613.8,
+  "dur": 15.11
+ },
+ {
+  "name": "rd_siguen",
+  "start": 628.91,
+  "dur": 14.31
+ },
+ {
+  "name": "hj_intro",
+  "start": 643.22,
+  "dur": 17.37
+ },
+ {
+  "name": "hj_verano",
+  "start": 660.59,
+  "dur": 6.12
+ },
+ {
+  "name": "hj_envio",
+  "start": 666.71,
+  "dur": 5.98
+ },
+ {
+  "name": "hj_nombre",
+  "start": 672.69,
+  "dur": 2.08
+ },
+ {
+  "name": "hj_escala",
+  "start": 674.77,
+  "dur": 6.69
+ },
+ {
+  "name": "hj_flota",
+  "start": 681.46,
+  "dur": 7.64
+ },
+ {
+  "name": "hj_cinco_mil",
+  "start": 689.1,
+  "dur": 2.03
+ },
+ {
+  "name": "hj_militar",
+  "start": 691.13,
+  "dur": 5
+ },
+ {
+  "name": "hj_byrd",
+  "start": 696.13,
+  "dur": 4.99
+ },
+ {
+  "name": "hj_plan",
+  "start": 701.12,
+  "dur": 8.04
+ },
+ {
+  "name": "hj_cancelo",
+  "start": 709.16,
+  "dur": 3.07
+ },
+ {
+  "name": "hj_fuerza",
+  "start": 712.23,
+  "dur": 8.02
+ },
+ {
+  "name": "hj_clima",
+  "start": 720.25,
+  "dur": 7.15
+ },
+ {
+  "name": "hj_despiadada",
+  "start": 727.4,
+  "dur": 6.09
+ },
+ {
+  "name": "hj_declaraciones",
+  "start": 733.49,
+  "dur": 12.74
+ },
+ {
+  "name": "hj_diario",
+  "start": 746.23,
+  "dur": 5.52
+ },
+ {
+  "name": "hj_material",
+  "start": 751.75,
+  "dur": 11.26
+ },
+ {
+  "name": "hj_huecos",
+  "start": 763.01,
+  "dur": 1.54
+ },
+ {
+  "name": "hj_desproporcionada",
+  "start": 764.55,
+  "dur": 4.39
+ },
+ {
+  "name": "hj_ochenta",
+  "start": 768.94,
+  "dur": 12.04
+ },
+ {
+  "name": "hj_sensacion",
+  "start": 780.98,
+  "dur": 4.03
+ },
+ {
+  "name": "cl_bajado",
+  "start": 785.01,
+  "dur": 3.95
+ },
+ {
+  "name": "cl_agua",
+  "start": 788.96,
+  "dur": 4.28
+ },
+ {
+  "name": "cl_magnetica",
+  "start": 793.24,
+  "dur": 3.1
+ },
+ {
+  "name": "cl_piramide",
+  "start": 796.34,
+  "dur": 2.04
+ },
+ {
+  "name": "cl_borrosas",
+  "start": 798.38,
+  "dur": 3.95
+ },
+ {
+  "name": "cl_cuevas",
+  "start": 802.33,
+  "dur": 2.5
+ },
+ {
+  "name": "cl_radar",
+  "start": 804.83,
+  "dur": 3.32
+ },
+ {
+  "name": "cl_militar",
+  "start": 808.15,
+  "dur": 18.82
+ },
+ {
+  "name": "cl_juntalas",
+  "start": 826.97,
+  "dur": 12.68
+ },
+ {
+  "name": "cl_desierto",
+  "start": 839.65,
+  "dur": 4.73
+ },
+ {
+  "name": "cl_kilometros",
+  "start": 844.38,
+  "dur": 8.93
+ },
+ {
+  "name": "cl_razon",
+  "start": 853.31,
+  "dur": 14.56
+ },
+ {
+  "name": "cl_canal",
+  "start": 867.87,
+  "dur": 8.21
+ },
+ {
+  "name": "cl_arena",
+  "start": 876.08,
+  "dur": 6.59
+ },
+ {
+  "name": "cl_proximo",
+  "start": 882.67,
+  "dur": 4.39
+ },
+ {
+  "name": "cl_ciudades",
+  "start": 887.06,
+  "dur": 9.82
+ },
+ {
+  "name": "cl_acompanarme",
+  "start": 896.88,
+  "dur": 4.4
+ },
+ {
+  "name": "cl_suscribite",
+  "start": 901.28,
+  "dur": 6.12
+ },
+ {
+  "name": "cl_curiosidad",
+  "start": 907.4,
+  "dur": 6.12
+ },
+ {
+  "name": "cl_respuestas",
+  "start": 913.52,
+  "dur": 3.79
+ },
+ {
+  "name": "cl_final",
+  "start": 917.31,
+  "dur": 5.92
+ }
+]
