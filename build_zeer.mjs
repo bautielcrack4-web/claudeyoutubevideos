@@ -288,12 +288,14 @@ const bounds = [...clips.map((c) => c[0]), ...avStarts, TOTAL].sort((a, b) => a 
 const nextBound = (t) => bounds.find((b) => b > t + 1e-6) ?? TOTAL;
 
 const OV = 0.5;
-const beats = clips.map(([t, name, , concept]) => {
+const beats = clips.map(([t, name, query, concept]) => {
   const dur = +Math.min(nextBound(t) - t + OV, TOTAL - t).toFixed(2);
   if (have(name)) return { id: name, start: t, dur, kind: "raw", src: `broll/${name}.mp4`, darken: 0 };
   const r = realSrc(name);
   if (r) return { id: name, start: t, dur, kind: "raw", src: r, darken: 0 };
-  return { id: name, start: t, dur, kind: "raw", src: `img/${name}.png`, darken: 0, gen: { type: "image", name, prompt: concept + IMG_STYLE } };
+  // para el gen de IA usamos la QUERY VISUAL (no el concept narrado, que puede ser abstracto)
+  const vq = Array.isArray(query) ? query[0] : query;
+  return { id: name, start: t, dur, kind: "raw", src: `img/${name}.png`, darken: 0, gen: { type: "image", name, prompt: vq + IMG_STYLE } };
 });
 
 // reemplazar beats del cold-open por los HERO bespoke

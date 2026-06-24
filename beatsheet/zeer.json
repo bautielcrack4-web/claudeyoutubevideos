@@ -180,7 +180,7 @@
       "start": 75.5,
       "dur": 4.5,
       "kind": "raw",
-      "src": "broll/z_garden_center.mp4",
+      "src": "real/z_garden_center_1.jpg",
       "darken": 0
     },
     {
@@ -218,7 +218,7 @@
       "start": 96,
       "dur": 3.5,
       "kind": "raw",
-      "src": "broll/z_powerlines.mp4",
+      "src": "real/z_powerlines_1.jpg",
       "darken": 0
     },
     {
@@ -294,7 +294,7 @@
       "start": 133,
       "dur": 4,
       "kind": "raw",
-      "src": "broll/z_iceline.mp4",
+      "src": "real/z_iceline_1.jpg",
       "darken": 0
     },
     {
@@ -302,7 +302,7 @@
       "start": 136.5,
       "dur": 6.5,
       "kind": "raw",
-      "src": "broll/z_darkfridge.mp4",
+      "src": "real/z_darkfridge_1.jpg",
       "darken": 0
     },
     {
@@ -424,7 +424,7 @@
       "start": 200.5,
       "dur": 7.5,
       "kind": "raw",
-      "src": "broll/z_sandwet.mp4",
+      "src": "real/z_sandwet_1.jpg",
       "darken": 0
     },
     {
@@ -456,8 +456,13 @@
       "start": 219.5,
       "dur": 9,
       "kind": "raw",
-      "src": "real/z_blistering_1.png",
-      "darken": 0
+      "src": "img/z_blistering.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "z_blistering",
+        "prompt": "blistering sun and heat waves over arid land, realistic color photograph, natural vivid colors, sharp focus, well lit, clean, no text, no captions, no watermark, no logo"
+      }
     },
     {
       "id": "z_water_pour2",
@@ -549,8 +554,13 @@
       "start": 263.5,
       "dur": 7.5,
       "kind": "raw",
-      "src": "broll/z_sandbag.mp4",
-      "darken": 0
+      "src": "img/z_sandbag.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "z_sandbag",
+        "prompt": "a bag of builders sand at a hardware store, realistic color photograph, natural vivid colors, sharp focus, well lit, clean, no text, no captions, no watermark, no logo"
+      }
     },
     {
       "id": "cmp_steps",
@@ -584,7 +594,7 @@
       "start": 279.5,
       "dur": 6.5,
       "kind": "raw",
-      "src": "broll/z_plug.mp4",
+      "src": "real/z_plug_1.jpg",
       "darken": 0
     },
     {
@@ -820,7 +830,7 @@
       "start": 425,
       "dur": 4,
       "kind": "raw",
-      "src": "broll/z_milkjug.mp4",
+      "src": "real/z_milkjug_1.jpg",
       "darken": 0
     },
     {
@@ -845,7 +855,7 @@
       "start": 438,
       "dur": 5,
       "kind": "raw",
-      "src": "broll/z_humid.mp4",
+      "src": "real/z_humid_1.jpg",
       "darken": 0
     },
     {
@@ -877,8 +887,13 @@
       "start": 455.5,
       "dur": 5,
       "kind": "raw",
-      "src": "real/z_longstore_1.jpg",
-      "darken": 0
+      "src": "img/z_longstore.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "z_longstore",
+        "prompt": "crocks and jars for long term food storage, realistic color photograph, natural vivid colors, sharp focus, well lit, clean, no text, no captions, no watermark, no logo"
+      }
     },
     {
       "id": "z_stonehouse",
@@ -893,8 +908,13 @@
       "start": 466,
       "dur": 4,
       "kind": "raw",
-      "src": "real/z_pantrycloset_1.jpg",
-      "darken": 0
+      "src": "img/z_pantrycloset.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "z_pantrycloset",
+        "prompt": "a pantry closet built into a home, realistic color photograph, natural vivid colors, sharp focus, well lit, clean, no text, no captions, no watermark, no logo"
+      }
     },
     {
       "id": "cmp_pantry",
@@ -918,7 +938,7 @@
       "start": 478.5,
       "dur": 4.5,
       "kind": "raw",
-      "src": "broll/z_thickwall.mp4",
+      "src": "real/z_thickwall_1.jpg",
       "darken": 0
     },
     {
@@ -942,7 +962,7 @@
       "start": 495.5,
       "dur": 6.5,
       "kind": "raw",
-      "src": "broll/z_sunwall.mp4",
+      "src": "real/z_sunwall_1.jpg",
       "darken": 0
     },
     {
@@ -966,8 +986,13 @@
       "start": 513.5,
       "dur": 6.5,
       "kind": "raw",
-      "src": "broll/z_deepshelves.mp4",
-      "darken": 0
+      "src": "img/z_deepshelves.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "z_deepshelves",
+        "prompt": "deep pantry shelves with a stone slab, realistic color photograph, natural vivid colors, sharp focus, well lit, clean, no text, no captions, no watermark, no logo"
+      }
     },
     {
       "id": "z_vents",
@@ -1016,8 +1041,13 @@
       "start": 533.5,
       "dur": 5.5,
       "kind": "raw",
-      "src": "broll/z_closet.mp4",
-      "darken": 0
+      "src": "img/z_closet.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "z_closet",
+        "prompt": "a cool dark storage closet, realistic color photograph, natural vivid colors, sharp focus, well lit, clean, no text, no captions, no watermark, no logo"
+      }
     },
     {
       "id": "z_corner",
@@ -1056,16 +1086,26 @@
       "start": 561.5,
       "dur": 4.5,
       "kind": "raw",
-      "src": "real/z_cellarsteps_1.webp",
-      "darken": 0
+      "src": "img/z_cellarsteps.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "z_cellarsteps",
+        "prompt": "worn stone steps leading down into a cellar, realistic color photograph, natural vivid colors, sharp focus, well lit, clean, no text, no captions, no watermark, no logo"
+      }
     },
     {
       "id": "z_undergroundcool",
       "start": 565.5,
       "dur": 7.5,
       "kind": "raw",
-      "src": "real/z_undergroundcool_1.jpg",
-      "darken": 0
+      "src": "img/z_undergroundcool.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "z_undergroundcool",
+        "prompt": "a cool dim underground cellar, realistic color photograph, natural vivid colors, sharp focus, well lit, clean, no text, no captions, no watermark, no logo"
+      }
     },
     {
       "id": "z_rootcellar1",
@@ -1080,8 +1120,13 @@
       "start": 576.5,
       "dur": 4.5,
       "kind": "raw",
-      "src": "broll/z_cellarstore.mp4",
-      "darken": 0
+      "src": "img/z_cellarstore.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "z_cellarstore",
+        "prompt": "a root cellar full of stored vegetables, realistic color photograph, natural vivid colors, sharp focus, well lit, clean, no text, no captions, no watermark, no logo"
+      }
     },
     {
       "id": "cmp_soil",
@@ -1177,8 +1222,13 @@
       "start": 614.5,
       "dur": 5.5,
       "kind": "raw",
-      "src": "broll/z_earthshelves.mp4",
-      "darken": 0
+      "src": "img/z_earthshelves.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "z_earthshelves",
+        "prompt": "cool earthen cellar shelves of food, realistic color photograph, natural vivid colors, sharp focus, well lit, clean, no text, no captions, no watermark, no logo"
+      }
     },
     {
       "id": "cmp_holds",
@@ -1215,8 +1265,13 @@
       "start": 632.5,
       "dur": 4.5,
       "kind": "raw",
-      "src": "real/z_apples_1.jpg",
-      "darken": 0
+      "src": "img/z_apples.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "z_apples",
+        "prompt": "apples stored in straw so they do not touch, realistic color photograph, natural vivid colors, sharp focus, well lit, clean, no text, no captions, no watermark, no logo"
+      }
     },
     {
       "id": "z_hangveg",
@@ -1231,8 +1286,13 @@
       "start": 642.5,
       "dur": 10.5,
       "kind": "raw",
-      "src": "broll/z_cannedjars.mp4",
-      "darken": 0
+      "src": "img/z_cannedjars.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "z_cannedjars",
+        "prompt": "shelves of home canned mason jars, realistic color photograph, natural vivid colors, sharp focus, well lit, clean, no text, no captions, no watermark, no logo"
+      }
     },
     {
       "id": "cmp_minicellar",
@@ -1296,7 +1356,7 @@
       "start": 690.5,
       "dur": 5.5,
       "kind": "raw",
-      "src": "broll/z_spring_bubble.mp4",
+      "src": "real/z_spring_bubble_1.png",
       "darken": 0
     },
     {
@@ -1345,7 +1405,7 @@
       "start": 727.5,
       "dur": 5.5,
       "kind": "raw",
-      "src": "broll/z_carryaway.mp4",
+      "src": "real/z_carryaway_1.jpg",
       "darken": 0
     },
     {
@@ -1361,7 +1421,7 @@
       "start": 737.5,
       "dur": 6.5,
       "kind": "raw",
-      "src": "broll/z_milkcans.mp4",
+      "src": "real/z_milkcans_1.jpg",
       "darken": 0
     },
     {
@@ -1473,8 +1533,13 @@
       "start": 796.5,
       "dur": 6.5,
       "kind": "raw",
-      "src": "real/z_systemall_1.jpg",
-      "darken": 0
+      "src": "img/z_systemall.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "z_systemall",
+        "prompt": "a homestead porch, pantry and cellar together, realistic color photograph, natural vivid colors, sharp focus, well lit, clean, no text, no captions, no watermark, no logo"
+      }
     },
     {
       "id": "z_potproduce",
@@ -1489,7 +1554,7 @@
       "start": 807.5,
       "dur": 5.5,
       "kind": "raw",
-      "src": "broll/z_finishedpot.mp4",
+      "src": "real/z_finishedpot_1.jpg",
       "darken": 0
     },
     {
