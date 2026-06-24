@@ -15,6 +15,7 @@ import { MainCeniza, TOTAL_FRAMES_CENIZA } from "./VideoEdit/Main_ceniza";
 import { MainRatas, TOTAL_FRAMES_RATAS } from "./VideoEdit/Main_ratas";
 import { MainMelon, TOTAL_FRAMES_MELON } from "./VideoEdit/Main_melon";
 import { MainCorn, TOTAL_FRAMES_CORN } from "./VideoEdit/Main_corn";
+import { MainAbono, TOTAL_FRAMES_ABONO } from "./VideoEdit/Main_abono";
 import { MainChoclo, TOTAL_FRAMES_CHOCLO } from "./VideoEdit/Main_choclo";
 import { MainPeroxide, TOTAL_FRAMES_PEROXIDE } from "./VideoEdit/Main_peroxide";
 import { MainMoho, TOTAL_FRAMES_MOHO } from "./VideoEdit/Main_moho";
@@ -154,6 +155,15 @@ export const RemotionRoot: React.FC = () => {
         id="Choclo"
         component={MainChoclo}
         durationInFrames={TOTAL_FRAMES_CHOCLO}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
+      {/* VIDEO ACTIVO — 7 Basuras de Cocina = Abono GRATIS (Levi Lapp Jardín · canal ES) */}
+      <Composition
+        id="Abono"
+        component={MainAbono}
+        durationInFrames={TOTAL_FRAMES_ABONO}
         fps={30}
         width={1920}
         height={1080}
