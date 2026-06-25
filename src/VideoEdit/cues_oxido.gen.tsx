@@ -8,7 +8,6 @@ import { ChipsCluster } from "./scenes/ReframeContent";
 import { SplitList } from "./scenes/SplitList";
 import { DiagramBoard } from "./scenes/DiagramBoard";
 import { StatBig } from "./scenes/StatBig";
-import { JourneyCanvas } from "./scenes/JourneyCanvas";
 import { KineticHeadline } from "./scenes/KineticHeadline";
 import { AgedDoc } from "./scenes/AgedDoc";
 import { BarCompare } from "./scenes/BarCompare";
@@ -193,12 +192,11 @@ export const CUES: Cue[] = [
   { key: "ox_move_dry_shelf", start: 1321.47, dur: 1.73, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/ox_move_dry_shelf.mp4" hue="amber" darken={0} /> },
   { key: "ox_fix_leak", start: 1322.8, dur: 22.98, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/ox_fix_leak.png" hue="red" darken={0} /> },
   { key: "cmp_headline_14_9", start: 1345.38, dur: 3.21, kind: "headline", el: (d) => <KineticHeadline durationInFrames={d} tokens={[{"t":"No"},{"t":"pelees"},{"t":"el"},{"t":"óxido"},{"t":"que"},{"t":"ves."},{"t":"Sacale"},{"t":"el"},{"t":"agua","hl":true}]} eyebrow="La regla final" hue="blue" bg="image" image="real/ox_drysafe_bg.png" /> },
-  { key: "ox_tomas_cierre", start: 1351.98, dur: 1.72, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/ox_tomas_cierre.png" hue="amber" kicker="Salvá lo que ibas a tirar" darken={0} /> },
-  { key: "cmp_journey_15_1", start: 1353.3, dur: 6.01, kind: "journey", el: (d) => <JourneyCanvas durationInFrames={d} eyebrow="Los métodos, de lo simple a lo poderoso" title="Tu arsenal contra el óxido" accent="amber" waypoints={[{"x":0.15,"y":0.3,"image":"real/ox_candle_wax.png","num":"1","label":"Cera y tiza","sub":"que no aparezca","dwell":2.2,"travel":1.2},{"x":0.42,"y":0.22,"image":"real/ox_vinegar_bottle.png","num":"2","label":"Vinagre","sub":"lo chico ya comido","dwell":2.2,"travel":1.2},{"x":0.66,"y":0.4,"image":"real/ox_strong_tea.png","num":"3","label":"Ácido tánico","sub":"el óxido se vuelve escudo","dwell":2.2,"travel":1.2},{"x":0.88,"y":0.26,"image":"real/ox_electro_bucket.png","num":"4","label":"Electrólisis","sub":"se desprende solo","dwell":2.2,"travel":1.2}]} /> },
-  { key: "ox_restored_tools", start: 1358.91, dur: 4.69, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/ox_restored_tools.mp4" hue="blue" darken={0} /> },
-  { key: "ox_saved_wrench", start: 1363.2, dur: 1.72, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/ox_saved_wrench.png" hue="amber" darken={0} /> },
-  { key: "ox_wipe_proud", start: 1364.52, dur: 1.72, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/ox_wipe_proud.png" hue="red" darken={0} /> },
-  { key: "ox_clean_fence_done", start: 1365.84, dur: 30.29, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/ox_clean_fence_done.png" hue="blue" darken={0} /> },
+  { key: "ox_tomas_cierre", start: 1351.98, dur: 7.33, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/ox_tomas_cierre.png" hue="amber" kicker="Salvá lo que ibas a tirar" darken={0} /> },
+  { key: "ox_restored_tools", start: 1358.91, dur: 4.69, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/ox_restored_tools.mp4" hue="red" darken={0} /> },
+  { key: "ox_saved_wrench", start: 1363.2, dur: 1.72, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/ox_saved_wrench.png" hue="blue" darken={0} /> },
+  { key: "ox_wipe_proud", start: 1364.52, dur: 1.72, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/ox_wipe_proud.png" hue="amber" darken={0} /> },
+  { key: "ox_clean_fence_done", start: 1365.84, dur: 30.29, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/ox_clean_fence_done.png" hue="red" darken={0} /> },
   { key: "cmp_diagram_16_0", start: 1402.26, dur: 7.2, kind: "diagram", el: (d) => <DiagramBoard durationInFrames={d} clip="avatar_clips/cmp_diagram_16_0.mp4" pages={[{"image":"img/dg_ox_stack.png","eyebrow":"Con los planos y las medidas exactas"}]} /> },
   { key: "cmp_splitlist_16_1", start: 1414.8, dur: 7.2, kind: "splitlist", el: (d) => <SplitList durationInFrames={d} title="La casa entera, resuelta" items={["La madera que no se pudre con un líquido de $2","La gotera que se tapa para siempre","Las plagas por centavos","La humedad que sube, cortada por $5"]} accent={A} /> },
   { key: "cmp_quote_16_2", start: 1424.6, dur: 7.2, kind: "quote", el: (d) => <KineticQuote durationInFrames={d} image="real/ox_manual_bg.png" words={parseQuote("Cuesta menos que una visita del fumigador. El link está *abajo*.")} accent="good" hue="amber" /> },

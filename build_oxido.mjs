@@ -245,12 +245,6 @@ const SECTIONS = [
   // ░░ 14) CIERRE ░░
   { a: "todo lo del oxido", beats: [
     G("ox_tomas_cierre", { kicker: "Salvá lo que ibas a tirar" }),
-    X({ kind: "journey", at: "cuatro metodos de la vela", eyebrow: "Los métodos, de lo simple a lo poderoso", title: "Tu arsenal contra el óxido", accent: "amber", waypoints: [
-      { x: 0.15, y: 0.30, image: "real/ox_candle_wax.png", num: "1", label: "Cera y tiza", sub: "que no aparezca", dwell: 2.2, travel: 1.2 },
-      { x: 0.42, y: 0.22, image: "real/ox_vinegar_bottle.png", num: "2", label: "Vinagre", sub: "lo chico ya comido", dwell: 2.2, travel: 1.2 },
-      { x: 0.66, y: 0.40, image: "real/ox_strong_tea.png", num: "3", label: "Ácido tánico", sub: "el óxido se vuelve escudo", dwell: 2.2, travel: 1.2 },
-      { x: 0.88, y: 0.26, image: "real/ox_electro_bucket.png", num: "4", label: "Electrólisis", sub: "se desprende solo", dwell: 2.2, travel: 1.2 },
-    ] }),
     C("ox_restored_tools", "restored clean tools laid out", "a set of restored clean tools laid out", { at: "salvar las herramientas" }),
     I("ox_saved_wrench", "clean restored wrench shining", "a clean restored wrench, saved", { at: "que ibas a tirar" }),
     C("ox_wipe_proud", "wiping a clean tool with cloth", "wiping down a saved tool", { at: "de la vela a la electrolisis" }),
