@@ -856,6 +856,29 @@ function renderEl(b) {
         (b.accent ? ` accent=${j(b.accent)}` : ``) +
         ` />`
       );
+    // ── OVERLAYS A MEDIDA óxido (OxCards): sobre el clip vivo + blur ──
+    case "oxstat":
+      return (`<OxStatPop durationInFrames={d} value={${b.value}} label=${j(b.label || "")}` + (b.prefix ? ` prefix=${j(b.prefix)}` : ``) + (b.suffix ? ` suffix=${j(b.suffix)}` : ``) + (b.glyph ? ` glyph=${j(b.glyph)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    case "oxmethod":
+      return (`<OxMethodCard durationInFrames={d} num=${j(b.num || "")} title=${j(b.title || "")} chips={${j(b.chips || [])}}` + (b.cost ? ` cost=${j(b.cost)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    case "oxrule":
+      return (`<OxRuleStrip durationInFrames={d} text=${j(b.text || "")}` + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    case "oxclamp":
+      return (`<OxClampWarning durationInFrames={d}` + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    case "oxtag":
+      return (`<OxMaterialTag durationInFrames={d} name=${j(b.name || "")} what=${j(b.what || "")}` + (b.price ? ` price=${j(b.price)}` : ``) + (b.side ? ` side=${j(b.side)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    case "oxbefore":
+      return (`<OxBeforeAfter durationInFrames={d} before=${j(b.before)} after=${j(b.after)}` + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    case "oxside":
+      return (`<OxSidePanel durationInFrames={d} image=${j(b.image)} title=${j(b.title || "")} lines={${j(b.lines || [])}}` + (b.side ? ` side=${j(b.side)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    case "oxstack":
+      return (`<OxPhotoStack durationInFrames={d} images={${j(b.images || [])}} captions={${j(b.captions || [])}}` + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    case "oxspec":
+      return (`<OxSpecSheet durationInFrames={d} image=${j(b.image)} title=${j(b.title || "")} rows={${j(b.rows || [])}}` + (b.kicker ? ` kicker=${j(b.kicker)}` : ``) + (b.side ? ` side=${j(b.side)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    case "oxnote":
+      return (`<OxAnnotatedPhoto durationInFrames={d} image=${j(b.image)} notes={${j(b.notes || [])}}` + (b.title ? ` title=${j(b.title)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    case "oxquote":
+      return (`<OxQuoteSplit durationInFrames={d} quote=${j(b.quote || "")} image=${j(b.image)}` + (b.attribution ? ` attribution=${j(b.attribution)}` : ``) + (b.side ? ` side=${j(b.side)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
     default:
       return null; // talk
   }
@@ -969,6 +992,9 @@ if (kinds.has("countrail")) imports.push(`import { CountRail } from "./overlays/
 if (kinds.has("originpips")) imports.push(`import { OriginPips } from "./overlays/OriginPips";`);
 if (kinds.has("sourcechip")) imports.push(`import { SourceChip } from "./overlays/SourceChip";`);
 if (kinds.has("sonarhud")) imports.push(`import { SonarHUD } from "./overlays/SonarHUD";`);
+{ const oxMap = { oxstat: "OxStatPop", oxmethod: "OxMethodCard", oxrule: "OxRuleStrip", oxclamp: "OxClampWarning", oxtag: "OxMaterialTag", oxbefore: "OxBeforeAfter", oxside: "OxSidePanel", oxstack: "OxPhotoStack", oxspec: "OxSpecSheet", oxnote: "OxAnnotatedPhoto", oxquote: "OxQuoteSplit" };
+  const oxUsed = Object.entries(oxMap).filter(([k]) => kinds.has(k)).map(([, v]) => v);
+  if (oxUsed.length) imports.push(`import { ${oxUsed.join(", ")} } from "./overlays/OxCards";`); }
 const palLine = usedPal.size
   ? `\nconst ${[...usedPal].map((t) => `${t} = ${palTok[t]}`).join(", ")};\n`
   : "";

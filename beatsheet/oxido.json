@@ -1,0 +1,2579 @@
+{
+ "video": "oxido",
+ "avatar": "oxido_opt.mp4",
+ "tutorial": true,
+ "clipsfirst": true,
+ "beats": [
+  {
+   "id": "ox_rust_wrench",
+   "start": 2.8,
+   "dur": 2.81,
+   "kind": "raw",
+   "src": "broll/ox_rust_wrench.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ox_rust_macro1",
+   "start": 5.21,
+   "dur": 2.83,
+   "kind": "raw",
+   "src": "real/ox_rust_macro1.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ox_rust_gate",
+   "start": 7.64,
+   "dur": 1.73,
+   "kind": "raw",
+   "src": "broll/ox_rust_gate.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ox_rust_garage",
+   "start": 8.97,
+   "dur": 2.23,
+   "kind": "raw",
+   "src": "real/ox_rust_garage.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ox_rust_railing",
+   "start": 10.8,
+   "dur": 1.56,
+   "kind": "raw",
+   "src": "broll/ox_rust_railing.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ox_rust_chassis",
+   "start": 11.96,
+   "dur": 2.52,
+   "kind": "raw",
+   "src": "broll/ox_rust_chassis.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ox_rust_grill",
+   "start": 14.08,
+   "dur": 4.57,
+   "kind": "raw",
+   "src": "broll/ox_rust_grill.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ox_tomas_hook",
+   "start": 18.25,
+   "dur": 8.33,
+   "kind": "raw",
+   "src": "img/ox_tomas_hook.png",
+   "darken": 0,
+   "hue": "red",
+   "kicker": "Estás en el lugar correcto"
+  },
+  {
+   "id": "ox_before_after",
+   "start": 26.18,
+   "dur": 1.98,
+   "kind": "raw",
+   "src": "real/ox_before_after.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ov_oxbefore_26",
+   "start": 26.18,
+   "dur": 4.5,
+   "kind": "oxbefore",
+   "overlay": true,
+   "hue": "amber",
+   "before": "real/ox_rust_macro2.png",
+   "after": "real/ox_wrench_clean_hand.png",
+   "accent": "green"
+  },
+  {
+   "id": "ox_sand_hard",
+   "start": 27.76,
+   "dur": 3.04,
+   "kind": "raw",
+   "src": "broll/ox_sand_hard.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ox_metal_shop_shelf",
+   "start": 30.4,
+   "dur": 2.73,
+   "kind": "raw",
+   "src": "broll/ox_metal_shop_shelf.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ox_new_tool",
+   "start": 32.73,
+   "dur": 4.5,
+   "kind": "raw",
+   "src": "real/ox_new_tool.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ox_youtube_tutorials",
+   "start": 36.83,
+   "dur": 4.77,
+   "kind": "raw",
+   "src": "real/ox_youtube_tutorials.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ox_show_camera",
+   "start": 41.2,
+   "dur": 4.4,
+   "kind": "raw",
+   "src": "real/ox_show_camera.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ov_oxquote_41",
+   "start": 41.2,
+   "dur": 4.8,
+   "kind": "oxquote",
+   "overlay": true,
+   "hue": "amber",
+   "quote": "No te lo *cuento*. Te lo pruebo.",
+   "image": "real/ox_dunk_wrench.png",
+   "side": "right",
+   "accent": "ice"
+  },
+  {
+   "id": "ox_rust_wrench2",
+   "start": 45.2,
+   "dur": 3.61,
+   "kind": "raw",
+   "src": "real/ox_rust_wrench2.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ox_wrench_jaws",
+   "start": 48.41,
+   "dur": 4.11,
+   "kind": "raw",
+   "src": "real/ox_wrench_jaws.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ox_rust_macro2",
+   "start": 52.12,
+   "dur": 3.01,
+   "kind": "raw",
+   "src": "real/ox_rust_macro2.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ov_oxnote_52",
+   "start": 52.12,
+   "dur": 5.2,
+   "kind": "oxnote",
+   "overlay": true,
+   "hue": "amber",
+   "image": "real/ox_rust_wrench.png",
+   "title": "Lo que el óxido ya hizo",
+   "notes": [
+    {
+     "x": 30,
+     "y": 38,
+     "lx": 12,
+     "ly": 20,
+     "text": "Naranja y áspero"
+    },
+    {
+     "x": 62,
+     "y": 55,
+     "lx": 86,
+     "ly": 30,
+     "text": "Mordazas trabadas"
+    },
+    {
+     "x": 48,
+     "y": 72,
+     "lx": 70,
+     "ly": 88,
+     "text": "Picaduras en el metal"
+    }
+   ],
+   "accent": "red"
+  },
+  {
+   "id": "ox_dunk_wrench",
+   "start": 54.73,
+   "dur": 2.44,
+   "kind": "raw",
+   "src": "broll/ox_dunk_wrench.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ox_powder_spoon",
+   "start": 56.77,
+   "dur": 4.9,
+   "kind": "raw",
+   "src": "real/ox_powder_spoon.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ox_few_coins",
+   "start": 61.27,
+   "dur": 2.9,
+   "kind": "raw",
+   "src": "real/ox_few_coins.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ox_electro_bucket",
+   "start": 63.77,
+   "dur": 2.84,
+   "kind": "raw",
+   "src": "broll/ox_electro_bucket.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ox_bubbles_hook",
+   "start": 66.21,
+   "dur": 2.52,
+   "kind": "raw",
+   "src": "real/ox_bubbles_hook.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ox_electro_pull",
+   "start": 68.33,
+   "dur": 2.34,
+   "kind": "raw",
+   "src": "broll/ox_electro_pull.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ox_wrench_clean_hand",
+   "start": 70.27,
+   "dur": 1.72,
+   "kind": "raw",
+   "src": "real/ox_wrench_clean_hand.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "cmp_headline_0_24",
+   "start": 71.59,
+   "dur": 7.2,
+   "kind": "headline",
+   "hue": "amber",
+   "k": "comp",
+   "tokens": [
+    {
+     "t": "Sin"
+    },
+    {
+     "t": "lijar."
+    },
+    {
+     "t": "Sin"
+    },
+    {
+     "t": "gastar."
+    },
+    {
+     "t": "Sin"
+    },
+    {
+     "t": "cambiarla",
+     "hl": true
+    }
+   ],
+   "eyebrow": "Lo que el negocio no quiere que sepas",
+   "bg": "image",
+   "image": "real/ox_hook_bg.png"
+  },
+  {
+   "id": "ox_broken_shovel",
+   "start": 140.29,
+   "dur": 3.25,
+   "kind": "raw",
+   "src": "real/ox_broken_shovel.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ov_oxstack_140",
+   "start": 140.29,
+   "dur": 4.4,
+   "kind": "oxstack",
+   "overlay": true,
+   "hue": "amber",
+   "images": [
+    "real/ox_broken_shovel.png",
+    "real/ox_rusty_padlock.png",
+    "real/ox_hinge_rust.png"
+   ],
+   "captions": [
+    "La pala",
+    "El candado",
+    "La bisagra"
+   ],
+   "accent": "red"
+  },
+  {
+   "id": "ox_throw_tool",
+   "start": 143.14,
+   "dur": 2.06,
+   "kind": "raw",
+   "src": "broll/ox_throw_tool.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ox_rusty_padlock",
+   "start": 144.8,
+   "dur": 2.38,
+   "kind": "raw",
+   "src": "real/ox_rusty_padlock.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ox_hammer_lock",
+   "start": 146.78,
+   "dur": 3.02,
+   "kind": "raw",
+   "src": "broll/ox_hammer_lock.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ox_hinge_creak",
+   "start": 149.4,
+   "dur": 4.14,
+   "kind": "raw",
+   "src": "broll/ox_hinge_creak.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ox_hinge_rust",
+   "start": 153.14,
+   "dur": 22.24,
+   "kind": "raw",
+   "src": "real/ox_hinge_rust.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ox_rust_spread",
+   "start": 174.98,
+   "dur": 9.29,
+   "kind": "raw",
+   "src": "real/ox_rust_spread.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "cmp_stat_2_7",
+   "start": 183.87,
+   "dur": 1.72,
+   "kind": "stat",
+   "hue": "red",
+   "k": "comp",
+   "value": 3,
+   "suffix": " años",
+   "label": "y un metal sin tratar puede estar perforado",
+   "eyebrow": "El óxido no se detiene"
+  },
+  {
+   "id": "ox_perforated_metal",
+   "start": 185.19,
+   "dur": 1.72,
+   "kind": "raw",
+   "src": "real/ox_perforated_metal.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ox_flaking_rust",
+   "start": 186.51,
+   "dur": 4.82,
+   "kind": "raw",
+   "src": "broll/ox_flaking_rust.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ox_scrap_pile",
+   "start": 190.93,
+   "dur": 7.27,
+   "kind": "raw",
+   "src": "real/ox_scrap_pile.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "cmp_headline_2_11",
+   "start": 197.8,
+   "dur": 2.29,
+   "kind": "headline",
+   "hue": "red",
+   "k": "comp",
+   "tokens": [
+    {
+     "t": "Se"
+    },
+    {
+     "t": "vuelve"
+    },
+    {
+     "t": "chatarra."
+    },
+    {
+     "t": "Y"
+    },
+    {
+     "t": "comprás"
+    },
+    {
+     "t": "de"
+    },
+    {
+     "t": "nuevo",
+     "hl": true
+    }
+   ],
+   "eyebrow": "Eso es el negocio",
+   "bg": "image",
+   "image": "real/ox_scrap_bg.png"
+  },
+  {
+   "id": "ox_tomas_explica",
+   "start": 205,
+   "dur": 3.52,
+   "kind": "raw",
+   "src": "img/ox_tomas_explica.png",
+   "darken": 0,
+   "hue": "amber",
+   "kicker": "Tan simple que da bronca"
+  },
+  {
+   "id": "cmp_diagram_3_1",
+   "start": 208.12,
+   "dur": 6.63,
+   "kind": "diagram",
+   "hue": "red",
+   "k": "comp",
+   "eyebrow": "El óxido necesita SOLO tres cosas",
+   "slides": [
+    {
+     "image": "img/dg_ox_triada.png",
+     "eyebrow": "Sacá uno solo y el óxido no nace"
+    }
+   ]
+  },
+  {
+   "id": "ox_water_drop_steel",
+   "start": 214.35,
+   "dur": 1.72,
+   "kind": "raw",
+   "src": "broll/ox_water_drop_steel.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ox_rust_forming",
+   "start": 215.67,
+   "dur": 1.72,
+   "kind": "raw",
+   "src": "broll/ox_rust_forming.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ox_iron_bar",
+   "start": 216.99,
+   "dur": 17.34,
+   "kind": "raw",
+   "src": "real/ox_iron_bar.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ox_old_iron_tool",
+   "start": 233.93,
+   "dur": 1.81,
+   "kind": "raw",
+   "src": "real/ox_old_iron_tool.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ox_old_vs_new",
+   "start": 235.34,
+   "dur": 1.72,
+   "kind": "raw",
+   "src": "broll/ox_old_vs_new.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "cmp_bars_3_7",
+   "start": 236.66,
+   "dur": 7.2,
+   "kind": "bars",
+   "hue": "red",
+   "k": "comp",
+   "title": "Cuánto dura el hierro",
+   "unit": "años",
+   "bars": [
+    {
+     "label": "Sin tratar, a la intemperie",
+     "value": 5,
+     "display": "5",
+     "tone": "danger"
+    },
+    {
+     "label": "Con una barrera de aceite",
+     "value": 50,
+     "display": "50",
+     "winner": true
+    }
+   ]
+  },
+  {
+   "id": "ov_oxside_258",
+   "start": 258.4,
+   "dur": 5,
+   "kind": "oxside",
+   "overlay": true,
+   "hue": "amber",
+   "image": "real/ox_oil_rag_metal.png",
+   "title": "La barrera de siempre",
+   "lines": [
+    "Aceite, cera o grasa",
+    "Entre el metal y el aire húmedo",
+    "Costaba centavos"
+   ],
+   "side": "right",
+   "accent": "amber"
+  },
+  {
+   "id": "ox_oil_rag_metal",
+   "start": 259.45,
+   "dur": 3.43,
+   "kind": "raw",
+   "src": "broll/ox_oil_rag_metal.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ox_wax_block",
+   "start": 262.48,
+   "dur": 1.72,
+   "kind": "raw",
+   "src": "real/ox_wax_block.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "cmp_splitlist_3_10",
+   "start": 263.8,
+   "dur": 4.13,
+   "kind": "splitlist",
+   "hue": "red",
+   "k": "comp",
+   "title": "Por qué el hierro de antes dura",
+   "items": [
+    "Menos impurezas en el metal",
+    "Le ponían una barrera: aceite, cera, grasa",
+    "Cosas que costaban centavos"
+   ],
+   "palette": "G"
+  },
+  {
+   "id": "ox_humid_shed",
+   "start": 267.53,
+   "dur": 5.61,
+   "kind": "raw",
+   "src": "real/ox_humid_shed.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ox_air_humid",
+   "start": 272.74,
+   "dur": 10.02,
+   "kind": "raw",
+   "src": "broll/ox_air_humid.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ov_oxside_285",
+   "start": 284.75,
+   "dur": 5,
+   "kind": "oxside",
+   "overlay": true,
+   "hue": "amber",
+   "image": "real/ox_chisel_old.png",
+   "title": "El formón del abuelo",
+   "lines": [
+    "Más de cien años, y cortaba",
+    "Un trapo con aceite, siempre",
+    "La diferencia no fue el metal"
+   ],
+   "side": "left",
+   "accent": "amber"
+  },
+  {
+   "id": "ox_formon_viejo",
+   "start": 286.4,
+   "dur": 1.78,
+   "kind": "raw",
+   "src": "img/ox_formon_viejo.png",
+   "darken": 0,
+   "hue": "blue",
+   "kicker": "Más de cien años"
+  },
+  {
+   "id": "ox_chisel_wood",
+   "start": 287.78,
+   "dur": 2.03,
+   "kind": "raw",
+   "src": "broll/ox_chisel_wood.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ox_chisel_old",
+   "start": 289.41,
+   "dur": 19.99,
+   "kind": "raw",
+   "src": "real/ox_chisel_old.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ox_abuelo_trapo",
+   "start": 309,
+   "dur": 1.72,
+   "kind": "raw",
+   "src": "img/ox_abuelo_trapo.png",
+   "darken": 0,
+   "hue": "blue",
+   "kicker": "El trapo con aceite"
+  },
+  {
+   "id": "ox_wipe_tool_rag",
+   "start": 310.32,
+   "dur": 9.48,
+   "kind": "raw",
+   "src": "broll/ox_wipe_tool_rag.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ox_tools_drawer_rust",
+   "start": 319.4,
+   "dur": 6.8,
+   "kind": "raw",
+   "src": "real/ox_tools_drawer_rust.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "cmp_callout_5_6",
+   "start": 325.8,
+   "dur": 1.72,
+   "kind": "callout",
+   "hue": "blue",
+   "k": "comp",
+   "figure": "100 años",
+   "caption": "La diferencia nunca fue el metal. Fue el trapo.",
+   "image": "real/ox_chisel_hand.png"
+  },
+  {
+   "id": "ox_hands_tool_old",
+   "start": 327.12,
+   "dur": 1.41,
+   "kind": "raw",
+   "src": "broll/ox_hands_tool_old.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "cmp_aged_5_8",
+   "start": 328.13,
+   "dur": 7.2,
+   "kind": "aged",
+   "hue": "amber",
+   "k": "comp",
+   "heading": "REGLA NÚMERO UNO",
+   "eyebrow": "Aunque te olvides de todo lo demás",
+   "lines": [
+    {
+     "text": "Sacale el agua al hierro"
+    },
+    {
+     "text": "y el óxido se queda sin de qué vivir"
+    },
+    {
+     "text": "Un trapo con aceite. Treinta segundos.",
+     "mark": true
+    }
+   ],
+   "accent": "good"
+  },
+  {
+   "id": "ov_oxrule_334",
+   "start": 334,
+   "dur": 4.6,
+   "kind": "oxrule",
+   "overlay": true,
+   "hue": "amber",
+   "text": "Sacale el *agua* al hierro y se queda sin de qué vivir",
+   "accent": "amber"
+  },
+  {
+   "id": "ov_oxmethod_352",
+   "start": 351.6,
+   "dur": 4.6,
+   "kind": "oxmethod",
+   "overlay": true,
+   "hue": "amber",
+   "num": "01",
+   "title": "Que no aparezca nunca",
+   "chips": [
+    "Cera",
+    "Aceite",
+    "Tiza"
+   ],
+   "cost": "centavos",
+   "accent": "amber"
+  },
+  {
+   "id": "ov_oxstack_355",
+   "start": 355.2,
+   "dur": 4.4,
+   "kind": "oxstack",
+   "overlay": true,
+   "hue": "amber",
+   "images": [
+    "real/ox_wax_screw.png",
+    "real/ox_oil_hinge.png",
+    "real/ox_saw_blade_wax.png"
+   ],
+   "captions": [
+    "Tornillos",
+    "Bisagras",
+    "Filos"
+   ],
+   "accent": "amber"
+  },
+  {
+   "id": "ox_candle_wax",
+   "start": 382.22,
+   "dur": 1.72,
+   "kind": "raw",
+   "src": "real/ox_candle_wax.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ox_light_candle",
+   "start": 383.54,
+   "dur": 1.41,
+   "kind": "raw",
+   "src": "broll/ox_light_candle.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ov_oxtag_384",
+   "start": 384.2,
+   "dur": 4,
+   "kind": "oxtag",
+   "overlay": true,
+   "hue": "amber",
+   "name": "Cera / vela",
+   "what": "Sella la rosca: no se oxida",
+   "side": "left",
+   "accent": "amber"
+  },
+  {
+   "id": "ox_wax_screw",
+   "start": 384.55,
+   "dur": 2.67,
+   "kind": "raw",
+   "src": "broll/ox_wax_screw.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ox_screws_jar",
+   "start": 386.82,
+   "dur": 2.53,
+   "kind": "raw",
+   "src": "real/ox_screws_jar.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ox_screw_drive",
+   "start": 388.95,
+   "dur": 9.71,
+   "kind": "raw",
+   "src": "broll/ox_screw_drive.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ox_saw_blade_wax",
+   "start": 398.26,
+   "dur": 1.72,
+   "kind": "raw",
+   "src": "broll/ox_saw_blade_wax.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ox_hinge_pin_out",
+   "start": 399.58,
+   "dur": 6.26,
+   "kind": "raw",
+   "src": "broll/ox_hinge_pin_out.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ox_oil_hinge",
+   "start": 405.44,
+   "dur": 4.69,
+   "kind": "raw",
+   "src": "real/ox_oil_hinge.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ox_oil_blade",
+   "start": 409.73,
+   "dur": 2.64,
+   "kind": "raw",
+   "src": "broll/ox_oil_blade.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ox_graphite_lock",
+   "start": 411.97,
+   "dur": 1.72,
+   "kind": "raw",
+   "src": "real/ox_graphite_lock.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "cmp_splitlist_6_10",
+   "start": 413.29,
+   "dur": 7.2,
+   "kind": "splitlist",
+   "hue": "red",
+   "k": "comp",
+   "title": "La barrera más barata",
+   "items": [
+    "Cera en tornillos y filos",
+    "Trapo con aceite una vez por mes",
+    "Grafito de lápiz en cerraduras"
+   ],
+   "palette": "A"
+  },
+  {
+   "id": "ov_oxside_419",
+   "start": 419.08,
+   "dur": 4.8,
+   "kind": "oxside",
+   "overlay": true,
+   "hue": "amber",
+   "image": "real/ox_chalk_sticks.png",
+   "title": "La tiza",
+   "lines": [
+    "Chupa la humedad del aire",
+    "En la caja de herramientas",
+    "Cambiala al desmenuzarse"
+   ],
+   "side": "right",
+   "accent": "amber"
+  },
+  {
+   "id": "ox_chalk_sticks",
+   "start": 421.82,
+   "dur": 2.3,
+   "kind": "raw",
+   "src": "real/ox_chalk_sticks.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ox_chalk_box",
+   "start": 423.72,
+   "dur": 2.82,
+   "kind": "raw",
+   "src": "real/ox_chalk_box.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ox_silica_packets",
+   "start": 426.14,
+   "dur": 12.77,
+   "kind": "raw",
+   "src": "real/ox_silica_packets.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ov_oxspec_437",
+   "start": 436.6,
+   "dur": 5,
+   "kind": "oxspec",
+   "overlay": true,
+   "hue": "amber",
+   "image": "real/ox_candle_wax.png",
+   "kicker": "Método 1 — la ficha",
+   "title": "Cera y tiza",
+   "rows": [
+    {
+     "k": "Costo",
+     "v": "monedas"
+    },
+    {
+     "k": "Tiempo",
+     "v": "2 min"
+    },
+    {
+     "k": "Dónde",
+     "v": "cualquier ferretería"
+    },
+    {
+     "k": "Dura",
+     "v": "meses"
+    }
+   ],
+   "side": "left",
+   "accent": "amber"
+  },
+  {
+   "id": "ox_dry_tools_hang",
+   "start": 438.51,
+   "dur": 8.77,
+   "kind": "raw",
+   "src": "broll/ox_dry_tools_hang.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "cmp_chips_6_15",
+   "start": 446.88,
+   "dur": 1.72,
+   "kind": "chips",
+   "hue": "red",
+   "k": "comp",
+   "title": "Por qué no te lo venden",
+   "chips": [
+    "Te ofrecen aerosol de marca",
+    "A precio de perfume",
+    "Para algo que resuelve una vela"
+   ],
+   "imageDarken": 0.6,
+   "image": "real/ox_aerosol_bg.png"
+  },
+  {
+   "id": "ox_aerosol_cans",
+   "start": 448.2,
+   "dur": 39.13,
+   "kind": "raw",
+   "src": "real/ox_aerosol_cans.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ov_oxmethod_487",
+   "start": 486.93,
+   "dur": 4.4,
+   "kind": "oxmethod",
+   "overlay": true,
+   "hue": "amber",
+   "num": "02",
+   "title": "Vinagre para lo chico",
+   "chips": [
+    "Vinagre",
+    "Sal gruesa",
+    "Cepillo"
+   ],
+   "cost": "una botella",
+   "accent": "amber"
+  },
+  {
+   "id": "ox_tomas_vinagre",
+   "start": 489.6,
+   "dur": 1.72,
+   "kind": "raw",
+   "src": "img/ox_tomas_vinagre.png",
+   "darken": 0,
+   "hue": "red",
+   "kicker": "Lo que cuesta una botella de vinagre"
+  },
+  {
+   "id": "ov_oxside_490",
+   "start": 489.6,
+   "dur": 5,
+   "kind": "oxside",
+   "overlay": true,
+   "hue": "amber",
+   "image": "real/ox_vinegar_bottle.png",
+   "title": "El vinagre",
+   "lines": [
+    "Tiene ácido acético",
+    "Disuelve el óxido",
+    "2-3 h leve · toda la noche pesado"
+   ],
+   "side": "right",
+   "accent": "amber"
+  },
+  {
+   "id": "ox_vinegar_bottle",
+   "start": 490.92,
+   "dur": 6.02,
+   "kind": "raw",
+   "src": "real/ox_vinegar_bottle.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ox_pour_vinegar",
+   "start": 496.54,
+   "dur": 2.06,
+   "kind": "raw",
+   "src": "broll/ox_pour_vinegar.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ox_bolts_soak",
+   "start": 498.2,
+   "dur": 4.41,
+   "kind": "raw",
+   "src": "broll/ox_bolts_soak.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ox_jar_soak_window",
+   "start": 502.21,
+   "dur": 15.39,
+   "kind": "raw",
+   "src": "real/ox_jar_soak_window.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ov_oxstat_508",
+   "start": 507.6,
+   "dur": 3.8,
+   "kind": "oxstat",
+   "overlay": true,
+   "hue": "amber",
+   "value": 24,
+   "suffix": " h",
+   "label": "para óxido pesado, toda la noche",
+   "glyph": "🕛",
+   "accent": "amber"
+  },
+  {
+   "id": "ox_coarse_salt",
+   "start": 517.2,
+   "dur": 3.6,
+   "kind": "raw",
+   "src": "real/ox_coarse_salt.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ov_oxtag_518",
+   "start": 517.76,
+   "dur": 3.8,
+   "kind": "oxtag",
+   "overlay": true,
+   "hue": "amber",
+   "name": "Sal gruesa",
+   "what": "Acelera la reacción",
+   "side": "left",
+   "accent": "amber"
+  },
+  {
+   "id": "ox_add_salt",
+   "start": 520.4,
+   "dur": 1.72,
+   "kind": "raw",
+   "src": "broll/ox_add_salt.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ox_brush_rust_off",
+   "start": 521.72,
+   "dur": 1.72,
+   "kind": "raw",
+   "src": "broll/ox_brush_rust_off.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ox_wipe_rust_cloth",
+   "start": 523.04,
+   "dur": 19.94,
+   "kind": "raw",
+   "src": "broll/ox_wipe_rust_cloth.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ox_rinse_water",
+   "start": 542.58,
+   "dur": 4.4,
+   "kind": "raw",
+   "src": "broll/ox_rinse_water.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ox_hairdryer_dry",
+   "start": 546.58,
+   "dur": 1.72,
+   "kind": "raw",
+   "src": "broll/ox_hairdryer_dry.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "cmp_callout_7_11",
+   "start": 547.9,
+   "dur": 3.46,
+   "kind": "callout",
+   "hue": "amber",
+   "k": "comp",
+   "figure": "minutos",
+   "caption": "Sale del vinagre y se re-oxida si la dejás húmeda.",
+   "accent": "danger",
+   "image": "real/ox_grey_piece.png"
+  },
+  {
+   "id": "ox_oil_after",
+   "start": 550.96,
+   "dur": 7.69,
+   "kind": "raw",
+   "src": "broll/ox_oil_after.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ox_oily_cloth",
+   "start": 558.25,
+   "dur": 3.35,
+   "kind": "raw",
+   "src": "real/ox_oily_cloth.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "cmp_splitlist_7_14",
+   "start": 561.2,
+   "dur": 7.2,
+   "kind": "splitlist",
+   "hue": "amber",
+   "k": "comp",
+   "title": "El límite, honesto",
+   "items": [
+    "Ataca el metal sano si lo olvidás dos días",
+    "No la abandones en el vinagre",
+    "Para lo grande, no sirve"
+   ],
+   "palette": "A"
+  },
+  {
+   "id": "ov_oxmethod_620",
+   "start": 620.08,
+   "dur": 4.4,
+   "kind": "oxmethod",
+   "overlay": true,
+   "hue": "amber",
+   "num": "03",
+   "title": "Convertir el óxido en escudo",
+   "chips": [
+    "Ácido tánico",
+    "Té negro",
+    "Pincel"
+   ],
+   "cost": "centavos",
+   "accent": "blue"
+  },
+  {
+   "id": "ov_oxtag_622",
+   "start": 621.97,
+   "dur": 4.2,
+   "kind": "oxtag",
+   "overlay": true,
+   "hue": "amber",
+   "name": "Ácido tánico",
+   "what": "El mismo del té negro cargado",
+   "price": "centavos",
+   "side": "left",
+   "accent": "amber"
+  },
+  {
+   "id": "cmp_diagram_8_0",
+   "start": 632.77,
+   "dur": 1.72,
+   "kind": "diagram",
+   "hue": "blue",
+   "k": "comp",
+   "eyebrow": "No lo saques: transformalo",
+   "slides": [
+    {
+     "image": "img/dg_ox_tanico.png",
+     "eyebrow": "El óxido rojo se vuelve una capa negra que protege"
+    }
+   ]
+  },
+  {
+   "id": "ox_strong_tea",
+   "start": 634.09,
+   "dur": 33.23,
+   "kind": "raw",
+   "src": "real/ox_strong_tea.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ov_oxbefore_635",
+   "start": 634.93,
+   "dur": 4.4,
+   "kind": "oxbefore",
+   "overlay": true,
+   "hue": "amber",
+   "before": "real/ox_clean_steelwool.png",
+   "after": "real/ox_blued_tools.png",
+   "accent": "green"
+  },
+  {
+   "id": "ox_tea_pour",
+   "start": 666.92,
+   "dur": 1.72,
+   "kind": "raw",
+   "src": "broll/ox_tea_pour.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ox_wire_brush_loose",
+   "start": 668.24,
+   "dur": 4.96,
+   "kind": "raw",
+   "src": "broll/ox_wire_brush_loose.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ox_brush_tannic",
+   "start": 672.8,
+   "dur": 5.65,
+   "kind": "raw",
+   "src": "broll/ox_brush_tannic.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ox_rust_darken",
+   "start": 678.05,
+   "dur": 1.72,
+   "kind": "raw",
+   "src": "real/ox_rust_darken.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ox_black_coated",
+   "start": 679.37,
+   "dur": 6.74,
+   "kind": "raw",
+   "src": "real/ox_black_coated.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ov_oxbefore_683",
+   "start": 682.85,
+   "dur": 4.4,
+   "kind": "oxbefore",
+   "overlay": true,
+   "hue": "amber",
+   "before": "real/ox_rust_darken.png",
+   "after": "real/ox_black_coated.png",
+   "accent": "green"
+  },
+  {
+   "id": "ox_paint_enamel",
+   "start": 685.71,
+   "dur": 2.86,
+   "kind": "raw",
+   "src": "broll/ox_paint_enamel.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ox_painted_protected",
+   "start": 688.17,
+   "dur": 2.23,
+   "kind": "raw",
+   "src": "real/ox_painted_protected.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "cmp_chips_8_9",
+   "start": 690,
+   "dur": 1.72,
+   "kind": "chips",
+   "hue": "red",
+   "k": "comp",
+   "title": "Por qué no te lo venden",
+   "chips": [
+    "Lo venden como 'convertidor'",
+    "Otro nombre",
+    "Diez veces el precio"
+   ],
+   "imageDarken": 0.6,
+   "image": "real/ox_converter_shelf.png"
+  },
+  {
+   "id": "ox_converter_bottle",
+   "start": 691.32,
+   "dur": 3.12,
+   "kind": "raw",
+   "src": "real/ox_converter_bottle.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "cmp_diagram_9_0",
+   "start": 711.7,
+   "dur": 7.2,
+   "kind": "diagram",
+   "hue": "amber",
+   "k": "comp",
+   "eyebrow": "Las medidas exactas, anotadas",
+   "slides": [
+    {
+     "image": "img/dg_ox_manual.png",
+     "eyebrow": "El Manual de Reparaciones Caseras"
+    }
+   ]
+  },
+  {
+   "id": "ox_manual_celu",
+   "start": 725.8,
+   "dur": 1.72,
+   "kind": "raw",
+   "src": "img/ox_manual_celu.png",
+   "darken": 0,
+   "hue": "red",
+   "kicker": "Para lo de hoy no te hace falta"
+  },
+  {
+   "id": "ox_notebook_pencil",
+   "start": 727.12,
+   "dur": 25.28,
+   "kind": "raw",
+   "src": "broll/ox_notebook_pencil.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ov_oxspec_730",
+   "start": 729.8,
+   "dur": 5.2,
+   "kind": "oxspec",
+   "overlay": true,
+   "hue": "amber",
+   "image": "real/ox_converter_bottle.png",
+   "kicker": "Lo que te venden vs. lo que es",
+   "title": "Convertidor de óxido",
+   "rows": [
+    {
+     "k": "En la ferretería",
+     "v": "caro"
+    },
+    {
+     "k": "Qué tiene adentro",
+     "v": "ácido tánico"
+    },
+    {
+     "k": "En tu casa",
+     "v": "té negro cargado"
+    },
+    {
+     "k": "Costo real",
+     "v": "centavos"
+    }
+   ],
+   "side": "right",
+   "accent": "blue"
+  },
+  {
+   "id": "ov_oxmethod_752",
+   "start": 752,
+   "dur": 4.6,
+   "kind": "oxmethod",
+   "overlay": true,
+   "hue": "amber",
+   "num": "04",
+   "title": "Electrólisis",
+   "chips": [
+    "Balde",
+    "Soda de lavar",
+    "Cargador"
+   ],
+   "cost": "centavos de luz",
+   "accent": "blue"
+  },
+  {
+   "id": "ov_oxstack_765",
+   "start": 764.76,
+   "dur": 4.4,
+   "kind": "oxstack",
+   "overlay": true,
+   "hue": "amber",
+   "images": [
+    "real/ox_bucket_water.png",
+    "real/ox_washing_soda.png",
+    "real/ox_battery_charger.png"
+   ],
+   "captions": [
+    "Balde + agua",
+    "Soda de lavar",
+    "Cargador"
+   ],
+   "accent": "blue"
+  },
+  {
+   "id": "ov_oxside_768",
+   "start": 767.93,
+   "dur": 5,
+   "kind": "oxside",
+   "overlay": true,
+   "hue": "amber",
+   "image": "real/ox_washing_soda.png",
+   "title": "Soda de lavar",
+   "lines": [
+    "2 cucharadas por 5 L de agua",
+    "Conduce la corriente",
+    "La de la ropa, común"
+   ],
+   "side": "right",
+   "accent": "blue"
+  },
+  {
+   "id": "cmp_diagram_10_0",
+   "start": 804.6,
+   "dur": 1.72,
+   "kind": "diagram",
+   "hue": "red",
+   "k": "comp",
+   "eyebrow": "Lo más cercano a la magia",
+   "slides": [
+    {
+     "image": "img/dg_ox_electro.png",
+     "eyebrow": "Negro a lo que salvás, rojo a lo que se sacrifica"
+    }
+   ]
+  },
+  {
+   "id": "ox_bucket_water",
+   "start": 805.92,
+   "dur": 1.72,
+   "kind": "raw",
+   "src": "real/ox_bucket_water.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ox_washing_soda",
+   "start": 807.24,
+   "dur": 1.72,
+   "kind": "raw",
+   "src": "real/ox_washing_soda.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ox_spoon_soda",
+   "start": 808.56,
+   "dur": 1.72,
+   "kind": "raw",
+   "src": "broll/ox_spoon_soda.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ox_battery_charger",
+   "start": 809.88,
+   "dur": 1.72,
+   "kind": "raw",
+   "src": "real/ox_battery_charger.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ox_scrap_iron",
+   "start": 811.2,
+   "dur": 1.72,
+   "kind": "raw",
+   "src": "real/ox_scrap_iron.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "cmp_checklist_10_6",
+   "start": 812.52,
+   "dur": 1.72,
+   "kind": "checklist",
+   "hue": "red",
+   "k": "comp",
+   "title": "Cuatro cosas",
+   "items": [
+    {
+     "text": "Balde con agua",
+     "state": "done"
+    },
+    {
+     "text": "2 cucharadas de soda de lavar / 5 L",
+     "state": "done"
+    },
+    {
+     "text": "Un hierro de sacrificio",
+     "state": "done"
+    },
+    {
+     "text": "Cargador de batería 6-12V",
+     "state": "done"
+    }
+   ]
+  },
+  {
+   "id": "ox_dissolve_soda",
+   "start": 813.84,
+   "dur": 1.72,
+   "kind": "raw",
+   "src": "broll/ox_dissolve_soda.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ox_submerge_tool",
+   "start": 815.16,
+   "dur": 1.72,
+   "kind": "raw",
+   "src": "broll/ox_submerge_tool.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ox_clamp_black",
+   "start": 816.48,
+   "dur": 1.72,
+   "kind": "raw",
+   "src": "broll/ox_clamp_black.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ox_clamp_red",
+   "start": 817.8,
+   "dur": 1.72,
+   "kind": "raw",
+   "src": "broll/ox_clamp_red.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "cmp_quote_10_11",
+   "start": 819.12,
+   "dur": 7.2,
+   "kind": "quote",
+   "hue": "amber",
+   "k": "comp",
+   "text": "Si las invertís, se come *tu pieza buena*. Repetilo en tu cabeza.",
+   "accent": "danger",
+   "image": "real/ox_clamps_bg.png"
+  },
+  {
+   "id": "ov_oxclamp_831",
+   "start": 831.4,
+   "dur": 4.6,
+   "kind": "oxclamp",
+   "overlay": true,
+   "hue": "amber",
+   "accent": "red"
+  },
+  {
+   "id": "ox_charger_on",
+   "start": 834.2,
+   "dur": 2.4,
+   "kind": "raw",
+   "src": "broll/ox_charger_on.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ox_bubbles_rise",
+   "start": 836.2,
+   "dur": 12,
+   "kind": "raw",
+   "src": "broll/ox_bubbles_rise.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ox_bucket_overnight",
+   "start": 847.8,
+   "dur": 1.72,
+   "kind": "raw",
+   "src": "real/ox_bucket_overnight.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "cmp_stat_10_15",
+   "start": 849.12,
+   "dur": 1.15,
+   "kind": "stat",
+   "hue": "red",
+   "k": "comp",
+   "value": 12,
+   "prefix": "4-",
+   "suffix": " h",
+   "label": "según el óxido; lo muy comido, toda la noche",
+   "eyebrow": "Y lo dejás"
+  },
+  {
+   "id": "ox_lift_tool",
+   "start": 849.87,
+   "dur": 4.43,
+   "kind": "raw",
+   "src": "broll/ox_lift_tool.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ox_brush_black_residue",
+   "start": 853.9,
+   "dur": 4.3,
+   "kind": "raw",
+   "src": "real/ox_brush_black_residue.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ox_pull_clean",
+   "start": 857.8,
+   "dur": 9.75,
+   "kind": "raw",
+   "src": "broll/ox_pull_clean.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "cmp_bars_10_19",
+   "start": 867.15,
+   "dur": 7.2,
+   "kind": "bars",
+   "hue": "blue",
+   "k": "comp",
+   "title": "Lo que te ahorrás",
+   "unit": "USD",
+   "bars": [
+    {
+     "label": "Gel removedor de marca",
+     "value": 15,
+     "display": "$15",
+     "tone": "danger"
+    },
+    {
+     "label": "Electrólisis casera",
+     "value": 0,
+     "display": "$0",
+     "winner": true
+    }
+   ]
+  },
+  {
+   "id": "cmp_diagram_10_20",
+   "start": 881.01,
+   "dur": 7.2,
+   "kind": "diagram",
+   "hue": "amber",
+   "k": "comp",
+   "eyebrow": "Los límites, sin vender humo",
+   "slides": [
+    {
+     "image": "img/dg_ox_limites.png",
+     "eyebrow": "Tres cosas que tenés que saber"
+    }
+   ]
+  },
+  {
+   "id": "ox_oil_clean_tool",
+   "start": 917.55,
+   "dur": 15.61,
+   "kind": "raw",
+   "src": "broll/ox_oil_clean_tool.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ov_oxmethod_933",
+   "start": 932.76,
+   "dur": 4.4,
+   "kind": "oxmethod",
+   "overlay": true,
+   "hue": "amber",
+   "num": "05",
+   "title": "Pavonado: el óxido bueno",
+   "chips": [
+    "Calor",
+    "Aceite",
+    "Capa negra"
+   ],
+   "cost": "casi nada",
+   "accent": "red"
+  },
+  {
+   "id": "cmp_diagram_11_0",
+   "start": 949.09,
+   "dur": 1.72,
+   "kind": "diagram",
+   "hue": "blue",
+   "k": "comp",
+   "eyebrow": "Combatir el óxido malo con el bueno",
+   "slides": [
+    {
+     "image": "img/dg_ox_pavonado.png",
+     "eyebrow": "Una capa de óxido negro que frena al rojo"
+    }
+   ]
+  },
+  {
+   "id": "ox_blued_tools",
+   "start": 950.41,
+   "dur": 14.52,
+   "kind": "raw",
+   "src": "real/ox_blued_tools.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ox_clean_steelwool",
+   "start": 964.53,
+   "dur": 7.07,
+   "kind": "raw",
+   "src": "broll/ox_clean_steelwool.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ox_heat_tool",
+   "start": 971.2,
+   "dur": 8.12,
+   "kind": "raw",
+   "src": "broll/ox_heat_tool.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ov_oxstat_978",
+   "start": 978.09,
+   "dur": 4,
+   "kind": "oxstat",
+   "overlay": true,
+   "hue": "amber",
+   "value": 200,
+   "prefix": "150-",
+   "suffix": "°",
+   "label": "hasta que el aceite humea",
+   "glyph": "🔥",
+   "accent": "red"
+  },
+  {
+   "id": "ox_oil_smoke",
+   "start": 978.92,
+   "dur": 15.05,
+   "kind": "raw",
+   "src": "broll/ox_oil_smoke.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ox_bluing_form",
+   "start": 993.57,
+   "dur": 1.72,
+   "kind": "raw",
+   "src": "broll/ox_bluing_form.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "cmp_process_11_6",
+   "start": 994.89,
+   "dur": 7.2,
+   "kind": "process",
+   "hue": "blue",
+   "k": "comp",
+   "title": "El pavonado",
+   "eyebrow": "Como los herreros",
+   "steps": [
+    {
+     "title": "Limpiar",
+     "desc": "al brillo, desengrasar",
+     "image": "real/ox_pav1.png"
+    },
+    {
+     "title": "Calentar",
+     "desc": "150-200°, hasta humear",
+     "image": "real/ox_pav2.png"
+    },
+    {
+     "title": "Aceitar",
+     "desc": "linaza, 2-3 veces",
+     "image": "real/ox_pav3.png"
+    }
+   ]
+  },
+  {
+   "id": "ox_wipe_dry_cool",
+   "start": 1002.41,
+   "dur": 5.1,
+   "kind": "raw",
+   "src": "broll/ox_wipe_dry_cool.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ox_blued_knife",
+   "start": 1007.11,
+   "dur": 12.8,
+   "kind": "raw",
+   "src": "real/ox_blued_knife.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ox_blacksmith",
+   "start": 1019.51,
+   "dur": 1.72,
+   "kind": "raw",
+   "src": "broll/ox_blacksmith.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "cmp_splitlist_11_10",
+   "start": 1020.83,
+   "dur": 7.2,
+   "kind": "splitlist",
+   "hue": "amber",
+   "k": "comp",
+   "title": "Lo honesto",
+   "items": [
+    "Es protección ligera, no blindaje",
+    "En mucha humedad, refrescá el aceite",
+    "Lo usaron los herreros durante siglos"
+   ],
+   "palette": "G"
+  },
+  {
+   "id": "ox_tomas_pausa",
+   "start": 1051,
+   "dur": 6.8,
+   "kind": "raw",
+   "src": "img/ox_tomas_pausa.png",
+   "darken": 0,
+   "hue": "amber",
+   "kicker": "Nadie te lo enseña"
+  },
+  {
+   "id": "cmp_chips_12_1",
+   "start": 1057.4,
+   "dur": 1.72,
+   "kind": "chips",
+   "hue": "red",
+   "k": "comp",
+   "title": "Por qué nadie te lo enseña",
+   "chips": [
+    "Al negocio no le conviene",
+    "que recuperes lo que tenés",
+    "Le conviene venderte uno nuevo"
+   ],
+   "imageDarken": 0.6,
+   "image": "real/ox_store_bg.png"
+  },
+  {
+   "id": "cmp_splitlist_12_2",
+   "start": 1058.72,
+   "dur": 5.48,
+   "kind": "splitlist",
+   "hue": "blue",
+   "k": "comp",
+   "title": "Los 40 arreglos, divididos así",
+   "items": [
+    "Madera y metal que no mueren",
+    "Plagas por centavos",
+    "Goteras, humedad y moho",
+    "Arreglos del hogar y el auto"
+   ],
+   "palette": "A"
+  },
+  {
+   "id": "ox_manual_sections",
+   "start": 1063.8,
+   "dur": 12.11,
+   "kind": "raw",
+   "src": "real/ox_manual_sections.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ox_tomas_afuera",
+   "start": 1079.6,
+   "dur": 4.6,
+   "kind": "raw",
+   "src": "img/ox_tomas_afuera.png",
+   "darken": 0,
+   "hue": "red",
+   "kicker": "¿Y lo grande?"
+  },
+  {
+   "id": "ox_iron_fence_rain",
+   "start": 1083.8,
+   "dur": 1.72,
+   "kind": "raw",
+   "src": "real/ox_iron_fence_rain.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ov_oxstack_1084",
+   "start": 1083.8,
+   "dur": 4.4,
+   "kind": "oxstack",
+   "overlay": true,
+   "hue": "amber",
+   "images": [
+    "real/ox_iron_fence_rain.png",
+    "real/ox_metal_gate_posts.png",
+    "real/ox_chassis_hole.png"
+   ],
+   "captions": [
+    "La reja",
+    "El portón",
+    "El chasis"
+   ],
+   "accent": "red"
+  },
+  {
+   "id": "ox_fence_weather",
+   "start": 1085.12,
+   "dur": 1.68,
+   "kind": "raw",
+   "src": "broll/ox_fence_weather.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ox_metal_gate_posts",
+   "start": 1086.4,
+   "dur": 9.33,
+   "kind": "raw",
+   "src": "real/ox_metal_gate_posts.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ov_oxside_1092",
+   "start": 1092.4,
+   "dur": 5,
+   "kind": "oxside",
+   "overlay": true,
+   "hue": "amber",
+   "image": "real/ox_car_underside.png",
+   "title": "El chasis",
+   "lines": [
+    "Donde el óxido trabaja oculto",
+    "Lanolina: el agua no entra",
+    "Una mano al año"
+   ],
+   "side": "right",
+   "accent": "red"
+  },
+  {
+   "id": "ox_car_underside",
+   "start": 1095.33,
+   "dur": 8.6,
+   "kind": "raw",
+   "src": "broll/ox_car_underside.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ox_chassis_hole",
+   "start": 1103.53,
+   "dur": 36.87,
+   "kind": "raw",
+   "src": "real/ox_chassis_hole.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "cmp_splitlist_13_6",
+   "start": 1140,
+   "dur": 4.4,
+   "kind": "splitlist",
+   "hue": "red",
+   "k": "comp",
+   "title": "Para la reja y el portón",
+   "items": [
+    "Primero frená el óxido con el ácido tánico",
+    "Después sellá con aceite de linaza",
+    "O un buen esmalte sintético"
+   ],
+   "palette": "A"
+  },
+  {
+   "id": "ox_brush_railing",
+   "start": 1144,
+   "dur": 1.72,
+   "kind": "raw",
+   "src": "broll/ox_brush_railing.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ox_linseed_can",
+   "start": 1145.32,
+   "dur": 1.72,
+   "kind": "raw",
+   "src": "real/ox_linseed_can.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ox_paint_fence",
+   "start": 1146.64,
+   "dur": 15.96,
+   "kind": "raw",
+   "src": "broll/ox_paint_fence.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "cmp_diagram_13_10",
+   "start": 1162.2,
+   "dur": 7.2,
+   "kind": "diagram",
+   "hue": "blue",
+   "k": "comp",
+   "eyebrow": "El secreto del chasis",
+   "slides": [
+    {
+     "image": "img/dg_ox_lanolina.png",
+     "eyebrow": "Una capa de lanolina que el agua no cruza"
+    }
+   ]
+  },
+  {
+   "id": "ov_oxtag_1173",
+   "start": 1173.37,
+   "dur": 4.2,
+   "kind": "oxtag",
+   "overlay": true,
+   "hue": "amber",
+   "name": "Lanolina",
+   "what": "Grasa de lana: el agua no la cruza",
+   "side": "right",
+   "accent": "green"
+  },
+  {
+   "id": "ox_lanolin_tub",
+   "start": 1175.8,
+   "dur": 1.73,
+   "kind": "raw",
+   "src": "real/ox_lanolin_tub.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ox_sheep_wool",
+   "start": 1177.13,
+   "dur": 1.72,
+   "kind": "raw",
+   "src": "broll/ox_sheep_wool.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ox_spray_underbody",
+   "start": 1178.45,
+   "dur": 7.57,
+   "kind": "raw",
+   "src": "broll/ox_spray_underbody.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ox_brush_seams",
+   "start": 1185.62,
+   "dur": 8.18,
+   "kind": "raw",
+   "src": "real/ox_brush_seams.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ox_salt_road",
+   "start": 1193.4,
+   "dur": 19.13,
+   "kind": "raw",
+   "src": "broll/ox_salt_road.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "cmp_quote_13_16",
+   "start": 1212.13,
+   "dur": 7.2,
+   "kind": "quote",
+   "hue": "blue",
+   "k": "comp",
+   "text": "Aceite de motor quemado contamina. Usá *lanolina o aceite limpio*.",
+   "accent": "danger",
+   "image": "real/ox_usedoil_bg.png"
+  },
+  {
+   "id": "ox_soil_clean",
+   "start": 1230.07,
+   "dur": 1.73,
+   "kind": "raw",
+   "src": "real/ox_soil_clean.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "cmp_splitlist_13_18",
+   "start": 1231.4,
+   "dur": 7.2,
+   "kind": "splitlist",
+   "hue": "red",
+   "k": "comp",
+   "title": "Regla para lo grande",
+   "items": [
+    "Primero frenás el óxido",
+    "Después una barrera de aceite",
+    "Que el agua no pueda cruzar"
+   ],
+   "palette": "G"
+  },
+  {
+   "id": "ov_oxstack_1256",
+   "start": 1255.6,
+   "dur": 4.4,
+   "kind": "oxstack",
+   "overlay": true,
+   "hue": "amber",
+   "images": [
+    "real/ox_rust_return.png",
+    "real/ox_leak_drip.png",
+    "real/ox_damp_corner_tool.png"
+   ],
+   "captions": [
+    "Vuelve",
+    "La gotera",
+    "El rincón húmedo"
+   ],
+   "accent": "red"
+  },
+  {
+   "id": "ox_rust_return",
+   "start": 1269.05,
+   "dur": 8.86,
+   "kind": "raw",
+   "src": "broll/ox_rust_return.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ox_clean_then_rust",
+   "start": 1277.51,
+   "dur": 8.87,
+   "kind": "raw",
+   "src": "real/ox_clean_then_rust.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ox_damp_corner_tool",
+   "start": 1285.98,
+   "dur": 15.55,
+   "kind": "raw",
+   "src": "broll/ox_damp_corner_tool.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "cmp_diagram_14_3",
+   "start": 1301.13,
+   "dur": 1.72,
+   "kind": "diagram",
+   "hue": "blue",
+   "k": "comp",
+   "eyebrow": "Por qué vuelve",
+   "slides": [
+    {
+     "image": "img/dg_ox_error.png",
+     "eyebrow": "Le devolviste dos de los tres ingredientes"
+    }
+   ]
+  },
+  {
+   "id": "ox_leak_drip",
+   "start": 1302.45,
+   "dur": 1.72,
+   "kind": "raw",
+   "src": "broll/ox_leak_drip.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ox_standing_water",
+   "start": 1303.77,
+   "dur": 11.02,
+   "kind": "raw",
+   "src": "real/ox_standing_water.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "cmp_checklist_14_6",
+   "start": 1314.39,
+   "dur": 7.2,
+   "kind": "checklist",
+   "hue": "blue",
+   "k": "comp",
+   "title": "Antes de cualquier método",
+   "items": [
+    {
+     "text": "¿De dónde viene la humedad?",
+     "state": "todo"
+    },
+    {
+     "text": "Mové la herramienta a un lugar seco",
+     "state": "todo"
+    },
+    {
+     "text": "Tapá la gotera, mejorá el drenaje",
+     "state": "todo"
+    },
+    {
+     "text": "Recién después sacá el óxido y aceitá",
+     "state": "todo"
+    }
+   ]
+  },
+  {
+   "id": "ov_oxside_1316",
+   "start": 1315.8,
+   "dur": 4.8,
+   "kind": "oxside",
+   "overlay": true,
+   "hue": "amber",
+   "image": "real/ox_fix_leak.png",
+   "title": "Resolvé la causa",
+   "lines": [
+    "¿De dónde viene la humedad?",
+    "Lugar seco, tapá la gotera",
+    "Recién después, sacá el óxido"
+   ],
+   "side": "left",
+   "accent": "amber"
+  },
+  {
+   "id": "ox_move_dry_shelf",
+   "start": 1321.47,
+   "dur": 1.73,
+   "kind": "raw",
+   "src": "broll/ox_move_dry_shelf.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ox_fix_leak",
+   "start": 1322.8,
+   "dur": 22.98,
+   "kind": "raw",
+   "src": "real/ox_fix_leak.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "cmp_headline_14_9",
+   "start": 1345.38,
+   "dur": 3.21,
+   "kind": "headline",
+   "hue": "blue",
+   "k": "comp",
+   "tokens": [
+    {
+     "t": "No"
+    },
+    {
+     "t": "pelees"
+    },
+    {
+     "t": "el"
+    },
+    {
+     "t": "óxido"
+    },
+    {
+     "t": "que"
+    },
+    {
+     "t": "ves."
+    },
+    {
+     "t": "Sacale"
+    },
+    {
+     "t": "el"
+    },
+    {
+     "t": "agua",
+     "hl": true
+    }
+   ],
+   "eyebrow": "La regla final",
+   "bg": "image",
+   "image": "real/ox_drysafe_bg.png"
+  },
+  {
+   "id": "ox_tomas_cierre",
+   "start": 1351.98,
+   "dur": 1.72,
+   "kind": "raw",
+   "src": "img/ox_tomas_cierre.png",
+   "darken": 0,
+   "hue": "amber",
+   "kicker": "Salvá lo que ibas a tirar"
+  },
+  {
+   "id": "cmp_journey_15_1",
+   "start": 1353.3,
+   "dur": 6.01,
+   "kind": "journey",
+   "hue": "red",
+   "k": "comp",
+   "eyebrow": "Los métodos, de lo simple a lo poderoso",
+   "title": "Tu arsenal contra el óxido",
+   "accent": "amber",
+   "waypoints": [
+    {
+     "x": 0.15,
+     "y": 0.3,
+     "image": "real/ox_candle_wax.png",
+     "num": "1",
+     "label": "Cera y tiza",
+     "sub": "que no aparezca",
+     "dwell": 2.2,
+     "travel": 1.2
+    },
+    {
+     "x": 0.42,
+     "y": 0.22,
+     "image": "real/ox_vinegar_bottle.png",
+     "num": "2",
+     "label": "Vinagre",
+     "sub": "lo chico ya comido",
+     "dwell": 2.2,
+     "travel": 1.2
+    },
+    {
+     "x": 0.66,
+     "y": 0.4,
+     "image": "real/ox_strong_tea.png",
+     "num": "3",
+     "label": "Ácido tánico",
+     "sub": "el óxido se vuelve escudo",
+     "dwell": 2.2,
+     "travel": 1.2
+    },
+    {
+     "x": 0.88,
+     "y": 0.26,
+     "image": "real/ox_electro_bucket.png",
+     "num": "4",
+     "label": "Electrólisis",
+     "sub": "se desprende solo",
+     "dwell": 2.2,
+     "travel": 1.2
+    }
+   ]
+  },
+  {
+   "id": "ox_restored_tools",
+   "start": 1358.91,
+   "dur": 4.69,
+   "kind": "raw",
+   "src": "broll/ox_restored_tools.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ox_saved_wrench",
+   "start": 1363.2,
+   "dur": 1.72,
+   "kind": "raw",
+   "src": "real/ox_saved_wrench.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ox_wipe_proud",
+   "start": 1364.52,
+   "dur": 1.72,
+   "kind": "raw",
+   "src": "real/ox_wipe_proud.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ox_clean_fence_done",
+   "start": 1365.84,
+   "dur": 30.29,
+   "kind": "raw",
+   "src": "real/ox_clean_fence_done.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "cmp_diagram_16_0",
+   "start": 1402.26,
+   "dur": 7.2,
+   "kind": "diagram",
+   "hue": "red",
+   "k": "comp",
+   "eyebrow": "Los 40, ordenados y probados",
+   "slides": [
+    {
+     "image": "img/dg_ox_stack.png",
+     "eyebrow": "Con los planos y las medidas exactas"
+    }
+   ]
+  },
+  {
+   "id": "cmp_splitlist_16_1",
+   "start": 1414.8,
+   "dur": 7.2,
+   "kind": "splitlist",
+   "hue": "blue",
+   "k": "comp",
+   "title": "La casa entera, resuelta",
+   "items": [
+    "La madera que no se pudre con un líquido de $2",
+    "La gotera que se tapa para siempre",
+    "Las plagas por centavos",
+    "La humedad que sube, cortada por $5"
+   ],
+   "palette": "A"
+  },
+  {
+   "id": "cmp_quote_16_2",
+   "start": 1424.6,
+   "dur": 7.2,
+   "kind": "quote",
+   "hue": "amber",
+   "k": "comp",
+   "text": "Cuesta menos que una visita del fumigador. El link está *abajo*.",
+   "accent": "good",
+   "image": "real/ox_manual_bg.png"
+  },
+  {
+   "id": "ox_tomas_igual_hacelo",
+   "start": 1442.8,
+   "dur": 4.6,
+   "kind": "raw",
+   "src": "img/ox_tomas_igual_hacelo.png",
+   "darken": 0,
+   "hue": "red",
+   "kicker": "Igual hacé lo de hoy"
+  },
+  {
+   "id": "ox_wood_rot",
+   "start": 1456.13,
+   "dur": 1.72,
+   "kind": "raw",
+   "src": "broll/ox_wood_rot.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ox_old_wood_solid",
+   "start": 1457.45,
+   "dur": 9.75,
+   "kind": "raw",
+   "src": "real/ox_old_wood_solid.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ov_oxquote_1464",
+   "start": 1464.4,
+   "dur": 5.4,
+   "kind": "oxquote",
+   "overlay": true,
+   "hue": "amber",
+   "quote": "La independencia no se *compra*, se construye.",
+   "image": "real/ox_restored_tools.png",
+   "attribution": "Un arreglo a la vez",
+   "side": "right",
+   "accent": "green"
+  }
+ ]
+}

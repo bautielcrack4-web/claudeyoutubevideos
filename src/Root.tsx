@@ -35,6 +35,7 @@ import { MainLeona, TOTAL_FRAMES_LEONA } from "./VideoEdit/Main_leona";
 import { MainConstrucciones, TOTAL_FRAMES_CONS } from "./VideoEdit/Main_construcciones";
 import { MainAntartida, TOTAL_FRAMES_ANT } from "./VideoEdit/Main_antartida";
 import { MainTuneles, TOTAL_FRAMES_TUN } from "./VideoEdit/Main_tuneles";
+import { MainOxido, TOTAL_FRAMES_OXIDO } from "./VideoEdit/Main_oxido";
 // import { MainPuertas, TOTAL_FRAMES_PUE } from "./VideoEdit/Main_puertas"; // roto: falta cues_puertas.gen
 
 // ── SOLO los videos ACTIVOS quedan registrados ──
@@ -233,6 +234,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="Borax" component={MainBorax} durationInFrames={TOTAL_FRAMES_BX} fps={30} width={1920} height={1080} />
       {/* VIDEO 3 · EL CONSTRUCTOR LIBRE — 2 metales = 0 plagas (barrera galvánica) */}
       <Composition id="Barrera" component={MainBarrera} durationInFrames={TOTAL_FRAMES_BRR} fps={30} width={1920} height={1080} />
+      <Composition id="Oxido" component={MainOxido} durationInFrames={TOTAL_FRAMES_OXIDO} fps={30} width={1920} height={1080} />
       {/* Reviví tu tierra muerta con $1 (estiércol, bajo esfuerzo) */}
       <Composition
         id="Estiercol"
