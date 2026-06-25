@@ -393,6 +393,19 @@ function renderEl(b) {
         (b.drainTag ? ` drainTag=${j(b.drainTag)}` : ``) +
         ` />`
       );
+    case "massheater":
+      return (
+        `<MassHeaterDiagram durationInFrames={d}` +
+        (b.eyebrow ? ` eyebrow=${j(b.eyebrow)}` : ``) +
+        (b.title ? ` title=${j(b.title)}` : ``) +
+        (b.mode ? ` mode=${j(b.mode)}` : ``) +
+        (b.fire ? ` fire={${j(b.fire)}}` : ``) +
+        (b.mass ? ` mass={${j(b.mass)}}` : ``) +
+        (b.out ? ` out={${j(b.out)}}` : ``) +
+        (b.coolTag ? ` coolTag=${j(b.coolTag)}` : ``) +
+        (b.effTag ? ` effTag=${j(b.effTag)}` : ``) +
+        ` />`
+      );
     case "zeerpot":
       return (
         `<ZeerPotDiagram durationInFrames={d}` +
@@ -896,6 +909,7 @@ if (kinds.has("process")) imports.push(`import { ProcessSteps } from "./scenes/P
 if (kinds.has("checklist")) imports.push(`import { Checklist } from "./scenes/Checklist";`);
 if (kinds.has("earthtube")) imports.push(`import { EarthTubeDiagram } from "./scenes/EarthTubeDiagram";`);
 if (kinds.has("zeerpot")) imports.push(`import { ZeerPotDiagram } from "./scenes/ZeerPotDiagram";`);
+if (kinds.has("massheater")) imports.push(`import { MassHeaterDiagram } from "./scenes/MassHeaterDiagram";`);
 if (kinds.has("rampump")) imports.push(`import { RamPumpCycle } from "./scenes/RamPumpCycle";`);
 if (kinds.has("waterlens")) imports.push(`import { WaterLensLight } from "./scenes/WaterLensLight";`);
 if (kinds.has("rule")) imports.push(`import { RuleNumberScene } from "./scenes/RuleNumberScene";`);

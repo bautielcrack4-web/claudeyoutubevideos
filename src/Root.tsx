@@ -23,6 +23,7 @@ import { MainAcpipe, TOTAL_FRAMES_ACPIPE } from "./VideoEdit/Main_acpipe";
 import { MainSandia, TOTAL_FRAMES_SANDIA } from "./VideoEdit/Main_sandia";
 import { MainRampump, TOTAL_FRAMES_RAMPUMP } from "./VideoEdit/Main_rampump";
 import { MainZeer, TOTAL_FRAMES_ZEER } from "./VideoEdit/Main_zeer";
+import { MainCalor, TOTAL_FRAMES_CALOR } from "./VideoEdit/Main_calor";
 import { MainLuz, TOTAL_FRAMES_LUZ } from "./VideoEdit/Main_luz";
 import { MainMedicaid, TOTAL_FRAMES_MED } from "./VideoEdit/Main_medicaid";
 import { MainViuda, TOTAL_FRAMES_VD } from "./VideoEdit/Main_viuda";
@@ -146,6 +147,15 @@ export const RemotionRoot: React.FC = () => {
         id="Zeer"
         component={MainZeer}
         durationInFrames={TOTAL_FRAMES_ZEER}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
+      {/* VIDEO ACTIVO — Heat the house with one fire + stone (Claudio · off-grid EN) */}
+      <Composition
+        id="Calor"
+        component={MainCalor}
+        durationInFrames={TOTAL_FRAMES_CALOR}
         fps={30}
         width={1920}
         height={1080}
