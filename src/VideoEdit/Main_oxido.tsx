@@ -3,7 +3,7 @@ import { sec, COLORS } from "./theme";
 import { TechBackground } from "./components/TechBackground";
 import { AvatarLayer } from "./scenes/AvatarLayer";
 import { CinematicWrap } from "./components/CinematicWrap";
-import { CUES } from "./cues_oxido.gen";
+import { CUES, OVERLAYS } from "./cues_oxido.gen";
 import { AVATAR_WINDOWS, TOTAL_OXIDO } from "./avatar_oxido.gen";
 
 // ── "El Hierro Que NUNCA Se Oxida" — Constructor Libre · Tomás ──
@@ -25,6 +25,12 @@ export const MainOxido: React.FC = () => {
           ))}
           {/* AVATAR encima del b-roll: SIEMPRE provee el audio de la narración. */}
           <AvatarLayer src="oxido_opt.mp4" windows={AVATAR_WINDOWS} accent={COLORS.accent} />
+          {/* OVERLAYS a medida (OxCards) — encima de TODO, sobre el clip vivo borroso. */}
+          {OVERLAYS.map((cue) => (
+            <Sequence key={cue.key} from={sec(cue.start)} durationInFrames={sec(cue.dur)}>
+              {cue.el(sec(cue.dur))}
+            </Sequence>
+          ))}
         </AbsoluteFill>
       </CinematicWrap>
     </AbsoluteFill>
