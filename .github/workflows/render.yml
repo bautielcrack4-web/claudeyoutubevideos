@@ -49,6 +49,14 @@ jobs:
             if [ "$n" -ge 4 ]; then echo "npm ci falló tras $n intentos"; exit 1; fi
             echo "npm ci reintento $n…"; rm -rf node_modules; sleep 20
           done
+          # PARCHE bug npm optional-deps: el binding nativo de rspack (bundler de
+          # Remotion) a veces NO se instala → "Cannot find native binding". Lo
+          # forzamos explícito para el runner linux-x64; idempotente si ya está.
+          if ! node -e "require('@rspack/binding')" 2>/dev/null; then
+            RV=$(node -p "require('@rspack/binding/package.json').version" 2>/dev/null || echo "")
+            echo "rspack binding ausente — instalando linux-x64-gnu@${RV}…"
+            npm i -D "@rspack/binding-linux-x64-gnu@${RV}" --no-save --force || true
+          fi
       # bajar y extraer los assets (release asset subido por el orquestador)
       - name: download assets
         env: { GH_TOKEN: "${{ github.token }}" }
