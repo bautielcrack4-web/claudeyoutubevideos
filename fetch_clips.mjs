@@ -32,6 +32,21 @@ import { spawnSync } from "child_process";
 const YTDLP = path.join(process.cwd(), "bin", "yt-dlp.exe");
 const FFDIR = path.join(process.cwd(), "node_modules", "@remotion", "compositor-win32-x64-msvc");
 const FORCE = process.env.FORCE === "1";
+// COOKIES de cuentas QUEMADAS (cookies/*.txt) para esquivar throttle. Rota por toma entre
+// cuentas. Sin carpeta cookies/ → baja sin cookies (como antes).
+const cookieDir = process.env.COOKIE_DIR || "cookies";
+let cookieFiles = [];
+try { cookieFiles = fs.readdirSync(cookieDir).filter((f) => f.endsWith(".txt") && f !== "proxies.txt").sort().map((f) => path.join(cookieDir, f)); } catch { /* sin cookies */ }
+const cookieArg = (i) => (cookieFiles.length ? ["--cookies", cookieFiles[i % cookieFiles.length]] : []);
+if (cookieFiles.length) console.log(`usando ${cookieFiles.length} cuenta(s) de cookies (rotando)`);
+// PROXY dedicado al scraping (NO el de tus canales). cookies/proxies.txt = 1 por línea
+// (mismo orden que las cookies → empareja cuenta↔IP). Fallback YTPROXY. Vacío → IP local.
+// YTPROXY (si está) MANDA y NO se pisa con proxies.txt → permite fijar 1 worker = 1 IP
+// (fetch_parallel.mjs). Sin YTPROXY → rota por proxies.txt como siempre.
+let proxyList = process.env.YTPROXY ? [process.env.YTPROXY] : [];
+if (!proxyList.length) { try { const px = fs.readFileSync(path.join(cookieDir, "proxies.txt"), "utf8").split(/\r?\n/).map((s) => s.trim()).filter((s) => s && !s.startsWith("#")); if (px.length) proxyList = px; } catch { /* sin proxies.txt */ } }
+const proxyArg = (i) => (proxyList.length ? ["--proxy", proxyList[i % proxyList.length]] : []);
+if (proxyList.length) console.log(`usando ${proxyList.length} proxy(s) (rotando por toma)`);
 
 const [listArg, outArg] = process.argv.slice(2);
 const LIST = listArg || "public/broll/clips_estiercol.json";
@@ -79,7 +94,7 @@ const getSubs = (url) => {
   let vtt = fs.readdirSync(SUBDIR).find((f) => f.startsWith(id) && f.endsWith(".vtt"));
   if (!vtt) {
     spawnSync(YTDLP, [
-      url, "--skip-download", "--write-auto-subs", "--write-subs",
+      url, ...cookieArg(0), ...proxyArg(0), "--skip-download", "--write-auto-subs", "--write-subs",
       "--sub-langs", "en.*,es.*", "--sub-format", "vtt", "--convert-subs", "vtt",
       "--no-playlist", "-o", path.join(SUBDIR, "%(id)s.%(ext)s"),
       "--quiet", "--no-warnings",
@@ -116,8 +131,9 @@ const findMoment = (url, find, lead, after = 0) => {
   return null;
 };
 
-let ok = 0, fail = 0, refound = 0;
+let ok = 0, fail = 0, refound = 0, _ci = -1;
 for (const c of clips) {
+  _ci++;
   const { name, url, dur = 6, find, lead = 1.2, after = 0 } = c;
   if (!name || !url) { console.warn("Toma inválida:", JSON.stringify(c)); continue; }
   const dest = path.join(OUT, `${name}.mp4`);
@@ -135,6 +151,7 @@ for (const c of clips) {
 
   const args = [
     url,
+    ...cookieArg(_ci), ...proxyArg(_ci),
     "--download-sections", `*${s}-${e}`,
     "--force-keyframes-at-cuts",
     "-f", "bv*[height<=1080]+ba/b[height<=1080]/b",
@@ -143,9 +160,16 @@ for (const c of clips) {
     "--no-playlist",
     "-o", dest,
     "--force-overwrites",
+    // ★ PACING: delay aleatorio antes de cada descarga → no gatilla rate-limit ni a volumen
+    //   (clave para automatización 1/día sostenible). Tunear con FETCH_SLEEP_MIN/MAX (def 1.5/5s).
+    "--sleep-interval", String(+(process.env.FETCH_SLEEP_MIN || 1.5)),
+    "--max-sleep-interval", String(+(process.env.FETCH_SLEEP_MAX || 5)),
+    "--retries", "3", "--fragment-retries", "3",
     "--quiet", "--no-warnings",
   ];
   const r = spawnSync(YTDLP, args, { encoding: "utf8" });
+  // ★ auto-cooldown: si YouTube tira rate-limit, espero antes de seguir (no quema más la cuenta)
+  if (r.status !== 0 && /rate.?limit/i.test(r.stderr || "")) { const cd = +(process.env.FETCH_COOLDOWN || 30); Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, cd * 1000); }
   if (r.status === 0 && fs.existsSync(dest)) {
     const kb = (fs.statSync(dest).size / 1024).toFixed(0);
     console.log(`✓ broll/${name}.mp4  (${kb} KB)`);
