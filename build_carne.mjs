@@ -171,7 +171,7 @@ const CLIPS = [
   [1170.5, "k_cellar_hangs", ["cured meat hanging in a cellar"], "the cellar where it hangs and waits"],
   [1175.0, "k_fat_and_dry", ["potted fat crock beside drying strips"], "the fat cap and the drying strips"],
   [1181.5, "k_no_wire_meat", ["a cellar of preserved meat, no wires"], "not a wire running to it"],
-  [1189.5, "k_blackout_neighbor_meat", ["a neighbor at a dark thawing freezer"], "neighbor racing a thawing freezer"],
+  [1189.5, "k_blackout_neighbor_meat", ["a worried man opening a dark powerless chest freezer of thawing meat in a blackout, candlelight"], "racing a thawing freezer"],
   [1201.0, "k_hams_safe_cellar", ["hams hanging safe and quiet in a cellar"], "your hams hanging safe and quiet"],
   // ── SAFETY / LIMITS (1224–1309) ── (AV 1210–1224)
   [1224.5, "k_respect_preserving", ["careful respectful handling of cured meat"], "done with respect"],
@@ -294,7 +294,7 @@ const CLIPS = [
   [1163.0, "k_f_salt_work3", ["salt working on a cut of meat"], "salt work"],
   [1178.0, "k_f_fat_dry2", ["potted crock and drying strips"], "fat dry"],
   [1185.0, "k_f_no_wire2", ["a cellar of meat, no wires"], "no wire"],
-  [1195.0, "k_f_dark_freezer2", ["a neighbor at a dark thawing freezer"], "dark freezer"],
+  [1195.0, "k_f_dark_freezer2", ["a dark open chest freezer of thawing meat during a power outage"], "dark freezer"],
   [1235.0, "k_f_cure_salt3", ["pink curing salt for hams"], "cure salt"],
   [1247.0, "k_f_meat_cold3", ["meat curing cold in winter"], "meat cold"],
   [1255.0, "k_f_winter_cure", ["snowy winter, curing season"], "winter cure"],

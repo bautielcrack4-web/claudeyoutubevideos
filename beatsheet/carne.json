@@ -1893,16 +1893,26 @@
       "start": 1189.5,
       "dur": 6,
       "kind": "raw",
-      "src": "real/k_blackout_neighbor_meat_1.jpg",
-      "darken": 0
+      "src": "img/k_blackout_neighbor_meat.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "k_blackout_neighbor_meat",
+        "prompt": "a worried man opening a dark powerless chest freezer of thawing meat in a blackout, candlelight, realistic color photograph, natural vivid colors, sharp focus, well lit, clean, no text, no captions, no watermark, no logo"
+      }
     },
     {
       "id": "k_f_dark_freezer2",
       "start": 1195,
       "dur": 6.5,
       "kind": "raw",
-      "src": "real/k_f_dark_freezer2_1.jpg",
-      "darken": 0
+      "src": "img/k_f_dark_freezer2.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "k_f_dark_freezer2",
+        "prompt": "a dark open chest freezer of thawing meat during a power outage, realistic color photograph, natural vivid colors, sharp focus, well lit, clean, no text, no captions, no watermark, no logo"
+      }
     },
     {
       "id": "cmp_safety",
