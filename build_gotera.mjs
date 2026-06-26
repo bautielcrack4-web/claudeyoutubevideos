@@ -273,7 +273,7 @@ const FILL = [
   ["gt_20kg_sealant_bucket", "large 20 kilo bucket of waterproof sealant", "the twenty kilo bucket", "el balde de veinte kilos"],
   ["gt_40_repairs", "manual with forty home repairs", "forty repairs same criteria", "cuarenta arreglos"],
 ];
-for (const [name, query, concept, ph] of FILL) { const s = atc(ph); if (s == null) continue; beats.push({ id: name, start: +s.toFixed(2), dur: 4, kind: "raw", src: `real/${name}.png`, darken: 0, hue: HUES[Math.round(s) % 3] }); addB(name, query, concept); }
+for (const [name, query, concept, ph] of FILL) { const s = atc(ph); if (s == null) continue; beats.push({ id: name, start: +s.toFixed(2), dur: 4, kind: "raw", src: `broll/${name}.mp4`, darken: 0, hue: HUES[Math.round(s) % 3] }); addM(name, query, concept); addB(name, query, concept); }
 beats.sort((a, b) => a.start - b.start);
 
 // ── STRUCT — formatos estructurados inline (gate de variedad: ≥6 tipos, ≥6% peso, bars≥2) ──
@@ -313,8 +313,11 @@ const pip = []; let k = 0;
 for (let i = 0; i < beats.length; i++) { if (beats[i].kind !== "raw") continue; if (i % 5 === 2) { pip.push([beats[i].start, beats[i].start + Math.min(beats[i].dur, 7), POS[k % POS.length]]); k++; } }
 const firstClip = beats.length ? beats[0].start : OPEN;
 const inAvf = (t) => AVF.some(([s, e]) => t >= s - 1e-6 && t < e - 1e-6);
-const modeAt = (t) => { if (t < firstClip - 1e-6) return "full"; if (inAvf(t)) return "full"; const p = pip.find(([s, e]) => t >= s - 1e-6 && t < e - 1e-6); return p ? p[2] : "hidden"; };
-const pts = [...new Set([0, firstClip, ...AVF.flat(), ...pip.flatMap((p) => [p[0], p[1]]), TOTAL])].sort((a, b) => a - b);
+// cobertura por beats raw (cada beat cubre [start, start+dur]); en huecos SIN clip el avatar va FULL (nunca negro)
+const cov = beats.filter((b) => b.kind === "raw").map((b) => [b.start, b.start + b.dur]).sort((a, b) => a[0] - b[0]);
+const covered = (t) => cov.some(([s, e]) => t >= s - 1e-6 && t < e - 1e-6);
+const modeAt = (t) => { if (t < firstClip - 1e-6) return "full"; if (inAvf(t)) return "full"; if (!covered(t)) return "full"; const p = pip.find(([s, e]) => t >= s - 1e-6 && t < e - 1e-6); return p ? p[2] : "hidden"; };
+const pts = [...new Set([0, firstClip, ...AVF.flat(), ...pip.flatMap((p) => [p[0], p[1]]), ...cov.flat(), TOTAL].map((x) => +(+x).toFixed(2)))].sort((a, b) => a - b);
 const windows = []; let cur = null;
 for (const t of pts) { if (t >= TOTAL - 1e-6) break; const m = modeAt(t); if (m !== cur) { windows.push({ start: +t.toFixed(2), mode: m }); cur = m; } }
 windows.push({ start: TOTAL, mode: "hidden" });
