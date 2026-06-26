@@ -20,8 +20,8 @@ export default {
   ],
   // ── COMPONENTES ESTRUCTURADOS EXTRA (variedad + valor por momento; ≥6% del metraje) ──
   EXTRA: [
-    { at: "repartidas por el mundo", dur: 8.0, kind: "journey", eyebrow: "Un misterio en 4 continentes", title: "Siete puertas selladas", accent: "amber", waypoints: [
-      { x: 0.55, y: 0.42, label: "Egipto" }, { x: 0.27, y: 0.66, label: "Perú" }, { x: 0.29, y: 0.69, label: "Bolivia" }, { x: 0.79, y: 0.40, label: "China" }, { x: 0.69, y: 0.53, label: "India" },
+    { at: "repartidas por el mundo", dur: 12.0, kind: "journey", eyebrow: "Un misterio en 4 continentes", title: "Siete puertas selladas", accent: "amber", worldImage: "real/pue_worldmap.jpg", waypoints: [
+      { x: 0.55, y: 0.42, label: "Egipto", dwell: 1.3, travel: 0.7 }, { x: 0.27, y: 0.66, label: "Perú", dwell: 1.3, travel: 0.7 }, { x: 0.29, y: 0.69, label: "Bolivia", dwell: 1.3, travel: 0.7 }, { x: 0.79, y: 0.40, label: "China", dwell: 1.3, travel: 0.7 }, { x: 0.69, y: 0.53, label: "India", dwell: 1.3, travel: 0.7 },
     ] },
     { at: "algunas llevan siglos cerradas", dur: 7.0, kind: "bars", eyebrow: "Antigüedad", title: "Cuánto llevan cerradas", unit: " años", accent: "accent", hue: "amber", bars: [
       { label: "Falsa puerta", value: 4500, display: "~2500 a.C." }, { label: "Pta. del Sol", value: 1500, display: "~500 d.C." }, { label: "Tumba de Qin", value: 2235, display: "210 a.C." }, { label: "Bóveda B", value: 500, display: "s. XVI" },
