@@ -1,0 +1,292 @@
+[
+ {
+  "t": 0,
+  "src": "sfx/cp_boom.wav",
+  "g": 0.28
+ },
+ {
+  "t": 0.05,
+  "src": "sfx/cp_whoosh.wav",
+  "g": 0.4
+ },
+ {
+  "t": 1.63,
+  "src": "sfx/cp_boom.wav",
+  "g": 0.28
+ },
+ {
+  "t": 3.25,
+  "src": "sfx/cp_boom.wav",
+  "g": 0.28
+ },
+ {
+  "t": 4.88,
+  "src": "sfx/cp_boom.wav",
+  "g": 0.28
+ },
+ {
+  "t": 6.5,
+  "src": "sfx/cp_boom.wav",
+  "g": 0.28
+ },
+ {
+  "t": 8.13,
+  "src": "sfx/cp_boom.wav",
+  "g": 0.28
+ },
+ {
+  "t": 9.75,
+  "src": "sfx/cp_boom.wav",
+  "g": 0.28
+ },
+ {
+  "t": 11.38,
+  "src": "sfx/cp_boom.wav",
+  "g": 0.28
+ },
+ {
+  "t": 47.2,
+  "src": "sfx/cp_riser.wav",
+  "g": 0.5
+ },
+ {
+  "t": 48.4,
+  "src": "sfx/cp_boom.wav",
+  "g": 0.55
+ },
+ {
+  "t": 54.3,
+  "src": "sfx/cp_whoosh.wav",
+  "g": 0.45
+ },
+ {
+  "t": 65.63,
+  "src": "sfx/cp_whoosh.wav",
+  "g": 0.45
+ },
+ {
+  "t": 134.36,
+  "src": "sfx/cp_riser.wav",
+  "g": 0.5
+ },
+ {
+  "t": 135.56,
+  "src": "sfx/cp_boom.wav",
+  "g": 0.55
+ },
+ {
+  "t": 158.06,
+  "src": "sfx/cp_whoosh.wav",
+  "g": 0.45
+ },
+ {
+  "t": 186.6,
+  "src": "sfx/cp_whoosh.wav",
+  "g": 0.45
+ },
+ {
+  "t": 208.7,
+  "src": "sfx/cp_whoosh.wav",
+  "g": 0.45
+ },
+ {
+  "t": 238.44,
+  "src": "sfx/cp_boom.wav",
+  "g": 0.4
+ },
+ {
+  "t": 288.68,
+  "src": "sfx/cp_riser.wav",
+  "g": 0.5
+ },
+ {
+  "t": 289.88,
+  "src": "sfx/cp_boom.wav",
+  "g": 0.55
+ },
+ {
+  "t": 325,
+  "src": "sfx/cp_whoosh.wav",
+  "g": 0.45
+ },
+ {
+  "t": 331.3,
+  "src": "sfx/cp_whoosh.wav",
+  "g": 0.45
+ },
+ {
+  "t": 360.93,
+  "src": "sfx/cp_boom.wav",
+  "g": 0.4
+ },
+ {
+  "t": 395.25,
+  "src": "sfx/cp_riser.wav",
+  "g": 0.5
+ },
+ {
+  "t": 396.45,
+  "src": "sfx/cp_boom.wav",
+  "g": 0.55
+ },
+ {
+  "t": 430.89,
+  "src": "sfx/cp_whoosh.wav",
+  "g": 0.45
+ },
+ {
+  "t": 449.24,
+  "src": "sfx/cp_whoosh.wav",
+  "g": 0.45
+ },
+ {
+  "t": 466.13,
+  "src": "sfx/cp_boom.wav",
+  "g": 0.4
+ },
+ {
+  "t": 499.77,
+  "src": "sfx/cp_riser.wav",
+  "g": 0.5
+ },
+ {
+  "t": 500.97,
+  "src": "sfx/cp_boom.wav",
+  "g": 0.55
+ },
+ {
+  "t": 531.15,
+  "src": "sfx/cp_whoosh.wav",
+  "g": 0.45
+ },
+ {
+  "t": 546.61,
+  "src": "sfx/cp_whoosh.wav",
+  "g": 0.45
+ },
+ {
+  "t": 593.06,
+  "src": "sfx/cp_boom.wav",
+  "g": 0.4
+ },
+ {
+  "t": 598.16,
+  "src": "sfx/cp_whoosh.wav",
+  "g": 0.45
+ },
+ {
+  "t": 637.9,
+  "src": "sfx/cp_riser.wav",
+  "g": 0.5
+ },
+ {
+  "t": 639.1,
+  "src": "sfx/cp_boom.wav",
+  "g": 0.55
+ },
+ {
+  "t": 670.05,
+  "src": "sfx/cp_whoosh.wav",
+  "g": 0.45
+ },
+ {
+  "t": 676.35,
+  "src": "sfx/cp_whoosh.wav",
+  "g": 0.45
+ },
+ {
+  "t": 701.8,
+  "src": "sfx/cp_boom.wav",
+  "g": 0.4
+ },
+ {
+  "t": 731.95,
+  "src": "sfx/cp_riser.wav",
+  "g": 0.5
+ },
+ {
+  "t": 733.15,
+  "src": "sfx/cp_boom.wav",
+  "g": 0.55
+ },
+ {
+  "t": 771.49,
+  "src": "sfx/cp_whoosh.wav",
+  "g": 0.45
+ },
+ {
+  "t": 780.88,
+  "src": "sfx/cp_whoosh.wav",
+  "g": 0.45
+ },
+ {
+  "t": 829.42,
+  "src": "sfx/cp_boom.wav",
+  "g": 0.4
+ },
+ {
+  "t": 834.94,
+  "src": "sfx/cp_whoosh.wav",
+  "g": 0.45
+ },
+ {
+  "t": 876.35,
+  "src": "sfx/cp_riser.wav",
+  "g": 0.5
+ },
+ {
+  "t": 877.55,
+  "src": "sfx/cp_boom.wav",
+  "g": 0.55
+ },
+ {
+  "t": 919.23,
+  "src": "sfx/cp_whoosh.wav",
+  "g": 0.45
+ },
+ {
+  "t": 946.88,
+  "src": "sfx/cp_whoosh.wav",
+  "g": 0.45
+ },
+ {
+  "t": 953.18,
+  "src": "sfx/cp_whoosh.wav",
+  "g": 0.45
+ },
+ {
+  "t": 975.72,
+  "src": "sfx/cp_whoosh.wav",
+  "g": 0.45
+ },
+ {
+  "t": 1017.02,
+  "src": "sfx/cp_boom.wav",
+  "g": 0.4
+ },
+ {
+  "t": 1027.93,
+  "src": "sfx/cp_whoosh.wav",
+  "g": 0.45
+ },
+ {
+  "t": 1121.85,
+  "src": "sfx/cp_whoosh.wav",
+  "g": 0.45
+ },
+ {
+  "t": 1130.65,
+  "src": "sfx/cp_whoosh.wav",
+  "g": 0.45
+ },
+ {
+  "t": 1189.5,
+  "src": "sfx/cp_riser.wav",
+  "g": 0.5
+ },
+ {
+  "t": 1190.7,
+  "src": "sfx/cp_boom.wav",
+  "g": 0.55
+ }
+]

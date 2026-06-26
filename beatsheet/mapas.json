@@ -1,0 +1,2736 @@
+{
+ "video": "mapas",
+ "clipsfirst": true,
+ "beats": [
+  {
+   "id": "c274",
+   "start": 0,
+   "dur": 1.63,
+   "kind": "raw",
+   "src": "broll/w084.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c275",
+   "start": 1.63,
+   "dur": 1.63,
+   "kind": "raw",
+   "src": "broll/w131.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c276",
+   "start": 3.25,
+   "dur": 1.63,
+   "kind": "raw",
+   "src": "broll/w132.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c277",
+   "start": 4.88,
+   "dur": 1.63,
+   "kind": "raw",
+   "src": "broll/w133.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c278",
+   "start": 6.5,
+   "dur": 1.63,
+   "kind": "raw",
+   "src": "broll/w135.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c279",
+   "start": 8.13,
+   "dur": 1.63,
+   "kind": "raw",
+   "src": "broll/w136.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c280",
+   "start": 9.75,
+   "dur": 1.63,
+   "kind": "raw",
+   "src": "broll/w137.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c281",
+   "start": 11.38,
+   "dur": 1.63,
+   "kind": "raw",
+   "src": "broll/w138.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c022",
+   "start": 13,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/w003.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c023",
+   "start": 18,
+   "dur": 5.46,
+   "kind": "raw",
+   "src": "broll/w004.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c024",
+   "start": 23.46,
+   "dur": 5.66,
+   "kind": "raw",
+   "src": "broll/w005.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c025",
+   "start": 29.12,
+   "dur": 5.53,
+   "kind": "raw",
+   "src": "broll/w006.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c026",
+   "start": 34.65,
+   "dur": 2.17,
+   "kind": "raw",
+   "src": "broll/w007.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "splitlist232",
+   "start": 36.82,
+   "dur": 6,
+   "kind": "splitlist",
+   "title": "Solo hay dos explicaciones",
+   "cross": false,
+   "palette": "A",
+   "items": [
+    "Una coincidencia imposible",
+    "O alguien estuvo ahí antes",
+    "Mucho antes de lo que creemos"
+   ]
+  },
+  {
+   "id": "c027",
+   "start": 42.82,
+   "dur": 5.58,
+   "kind": "raw",
+   "src": "broll/w008.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "headline233",
+   "start": 48.4,
+   "dur": 6,
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "7",
+     "hl": true
+    },
+    {
+     "t": "mapas"
+    },
+    {
+     "t": "que"
+    },
+    {
+     "t": "no"
+    },
+    {
+     "t": "deberían"
+    },
+    {
+     "t": "existir",
+     "hl": true
+    }
+   ],
+   "bg": "image",
+   "image": "real/ma_hero.jpg",
+   "hue": "amber",
+   "size": 84
+  },
+  {
+   "id": "c028",
+   "start": 54.4,
+   "dur": 0.3,
+   "kind": "raw",
+   "src": "broll/w010.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "bars234",
+   "start": 54.699999999999996,
+   "dur": 7,
+   "kind": "bars",
+   "eyebrow": "Cuándo se dibujaron",
+   "title": "Mapas demasiado viejos",
+   "unit": "",
+   "accent": "accent",
+   "hue": "amber",
+   "bars": [
+    {
+     "label": "Piri Reis",
+     "value": 1513,
+     "display": "1513"
+    },
+    {
+     "label": "Oronteus",
+     "value": 1531,
+     "display": "1531"
+    },
+    {
+     "label": "Zeno",
+     "value": 1558,
+     "display": "1558"
+    },
+    {
+     "label": "Buache",
+     "value": 1737,
+     "display": "1737"
+    }
+   ]
+  },
+  {
+   "id": "c029",
+   "start": 61.7,
+   "dur": 4.3,
+   "kind": "raw",
+   "src": "broll/w011.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "journey235",
+   "start": 66.03,
+   "dur": 12,
+   "kind": "journey",
+   "eyebrow": "Mapas que no deberían existir",
+   "title": "Un saber repartido por el mundo",
+   "accent": "amber",
+   "worldImage": "real/pue_worldmap.jpg",
+   "waypoints": [
+    {
+     "x": 0.5,
+     "y": 0.34,
+     "label": "Roma",
+     "dwell": 1.2,
+     "travel": 0.7
+    },
+    {
+     "x": 0.52,
+     "y": 0.31,
+     "label": "Venecia",
+     "dwell": 1.2,
+     "travel": 0.7
+    },
+    {
+     "x": 0.49,
+     "y": 0.33,
+     "label": "Francia",
+     "dwell": 1.2,
+     "travel": 0.7
+    },
+    {
+     "x": 0.6,
+     "y": 0.4,
+     "label": "Imperio otomano",
+     "dwell": 1.2,
+     "travel": 0.7
+    },
+    {
+     "x": 0.5,
+     "y": 0.92,
+     "label": "Antártida",
+     "dwell": 1.4,
+     "travel": 0.7
+    }
+   ]
+  },
+  {
+   "id": "c030",
+   "start": 78.03,
+   "dur": 5.87,
+   "kind": "raw",
+   "src": "broll/w014.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c031",
+   "start": 83.9,
+   "dur": 5.52,
+   "kind": "raw",
+   "src": "broll/w015.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c032",
+   "start": 89.42,
+   "dur": 5.43,
+   "kind": "raw",
+   "src": "broll/w016.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c033",
+   "start": 94.85,
+   "dur": 5.99,
+   "kind": "raw",
+   "src": "broll/w017.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c034",
+   "start": 100.84,
+   "dur": 5.92,
+   "kind": "raw",
+   "src": "broll/w018.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c035",
+   "start": 106.76,
+   "dur": 5.74,
+   "kind": "raw",
+   "src": "broll/w019.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c036",
+   "start": 112.5,
+   "dur": 5.47,
+   "kind": "raw",
+   "src": "broll/w020.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c037",
+   "start": 117.97,
+   "dur": 5.83,
+   "kind": "raw",
+   "src": "broll/w021.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c038",
+   "start": 123.8,
+   "dur": 5.8,
+   "kind": "raw",
+   "src": "broll/w022.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "c039",
+   "start": 129.6,
+   "dur": 5.9,
+   "kind": "raw",
+   "src": "broll/w023.mp4",
+   "hue": "cold"
+  },
+  {
+   "id": "rule236",
+   "start": 135.56,
+   "dur": 4.2,
+   "kind": "rule",
+   "number": "07",
+   "title": "La Tabula Peutingeriana",
+   "label": "Imperio Romano",
+   "hue": "amber"
+  },
+  {
+   "id": "o001",
+   "start": 139.76,
+   "dur": 6,
+   "overlay": true,
+   "kind": "doclabel",
+   "label": "La Tabula Peutingeriana",
+   "sub": "Imperio Romano",
+   "accent": "amber"
+  },
+  {
+   "id": "o002",
+   "start": 139.76,
+   "dur": 149.92,
+   "overlay": true,
+   "kind": "countrail",
+   "total": 7,
+   "rank": 7,
+   "name": "La Tabula Peutingeriana",
+   "accent": "amber"
+  },
+  {
+   "id": "c040",
+   "start": 139.76,
+   "dur": 1.19,
+   "kind": "raw",
+   "src": "broll/w024.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c041",
+   "start": 140.95,
+   "dur": 5.55,
+   "kind": "raw",
+   "src": "broll/w025.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c042",
+   "start": 146.5,
+   "dur": 5.58,
+   "kind": "raw",
+   "src": "broll/w026.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c043",
+   "start": 152.08,
+   "dur": 6.38,
+   "kind": "raw",
+   "src": "broll/w027.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "annotated237",
+   "start": 158.46,
+   "dur": 6.5,
+   "kind": "annotated",
+   "image": "real/tp_map.jpg",
+   "eyebrow": "Tabula Peutingeriana",
+   "caption": "7 metros de largo, 30 cm de alto: el imperio aplastado en una tira",
+   "hue": "amber",
+   "annotations": [
+    {
+     "kind": "underline",
+     "x": 0.5,
+     "y": 0.5,
+     "w": 0.42,
+     "label": "Rutas, paradas y distancias"
+    }
+   ]
+  },
+  {
+   "id": "c044",
+   "start": 164.96,
+   "dur": 5.02,
+   "kind": "raw",
+   "src": "broll/w027.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c045",
+   "start": 169.98,
+   "dur": 5.02,
+   "kind": "raw",
+   "src": "broll/w031.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c046",
+   "start": 175,
+   "dur": 5.45,
+   "kind": "raw",
+   "src": "broll/w031.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c047",
+   "start": 180.45,
+   "dur": 5.75,
+   "kind": "raw",
+   "src": "broll/w032.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c048",
+   "start": 186.2,
+   "dur": 0.8,
+   "kind": "raw",
+   "src": "broll/w033.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "scalecolossus238",
+   "start": 187,
+   "dur": 6,
+   "kind": "scalecolossus",
+   "image": "real/tp_map.jpg",
+   "meters": 7,
+   "unit": "metros",
+   "eyebrow": "La Tabula Peutingeriana",
+   "label": "el imperio entero en una tira de pergamino",
+   "accent": "amber"
+  },
+  {
+   "id": "o003",
+   "start": 187.2,
+   "dur": 5,
+   "overlay": true,
+   "kind": "datestamp",
+   "value": "copia s. XIII",
+   "label": "La Tabula Peutingeriana",
+   "accent": "amber"
+  },
+  {
+   "id": "c049",
+   "start": 193,
+   "dur": 2.9,
+   "kind": "raw",
+   "src": "broll/w034.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c050",
+   "start": 195.9,
+   "dur": 5.4,
+   "kind": "raw",
+   "src": "broll/w035.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c051",
+   "start": 201.3,
+   "dur": 3.5,
+   "kind": "raw",
+   "src": "broll/w036.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c052",
+   "start": 204.8,
+   "dur": 4.3,
+   "kind": "raw",
+   "src": "broll/w037.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "aged239",
+   "start": 209.1,
+   "dur": 6.5,
+   "kind": "aged",
+   "heading": "Un GPS de hace 2.000 años",
+   "eyebrow": "Tabula Peutingeriana",
+   "accent": "accent",
+   "hue": "amber",
+   "lines": [
+    {
+     "text": "Cada camino, cada parada, cada distancia"
+    },
+    {
+     "text": "del Imperio Romano entero,",
+     "mark": true
+    },
+    {
+     "text": "en una sola tira de pergamino."
+    },
+    {
+     "text": "Sobrevivió una única copia.",
+     "mark": true
+    }
+   ]
+  },
+  {
+   "id": "c053",
+   "start": 215.6,
+   "dur": 4.9,
+   "kind": "raw",
+   "src": "broll/w039.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c054",
+   "start": 220.5,
+   "dur": 5.41,
+   "kind": "raw",
+   "src": "broll/w040.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c055",
+   "start": 225.91,
+   "dur": 5.56,
+   "kind": "raw",
+   "src": "broll/w041.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c056",
+   "start": 231.47,
+   "dur": 4.93,
+   "kind": "raw",
+   "src": "broll/w042.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c057",
+   "start": 236.4,
+   "dur": 2.04,
+   "kind": "raw",
+   "src": "broll/w043.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "stat240",
+   "start": 238.44,
+   "dur": 5.2,
+   "kind": "stat",
+   "value": 1,
+   "suffix": " copia",
+   "label": "de toda esa cartografía romana, sobrevive una",
+   "eyebrow": "Un GPS de hace 2.000 años",
+   "accent": "accent",
+   "hue": "amber"
+  },
+  {
+   "id": "c058",
+   "start": 243.64,
+   "dur": 3.76,
+   "kind": "raw",
+   "src": "broll/w044.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c059",
+   "start": 247.4,
+   "dur": 6.6,
+   "kind": "raw",
+   "src": "broll/w045.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c060",
+   "start": 254,
+   "dur": 6.1,
+   "kind": "raw",
+   "src": "broll/w046.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c061",
+   "start": 260.1,
+   "dur": 5.5,
+   "kind": "raw",
+   "src": "broll/w047.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c062",
+   "start": 265.6,
+   "dur": 5.43,
+   "kind": "raw",
+   "src": "broll/w048.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c063",
+   "start": 271.03,
+   "dur": 5.57,
+   "kind": "raw",
+   "src": "broll/w049.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c064",
+   "start": 276.6,
+   "dur": 5.59,
+   "kind": "raw",
+   "src": "broll/w050.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c065",
+   "start": 282.19,
+   "dur": 3.61,
+   "kind": "raw",
+   "src": "broll/w051.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c066",
+   "start": 285.8,
+   "dur": 4.08,
+   "kind": "raw",
+   "src": "broll/w052.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "rule241",
+   "start": 289.88,
+   "dur": 4.2,
+   "kind": "rule",
+   "number": "06",
+   "title": "El mapa de Zeno",
+   "label": "Venecia · 1558",
+   "hue": "blue"
+  },
+  {
+   "id": "o004",
+   "start": 294.08,
+   "dur": 6,
+   "overlay": true,
+   "kind": "doclabel",
+   "label": "El mapa de Zeno",
+   "sub": "Venecia · 1558",
+   "accent": "blue"
+  },
+  {
+   "id": "o005",
+   "start": 294.08,
+   "dur": 102.17,
+   "overlay": true,
+   "kind": "countrail",
+   "total": 7,
+   "rank": 6,
+   "name": "El mapa de Zeno",
+   "accent": "blue"
+  },
+  {
+   "id": "c067",
+   "start": 294.08,
+   "dur": 3.32,
+   "kind": "raw",
+   "src": "broll/w053.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c068",
+   "start": 297.4,
+   "dur": 4.3,
+   "kind": "raw",
+   "src": "broll/w054.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c069",
+   "start": 301.7,
+   "dur": 5.8,
+   "kind": "raw",
+   "src": "broll/w055.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c070",
+   "start": 307.5,
+   "dur": 5.46,
+   "kind": "raw",
+   "src": "broll/w056.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c071",
+   "start": 312.96,
+   "dur": 6.14,
+   "kind": "raw",
+   "src": "broll/w057.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c072",
+   "start": 319.1,
+   "dur": 4.3,
+   "kind": "raw",
+   "src": "broll/w058.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c073",
+   "start": 323.4,
+   "dur": 2,
+   "kind": "raw",
+   "src": "broll/w059.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "scalecolossus242",
+   "start": 325.4033333333333,
+   "dur": 6,
+   "kind": "scalecolossus",
+   "image": "real/zn_map.jpg",
+   "meters": 0,
+   "unit": "islas reales",
+   "eyebrow": "El mapa de Zeno",
+   "label": "islas fantasma dibujadas con costas reales",
+   "accent": "blue"
+  },
+  {
+   "id": "o006",
+   "start": 325.6,
+   "dur": 5,
+   "overlay": true,
+   "kind": "datestamp",
+   "value": "1558",
+   "label": "El mapa de Zeno",
+   "accent": "blue"
+  },
+  {
+   "id": "c074",
+   "start": 331.4,
+   "dur": 0.3,
+   "kind": "raw",
+   "src": "broll/w060.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "callout243",
+   "start": 331.7033333333333,
+   "dur": 6,
+   "kind": "callout",
+   "figure": "0",
+   "image": "real/zn_map.jpg",
+   "eyebrow": "Mapa de Zeno",
+   "caption": "islas dibujadas con detalle… que nunca existieron",
+   "accent": "accent",
+   "hue": "blue"
+  },
+  {
+   "id": "c075",
+   "start": 337.7,
+   "dur": 0.3,
+   "kind": "raw",
+   "src": "broll/w061.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "splitlist244",
+   "start": 338.00333333333333,
+   "dur": 6,
+   "kind": "splitlist",
+   "title": "Lo real mezclado con lo imposible",
+   "cross": true,
+   "palette": "B",
+   "items": [
+    "Islas fantasma con nombre",
+    "Costas que sí existen",
+    "Groenlandia como bajo el hielo"
+   ]
+  },
+  {
+   "id": "c076",
+   "start": 344,
+   "dur": 0.5,
+   "kind": "raw",
+   "src": "broll/w062.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c077",
+   "start": 344.5,
+   "dur": 7,
+   "kind": "raw",
+   "src": "broll/w063.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c078",
+   "start": 351.5,
+   "dur": 6,
+   "kind": "raw",
+   "src": "broll/w064.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c079",
+   "start": 357.5,
+   "dur": 3.43,
+   "kind": "raw",
+   "src": "broll/w065.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "stat245",
+   "start": 360.9266666666667,
+   "dur": 5.2,
+   "kind": "stat",
+   "value": 0,
+   "prefix": "¿",
+   "suffix": " existen?",
+   "label": "islas detalladas que nunca estuvieron ahí",
+   "eyebrow": "Groenlandia bajo el hielo",
+   "accent": "accent",
+   "hue": "blue"
+  },
+  {
+   "id": "c080",
+   "start": 366.13,
+   "dur": 2.37,
+   "kind": "raw",
+   "src": "broll/w066.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c081",
+   "start": 368.5,
+   "dur": 6,
+   "kind": "raw",
+   "src": "broll/w067.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c082",
+   "start": 374.5,
+   "dur": 6.5,
+   "kind": "raw",
+   "src": "broll/w068.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c083",
+   "start": 381,
+   "dur": 5.5,
+   "kind": "raw",
+   "src": "broll/w069.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c084",
+   "start": 386.5,
+   "dur": 5.5,
+   "kind": "raw",
+   "src": "broll/w070.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c085",
+   "start": 392,
+   "dur": 4.45,
+   "kind": "raw",
+   "src": "broll/w071.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "rule246",
+   "start": 396.45,
+   "dur": 4.2,
+   "kind": "rule",
+   "number": "05",
+   "title": "El mapa de Vinland",
+   "label": "Norte de América",
+   "hue": "amber"
+  },
+  {
+   "id": "o007",
+   "start": 400.65,
+   "dur": 6,
+   "overlay": true,
+   "kind": "doclabel",
+   "label": "El mapa de Vinland",
+   "sub": "Norte de América",
+   "accent": "amber"
+  },
+  {
+   "id": "o008",
+   "start": 400.65,
+   "dur": 100.12,
+   "overlay": true,
+   "kind": "countrail",
+   "total": 7,
+   "rank": 5,
+   "name": "El mapa de Vinland",
+   "accent": "amber"
+  },
+  {
+   "id": "c086",
+   "start": 400.65,
+   "dur": 2.35,
+   "kind": "raw",
+   "src": "broll/w072.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c087",
+   "start": 403,
+   "dur": 5.5,
+   "kind": "raw",
+   "src": "broll/w073.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c088",
+   "start": 408.5,
+   "dur": 6,
+   "kind": "raw",
+   "src": "broll/w074.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c089",
+   "start": 414.5,
+   "dur": 6,
+   "kind": "raw",
+   "src": "broll/w075.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c090",
+   "start": 420.5,
+   "dur": 6.5,
+   "kind": "raw",
+   "src": "broll/w076.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c091",
+   "start": 427,
+   "dur": 4.29,
+   "kind": "raw",
+   "src": "broll/w077.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "scalecolossus247",
+   "start": 431.29,
+   "dur": 6,
+   "kind": "scalecolossus",
+   "image": "real/vl_map.jpg",
+   "meters": 500,
+   "unit": "años antes",
+   "eyebrow": "El mapa de Vinland",
+   "label": "América con nombre, antes de Colón",
+   "accent": "amber"
+  },
+  {
+   "id": "o009",
+   "start": 431.49,
+   "dur": 5,
+   "overlay": true,
+   "kind": "datestamp",
+   "value": "¿medieval?",
+   "label": "El mapa de Vinland",
+   "accent": "amber"
+  },
+  {
+   "id": "c092",
+   "start": 437.29,
+   "dur": 0.71,
+   "kind": "raw",
+   "src": "broll/w078.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c093",
+   "start": 438,
+   "dur": 5.5,
+   "kind": "raw",
+   "src": "broll/w079.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c094",
+   "start": 443.5,
+   "dur": 5.5,
+   "kind": "raw",
+   "src": "broll/w080.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c095",
+   "start": 449,
+   "dur": 0.64,
+   "kind": "raw",
+   "src": "broll/w081.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "aged248",
+   "start": 449.64,
+   "dur": 6.5,
+   "kind": "aged",
+   "heading": "Lo que dice la ciencia",
+   "eyebrow": "Mapa de Vinland",
+   "accent": "danger",
+   "hue": "red",
+   "lines": [
+    {
+     "text": "La tinta tiene compuestos modernos:"
+    },
+    {
+     "text": "el mapa es, casi seguro, falso.",
+     "mark": true
+    },
+    {
+     "text": "Pero los vikingos SÍ llegaron a América"
+    },
+    {
+     "text": "siglos antes que Colón.",
+     "mark": true
+    }
+   ]
+  },
+  {
+   "id": "c096",
+   "start": 456.14,
+   "dur": 3.86,
+   "kind": "raw",
+   "src": "broll/w082.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c097",
+   "start": 460,
+   "dur": 4,
+   "kind": "raw",
+   "src": "broll/w083.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c098",
+   "start": 464,
+   "dur": 2.13,
+   "kind": "raw",
+   "src": "broll/w084.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "stat249",
+   "start": 466.13,
+   "dur": 5.2,
+   "kind": "stat",
+   "value": 0,
+   "prefix": "",
+   "suffix": " ¿falso?",
+   "label": "la tinta lo delata, pero los vikingos sí llegaron",
+   "eyebrow": "Antes de Colón",
+   "accent": "accent",
+   "hue": "amber"
+  },
+  {
+   "id": "c099",
+   "start": 471.33,
+   "dur": 4.67,
+   "kind": "raw",
+   "src": "broll/w085.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c100",
+   "start": 476,
+   "dur": 5.55,
+   "kind": "raw",
+   "src": "broll/w086.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c101",
+   "start": 481.55,
+   "dur": 5.45,
+   "kind": "raw",
+   "src": "broll/w087.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c102",
+   "start": 487,
+   "dur": 6,
+   "kind": "raw",
+   "src": "broll/w088.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c103",
+   "start": 493,
+   "dur": 3.98,
+   "kind": "raw",
+   "src": "broll/w089.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c104",
+   "start": 496.99,
+   "dur": 3.98,
+   "kind": "raw",
+   "src": "broll/w090.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "rule250",
+   "start": 500.97,
+   "dur": 4.2,
+   "kind": "rule",
+   "number": "04",
+   "title": "El mapa de Buache",
+   "label": "Francia · s. XVIII",
+   "hue": "blue"
+  },
+  {
+   "id": "o010",
+   "start": 505.17,
+   "dur": 6,
+   "overlay": true,
+   "kind": "doclabel",
+   "label": "El mapa de Buache",
+   "sub": "Francia · s. XVIII",
+   "accent": "blue"
+  },
+  {
+   "id": "o011",
+   "start": 505.17,
+   "dur": 133.73,
+   "overlay": true,
+   "kind": "countrail",
+   "total": 7,
+   "rank": 4,
+   "name": "El mapa de Buache",
+   "accent": "blue"
+  },
+  {
+   "id": "c105",
+   "start": 505.17,
+   "dur": 1.27,
+   "kind": "raw",
+   "src": "broll/w090.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c106",
+   "start": 506.44,
+   "dur": 5.75,
+   "kind": "raw",
+   "src": "broll/w091.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c107",
+   "start": 512.19,
+   "dur": 6.87,
+   "kind": "raw",
+   "src": "broll/w092.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c108",
+   "start": 519.06,
+   "dur": 5.45,
+   "kind": "raw",
+   "src": "broll/w093.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c109",
+   "start": 524.51,
+   "dur": 5.49,
+   "kind": "raw",
+   "src": "broll/w094.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c110",
+   "start": 530,
+   "dur": 1.55,
+   "kind": "raw",
+   "src": "broll/w095.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "cross251",
+   "start": 531.55,
+   "dur": 7,
+   "kind": "cross",
+   "eyebrow": "Lo que esconde el radar",
+   "title": "La Antártida bajo el hielo",
+   "hue": "blue",
+   "layers": [
+    {
+     "label": "Capa de hielo",
+     "depth": "~2 km de espesor",
+     "color": "#dfe7ee",
+     "weight": 1.3
+    },
+    {
+     "label": "Tierra occidental",
+     "depth": "una masa",
+     "color": "#9c855c",
+     "weight": 1
+    },
+    {
+     "label": "Canal / mar interior",
+     "depth": "agua entre ambas",
+     "color": "#7e94a6",
+     "weight": 0.7
+    },
+    {
+     "label": "Tierra oriental",
+     "depth": "otra masa",
+     "color": "#8a7a5c",
+     "weight": 1
+    }
+   ]
+  },
+  {
+   "id": "c111",
+   "start": 538.55,
+   "dur": 2.44,
+   "kind": "raw",
+   "src": "broll/w096.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c112",
+   "start": 540.99,
+   "dur": 6.01,
+   "kind": "raw",
+   "src": "broll/w097.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "scalecolossus252",
+   "start": 547.0133333333333,
+   "dur": 6,
+   "kind": "scalecolossus",
+   "image": "real/bu_map.jpg",
+   "meters": 2,
+   "unit": "masas de tierra",
+   "eyebrow": "El mapa de Buache",
+   "label": "la Antártida partida en dos, como bajo el radar",
+   "accent": "blue"
+  },
+  {
+   "id": "o012",
+   "start": 547.21,
+   "dur": 5,
+   "overlay": true,
+   "kind": "datestamp",
+   "value": "1737",
+   "label": "El mapa de Buache",
+   "accent": "blue"
+  },
+  {
+   "id": "c113",
+   "start": 553.01,
+   "dur": 4,
+   "kind": "raw",
+   "src": "broll/w099.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c114",
+   "start": 557.01,
+   "dur": 4,
+   "kind": "raw",
+   "src": "broll/w100.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c115",
+   "start": 561,
+   "dur": 6,
+   "kind": "raw",
+   "src": "broll/w100.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c116",
+   "start": 567,
+   "dur": 5.47,
+   "kind": "raw",
+   "src": "broll/w101.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c117",
+   "start": 572.47,
+   "dur": 5.48,
+   "kind": "raw",
+   "src": "broll/w102.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c118",
+   "start": 577.95,
+   "dur": 6.13,
+   "kind": "raw",
+   "src": "broll/w103.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c119",
+   "start": 584.08,
+   "dur": 6.92,
+   "kind": "raw",
+   "src": "broll/w104.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c120",
+   "start": 591,
+   "dur": 2.06,
+   "kind": "raw",
+   "src": "broll/w105.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "stat253",
+   "start": 593.0566666666667,
+   "dur": 5.2,
+   "kind": "stat",
+   "value": 2,
+   "suffix": " masas",
+   "label": "el radar confirmó: dos tierras bajo el hielo",
+   "eyebrow": "Un siglo antes del descubrimiento",
+   "accent": "accent",
+   "hue": "blue"
+  },
+  {
+   "id": "c121",
+   "start": 598.26,
+   "dur": 0.3,
+   "kind": "raw",
+   "src": "broll/w106.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "callout254",
+   "start": 598.5566666666667,
+   "dur": 5.5,
+   "kind": "callout",
+   "figure": "?",
+   "image": "real/bu_map.jpg",
+   "eyebrow": "Mapa de Buache",
+   "caption": "él dijo: copié documentos antiguos que hoy ya no existen",
+   "accent": "accent",
+   "hue": "blue"
+  },
+  {
+   "id": "c122",
+   "start": 604.06,
+   "dur": 4.94,
+   "kind": "raw",
+   "src": "broll/w107.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c123",
+   "start": 609,
+   "dur": 6,
+   "kind": "raw",
+   "src": "broll/w108.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c124",
+   "start": 615,
+   "dur": 6,
+   "kind": "raw",
+   "src": "broll/w109.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c125",
+   "start": 621,
+   "dur": 6,
+   "kind": "raw",
+   "src": "broll/w110.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c126",
+   "start": 627,
+   "dur": 4.1,
+   "kind": "raw",
+   "src": "broll/w111.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c127",
+   "start": 631.1,
+   "dur": 3.95,
+   "kind": "raw",
+   "src": "broll/w112.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c128",
+   "start": 635.05,
+   "dur": 3.95,
+   "kind": "raw",
+   "src": "broll/w113.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "rule255",
+   "start": 639.1,
+   "dur": 4.2,
+   "kind": "rule",
+   "number": "03",
+   "title": "Oronteus Finaeus",
+   "label": "Francia · 1531",
+   "hue": "blue"
+  },
+  {
+   "id": "o013",
+   "start": 643.3,
+   "dur": 6,
+   "overlay": true,
+   "kind": "doclabel",
+   "label": "Oronteus Finaeus",
+   "sub": "Francia · 1531",
+   "accent": "blue"
+  },
+  {
+   "id": "o014",
+   "start": 643.3,
+   "dur": 89.65,
+   "overlay": true,
+   "kind": "countrail",
+   "total": 7,
+   "rank": 3,
+   "name": "Oronteus Finaeus",
+   "accent": "blue"
+  },
+  {
+   "id": "c129",
+   "start": 643.3,
+   "dur": 1.7,
+   "kind": "raw",
+   "src": "broll/w113.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c130",
+   "start": 645,
+   "dur": 5.55,
+   "kind": "raw",
+   "src": "broll/w114.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c131",
+   "start": 650.55,
+   "dur": 6.45,
+   "kind": "raw",
+   "src": "broll/w115.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c132",
+   "start": 657,
+   "dur": 6,
+   "kind": "raw",
+   "src": "broll/w116.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c133",
+   "start": 663,
+   "dur": 6,
+   "kind": "raw",
+   "src": "broll/w117.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c134",
+   "start": 669,
+   "dur": 1.45,
+   "kind": "raw",
+   "src": "broll/w118.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "scalecolossus256",
+   "start": 670.45,
+   "dur": 6,
+   "kind": "scalecolossus",
+   "image": "real/of_map.jpg",
+   "meters": 300,
+   "unit": "años antes",
+   "eyebrow": "Oronteus Finaeus",
+   "label": "la Antártida con ríos y montañas, sin hielo",
+   "accent": "blue"
+  },
+  {
+   "id": "o015",
+   "start": 670.65,
+   "dur": 5,
+   "overlay": true,
+   "kind": "datestamp",
+   "value": "1531",
+   "label": "Oronteus Finaeus",
+   "accent": "blue"
+  },
+  {
+   "id": "c135",
+   "start": 676.45,
+   "dur": 0.3,
+   "kind": "raw",
+   "src": "broll/w119.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "annotated257",
+   "start": 676.75,
+   "dur": 6.5,
+   "kind": "annotated",
+   "image": "real/of_map.jpg",
+   "eyebrow": "Oronteus Finaeus · 1531",
+   "caption": "un continente austral con costas, montañas y ríos",
+   "hue": "blue",
+   "annotations": [
+    {
+     "kind": "circle",
+     "x": 0.5,
+     "y": 0.7,
+     "w": 0.18,
+     "label": "Forma similar a la Antártida real"
+    },
+    {
+     "kind": "underline",
+     "x": 0.5,
+     "y": 0.55,
+     "w": 0.24,
+     "label": "Ríos: tierra sin hielo"
+    }
+   ]
+  },
+  {
+   "id": "c136",
+   "start": 683.25,
+   "dur": 3.75,
+   "kind": "raw",
+   "src": "broll/w120.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c137",
+   "start": 687,
+   "dur": 5.55,
+   "kind": "raw",
+   "src": "broll/w121.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c138",
+   "start": 692.55,
+   "dur": 6.45,
+   "kind": "raw",
+   "src": "broll/w122.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c139",
+   "start": 699,
+   "dur": 2.8,
+   "kind": "raw",
+   "src": "broll/w123.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "stat258",
+   "start": 701.8,
+   "dur": 5.2,
+   "kind": "stat",
+   "value": 1531,
+   "suffix": "",
+   "label": "casi 300 años antes de que nadie la viera",
+   "eyebrow": "Un continente con ríos",
+   "accent": "danger",
+   "hue": "blue"
+  },
+  {
+   "id": "c140",
+   "start": 707,
+   "dur": 2.97,
+   "kind": "raw",
+   "src": "broll/w124.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c141",
+   "start": 709.97,
+   "dur": 5.13,
+   "kind": "raw",
+   "src": "broll/w125.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c142",
+   "start": 715.1,
+   "dur": 5.9,
+   "kind": "raw",
+   "src": "broll/w126.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c143",
+   "start": 721,
+   "dur": 6,
+   "kind": "raw",
+   "src": "broll/w127.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c144",
+   "start": 727,
+   "dur": 6,
+   "kind": "raw",
+   "src": "broll/w128.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "c145",
+   "start": 733,
+   "dur": 0.15,
+   "kind": "raw",
+   "src": "broll/w129.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "rule259",
+   "start": 733.15,
+   "dur": 4.2,
+   "kind": "rule",
+   "number": "02",
+   "title": "Las cuevas estelares",
+   "label": "Europa paleolítica",
+   "hue": "amber"
+  },
+  {
+   "id": "o016",
+   "start": 737.35,
+   "dur": 6,
+   "overlay": true,
+   "kind": "doclabel",
+   "label": "Las cuevas estelares",
+   "sub": "Europa paleolítica",
+   "accent": "amber"
+  },
+  {
+   "id": "o017",
+   "start": 737.35,
+   "dur": 140,
+   "overlay": true,
+   "kind": "countrail",
+   "total": 7,
+   "rank": 2,
+   "name": "Las cuevas estelares",
+   "accent": "amber"
+  },
+  {
+   "id": "c146",
+   "start": 737.35,
+   "dur": 1.18,
+   "kind": "raw",
+   "src": "broll/w129.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c147",
+   "start": 738.53,
+   "dur": 4.57,
+   "kind": "raw",
+   "src": "broll/w130.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c148",
+   "start": 743.1,
+   "dur": 5.9,
+   "kind": "raw",
+   "src": "broll/w131.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c149",
+   "start": 749,
+   "dur": 6,
+   "kind": "raw",
+   "src": "broll/w132.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c150",
+   "start": 755,
+   "dur": 6,
+   "kind": "raw",
+   "src": "broll/w133.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c151",
+   "start": 761,
+   "dur": 6,
+   "kind": "raw",
+   "src": "broll/w134.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c152",
+   "start": 767,
+   "dur": 4.1,
+   "kind": "raw",
+   "src": "broll/w135.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c153",
+   "start": 771.1,
+   "dur": 0.79,
+   "kind": "raw",
+   "src": "broll/w136.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "annotated260",
+   "start": 771.89,
+   "dur": 6.5,
+   "kind": "annotated",
+   "image": "real/cv_stars.jpg",
+   "eyebrow": "Cuevas paleolíticas",
+   "caption": "puntos que coinciden con las constelaciones",
+   "hue": "amber",
+   "annotations": [
+    {
+     "kind": "circle",
+     "x": 0.42,
+     "y": 0.4,
+     "w": 0.1,
+     "label": "Estrellas, no decoración"
+    },
+    {
+     "kind": "circle",
+     "x": 0.62,
+     "y": 0.52,
+     "w": 0.08,
+     "label": "Una constelación reconocible"
+    }
+   ]
+  },
+  {
+   "id": "c154",
+   "start": 778.39,
+   "dur": 2.89,
+   "kind": "raw",
+   "src": "broll/w137.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "scalecolossus261",
+   "start": 781.2833333333333,
+   "dur": 6,
+   "kind": "scalecolossus",
+   "image": "real/cv_stars.jpg",
+   "meters": 17000,
+   "unit": "años",
+   "eyebrow": "Las cuevas estelares",
+   "label": "el cielo pintado en la roca, con su época exacta",
+   "accent": "amber"
+  },
+  {
+   "id": "o018",
+   "start": 781.48,
+   "dur": 5,
+   "overlay": true,
+   "kind": "datestamp",
+   "value": "≈15.000 a.C.",
+   "label": "Las cuevas estelares",
+   "accent": "amber"
+  },
+  {
+   "id": "c155",
+   "start": 787.28,
+   "dur": 1.72,
+   "kind": "raw",
+   "src": "broll/w138.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c156",
+   "start": 789,
+   "dur": 6,
+   "kind": "raw",
+   "src": "broll/w139.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c157",
+   "start": 795,
+   "dur": 4.1,
+   "kind": "raw",
+   "src": "broll/w140.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c158",
+   "start": 799.1,
+   "dur": 5.9,
+   "kind": "raw",
+   "src": "broll/w141.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c159",
+   "start": 805,
+   "dur": 5.55,
+   "kind": "raw",
+   "src": "broll/w142.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c160",
+   "start": 810.55,
+   "dur": 5.48,
+   "kind": "raw",
+   "src": "broll/w143.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c161",
+   "start": 816.03,
+   "dur": 5.57,
+   "kind": "raw",
+   "src": "broll/w144.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c162",
+   "start": 821.6,
+   "dur": 5.5,
+   "kind": "raw",
+   "src": "broll/w145.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c163",
+   "start": 827.1,
+   "dur": 2.32,
+   "kind": "raw",
+   "src": "broll/w146.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "stat262",
+   "start": 829.4166666666666,
+   "dur": 5.2,
+   "kind": "stat",
+   "value": 17000,
+   "suffix": " años",
+   "label": "cartas del cielo, no de la tierra",
+   "eyebrow": "Cazadores mirando las estrellas",
+   "accent": "danger",
+   "hue": "amber"
+  },
+  {
+   "id": "c164",
+   "start": 834.62,
+   "dur": 0.72,
+   "kind": "raw",
+   "src": "broll/w147.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "aged263",
+   "start": 835.34,
+   "dur": 6,
+   "kind": "aged",
+   "heading": "El cielo de hace 17.000 años",
+   "eyebrow": "Cartas estelares",
+   "accent": "accent",
+   "hue": "amber",
+   "lines": [
+    {
+     "text": "Las constelaciones se mueven con los milenios."
+    },
+    {
+     "text": "Las marcas coinciden con el cielo"
+    },
+    {
+     "text": "de aquella época,",
+     "mark": true
+    },
+    {
+     "text": "no con el de ahora."
+    }
+   ]
+  },
+  {
+   "id": "c165",
+   "start": 841.34,
+   "dur": 3.66,
+   "kind": "raw",
+   "src": "broll/w148.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c166",
+   "start": 845,
+   "dur": 5.61,
+   "kind": "raw",
+   "src": "broll/w149.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c167",
+   "start": 850.61,
+   "dur": 4.49,
+   "kind": "raw",
+   "src": "broll/w150.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c168",
+   "start": 855.1,
+   "dur": 5.9,
+   "kind": "raw",
+   "src": "broll/w151.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c169",
+   "start": 861,
+   "dur": 5.45,
+   "kind": "raw",
+   "src": "broll/w152.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c170",
+   "start": 866.45,
+   "dur": 6.55,
+   "kind": "raw",
+   "src": "broll/w153.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c171",
+   "start": 873,
+   "dur": 4.55,
+   "kind": "raw",
+   "src": "broll/w154.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "rule264",
+   "start": 877.55,
+   "dur": 4.2,
+   "kind": "rule",
+   "number": "01",
+   "title": "El mapa de Piri Reis",
+   "label": "Imperio Otomano · 1513",
+   "hue": "red"
+  },
+  {
+   "id": "o019",
+   "start": 881.75,
+   "dur": 6,
+   "overlay": true,
+   "kind": "doclabel",
+   "label": "El mapa de Piri Reis",
+   "sub": "Imperio Otomano · 1513",
+   "accent": "red"
+  },
+  {
+   "id": "o020",
+   "start": 881.75,
+   "dur": 204.8,
+   "overlay": true,
+   "kind": "countrail",
+   "total": 7,
+   "rank": 1,
+   "name": "El mapa de Piri Reis",
+   "accent": "red"
+  },
+  {
+   "id": "c172",
+   "start": 881.75,
+   "dur": 1.35,
+   "kind": "raw",
+   "src": "broll/w155.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c173",
+   "start": 883.1,
+   "dur": 5.9,
+   "kind": "raw",
+   "src": "broll/w156.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c174",
+   "start": 889,
+   "dur": 6,
+   "kind": "raw",
+   "src": "broll/w157.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c175",
+   "start": 895,
+   "dur": 5.67,
+   "kind": "raw",
+   "src": "broll/w158.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c176",
+   "start": 900.67,
+   "dur": 5.53,
+   "kind": "raw",
+   "src": "broll/w159.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c177",
+   "start": 906.2,
+   "dur": 4.9,
+   "kind": "raw",
+   "src": "broll/w160.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c178",
+   "start": 911.1,
+   "dur": 5.58,
+   "kind": "raw",
+   "src": "broll/w161.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c179",
+   "start": 916.68,
+   "dur": 2.95,
+   "kind": "raw",
+   "src": "broll/w162.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "annotated265",
+   "start": 919.63,
+   "dur": 7,
+   "kind": "annotated",
+   "image": "real/pr_map.jpg",
+   "eyebrow": "Piri Reis · 1513",
+   "caption": "la franja inferior coincidiría con la costa antártica",
+   "hue": "red",
+   "annotations": [
+    {
+     "kind": "arrow",
+     "x": 0.5,
+     "y": 0.78,
+     "fromX": 0.75,
+     "fromY": 0.9,
+     "label": "Costa de la Tierra de la Reina Maud"
+    },
+    {
+     "kind": "underline",
+     "x": 0.4,
+     "y": 0.45,
+     "w": 0.2,
+     "label": "Sudamérica, con exactitud notable"
+    }
+   ]
+  },
+  {
+   "id": "c180",
+   "start": 926.63,
+   "dur": 1.98,
+   "kind": "raw",
+   "src": "broll/w163.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c181",
+   "start": 928.61,
+   "dur": 5.65,
+   "kind": "raw",
+   "src": "broll/w164.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c182",
+   "start": 934.26,
+   "dur": 4.84,
+   "kind": "raw",
+   "src": "broll/w165.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c183",
+   "start": 939.1,
+   "dur": 5.57,
+   "kind": "raw",
+   "src": "broll/w166.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c184",
+   "start": 944.67,
+   "dur": 2.61,
+   "kind": "raw",
+   "src": "broll/w167.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "scalecolossus266",
+   "start": 947.2833333333333,
+   "dur": 6,
+   "kind": "scalecolossus",
+   "image": "real/pr_map.jpg",
+   "meters": 1949,
+   "unit": "",
+   "eyebrow": "El mapa de Piri Reis",
+   "label": "la costa antártica que recién vimos en 1949",
+   "accent": "red"
+  },
+  {
+   "id": "o021",
+   "start": 947.48,
+   "dur": 5,
+   "overlay": true,
+   "kind": "datestamp",
+   "value": "1513",
+   "label": "El mapa de Piri Reis",
+   "accent": "red"
+  },
+  {
+   "id": "c185",
+   "start": 953.28,
+   "dur": 0.3,
+   "kind": "raw",
+   "src": "broll/w168.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "bars267",
+   "start": 953.5833333333333,
+   "dur": 6.5,
+   "kind": "bars",
+   "eyebrow": "Cuándo lo vimos nosotros",
+   "title": "Él lo dibujó en 1513",
+   "unit": "",
+   "accent": "danger",
+   "hue": "red",
+   "bars": [
+    {
+     "label": "Piri Reis lo dibuja",
+     "value": 1513,
+     "display": "1513"
+    },
+    {
+     "label": "Se descubre la Antártida",
+     "value": 1820,
+     "display": "1820"
+    },
+    {
+     "label": "Mapeamos bajo el hielo",
+     "value": 1949,
+     "display": "1949"
+    }
+   ]
+  },
+  {
+   "id": "c186",
+   "start": 960.08,
+   "dur": 1.41,
+   "kind": "raw",
+   "src": "broll/w169.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c187",
+   "start": 961.49,
+   "dur": 5.51,
+   "kind": "raw",
+   "src": "broll/w170.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c188",
+   "start": 967,
+   "dur": 5.49,
+   "kind": "raw",
+   "src": "broll/w171.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c189",
+   "start": 972.49,
+   "dur": 3.63,
+   "kind": "raw",
+   "src": "broll/w172.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "callout268",
+   "start": 976.12,
+   "dur": 6,
+   "kind": "callout",
+   "figure": "1513",
+   "image": "real/pr_map.jpg",
+   "eyebrow": "De su puño y letra",
+   "caption": "no inventé nada: copié mapas mucho más antiguos",
+   "accent": "danger",
+   "hue": "red"
+  },
+  {
+   "id": "c190",
+   "start": 982.12,
+   "dur": 1.93,
+   "kind": "raw",
+   "src": "broll/w173.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c191",
+   "start": 984.05,
+   "dur": 5.44,
+   "kind": "raw",
+   "src": "broll/w174.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c192",
+   "start": 989.49,
+   "dur": 5.61,
+   "kind": "raw",
+   "src": "broll/w175.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c193",
+   "start": 995.1,
+   "dur": 5.9,
+   "kind": "raw",
+   "src": "broll/w176.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c194",
+   "start": 1001,
+   "dur": 6,
+   "kind": "raw",
+   "src": "broll/w177.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c195",
+   "start": 1007,
+   "dur": 5.48,
+   "kind": "raw",
+   "src": "broll/w178.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c196",
+   "start": 1012.48,
+   "dur": 4.54,
+   "kind": "raw",
+   "src": "broll/w179.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "stat269",
+   "start": 1017.0166666666667,
+   "dur": 5.2,
+   "kind": "stat",
+   "value": 1513,
+   "suffix": "",
+   "label": "él confesó: solo copió mapas mucho más antiguos",
+   "eyebrow": "La Antártida sin hielo",
+   "accent": "danger",
+   "hue": "red"
+  },
+  {
+   "id": "c197",
+   "start": 1022.22,
+   "dur": 0.88,
+   "kind": "raw",
+   "src": "broll/w180.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c198",
+   "start": 1023.1,
+   "dur": 5.23,
+   "kind": "raw",
+   "src": "broll/w181.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "aged270",
+   "start": 1028.33,
+   "dur": 6.5,
+   "kind": "aged",
+   "heading": "Lo que se quemó con ellas",
+   "eyebrow": "Bibliotecas perdidas",
+   "accent": "danger",
+   "hue": "red",
+   "lines": [
+    {
+     "text": "Cuando ardía una gran biblioteca"
+    },
+    {
+     "text": "no se perdían solo libros:",
+     "mark": true
+    },
+    {
+     "text": "se perdían mapas, mediciones, siglos"
+    },
+    {
+     "text": "de gente mirando el cielo.",
+     "mark": true
+    }
+   ]
+  },
+  {
+   "id": "c199",
+   "start": 1034.83,
+   "dur": 0.17,
+   "kind": "raw",
+   "src": "broll/w182.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c200",
+   "start": 1035,
+   "dur": 6,
+   "kind": "raw",
+   "src": "broll/w183.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c201",
+   "start": 1041,
+   "dur": 5.58,
+   "kind": "raw",
+   "src": "broll/w184.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c202",
+   "start": 1046.58,
+   "dur": 6.42,
+   "kind": "raw",
+   "src": "broll/w185.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c203",
+   "start": 1053,
+   "dur": 6,
+   "kind": "raw",
+   "src": "broll/w186.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c204",
+   "start": 1059,
+   "dur": 6,
+   "kind": "raw",
+   "src": "broll/w187.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c205",
+   "start": 1065,
+   "dur": 6,
+   "kind": "raw",
+   "src": "broll/w188.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c206",
+   "start": 1071,
+   "dur": 6,
+   "kind": "raw",
+   "src": "broll/w189.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c207",
+   "start": 1077,
+   "dur": 6,
+   "kind": "raw",
+   "src": "broll/w190.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c208",
+   "start": 1083,
+   "dur": 6,
+   "kind": "raw",
+   "src": "broll/w191.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "c209",
+   "start": 1089,
+   "dur": 6,
+   "kind": "raw",
+   "src": "broll/w192.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c210",
+   "start": 1095,
+   "dur": 6,
+   "kind": "raw",
+   "src": "broll/w193.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c211",
+   "start": 1101,
+   "dur": 5.63,
+   "kind": "raw",
+   "src": "broll/w194.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c212",
+   "start": 1106.63,
+   "dur": 5.52,
+   "kind": "raw",
+   "src": "broll/w195.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c213",
+   "start": 1112.15,
+   "dur": 5.43,
+   "kind": "raw",
+   "src": "broll/w196.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c214",
+   "start": 1117.58,
+   "dur": 4.67,
+   "kind": "raw",
+   "src": "broll/w197.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "timeline271",
+   "start": 1122.25,
+   "dur": 8.5,
+   "kind": "timeline",
+   "eyebrow": "Copias de copias de un saber perdido",
+   "title": "Mapas que llegaron de un mundo anterior",
+   "events": [
+    {
+     "year": "≈15.000 a.C.",
+     "label": "Cielo en cuevas"
+    },
+    {
+     "year": "1513",
+     "label": "Piri Reis"
+    },
+    {
+     "year": "1531",
+     "label": "Oronteus Finaeus"
+    },
+    {
+     "year": "1737",
+     "label": "Buache"
+    },
+    {
+     "year": "1949",
+     "label": "Radar Antártida"
+    }
+   ]
+  },
+  {
+   "id": "c215",
+   "start": 1130.75,
+   "dur": 0.3,
+   "kind": "raw",
+   "src": "broll/w199.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "checklist272",
+   "start": 1131.05,
+   "dur": 7,
+   "kind": "checklist",
+   "eyebrow": "Una misma idea perturbadora",
+   "title": "Lo que comparten los 7",
+   "accent": "accent",
+   "hue": "amber",
+   "items": [
+    {
+     "text": "Muestran lo que su época no podía conocer",
+     "state": "done"
+    },
+    {
+     "text": "Sus autores admiten copiar fuentes más viejas",
+     "state": "done"
+    },
+    {
+     "text": "Esas fuentes originales se perdieron",
+     "state": "done"
+    },
+    {
+     "text": "El saber no siempre avanza en línea recta",
+     "state": "doing"
+    }
+   ]
+  },
+  {
+   "id": "c216",
+   "start": 1138.05,
+   "dur": 2.95,
+   "kind": "raw",
+   "src": "broll/w200.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c217",
+   "start": 1141,
+   "dur": 6,
+   "kind": "raw",
+   "src": "broll/w201.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c218",
+   "start": 1147,
+   "dur": 6,
+   "kind": "raw",
+   "src": "broll/w202.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c219",
+   "start": 1153,
+   "dur": 6,
+   "kind": "raw",
+   "src": "broll/w203.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c220",
+   "start": 1159,
+   "dur": 6,
+   "kind": "raw",
+   "src": "broll/w204.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c221",
+   "start": 1165,
+   "dur": 5.41,
+   "kind": "raw",
+   "src": "broll/w205.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c222",
+   "start": 1170.41,
+   "dur": 5.52,
+   "kind": "raw",
+   "src": "broll/w206.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c223",
+   "start": 1175.93,
+   "dur": 5.47,
+   "kind": "raw",
+   "src": "broll/w207.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c224",
+   "start": 1181.4,
+   "dur": 5.6,
+   "kind": "raw",
+   "src": "broll/w208.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c225",
+   "start": 1187,
+   "dur": 3.7,
+   "kind": "raw",
+   "src": "broll/w209.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "headline273",
+   "start": 1190.7,
+   "dur": 6,
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "Máquinas"
+    },
+    {
+     "t": "que"
+    },
+    {
+     "t": "hoy"
+    },
+    {
+     "t": "no"
+    },
+    {
+     "t": "sabríamos"
+    },
+    {
+     "t": "construir",
+     "hl": true
+    }
+   ],
+   "bg": "image",
+   "image": "real/ma_world.jpg",
+   "hue": "blue",
+   "size": 84
+  },
+  {
+   "id": "c226",
+   "start": 1196.7,
+   "dur": 2.05,
+   "kind": "raw",
+   "src": "broll/w209.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c227",
+   "start": 1198.75,
+   "dur": 5.45,
+   "kind": "raw",
+   "src": "broll/w211.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c228",
+   "start": 1204.2,
+   "dur": 5.63,
+   "kind": "raw",
+   "src": "broll/w212.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c229",
+   "start": 1209.83,
+   "dur": 5.66,
+   "kind": "raw",
+   "src": "broll/w213.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c230",
+   "start": 1215.49,
+   "dur": 5.51,
+   "kind": "raw",
+   "src": "broll/w214.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "c231",
+   "start": 1221,
+   "dur": 5.11,
+   "kind": "raw",
+   "src": "broll/w215.mp4",
+   "hue": "amber"
+  }
+ ]
+}
