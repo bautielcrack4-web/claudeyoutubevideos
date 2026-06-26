@@ -1,0 +1,21 @@
+// Config de #6 puertas para build_dense.mjs
+export default {
+  headlineAt: "hoy vamos a pararnos frente a siete",
+  headline: { tokens: [["7", "hl"], "puertas", "antiguas", "que", "nadie", "ha", "logrado", ["abrir", "hl"]], img: "pue_hero", q: "ancient sealed stone door mysterious dramatic", hue: "amber", size: 84 },
+  cierreAt: "hemos estado frente a siete puertas",
+  timelineAt: "todas comparten una misma",
+  proximoAt: "en el proximo viaje vamos a desplegar",
+  timeline: { eyebrow: "Construimos para mostrar, y para esconder", title: "Puertas hechas para no abrirse", events: [
+    { year: "2.500 a.C.", label: "Falsa puerta" }, { year: "≈500 d.C.", label: "Puerta del Sol" }, { year: "210 a.C.", label: "Tumba de Qin" }, { year: "s. XVI", label: "Padmanabhaswamy" }, { year: "Hoy", label: "Bóveda B" },
+  ] },
+  teaser: { tokens: ["Mapas", "que", "muestran", "lo", ["imposible", "hl"]], img: "pue_map", q: "ancient antique world map old", hue: "blue", size: 84 },
+  DATA: [
+    { at: "numero siete para entender", n: "07", name: "La falsa puerta egipcia", loc: "Antiguo Egipto", age: "≈ 2.500 a.C.", img: "fp_door", imgq: "egyptian false door stela carved tomb", imgc: "an Egyptian false door carved in stone in a tomb", m: 4000, unit: "años", scl: "una puerta maciza, solo para los muertos", hue: "amber", stat: { value: 0, prefix: "0", suffix: " salida", label: "puerta de verdad, pero solo para el alma", eyebrow: "Umbral al más allá" } },
+    { at: "numero seis vamos a peru", n: "06", name: "Naupa Iglesia", loc: "Andes, Perú", age: "Desconocida", img: "ni_portal", imgq: "Naupa Iglesia carved rock portal peru precise", imgc: "the precise rock-cut portal of Naupa Iglesia", m: 90, unit: "° rectos", scl: "superficies planas como un espejo, a mano", hue: "blue", stat: { value: 0, prefix: "±0", suffix: " mm", label: "precisión que hace pensar en máquinas", eyebrow: "¿Cinceles imposibles?" } },
+    { at: "numero cinco nos quedamos en peru", n: "05", name: "Puerta de Hayu Marca", loc: "Lago Titicaca, Perú", age: "Leyenda", img: "hm_gate", imgq: "Hayu Marca gate of gods rock door peru", imgc: "the Hayu Marca gate carved into a cliff in Peru", m: 7, unit: "m", scl: "de puerta tallada en el acantilado", hue: "amber", stat: { value: 0, prefix: "¿", suffix: " portal?", label: "la leyenda dice que algunos la cruzaron", eyebrow: "La puerta de los dioses" } },
+    { at: "numero cuatro cruzamos a bolivia", n: "04", name: "La Puerta del Sol", loc: "Tiahuanaco, Bolivia", age: "≈ 500 d.C.", img: "ts_gate", imgq: "Gate of the Sun Tiwanaku monolith carved", imgc: "the monolithic Gate of the Sun at Tiwanaku", m: 10, unit: "toneladas", scl: "tallada de un solo bloque de roca durísima", hue: "blue", stat: { value: 1, suffix: " bloque", label: "símbolos astronómicos cortados con precisión", eyebrow: "Sin metal duro ni rueda" } },
+    { at: "numero tres volvemos a egipto", n: "03", name: "Las cámaras de la Esfinge", loc: "Giza, Egipto", age: "Sin abrir", img: "es_sphinx", imgq: "Great Sphinx Giza radar hidden chamber", imgc: "the Great Sphinx of Giza hiding sealed chambers below", m: 0, unit: "abiertas", scl: "cavidades detectadas que no nos dejan ver", hue: "red", stat: { value: 0, prefix: "?", suffix: " permisos", label: "cámaras bajo el monumento, selladas", eyebrow: "Excavación negada" } },
+    { at: "numero dos vamos a china", n: "02", name: "La tumba de Qin Shi Huang", loc: "Xi'an, China", age: "210 a.C.", img: "qn_tomb", imgq: "Qin Shi Huang tomb mound terracotta sealed", imgc: "the sealed unexcavated burial mound of Qin Shi Huang", m: 2200, unit: "años", scl: "sellada, con ríos de mercurio adentro", hue: "red", stat: { value: 2200, suffix: " años", label: "nadie se atreve a abrir la cámara del emperador", eyebrow: "Veneno de mercurio real" } },
+    { at: "y llegamos al numero uno", n: "01", name: "La Bóveda B", loc: "Padmanabhaswamy, India", age: "Sigue sellada", img: "pb_door", imgq: "sealed metal door two serpents temple india", imgc: "the sealed metal Vault B door with two carved serpents", m: 20, unit: "mil M USD", scl: "ya hallado · y la Bóveda B sigue cerrada", hue: "amber", stat: { value: 0, prefix: "¿", suffix: " la abrís?", label: "una puerta de oro que nadie se atreve a tocar", eyebrow: "Sellada con 2 serpientes" } },
+  ],
+};
