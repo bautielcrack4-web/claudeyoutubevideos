@@ -31,8 +31,9 @@ if (fs.existsSync(capPath)) {
     else { cur.end = w.e; cur.words.push(w.t); }
     const len = cur.end - cur.start;
     const gap = k + 1 < W.length ? W[k + 1].s - w.e : 99; // pausa hasta la próxima palabra
-    // cerrá la ventana al pasar el target SI hay una pausa real, o si se estiró demasiado, o al final
-    if (k === W.length - 1 || (len >= WIN * 0.7 && gap >= 0.18) || len >= WIN * 1.45) {
+    // cerrá la ventana al pasar el target SI hay una micro-pausa, o si se estiró al tope, o al final.
+    // narradores fluidos casi no pausan → el tope fuerza el corte rápido (~WIN s) = densidad barcos.
+    if (k === W.length - 1 || (len >= WIN * 0.55 && gap >= 0.10) || len >= WIN * 1.08) {
       wins.push({ start: cur.start, end: cur.end, text: cur.words.join(" ") });
       cur = null;
     }
