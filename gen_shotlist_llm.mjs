@@ -60,17 +60,23 @@ if (fs.existsSync(capPath)) {
   console.log(`${wins.length} ventanas (INTERPOLADAS ~${WIN}s, sin Whisper) sobre ${(END / 60).toFixed(1)} min`);
 }
 
-const SYS = `Sos un director de fotografía de documentales de misterio/arqueología (canal "Crónicas Perdidas", español). Para cada fragmento de NARRACIÓN te doy el texto que se escucha en ese instante. Devolvé el clip de B-ROLL REAL (de YouTube) que hay que poner JUSTO ahí.
-REGLAS DE ORO:
-- La query debe tener SENTIDO con lo que se narra en ese fragmento (mostrar eso, o algo muy relacionado y visual).
-- NUNCA uses la palabra literal del narrador; traducí la idea a una imagen concreta y filmable.
-- Específica, visual, en INGLÉS (para buscar en YouTube), 2-5 palabras.
-- Pensá en metraje documental real que exista: lugares, objetos, gente trabajando, tomas aéreas, primeros planos, etc.
-- Mantené coherencia con el TEMA del video.
-Devolvé SOLO JSON: {"items":[{"i":<indice>,"c":"<concepto visual en inglés, 1 frase>","q":["query1","query2"]}, ...]} con un item por fragmento, en orden.`;
+const SYS = `Sos el director de fotografía de un documental de misterio/arqueología (canal "Crónicas Perdidas", español). Te doy la NARRACIÓN CONTINUA partida en fragmentos numerados, EN ORDEN. Para CADA fragmento devolvé el clip de B-ROLL REAL (de YouTube) que va JUSTO ahí.
+CÓMO PENSAR (lo MÁS importante):
+- Los fragmentos son UN RELATO CONTINUO, no frases sueltas. Antes de elegir, ENTENDÉ de qué se está hablando usando los fragmentos VECINOS y el CONTEXTO PREVIO: resolvé pronombres y objetos implícitos.
+  · Ej: si una frase atrás se dijo "lo sellaron con mercurio" y ahora dice "ese líquido", la query es "liquid mercury", NO "water".
+  · Ej: si se viene hablando de "la tumba de Qin" y ahora dice "la cámara", es "Qin Shi Huang tomb chamber", no una cámara cualquiera.
+  · Ej: si dos frases atrás dijo "con aceite" y ahora dice "mojar el techo", la query es "pouring oil on a roof", no agua.
+- El clip debe mostrar lo que REALMENTE está pasando en ESE punto del relato, no la palabra aislada y descontextualizada.
+REGLAS:
+- NUNCA uses la palabra literal del narrador; traducí la IDEA (ya resuelta en contexto) a una imagen concreta y filmable.
+- Específica, visual, en INGLÉS (para buscar en YouTube), 2-5 palabras. Metraje real que exista: lugares, objetos, gente trabajando, aéreas, primeros planos.
+- Coherencia con el TEMA y con la SECCIÓN que se viene narrando.
+Devolvé SOLO JSON: {"items":[{"i":<indice>,"c":"<concepto visual en inglés, resuelto en contexto>","q":["query1","query2"]}, ...]} un item por fragmento, en orden.`;
 
-async function batch(items) {
-  const user = `TEMA DEL VIDEO: ${topic}\n\nFRAGMENTOS:\n` + items.map((w) => `${w.i}. "${w.text.trim().slice(0, 240)}"`).join("\n");
+async function batch(items, ctxText) {
+  const user = `TEMA DEL VIDEO: ${topic}\n\n` +
+    (ctxText ? `CONTEXTO PREVIO (lo que se venía narrando justo antes — NO generes para esto, es solo para entender):\n"${ctxText}"\n\n` : "") +
+    `NARRACIÓN CONTINUA (un clip por fragmento; usá los vecinos como contexto):\n` + items.map((w) => `${w.i}. "${w.text.trim().slice(0, 240)}"`).join("\n");
   for (let attempt = 0; attempt < 4; attempt++) {
     try {
       const r = await fetch("https://api.openai.com/v1/chat/completions", {
@@ -87,12 +93,41 @@ async function batch(items) {
 
 const indexed = wins.map((w, i) => ({ ...w, i }));
 const out = new Map();
-const B = 40;
+const B = 30, CTX = 6; // lotes consecutivos + 6 ventanas de contexto previo (resuelve antecedentes entre lotes)
 for (let i = 0; i < indexed.length; i += B) {
   const chunk = indexed.slice(i, i + B);
-  const res = await batch(chunk);
+  const ctxText = indexed.slice(Math.max(0, i - CTX), i).map((w) => w.text.trim()).join(" ");
+  const res = await batch(chunk, ctxText);
   for (const it of res) if (it && it.i != null) out.set(it.i, it);
-  process.stdout.write(`\r  ${Math.min(i + B, indexed.length)}/${indexed.length}`);
+  process.stdout.write(`\r  gen ${Math.min(i + B, indexed.length)}/${indexed.length}`);
+}
+console.log("");
+
+// ── PASADA DE COHERENCIA: relee la secuencia (frase → clip elegido) y corrige los que NO encajan
+//    con lo narrado en contexto (concepto genérico, fuera de tema, o que ignora un antecedente). ──
+async function repair(items) {
+  const user = `TEMA: ${topic}\nAbajo va la narración EN ORDEN con el concepto de clip elegido para cada fragmento. Detectá SOLO los que NO encajan con lo que se narra EN CONTEXTO (genéricos, fuera de tema, o que ignoran un antecedente como "con aceite"/"de mercurio"/"esa cámara"). Para ESOS, devolvé un concepto+queries corregidos usando el contexto de los vecinos. Los que ya están bien, ignoralos.
+${items.map((w) => `${w.i}. NARRA: "${w.text.trim().slice(0, 160)}"  →  CLIP: ${w.c}`).join("\n")}
+Devolvé SOLO JSON: {"fix":[{"i":<indice>,"c":"<concepto corregido, inglés>","q":["q1","q2"]}, ...]} solo con los que hay que cambiar.`;
+  for (let attempt = 0; attempt < 4; attempt++) {
+    try {
+      const r = await fetch("https://api.openai.com/v1/chat/completions", {
+        method: "POST", headers: { Authorization: `Bearer ${KEY}`, "Content-Type": "application/json" },
+        body: JSON.stringify({ model: MODEL, messages: [{ role: "system", content: "Sos un editor de documentales meticuloso. Solo corregís los clips que no encajan con la narración en contexto." }, { role: "user", content: user }], response_format: { type: "json_object" }, temperature: 0.3 }),
+      });
+      if (!r.ok) { const t = await r.text(); if (r.status === 429 || r.status >= 500) { await new Promise((x) => setTimeout(x, 4000 * (attempt + 1))); continue; } throw new Error(t.slice(0, 200)); }
+      return JSON.parse((await r.json()).choices[0].message.content).fix || [];
+    } catch (e) { if (attempt === 3) return []; await new Promise((x) => setTimeout(x, 3000)); }
+  }
+  return [];
+}
+let fixed = 0;
+const RB = 50;
+for (let i = 0; i < indexed.length; i += RB) {
+  const chunk = indexed.slice(i, i + RB).map((w) => ({ ...w, c: (out.get(w.i) || {}).c || topic }));
+  const fixes = await repair(chunk);
+  for (const f of fixes) if (f && f.i != null && out.has(f.i) && f.c) { out.set(f.i, { i: f.i, c: f.c, q: Array.isArray(f.q) && f.q.length ? f.q : [f.c] }); fixed++; }
+  process.stdout.write(`\r  coherencia ${Math.min(i + RB, indexed.length)}/${indexed.length} · ${fixed} corregidos`);
 }
 console.log("");
 
