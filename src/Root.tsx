@@ -24,6 +24,7 @@ import { MainSandia, TOTAL_FRAMES_SANDIA } from "./VideoEdit/Main_sandia";
 import { MainRampump, TOTAL_FRAMES_RAMPUMP } from "./VideoEdit/Main_rampump";
 import { MainZeer, TOTAL_FRAMES_ZEER } from "./VideoEdit/Main_zeer";
 import { MainCalor, TOTAL_FRAMES_CALOR } from "./VideoEdit/Main_calor";
+import { MainCarne, TOTAL_FRAMES_CARNE } from "./VideoEdit/Main_carne";
 import { MainLuz, TOTAL_FRAMES_LUZ } from "./VideoEdit/Main_luz";
 import { MainMedicaid, TOTAL_FRAMES_MED } from "./VideoEdit/Main_medicaid";
 import { MainViuda, TOTAL_FRAMES_VD } from "./VideoEdit/Main_viuda";
@@ -39,6 +40,7 @@ import { MainOxido, TOTAL_FRAMES_OXIDO } from "./VideoEdit/Main_oxido";
 import { MainMosquitos, TOTAL_FRAMES_MOSQUITOS } from "./VideoEdit/Main_mosquitos";
 import { MainGotera, TOTAL_FRAMES_GOTERA } from "./VideoEdit/Main_gotera";
 import { MainPuertas, TOTAL_FRAMES_PUE } from "./VideoEdit/Main_puertas";
+// import { MainMapas, TOTAL_FRAMES_MAP } from "./VideoEdit/Main_mapas"; // roto: falta cues_mapas.gen
 
 // ── SOLO los videos ACTIVOS quedan registrados ──
 // Las composiciones viejas (Fly, Hipos, Bisontes, Objetos, Civil, Top7Demo,
@@ -62,6 +64,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="Tuneles" component={MainTuneles} durationInFrames={TOTAL_FRAMES_TUN} fps={30} width={1920} height={1080} />
       {/* VIDEO 6 Crónicas Perdidas — "7 Puertas Antiguas Que Nadie Ha Logrado Abrir" · faceless · voz Trevor */}
       <Composition id="Puertas" component={MainPuertas} durationInFrames={TOTAL_FRAMES_PUE} fps={30} width={1920} height={1080} />
+      {/* VIDEO 7 Crónicas Perdidas — "7 Mapas..." (deshabilitado: falta cues_mapas.gen) */}
       {/* VIDEO ACTIVO — Ben retirado · "Los gastos hormiga" · AVATAR · look ALARMA */}
       <Composition id="Hormiga" component={MainHormiga} durationInFrames={TOTAL_FRAMES_HB} fps={30} width={1920} height={1080} />
       {/* VIDEO ACTIVO — Ben retirado · "Las estafas que vacían la cuenta" · AVATAR · look ALARMA */}
@@ -160,6 +163,15 @@ export const RemotionRoot: React.FC = () => {
         id="Calor"
         component={MainCalor}
         durationInFrames={TOTAL_FRAMES_CALOR}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
+      {/* VIDEO ACTIVO — Keep meat a year with no fridge (Claudio · off-grid EN) */}
+      <Composition
+        id="Carne"
+        component={MainCarne}
+        durationInFrames={TOTAL_FRAMES_CARNE}
         fps={30}
         width={1920}
         height={1080}
