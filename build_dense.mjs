@@ -17,6 +17,8 @@ let full = ""; const pos2t = [];
 for (let i = 0; i < TM.length; i++) { const seg = norm(TM[i].text) + " "; if (seg.length <= 1) continue; const t0 = TM[i].start, t1 = i + 1 < TM.length ? TM[i + 1].start : t0 + seg.length / 14; for (let k = 0; k < seg.length; k++) pos2t.push(t0 + (t1 - t0) * (k / seg.length)); full += seg; }
 let _cur = 0;
 const at = (first) => { const q = norm(first); const idx = full.indexOf(q, _cur); if (idx < 0) return null; _cur = idx + q.length; return +pos2t[idx].toFixed(2); };
+// búsqueda INDEPENDIENTE (no avanza _cur) para componentes EXTRA anclados en cualquier orden
+const atFree = (first) => { const q = norm(first); const idx = full.indexOf(q); return idx < 0 ? null : +pos2t[idx].toFixed(2); };
 
 const B = [], I = []; let _n = 0;
 const nid = (p) => p + String(++_n).padStart(3, "0");
@@ -51,17 +53,61 @@ for (let di = 0; di < cfg.DATA.length; di++) {
 // cierre: timeline + teaser headline
 if (tlT != null) comps.push({ start: tlT, dur: 8.5, kind: "timeline", eyebrow: cfg.timeline.eyebrow, title: cfg.timeline.title, events: cfg.timeline.events });
 if (proxT != null) comps.push({ start: proxT, dur: 6.0, kind: "headline", tokens: tk(cfg.teaser.tokens), bg: "image", image: spImg(cfg.teaser.img, cfg.teaser.q, cfg.teaser.q), hue: cfg.teaser.hue, size: cfg.teaser.size || 84 });
+// ── COMPONENTES ESTRUCTURADOS EXTRA (variedad: journey/bars/cross/annotated/aged/checklist/
+//    callout), anclados a frases puntuales del guion. Data en cfg.EXTRA. Le dan al video el
+//    salto de "5 componentes repetidos" a un kit rico, con sentido en cada momento. ──
+const overlapsComp = (s, d) => comps.some((c) => !c.overlay && s < c.start + c.dur && s + d > c.start);
+for (const e of cfg.EXTRA || []) {
+  const t0 = atFree(e.at); if (t0 == null) { console.log(`⚠ EXTRA sin anclar: "${e.at}" (${e.kind})`); continue; }
+  const { at: _a, dur = 5.5, ...rest } = e;
+  let s = t0;
+  if (overlapsComp(s, dur)) {
+    // pisa un componente de sección → mover JUSTO después del que pisa; si no entra, justo antes; si no, skip
+    const hit = comps.filter((c) => !c.overlay && s < c.start + c.dur && s + dur > c.start);
+    const after = Math.max(...hit.map((c) => c.start + c.dur)) + 0.3;
+    const before = Math.min(...hit.map((c) => c.start)) - dur - 0.3;
+    if (!overlapsComp(after, dur)) s = after;
+    else if (before > 1 && before > t0 - 14 && !overlapsComp(before, dur)) s = before;
+    else { console.log(`⚠ EXTRA ${e.kind} "${e.at}" sin gap libre → skip`); continue; }
+  }
+  comps.push({ start: s, dur, ...rest });
+}
 comps.sort((a, b) => a.start - b.start);
+
+// ── COLD-OPEN curado: flash de los clips MÁS DRAMÁTICOS en los primeros COLD s (retención). ──
+//   La narración-gancho del inicio es general/teaser ("puertas que no fueron hechas para abrirse…
+//   la última podría guardar el mayor tesoro") → mostrar ahí el clímax (oro, ejército, bóveda) calza.
+const COLD = +(process.env.COLD_OPEN ?? 13);
+const coldCuts = [];
+try {
+  const MATCH = JSON.parse(fs.readFileSync(`public/broll/match_${slug}.json`, "utf8"));
+  const txt = (m) => ((m.concept || "") + " " + (Array.isArray(m.query) ? m.query.join(" ") : "")).toLowerCase();
+  const DRAMA = /(gold|treasure|tomb|terracotta|army|sphinx|vault|serpent|snake|skull|mummy|jewel|crown|temple|mercury|ruin|sealed|cave|monument|pyramid|carved|statue|idol|chamber|excavat)/;
+  const KEY = /(gold|treasure|terracotta|army|vault|serpent|jewel|crown|mummy|idol)/; // clímax real (oro/ejército/bóveda)
+  const dramatic = MATCH.filter((m) => fs.existsSync("public/broll/" + m.name + ".mp4") && DRAMA.test(txt(m)));
+  dramatic.sort((a, b) => (KEY.test(txt(b)) ? 1 : 0) - (KEY.test(txt(a)) ? 1 : 0));
+  const pick = [];
+  for (const m of dramatic) { if (!pick.includes(m.name)) pick.push(m.name); if (pick.length >= 8) break; }
+  if (COLD > 0 && pick.length >= 4) {
+    const per = COLD / pick.length;
+    for (let k = 0; k < pick.length; k++) coldCuts.push({ start: +(k * per).toFixed(2), dur: +per.toFixed(2), name: pick[k] });
+    console.log(`cold-open: ${pick.length} clips dramáticos en ${COLD}s → ${pick.join(", ")}`);
+  }
+} catch { /* sin match list → sin cold-open */ }
+
 // ── DISEÑO DE SONIDO documental: riser+boom en cada apertura de sección/headline, boom en cada número ──
 const sfx = [];
 for (const c of comps) {
   if (c.kind === "rule" || c.kind === "headline") { sfx.push({ t: +(c.start - 1.2).toFixed(2), src: "sfx/cp_riser.wav", g: 0.5 }); sfx.push({ t: +c.start.toFixed(2), src: "sfx/cp_boom.wav", g: 0.55 }); }
   else if (c.kind === "stat") sfx.push({ t: +c.start.toFixed(2), src: "sfx/cp_boom.wav", g: 0.4 });
-  else if (c.kind === "scalecolossus" || c.kind === "timeline") sfx.push({ t: +(c.start - 0.4).toFixed(2), src: "sfx/cp_whoosh.wav", g: 0.45 });
+  else if (["scalecolossus", "timeline", "journey", "bars", "cross", "annotated", "aged", "checklist", "callout"].includes(c.kind)) sfx.push({ t: +(c.start - 0.4).toFixed(2), src: "sfx/cp_whoosh.wav", g: 0.45 });
 }
+// cold-open: whoosh de apertura + boom seco y bajo en cada corte del flash de clímax
+if (coldCuts.length) { sfx.push({ t: 0.05, src: "sfx/cp_whoosh.wav", g: 0.4 }); for (const cc of coldCuts) sfx.push({ t: +cc.start.toFixed(2), src: "sfx/cp_boom.wav", g: 0.28 }); }
 sfx.sort((a, b) => a.t - b.t);
 fs.writeFileSync(`src/VideoEdit/sfx_${slug}.json`, JSON.stringify(sfx, null, 1));
 const blocked = comps.map((c) => [c.start, c.start + c.dur]);
+if (coldCuts.length) blocked.push([0, COLD]); // el cold-open ocupa [0,COLD] → el loop denso no pisa
 const inBlocked = (a, b) => blocked.some(([s, e]) => a < e && b > s);
 const trimToFree = (a, b) => { for (const [s, e] of blocked) { if (a < e && b > s) { if (a < s) b = Math.min(b, s); else return null; } } return b > a + 0.3 ? [a, b] : null; };
 
@@ -86,10 +132,12 @@ for (let i = 0; i < avail.length; i++) {
   placed++;
 }
 for (const c of comps) C(c.start, c.dur, c);
+// cold-open: cortes rápidos del flash de clímax encima de [0,COLD]
+for (const cc of coldCuts) B.push({ id: nid("c"), start: cc.start, dur: cc.dur, kind: "raw", src: "broll/" + cc.name + ".mp4", hue: "cold" });
 
 B.sort((x, y) => x.start - y.start);
 fs.mkdirSync("beatsheet", { recursive: true });
-fs.writeFileSync(`beatsheet/${slug}.json`, JSON.stringify({ video: slug, beats: B }, null, 1));
+fs.writeFileSync(`beatsheet/${slug}.json`, JSON.stringify({ video: slug, clipsfirst: true, beats: B }, null, 1));
 fs.writeFileSync(`public/real/bing_${slug}.json`, JSON.stringify(I, null, 1));
 const raws = B.filter((b) => b.kind === "raw").length;
 console.log(`beats: ${B.length} · clips REALES únicos: ${placed} (${missing} ventanas sin clip → absorbidas, 0 negros) · segmentos: ${segs} · comp: ${comps.length} · dur ${(END / 60).toFixed(1)}min`);

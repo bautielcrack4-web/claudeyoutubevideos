@@ -28,3 +28,17 @@ ttsenv/
 whisper_cuda/
 youtube/meta/*.png
 *.tar
+
+# temp/working dirs (matchfarm, fetch, diag, stills)
+_match/
+_pubshow/
+_fill*/
+_diag/
+_w[0-9]*
+_slice*.json
+_wlog*.txt
+_check_*.png
+_assets_list.txt
+lista_*.txt
+_*_tts*.log
+cookies/_*/

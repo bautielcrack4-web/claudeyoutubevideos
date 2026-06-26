@@ -38,7 +38,7 @@ import { MainTuneles, TOTAL_FRAMES_TUN } from "./VideoEdit/Main_tuneles";
 import { MainOxido, TOTAL_FRAMES_OXIDO } from "./VideoEdit/Main_oxido";
 import { MainMosquitos, TOTAL_FRAMES_MOSQUITOS } from "./VideoEdit/Main_mosquitos";
 import { MainGotera, TOTAL_FRAMES_GOTERA } from "./VideoEdit/Main_gotera";
-// import { MainPuertas, TOTAL_FRAMES_PUE } from "./VideoEdit/Main_puertas"; // roto: falta cues_puertas.gen
+import { MainPuertas, TOTAL_FRAMES_PUE } from "./VideoEdit/Main_puertas";
 
 // ── SOLO los videos ACTIVOS quedan registrados ──
 // Las composiciones viejas (Fly, Hipos, Bisontes, Objetos, Civil, Top7Demo,
@@ -60,7 +60,8 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="Antartida" component={MainAntartida} durationInFrames={TOTAL_FRAMES_ANT} fps={30} width={1920} height={1080} />
       {/* VIDEO 5 Crónicas Perdidas — "7 Túneles Antiguos Que la Ciencia No Puede Explicar" */}
       <Composition id="Tuneles" component={MainTuneles} durationInFrames={TOTAL_FRAMES_TUN} fps={30} width={1920} height={1080} />
-      {/* VIDEO 6 Crónicas Perdidas — "7 Puertas Antiguas..." (deshabilitado: falta cues_puertas.gen) */}
+      {/* VIDEO 6 Crónicas Perdidas — "7 Puertas Antiguas Que Nadie Ha Logrado Abrir" · faceless · voz Trevor */}
+      <Composition id="Puertas" component={MainPuertas} durationInFrames={TOTAL_FRAMES_PUE} fps={30} width={1920} height={1080} />
       {/* VIDEO ACTIVO — Ben retirado · "Los gastos hormiga" · AVATAR · look ALARMA */}
       <Composition id="Hormiga" component={MainHormiga} durationInFrames={TOTAL_FRAMES_HB} fps={30} width={1920} height={1080} />
       {/* VIDEO ACTIVO — Ben retirado · "Las estafas que vacían la cuenta" · AVATAR · look ALARMA */}
