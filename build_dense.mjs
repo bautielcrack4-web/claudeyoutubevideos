@@ -117,6 +117,21 @@ const hasClip = (n) => fs.existsSync("public/broll/" + n + ".mp4");
 const avail = CUES.filter((c) => hasClip(c.name)).sort((a, b) => a.start - b.start);
 const missing = CUES.length - avail.length;
 let placed = 0, segs = 0;
+// ── DINAMISMO PAREJO (lección barcos): ningún clip se sostiene > MAXHOLD. Si un hueco (ventanas
+//    sin clip) obliga a estirar, se CORTA en trozos alternando clips vecinos (leve reuso > toma estática). ──
+const MAXHOLD = +(process.env.MAX_HOLD || 7);
+const emitRaw = (a, b, i) => {
+  const span = +(b - a).toFixed(2);
+  if (span <= 0.1) return;
+  const n = Math.max(1, Math.ceil(span / MAXHOLD));
+  const piece = span / n;
+  for (let k = 0; k < n; k++) {
+    const off = n === 1 ? 0 : ([0, 1, -1, 2, -2, 3, -3][k % 7]); // alterna vecinos en huecos largos
+    const src = avail[Math.min(avail.length - 1, Math.max(0, i + off))].name;
+    B.push({ id: nid("c"), start: +(a + k * piece).toFixed(2), dur: +piece.toFixed(2), kind: "raw", src: "broll/" + src + ".mp4", hue: hue4(a) });
+    segs++;
+  }
+};
 for (let i = 0; i < avail.length; i++) {
   const c = avail[i];
   const spanEnd = i + 1 < avail.length ? avail[i + 1].start : END;
@@ -124,11 +139,11 @@ for (let i = 0; i < avail.length; i++) {
   let a = c.start;
   for (const [bs, be] of [...blocked, [END + 1, END + 2]].sort((x, y) => x[0] - y[0])) {
     if (be <= a || bs >= spanEnd) continue;
-    if (bs > a) { B.push({ id: nid("c"), start: +a.toFixed(2), dur: +(Math.min(bs, spanEnd) - a).toFixed(2), kind: "raw", src: "broll/" + c.name + ".mp4", hue: hue4(c.start) }); segs++; }
+    if (bs > a) emitRaw(a, Math.min(bs, spanEnd), i);
     a = Math.max(a, be);
     if (a >= spanEnd) break;
   }
-  if (a < spanEnd) { B.push({ id: nid("c"), start: +a.toFixed(2), dur: +(spanEnd - a).toFixed(2), kind: "raw", src: "broll/" + c.name + ".mp4", hue: hue4(c.start) }); segs++; }
+  if (a < spanEnd) emitRaw(a, spanEnd, i);
   placed++;
 }
 for (const c of comps) C(c.start, c.dur, c);

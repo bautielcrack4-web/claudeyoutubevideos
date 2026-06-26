@@ -21,12 +21,14 @@ console.log(`dyncheck ${slug} · ${(end / 60).toFixed(1)} min · ${raws.length} 
 for (let m = 0; m < MINS; m++) {
   const a = m * 60, b = (m + 1) * 60;
   const inWin = (x) => x.start < b && x.start + x.dur > a;
-  const cuts = raws.filter(inWin).length;
   const cmp = comps.filter(inWin).length;
+  const cuts = raws.filter(inWin).length + cmp; // eventos visuales = clips + componentes (ambos son dinamismo)
   // toma sostenida más larga (clip raw) que cae en este minuto
   const hold = Math.max(0, ...raws.filter(inWin).map((x) => x.dur));
   worstHold = Math.max(worstHold, hold);
-  const bad = cuts < MIN_CUTS || hold > MAX_HOLD;
+  const winLen = Math.min(b, end) - a;            // último minuto suele ser parcial
+  const need = Math.max(3, Math.round(MIN_CUTS * winLen / 60)); // umbral proporcional a la duración real
+  const bad = cuts < need || hold > MAX_HOLD;
   if (bad) weak++;
   console.log(`  ${String(m + 1).padStart(3)} │ ${String(cuts).padStart(6)} │ ${String(cmp).padStart(4)} │ ${hold.toFixed(1)}s${bad ? "  ⚠" : ""}`);
 }
