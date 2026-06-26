@@ -14,27 +14,50 @@ const [slug, topic = ""] = process.argv.slice(2);
 if (!slug) { console.error("Uso: node gen_shotlist_llm.mjs <slug> \"<tema>\""); process.exit(1); }
 const WIN = +(process.env.SHOT_WIN || 3.7); // segundos por clip
 
-const TM = JSON.parse(fs.readFileSync(`public/${slug}_timing.json`, "utf8"));
-const END = TM[TM.length - 1].start + (TM[TM.length - 1].text.length / 14) + 1.5;
-// ── ventanas: SUBDIVIDO cada chunk del timing (que es ~oración) en sub-ventanas de ~WIN s,
-//    repartiendo el texto por fracción de caracteres → 1 clip por mini-frase ──
 const wins = [];
-for (let i = 0; i < TM.length; i++) {
-  const start = TM[i].start;
-  const next = i + 1 < TM.length ? TM[i + 1].start : END;
-  const dur = Math.max(0.1, next - start);
-  const text = (TM[i].text || "").trim();
-  const k = Math.max(1, Math.round(dur / WIN));
-  // cortar el texto en k partes por límites de palabra
-  const words = text.split(/\s+/);
-  for (let j = 0; j < k; j++) {
-    const a = start + (dur * j) / k, b = start + (dur * (j + 1)) / k;
-    const w0 = Math.floor((words.length * j) / k), w1 = Math.floor((words.length * (j + 1)) / k);
-    const slice = words.slice(w0, Math.max(w1, w0 + 1)).join(" ");
-    wins.push({ start: a, end: b, text: slice || text });
+let END;
+const capPath = `public/captions_${slug}.json`;
+if (fs.existsSync(capPath)) {
+  // ★ EXACTO (método barcos): ventanas ancladas al ms REAL de cada palabra (Whisper word-level),
+  //   cortando en PAUSAS reales del narrador → cada clip cae justo donde se narra ese concepto.
+  const W = JSON.parse(fs.readFileSync(capPath, "utf8"))
+    .map((c) => ({ t: (c.text || "").trim(), s: c.startMs / 1000, e: c.endMs / 1000 }))
+    .filter((c) => c.t);
+  END = W.length ? W[W.length - 1].e + 1.0 : 0;
+  let cur = null;
+  for (let k = 0; k < W.length; k++) {
+    const w = W[k];
+    if (!cur) cur = { start: w.s, end: w.e, words: [w.t] };
+    else { cur.end = w.e; cur.words.push(w.t); }
+    const len = cur.end - cur.start;
+    const gap = k + 1 < W.length ? W[k + 1].s - w.e : 99; // pausa hasta la próxima palabra
+    // cerrá la ventana al pasar el target SI hay una pausa real, o si se estiró demasiado, o al final
+    if (k === W.length - 1 || (len >= WIN * 0.7 && gap >= 0.18) || len >= WIN * 1.45) {
+      wins.push({ start: cur.start, end: cur.end, text: cur.words.join(" ") });
+      cur = null;
+    }
   }
+  console.log(`${wins.length} ventanas EXACTAS (Whisper word-level, corte en pausas, ~${WIN}s) sobre ${(END / 60).toFixed(1)} min`);
+} else {
+  // fallback (menos preciso): interpolar el timing por-chunk del TTS
+  const TM = JSON.parse(fs.readFileSync(`public/${slug}_timing.json`, "utf8"));
+  END = TM[TM.length - 1].start + (TM[TM.length - 1].text.length / 14) + 1.5;
+  for (let i = 0; i < TM.length; i++) {
+    const start = TM[i].start;
+    const next = i + 1 < TM.length ? TM[i + 1].start : END;
+    const dur = Math.max(0.1, next - start);
+    const text = (TM[i].text || "").trim();
+    const k = Math.max(1, Math.round(dur / WIN));
+    const words = text.split(/\s+/);
+    for (let j = 0; j < k; j++) {
+      const a = start + (dur * j) / k, b = start + (dur * (j + 1)) / k;
+      const w0 = Math.floor((words.length * j) / k), w1 = Math.floor((words.length * (j + 1)) / k);
+      const slice = words.slice(w0, Math.max(w1, w0 + 1)).join(" ");
+      wins.push({ start: a, end: b, text: slice || text });
+    }
+  }
+  console.log(`${wins.length} ventanas (INTERPOLADAS ~${WIN}s, sin Whisper) sobre ${(END / 60).toFixed(1)} min`);
 }
-console.log(`${wins.length} ventanas (~${WIN}s) sobre ${(END / 60).toFixed(1)} min`);
 
 const SYS = `Sos un director de fotografía de documentales de misterio/arqueología (canal "Crónicas Perdidas", español). Para cada fragmento de NARRACIÓN te doy el texto que se escucha en ese instante. Devolvé el clip de B-ROLL REAL (de YouTube) que hay que poner JUSTO ahí.
 REGLAS DE ORO:
