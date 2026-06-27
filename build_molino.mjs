@@ -16,7 +16,10 @@ const DLDUR = 6;
 const AV_FULL = [
   [119.36, 130.0],   // "If you came here today... sit down a minute with me"
   [270.81, 281.0],   // "I want you to really look at this machine"
-  [1594.24, 1610.0], // "Stand here with me for just one more minute... listen"
+  [393.76, 412.0],   // "water is the one absolute boundary of life"
+  [1210.9, 1226.0],  // "if they are so perfect... why did we stop using them"
+  [1360.0, 1392.0],  // "we traded durability for convenience... a monthly bill forever"
+  [1569.0, 1617.0],  // "you buy it once... children inherit... stand here and listen"
   [1686.56, TOTAL],  // "Thank you for listening... I'll see you out in the field"
 ];
 
@@ -492,10 +495,17 @@ fs.writeFileSync("beatsheet/molino.json", JSON.stringify({ video: "molino", avat
 
 // avatar windows — REGLA NUEVA: solo ESQUINAS (sin right/left/half → evita el split media-pantalla)
 const POS = ["cornerTR", "cornerBL", "cornerTL", "cornerBR"];
+// avatar SIEMPRE presente: PiP en esquina en TODOS los beats post-cold-open que no sean AV_FULL,
+// rotando la esquina cada ~3 beats. Oculto solo durante el cold-open (1.8–52, hero images limpias).
+const inAvF = (t) => AV_FULL.some(([s, e]) => t >= s - 1e-6 && t < e - 1e-6);
 const pip = [];
 let k = 0;
 for (let i = 0; i < beats.length; i++) {
-  if (i % 6 === 3) { pip.push([beats[i].start, beats[i].start + Math.min(beats[i].dur, 7), POS[k % POS.length]]); k++; }
+  const b = beats[i];
+  if (b.start < COLD_END - 1e-6 || inAvF(b.start)) continue;
+  const end = i + 1 < beats.length ? beats[i + 1].start : TOTAL;
+  pip.push([b.start, end, POS[Math.floor(k / 3) % POS.length]]);
+  k++;
 }
 const firstHero = COLD_OPEN.length ? COLD_OPEN[0].start : OPEN;
 const modeAt = (t) => {

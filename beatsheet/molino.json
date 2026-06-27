@@ -716,7 +716,7 @@
     {
       "id": "m_thirsty_livestock",
       "start": 393.5,
-      "dur": 7,
+      "dur": 0.76,
       "kind": "raw",
       "src": "img/m_thirsty_livestock.png",
       "darken": 0,
@@ -724,32 +724,6 @@
         "type": "image",
         "name": "m_thirsty_livestock",
         "prompt": "thirsty livestock at a dry trough, realistic color photograph, natural vivid colors, sharp focus, well lit, clean, no text, no captions, no watermark, no logo"
-      }
-    },
-    {
-      "id": "m_f_dry_trough2",
-      "start": 400,
-      "dur": 6.5,
-      "kind": "raw",
-      "src": "img/m_f_dry_trough2.png",
-      "darken": 0,
-      "gen": {
-        "type": "image",
-        "name": "m_f_dry_trough2",
-        "prompt": "a dry empty livestock trough, realistic color photograph, natural vivid colors, sharp focus, well lit, clean, no text, no captions, no watermark, no logo"
-      }
-    },
-    {
-      "id": "m_f_water_life2",
-      "start": 406,
-      "dur": 7.5,
-      "kind": "raw",
-      "src": "img/m_f_water_life2.png",
-      "darken": 0,
-      "gen": {
-        "type": "image",
-        "name": "m_f_water_life2",
-        "prompt": "fresh water flowing on a farm, realistic color photograph, natural vivid colors, sharp focus, well lit, clean, no text, no captions, no watermark, no logo"
       }
     },
     {
@@ -2106,32 +2080,6 @@
       "darken": 0
     },
     {
-      "id": "m_perfect_machine",
-      "start": 1210.9,
-      "dur": 7.6,
-      "kind": "raw",
-      "src": "img/m_perfect_machine.png",
-      "darken": 0,
-      "gen": {
-        "type": "image",
-        "name": "m_perfect_machine",
-        "prompt": "a perfect old windmill against blue sky, realistic color photograph, natural vivid colors, sharp focus, well lit, clean, no text, no captions, no watermark, no logo"
-      }
-    },
-    {
-      "id": "m_f_proud_mill_sky",
-      "start": 1218,
-      "dur": 8.5,
-      "kind": "raw",
-      "src": "img/m_f_proud_mill_sky.png",
-      "darken": 0,
-      "gen": {
-        "type": "image",
-        "name": "m_f_proud_mill_sky",
-        "prompt": "a proud windmill against a blue sky, realistic color photograph, natural vivid colors, sharp focus, well lit, clean, no text, no captions, no watermark, no logo"
-      }
-    },
-    {
       "id": "m_torn_down_mill",
       "start": 1226,
       "dur": 6.5,
@@ -2384,7 +2332,7 @@
     {
       "id": "cmp_trade",
       "start": 1353,
-      "dur": 13,
+      "dur": 7,
       "kind": "splitlist",
       "palette": "B",
       "title": "The trade we didn't read",
@@ -2394,48 +2342,6 @@
         "Gave: a machine that costs $0 to run",
         "Got: a bill to a utility for life"
       ]
-    },
-    {
-      "id": "m_lightning_kills_pump",
-      "start": 1366,
-      "dur": 6.5,
-      "kind": "raw",
-      "src": "img/m_lightning_kills_pump.png",
-      "darken": 0,
-      "gen": {
-        "type": "image",
-        "name": "m_lightning_kills_pump",
-        "prompt": "lightning striking near a farm, realistic color photograph, natural vivid colors, sharp focus, well lit, clean, no text, no captions, no watermark, no logo"
-      }
-    },
-    {
-      "id": "m_f_lightning_field2",
-      "start": 1372,
-      "dur": 9.5,
-      "kind": "raw",
-      "src": "broll/m_f_lightning_field2.mp4",
-      "darken": 0
-    },
-    {
-      "id": "m_monthly_utility_bill",
-      "start": 1381,
-      "dur": 4.5,
-      "kind": "raw",
-      "src": "broll/m_monthly_utility_bill.mp4",
-      "darken": 0
-    },
-    {
-      "id": "m_f_bill_mailbox",
-      "start": 1385,
-      "dur": 8.4,
-      "kind": "raw",
-      "src": "img/m_f_bill_mailbox.png",
-      "darken": 0,
-      "gen": {
-        "type": "image",
-        "name": "m_f_bill_mailbox",
-        "prompt": "a utility bill in a rural mailbox, realistic color photograph, natural vivid colors, sharp focus, well lit, clean, no text, no captions, no watermark, no logo"
-      }
     },
     {
       "id": "cmp_paths",
@@ -2819,70 +2725,10 @@
     {
       "id": "m_f_footing_concrete",
       "start": 1565,
-      "dur": 5.4,
+      "dur": 4.5,
       "kind": "raw",
       "src": "broll/m_f_footing_concrete.mp4",
       "darken": 0
-    },
-    {
-      "id": "m_children_inherit",
-      "start": 1569.9,
-      "dur": 5.6,
-      "kind": "raw",
-      "src": "img/m_children_inherit.png",
-      "darken": 0,
-      "gen": {
-        "type": "image",
-        "name": "m_children_inherit",
-        "prompt": "children looking up at a family windmill, realistic color photograph, natural vivid colors, sharp focus, well lit, clean, no text, no captions, no watermark, no logo"
-      }
-    },
-    {
-      "id": "m_f_kids_look_up_mill",
-      "start": 1575,
-      "dur": 5.5,
-      "kind": "raw",
-      "src": "broll/m_f_kids_look_up_mill.mp4",
-      "darken": 0
-    },
-    {
-      "id": "m_blades_against_clouds",
-      "start": 1580,
-      "dur": 5.5,
-      "kind": "raw",
-      "src": "img/m_blades_against_clouds.png",
-      "darken": 0,
-      "gen": {
-        "type": "image",
-        "name": "m_blades_against_clouds",
-        "prompt": "silver windmill blades spinning against clouds, realistic color photograph, natural vivid colors, sharp focus, well lit, clean, no text, no captions, no watermark, no logo"
-      }
-    },
-    {
-      "id": "m_f_blades_clouds2",
-      "start": 1585,
-      "dur": 9.74,
-      "kind": "raw",
-      "src": "img/m_f_blades_clouds2.png",
-      "darken": 0,
-      "gen": {
-        "type": "image",
-        "name": "m_f_blades_clouds2",
-        "prompt": "silver windmill blades against clouds, realistic color photograph, natural vivid colors, sharp focus, well lit, clean, no text, no captions, no watermark, no logo"
-      }
-    },
-    {
-      "id": "m_rhythmic_clank",
-      "start": 1610.5,
-      "dur": 7,
-      "kind": "raw",
-      "src": "img/m_rhythmic_clank.png",
-      "darken": 0,
-      "gen": {
-        "type": "image",
-        "name": "m_rhythmic_clank",
-        "prompt": "a windmill gear head clanking rhythmically, realistic color photograph, natural vivid colors, sharp focus, well lit, clean, no text, no captions, no watermark, no logo"
-      }
     },
     {
       "id": "m_built_to_last",

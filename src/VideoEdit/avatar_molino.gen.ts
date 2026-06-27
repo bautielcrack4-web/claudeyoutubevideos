@@ -11,36 +11,20 @@ export const AVATAR_WINDOWS: AvatarWindow[] = [
     "mode": "hidden"
   },
   {
-    "start": 13.8,
+    "start": 54.6,
     "mode": "cornerTR"
   },
   {
-    "start": 18.5,
-    "mode": "hidden"
-  },
-  {
-    "start": 40,
+    "start": 70,
     "mode": "cornerBL"
   },
   {
-    "start": 44.5,
-    "mode": "hidden"
-  },
-  {
-    "start": 70,
+    "start": 88,
     "mode": "cornerTL"
-  },
-  {
-    "start": 76.5,
-    "mode": "hidden"
   },
   {
     "start": 108,
     "mode": "cornerBR"
-  },
-  {
-    "start": 115,
-    "mode": "hidden"
   },
   {
     "start": 119.36,
@@ -48,31 +32,35 @@ export const AVATAR_WINDOWS: AvatarWindow[] = [
   },
   {
     "start": 130,
-    "mode": "hidden"
+    "mode": "cornerBR"
   },
   {
-    "start": 154,
+    "start": 142,
     "mode": "cornerTR"
   },
   {
-    "start": 158.5,
-    "mode": "hidden"
-  },
-  {
-    "start": 190,
+    "start": 154,
     "mode": "cornerBL"
   },
   {
-    "start": 195.5,
-    "mode": "hidden"
-  },
-  {
-    "start": 230.5,
+    "start": 172,
     "mode": "cornerTL"
   },
   {
-    "start": 235.5,
-    "mode": "hidden"
+    "start": 190,
+    "mode": "cornerBR"
+  },
+  {
+    "start": 211,
+    "mode": "cornerTR"
+  },
+  {
+    "start": 230.5,
+    "mode": "cornerBL"
+  },
+  {
+    "start": 246,
+    "mode": "cornerTL"
   },
   {
     "start": 264,
@@ -84,287 +72,287 @@ export const AVATAR_WINDOWS: AvatarWindow[] = [
   },
   {
     "start": 281,
-    "mode": "hidden"
+    "mode": "cornerBR"
+  },
+  {
+    "start": 298,
+    "mode": "cornerTR"
   },
   {
     "start": 320,
-    "mode": "cornerTR"
+    "mode": "cornerBL"
   },
   {
-    "start": 325.5,
-    "mode": "hidden"
+    "start": 339.5,
+    "mode": "cornerTL"
   },
   {
     "start": 358,
-    "mode": "cornerBL"
+    "mode": "cornerBR"
   },
   {
-    "start": 362.5,
-    "mode": "hidden"
+    "start": 375,
+    "mode": "cornerTR"
   },
   {
     "start": 393.5,
-    "mode": "cornerTL"
-  },
-  {
-    "start": 400.5,
-    "mode": "hidden"
-  },
-  {
-    "start": 431,
-    "mode": "cornerBR"
-  },
-  {
-    "start": 435.5,
-    "mode": "hidden"
-  },
-  {
-    "start": 475,
-    "mode": "cornerTR"
-  },
-  {
-    "start": 482,
-    "mode": "hidden"
-  },
-  {
-    "start": 510,
     "mode": "cornerBL"
   },
   {
-    "start": 517,
-    "mode": "hidden"
+    "start": 393.76,
+    "mode": "full"
   },
   {
-    "start": 556,
-    "mode": "cornerTL"
-  },
-  {
-    "start": 560.5,
-    "mode": "hidden"
-  },
-  {
-    "start": 600,
-    "mode": "cornerBR"
-  },
-  {
-    "start": 607,
-    "mode": "hidden"
-  },
-  {
-    "start": 640,
-    "mode": "cornerTR"
-  },
-  {
-    "start": 646.5,
-    "mode": "hidden"
-  },
-  {
-    "start": 685.5,
+    "start": 412,
     "mode": "cornerBL"
   },
   {
-    "start": 692.5,
-    "mode": "hidden"
-  },
-  {
-    "start": 718,
+    "start": 426,
     "mode": "cornerTL"
   },
   {
-    "start": 724.5,
-    "mode": "hidden"
-  },
-  {
-    "start": 753.5,
+    "start": 442,
     "mode": "cornerBR"
   },
   {
-    "start": 760.5,
-    "mode": "hidden"
-  },
-  {
-    "start": 796.5,
+    "start": 467,
     "mode": "cornerTR"
   },
   {
-    "start": 803.5,
-    "mode": "hidden"
-  },
-  {
-    "start": 831,
+    "start": 489.5,
     "mode": "cornerBL"
   },
   {
-    "start": 838,
-    "mode": "hidden"
-  },
-  {
-    "start": 872,
+    "start": 505,
     "mode": "cornerTL"
   },
   {
-    "start": 879,
-    "mode": "hidden"
-  },
-  {
-    "start": 908,
+    "start": 525,
     "mode": "cornerBR"
   },
   {
-    "start": 915,
-    "mode": "hidden"
-  },
-  {
-    "start": 948,
+    "start": 548,
     "mode": "cornerTR"
   },
   {
-    "start": 955,
-    "mode": "hidden"
-  },
-  {
-    "start": 1004.7,
+    "start": 566,
     "mode": "cornerBL"
   },
   {
-    "start": 1011.7,
-    "mode": "hidden"
-  },
-  {
-    "start": 1045,
+    "start": 592,
     "mode": "cornerTL"
   },
   {
-    "start": 1051.5,
-    "mode": "hidden"
-  },
-  {
-    "start": 1076,
+    "start": 616,
     "mode": "cornerBR"
   },
   {
-    "start": 1080.5,
-    "mode": "hidden"
-  },
-  {
-    "start": 1115,
+    "start": 632,
     "mode": "cornerTR"
   },
   {
-    "start": 1120,
-    "mode": "hidden"
-  },
-  {
-    "start": 1155,
+    "start": 653.5,
     "mode": "cornerBL"
   },
   {
-    "start": 1161,
-    "mode": "hidden"
-  },
-  {
-    "start": 1195,
+    "start": 676,
     "mode": "cornerTL"
   },
   {
-    "start": 1202,
-    "mode": "hidden"
-  },
-  {
-    "start": 1238.6,
+    "start": 700,
     "mode": "cornerBR"
   },
   {
-    "start": 1244.5,
-    "mode": "hidden"
-  },
-  {
-    "start": 1278,
+    "start": 714,
     "mode": "cornerTR"
   },
   {
-    "start": 1285,
-    "mode": "hidden"
+    "start": 731,
+    "mode": "cornerBL"
   },
   {
-    "start": 1323,
+    "start": 748,
+    "mode": "cornerTL"
+  },
+  {
+    "start": 768,
+    "mode": "cornerBR"
+  },
+  {
+    "start": 787,
+    "mode": "cornerTR"
+  },
+  {
+    "start": 811.5,
+    "mode": "cornerBL"
+  },
+  {
+    "start": 827,
+    "mode": "cornerTL"
+  },
+  {
+    "start": 846,
+    "mode": "cornerBR"
+  },
+  {
+    "start": 867,
+    "mode": "cornerTR"
+  },
+  {
+    "start": 887,
+    "mode": "cornerBL"
+  },
+  {
+    "start": 902,
+    "mode": "cornerTL"
+  },
+  {
+    "start": 922,
+    "mode": "cornerBR"
+  },
+  {
+    "start": 940,
+    "mode": "cornerTR"
+  },
+  {
+    "start": 968,
+    "mode": "cornerBL"
+  },
+  {
+    "start": 997,
+    "mode": "cornerTL"
+  },
+  {
+    "start": 1017,
+    "mode": "cornerBR"
+  },
+  {
+    "start": 1038,
+    "mode": "cornerTR"
+  },
+  {
+    "start": 1057,
+    "mode": "cornerBL"
+  },
+  {
+    "start": 1072,
+    "mode": "cornerTL"
+  },
+  {
+    "start": 1088,
+    "mode": "cornerBR"
+  },
+  {
+    "start": 1110.5,
+    "mode": "cornerTR"
+  },
+  {
+    "start": 1126,
+    "mode": "cornerBL"
+  },
+  {
+    "start": 1150.9,
+    "mode": "cornerTL"
+  },
+  {
+    "start": 1166.9,
+    "mode": "cornerBR"
+  },
+  {
+    "start": 1190,
+    "mode": "cornerTR"
+  },
+  {
+    "start": 1210.9,
+    "mode": "full"
+  },
+  {
+    "start": 1226,
+    "mode": "cornerBL"
+  },
+  {
+    "start": 1244,
+    "mode": "cornerTL"
+  },
+  {
+    "start": 1259,
+    "mode": "cornerBR"
+  },
+  {
+    "start": 1289,
+    "mode": "cornerTR"
+  },
+  {
+    "start": 1310,
     "mode": "cornerBL"
   },
   {
     "start": 1330,
-    "mode": "hidden"
-  },
-  {
-    "start": 1372,
     "mode": "cornerTL"
   },
   {
-    "start": 1379,
-    "mode": "hidden"
-  },
-  {
-    "start": 1416,
+    "start": 1353,
     "mode": "cornerBR"
   },
   {
-    "start": 1422.5,
-    "mode": "hidden"
-  },
-  {
-    "start": 1450,
-    "mode": "cornerTR"
-  },
-  {
-    "start": 1455.5,
-    "mode": "hidden"
-  },
-  {
-    "start": 1488,
-    "mode": "cornerBL"
-  },
-  {
-    "start": 1492.5,
-    "mode": "hidden"
-  },
-  {
-    "start": 1522,
-    "mode": "cornerTL"
-  },
-  {
-    "start": 1528.5,
-    "mode": "hidden"
-  },
-  {
-    "start": 1561,
-    "mode": "cornerBR"
-  },
-  {
-    "start": 1565.5,
-    "mode": "hidden"
-  },
-  {
-    "start": 1594.24,
+    "start": 1360,
     "mode": "full"
   },
   {
-    "start": 1610,
-    "mode": "hidden"
+    "start": 1392,
+    "mode": "cornerBR"
   },
   {
-    "start": 1610.5,
+    "start": 1410,
     "mode": "cornerTR"
   },
   {
-    "start": 1617.5,
-    "mode": "hidden"
-  },
-  {
-    "start": 1658,
+    "start": 1426,
     "mode": "cornerBL"
   },
   {
-    "start": 1664.5,
-    "mode": "hidden"
+    "start": 1445,
+    "mode": "cornerTL"
+  },
+  {
+    "start": 1465,
+    "mode": "cornerBR"
+  },
+  {
+    "start": 1484,
+    "mode": "cornerTR"
+  },
+  {
+    "start": 1500,
+    "mode": "cornerBL"
+  },
+  {
+    "start": 1517.4,
+    "mode": "cornerTL"
+  },
+  {
+    "start": 1534,
+    "mode": "cornerBR"
+  },
+  {
+    "start": 1557.3,
+    "mode": "cornerTR"
+  },
+  {
+    "start": 1569,
+    "mode": "full"
+  },
+  {
+    "start": 1617,
+    "mode": "cornerBL"
+  },
+  {
+    "start": 1640,
+    "mode": "cornerTL"
+  },
+  {
+    "start": 1664,
+    "mode": "cornerBR"
   },
   {
     "start": 1686.56,
