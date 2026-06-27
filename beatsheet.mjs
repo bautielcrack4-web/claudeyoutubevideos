@@ -211,6 +211,113 @@ function renderEl(b) {
         ` />`
       );
     }
+    case "struckcards":
+      return (
+        `<StruckCards durationInFrames={d} items={${j(b.items || [])}} />`
+      );
+    case "radsky":
+      return (
+        `<ColdRadiationSky durationInFrames={d}` +
+        (b.airTemp ? ` airTemp=${j(b.airTemp)}` : ``) +
+        ` />`
+      );
+    case "coldcal":
+      return `<ColdCalendar durationInFrames={d} />`;
+    case "heatslow":
+      return `<HeatSlowDiagram durationInFrames={d}` + (b.title ? ` title=${j(b.title)}` : ``) + ` />`;
+    case "doorcold":
+      return `<DoorColdFalls durationInFrames={d}` + (b.title ? ` title=${j(b.title)}` : ``) + ` />`;
+    case "revealcards":
+      return (
+        `<RevealCards durationInFrames={d} items={${j(b.items || [])}}` +
+        (b.eyebrow ? ` eyebrow=${j(b.eyebrow)}` : ``) +
+        (b.title ? ` title=${j(b.title)}` : ``) +
+        (b.numbered === false ? ` numbered={false}` : ``) +
+        ` />`
+      );
+    case "winterbank":
+      return `<WinterBank durationInFrames={d} />`;
+    case "frostwipe":
+      return `<FrostWipe durationInFrames={d} />`;
+    case "lowerthird":
+      return (
+        `<CinematicLowerThird durationInFrames={d} image=${j(b.image)}` +
+        (b.place ? ` place=${j(b.place)}` : ``) +
+        (b.date ? ` date=${j(b.date)}` : ``) +
+        ` />`
+      );
+    case "mapzoom":
+      return (
+        `<VintageMapZoom durationInFrames={d} image=${j(b.image)}` +
+        (b.pinX != null ? ` pinX={${b.pinX}}` : ``) +
+        (b.pinY != null ? ` pinY={${b.pinY}}` : ``) +
+        (b.label ? ` label=${j(b.label)}` : ``) +
+        (b.eyebrow ? ` eyebrow=${j(b.eyebrow)}` : ``) +
+        (b.zoom != null ? ` zoom={${b.zoom}}` : ``) +
+        ` />`
+      );
+    case "cutaway":
+      return (
+        `<CutawayCallout durationInFrames={d}` +
+        (b.title ? ` title=${j(b.title)}` : ``) +
+        ` />`
+      );
+    case "rollnum":
+      return (
+        `<Odometer durationInFrames={d} value={${b.value}}` +
+        (b.prefix ? ` prefix=${j(b.prefix)}` : ``) +
+        (b.suffix ? ` suffix=${j(b.suffix)}` : ``) +
+        (b.label ? ` label=${j(b.label)}` : ``) +
+        (b.eyebrow ? ` eyebrow=${j(b.eyebrow)}` : ``) +
+        (b.image ? ` image=${j(b.image)}` : ``) +
+        ` />`
+      );
+    case "splitba":
+      return (
+        `<SplitBeforeAfter durationInFrames={d} beforeImg=${j(b.beforeImg)} afterImg=${j(b.afterImg)}` +
+        (b.beforeLabel ? ` beforeLabel=${j(b.beforeLabel)}` : ``) +
+        (b.afterLabel ? ` afterLabel=${j(b.afterLabel)}` : ``) +
+        (b.eyebrow ? ` eyebrow=${j(b.eyebrow)}` : ``) +
+        (b.title ? ` title=${j(b.title)}` : ``) +
+        ` />`
+      );
+    case "saltplunge":
+      return (
+        `<SaltPlunge durationInFrames={d}` +
+        (b.from != null ? ` from={${b.from}}` : ``) +
+        (b.to != null ? ` to={${b.to}}` : ``) +
+        ` />`
+      );
+    case "redacted":
+      return (
+        `<RedactedReveal durationInFrames={d} image=${j(b.image)}` +
+        (b.eyebrow ? ` eyebrow=${j(b.eyebrow)}` : ``) +
+        (b.title ? ` title=${j(b.title)}` : ``) +
+        (b.redacted ? ` redacted=${j(b.redacted)}` : ``) +
+        (b.sub ? ` sub=${j(b.sub)}` : ``) +
+        ` />`
+      );
+    case "impstamp":
+      return (
+        `<ImpossibleStamp durationInFrames={d} image=${j(b.image)}` +
+        (b.word ? ` word=${j(b.word)}` : ``) +
+        ` />`
+      );
+    case "blurexplainer":
+      return (
+        `<BlurExplainer durationInFrames={d} clip=${j(b.clip)} image=${j(b.image)}` +
+        (b.eyebrow ? ` eyebrow=${j(b.eyebrow)}` : ``) +
+        (b.title ? ` title=${j(b.title)}` : ``) +
+        (b.body ? ` body=${j(b.body)}` : ``) +
+        (b.side ? ` side=${j(b.side)}` : ``) +
+        ` />`
+      );
+    case "ingredients":
+      return (
+        `<IngredientEquation durationInFrames={d} items={${j(b.items || [])}}` +
+        (b.resultLabel ? ` resultLabel=${j(b.resultLabel)}` : ``) +
+        ` />`
+      );
     case "stat":
       return (
         `<StatBig durationInFrames={d} value={${b.value}}` +
@@ -248,6 +355,14 @@ function renderEl(b) {
         `<BlurReveal durationInFrames={d} title=${j(b.title)}` +
         (b.eyebrow ? ` eyebrow=${j(b.eyebrow)}` : ``) +
         (b.accent ? ` accent=${j(b.accent)}` : ``) +
+        ` />`
+      );
+    case "hugel":
+      return (
+        `<HugelDiagram durationInFrames={d}` +
+        (b.mode ? ` mode=${j(b.mode)}` : ``) +
+        (b.eyebrow ? ` eyebrow=${j(b.eyebrow)}` : ``) +
+        (b.title ? ` title=${j(b.title)}` : ``) +
         ` />`
       );
     case "gridreveal":
@@ -933,6 +1048,24 @@ if (kinds.has("raw")) imports.push(`import { RawShot } from "./scenes/RawShot";`
 if (kinds.has("quote")) imports.push(`import { KineticQuote, parseQuote } from "./scenes/KineticQuote";`);
 if (kinds.has("chips")) imports.push(`import { ChipsCluster } from "./scenes/ReframeContent";`);
 if (kinds.has("splitlist")) imports.push(`import { SplitList } from "./scenes/SplitList";`);
+if (kinds.has("struckcards")) imports.push(`import { StruckCards } from "./scenes/StruckCards";`);
+if (kinds.has("radsky")) imports.push(`import { ColdRadiationSky } from "./scenes/ColdRadiationSky";`);
+if (kinds.has("coldcal")) imports.push(`import { ColdCalendar } from "./scenes/ColdCalendar";`);
+if (kinds.has("cutaway")) imports.push(`import { CutawayCallout } from "./scenes/CutawayCallout";`);
+if (kinds.has("mapzoom")) imports.push(`import { VintageMapZoom } from "./scenes/VintageMapZoom";`);
+if (kinds.has("lowerthird")) imports.push(`import { CinematicLowerThird } from "./scenes/CinematicLowerThird";`);
+if (kinds.has("revealcards")) imports.push(`import { RevealCards } from "./scenes/RevealCards";`);
+if (kinds.has("winterbank")) imports.push(`import { WinterBank } from "./scenes/WinterBank";`);
+if (kinds.has("doorcold")) imports.push(`import { DoorColdFalls } from "./scenes/DoorColdFalls";`);
+if (kinds.has("heatslow")) imports.push(`import { HeatSlowDiagram } from "./scenes/HeatSlowDiagram";`);
+if (kinds.has("frostwipe")) imports.push(`import { FrostWipe } from "./scenes/FrostWipe";`);
+if (kinds.has("rollnum")) imports.push(`import { Odometer } from "./scenes/Odometer";`);
+if (kinds.has("splitba")) imports.push(`import { SplitBeforeAfter } from "./scenes/SplitBeforeAfter";`);
+if (kinds.has("saltplunge")) imports.push(`import { SaltPlunge } from "./scenes/SaltPlunge";`);
+if (kinds.has("redacted")) imports.push(`import { RedactedReveal } from "./scenes/RedactedReveal";`);
+if (kinds.has("impstamp")) imports.push(`import { ImpossibleStamp } from "./scenes/ImpossibleStamp";`);
+if (kinds.has("blurexplainer")) imports.push(`import { BlurExplainer } from "./scenes/BlurExplainer";`);
+if (kinds.has("ingredients")) imports.push(`import { IngredientEquation } from "./scenes/IngredientEquation";`);
 if (kinds.has("diagram")) imports.push(`import { DiagramBoard } from "./scenes/DiagramBoard";`);
 if (kinds.has("stat")) imports.push(`import { StatBig } from "./scenes/StatBig";`);
 if (kinds.has("impact")) imports.push(`import { ImpactReveal } from "./scenes/ImpactReveal";`);
@@ -997,6 +1130,7 @@ if (kinds.has("gridreveal")) imports.push(`import { GridReveal } from "./scenes/
 if (kinds.has("growthtimeline")) imports.push(`import { GrowthTimeline } from "./scenes/GrowthTimeline";`);
 if (kinds.has("kineticline")) imports.push(`import { KineticLine } from "./scenes/KineticLine";`);
 if (kinds.has("blurreveal")) imports.push(`import { BlurReveal } from "./scenes/BlurReveal";`);
+if (kinds.has("hugel")) imports.push(`import { HugelDiagram } from "./scenes/HugelDiagram";`);
 if (kinds.has("floatcards")) imports.push(`import { FloatCards } from "./scenes/FloatCards";`);
 // ── set pieces de imagen/clip ──
 if (kinds.has("expeditionmap")) imports.push(`import { ExpeditionMap } from "./setpieces/ExpeditionMap";`);
