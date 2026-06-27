@@ -403,6 +403,18 @@ function renderEl(b) {
         (b.keepTag ? ` keepTag=${j(b.keepTag)}` : ``) +
         ` />`
       );
+    case "windmill":
+      return (
+        `<WindmillDiagram durationInFrames={d}` +
+        (b.eyebrow ? ` eyebrow=${j(b.eyebrow)}` : ``) +
+        (b.title ? ` title=${j(b.title)}` : ``) +
+        (b.wind ? ` wind={${j(b.wind)}}` : ``) +
+        (b.pump ? ` pump={${j(b.pump)}}` : ``) +
+        (b.tank ? ` tank={${j(b.tank)}}` : ``) +
+        (b.out ? ` out={${j(b.out)}}` : ``) +
+        (b.partsTag ? ` partsTag=${j(b.partsTag)}` : ``) +
+        ` />`
+      );
     case "massheater":
       return (
         `<MassHeaterDiagram durationInFrames={d}` +
@@ -943,6 +955,7 @@ if (kinds.has("checklist")) imports.push(`import { Checklist } from "./scenes/Ch
 if (kinds.has("earthtube")) imports.push(`import { EarthTubeDiagram } from "./scenes/EarthTubeDiagram";`);
 if (kinds.has("zeerpot")) imports.push(`import { ZeerPotDiagram } from "./scenes/ZeerPotDiagram";`);
 if (kinds.has("massheater")) imports.push(`import { MassHeaterDiagram } from "./scenes/MassHeaterDiagram";`);
+if (kinds.has("windmill")) imports.push(`import { WindmillDiagram } from "./scenes/WindmillDiagram";`);
 if (kinds.has("curediagram")) imports.push(`import { CureDiagram } from "./scenes/CureDiagram";`);
 if (kinds.has("rampump")) imports.push(`import { RamPumpCycle } from "./scenes/RamPumpCycle";`);
 if (kinds.has("waterlens")) imports.push(`import { WaterLensLight } from "./scenes/WaterLensLight";`);

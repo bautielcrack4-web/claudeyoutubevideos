@@ -25,6 +25,7 @@ import { MainRampump, TOTAL_FRAMES_RAMPUMP } from "./VideoEdit/Main_rampump";
 import { MainZeer, TOTAL_FRAMES_ZEER } from "./VideoEdit/Main_zeer";
 import { MainCalor, TOTAL_FRAMES_CALOR } from "./VideoEdit/Main_calor";
 import { MainCarne, TOTAL_FRAMES_CARNE } from "./VideoEdit/Main_carne";
+import { MainMolino, TOTAL_FRAMES_MOLINO } from "./VideoEdit/Main_molino";
 import { MainLuz, TOTAL_FRAMES_LUZ } from "./VideoEdit/Main_luz";
 import { MainMedicaid, TOTAL_FRAMES_MED } from "./VideoEdit/Main_medicaid";
 import { MainViuda, TOTAL_FRAMES_VD } from "./VideoEdit/Main_viuda";
@@ -41,6 +42,8 @@ import { MainMosquitos, TOTAL_FRAMES_MOSQUITOS } from "./VideoEdit/Main_mosquito
 import { MainGotera, TOTAL_FRAMES_GOTERA } from "./VideoEdit/Main_gotera";
 import { MainPuertas, TOTAL_FRAMES_PUE } from "./VideoEdit/Main_puertas";
 import { MainMapas, TOTAL_FRAMES_MAP } from "./VideoEdit/Main_mapas";
+import { MainCafe, TOTAL_FRAMES_CAFE } from "./VideoEdit/Main_cafe";
+import { MainAmish, TOTAL_FRAMES_AMISH } from "./VideoEdit/Main_amish";
 
 // ── SOLO los videos ACTIVOS quedan registrados ──
 // Las composiciones viejas (Fly, Hipos, Bisontes, Objetos, Civil, Top7Demo,
@@ -56,6 +59,10 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="Huron" component={MainHuron} durationInFrames={TOTAL_FRAMES_HUR} fps={30} width={1920} height={1080} />
       {/* TEST nicho fauna — "La leona" (clip real por frase + voz Trevor) */}
       <Composition id="Leona" component={MainLeona} durationInFrames={TOTAL_FRAMES_LEONA} fps={30} width={1920} height={1080} />
+      {/* TEST stickman — "Por qué un café por día te cuesta una fortuna" · doodles Nano Banana (Flow) · voz Trevor */}
+      <Composition id="Cafe" component={MainCafe} durationInFrames={TOTAL_FRAMES_CAFE} fps={30} width={1920} height={1080} />
+      {/* TEST Amish faceless — "Conservar comida sin electricidad" · fotos Nano Banana (Flow) · voz Trevor */}
+      <Composition id="Amish" component={MainAmish} durationInFrames={TOTAL_FRAMES_AMISH} fps={30} width={1920} height={1080} />
       {/* VIDEO 2 Crónicas Perdidas — "7 Construcciones Antiguas Que la Ciencia No Puede Explicar" */}
       <Composition id="Construcciones" component={MainConstrucciones} durationInFrames={TOTAL_FRAMES_CONS} fps={30} width={1920} height={1080} />
       {/* VIDEO 4 Crónicas Perdidas — "7 Estructuras Bajo el Hielo de la Antártida" · faceless · voz Trevor */}
@@ -173,6 +180,15 @@ export const RemotionRoot: React.FC = () => {
         id="Carne"
         component={MainCarne}
         durationInFrames={TOTAL_FRAMES_CARNE}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
+      {/* VIDEO ACTIVO — Grandfather's windmill, 80 years no power (claudio yoder · homestead EN) */}
+      <Composition
+        id="Molino"
+        component={MainMolino}
+        durationInFrames={TOTAL_FRAMES_MOLINO}
         fps={30}
         width={1920}
         height={1080}
