@@ -365,6 +365,14 @@ function renderEl(b) {
         (b.title ? ` title=${j(b.title)}` : ``) +
         ` />`
       );
+    case "olla":
+      return (
+        `<OllaDiagram durationInFrames={d}` +
+        (b.mode ? ` mode=${j(b.mode)}` : ``) +
+        (b.eyebrow ? ` eyebrow=${j(b.eyebrow)}` : ``) +
+        (b.title ? ` title=${j(b.title)}` : ``) +
+        ` />`
+      );
     case "gridreveal":
       return (
         `<GridReveal durationInFrames={d} tiles={${j(b.tiles || [])}}` +
@@ -1131,6 +1139,7 @@ if (kinds.has("growthtimeline")) imports.push(`import { GrowthTimeline } from ".
 if (kinds.has("kineticline")) imports.push(`import { KineticLine } from "./scenes/KineticLine";`);
 if (kinds.has("blurreveal")) imports.push(`import { BlurReveal } from "./scenes/BlurReveal";`);
 if (kinds.has("hugel")) imports.push(`import { HugelDiagram } from "./scenes/HugelDiagram";`);
+if (kinds.has("olla")) imports.push(`import { OllaDiagram } from "./scenes/OllaDiagram";`);
 if (kinds.has("floatcards")) imports.push(`import { FloatCards } from "./scenes/FloatCards";`);
 // ── set pieces de imagen/clip ──
 if (kinds.has("expeditionmap")) imports.push(`import { ExpeditionMap } from "./setpieces/ExpeditionMap";`);

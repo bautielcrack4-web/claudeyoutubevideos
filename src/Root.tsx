@@ -18,6 +18,7 @@ import { MainCorn, TOTAL_FRAMES_CORN } from "./VideoEdit/Main_corn";
 import { MainAbono, TOTAL_FRAMES_ABONO } from "./VideoEdit/Main_abono";
 import { MainChoclo, TOTAL_FRAMES_CHOCLO } from "./VideoEdit/Main_choclo";
 import { MainHugel, TOTAL_FRAMES_HUGEL } from "./VideoEdit/Main_hugel";
+import { MainOllas, TOTAL_FRAMES_OLLAS } from "./VideoEdit/Main_ollas";
 import { MainPeroxide, TOTAL_FRAMES_PEROXIDE } from "./VideoEdit/Main_peroxide";
 import { MainMoho, TOTAL_FRAMES_MOHO } from "./VideoEdit/Main_moho";
 import { MainAcpipe, TOTAL_FRAMES_ACPIPE } from "./VideoEdit/Main_acpipe";
@@ -187,6 +188,15 @@ export const RemotionRoot: React.FC = () => {
         id="Molino"
         component={MainMolino}
         durationInFrames={TOTAL_FRAMES_MOLINO}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
+      {/* VIDEO ACTIVO — Ollas de barro / riego enterrado (Levi Lapp Jardín · ES) */}
+      <Composition
+        id="Ollas"
+        component={MainOllas}
+        durationInFrames={TOTAL_FRAMES_OLLAS}
         fps={30}
         width={1920}
         height={1080}

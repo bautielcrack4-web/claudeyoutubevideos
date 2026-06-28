@@ -80,6 +80,7 @@ const searchRanked = (queries, concept, limit = CANDS) => {
       "--print", "%(id)s\t%(title)s\t%(duration)s",
     ], { encoding: "utf8", maxBuffer: 1 << 26, timeout: 60000, killSignal: "SIGKILL" });
     const lines = (r.stdout || "").trim().split(/\r?\n/).filter(Boolean);
+    if (!lines.length && process.env.MATCH_DEBUG) console.error(`  [dbg] q="${q}" status=${r.status} err=${r.error && r.error.message} stderr=${(r.stderr || "").slice(0, 200)}`);
     lines.forEach((line, ri) => {
       const [id, title = "", durS = ""] = line.split("\t");
       if (!id) return;
