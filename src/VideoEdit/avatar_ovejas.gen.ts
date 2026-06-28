@@ -15,7 +15,7 @@ export const AVATAR_WINDOWS: AvatarWindow[] = [
     "mode": "full"
   },
   {
-    "start": 366,
+    "start": 348,
     "mode": "hidden"
   },
   {
