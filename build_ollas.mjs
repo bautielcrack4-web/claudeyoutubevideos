@@ -142,7 +142,7 @@ if (MODE === "build") {
   const placed = HOOKSEQ.map(([ph, cands]) => ({ t: _at(ph), cands })).filter((x) => x.t != null).sort((a, b) => a.t - b.t);
   let hid = 0; const usedH = new Set();
   for (let i = 0; i < placed.length; i++) {
-    const t = i === 0 ? OPEN : placed[i].t; const nm = hpick(placed[i].cands, usedH); if (!nm) continue; usedH.add(nm);
+    const t = i === 0 ? OPEN : placed[i].t; let nm = hpick(placed[i].cands, usedH); if (!nm) nm = pickClip(allMatched[0], allMatched); if (!nm) continue; usedH.add(nm);
     CLIPS.push([+(t + 0.05).toFixed(2), `bh${++hid}_${nm}`, nm, [""], "hook"]);
     const nt = i + 1 < placed.length ? placed[i + 1].t : t + 4; const gap = nt - t;
     if (gap > 2.6) { const slots = Math.min(3, Math.floor(gap / 2.4)); for (let k = 1; k <= slots; k++) { const alt = pickClip(placed[i].cands.find((c) => have(c)) || placed[i].cands[0], allMatched); if (alt) CLIPS.push([+(t + (gap * k) / (slots + 1)).toFixed(2), `bh${++hid}_${alt}`, alt, [""], "hook"]); } }
