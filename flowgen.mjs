@@ -83,18 +83,26 @@ async function doRun() {
   const jobs = []; // { name, url }
   for (let i = 0; i < pending.length; i++) {
     const { name, prompt } = pending[i];
-    // throttle: no más de CONCURRENCY generaciones en vuelo (sin terminar)
+    // throttle: no más de CONCURRENCY generaciones en vuelo (sin terminar).
+    // ★ con TIMEOUT: en modo oculto/offscreen las <img> no siempre reportan naturalWidth>1000,
+    // así que "ready" no sube y el throttle esperaría PARA SIEMPRE. Tras THROTTLE_MAX seguimos
+    // igual (la fase 2 tiene su propio timeout para bajar). Evita el freno permanente.
+    const THROTTLE_MAX = Number(process.env.FLOW_THROTTLE_MAX_MS) || 25000;
+    const tThr = Date.now();
     while (true) {
       const ready = new Set((await mediaList(page)).filter((m) => m.w > 1000).map((m) => m.name));
       const inflight = jobs.filter((j) => j.url && !ready.has((j.url.match(/name=([^&]+)/) || [])[1])).length;
       if (inflight < CONCURRENCY) break;
+      if (Date.now() - tThr > THROTTLE_MAX) break;
       await sleep(1500);
     }
     const inp = page.locator('div[contenteditable="true"]').first();
     await inp.click();
     await page.keyboard.press("Control+A").catch(() => {});
     await page.keyboard.press("Delete").catch(() => {});
-    await inp.type(prompt, { delay: rnd(4, 12) });
+    // insertText mete TODO el texto de una (el editor Slate es lentísimo tecla por
+    // tecla → timeout con prompts largos). Fallback a type() corto si algo falla.
+    try { await page.keyboard.insertText(prompt); } catch { await inp.type(prompt.slice(0, 240), { delay: 6 }).catch(() => {}); }
     await sleep(rnd(200, 450));
     const send = page.locator('button:has-text("arrow_forward")').last();
     if (await send.count()) await send.click().catch(() => {}); else await page.keyboard.press("Enter");
@@ -116,7 +124,7 @@ async function doRun() {
     }
     if (!url) { // reintento: re-enviar una vez
       await inp.click(); await page.keyboard.press("Control+A").catch(() => {}); await page.keyboard.press("Delete").catch(() => {});
-      await inp.type(prompt, { delay: 6 }); await sleep(300);
+      try { await page.keyboard.insertText(prompt); } catch { await inp.type(prompt.slice(0, 240), { delay: 6 }).catch(() => {}); } await sleep(300);
       const s2 = page.locator('button:has-text("arrow_forward")').last(); if (await s2.count()) await s2.click().catch(() => {});
       const tw2 = Date.now();
       while (Date.now() - tw2 < (Number(process.env.FLOW_CARDWAIT_MS) || 15000)) { const fr = (await mediaList(page)).filter((m) => !seen.has(m.name)); if (fr.length) { fr.forEach((m) => seen.add(m.name)); url = fr[0].url; break; } await sleep(700); }
