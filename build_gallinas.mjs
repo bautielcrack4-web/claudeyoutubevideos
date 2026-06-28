@@ -67,7 +67,7 @@ const plan = [
   /*L18  17  */ ["two dozen brown eggs neatly arranged in open cartons on a wooden table"],
   /*L19  18  */ ["a flock of many brown hens spread across a sunny farmyard"],
   /*L20  19  */ ["a rustic table completely covered with dozens and dozens of brown eggs, abundance"],
-  /*L21  20  */ { id: "stat_huevos", kind: "stat", value: 1200, suffix: " HUEVOS", label: "POR MES", eyebrow: "50 GALLINAS PONEN", hue: "amber" },
+  /*L21  20  */ { id: "n_huevos", kind: "callout", figure: "1.200", eyebrow: "50 GALLINAS PONEN", caption: "huevos al mes", image: "real/g129.jpg", hue: "amber" },
   /*L22  21  */ A,
   /*L23  22  */ ["overflowing stacks of egg cartons piled high on a farmhouse table", "C|a long checkout queue at a supermarket, people waiting with carts"],
   /*L24  23  */ ["C|close up of an expensive egg price tag on a supermarket shelf"],
@@ -128,11 +128,11 @@ const plan = [
   /*L79  78  */ ["hands stacking egg cartons ready to sell"],
   /*L80  79  */ A,
   /*L81  80  */ ["a neighbor handing over cash for eggs at a doorstep, friendly"],
-  /*L82  81  */ { id: "money", kind: "costtally", eyebrow: "CADA MES", title: "Comprar vs producir tus huevos", left: { label: "Comprar", note: "en el super", total: 100, bad: true }, right: { label: "Tus gallinas", note: "casi gratis", total: 12 }, hue: "amber" },
+  /*L82  81  */ { id: "money", kind: "keyphrase", text: "Comprar huevos cuesta *9 veces* más que producirlos", src: "broll/g015.mp4", accent: "good" },
   /*L83  82  */ ["a calm content hen resting in soft warm light, close up"],
   /*L84  83  */ A,
   /*L85  84  */ A,
-  /*L86  85  */ { id: "err1", kind: "rule", number: "01", label: "ERROR", title: "Arrancar en grande, todo de golpe", hue: "red" },
+  /*L86  85  */ { id: "err1", kind: "keyphrase", text: "Error #1: arrancar *en grande*, todo de golpe", src: "real/g008.jpg", accent: "danger" },
   /*L87  86  */ ["C|a person unloading lots of brand new chicken equipment and feed bags from a car trunk"],
   /*L88  87  */ ["C|an anxious man staring at a pile of receipts and bills on a table"],
   /*L89  88  */ ["C|a discouraged man walking away from an empty coop, shoulders down"],
@@ -150,12 +150,12 @@ const plan = [
   /*L101 100 */ A,
   /*L102 101 */ A,
   /*L103 102 */ A,
-  /*L104 103 */ { id: "err2", kind: "rule", number: "02", label: "ERROR", title: "Elegir una raza que no pone", hue: "red" },
+  /*L104 103 */ { id: "err2", kind: "keyphrase", text: "Error #2: elegir una *raza que no pone*", src: "real/g001.jpg", accent: "danger" },
   /*L105 104 */ ["C|a fancy ornamental chicken strutting, decorative but a poor layer"],
   /*L106 105 */ ["a sturdy productive brown laying hen breed standing healthy in a yard"],
   /*L107 106 */ ["weathered hands inspecting a hen at a small local farm"],
   /*L108 107 */ A,
-  /*L109 108 */ { id: "err3", kind: "rule", number: "03", label: "ERROR", title: "Sin agua limpia ni sombra", hue: "red" },
+  /*L109 108 */ { id: "err3", kind: "keyphrase", text: "Error #3: sin *agua limpia* ni sombra", src: "real/g046.jpg", accent: "danger" },
   /*L110 109 */ A,
   /*L111 110 */ A,
   /*L112 111 */ ["C|a hen panting in the heat beside a dirty warm water dish"],
@@ -207,7 +207,7 @@ const plan = [
   /*L158 157 */ A,
   /*L159 158 */ ["a young man smiling while collecting plenty of eggs after a few months"],
   /*L160 159 */ ["a young man buying a few more hens with his egg money"],
-  /*L161 160 */ { id: "growth", kind: "growthtimeline", title: "Se pagan solas", stages: [{ label: "6 gallinas", sub: "el arranque" }, { label: "20", sub: "al año" }, { label: "40 + codornices", sub: "al año y medio" }] },
+  /*L161 160 */ { id: "growth", kind: "keyphrase", text: "De *6 gallinas* a 40 — y un cajón de codornices", src: "real/g023.jpg", accent: "good" },
   /*L162 161 */ ["a young man selling eggs and quail eggs to neighbors at a small roadside stand"],
   /*L163 162 */ A,
   /*L164 163 */ A,
@@ -238,7 +238,7 @@ const plan = [
   /*L189 188 */ ["several quail in a wooden cage, close up"],
   /*L190 189 */ ["macro of a tiny quail most people overlook"],
   /*L191 190 */ ["a young quail beside a full-size hen for scale, the quail much smaller"],
-  /*L192 191 */ { id: "codorniz_vs", kind: "bars", eyebrow: "GALLINA vs CODORNIZ", title: "En el espacio de UNA gallina", unit: " aves", bars: [{ label: "Codorniz", value: 10, display: "10" }, { label: "Gallina", value: 1, display: "1" }], hue: "amber" },
+  /*L192 191 */ { id: "n_codorniz", kind: "keyphrase", text: "*10 codornices* donde entra una sola gallina", src: "broll/g114.mp4", accent: "good" },
   /*L193 192 */ ["a quail laying a small speckled egg in a cage"],
   /*L194 193 */ ["a hand holding several tiny speckled quail eggs"],
   /*L195 194 */ ["ten quail in the cage space of a single hen, side by side"],
@@ -369,7 +369,7 @@ fs.writeFileSync("public/broll/match_gallinas.json", JSON.stringify(matchList, n
 const specialBeats = specials.map((sp) => {
   const b = sp.beat;
   const out = { id: b.id, start: sp.start, dur: +(nextBound(sp.start) - sp.start).toFixed(2), kind: b.kind };
-  for (const f of ["value", "prefix", "suffix", "decimals", "label", "eyebrow", "accent", "hue", "items", "title", "text", "caption", "annotations", "number", "bars", "stages", "unit", "orientation", "left", "right", "kicker", "sub", "total", "note", "resultLabel"]) {
+  for (const f of ["value", "prefix", "suffix", "decimals", "label", "eyebrow", "accent", "hue", "items", "title", "text", "caption", "annotations", "number", "bars", "stages", "unit", "orientation", "left", "right", "kicker", "sub", "total", "note", "resultLabel", "figure", "src", "blur", "fontSize", "position"]) {
     if (b[f] !== undefined) out[f] = b[f];
   }
   if (b.image) out.image = b.image;

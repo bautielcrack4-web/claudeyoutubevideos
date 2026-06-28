@@ -3,12 +3,9 @@
 import { ReactNode } from "react";
 import { RawShot } from "./scenes/RawShot";
 import { KineticQuote, parseQuote } from "./scenes/KineticQuote";
-import { StatBig } from "./scenes/StatBig";
-import { BarCompare } from "./scenes/BarCompare";
 import { Checklist } from "./scenes/Checklist";
-import { RuleNumberScene } from "./scenes/RuleNumberScene";
-import { CostTally } from "./scenes/CostTally";
-import { GrowthTimeline } from "./scenes/GrowthTimeline";
+import { CalloutMark } from "./scenes/CalloutMark";
+import { KeyPhrase } from "./scenes/KeyPhrase";
 
 export type Cue = { key: string; start: number; dur: number; kind: string; el: (d: number) => ReactNode };
 
@@ -37,7 +34,7 @@ export const CUES: Cue[] = [
   { key: "g022", start: 141.9, dur: 2.5, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/g022.jpg" hue="amber" /> },
   { key: "g023", start: 144.4, dur: 2.5, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/g023.jpg" hue="amber" /> },
   { key: "g024", start: 146.9, dur: 3.8, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/g024.jpg" hue="amber" /> },
-  { key: "stat_huevos", start: 150.7, dur: 1.9, kind: "stat", el: (d) => <StatBig durationInFrames={d} value={1200} suffix=" HUEVOS" label="POR MES" eyebrow="50 GALLINAS PONEN" hue="amber" /> },
+  { key: "n_huevos", start: 150.7, dur: 1.9, kind: "callout", el: (d) => <CalloutMark durationInFrames={d} figure="1.200" image="real/g129.jpg" eyebrow="50 GALLINAS PONEN" caption="huevos al mes" hue="amber" /> },
   { key: "g025", start: 156.7, dur: 6.85, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/g025.mp4" hue="amber" /> },
   { key: "g026", start: 163.55, dur: 6.85, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/g026.mp4" hue="cold" /> },
   { key: "g027", start: 170.4, dur: 6.5, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/g027.mp4" hue="cold" /> },
@@ -81,12 +78,12 @@ export const CUES: Cue[] = [
   { key: "g064", start: 484.5, dur: 4.8, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/g064.jpg" hue="amber" /> },
   { key: "g065", start: 489.3, dur: 7.8, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/g065.mp4" hue="amber" /> },
   { key: "g066", start: 500, dur: 6.9, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/g066.jpg" hue="amber" /> },
-  { key: "money", start: 506.9, dur: 17, kind: "costtally", el: (d) => <CostTally durationInFrames={d} left={{"label":"Comprar","note":"en el super","total":100,"bad":true}} right={{"label":"Tus gallinas","note":"casi gratis","total":12}} eyebrow="CADA MES" title="Comprar vs producir tus huevos" hue="amber" /> },
+  { key: "money", start: 506.9, dur: 17, kind: "keyphrase", el: (d) => <KeyPhrase durationInFrames={d} text="Comprar huevos cuesta *9 veces* más que producirlos" src="broll/g015.mp4" accent="good" /> },
   { key: "g067", start: 523.9, dur: 5.77, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/g067.mp4" hue="amber" /> },
   { key: "g068", start: 529.67, dur: 5.78, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/g068.jpg" hue="amber" /> },
   { key: "g069", start: 535.45, dur: 5.78, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/g069.jpg" hue="amber" /> },
   { key: "g070", start: 541.23, dur: 5.77, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/g070.mp4" hue="amber" /> },
-  { key: "err1", start: 570.8, dur: 17.7, kind: "rule", el: (d) => <RuleNumberScene durationInFrames={d} number="01" title="Arrancar en grande, todo de golpe" label="ERROR" hue="red" /> },
+  { key: "err1", start: 570.8, dur: 17.7, kind: "keyphrase", el: (d) => <KeyPhrase durationInFrames={d} text="Error #1: arrancar *en grande*, todo de golpe" src="real/g008.jpg" accent="danger" /> },
   { key: "g071", start: 588.5, dur: 4.95, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/g071.jpg" hue="cold" /> },
   { key: "g072", start: 593.45, dur: 4.95, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/g072.jpg" hue="cold" /> },
   { key: "g073", start: 598.4, dur: 5.9, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/g073.jpg" hue="cold" /> },
@@ -110,14 +107,14 @@ export const CUES: Cue[] = [
   { key: "g091", start: 727.3, dur: 6.23, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/g091.mp4" hue="amber" /> },
   { key: "g092", start: 733.53, dur: 6.24, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/g092.jpg" hue="amber" /> },
   { key: "g093", start: 739.77, dur: 6.23, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/g093.jpg" hue="amber" /> },
-  { key: "err2", start: 787.7, dur: 2.2, kind: "rule", el: (d) => <RuleNumberScene durationInFrames={d} number="02" title="Elegir una raza que no pone" label="ERROR" hue="red" /> },
+  { key: "err2", start: 787.7, dur: 2.2, kind: "keyphrase", el: (d) => <KeyPhrase durationInFrames={d} text="Error #2: elegir una *raza que no pone*" src="real/g001.jpg" accent="danger" /> },
   { key: "g094", start: 789.9, dur: 2.9, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/g094.jpg" hue="cold" /> },
   { key: "g095", start: 792.8, dur: 7, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/g095.jpg" hue="amber" /> },
   { key: "g096", start: 799.8, dur: 7, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/g096.jpg" hue="amber" /> },
   { key: "g097", start: 806.8, dur: 4.97, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/g097.mp4" hue="amber" /> },
   { key: "g098", start: 811.77, dur: 4.96, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/g098.mp4" hue="amber" /> },
   { key: "g099", start: 816.73, dur: 4.97, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/g099.jpg" hue="amber" /> },
-  { key: "err3", start: 829.7, dur: 6.2, kind: "rule", el: (d) => <RuleNumberScene durationInFrames={d} number="03" title="Sin agua limpia ni sombra" label="ERROR" hue="red" /> },
+  { key: "err3", start: 829.7, dur: 6.2, kind: "keyphrase", el: (d) => <KeyPhrase durationInFrames={d} text="Error #3: sin *agua limpia* ni sombra" src="real/g046.jpg" accent="danger" /> },
   { key: "g100", start: 846.3, dur: 4.6, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/g100.mp4" hue="cold" /> },
   { key: "g101", start: 858.9, dur: 2.5, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/g101.mp4" hue="amber" /> },
   { key: "g102", start: 861.4, dur: 6.2, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/g102.jpg" hue="amber" /> },
@@ -147,7 +144,7 @@ export const CUES: Cue[] = [
   { key: "g126", start: 1143.7, dur: 4.4, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/g126.mp4" hue="amber" /> },
   { key: "g127", start: 1148.1, dur: 6.35, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/g127.jpg" hue="amber" /> },
   { key: "g128", start: 1154.45, dur: 6.35, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/g128.jpg" hue="amber" /> },
-  { key: "growth", start: 1160.8, dur: 5.2, kind: "growthtimeline", el: (d) => <GrowthTimeline durationInFrames={d} stages={[{"label":"6 gallinas","sub":"el arranque"},{"label":"20","sub":"al año"},{"label":"40 + codornices","sub":"al año y medio"}]} title="Se pagan solas" /> },
+  { key: "growth", start: 1160.8, dur: 5.2, kind: "keyphrase", el: (d) => <KeyPhrase durationInFrames={d} text="De *6 gallinas* a 40 — y un cajón de codornices" src="real/g023.jpg" accent="good" /> },
   { key: "g129", start: 1166, dur: 4.55, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/g129.jpg" hue="amber" /> },
   { key: "g130", start: 1170.55, dur: 4.55, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/g130.mp4" hue="amber" /> },
   { key: "g131", start: 1218.7, dur: 4.65, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/g131.jpg" hue="amber" /> },
@@ -163,7 +160,7 @@ export const CUES: Cue[] = [
   { key: "g141", start: 1360.3, dur: 1.6, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/g141.jpg" hue="amber" /> },
   { key: "g142", start: 1361.9, dur: 3.2, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/g142.jpg" hue="amber" /> },
   { key: "g143", start: 1365.1, dur: 4.2, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/g143.jpg" hue="amber" /> },
-  { key: "codorniz_vs", start: 1369.3, dur: 7.1, kind: "bars", el: (d) => <BarCompare durationInFrames={d} bars={[{"label":"Codorniz","value":10,"display":"10"},{"label":"Gallina","value":1,"display":"1"}]} eyebrow="GALLINA vs CODORNIZ" title="En el espacio de UNA gallina" unit=" aves" hue="amber" /> },
+  { key: "n_codorniz", start: 1369.3, dur: 7.1, kind: "keyphrase", el: (d) => <KeyPhrase durationInFrames={d} text="*10 codornices* donde entra una sola gallina" src="broll/g114.mp4" accent="good" /> },
   { key: "g144", start: 1376.4, dur: 1.4, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/g144.jpg" hue="amber" /> },
   { key: "g145", start: 1377.8, dur: 2.7, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/g145.mp4" hue="amber" /> },
   { key: "g146", start: 1380.5, dur: 4, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/g146.jpg" hue="amber" /> },
