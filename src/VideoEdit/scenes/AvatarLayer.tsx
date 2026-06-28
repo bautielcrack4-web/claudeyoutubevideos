@@ -12,7 +12,8 @@ import { COLORS } from "../theme";
 //   · "left"     → recuadro grande a la IZQUIERDA (imagen a la derecha)
 //   · "cornerTR" → recuadro chico redondeado en la esquina superior derecha (PiP)
 //   · "hidden"   → fuera de vista (solo se oye), el b-roll manda a pantalla completa
-// Las transiciones entre modos hacen fade-in-place + lerp de geometría.
+// Aparición/salida del avatar = CORTE LIMPIO (sin fade — no queda bien). El cambio de
+// posición entre modos VISIBLES sí hace lerp de geometría (slide suave).
 
 export type AvatarMode =
   | "full" | "right" | "left"
@@ -91,7 +92,10 @@ export const AvatarLayer: React.FC<{
   const w = lerp(fromGeom.w, toGeom.w, p);
   const h = lerp(fromGeom.h, toGeom.h, p);
   const r = lerp(fromGeom.r, toGeom.r, p);
-  const op = lerp(fromGeom.op, toGeom.op, p);
+  // ★ APARICIÓN/SALIDA = CORTE LIMPIO, sin fade (el fade no queda bien en el avatar).
+  // op no se interpola: salta a su valor destino (1 al aparecer, 0 al desaparecer).
+  // El reposicionamiento entre posiciones VISIBLES sigue siendo suave (geometría lerp).
+  const op = toGeom.op;
   const chrome = lerp(fromGeom.chrome, toGeom.chrome, p);
 
   // float sutil solo cuando NO está full (cuanto más chico, más flota)
