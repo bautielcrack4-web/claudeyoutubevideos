@@ -14,6 +14,7 @@ import { MainJabon, TOTAL_FRAMES_JABON } from "./VideoEdit/Main_jabon";
 import { MainCeniza, TOTAL_FRAMES_CENIZA } from "./VideoEdit/Main_ceniza";
 import { MainRatas, TOTAL_FRAMES_RATAS } from "./VideoEdit/Main_ratas";
 import { MainMelon, TOTAL_FRAMES_MELON } from "./VideoEdit/Main_melon";
+import { MainGallinas, TOTAL_FRAMES_GALLINAS } from "./VideoEdit/Main_gallinas";
 import { MainCorn, TOTAL_FRAMES_CORN } from "./VideoEdit/Main_corn";
 import { MainAbono, TOTAL_FRAMES_ABONO } from "./VideoEdit/Main_abono";
 import { MainChoclo, TOTAL_FRAMES_CHOCLO } from "./VideoEdit/Main_choclo";
@@ -242,6 +243,15 @@ export const RemotionRoot: React.FC = () => {
         id="Melon"
         component={MainMelon}
         durationInFrames={TOTAL_FRAMES_MELON}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
+      {/* VIDEO ACTIVO — Cuánto Dinero Te Dan 50 Gallinas Ponedoras (Cosecha Prohibida · ES) */}
+      <Composition
+        id="Gallinas"
+        component={MainGallinas}
+        durationInFrames={TOTAL_FRAMES_GALLINAS}
         fps={30}
         width={1920}
         height={1080}
