@@ -1,0 +1,1937 @@
+{
+ "video": "faros",
+ "avatar": "faros_opt.mp4",
+ "tutorial": true,
+ "clipsfirst": true,
+ "beats": [
+  {
+   "id": "fa_night_road_driving",
+   "start": 0.07,
+   "dur": 2.51,
+   "kind": "raw",
+   "src": "broll/fa_night_road_driving.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "fa_pedestrian_dark_road",
+   "start": 2.28,
+   "dur": 2.16,
+   "kind": "raw",
+   "src": "broll/fa_pedestrian_dark_road.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "fa_didnt_see_time",
+   "start": 4.14,
+   "dur": 0.8,
+   "kind": "raw",
+   "src": "broll/fa_didnt_see_time.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "fa_fill_didnt_see_time",
+   "start": 4.14,
+   "dur": 1.56,
+   "kind": "raw",
+   "src": "real/fa_fill_didnt_see_time.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "fa_slam_brakes",
+   "start": 10.2,
+   "dur": 1.64,
+   "kind": "raw",
+   "src": "broll/fa_slam_brakes.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "fa_fill_one_reason",
+   "start": 15.98,
+   "dur": 1.98,
+   "kind": "raw",
+   "src": "real/fa_fill_one_reason.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "fa_yellow_dim_headlight",
+   "start": 17.66,
+   "dur": 4.64,
+   "kind": "raw",
+   "src": "real/fa_yellow_dim_headlight.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "fa_half_light_road",
+   "start": 22,
+   "dur": 1.28,
+   "kind": "raw",
+   "src": "broll/fa_half_light_road.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "fa_old_yellow_headlight_day",
+   "start": 27.08,
+   "dur": 4.07,
+   "kind": "raw",
+   "src": "real/fa_old_yellow_headlight_day.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "fa_driver_eyes_road_night",
+   "start": 30.85,
+   "dur": 0.8,
+   "kind": "raw",
+   "src": "broll/fa_driver_eyes_road_night.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "fa_mechanic_garage_car",
+   "start": 34.42,
+   "dur": 2.2,
+   "kind": "raw",
+   "src": "broll/fa_mechanic_garage_car.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "fa_new_headlight_unit_price",
+   "start": 38.69,
+   "dur": 2.35,
+   "kind": "raw",
+   "src": "broll/fa_new_headlight_unit_price.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "fa_expensive_quote_paper",
+   "start": 40.74,
+   "dur": 0.8,
+   "kind": "raw",
+   "src": "real/fa_expensive_quote_paper.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "cmp_bars_st_41",
+   "start": 40.74,
+   "dur": 6.5,
+   "kind": "bars",
+   "hue": "red",
+   "title": "Lo que pagás de más",
+   "bars": [
+    {
+     "label": "Cambiar las dos ópticas",
+     "value": 100,
+     "display": "$$",
+     "tone": "danger"
+    },
+    {
+     "label": "Restaurarlas vos mismo",
+     "value": 3,
+     "display": "café",
+     "winner": true
+    }
+   ]
+  },
+  {
+   "id": "fa_old_mechanic_portrait",
+   "start": 43.32,
+   "dur": 3.85,
+   "kind": "raw",
+   "src": "broll/fa_old_mechanic_portrait.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "fa_mechanic_whisper_aside",
+   "start": 46.87,
+   "dur": 1.27,
+   "kind": "raw",
+   "src": "broll/fa_mechanic_whisper_aside.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ov_oxquote_50",
+   "start": 49.92,
+   "dur": 5.2,
+   "kind": "oxquote",
+   "overlay": true,
+   "hue": "amber",
+   "quote": "No cambies nada. Eso se arregla en la vereda, *en veinte minutos, por el precio de un café*.",
+   "image": "real/fa_old_mechanic_portrait.png",
+   "attribution": "Un mecánico viejo",
+   "side": "right",
+   "accent": "amber"
+  },
+  {
+   "id": "fa_restore_headlight_curb",
+   "start": 51.05,
+   "dur": 1.89,
+   "kind": "raw",
+   "src": "broll/fa_restore_headlight_curb.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "cmp_callout_st_53",
+   "start": 52.64,
+   "dur": 6.5,
+   "kind": "callout",
+   "hue": "blue",
+   "figure": "20 min",
+   "caption": "En la vereda, por el precio de un café.",
+   "accent": "good",
+   "image": "real/fa_restore_headlight_curb.png"
+  },
+  {
+   "id": "fa_coffee_cup_price",
+   "start": 53.78,
+   "dur": 2.15,
+   "kind": "raw",
+   "src": "broll/fa_coffee_cup_price.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "fa_show_exactly_how",
+   "start": 57.29,
+   "dur": 4.55,
+   "kind": "raw",
+   "src": "broll/fa_show_exactly_how.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "fa_yellow_cloudy_headlight2",
+   "start": 61.54,
+   "dur": 3.32,
+   "kind": "raw",
+   "src": "real/fa_yellow_cloudy_headlight2.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ov_oxbefore_62",
+   "start": 61.54,
+   "dur": 4.4,
+   "kind": "oxbefore",
+   "overlay": true,
+   "hue": "amber",
+   "before": "real/fa_yellow_cloudy_headlight2.png",
+   "after": "real/fa_two_clear_headlights.png",
+   "accent": "green"
+  },
+  {
+   "id": "burst_62",
+   "start": 61.54,
+   "dur": 4.2,
+   "kind": "oxstack",
+   "overlay": true,
+   "hue": "amber",
+   "images": [
+    "real/fa_yellow_cloudy_headlight2.png",
+    "real/fa_headlight_cloud_inside.png",
+    "real/fa_old_yellow_headlight_day.png"
+   ],
+   "captions": [
+    "Amarillos",
+    "Opacos",
+    "Como con nube"
+   ],
+   "accent": "red"
+  },
+  {
+   "id": "fa_headlight_cloud_inside",
+   "start": 64.56,
+   "dur": 1.9,
+   "kind": "raw",
+   "src": "real/fa_headlight_cloud_inside.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "fa_headlight_night_no_see",
+   "start": 69.1,
+   "dur": 2.96,
+   "kind": "raw",
+   "src": "broll/fa_headlight_night_no_see.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "fa_dealership_counter_quote",
+   "start": 73.36,
+   "dur": 3.28,
+   "kind": "raw",
+   "src": "broll/fa_dealership_counter_quote.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "fa_painful_price_estimate",
+   "start": 76.34,
+   "dur": 2.19,
+   "kind": "raw",
+   "src": "broll/fa_painful_price_estimate.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "fa_rag_glass_cleaner_rub",
+   "start": 78.23,
+   "dur": 4.43,
+   "kind": "raw",
+   "src": "broll/fa_rag_glass_cleaner_rub.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "fa_no_change_headlight",
+   "start": 82.36,
+   "dur": 5.84,
+   "kind": "raw",
+   "src": "broll/fa_no_change_headlight.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "fa_fake_internet_tricks",
+   "start": 99.04,
+   "dur": 4.92,
+   "kind": "raw",
+   "src": "broll/fa_fake_internet_tricks.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "fa_bright_two_weeks",
+   "start": 105.12,
+   "dur": 1.62,
+   "kind": "raw",
+   "src": "broll/fa_bright_two_weeks.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "fa_step_by_step_demo",
+   "start": 106.44,
+   "dur": 1.26,
+   "kind": "raw",
+   "src": "broll/fa_step_by_step_demo.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "fa_why_turns_yellow",
+   "start": 107.76,
+   "dur": 2.79,
+   "kind": "raw",
+   "src": "broll/fa_why_turns_yellow.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "fa_real_fix_coins",
+   "start": 110.25,
+   "dur": 0.8,
+   "kind": "raw",
+   "src": "broll/fa_real_fix_coins.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "fa_toothpaste_bathroom_trick",
+   "start": 115.93,
+   "dur": 6.46,
+   "kind": "raw",
+   "src": "broll/fa_toothpaste_bathroom_trick.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "fa_skipped_step_secret",
+   "start": 122.09,
+   "dur": 0.8,
+   "kind": "raw",
+   "src": "broll/fa_skipped_step_secret.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ov_oxstat_122",
+   "start": 122.09,
+   "dur": 4.2,
+   "kind": "oxstat",
+   "overlay": true,
+   "hue": "amber",
+   "value": 90,
+   "suffix": " %",
+   "label": "saltea el sellado: por eso el faro se vuelve amarillo",
+   "glyph": "🛡️",
+   "accent": "red"
+  },
+  {
+   "id": "cmp_callout_st_122",
+   "start": 122.09,
+   "dur": 6.5,
+   "kind": "callout",
+   "hue": "blue",
+   "figure": "90%",
+   "caption": "Saltea el sellado: por eso el faro se vuelve amarillo.",
+   "accent": "danger",
+   "image": "real/fa_uv_clear_coat_spray.png"
+  },
+  {
+   "id": "fa_stay_until_end",
+   "start": 133.99,
+   "dur": 4.1,
+   "kind": "raw",
+   "src": "broll/fa_stay_until_end.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "fa_safety_first_serious",
+   "start": 151.6,
+   "dur": 3.71,
+   "kind": "raw",
+   "src": "broll/fa_safety_first_serious.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "cmp_diagram_5_1",
+   "start": 155.01,
+   "dur": 4.48,
+   "kind": "diagram",
+   "hue": "amber",
+   "k": "comp",
+   "eyebrow": "Un faro opaco tira la mitad de luz",
+   "slides": [
+    {
+     "image": "img/dg_fa_half_light.png",
+     "eyebrow": "La diferencia entre ver al que cruza y no verlo"
+    }
+   ]
+  },
+  {
+   "id": "ov_oxstat_155",
+   "start": 155.01,
+   "dur": 4.2,
+   "kind": "oxstat",
+   "overlay": true,
+   "hue": "amber",
+   "value": 50,
+   "suffix": " %",
+   "label": "menos de luz a la ruta: manejás con los ojos tapados",
+   "glyph": "🚗",
+   "accent": "red"
+  },
+  {
+   "id": "cmp_bars_st_155",
+   "start": 155.01,
+   "dur": 6.5,
+   "kind": "bars",
+   "hue": "red",
+   "title": "Luz a la ruta",
+   "bars": [
+    {
+     "label": "Faro amarillo y opaco",
+     "value": 50,
+     "display": "½",
+     "tone": "danger"
+    },
+    {
+     "label": "Faro restaurado",
+     "value": 100,
+     "display": "100%",
+     "winner": true
+    }
+   ]
+  },
+  {
+   "id": "fa_pedestrian_crossing_night",
+   "start": 159.09,
+   "dur": 2.37,
+   "kind": "raw",
+   "src": "broll/fa_pedestrian_crossing_night.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "fa_animal_pothole_road_night",
+   "start": 161.16,
+   "dur": 1.93,
+   "kind": "raw",
+   "src": "broll/fa_animal_pothole_road_night.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "fa_driving_blind_night",
+   "start": 164.4,
+   "dur": 6.23,
+   "kind": "raw",
+   "src": "broll/fa_driving_blind_night.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "fa_failed_inspection_headlight",
+   "start": 170.33,
+   "dur": 1.97,
+   "kind": "raw",
+   "src": "broll/fa_failed_inspection_headlight.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ov_oxside_170",
+   "start": 170.33,
+   "dur": 5,
+   "kind": "oxside",
+   "overlay": true,
+   "hue": "amber",
+   "image": "real/fa_failed_inspection_headlight.png",
+   "title": "Lo que te cuesta",
+   "lines": [
+    "Seguridad: ves la mitad de la ruta",
+    "Verificación: te frenan el auto",
+    "Bolsillo: una óptica nueva es una fortuna"
+   ],
+   "side": "right",
+   "accent": "red"
+  },
+  {
+   "id": "fa_expensive_optics_shelf",
+   "start": 185,
+   "dur": 4.54,
+   "kind": "raw",
+   "src": "real/fa_expensive_optics_shelf.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "fa_shop_pushes_replace",
+   "start": 189.24,
+   "dur": 1.26,
+   "kind": "raw",
+   "src": "broll/fa_shop_pushes_replace.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "fa_fill_shop_business",
+   "start": 190.2,
+   "dur": 2.77,
+   "kind": "raw",
+   "src": "real/fa_fill_shop_business.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "fa_selling_new_plastic",
+   "start": 192.67,
+   "dur": 7,
+   "kind": "raw",
+   "src": "real/fa_selling_new_plastic.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "fa_fill_thats_business",
+   "start": 211,
+   "dur": 4.89,
+   "kind": "raw",
+   "src": "real/fa_fill_thats_business.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "fa_people_think_dirt",
+   "start": 219.29,
+   "dur": 1.33,
+   "kind": "raw",
+   "src": "broll/fa_people_think_dirt.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "fa_rubbing_outside_useless",
+   "start": 222.64,
+   "dur": 5.1,
+   "kind": "raw",
+   "src": "broll/fa_rubbing_outside_useless.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ov_oxrule_226",
+   "start": 225.72,
+   "dur": 4.4,
+   "kind": "oxrule",
+   "overlay": true,
+   "hue": "amber",
+   "text": "No es mugre. Es la *capa de plástico oxidada por el sol*.",
+   "accent": "amber"
+  },
+  {
+   "id": "cmp_diagram_6_3",
+   "start": 227.44,
+   "dur": 2.12,
+   "kind": "diagram",
+   "hue": "amber",
+   "k": "comp",
+   "eyebrow": "El faro es plástico con una capa UV",
+   "slides": [
+    {
+     "image": "img/dg_fa_uv_layer.png",
+     "eyebrow": "El sol quema el barniz y el plástico se oxida"
+    }
+   ]
+  },
+  {
+   "id": "fa_polycarbonate_headlight",
+   "start": 229.16,
+   "dur": 2.46,
+   "kind": "raw",
+   "src": "real/fa_polycarbonate_headlight.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "fa_uv_clear_coat_factory",
+   "start": 233.6,
+   "dur": 4.38,
+   "kind": "raw",
+   "src": "broll/fa_uv_clear_coat_factory.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "fa_sun_uv_burning_coat",
+   "start": 237.68,
+   "dur": 3.02,
+   "kind": "raw",
+   "src": "broll/fa_sun_uv_burning_coat.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ov_oxstat_242",
+   "start": 242.4,
+   "dur": 4,
+   "kind": "oxstat",
+   "overlay": true,
+   "hue": "amber",
+   "value": 100,
+   "suffix": " %",
+   "label": "el sol come la capa UV y el plástico queda desnudo",
+   "glyph": "☀️",
+   "accent": "red"
+  },
+  {
+   "id": "fa_bare_plastic_oxidized",
+   "start": 247.89,
+   "dur": 0.8,
+   "kind": "raw",
+   "src": "real/fa_bare_plastic_oxidized.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "cmp_callout_st_248",
+   "start": 247.89,
+   "dur": 6.5,
+   "kind": "callout",
+   "hue": "blue",
+   "figure": "El sol",
+   "caption": "Quema la capa UV y el plástico queda desnudo y amarillo.",
+   "accent": "danger",
+   "image": "real/fa_bare_plastic_oxidized.png"
+  },
+  {
+   "id": "fa_micro_scratches_yellow",
+   "start": 254.04,
+   "dur": 2.3,
+   "kind": "raw",
+   "src": "broll/fa_micro_scratches_yellow.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "fa_problem_in_dead_layer",
+   "start": 266,
+   "dur": 6.18,
+   "kind": "raw",
+   "src": "real/fa_problem_in_dead_layer.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "cmp_diagram_7_0",
+   "start": 271.88,
+   "dur": 4.81,
+   "kind": "diagram",
+   "hue": "red",
+   "k": "comp",
+   "eyebrow": "Las dos claves de todo el arreglo",
+   "slides": [
+    {
+     "image": "img/dg_fa_two_keys.png",
+     "eyebrow": "1. Sacar lo muerto · 2. Volver a sellar"
+    }
+   ]
+  },
+  {
+   "id": "cmp_aged_st_275",
+   "start": 274.95,
+   "dur": 6.5,
+   "kind": "aged",
+   "hue": "amber",
+   "heading": "LAS DOS CLAVES",
+   "eyebrow": "Si te falta una mitad, fallaste",
+   "lines": [
+    {
+     "text": "Sacar la capa muerta, lijándola"
+    },
+    {
+     "text": "Volver a proteger, sellándolo"
+    },
+    {
+     "text": "Sacar lo muerto y volver a proteger",
+     "mark": true
+    }
+   ]
+  },
+  {
+   "id": "fa_sanding_off_dead_layer",
+   "start": 276.29,
+   "dur": 2.32,
+   "kind": "raw",
+   "src": "broll/fa_sanding_off_dead_layer.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ov_oxside_276",
+   "start": 276.29,
+   "dur": 5.2,
+   "kind": "oxside",
+   "overlay": true,
+   "hue": "amber",
+   "image": "real/fa_sanding_off_dead_layer.png",
+   "title": "Las dos claves",
+   "lines": [
+    "Sacar la capa muerta, lijándola",
+    "Volver a sellar con una capa nueva",
+    "Si te falta una mitad, fallaste"
+   ],
+   "side": "right",
+   "accent": "amber"
+  },
+  {
+   "id": "fa_most_forget_seal",
+   "start": 282.77,
+   "dur": 2.09,
+   "kind": "raw",
+   "src": "broll/fa_most_forget_seal.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "fa_new_protective_coat",
+   "start": 287.76,
+   "dur": 2.51,
+   "kind": "raw",
+   "src": "broll/fa_new_protective_coat.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "fa_yellow_again_two_weeks",
+   "start": 294.05,
+   "dur": 3.97,
+   "kind": "raw",
+   "src": "broll/fa_yellow_again_two_weeks.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "fa_remove_protect_summary",
+   "start": 297.72,
+   "dur": 3.37,
+   "kind": "raw",
+   "src": "broll/fa_remove_protect_summary.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "fa_not_clean_restore",
+   "start": 314.48,
+   "dur": 0.8,
+   "kind": "raw",
+   "src": "broll/fa_not_clean_restore.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ov_oxrule_314",
+   "start": 314.48,
+   "dur": 4.6,
+   "kind": "oxrule",
+   "overlay": true,
+   "hue": "amber",
+   "text": "El faro amarillo no se *limpia*. Se *restaura*.",
+   "accent": "amber"
+  },
+  {
+   "id": "cmp_bars_st_314",
+   "start": 314.48,
+   "dur": 6.5,
+   "kind": "bars",
+   "hue": "amber",
+   "title": "Limpiar vs restaurar",
+   "bars": [
+    {
+     "label": "Frotar por afuera: no pasa nada",
+     "value": 100,
+     "display": "✗",
+     "tone": "danger"
+    },
+    {
+     "label": "Sacar lo muerto y sellar",
+     "value": 6,
+     "display": "✓",
+     "winner": true
+    }
+   ]
+  },
+  {
+   "id": "fa_old_coat_new_coat",
+   "start": 318.52,
+   "dur": 0.8,
+   "kind": "raw",
+   "src": "broll/fa_old_coat_new_coat.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ov_oxmethod_325",
+   "start": 325.2,
+   "dur": 4.6,
+   "kind": "oxmethod",
+   "overlay": true,
+   "hue": "amber",
+   "num": "01",
+   "title": "Pasta de dientes",
+   "chips": [
+    "Trapo o cepillo",
+    "Frotar en círculos",
+    "Es un parche"
+   ],
+   "cost": "lo del baño",
+   "accent": "blue"
+  },
+  {
+   "id": "cmp_process_st_325",
+   "start": 325.2,
+   "dur": 6.5,
+   "kind": "process",
+   "hue": "amber",
+   "title": "El parche de urgencia",
+   "eyebrow": "Algo que tenés en el baño",
+   "steps": [
+    {
+     "title": "Pasta de dientes",
+     "desc": "una buena cantidad en un trapo o cepillo"
+    },
+    {
+     "title": "Frotá en círculos",
+     "desc": "con fuerza, mojando de vez en cuando"
+    },
+    {
+     "title": "Enjuagá",
+     "desc": "se ve mejor, pero es solo un parche"
+    }
+   ]
+  },
+  {
+   "id": "fa_toothpaste_white_tube",
+   "start": 330.55,
+   "dur": 1.97,
+   "kind": "raw",
+   "src": "real/fa_toothpaste_white_tube.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "cmp_diagram_9_1",
+   "start": 338.19,
+   "dur": 6.48,
+   "kind": "diagram",
+   "hue": "red",
+   "k": "comp",
+   "eyebrow": "Por qué la pasta de dientes pule",
+   "slides": [
+    {
+     "image": "img/dg_fa_toothpaste.png",
+     "eyebrow": "Un abrasivo finito que lija suave la capa de arriba"
+    }
+   ]
+  },
+  {
+   "id": "fa_abrasive_particles_polish",
+   "start": 344.27,
+   "dur": 7,
+   "kind": "raw",
+   "src": "broll/fa_abrasive_particles_polish.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "fa_rag_toothpaste_headlight",
+   "start": 352.59,
+   "dur": 2.31,
+   "kind": "raw",
+   "src": "broll/fa_rag_toothpaste_headlight.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "fa_old_toothbrush_scrub",
+   "start": 360.72,
+   "dur": 2.05,
+   "kind": "raw",
+   "src": "broll/fa_old_toothbrush_scrub.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "fa_rag_turning_yellow",
+   "start": 371.21,
+   "dur": 2.25,
+   "kind": "raw",
+   "src": "broll/fa_rag_turning_yellow.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "fa_rinse_dry_better",
+   "start": 378.92,
+   "dur": 3.84,
+   "kind": "raw",
+   "src": "broll/fa_rinse_dry_better.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "fa_toothpaste_just_patch",
+   "start": 385.87,
+   "dur": 3.38,
+   "kind": "raw",
+   "src": "broll/fa_toothpaste_just_patch.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "fa_pass_inspection_tomorrow",
+   "start": 388.95,
+   "dur": 2.23,
+   "kind": "raw",
+   "src": "broll/fa_pass_inspection_tomorrow.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "fa_opaque_again_weeks",
+   "start": 401.08,
+   "dur": 3.31,
+   "kind": "raw",
+   "src": "broll/fa_opaque_again_weeks.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "fa_real_fix_coming",
+   "start": 408.28,
+   "dur": 5.35,
+   "kind": "raw",
+   "src": "broll/fa_real_fix_coming.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ov_oxmethod_413",
+   "start": 413.33,
+   "dur": 4.8,
+   "kind": "oxmethod",
+   "overlay": true,
+   "hue": "amber",
+   "num": "02",
+   "title": "Lijar al agua y sellar",
+   "chips": [
+    "Tapar alrededor",
+    "Lijar 400→2000",
+    "Pulir y sellar"
+   ],
+   "cost": "monedas",
+   "accent": "amber"
+  },
+  {
+   "id": "burst_413",
+   "start": 413.33,
+   "dur": 4.2,
+   "kind": "oxstack",
+   "overlay": true,
+   "hue": "amber",
+   "images": [
+    "real/fa_toothpaste_white_tube.png",
+    "real/fa_wet_sandpaper_grits.png",
+    "real/fa_uv_clear_coat_spray.png"
+   ],
+   "captions": [
+    "Pasta (parche)",
+    "Lijas al agua",
+    "Barniz UV"
+   ],
+   "accent": "blue"
+  },
+  {
+   "id": "cmp_process_st_413",
+   "start": 413.33,
+   "dur": 6.5,
+   "kind": "process",
+   "hue": "blue",
+   "title": "El arreglo que dura años",
+   "eyebrow": "Tres pasos, por monedas",
+   "steps": [
+    {
+     "title": "Tapá y lijá al agua",
+     "desc": "400, 600, 1000 y 2000, siempre mojado"
+    },
+    {
+     "title": "Pulí",
+     "desc": "con pasta pulidora hasta dejarlo transparente"
+    },
+    {
+     "title": "Sellá",
+     "desc": "barniz UV: el paso que el 90% saltea"
+    }
+   ]
+  },
+  {
+   "id": "cmp_oxstack_11_0",
+   "start": 418.29,
+   "dur": 2.15,
+   "kind": "oxstack",
+   "hue": "blue",
+   "k": "comp",
+   "images": [
+    "real/fa_wet_sandpaper_grits.png",
+    "real/fa_polish_compound_tube.png",
+    "real/fa_uv_clear_coat_spray.png"
+   ],
+   "captions": [
+    "Lijas al agua",
+    "Pasta pulidora",
+    "Barniz UV"
+   ],
+   "accent": "blue"
+  },
+  {
+   "id": "fa_masking_tape_around",
+   "start": 428.49,
+   "dur": 3.49,
+   "kind": "raw",
+   "src": "broll/fa_masking_tape_around.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "fa_protect_car_paint",
+   "start": 435.39,
+   "dur": 2.91,
+   "kind": "raw",
+   "src": "broll/fa_protect_car_paint.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "fa_tape_whole_edge",
+   "start": 438,
+   "dur": 4.41,
+   "kind": "raw",
+   "src": "broll/fa_tape_whole_edge.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "cmp_diagram_12_0",
+   "start": 442.11,
+   "dur": 4.38,
+   "kind": "diagram",
+   "hue": "amber",
+   "k": "comp",
+   "eyebrow": "De la lija más gruesa a la más fina",
+   "slides": [
+    {
+     "image": "img/dg_fa_grits.png",
+     "eyebrow": "400 · 600 · 1000 · 2000 — siempre con agua"
+    }
+   ]
+  },
+  {
+   "id": "fa_always_wet_never_dry",
+   "start": 446.09,
+   "dur": 3.81,
+   "kind": "raw",
+   "src": "broll/fa_always_wet_never_dry.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ov_oxrule_446",
+   "start": 446.09,
+   "dur": 4.4,
+   "kind": "oxrule",
+   "overlay": true,
+   "hue": "amber",
+   "text": "Siempre con *agua*, nunca en *seco*. De gruesa a fina.",
+   "accent": "blue"
+  },
+  {
+   "id": "fa_sand_400_grit",
+   "start": 455.26,
+   "dur": 4.76,
+   "kind": "raw",
+   "src": "broll/fa_sand_400_grit.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ov_oxstat_455",
+   "start": 455.26,
+   "dur": 4,
+   "kind": "oxstat",
+   "overlay": true,
+   "hue": "amber",
+   "value": 400,
+   "suffix": "",
+   "label": "se arranca con 400, después 600, 1000 y 2000",
+   "glyph": "🧽",
+   "accent": "amber"
+  },
+  {
+   "id": "fa_headlight_white_milky",
+   "start": 459.72,
+   "dur": 4.93,
+   "kind": "raw",
+   "src": "broll/fa_headlight_white_milky.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "fa_dead_layer_coming_off",
+   "start": 472.57,
+   "dur": 4.83,
+   "kind": "raw",
+   "src": "broll/fa_dead_layer_coming_off.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "fa_sand_600_grit",
+   "start": 477.1,
+   "dur": 3.56,
+   "kind": "raw",
+   "src": "broll/fa_sand_600_grit.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "fa_finer_grit_1000",
+   "start": 483.86,
+   "dur": 2.59,
+   "kind": "raw",
+   "src": "broll/fa_finer_grit_1000.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "fa_finest_grit_2000",
+   "start": 486.15,
+   "dur": 3.89,
+   "kind": "raw",
+   "src": "broll/fa_finest_grit_2000.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "fa_smooth_even_no_scratch",
+   "start": 497.48,
+   "dur": 5.01,
+   "kind": "raw",
+   "src": "broll/fa_smooth_even_no_scratch.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ov_oxtag_505",
+   "start": 505.37,
+   "dur": 4,
+   "kind": "oxtag",
+   "overlay": true,
+   "hue": "amber",
+   "name": "La pasta pulidora",
+   "what": "Saca lo opaco y aparece el plástico cristalino",
+   "side": "left",
+   "accent": "blue"
+  },
+  {
+   "id": "fa_polishing_headlight_cloth",
+   "start": 513.43,
+   "dur": 5.55,
+   "kind": "raw",
+   "src": "broll/fa_polishing_headlight_cloth.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "fa_plastic_turns_clear",
+   "start": 518.68,
+   "dur": 7,
+   "kind": "raw",
+   "src": "broll/fa_plastic_turns_clear.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "fa_healthy_plastic_appears",
+   "start": 529.46,
+   "dur": 5.49,
+   "kind": "raw",
+   "src": "broll/fa_healthy_plastic_appears.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "fa_headlight_looks_perfect",
+   "start": 534.65,
+   "dur": 3.89,
+   "kind": "raw",
+   "src": "broll/fa_headlight_looks_perfect.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ov_oxtag_538",
+   "start": 538.24,
+   "dur": 4,
+   "kind": "oxtag",
+   "overlay": true,
+   "hue": "amber",
+   "name": "El taladro",
+   "what": "Cinco minutos en vez de veinte, pero despacio y mojado",
+   "side": "right",
+   "accent": "amber"
+  },
+  {
+   "id": "fa_drill_polish_disc",
+   "start": 544.8,
+   "dur": 4.92,
+   "kind": "raw",
+   "src": "broll/fa_drill_polish_disc.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "fa_drill_faster_even",
+   "start": 549.42,
+   "dur": 2.76,
+   "kind": "raw",
+   "src": "broll/fa_drill_faster_even.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "fa_drill_overheat_warning",
+   "start": 567.26,
+   "dur": 3.95,
+   "kind": "raw",
+   "src": "broll/fa_drill_overheat_warning.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "fa_slow_wet_always",
+   "start": 570.91,
+   "dur": 3.32,
+   "kind": "raw",
+   "src": "broll/fa_slow_wet_always.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "fa_celebrate_too_soon",
+   "start": 573.93,
+   "dur": 3.01,
+   "kind": "raw",
+   "src": "broll/fa_celebrate_too_soon.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "fa_biggest_mistake_teaser",
+   "start": 578.46,
+   "dur": 7,
+   "kind": "raw",
+   "src": "broll/fa_biggest_mistake_teaser.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "cmp_diagram_16_0",
+   "start": 595.89,
+   "dur": 5.14,
+   "kind": "diagram",
+   "hue": "red",
+   "k": "comp",
+   "eyebrow": "Los números de lija y el sellado, anotados",
+   "slides": [
+    {
+     "image": "img/dg_fa_manual.png",
+     "eyebrow": "El Manual de Reparaciones Caseras"
+    }
+   ]
+  },
+  {
+   "id": "fa_first_time_missed_grit",
+   "start": 600.63,
+   "dur": 4.5,
+   "kind": "raw",
+   "src": "broll/fa_first_time_missed_grit.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ov_manualcard_611",
+   "start": 611.22,
+   "dur": 6,
+   "kind": "manualcard",
+   "overlay": true,
+   "hue": "amber",
+   "image": "real/manual_cover.png",
+   "title": "Manual de Reparaciones Caseras",
+   "desc": "Los 40 arreglos de $1 a $5 del hogar, con los planos y las medidas exactas.",
+   "accent": "amber"
+  },
+  {
+   "id": "fa_seal_secret_next",
+   "start": 624.05,
+   "dur": 6.65,
+   "kind": "raw",
+   "src": "broll/fa_seal_secret_next.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "fa_bare_plastic_oxidizes_fast",
+   "start": 647.99,
+   "dur": 7,
+   "kind": "raw",
+   "src": "broll/fa_bare_plastic_oxidizes_fast.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "fa_worse_than_start",
+   "start": 659.44,
+   "dur": 6.05,
+   "kind": "raw",
+   "src": "broll/fa_worse_than_start.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "fa_what_failed_no_seal",
+   "start": 668.88,
+   "dur": 3.3,
+   "kind": "raw",
+   "src": "broll/fa_what_failed_no_seal.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "cmp_diagram_17_4",
+   "start": 671.88,
+   "dur": 7.2,
+   "kind": "diagram",
+   "hue": "amber",
+   "k": "comp",
+   "eyebrow": "Sellar: las opciones, de la mejor a la casera",
+   "slides": [
+    {
+     "image": "img/dg_fa_seal_options.png",
+     "eyebrow": "Barniz UV en aerosol · barniz auto · cera"
+    }
+   ]
+  },
+  {
+   "id": "ov_oxmethod_680",
+   "start": 679.71,
+   "dur": 4.8,
+   "kind": "oxmethod",
+   "overlay": true,
+   "hue": "amber",
+   "num": "03",
+   "title": "El sellado UV",
+   "chips": [
+    "Aerosol UV",
+    "Barniz de auto",
+    "Cera (parche)"
+   ],
+   "cost": "el secreto",
+   "accent": "amber"
+  },
+  {
+   "id": "fa_spray_thin_coats",
+   "start": 688.16,
+   "dur": 4.61,
+   "kind": "raw",
+   "src": "broll/fa_spray_thin_coats.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "cmp_callout_st_692",
+   "start": 692.47,
+   "dur": 6.5,
+   "kind": "callout",
+   "hue": "blue",
+   "figure": "Años",
+   "caption": "El barniz UV es el protector solar del faro: dura años.",
+   "accent": "cold",
+   "image": "real/fa_uv_clear_coat_spray.png"
+  },
+  {
+   "id": "fa_lasts_years_recommend",
+   "start": 694.87,
+   "dur": 3.63,
+   "kind": "raw",
+   "src": "broll/fa_lasts_years_recommend.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "fa_car_wax_homemade",
+   "start": 705.34,
+   "dur": 2.48,
+   "kind": "raw",
+   "src": "broll/fa_car_wax_homemade.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "fa_never_leave_bare",
+   "start": 719.08,
+   "dur": 5.38,
+   "kind": "raw",
+   "src": "broll/fa_never_leave_bare.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "cmp_aged_st_724",
+   "start": 724.16,
+   "dur": 6.5,
+   "kind": "aged",
+   "hue": "red",
+   "heading": "EL ERROR FATAL",
+   "eyebrow": "Por qué a la gente no le dura",
+   "lines": [
+    {
+     "text": "Lijar, pulir y dejarlo brillante"
+    },
+    {
+     "text": "Y guardar todo SIN sellar"
+    },
+    {
+     "text": "El sol lo quema de nuevo en dos semanas",
+     "mark": true
+    }
+   ]
+  },
+  {
+   "id": "cmp_diagram_18_0",
+   "start": 734.08,
+   "dur": 7.2,
+   "kind": "diagram",
+   "hue": "amber",
+   "k": "comp",
+   "eyebrow": "El error: dejarlo brillante y no sellar",
+   "slides": [
+    {
+     "image": "img/dg_fa_mistake.png",
+     "eyebrow": "El sol lo quema de nuevo en dos semanas"
+    }
+   ]
+  },
+  {
+   "id": "ov_oxrule_734",
+   "start": 734.08,
+   "dur": 4.6,
+   "kind": "oxrule",
+   "overlay": true,
+   "hue": "amber",
+   "text": "El error: dejarlo brillante y *no sellarlo*. El sol lo quema de nuevo.",
+   "accent": "red"
+  },
+  {
+   "id": "fa_first_sunny_weekend",
+   "start": 748.06,
+   "dur": 7,
+   "kind": "raw",
+   "src": "broll/fa_first_sunny_weekend.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "fa_stripped_last_defense",
+   "start": 755.21,
+   "dur": 5.77,
+   "kind": "raw",
+   "src": "broll/fa_stripped_last_defense.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "fa_skipped_important_half",
+   "start": 764.13,
+   "dur": 1.02,
+   "kind": "raw",
+   "src": "broll/fa_skipped_important_half.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "cmp_callout_st_765",
+   "start": 764.85,
+   "dur": 6.5,
+   "kind": "callout",
+   "hue": "blue",
+   "figure": "La mitad",
+   "caption": "Sin sellar, te salteás la mitad más importante.",
+   "accent": "danger",
+   "image": "real/fa_skipped_important_half.png"
+  },
+  {
+   "id": "fa_repellent_instant_clear",
+   "start": 778.2,
+   "dur": 4.25,
+   "kind": "raw",
+   "src": "broll/fa_repellent_instant_clear.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "fa_repellent_melts_plastic",
+   "start": 785.05,
+   "dur": 0.8,
+   "kind": "raw",
+   "src": "broll/fa_repellent_melts_plastic.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ov_oxrule_785",
+   "start": 785.05,
+   "dur": 4.4,
+   "kind": "oxrule",
+   "overlay": true,
+   "hue": "amber",
+   "text": "Repelente, *nunca*: derrite y deforma el plástico.",
+   "accent": "red"
+  },
+  {
+   "id": "cmp_callout_st_785",
+   "start": 785.05,
+   "dur": 6.5,
+   "kind": "callout",
+   "hue": "blue",
+   "figure": "Veneno",
+   "caption": "El repelente derrite y deforma el plástico del faro.",
+   "accent": "danger",
+   "image": "real/fa_insect_repellent_can.png"
+  },
+  {
+   "id": "fa_sticky_deformed_worse",
+   "start": 791.3,
+   "dur": 4.08,
+   "kind": "raw",
+   "src": "broll/fa_sticky_deformed_worse.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "fa_oil_shine_one_day",
+   "start": 801.98,
+   "dur": 2.36,
+   "kind": "raw",
+   "src": "broll/fa_oil_shine_one_day.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "fa_only_real_way",
+   "start": 810.06,
+   "dur": 4.64,
+   "kind": "raw",
+   "src": "broll/fa_only_real_way.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "fa_cracked_headlight_real",
+   "start": 814.4,
+   "dur": 2.52,
+   "kind": "raw",
+   "src": "broll/fa_cracked_headlight_real.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "fa_moisture_inside_fog",
+   "start": 816.62,
+   "dur": 0.8,
+   "kind": "raw",
+   "src": "broll/fa_moisture_inside_fog.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "fa_water_inside_not_sanding",
+   "start": 822.16,
+   "dur": 4.03,
+   "kind": "raw",
+   "src": "broll/fa_water_inside_not_sanding.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "fa_deep_pitted_plastic",
+   "start": 831.48,
+   "dur": 3.58,
+   "kind": "raw",
+   "src": "broll/fa_deep_pitted_plastic.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "cmp_diagram_20_4",
+   "start": 841.44,
+   "dur": 1.72,
+   "kind": "diagram",
+   "hue": "amber",
+   "k": "comp",
+   "eyebrow": "99% son solo la capa de afuera",
+   "slides": [
+    {
+     "image": "img/dg_fa_99.png",
+     "eyebrow": "Esos se arreglan perfecto con lo de hoy"
+    }
+   ]
+  },
+  {
+   "id": "fa_most_just_surface",
+   "start": 842.76,
+   "dur": 7,
+   "kind": "raw",
+   "src": "broll/fa_most_just_surface.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "fa_trim_bumper_mirrors",
+   "start": 854.82,
+   "dur": 7,
+   "kind": "raw",
+   "src": "broll/fa_trim_bumper_mirrors.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "burst_855",
+   "start": 854.82,
+   "dur": 4.2,
+   "kind": "oxstack",
+   "overlay": true,
+   "hue": "amber",
+   "images": [
+    "real/fa_faded_black_trim.png",
+    "real/fa_trim_bumper_mirrors.png",
+    "real/fa_deep_black_returns.png"
+   ],
+   "captions": [
+    "Plásticos grises",
+    "Molduras, espejos",
+    "Negro de vuelta"
+   ],
+   "accent": "amber"
+  },
+  {
+   "id": "fa_same_sun_burned",
+   "start": 866.28,
+   "dur": 3.57,
+   "kind": "raw",
+   "src": "broll/fa_same_sun_burned.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "cmp_callout_st_870",
+   "start": 869.62,
+   "dur": 6.5,
+   "kind": "callout",
+   "hue": "blue",
+   "figure": "Mismo arreglo",
+   "caption": "Los plásticos negros se reviven con el mismo principio.",
+   "accent": "good",
+   "image": "real/fa_deep_black_returns.png"
+  },
+  {
+   "id": "fa_oil_rag_black_back",
+   "start": 873.34,
+   "dur": 2.3,
+   "kind": "raw",
+   "src": "broll/fa_oil_rag_black_back.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "fa_deep_black_returns",
+   "start": 898.1,
+   "dur": 2.59,
+   "kind": "raw",
+   "src": "broll/fa_deep_black_returns.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "cmp_chips_22_1",
+   "start": 920.9,
+   "dur": 7.2,
+   "kind": "chips",
+   "hue": "red",
+   "k": "comp",
+   "title": "Por qué no te lo cuentan",
+   "chips": [
+    "Al taller le conviene",
+    "venderte las ópticas nuevas",
+    "no restaurarte las que tenés"
+   ],
+   "imageDarken": 0.6,
+   "image": "real/fa_shop_upsell_bg.png"
+  },
+  {
+   "id": "cmp_splitlist_22_2",
+   "start": 928.29,
+   "dur": 7.2,
+   "kind": "splitlist",
+   "hue": "amber",
+   "k": "comp",
+   "title": "Los 40 arreglos, divididos así",
+   "items": [
+    "Madera y metal que no mueren",
+    "Plagas por centavos",
+    "Goteras, humedad y moho",
+    "Arreglos del hogar y el auto"
+   ],
+   "palette": "A"
+  },
+  {
+   "id": "cmp_checklist_23_0",
+   "start": 947.08,
+   "dur": 7.2,
+   "kind": "checklist",
+   "hue": "blue",
+   "k": "comp",
+   "title": "El plan contra el faro amarillo",
+   "items": [
+    {
+     "text": "No es mugre: es plástico oxidado por el sol",
+     "state": "done"
+    },
+    {
+     "text": "Urgencia: pasta de dientes (parche)",
+     "state": "done"
+    },
+    {
+     "text": "Tapá, lijá con agua 400 → 600 → 1000 → 2000",
+     "state": "done"
+    },
+    {
+     "text": "Pulí hasta dejarlo transparente",
+     "state": "done"
+    },
+    {
+     "text": "Sellá con barniz UV. Nunca repelente",
+     "state": "done"
+    }
+   ]
+  },
+  {
+   "id": "cmp_checklist_st_959",
+   "start": 958.9,
+   "dur": 6.5,
+   "kind": "checklist",
+   "hue": "blue",
+   "title": "El plan completo",
+   "items": [
+    {
+     "text": "No es mugre: es plástico oxidado por el sol",
+     "state": "done"
+    },
+    {
+     "text": "Urgencia: pasta de dientes (parche)",
+     "state": "done"
+    },
+    {
+     "text": "Tapá y lijá al agua 400 → 2000",
+     "state": "done"
+    },
+    {
+     "text": "Pulí hasta dejarlo transparente",
+     "state": "done"
+    },
+    {
+     "text": "Sellá con barniz UV. Nunca repelente",
+     "state": "done"
+    }
+   ]
+  },
+  {
+   "id": "burst_962",
+   "start": 962.23,
+   "dur": 4.2,
+   "kind": "oxstack",
+   "overlay": true,
+   "hue": "amber",
+   "images": [
+    "real/fa_sand_400_grit.png",
+    "real/fa_sand_600_grit.png",
+    "real/fa_finest_grit_2000.png"
+   ],
+   "captions": [
+    "400 grueso",
+    "600 y 1000",
+    "2000 fino"
+   ],
+   "accent": "amber"
+  },
+  {
+   "id": "fa_two_clear_headlights",
+   "start": 986.4,
+   "dur": 4.46,
+   "kind": "raw",
+   "src": "broll/fa_two_clear_headlights.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "cmp_diagram_24_0",
+   "start": 1024.84,
+   "dur": 7.2,
+   "kind": "diagram",
+   "hue": "amber",
+   "k": "comp",
+   "eyebrow": "Los 40, ordenados y probados",
+   "slides": [
+    {
+     "image": "img/dg_fa_stack.png",
+     "eyebrow": "Con los planos y las medidas exactas"
+    }
+   ]
+  },
+  {
+   "id": "fa_cheaper_than_one_optic",
+   "start": 1035.44,
+   "dur": 0.8,
+   "kind": "raw",
+   "src": "broll/fa_cheaper_than_one_optic.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "cmp_callout_st_1035",
+   "start": 1035.44,
+   "dur": 6.5,
+   "kind": "callout",
+   "hue": "blue",
+   "figure": "< 1 óptica",
+   "caption": "El manual cuesta menos que una sola óptica nueva.",
+   "accent": "good",
+   "image": "real/fa_expensive_optics_shelf.png"
+  },
+  {
+   "id": "ov_manualcard_1038",
+   "start": 1038.12,
+   "dur": 6,
+   "kind": "manualcard",
+   "overlay": true,
+   "hue": "amber",
+   "image": "real/manual_cover.png",
+   "title": "Manual de Reparaciones Caseras",
+   "desc": "Los 40 arreglos, incluido el sellado de los faros.",
+   "chip": "Accedé en la descripción",
+   "accent": "amber"
+  },
+  {
+   "id": "fa_look_headlights_today",
+   "start": 1048.05,
+   "dur": 6.93,
+   "kind": "raw",
+   "src": "broll/fa_look_headlights_today.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "fa_give_back_sight",
+   "start": 1054.68,
+   "dur": 1.7,
+   "kind": "raw",
+   "src": "broll/fa_give_back_sight.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "fa_paint_scratches_car",
+   "start": 1069.36,
+   "dur": 6.48,
+   "kind": "raw",
+   "src": "broll/fa_paint_scratches_car.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "fa_scratch_removed_clear",
+   "start": 1075.54,
+   "dur": 2.32,
+   "kind": "raw",
+   "src": "broll/fa_scratch_removed_clear.mp4",
+   "darken": 0,
+   "hue": "blue"
+  }
+ ]
+}

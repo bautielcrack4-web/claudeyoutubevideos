@@ -47,6 +47,7 @@ import { MainGotera, TOTAL_FRAMES_GOTERA } from "./VideoEdit/Main_gotera";
 import { MainPlomeria, TOTAL_FRAMES_PLOMERIA } from "./VideoEdit/Main_plomeria";
 import { MainPuertas, TOTAL_FRAMES_PUE } from "./VideoEdit/Main_puertas";
 import { MainMapas, TOTAL_FRAMES_MAP } from "./VideoEdit/Main_mapas";
+import { MainFaros, TOTAL_FRAMES_FAROS } from "./VideoEdit/Main_faros";
 // import { MainCafe, TOTAL_FRAMES_CAFE } from "./VideoEdit/Main_cafe"; // untracked: rompe el farm
 // import { MainAmish, TOTAL_FRAMES_AMISH } from "./VideoEdit/Main_amish"; // untracked: rompe el farm
 
@@ -308,6 +309,8 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="Mosquitos" component={MainMosquitos} durationInFrames={TOTAL_FRAMES_MOSQUITOS} fps={30} width={1920} height={1080} />
       <Composition id="Gotera" component={MainGotera} durationInFrames={TOTAL_FRAMES_GOTERA} fps={30} width={1920} height={1080} />
       <Composition id="Plomeria" component={MainPlomeria} durationInFrames={TOTAL_FRAMES_PLOMERIA} fps={30} width={1920} height={1080} />
+      {/* VIDEO 5 Constructor Libre — "Faros Amarillos: el truco de $5" · AVATAR Tomás · clips-first */}
+      <Composition id="Faros" component={MainFaros} durationInFrames={TOTAL_FRAMES_FAROS} fps={30} width={1920} height={1080} />
       {/* Reviví tu tierra muerta con $1 (estiércol, bajo esfuerzo) */}
       <Composition
         id="Estiercol"

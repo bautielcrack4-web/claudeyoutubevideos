@@ -1024,6 +1024,8 @@ function renderEl(b) {
       return (`<OxAnnotatedPhoto durationInFrames={d} image=${j(b.image)} notes={${j(b.notes || [])}}` + (b.title ? ` title=${j(b.title)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
     case "oxquote":
       return (`<OxQuoteSplit durationInFrames={d} quote=${j(b.quote || "")} image=${j(b.image)}` + (b.attribution ? ` attribution=${j(b.attribution)}` : ``) + (b.side ? ` side=${j(b.side)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    case "manualcard":
+      return (`<ManualCard durationInFrames={d} image=${j(b.image || "real/manual_cover.png")}` + (b.title ? ` title=${j(b.title)}` : ``) + (b.desc ? ` desc=${j(b.desc)}` : ``) + (b.chip ? ` chip=${j(b.chip)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
     default:
       return null; // talk
   }
@@ -1162,6 +1164,7 @@ if (kinds.has("sonarhud")) imports.push(`import { SonarHUD } from "./overlays/So
 { const oxMap = { oxstat: "OxStatPop", oxmethod: "OxMethodCard", oxrule: "OxRuleStrip", oxclamp: "OxClampWarning", oxtag: "OxMaterialTag", oxbefore: "OxBeforeAfter", oxside: "OxSidePanel", oxstack: "OxPhotoStack", oxspec: "OxSpecSheet", oxnote: "OxAnnotatedPhoto", oxquote: "OxQuoteSplit" };
   const oxUsed = Object.entries(oxMap).filter(([k]) => kinds.has(k)).map(([, v]) => v);
   if (oxUsed.length) imports.push(`import { ${oxUsed.join(", ")} } from "./overlays/OxCards";`); }
+if (kinds.has("manualcard")) imports.push(`import { ManualCard } from "./overlays/ManualCard";`);
 const palLine = usedPal.size
   ? `\nconst ${[...usedPal].map((t) => `${t} = ${palTok[t]}`).join(", ")};\n`
   : "";
