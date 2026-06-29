@@ -1,8 +1,8 @@
-import { AbsoluteFill, useCurrentFrame, useVideoConfig } from "remotion";
+import { AbsoluteFill, useCurrentFrame } from "remotion";
 import { FONT_STACK } from "../theme";
 import { TechBackground } from "./TechBackground";
 import { ImageBackdrop, PlainBackdrop } from "./Backdrops";
-import { useReveal, kenBurns } from "../lib/anim";
+import { kenBurns } from "../lib/anim";
 
 // Opaque full-screen scene wrapper. Covers the avatar, paints the background,
 // and guarantees constant motion: a permanent Ken-Burns camera zoom (Rule 10A)
@@ -45,13 +45,14 @@ export const SceneFrame: React.FC<{
   camOrigin = "center center",
 }) => {
   const frame = useCurrentFrame();
-  const { fps } = useVideoConfig();
-  const reveal = useReveal(frame, fps, durationInFrames);
-  // noReveal = corte duro: opacidad plena, sin scale-spring ni blur de transición.
-  // Se mantiene el Ken-Burns interno (cam), que NO es una transición sino movimiento vivo.
-  const opacity = noReveal ? 1 : reveal.opacity;
-  const scale = noReveal ? 1 : reveal.scale;
-  const blur = noReveal ? 0 : reveal.blur;
+  // ★ CORTE LIMPIO UNIVERSAL (feedback usuario jun 2026: "los cambios de un frame a otro
+  // no deben tener animaciones... que quede limpio"). NADA de fade/scale/blur de entrada o
+  // salida en NINGUNA escena — cada beat es un corte seco. Se conserva SOLO el Ken-Burns
+  // interno (cam), que es movimiento vivo, no una transición que se corta a medias.
+  void noReveal;
+  const opacity = 1;
+  const scale = 1;
+  const blur = 0;
   const cam = kenBurns(frame, durationInFrames, zoom[0], zoom[1]);
 
   // parallax 2.5D: deriva de perspectiva muy sutil → la foto se siente con profundidad

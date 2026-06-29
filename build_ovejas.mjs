@@ -162,7 +162,7 @@ const ANCH = [
   A(596.4, "img/ov115.jpg"),  // como arrancar el árbol a la semana
   A(605.5, "img/ov103.jpg"),  // la bola necesita rodar 2-3 años
   A(610, "img/ov117.jpg"),    // el que entiende gana
-  A(615, "img/ov117.jpg"),    // es la cabeza, es el aguante
+  A(615, "img/ov118.jpg"),    // es la cabeza, es el aguante (variante, sin salto de Ken-Burns)
   // MIXTO
   A(621.7, "img/ov119.jpg"),  // sumarle algo a la oveja
   A(627.2, "broll/os008.mp4"),// la oveja come el pasto al ras
@@ -223,7 +223,7 @@ const ANCH = [
   A(912.5, "img/ov117.jpg"),  // solo la cabeza para entender
   A(914.5, "img/ov109.jpg"),  // la paciencia para aguantar dos años
   // POR QUÉ FUNCIONA
-  A(928.6, "img/ov109.jpg"),  // por qué funciona ahora y cada vez más
+  A(928.6, "img/ov110.jpg"),  // por qué funciona ahora (variante, sin salto de Ken-Burns)
   A(934.5, "broll/os018.mp4"),// la carne a pasto la busca más gente
   A(938, "broll/os037.mp4"),  // sana, sin químicos del engorde
   A(942.2, "broll/os019.mp4"),// hay poca, casi nadie cría así
