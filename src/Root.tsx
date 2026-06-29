@@ -44,6 +44,7 @@ import { MainTuneles, TOTAL_FRAMES_TUN } from "./VideoEdit/Main_tuneles";
 import { MainOxido, TOTAL_FRAMES_OXIDO } from "./VideoEdit/Main_oxido";
 import { MainMosquitos, TOTAL_FRAMES_MOSQUITOS } from "./VideoEdit/Main_mosquitos";
 import { MainGotera, TOTAL_FRAMES_GOTERA } from "./VideoEdit/Main_gotera";
+import { MainPlomeria, TOTAL_FRAMES_PLOMERIA } from "./VideoEdit/Main_plomeria";
 import { MainPuertas, TOTAL_FRAMES_PUE } from "./VideoEdit/Main_puertas";
 import { MainMapas, TOTAL_FRAMES_MAP } from "./VideoEdit/Main_mapas";
 // import { MainCafe, TOTAL_FRAMES_CAFE } from "./VideoEdit/Main_cafe"; // untracked: rompe el farm
@@ -306,6 +307,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="Oxido" component={MainOxido} durationInFrames={TOTAL_FRAMES_OXIDO} fps={30} width={1920} height={1080} />
       <Composition id="Mosquitos" component={MainMosquitos} durationInFrames={TOTAL_FRAMES_MOSQUITOS} fps={30} width={1920} height={1080} />
       <Composition id="Gotera" component={MainGotera} durationInFrames={TOTAL_FRAMES_GOTERA} fps={30} width={1920} height={1080} />
+      <Composition id="Plomeria" component={MainPlomeria} durationInFrames={TOTAL_FRAMES_PLOMERIA} fps={30} width={1920} height={1080} />
       {/* Reviví tu tierra muerta con $1 (estiércol, bajo esfuerzo) */}
       <Composition
         id="Estiercol"
