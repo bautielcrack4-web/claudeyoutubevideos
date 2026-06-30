@@ -318,6 +318,14 @@ function renderEl(b) {
         (b.resultLabel ? ` resultLabel=${j(b.resultLabel)}` : ``) +
         ` />`
       );
+    case "spooncream":
+      return (
+        `<SpoonInCream durationInFrames={d} image=${j(b.image)}` +
+        (b.temp ? ` temp=${j(b.temp)}` : ``) +
+        (b.headline ? ` headline=${j(b.headline)}` : ``) +
+        (b.sub ? ` sub=${j(b.sub)}` : ``) +
+        ` />`
+      );
     case "stat":
       return (
         `<StatBig durationInFrames={d} value={${b.value}}` +
@@ -1130,6 +1138,7 @@ if (kinds.has("vsmed")) imports.push(`import { MedicareVsMedicaid } from "./scen
 if (kinds.has("action")) imports.push(`import { ActionStepCard } from "./scenes/ActionStepCard";`);
 if (kinds.has("nextvideo")) imports.push(`import { NextVideoEndcard } from "./scenes/NextVideoEndcard";`);
 if (kinds.has("keyphrase")) imports.push(`import { KeyPhrase } from "./scenes/KeyPhrase";`);
+if (kinds.has("spooncream")) imports.push(`import { SpoonInCream } from "./scenes/SpoonInCream";`);
 if (kinds.has("statpills")) imports.push(`import { StatPills } from "./scenes/StatPills";`);
 if (kinds.has("floatprop")) imports.push(`import { FloatingProp } from "./scenes/FloatingProp";`);
 if (kinds.has("diorama")) imports.push(`import { PngDiorama } from "./scenes/PngDiorama";`);

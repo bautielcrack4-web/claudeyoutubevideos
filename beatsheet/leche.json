@@ -1,0 +1,2745 @@
+{
+  "video": "leche",
+  "avatar": "leche_opt.mp4",
+  "clipsfirst": true,
+  "beats": [
+    {
+      "id": "lc_taste",
+      "kind": "raw",
+      "start": 4.95,
+      "dur": 1.72,
+      "src": "img/lc_taste.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "lc_taste",
+        "prompt": "a hand pouring thin pale watery milk from a plastic jug into a clear glass on a kitchen counter, the milk looks gray and thin and unappealing, documentary photo that looks like a real casual phone snapshot, slightly soft focus, uneven natural light, real texture, slightly messy, small imperfections, nothing perfect, nothing polished, no AI look, low saturation, soft muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "lc_kp_thin",
+      "kind": "keyphrase",
+      "text": "Thin. Grey. *Watery.*",
+      "accent": "cold",
+      "fontSize": 100,
+      "start": 6.17,
+      "dur": 2.33,
+      "src": "img/lc_kp_thin.png",
+      "gen": {
+        "type": "image",
+        "name": "lc_kp_thin",
+        "prompt": "close up of pale thin grey watery milk in a glass on a counter, unappetizing, documentary photo, real and a bit raw, moody natural light, slightly soft, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no watermark, no logo"
+      }
+    },
+    {
+      "id": "lc_jug_pour",
+      "kind": "raw",
+      "start": 8.5,
+      "dur": 2.7,
+      "src": "broll/lc_jug_pour.mp4",
+      "darken": 0
+    },
+    {
+      "id": "lc_spoiled",
+      "kind": "raw",
+      "start": 10.7,
+      "dur": 4.12,
+      "src": "img/lc_spoiled.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "lc_spoiled",
+        "prompt": "close up of spoiled curdled sour milk with slimy lumps in a glass, gone bad, off white chunks, documentary photo that looks like a real casual phone snapshot, slightly soft focus, uneven natural light, real texture, slightly messy, small imperfections, nothing perfect, nothing polished, no AI look, low saturation, soft muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "lc_kp_suspected",
+      "kind": "keyphrase",
+      "text": "It wasn't supposed to be *this way.*",
+      "accent": "cold",
+      "fontSize": 84,
+      "start": 14.32,
+      "dur": 6.12,
+      "src": "img/lc_kp_suspected.png",
+      "gen": {
+        "type": "image",
+        "name": "lc_kp_suspected",
+        "prompt": "an empty farmhouse kitchen table at dusk, quiet and nostalgic, documentary photo, real and a bit raw, moody natural light, slightly soft, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no watermark, no logo"
+      }
+    },
+    {
+      "id": "lc_old_kitchen",
+      "kind": "raw",
+      "start": 20.44,
+      "dur": 2.73,
+      "src": "img/lc_old_kitchen.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "lc_old_kitchen",
+        "prompt": "a dim vintage early 1900s farmhouse kitchen with a worn wooden table, nostalgic, warm low light, documentary photo that looks like a real casual phone snapshot, slightly soft focus, uneven natural light, real texture, slightly messy, small imperfections, nothing perfect, nothing polished, no AI look, low saturation, soft muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "lc_golden_jar",
+      "kind": "raw",
+      "start": 22.67,
+      "dur": 5.17,
+      "src": "img/lc_golden_jar.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "lc_golden_jar",
+        "prompt": "an old glass jar of fresh whole farm milk with a thick golden cream line at the top, on a rustic wooden table, warm morning light, documentary photo that looks like a real casual phone snapshot, slightly soft focus, uneven natural light, real texture, slightly messy, small imperfections, nothing perfect, nothing polished, no AI look, low saturation, soft muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "lc_no_wire",
+      "kind": "raw",
+      "start": 27.34,
+      "dur": 4.27,
+      "src": "broll/lc_no_wire.mp4",
+      "darken": 0
+    },
+    {
+      "id": "lc_three_kept",
+      "kind": "ingredients",
+      "avhide": true,
+      "resultLabel": "Fresh all summer",
+      "items": [
+        {
+          "image": "img/lc_ic_milk.png",
+          "label": "Milk",
+          "at": 0
+        },
+        {
+          "image": "img/lc_ic_cream.png",
+          "label": "Cream",
+          "at": 1.84
+        },
+        {
+          "image": "img/lc_ic_butter.png",
+          "label": "Butter",
+          "at": 2.55
+        }
+      ],
+      "start": 35.84,
+      "dur": 6.13
+    },
+    {
+      "id": "lc_kp_july",
+      "kind": "keyphrase",
+      "text": "July. August. The *dog days.*",
+      "accent": "amber",
+      "fontSize": 92,
+      "start": 41.97,
+      "dur": 5.63,
+      "src": "img/lc_kp_july.png",
+      "gen": {
+        "type": "image",
+        "name": "lc_kp_july",
+        "prompt": "a blazing hot hazy humid summer day over a farm field, heat shimmer, documentary photo, real and a bit raw, moody natural light, slightly soft, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no watermark, no logo"
+      }
+    },
+    {
+      "id": "lc_kp_nofridge",
+      "kind": "keyphrase",
+      "text": "No fridge. No *bill.*",
+      "accent": "cold",
+      "fontSize": 96,
+      "start": 47.6,
+      "dur": 4.96,
+      "src": "img/lc_kp_nofridge.png",
+      "gen": {
+        "type": "image",
+        "name": "lc_kp_nofridge",
+        "prompt": "a plain Amish farmhouse kitchen with no refrigerator, just a wooden cupboard and a window, documentary photo, real and a bit raw, moody natural light, slightly soft, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no watermark, no logo"
+      }
+    },
+    {
+      "id": "lc_power_line",
+      "kind": "raw",
+      "start": 52.56,
+      "dur": 3.98,
+      "src": "broll/lc_power_line.mp4",
+      "darken": 0
+    },
+    {
+      "id": "lc_stubborn",
+      "kind": "raw",
+      "start": 56.04,
+      "dur": 3.9,
+      "src": "img/lc_stubborn.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "lc_stubborn",
+        "prompt": "a stern stubborn old Amish farmer with arms crossed and a weathered face, refusing, plain clothes and hat, documentary photo that looks like a real casual phone snapshot, slightly soft focus, uneven natural light, real texture, slightly messy, small imperfections, nothing perfect, nothing polished, no AI look, low saturation, soft muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "lc_cream_coffee",
+      "kind": "raw",
+      "start": 59.44,
+      "dur": 4.77,
+      "src": "broll/lc_cream_coffee.mp4",
+      "darken": 0
+    },
+    {
+      "id": "lc_butter_table",
+      "kind": "raw",
+      "start": 63.71,
+      "dur": 4.97,
+      "src": "img/lc_butter_table.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "lc_butter_table",
+        "prompt": "a golden mound of fresh churned butter on a plate on a farmhouse table, warm soft light, documentary photo that looks like a real casual phone snapshot, slightly soft focus, uneven natural light, real texture, slightly messy, small imperfections, nothing perfect, nothing polished, no AI look, low saturation, soft muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "lc_buttermilk",
+      "kind": "raw",
+      "start": 68.18,
+      "dur": 5.17,
+      "src": "img/lc_buttermilk.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "lc_buttermilk",
+        "prompt": "a tall cold glass of buttermilk with heavy condensation and frost on the outside, documentary photo that looks like a real casual phone snapshot, slightly soft focus, uneven natural light, real texture, slightly messy, small imperfections, nothing perfect, nothing polished, no AI look, low saturation, soft muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "lc_well",
+      "kind": "raw",
+      "start": 72.85,
+      "dur": 3.37,
+      "src": "broll/lc_well.mp4",
+      "darken": 0
+    },
+    {
+      "id": "lc_kp_imposs",
+      "kind": "keyphrase",
+      "text": "Today we call it *impossible.*",
+      "accent": "amber",
+      "fontSize": 92,
+      "start": 75.72,
+      "dur": 2.58,
+      "src": "img/lc_kp_imposs.png",
+      "gen": {
+        "type": "image",
+        "name": "lc_kp_imposs",
+        "prompt": "a glass of milk gone sour and curdled on a hot sunny kitchen counter, documentary photo, real and a bit raw, moody natural light, slightly soft, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no watermark, no logo"
+      }
+    },
+    {
+      "id": "lc_sour_lunch",
+      "kind": "raw",
+      "start": 78.3,
+      "dur": 4.96,
+      "src": "img/lc_sour_lunch.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "lc_sour_lunch",
+        "prompt": "a glass of milk left out and gone sour and curdled on a warm sunny kitchen counter by midday, documentary photo that looks like a real casual phone snapshot, slightly soft focus, uneven natural light, real texture, slightly messy, small imperfections, nothing perfect, nothing polished, no AI look, low saturation, soft muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "lc_fridge_light",
+      "kind": "raw",
+      "start": 87.84,
+      "dur": 8.84,
+      "src": "broll/lc_fridge_light.mp4",
+      "darken": 0
+    },
+    {
+      "id": "lc_old_families",
+      "kind": "raw",
+      "start": 96.18,
+      "dur": 2.54,
+      "src": "img/lc_old_families.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "lc_old_families",
+        "prompt": "a vintage sepia early 1900s photograph of a farm family with milk cans and stoneware crocks outside a farmhouse, documentary photo that looks like a real casual phone snapshot, slightly soft focus, uneven natural light, real texture, slightly messy, small imperfections, nothing perfect, nothing polished, no AI look, low saturation, soft muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "lc_old_farm",
+      "kind": "raw",
+      "start": 98.22,
+      "dur": 5.49,
+      "src": "broll/lc_old_farm.mp4",
+      "darken": 0
+    },
+    {
+      "id": "lc_kp_hadto",
+      "kind": "keyphrase",
+      "text": "They *had to.* No other way.",
+      "accent": "cold",
+      "fontSize": 96,
+      "start": 103.21,
+      "dur": 2.86,
+      "src": "img/lc_kp_hadto.png",
+      "gen": {
+        "type": "image",
+        "name": "lc_kp_hadto",
+        "prompt": "an old stone dairy room with stoneware crocks of milk set in cold running water, documentary photo, real and a bit raw, moody natural light, slightly soft, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no watermark, no logo"
+      }
+    },
+    {
+      "id": "lc_skim",
+      "kind": "raw",
+      "start": 106.07,
+      "dur": 3.77,
+      "src": "img/lc_skim.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "lc_skim",
+        "prompt": "an old Amish woman skimming thick cream off a wide shallow pan of milk in a cool stone dairy, documentary photo that looks like a real casual phone snapshot, slightly soft focus, uneven natural light, real texture, slightly messy, small imperfections, nothing perfect, nothing polished, no AI look, low saturation, soft muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "lc_clean_hands",
+      "kind": "raw",
+      "start": 109.34,
+      "dur": 2.93,
+      "src": "img/lc_clean_hands.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "lc_clean_hands",
+        "prompt": "clean careful hands scalding a metal milk pail with steaming hot water in a farm kitchen, documentary photo that looks like a real casual phone snapshot, slightly soft focus, uneven natural light, real texture, slightly messy, small imperfections, nothing perfect, nothing polished, no AI look, low saturation, soft muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "lc_kp_precise",
+      "kind": "keyphrase",
+      "text": "Precise. *Clever.*",
+      "accent": "cold",
+      "fontSize": 104,
+      "start": 111.77,
+      "dur": 3.67,
+      "src": "img/lc_kp_precise.png",
+      "gen": {
+        "type": "image",
+        "name": "lc_kp_precise",
+        "prompt": "a tidy stone springhouse interior with crocks set in a clear running water trough, documentary photo, real and a bit raw, moody natural light, slightly soft, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no watermark, no logo"
+      }
+    },
+    {
+      "id": "lc_spring_teaser",
+      "kind": "raw",
+      "start": 115.44,
+      "dur": 4.84,
+      "src": "img/lc_spring_teaser.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "lc_spring_teaser",
+        "prompt": "cold clear water running through a stone trough inside a springhouse with crocks of milk cooling, documentary photo that looks like a real casual phone snapshot, slightly soft focus, uneven natural light, real texture, slightly messy, small imperfections, nothing perfect, nothing polished, no AI look, low saturation, soft muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "lc_broken_fridge",
+      "kind": "raw",
+      "start": 119.78,
+      "dur": 3.22,
+      "src": "img/lc_broken_fridge.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "lc_broken_fridge",
+        "prompt": "a broken down old refrigerator pulled apart with tools and a repair bill on top, dim kitchen, documentary photo that looks like a real casual phone snapshot, slightly soft focus, uneven natural light, real texture, slightly messy, small imperfections, nothing perfect, nothing polished, no AI look, low saturation, soft muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "lc_bills",
+      "kind": "raw",
+      "start": 122.5,
+      "dur": 4.4,
+      "src": "img/lc_bills.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "lc_bills",
+        "prompt": "a messy stack of electric utility bills next to a spinning electric meter, money worry, dim light, documentary photo that looks like a real casual phone snapshot, slightly soft focus, uneven natural light, real texture, slightly messy, small imperfections, nothing perfect, nothing polished, no AI look, low saturation, soft muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "lc_grandfather",
+      "kind": "lowerthird",
+      "avpos": "cornerTR",
+      "image": "img/lc_grandfather.png",
+      "place": "Lancaster County",
+      "date": "as it was truly done",
+      "start": 130.68,
+      "dur": 2.67
+    },
+    {
+      "id": "lc_lineage",
+      "kind": "raw",
+      "start": 133.35,
+      "dur": 4.33,
+      "src": "img/lc_lineage.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "lc_lineage",
+        "prompt": "an old faded sepia photo of three generations of Amish farmers, grandfather father and son, standing together, documentary photo that looks like a real casual phone snapshot, slightly soft focus, uneven natural light, real texture, slightly messy, small imperfections, nothing perfect, nothing polished, no AI look, low saturation, soft muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "lc_kp_real",
+      "kind": "keyphrase",
+      "text": "Not the postcard. The *real* version.",
+      "accent": "cold",
+      "fontSize": 88,
+      "start": 137.18,
+      "dur": 4.98,
+      "src": "img/lc_kp_real.png",
+      "gen": {
+        "type": "image",
+        "name": "lc_kp_real",
+        "prompt": "a real working amish dairy with crocks and pails, unstaged and honest, documentary photo, real and a bit raw, moody natural light, slightly soft, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no watermark, no logo"
+      }
+    },
+    {
+      "id": "lc_loop_mistake",
+      "kind": "redacted",
+      "avhide": true,
+      "image": "img/lc_loop_mistake_bg.png",
+      "eyebrow": "It sours by suppertime",
+      "title": "The one mistake",
+      "redacted": "THE MISTAKE",
+      "sub": "I'll show you how to avoid it",
+      "start": 142.16,
+      "dur": 4.1,
+      "gen": {
+        "type": "image",
+        "name": "lc_loop_mistake_bg",
+        "prompt": "a metal pail of fresh milk gone sour and ruined on a barn floor, documentary photo, real and a bit raw, moody natural light, slightly soft, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no watermark, no logo"
+      }
+    },
+    {
+      "id": "lc_spoiled_pail",
+      "kind": "raw",
+      "start": 146.26,
+      "dur": 6.82,
+      "src": "img/lc_spoiled_pail.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "lc_spoiled_pail",
+        "prompt": "a metal pail of fresh milk gone sour and wasted, poured out onto the ground, a whole day's work lost, documentary photo that looks like a real casual phone snapshot, slightly soft focus, uneven natural light, real texture, slightly messy, small imperfections, nothing perfect, nothing polished, no AI look, low saturation, soft muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "lc_loop_spring",
+      "kind": "blurexplainer",
+      "avhide": true,
+      "side": "left",
+      "clip": "broll/lc_trough.mp4",
+      "image": "img/lc_spring_inset.png",
+      "eyebrow": "The building",
+      "title": "It did the work of a fridge",
+      "body": "No motor, no wire — just the cold water coming up out of the hill.",
+      "start": 152.58,
+      "dur": 4.97
+    },
+    {
+      "id": "lc_trough",
+      "kind": "raw",
+      "start": 157.55,
+      "dur": 4.3,
+      "src": "broll/lc_trough.mp4",
+      "darken": 0
+    },
+    {
+      "id": "lc_butter_weeks",
+      "kind": "raw",
+      "start": 161.35,
+      "dur": 4.55,
+      "src": "img/lc_butter_weeks.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "lc_butter_weeks",
+        "prompt": "golden salted butter packed down hard into a stoneware crock and sealed, kept for weeks, documentary photo that looks like a real casual phone snapshot, slightly soft focus, uneven natural light, real texture, slightly messy, small imperfections, nothing perfect, nothing polished, no AI look, low saturation, soft muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "lc_loop_tall",
+      "kind": "redacted",
+      "avhide": true,
+      "image": "img/lc_loop_tall_bg.png",
+      "eyebrow": "Near the end",
+      "title": "Sounds like a tall tale",
+      "redacted": "THE TRICK",
+      "sub": "until you understand it",
+      "start": 165.4,
+      "dur": 7.26,
+      "gen": {
+        "type": "image",
+        "name": "lc_loop_tall_bg",
+        "prompt": "a clear starry summer night sky over a dark quiet farm, warm night, documentary photo, real and a bit raw, moody natural light, slightly soft, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no watermark, no logo"
+      }
+    },
+    {
+      "id": "lc_whip",
+      "kind": "raw",
+      "start": 172.66,
+      "dur": 3.61,
+      "src": "img/lc_whip.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "lc_whip",
+        "prompt": "thick fresh cream being whipped into stiff peaks with a hand whisk in a metal bowl, documentary photo that looks like a real casual phone snapshot, slightly soft focus, uneven natural light, real texture, slightly messy, small imperfections, nothing perfect, nothing polished, no AI look, low saturation, soft muted colors, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "lc_spoon",
+      "kind": "spooncream",
+      "avhide": true,
+      "image": "img/lc_spoon_bg.png",
+      "temp": "70°F",
+      "headline": "And the spoon still stood.",
+      "sub": "On a night that never once froze",
+      "start": 175.77,
+      "dur": 8.83,
+      "gen": {
+        "type": "image",
+        "name": "lc_spoon_bg",
+        "prompt": "a metal spoon standing straight up on its own in a bowl of very thick whipped cream, close up on a kitchen table, documentary photo, real and a bit raw, moody natural light, slightly soft, real texture, small imperfections, nothing polished, no AI look, low saturation, muted colors, no text, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b_enemy",
+      "kind": "raw",
+      "src": "img/b_enemy.png",
+      "darken": 0,
+      "start": 184.6,
+      "dur": 4.2
+    },
+    {
+      "id": "b_understand",
+      "kind": "raw",
+      "src": "img/b_understand.png",
+      "darken": 0,
+      "start": 188.3,
+      "dur": 4.4
+    },
+    {
+      "id": "b_threecount",
+      "kind": "raw",
+      "src": "img/b_threecount.png",
+      "darken": 0,
+      "start": 192.2,
+      "dur": 5
+    },
+    {
+      "id": "b_warmthtimedirt",
+      "kind": "keyphrase",
+      "text": "Warmth. Time. *Dirt.*",
+      "src": "img/b_warmthtimedirt.png",
+      "accent": "amber",
+      "fontSize": 100,
+      "start": 196.7,
+      "dur": 3.6
+    },
+    {
+      "id": "b_war",
+      "kind": "raw",
+      "src": "img/b_war.png",
+      "darken": 0,
+      "start": 200.3,
+      "dur": 2.7
+    },
+    {
+      "id": "b_keeplong",
+      "kind": "raw",
+      "src": "img/b_keeplong.png",
+      "darken": 0,
+      "start": 202.5,
+      "dur": 4.9
+    },
+    {
+      "id": "b_onewrong",
+      "kind": "raw",
+      "src": "img/b_onewrong.png",
+      "darken": 0,
+      "start": 206.9,
+      "dur": 5.2
+    },
+    {
+      "id": "b_spoilanyway",
+      "kind": "raw",
+      "src": "img/b_spoilanyway.png",
+      "darken": 0,
+      "start": 211.6,
+      "dur": 2.6
+    },
+    {
+      "id": "b_oldknew",
+      "kind": "raw",
+      "src": "img/b_oldknew.png",
+      "darken": 0,
+      "start": 213.7,
+      "dur": 5.8
+    },
+    {
+      "id": "b_nevertold",
+      "kind": "raw",
+      "src": "img/b_nevertold.png",
+      "darken": 0,
+      "start": 219,
+      "dur": 4.5
+    },
+    {
+      "id": "b_notclock",
+      "kind": "raw",
+      "src": "img/b_notclock.png",
+      "darken": 0,
+      "start": 223,
+      "dur": 4.1
+    },
+    {
+      "id": "b_alive",
+      "kind": "raw",
+      "src": "img/b_alive.png",
+      "darken": 0,
+      "start": 226.6,
+      "dur": 5.4
+    },
+    {
+      "id": "b_eatbreed",
+      "kind": "raw",
+      "src": "img/b_eatbreed.png",
+      "darken": 0,
+      "start": 231.5,
+      "dur": 4.9
+    },
+    {
+      "id": "b_warmerfaster",
+      "kind": "raw",
+      "src": "img/b_warmerfaster.png",
+      "darken": 0,
+      "start": 235.9,
+      "dur": 3.9
+    },
+    {
+      "id": "b_coldspring",
+      "kind": "raw",
+      "src": "img/b_coldspring.png",
+      "darken": 0,
+      "start": 239.3,
+      "dur": 5.4
+    },
+    {
+      "id": "b_sluggish",
+      "kind": "raw",
+      "src": "img/b_sluggish.png",
+      "darken": 0,
+      "start": 244.2,
+      "dur": 3.1
+    },
+    {
+      "id": "b_warmkitchen",
+      "kind": "raw",
+      "src": "img/b_warmkitchen.png",
+      "darken": 0,
+      "start": 246.8,
+      "dur": 3.8
+    },
+    {
+      "id": "b_double",
+      "kind": "keyphrase",
+      "text": "Double — every *20 minutes.*",
+      "src": "img/b_double.png",
+      "accent": "amber",
+      "fontSize": 92,
+      "start": 250.1,
+      "dur": 5.3
+    },
+    {
+      "id": "b_thinkabout",
+      "kind": "raw",
+      "src": "img/b_thinkabout.png",
+      "darken": 0,
+      "start": 255.4,
+      "dur": 2
+    },
+    {
+      "id": "b_millions",
+      "kind": "raw",
+      "src": "img/b_millions.png",
+      "darken": 0,
+      "start": 256.9,
+      "dur": 8.4
+    },
+    {
+      "id": "b_sourcurdle",
+      "kind": "raw",
+      "src": "img/b_sourcurdle.png",
+      "darken": 0,
+      "start": 264.8,
+      "dur": 3.7
+    },
+    {
+      "id": "b_drain",
+      "kind": "raw",
+      "src": "broll/lc_jug_pour.mp4",
+      "darken": 0,
+      "start": 268,
+      "dur": 3.4
+    },
+    {
+      "id": "b_everymethod",
+      "kind": "raw",
+      "src": "img/b_everymethod.png",
+      "darken": 0,
+      "start": 270.9,
+      "dur": 5.6
+    },
+    {
+      "id": "b_oneidea",
+      "kind": "raw",
+      "src": "img/b_oneidea.png",
+      "darken": 0,
+      "start": 276,
+      "dur": 3.1
+    },
+    {
+      "id": "b_coldfast",
+      "kind": "raw",
+      "src": "img/b_coldfast.png",
+      "darken": 0,
+      "start": 278.6,
+      "dur": 3.8
+    },
+    {
+      "id": "b_asleep",
+      "kind": "raw",
+      "src": "img/b_asleep.png",
+      "darken": 0,
+      "start": 281.9,
+      "dur": 3.4
+    },
+    {
+      "id": "b_fridgedid",
+      "kind": "raw",
+      "src": "broll/lc_fridge_light.mp4",
+      "darken": 0,
+      "start": 284.8,
+      "dur": 3.8
+    },
+    {
+      "id": "b_makecold",
+      "kind": "raw",
+      "src": "img/b_makecold.png",
+      "darken": 0,
+      "start": 288.1,
+      "dur": 5.4
+    },
+    {
+      "id": "b_fromground",
+      "kind": "raw",
+      "src": "img/b_fromground.png",
+      "darken": 0,
+      "start": 293,
+      "dur": 4.4
+    },
+    {
+      "id": "b_nobodyknows",
+      "kind": "raw",
+      "src": "img/b_nobodyknows.png",
+      "darken": 0,
+      "start": 296.9,
+      "dur": 4.4
+    },
+    {
+      "id": "b_deepspring",
+      "kind": "raw",
+      "src": "img/b_deepspring.png",
+      "darken": 0,
+      "start": 300.8,
+      "dur": 3.3
+    },
+    {
+      "id": "b_wellbottom",
+      "kind": "raw",
+      "src": "img/b_wellbottom.png",
+      "darken": 0,
+      "start": 303.6,
+      "dur": 2.8
+    },
+    {
+      "id": "b_notaccident",
+      "kind": "raw",
+      "src": "img/b_notaccident.png",
+      "darken": 0,
+      "start": 305.9,
+      "dur": 3.3
+    },
+    {
+      "id": "b_sametemp",
+      "kind": "raw",
+      "src": "img/b_sametemp.png",
+      "darken": 0,
+      "start": 308.7,
+      "dur": 5.4
+    },
+    {
+      "id": "b_fiftydeg",
+      "kind": "stat",
+      "avhide": true,
+      "value": 50,
+      "suffix": "°F",
+      "eyebrow": "The cold from below",
+      "label": "all year round, ten feet down",
+      "accent": "accent",
+      "hue": "cold",
+      "start": 313.6,
+      "dur": 2.9
+    },
+    {
+      "id": "b_janjuly",
+      "kind": "raw",
+      "src": "img/b_janjuly.png",
+      "darken": 0,
+      "start": 316.5,
+      "dur": 4.7
+    },
+    {
+      "id": "b_sunbeats",
+      "kind": "raw",
+      "src": "img/b_sunbeats.png",
+      "darken": 0,
+      "start": 320.7,
+      "dur": 4.8
+    },
+    {
+      "id": "b_tenfeet",
+      "kind": "raw",
+      "src": "img/b_tenfeet.png",
+      "darken": 0,
+      "start": 325,
+      "dur": 4.4
+    },
+    {
+      "id": "b_holdssteady",
+      "kind": "raw",
+      "src": "img/b_holdssteady.png",
+      "darken": 0,
+      "start": 328.9,
+      "dur": 8.2
+    },
+    {
+      "id": "b_hillside",
+      "kind": "raw",
+      "src": "img/b_hillside.png",
+      "darken": 0,
+      "start": 336.6,
+      "dur": 6
+    },
+    {
+      "id": "b_endless",
+      "kind": "raw",
+      "src": "img/b_endless.png",
+      "darken": 0,
+      "start": 342.1,
+      "dur": 4.5
+    },
+    {
+      "id": "b_godsfridge",
+      "kind": "raw",
+      "src": "img/b_godsfridge.png",
+      "darken": 0,
+      "start": 346.1,
+      "dur": 8.1
+    },
+    {
+      "id": "b_littleroof",
+      "kind": "raw",
+      "src": "img/b_littleroof.png",
+      "darken": 0,
+      "start": 353.7,
+      "dur": 4.1
+    },
+    {
+      "id": "b_springhouse",
+      "kind": "raw",
+      "src": "img/b_springhouse.png",
+      "darken": 0,
+      "start": 357.3,
+      "dur": 3.8
+    },
+    {
+      "id": "b_oldcountry",
+      "kind": "raw",
+      "src": "broll/lc_no_wire.mp4",
+      "darken": 0,
+      "start": 360.6,
+      "dur": 3.4
+    },
+    {
+      "id": "b_amishfarms",
+      "kind": "raw",
+      "src": "broll/lc_old_farm.mp4",
+      "darken": 0,
+      "start": 363.5,
+      "dur": 5.2
+    },
+    {
+      "id": "b_stonebuilding",
+      "kind": "raw",
+      "src": "img/b_stonebuilding.png",
+      "darken": 0,
+      "start": 368.2,
+      "dur": 4.9
+    },
+    {
+      "id": "b_dugintohill",
+      "kind": "raw",
+      "src": "img/b_dugintohill.png",
+      "darken": 0,
+      "start": 372.6,
+      "dur": 8.4
+    },
+    {
+      "id": "b_notmuch",
+      "kind": "raw",
+      "src": "img/b_notmuch.png",
+      "darken": 0,
+      "start": 380.5,
+      "dur": 3.2
+    },
+    {
+      "id": "b_toolshed",
+      "kind": "raw",
+      "src": "img/b_toolshed.png",
+      "darken": 0,
+      "start": 383.2,
+      "dur": 3.2
+    },
+    {
+      "id": "b_stepinside",
+      "kind": "raw",
+      "src": "img/b_stepinside.png",
+      "darken": 0,
+      "start": 385.9,
+      "dur": 7
+    },
+    {
+      "id": "b_wetstone",
+      "kind": "raw",
+      "src": "img/b_wetstone.png",
+      "darken": 0,
+      "start": 392.4,
+      "dur": 4.2
+    },
+    {
+      "id": "b_colder",
+      "kind": "raw",
+      "src": "img/b_colder.png",
+      "darken": 0,
+      "start": 396.1,
+      "dur": 5.1
+    },
+    {
+      "id": "b_nomachine",
+      "kind": "raw",
+      "src": "img/b_nomachine.png",
+      "darken": 0,
+      "start": 400.7,
+      "dur": 4.6
+    },
+    {
+      "id": "b_howitworks",
+      "kind": "raw",
+      "src": "img/b_howitworks.png",
+      "darken": 0,
+      "start": 404.8,
+      "dur": 4.6
+    },
+    {
+      "id": "b_simpleholy",
+      "kind": "raw",
+      "src": "img/b_simpleholy.png",
+      "darken": 0,
+      "start": 408.9,
+      "dur": 3.2
+    },
+    {
+      "id": "b_overspring",
+      "kind": "raw",
+      "src": "img/b_overspring.png",
+      "darken": 0,
+      "start": 411.6,
+      "dur": 6.4
+    },
+    {
+      "id": "b_channelwater",
+      "kind": "raw",
+      "src": "img/b_channelwater.png",
+      "darken": 0,
+      "start": 417.5,
+      "dur": 4.2
+    },
+    {
+      "id": "b_stonetrough",
+      "kind": "raw",
+      "src": "broll/lc_trough.mp4",
+      "darken": 0,
+      "start": 421.2,
+      "dur": 4.4
+    },
+    {
+      "id": "b_flowing",
+      "kind": "raw",
+      "src": "broll/lc_trough.mp4",
+      "darken": 0,
+      "start": 425.1,
+      "dur": 6.1
+    },
+    {
+      "id": "b_replaced",
+      "kind": "raw",
+      "src": "img/b_replaced.png",
+      "darken": 0,
+      "start": 430.7,
+      "dur": 8.2
+    },
+    {
+      "id": "b_crockscans",
+      "kind": "raw",
+      "src": "img/b_crockscans.png",
+      "darken": 0,
+      "start": 438.4,
+      "dur": 6.4
+    },
+    {
+      "id": "b_flatpans",
+      "kind": "raw",
+      "src": "img/b_flatpans.png",
+      "darken": 0,
+      "start": 444.3,
+      "dur": 2
+    },
+    {
+      "id": "b_surrounds",
+      "kind": "raw",
+      "src": "img/b_surrounds.png",
+      "darken": 0,
+      "start": 445.8,
+      "dur": 4.1
+    },
+    {
+      "id": "b_carriesaway",
+      "kind": "raw",
+      "src": "img/b_carriesaway.png",
+      "darken": 0,
+      "start": 449.4,
+      "dur": 5.6
+    },
+    {
+      "id": "b_notlikeice",
+      "kind": "raw",
+      "src": "img/b_notlikeice.png",
+      "darken": 0,
+      "start": 454.5,
+      "dur": 3.2
+    },
+    {
+      "id": "b_alive2",
+      "kind": "raw",
+      "src": "img/b_alive2.png",
+      "darken": 0,
+      "start": 457.2,
+      "dur": 3.7
+    },
+    {
+      "id": "b_refreshes",
+      "kind": "raw",
+      "src": "img/b_refreshes.png",
+      "darken": 0,
+      "start": 460.4,
+      "dur": 4.6
+    },
+    {
+      "id": "b_icequits",
+      "kind": "raw",
+      "src": "img/b_icequits.png",
+      "darken": 0,
+      "start": 464.5,
+      "dur": 3.3
+    },
+    {
+      "id": "b_neverquits",
+      "kind": "raw",
+      "src": "img/b_neverquits.png",
+      "darken": 0,
+      "start": 467.3,
+      "dur": 2.2
+    },
+    {
+      "id": "b_tonighttomorrow",
+      "kind": "raw",
+      "src": "img/b_tonighttomorrow.png",
+      "darken": 0,
+      "start": 469,
+      "dur": 5.1
+    },
+    {
+      "id": "b_hundredyears",
+      "kind": "raw",
+      "src": "img/b_hundredyears.png",
+      "darken": 0,
+      "start": 473.6,
+      "dur": 5.3
+    },
+    {
+      "id": "b_nobill",
+      "kind": "raw",
+      "src": "img/b_nobill.png",
+      "darken": 0,
+      "start": 478.4,
+      "dur": 2.8
+    },
+    {
+      "id": "b_youmightsay",
+      "kind": "raw",
+      "src": "img/b_youmightsay.png",
+      "darken": 0,
+      "start": 480.7,
+      "dur": 6.9
+    },
+    {
+      "id": "b_nospring",
+      "kind": "raw",
+      "src": "img/b_nospring.png",
+      "darken": 0,
+      "start": 487.1,
+      "dur": 6.1
+    },
+    {
+      "id": "b_holdthought",
+      "kind": "raw",
+      "src": "img/b_holdthought.png",
+      "darken": 0,
+      "start": 492.7,
+      "dur": 5
+    },
+    {
+      "id": "b_whatpeopledid",
+      "kind": "raw",
+      "src": "img/b_whatpeopledid.png",
+      "darken": 0,
+      "start": 497.2,
+      "dur": 6.4
+    },
+    {
+      "id": "b_staylonger",
+      "kind": "raw",
+      "src": "img/b_staylonger.png",
+      "darken": 0,
+      "start": 503.1,
+      "dur": 4.7
+    },
+    {
+      "id": "b_halfbattle",
+      "kind": "raw",
+      "src": "img/b_halfbattle.png",
+      "darken": 0,
+      "start": 507.3,
+      "dur": 4
+    },
+    {
+      "id": "b_whatyoudo",
+      "kind": "raw",
+      "src": "img/b_whatyoudo.png",
+      "darken": 0,
+      "start": 510.8,
+      "dur": 5.8
+    },
+    {
+      "id": "b_gowrong",
+      "kind": "raw",
+      "src": "img/b_gowrong.png",
+      "darken": 0,
+      "start": 516.1,
+      "dur": 4.7
+    },
+    {
+      "id": "b_themistake",
+      "kind": "redacted",
+      "avhide": true,
+      "image": "img/lc_loop_mistake_bg.png",
+      "eyebrow": "It spoils more milk than all of August",
+      "title": "The one mistake",
+      "redacted": "WARM MILK",
+      "sub": "cool it the second it leaves the cow",
+      "start": 520.3,
+      "dur": 3.6
+    },
+    {
+      "id": "b_spoilsmost",
+      "kind": "raw",
+      "src": "img/b_spoilsmost.png",
+      "darken": 0,
+      "start": 523.9,
+      "dur": 5.3
+    },
+    {
+      "id": "b_areyouready",
+      "kind": "raw",
+      "src": "img/b_areyouready.png",
+      "darken": 0,
+      "start": 528.7,
+      "dur": 2.4
+    },
+    {
+      "id": "b_sitwarm",
+      "kind": "raw",
+      "src": "img/b_sitwarm.png",
+      "darken": 0,
+      "start": 530.6,
+      "dur": 3.7
+    },
+    {
+      "id": "b_eveningmilking",
+      "kind": "raw",
+      "src": "img/b_eveningmilking.png",
+      "darken": 0,
+      "start": 533.8,
+      "dur": 4.4
+    },
+    {
+      "id": "b_bodywarm",
+      "kind": "raw",
+      "src": "img/b_bodywarm.png",
+      "darken": 0,
+      "start": 537.7,
+      "dur": 5.3
+    },
+    {
+      "id": "b_oncounter",
+      "kind": "raw",
+      "src": "img/b_oncounter.png",
+      "darken": 0,
+      "start": 542.5,
+      "dur": 4.9
+    },
+    {
+      "id": "b_supper",
+      "kind": "raw",
+      "src": "img/b_supper.png",
+      "darken": 0,
+      "start": 546.9,
+      "dur": 3.2
+    },
+    {
+      "id": "b_littlewhile",
+      "kind": "raw",
+      "src": "img/b_littlewhile.png",
+      "darken": 0,
+      "start": 549.6,
+      "dur": 5.5
+    },
+    {
+      "id": "b_wakeup",
+      "kind": "raw",
+      "src": "img/b_wakeup.png",
+      "darken": 0,
+      "start": 554.6,
+      "dur": 8.1
+    },
+    {
+      "id": "b_halfruined",
+      "kind": "raw",
+      "src": "img/b_halfruined.png",
+      "darken": 0,
+      "start": 562.2,
+      "dur": 5.5
+    },
+    {
+      "id": "b_damagedone",
+      "kind": "raw",
+      "src": "img/b_damagedone.png",
+      "darken": 0,
+      "start": 567.2,
+      "dur": 2.1
+    },
+    {
+      "id": "b_cannotunspoil",
+      "kind": "raw",
+      "src": "img/b_cannotunspoil.png",
+      "darken": 0,
+      "start": 568.8,
+      "dur": 5.2
+    },
+    {
+      "id": "b_startssecond",
+      "kind": "raw",
+      "src": "img/b_startssecond.png",
+      "darken": 0,
+      "start": 573.5,
+      "dur": 4.7
+    },
+    {
+      "id": "b_ironrule",
+      "kind": "raw",
+      "src": "img/b_ironrule.png",
+      "darken": 0,
+      "start": 577.7,
+      "dur": 5.2
+    },
+    {
+      "id": "b_mostimportant",
+      "kind": "raw",
+      "src": "img/b_mostimportant.png",
+      "darken": 0,
+      "start": 582.4,
+      "dur": 3.9
+    },
+    {
+      "id": "b_coolfast",
+      "kind": "raw",
+      "src": "img/b_coolfast.png",
+      "darken": 0,
+      "start": 585.8,
+      "dur": 2.6
+    },
+    {
+      "id": "b_throughcloth",
+      "kind": "raw",
+      "src": "img/b_throughcloth.png",
+      "darken": 0,
+      "start": 587.9,
+      "dur": 4.9
+    },
+    {
+      "id": "b_intocold",
+      "kind": "raw",
+      "src": "img/b_intocold.png",
+      "darken": 0,
+      "start": 592.3,
+      "dur": 5.6
+    },
+    {
+      "id": "b_notdeep",
+      "kind": "splitba",
+      "avhide": true,
+      "beforeImg": "img/b_deepcan.png",
+      "afterImg": "img/b_shallowfast.png",
+      "beforeLabel": "Deep can — holds heat for hours",
+      "afterLabel": "Shallow pan — chills in minutes",
+      "eyebrow": "Why they used wide pans",
+      "title": "Spread it thin",
+      "start": 597.4,
+      "dur": 6.5
+    },
+    {
+      "id": "b_shallowpans",
+      "kind": "raw",
+      "src": "img/b_shallowpans.png",
+      "darken": 0,
+      "start": 603.9,
+      "dur": 3.2
+    },
+    {
+      "id": "b_spreadthin",
+      "kind": "raw",
+      "src": "img/b_spreadthin.png",
+      "darken": 0,
+      "start": 606.6,
+      "dur": 9.5
+    },
+    {
+      "id": "b_deepcan",
+      "kind": "raw",
+      "src": "img/b_deepcan.png",
+      "darken": 0,
+      "start": 615.6,
+      "dur": 4.8
+    },
+    {
+      "id": "b_shallowfast",
+      "kind": "raw",
+      "src": "img/b_shallowfast.png",
+      "darken": 0,
+      "start": 619.9,
+      "dur": 3.2
+    },
+    {
+      "id": "b_panstrough",
+      "kind": "raw",
+      "src": "img/b_panstrough.png",
+      "darken": 0,
+      "start": 622.6,
+      "dur": 5.1
+    },
+    {
+      "id": "b_racein",
+      "kind": "raw",
+      "src": "img/b_racein.png",
+      "darken": 0,
+      "start": 627.2,
+      "dur": 6.8
+    },
+    {
+      "id": "b_coolfast2",
+      "kind": "raw",
+      "src": "img/b_coolfast2.png",
+      "darken": 0,
+      "start": 633.5,
+      "dur": 1.5
+    },
+    {
+      "id": "b_keepsvspours",
+      "kind": "raw",
+      "src": "img/b_keepsvspours.png",
+      "darken": 0,
+      "start": 634.5,
+      "dur": 6.1
+    },
+    {
+      "id": "b_notbuilding",
+      "kind": "raw",
+      "src": "img/b_notbuilding.png",
+      "darken": 0,
+      "start": 640.1,
+      "dur": 2
+    },
+    {
+      "id": "b_timing",
+      "kind": "raw",
+      "src": "img/b_timing.png",
+      "darken": 0,
+      "start": 641.6,
+      "dur": 1.8
+    },
+    {
+      "id": "b_coldsomething",
+      "kind": "raw",
+      "src": "img/b_coldsomething.png",
+      "darken": 0,
+      "start": 642.9,
+      "dur": 6.2
+    },
+    {
+      "id": "b_freeofcharge",
+      "kind": "raw",
+      "src": "img/b_freeofcharge.png",
+      "darken": 0,
+      "start": 648.6,
+      "dur": 3.3
+    },
+    {
+      "id": "b_separate",
+      "kind": "raw",
+      "src": "img/b_separate.png",
+      "darken": 0,
+      "start": 651.4,
+      "dur": 3
+    },
+    {
+      "id": "b_standaday",
+      "kind": "raw",
+      "src": "img/b_standaday.png",
+      "darken": 0,
+      "start": 653.9,
+      "dur": 4.5
+    },
+    {
+      "id": "b_creamrises",
+      "kind": "raw",
+      "src": "img/b_creamrises.png",
+      "darken": 0,
+      "start": 657.9,
+      "dur": 4.6
+    },
+    {
+      "id": "b_skimmer",
+      "kind": "raw",
+      "src": "img/b_skimmer.png",
+      "darken": 0,
+      "start": 662,
+      "dur": 5.9
+    },
+    {
+      "id": "b_goldpond",
+      "kind": "raw",
+      "src": "img/b_goldpond.png",
+      "darken": 0,
+      "start": 667.4,
+      "dur": 3.5
+    },
+    {
+      "id": "b_creamcoffee",
+      "kind": "raw",
+      "src": "broll/lc_cream_coffee.mp4",
+      "darken": 0,
+      "start": 670.4,
+      "dur": 5.4
+    },
+    {
+      "id": "b_creambutter",
+      "kind": "raw",
+      "src": "img/b_creambutter.png",
+      "darken": 0,
+      "start": 675.3,
+      "dur": 2.6
+    },
+    {
+      "id": "b_skimmilk",
+      "kind": "raw",
+      "src": "img/b_skimmilk.png",
+      "darken": 0,
+      "start": 677.4,
+      "dur": 3.5
+    },
+    {
+      "id": "b_drinkcook",
+      "kind": "raw",
+      "src": "img/b_drinkcook.png",
+      "darken": 0,
+      "start": 680.4,
+      "dur": 3.5
+    },
+    {
+      "id": "b_colddidit",
+      "kind": "raw",
+      "src": "img/b_colddidit.png",
+      "darken": 0,
+      "start": 683.4,
+      "dur": 4.9
+    },
+    {
+      "id": "b_whilethey slept",
+      "kind": "raw",
+      "src": "img/b_whilethey slept.png",
+      "darken": 0,
+      "start": 687.8,
+      "dur": 5.4
+    },
+    {
+      "id": "b_butterclever",
+      "kind": "raw",
+      "src": "img/b_butterclever.png",
+      "darken": 0,
+      "start": 692.7,
+      "dur": 5.5
+    },
+    {
+      "id": "b_grandmaartist",
+      "kind": "raw",
+      "src": "img/b_grandmaartist.png",
+      "darken": 0,
+      "start": 697.7,
+      "dur": 3.7
+    },
+    {
+      "id": "b_butterisbeaten",
+      "kind": "raw",
+      "src": "img/b_butterisbeaten.png",
+      "darken": 0,
+      "start": 700.9,
+      "dur": 4.7
+    },
+    {
+      "id": "b_clumps",
+      "kind": "raw",
+      "src": "img/b_clumps.png",
+      "darken": 0,
+      "start": 705.1,
+      "dur": 6.7
+    },
+    {
+      "id": "b_freshbutter",
+      "kind": "raw",
+      "src": "img/b_freshbutter.png",
+      "darken": 0,
+      "start": 711.3,
+      "dur": 2.9
+    },
+    {
+      "id": "b_weakness",
+      "kind": "raw",
+      "src": "img/b_weakness.png",
+      "darken": 0,
+      "start": 713.7,
+      "dur": 2.1
+    },
+    {
+      "id": "b_rancid",
+      "kind": "raw",
+      "src": "img/b_rancid.png",
+      "darken": 0,
+      "start": 715.3,
+      "dur": 1.9
+    },
+    {
+      "id": "b_fatturns",
+      "kind": "raw",
+      "src": "img/b_fatturns.png",
+      "darken": 0,
+      "start": 716.7,
+      "dur": 5.4
+    },
+    {
+      "id": "b_bitter",
+      "kind": "raw",
+      "src": "img/b_bitter.png",
+      "darken": 0,
+      "start": 721.6,
+      "dur": 8.5
+    },
+    {
+      "id": "b_howkeep",
+      "kind": "raw",
+      "src": "img/b_howkeep.png",
+      "darken": 0,
+      "start": 729.6,
+      "dur": 6.7
+    },
+    {
+      "id": "b_twoways",
+      "kind": "raw",
+      "src": "img/b_twoways.png",
+      "darken": 0,
+      "start": 735.8,
+      "dur": 4.6
+    },
+    {
+      "id": "b_firstwaycold",
+      "kind": "raw",
+      "src": "img/b_firstwaycold.png",
+      "darken": 0,
+      "start": 739.9,
+      "dur": 4.4
+    },
+    {
+      "id": "b_pattedmound",
+      "kind": "raw",
+      "src": "img/b_pattedmound.png",
+      "darken": 0,
+      "start": 743.8,
+      "dur": 3.2
+    },
+    {
+      "id": "b_weightedplate",
+      "kind": "raw",
+      "src": "img/b_weightedplate.png",
+      "darken": 0,
+      "start": 746.5,
+      "dur": 10.6
+    },
+    {
+      "id": "b_coldnoturn",
+      "kind": "raw",
+      "src": "img/b_coldnoturn.png",
+      "darken": 0,
+      "start": 756.6,
+      "dur": 2.8
+    },
+    {
+      "id": "b_warmthturns",
+      "kind": "raw",
+      "src": "img/b_warmthturns.png",
+      "darken": 0,
+      "start": 758.9,
+      "dur": 5.2
+    },
+    {
+      "id": "b_secondgenius",
+      "kind": "raw",
+      "src": "img/b_secondgenius.png",
+      "darken": 0,
+      "start": 763.6,
+      "dur": 8.2
+    },
+    {
+      "id": "b_salt",
+      "kind": "raw",
+      "src": "img/b_salt.png",
+      "darken": 0,
+      "start": 771.3,
+      "dur": 1.8
+    },
+    {
+      "id": "b_saltintobutter",
+      "kind": "raw",
+      "src": "img/b_saltintobutter.png",
+      "darken": 0,
+      "start": 772.6,
+      "dur": 6.1
+    },
+    {
+      "id": "b_saltenemy",
+      "kind": "raw",
+      "src": "img/b_saltenemy.png",
+      "darken": 0,
+      "start": 778.2,
+      "dur": 8.8
+    },
+    {
+      "id": "b_drawswater",
+      "kind": "raw",
+      "src": "img/b_drawswater.png",
+      "darken": 0,
+      "start": 786.5,
+      "dur": 5
+    },
+    {
+      "id": "b_packedhard",
+      "kind": "raw",
+      "src": "img/b_packedhard.png",
+      "darken": 0,
+      "start": 791,
+      "dur": 5.3
+    },
+    {
+      "id": "b_brineseal",
+      "kind": "raw",
+      "src": "img/b_brineseal.png",
+      "darken": 0,
+      "start": 795.8,
+      "dur": 11.8
+    },
+    {
+      "id": "b_keepsweeks",
+      "kind": "raw",
+      "src": "img/b_keepsweeks.png",
+      "darken": 0,
+      "start": 807.1,
+      "dur": 4.3
+    },
+    {
+      "id": "b_saltandcold",
+      "kind": "raw",
+      "src": "img/b_saltandcold.png",
+      "darken": 0,
+      "start": 810.9,
+      "dur": 9.3
+    },
+    {
+      "id": "b_goldensweet",
+      "kind": "raw",
+      "src": "img/b_goldensweet.png",
+      "darken": 0,
+      "start": 819.7,
+      "dur": 6.8
+    },
+    {
+      "id": "b_shouldhaveturned",
+      "kind": "raw",
+      "src": "img/b_shouldhaveturned.png",
+      "darken": 0,
+      "start": 826,
+      "dur": 4.5
+    },
+    {
+      "id": "b_buttermilkleft",
+      "kind": "raw",
+      "src": "img/b_buttermilkleft.png",
+      "darken": 0,
+      "start": 830,
+      "dur": 5.1
+    },
+    {
+      "id": "b_buttermilk",
+      "kind": "raw",
+      "src": "img/b_buttermilk.png",
+      "darken": 0,
+      "start": 834.6,
+      "dur": 2.3
+    },
+    {
+      "id": "b_notthrown",
+      "kind": "raw",
+      "src": "img/b_notthrown.png",
+      "darken": 0,
+      "start": 836.4,
+      "dur": 3.8
+    },
+    {
+      "id": "b_childrenrun",
+      "kind": "raw",
+      "src": "img/b_childrenrun.png",
+      "darken": 0,
+      "start": 839.7,
+      "dur": 6.9
+    },
+    {
+      "id": "b_nothingwasted",
+      "kind": "raw",
+      "src": "img/b_nothingwasted.png",
+      "darken": 0,
+      "start": 846.1,
+      "dur": 2.9
+    },
+    {
+      "id": "b_creammadebutter",
+      "kind": "raw",
+      "src": "img/b_creammadebutter.png",
+      "darken": 0,
+      "start": 848.5,
+      "dur": 4.7
+    },
+    {
+      "id": "b_skimfedall",
+      "kind": "raw",
+      "src": "img/b_skimfedall.png",
+      "darken": 0,
+      "start": 852.7,
+      "dur": 4.1
+    },
+    {
+      "id": "b_everydrop",
+      "kind": "raw",
+      "src": "img/b_everydrop.png",
+      "darken": 0,
+      "start": 856.3,
+      "dur": 3.9
+    },
+    {
+      "id": "b_nothingbought",
+      "kind": "raw",
+      "src": "img/b_nothingbought.png",
+      "darken": 0,
+      "start": 859.7,
+      "dur": 4.9
+    },
+    {
+      "id": "b_manwithnospring",
+      "kind": "raw",
+      "src": "img/b_manwithnospring.png",
+      "darken": 0,
+      "start": 864.1,
+      "dur": 6.5
+    },
+    {
+      "id": "b_nospring2",
+      "kind": "raw",
+      "src": "img/b_nospring2.png",
+      "darken": 0,
+      "start": 870.1,
+      "dur": 7.8
+    },
+    {
+      "id": "b_wentdown",
+      "kind": "raw",
+      "src": "img/b_wentdown.png",
+      "darken": 0,
+      "start": 877.4,
+      "dur": 2.2
+    },
+    {
+      "id": "b_coldinground",
+      "kind": "raw",
+      "src": "img/b_coldinground.png",
+      "darken": 0,
+      "start": 879.1,
+      "dur": 10.3
+    },
+    {
+      "id": "b_deepcellar",
+      "kind": "raw",
+      "src": "img/b_deepcellar.png",
+      "darken": 0,
+      "start": 888.9,
+      "dur": 6.8
+    },
+    {
+      "id": "b_crocksdown",
+      "kind": "raw",
+      "src": "img/b_crocksdown.png",
+      "darken": 0,
+      "start": 895.2,
+      "dur": 4.3
+    },
+    {
+      "id": "b_earthcolddark",
+      "kind": "raw",
+      "src": "img/b_earthcolddark.png",
+      "darken": 0,
+      "start": 899,
+      "dur": 6.6
+    },
+    {
+      "id": "b_cheapasdirt",
+      "kind": "raw",
+      "src": "img/b_cheapasdirt.png",
+      "darken": 0,
+      "start": 905.1,
+      "dur": 6.2
+    },
+    {
+      "id": "b_milkinwell",
+      "kind": "raw",
+      "src": "broll/lc_well.mp4",
+      "darken": 0,
+      "start": 910.8,
+      "dur": 7.4
+    },
+    {
+      "id": "b_loweronrope",
+      "kind": "raw",
+      "src": "img/b_loweronrope.png",
+      "darken": 0,
+      "start": 917.7,
+      "dur": 5.8
+    },
+    {
+      "id": "b_dampair",
+      "kind": "raw",
+      "src": "img/b_dampair.png",
+      "darken": 0,
+      "start": 923,
+      "dur": 4.9
+    },
+    {
+      "id": "b_coldallday",
+      "kind": "raw",
+      "src": "img/b_coldallday.png",
+      "darken": 0,
+      "start": 927.4,
+      "dur": 4.2
+    },
+    {
+      "id": "b_hauledup",
+      "kind": "raw",
+      "src": "img/b_hauledup.png",
+      "darken": 0,
+      "start": 931.1,
+      "dur": 6
+    },
+    {
+      "id": "b_doubleduty",
+      "kind": "raw",
+      "src": "img/b_doubleduty.png",
+      "darken": 0,
+      "start": 936.6,
+      "dur": 5
+    },
+    {
+      "id": "b_cleverestall",
+      "kind": "raw",
+      "src": "img/b_cleverestall.png",
+      "darken": 0,
+      "start": 941.1,
+      "dur": 10.1
+    },
+    {
+      "id": "b_almostnothing",
+      "kind": "raw",
+      "src": "img/b_almostnothing.png",
+      "darken": 0,
+      "start": 950.7,
+      "dur": 3.8
+    },
+    {
+      "id": "b_driestweather",
+      "kind": "raw",
+      "src": "img/b_driestweather.png",
+      "darken": 0,
+      "start": 954,
+      "dur": 6.3
+    },
+    {
+      "id": "b_coldfromair",
+      "kind": "raw",
+      "src": "img/b_coldfromair.png",
+      "darken": 0,
+      "start": 959.8,
+      "dur": 6.1
+    },
+    {
+      "id": "b_takecrock",
+      "kind": "raw",
+      "src": "img/b_takecrock.png",
+      "darken": 0,
+      "start": 965.4,
+      "dur": 3.2
+    },
+    {
+      "id": "b_wrapwetcloth",
+      "kind": "raw",
+      "src": "img/b_wrapwetcloth.png",
+      "darken": 0,
+      "start": 968.1,
+      "dur": 2.4
+    },
+    {
+      "id": "b_inshade",
+      "kind": "raw",
+      "src": "img/b_inshade.png",
+      "darken": 0,
+      "start": 970,
+      "dur": 8.3
+    },
+    {
+      "id": "b_waterdries",
+      "kind": "raw",
+      "src": "img/b_waterdries.png",
+      "darken": 0,
+      "start": 977.8,
+      "dur": 5.1
+    },
+    {
+      "id": "b_pullswarmth",
+      "kind": "raw",
+      "src": "img/b_pullswarmth.png",
+      "darken": 0,
+      "start": 982.4,
+      "dur": 6
+    },
+    {
+      "id": "b_drierwindier",
+      "kind": "raw",
+      "src": "img/b_drierwindier.png",
+      "darken": 0,
+      "start": 987.9,
+      "dur": 5.5
+    },
+    {
+      "id": "b_butterfirm",
+      "kind": "raw",
+      "src": "img/b_butterfirm.png",
+      "darken": 0,
+      "start": 992.9,
+      "dur": 3.4
+    },
+    {
+      "id": "b_sweetlonger",
+      "kind": "raw",
+      "src": "img/b_sweetlonger.png",
+      "darken": 0,
+      "start": 995.8,
+      "dur": 6.5
+    },
+    {
+      "id": "b_keepwet",
+      "kind": "raw",
+      "src": "img/b_keepwet.png",
+      "darken": 0,
+      "start": 1001.8,
+      "dur": 3.4
+    },
+    {
+      "id": "b_coolerfromrag",
+      "kind": "raw",
+      "src": "img/b_coolerfromrag.png",
+      "darken": 0,
+      "start": 1004.7,
+      "dur": 5.6
+    },
+    {
+      "id": "b_drycountry",
+      "kind": "raw",
+      "src": "img/b_drycountry.png",
+      "darken": 0,
+      "start": 1009.8,
+      "dur": 3.9
+    },
+    {
+      "id": "b_littlesafe",
+      "kind": "raw",
+      "src": "img/b_littlesafe.png",
+      "darken": 0,
+      "start": 1013.2,
+      "dur": 5.7
+    },
+    {
+      "id": "b_wicking",
+      "kind": "raw",
+      "src": "img/b_wicking.png",
+      "darken": 0,
+      "start": 1018.4,
+      "dur": 4.6
+    },
+    {
+      "id": "b_dairyinit",
+      "kind": "raw",
+      "src": "img/b_dairyinit.png",
+      "darken": 0,
+      "start": 1022.5,
+      "dur": 2.8
+    },
+    {
+      "id": "b_justwater",
+      "kind": "raw",
+      "src": "img/b_justwater.png",
+      "darken": 0,
+      "start": 1024.8,
+      "dur": 6.9
+    },
+    {
+      "id": "b_riverwind",
+      "kind": "raw",
+      "src": "img/b_riverwind.png",
+      "darken": 0,
+      "start": 1031.2,
+      "dur": 5.5
+    },
+    {
+      "id": "b_fourways",
+      "kind": "keyphrase",
+      "text": "Springhouse. Cellar. Well. *Cloth.*",
+      "src": "img/b_fourways.png",
+      "accent": "cold",
+      "fontSize": 80,
+      "start": 1036.2,
+      "dur": 6.7
+    },
+    {
+      "id": "b_withoutmachine",
+      "kind": "raw",
+      "src": "img/b_withoutmachine.png",
+      "darken": 0,
+      "start": 1042.9,
+      "dur": 4.1
+    },
+    {
+      "id": "b_anyplace",
+      "kind": "raw",
+      "src": "img/b_anyplace.png",
+      "darken": 0,
+      "start": 1046.5,
+      "dur": 5.1
+    },
+    {
+      "id": "b_freeforever",
+      "kind": "raw",
+      "src": "img/b_freeforever.png",
+      "darken": 0,
+      "start": 1051.1,
+      "dur": 4.2
+    },
+    {
+      "id": "b_fixwithhands",
+      "kind": "raw",
+      "src": "img/b_fixwithhands.png",
+      "darken": 0,
+      "start": 1054.8,
+      "dur": 6.5
+    },
+    {
+      "id": "b_onemorething",
+      "kind": "raw",
+      "src": "img/b_onemorething.png",
+      "darken": 0,
+      "start": 1060.8,
+      "dur": 4
+    },
+    {
+      "id": "b_soundsimpossible",
+      "kind": "raw",
+      "src": "img/b_soundsimpossible.png",
+      "darken": 0,
+      "start": 1064.3,
+      "dur": 4.2
+    },
+    {
+      "id": "b_moremilk",
+      "kind": "raw",
+      "src": "img/b_moremilk.png",
+      "darken": 0,
+      "start": 1068,
+      "dur": 7.7
+    },
+    {
+      "id": "b_cowgives",
+      "kind": "raw",
+      "src": "img/b_cowgives.png",
+      "darken": 0,
+      "start": 1075.2,
+      "dur": 3.8
+    },
+    {
+      "id": "b_morethandrink",
+      "kind": "raw",
+      "src": "img/b_morethandrink.png",
+      "darken": 0,
+      "start": 1078.5,
+      "dur": 6.7
+    },
+    {
+      "id": "b_cantkeepforever",
+      "kind": "raw",
+      "src": "img/b_cantkeepforever.png",
+      "darken": 0,
+      "start": 1084.7,
+      "dur": 3.7
+    },
+    {
+      "id": "b_weekortwo",
+      "kind": "raw",
+      "src": "img/b_weekortwo.png",
+      "darken": 0,
+      "start": 1087.9,
+      "dur": 4.8
+    },
+    {
+      "id": "b_cleverestofall",
+      "kind": "raw",
+      "src": "img/b_cleverestofall.png",
+      "darken": 0,
+      "start": 1092.2,
+      "dur": 4.4
+    },
+    {
+      "id": "b_stopkeepmilk",
+      "kind": "raw",
+      "src": "img/b_stopkeepmilk.png",
+      "darken": 0,
+      "start": 1096.1,
+      "dur": 3.5
+    },
+    {
+      "id": "b_keepmonths",
+      "kind": "raw",
+      "src": "img/b_keepmonths.png",
+      "darken": 0,
+      "start": 1099.1,
+      "dur": 4.2
+    },
+    {
+      "id": "b_intocheese",
+      "kind": "raw",
+      "src": "img/b_intocheese.png",
+      "darken": 0,
+      "start": 1102.8,
+      "dur": 7.9
+    },
+    {
+      "id": "b_cheeseiskeptmilk",
+      "kind": "raw",
+      "src": "img/b_cheeseiskeptmilk.png",
+      "darken": 0,
+      "start": 1110.2,
+      "dur": 4.3
+    },
+    {
+      "id": "b_thickenpress",
+      "kind": "raw",
+      "src": "img/b_thickenpress.png",
+      "darken": 0,
+      "start": 1114,
+      "dur": 6.6
+    },
+    {
+      "id": "b_ageincool",
+      "kind": "raw",
+      "src": "img/b_ageincool.png",
+      "darken": 0,
+      "start": 1120.1,
+      "dur": 2.9
+    },
+    {
+      "id": "b_spoilstomonths",
+      "kind": "raw",
+      "src": "img/b_spoilstomonths.png",
+      "darken": 0,
+      "start": 1122.5,
+      "dur": 6.5
+    },
+    {
+      "id": "b_evenayear",
+      "kind": "raw",
+      "src": "img/b_evenayear.png",
+      "darken": 0,
+      "start": 1128.5,
+      "dur": 3.9
+    },
+    {
+      "id": "b_wheelincellar",
+      "kind": "raw",
+      "src": "img/b_wheelincellar.png",
+      "darken": 0,
+      "start": 1131.9,
+      "dur": 10.9
+    },
+    {
+      "id": "b_notrecipe",
+      "kind": "raw",
+      "src": "img/b_notrecipe.png",
+      "darken": 0,
+      "start": 1142.3,
+      "dur": 2.1
+    },
+    {
+      "id": "b_miracleweekly",
+      "kind": "raw",
+      "src": "img/b_miracleweekly.png",
+      "darken": 0,
+      "start": 1143.9,
+      "dur": 8.8
+    },
+    {
+      "id": "b_summersmilk",
+      "kind": "raw",
+      "src": "img/b_summersmilk.png",
+      "darken": 0,
+      "start": 1152.2,
+      "dur": 4.8
+    },
+    {
+      "id": "b_walkedascheese",
+      "kind": "raw",
+      "src": "img/b_walkedascheese.png",
+      "darken": 0,
+      "start": 1156.5,
+      "dur": 4.2
+    },
+    {
+      "id": "b_patientwait",
+      "kind": "raw",
+      "src": "img/b_patientwait.png",
+      "darken": 0,
+      "start": 1160.2,
+      "dur": 4.7
+    },
+    {
+      "id": "b_gladofbite",
+      "kind": "raw",
+      "src": "img/b_gladofbite.png",
+      "darken": 0,
+      "start": 1164.4,
+      "dur": 3.5
+    },
+    {
+      "id": "b_nothingwasted2",
+      "kind": "raw",
+      "src": "img/b_nothingwasted2.png",
+      "darken": 0,
+      "start": 1167.4,
+      "dur": 2.1
+    },
+    {
+      "id": "b_summerfedwinter",
+      "kind": "raw",
+      "src": "img/b_summerfedwinter.png",
+      "darken": 0,
+      "start": 1169,
+      "dur": 2.7
+    },
+    {
+      "id": "b_allyearround",
+      "kind": "raw",
+      "src": "img/b_allyearround.png",
+      "darken": 0,
+      "start": 1171.2,
+      "dur": 5.6
+    },
+    {
+      "id": "b_neverelectric",
+      "kind": "raw",
+      "src": "img/b_neverelectric.png",
+      "darken": 0,
+      "start": 1176.3,
+      "dur": 3.5
+    },
+    {
+      "id": "b_honest",
+      "kind": "raw",
+      "src": "img/b_honest.png",
+      "darken": 0,
+      "start": 1179.3,
+      "dur": 5.8
+    },
+    {
+      "id": "b_nofairytale",
+      "kind": "raw",
+      "src": "img/b_nofairytale.png",
+      "darken": 0,
+      "start": 1184.6,
+      "dur": 3.5
+    },
+    {
+      "id": "b_notafridge",
+      "kind": "keyphrase",
+      "text": "Not a fridge. The *real* way.",
+      "src": "img/b_notafridge.png",
+      "accent": "cold",
+      "fontSize": 88,
+      "start": 1187.6,
+      "dur": 3.9
+    },
+    {
+      "id": "b_asksofyou",
+      "kind": "raw",
+      "src": "img/b_asksofyou.png",
+      "darken": 0,
+      "start": 1191.5,
+      "dur": 4.7
+    },
+    {
+      "id": "b_tendit",
+      "kind": "raw",
+      "src": "img/b_tendit.png",
+      "darken": 0,
+      "start": 1195.7,
+      "dur": 3.1
+    },
+    {
+      "id": "b_coolthemoment",
+      "kind": "raw",
+      "src": "img/b_coolthemoment.png",
+      "darken": 0,
+      "start": 1198.3,
+      "dur": 6
+    },
+    {
+      "id": "b_cleanhands",
+      "kind": "raw",
+      "src": "img/b_cleanhands.png",
+      "darken": 0,
+      "start": 1203.8,
+      "dur": 4.1
+    },
+    {
+      "id": "b_scaldedpans",
+      "kind": "raw",
+      "src": "img/b_scaldedpans.png",
+      "darken": 0,
+      "start": 1207.4,
+      "dur": 5.8
+    },
+    {
+      "id": "b_scrubbed",
+      "kind": "raw",
+      "src": "img/b_scrubbed.png",
+      "darken": 0,
+      "start": 1212.7,
+      "dur": 5.7
+    },
+    {
+      "id": "b_steadynotfreezer",
+      "kind": "raw",
+      "src": "img/b_steadynotfreezer.png",
+      "darken": 0,
+      "start": 1217.9,
+      "dur": 5
+    },
+    {
+      "id": "b_daysnotforever",
+      "kind": "raw",
+      "src": "img/b_daysnotforever.png",
+      "darken": 0,
+      "start": 1222.4,
+      "dur": 4.8
+    },
+    {
+      "id": "b_hotspell",
+      "kind": "raw",
+      "src": "img/b_hotspell.png",
+      "darken": 0,
+      "start": 1226.7,
+      "dur": 5.2
+    },
+    {
+      "id": "b_rawmilkcare",
+      "kind": "raw",
+      "src": "img/b_rawmilkcare.png",
+      "darken": 0,
+      "start": 1231.4,
+      "dur": 9.2
+    },
+    {
+      "id": "b_notonce",
+      "kind": "raw",
+      "src": "img/b_notonce.png",
+      "darken": 0,
+      "start": 1240.1,
+      "dur": 3.7
+    },
+    {
+      "id": "b_wayofliving",
+      "kind": "raw",
+      "src": "img/b_wayofliving.png",
+      "darken": 0,
+      "start": 1243.3,
+      "dur": 5.1
+    },
+    {
+      "id": "b_thetrade",
+      "kind": "raw",
+      "src": "img/b_thetrade.png",
+      "darken": 0,
+      "start": 1247.9,
+      "dur": 2.9
+    },
+    {
+      "id": "b_keptfreedom",
+      "kind": "raw",
+      "src": "img/b_keptfreedom.png",
+      "darken": 0,
+      "start": 1250.3,
+      "dur": 5.3
+    },
+    {
+      "id": "b_paymoney",
+      "kind": "raw",
+      "src": "img/b_paymoney.png",
+      "darken": 0,
+      "start": 1255.1,
+      "dur": 3.8
+    },
+    {
+      "id": "b_convenience",
+      "kind": "raw",
+      "src": "img/b_convenience.png",
+      "darken": 0,
+      "start": 1258.4,
+      "dur": 2.8
+    },
+    {
+      "id": "b_thought",
+      "kind": "raw",
+      "src": "img/b_thought.png",
+      "darken": 0,
+      "start": 1260.7,
+      "dur": 5.8
+    },
+    {
+      "id": "b_everymethod2",
+      "kind": "raw",
+      "src": "img/b_everymethod2.png",
+      "darken": 0,
+      "start": 1266,
+      "dur": 6.7
+    },
+    {
+      "id": "b_nosciencefigured",
+      "kind": "raw",
+      "src": "img/b_nosciencefigured.png",
+      "darken": 0,
+      "start": 1272.2,
+      "dur": 5.3
+    },
+    {
+      "id": "b_eyespatience",
+      "kind": "raw",
+      "src": "img/b_eyespatience.png",
+      "darken": 0,
+      "start": 1277,
+      "dur": 6
+    },
+    {
+      "id": "b_understandworld",
+      "kind": "raw",
+      "src": "img/b_understandworld.png",
+      "darken": 0,
+      "start": 1282.5,
+      "dur": 6.5
+    },
+    {
+      "id": "b_wherecoldlived",
+      "kind": "raw",
+      "src": "img/b_wherecoldlived.png",
+      "darken": 0,
+      "start": 1288.5,
+      "dur": 3.3
+    },
+    {
+      "id": "b_howwatermoved",
+      "kind": "raw",
+      "src": "img/b_howwatermoved.png",
+      "darken": 0,
+      "start": 1291.3,
+      "dur": 2.9
+    },
+    {
+      "id": "b_saltandwind",
+      "kind": "raw",
+      "src": "img/b_saltandwind.png",
+      "darken": 0,
+      "start": 1293.7,
+      "dur": 4.2
+    },
+    {
+      "id": "b_builtlives",
+      "kind": "raw",
+      "src": "img/b_builtlives.png",
+      "darken": 0,
+      "start": 1297.4,
+      "dur": 4
+    },
+    {
+      "id": "b_fedchildren",
+      "kind": "raw",
+      "src": "img/b_fedchildren.png",
+      "darken": 0,
+      "start": 1300.9,
+      "dur": 3.4
+    },
+    {
+      "id": "b_costnothing",
+      "kind": "raw",
+      "src": "img/b_costnothing.png",
+      "darken": 0,
+      "start": 1303.8,
+      "dur": 3.1
+    },
+    {
+      "id": "b_wehavemore",
+      "kind": "raw",
+      "src": "img/b_wehavemore.png",
+      "darken": 0,
+      "start": 1306.4,
+      "dur": 4.3
+    },
+    {
+      "id": "b_knowless",
+      "kind": "raw",
+      "src": "img/b_knowless.png",
+      "darken": 0,
+      "start": 1310.2,
+      "dur": 3.9
+    },
+    {
+      "id": "b_forgotday",
+      "kind": "raw",
+      "src": "img/b_forgotday.png",
+      "darken": 0,
+      "start": 1313.6,
+      "dur": 5.4
+    },
+    {
+      "id": "b_neverthought",
+      "kind": "raw",
+      "src": "img/b_neverthought.png",
+      "darken": 0,
+      "start": 1318.5,
+      "dur": 3.3
+    },
+    {
+      "id": "b_stillrunning",
+      "kind": "raw",
+      "src": "img/b_stillrunning.png",
+      "darken": 0,
+      "start": 1321.3,
+      "dur": 2.8
+    },
+    {
+      "id": "b_stillcold",
+      "kind": "raw",
+      "src": "img/b_stillcold.png",
+      "darken": 0,
+      "start": 1323.6,
+      "dur": 3.4
+    },
+    {
+      "id": "b_windstillpulls",
+      "kind": "raw",
+      "src": "img/b_windstillpulls.png",
+      "darken": 0,
+      "start": 1326.5,
+      "dur": 3.9
+    },
+    {
+      "id": "b_neverwentaway",
+      "kind": "raw",
+      "src": "img/b_neverwentaway.png",
+      "darken": 0,
+      "start": 1329.9,
+      "dur": 2.2
+    },
+    {
+      "id": "b_stoppedlooking",
+      "kind": "raw",
+      "src": "img/b_stoppedlooking.png",
+      "darken": 0,
+      "start": 1331.6,
+      "dur": 2.3
+    },
+    {
+      "id": "b_ifyoufeltit",
+      "kind": "raw",
+      "src": "img/b_ifyoufeltit.png",
+      "darken": 0,
+      "start": 1333.4,
+      "dur": 9.9
+    },
+    {
+      "id": "b_everyweek",
+      "kind": "raw",
+      "src": "img/b_everyweek.png",
+      "darken": 0,
+      "start": 1342.8,
+      "dur": 7.6
+    },
+    {
+      "id": "b_oldknowing",
+      "kind": "raw",
+      "src": "img/b_oldknowing.png",
+      "darken": 0,
+      "start": 1349.9,
+      "dur": 9.6
+    },
+    {
+      "id": "b_thewaykeptmeat",
+      "kind": "raw",
+      "src": "img/b_thewaykeptmeat.png",
+      "darken": 0,
+      "start": 1359,
+      "dur": 4.7
+    },
+    {
+      "id": "b_warmhouselamp",
+      "kind": "raw",
+      "src": "img/b_warmhouselamp.png",
+      "darken": 0,
+      "start": 1363.2,
+      "dur": 6
+    },
+    {
+      "id": "b_nowire",
+      "kind": "raw",
+      "src": "img/b_nowire.png",
+      "darken": 0,
+      "start": 1368.7,
+      "dur": 3.4
+    },
+    {
+      "id": "b_oneskillweek",
+      "kind": "raw",
+      "src": "img/b_oneskillweek.png",
+      "darken": 0,
+      "start": 1371.6,
+      "dur": 5.5
+    },
+    {
+      "id": "b_subscribe",
+      "kind": "raw",
+      "src": "img/b_subscribe.png",
+      "darken": 0,
+      "start": 1376.6,
+      "dur": 5.4
+    },
+    {
+      "id": "b_neverlost",
+      "kind": "raw",
+      "src": "img/b_neverlost.png",
+      "darken": 0,
+      "start": 1381.5,
+      "dur": 2.8
+    },
+    {
+      "id": "b_waiting",
+      "kind": "raw",
+      "src": "img/b_waiting.png",
+      "darken": 0,
+      "start": 1383.8,
+      "dur": 4.6
+    }
+  ]
+}
