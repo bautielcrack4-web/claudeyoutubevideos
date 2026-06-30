@@ -37,6 +37,7 @@ import { MainViuda, TOTAL_FRAMES_VD } from "./VideoEdit/Main_viuda";
 import { MainEstafas, TOTAL_FRAMES_ES } from "./VideoEdit/Main_estafas";
 import { MainHormiga, TOTAL_FRAMES_HB } from "./VideoEdit/Main_hormiga";
 import { MainHuron, TOTAL_FRAMES_HUR } from "./VideoEdit/Main_huron";
+import { MainCastores, TOTAL_FRAMES_CAS } from "./VideoEdit/Main_castores";
 import { MainBarcos, TOTAL_FRAMES_BAR } from "./VideoEdit/Main_barcos";
 import { MainLeona, TOTAL_FRAMES_LEONA } from "./VideoEdit/Main_leona";
 import { MainConstrucciones, TOTAL_FRAMES_CONS } from "./VideoEdit/Main_construcciones";
@@ -64,6 +65,8 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="Barcos" component={MainBarcos} durationInFrames={TOTAL_FRAMES_BAR} fps={30} width={1920} height={1080} />
       {/* VIDEO ACTIVO — Documental fauna · "El Hurón de Patas Negras" · faceless · voz clonada */}
       <Composition id="Huron" component={MainHuron} durationInFrames={TOTAL_FRAMES_HUR} fps={30} width={1920} height={1080} />
+      {/* DOCUMENTAL FAUNA · Planeta Reconstruido — Castores paracaidistas de Idaho (1948) */}
+      <Composition id="Castores" component={MainCastores} durationInFrames={TOTAL_FRAMES_CAS} fps={30} width={1920} height={1080} />
       {/* TEST nicho fauna — "La leona" (clip real por frase + voz Trevor) */}
       <Composition id="Leona" component={MainLeona} durationInFrames={TOTAL_FRAMES_LEONA} fps={30} width={1920} height={1080} />
       {/* TEST Cafe/Amish deshabilitados: Main_* sin commitear → rompen el farm */}

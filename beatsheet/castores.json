@@ -1,0 +1,3170 @@
+{
+ "video": "castores",
+ "beats": [
+  {
+   "id": "teaser_0",
+   "start": 0,
+   "dur": 1.5,
+   "kind": "raw",
+   "src": "real/nw_beaver_parachute.jpg",
+   "hue": "amber"
+  },
+  {
+   "id": "teaser_1",
+   "start": 1.5,
+   "dur": 1.3,
+   "kind": "raw",
+   "src": "broll/cv_beaver_face.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "teaser_2",
+   "start": 2.8,
+   "dur": 1.2,
+   "kind": "raw",
+   "src": "broll/st_drone_wetland.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "intro_0_0",
+   "start": 4.2,
+   "dur": 5.16,
+   "kind": "raw",
+   "src": "broll/nw_old_plane.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "intro_0_1",
+   "start": 9.36,
+   "dur": 5.16,
+   "kind": "raw",
+   "src": "broll/nw_parachute_land.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "intro_0_2",
+   "start": 14.52,
+   "dur": 5.16,
+   "kind": "raw",
+   "src": "broll/nw_plane_door_drop.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "intro_1",
+   "start": 19.68,
+   "dur": 2.52,
+   "kind": "raw",
+   "src": "broll/nw_cargo_parachute.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "intro_2_0",
+   "start": 22.2,
+   "dur": 5.1,
+   "kind": "raw",
+   "src": "real/nw_wood_crate.jpg",
+   "hue": "red"
+  },
+  {
+   "id": "intro_2_1",
+   "start": 27.3,
+   "dur": 5.1,
+   "kind": "raw",
+   "src": "broll/nw_cargo_parachute.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "intro_3",
+   "start": 32.4,
+   "dur": 3.38,
+   "kind": "raw",
+   "src": "broll/cv_beaver_face.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "intro_4",
+   "start": 35.78,
+   "dur": 3.12,
+   "kind": "raw",
+   "src": "broll/nw_wwii_parachute.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "intro_5",
+   "start": 38.9,
+   "dur": 5.3,
+   "kind": "raw",
+   "src": "broll/cv_beaver_swim.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "intro_6",
+   "start": 44.2,
+   "dur": 4.3,
+   "kind": "raw",
+   "src": "real/nw_beaver_parachute.jpg",
+   "hue": "amber"
+  },
+  {
+   "id": "intro_7",
+   "start": 48.5,
+   "dur": 4.2,
+   "kind": "raw",
+   "src": "broll/st_mountain_valley.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "real_0_0",
+   "start": 52.7,
+   "dur": 4.35,
+   "kind": "raw",
+   "src": "real/nw_old_map.jpg",
+   "hue": "blue"
+  },
+  {
+   "id": "real_0_1",
+   "start": 57.05,
+   "dur": 4.34,
+   "kind": "raw",
+   "src": "broll/cv_horse_pack.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "real_0_2",
+   "start": 61.39,
+   "dur": 4.35,
+   "kind": "raw",
+   "src": "broll/cv_irrigation_canal.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "real_1",
+   "start": 65.74,
+   "dur": 7,
+   "kind": "raw",
+   "src": "broll/nw_fur_future_film.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "teaser2_0_0",
+   "start": 72.74,
+   "dur": 5.02,
+   "kind": "raw",
+   "src": "broll/cv_beaver_dam.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "teaser2_0_1",
+   "start": 77.76,
+   "dur": 5.02,
+   "kind": "raw",
+   "src": "broll/cv_beaver_kits.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "teaser2_0_2",
+   "start": 82.78,
+   "dur": 5.02,
+   "kind": "raw",
+   "src": "broll/cv_beaver_tail.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "teaser2_1_0",
+   "start": 87.8,
+   "dur": 4.28,
+   "kind": "raw",
+   "src": "broll/nw_scientist_stream.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "teaser2_1_1",
+   "start": 92.08,
+   "dur": 4.28,
+   "kind": "raw",
+   "src": "broll/cv_ducks_pond.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "teaser2_2_0",
+   "start": 96.36,
+   "dur": 5.19,
+   "kind": "raw",
+   "src": "broll/st_drone_wetland.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "teaser2_2_1",
+   "start": 101.55,
+   "dur": 5.19,
+   "kind": "raw",
+   "src": "broll/cv_elk_meadow.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "posguerra_0_0",
+   "start": 106.74,
+   "dur": 4.64,
+   "kind": "raw",
+   "src": "broll/nw_wwii_parachute.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "posguerra_0_1",
+   "start": 111.38,
+   "dur": 4.64,
+   "kind": "raw",
+   "src": "broll/nw_old_plane.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "posguerra_0_2",
+   "start": 116.02,
+   "dur": 4.64,
+   "kind": "raw",
+   "src": "broll/nw_parachute_land.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "posguerra_1_0",
+   "start": 120.66,
+   "dur": 3.84,
+   "kind": "raw",
+   "src": "real/nw_postwar_town.jpg",
+   "hue": "blue"
+  },
+  {
+   "id": "posguerra_1_1",
+   "start": 124.5,
+   "dur": 3.84,
+   "kind": "raw",
+   "src": "broll/cv_log_jam.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "posguerra_1_2",
+   "start": 128.34,
+   "dur": 3.84,
+   "kind": "raw",
+   "src": "broll/cv_orchard.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "posguerra_2_0",
+   "start": 132.18,
+   "dur": 3.98,
+   "kind": "raw",
+   "src": "broll/st_mountain_valley.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "posguerra_2_1",
+   "start": 136.16,
+   "dur": 3.98,
+   "kind": "raw",
+   "src": "broll/cv_insects_water.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "posguerra_3",
+   "start": 140.14,
+   "dur": 5.24,
+   "kind": "raw",
+   "src": "broll/cv_irrigation_canal.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "dueno_0_0",
+   "start": 145.38,
+   "dur": 4.08,
+   "kind": "raw",
+   "src": "broll/cv_beaver_portrait.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "dueno_0_1",
+   "start": 149.46,
+   "dur": 4.08,
+   "kind": "raw",
+   "src": "broll/cv_beaver_carry.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "dueno_0_2",
+   "start": 153.54,
+   "dur": 4.08,
+   "kind": "raw",
+   "src": "broll/cv_beaver_family.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "dueno_0_3",
+   "start": 157.62,
+   "dur": 4.08,
+   "kind": "raw",
+   "src": "broll/cv_beaver_kits.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "quees_0_0",
+   "start": 161.7,
+   "dur": 5.72,
+   "kind": "raw",
+   "src": "broll/cv_beaver_dam_aerial.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "quees_0_1",
+   "start": 167.42,
+   "dur": 5.72,
+   "kind": "raw",
+   "src": "broll/cv_beaver_lodge.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "biologia_0_0",
+   "start": 173.14,
+   "dur": 3.54,
+   "kind": "raw",
+   "src": "broll/cv_beaver_walk.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "biologia_0_1",
+   "start": 176.68,
+   "dur": 3.54,
+   "kind": "raw",
+   "src": "broll/cv_beaver_night.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "biologia_1",
+   "start": 180.22,
+   "dur": 6.3,
+   "kind": "annotated",
+   "at": "tiene unos dientes anaranjados",
+   "caption": "Una herramienta viviente",
+   "annotations": [
+    {
+     "kind": "circle",
+     "x": 44,
+     "y": 34,
+     "label": "Dientes anaranjados, más duros que el metal"
+    },
+    {
+     "kind": "circle",
+     "x": 30,
+     "y": 60,
+     "label": "Pelaje aceitoso e impermeable"
+    }
+   ],
+   "image": "img/ca_castor_ingeniero.png",
+   "gen": {
+    "type": "image",
+    "name": "ca_castor_ingeniero",
+    "prompt": "Foto documental real, 16:9 horizontal apaisado. Un castor de perfil mostrando sus dientes y pelaje Como un fotograma de un documental viejo de naturaleza: con imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+   },
+   "hue": "blue"
+  },
+  {
+   "id": "biologia_2_0",
+   "start": 186.52,
+   "dur": 5.29,
+   "kind": "raw",
+   "src": "broll/cv_beaver_face.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "biologia_2_1",
+   "start": 191.81,
+   "dur": 5.29,
+   "kind": "raw",
+   "src": "broll/cv_beaver_tail.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "biologia_3_0",
+   "start": 197.1,
+   "dur": 4.28,
+   "kind": "raw",
+   "src": "broll/cv_beaver_fell.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "biologia_3_1",
+   "start": 201.38,
+   "dur": 4.28,
+   "kind": "raw",
+   "src": "broll/cv_beaver_teeth.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "construir_0",
+   "start": 205.66,
+   "dur": 4.82,
+   "kind": "raw",
+   "src": "broll/cv_beaver_carry.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "construir_1",
+   "start": 210.48,
+   "dur": 4.92,
+   "kind": "raw",
+   "src": "broll/cv_beaver_build.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "construir_2_0",
+   "start": 215.4,
+   "dur": 3.96,
+   "kind": "raw",
+   "src": "broll/st_pond_calm.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "construir_2_1",
+   "start": 219.36,
+   "dur": 3.96,
+   "kind": "raw",
+   "src": "broll/cv_moose_wetland.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "construir_3",
+   "start": 223.32,
+   "dur": 3.58,
+   "kind": "raw",
+   "src": "broll/cv_beaver_lodge.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "construir_4",
+   "start": 226.9,
+   "dur": 6.64,
+   "kind": "raw",
+   "src": "broll/cv_beaver_under.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "catastrofe_0_0",
+   "start": 233.54,
+   "dur": 5.43,
+   "kind": "raw",
+   "src": "broll/cv_orchard.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "catastrofe_0_1",
+   "start": 238.97,
+   "dur": 5.43,
+   "kind": "raw",
+   "src": "broll/cv_flooded_field.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "catastrofe_1_0",
+   "start": 244.4,
+   "dur": 3.84,
+   "kind": "raw",
+   "src": "broll/cv_flooded_field.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "catastrofe_1_1",
+   "start": 248.24,
+   "dur": 3.84,
+   "kind": "raw",
+   "src": "broll/cv_horse_pack.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "plaga_0_0",
+   "start": 252.08,
+   "dur": 3.64,
+   "kind": "raw",
+   "src": "broll/cv_log_jam.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "plaga_0_1",
+   "start": 255.72,
+   "dur": 3.64,
+   "kind": "raw",
+   "src": "broll/cv_irrigation_canal.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "plaga_1_0",
+   "start": 259.36,
+   "dur": 5.54,
+   "kind": "raw",
+   "src": "broll/cv_flooded_field.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "plaga_1_1",
+   "start": 264.9,
+   "dur": 5.54,
+   "kind": "raw",
+   "src": "broll/cv_log_jam.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "plaga_2_0",
+   "start": 270.44,
+   "dur": 5.4,
+   "kind": "raw",
+   "src": "broll/cv_beaver_fell.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "plaga_2_1",
+   "start": 275.84,
+   "dur": 5.41,
+   "kind": "raw",
+   "src": "broll/cv_beaver_build.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "plaga_3",
+   "start": 281.25,
+   "dur": 6,
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "Se"
+    },
+    {
+     "t": "convirtio"
+    },
+    {
+     "t": "en"
+    },
+    {
+     "t": "una"
+    },
+    {
+     "t": "plaga",
+     "hl": true
+    }
+   ],
+   "eyebrow": "El castor",
+   "bg": "image",
+   "image": "img/ca_castor_plaga.png",
+   "gen": {
+    "type": "image",
+    "name": "ca_castor_plaga",
+    "prompt": "Foto documental real, 16:9 horizontal apaisado. Un castor junto a un campo agrícola inundado, atardecer Como un fotograma de un documental viejo de naturaleza: con imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+   },
+   "hue": "amber"
+  },
+  {
+   "id": "plaga_3f0",
+   "start": 287.25,
+   "dur": 4.27,
+   "kind": "raw",
+   "src": "broll/st_clouds_time.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "distinto_0_0",
+   "start": 291.52,
+   "dur": 4.45,
+   "kind": "raw",
+   "src": "broll/st_dry_riverbed.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "distinto_0_1",
+   "start": 295.97,
+   "dur": 4.45,
+   "kind": "raw",
+   "src": "broll/st_dawn_mist.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "distinto_0_2",
+   "start": 300.42,
+   "dur": 4.46,
+   "kind": "raw",
+   "src": "broll/st_marsh_reeds.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "distinto_0_3",
+   "start": 304.88,
+   "dur": 4.45,
+   "kind": "raw",
+   "src": "broll/st_meadow_stream.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "distinto_1_0",
+   "start": 309.33,
+   "dur": 4.45,
+   "kind": "raw",
+   "src": "broll/nw_scientist_stream.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "distinto_1_1",
+   "start": 313.78,
+   "dur": 4.45,
+   "kind": "raw",
+   "src": "broll/st_night_stars.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "distinto_1_2",
+   "start": 318.23,
+   "dur": 4.45,
+   "kind": "raw",
+   "src": "broll/st_rain_water.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "distinto_1_3",
+   "start": 322.68,
+   "dur": 4.45,
+   "kind": "raw",
+   "src": "broll/st_river_fast.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "distinto_2",
+   "start": 327.13,
+   "dur": 6,
+   "kind": "splitlist",
+   "title": "En vez de matarlos…",
+   "items": [
+    "¿Y si los mudamos?",
+    "Lejos, a las montañas salvajes",
+    "Que hagan lo que mejor saben"
+   ],
+   "palette": "G",
+   "hue": "amber"
+  },
+  {
+   "id": "distinto_2f0",
+   "start": 333.13,
+   "dur": 3.94,
+   "kind": "raw",
+   "src": "broll/st_stream_rocks.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "distinto_2f1",
+   "start": 337.07,
+   "dur": 3.93,
+   "kind": "raw",
+   "src": "broll/st_sun_through_trees.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "distinto_2f2",
+   "start": 341,
+   "dur": 3.94,
+   "kind": "raw",
+   "src": "broll/cv_birds_marsh.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "como_0_0",
+   "start": 344.94,
+   "dur": 4.67,
+   "kind": "raw",
+   "src": "broll/st_forest_aerial.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "como_0_1",
+   "start": 349.61,
+   "dur": 4.66,
+   "kind": "raw",
+   "src": "broll/cv_deer_water.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "como_0_2",
+   "start": 354.27,
+   "dur": 4.67,
+   "kind": "raw",
+   "src": "broll/cv_ducks_pond.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "como_0_3",
+   "start": 358.94,
+   "dur": 4.66,
+   "kind": "raw",
+   "src": "broll/cv_elk_meadow.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "como_1_0",
+   "start": 363.6,
+   "dur": 4.55,
+   "kind": "raw",
+   "src": "broll/st_mountain_valley.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "como_1_1",
+   "start": 368.15,
+   "dur": 4.55,
+   "kind": "raw",
+   "src": "broll/cv_fish_stream.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "como_2_0",
+   "start": 372.7,
+   "dur": 3.94,
+   "kind": "raw",
+   "src": "broll/cv_mule_train.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "como_2_1",
+   "start": 376.64,
+   "dur": 3.94,
+   "kind": "raw",
+   "src": "broll/cv_insects_water.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "sufrian_0_0",
+   "start": 380.58,
+   "dur": 5.09,
+   "kind": "raw",
+   "src": "broll/cv_beaver_under.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "sufrian_0_1",
+   "start": 385.67,
+   "dur": 5.08,
+   "kind": "raw",
+   "src": "broll/cv_beaver_carry.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "sufrian_0_2",
+   "start": 390.75,
+   "dur": 5.09,
+   "kind": "raw",
+   "src": "broll/cv_beaver_dam_aerial.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "sufrian_1_0",
+   "start": 395.84,
+   "dur": 4.7,
+   "kind": "raw",
+   "src": "broll/cv_beaver_portrait.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "sufrian_1_1",
+   "start": 400.54,
+   "dur": 4.71,
+   "kind": "raw",
+   "src": "broll/cv_beaver_face.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "sufrian_1_2",
+   "start": 405.25,
+   "dur": 4.7,
+   "kind": "raw",
+   "src": "broll/cv_beaver_family.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "sufrian_1_3",
+   "start": 409.95,
+   "dur": 4.7,
+   "kind": "raw",
+   "src": "broll/cv_beaver_fell.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "sufrian_1_4",
+   "start": 414.65,
+   "dur": 4.71,
+   "kind": "raw",
+   "src": "broll/cv_beaver_kits.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "sufrian_1_5",
+   "start": 419.36,
+   "dur": 4.7,
+   "kind": "raw",
+   "src": "broll/cv_beaver_lodge.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "sufrian_2_0",
+   "start": 424.06,
+   "dur": 4.95,
+   "kind": "raw",
+   "src": "broll/cv_mule_train.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "sufrian_2_1",
+   "start": 429.01,
+   "dur": 4.95,
+   "kind": "raw",
+   "src": "broll/cv_moose_wetland.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "sufrian_3",
+   "start": 433.96,
+   "dur": 5.82,
+   "kind": "raw",
+   "src": "broll/cv_horse_pack.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "fallaba_0",
+   "start": 439.78,
+   "dur": 6,
+   "kind": "aged",
+   "heading": "El método fallaba",
+   "lines": [
+    {
+     "text": "Lento. Carísimo."
+    },
+    {
+     "text": "Y mataba a los animales que querían salvar."
+    }
+   ],
+   "image": "img/ca_mula_caja.png",
+   "gen": {
+    "type": "image",
+    "name": "ca_mula_caja",
+    "prompt": "Foto documental real, 16:9 horizontal apaisado. Una mula cargando una caja de madera por un sendero de montaña, años 40 Como un fotograma de un documental viejo de naturaleza: con imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+   },
+   "hue": "blue"
+  },
+  {
+   "id": "fallaba_0f0",
+   "start": 445.78,
+   "dur": 3.5,
+   "kind": "raw",
+   "src": "broll/st_clouds_time.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "fallaba_0f1",
+   "start": 449.28,
+   "dur": 3.5,
+   "kind": "raw",
+   "src": "broll/st_dawn_mist.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "heter_0_0",
+   "start": 452.78,
+   "dur": 4.52,
+   "kind": "raw",
+   "src": "img/ca_elmo.png",
+   "hue": "red"
+  },
+  {
+   "id": "heter_0_1",
+   "start": 457.3,
+   "dur": 4.51,
+   "kind": "raw",
+   "src": "broll/cv_orchard.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "heter_0_2",
+   "start": 461.81,
+   "dur": 4.52,
+   "kind": "raw",
+   "src": "broll/cv_flooded_field.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "heter_0_3",
+   "start": 466.33,
+   "dur": 4.52,
+   "kind": "raw",
+   "src": "broll/cv_horse_pack.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "heter_0_4",
+   "start": 470.85,
+   "dur": 4.52,
+   "kind": "raw",
+   "src": "broll/cv_irrigation_canal.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "heter_0_5",
+   "start": 475.37,
+   "dur": 4.51,
+   "kind": "raw",
+   "src": "broll/cv_log_jam.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "heter_0_6",
+   "start": 479.88,
+   "dur": 4.52,
+   "kind": "raw",
+   "src": "broll/cv_orchard.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "heter_1_0",
+   "start": 484.4,
+   "dur": 5.17,
+   "kind": "raw",
+   "src": "broll/nw_wwii_parachute.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "heter_1_1",
+   "start": 489.57,
+   "dur": 5.16,
+   "kind": "raw",
+   "src": "broll/nw_plane_door_drop.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "heter_1_2",
+   "start": 494.73,
+   "dur": 5.17,
+   "kind": "raw",
+   "src": "broll/nw_cargo_parachute.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "heter_2_0",
+   "start": 499.9,
+   "dur": 4.9,
+   "kind": "raw",
+   "src": "broll/nw_wwii_parachute.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "heter_2_1",
+   "start": 504.8,
+   "dur": 4.91,
+   "kind": "raw",
+   "src": "broll/nw_old_plane.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "heter_2_2",
+   "start": 509.71,
+   "dur": 4.9,
+   "kind": "raw",
+   "src": "broll/nw_parachute_land.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "heter_2_3",
+   "start": 514.61,
+   "dur": 4.91,
+   "kind": "raw",
+   "src": "broll/nw_plane_door_drop.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "idea_0",
+   "start": 519.52,
+   "dur": 6,
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "Los"
+    },
+    {
+     "t": "vamos"
+    },
+    {
+     "t": "a"
+    },
+    {
+     "t": "tirar"
+    },
+    {
+     "t": "desde"
+    },
+    {
+     "t": "el"
+    },
+    {
+     "t": "cielo",
+     "hl": true
+    }
+   ],
+   "eyebrow": "Si no se puede por tierra…",
+   "bg": "image",
+   "image": "img/ca_paracaidas_cielo.png",
+   "gen": {
+    "type": "image",
+    "name": "ca_paracaidas_cielo",
+    "prompt": "Foto documental real, 16:9 horizontal apaisado. Un cielo enorme con un paracaídas blanco bajando, vista desde el suelo Como un fotograma de un documental viejo de naturaleza: con imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+   },
+   "hue": "amber"
+  },
+  {
+   "id": "idea_0f0",
+   "start": 525.52,
+   "dur": 4.46,
+   "kind": "raw",
+   "src": "broll/st_forest_aerial.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "idea_0f1",
+   "start": 529.98,
+   "dur": 4.46,
+   "kind": "raw",
+   "src": "broll/st_marsh_reeds.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "idea_0f2",
+   "start": 534.44,
+   "dur": 4.46,
+   "kind": "raw",
+   "src": "broll/st_meadow_stream.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "idea_1",
+   "start": 538.9,
+   "dur": 4.36,
+   "kind": "raw",
+   "src": "broll/nw_plane_door_drop.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "idea_2",
+   "start": 543.26,
+   "dur": 6.82,
+   "kind": "raw",
+   "src": "broll/nw_parachute_land.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "caja_0_0",
+   "start": 550.08,
+   "dur": 4.93,
+   "kind": "raw",
+   "src": "broll/cv_beaver_teeth.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "caja_0_1",
+   "start": 555.01,
+   "dur": 4.93,
+   "kind": "raw",
+   "src": "broll/cv_beaver_night.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "caja_0_2",
+   "start": 559.94,
+   "dur": 4.93,
+   "kind": "raw",
+   "src": "broll/cv_beaver_tail.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "caja_0_3",
+   "start": 564.87,
+   "dur": 4.93,
+   "kind": "raw",
+   "src": "broll/cv_beaver_under.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "caja_0_4",
+   "start": 569.8,
+   "dur": 4.93,
+   "kind": "raw",
+   "src": "broll/cv_beaver_build.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "caja_1",
+   "start": 574.73,
+   "dur": 21.38,
+   "kind": "raw",
+   "src": "img/dg_caja.png",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "dg_caja",
+    "prompt": "Infografía horizontal, relación de aspecto EXACTA 16:9 (1792x1024). Ilustración hecha a mano profesional, limpia, editorial, tipo lámina de historia natural antigua. Diagrama en 3 pasos de la caja de madera paracaidista de Elmo Heter: 1) cerrada mientras cae con el paracaídas, 2) toca el suelo, 3) las dos mitades se abren solas y el castor sale. Flechas claras. Título: La caja que se abre sola. Fondo marfil claro con textura de papel sutil, líneas marrón oscuro, acentos verde oliva y celeste agua apagado, papel envejecido. Minimalista, muy clara, se entiende en un segundo. Textos en español, breves."
+   }
+  },
+  {
+   "id": "caja_2_0",
+   "start": 596.11,
+   "dur": 4.42,
+   "kind": "raw",
+   "src": "real/nw_wood_crate.jpg",
+   "hue": "amber"
+  },
+  {
+   "id": "caja_2_1",
+   "start": 600.53,
+   "dur": 4.43,
+   "kind": "raw",
+   "src": "broll/nw_wwii_parachute.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "caja_2_2",
+   "start": 604.96,
+   "dur": 4.42,
+   "kind": "raw",
+   "src": "broll/nw_cargo_parachute.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "caja_2_3",
+   "start": 609.38,
+   "dur": 4.43,
+   "kind": "raw",
+   "src": "broll/nw_old_plane.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "caja_2_4",
+   "start": 613.81,
+   "dur": 4.42,
+   "kind": "raw",
+   "src": "broll/nw_parachute_land.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "geronimo_0_0",
+   "start": 618.23,
+   "dur": 5.14,
+   "kind": "raw",
+   "src": "broll/cv_beaver_portrait.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "geronimo_0_1",
+   "start": 623.37,
+   "dur": 5.14,
+   "kind": "raw",
+   "src": "broll/cv_beaver_teeth.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "geronimo_0_2",
+   "start": 628.51,
+   "dur": 5.14,
+   "kind": "raw",
+   "src": "broll/cv_beaver_carry.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "geronimo_0_3",
+   "start": 633.65,
+   "dur": 5.14,
+   "kind": "raw",
+   "src": "broll/cv_beaver_dam.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "geronimo_1_0",
+   "start": 638.79,
+   "dur": 4.92,
+   "kind": "raw",
+   "src": "real/nw_beaver_parachute.jpg",
+   "hue": "amber"
+  },
+  {
+   "id": "geronimo_1_1",
+   "start": 643.71,
+   "dur": 4.93,
+   "kind": "raw",
+   "src": "broll/cv_beaver_dam_aerial.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "geronimo_1_2",
+   "start": 648.64,
+   "dur": 4.92,
+   "kind": "raw",
+   "src": "broll/cv_beaver_face.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "geronimo_1_3",
+   "start": 653.56,
+   "dur": 4.92,
+   "kind": "raw",
+   "src": "broll/cv_beaver_family.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "geronimo_1_4",
+   "start": 658.48,
+   "dur": 4.93,
+   "kind": "raw",
+   "src": "broll/cv_beaver_fell.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "geronimo_1_5",
+   "start": 663.41,
+   "dur": 4.92,
+   "kind": "raw",
+   "src": "broll/cv_beaver_kits.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "geronimo_2_0",
+   "start": 668.33,
+   "dur": 5.09,
+   "kind": "raw",
+   "src": "broll/cv_beaver_walk.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "geronimo_2_1",
+   "start": 673.42,
+   "dur": 5.08,
+   "kind": "raw",
+   "src": "broll/cv_beaver_lodge.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "geronimo_2_2",
+   "start": 678.5,
+   "dur": 5.09,
+   "kind": "raw",
+   "src": "broll/cv_beaver_night.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "geronimo_3_0",
+   "start": 683.59,
+   "dur": 4.38,
+   "kind": "raw",
+   "src": "broll/nw_cargo_parachute.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "geronimo_3_1",
+   "start": 687.97,
+   "dur": 4.37,
+   "kind": "raw",
+   "src": "broll/nw_plane_door_drop.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "geronimo_3_2",
+   "start": 692.34,
+   "dur": 4.38,
+   "kind": "raw",
+   "src": "broll/nw_wwii_parachute.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "geronimo_3_3",
+   "start": 696.72,
+   "dur": 4.38,
+   "kind": "raw",
+   "src": "broll/nw_old_plane.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "geronimo_3_4",
+   "start": 701.1,
+   "dur": 4.37,
+   "kind": "raw",
+   "src": "broll/nw_parachute_land.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "geronimo_3_5",
+   "start": 705.47,
+   "dur": 4.38,
+   "kind": "raw",
+   "src": "broll/nw_plane_door_drop.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "grandia_0",
+   "start": 709.85,
+   "dur": 6.74,
+   "kind": "raw",
+   "src": "broll/nw_old_plane.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "grandia_1",
+   "start": 716.59,
+   "dur": 12.12,
+   "kind": "process",
+   "at": "cargaron los aviones con setenta y seis castores",
+   "title": "La operación, paso a paso",
+   "steps": [
+    {
+     "title": "76 castores cargados al avión",
+     "image": "img/ca_avion_t.png"
+    },
+    {
+     "title": "Caen bajo paracaídas",
+     "image": "img/ca_paracaidas_cielo.png"
+    },
+    {
+     "title": "La caja se abre sola al tocar el suelo",
+     "image": "img/dg_caja.png"
+    },
+    {
+     "title": "El castor sale libre",
+     "image": "img/ca_castor_construir.png"
+    }
+   ],
+   "hue": "blue"
+  },
+  {
+   "id": "grandia_2",
+   "start": 728.71,
+   "dur": 4.64,
+   "kind": "raw",
+   "src": "broll/nw_plane_door_drop.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "escena_0",
+   "start": 733.35,
+   "dur": 4.94,
+   "kind": "raw",
+   "src": "broll/nw_cargo_parachute.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "escena_1_0",
+   "start": 738.29,
+   "dur": 3.89,
+   "kind": "raw",
+   "src": "broll/nw_parachute_land.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "escena_1_1",
+   "start": 742.18,
+   "dur": 3.88,
+   "kind": "raw",
+   "src": "broll/nw_cargo_parachute.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "escena_1_2",
+   "start": 746.06,
+   "dur": 3.89,
+   "kind": "raw",
+   "src": "broll/nw_wwii_parachute.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "escena_2_0",
+   "start": 749.95,
+   "dur": 5.49,
+   "kind": "raw",
+   "src": "broll/cv_beaver_walk.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "escena_2_1",
+   "start": 755.44,
+   "dur": 5.49,
+   "kind": "raw",
+   "src": "broll/cv_beaver_swim.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "soloUno_0",
+   "start": 760.93,
+   "dur": 6,
+   "kind": "bars",
+   "title": "El resultado del lanzamiento",
+   "unit": "",
+   "bars": [
+    {
+     "label": "Sobrevivieron",
+     "value": 75
+    },
+    {
+     "label": "Murió",
+     "value": 1
+    }
+   ],
+   "hue": "red"
+  },
+  {
+   "id": "soloUno_0f0",
+   "start": 766.93,
+   "dur": 4.92,
+   "kind": "raw",
+   "src": "broll/st_night_stars.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "soloUno_1_0",
+   "start": 771.85,
+   "dur": 4.37,
+   "kind": "raw",
+   "src": "broll/cv_beaver_swim.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "soloUno_1_1",
+   "start": 776.22,
+   "dur": 4.36,
+   "kind": "raw",
+   "src": "broll/cv_beaver_tail.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "soloUno_1_2",
+   "start": 780.58,
+   "dur": 4.37,
+   "kind": "raw",
+   "src": "broll/cv_beaver_teeth.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "soloUno_2_0",
+   "start": 784.95,
+   "dur": 4.66,
+   "kind": "raw",
+   "src": "broll/cv_beaver_family.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "soloUno_2_1",
+   "start": 789.61,
+   "dur": 4.66,
+   "kind": "raw",
+   "src": "broll/cv_beaver_under.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "exito_0_0",
+   "start": 794.27,
+   "dur": 4.43,
+   "kind": "raw",
+   "src": "broll/st_river_forest.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "exito_0_1",
+   "start": 798.7,
+   "dur": 4.44,
+   "kind": "raw",
+   "src": "broll/st_rain_water.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "exito_0_2",
+   "start": 803.14,
+   "dur": 4.43,
+   "kind": "raw",
+   "src": "broll/st_river_fast.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "exito_0_3",
+   "start": 807.57,
+   "dur": 4.43,
+   "kind": "raw",
+   "src": "broll/st_stream_rocks.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "exito_0_4",
+   "start": 812,
+   "dur": 4.44,
+   "kind": "raw",
+   "src": "broll/st_sunset_water.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "exito_0_5",
+   "start": 816.44,
+   "dur": 4.43,
+   "kind": "raw",
+   "src": "broll/st_sun_through_trees.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "exito_1",
+   "start": 820.87,
+   "dur": 6,
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "Hace"
+    },
+    {
+     "t": "lo"
+    },
+    {
+     "t": "unico"
+    },
+    {
+     "t": "que"
+    },
+    {
+     "t": "sabe:"
+    },
+    {
+     "t": "construir",
+     "hl": true
+    }
+   ],
+   "eyebrow": "Un castor libre",
+   "bg": "image",
+   "image": "img/ca_castor_construir.png",
+   "gen": {
+    "type": "image",
+    "name": "ca_castor_construir",
+    "prompt": "Foto documental real, 16:9 horizontal apaisado. Un castor arrastrando una rama hacia el agua al atardecer Como un fotograma de un documental viejo de naturaleza: con imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+   },
+   "hue": "blue"
+  },
+  {
+   "id": "exito_1f0",
+   "start": 826.87,
+   "dur": 4.43,
+   "kind": "raw",
+   "src": "broll/st_water_closeup.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "exito_1f1",
+   "start": 831.3,
+   "dur": 4.43,
+   "kind": "raw",
+   "src": "broll/cv_birds_marsh.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "construyen_0_0",
+   "start": 835.73,
+   "dur": 5.11,
+   "kind": "raw",
+   "src": "broll/cv_beaver_dam.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "construyen_0_1",
+   "start": 840.84,
+   "dur": 5.12,
+   "kind": "raw",
+   "src": "broll/cv_beaver_walk.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "construyen_0_2",
+   "start": 845.96,
+   "dur": 5.11,
+   "kind": "raw",
+   "src": "broll/cv_beaver_build.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "construyen_1",
+   "start": 851.07,
+   "dur": 5.26,
+   "kind": "raw",
+   "src": "broll/st_pond_calm.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "construyen_2_0",
+   "start": 856.33,
+   "dur": 5.59,
+   "kind": "raw",
+   "src": "broll/st_wetland_aerial.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "construyen_2_1",
+   "start": 861.92,
+   "dur": 5.59,
+   "kind": "raw",
+   "src": "broll/cv_deer_water.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "represa_0",
+   "start": 867.51,
+   "dur": 21.37,
+   "kind": "raw",
+   "src": "img/dg_napa.png",
+   "hue": "red",
+   "gen": {
+    "type": "image",
+    "name": "dg_napa",
+    "prompt": "Infografía horizontal, relación de aspecto EXACTA 16:9 (1792x1024). Ilustración hecha a mano profesional, limpia, editorial, tipo lámina de historia natural antigua. Diagrama de corte transversal de una represa de castor: el agua se frena detrás de la represa, se acumula, y se filtra hacia abajo recargando la napa subterránea; el suelo alrededor actúa como esponja. Flechas de agua descendiendo. Título: El agua que se queda. Fondo marfil claro con textura de papel sutil, líneas marrón oscuro, acentos verde oliva y celeste agua apagado, papel envejecido. Minimalista, muy clara, se entiende en un segundo. Textos en español, breves."
+   }
+  },
+  {
+   "id": "represa_1_0",
+   "start": 888.88,
+   "dur": 5.24,
+   "kind": "raw",
+   "src": "broll/st_water_closeup.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "represa_1_1",
+   "start": 894.12,
+   "dur": 5.23,
+   "kind": "raw",
+   "src": "broll/cv_ducks_pond.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "represa_2_0",
+   "start": 899.35,
+   "dur": 5.17,
+   "kind": "raw",
+   "src": "broll/st_spring_source.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "represa_2_1",
+   "start": 904.52,
+   "dur": 5.17,
+   "kind": "raw",
+   "src": "broll/cv_elk_meadow.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "represa_3",
+   "start": 909.69,
+   "dur": 7.6,
+   "kind": "checklist",
+   "at": "se transforma en una esponja gigante",
+   "title": "Lo que hace UNA represa de castor",
+   "items": [
+    {
+     "text": "Frena y guarda el agua",
+     "state": "done"
+    },
+    {
+     "text": "Recarga el agua subterránea",
+     "state": "done"
+    },
+    {
+     "text": "Convierte el suelo en una esponja",
+     "state": "done"
+    },
+    {
+     "text": "Hace volver toda la vida",
+     "state": "done"
+    }
+   ],
+   "hue": "red"
+  },
+  {
+   "id": "vida_0_0",
+   "start": 917.29,
+   "dur": 4.5,
+   "kind": "raw",
+   "src": "broll/cv_wildflowers.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "vida_0_1",
+   "start": 921.79,
+   "dur": 4.5,
+   "kind": "raw",
+   "src": "broll/cv_dragonfly.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "vida_0_2",
+   "start": 926.29,
+   "dur": 4.5,
+   "kind": "raw",
+   "src": "broll/cv_frog.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "vida_1",
+   "start": 930.79,
+   "dur": 2.94,
+   "kind": "raw",
+   "src": "broll/cv_dragonfly.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "vida_2",
+   "start": 933.73,
+   "dur": 1.8,
+   "kind": "raw",
+   "src": "broll/cv_fish_stream.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "vida_3",
+   "start": 935.53,
+   "dur": 2.6,
+   "kind": "raw",
+   "src": "broll/cv_frog.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "vida_4_0",
+   "start": 938.13,
+   "dur": 4.96,
+   "kind": "raw",
+   "src": "broll/cv_heron.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "vida_4_1",
+   "start": 943.09,
+   "dur": 4.96,
+   "kind": "raw",
+   "src": "broll/cv_wildflowers.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "vida_5_0",
+   "start": 948.05,
+   "dur": 4.06,
+   "kind": "raw",
+   "src": "broll/cv_deer_water.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "vida_5_1",
+   "start": 952.11,
+   "dur": 4.06,
+   "kind": "raw",
+   "src": "broll/cv_fish_stream.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "ingeniero_0_0",
+   "start": 956.17,
+   "dur": 5.06,
+   "kind": "raw",
+   "src": "broll/st_drone_wetland.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "ingeniero_0_1",
+   "start": 961.23,
+   "dur": 5.05,
+   "kind": "raw",
+   "src": "broll/cv_insects_water.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "ingeniero_0_2",
+   "start": 966.28,
+   "dur": 5.06,
+   "kind": "raw",
+   "src": "broll/cv_moose_wetland.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "ingeniero_0_3",
+   "start": 971.34,
+   "dur": 5.05,
+   "kind": "raw",
+   "src": "broll/cv_mule_train.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "ingeniero_0_4",
+   "start": 976.39,
+   "dur": 5.06,
+   "kind": "raw",
+   "src": "broll/nw_scientist_stream.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "ingeniero_1",
+   "start": 981.45,
+   "dur": 6,
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "Ingeniero"
+    },
+    {
+     "t": "de"
+    },
+    {
+     "t": "ecosistemas",
+     "hl": true
+    }
+   ],
+   "eyebrow": "El nombre del castor",
+   "bg": "image",
+   "image": "img/ca_castor_ingeniero.png",
+   "gen": {
+    "type": "image",
+    "name": "ca_castor_ingeniero",
+    "prompt": "Foto documental real, 16:9 horizontal apaisado. Un castor sobre su represa con un humedal lleno de vida detrás, luz dorada Como un fotograma de un documental viejo de naturaleza: con imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+   },
+   "hue": "red"
+  },
+  {
+   "id": "ingeniero_1f0",
+   "start": 987.45,
+   "dur": 4.06,
+   "kind": "raw",
+   "src": "broll/st_clouds_time.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "ingeniero_1f1",
+   "start": 991.51,
+   "dur": 4.06,
+   "kind": "raw",
+   "src": "broll/st_dawn_mist.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "valle_0_0",
+   "start": 995.57,
+   "dur": 4.46,
+   "kind": "raw",
+   "src": "broll/cv_beaver_night.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "valle_0_1",
+   "start": 1000.03,
+   "dur": 4.47,
+   "kind": "raw",
+   "src": "broll/cv_beaver_carry.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "valle_0_2",
+   "start": 1004.5,
+   "dur": 4.46,
+   "kind": "raw",
+   "src": "broll/cv_beaver_dam.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "valle_0_3",
+   "start": 1008.96,
+   "dur": 4.46,
+   "kind": "raw",
+   "src": "broll/cv_beaver_dam_aerial.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "valle_0_4",
+   "start": 1013.42,
+   "dur": 4.47,
+   "kind": "raw",
+   "src": "broll/cv_beaver_face.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "valle_0_5",
+   "start": 1017.89,
+   "dur": 4.46,
+   "kind": "raw",
+   "src": "broll/cv_beaver_family.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "valle_1",
+   "start": 1022.35,
+   "dur": 11.2,
+   "kind": "spreadmap",
+   "mapImage": "img/ca_map_idaho.png",
+   "gen": {
+    "type": "image",
+    "name": "ca_map_idaho",
+    "prompt": "Mapa ilustrado vintage, estilo cartografía de atlas antiguo, 16:9 horizontal apaisado. Mapa del estado de Idaho y sus montañas salvajes del centro, con ríos y bosques, estilo atlas antiguo hermoso. Papel de mapa envejecido color crema, líneas de tinta marrón, relieve y ríos suaves, una pequeña rosa de los vientos, hermoso y detallado, sin texto ilegible."
+   },
+   "at": "Fueron llenando lentamente todo el valle",
+   "origin": [
+    50,
+    48
+   ],
+   "yearFrom": 1948,
+   "yearTo": 2020,
+   "eyebrow": "El agua se expande",
+   "title": "El valle, década tras década",
+   "hue": "blue"
+  },
+  {
+   "id": "tragedia_0_0",
+   "start": 1033.55,
+   "dur": 3.94,
+   "kind": "raw",
+   "src": "real/nw_old_map.jpg",
+   "hue": "amber"
+  },
+  {
+   "id": "tragedia_0_1",
+   "start": 1037.49,
+   "dur": 3.94,
+   "kind": "raw",
+   "src": "broll/nw_fur_future_film.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "tragedia_0_2",
+   "start": 1041.43,
+   "dur": 3.94,
+   "kind": "raw",
+   "src": "broll/cv_flooded_field.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "millones_0_0",
+   "start": 1045.37,
+   "dur": 4.15,
+   "kind": "raw",
+   "src": "broll/cv_beaver_dam_aerial.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "millones_0_1",
+   "start": 1049.52,
+   "dur": 4.15,
+   "kind": "raw",
+   "src": "broll/cv_beaver_fell.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "millones_1_0",
+   "start": 1053.67,
+   "dur": 4.31,
+   "kind": "raw",
+   "src": "broll/st_river_forest.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "millones_1_1",
+   "start": 1057.98,
+   "dur": 4.31,
+   "kind": "raw",
+   "src": "broll/st_forest_aerial.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "millones_1_2",
+   "start": 1062.29,
+   "dur": 4.31,
+   "kind": "raw",
+   "src": "broll/st_marsh_reeds.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "millones_1_3",
+   "start": 1066.6,
+   "dur": 4.32,
+   "kind": "raw",
+   "src": "broll/st_meadow_stream.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "millones_1_4",
+   "start": 1070.92,
+   "dur": 4.31,
+   "kind": "raw",
+   "src": "broll/st_night_stars.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "millones_1_5",
+   "start": 1075.23,
+   "dur": 4.31,
+   "kind": "raw",
+   "src": "broll/st_pond_calm.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "millones_1_6",
+   "start": 1079.54,
+   "dur": 4.31,
+   "kind": "raw",
+   "src": "broll/st_rain_water.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "millones_2_0",
+   "start": 1083.85,
+   "dur": 4.21,
+   "kind": "raw",
+   "src": "broll/st_wetland_aerial.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "millones_2_1",
+   "start": 1088.06,
+   "dur": 4.22,
+   "kind": "raw",
+   "src": "broll/st_river_fast.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "millones_2_2",
+   "start": 1092.28,
+   "dur": 4.21,
+   "kind": "raw",
+   "src": "broll/st_spring_source.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "pieles_0_0",
+   "start": 1096.49,
+   "dur": 4.5,
+   "kind": "raw",
+   "src": "real/nw_fur_pelts.jpg",
+   "hue": "red"
+  },
+  {
+   "id": "pieles_0_1",
+   "start": 1100.99,
+   "dur": 4.5,
+   "kind": "raw",
+   "src": "broll/cv_horse_pack.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "pieles_0_2",
+   "start": 1105.49,
+   "dur": 4.5,
+   "kind": "raw",
+   "src": "broll/cv_irrigation_canal.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "pieles_0_3",
+   "start": 1109.99,
+   "dur": 4.5,
+   "kind": "raw",
+   "src": "broll/cv_log_jam.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "pieles_1",
+   "start": 1114.49,
+   "dur": 5.04,
+   "kind": "raw",
+   "src": "real/nw_felt_hat.jpg",
+   "hue": "amber"
+  },
+  {
+   "id": "pieles_2",
+   "start": 1119.53,
+   "dur": 5.34,
+   "kind": "quote",
+   "text": "Un continente entero, transformado para fabricar *sombreros*.",
+   "image": "img/ca_sombreros.png",
+   "gen": {
+    "type": "image",
+    "name": "ca_sombreros",
+    "prompt": "Foto documental real, 16:9 horizontal apaisado. Una hilera de sombreros de fieltro antiguos en una vitrina Como un fotograma de un documental viejo de naturaleza: con imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+   },
+   "hue": "blue"
+  },
+  {
+   "id": "desplome_0",
+   "start": 1124.87,
+   "dur": 6,
+   "kind": "bars",
+   "title": "La población de castores",
+   "unit": "",
+   "bars": [
+    {
+     "label": "Antes",
+     "value": 100
+    },
+    {
+     "label": "Después",
+     "value": 2
+    }
+   ],
+   "hue": "amber"
+  },
+  {
+   "id": "desplome_0f0",
+   "start": 1130.87,
+   "dur": 4.11,
+   "kind": "raw",
+   "src": "broll/st_stream_rocks.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "desplome_0f1",
+   "start": 1134.98,
+   "dur": 4.12,
+   "kind": "raw",
+   "src": "broll/st_sunset_water.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "desplome_0f2",
+   "start": 1139.1,
+   "dur": 4.11,
+   "kind": "raw",
+   "src": "broll/st_sun_through_trees.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "desplome_1",
+   "start": 1143.21,
+   "dur": 3.02,
+   "kind": "raw",
+   "src": "broll/st_dry_riverbed.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "desplome_2_0",
+   "start": 1146.23,
+   "dur": 5.05,
+   "kind": "raw",
+   "src": "broll/st_drought_earth.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "desplome_2_1",
+   "start": 1151.28,
+   "dur": 5.06,
+   "kind": "raw",
+   "src": "broll/nw_drought_reservoir.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "desplome_2_2",
+   "start": 1156.34,
+   "dur": 5.05,
+   "kind": "raw",
+   "src": "broll/st_dry_canyon.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "cicatriz_0_0",
+   "start": 1161.39,
+   "dur": 4.07,
+   "kind": "raw",
+   "src": "broll/st_dry_canyon.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "cicatriz_0_1",
+   "start": 1165.46,
+   "dur": 4.07,
+   "kind": "raw",
+   "src": "broll/nw_drought_reservoir.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "cicatriz_0_2",
+   "start": 1169.53,
+   "dur": 4.07,
+   "kind": "raw",
+   "src": "broll/st_drought_earth.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "cicatriz_0_3",
+   "start": 1173.6,
+   "dur": 4.07,
+   "kind": "raw",
+   "src": "broll/nw_drought_reservoir.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "cicatriz_1",
+   "start": 1177.67,
+   "dur": 5.9,
+   "kind": "raw",
+   "src": "broll/st_wetland_aerial.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "sentido_0_0",
+   "start": 1183.57,
+   "dur": 4.65,
+   "kind": "raw",
+   "src": "real/nw_beaver_parachute.jpg",
+   "hue": "red"
+  },
+  {
+   "id": "sentido_0_1",
+   "start": 1188.22,
+   "dur": 4.65,
+   "kind": "raw",
+   "src": "broll/cv_beaver_kits.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "sentido_0_2",
+   "start": 1192.87,
+   "dur": 4.64,
+   "kind": "raw",
+   "src": "broll/cv_beaver_lodge.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "sentido_0_3",
+   "start": 1197.51,
+   "dur": 4.65,
+   "kind": "raw",
+   "src": "broll/cv_beaver_night.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "sentido_0_4",
+   "start": 1202.16,
+   "dur": 4.65,
+   "kind": "raw",
+   "src": "broll/cv_beaver_swim.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "sentido_1",
+   "start": 1206.81,
+   "dur": 6.22,
+   "kind": "raw",
+   "src": "broll/st_spring_source.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "olvido_0_0",
+   "start": 1213.03,
+   "dur": 5.09,
+   "kind": "raw",
+   "src": "broll/nw_old_plane.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "olvido_0_1",
+   "start": 1218.12,
+   "dur": 5.1,
+   "kind": "raw",
+   "src": "broll/nw_cargo_parachute.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "olvido_0_2",
+   "start": 1223.22,
+   "dur": 5.09,
+   "kind": "raw",
+   "src": "broll/nw_parachute_land.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "olvido_1_0",
+   "start": 1228.31,
+   "dur": 5.71,
+   "kind": "raw",
+   "src": "broll/nw_fur_future_film.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "olvido_1_1",
+   "start": 1234.02,
+   "dur": 5.71,
+   "kind": "raw",
+   "src": "broll/cv_orchard.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "encontro_0_0",
+   "start": 1239.73,
+   "dur": 5.01,
+   "kind": "raw",
+   "src": "broll/nw_fur_future_film.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "encontro_0_1",
+   "start": 1244.74,
+   "dur": 5.01,
+   "kind": "raw",
+   "src": "broll/cv_flooded_field.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "encontro_0_2",
+   "start": 1249.75,
+   "dur": 5.01,
+   "kind": "raw",
+   "src": "broll/cv_horse_pack.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "encontro_0_3",
+   "start": 1254.76,
+   "dur": 5.01,
+   "kind": "raw",
+   "src": "broll/cv_irrigation_canal.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "encontro_1_0",
+   "start": 1259.77,
+   "dur": 4.83,
+   "kind": "raw",
+   "src": "real/nw_beaver_parachute.jpg",
+   "hue": "red"
+  },
+  {
+   "id": "encontro_1_1",
+   "start": 1264.6,
+   "dur": 4.84,
+   "kind": "raw",
+   "src": "broll/cv_beaver_tail.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "encontro_1_2",
+   "start": 1269.44,
+   "dur": 4.83,
+   "kind": "raw",
+   "src": "broll/cv_beaver_teeth.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "satelite_0_0",
+   "start": 1274.27,
+   "dur": 4.34,
+   "kind": "raw",
+   "src": "broll/st_satellite_earth.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "satelite_0_1",
+   "start": 1278.61,
+   "dur": 4.34,
+   "kind": "raw",
+   "src": "broll/st_wildfire_smoke.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "satelite_0_2",
+   "start": 1282.95,
+   "dur": 4.34,
+   "kind": "raw",
+   "src": "broll/st_green_amid_burn.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "satelite_0_3",
+   "start": 1287.29,
+   "dur": 4.34,
+   "kind": "raw",
+   "src": "broll/st_wildfire_smoke.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "satelite_1_0",
+   "start": 1291.63,
+   "dur": 5.57,
+   "kind": "raw",
+   "src": "real/st_satellite_green.jpg",
+   "hue": "amber"
+  },
+  {
+   "id": "satelite_1_1",
+   "start": 1297.2,
+   "dur": 5.57,
+   "kind": "raw",
+   "src": "broll/st_satellite_earth.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "satelite_2_0",
+   "start": 1302.77,
+   "dur": 4.41,
+   "kind": "raw",
+   "src": "broll/st_drone_wetland.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "satelite_2_1",
+   "start": 1307.18,
+   "dur": 4.41,
+   "kind": "raw",
+   "src": "broll/st_water_closeup.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "satelite_2_2",
+   "start": 1311.59,
+   "dur": 4.4,
+   "kind": "raw",
+   "src": "broll/cv_birds_marsh.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "satelite_2_3",
+   "start": 1315.99,
+   "dur": 4.41,
+   "kind": "raw",
+   "src": "broll/cv_deer_water.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "satelite_2_4",
+   "start": 1320.4,
+   "dur": 4.41,
+   "kind": "raw",
+   "src": "broll/cv_ducks_pond.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "satelite_2_5",
+   "start": 1324.81,
+   "dur": 4.4,
+   "kind": "raw",
+   "src": "broll/cv_elk_meadow.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "satelite_2_6",
+   "start": 1329.21,
+   "dur": 4.41,
+   "kind": "raw",
+   "src": "broll/cv_fish_stream.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "satelite_2_7",
+   "start": 1333.62,
+   "dur": 4.41,
+   "kind": "raw",
+   "src": "broll/cv_insects_water.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "crisis_0_0",
+   "start": 1338.03,
+   "dur": 3.9,
+   "kind": "raw",
+   "src": "broll/st_drought_earth.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "crisis_0_1",
+   "start": 1341.93,
+   "dur": 3.9,
+   "kind": "raw",
+   "src": "broll/st_dry_canyon.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "crisis_1_0",
+   "start": 1345.83,
+   "dur": 4.59,
+   "kind": "raw",
+   "src": "broll/nw_wildfire.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "crisis_1_1",
+   "start": 1350.42,
+   "dur": 4.59,
+   "kind": "raw",
+   "src": "broll/st_green_amid_burn.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "crisis_2",
+   "start": 1355.01,
+   "dur": 5.9,
+   "kind": "raw",
+   "src": "broll/st_dry_riverbed.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "conexion_0_0",
+   "start": 1360.91,
+   "dur": 4.62,
+   "kind": "raw",
+   "src": "broll/cv_beaver_dam.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "conexion_0_1",
+   "start": 1365.53,
+   "dur": 4.62,
+   "kind": "raw",
+   "src": "broll/cv_beaver_under.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "conexion_0_2",
+   "start": 1370.15,
+   "dur": 4.62,
+   "kind": "raw",
+   "src": "broll/cv_beaver_walk.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "conexion_1",
+   "start": 1374.77,
+   "dur": 6,
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "No"
+    },
+    {
+     "t": "es"
+    },
+    {
+     "t": "una"
+    },
+    {
+     "t": "plaga."
+    },
+    {
+     "t": "Es"
+    },
+    {
+     "t": "la"
+    },
+    {
+     "t": "solucion",
+     "hl": true
+    }
+   ],
+   "eyebrow": "El castor",
+   "bg": "image",
+   "image": "img/ca_castor_solucion.png",
+   "gen": {
+    "type": "image",
+    "name": "ca_castor_solucion",
+    "prompt": "Foto documental real, 16:9 horizontal apaisado. Un castor sobre su represa, agua verde y viva alrededor Como un fotograma de un documental viejo de naturaleza: con imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+   },
+   "hue": "red"
+  },
+  {
+   "id": "conexion_1f0",
+   "start": 1380.77,
+   "dur": 3.58,
+   "kind": "raw",
+   "src": "broll/cv_moose_wetland.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "conexion_1f1",
+   "start": 1384.35,
+   "dur": 3.58,
+   "kind": "raw",
+   "src": "broll/cv_mule_train.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "ciencia_0_0",
+   "start": 1387.93,
+   "dur": 4.26,
+   "kind": "raw",
+   "src": "broll/st_drone_wetland.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "ciencia_0_1",
+   "start": 1392.19,
+   "dur": 4.26,
+   "kind": "raw",
+   "src": "broll/nw_scientist_stream.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "ciencia_0_2",
+   "start": 1396.45,
+   "dur": 4.26,
+   "kind": "raw",
+   "src": "broll/st_clouds_time.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "ciencia_0_3",
+   "start": 1400.71,
+   "dur": 4.26,
+   "kind": "raw",
+   "src": "broll/st_dawn_mist.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "ciencia_1_0",
+   "start": 1404.97,
+   "dur": 4.27,
+   "kind": "raw",
+   "src": "broll/nw_wildfire.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "ciencia_1_1",
+   "start": 1409.24,
+   "dur": 4.27,
+   "kind": "raw",
+   "src": "broll/st_satellite_earth.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "ciencia_2_0",
+   "start": 1413.51,
+   "dur": 4.44,
+   "kind": "raw",
+   "src": "broll/st_green_amid_burn.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "ciencia_2_1",
+   "start": 1417.95,
+   "dur": 4.45,
+   "kind": "raw",
+   "src": "broll/nw_wildfire.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "ciencia_2_2",
+   "start": 1422.4,
+   "dur": 4.44,
+   "kind": "raw",
+   "src": "broll/st_wildfire_smoke.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "ciencia_2_3",
+   "start": 1426.84,
+   "dur": 4.45,
+   "kind": "raw",
+   "src": "broll/nw_wildfire.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "ciencia_2_4",
+   "start": 1431.29,
+   "dur": 4.44,
+   "kind": "raw",
+   "src": "broll/st_satellite_earth.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "vuelta_0",
+   "start": 1435.73,
+   "dur": 6,
+   "kind": "splitlist",
+   "title": "El mismo castor, 70 años después",
+   "items": [
+    "1948: plaga que se tiraba en paracaídas",
+    "Hoy: buscado, protegido y reintroducido"
+   ],
+   "palette": "G",
+   "cross": true,
+   "hue": "amber"
+  },
+  {
+   "id": "vuelta_0f0",
+   "start": 1441.73,
+   "dur": 4.49,
+   "kind": "raw",
+   "src": "broll/st_dry_riverbed.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "vuelta_0f1",
+   "start": 1446.22,
+   "dur": 4.49,
+   "kind": "raw",
+   "src": "broll/st_forest_aerial.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "vuelta_1",
+   "start": 1450.71,
+   "dur": 4.3,
+   "kind": "raw",
+   "src": "broll/cv_beaver_portrait.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "vuelta_2",
+   "start": 1455.01,
+   "dur": 4.1,
+   "kind": "raw",
+   "src": "real/nw_release_beaver.jpg",
+   "hue": "red"
+  },
+  {
+   "id": "rogando_0_0",
+   "start": 1459.11,
+   "dur": 4.69,
+   "kind": "raw",
+   "src": "real/nw_bda_build.jpg",
+   "hue": "blue"
+  },
+  {
+   "id": "rogando_0_1",
+   "start": 1463.8,
+   "dur": 4.7,
+   "kind": "raw",
+   "src": "broll/st_green_amid_burn.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "rogando_0_2",
+   "start": 1468.5,
+   "dur": 4.69,
+   "kind": "raw",
+   "src": "broll/st_wildfire_smoke.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "rogando_0_3",
+   "start": 1473.19,
+   "dur": 4.7,
+   "kind": "raw",
+   "src": "broll/nw_wildfire.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "rogando_0_4",
+   "start": 1477.89,
+   "dur": 4.69,
+   "kind": "raw",
+   "src": "broll/st_green_amid_burn.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "rogando_0_5",
+   "start": 1482.58,
+   "dur": 4.7,
+   "kind": "raw",
+   "src": "broll/st_satellite_earth.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "rogando_1",
+   "start": 1487.28,
+   "dur": 6,
+   "kind": "quote",
+   "text": "Estamos rogándoles a los castores que *vuelvan*.",
+   "image": "img/ca_rogando.png",
+   "gen": {
+    "type": "image",
+    "name": "ca_rogando",
+    "prompt": "Foto documental real, 16:9 horizontal apaisado. Personas construyendo una pequeña represa de palos en un arroyo seco Como un fotograma de un documental viejo de naturaleza: con imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+   },
+   "hue": "red"
+  },
+  {
+   "id": "rogando_1f0",
+   "start": 1493.28,
+   "dur": 5.29,
+   "kind": "raw",
+   "src": "broll/st_marsh_reeds.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "rogando_1f1",
+   "start": 1498.57,
+   "dur": 5.28,
+   "kind": "raw",
+   "src": "broll/st_meadow_stream.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "cronologia_0",
+   "start": 1503.85,
+   "dur": 18.94,
+   "kind": "timeline",
+   "eyebrow": "De plaga a salvador",
+   "title": "La saga del castor",
+   "events": [
+    {
+     "year": "1800s",
+     "label": "Casi extinto por las pieles",
+     "image": "img/ca_pieles_t.png",
+     "accent": "danger"
+    },
+    {
+     "year": "1948",
+     "label": "76 castores caen del cielo",
+     "image": "img/ca_avion_t.png",
+     "accent": "amber"
+    },
+    {
+     "year": "Décadas",
+     "label": "Llenan el valle de agua",
+     "image": "img/ca_humedal_t.png",
+     "accent": "accent"
+    },
+    {
+     "year": "Hoy",
+     "label": "Reintroducidos a propósito",
+     "image": "img/ca_restaura_t.png",
+     "accent": "accent"
+    }
+   ],
+   "hue": "red"
+  },
+  {
+   "id": "cronologia_1",
+   "start": 1522.79,
+   "dur": 5.76,
+   "kind": "raw",
+   "src": "broll/st_drone_wetland.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "ensena_0_0",
+   "start": 1528.55,
+   "dur": 4.46,
+   "kind": "raw",
+   "src": "broll/cv_beaver_portrait.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "ensena_0_1",
+   "start": 1533.01,
+   "dur": 4.46,
+   "kind": "raw",
+   "src": "broll/cv_beaver_build.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "ensena_0_2",
+   "start": 1537.47,
+   "dur": 4.45,
+   "kind": "raw",
+   "src": "broll/cv_beaver_carry.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "ensena_0_3",
+   "start": 1541.92,
+   "dur": 4.46,
+   "kind": "raw",
+   "src": "broll/cv_beaver_dam.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "ensena_0_4",
+   "start": 1546.38,
+   "dur": 4.46,
+   "kind": "raw",
+   "src": "broll/cv_beaver_dam_aerial.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "ensena_0_5",
+   "start": 1550.84,
+   "dur": 4.46,
+   "kind": "raw",
+   "src": "broll/cv_beaver_face.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "ensena_1",
+   "start": 1555.3,
+   "dur": 6,
+   "kind": "quote",
+   "text": "Entendía cómo cuidar el agua mejor que *nosotros*.",
+   "image": "img/ca_castor_agua2.png",
+   "gen": {
+    "type": "image",
+    "name": "ca_castor_agua2",
+    "prompt": "Foto documental real, 16:9 horizontal apaisado. Un castor nadando en agua dorada al atardecer, primer plano Como un fotograma de un documental viejo de naturaleza: con imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+   },
+   "hue": "blue"
+  },
+  {
+   "id": "ensena_1f0",
+   "start": 1561.3,
+   "dur": 4.86,
+   "kind": "raw",
+   "src": "broll/st_mountain_valley.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "ensena_1f1",
+   "start": 1566.16,
+   "dur": 4.87,
+   "kind": "raw",
+   "src": "broll/st_night_stars.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "solucion_0_0",
+   "start": 1571.03,
+   "dur": 4.55,
+   "kind": "raw",
+   "src": "broll/cv_beaver_build.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "solucion_0_1",
+   "start": 1575.58,
+   "dur": 4.55,
+   "kind": "raw",
+   "src": "broll/cv_beaver_family.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "solucion_0_2",
+   "start": 1580.13,
+   "dur": 4.56,
+   "kind": "raw",
+   "src": "broll/cv_beaver_fell.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "solucion_0_3",
+   "start": 1584.69,
+   "dur": 4.55,
+   "kind": "raw",
+   "src": "broll/cv_beaver_kits.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "solucion_0_4",
+   "start": 1589.24,
+   "dur": 4.55,
+   "kind": "raw",
+   "src": "broll/cv_beaver_lodge.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "cierre_0_0",
+   "start": 1593.79,
+   "dur": 4.14,
+   "kind": "raw",
+   "src": "real/nw_beaver_parachute.jpg",
+   "hue": "red"
+  },
+  {
+   "id": "cierre_0_1",
+   "start": 1597.93,
+   "dur": 4.14,
+   "kind": "raw",
+   "src": "broll/cv_beaver_night.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "cierre_0_2",
+   "start": 1602.07,
+   "dur": 4.14,
+   "kind": "raw",
+   "src": "broll/cv_beaver_portrait.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "cierre_1_0",
+   "start": 1606.21,
+   "dur": 4.24,
+   "kind": "raw",
+   "src": "broll/st_sunset_water.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "cierre_1_1",
+   "start": 1610.45,
+   "dur": 4.24,
+   "kind": "raw",
+   "src": "broll/st_pond_calm.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "cierre_2_0",
+   "start": 1614.69,
+   "dur": 4.95,
+   "kind": "raw",
+   "src": "broll/st_river_forest.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "cierre_2_1",
+   "start": 1619.64,
+   "dur": 4.96,
+   "kind": "raw",
+   "src": "broll/st_rain_water.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "cierre_2_2",
+   "start": 1624.6,
+   "dur": 4.95,
+   "kind": "raw",
+   "src": "broll/st_river_fast.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "outro_0_0",
+   "start": 1629.55,
+   "dur": 4.6,
+   "kind": "raw",
+   "src": "broll/cv_beaver_swim.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "outro_0_1",
+   "start": 1634.15,
+   "dur": 4.61,
+   "kind": "raw",
+   "src": "broll/cv_beaver_tail.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "outro_0_2",
+   "start": 1638.76,
+   "dur": 4.61,
+   "kind": "raw",
+   "src": "broll/cv_beaver_teeth.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "outro_0_3",
+   "start": 1643.37,
+   "dur": 4.6,
+   "kind": "raw",
+   "src": "broll/cv_beaver_under.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "outro_1_0",
+   "start": 1647.97,
+   "dur": 5.41,
+   "kind": "raw",
+   "src": "broll/cv_birds_marsh.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "outro_1_1",
+   "start": 1653.38,
+   "dur": 5.42,
+   "kind": "raw",
+   "src": "broll/st_river_forest.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "loc_350",
+   "start": 354,
+   "dur": 6,
+   "kind": "loctag",
+   "mapImage": "img/ca_map_us.png",
+   "pinX": 30,
+   "pinY": 44,
+   "place": "Idaho",
+   "sub": "Estados Unidos",
+   "overlay": true,
+   "gen": {
+    "type": "image",
+    "name": "ca_map_us",
+    "prompt": "Mapa ilustrado vintage, estilo cartografía de atlas antiguo, 16:9 horizontal apaisado. Mapa de los Estados Unidos continentales completo, con los límites de los estados marcados sutilmente y el estado de Idaho resaltado, estilo atlas antiguo hermoso. Papel de mapa envejecido color crema, líneas de tinta marrón, relieve y ríos suaves, una pequeña rosa de los vientos, hermoso y detallado, sin texto ilegible."
+   }
+  },
+  {
+   "id": "name_148",
+   "start": 152.26,
+   "dur": 6,
+   "kind": "nametag",
+   "overlay": true,
+   "name": "Castor americano",
+   "sub": "Castor canadensis",
+   "accent": "amber"
+  },
+  {
+   "id": "name_621",
+   "start": 625.31,
+   "dur": 5.5,
+   "kind": "nametag",
+   "overlay": true,
+   "name": "Geronimo",
+   "sub": "El castor más lanzado de la historia",
+   "accent": "amber"
+  },
+  {
+   "id": "stat_713",
+   "start": 716.59,
+   "dur": 6,
+   "kind": "stattag",
+   "overlay": true,
+   "value": 76,
+   "eyebrow": "Lanzados desde aviones",
+   "label": "castores en paracaídas",
+   "accent": "amber",
+   "corner": "tr"
+  },
+  {
+   "id": "stat_768",
+   "start": 771.85,
+   "dur": 5.5,
+   "kind": "stattag",
+   "overlay": true,
+   "value": 75,
+   "eyebrow": "Aterrizaron sanos y salvos",
+   "label": "de 76 castores lanzados",
+   "accent": "accent",
+   "corner": "tr"
+  },
+  {
+   "id": "ph_1203",
+   "start": 1206.81,
+   "dur": 4.5,
+   "kind": "phrasetag",
+   "overlay": true,
+   "text": "Las *semillas* del agua, desde el cielo",
+   "accent": "cold"
+  },
+  {
+   "id": "stat_713",
+   "start": 716.59,
+   "dur": 5,
+   "kind": "stattag",
+   "overlay": true,
+   "text": "1948",
+   "eyebrow": "El gran lanzamiento",
+   "label": "76 castores caen sobre Idaho",
+   "accent": "amber",
+   "corner": "bl"
+  },
+  {
+   "id": "ph_1410",
+   "start": 1413.51,
+   "dur": 4.5,
+   "kind": "phrasetag",
+   "overlay": true,
+   "text": "Un *cortafuegos* natural",
+   "accent": "accent"
+  },
+  {
+   "id": "meter_fur",
+   "start": 1124.87,
+   "dur": 7,
+   "kind": "metertag",
+   "overlay": true,
+   "label": "Castores en Norteamérica",
+   "fromPct": 100,
+   "toPct": 3,
+   "eyebrow": "Comercio de pieles",
+   "corner": "tr"
+  }
+ ]
+}
