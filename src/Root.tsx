@@ -30,6 +30,7 @@ import { MainZeer, TOTAL_FRAMES_ZEER } from "./VideoEdit/Main_zeer";
 import { MainCalor, TOTAL_FRAMES_CALOR } from "./VideoEdit/Main_calor";
 import { MainCarne, TOTAL_FRAMES_CARNE } from "./VideoEdit/Main_carne";
 import { MainMolino, TOTAL_FRAMES_MOLINO } from "./VideoEdit/Main_molino";
+import { MainLeche, TOTAL_FRAMES_LECHE } from "./VideoEdit/Main_leche";
 import { MainLuz, TOTAL_FRAMES_LUZ } from "./VideoEdit/Main_luz";
 import { MainMedicaid, TOTAL_FRAMES_MED } from "./VideoEdit/Main_medicaid";
 import { MainViuda, TOTAL_FRAMES_VD } from "./VideoEdit/Main_viuda";
@@ -192,6 +193,15 @@ export const RemotionRoot: React.FC = () => {
         id="Molino"
         component={MainMolino}
         durationInFrames={TOTAL_FRAMES_MOLINO}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
+      {/* VIDEO ACTIVO — Milk/cream/butter fresh in summer, no power (Amish Off-Grid Claudio · EN) */}
+      <Composition
+        id="Leche"
+        component={MainLeche}
+        durationInFrames={TOTAL_FRAMES_LECHE}
         fps={30}
         width={1920}
         height={1080}
