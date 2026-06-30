@@ -1,0 +1,2784 @@
+{
+ "video": "aral",
+ "beats": [
+  {
+   "id": "teaser_0",
+   "start": 0,
+   "dur": 1.5,
+   "kind": "raw",
+   "src": "broll/ar_ship_aerial.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "teaser_1",
+   "start": 1.5,
+   "dur": 1.3,
+   "kind": "raw",
+   "src": "broll/ar_ship_people.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "teaser_2",
+   "start": 2.8,
+   "dur": 1.2,
+   "kind": "raw",
+   "src": "broll/ar_water_return.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "intro_0_0",
+   "start": 4.2,
+   "dur": 4.09,
+   "kind": "raw",
+   "src": "broll/ar_desert_sand.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "intro_0_1",
+   "start": 8.29,
+   "dur": 4.08,
+   "kind": "raw",
+   "src": "broll/ar_cracked_earth.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "intro_0_2",
+   "start": 12.37,
+   "dur": 4.09,
+   "kind": "raw",
+   "src": "broll/ar_dead_tree.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "intro_1",
+   "start": 16.46,
+   "dur": 3.16,
+   "kind": "raw",
+   "src": "broll/ar_ship_sand1.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "intro_2_0",
+   "start": 19.62,
+   "dur": 4.27,
+   "kind": "raw",
+   "src": "broll/ar_ship_aerial.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "intro_2_1",
+   "start": 23.89,
+   "dur": 4.27,
+   "kind": "raw",
+   "src": "broll/ar_empty_boat.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "intro_3",
+   "start": 28.16,
+   "dur": 4.84,
+   "kind": "raw",
+   "src": "broll/ar_ship_people.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "noficcion_0_0",
+   "start": 33,
+   "dur": 3.97,
+   "kind": "raw",
+   "src": "broll/ar_ship_sand2.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "noficcion_0_1",
+   "start": 36.97,
+   "dur": 3.98,
+   "kind": "raw",
+   "src": "broll/ar_ghost_town.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "noficcion_0_2",
+   "start": 40.95,
+   "dur": 3.97,
+   "kind": "raw",
+   "src": "broll/ar_moynaq.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "noficcion_1",
+   "start": 44.92,
+   "dur": 5.92,
+   "kind": "raw",
+   "src": "broll/ar_old_sea.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "noficcion_2",
+   "start": 50.84,
+   "dur": 4.76,
+   "kind": "raw",
+   "src": "broll/ar_lake_waves.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "esaral_0",
+   "start": 55.6,
+   "dur": 4.66,
+   "kind": "raw",
+   "src": "broll/ar_old_sea.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "esaral_1",
+   "start": 60.26,
+   "dur": 2.6,
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "El"
+    },
+    {
+     "t": "Mar"
+    },
+    {
+     "t": "de"
+    },
+    {
+     "t": "Aral",
+     "hl": true
+    }
+   ],
+   "eyebrow": "Esta es la historia de",
+   "bg": "image",
+   "image": "img/ar_h_aral.png",
+   "gen": {
+    "type": "image",
+    "name": "ar_h_aral",
+    "prompt": "Foto documental real, 16:9 horizontal apaisado. Un mar interior azul visto desde la orilla con montañas lejanas Como un fotograma de un documental viejo: con imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+   },
+   "hue": "blue"
+  },
+  {
+   "id": "esaral_2_0",
+   "start": 62.86,
+   "dur": 4.1,
+   "kind": "raw",
+   "src": "broll/ar_ship_sunset.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "esaral_2_1",
+   "start": 66.96,
+   "dur": 4.1,
+   "kind": "raw",
+   "src": "broll/ar_pier_dry.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "murio_0_0",
+   "start": 71.06,
+   "dur": 4.29,
+   "kind": "raw",
+   "src": "broll/ar_dry_bed.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "murio_0_1",
+   "start": 75.35,
+   "dur": 4.28,
+   "kind": "raw",
+   "src": "broll/ar_fish_boat2.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "murio_0_2",
+   "start": 79.63,
+   "dur": 4.29,
+   "kind": "raw",
+   "src": "broll/ar_retreat1.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "murio_1_0",
+   "start": 83.92,
+   "dur": 3.6,
+   "kind": "raw",
+   "src": "broll/ar_water_return.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "murio_1_1",
+   "start": 87.52,
+   "dur": 3.6,
+   "kind": "raw",
+   "src": "broll/ar_sunset_lake2.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "tragedia_0_0",
+   "start": 91.12,
+   "dur": 4.24,
+   "kind": "raw",
+   "src": "broll/ar_old_port.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "tragedia_0_1",
+   "start": 95.36,
+   "dur": 4.23,
+   "kind": "raw",
+   "src": "broll/ar_fish_net2.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "tragedia_0_2",
+   "start": 99.59,
+   "dur": 4.24,
+   "kind": "raw",
+   "src": "broll/ar_old_fishing.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "tragedia_0_3",
+   "start": 103.83,
+   "dur": 4.23,
+   "kind": "raw",
+   "src": "broll/ar_fish_net2.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "cuarto_0_0",
+   "start": 108.06,
+   "dur": 4.58,
+   "kind": "raw",
+   "src": "broll/ar_old_sea.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "cuarto_0_1",
+   "start": 112.64,
+   "dur": 4.57,
+   "kind": "raw",
+   "src": "broll/ar_old_fishing.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "cuarto_0_2",
+   "start": 117.21,
+   "dur": 4.57,
+   "kind": "raw",
+   "src": "broll/ar_old_port.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "cuarto_0_3",
+   "start": 121.78,
+   "dur": 4.58,
+   "kind": "raw",
+   "src": "broll/ar_fish_net2.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "cuarto_1",
+   "start": 126.36,
+   "dur": 2.59,
+   "kind": "annotated",
+   "at": "entre lo que hoy son los paises",
+   "caption": "El cuarto lago más grande del mundo",
+   "image": "real/ar_map_aral.jpg",
+   "annotations": [
+    {
+     "kind": "circle",
+     "x": 40,
+     "y": 45,
+     "label": "Kazajistán"
+    },
+    {
+     "kind": "circle",
+     "x": 48,
+     "y": 62,
+     "label": "Uzbekistán"
+    }
+   ],
+   "hue": "blue"
+  },
+  {
+   "id": "cuarto_2",
+   "start": 128.95,
+   "dur": 2.15,
+   "kind": "raw",
+   "src": "broll/ar_lake_waves.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "vida_0",
+   "start": 131.1,
+   "dur": 6.52,
+   "kind": "raw",
+   "src": "broll/ar_old_fishing.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "vida_1_0",
+   "start": 137.62,
+   "dur": 4.31,
+   "kind": "raw",
+   "src": "broll/ar_fish_net2.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "vida_1_1",
+   "start": 141.93,
+   "dur": 4.31,
+   "kind": "raw",
+   "src": "broll/ar_old_cannery.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "vida_2",
+   "start": 146.24,
+   "dur": 2.3,
+   "kind": "raw",
+   "src": "broll/ar_old_port.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "vida_3_0",
+   "start": 148.54,
+   "dur": 4.19,
+   "kind": "raw",
+   "src": "broll/ar_old_cannery.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "vida_3_1",
+   "start": 152.73,
+   "dur": 4.2,
+   "kind": "raw",
+   "src": "broll/ar_old_fishing.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "vida_3_2",
+   "start": 156.93,
+   "dur": 4.19,
+   "kind": "raw",
+   "src": "broll/ar_old_port.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "riqueza_0_0",
+   "start": 161.12,
+   "dur": 4.37,
+   "kind": "raw",
+   "src": "broll/ar_old_cannery.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "riqueza_0_1",
+   "start": 165.49,
+   "dur": 4.37,
+   "kind": "raw",
+   "src": "broll/ar_fish_net2.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "riqueza_0_2",
+   "start": 169.86,
+   "dur": 4.38,
+   "kind": "raw",
+   "src": "broll/ar_lake_waves.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "riqueza_0_3",
+   "start": 174.24,
+   "dur": 4.37,
+   "kind": "raw",
+   "src": "broll/ar_old_fishing.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "riqueza_0_4",
+   "start": 178.61,
+   "dur": 4.37,
+   "kind": "raw",
+   "src": "broll/ar_old_port.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "riqueza_1",
+   "start": 182.98,
+   "dur": 4.66,
+   "kind": "raw",
+   "src": "broll/ar_old_sea.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "rios_0_0",
+   "start": 187.64,
+   "dur": 4.08,
+   "kind": "raw",
+   "src": "broll/ar_old_sea.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "rios_0_1",
+   "start": 191.72,
+   "dur": 4.09,
+   "kind": "raw",
+   "src": "broll/ar_old_cannery.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "rios_0_2",
+   "start": 195.81,
+   "dur": 4.08,
+   "kind": "raw",
+   "src": "broll/ar_fish_net2.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "rios_0_3",
+   "start": 199.89,
+   "dur": 4.09,
+   "kind": "raw",
+   "src": "broll/ar_lake_waves.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "rios_1",
+   "start": 203.98,
+   "dur": 4.5,
+   "kind": "raw",
+   "src": "broll/ar_river_mtn2.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "rios_2",
+   "start": 208.48,
+   "dur": 6,
+   "kind": "annotated",
+   "at": "el Amu Daria y el Sir Daria",
+   "caption": "Dos arterias gigantes",
+   "image": "real/ar_map_aral.jpg",
+   "annotations": [
+    {
+     "kind": "circle",
+     "x": 35,
+     "y": 70,
+     "label": "Amu Daria"
+    },
+    {
+     "kind": "circle",
+     "x": 60,
+     "y": 55,
+     "label": "Sir Daria"
+    }
+   ],
+   "hue": "amber"
+  },
+  {
+   "id": "rios_2f0",
+   "start": 214.48,
+   "dur": 4.44,
+   "kind": "raw",
+   "src": "broll/ar_salt_flat2.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "rios_3_0",
+   "start": 218.92,
+   "dur": 4.1,
+   "kind": "raw",
+   "src": "broll/ar_river_delta.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "rios_3_1",
+   "start": 223.02,
+   "dur": 4.1,
+   "kind": "raw",
+   "src": "broll/ar_canal_dig.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "equilibrio_0_0",
+   "start": 227.12,
+   "dur": 4.07,
+   "kind": "raw",
+   "src": "broll/ar_river_delta.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "equilibrio_0_1",
+   "start": 231.19,
+   "dur": 4.06,
+   "kind": "raw",
+   "src": "broll/ar_canal_dig.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "equilibrio_0_2",
+   "start": 235.25,
+   "dur": 4.06,
+   "kind": "raw",
+   "src": "broll/ar_cotton2.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "equilibrio_0_3",
+   "start": 239.31,
+   "dur": 4.07,
+   "kind": "raw",
+   "src": "broll/ar_river_mtn2.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "equilibrio_1",
+   "start": 243.38,
+   "dur": 6,
+   "kind": "quote",
+   "text": "¿Qué pasaría si alguien le *robara* al mar sus ríos?",
+   "image": "img/ar_h_arterias.png",
+   "gen": {
+    "type": "image",
+    "name": "ar_h_arterias",
+    "prompt": "Foto documental real, 16:9 horizontal apaisado. Un río cruzando el desierto hacia un mar lejano, vista aérea Como un fotograma de un documental viejo: con imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+   },
+   "hue": "amber"
+  },
+  {
+   "id": "equilibrio_1f0",
+   "start": 249.38,
+   "dur": 5.16,
+   "kind": "raw",
+   "src": "broll/ar_cracked_earth.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "equilibrio_1f1",
+   "start": 254.54,
+   "dur": 5.16,
+   "kind": "raw",
+   "src": "broll/ar_dead_tree.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "algodon_0_0",
+   "start": 259.7,
+   "dur": 5.08,
+   "kind": "raw",
+   "src": "broll/ar_soviet_plan.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "algodon_0_1",
+   "start": 264.78,
+   "dur": 5.09,
+   "kind": "raw",
+   "src": "broll/ar_canal2.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "algodon_1",
+   "start": 269.87,
+   "dur": 5.69,
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "Pensaron"
+    },
+    {
+     "t": "en"
+    },
+    {
+     "t": "una"
+    },
+    {
+     "t": "sola"
+    },
+    {
+     "t": "cosa:"
+    },
+    {
+     "t": "algodón",
+     "hl": true
+    }
+   ],
+   "eyebrow": "En lugar de un mar",
+   "bg": "image",
+   "image": "img/ar_h_cotton.png",
+   "gen": {
+    "type": "image",
+    "name": "ar_h_cotton",
+    "prompt": "Foto documental real, 16:9 horizontal apaisado. Campos de algodón blanco en el desierto bajo sol fuerte Como un fotograma de un documental viejo: con imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+   },
+   "hue": "red"
+  },
+  {
+   "id": "algodon_2_0",
+   "start": 275.56,
+   "dur": 5.07,
+   "kind": "raw",
+   "src": "real/ar_soviet_cotton.jpg",
+   "hue": "blue"
+  },
+  {
+   "id": "algodon_2_1",
+   "start": 280.63,
+   "dur": 5.06,
+   "kind": "raw",
+   "src": "broll/ar_canal_dig.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "algodon_2_2",
+   "start": 285.69,
+   "dur": 5.07,
+   "kind": "raw",
+   "src": "broll/ar_cotton2.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "algodon_3_0",
+   "start": 290.76,
+   "dur": 4.05,
+   "kind": "raw",
+   "src": "broll/ar_cotton2.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "algodon_3_1",
+   "start": 294.81,
+   "dur": 4.05,
+   "kind": "raw",
+   "src": "broll/ar_river_delta.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "algodon_3_2",
+   "start": 298.86,
+   "dur": 4.05,
+   "kind": "raw",
+   "src": "broll/ar_river_mtn2.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "algodon_3_3",
+   "start": 302.91,
+   "dur": 4.05,
+   "kind": "raw",
+   "src": "broll/ar_soviet_plan.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "canales_0",
+   "start": 306.96,
+   "dur": 6.72,
+   "kind": "raw",
+   "src": "broll/ar_canal2.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "canales_1",
+   "start": 313.68,
+   "dur": 14.62,
+   "kind": "raw",
+   "src": "img/dg_diversion.png",
+   "hue": "blue",
+   "gen": {
+    "type": "image",
+    "name": "dg_diversion",
+    "prompt": "Infografía horizontal, relación de aspecto EXACTA 16:9 (1792x1024). Ilustración hecha a mano profesional, limpia, editorial, tipo lámina de atlas. Diagrama: dos ríos (Amu Daria y Sir Daria) que iban al Mar de Aral son desviados por canales de riego hacia campos de algodón; el mar, sin agua, se encoge. Flechas mostrando el agua robada. Título: El agua robada al mar. Fondo marfil claro con textura de papel, líneas marrón oscuro, acentos celeste agua y terracota apagado, papel envejecido. Minimalista, muy clara. Textos en español, breves."
+   }
+  },
+  {
+   "id": "canales_2_0",
+   "start": 328.3,
+   "dur": 5.62,
+   "kind": "raw",
+   "src": "broll/ar_canal2.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "canales_2_1",
+   "start": 333.92,
+   "dur": 5.62,
+   "kind": "raw",
+   "src": "broll/ar_canal_dig.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "canales_3_0",
+   "start": 339.54,
+   "dur": 4.24,
+   "kind": "raw",
+   "src": "broll/ar_desert_sand.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "canales_3_1",
+   "start": 343.78,
+   "dur": 4.24,
+   "kind": "raw",
+   "src": "broll/ar_fish_boat2.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "sabian_0_0",
+   "start": 348.02,
+   "dur": 4.3,
+   "kind": "raw",
+   "src": "broll/ar_soviet_plan.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "sabian_0_1",
+   "start": 352.32,
+   "dur": 4.31,
+   "kind": "raw",
+   "src": "broll/ar_canal2.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "sabian_0_2",
+   "start": 356.63,
+   "dur": 4.3,
+   "kind": "raw",
+   "src": "broll/ar_cotton2.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "sabian_0_3",
+   "start": 360.93,
+   "dur": 4.3,
+   "kind": "raw",
+   "src": "broll/ar_river_delta.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "sabian_0_4",
+   "start": 365.23,
+   "dur": 4.3,
+   "kind": "raw",
+   "src": "broll/ar_river_mtn2.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "sabian_0_5",
+   "start": 369.53,
+   "dur": 4.31,
+   "kind": "raw",
+   "src": "broll/ar_canal2.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "sabian_0_6",
+   "start": 373.84,
+   "dur": 4.3,
+   "kind": "raw",
+   "src": "broll/ar_canal_dig.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "sabian_1",
+   "start": 378.14,
+   "dur": 6,
+   "kind": "aged",
+   "heading": "Lo sabían. No fue un accidente.",
+   "lines": [
+    {
+     "text": "Documentos de la época lo prueban."
+    },
+    {
+     "text": "Consideraron secar un mar un “precio aceptable”."
+    }
+   ],
+   "image": "img/ar_h_docs.png",
+   "gen": {
+    "type": "image",
+    "name": "ar_h_docs",
+    "prompt": "Foto documental real, 16:9 horizontal apaisado. Documentos y planos soviéticos antiguos sobre un escritorio, blanco y negro Como un fotograma de un documental viejo: con imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+   },
+   "hue": "amber"
+  },
+  {
+   "id": "sabian_1f0",
+   "start": 384.14,
+   "dur": 4.2,
+   "kind": "raw",
+   "src": "broll/ar_retreat1.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "sabian_1f1",
+   "start": 388.34,
+   "dur": 4.2,
+   "kind": "raw",
+   "src": "broll/ar_salt_flat2.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "sabian_1f2",
+   "start": 392.54,
+   "dur": 4.2,
+   "kind": "raw",
+   "src": "broll/ar_south_dead.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "sabian_2",
+   "start": 396.74,
+   "dur": 3.46,
+   "kind": "raw",
+   "src": "broll/ar_dry_bed.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "morir_0_0",
+   "start": 400.2,
+   "dur": 4.9,
+   "kind": "raw",
+   "src": "broll/ar_retreat1.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "morir_0_1",
+   "start": 405.1,
+   "dur": 4.91,
+   "kind": "raw",
+   "src": "broll/ar_cracked_earth.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "morir_0_2",
+   "start": 410.01,
+   "dur": 4.9,
+   "kind": "raw",
+   "src": "broll/ar_dead_tree.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "morir_0_3",
+   "start": 414.91,
+   "dur": 4.9,
+   "kind": "raw",
+   "src": "broll/ar_desert_sand.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "morir_0_4",
+   "start": 419.81,
+   "dur": 4.91,
+   "kind": "raw",
+   "src": "broll/ar_fish_boat2.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "morir_0_5",
+   "start": 424.72,
+   "dur": 4.9,
+   "kind": "raw",
+   "src": "broll/ar_salt_flat.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "morir_1",
+   "start": 429.62,
+   "dur": 4.58,
+   "kind": "raw",
+   "src": "broll/ar_dry_bed.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "muelles_0_0",
+   "start": 434.2,
+   "dur": 4.91,
+   "kind": "raw",
+   "src": "broll/ar_pier_dry.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "muelles_0_1",
+   "start": 439.11,
+   "dur": 4.9,
+   "kind": "raw",
+   "src": "broll/ar_rusty_metal.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "muelles_0_2",
+   "start": 444.01,
+   "dur": 4.91,
+   "kind": "raw",
+   "src": "broll/ar_ship_closeup.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "muelles_1_0",
+   "start": 448.92,
+   "dur": 4.98,
+   "kind": "raw",
+   "src": "broll/ar_empty_boat.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "muelles_1_1",
+   "start": 453.9,
+   "dur": 4.98,
+   "kind": "raw",
+   "src": "broll/ar_ship_inside.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "muelles_1_2",
+   "start": 458.88,
+   "dur": 4.98,
+   "kind": "raw",
+   "src": "broll/ar_ship_sand1.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "muelles_1_3",
+   "start": 463.86,
+   "dur": 4.98,
+   "kind": "raw",
+   "src": "broll/ar_ship_sunset.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "muelles_2",
+   "start": 468.84,
+   "dur": 6.8,
+   "kind": "raw",
+   "src": "broll/ar_dry_bed.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "sal_0_0",
+   "start": 475.64,
+   "dur": 4.56,
+   "kind": "raw",
+   "src": "broll/ar_salt_flat.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "sal_0_1",
+   "start": 480.2,
+   "dur": 4.56,
+   "kind": "raw",
+   "src": "broll/ar_retreat1.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "sal_0_2",
+   "start": 484.76,
+   "dur": 4.56,
+   "kind": "raw",
+   "src": "broll/ar_salt_flat2.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "sal_0_3",
+   "start": 489.32,
+   "dur": 4.56,
+   "kind": "raw",
+   "src": "broll/ar_south_dead.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "sal_1",
+   "start": 493.88,
+   "dur": 4.4,
+   "kind": "raw",
+   "src": "broll/ar_cracked_earth.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "peces_0_0",
+   "start": 498.28,
+   "dur": 4.72,
+   "kind": "raw",
+   "src": "broll/ar_salt_flat2.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "peces_0_1",
+   "start": 503,
+   "dur": 4.72,
+   "kind": "raw",
+   "src": "broll/ar_cracked_earth.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "peces_0_2",
+   "start": 507.72,
+   "dur": 4.72,
+   "kind": "raw",
+   "src": "broll/ar_dead_tree.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "peces_1_0",
+   "start": 512.44,
+   "dur": 5.11,
+   "kind": "raw",
+   "src": "broll/ar_dead_tree.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "peces_1_1",
+   "start": 517.55,
+   "dur": 5.12,
+   "kind": "raw",
+   "src": "broll/ar_desert_sand.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "peces_1_2",
+   "start": 522.67,
+   "dur": 5.11,
+   "kind": "raw",
+   "src": "broll/ar_fish_boat2.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "peces_2",
+   "start": 527.78,
+   "dur": 5.72,
+   "kind": "raw",
+   "src": "broll/ar_old_cannery.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "drama_0_0",
+   "start": 533.5,
+   "dur": 4.56,
+   "kind": "raw",
+   "src": "broll/ar_ghost_town.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "drama_0_1",
+   "start": 538.06,
+   "dur": 4.55,
+   "kind": "raw",
+   "src": "broll/ar_empty_boat.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "drama_0_2",
+   "start": 542.61,
+   "dur": 4.56,
+   "kind": "raw",
+   "src": "broll/ar_moynaq.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "drama_0_3",
+   "start": 547.17,
+   "dur": 4.55,
+   "kind": "raw",
+   "src": "broll/ar_pier_dry.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "drama_0_4",
+   "start": 551.72,
+   "dur": 4.56,
+   "kind": "raw",
+   "src": "broll/ar_rusty_metal.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "drama_1",
+   "start": 556.28,
+   "dur": 5.76,
+   "kind": "raw",
+   "src": "broll/ar_village_poor.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "moynaq_0_0",
+   "start": 562.04,
+   "dur": 5.56,
+   "kind": "raw",
+   "src": "broll/ar_moynaq.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "moynaq_0_1",
+   "start": 567.6,
+   "dur": 5.56,
+   "kind": "raw",
+   "src": "broll/ar_ghost_town.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "moynaq_1_0",
+   "start": 573.16,
+   "dur": 3.76,
+   "kind": "raw",
+   "src": "broll/ar_ship_people.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "moynaq_1_1",
+   "start": 576.92,
+   "dur": 3.76,
+   "kind": "raw",
+   "src": "broll/ar_ship_and_water.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "moynaq_2",
+   "start": 580.68,
+   "dur": 6.78,
+   "kind": "raw",
+   "src": "broll/ar_ship_closeup.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "moynaq_3",
+   "start": 587.46,
+   "dur": 6.44,
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "El"
+    },
+    {
+     "t": "cementerio"
+    },
+    {
+     "t": "de"
+    },
+    {
+     "t": "barcos",
+     "hl": true
+    }
+   ],
+   "eyebrow": "Moynaq",
+   "bg": "image",
+   "image": "img/ar_h_moynaq.png",
+   "gen": {
+    "type": "image",
+    "name": "ar_h_moynaq",
+    "prompt": "Foto documental real, 16:9 horizontal apaisado. Hilera de barcos pesqueros oxidados varados sobre la arena del desierto Como un fotograma de un documental viejo: con imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+   },
+   "hue": "blue"
+  },
+  {
+   "id": "moynaq_4",
+   "start": 593.9,
+   "dur": 4.8,
+   "kind": "raw",
+   "src": "broll/ar_ship_inside.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "moynaq_5_0",
+   "start": 598.7,
+   "dur": 4.67,
+   "kind": "raw",
+   "src": "broll/ar_ship_sand2.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "moynaq_5_1",
+   "start": 603.37,
+   "dur": 4.68,
+   "kind": "raw",
+   "src": "broll/ar_ship_closeup.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "moynaq_5_2",
+   "start": 608.05,
+   "dur": 4.67,
+   "kind": "raw",
+   "src": "broll/ar_ship_inside.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "veneno_0_0",
+   "start": 612.72,
+   "dur": 4.54,
+   "kind": "raw",
+   "src": "broll/ar_salt_flat.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "veneno_0_1",
+   "start": 617.26,
+   "dur": 4.53,
+   "kind": "raw",
+   "src": "broll/ar_retreat1.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "veneno_0_2",
+   "start": 621.79,
+   "dur": 4.54,
+   "kind": "raw",
+   "src": "broll/ar_salt_flat2.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "veneno_0_3",
+   "start": 626.33,
+   "dur": 4.54,
+   "kind": "raw",
+   "src": "broll/ar_south_dead.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "veneno_0_4",
+   "start": 630.87,
+   "dur": 4.53,
+   "kind": "raw",
+   "src": "broll/ar_cracked_earth.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "veneno_0_5",
+   "start": 635.4,
+   "dur": 4.54,
+   "kind": "raw",
+   "src": "broll/ar_dead_tree.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "veneno_1_0",
+   "start": 639.94,
+   "dur": 3.96,
+   "kind": "raw",
+   "src": "broll/ar_rusty_metal.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "veneno_1_1",
+   "start": 643.9,
+   "dur": 3.97,
+   "kind": "raw",
+   "src": "broll/ar_ship_people.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "veneno_1_2",
+   "start": 647.87,
+   "dur": 3.96,
+   "kind": "raw",
+   "src": "broll/ar_ship_sand1.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "veneno_2",
+   "start": 651.83,
+   "dur": 6,
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "El"
+    },
+    {
+     "t": "Aralkum",
+     "hl": true
+    }
+   ],
+   "eyebrow": "Un desierto que hace 60 años no existía",
+   "bg": "image",
+   "image": "img/ar_h_aralkum.png",
+   "gen": {
+    "type": "image",
+    "name": "ar_h_aralkum",
+    "prompt": "Foto documental real, 16:9 horizontal apaisado. Un desierto de sal blanca y polvo donde antes había un mar Como un fotograma de un documental viejo: con imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+   },
+   "hue": "blue"
+  },
+  {
+   "id": "veneno_2f0",
+   "start": 657.83,
+   "dur": 5.29,
+   "kind": "raw",
+   "src": "broll/ar_salt_flat.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "viento_0_0",
+   "start": 663.12,
+   "dur": 4.94,
+   "kind": "raw",
+   "src": "broll/ar_dust_storm.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "viento_0_1",
+   "start": 668.06,
+   "dur": 4.94,
+   "kind": "raw",
+   "src": "broll/ar_dust_storm2.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "viento_0_2",
+   "start": 673,
+   "dur": 4.94,
+   "kind": "raw",
+   "src": "broll/ar_earth_space2.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "viento_1",
+   "start": 677.94,
+   "dur": 3.04,
+   "kind": "raw",
+   "src": "broll/ar_dust_storm2.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "viento_2_0",
+   "start": 680.98,
+   "dur": 5.53,
+   "kind": "raw",
+   "src": "real/ar_dust_satellite.jpg",
+   "hue": "amber"
+  },
+  {
+   "id": "viento_2_1",
+   "start": 686.51,
+   "dur": 5.53,
+   "kind": "raw",
+   "src": "broll/ar_dust_storm.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "salud_0_0",
+   "start": 692.04,
+   "dur": 4.21,
+   "kind": "raw",
+   "src": "broll/ar_sick_people.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "salud_0_1",
+   "start": 696.25,
+   "dur": 4.2,
+   "kind": "raw",
+   "src": "broll/ar_village_poor.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "salud_0_2",
+   "start": 700.45,
+   "dur": 4.21,
+   "kind": "raw",
+   "src": "broll/ar_sick_people.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "salud_1_0",
+   "start": 704.66,
+   "dur": 4.43,
+   "kind": "raw",
+   "src": "broll/ar_village_poor.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "salud_1_1",
+   "start": 709.09,
+   "dur": 4.44,
+   "kind": "raw",
+   "src": "broll/ar_sick_people.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "salud_1_2",
+   "start": 713.53,
+   "dur": 4.43,
+   "kind": "raw",
+   "src": "broll/ar_village_poor.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "salud_1_3",
+   "start": 717.96,
+   "dur": 4.43,
+   "kind": "raw",
+   "src": "broll/ar_sick_people.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "salud_1_4",
+   "start": 722.39,
+   "dur": 4.44,
+   "kind": "raw",
+   "src": "broll/ar_village_poor.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "salud_1_5",
+   "start": 726.83,
+   "dur": 4.43,
+   "kind": "raw",
+   "src": "broll/ar_sick_people.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "salud_2_0",
+   "start": 731.26,
+   "dur": 4.04,
+   "kind": "raw",
+   "src": "broll/ar_desert_sand.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "salud_2_1",
+   "start": 735.3,
+   "dur": 4.04,
+   "kind": "raw",
+   "src": "broll/ar_dry_bed.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "noventa_0",
+   "start": 739.34,
+   "dur": 6,
+   "kind": "bars",
+   "title": "Volumen de agua del Mar de Aral",
+   "unit": "%",
+   "bars": [
+    {
+     "label": "Antes",
+     "value": 100
+    },
+    {
+     "label": "Hoy",
+     "value": 10
+    }
+   ],
+   "hue": "amber"
+  },
+  {
+   "id": "noventa_0f0",
+   "start": 745.34,
+   "dur": 4.69,
+   "kind": "raw",
+   "src": "broll/ar_desert_sand.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "noventa_0f1",
+   "start": 750.03,
+   "dur": 4.7,
+   "kind": "raw",
+   "src": "broll/ar_fish_boat2.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "noventa_0f2",
+   "start": 754.73,
+   "dur": 4.69,
+   "kind": "raw",
+   "src": "broll/ar_retreat1.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "noventa_1_0",
+   "start": 759.42,
+   "dur": 4.76,
+   "kind": "raw",
+   "src": "broll/ar_dry_bed.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "noventa_1_1",
+   "start": 764.18,
+   "dur": 4.77,
+   "kind": "raw",
+   "src": "broll/ar_salt_flat.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "noventa_1_2",
+   "start": 768.95,
+   "dur": 4.76,
+   "kind": "raw",
+   "src": "broll/ar_salt_flat2.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "noventa_1_3",
+   "start": 773.71,
+   "dur": 4.77,
+   "kind": "raw",
+   "src": "broll/ar_south_dead.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "noventa_2_0",
+   "start": 778.48,
+   "dur": 4.83,
+   "kind": "raw",
+   "src": "broll/ar_ship_aerial.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "noventa_2_1",
+   "start": 783.31,
+   "dur": 4.83,
+   "kind": "raw",
+   "src": "broll/ar_ship_sand2.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "satelite_0_0",
+   "start": 788.14,
+   "dur": 3.89,
+   "kind": "raw",
+   "src": "broll/ar_earth_space2.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "satelite_0_1",
+   "start": 792.03,
+   "dur": 3.88,
+   "kind": "raw",
+   "src": "broll/ar_dust_storm.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "satelite_0_2",
+   "start": 795.91,
+   "dur": 3.89,
+   "kind": "raw",
+   "src": "broll/ar_dust_storm2.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "satelite_1",
+   "start": 799.8,
+   "dur": 22.14,
+   "kind": "spreadmap",
+   "mapImage": "img/ar_map_shrink.png",
+   "gen": {
+    "type": "image",
+    "name": "ar_map_shrink",
+    "prompt": "Mapa ilustrado vintage, atlas antiguo, 16:9 horizontal. Mapa del Mar de Aral entre Kazajistán y Uzbekistán mostrando su contorno; estilo atlas antiguo. Papel crema envejecido, líneas de tinta marrón, relieve y ríos suaves, rosa de los vientos, hermoso, sin texto ilegible."
+   },
+   "at": "se encogia sin parar",
+   "origin": [
+    50,
+    45
+   ],
+   "yearFrom": 1960,
+   "yearTo": 2010,
+   "eyebrow": "Un mar desapareciendo",
+   "title": "El Aral, año tras año",
+   "hue": "blue",
+   "invert": true
+  },
+  {
+   "id": "satelite_2",
+   "start": 821.94,
+   "dur": 5.4,
+   "kind": "raw",
+   "src": "real/ar_sat_beforeafter.jpg",
+   "hue": "amber"
+  },
+  {
+   "id": "terminada_0_0",
+   "start": 827.34,
+   "dur": 4.49,
+   "kind": "raw",
+   "src": "broll/ar_fish_boat2.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "terminada_0_1",
+   "start": 831.83,
+   "dur": 4.48,
+   "kind": "raw",
+   "src": "broll/ar_cracked_earth.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "terminada_0_2",
+   "start": 836.31,
+   "dur": 4.49,
+   "kind": "raw",
+   "src": "broll/ar_dead_tree.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "terminada_0_3",
+   "start": 840.8,
+   "dur": 4.48,
+   "kind": "raw",
+   "src": "broll/ar_desert_sand.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "giro_0_0",
+   "start": 845.28,
+   "dur": 4.52,
+   "kind": "raw",
+   "src": "broll/ar_north_water.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "giro_0_1",
+   "start": 849.8,
+   "dur": 4.52,
+   "kind": "raw",
+   "src": "broll/ar_seagulls2.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "dividido_0",
+   "start": 854.32,
+   "dur": 6,
+   "kind": "annotated",
+   "at": "Un mar del sur enorme",
+   "caption": "El mar partido en dos",
+   "image": "real/ar_map_split2.png",
+   "annotations": [
+    {
+     "kind": "circle",
+     "x": 50,
+     "y": 30,
+     "label": "Norte (Kazajistán)"
+    },
+    {
+     "kind": "circle",
+     "x": 50,
+     "y": 70,
+     "label": "Sur (condenado)"
+    }
+   ],
+   "hue": "red"
+  },
+  {
+   "id": "dividido_0f0",
+   "start": 860.32,
+   "dur": 4.85,
+   "kind": "raw",
+   "src": "broll/ar_dry_bed.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "dividido_0f1",
+   "start": 865.17,
+   "dur": 4.86,
+   "kind": "raw",
+   "src": "broll/ar_fish_boat2.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "dividido_0f2",
+   "start": 870.03,
+   "dur": 4.85,
+   "kind": "raw",
+   "src": "broll/ar_retreat1.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "dividido_1_0",
+   "start": 874.88,
+   "dur": 4.51,
+   "kind": "raw",
+   "src": "broll/ar_north_water.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "dividido_1_1",
+   "start": 879.39,
+   "dur": 4.51,
+   "kind": "raw",
+   "src": "broll/ar_sunset_lake2.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "tapon_0_0",
+   "start": 883.9,
+   "dur": 4.59,
+   "kind": "raw",
+   "src": "broll/ar_south_dead.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "tapon_0_1",
+   "start": 888.49,
+   "dur": 4.59,
+   "kind": "raw",
+   "src": "broll/ar_salt_flat.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "tapon_0_2",
+   "start": 893.08,
+   "dur": 4.59,
+   "kind": "raw",
+   "src": "broll/ar_salt_flat2.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "tapon_0_3",
+   "start": 897.67,
+   "dur": 4.59,
+   "kind": "raw",
+   "src": "broll/ar_cracked_earth.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "tapon_0_4",
+   "start": 902.26,
+   "dur": 4.59,
+   "kind": "raw",
+   "src": "broll/ar_dead_tree.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "tapon_0_5",
+   "start": 906.85,
+   "dur": 4.59,
+   "kind": "raw",
+   "src": "broll/ar_desert_sand.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "tapon_0_6",
+   "start": 911.44,
+   "dur": 4.59,
+   "kind": "raw",
+   "src": "broll/ar_dry_bed.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "tapon_0_7",
+   "start": 916.03,
+   "dur": 4.59,
+   "kind": "raw",
+   "src": "broll/ar_fish_boat2.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "tapon_1",
+   "start": 920.62,
+   "dur": 12.58,
+   "kind": "raw",
+   "src": "img/dg_tapon.png",
+   "hue": "amber",
+   "gen": {
+    "type": "image",
+    "name": "dg_tapon",
+    "prompt": "Infografía horizontal, relación de aspecto EXACTA 16:9 (1792x1024). Ilustración hecha a mano profesional, limpia, editorial, tipo lámina de atlas. Diagrama: el agua del río Sir Daria entra al mar del NORTE pero se escurre al SUR perdiéndose; una represa-muro (tapón) separa norte de sur y atrapa el agua en el norte. Título: Poner el tapón. Fondo marfil claro con textura de papel, líneas marrón oscuro, acentos celeste agua y terracota apagado, papel envejecido. Minimalista, muy clara. Textos en español, breves."
+   }
+  },
+  {
+   "id": "primerintento_0_0",
+   "start": 933.2,
+   "dur": 4.45,
+   "kind": "raw",
+   "src": "broll/ar_dam_build.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "primerintento_0_1",
+   "start": 937.65,
+   "dur": 4.46,
+   "kind": "raw",
+   "src": "broll/ar_dam_aerial.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "primerintento_0_2",
+   "start": 942.11,
+   "dur": 4.45,
+   "kind": "raw",
+   "src": "broll/ar_dam_build.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "primerintento_1_0",
+   "start": 946.56,
+   "dur": 4.57,
+   "kind": "raw",
+   "src": "broll/ar_waves_shore.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "primerintento_1_1",
+   "start": 951.13,
+   "dur": 4.58,
+   "kind": "raw",
+   "src": "broll/ar_water_pour.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "primerintento_1_2",
+   "start": 955.71,
+   "dur": 4.57,
+   "kind": "raw",
+   "src": "broll/ar_north_water.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "primerintento_1_3",
+   "start": 960.28,
+   "dur": 4.58,
+   "kind": "raw",
+   "src": "broll/ar_seagulls2.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "apuesta_0_0",
+   "start": 964.86,
+   "dur": 4.64,
+   "kind": "raw",
+   "src": "broll/ar_dam_aerial.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "apuesta_0_1",
+   "start": 969.5,
+   "dur": 4.63,
+   "kind": "raw",
+   "src": "broll/ar_dam_build.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "apuesta_0_2",
+   "start": 974.13,
+   "dur": 4.64,
+   "kind": "raw",
+   "src": "broll/ar_dam_aerial.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "apuesta_0_3",
+   "start": 978.77,
+   "dur": 4.64,
+   "kind": "raw",
+   "src": "broll/ar_dam_build.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "apuesta_0_4",
+   "start": 983.41,
+   "dur": 4.63,
+   "kind": "raw",
+   "src": "broll/ar_dam_aerial.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "apuesta_0_5",
+   "start": 988.04,
+   "dur": 4.64,
+   "kind": "raw",
+   "src": "broll/ar_dam_build.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "kokaral_0",
+   "start": 992.68,
+   "dur": 6.56,
+   "kind": "raw",
+   "src": "broll/ar_dam_build.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "kokaral_1_0",
+   "start": 999.24,
+   "dur": 3.89,
+   "kind": "raw",
+   "src": "real/ar_kokaral_dam.jpg",
+   "hue": "amber"
+  },
+  {
+   "id": "kokaral_1_1",
+   "start": 1003.13,
+   "dur": 3.88,
+   "kind": "raw",
+   "src": "broll/ar_dam_aerial.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "kokaral_2",
+   "start": 1007.01,
+   "dur": 7.39,
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "La"
+    },
+    {
+     "t": "represa"
+    },
+    {
+     "t": "de"
+    },
+    {
+     "t": "Kokaral",
+     "hl": true
+    }
+   ],
+   "eyebrow": "13 km de muro · 2005",
+   "bg": "image",
+   "image": "img/ar_h_dam.png",
+   "gen": {
+    "type": "image",
+    "name": "ar_h_dam",
+    "prompt": "Foto documental real, 16:9 horizontal apaisado. Una larga represa de tierra atravesando el agua, vista aérea Como un fotograma de un documental viejo: con imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+   },
+   "hue": "red"
+  },
+  {
+   "id": "kokaral_3",
+   "start": 1014.4,
+   "dur": 3.48,
+   "kind": "raw",
+   "src": "broll/ar_dam_aerial.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "subio_0_0",
+   "start": 1017.88,
+   "dur": 4.6,
+   "kind": "raw",
+   "src": "broll/ar_water_return.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "subio_0_1",
+   "start": 1022.48,
+   "dur": 4.6,
+   "kind": "raw",
+   "src": "broll/ar_sunset_lake2.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "subio_0_2",
+   "start": 1027.08,
+   "dur": 4.6,
+   "kind": "raw",
+   "src": "broll/ar_water_pour.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "subio_0_3",
+   "start": 1031.68,
+   "dur": 4.6,
+   "kind": "raw",
+   "src": "broll/ar_drone_water.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "subio_0_4",
+   "start": 1036.28,
+   "dur": 4.6,
+   "kind": "raw",
+   "src": "broll/ar_north_water.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "subio_0_5",
+   "start": 1040.88,
+   "dur": 4.6,
+   "kind": "raw",
+   "src": "broll/ar_seagulls2.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "subio_0_6",
+   "start": 1045.48,
+   "dur": 4.6,
+   "kind": "raw",
+   "src": "broll/ar_sunset_lake2.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "subio_1_0",
+   "start": 1050.08,
+   "dur": 3.66,
+   "kind": "raw",
+   "src": "broll/ar_drone_water.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "subio_1_1",
+   "start": 1053.74,
+   "dur": 3.66,
+   "kind": "raw",
+   "src": "broll/ar_water_pour.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "volver_0_0",
+   "start": 1057.4,
+   "dur": 5.36,
+   "kind": "raw",
+   "src": "broll/ar_waves_shore.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "volver_0_1",
+   "start": 1062.76,
+   "dur": 5.36,
+   "kind": "raw",
+   "src": "broll/ar_drone_water.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "volver_0_2",
+   "start": 1068.12,
+   "dur": 5.36,
+   "kind": "raw",
+   "src": "broll/ar_north_water.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "volver_1_0",
+   "start": 1073.48,
+   "dur": 5.63,
+   "kind": "raw",
+   "src": "broll/ar_lake_waves.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "volver_1_1",
+   "start": 1079.11,
+   "dur": 5.63,
+   "kind": "raw",
+   "src": "broll/ar_old_cannery.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "salbaja_0_0",
+   "start": 1084.74,
+   "dur": 5.09,
+   "kind": "raw",
+   "src": "broll/ar_water_pour.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "salbaja_0_1",
+   "start": 1089.83,
+   "dur": 5.08,
+   "kind": "raw",
+   "src": "broll/ar_seagulls2.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "salbaja_0_2",
+   "start": 1094.91,
+   "dur": 5.09,
+   "kind": "raw",
+   "src": "broll/ar_sunset_lake2.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "salbaja_0_3",
+   "start": 1100,
+   "dur": 5.08,
+   "kind": "raw",
+   "src": "broll/ar_water_return.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "salbaja_1_0",
+   "start": 1105.08,
+   "dur": 4.81,
+   "kind": "raw",
+   "src": "broll/ar_drone_water.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "salbaja_1_1",
+   "start": 1109.89,
+   "dur": 4.81,
+   "kind": "raw",
+   "src": "broll/ar_water_pour.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "pecesvuelven_0_0",
+   "start": 1114.7,
+   "dur": 4.72,
+   "kind": "raw",
+   "src": "broll/ar_fish_return.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "pecesvuelven_0_1",
+   "start": 1119.42,
+   "dur": 4.73,
+   "kind": "raw",
+   "src": "broll/ar_aralsk.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "pecesvuelven_0_2",
+   "start": 1124.15,
+   "dur": 4.73,
+   "kind": "raw",
+   "src": "broll/ar_fish_net_haul.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "pecesvuelven_0_3",
+   "start": 1128.88,
+   "dur": 4.72,
+   "kind": "raw",
+   "src": "broll/ar_fish_underwater2.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "pecesvuelven_1",
+   "start": 1133.6,
+   "dur": 6.1,
+   "kind": "raw",
+   "src": "broll/ar_fish_underwater2.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "pecesvuelven_2",
+   "start": 1139.7,
+   "dur": 5.8,
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "El"
+    },
+    {
+     "t": "mar"
+    },
+    {
+     "t": "muerto"
+    },
+    {
+     "t": "se"
+    },
+    {
+     "t": "llenaba"
+    },
+    {
+     "t": "de"
+    },
+    {
+     "t": "vida",
+     "hl": true
+    }
+   ],
+   "eyebrow": "Otra vez",
+   "bg": "image",
+   "image": "img/ar_h_fish.png",
+   "gen": {
+    "type": "image",
+    "name": "ar_h_fish",
+    "prompt": "Foto documental real, 16:9 horizontal apaisado. Peces nadando en agua azul clara de un lago Como un fotograma de un documental viejo: con imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+   },
+   "hue": "blue"
+  },
+  {
+   "id": "gente_0",
+   "start": 1145.5,
+   "dur": 6.28,
+   "kind": "raw",
+   "src": "broll/ar_fishermen_back.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "gente_1_0",
+   "start": 1151.78,
+   "dur": 4.87,
+   "kind": "raw",
+   "src": "broll/ar_aralsk.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "gente_1_1",
+   "start": 1156.65,
+   "dur": 4.87,
+   "kind": "raw",
+   "src": "broll/ar_fish_return.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "gente_2_0",
+   "start": 1161.52,
+   "dur": 4.97,
+   "kind": "raw",
+   "src": "broll/ar_fish_net_haul.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "gente_2_1",
+   "start": 1166.49,
+   "dur": 4.97,
+   "kind": "raw",
+   "src": "broll/ar_market_fish2.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "gente_3_0",
+   "start": 1171.46,
+   "dur": 5.26,
+   "kind": "raw",
+   "src": "broll/ar_market_fish2.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "gente_3_1",
+   "start": 1176.72,
+   "dur": 5.26,
+   "kind": "raw",
+   "src": "broll/ar_aralsk.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "gente_4_0",
+   "start": 1181.98,
+   "dur": 4.61,
+   "kind": "raw",
+   "src": "broll/ar_fishermen_back.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "gente_4_1",
+   "start": 1186.59,
+   "dur": 4.61,
+   "kind": "raw",
+   "src": "broll/ar_fish_net_haul.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "gente_4_2",
+   "start": 1191.2,
+   "dur": 4.6,
+   "kind": "raw",
+   "src": "broll/ar_fish_return.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "gente_4_3",
+   "start": 1195.8,
+   "dur": 4.61,
+   "kind": "raw",
+   "src": "broll/ar_fish_underwater2.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "gente_4_4",
+   "start": 1200.41,
+   "dur": 4.61,
+   "kind": "raw",
+   "src": "broll/ar_market_fish2.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "honestos_0_0",
+   "start": 1205.02,
+   "dur": 4.43,
+   "kind": "raw",
+   "src": "broll/ar_south_dead.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "honestos_0_1",
+   "start": 1209.45,
+   "dur": 4.43,
+   "kind": "raw",
+   "src": "broll/ar_retreat1.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "honestos_0_2",
+   "start": 1213.88,
+   "dur": 4.42,
+   "kind": "raw",
+   "src": "broll/ar_salt_flat.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "honestos_0_3",
+   "start": 1218.3,
+   "dur": 4.43,
+   "kind": "raw",
+   "src": "broll/ar_salt_flat2.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "honestos_0_4",
+   "start": 1222.73,
+   "dur": 4.43,
+   "kind": "raw",
+   "src": "broll/ar_cracked_earth.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "honestos_1",
+   "start": 1227.16,
+   "dur": 6.7,
+   "kind": "raw",
+   "src": "broll/ar_salt_flat.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "honestos_2",
+   "start": 1233.86,
+   "dur": 6,
+   "kind": "quote",
+   "text": "Tuvo que elegir. Y eligió salvar lo que *todavía* se podía.",
+   "image": "img/ar_h_choice.png",
+   "gen": {
+    "type": "image",
+    "name": "ar_h_choice",
+    "prompt": "Foto documental real, 16:9 horizontal apaisado. Vista dividida: desierto seco de un lado, agua del otro Como un fotograma de un documental viejo: con imperfecciones, luz natural despareja, saturación baja, nada pulido, sin apariencia de IA."
+   },
+   "hue": "red"
+  },
+  {
+   "id": "honestos_2f0",
+   "start": 1239.86,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/ar_south_dead.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "honestos_2f1",
+   "start": 1244.86,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/ar_dead_tree.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "honestos_2f2",
+   "start": 1249.86,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/ar_south_dead.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "reflexion_0_0",
+   "start": 1254.86,
+   "dur": 4.31,
+   "kind": "raw",
+   "src": "broll/ar_ship_aerial.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "reflexion_0_1",
+   "start": 1259.17,
+   "dur": 4.32,
+   "kind": "raw",
+   "src": "broll/ar_ship_sunset.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "reflexion_0_2",
+   "start": 1263.49,
+   "dur": 4.31,
+   "kind": "raw",
+   "src": "broll/ar_empty_boat.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "reflexion_0_3",
+   "start": 1267.8,
+   "dur": 4.32,
+   "kind": "raw",
+   "src": "broll/ar_ghost_town.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "reflexion_0_4",
+   "start": 1272.12,
+   "dur": 4.31,
+   "kind": "raw",
+   "src": "broll/ar_moynaq.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "reflexion_0_5",
+   "start": 1276.43,
+   "dur": 4.32,
+   "kind": "raw",
+   "src": "broll/ar_pier_dry.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "reflexion_0_6",
+   "start": 1280.75,
+   "dur": 4.31,
+   "kind": "raw",
+   "src": "broll/ar_rusty_metal.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "reflexion_0_7",
+   "start": 1285.06,
+   "dur": 4.32,
+   "kind": "raw",
+   "src": "broll/ar_ship_and_water.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "reflexion_1_0",
+   "start": 1289.38,
+   "dur": 5.08,
+   "kind": "raw",
+   "src": "broll/ar_water_return.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "reflexion_1_1",
+   "start": 1294.46,
+   "dur": 5.07,
+   "kind": "raw",
+   "src": "broll/ar_drone_water.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "reflexion_1_2",
+   "start": 1299.53,
+   "dur": 5.08,
+   "kind": "raw",
+   "src": "broll/ar_north_water.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "reflexion_1_3",
+   "start": 1304.61,
+   "dur": 5.07,
+   "kind": "raw",
+   "src": "broll/ar_seagulls2.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "esperanza_0_0",
+   "start": 1309.68,
+   "dur": 4.09,
+   "kind": "raw",
+   "src": "broll/ar_waves_shore.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "esperanza_0_1",
+   "start": 1313.77,
+   "dur": 4.08,
+   "kind": "raw",
+   "src": "broll/ar_sunset_lake2.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "esperanza_1",
+   "start": 1317.85,
+   "dur": 13.45,
+   "kind": "timeline",
+   "eyebrow": "De la catástrofe al regreso",
+   "title": "La saga del Mar de Aral",
+   "events": [
+    {
+     "year": "1960",
+     "label": "El 4º lago más grande",
+     "image": "img/ar_t_full.png",
+     "accent": "cold"
+    },
+    {
+     "year": "1960s",
+     "label": "Desvían los ríos por algodón",
+     "image": "img/ar_t_cotton.png",
+     "accent": "danger"
+    },
+    {
+     "year": "2000",
+     "label": "Pierde el 90% del agua",
+     "image": "img/ar_t_dry.png",
+     "accent": "danger"
+    },
+    {
+     "year": "2005",
+     "label": "Represa de Kokaral",
+     "image": "img/ar_t_dam.png",
+     "accent": "accent"
+    },
+    {
+     "year": "Hoy",
+     "label": "El norte revive",
+     "image": "img/ar_t_water.png",
+     "accent": "accent"
+    }
+   ],
+   "hue": "blue"
+  },
+  {
+   "id": "creciendo_0_0",
+   "start": 1331.3,
+   "dur": 4.68,
+   "kind": "raw",
+   "src": "broll/ar_drone_water.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "creciendo_0_1",
+   "start": 1335.98,
+   "dur": 4.69,
+   "kind": "raw",
+   "src": "broll/ar_water_pour.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "creciendo_0_2",
+   "start": 1340.67,
+   "dur": 4.69,
+   "kind": "raw",
+   "src": "broll/ar_water_return.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "creciendo_0_3",
+   "start": 1345.36,
+   "dur": 4.68,
+   "kind": "raw",
+   "src": "broll/ar_waves_shore.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "creciendo_1_0",
+   "start": 1350.04,
+   "dur": 4.51,
+   "kind": "raw",
+   "src": "broll/ar_lake_waves.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "creciendo_1_1",
+   "start": 1354.55,
+   "dur": 4.5,
+   "kind": "raw",
+   "src": "broll/ar_old_fishing.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "creciendo_1_2",
+   "start": 1359.05,
+   "dur": 4.51,
+   "kind": "raw",
+   "src": "broll/ar_old_port.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "hoy_0_0",
+   "start": 1363.56,
+   "dur": 4.16,
+   "kind": "raw",
+   "src": "broll/ar_ship_and_water.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "hoy_0_1",
+   "start": 1367.72,
+   "dur": 4.17,
+   "kind": "raw",
+   "src": "broll/ar_ship_aerial.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "hoy_0_2",
+   "start": 1371.89,
+   "dur": 4.16,
+   "kind": "raw",
+   "src": "broll/ar_ship_closeup.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "hoy_0_3",
+   "start": 1376.05,
+   "dur": 4.17,
+   "kind": "raw",
+   "src": "broll/ar_ship_inside.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "hoy_0_4",
+   "start": 1380.22,
+   "dur": 4.16,
+   "kind": "raw",
+   "src": "broll/ar_ship_people.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "hoy_1",
+   "start": 1384.38,
+   "dur": 4.02,
+   "kind": "raw",
+   "src": "broll/ar_waves_shore.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "hoy_2",
+   "start": 1388.4,
+   "dur": 6.26,
+   "kind": "raw",
+   "src": "broll/ar_seagulls2.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "hoy_3_0",
+   "start": 1394.66,
+   "dur": 5.61,
+   "kind": "raw",
+   "src": "broll/ar_ship_and_water.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "hoy_3_1",
+   "start": 1400.27,
+   "dur": 5.61,
+   "kind": "raw",
+   "src": "broll/ar_ship_sand1.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "outro_0_0",
+   "start": 1405.88,
+   "dur": 5.34,
+   "kind": "raw",
+   "src": "broll/ar_water_return.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "outro_0_1",
+   "start": 1411.22,
+   "dur": 5.33,
+   "kind": "raw",
+   "src": "broll/ar_drone_water.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "outro_0_2",
+   "start": 1416.55,
+   "dur": 5.34,
+   "kind": "raw",
+   "src": "broll/ar_north_water.mp4",
+   "hue": "red"
+  },
+  {
+   "id": "outro_1_0",
+   "start": 1421.89,
+   "dur": 4.71,
+   "kind": "raw",
+   "src": "broll/ar_waves_shore.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "outro_1_1",
+   "start": 1426.6,
+   "dur": 4.7,
+   "kind": "raw",
+   "src": "broll/ar_seagulls2.mp4",
+   "hue": "blue"
+  },
+  {
+   "id": "loc_52",
+   "start": 55.6,
+   "dur": 6,
+   "kind": "loctag",
+   "mapImage": "img/ar_map_world.png",
+   "pinX": 58,
+   "pinY": 40,
+   "place": "Mar de Aral",
+   "sub": "Asia Central",
+   "overlay": true,
+   "gen": {
+    "type": "image",
+    "name": "ar_map_world",
+    "prompt": "Mapa ilustrado vintage, atlas antiguo, 16:9 horizontal. Mapa del mundo o de Asia Central mostrando la ubicación del Mar de Aral entre Kazajistán y Uzbekistán, estilo atlas antiguo. Papel crema envejecido, líneas de tinta marrón, relieve y ríos suaves, rosa de los vientos, hermoso, sin texto ilegible."
+   }
+  },
+  {
+   "id": "stat_105",
+   "start": 108.8,
+   "dur": 6,
+   "kind": "stattag",
+   "overlay": true,
+   "text": "4º",
+   "eyebrow": "El",
+   "label": "lago más grande del planeta",
+   "accent": "cold",
+   "corner": "tr"
+  },
+  {
+   "id": "name_204",
+   "start": 208.48,
+   "dur": 5.5,
+   "kind": "nametag",
+   "overlay": true,
+   "name": "Amu Daria & Sir Daria",
+   "sub": "Los dos ríos que lo mantenían vivo",
+   "accent": "cold"
+  },
+  {
+   "id": "ph_272",
+   "start": 276.38,
+   "dur": 4,
+   "kind": "phrasetag",
+   "overlay": true,
+   "text": "El *oro blanco*: algodón",
+   "accent": "amber"
+  },
+  {
+   "id": "stat_742",
+   "start": 745.64,
+   "dur": 6,
+   "kind": "stattag",
+   "overlay": true,
+   "value": 90,
+   "suffix": "%",
+   "eyebrow": "Perdió el",
+   "label": "de su volumen de agua",
+   "accent": "danger",
+   "corner": "tr"
+  },
+  {
+   "id": "stat_989",
+   "start": 992.68,
+   "dur": 6,
+   "kind": "stattag",
+   "overlay": true,
+   "text": "2005",
+   "eyebrow": "Represa de Kokaral",
+   "label": "13 km de muro que cambió todo",
+   "accent": "accent",
+   "corner": "bl"
+  },
+  {
+   "id": "ph_1069",
+   "start": 1073.48,
+   "dur": 4,
+   "kind": "phrasetag",
+   "overlay": true,
+   "text": "El agua *volvió*",
+   "accent": "accent"
+  },
+  {
+   "id": "meter_salt",
+   "start": 493.88,
+   "dur": 7,
+   "kind": "metertag",
+   "overlay": true,
+   "label": "Salinidad del mar",
+   "fromPct": 20,
+   "toPct": 100,
+   "eyebrow": "El mar se envenena",
+   "corner": "tr",
+   "rising": true
+  }
+ ]
+}

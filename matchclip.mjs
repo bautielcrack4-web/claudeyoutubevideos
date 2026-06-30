@@ -58,6 +58,10 @@ const COARSE = +(process.env.MATCH_COARSE || 44);
 const FINE = +(process.env.MATCH_FINE || 0.5);
 const HEAD = +(process.env.MATCH_HEAD || 6);
 const TAIL = 0.06; // saltea el último 6% (créditos/outro)
+// MATCH_REUSE=1 → permite SACAR VARIOS CLIPS de un mismo video/documental, en timestamps
+// distintos (gap ≥ MATCH_MINGAP s). Sin el flag, se mantiene la diversidad por-video de antes.
+const REUSE = process.env.MATCH_REUSE === "1";
+const MINGAP_SAME = +(process.env.MATCH_MINGAP || 10);
 
 const TMP = "_match";
 const vidId = (u) => (u.match(/(?:v=|youtu\.be\/|shorts\/|embed\/)([A-Za-z0-9_-]{11})/) || u.match(/([A-Za-z0-9_-]{11})/) || [])[1];
@@ -126,7 +130,7 @@ const dlProxy = (url, a, b, tag) => {
     "--socket-timeout", "20",
     "--merge-output-format", "mp4", "--no-playlist", "-o", proxy,
     "--force-overwrites", "--quiet", "--no-warnings",
-  ], { encoding: "utf8", timeout: 75000 });
+  ], { encoding: "utf8", timeout: +(process.env.MATCH_DLTIMEOUT || 75000) });
   return (dl.status === 0 && fs.existsSync(proxy)) ? proxy : null;
 };
 // extrae frames del proxy. baseT = tiempo REAL del 1er frame. ss = seek dentro del proxy.
@@ -175,7 +179,8 @@ const scoreFrame = async (file, concept) => {
 };
 
 // analiza UN candidato: pasada gruesa por todo el video + pasada fina alrededor del pico.
-const analyze = async (cand, beat, tag) => {
+const analyze = async (cand, beat, tag, avoidTs = []) => {
+  const near = (t) => avoidTs.some((u) => Math.abs(u - t) < MINGAP_SAME);
   const explicitWindow = beat.after != null || beat.scan != null;
   const a0 = explicitWindow ? (beat.after ?? 0) : HEAD;
   const dur = cand.dur || 0;
@@ -188,14 +193,19 @@ const analyze = async (cand, beat, tag) => {
   const coarseStep = explicitWindow ? (beat.step || 2) : Math.max(2, +(span / COARSE).toFixed(2));
   const coarse = extract(proxy, a0, coarseStep, Math.ceil(span / coarseStep) + 2, tag + "_c");
   if (!coarse.length) return null;
-  let bf = { score: -1, t: a0 };
-  for (const fr of coarse) { const s = await scoreFrame(fr.file, beat.concept); if (s > bf.score) bf = { score: s, t: fr.t }; }
+  const cs = [];
+  for (const fr of coarse) { const s = await scoreFrame(fr.file, beat.concept); cs.push({ t: fr.t, score: s }); }
+  // si hay tramos ya usados de este video (modo REUSE), descartá los frames cercanos;
+  // si TODO queda descartado (video chico/agotado), caé al mejor igual.
+  let pool = REUSE && avoidTs.length ? cs.filter((f) => !near(f.t)) : cs;
+  if (!pool.length) pool = cs;
+  let bf = pool.reduce((m, f) => (f.score > m.score ? f : m), { score: -1, t: a0 });
   // pasada FINA: ±un paso grueso alrededor del mejor, a FINE seg, desde el MISMO proxy.
   if (coarseStep > FINE) {
     const fa = Math.max(a0, +(bf.t - coarseStep).toFixed(2));
     const fb = Math.min(end, +(bf.t + coarseStep).toFixed(2));
     const fine = extract(proxy, fa, FINE, Math.ceil((fb - fa) / FINE) + 2, tag + "_x", fa - a0);
-    for (const fr of fine) { const s = await scoreFrame(fr.file, beat.concept); if (s > bf.score) bf = { score: s, t: fr.t }; }
+    for (const fr of fine) { if (REUSE && avoidTs.length && near(fr.t)) continue; const s = await scoreFrame(fr.file, beat.concept); if (s > bf.score) bf = { score: s, t: fr.t }; }
   }
   return { score: bf.score, t: bf.t, url: cand.url, id: cand.id };
 };
@@ -204,7 +214,11 @@ const outPath = `public/broll/clips_${slug}_matched.json`;
 // RESUME: si ya hay matched.json, retomo donde quedó (no re-matcheo lo hecho).
 const results = fs.existsSync(outPath) ? JSON.parse(fs.readFileSync(outPath, "utf8")) : [];
 const doneNames = new Set(results.map((r) => r.name));
-const usedIds = new Set(results.map((r) => vidId(r.url)).filter(Boolean)); // diversidad
+const usedIds = new Set(results.map((r) => vidId(r.url)).filter(Boolean)); // diversidad por-video
+// timestamps ya extraídos por video (para sacar VARIOS clips de un doc sin repetir tramo)
+const usedTs = new Map();
+for (const r of results) { const id = vidId(r.url); if (id) { const a = usedTs.get(id) || []; a.push((r.start || 0) + 1); usedTs.set(id, a); } }
+const avoidFor = (id) => usedTs.get(id) || [];
 if (doneNames.size) console.log(`resume: ${doneNames.size} beats ya matcheados → los salteo`);
 for (const b of beats) {
   const { name, concept, dur = 6, lead = 1.0 } = b;
@@ -219,21 +233,26 @@ for (const b of beats) {
   process.stdout.write(`• ${name}  "${concept}"  (${cands.length} candidatos)\n`);
   const scored = [];
   for (let i = 0; i < cands.length; i++) {
-    const res = await analyze(cands[i], b, `${name}_${i}`);
+    const res = await analyze(cands[i], b, `${name}_${i}`, avoidFor(cands[i].id));
     if (!res) { console.log(`    cand ${i + 1} (${cands[i].id}): sin frames`); continue; }
     console.log(`    cand ${i + 1} (${res.id}): mejor ${res.score.toFixed(3)} @ ${res.t}s`);
     scored.push(res);
   }
   if (!scored.length) { console.log(`✗ ${name}: sin frames en ningún candidato`); continue; }
-  scored.sort((a, b2) => b2.score - a.score);
-  // DIVERSIDAD: preferir un video todavía no usado con score ≥88% del top.
+  // En modo REUSE penalizamos LEVE al video ya usado (variar fuentes) pero permitimos reusarlo
+  // a otro timestamp; sin REUSE, mantenemos la diversidad dura por-video como antes.
+  scored.sort((a, b2) => (b2.score - (REUSE && usedIds.has(b2.id) ? 0.03 : 0)) - (a.score - (REUSE && usedIds.has(a.id) ? 0.03 : 0)));
   let best = scored[0];
-  const fresh = scored.find((c) => c.id && !usedIds.has(c.id) && c.score >= scored[0].score * 0.88);
-  if (fresh) best = fresh;
-  if (best.id) usedIds.add(best.id);
+  let fresh = null;
+  if (!REUSE) {
+    fresh = scored.find((c) => c.id && !usedIds.has(c.id) && c.score >= scored[0].score * 0.88);
+    if (fresh) best = fresh;
+  }
+  const reusedTs = REUSE && (avoidFor(best.id) || []).length > 0; // sacó OTRO tramo del mismo doc
+  if (best.id) { usedIds.add(best.id); usedTs.set(best.id, [...avoidFor(best.id), best.t]); }
   const start = Math.max(0, +(best.t - lead).toFixed(1));
   const flag = best.score < 0.55 ? "  ⚠ DUDOSO" : "";
-  console.log(`  → ${name}: ${best.score.toFixed(3)} @ ${best.t}s  start=${start}${flag}${fresh ? " (diverso)" : ""}`);
+  console.log(`  → ${name}: ${best.score.toFixed(3)} @ ${best.t}s  start=${start}${flag}${fresh ? " (diverso)" : ""}${reusedTs ? " (multi-doc)" : ""}`);
   results.push({ name, url: best.url, start, dur, _score: +best.score.toFixed(3) });
   fs.writeFileSync(outPath, JSON.stringify(results, null, 2)); // guardado INCREMENTAL
 }
