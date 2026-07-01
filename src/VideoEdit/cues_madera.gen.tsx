@@ -3,6 +3,7 @@
 import { ReactNode } from "react";
 import { COLORS } from "./theme";
 import { RawShot } from "./scenes/RawShot";
+import { LayeredReveal } from "./scenes/LayeredReveal";
 import { ChipsCluster } from "./scenes/ReframeContent";
 import { SplitList } from "./scenes/SplitList";
 import { IngredientEquation } from "./scenes/IngredientEquation";
@@ -17,9 +18,10 @@ import { RuleNumberScene } from "./scenes/RuleNumberScene";
 import { AnnotatedImage } from "./scenes/AnnotatedImage";
 import { CalloutMark } from "./scenes/CalloutMark";
 import { NumberCard } from "./scenes/NumberCard";
-import { OxStatPop, OxMethodCard, OxRuleStrip, OxMaterialTag, OxBeforeAfter, OxSidePanel, OxPhotoStack } from "./overlays/OxCards";
+import { OxStatPop, OxMethodCard, OxRuleStrip, OxMaterialTag, OxSidePanel, OxPhotoStack } from "./overlays/OxCards";
 import { ManualCard } from "./overlays/ManualCard";
-import { MdMoistureGauge, MdLifespanBar, MdRecipeCard, MdPostGroundLine, MdCharReveal, MdMethodRecap, MdNameTag, MdNextCard } from "./overlays/MaderaCards";
+import { MdMoistureGauge, MdLifespanBar, MdRecipeCard, MdPostGroundLine, MdCharReveal, MdMethodRecap, MdNameTag } from "./overlays/MaderaCards";
+import { MdTwoPlanks, MdSealTrap, MdRotFromInside, MdRuleStamp, MdFungusNeeds, MdBeforeAfterSlider, MdChapterKicker, MdEndcardManual, MdTransition } from "./overlays/MaderaPolish";
 
 const D = COLORS.danger, A = COLORS.accent;
 
@@ -41,6 +43,7 @@ export const CUES: Cue[] = [
   { key: "cmp_annotated_st_43", start: 43.41, dur: 6.5, kind: "annotated", el: (d) => <AnnotatedImage durationInFrames={d} image="real/md_rotted_window_frame_corner.png" annotations={[{"kind":"circle","x":0.72,"y":0.68,"w":0.16,"label":"acá se ablanda primero","color":"danger"}]} eyebrow="El marco que ya te está avisando" caption="La pudrición empieza en la esquina que junta agua" hue="red" /> },
   { key: "md_lost_knowledge_hands", start: 54.5, dur: 0.8, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/md_lost_knowledge_hands.mp4" hue="blue" darken={0} /> },
   { key: "md_fill_right_place", start: 54.5, dur: 1.62, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/md_fill_right_place.png" hue="red" darken={0} /> },
+  { key: "md_tomas_hook", start: 55.82, dur: 2.84, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/md_tomas_hook.png" hue="amber" kicker="Lo que la industria no quiere que sepas" darken={0} /> },
   { key: "md_four_cheap_methods", start: 58.36, dur: 0.8, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/md_four_cheap_methods.mp4" hue="red" darken={0} /> },
   { key: "md_fill_copy_today", start: 58.36, dur: 7, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/md_fill_copy_today.png" hue="red" darken={0} /> },
   { key: "md_fake_internet_advice", start: 76.96, dur: 0.8, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/md_fake_internet_advice.png" hue="blue" darken={0} /> },
@@ -87,6 +90,7 @@ export const CUES: Cue[] = [
   { key: "md_fill_structure_is_trash", start: 225.38, dur: 0.8, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/md_fill_structure_is_trash.png" hue="amber" darken={0} /> },
   { key: "cmp_bars_st_225", start: 225.38, dur: 6.5, kind: "bars", el: (d) => <BarCompare durationInFrames={d} bars={[{"label":"Comprar y rearmar todo de nuevo","value":100,"display":"$$$","tone":"danger"},{"label":"Blindarla vos mismo","value":3,"display":"$2","winner":true}]} title="Lo que te cuesta la madera podrida" hue="red" /> },
   { key: "md_fill_so_simple_anger", start: 227.95, dur: 2.07, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/md_fill_so_simple_anger.png" hue="amber" darken={0} /> },
+  { key: "md_tomas_secreto", start: 229.72, dur: 7, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/md_tomas_secreto.png" hue="blue" kicker="Tan simple que da bronca" darken={0} /> },
   { key: "md_fungus_eats_wood", start: 238.07, dur: 5.01, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/md_fungus_eats_wood.mp4" hue="amber" darken={0} /> },
   { key: "md_microscopic_fungus_fiber", start: 242.78, dur: 0.8, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/md_microscopic_fungus_fiber.png" hue="red" darken={0} /> },
   { key: "md_fill_that_is_rot", start: 242.78, dur: 7, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/md_fill_that_is_rot.png" hue="amber" darken={0} /> },
@@ -133,7 +137,8 @@ export const CUES: Cue[] = [
   { key: "md_tool_handles_furniture", start: 411.5, dur: 0.8, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/md_tool_handles_furniture.mp4" hue="red" darken={0} /> },
   { key: "md_fill_ideal_furniture", start: 411.5, dur: 7, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/md_fill_ideal_furniture.png" hue="red" darken={0} /> },
   { key: "md_first_coat_thinned_turps", start: 422.63, dur: 0.8, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/md_first_coat_thinned_turps.png" hue="blue" darken={0} /> },
-  { key: "md_fill_how_to_do_right", start: 422.63, dur: 7, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/md_fill_how_to_do_right.png" hue="amber" darken={0} /> },
+  { key: "md_fill_how_to_do_right", start: 422.63, dur: 0.8, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/md_fill_how_to_do_right.png" hue="amber" darken={0} /> },
+  { key: "layered_423", start: 422.63, dur: 15.83, kind: "layered", el: (d) => <LayeredReveal durationInFrames={d} main={{"image":"real/md_linseed_oil_can_wood.png","caption":"Aceite de linaza"}} subs={[{"image":"real/md_first_coat_thinned_turps.png","caption":"1ra mano: diluida al 50%","atFrame":0},{"image":"real/md_second_coat_pure_oil.png","caption":"Después: aceite puro","atFrame":403}]} eyebrow="Aceite de linaza: cómo se aplica" accent="amber" /> },
   { key: "md_second_coat_pure_oil", start: 436.06, dur: 0.8, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/md_second_coat_pure_oil.mp4" hue="amber" darken={0} /> },
   { key: "md_fill_soaks_wipe_excess", start: 436.06, dur: 7, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/md_fill_soaks_wipe_excess.png" hue="red" darken={0} /> },
   { key: "md_let_dry_between_coats", start: 443.9, dur: 2.42, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/md_let_dry_between_coats.mp4" hue="red" darken={0} /> },
@@ -146,6 +151,7 @@ export const CUES: Cue[] = [
   { key: "cmp_callout_st_481", start: 481.46, dur: 6.5, kind: "callout", el: (d) => <CalloutMark durationInFrames={d} figure="Veneno" image="real/md_poison_for_fungus_bugs.png" caption="El borato se mete en la fibra y envenena al hongo y a los bichos." accent="danger" hue="blue" /> },
   { key: "md_fill_two_hardware_items", start: 487.04, dur: 0.8, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/md_fill_two_hardware_items.png" hue="red" darken={0} /> },
   { key: "cmp_ingredients_st_487", start: 487.04, dur: 6.5, kind: "ingredients", el: (d) => <IngredientEquation durationInFrames={d} items={[{"image":"real/md_borax_box_cleaning.png","label":"Bórax"},{"image":"real/md_boric_acid_white_powder.png","label":"Ácido bórico"},{"image":"real/md_dissolve_hot_water_clear.png","label":"Agua caliente"}]} resultLabel="El borato de $2" /> },
+  { key: "layered_487", start: 487.04, dur: 14.07, kind: "layered", el: (d) => <LayeredReveal durationInFrames={d} main={{"image":"real/md_two_peso_borate_liquid.png","caption":"El borato de $2"}} subs={[{"image":"real/md_borax_box_cleaning.png","caption":"Bórax","atFrame":175},{"image":"real/md_boric_acid_white_powder.png","caption":"Ácido bórico","atFrame":362}]} eyebrow="El borato: bórax + ácido bórico" accent="blue" /> },
   { key: "md_fill_hot_water_mix", start: 505.54, dur: 7, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/md_fill_hot_water_mix.png" hue="blue" darken={0} /> },
   { key: "md_fill_same_as_treated", start: 512.45, dur: 7, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/md_fill_same_as_treated.png" hue="blue" darken={0} /> },
   { key: "md_fill_powder_at_bottom", start: 532.46, dur: 7, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/md_fill_powder_at_bottom.png" hue="red" darken={0} /> },
@@ -191,7 +197,8 @@ export const CUES: Cue[] = [
   { key: "md_no_wood_touching_soil", start: 765.36, dur: 0.8, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/md_no_wood_touching_soil.mp4" hue="blue" darken={0} /> },
   { key: "md_fill_golden_rule_no_soil", start: 765.36, dur: 0.8, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/md_fill_golden_rule_no_soil.png" hue="amber" darken={0} /> },
   { key: "cmp_splitlist_st_765", start: 765.36, dur: 6.5, kind: "splitlist", el: (d) => <SplitList durationInFrames={d} title="El poste blindado: 4 defensas juntas" items={["Punta quemada bajo tierra","Borato adentro de la fibra","Sellado en la línea de la tierra","Ripio de drenaje en el fondo"]} accent={D} /> },
-  { key: "md_post_on_concrete_base", start: 768.55, dur: 7, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/md_post_on_concrete_base.mp4" hue="amber" darken={0} /> },
+  { key: "md_post_on_concrete_base", start: 768.55, dur: 0.8, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/md_post_on_concrete_base.mp4" hue="amber" darken={0} /> },
+  { key: "layered_769", start: 768.55, dur: 11.77, kind: "layered", el: (d) => <LayeredReveal durationInFrames={d} main={{"image":"real/md_no_wood_touching_soil.png","caption":"Nunca la madera tocando la tierra"}} subs={[{"image":"real/md_seal_buried_borate_tar.png","caption":"Borato + sellado en la línea","atFrame":281}]} eyebrow="El poste blindado: las defensas juntas" accent="green" /> },
   { key: "md_seal_buried_borate_tar", start: 777.9, dur: 0.8, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/md_seal_buried_borate_tar.mp4" hue="red" darken={0} /> },
   { key: "md_fill_tar_sealer_band", start: 777.9, dur: 7, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/md_fill_tar_sealer_band.png" hue="red" darken={0} /> },
   { key: "md_gravel_drainage_post_hole", start: 790.76, dur: 0.8, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/md_gravel_drainage_post_hole.mp4" hue="blue" darken={0} /> },
@@ -201,6 +208,7 @@ export const CUES: Cue[] = [
   { key: "md_fill_same_wood_same_hole", start: 808.49, dur: 0.8, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/md_fill_same_wood_same_hole.png" hue="red" darken={0} /> },
   { key: "cmp_bars_st_808", start: 808.49, dur: 6.5, kind: "bars", el: (d) => <BarCompare durationInFrames={d} bars={[{"label":"Poste crudo enterrado","value":15,"display":"3-4 años","tone":"danger"},{"label":"Poste blindado","value":100,"display":"20-30 años","winner":true}]} title="El poste: sin tratar vs blindado" hue="red" /> },
   { key: "md_fill_none_expensive_hard", start: 823, dur: 2.45, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/md_fill_none_expensive_hard.png" hue="red" darken={0} /> },
+  { key: "md_tomas_pausa", start: 825.15, dur: 1.62, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/md_tomas_pausa.png" hue="red" kicker="Nadie te lo cuenta" darken={0} /> },
   { key: "md_cheap_easy_hidden_tricks", start: 826.47, dur: 7, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/md_cheap_easy_hidden_tricks.mp4" hue="blue" darken={0} /> },
   { key: "cmp_chips_16_2", start: 834.13, dur: 5.44, kind: "chips", el: (d) => <ChipsCluster durationInFrames={d} image="real/md_new_lumber_upsell_bg.png" title="Por qué no te lo cuentan" chips={["Al negocio no le conviene","que tu deck dure 30 años","le conviene venderte madera nueva cada 5"]} hue="red" /> },
   { key: "cmp_splitlist_16_3", start: 839.17, dur: 7.2, kind: "splitlist", el: (d) => <SplitList durationInFrames={d} title="Los 40 arreglos, divididos así" items={["Madera y metal que no se arruinan","Plagas por centavos","Goteras y humedad","Arreglos del hogar y el auto"]} accent={A} /> },
@@ -272,38 +280,48 @@ export const CUES: Cue[] = [
 export const REFRAME: { start: number; end: number }[] = [];
 
 export const OVERLAYS: Cue[] = [
-  { key: "ov_oxrule_29", start: 29.43, dur: 5, kind: "oxrule", el: (d) => <OxRuleStrip durationInFrames={d} text="La misma madera. La misma lluvia. *¿Por qué una dura un siglo y la otra se pudre en cinco años?*" accent="amber" /> },
+  { key: "ov_mdslider_29", start: 29.43, dur: 5.2, kind: "mdslider", el: (d) => <MdBeforeAfterSlider durationInFrames={d} beforeImg="real/md_rotten_deck_soft.png" afterImg="real/md_old_barn_100yr.png" beforeLabel="Tu deck" afterLabel="El granero" beforeYears="5 años" afterYears="100 años" eyebrow="La misma madera, la misma lluvia" accent="amber" /> },
   { key: "burst_58", start: 58.36, dur: 4.2, kind: "oxstack", el: (d) => <OxPhotoStack durationInFrames={d} images={["real/md_linseed_oil_can_wood.png","real/md_two_peso_borate_liquid.png","real/md_charred_wood_torch_intro.png"]} captions={["Aceite de linaza","Borato de $2","Quemar la madera"]} accent="amber" /> },
-  { key: "ov_oxbefore_82", start: 81.56, dur: 4.4, kind: "oxbefore", el: (d) => <OxBeforeAfter durationInFrames={d} before="real/md_crumbling_wood_fibers.png" after="real/md_hard_healthy_wood_piece.png" accent="green" /> },
+  { key: "ov_mdtwoplanks_82", start: 81.56, dur: 6.5, kind: "mdtwoplanks", el: (d) => <MdTwoPlanks durationInFrames={d} title="Del mismo tablón" buried="2 años enterrados" note="La única diferencia: líquido de $2" accent="green" /> },
   { key: "ov_oxmethod_129", start: 129.05, dur: 4.8, kind: "oxmethod", el: (d) => <OxMethodCard durationInFrames={d} num="02" title="El borato de $2" chips={["Bórax + ácido bórico","Agua caliente, bien cargado","2 o 3 manos con pincel"]} cost="$2 el litro" accent="blue" /> },
   { key: "ov_mdname_165", start: 165.1, dur: 4.2, kind: "mdname", el: (d) => <MdNameTag durationInFrames={d} name="Tomás" role="El Constructor Libre" accent="green" /> },
-  { key: "ov_oxrule_206", start: 206.12, dur: 4.6, kind: "oxrule", el: (d) => <OxRuleStrip durationInFrames={d} text="La madera se pudre de *adentro hacia afuera*. Por fuera impecable, por dentro polvo." accent="red" /> },
+  { key: "ov_mdrotinside_206", start: 206.12, dur: 6, kind: "mdrotinside", el: (d) => <MdRotFromInside durationInFrames={d} title="Se pudre de adentro hacia afuera" accent="red" /> },
   { key: "ov_oxstat_217", start: 216.53, dur: 4, kind: "oxstat", el: (d) => <OxStatPop durationInFrames={d} value={0} label="la descubrís cuando el destornillador entra como en manteca" glyph="🪛" accent="red" /> },
+  { key: "tr_ink_228", start: 227.83, dur: 0.42, kind: "mdtrans", el: (d) => <MdTransition durationInFrames={d} variant="ink" accent="amber" /> },
   { key: "ov_oxrule_238", start: 238.07, dur: 4.6, kind: "oxrule", el: (d) => <OxRuleStrip durationInFrames={d} text="La madera no es vieja ni mala. Se pudre porque *un hongo se la come*." accent="amber" /> },
-  { key: "ov_oxside_252", start: 251.57, dur: 5.2, kind: "oxside", el: (d) => <OxSidePanel durationInFrames={d} image="real/md_water_the_key_control.png" title="El hongo necesita 4 cosas" lines={["Madera, oxígeno y temperatura: siempre están","La cuarta es agua: humedad sobre el 20%","Es la única que podés controlar"]} side="right" accent="blue" /> },
   { key: "burst_252", start: 251.57, dur: 4.2, kind: "oxstack", el: (d) => <OxPhotoStack durationInFrames={d} images={["real/md_fungus_eats_wood.png","real/md_water_the_key_control.png","real/md_dry_wood_no_fungus.png"]} captions={["Madera + aire","Temperatura","AGUA = la clave"]} accent="blue" /> },
+  { key: "ov_mdfungus_261", start: 260.96, dur: 6.2, kind: "mdfungus", el: (d) => <MdFungusNeeds durationInFrames={d} title="El hongo necesita 4 cosas" accent="green" /> },
   { key: "ov_oxrule_272", start: 272.12, dur: 4.4, kind: "oxrule", el: (d) => <OxRuleStrip durationInFrames={d} text="Toda la pelea es por *el agua*. La madera seca no se pudre." accent="blue" /> },
   { key: "ov_mdgauge_283", start: 282.88, dur: 4.8, kind: "mdgauge", el: (d) => <MdMoistureGauge durationInFrames={d} value={20} danger={20} label="Por encima del 20% el hongo vive" accent="blue" /> },
   { key: "ov_oxside_326", start: 326.33, dur: 5.2, kind: "oxside", el: (d) => <OxSidePanel durationInFrames={d} image="real/md_old_slow_growth_tree.png" title="Por qué antes duraba" lines={["Antes: árbol viejo, denso, casi no chupa agua","Hoy: madera joven, esponjosa, absorbe como toalla","Esa no la cambiás, pero sí la defensa"]} side="right" accent="amber" /> },
   { key: "ov_mdlife_340", start: 340.05, dur: 5, kind: "mdlife", el: (d) => <MdLifespanBar durationInFrames={d} title="Cuánto dura, según cómo la trates" low={{"label":"Joven y sin tratar","years":"5 años","value":5}} high={{"label":"Vieja y defendida","years":"100 años","value":100}} accent="amber" /> },
-  { key: "ov_oxrule_375", start: 374.7, dur: 4.6, kind: "oxrule", el: (d) => <OxRuleStrip durationInFrames={d} text="Regla número uno: *la madera seca no se pudre*." accent="amber" /> },
-  { key: "ov_oxmethod_396", start: 396.06, dur: 4.6, kind: "oxmethod", el: (d) => <OxMethodCard durationInFrames={d} num="01" title="Aceite de linaza" chips={["Para muebles y marcos","1ra mano diluida al 50%","Después aceite puro"]} cost="madera de adentro" accent="amber" /> },
+  { key: "ov_mdrulestamp_375", start: 374.7, dur: 5, kind: "mdrulestamp", el: (d) => <MdRuleStamp durationInFrames={d} text="LA MADERA SECA NO SE PUDRE" num="1" label="Regla" accent="amber" /> },
+  { key: "tr_grain_388", start: 388.26, dur: 0.42, kind: "mdtrans", el: (d) => <MdTransition durationInFrames={d} variant="grain" accent="amber" /> },
+  { key: "ov_mdkicker_396", start: 396.06, dur: 3.4, kind: "mdkicker", el: (d) => <MdChapterKicker durationInFrames={d} num="1" title="Aceite de linaza" kicker="Método" glyph="🪵" accent="amber" /> },
   { key: "ov_oxtag_399", start: 399.28, dur: 4, kind: "oxtag", el: (d) => <OxMaterialTag durationInFrames={d} name="El aceite de linaza" what="Llena los poros y endurece adentro: el agua resbala en vez de entrar" side="left" accent="amber" /> },
+  { key: "ov_oxmethod_412", start: 411.5, dur: 4.6, kind: "oxmethod", el: (d) => <OxMethodCard durationInFrames={d} num="01" title="Aceite de linaza" chips={["Para muebles y marcos","1ra mano diluida al 50%","Después aceite puro"]} cost="madera de adentro" accent="amber" /> },
+  { key: "ov_mdkicker_481", start: 481.46, dur: 3.2, kind: "mdkicker", el: (d) => <MdChapterKicker durationInFrames={d} num="2" title="El borato de $2" kicker="Método" glyph="🧪" accent="blue" /> },
   { key: "burst_487", start: 487.04, dur: 4.2, kind: "oxstack", el: (d) => <OxPhotoStack durationInFrames={d} images={["real/md_borax_box_cleaning.png","real/md_boric_acid_white_powder.png","real/md_dissolve_hot_water_clear.png"]} captions={["Bórax","Ácido bórico","Agua caliente"]} accent="blue" /> },
   { key: "ov_mdrecipe_506", start: 505.54, dur: 5, kind: "mdrecipe", el: (d) => <MdRecipeCard durationInFrames={d} title="La receta del borato" items={[{"ing":"Bórax","qty":"1 parte","glyph":"⬜"},{"ing":"Ácido bórico","qty":"1 parte","glyph":"◻"},{"ing":"Agua caliente","qty":"hasta saturar","glyph":"💧"}]} note="Mezclar hasta que el polvo asiente en el fondo del frasco" accent="blue" /> },
   { key: "ov_oxrule_548", start: 547.52, dur: 4.4, kind: "oxrule", el: (d) => <OxRuleStrip durationInFrames={d} text="El borato es *veneno adentro de la fibra*: el hongo y los bichos no tienen dónde empezar." accent="red" /> },
   { key: "ov_manualcard_593", start: 592.87, dur: 6, kind: "manualcard", el: (d) => <ManualCard durationInFrames={d} image="real/manual_cover.png" title="Manual de Reparaciones Caseras" desc="Los 40 arreglos de $1 a $5 del hogar, con la receta justa del borato y las medidas exactas." accent="amber" /> },
   { key: "ov_oxrule_628", start: 627.81, dur: 4.6, kind: "oxrule", el: (d) => <OxRuleStrip durationInFrames={d} text="Afuera: *borato primero, después sellar*. El veneno adentro, la barrera afuera." accent="blue" /> },
-  { key: "ov_oxmethod_644", start: 644.35, dur: 4.8, kind: "oxmethod", el: (d) => <OxMethodCard durationInFrames={d} num="03" title="Quemar la madera" chips={["Llama hasta capa de carbón","Cepillar lo suelto","Una mano de aceite"]} cost="gratis" accent="red" /> },
+  { key: "tr_grain_644", start: 644.23, dur: 0.42, kind: "mdtrans", el: (d) => <MdTransition durationInFrames={d} variant="grain" accent="red" /> },
+  { key: "ov_mdkicker_644", start: 644.35, dur: 3.4, kind: "mdkicker", el: (d) => <MdChapterKicker durationInFrames={d} num="3" title="Quemar la madera" kicker="Método" glyph="🔥" accent="red" /> },
   { key: "ov_mdchar_654", start: 654.2, dur: 5, kind: "mdchar", el: (d) => <MdCharReveal durationInFrames={d} title="La capa quemada protege" chips={["El carbón no es comida para el hongo","Repele el agua","Espanta a los insectos"]} accent="amber" /> },
   { key: "ov_oxstat_662", start: 662.37, dur: 4, kind: "oxstat", el: (d) => <OxStatPop durationInFrames={d} value={80} label="el revestimiento quemado japonés dura décadas a la intemperie" suffix=" años" glyph="🔥" accent="amber" /> },
-  { key: "ov_oxmethod_723", start: 722.62, dur: 4.8, kind: "oxmethod", el: (d) => <OxMethodCard durationInFrames={d} num="04" title="Postes y madera enterrada" chips={["No tocar la tierra: base de hormigón","Borato + sellado en la línea de tierra","Ripio en el fondo del pozo"]} cost="x10 de vida" accent="amber" /> },
+  { key: "tr_paper_723", start: 722.5, dur: 0.42, kind: "mdtrans", el: (d) => <MdTransition durationInFrames={d} variant="paper" accent="amber" /> },
+  { key: "ov_mdkicker_723", start: 722.62, dur: 3.4, kind: "mdkicker", el: (d) => <MdChapterKicker durationInFrames={d} num="4" title="Postes y madera enterrada" kicker="Método" glyph="🪵" accent="amber" /> },
   { key: "ov_mdpost_741", start: 740.64, dur: 5.4, kind: "mdpost", el: (d) => <MdPostGroundLine durationInFrames={d} title="Dónde se pudre el poste" accent="red" /> },
   { key: "burst_802", start: 801.82, dur: 4.2, kind: "oxstack", el: (d) => <OxPhotoStack durationInFrames={d} images={["real/md_burning_post_before_burying.png","real/md_brush_borate_onto_wood.png","real/md_gravel_drainage_post_hole.png"]} captions={["Punta quemada","Borato adentro","Ripio abajo"]} accent="amber" /> },
   { key: "ov_oxstat_808", start: 808.49, dur: 4.2, kind: "oxstat", el: (d) => <OxStatPop durationInFrames={d} value={30} label="un poste blindado pasa de durar 3-4 años a 20 o 30" suffix=" años" glyph="🪵" accent="green" /> },
+  { key: "tr_ink_858", start: 857.76, dur: 0.42, kind: "mdtrans", el: (d) => <MdTransition durationInFrames={d} variant="ink" accent="red" /> },
   { key: "ov_oxrule_872", start: 872.21, dur: 4.8, kind: "oxrule", el: (d) => <OxRuleStrip durationInFrames={d} text="El error: *sellar madera húmeda*. Encerrás el agua y el hongo come bajo la pintura." accent="red" /> },
-  { key: "ov_oxrule_932", start: 932.25, dur: 4.8, kind: "oxrule", el: (d) => <OxRuleStrip durationInFrames={d} text="El orden es *secar → borato → sellar*. Nunca al revés." accent="amber" /> },
-  { key: "ov_mdrecap_1003", start: 1002.97, dur: 5.4, kind: "mdrecap", el: (d) => <MdMethodRecap durationInFrames={d} title="Los 4 métodos, en una" methods={[{"num":"1","name":"Aceite de linaza","use":"muebles y madera de adentro","glyph":"🪵"},{"num":"2","name":"Borato de $2","use":"veneno contra hongo y bichos","glyph":"🧪"},{"num":"3","name":"Quemar la madera","use":"postes y lo rústico","glyph":"🔥"},{"num":"4","name":"Sellar en orden","use":"secar → borato → sellar","glyph":"🛡"}]} accent="amber" /> },
+  { key: "ov_mdsealtrap_912", start: 911.76, dur: 6.2, kind: "mdsealtrap", el: (d) => <MdSealTrap durationInFrames={d} title="Sellaste con la madera húmeda" accent="red" /> },
+  { key: "ov_mdrulestamp_932", start: 932.25, dur: 5, kind: "mdrulestamp", el: (d) => <MdRuleStamp durationInFrames={d} text="NUNCA SELLES MADERA HÚMEDA" num="2" label="Regla" accent="red" /> },
+  { key: "ov_mdrulestamp_1003", start: 1002.97, dur: 4.8, kind: "mdrulestamp", el: (d) => <MdRuleStamp durationInFrames={d} text="NO ERA MEJOR MADERA. LA DEFENDÍAN." num="★" label="La lección" accent="green" /> },
+  { key: "ov_mdrecap_1014", start: 1014.13, dur: 5.4, kind: "mdrecap", el: (d) => <MdMethodRecap durationInFrames={d} title="Los 4 métodos, en una" methods={[{"num":"1","name":"Aceite de linaza","use":"muebles y madera de adentro","glyph":"🪵"},{"num":"2","name":"Borato de $2","use":"veneno contra hongo y bichos","glyph":"🧪"},{"num":"3","name":"Quemar la madera","use":"postes y lo rústico","glyph":"🔥"},{"num":"4","name":"Sellar en orden","use":"secar → borato → sellar","glyph":"🛡"}]} accent="amber" /> },
+  { key: "tr_paper_1044", start: 1043.61, dur: 0.42, kind: "mdtrans", el: (d) => <MdTransition durationInFrames={d} variant="paper" accent="green" /> },
   { key: "ov_manualcard_1063", start: 1063.27, dur: 6, kind: "manualcard", el: (d) => <ManualCard durationInFrames={d} image="real/manual_cover.png" title="Manual de Reparaciones Caseras" desc="Los 40 arreglos, incluida la receta justa del borato, con los planos y las medidas exactas." chip="Accedé en la descripción" accent="amber" /> },
-  { key: "ov_mdnext_1104", start: 1103.82, dur: 5.5, kind: "mdnext", el: (d) => <MdNextCard durationInFrames={d} kicker="En el próximo video" title="La humedad que sube por la pared" image="real/md_rising_damp_next_video.png" accent="green" /> },
+  { key: "ov_mdendcard_1104", start: 1103.82, dur: 7, kind: "mdendcard", el: (d) => <MdEndcardManual durationInFrames={d} manualImg="real/manual_cover.png" nextImg="real/md_rising_damp_next_video.png" manualTitle="Manual de Reparaciones Caseras" nextKicker="En el próximo video" nextTitle="La humedad que sube por la pared" motto="La independencia no se compra, se construye." cta="Accedé en la descripción" accent="green" /> },
 ];
