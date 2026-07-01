@@ -119,15 +119,6 @@
    "hue": "amber"
   },
   {
-   "id": "ra_fill_not_because_bad",
-   "start": 30.92,
-   "dur": 5.88,
-   "kind": "raw",
-   "src": "real/ra_fill_not_because_bad.png",
-   "darken": 0,
-   "hue": "red"
-  },
-  {
    "id": "ra_wipe_scratch_with_rag",
    "start": 36.5,
    "dur": 1.04,
@@ -137,22 +128,22 @@
    "hue": "red"
   },
   {
-   "id": "ra_fill_scratch_wipes_rag",
-   "start": 37.24,
-   "dur": 2.2,
-   "kind": "raw",
-   "src": "real/ra_fill_scratch_wipes_rag.png",
-   "darken": 0,
-   "hue": "red"
-  },
-  {
    "id": "ra_old_body_man_portrait",
    "start": 40.12,
    "dur": 1.3,
    "kind": "raw",
-   "src": "broll/ra_old_body_man_portrait.mp4",
+   "src": "real/ra_old_body_man_portrait.png",
    "darken": 0,
    "hue": "amber"
+  },
+  {
+   "id": "ra_fill_gone_body_men",
+   "start": 41.12,
+   "dur": 4.83,
+   "kind": "raw",
+   "src": "real/ra_fill_gone_body_men.png",
+   "darken": 0,
+   "hue": "blue"
   },
   {
    "id": "ra_wallet_in_hand_pay",
@@ -220,7 +211,7 @@
    "start": 63.82,
    "dur": 2.51,
    "kind": "raw",
-   "src": "broll/ra_three_scratch_types.mp4",
+   "src": "real/ra_three_scratch_types.png",
    "darken": 0,
    "hue": "red"
   },
@@ -244,11 +235,38 @@
    "accent": "amber"
   },
   {
+   "id": "ra_fill_two_second_trick",
+   "start": 66.03,
+   "dur": 2.16,
+   "kind": "raw",
+   "src": "real/ra_fill_two_second_trick.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ra_fill_which_you_fix",
+   "start": 67.89,
+   "dur": 2.54,
+   "kind": "raw",
+   "src": "real/ra_fill_which_you_fix.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
    "id": "ra_white_scuff_mark_car",
    "start": 70.13,
    "dur": 4.34,
    "kind": "raw",
    "src": "broll/ra_white_scuff_mark_car.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ra_fill_mirror_scuff",
+   "start": 74.17,
+   "dur": 5.79,
+   "kind": "raw",
+   "src": "real/ra_fill_mirror_scuff.png",
    "darken": 0,
    "hue": "blue"
   },
@@ -267,6 +285,24 @@
    "dur": 4.06,
    "kind": "raw",
    "src": "broll/ra_stay_until_end_ruin.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ra_fill_ruin_paint_forever",
+   "start": 85.24,
+   "dur": 2.57,
+   "kind": "raw",
+   "src": "real/ra_fill_ruin_paint_forever.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ra_fill_this_changes_head",
+   "start": 87.51,
+   "dur": 3.38,
+   "kind": "raw",
+   "src": "real/ra_fill_this_changes_head.png",
    "darken": 0,
    "hue": "red"
   },
@@ -306,6 +342,15 @@
    ]
   },
   {
+   "id": "ra_fill_it_has_three",
+   "start": 92.6,
+   "dur": 0.87,
+   "kind": "raw",
+   "src": "real/ra_fill_it_has_three.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
    "id": "cmp_diagram_2_1",
    "start": 93.17,
    "dur": 1.72,
@@ -339,13 +384,22 @@
    "hue": "blue"
   },
   {
-   "id": "ra_clearcoat_hand_touch",
-   "start": 99.89,
-   "dur": 3.14,
+   "id": "ra_fill_color_paint_itself",
+   "start": 97.12,
+   "dur": 3.07,
    "kind": "raw",
-   "src": "real/ra_clearcoat_hand_touch.png",
+   "src": "real/ra_fill_color_paint_itself.png",
    "darken": 0,
-   "hue": "amber"
+   "hue": "red"
+  },
+  {
+   "id": "ra_fill_clearcoat_name",
+   "start": 102.73,
+   "dur": 0.8,
+   "kind": "raw",
+   "src": "real/ra_fill_clearcoat_name.png",
+   "darken": 0,
+   "hue": "red"
   },
   {
    "id": "ra_clearcoat_layer_shine",
@@ -364,6 +418,24 @@
    "src": "broll/ra_sun_rain_on_paint.mp4",
    "darken": 0,
    "hue": "blue"
+  },
+  {
+   "id": "ra_fill_protects_from_rain",
+   "start": 111.28,
+   "dur": 2.66,
+   "kind": "raw",
+   "src": "real/ra_fill_protects_from_rain.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ra_fill_secret_shop_hides",
+   "start": 113.64,
+   "dur": 5.87,
+   "kind": "raw",
+   "src": "real/ra_fill_secret_shop_hides.png",
+   "darken": 0,
+   "hue": "amber"
   },
   {
    "id": "cmp_diagram_3_0",
@@ -445,15 +517,6 @@
    "image": "real/ra_clearcoat_layer_shine.png"
   },
   {
-   "id": "ra_scratch_buffed_out_gone",
-   "start": 133.06,
-   "dur": 4.79,
-   "kind": "raw",
-   "src": "real/ra_scratch_buffed_out_gone.png",
-   "darken": 0,
-   "hue": "amber"
-  },
-  {
    "id": "ov_oxbefore_133",
    "start": 133.06,
    "dur": 4.4,
@@ -493,6 +556,15 @@
    "accent": "amber"
   },
   {
+   "id": "ra_fill_worth_gold_trick",
+   "start": 149.57,
+   "dur": 1.17,
+   "kind": "raw",
+   "src": "real/ra_fill_worth_gold_trick.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
    "id": "ra_nail_across_scratch",
    "start": 150.44,
    "dur": 2.29,
@@ -519,6 +591,15 @@
    "accent": "amber"
   },
   {
+   "id": "ra_fill_slowly_crossing",
+   "start": 152.43,
+   "dur": 2.11,
+   "kind": "raw",
+   "src": "real/ra_fill_slowly_crossing.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
    "id": "ra_nail_glides_smooth",
    "start": 154.24,
    "dur": 2.59,
@@ -526,6 +607,15 @@
    "src": "broll/ra_nail_glides_smooth.mp4",
    "darken": 0,
    "hue": "amber"
+  },
+  {
+   "id": "ra_fill_easy_ones",
+   "start": 156.53,
+   "dur": 4.1,
+   "kind": "raw",
+   "src": "real/ra_fill_easy_ones.png",
+   "darken": 0,
+   "hue": "red"
   },
   {
    "id": "ra_ten_minutes_yourself",
@@ -541,9 +631,18 @@
    "start": 162.6,
    "dur": 3.14,
    "kind": "raw",
-   "src": "real/ra_nail_catches_slightly.png",
+   "src": "broll/ra_nail_catches_slightly.mp4",
    "darken": 0,
    "hue": "blue"
+  },
+  {
+   "id": "ra_fill_reached_color_level",
+   "start": 165.44,
+   "dur": 4.15,
+   "kind": "raw",
+   "src": "real/ra_fill_reached_color_level.png",
+   "darken": 0,
+   "hue": "amber"
   },
   {
    "id": "ra_nail_deep_catches_metal",
@@ -568,9 +667,18 @@
    "start": 182.44,
    "dur": 2.03,
    "kind": "raw",
-   "src": "broll/ra_do_the_nail_first.mp4",
+   "src": "real/ra_do_the_nail_first.png",
    "darken": 0,
    "hue": "blue"
+  },
+  {
+   "id": "ra_fill_before_call_anyone",
+   "start": 184.17,
+   "dur": 7,
+   "kind": "raw",
+   "src": "real/ra_fill_before_call_anyone.png",
+   "darken": 0,
+   "hue": "red"
   },
   {
    "id": "ra_almost_paid_500",
@@ -693,11 +801,11 @@
    "hue": "red"
   },
   {
-   "id": "ra_cheap_polish_pot",
-   "start": 218.03,
-   "dur": 2.37,
+   "id": "ra_fill_ask_pulimento",
+   "start": 211.9,
+   "dur": 4.02,
    "kind": "raw",
-   "src": "real/ra_cheap_polish_pot.png",
+   "src": "real/ra_fill_ask_pulimento.png",
    "darken": 0,
    "hue": "blue"
   },
@@ -721,7 +829,7 @@
    "start": 230.25,
    "dur": 6.14,
    "kind": "raw",
-   "src": "broll/ra_creamy_between_fingers.mp4",
+   "src": "real/ra_creamy_between_fingers.png",
    "darken": 0,
    "hue": "red"
   },
@@ -772,6 +880,15 @@
    "hue": "red"
   },
   {
+   "id": "ra_fill_follow_scratch_dir",
+   "start": 254.72,
+   "dur": 2.62,
+   "kind": "raw",
+   "src": "real/ra_fill_follow_scratch_dir.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
    "id": "ra_not_in_circles_straight",
    "start": 257.04,
    "dur": 2.07,
@@ -808,6 +925,15 @@
    "hue": "blue"
   },
   {
+   "id": "ra_fill_drove_crazy_gone",
+   "start": 273.07,
+   "dur": 3.08,
+   "kind": "raw",
+   "src": "real/ra_fill_drove_crazy_gone.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
    "id": "ra_handwritten_repair_notes",
    "start": 279.17,
    "dur": 7,
@@ -833,7 +959,25 @@
    "start": 286.36,
    "dur": 5.14,
    "kind": "raw",
-   "src": "broll/ra_notes_scratch_headlight_rust.mp4",
+   "src": "real/ra_notes_scratch_headlight_rust.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ra_fill_wood_rust_leaks",
+   "start": 291.2,
+   "dur": 7,
+   "kind": "raw",
+   "src": "real/ra_fill_wood_rust_leaks.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ra_fill_exact_measures_note",
+   "start": 299.42,
+   "dur": 7,
+   "kind": "raw",
+   "src": "real/ra_fill_exact_measures_note.png",
    "darken": 0,
    "hue": "blue"
   },
@@ -856,6 +1000,15 @@
    "hue": "red"
   },
   {
+   "id": "ra_fill_industry_prefers",
+   "start": 313.53,
+   "dur": 5.86,
+   "kind": "raw",
+   "src": "real/ra_fill_industry_prefers.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
    "id": "ra_link_below_description",
    "start": 319.09,
    "dur": 5.96,
@@ -863,6 +1016,15 @@
    "src": "broll/ra_link_below_description.mp4",
    "darken": 0,
    "hue": "blue"
+  },
+  {
+   "id": "ra_fill_still_the_best",
+   "start": 324.75,
+   "dur": 6.07,
+   "kind": "raw",
+   "src": "real/ra_fill_still_the_best.png",
+   "darken": 0,
+   "hue": "red"
   },
   {
    "id": "ra_scratch_reached_color",
@@ -914,6 +1076,15 @@
    ]
   },
   {
+   "id": "ra_fill_not_repaint_panic",
+   "start": 336.68,
+   "dur": 6.04,
+   "kind": "raw",
+   "src": "real/ra_fill_not_repaint_panic.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
    "id": "ra_replace_lost_paint_seal",
    "start": 342.42,
    "dur": 4.16,
@@ -930,6 +1101,15 @@
    "src": "real/ra_touchup_paint_pens.png",
    "darken": 0,
    "hue": "red"
+  },
+  {
+   "id": "ra_fill_exact_color_car",
+   "start": 352.72,
+   "dur": 7,
+   "kind": "raw",
+   "src": "real/ra_fill_exact_color_car.png",
+   "darken": 0,
+   "hue": "blue"
   },
   {
    "id": "cmp_diagram_8_3",
@@ -956,6 +1136,24 @@
    "hue": "amber"
   },
   {
+   "id": "ra_fill_under_the_hood",
+   "start": 365.99,
+   "dur": 3.05,
+   "kind": "raw",
+   "src": "real/ra_fill_under_the_hood.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ra_fill_write_code_ask",
+   "start": 368.74,
+   "dur": 3.66,
+   "kind": "raw",
+   "src": "real/ra_fill_write_code_ask.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
    "id": "ra_identical_color_match",
    "start": 372.1,
    "dur": 5.99,
@@ -965,11 +1163,20 @@
    "hue": "red"
   },
   {
+   "id": "ra_fill_manual_where_plate",
+   "start": 377.79,
+   "dur": 7,
+   "kind": "raw",
+   "src": "real/ra_fill_manual_where_plate.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
    "id": "ra_dont_glob_touchup",
    "start": 386.86,
    "dur": 4.55,
    "kind": "raw",
-   "src": "broll/ra_dont_glob_touchup.mp4",
+   "src": "real/ra_dont_glob_touchup.png",
    "darken": 0,
    "hue": "amber"
   },
@@ -1011,6 +1218,15 @@
    "hue": "amber"
   },
   {
+   "id": "ra_fill_flush_with_rest",
+   "start": 402.3,
+   "dur": 5.79,
+   "kind": "raw",
+   "src": "real/ra_fill_flush_with_rest.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
    "id": "ra_glob_makes_bump",
    "start": 407.79,
    "dur": 5.56,
@@ -1027,6 +1243,15 @@
    "src": "broll/ra_clearcoat_over_seal.mp4",
    "darken": 0,
    "hue": "blue"
+  },
+  {
+   "id": "ra_fill_seal_and_polish",
+   "start": 416.74,
+   "dur": 2.55,
+   "kind": "raw",
+   "src": "real/ra_fill_seal_and_polish.png",
+   "darken": 0,
+   "hue": "amber"
   },
   {
    "id": "ra_five_not_five_hundred",
@@ -1063,6 +1288,15 @@
    "dur": 3.82,
    "kind": "raw",
    "src": "real/ra_white_transfer_mark.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ra_fill_stuck_on_paint",
+   "start": 452.35,
+   "dur": 1.97,
+   "kind": "raw",
+   "src": "real/ra_fill_stuck_on_paint.png",
    "darken": 0,
    "hue": "blue"
   },
@@ -1121,6 +1355,15 @@
    "hue": "blue"
   },
   {
+   "id": "ra_fill_resting_not_in",
+   "start": 465.4,
+   "dur": 4.16,
+   "kind": "raw",
+   "src": "real/ra_fill_resting_not_in.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
    "id": "ra_polish_scuff_off_easy",
    "start": 469.26,
    "dur": 3.46,
@@ -1128,6 +1371,15 @@
    "src": "broll/ra_polish_scuff_off_easy.mp4",
    "darken": 0,
    "hue": "amber"
+  },
+  {
+   "id": "ra_fill_mild_products",
+   "start": 472.42,
+   "dur": 2.85,
+   "kind": "raw",
+   "src": "real/ra_fill_mild_products.png",
+   "darken": 0,
+   "hue": "red"
   },
   {
    "id": "ra_alcohol_corner_test",
@@ -1139,11 +1391,29 @@
    "hue": "red"
   },
   {
+   "id": "ra_fill_test_corner_first",
+   "start": 478.68,
+   "dur": 2.33,
+   "kind": "raw",
+   "src": "real/ra_fill_test_corner_first.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
    "id": "ra_scuff_gone_paint_intact",
    "start": 480.71,
    "dur": 4.11,
    "kind": "raw",
    "src": "broll/ra_scuff_gone_paint_intact.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ra_fill_intact_no_scratch",
+   "start": 484.52,
+   "dur": 3.16,
+   "kind": "raw",
+   "src": "real/ra_fill_intact_no_scratch.png",
    "darken": 0,
    "hue": "blue"
   },
@@ -1196,6 +1466,15 @@
    "dur": 2.96,
    "kind": "raw",
    "src": "broll/ra_toothpaste_on_scratch.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ra_fill_why_it_works",
+   "start": 507.27,
+   "dur": 2.34,
+   "kind": "raw",
+   "src": "real/ra_fill_why_it_works.png",
    "darken": 0,
    "hue": "amber"
   },
@@ -1256,7 +1535,7 @@
    "start": 536.02,
    "dur": 4.1,
    "kind": "raw",
-   "src": "broll/ra_dont_believe_videos.mp4",
+   "src": "real/ra_dont_believe_videos.png",
    "darken": 0,
    "hue": "blue"
   },
@@ -1266,6 +1545,15 @@
    "dur": 3.5,
    "kind": "raw",
    "src": "real/ra_wd40_can_scratch.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ra_fill_no_scratch_wd40",
+   "start": 543.02,
+   "dur": 3.95,
+   "kind": "raw",
+   "src": "real/ra_fill_no_scratch_wd40.png",
    "darken": 0,
    "hue": "amber"
   },
@@ -1341,6 +1629,15 @@
    ]
   },
   {
+   "id": "ra_fill_dont_forget_oil",
+   "start": 569.83,
+   "dur": 3.77,
+   "kind": "raw",
+   "src": "real/ra_fill_dont_forget_oil.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
    "id": "ra_nail_polish_touchup_recap",
    "start": 573.3,
    "dur": 7,
@@ -1348,6 +1645,15 @@
    "src": "broll/ra_nail_polish_touchup_recap.mp4",
    "darken": 0,
    "hue": "blue"
+  },
+  {
+   "id": "ra_fill_honest_part_now",
+   "start": 584.68,
+   "dur": 7,
+   "kind": "raw",
+   "src": "real/ra_fill_honest_part_now.png",
+   "darken": 0,
+   "hue": "amber"
   },
   {
    "id": "ra_deep_scratch_to_metal",
@@ -1411,11 +1717,29 @@
    "hue": "amber"
   },
   {
+   "id": "ra_fill_rust_in_weeks",
+   "start": 625.4,
+   "dur": 4.43,
+   "kind": "raw",
+   "src": "real/ra_fill_rust_in_weeks.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
    "id": "ra_rust_eats_the_body",
    "start": 629.53,
    "dur": 2.03,
    "kind": "raw",
    "src": "broll/ra_rust_eats_the_body.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ra_fill_truly_expensive",
+   "start": 631.26,
+   "dur": 3.76,
+   "kind": "raw",
+   "src": "real/ra_fill_truly_expensive.png",
    "darken": 0,
    "hue": "red"
   },
@@ -1429,6 +1753,15 @@
    "hue": "blue"
   },
   {
+   "id": "ra_fill_clean_deep_scratch",
+   "start": 641.33,
+   "dur": 3.48,
+   "kind": "raw",
+   "src": "real/ra_fill_clean_deep_scratch.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
    "id": "ra_cover_metal_touchup",
    "start": 644.51,
    "dur": 7,
@@ -1436,6 +1769,24 @@
    "src": "broll/ra_cover_metal_touchup.mp4",
    "darken": 0,
    "hue": "amber"
+  },
+  {
+   "id": "ra_fill_metal_not_touch_air",
+   "start": 652.34,
+   "dur": 3.42,
+   "kind": "raw",
+   "src": "real/ra_fill_metal_not_touch_air.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ra_fill_not_perfect_time",
+   "start": 655.46,
+   "dur": 2.71,
+   "kind": "raw",
+   "src": "real/ra_fill_not_perfect_time.png",
+   "darken": 0,
+   "hue": "red"
   },
   {
    "id": "ra_buys_time_stops_rust",
@@ -1451,7 +1802,7 @@
    "start": 663.44,
    "dur": 7,
    "kind": "raw",
-   "src": "broll/ra_cover_bare_metal_always.mp4",
+   "src": "real/ra_cover_bare_metal_always.png",
    "darken": 0,
    "hue": "blue"
   },
@@ -1471,6 +1822,15 @@
    "dur": 2.54,
    "kind": "raw",
    "src": "broll/ra_now_the_mistake.mp4",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
+   "id": "ra_fill_ruin_forever_warn",
+   "start": 673.58,
+   "dur": 3.11,
+   "kind": "raw",
+   "src": "real/ra_fill_ruin_forever_warn.png",
    "darken": 0,
    "hue": "blue"
   },
@@ -1524,6 +1884,15 @@
    "hue": "red"
   },
   {
+   "id": "ra_fill_old_rag_grit",
+   "start": 707.07,
+   "dur": 1.01,
+   "kind": "raw",
+   "src": "real/ra_fill_old_rag_grit.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
    "id": "ra_dirty_rag_grit_inside",
    "start": 707.78,
    "dur": 5.89,
@@ -1546,7 +1915,7 @@
    "start": 718.67,
    "dur": 0.8,
    "kind": "raw",
-   "src": "broll/ra_swirl_marks_sun.mp4",
+   "src": "real/ra_swirl_marks_sun.png",
    "darken": 0,
    "hue": "red"
   },
@@ -1562,6 +1931,15 @@
    "image": "real/ra_swirl_marks_sun.png"
   },
   {
+   "id": "ra_fill_circles_swirls",
+   "start": 722.91,
+   "dur": 4.61,
+   "kind": "raw",
+   "src": "real/ra_fill_circles_swirls.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
    "id": "ra_do_it_wet_straight",
    "start": 727.22,
    "dur": 6.36,
@@ -1571,11 +1949,20 @@
    "hue": "blue"
   },
   {
+   "id": "ra_fill_wet_clean_microfiber",
+   "start": 733.28,
+   "dur": 4.37,
+   "kind": "raw",
+   "src": "real/ra_fill_wet_clean_microfiber.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
    "id": "ra_straight_never_circles",
    "start": 737.35,
    "dur": 7,
    "kind": "raw",
-   "src": "broll/ra_straight_never_circles.mp4",
+   "src": "real/ra_straight_never_circles.png",
    "darken": 0,
    "hue": "amber"
   },
@@ -1647,11 +2034,29 @@
    ]
   },
   {
+   "id": "ra_fill_when_you_check",
+   "start": 755.51,
+   "dur": 2.41,
+   "kind": "raw",
+   "src": "real/ra_fill_when_you_check.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
    "id": "ra_first_the_nail",
    "start": 757.62,
    "dur": 5.22,
    "kind": "raw",
    "src": "broll/ra_first_the_nail.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ra_fill_smooth_is_barniz",
+   "start": 762.54,
+   "dur": 7,
+   "kind": "raw",
+   "src": "real/ra_fill_smooth_is_barniz.png",
    "darken": 0,
    "hue": "red"
   },
@@ -1674,11 +2079,29 @@
    "hue": "amber"
   },
   {
+   "id": "ra_fill_patience_seal_polish",
+   "start": 786.17,
+   "dur": 4.35,
+   "kind": "raw",
+   "src": "real/ra_fill_patience_seal_polish.png",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
    "id": "ra_fourth_white_rubs_off",
    "start": 790.22,
    "dur": 3.34,
    "kind": "raw",
    "src": "broll/ra_fourth_white_rubs_off.mp4",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
+   "id": "ra_fill_stuck_paint_rubs",
+   "start": 793.26,
+   "dur": 3.96,
+   "kind": "raw",
+   "src": "real/ra_fill_stuck_paint_rubs.png",
    "darken": 0,
    "hue": "red"
   },
@@ -1692,11 +2115,29 @@
    "hue": "blue"
   },
   {
+   "id": "ra_fill_dont_waste_time",
+   "start": 802.79,
+   "dur": 4.18,
+   "kind": "raw",
+   "src": "real/ra_fill_dont_waste_time.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
    "id": "ra_sixth_cover_metal",
    "start": 806.67,
    "dur": 4.98,
    "kind": "raw",
    "src": "broll/ra_sixth_cover_metal.mp4",
+   "darken": 0,
+   "hue": "amber"
+  },
+  {
+   "id": "ra_fill_solve_at_home",
+   "start": 828.06,
+   "dur": 4.6,
+   "kind": "raw",
+   "src": "real/ra_fill_solve_at_home.png",
    "darken": 0,
    "hue": "amber"
   },
@@ -1730,6 +2171,15 @@
    "image": "real/ra_industry_wins_you_doubt.png"
   },
   {
+   "id": "ra_fill_need_the_shop",
+   "start": 846.71,
+   "dur": 7,
+   "kind": "raw",
+   "src": "real/ra_fill_need_the_shop.png",
+   "darken": 0,
+   "hue": "red"
+  },
+  {
    "id": "ra_two_dollar_ten_minutes",
    "start": 854.26,
    "dur": 2.8,
@@ -1737,6 +2187,15 @@
    "src": "broll/ra_two_dollar_ten_minutes.mp4",
    "darken": 0,
    "hue": "amber"
+  },
+  {
+   "id": "ra_fill_someone_decided",
+   "start": 856.76,
+   "dur": 5.55,
+   "kind": "raw",
+   "src": "real/ra_fill_someone_decided.png",
+   "darken": 0,
+   "hue": "blue"
   },
   {
    "id": "ra_manual_cover_repairs",
@@ -1755,6 +2214,15 @@
    "src": "broll/ra_exact_measures_steps.mp4",
    "darken": 0,
    "hue": "blue"
+  },
+  {
+   "id": "ra_fill_no_depend_anyone",
+   "start": 875.91,
+   "dur": 4.45,
+   "kind": "raw",
+   "src": "real/ra_fill_no_depend_anyone.png",
+   "darken": 0,
+   "hue": "amber"
   },
   {
    "id": "ra_guarantee_refund",
@@ -1777,6 +2245,15 @@
    "image": "real/ra_manual_cover_repairs.png"
   },
   {
+   "id": "ra_fill_refund_every_peso",
+   "start": 883.77,
+   "dur": 7,
+   "kind": "raw",
+   "src": "real/ra_fill_refund_every_peso.png",
+   "darken": 0,
+   "hue": "blue"
+  },
+  {
    "id": "ov_manualcard_887",
    "start": 886.79,
    "dur": 6,
@@ -1797,6 +2274,15 @@
    "src": "broll/ra_next_video_ac.mp4",
    "darken": 0,
    "hue": "red"
+  },
+  {
+   "id": "ra_fill_ac_no_ripoff",
+   "start": 902.19,
+   "dur": 4.69,
+   "kind": "raw",
+   "src": "real/ra_fill_ac_no_ripoff.png",
+   "darken": 0,
+   "hue": "blue"
   },
   {
    "id": "ra_independence_built",

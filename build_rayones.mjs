@@ -42,14 +42,14 @@ const SECTIONS = [
     C("ra_shop_wont_tell_you", "mechanic at counter not telling customer the truth", "the shop will never tell you this", { at: "en el taller no te lo van a contar nunca" }),
     I("ra_wipe_scratch_with_rag", "wiping a light car scratch away with a cloth rag", "a scratch that wipes off with a rag", { at: "un aranazo que se borra con un trapo" }),
     G("ra_tomas_hook", { kicker: "Lo que el taller no te cuenta" }),
-    C("ra_old_body_man_portrait", "old experienced auto body man in overalls portrait", "an old body-shop man taught it to me", { at: "un chapista viejo" }),
+    I("ra_old_body_man_portrait", "old experienced auto body man in overalls portrait", "an old body-shop man taught it to me", { at: "un chapista viejo" }),
   ]},
   // ░░ 2) EL CHAPISTA VIEJO / promesa ░░
   { a: "listo para pagar una locura", beats: [
     C("ra_wallet_in_hand_pay", "hand holding wallet about to pay big car repair bill", "wallet in hand, ready to pay a crazy amount", { at: "listo para pagar una locura" }),
     C("ra_man_stops_you_gesture", "older man raising hand to stop someone save your money", "he stopped me and said one thing: save your money", { at: "guarda la plata" }),
     I("ra_fingernail_on_scratch", "fingernail dragging across a car paint scratch close up", "it comes out with your nail and two things at home", { at: "eso se saca con la una y dos cosas que ya tenes en casa" }),
-    C("ra_three_scratch_types", "comparing three different depths of car paint scratches", "you'll learn the three types of scratch", { at: "distinguir los tres tipos de rayon" }),
+    I("ra_three_scratch_types", "comparing three different depths of car paint scratches", "you'll learn the three types of scratch", { at: "distinguir los tres tipos de rayon" }),
     C("ra_white_scuff_mark_car", "white scuff transfer mark on car paint from wall", "how to remove that white scuff mark", { at: "como sacar esa marca blanca" }),
     C("ra_scratch_car_worse_mistake", "hand rubbing car paint making swirl scratches worse", "the mistake that scratches the car even more", { at: "te raya el auto todavia mas" }),
     C("ra_stay_until_end_ruin", "finger pointing keep watching could ruin paint forever", "stay till the end: that point can ruin your paint forever", { at: "quedate hasta el final" }),
@@ -81,7 +81,7 @@ const SECTIONS = [
     C("ra_nail_catches_slightly", "fingernail catching slightly on a car paint scratch", "if the nail catches a bit, it reached the color", { at: "si la una se engancha apenas un poquito" }),
     C("ra_nail_deep_catches_metal", "fingernail dropping into a deep scratch down to metal car", "if the nail sinks in, the scratch reached the metal", { at: "y si la una se mete adentro" }),
     C("ra_deep_scratch_bare_metal", "deep car scratch exposing bare metal underneath paint", "that one reached the metal, needs something else", { at: "ese rayon llego hasta el metal" }),
-    C("ra_do_the_nail_first", "doing the fingernail test before buying anything car", "do this before buying anything, before calling anyone", { at: "hace esto antes que nada" }),
+    I("ra_do_the_nail_first", "doing the fingernail test before buying anything car", "do this before buying anything, before calling anyone", { at: "hace esto antes que nada" }),
     C("ra_almost_paid_500", "car owner about to overpay 500 dollars for tiny scratch", "you were about to pay 500 for a rag fix", { at: "vos estabas a punto de pagar 500 dolares" }),
   ]},
   // ░░ 6) NIVEL 1 — pomada de pulir ░░
@@ -91,7 +91,7 @@ const SECTIONS = [
     C("ra_hardware_store_polish", "hardware store shelf with car polish rubbing compound", "at the hardware store, ask for pulimento or compound", { at: "en la ferreteria" }),
     I("ra_cheap_polish_pot", "small cheap pot of polishing paste on workbench", "costs two or three dollars, a pot lasts years", { at: "un pote que te dura anos" }),
     X({ kind: "diagram", at: "es una pasta con un abrasivo finito", eyebrow: "Cómo trabaja la pomada de pulir", slides: [{ image: dg("dg_ra_polish", "Diagrama: primer plano de la pomada de pulir con una lupa que revela las particulas ABRASIVAS finisimas adentro, y al lado esas particulas desgastando apenas la capa de BARNIZ alrededor del rayon hasta emparejarla, como una lija suavisima. Etiquetas 'abrasivo finito', 'desgasta el barniz alrededor del rayon y lo empareja'. Transmite que no pinta, solo pule y nivela el barniz."), eyebrow: "Un abrasivo finito que empareja el barniz" }] }),
-    C("ra_creamy_between_fingers", "creamy polishing paste rubbed between fingers texture", "like sandpaper, but so soft it feels creamy", { at: "como una lija pero tan suave" }),
+    I("ra_creamy_between_fingers", "creamy polishing paste rubbed between fingers texture", "like sandpaper, but so soft it feels creamy", { at: "como una lija pero tan suave" }),
     C("ra_wash_area_first", "washing the car panel area before polishing a scratch", "the method: wash the area well first", { at: "lavas bien la zona primero" }),
     C("ra_dust_becomes_sandpaper", "dust and grit on car paint acting like sandpaper", "dirt turns into sandpaper and scratches more", { at: "esa tierra se convierte en lija y te raya mas" }),
   ]},
@@ -107,7 +107,7 @@ const SECTIONS = [
   // ░░ 8) INJERTO 1 — la guía / manual ░░
   { a: "es uno de los arreglos que junte en una guia que arme", beats: [
     C("ra_handwritten_repair_notes", "handwritten notebook of home repair tricks and measures", "this is one of the fixes I gathered in a guide I made", { at: "es uno de los arreglos que junte en una guia que arme" }),
-    C("ra_notes_scratch_headlight_rust", "notebook pages sketches car scratch headlight rust wood", "for years I wrote down each of these tricks", { at: "fui anotando cada uno de estos trucos" }),
+    I("ra_notes_scratch_headlight_rust", "notebook pages sketches car scratch headlight rust wood", "for years I wrote down each of these tricks", { at: "fui anotando cada uno de estos trucos" }),
     I("ra_manual_stacked_fixes", "home repair manual with forty cheap fixes stacked", "forty fixes gathered in a single manual", { at: "40 de esos arreglos en un solo manual" }),
     C("ra_industry_hides_fixes", "industry hiding cheap DIY repairs to keep charging", "the one to five dollar fixes the industry hides", { at: "los 40 arreglos de un dolar a cinco dolares" }),
     C("ra_link_below_description", "phone showing link in video description and pinned comment", "the link's below, in the description and pinned comment", { at: "te dejo el link abajo" }),
@@ -123,7 +123,7 @@ const SECTIONS = [
   ]},
   // ░░ 10) RETOQUE EN CAPAS ░░
   { a: "el truco para que quede bien no es embadurnar", beats: [
-    C("ra_dont_glob_touchup", "warning against globbing too much touch up paint on car", "the trick isn't to smear it on, it's the opposite", { at: "el truco para que quede bien no es embadurnar" }),
+    I("ra_dont_glob_touchup", "warning against globbing too much touch up paint on car", "the trick isn't to smear it on, it's the opposite", { at: "el truco para que quede bien no es embadurnar" }),
     I("ra_toothpick_tiny_drop", "toothpick applying tiny drop of touch up paint in scratch", "with a toothpick, a fine little drop inside the scratch", { at: "con un palillo o con la punta del pincelito" }),
     C("ra_thin_drop_inside_scratch", "fine drop of paint placed precisely inside car scratch", "a thin drop right inside, without going past the edges", { at: "pones una gotita finita justo adentro del rayon" }),
     C("ra_layers_dry_between", "building touch up paint in thin layers letting dry car", "let it dry, another drop, in layers, level with the rest", { at: "pones otra gotita despacio en capas" }),
@@ -150,7 +150,7 @@ const SECTIONS = [
     C("ra_worse_version_polish", "toothpaste as a worse expensive version of car polish", "it's a worse version of what I already showed you", { at: "una version cara y peor de lo que ya te mostre" }),
     C("ra_tiny_scratch_emergency", "toothpaste on a very tiny car scratch emergency fix", "for a tiny scratch, in an emergency, it gets you by", { at: "para un rayon muy chiquito en una emergencia" }),
     C("ra_weak_sandpaper_not_magic", "toothpaste as weak sandpaper not a magic scratch cure", "it's not magic, just weak sandpaper", { at: "es apenas una lija floja" }),
-    C("ra_dont_believe_videos", "phone with fake toothpaste scratch hack video skeptical", "don't believe videos selling it as the secret of the universe", { at: "no le creas a los videos" }),
+    I("ra_dont_believe_videos", "phone with fake toothpaste scratch hack video skeptical", "don't believe videos selling it as the secret of the universe", { at: "no le creas a los videos" }),
   ]},
   // ░░ 13) MITOS — WD-40 ░░
   { a: "y el doble ud40 peor todavia", beats: [
@@ -170,7 +170,7 @@ const SECTIONS = [
     C("ra_cheap_play_meanwhile", "quick cheap protective fix for a deep car scratch meanwhile", "even for that, you have a cheap play meanwhile", { at: "tenes una jugada barata mientras tanto" }),
     C("ra_cover_metal_touchup", "dabbing touch up paint or clear coat to cover bare metal", "cover the bare metal with touch-up or clear coat", { at: "tapae el metal con una gotita de pintura de retoque" }),
     C("ra_buys_time_stops_rust", "sealed bare metal scratch buying time stopping rust car", "it buys time and stops the rust until you fix it right", { at: "le compra tiempo y frena el oxido" }),
-    C("ra_cover_bare_metal_always", "always cover bare metal on a car scratch as soon as possible", "cover bare metal, always, as soon as possible", { at: "tapar el metal desnudo siempre cuanto antes" }),
+    I("ra_cover_bare_metal_always", "always cover bare metal on a car scratch as soon as possible", "cover bare metal, always, as soon as possible", { at: "tapar el metal desnudo siempre cuanto antes" }),
   ]},
   // ░░ 15) EL ERROR — frotar en seco, en círculos ░░
   { a: "y ahora si el error", beats: [
@@ -179,9 +179,9 @@ const SECTIONS = [
     C("ra_dry_abrasive_scratches", "dry abrasive scratching car paint without lubrication", "dry, any abrasive scratches more without lubrication", { at: "sin lubricacion cualquier abrasivo raya de mas" }),
     C("ra_dirty_rag_grit_inside", "old dirty flannel rag full of grit and dust for car", "an old rag has dust and grit stuck in it", { at: "una franela que estuvo tirada juntando tierra" }),
     C("ra_grit_like_sandpaper", "grit in a cloth acting like sandpaper on car paint", "that grit is like taking sandpaper to the car", { at: "es como pasarle papel de lija al auto" }),
-    C("ra_swirl_marks_sun", "swirl marks on car paint catching sunlight worst", "circles make swirls, the worst in the sun and hardest to remove", { at: "esos remolinos son los que mas se notan" }),
+    I("ra_swirl_marks_sun", "swirl marks on car paint catching sunlight worst", "circles make swirls, the worst in the sun and hardest to remove", { at: "esos remolinos son los que mas se notan" }),
     C("ra_do_it_wet_straight", "polishing car wet in straight lines clean microfiber right", "do it the opposite: wet, clean microfiber, always straight", { at: "hacelo siempre al reves" }),
-    C("ra_straight_never_circles", "buffing car paint straight in one direction never circles", "always straight, one direction, never in circles", { at: "y siempre derecho en el mismo sentido nunca en circulos" }),
+    I("ra_straight_never_circles", "buffing car paint straight in one direction never circles", "always straight, one direction, never in circles", { at: "y siempre derecho en el mismo sentido nunca en circulos" }),
     C("ra_like_new_vs_swirls", "car looking like new versus full of swirl marks compare", "the difference between like-new and full of swirls", { at: "un auto que quedo como nuevo" }),
   ]},
   // ░░ 16) REPASO / PLAN COMPLETO ░░
