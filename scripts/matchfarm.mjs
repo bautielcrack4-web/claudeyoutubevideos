@@ -27,7 +27,7 @@ fs.rmSync(flat);
 
 // 2) disparar
 console.log("disparando match.yml ...");
-sh(`gh workflow run match.yml -f slug=${slug} -f chunks=${chunks}`);
+sh(`gh workflow run match.yml${process.env.FARM_REF ? ` --ref ${process.env.FARM_REF}` : ""} -f slug=${slug} -f chunks=${chunks}`);
 
 // 3) esperar y descargar
 execSync("sleep 8 2>/dev/null || ping -n 9 127.0.0.1 >NUL", { stdio: "ignore", shell: true });
