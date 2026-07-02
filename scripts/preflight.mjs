@@ -51,6 +51,7 @@ const KNOWN = new Set([
   "mdtwoplanks", "mdsealtrap", "mdrotinside", "mdrulestamp", "mdfungus", "mdslider", "mdkicker", "mdendcard", "mdtrans",
   "cmrecipe", "cmyears", "cmselfheal", "cmcure", "cmerror", "cmname",
   "slcapillary", "slsalt", "slseal", "slbarrier", "sllime", "sltwowalls", "slname",
+  "acgauge", "acports", "acoverfill", "acsteps", "accircuit", "acname",
   // otros kinds del switch de beatsheet ausentes del set original
   "ingredients", "numcard", "regrow", "lielist", "gridreveal", "growthtimeline", "kineticline", "blurreveal", "hugel", "olla", "floatcards", "layered",
 ]);

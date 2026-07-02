@@ -1108,6 +1108,19 @@ function renderEl(b) {
       return (`<SlTwoWalls durationInFrames={d}` + (b.title ? ` title=${j(b.title)}` : ``) + (b.buried ? ` buried=${j(b.buried)}` : ``) + (b.note ? ` note=${j(b.note)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
     case "slname":
       return (`<SlNameTag durationInFrames={d}` + (b.name ? ` name=${j(b.name)}` : ``) + (b.role ? ` role=${j(b.role)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    // ── SET DE PULIDO cine "acauto" (AcautoPolish): heroes propios del aire de auto/recarga ──
+    case "acgauge":
+      return (`<AcGauge durationInFrames={d}` + (b.title ? ` title=${j(b.title)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    case "acports":
+      return (`<AcPorts durationInFrames={d}` + (b.title ? ` title=${j(b.title)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    case "acoverfill":
+      return (`<AcOverfill durationInFrames={d}` + (b.title ? ` title=${j(b.title)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    case "acsteps":
+      return (`<AcSteps durationInFrames={d}` + (b.title ? ` title=${j(b.title)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    case "accircuit":
+      return (`<AcCircuit durationInFrames={d}` + (b.title ? ` title=${j(b.title)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    case "acname":
+      return (`<AcNameTag durationInFrames={d}` + (b.name ? ` name=${j(b.name)}` : ``) + (b.role ? ` role=${j(b.role)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
     default:
       return null; // talk
   }
@@ -1261,6 +1274,9 @@ if (kinds.has("manualcard")) imports.push(`import { ManualCard } from "./overlay
 { const slMap = { slcapillary: "SlCapillary", slsalt: "SlSalt", slseal: "SlSeal", slbarrier: "SlBarrier", sllime: "SlLime", sltwowalls: "SlTwoWalls", slname: "SlNameTag" };
   const slUsed = Object.entries(slMap).filter(([k]) => kinds.has(k)).map(([, v]) => v);
   if (slUsed.length) imports.push(`import { ${slUsed.join(", ")} } from "./overlays/SalitrePolish";`); }
+{ const acMap = { acgauge: "AcGauge", acports: "AcPorts", acoverfill: "AcOverfill", acsteps: "AcSteps", accircuit: "AcCircuit", acname: "AcNameTag" };
+  const acUsed = Object.entries(acMap).filter(([k]) => kinds.has(k)).map(([, v]) => v);
+  if (acUsed.length) imports.push(`import { ${acUsed.join(", ")} } from "./overlays/AcautoPolish";`); }
 const palLine = usedPal.size
   ? `\nconst ${[...usedPal].map((t) => `${t} = ${palTok[t]}`).join(", ")};\n`
   : "";

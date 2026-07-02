@@ -54,6 +54,7 @@ import { MainFaros, TOTAL_FRAMES_FAROS } from "./VideoEdit/Main_faros";
 import { MainMadera, TOTAL_FRAMES_MADERA } from "./VideoEdit/Main_madera";
 import { MainCemento, TOTAL_FRAMES_CEMENTO } from "./VideoEdit/Main_cemento";
 import { MainSalitre, TOTAL_FRAMES_SALITRE } from "./VideoEdit/Main_salitre";
+import { MainAcauto, TOTAL_FRAMES_ACAUTO } from "./VideoEdit/Main_acauto";
 import { MainRayones, TOTAL_FRAMES_RAYONES } from "./VideoEdit/Main_rayones";
 // import { MainCafe, TOTAL_FRAMES_CAFE } from "./VideoEdit/Main_cafe"; // untracked: rompe el farm
 // import { MainAmish, TOTAL_FRAMES_AMISH } from "./VideoEdit/Main_amish"; // untracked: rompe el farm
@@ -339,6 +340,8 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="Cemento" component={MainCemento} durationInFrames={TOTAL_FRAMES_CEMENTO} fps={30} width={1920} height={1080} />
       {/* Humedad/salitre en la pared — "La Humedad Que Sube NUNCA Vuelve" · AVATAR Tomás · clips-first */}
       <Composition id="Salitre" component={MainSalitre} durationInFrames={TOTAL_FRAMES_SALITRE} fps={30} width={1920} height={1080} />
+      {/* AC del auto — "El Aire De Tu Auto Enfría Como Nuevo Con Esto De $10" · AVATAR Tomás · clips-first */}
+      <Composition id="Acauto" component={MainAcauto} durationInFrames={TOTAL_FRAMES_ACAUTO} fps={30} width={1920} height={1080} />
       {/* Reviví tu tierra muerta con $1 (estiércol, bajo esfuerzo) */}
       <Composition
         id="Estiercol"
