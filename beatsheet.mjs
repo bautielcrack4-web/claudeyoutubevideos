@@ -391,6 +391,14 @@ function renderEl(b) {
         (b.title ? ` title=${j(b.title)}` : ``) +
         ` />`
       );
+    case "perox":
+      return (
+        `<PeroxidoDiagram durationInFrames={d}` +
+        (b.mode ? ` mode=${j(b.mode)}` : ``) +
+        (b.accent ? ` accent=${j(b.accent)}` : ``) +
+        (b.title ? ` title=${j(b.title)}` : ``) +
+        ` />`
+      );
     case "gridreveal":
       return (
         `<GridReveal durationInFrames={d} tiles={${j(b.tiles || [])}}` +
@@ -1239,6 +1247,7 @@ if (kinds.has("kineticline")) imports.push(`import { KineticLine } from "./scene
 if (kinds.has("blurreveal")) imports.push(`import { BlurReveal } from "./scenes/BlurReveal";`);
 if (kinds.has("hugel")) imports.push(`import { HugelDiagram } from "./scenes/HugelDiagram";`);
 if (kinds.has("olla")) imports.push(`import { OllaDiagram } from "./scenes/OllaDiagram";`);
+if (kinds.has("perox")) imports.push(`import { PeroxidoDiagram } from "./scenes/PeroxidoDiagram";`);
 if (kinds.has("floatcards")) imports.push(`import { FloatCards } from "./scenes/FloatCards";`);
 // ── set pieces de imagen/clip ──
 if (kinds.has("expeditionmap")) imports.push(`import { ExpeditionMap } from "./setpieces/ExpeditionMap";`);

@@ -21,6 +21,7 @@ import { MainAbono, TOTAL_FRAMES_ABONO } from "./VideoEdit/Main_abono";
 import { MainChoclo, TOTAL_FRAMES_CHOCLO } from "./VideoEdit/Main_choclo";
 import { MainHugel, TOTAL_FRAMES_HUGEL } from "./VideoEdit/Main_hugel";
 import { MainOllas, TOTAL_FRAMES_OLLAS } from "./VideoEdit/Main_ollas";
+import { MainPeroxido, TOTAL_FRAMES_PEROXIDO } from "./VideoEdit/Main_peroxido";
 import { MainPeroxide, TOTAL_FRAMES_PEROXIDE } from "./VideoEdit/Main_peroxide";
 import { MainMoho, TOTAL_FRAMES_MOHO } from "./VideoEdit/Main_moho";
 import { MainAcpipe, TOTAL_FRAMES_ACPIPE } from "./VideoEdit/Main_acpipe";
@@ -213,6 +214,15 @@ export const RemotionRoot: React.FC = () => {
         id="Leche"
         component={MainLeche}
         durationInFrames={TOTAL_FRAMES_LECHE}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
+      {/* VIDEO ACTIVO — Agua oxigenada / 7 trucos (Levi Lapp Jardín · ES) */}
+      <Composition
+        id="Peroxido"
+        component={MainPeroxido}
+        durationInFrames={TOTAL_FRAMES_PEROXIDO}
         fps={30}
         width={1920}
         height={1080}
