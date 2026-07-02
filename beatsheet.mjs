@@ -179,6 +179,16 @@ function renderEl(b) {
         ` pages={${j(pages)}} />`
       );
     }
+    case "layered":
+      // REVELADO POR CAPAS con zoom (LayeredReveal): imagen principal + sub-revelados
+      // escalonados (cada uno con su atFrame LOCAL, ya calculado en build_madera).
+      return (
+        `<LayeredReveal durationInFrames={d} main={${j(b.main || {})}}` +
+        (b.subs ? ` subs={${j(b.subs)}}` : ``) +
+        (b.eyebrow ? ` eyebrow=${j(b.eyebrow)}` : ``) +
+        (b.accent ? ` accent=${j(b.accent)}` : ``) +
+        ` />`
+      );
     case "quote":
       return (
         `<KineticQuote durationInFrames={d}` +
@@ -1034,6 +1044,70 @@ function renderEl(b) {
       return (`<OxQuoteSplit durationInFrames={d} quote=${j(b.quote || "")} image=${j(b.image)}` + (b.attribution ? ` attribution=${j(b.attribution)}` : ``) + (b.side ? ` side=${j(b.side)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
     case "manualcard":
       return (`<ManualCard durationInFrames={d} image=${j(b.image || "real/manual_cover.png")}` + (b.title ? ` title=${j(b.title)}` : ``) + (b.desc ? ` desc=${j(b.desc)}` : ``) + (b.chip ? ` chip=${j(b.chip)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    // ── OVERLAYS A MEDIDA "madera" (MaderaCards): sobre el clip vivo + blur ──
+    case "mdgauge":
+      return (`<MdMoistureGauge durationInFrames={d}` + (b.value != null ? ` value={${b.value}}` : ``) + (b.danger != null ? ` danger={${b.danger}}` : ``) + (b.label ? ` label=${j(b.label)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    case "mdlife":
+      return (`<MdLifespanBar durationInFrames={d}` + (b.title ? ` title=${j(b.title)}` : ``) + (b.low ? ` low={${j(b.low)}}` : ``) + (b.high ? ` high={${j(b.high)}}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    case "mdrecipe":
+      return (`<MdRecipeCard durationInFrames={d}` + (b.title ? ` title=${j(b.title)}` : ``) + (b.items ? ` items={${j(b.items)}}` : ``) + (b.note ? ` note=${j(b.note)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    case "mdpost":
+      return (`<MdPostGroundLine durationInFrames={d}` + (b.title ? ` title=${j(b.title)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    case "mdchar":
+      return (`<MdCharReveal durationInFrames={d}` + (b.title ? ` title=${j(b.title)}` : ``) + (b.chips ? ` chips={${j(b.chips)}}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    case "mdrecap":
+      return (`<MdMethodRecap durationInFrames={d}` + (b.title ? ` title=${j(b.title)}` : ``) + (b.methods ? ` methods={${j(b.methods)}}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    case "mdname":
+      return (`<MdNameTag durationInFrames={d}` + (b.name ? ` name=${j(b.name)}` : ``) + (b.role ? ` role=${j(b.role)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    case "mdnext":
+      return (`<MdNextCard durationInFrames={d}` + (b.kicker ? ` kicker=${j(b.kicker)}` : ``) + (b.title ? ` title=${j(b.title)}` : ``) + (b.image ? ` image=${j(b.image)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    // ── SET DE PULIDO cine "madera" (MaderaPolish): overlays HERMOSOS a medida ──
+    case "mdtwoplanks":
+      return (`<MdTwoPlanks durationInFrames={d}` + (b.title ? ` title=${j(b.title)}` : ``) + (b.buried ? ` buried=${j(b.buried)}` : ``) + (b.note ? ` note=${j(b.note)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    case "mdsealtrap":
+      return (`<MdSealTrap durationInFrames={d}` + (b.title ? ` title=${j(b.title)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    case "mdrotinside":
+      return (`<MdRotFromInside durationInFrames={d}` + (b.title ? ` title=${j(b.title)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    case "mdrulestamp":
+      return (`<MdRuleStamp durationInFrames={d}` + (b.text ? ` text=${j(b.text)}` : ``) + (b.num ? ` num=${j(b.num)}` : ``) + (b.label ? ` label=${j(b.label)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    case "mdfungus":
+      return (`<MdFungusNeeds durationInFrames={d}` + (b.title ? ` title=${j(b.title)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    case "mdslider":
+      return (`<MdBeforeAfterSlider durationInFrames={d}` + (b.beforeImg ? ` beforeImg=${j(b.beforeImg)}` : ``) + (b.afterImg ? ` afterImg=${j(b.afterImg)}` : ``) + (b.beforeLabel ? ` beforeLabel=${j(b.beforeLabel)}` : ``) + (b.afterLabel ? ` afterLabel=${j(b.afterLabel)}` : ``) + (b.beforeYears ? ` beforeYears=${j(b.beforeYears)}` : ``) + (b.afterYears ? ` afterYears=${j(b.afterYears)}` : ``) + (b.eyebrow ? ` eyebrow=${j(b.eyebrow)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    case "mdkicker":
+      return (`<MdChapterKicker durationInFrames={d}` + (b.num ? ` num=${j(b.num)}` : ``) + (b.title ? ` title=${j(b.title)}` : ``) + (b.kicker ? ` kicker=${j(b.kicker)}` : ``) + (b.glyph ? ` glyph=${j(b.glyph)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    case "mdendcard":
+      return (`<MdEndcardManual durationInFrames={d}` + (b.manualImg ? ` manualImg=${j(b.manualImg)}` : ``) + (b.nextImg ? ` nextImg=${j(b.nextImg)}` : ``) + (b.manualTitle ? ` manualTitle=${j(b.manualTitle)}` : ``) + (b.nextKicker ? ` nextKicker=${j(b.nextKicker)}` : ``) + (b.nextTitle ? ` nextTitle=${j(b.nextTitle)}` : ``) + (b.motto ? ` motto=${j(b.motto)}` : ``) + (b.cta ? ` cta=${j(b.cta)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    case "mdtrans":
+      return (`<MdTransition durationInFrames={d}` + (b.variant ? ` variant=${j(b.variant)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    // ── SET DE PULIDO cine "cemento" (CementoPolish): heroes propios del cemento/cal ──
+    case "cmrecipe":
+      return (`<CmRecipe durationInFrames={d}` + (b.title ? ` title=${j(b.title)}` : ``) + (b.note ? ` note=${j(b.note)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    case "cmyears":
+      return (`<CmYears durationInFrames={d}` + (b.title ? ` title=${j(b.title)}` : ``) + (b.low ? ` low={${j(b.low)}}` : ``) + (b.high ? ` high={${j(b.high)}}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    case "cmselfheal":
+      return (`<CmSelfHeal durationInFrames={d}` + (b.title ? ` title=${j(b.title)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    case "cmcure":
+      return (`<CmCure durationInFrames={d}` + (b.title ? ` title=${j(b.title)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    case "cmerror":
+      return (`<CmError durationInFrames={d}` + (b.title ? ` title=${j(b.title)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    case "cmname":
+      return (`<CmNameTag durationInFrames={d}` + (b.name ? ` name=${j(b.name)}` : ``) + (b.role ? ` role=${j(b.role)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    // ── SET DE PULIDO cine "salitre" (SalitrePolish): heroes propios de la humedad ascendente/salitre ──
+    case "slcapillary":
+      return (`<SlCapillary durationInFrames={d}` + (b.title ? ` title=${j(b.title)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    case "slsalt":
+      return (`<SlSalt durationInFrames={d}` + (b.title ? ` title=${j(b.title)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    case "slseal":
+      return (`<SlSeal durationInFrames={d}` + (b.title ? ` title=${j(b.title)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    case "slbarrier":
+      return (`<SlBarrier durationInFrames={d}` + (b.title ? ` title=${j(b.title)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    case "sllime":
+      return (`<SlLime durationInFrames={d}` + (b.title ? ` title=${j(b.title)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    case "sltwowalls":
+      return (`<SlTwoWalls durationInFrames={d}` + (b.title ? ` title=${j(b.title)}` : ``) + (b.buried ? ` buried=${j(b.buried)}` : ``) + (b.note ? ` note=${j(b.note)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    case "slname":
+      return (`<SlNameTag durationInFrames={d}` + (b.name ? ` name=${j(b.name)}` : ``) + (b.role ? ` role=${j(b.role)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
     default:
       return null; // talk
   }
@@ -1064,6 +1138,7 @@ const imports = [`import { ReactNode } from "react";`];
 if (themeImports.length) imports.push(`import { ${themeImports.join(", ")} } from "./theme";`);
 if (kinds.has("raw")) imports.push(`import { RawShot } from "./scenes/RawShot";`);
 if (kinds.has("quote")) imports.push(`import { KineticQuote, parseQuote } from "./scenes/KineticQuote";`);
+if (kinds.has("layered")) imports.push(`import { LayeredReveal } from "./scenes/LayeredReveal";`);
 if (kinds.has("chips")) imports.push(`import { ChipsCluster } from "./scenes/ReframeContent";`);
 if (kinds.has("splitlist")) imports.push(`import { SplitList } from "./scenes/SplitList";`);
 if (kinds.has("struckcards")) imports.push(`import { StruckCards } from "./scenes/StruckCards";`);
@@ -1174,6 +1249,18 @@ if (kinds.has("sonarhud")) imports.push(`import { SonarHUD } from "./overlays/So
   const oxUsed = Object.entries(oxMap).filter(([k]) => kinds.has(k)).map(([, v]) => v);
   if (oxUsed.length) imports.push(`import { ${oxUsed.join(", ")} } from "./overlays/OxCards";`); }
 if (kinds.has("manualcard")) imports.push(`import { ManualCard } from "./overlays/ManualCard";`);
+{ const mdMap = { mdgauge: "MdMoistureGauge", mdlife: "MdLifespanBar", mdrecipe: "MdRecipeCard", mdpost: "MdPostGroundLine", mdchar: "MdCharReveal", mdrecap: "MdMethodRecap", mdname: "MdNameTag", mdnext: "MdNextCard" };
+  const mdUsed = Object.entries(mdMap).filter(([k]) => kinds.has(k)).map(([, v]) => v);
+  if (mdUsed.length) imports.push(`import { ${mdUsed.join(", ")} } from "./overlays/MaderaCards";`); }
+{ const mpMap = { mdtwoplanks: "MdTwoPlanks", mdsealtrap: "MdSealTrap", mdrotinside: "MdRotFromInside", mdrulestamp: "MdRuleStamp", mdfungus: "MdFungusNeeds", mdslider: "MdBeforeAfterSlider", mdkicker: "MdChapterKicker", mdendcard: "MdEndcardManual", mdtrans: "MdTransition" };
+  const mpUsed = Object.entries(mpMap).filter(([k]) => kinds.has(k)).map(([, v]) => v);
+  if (mpUsed.length) imports.push(`import { ${mpUsed.join(", ")} } from "./overlays/MaderaPolish";`); }
+{ const cmMap = { cmrecipe: "CmRecipe", cmyears: "CmYears", cmselfheal: "CmSelfHeal", cmcure: "CmCure", cmerror: "CmError", cmname: "CmNameTag" };
+  const cmUsed = Object.entries(cmMap).filter(([k]) => kinds.has(k)).map(([, v]) => v);
+  if (cmUsed.length) imports.push(`import { ${cmUsed.join(", ")} } from "./overlays/CementoPolish";`); }
+{ const slMap = { slcapillary: "SlCapillary", slsalt: "SlSalt", slseal: "SlSeal", slbarrier: "SlBarrier", sllime: "SlLime", sltwowalls: "SlTwoWalls", slname: "SlNameTag" };
+  const slUsed = Object.entries(slMap).filter(([k]) => kinds.has(k)).map(([, v]) => v);
+  if (slUsed.length) imports.push(`import { ${slUsed.join(", ")} } from "./overlays/SalitrePolish";`); }
 const palLine = usedPal.size
   ? `\nconst ${[...usedPal].map((t) => `${t} = ${palTok[t]}`).join(", ")};\n`
   : "";
