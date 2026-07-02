@@ -22,7 +22,7 @@ export const MainSalitre: React.FC = () => {
               {cue.el(sec(cue.dur))}
             </Sequence>
           ))}
-          <AvatarLayer src="salitre_opt.mp4" wav="salitre_16k.wav" windows={AVATAR_WINDOWS} accent={COLORS.accent} />
+          <AvatarLayer src="salitre_opt.mp4" windows={AVATAR_WINDOWS} accent={COLORS.accent} />
           {OVERLAYS.map((cue) => (
             <Sequence key={cue.key} from={sec(cue.start)} durationInFrames={sec(cue.dur)}>
               {cue.el(sec(cue.dur))}

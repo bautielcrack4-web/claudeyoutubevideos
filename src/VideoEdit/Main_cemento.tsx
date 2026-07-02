@@ -22,7 +22,7 @@ export const MainCemento: React.FC = () => {
               {cue.el(sec(cue.dur))}
             </Sequence>
           ))}
-          <AvatarLayer src="cemento_opt.mp4" wav="cemento_16k.wav" windows={AVATAR_WINDOWS} accent={COLORS.accent} />
+          <AvatarLayer src="cemento_opt.mp4" windows={AVATAR_WINDOWS} accent={COLORS.accent} />
           {OVERLAYS.map((cue) => (
             <Sequence key={cue.key} from={sec(cue.start)} durationInFrames={sec(cue.dur)}>
               {cue.el(sec(cue.dur))}
