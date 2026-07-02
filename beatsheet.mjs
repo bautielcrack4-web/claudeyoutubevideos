@@ -145,6 +145,21 @@ for (const r of [...new Set(refs)]) {
 
 // ── 3) emitir cues_<video>.gen.tsx ───────────────────────────────────────────
 const j = (v) => JSON.stringify(v); // string/num/array/obj -> literal JS válido en JSX
+
+// ── KIT genérico (src/VideoEdit/kit/) — kind → Componente. Props se pasan por spread+as any ──
+const KIT = {
+  titlecard: "TitleCardKit", lowerthird: "LowerThirdKit", chaptermarker: "ChapterMarkerKit",
+  bigstat: "BigStatKit", statgrid: "StatGridKit", bulletlist: "BulletListKit",
+  numberedsteps: "NumberedStepsKit", timeline: "TimelineKit", comparetwo: "CompareTwoKit",
+  barchart: "BarChartKit", rankingbars: "RankingBarsKit", donutstat: "DonutStatKit",
+  partsdiagram: "PartsDiagramKit", crosssection: "CrossSectionKit", flowarrows: "FlowArrowsKit",
+  cyclediagram: "CycleDiagramKit", mappin: "MapPinKit", annotatedphoto: "AnnotatedPhotoKit",
+  polaroidstack: "PolaroidStackKit", quotecard: "QuoteCardKit", equation: "EquationKit",
+  ingredientscard: "IngredientsCardKit", costtally: "CostTallyKit", gaugemeter: "GaugeMeterKit",
+  stampreveal: "StampRevealKit", labelcallout: "LabelCalloutKit", splitpanel: "SplitPanelKit",
+  processgrid: "ProcessGridKit", closingcard: "ClosingCardKit",
+};
+const KIT_SYS = new Set(["id", "start", "dur", "kind", "overlay", "gen", "anec", "darken", "reframe", "t", "src"]);
 const cleanSlides = (slides) =>
   (slides || []).map((s) => {
     const o = {};
@@ -1129,8 +1144,14 @@ function renderEl(b) {
       return (`<AcCircuit durationInFrames={d}` + (b.title ? ` title=${j(b.title)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
     case "acname":
       return (`<AcNameTag durationInFrames={d}` + (b.name ? ` name=${j(b.name)}` : ``) + (b.role ? ` role=${j(b.role)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
-    default:
+    default: {
+      if (KIT[b.kind]) {
+        const rest = {}; for (const k of Object.keys(b)) if (!KIT_SYS.has(k)) rest[k] = b[k];
+        delete rest.kind;
+        return `<${KIT[b.kind]} {...({ durationInFrames: d, ...${j(rest)} } as any)} />`;
+      }
       return null; // talk
+    }
   }
 }
 
@@ -1158,6 +1179,7 @@ if (usedPal.size) themeImports.push("COLORS");
 const imports = [`import { ReactNode } from "react";`];
 if (themeImports.length) imports.push(`import { ${themeImports.join(", ")} } from "./theme";`);
 if (kinds.has("raw")) imports.push(`import { RawShot } from "./scenes/RawShot";`);
+for (const k of kinds) if (KIT[k]) imports.push(`import { ${KIT[k]} } from "./kit/${KIT[k]}";`);
 if (kinds.has("quote")) imports.push(`import { KineticQuote, parseQuote } from "./scenes/KineticQuote";`);
 if (kinds.has("layered")) imports.push(`import { LayeredReveal } from "./scenes/LayeredReveal";`);
 if (kinds.has("chips")) imports.push(`import { ChipsCluster } from "./scenes/ReframeContent";`);

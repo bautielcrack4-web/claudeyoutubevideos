@@ -1,4 +1,4 @@
-// avatar_peroxido.gen.ts — GENERADO por build_peroxido.mjs. NO editar a mano.
+// avatar_peroxido.gen.ts — GENERADO por build_peroxido_real.mjs. NO editar.
 import type { AvatarWindow } from "./scenes/AvatarLayer";
 export const TOTAL_PEROXIDO = 1081.2;
 export const AVATAR_WINDOWS: AvatarWindow[] = [
@@ -11,27 +11,35 @@ export const AVATAR_WINDOWS: AvatarWindow[] = [
     "mode": "hidden"
   },
   {
-    "start": 13.13,
+    "start": 12.56,
     "mode": "cornerBR"
   },
   {
-    "start": 18.01,
+    "start": 15.64,
     "mode": "hidden"
   },
   {
-    "start": 27.21,
+    "start": 21.9,
     "mode": "cornerBR"
   },
   {
-    "start": 29.5,
+    "start": 24.42,
     "mode": "hidden"
   },
   {
-    "start": 58.22,
+    "start": 35.06,
     "mode": "cornerBR"
   },
   {
-    "start": 61.26,
+    "start": 39.94,
+    "mode": "hidden"
+  },
+  {
+    "start": 54.3,
+    "mode": "cornerBR"
+  },
+  {
+    "start": 58.5,
     "mode": "hidden"
   },
   {
@@ -47,31 +55,39 @@ export const AVATAR_WINDOWS: AvatarWindow[] = [
     "mode": "cornerBR"
   },
   {
-    "start": 107.71,
+    "start": 110.48,
     "mode": "hidden"
   },
   {
-    "start": 114.92,
+    "start": 130.22,
     "mode": "cornerBR"
   },
   {
-    "start": 119.8,
+    "start": 132.8,
     "mode": "hidden"
   },
   {
-    "start": 154.02,
+    "start": 149.58,
     "mode": "cornerBR"
   },
   {
-    "start": 156.15,
+    "start": 151.96,
     "mode": "hidden"
   },
   {
-    "start": 172.16,
+    "start": 157.7,
     "mode": "cornerBR"
   },
   {
-    "start": 174.62,
+    "start": 160.84,
+    "mode": "hidden"
+  },
+  {
+    "start": 176.08,
+    "mode": "cornerBR"
+  },
+  {
+    "start": 178.74,
     "mode": "hidden"
   },
   {
@@ -79,111 +95,111 @@ export const AVATAR_WINDOWS: AvatarWindow[] = [
     "mode": "cornerBR"
   },
   {
-    "start": 191.34,
+    "start": 191.24,
     "mode": "hidden"
   },
   {
-    "start": 197.32,
+    "start": 199.7,
     "mode": "cornerBR"
   },
   {
-    "start": 200.08,
+    "start": 203.08,
     "mode": "hidden"
   },
   {
-    "start": 207.2,
+    "start": 211.34,
     "mode": "cornerBR"
   },
   {
-    "start": 209.82,
+    "start": 214.46,
     "mode": "hidden"
   },
   {
-    "start": 217.24,
+    "start": 223,
     "mode": "cornerBR"
   },
   {
-    "start": 220.72,
+    "start": 226.08,
     "mode": "hidden"
   },
   {
-    "start": 228.88,
+    "start": 235.36,
     "mode": "cornerBR"
   },
   {
-    "start": 231.42,
+    "start": 237.54,
     "mode": "hidden"
   },
   {
-    "start": 240.78,
+    "start": 264.3,
     "mode": "cornerBR"
   },
   {
-    "start": 242.6,
+    "start": 266.9,
     "mode": "hidden"
   },
   {
-    "start": 268.5,
+    "start": 293.04,
     "mode": "cornerBR"
   },
   {
-    "start": 272.18,
+    "start": 296.86,
     "mode": "hidden"
   },
   {
-    "start": 289.02,
+    "start": 307.46,
     "mode": "cornerBR"
   },
   {
-    "start": 293.42,
+    "start": 310.56,
     "mode": "hidden"
   },
   {
-    "start": 303.36,
+    "start": 321.88,
     "mode": "cornerBR"
   },
   {
-    "start": 307.84,
+    "start": 326.76,
     "mode": "hidden"
   },
   {
-    "start": 318.34,
+    "start": 347.38,
     "mode": "cornerBR"
   },
   {
-    "start": 322.26,
+    "start": 352.26,
     "mode": "hidden"
   },
   {
-    "start": 358.06,
+    "start": 365.34,
     "mode": "cornerBR"
   },
   {
-    "start": 360.68,
+    "start": 368.88,
     "mode": "hidden"
   },
   {
-    "start": 370.8,
+    "start": 377.34,
     "mode": "cornerBR"
   },
   {
-    "start": 374.9,
+    "start": 382.22,
     "mode": "hidden"
   },
   {
-    "start": 385.48,
+    "start": 393.76,
     "mode": "cornerBR"
   },
   {
-    "start": 388.68,
+    "start": 398.5,
     "mode": "hidden"
   },
   {
-    "start": 401.82,
+    "start": 409.48,
     "mode": "cornerBR"
   },
   {
-    "start": 403.98,
+    "start": 414.36,
     "mode": "hidden"
   },
   {
@@ -191,7 +207,7 @@ export const AVATAR_WINDOWS: AvatarWindow[] = [
     "mode": "cornerBR"
   },
   {
-    "start": 425.94,
+    "start": 425.84,
     "mode": "hidden"
   },
   {
@@ -199,7 +215,7 @@ export const AVATAR_WINDOWS: AvatarWindow[] = [
     "mode": "cornerBR"
   },
   {
-    "start": 448.34,
+    "start": 448.24,
     "mode": "hidden"
   },
   {
@@ -207,7 +223,7 @@ export const AVATAR_WINDOWS: AvatarWindow[] = [
     "mode": "cornerBR"
   },
   {
-    "start": 458.82,
+    "start": 458.72,
     "mode": "hidden"
   },
   {
@@ -215,15 +231,15 @@ export const AVATAR_WINDOWS: AvatarWindow[] = [
     "mode": "cornerBR"
   },
   {
-    "start": 471.34,
+    "start": 471.24,
     "mode": "hidden"
   },
   {
-    "start": 488.42,
+    "start": 481.45,
     "mode": "cornerBR"
   },
   {
-    "start": 490.45,
+    "start": 483.94,
     "mode": "hidden"
   },
   {
@@ -231,7 +247,7 @@ export const AVATAR_WINDOWS: AvatarWindow[] = [
     "mode": "cornerBR"
   },
   {
-    "start": 506.52,
+    "start": 506.42,
     "mode": "hidden"
   },
   {
@@ -239,39 +255,47 @@ export const AVATAR_WINDOWS: AvatarWindow[] = [
     "mode": "cornerBR"
   },
   {
-    "start": 524.62,
+    "start": 524.52,
     "mode": "hidden"
   },
   {
-    "start": 537.88,
+    "start": 541.64,
     "mode": "cornerBR"
   },
   {
-    "start": 542.02,
+    "start": 543.8,
     "mode": "hidden"
   },
   {
-    "start": 560.44,
+    "start": 554.22,
     "mode": "cornerBR"
   },
   {
-    "start": 565.32,
+    "start": 556.84,
     "mode": "hidden"
   },
   {
-    "start": 577.7,
+    "start": 571.24,
     "mode": "cornerBR"
   },
   {
-    "start": 580.14,
+    "start": 576.02,
     "mode": "hidden"
   },
   {
-    "start": 596.78,
+    "start": 590.96,
     "mode": "cornerBR"
   },
   {
-    "start": 598.94,
+    "start": 594.8,
+    "mode": "hidden"
+  },
+  {
+    "start": 601.04,
+    "mode": "cornerBR"
+  },
+  {
+    "start": 603.36,
     "mode": "hidden"
   },
   {
@@ -279,7 +303,7 @@ export const AVATAR_WINDOWS: AvatarWindow[] = [
     "mode": "cornerBR"
   },
   {
-    "start": 617.06,
+    "start": 616.96,
     "mode": "hidden"
   },
   {
@@ -287,7 +311,7 @@ export const AVATAR_WINDOWS: AvatarWindow[] = [
     "mode": "cornerBR"
   },
   {
-    "start": 627.95,
+    "start": 627.86,
     "mode": "hidden"
   },
   {
@@ -295,55 +319,63 @@ export const AVATAR_WINDOWS: AvatarWindow[] = [
     "mode": "cornerBR"
   },
   {
-    "start": 638.54,
+    "start": 638.94,
     "mode": "hidden"
   },
   {
-    "start": 663.5,
+    "start": 645.08,
     "mode": "cornerBR"
   },
   {
-    "start": 668.38,
+    "start": 649.96,
     "mode": "hidden"
   },
   {
-    "start": 675.98,
+    "start": 668.04,
     "mode": "cornerBR"
   },
   {
-    "start": 679.18,
+    "start": 670.38,
     "mode": "hidden"
   },
   {
-    "start": 690.3,
+    "start": 678.8,
     "mode": "cornerBR"
   },
   {
-    "start": 695.18,
+    "start": 683.68,
     "mode": "hidden"
   },
   {
-    "start": 715.02,
+    "start": 695.64,
     "mode": "cornerBR"
   },
   {
-    "start": 716.35,
+    "start": 698.96,
     "mode": "hidden"
   },
   {
-    "start": 727.58,
+    "start": 719.78,
     "mode": "cornerBR"
   },
   {
-    "start": 732.46,
+    "start": 723.88,
     "mode": "hidden"
   },
   {
-    "start": 741.8,
+    "start": 735.98,
     "mode": "cornerBR"
   },
   {
-    "start": 744.36,
+    "start": 739.1,
+    "mode": "hidden"
+  },
+  {
+    "start": 747.86,
+    "mode": "cornerBR"
+  },
+  {
+    "start": 750.14,
     "mode": "hidden"
   },
   {
@@ -359,15 +391,15 @@ export const AVATAR_WINDOWS: AvatarWindow[] = [
     "mode": "cornerBR"
   },
   {
-    "start": 805.38,
+    "start": 805.28,
     "mode": "hidden"
   },
   {
-    "start": 812.4,
+    "start": 814.02,
     "mode": "cornerBR"
   },
   {
-    "start": 814.3,
+    "start": 816,
     "mode": "hidden"
   },
   {
@@ -375,139 +407,155 @@ export const AVATAR_WINDOWS: AvatarWindow[] = [
     "mode": "cornerBR"
   },
   {
-    "start": 828.3,
+    "start": 828.2,
     "mode": "hidden"
   },
   {
-    "start": 840.44,
+    "start": 836.36,
     "mode": "cornerBR"
   },
   {
-    "start": 844.18,
+    "start": 838.64,
     "mode": "hidden"
   },
   {
-    "start": 853.94,
+    "start": 846.74,
     "mode": "cornerBR"
   },
   {
-    "start": 858.1,
+    "start": 851.62,
     "mode": "hidden"
   },
   {
-    "start": 872.92,
+    "start": 859.58,
     "mode": "cornerBR"
   },
   {
-    "start": 875.96,
+    "start": 862.66,
     "mode": "hidden"
   },
   {
-    "start": 881.64,
+    "start": 875.58,
     "mode": "cornerBR"
   },
   {
-    "start": 884.32,
+    "start": 877.62,
     "mode": "hidden"
   },
   {
-    "start": 899.22,
+    "start": 892.6,
     "mode": "cornerBR"
   },
   {
-    "start": 901.96,
+    "start": 895.14,
     "mode": "hidden"
   },
   {
-    "start": 909.82,
+    "start": 903.08,
     "mode": "cornerBR"
   },
   {
-    "start": 914.7,
+    "start": 905.36,
     "mode": "hidden"
   },
   {
-    "start": 923.82,
+    "start": 915.06,
     "mode": "cornerBR"
   },
   {
-    "start": 927,
+    "start": 917.46,
     "mode": "hidden"
   },
   {
-    "start": 936.66,
+    "start": 926.62,
     "mode": "cornerBR"
   },
   {
-    "start": 939.1,
+    "start": 931.5,
     "mode": "hidden"
   },
   {
-    "start": 945.76,
+    "start": 938.72,
     "mode": "cornerBR"
   },
   {
-    "start": 950.26,
+    "start": 942.12,
     "mode": "hidden"
   },
   {
-    "start": 958.22,
+    "start": 949.88,
     "mode": "cornerBR"
   },
   {
-    "start": 961.04,
+    "start": 952.26,
     "mode": "hidden"
   },
   {
-    "start": 980.04,
+    "start": 970.96,
     "mode": "cornerBR"
   },
   {
-    "start": 983.94,
+    "start": 973.66,
     "mode": "hidden"
   },
   {
-    "start": 999.16,
+    "start": 992.64,
     "mode": "cornerBR"
   },
   {
-    "start": 1003.54,
+    "start": 995.02,
     "mode": "hidden"
   },
   {
-    "start": 1011.62,
+    "start": 1003.16,
     "mode": "cornerBR"
   },
   {
-    "start": 1014.14,
+    "start": 1005.38,
     "mode": "hidden"
   },
   {
-    "start": 1022.6,
+    "start": 1013.76,
     "mode": "cornerBR"
   },
   {
-    "start": 1025.94,
+    "start": 1017.24,
     "mode": "hidden"
   },
   {
-    "start": 1036.68,
+    "start": 1025.56,
     "mode": "cornerBR"
   },
   {
-    "start": 1038.91,
+    "start": 1029.58,
     "mode": "hidden"
   },
   {
-    "start": 1047.48,
+    "start": 1038.56,
     "mode": "cornerBR"
   },
   {
-    "start": 1052.1,
+    "start": 1042.48,
     "mode": "hidden"
   },
   {
-    "start": 1053.36,
+    "start": 1059.18,
+    "mode": "cornerBR"
+  },
+  {
+    "start": 1062,
+    "mode": "hidden"
+  },
+  {
+    "start": 1071.6,
+    "mode": "cornerBR"
+  },
+  {
+    "start": 1076.48,
+    "mode": "hidden"
+  },
+  {
+    "start": 1077.28,
     "mode": "full"
   },
   {
