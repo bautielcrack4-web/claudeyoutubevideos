@@ -42,3 +42,7 @@ _assets_list.txt
 lista_*.txt
 _*_tts*.log
 cookies/_*/
+_v3*
+_v3out*/
+_sb_*/
+_v3probe/
