@@ -39,6 +39,7 @@ import { MainHormiga, TOTAL_FRAMES_HB } from "./VideoEdit/Main_hormiga";
 import { MainHuron, TOTAL_FRAMES_HUR } from "./VideoEdit/Main_huron";
 import { MainCastores, TOTAL_FRAMES_CAS } from "./VideoEdit/Main_castores";
 import { MainAral, TOTAL_FRAMES_AR } from "./VideoEdit/Main_aral";
+import { MainPruebafauna, TOTAL_FRAMES_PF } from "./VideoEdit/Main_pruebafauna";
 import { MainBarcos, TOTAL_FRAMES_BAR } from "./VideoEdit/Main_barcos";
 import { MainLeona, TOTAL_FRAMES_LEONA } from "./VideoEdit/Main_leona";
 import { MainConstrucciones, TOTAL_FRAMES_CONS } from "./VideoEdit/Main_construcciones";
@@ -72,6 +73,8 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="Aral" component={MainAral} durationInFrames={TOTAL_FRAMES_AR} fps={30} width={1920} height={1080} />
       {/* TEST nicho fauna — "La leona" (clip real por frase + voz Trevor) */}
       <Composition id="Leona" component={MainLeona} durationInFrames={TOTAL_FRAMES_LEONA} fps={30} width={1920} height={1080} />
+      {/* TEST fauna clips-first punta a punta — "Yaguareté vuelve al Iberá" · Planeta Reconstruido */}
+      <Composition id="Pruebafauna" component={MainPruebafauna} durationInFrames={TOTAL_FRAMES_PF} fps={30} width={1920} height={1080} />
       {/* TEST Cafe/Amish deshabilitados: Main_* sin commitear → rompen el farm */}
       {/* VIDEO 2 Crónicas Perdidas — "7 Construcciones Antiguas Que la Ciencia No Puede Explicar" */}
       <Composition id="Construcciones" component={MainConstrucciones} durationInFrames={TOTAL_FRAMES_CONS} fps={30} width={1920} height={1080} />
