@@ -33,6 +33,11 @@ RESEARCH_TIMEOUT = int(os.environ.get("RESEARCH_TIMEOUT", "700"))
 # ── triggers del GRUPO (coordinación Investigador ↔ Productor) ──
 RESEARCH_RE = re.compile(r"(pr[oó]ximo\s+(video|tema)|investig\w+|research|busc\w+\s+tema)", re.I)
 PRODUCE_RE = re.compile(r"(hac[eé]\s+(ese|el|lo)\b|hacelo|dale\s+con|produc[ií]\w*|arranc\w+\s+ese|dale\s+ese)", re.I)
+CRON_ON_RE = re.compile(r"cron\b.*(on|prend|activ)", re.I)
+CRON_OFF_RE = re.compile(r"cron\b.*(off|apag|desactiv)", re.I)
+SNOW_RE = re.compile(r"(snowball|bola de nieve|descubr[ií]\w*\s+canal)", re.I)
+CRON_HOUR = int(os.environ.get("CRON_HOUR", "13"))   # hora local del disparo diario
+WORK_LOCK = threading.Lock()                          # serializa TODO el trabajo (poller + cron) → 1 cerebro secuencial
 
 # ── Ruteo de modelo: charla casual = Haiku (barato ~$0.03/msg); tarea real = Opus.
 CHAT_MODEL = os.environ.get("BRIDGE_CHAT_MODEL", "claude-haiku-4-5-20251001")
@@ -258,15 +263,58 @@ def do_produce(chat, text, st):
     send(chat, reply, token=PRODUCTOR_TOKEN)
 
 
+def do_snowball(chat, st):
+    send(chat, "tirando la bola de nieve, buscando canales nuevos del nicho", token=INVESTIGADOR_TOKEN)
+    try:
+        r = subprocess.run([NODE, "analizador/snowball.mjs"], cwd=WORKDIR, capture_output=True, text=True, timeout=RESEARCH_TIMEOUT)
+        out = (r.stdout or "").strip().splitlines()
+        tail = "\n".join(out[-6:]) if out else "no salió nada"
+    except subprocess.TimeoutExpired:
+        tail = "se pasó de tiempo el scraping, probá de nuevo"
+    send(chat, tail, token=INVESTIGADOR_TOKEN)
+
+
+def cron_toggle(chat, text, st, voice):
+    if CRON_ON_RE.search(text):
+        st["cron_enabled"] = True; save_state(st)
+        send(chat, f"listo, cron diario ON — te traigo un tema todos los días a las {CRON_HOUR}hs", token=voice); return True
+    if CRON_OFF_RE.search(text):
+        st["cron_enabled"] = False; save_state(st)
+        send(chat, "cron diario OFF, ya no disparo solo", token=voice); return True
+    return False
+
+
 def handle_group(msg, st):
     text = (msg.get("text") or msg.get("caption") or "").strip()
     chat = str(msg["chat"]["id"])
-    if RESEARCH_RE.search(text):
+    if cron_toggle(chat, text, st, PRODUCTOR_TOKEN):
+        return
+    if SNOW_RE.search(text):
+        do_snowball(chat, st)
+    elif RESEARCH_RE.search(text):
         m = re.search(r"@[\w.-]+", text)
         do_research(chat, m.group(0) if m else None, st)
     elif PRODUCE_RE.search(text):
         do_produce(chat, text, st)
     # else: mensaje del grupo sin trigger → ignorar (no spamear)
+
+
+def cron_loop(st):
+    """Disparo diario opcional: a CRON_HOUR corre el research y lo postea al grupo (voz
+    Investigador). Toma el WORK_LOCK → nunca corre en paralelo con un trigger manual."""
+    while True:
+        try:
+            if st.get("cron_enabled") and GROUP_CHAT:
+                now = time.localtime()
+                today = time.strftime("%Y%m%d", now)
+                if now.tm_hour == CRON_HOUR and st.get("cron_last") != today:
+                    st["cron_last"] = today; save_state(st)
+                    print("[cron] disparo diario", flush=True)
+                    with WORK_LOCK:
+                        do_research(GROUP_CHAT, None, st)
+        except Exception as e:
+            print(f"[cron] error: {e}", flush=True)
+        time.sleep(180)
 
 
 def handle_message(msg, st):
@@ -275,6 +323,8 @@ def handle_message(msg, st):
         text = msg.get("text") or msg.get("caption")
         if not text:
             send(chat, "por ahora te leo solo texto"); return
+        if cron_toggle(chat, text, st, PRODUCTOR_TOKEN):
+            return
         model, track, cwd, prompt = pick_route(text)
         with Typing(chat):
             reply = ask_claude(chat, prompt, st, model, track, cwd)
@@ -309,7 +359,8 @@ def main():
     if drain.get("ok") and drain.get("result"):
         st["offset"] = drain["result"][-1]["update_id"] + 1
         save_state(st)
-    print(f"[bridge] arriba · privado={PRIVATE_CHAT} · grupo={GROUP_CHAT} · investigador={'sí' if INVESTIGADOR_TOKEN else 'no'} · offset {st['offset']}", flush=True)
+    threading.Thread(target=cron_loop, args=(st,), daemon=True).start()  # disparo diario opcional
+    print(f"[bridge] arriba · privado={PRIVATE_CHAT} · grupo={GROUP_CHAT} · investigador={'sí' if INVESTIGADOR_TOKEN else 'no'} · cron={'ON' if st.get('cron_enabled') else 'off'}@{CRON_HOUR}h · offset {st['offset']}", flush=True)
     while True:
         try:
             upd = api("getUpdates", {"offset": st["offset"], "timeout": 50,
@@ -320,10 +371,11 @@ def main():
                 st["offset"] = u["update_id"] + 1
                 save_state(st)
                 try:
-                    if "message" in u:
-                        handle_message(u["message"], st)
-                    elif "callback_query" in u:
-                        handle_callback(u["callback_query"], st)
+                    with WORK_LOCK:  # serializa con el cron → nunca 2 trabajos a la vez
+                        if "message" in u:
+                            handle_message(u["message"], st)
+                        elif "callback_query" in u:
+                            handle_callback(u["callback_query"], st)
                 except Exception as e:
                     print(f"[handler] error: {e}", flush=True)
         except Exception as e:
