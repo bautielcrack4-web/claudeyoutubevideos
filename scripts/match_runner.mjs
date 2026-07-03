@@ -118,10 +118,11 @@ const dlProxy = async (url, a, b, tag) => {
   const proxy = path.join(TMP, `${tag}.mp4`);
   const ffloc = /[\\/]/.test(FF) ? ["--ffmpeg-location", path.dirname(FF)] : [];
   const dl = await NET.run(() => sh(YTDLP, [
-    url, ...COOKIE, ...PROXY, "--socket-timeout", "30", "--download-sections", `*${Math.max(0, a)}-${b}`, "--force-keyframes-at-cuts",
+    url, ...COOKIE, ...PROXY, "--socket-timeout", "20", "--retries", "1", "--fragment-retries", "1", "--extractor-retries", "1",
+    "--download-sections", `*${Math.max(0, a)}-${b}`, "--force-keyframes-at-cuts",
     "-f", "bv*[height<=240]/wv*/w", ...ffloc, "--merge-output-format", "mp4", "--no-playlist",
     "-o", proxy, "--force-overwrites", "--quiet", "--no-warnings",
-  ], { timeout: 120000 }));
+  ], { timeout: 55000 }));  // falla rápido si el proxy está rate-limiteado (antes 120s → colgaba)
   return (dl.status === 0 && fs.existsSync(proxy)) ? proxy : null;
 };
 const extract = async (proxy, baseT, step, maxF, tag, ss = 0) => {
@@ -239,11 +240,15 @@ async function processBeat(b) {
   console.log(`  ${name}: ${best.score.toFixed(3)} @ ${best.t}s (${best.id})${best.text > 0.3 ? ` ⚠txt${best.text}` : ""}`);
   results.push({ name, url: best.url, start, dur, _score: +best.score.toFixed(3), _text: best.text });
 }
-// pool de conceptos concurrentes
+// pool de conceptos concurrentes + DEADLINE por shard (un shard rate-limiteado NO puede
+// arrastrar el run: al vencer el tiempo escribe lo que tiene y sale; lo no matcheado cae al
+// pool en el build). Antes: un shard quemado quedaba 60+ min en reintentos.
 let bi = 0;
+const DEADLINE = Date.now() + (+(process.env.MATCH_SHARD_MAX_MIN || 15)) * 60000;
 await Promise.all(Array.from({ length: Math.min(PAR, beats.length) }, async () => {
-  while (bi < beats.length) { const b = beats[bi++]; try { await processBeat(b); } catch (e) { console.log(`✗ ${b.name}: ${(e.message || e).toString().slice(0, 80)}`); } }
+  while (bi < beats.length && Date.now() < DEADLINE) { const b = beats[bi++]; try { await processBeat(b); } catch (e) { console.log(`✗ ${b.name}: ${(e.message || e).toString().slice(0, 80)}`); } }
 }));
+if (bi < beats.length) console.log(`⏱ deadline: ${beats.length - Math.min(bi, beats.length)} beats sin procesar (rate-limit) → caen al pool en el build`);
 
 fs.mkdirSync("out", { recursive: true });
 const outPath = `out/match_part_${IDX}.json`;
