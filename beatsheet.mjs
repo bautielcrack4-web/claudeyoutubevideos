@@ -1149,6 +1149,55 @@ function renderEl(b) {
       return (`<AcCircuit durationInFrames={d}` + (b.title ? ` title=${j(b.title)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
     case "acname":
       return (`<AcNameTag durationInFrames={d}` + (b.name ? ` name=${j(b.name)}` : ``) + (b.role ? ` role=${j(b.role)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    // ── BESPOKE "dulces" (canal Abuela Rosa) — cocina de la abuela, cálido ──
+    case "fichadulce":
+      return (
+        `<FichaDulce durationInFrames={d} image=${j(b.image)} title=${j(b.title || "")}` +
+        (b.notes ? ` notes={${j(b.notes)}}` : ``) +
+        (b.bg ? ` bg=${j(b.bg)}` : ``) +
+        (b.side ? ` side=${j(b.side)}` : ``) +
+        (b.eyebrow ? ` eyebrow=${j(b.eyebrow)}` : ``) +
+        ` />`
+      );
+    case "antesahora":
+      return (
+        `<AntesAhora durationInFrames={d} beforeImage=${j(b.beforeImage)} afterImage=${j(b.afterImage)}` +
+        (b.beforeLabel ? ` beforeLabel=${j(b.beforeLabel)}` : ``) +
+        (b.afterLabel ? ` afterLabel=${j(b.afterLabel)}` : ``) +
+        ` />`
+      );
+    case "citaabuela":
+      return (
+        `<CitaAbuela durationInFrames={d} text=${j(b.text || "")}` +
+        (b.image ? ` image=${j(b.image)}` : ``) +
+        (b.words ? ` words={${j(b.words)}}` : ``) +
+        (b.fontSize ? ` fontSize={${b.fontSize}}` : ``) +
+        ` />`
+      );
+    case "ingredientesflotan":
+      return (
+        `<IngredientesFlotan durationInFrames={d} items={${j(b.items || [])}}` +
+        (b.image ? ` image=${j(b.image)}` : ``) +
+        (b.title ? ` title=${j(b.title)}` : ``) +
+        (b.atsec ? ` ats={${j(b.atsec)}}` : ``) +
+        ` />`
+      );
+    case "topdulce":
+      return (
+        `<TopDulce durationInFrames={d} index={${b.index}} title=${j(b.title || "")}` +
+        (b.total != null ? ` total={${b.total}}` : ``) +
+        (b.image ? ` image=${j(b.image)}` : ``) +
+        (b.nameAt != null ? ` nameAt={${b.nameAt}}` : ``) +
+        ` />`
+      );
+    case "numerodulce":
+      return (
+        `<NumeroDulce durationInFrames={d} number=${j(b.number)} name=${j(b.name || "")}` +
+        (b.total ? ` total=${j(b.total)}` : ``) +
+        (b.image ? ` image=${j(b.image)}` : ``) +
+        (b.eyebrow ? ` eyebrow=${j(b.eyebrow)}` : ``) +
+        ` />`
+      );
     default: {
       if (KIT[b.kind]) {
         const rest = {}; for (const k of Object.keys(b)) if (!KIT_SYS.has(k)) rest[k] = b[k];
@@ -1313,6 +1362,9 @@ if (kinds.has("manualcard")) imports.push(`import { ManualCard } from "./overlay
 { const acMap = { acgauge: "AcGauge", acports: "AcPorts", acoverfill: "AcOverfill", acsteps: "AcSteps", accircuit: "AcCircuit", acname: "AcNameTag" };
   const acUsed = Object.entries(acMap).filter(([k]) => kinds.has(k)).map(([, v]) => v);
   if (acUsed.length) imports.push(`import { ${acUsed.join(", ")} } from "./overlays/AcautoPolish";`); }
+{ const duMap = { fichadulce: "FichaDulce", antesahora: "AntesAhora", citaabuela: "CitaAbuela", ingredientesflotan: "IngredientesFlotan", topdulce: "TopDulce", numerodulce: "NumeroDulce" };
+  const duUsed = Object.entries(duMap).filter(([k]) => kinds.has(k)).map(([, v]) => v);
+  if (duUsed.length) imports.push(`import { ${duUsed.join(", ")} } from "./components/DulcesCards";`); }
 const palLine = usedPal.size
   ? `\nconst ${[...usedPal].map((t) => `${t} = ${palTok[t]}`).join(", ")};\n`
   : "";
