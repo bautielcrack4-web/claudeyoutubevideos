@@ -1,0 +1,13 @@
+{
+  "_comment": "Canales semilla del nicho 'misterio/descubrimientos imposibles' que Crónicas Perdidas replica. La bola de nieve (snowball.mjs) agrega descubiertos con discovered:true.",
+  "seed": [
+    "@KRONVEIL1",
+    "@FuriadelaTierraa",
+    "@EarthLegacyVision",
+    "@ScienceSun-b4r",
+    "@ArcheLOGIC",
+    "@TripleDoc",
+    "@gabexmysteries"
+  ],
+  "discovered": []
+}
