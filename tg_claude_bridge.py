@@ -23,7 +23,8 @@ import urllib.request
 from os.path import expanduser, exists
 
 STATE_FILE = expanduser("~/.tg_bridge_state.json")
-WORKDIR = os.path.dirname(os.path.abspath(__file__))
+WORKDIR = os.path.dirname(os.path.abspath(__file__))          # ~/video2: contexto FULL (memoria+skills)
+CHAT_DIR = os.environ.get("BRIDGE_CHAT_DIR", expanduser("~/.tg_chat"))  # contexto LIVIANO para charla
 CLAUDE = os.environ.get("CLAUDE_BIN", "claude")
 TASK_TIMEOUT = int(os.environ.get("BRIDGE_TIMEOUT", "3600"))  # tareas largas (render, etc.)
 
@@ -39,13 +40,17 @@ TASK_RE = re.compile(
     r"gener\w*|escrib[ií]\w*|commit\w*|deploy\w*|bug|arregl\w*|fix)\b", re.I)
 
 
-def pick_model(text):
+def pick_route(text):
+    """Devuelve (model, track, cwd, prompt_limpio).
+    charla → Haiku + dir liviano (~$0.018/msg) · tarea → Opus + ~/video2 (contexto full)."""
     t = (text or "").strip()
     if t.startswith("!"):
-        return TASK_MODEL, t[1:].lstrip()   # fuerza Opus
+        return TASK_MODEL, "task", WORKDIR, t[1:].lstrip()   # fuerza tarea/Opus
     if t.lower().startswith("h!"):
-        return CHAT_MODEL, t[2:].lstrip()    # fuerza Haiku
-    return (TASK_MODEL if TASK_RE.search(t) else CHAT_MODEL), t
+        return CHAT_MODEL, "chat", CHAT_DIR, t[2:].lstrip()  # fuerza charla/Haiku
+    if TASK_RE.search(t):
+        return TASK_MODEL, "task", WORKDIR, t
+    return CHAT_MODEL, "chat", CHAT_DIR, t
 
 PERSONA = (
     "Le hablás al usuario por Telegram, sos su socio en la fábrica de documentales. Hablá "
@@ -98,12 +103,17 @@ def api(method, params=None, timeout=70):
 
 
 def load_state():
+    st = {"offset": 0, "sessions": {}}
     if exists(STATE_FILE):
         try:
-            return json.load(open(STATE_FILE))
+            st = json.load(open(STATE_FILE))
         except Exception:
             pass
-    return {"offset": 0, "sessions": {}}
+    # migración: sesión plana (str) → por-track {"task": id} (el historial viejo tenía contexto full)
+    for k, v in list(st.get("sessions", {}).items()):
+        if isinstance(v, str):
+            st["sessions"][k] = {"task": v}
+    return st
 
 
 def save_state(st):
@@ -144,33 +154,35 @@ class Typing:
         self._stop.set()
 
 
-def ask_claude(chat, prompt, st, model):
-    """Corre Claude en print-mode resumiendo la sesión del chat. Devuelve el texto."""
-    sess = st["sessions"].get(str(chat))
+def ask_claude(chat, prompt, st, model, track, cwd):
+    """Corre Claude en print-mode resumiendo la sesión de ESE track (chat/task). El --resume
+    con prefijo estable hace pegar el prompt caching. Devuelve el texto."""
+    sessmap = st["sessions"].setdefault(str(chat), {})
+    sess = sessmap.get(track)
     cmd = [CLAUDE, "-p", prompt, "--model", model, "--output-format", "json",
            "--append-system-prompt", PERSONA, "--dangerously-skip-permissions"]
     if sess:
         cmd += ["--resume", sess]
-    print(f"[claude] modelo={model.split('-')[1] if '-' in model else model} · msg={prompt[:60]!r}", flush=True)
+    print(f"[claude] track={track} modelo={model.split('-')[1] if '-' in model else model} · msg={prompt[:60]!r}", flush=True)
     try:
-        p = subprocess.run(cmd, cwd=WORKDIR, capture_output=True, text=True, timeout=TASK_TIMEOUT)
+        p = subprocess.run(cmd, cwd=cwd, capture_output=True, text=True, timeout=TASK_TIMEOUT)
     except subprocess.TimeoutExpired:
-        return "uf, esa tarea se está haciendo larga y corté la espera. Fijate el estado o pedímelo de nuevo 🙏"
+        return "uf, eso se está haciendo largo y corté la espera. fijate el estado o pedímelo de nuevo"
     out = (p.stdout or "").strip()
     if not out:
         print(f"[claude] sin stdout · stderr: {(p.stderr or '')[:300]}", flush=True)
-        return "che, se me trabó algo procesando eso 😅 probá de nuevo en un toque."
+        return "se me trabó algo procesando eso, probá de nuevo en un toque"
     try:
         d = json.loads(out)
     except Exception:
         return out[:3500]  # por si no vino JSON, mando el texto crudo
     sid = d.get("session_id")
     if sid:
-        st["sessions"][str(chat)] = sid
+        sessmap[track] = sid
         save_state(st)
     if d.get("is_error"):
         print(f"[claude] is_error · {str(d.get('result'))[:300]}", flush=True)
-    return d.get("result") or "listo ✅"
+    return d.get("result") or "listo"
 
 
 def handle_message(msg, st):
@@ -181,9 +193,9 @@ def handle_message(msg, st):
     if not text:
         send(chat, "por ahora te leo solo texto")
         return
-    model, prompt = pick_model(text)
+    model, track, cwd, prompt = pick_route(text)
     with Typing(chat):
-        reply = ask_claude(chat, prompt, st, model)
+        reply = ask_claude(chat, prompt, st, model, track, cwd)
     send(chat, reply)
 
 
@@ -200,11 +212,12 @@ def handle_callback(cq, st):
         "rehacer": "Toqué el botón 🔄 Rehacer sobre el último documental. Rehacelo/mejoralo y volvé a mandármelo.",
     }.get(action, f"Toqué un botón ({data}).")
     with Typing(chat):
-        reply = ask_claude(chat, prompt, st, TASK_MODEL)  # botones = acción → modelo fuerte
+        reply = ask_claude(chat, prompt, st, TASK_MODEL, "task", WORKDIR)  # botones = acción → track tarea
     send(chat, reply)
 
 
 def main():
+    os.makedirs(CHAT_DIR, exist_ok=True)  # dir de contexto liviano para la charla
     st = load_state()
     # Drenar backlog viejo al arrancar (no responder mensajes de antes de prender el puente)
     drain = api("getUpdates", {"offset": -1, "timeout": 0})
