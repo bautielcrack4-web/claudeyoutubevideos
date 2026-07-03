@@ -13,6 +13,7 @@ chat autorizado. Estado (offset + sesión por chat) en ~/.tg_bridge_state.json.
 """
 import json
 import os
+import re
 import subprocess
 import sys
 import threading
@@ -25,6 +26,26 @@ STATE_FILE = expanduser("~/.tg_bridge_state.json")
 WORKDIR = os.path.dirname(os.path.abspath(__file__))
 CLAUDE = os.environ.get("CLAUDE_BIN", "claude")
 TASK_TIMEOUT = int(os.environ.get("BRIDGE_TIMEOUT", "3600"))  # tareas largas (render, etc.)
+
+# ── Ruteo de modelo: charla casual = Haiku (barato ~$0.03/msg); tarea real = Opus.
+CHAT_MODEL = os.environ.get("BRIDGE_CHAT_MODEL", "claude-haiku-4-5-20251001")
+TASK_MODEL = os.environ.get("BRIDGE_TASK_MODEL", "claude-opus-4-8")
+# palabras que huelen a LABURO → subimos a Opus. Ante la duda, escala (mejor gastar de más
+# que hacer un video con el modelo chico). Override manual: prefijo "!" fuerza Opus; "h!" Haiku.
+TASK_RE = re.compile(
+    r"\b(video|render|renderiz\w*|clip|miniatur\w*|thumbnail|gui[oó]n|sub[ií]\w*|public\w*|"
+    r"canal\w*|analiz\w*|investig\w*|research|busc\w*|edit\w*|monta\w*|voz|tts|match\w*|farm|"
+    r"document\w*|t[ií]tulo\w*|seo|vidiq|competenc\w*|arm[aá]\w*|hac[eé]\w*|cre[aá]\w*|"
+    r"gener\w*|escrib[ií]\w*|commit\w*|deploy\w*|bug|arregl\w*|fix)\b", re.I)
+
+
+def pick_model(text):
+    t = (text or "").strip()
+    if t.startswith("!"):
+        return TASK_MODEL, t[1:].lstrip()   # fuerza Opus
+    if t.lower().startswith("h!"):
+        return CHAT_MODEL, t[2:].lstrip()    # fuerza Haiku
+    return (TASK_MODEL if TASK_RE.search(t) else CHAT_MODEL), t
 
 PERSONA = (
     "Le hablás al usuario por Telegram, sos su socio en la fábrica de documentales. Hablá "
@@ -123,13 +144,14 @@ class Typing:
         self._stop.set()
 
 
-def ask_claude(chat, prompt, st):
+def ask_claude(chat, prompt, st, model):
     """Corre Claude en print-mode resumiendo la sesión del chat. Devuelve el texto."""
     sess = st["sessions"].get(str(chat))
-    cmd = [CLAUDE, "-p", prompt, "--output-format", "json",
+    cmd = [CLAUDE, "-p", prompt, "--model", model, "--output-format", "json",
            "--append-system-prompt", PERSONA, "--dangerously-skip-permissions"]
     if sess:
         cmd += ["--resume", sess]
+    print(f"[claude] modelo={model.split('-')[1] if '-' in model else model} · msg={prompt[:60]!r}", flush=True)
     try:
         p = subprocess.run(cmd, cwd=WORKDIR, capture_output=True, text=True, timeout=TASK_TIMEOUT)
     except subprocess.TimeoutExpired:
@@ -157,10 +179,11 @@ def handle_message(msg, st):
         return  # solo el dueño
     text = msg.get("text") or msg.get("caption")
     if not text:
-        send(chat, "por ahora te leo solo texto, che 🙂")
+        send(chat, "por ahora te leo solo texto")
         return
+    model, prompt = pick_model(text)
     with Typing(chat):
-        reply = ask_claude(chat, text, st)
+        reply = ask_claude(chat, prompt, st, model)
     send(chat, reply)
 
 
@@ -177,7 +200,7 @@ def handle_callback(cq, st):
         "rehacer": "Toqué el botón 🔄 Rehacer sobre el último documental. Rehacelo/mejoralo y volvé a mandármelo.",
     }.get(action, f"Toqué un botón ({data}).")
     with Typing(chat):
-        reply = ask_claude(chat, prompt, st)
+        reply = ask_claude(chat, prompt, st, TASK_MODEL)  # botones = acción → modelo fuerte
     send(chat, reply)
 
 
