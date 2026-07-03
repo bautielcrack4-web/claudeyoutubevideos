@@ -103,25 +103,32 @@ console.log(`beats por frase: ${beats.length} · visuales únicos: ${usedUniq} �
 // ── componentes SOLO de código (sin fondos IA) + molécula ──
 const ck = (text) => ({ text, state: "done" });
 const COMPONENTS = [
-  { t: atc("un oxigeno de mas"), id: "cmp_molecule", kind: "perox", dur: 8.5, mode: "molecule", title: "Por qué funciona: un oxígeno de más" },
-  { t: atc("las raices tambien respiran"), id: "cmp_roots", kind: "perox", dur: 7.5, mode: "roots", title: "Las raíces respiran" },
+  // ── BESPOKE (piezas a medida por momento) ──
+  { t: atc("un oxigeno de mas"), id: "px_forge", kind: "pxforge", dur: 8.5, title: "Un oxígeno de más" },
+  { t: atc("es oxigeno puro saliendo"), id: "px_bottle", kind: "pxbottle", dur: 7.0, label: "El oxígeno de más se libera" },
+  { t: atc("las raices tambien respiran"), id: "px_soil", kind: "pxsoil", dur: 8.0, title: "Las raíces respiran" },
+  { t: atc("la tierra se compacta"), id: "px_drown", kind: "pxdrown", dur: 7.0, title: "No tiene sed: se ahoga" },
+  { t: atc("ablanda esa cascara"), id: "px_seed", kind: "pxseed", dur: 8.0, title: "Despertar la semilla" },
+  { t: atc("aparece una hojita nueva"), id: "px_rescue", kind: "pxrescue", dur: 8.0, title: "Rescatar la raíz" },
+  { t: atc("frenar los hongos en las hojas"), id: "px_mildew", kind: "pxmildew", dur: 7.5, title: "El hongo retrocede" },
+  { t: atc("nunca rocies con el sol pegando fuerte"), id: "px_sun", kind: "pxsun", dur: 7.0, title: "Al sol = veneno" },
+  { t: atc("el problema real no esta arriba"), id: "px_gnats", kind: "pxgnats", dur: 7.5, title: "El problema está abajo" },
+  { t: atc("agua de riego mas viva"), id: "px_water", kind: "pxwater", dur: 7.5, title: "Agua muerta → viva" },
+  { t: atc("si le pones de mas"), id: "px_dose", kind: "pxdose", dur: 8.0, title: "La dosis justa" },
+  { t: atc("echale un chorrito en la bacha"), id: "px_fizz", kind: "pxfizz", dur: 6.5, alive: true, title: "¿Todavía sirve?" },
+  { t: atc("se degrada con la luz"), id: "px_amber", kind: "pxamber", dur: 6.5, title: "Por qué botella oscura" },
+  { t: atc("no es un fertilizante"), id: "px_myth", kind: "pxmyth", dur: 8.0, title: "3 mitos del peróxido", myths: ["Es un fertilizante", "Sirve la industrial fuerte", "Dura para siempre"] },
+  { t: atc("la diferencia nunca fue la plata"), id: "px_cost", kind: "pxcost", dur: 7.0, title: "El vecino vs el abuelo" },
+  { t: atc("un repaso bien rapido"), id: "px_seven", kind: "pxseven", dur: 9.0, title: "Los 7 secretos", items: ["Oxigenar la tierra", "Despertar semillas", "Salvar la raíz podrida", "Frenar los hongos", "Desinfectar herramientas", "Larvas del sustrato", "Agua de riego viva"] },
+  // ── overlays de dosis (sobre clips, densidad) ──
   { t: atc("una cucharada de agua oxigenada del 3 en un litro"), id: "cmp_d1", kind: "labelcallout", overlay: true, dur: 3.2, text: "1 cucharada · 1 litro", from: "bottom" },
   { t: atc("ni un minuto mas pone una alarma"), id: "cmp_d2", kind: "bigstat", overlay: true, dur: 3.0, value: 30, unit: " min", caption: "de remojo, ni uno más" },
   { t: atc("una cucharada y media por litro"), id: "cmp_d3", kind: "labelcallout", overlay: true, dur: 3.2, text: "1½ cda · 1 litro · empapar", from: "bottom", accent: "danger" },
-  { t: atc("nunca rocies con el sol pegando fuerte"), id: "cmp_sun", kind: "gaugemeter", dur: 6.0, value: 92, unit: "°", title: "Al sol = veneno" },
-  { t: atc("le pasaste la enfermedad"), id: "cmp_tools", kind: "checklist", dur: 6.5, title: "Desinfectar la tijera", items: [ck("Trapito con pura"), ck("Entre planta y planta"), ck("Macetas en remojo")] },
-  { t: atc("el problema real no esta arriba"), id: "cmp_gnats", kind: "splitlist", palette: "D", cross: true, dur: 6.5, title: "Por qué no se terminan", items: ["Matás los que vuelan", "Abajo nacen las larvas", "Que se comen las raíces"] },
-  { t: atc("si le pones de mas"), id: "cmp_err", kind: "bigstat", overlay: true, dur: 3.4, value: 1, unit: " cda/L", caption: "la dosis es baja a propósito" },
-  { t: atc("no es un fertilizante"), id: "cmp_myth1", kind: "stampreveal", dur: 4.5, claim: "Es un fertilizante", verdict: "MITO", positive: false },
-  { t: atc("se degrada con la luz"), id: "cmp_myth3", kind: "stampreveal", dur: 4.5, claim: "Dura para siempre", verdict: "MITO", positive: false },
-  { t: atc("la diferencia nunca fue la plata"), id: "cmp_cost", kind: "comparetwo", dur: 6.5, left: { title: "El vecino", points: ["Frascos caros", "Huerta enferma"] }, right: { title: "El abuelo", points: ["1 botellita $2", "Huerta sana"] }, verdict: "right" },
+  // ── código: quote del abuelo, herramientas, barras (varcheck), cierre ──
   { t: atc("esto es una medicina"), id: "cmp_quote", kind: "quotecard", dur: 5.5, quote: "Esto ES una medicina. La tierra también se enferma.", author: "El abuelo Amós" },
-  { t: atc("ablanda esa cascara"), id: "cmp_seeds_steps", kind: "numberedsteps", dur: 7.0, title: "Dos cosas a la vez", steps: [{ title: "Ablanda la cáscara dura" }, { title: "Mata los hongos pegados" }, { title: "Brotan parejas y antes" }] },
-  { t: atc("la tierra se compacta"), id: "cmp_soil_split", kind: "splitlist", palette: "D", cross: true, dur: 6.5, title: "Ahogada se ve igual que con sed", items: ["Hojas caídas y mustias", "Le echás más agua", "Y la terminás de hundir"] },
-  { t: atc("aparece una hojita nueva"), id: "cmp_rescue", kind: "checklist", dur: 6.5, title: "¿Se salvó?", items: [ck("Día 1-3: sigue caída"), ck("A la semana: frena"), ck("Hoja nueva = ganaste")] },
+  { t: atc("le pasaste la enfermedad"), id: "cmp_tools", kind: "checklist", dur: 6.5, title: "Desinfectar la tijera", items: [ck("Trapito con pura"), ck("Entre planta y planta"), ck("Macetas en remojo")] },
   { t: atc("mas fuertes mas blancas mas sanas"), id: "cmp_bars_water", kind: "bars", hue: "amber", accent: "good", unit: "", dur: 7.0, title: "Agua muerta vs agua viva", eyebrow: "Lo que cambia en la raíz", bars: [{ label: "Agua estancada del balde", value: 100, display: "Raíces débiles", tone: "danger" }, { label: "Agua reoxigenada", value: 100, display: "Raíces fuertes", winner: true }] },
   { t: atc("una botellita de dos pesos"), id: "cmp_bars_cost", kind: "bars", hue: "amber", accent: "good", unit: "", dur: 7.0, title: "Vivero vs agua oxigenada", eyebrow: "Lo que gastás", bars: [{ label: "Frascos del vivero", value: 100, display: "Una fortuna", tone: "danger" }, { label: "Una botellita", value: 4, display: "$2 · 7 usos", winner: true }] },
-  { t: atc("un repaso bien rapido"), id: "cmp_recap", kind: "checklist", dur: 8.0, title: "Los 7, redonditos", items: [ck("1 · Oxigenar la tierra"), ck("2 · Despertar semillas"), ck("3 · Salvar raíz podrida"), ck("4 · Hongos (jamás al sol)"), ck("5 · Desinfectar herramientas"), ck("6 · Larvas del sustrato"), ck("7 · Agua de riego viva")] },
   { t: atc("cascara de banana"), id: "cmp_close", kind: "closingcard", dur: 5.0, heading: "Próximo: la cáscara de banana", cta: "Suscribite al canal", seal: true },
 ];
 

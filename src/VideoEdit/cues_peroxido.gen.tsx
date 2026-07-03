@@ -1,22 +1,29 @@
 // cues_peroxido.gen.tsx — GENERADO por beatsheet.mjs desde peroxido.json.
 // NO editar a mano: cambiá el beatsheet y re-corré  node beatsheet.mjs beatsheet/peroxido.json
 import { ReactNode } from "react";
-import { COLORS } from "./theme";
 import { RawShot } from "./scenes/RawShot";
 import { QuoteCardKit } from "./kit/QuoteCardKit";
-import { CompareTwoKit } from "./kit/CompareTwoKit";
-import { NumberedStepsKit } from "./kit/NumberedStepsKit";
-import { GaugeMeterKit } from "./kit/GaugeMeterKit";
-import { StampRevealKit } from "./kit/StampRevealKit";
+import { PxCostCart } from "./kit/PxCostCart";
+import { PxMoleculeForge } from "./kit/PxMoleculeForge";
+import { PxBottleReveal } from "./kit/PxBottleReveal";
+import { PxSoilBreath } from "./kit/PxSoilBreath";
+import { PxDrownedPlant } from "./kit/PxDrownedPlant";
+import { PxSeedAwaken } from "./kit/PxSeedAwaken";
+import { PxRootRescue } from "./kit/PxRootRescue";
+import { PxMildewRetreat } from "./kit/PxMildewRetreat";
+import { PxSunLupa } from "./kit/PxSunLupa";
+import { PxGnatsLift } from "./kit/PxGnatsLift";
+import { PxWaterRevive } from "./kit/PxWaterRevive";
+import { PxDoseScale } from "./kit/PxDoseScale";
+import { PxMythStamp } from "./kit/PxMythStamp";
+import { PxAmberDecay } from "./kit/PxAmberDecay";
+import { PxFizzTest } from "./kit/PxFizzTest";
+import { PxSevenSeal } from "./kit/PxSevenSeal";
 import { ClosingCardKit } from "./kit/ClosingCardKit";
 import { LabelCalloutKit } from "./kit/LabelCalloutKit";
 import { BigStatKit } from "./kit/BigStatKit";
-import { SplitList } from "./scenes/SplitList";
 import { BarCompare } from "./scenes/BarCompare";
 import { Checklist } from "./scenes/Checklist";
-import { PeroxidoDiagram } from "./scenes/PeroxidoDiagram";
-
-const D = COLORS.danger;
 
 export type Cue = { key: string; start: number; dur: number; kind: string; el: (d: number) => ReactNode };
 
@@ -40,14 +47,14 @@ export const CUES: Cue[] = [
   { key: "cmp_quote", start: 60.76, dur: 0.64, kind: "quotecard", el: (d) => <QuoteCardKit {...({ durationInFrames: d, ...{"quote":"Esto ES una medicina. La tierra también se enferma.","author":"El abuelo Amós"} } as any)} /> },
   { key: "p29_realrxoldfarme", start: 101.36, dur: 2.4, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_old_farmer_garden_1.jpg" darken={0} /> },
   { key: "p30_realrxgardenst", start: 103.36, dur: 2.58, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_garden_store_1.jpg" darken={0} /> },
-  { key: "p31_realrxgardenst", start: 105.54, dur: 4.94, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_garden_store_2.jpg" darken={0} /> },
+  { key: "p31_realrxgardenst", start: 105.54, dur: 4.94, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_garden_store_1.png" darken={0} /> },
   { key: "p32_realrxrootswhi", start: 110.08, dur: 3.08, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_roots_white_1.jpg" darken={0} /> },
   { key: "p33_rxtomatoesvine", start: 112.76, dur: 2.44, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/rx_tomatoes_vine.mp4" darken={0} /> },
   { key: "p34_realrxtomatoes", start: 114.8, dur: 15.7, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_tomatoes_vine_1.jpg" darken={0} /> },
   { key: "p35_realrxoldfarme", start: 130.1, dur: 2.7, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_old_farmer_garden_2.jpg" darken={0} /> },
   { key: "p36_realrxtomatoes", start: 132.4, dur: 3.08, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_tomatoes_vine_2.jpg" darken={0} /> },
-  { key: "p37_realrxgardenst", start: 135.08, dur: 2.26, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_garden_store_3.jpg" darken={0} /> },
-  { key: "cmp_cost", start: 136.94, dur: 8.36, kind: "comparetwo", el: (d) => <CompareTwoKit {...({ durationInFrames: d, ...{"left":{"title":"El vecino","points":["Frascos caros","Huerta enferma"]},"right":{"title":"El abuelo","points":["1 botellita $2","Huerta sana"]},"verdict":"right"} } as any)} /> },
+  { key: "p37_realrxgardenst", start: 135.08, dur: 2.26, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_garden_store_2.jpg" darken={0} /> },
+  { key: "px_cost", start: 136.94, dur: 8.36, kind: "pxcost", el: (d) => <PxCostCart {...({ durationInFrames: d, ...{"title":"El vecino vs el abuelo"} } as any)} /> },
   { key: "p41_realrxpourbase", start: 145.3, dur: 4.56, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_pour_base_plant_1.jpg" darken={0} /> },
   { key: "p42_realrxpourbase", start: 149.46, dur: 2.5, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_pour_base_plant_2.webp" darken={0} /> },
   { key: "p43_realrxpourbase", start: 151.56, dur: 2.74, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_pour_base_plant_3.jpg" darken={0} /> },
@@ -55,14 +62,12 @@ export const CUES: Cue[] = [
   { key: "p45_realrxoldhands", start: 155.7, dur: 2.28, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_old_hands_soil_1.jpg" darken={0} /> },
   { key: "p46_realrxoldhands", start: 157.58, dur: 3.26, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_old_hands_soil_2.jpg" darken={0} /> },
   { key: "p47_rxperoxidegard", start: 160.44, dur: 2.88, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/rx_peroxide_garden.mp4" darken={0} /> },
-  { key: "cmp_molecule", start: 162.92, dur: 9.12, kind: "perox", el: (d) => <PeroxidoDiagram durationInFrames={d} mode="molecule" title="Por qué funciona: un oxígeno de más" /> },
+  { key: "px_forge", start: 162.92, dur: 9.12, kind: "pxforge", el: (d) => <PxMoleculeForge {...({ durationInFrames: d, ...{"title":"Un oxígeno de más"} } as any)} /> },
   { key: "p52_rxwaterloggeds", start: 172.04, dur: 2.48, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/rx_waterlogged_soil.mp4" darken={0} /> },
   { key: "p53_realrxseedssoa", start: 174.12, dur: 2.24, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_seeds_soak_1.jpg" darken={0} /> },
   { key: "p54_realrxperoxide", start: 175.96, dur: 2.78, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_peroxide_garden_3.jpg" darken={0} /> },
   { key: "p55_realrxfizzbubb", start: 178.34, dur: 3.24, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_fizz_bubbles_1.png" darken={0} /> },
-  { key: "p56_realrxfizzbubb", start: 181.18, dur: 3.86, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_fizz_bubbles_2.jpg" darken={0} /> },
-  { key: "p57_realrxrootswhi", start: 184.64, dur: 3.1, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_roots_white_2.jpg" darken={0} /> },
-  { key: "p58_realrxseedssoa", start: 187.34, dur: 3.9, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_seeds_soak_2.jpg" darken={0} /> },
+  { key: "px_bottle", start: 181.18, dur: 9.66, kind: "pxbottle", el: (d) => <PxBottleReveal {...({ durationInFrames: d, ...{"label":"El oxígeno de más se libera"} } as any)} /> },
   { key: "p59_realrxperoxide", start: 190.84, dur: 5.1, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_peroxide_garden_4.jpg" darken={0} /> },
   { key: "p60_rxwateringcan", start: 195.54, dur: 2.24, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/rx_watering_can.mp4" darken={0} /> },
   { key: "p61_realrxwatering", start: 197.38, dur: 2.6, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_watering_can_1.jpg" darken={0} /> },
@@ -81,9 +86,9 @@ export const CUES: Cue[] = [
   { key: "p74_realrxwaterlog", start: 235.24, dur: 2.3, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_waterlogged_soil_1.jpg" darken={0} /> },
   { key: "p75_realrxsoilhand", start: 237.14, dur: 3.92, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_soil_hands_1.jpg" darken={0} /> },
   { key: "p76_realrxsoilhand", start: 240.66, dur: 2.34, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_soil_hands_2.jpg" darken={0} /> },
-  { key: "cmp_roots", start: 242.6, dur: 8.1, kind: "perox", el: (d) => <PeroxidoDiagram durationInFrames={d} mode="roots" title="Las raíces respiran" /> },
+  { key: "px_soil", start: 242.6, dur: 8.1, kind: "pxsoil", el: (d) => <PxSoilBreath {...({ durationInFrames: d, ...{"title":"Las raíces respiran"} } as any)} /> },
   { key: "p80_rxpourbaseplan", start: 250.7, dur: 3.76, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/rx_pour_base_plant.mp4" darken={0} /> },
-  { key: "cmp_soil_split", start: 254.06, dur: 10.12, kind: "splitlist", el: (d) => <SplitList durationInFrames={d} title="Ahogada se ve igual que con sed" items={["Hojas caídas y mustias","Le echás más agua","Y la terminás de hundir"]} accent={D} cross /> },
+  { key: "px_drown", start: 254.06, dur: 10.12, kind: "pxdrown", el: (d) => <PxDrownedPlant {...({ durationInFrames: d, ...{"title":"No tiene sed: se ahoga"} } as any)} /> },
   { key: "p83_realrxwiltingt", start: 264.18, dur: 2.72, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_wilting_tomato_1.jpg" darken={0} /> },
   { key: "p84_realrxsoilhand", start: 266.5, dur: 2.28, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_soil_hands_4.webp" darken={0} /> },
   { key: "p85_realrxpourbase", start: 268.38, dur: 3.7, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_pour_base_plant_1.jpg" darken={0} /> },
@@ -94,7 +99,7 @@ export const CUES: Cue[] = [
   { key: "p90_rxterracottapo", start: 288.9, dur: 4.42, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/rx_terracotta_pots.mp4" darken={0} /> },
   { key: "p91_rxtomatoesvine", start: 292.92, dur: 3.94, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/rx_tomatoes_vine.mp4" darken={0} /> },
   { key: "p92_rxoldfarmergar", start: 296.46, dur: 3, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/rx_old_farmer_garden.mp4" darken={0} /> },
-  { key: "p93_realrxgardenst", start: 299.06, dur: 4.58, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_garden_store_4.jpg" darken={0} /> },
+  { key: "p93_realrxgardenst", start: 299.06, dur: 4.58, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_garden_store_3.jpg" darken={0} /> },
   { key: "p94_rxharvesthands", start: 303.24, dur: 4.5, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/rx_harvest_hands.mp4" darken={0} /> },
   { key: "p95_realrxseedssoa", start: 307.34, dur: 3.22, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_seeds_soak_3.jpg" darken={0} /> },
   { key: "p96_realrxbottleha", start: 310.16, dur: 5.5, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_bottle_hand_2.jpg" darken={0} /> },
@@ -102,14 +107,14 @@ export const CUES: Cue[] = [
   { key: "p98_realrxseedssoa", start: 318.22, dur: 3.94, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_seeds_soak_4.jpg" darken={0} /> },
   { key: "p99_rxseedshand", start: 321.76, dur: 7.52, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/rx_seeds_hand.mp4" darken={0} /> },
   { key: "p100_realrxdarkbott", start: 328.88, dur: 3.38, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_dark_bottle_shelf_2.jpg" darken={0} /> },
-  { key: "cmp_seeds_steps", start: 331.86, dur: 10.2, kind: "numberedsteps", el: (d) => <NumberedStepsKit {...({ durationInFrames: d, ...{"title":"Dos cosas a la vez","steps":[{"title":"Ablanda la cáscara dura"},{"title":"Mata los hongos pegados"},{"title":"Brotan parejas y antes"}]} } as any)} /> },
+  { key: "px_seed", start: 331.86, dur: 10.2, kind: "pxseed", el: (d) => <PxSeedAwaken {...({ durationInFrames: d, ...{"title":"Despertar la semilla"} } as any)} /> },
   { key: "p103_realrxdarkbott", start: 342.06, dur: 3.08, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_dark_bottle_shelf_3.jpg" darken={0} /> },
   { key: "p104_realrxbottleha", start: 344.74, dur: 2.92, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_bottle_hand_4.jpg" darken={0} /> },
   { key: "p105_realrxtomatoes", start: 347.26, dur: 5.48, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_tomatoes_vine_1.jpg" darken={0} /> },
-  { key: "p106_realrxseedshan", start: 352.34, dur: 6, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_seeds_hand_3.jpg" darken={0} /> },
+  { key: "p106_realrxseedshan", start: 352.34, dur: 6, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_seeds_hand_2.png" darken={0} /> },
   { key: "p107_realrxtomatoes", start: 357.94, dur: 2.64, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_tomatoes_vine_2.jpg" darken={0} /> },
-  { key: "p108_realrxseedshan", start: 360.18, dur: 5.44, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_seeds_hand_4.jpg" darken={0} /> },
-  { key: "p109_realrxsowingse", start: 365.22, dur: 3.66, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_sowing_seeds_1.jpg" darken={0} /> },
+  { key: "p108_realrxseedshan", start: 360.18, dur: 5.44, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_seeds_hand_3.jpg" darken={0} /> },
+  { key: "p109_realrxseedshan", start: 365.22, dur: 3.66, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_seeds_hand_3.png" darken={0} /> },
   { key: "p110_realrxdarkbott", start: 368.48, dur: 2.6, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_dark_bottle_shelf_4.jpg" darken={0} /> },
   { key: "p111_realrxtomatoes", start: 370.68, dur: 4.12, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_tomatoes_vine_3.jpg" darken={0} /> },
   { key: "p112_rxrootrot", start: 374.4, dur: 3.22, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/rx_root_rot.mp4" darken={0} /> },
@@ -129,24 +134,21 @@ export const CUES: Cue[] = [
   { key: "p126_realrxoldhands", start: 425.44, dur: 3.68, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_old_hands_soil_3.png" darken={0} /> },
   { key: "p127_realrxwaterlog", start: 428.72, dur: 5.36, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_waterlogged_soil_4.jpg" darken={0} /> },
   { key: "p128_realrxoverwate", start: 433.68, dur: 2.8, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_overwater_pot_1.webp" darken={0} /> },
-  { key: "cmp_rescue", start: 436.08, dur: 8.26, kind: "checklist", el: (d) => <Checklist durationInFrames={d} title="¿Se salvó?" items={[{"text":"Día 1-3: sigue caída","state":"done"},{"text":"A la semana: frena","state":"done"},{"text":"Hoja nueva = ganaste","state":"done"}]} /> },
+  { key: "px_rescue", start: 436.08, dur: 8.26, kind: "pxrescue", el: (d) => <PxRootRescue {...({ durationInFrames: d, ...{"title":"Rescatar la raíz"} } as any)} /> },
   { key: "p131_rxwateringcan", start: 444.34, dur: 3.9, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/rx_watering_can.mp4" darken={0} /> },
   { key: "p132_rxwaterloggeds", start: 447.84, dur: 3.6, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/rx_waterlogged_soil.mp4" darken={0} /> },
   { key: "p133_realrxoldhands", start: 451.04, dur: 2.76, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_old_hands_soil_4.jpg" darken={0} /> },
   { key: "p134_realrxlushgard", start: 453.4, dur: 2.46, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_lush_garden_2.jpg" darken={0} /> },
   { key: "p135_rxperoxidegard", start: 455.46, dur: 3.26, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/rx_peroxide_garden.mp4" darken={0} /> },
   { key: "p136_realrxperoxide", start: 458.32, dur: 2.68, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_peroxide_garden_1.jpg" darken={0} /> },
-  { key: "p137_realrxpowderym", start: 460.6, dur: 3.22, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_powdery_mildew_1.jpg" darken={0} /> },
-  { key: "p138_realrxpowderym", start: 463.42, dur: 3.72, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_powdery_mildew_2.jpg" darken={0} /> },
-  { key: "p139_realrxpowderym", start: 466.74, dur: 4.5, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_powdery_mildew_3.jpg" darken={0} /> },
+  { key: "px_mildew", start: 460.6, dur: 10.24, kind: "pxmildew", el: (d) => <PxMildewRetreat {...({ durationInFrames: d, ...{"title":"El hongo retrocede"} } as any)} /> },
   { key: "p140_realrxlushgard", start: 470.84, dur: 3.7, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_lush_garden_3.jpg" darken={0} /> },
   { key: "p141_realrxperoxide", start: 474.14, dur: 3.2, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_peroxide_garden_2.jpg" darken={0} /> },
   { key: "p142_realrxspraylea", start: 476.94, dur: 4.79, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_spray_leaves_1.jpg" darken={0} /> },
   { key: "p143_realrxperoxide", start: 481.33, dur: 2.61, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_peroxide_garden_3.jpg" darken={0} /> },
   { key: "p144_realrxspraylea", start: 483.54, dur: 5.16, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_spray_leaves_2.jpg" darken={0} /> },
   { key: "p145_realrxperoxide", start: 488.3, dur: 5.6, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_peroxide_garden_4.jpg" darken={0} /> },
-  { key: "cmp_sun", start: 493.5, dur: 6.28, kind: "gaugemeter", el: (d) => <GaugeMeterKit {...({ durationInFrames: d, ...{"value":92,"unit":"°","title":"Al sol = veneno"} } as any)} /> },
-  { key: "p148_realrxmorningg", start: 499.78, dur: 3.66, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_morning_garden_1.webp" darken={0} /> },
+  { key: "px_sun", start: 493.5, dur: 9.54, kind: "pxsun", el: (d) => <PxSunLupa {...({ durationInFrames: d, ...{"title":"Al sol = veneno"} } as any)} /> },
   { key: "p149_realrxspraylea", start: 503.04, dur: 3.38, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_spray_leaves_3.jpg" darken={0} /> },
   { key: "p150_rxdarkbottlesh", start: 506.02, dur: 6.08, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/rx_dark_bottle_shelf.mp4" darken={0} /> },
   { key: "p151_realrxwatering", start: 511.7, dur: 5.92, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_watering_can_1.jpg" darken={0} /> },
@@ -160,15 +162,15 @@ export const CUES: Cue[] = [
   { key: "p161_realrxpowderym", start: 543.4, dur: 4.16, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_powdery_mildew_4.jpg" darken={0} /> },
   { key: "p162_realrxdarkbott", start: 547.16, dur: 3.56, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_dark_bottle_shelf_1.jpg" darken={0} /> },
   { key: "p163_realrxprunings", start: 550.32, dur: 4.18, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_pruning_shears_4.jpg" darken={0} /> },
-  { key: "p164_realrxsowingse", start: 554.1, dur: 2.74, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_sowing_seeds_3.jpg" darken={0} /> },
+  { key: "p164_realrxsowingse", start: 554.1, dur: 2.74, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_sowing_seeds_1.jpg" darken={0} /> },
   { key: "p165_rxsoilhands", start: 556.44, dur: 4.28, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/rx_soil_hands.mp4" darken={0} /> },
   { key: "p166_rxwipeblade", start: 560.32, dur: 9.1, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/rx_wipe_blade.mp4" darken={0} /> },
   { key: "p167_realrxsoilhand", start: 569.02, dur: 2.5, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_soil_hands_1.jpg" darken={0} /> },
-  { key: "p168_realrxterracot", start: 571.12, dur: 4.9, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_terracotta_pots_2.webp" darken={0} /> },
+  { key: "p168_realrxterracot", start: 571.12, dur: 4.9, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_terracotta_pots_1.webp" darken={0} /> },
   { key: "p169_rxfungusgnats", start: 575.62, dur: 2.36, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/rx_fungus_gnats.mp4" darken={0} /> },
   { key: "p170_realrxsoilhand", start: 577.58, dur: 2.46, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_soil_hands_2.jpg" darken={0} /> },
   { key: "p171_realrxsoilhand", start: 579.64, dur: 3.88, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_soil_hands_3.jpg" darken={0} /> },
-  { key: "cmp_gnats", start: 583.12, dur: 7.72, kind: "splitlist", el: (d) => <SplitList durationInFrames={d} title="Por qué no se terminan" items={["Matás los que vuelan","Abajo nacen las larvas","Que se comen las raíces"]} accent={D} cross /> },
+  { key: "px_gnats", start: 583.12, dur: 7.72, kind: "pxgnats", el: (d) => <PxGnatsLift {...({ durationInFrames: d, ...{"title":"El problema está abajo"} } as any)} /> },
   { key: "p175_rxbottlehand", start: 590.84, dur: 3.96, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/rx_bottle_hand.mp4" darken={0} /> },
   { key: "p176_rxpourbaseplan", start: 594.4, dur: 2.66, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/rx_pour_base_plant.mp4" darken={0} /> },
   { key: "p177_realrxmeasures", start: 596.66, dur: 2.22, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_measure_spoon_3.jpg" darken={0} /> },
@@ -181,9 +183,7 @@ export const CUES: Cue[] = [
   { key: "p184_realrxtomatoes", start: 616.56, dur: 2.8, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_tomatoes_vine_1.jpg" darken={0} /> },
   { key: "p185_realrxbottleha", start: 618.96, dur: 2.58, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_bottle_hand_4.jpg" darken={0} /> },
   { key: "p186_realrxharvesth", start: 621.14, dur: 4.76, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_harvest_hands_1.jpg" darken={0} /> },
-  { key: "p187_realrxtomatoes", start: 625.5, dur: 2.36, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_tomatoes_vine_2.jpg" darken={0} /> },
-  { key: "p188_realrxtomatoes", start: 627.46, dur: 4.34, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_tomatoes_vine_3.jpg" darken={0} /> },
-  { key: "p189_realrxtomatoes", start: 631.4, dur: 2.2, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_tomatoes_vine_4.jpg" darken={0} /> },
+  { key: "px_water", start: 625.5, dur: 7.7, kind: "pxwater", el: (d) => <PxWaterRevive {...({ durationInFrames: d, ...{"title":"Agua muerta → viva"} } as any)} /> },
   { key: "p190_realrxstagnant", start: 633.2, dur: 2.94, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_stagnant_water_2.jpg" darken={0} /> },
   { key: "p191_realrxoldfarme", start: 635.74, dur: 3.2, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_old_farmer_garden_1.jpg" darken={0} /> },
   { key: "p192_realrxdarkbott", start: 638.54, dur: 2.5, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_dark_bottle_shelf_2.jpg" darken={0} /> },
@@ -206,7 +206,7 @@ export const CUES: Cue[] = [
   { key: "p212_rxpottingsoil", start: 698.56, dur: 3.4, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/rx_potting_soil.mp4" darken={0} /> },
   { key: "p213_rxperoxidegard", start: 701.56, dur: 13.74, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/rx_peroxide_garden.mp4" darken={0} /> },
   { key: "p214_realrxrootrot1", start: 714.9, dur: 5.16, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_root_rot_1.png" darken={0} /> },
-  { key: "p215_realrxterracot", start: 719.66, dur: 4.22, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_terracotta_pots_3.jpg" darken={0} /> },
+  { key: "p215_realrxterracot", start: 719.66, dur: 4.22, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_terracotta_pots_2.jpg" darken={0} /> },
   { key: "p216_realrxrootrot2", start: 723.48, dur: 4.38, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_root_rot_2.webp" darken={0} /> },
   { key: "p217_realrxoldfarme", start: 727.46, dur: 6.04, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_old_farmer_garden_2.jpg" darken={0} /> },
   { key: "p218_realrxoldhands", start: 733.1, dur: 3.16, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_old_hands_soil_4.jpg" darken={0} /> },
@@ -223,9 +223,7 @@ export const CUES: Cue[] = [
   { key: "p244_realrxwatering", start: 807.98, dur: 2.92, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_watering_can_1.jpg" darken={0} /> },
   { key: "p245_realrxwatering", start: 810.5, dur: 3.8, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_watering_can_2.jpg" darken={0} /> },
   { key: "p246_realrxwatering", start: 813.9, dur: 2.5, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_watering_can_3.jpg" darken={0} /> },
-  { key: "p247_realrxtranspla", start: 816, dur: 5.18, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_transplant_seedling_4.jpg" darken={0} /> },
-  { key: "p248_realrxwatering", start: 820.78, dur: 2.42, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_watering_can_4.jpg" darken={0} /> },
-  { key: "p249_realrxwaterlog", start: 822.8, dur: 2.98, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_waterlogged_soil_1.jpg" darken={0} /> },
+  { key: "px_dose", start: 816, dur: 9.38, kind: "pxdose", el: (d) => <PxDoseScale {...({ durationInFrames: d, ...{"title":"La dosis justa"} } as any)} /> },
   { key: "p250_rxsoilhands", start: 825.38, dur: 2.82, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/rx_soil_hands.mp4" darken={0} /> },
   { key: "p251_realrxwaterlog", start: 827.8, dur: 2.82, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_waterlogged_soil_2.jpg" darken={0} /> },
   { key: "p252_rxmeasurespoon", start: 830.22, dur: 4, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/rx_measure_spoon.mp4" darken={0} /> },
@@ -240,26 +238,21 @@ export const CUES: Cue[] = [
   { key: "p261_realrxmorningg", start: 857.6, dur: 2.26, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_morning_garden_3.jpg" darken={0} /> },
   { key: "p262_rxbottlehand", start: 859.46, dur: 3.2, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/rx_bottle_hand.mp4" darken={0} /> },
   { key: "p263_realrxbottleha", start: 862.26, dur: 3.26, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_bottle_hand_1.jpg" darken={0} /> },
-  { key: "cmp_myth1", start: 865.12, dur: 5.68, kind: "stampreveal", el: (d) => <StampRevealKit {...({ durationInFrames: d, ...{"claim":"Es un fertilizante","verdict":"MITO","positive":false} } as any)} /> },
-  { key: "p266_rxpantryshelf", start: 870.8, dur: 2.4, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/rx_pantry_shelf.mp4" darken={0} /> },
-  { key: "p267_realrxbottleha", start: 872.8, dur: 3.06, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_bottle_hand_2.jpg" darken={0} /> },
+  { key: "px_myth", start: 865.12, dur: 10.34, kind: "pxmyth", el: (d) => <PxMythStamp {...({ durationInFrames: d, ...{"title":"3 mitos del peróxido","myths":["Es un fertilizante","Sirve la industrial fuerte","Dura para siempre"]} } as any)} /> },
   { key: "p268_realrxbottleha", start: 875.46, dur: 2.56, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_bottle_hand_3.jpg" darken={0} /> },
-  { key: "cmp_myth3", start: 877.62, dur: 6.2, kind: "stampreveal", el: (d) => <StampRevealKit {...({ durationInFrames: d, ...{"claim":"Dura para siempre","verdict":"MITO","positive":false} } as any)} /> },
-  { key: "p271_rxtomatoesvine", start: 883.82, dur: 3.16, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/rx_tomatoes_vine.mp4" darken={0} /> },
-  { key: "p272_rxsinkfizz", start: 886.58, dur: 3.48, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/rx_sink_fizz.mp4" darken={0} /> },
-  { key: "p273_realrxsinkfizz", start: 889.66, dur: 3.22, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_sink_fizz_1.jpg" darken={0} /> },
-  { key: "p274_rxcartproducts", start: 892.48, dur: 2.66, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/rx_cart_products.mp4" darken={0} /> },
-  { key: "p275_realrxcartprod", start: 894.74, dur: 3.14, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_cart_products_1.png" darken={0} /> },
+  { key: "px_amber", start: 877.62, dur: 8.96, kind: "pxamber", el: (d) => <PxAmberDecay {...({ durationInFrames: d, ...{"title":"Por qué botella oscura"} } as any)} /> },
+  { key: "px_fizz", start: 886.58, dur: 8.16, kind: "pxfizz", el: (d) => <PxFizzTest {...({ durationInFrames: d, ...{"alive":true,"title":"¿Todavía sirve?"} } as any)} /> },
+  { key: "p275_rxcartproducts", start: 894.74, dur: 3.14, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/rx_cart_products.mp4" darken={0} /> },
   { key: "p276_realrxdarkbott", start: 897.48, dur: 3.12, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_dark_bottle_shelf_2.jpg" darken={0} /> },
   { key: "p277_realrxdarkbott", start: 900.2, dur: 3.16, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_dark_bottle_shelf_3.jpg" darken={0} /> },
   { key: "p278_realrxtomatoes", start: 902.96, dur: 2.4, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_tomatoes_vine_1.jpg" darken={0} /> },
-  { key: "p279_realrxcartprod", start: 904.96, dur: 3.3, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_cart_products_2.jpg" darken={0} /> },
+  { key: "p279_realrxcartprod", start: 904.96, dur: 3.3, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_cart_products_1.png" darken={0} /> },
   { key: "p280_realrxtomatoes", start: 907.86, dur: 2.24, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_tomatoes_vine_2.jpg" darken={0} /> },
   { key: "p281_realrxtomatoes", start: 909.7, dur: 5.64, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_tomatoes_vine_3.jpg" darken={0} /> },
   { key: "p282_realrxtomatoes", start: 914.94, dur: 2.52, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_tomatoes_vine_4.jpg" darken={0} /> },
   { key: "p283_realrxdarkbott", start: 917.06, dur: 4.48, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_dark_bottle_shelf_4.jpg" darken={0} /> },
   { key: "p284_rxdarkbottlesh", start: 921.14, dur: 2.96, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/rx_dark_bottle_shelf.mp4" darken={0} /> },
-  { key: "p285_realrxcartprod", start: 923.7, dur: 3.2, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_cart_products_3.jpg" darken={0} /> },
+  { key: "p285_realrxcartprod", start: 923.7, dur: 3.2, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_cart_products_2.jpg" darken={0} /> },
   { key: "p286_rxperoxidegard", start: 926.5, dur: 5.24, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/rx_peroxide_garden.mp4" darken={0} /> },
   { key: "p287_rxpourbaseplan", start: 931.34, dur: 2.26, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/rx_pour_base_plant.mp4" darken={0} /> },
   { key: "p288_realrxpourbase", start: 933.2, dur: 3.74, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_pour_base_plant_1.jpg" darken={0} /> },
@@ -268,20 +261,20 @@ export const CUES: Cue[] = [
   { key: "p291_realrxpourbase", start: 941.72, dur: 2.28, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_pour_base_plant_4.jpg" darken={0} /> },
   { key: "p292_realrxoldhands", start: 943.6, dur: 2.44, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_old_hands_soil_1.jpg" darken={0} /> },
   { key: "p293_realrxoldhands", start: 945.64, dur: 4.52, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_old_hands_soil_2.jpg" darken={0} /> },
-  { key: "p294_realrxcartprod", start: 949.76, dur: 2.5, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_cart_products_4.jpg" darken={0} /> },
-  { key: "p295_realrxgardenst", start: 951.86, dur: 4.78, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_garden_store_1.jpg" darken={0} /> },
-  { key: "p296_realrxsowingse", start: 956.24, dur: 2.26, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_sowing_seeds_4.jpg" darken={0} /> },
+  { key: "p294_realrxcartprod", start: 949.76, dur: 2.5, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_cart_products_3.jpg" darken={0} /> },
+  { key: "p295_realrxcartprod", start: 951.86, dur: 4.78, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_cart_products_4.jpg" darken={0} /> },
+  { key: "p296_realrxsowingse", start: 956.24, dur: 2.26, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_sowing_seeds_2.png" darken={0} /> },
   { key: "p297_realrxrootswhi", start: 958.1, dur: 3.34, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_roots_white_1.jpg" darken={0} /> },
   { key: "cmp_bars_cost", start: 961.04, dur: 9.8, kind: "bars", el: (d) => <BarCompare durationInFrames={d} bars={[{"label":"Frascos del vivero","value":100,"display":"Una fortuna","tone":"danger"},{"label":"Una botellita","value":4,"display":"$2 · 7 usos","winner":true}]} eyebrow="Lo que gastás" title="Vivero vs agua oxigenada" accent="good" hue="amber" /> },
   { key: "p300_realrxpantrysh", start: 970.84, dur: 2.82, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_pantry_shelf_1.jpg" darken={0} /> },
   { key: "p301_realrxpantrysh", start: 973.26, dur: 4.2, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_pantry_shelf_2.jpg" darken={0} /> },
   { key: "p302_rxwateringcan", start: 977.06, dur: 3.26, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/rx_watering_can.mp4" darken={0} /> },
   { key: "p303_realrxoldhands", start: 979.92, dur: 3.92, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_old_hands_soil_3.png" darken={0} /> },
-  { key: "cmp_recap", start: 983.44, dur: 9.08, kind: "checklist", el: (d) => <Checklist durationInFrames={d} title="Los 7, redonditos" items={[{"text":"1 · Oxigenar la tierra","state":"done"},{"text":"2 · Despertar semillas","state":"done"},{"text":"3 · Salvar raíz podrida","state":"done"},{"text":"4 · Hongos (jamás al sol)","state":"done"},{"text":"5 · Desinfectar herramientas","state":"done"},{"text":"6 · Larvas del sustrato","state":"done"},{"text":"7 · Agua de riego viva","state":"done"}]} /> },
+  { key: "px_seven", start: 983.44, dur: 9.08, kind: "pxseven", el: (d) => <PxSevenSeal {...({ durationInFrames: d, ...{"title":"Los 7 secretos","items":["Oxigenar la tierra","Despertar semillas","Salvar la raíz podrida","Frenar los hongos","Desinfectar herramientas","Larvas del sustrato","Agua de riego viva"]} } as any)} /> },
   { key: "p306_realrxoverwate", start: 992.52, dur: 2.5, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_overwater_pot_2.webp" darken={0} /> },
   { key: "p307_realrxmeasures", start: 994.62, dur: 2.42, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_measure_spoon_3.jpg" darken={0} /> },
-  { key: "p308_rxsprouttimela", start: 996.64, dur: 2.8, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/rx_sprout_timelapse.mp4" darken={0} /> },
-  { key: "p309_realrxsproutti", start: 999.04, dur: 4.4, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_sprout_timelapse_1.jpg" darken={0} /> },
+  { key: "p308_realrxsowingse", start: 996.64, dur: 2.8, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_sowing_seeds_3.jpg" darken={0} /> },
+  { key: "p309_realrxsowingse", start: 999.04, dur: 4.4, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_sowing_seeds_4.jpg" darken={0} /> },
   { key: "p310_realrxrootrot3", start: 1003.04, dur: 2.34, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_root_rot_3.jpg" darken={0} /> },
   { key: "p311_realrxmeasures", start: 1004.98, dur: 4.6, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_measure_spoon_4.jpg" darken={0} /> },
   { key: "p312_rxleafspots", start: 1009.18, dur: 2.72, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/rx_leaf_spots.mp4" darken={0} /> },
@@ -300,7 +293,7 @@ export const CUES: Cue[] = [
   { key: "p325_realrxsunsetga", start: 1047.36, dur: 4.64, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_sunset_garden_1.jpg" darken={0} /> },
   { key: "cmp_close", start: 1051.6, dur: 7.46, kind: "closingcard", el: (d) => <ClosingCardKit {...({ durationInFrames: d, ...{"heading":"Próximo: la cáscara de banana","cta":"Suscribite al canal","seal":true} } as any)} /> },
   { key: "p328_realrxwatering", start: 1059.06, dur: 2.94, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_watering_can_4.jpg" darken={0} /> },
-  { key: "p329_realrxsunsetga", start: 1061.6, dur: 2.5, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_sunset_garden_2.png" darken={0} /> },
+  { key: "p329_realrxsunsetga", start: 1061.6, dur: 2.5, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_sunset_garden_2.jpg" darken={0} /> },
   { key: "p330_rxoldfarmergar", start: 1063.7, dur: 6, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/rx_old_farmer_garden.mp4" darken={0} /> },
   { key: "p331_realrxlushgard", start: 1069.3, dur: 2.58, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_lush_garden_2.jpg" darken={0} /> },
   { key: "p332_realrxoldfarme", start: 1071.48, dur: 6.2, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/rx_old_farmer_garden_1.jpg" darken={0} /> },
@@ -312,5 +305,4 @@ export const OVERLAYS: Cue[] = [
   { key: "cmp_d1", start: 275.76, dur: 3.2, kind: "labelcallout", el: (d) => <LabelCalloutKit {...({ durationInFrames: d, ...{"text":"1 cucharada · 1 litro","from":"bottom"} } as any)} /> },
   { key: "cmp_d2", start: 343.18, dur: 3, kind: "bigstat", el: (d) => <BigStatKit {...({ durationInFrames: d, ...{"value":30,"unit":" min","caption":"de remojo, ni uno más"} } as any)} /> },
   { key: "cmp_d3", start: 404.3, dur: 3.2, kind: "labelcallout", el: (d) => <LabelCalloutKit {...({ durationInFrames: d, ...{"text":"1½ cda · 1 litro · empapar","from":"bottom","accent":"danger"} } as any)} /> },
-  { key: "cmp_err", start: 816, dur: 3.4, kind: "bigstat", el: (d) => <BigStatKit {...({ durationInFrames: d, ...{"value":1,"unit":" cda/L","caption":"la dosis es baja a propósito"} } as any)} /> },
 ];

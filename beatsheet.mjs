@@ -158,6 +158,11 @@ const KIT = {
   ingredientscard: "IngredientsCardKit", costtally: "CostTallyKit", gaugemeter: "GaugeMeterKit",
   stampreveal: "StampRevealKit", labelcallout: "LabelCalloutKit", splitpanel: "SplitPanelKit",
   processgrid: "ProcessGridKit", closingcard: "ClosingCardKit",
+  // ── bespoke peróxido ──
+  pxbottle: "PxBottleReveal", pxsoil: "PxSoilBreath", pxseed: "PxSeedAwaken", pxrescue: "PxRootRescue",
+  pxmildew: "PxMildewRetreat", pxsun: "PxSunLupa", pxdose: "PxDoseScale", pxfizz: "PxFizzTest",
+  pxamber: "PxAmberDecay", pxgnats: "PxGnatsLift", pxwater: "PxWaterRevive", pxcost: "PxCostCart",
+  pxforge: "PxMoleculeForge", pxdrown: "PxDrownedPlant", pxmyth: "PxMythStamp", pxseven: "PxSevenSeal",
 };
 const KIT_SYS = new Set(["id", "start", "dur", "kind", "overlay", "gen", "anec", "darken", "reframe", "t", "src"]);
 const cleanSlides = (slides) =>

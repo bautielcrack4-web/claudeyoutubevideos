@@ -28,7 +28,9 @@ const rawShare = ((count.raw_real || 0) + (count.raw_gen || 0) + (count.raw_stoc
 const STRUCT = ["bars", "cross", "process", "journey", "infzoom", "annotated", "callout", "checklist", "splitlist", "aged",
   "perox", "bigstat", "statgrid", "bulletlist", "numberedsteps", "timeline", "comparetwo", "barchart", "rankingbars", "donutstat",
   "partsdiagram", "crosssection", "flowarrows", "cyclediagram", "mappin", "annotatedphoto", "quotecard", "equation", "ingredientscard",
-  "costtally", "gaugemeter", "stampreveal", "labelcallout", "splitpanel", "processgrid", "closingcard"];
+  "costtally", "gaugemeter", "stampreveal", "labelcallout", "splitpanel", "processgrid", "closingcard",
+  "pxbottle", "pxsoil", "pxseed", "pxrescue", "pxmildew", "pxsun", "pxdose", "pxfizz", "pxamber", "pxgnats",
+  "pxwater", "pxcost", "pxforge", "pxdrown", "pxmyth", "pxseven"];
 const structKinds = STRUCT.filter((k) => count[k] > 0);
 const structCount = STRUCT.reduce((a, k) => a + (count[k] || 0), 0);
 const nonRawDistinct = Object.keys(count).filter((k) => !k.startsWith("raw")).length;

@@ -1,5 +1,6 @@
 import "./index.css";
 import { Composition } from "remotion";
+import { MainKitPreviewPx, TOTAL_FRAMES_KITPX } from "./VideoEdit/KitPreviewPx";
 import { MainEstiercol, TOTAL_FRAMES_EST } from "./VideoEdit/Main_estiercol";
 import { MainWasp, TOTAL_FRAMES_WASP } from "./VideoEdit/Main_wasp";
 import { MainTick, TOTAL_FRAMES_TICK } from "./VideoEdit/Main_tick";
@@ -69,6 +70,8 @@ import { MainKitPreview, TOTAL_FRAMES_KIT } from "./VideoEdit/KitPreview";
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      {/* Hoja de contactos — 16 componentes bespoke del video de peróxido */}
+      <Composition id="KitPreviewPx" component={MainKitPreviewPx} durationInFrames={TOTAL_FRAMES_KITPX} fps={30} width={1920} height={1080} />
       {/* PREVIEW DEL KIT — los 30 componentes genéricos en secuencia (90 frames c/u) */}
       <Composition id="KitPreview" component={MainKitPreview} durationInFrames={TOTAL_FRAMES_KIT} fps={30} width={1920} height={1080} />
       {/* VIDEO ACTIVO — Crónicas Perdidas · "7 Barcos…" (SLICE 1) · faceless · voz clonada */}

@@ -91,291 +91,259 @@ export const AVATAR_WINDOWS: AvatarWindow[] = [
     "mode": "hidden"
   },
   {
-    "start": 187.46,
+    "start": 197.5,
     "mode": "cornerBR"
   },
   {
-    "start": 191.24,
+    "start": 199.98,
     "mode": "hidden"
   },
   {
-    "start": 199.7,
+    "start": 209.44,
     "mode": "cornerBR"
   },
   {
-    "start": 203.08,
+    "start": 211.62,
     "mode": "hidden"
   },
   {
-    "start": 211.34,
+    "start": 220.34,
     "mode": "cornerBR"
   },
   {
-    "start": 214.46,
+    "start": 223.28,
     "mode": "hidden"
   },
   {
-    "start": 223,
+    "start": 231.04,
     "mode": "cornerBR"
   },
   {
-    "start": 226.08,
+    "start": 235.64,
     "mode": "hidden"
   },
   {
-    "start": 235.36,
+    "start": 250.82,
     "mode": "cornerBR"
   },
   {
-    "start": 237.54,
+    "start": 254.06,
     "mode": "hidden"
   },
   {
-    "start": 264.3,
+    "start": 271.8,
     "mode": "cornerBR"
   },
   {
-    "start": 266.9,
+    "start": 275.22,
     "mode": "hidden"
   },
   {
-    "start": 293.04,
+    "start": 289.02,
     "mode": "cornerBR"
   },
   {
-    "start": 296.86,
+    "start": 293.32,
     "mode": "hidden"
   },
   {
-    "start": 307.46,
+    "start": 303.36,
     "mode": "cornerBR"
   },
   {
-    "start": 310.56,
+    "start": 307.74,
     "mode": "hidden"
   },
   {
-    "start": 321.88,
+    "start": 318.34,
     "mode": "cornerBR"
   },
   {
-    "start": 326.76,
+    "start": 322.16,
     "mode": "hidden"
   },
   {
-    "start": 347.38,
+    "start": 360.3,
     "mode": "cornerBR"
   },
   {
-    "start": 352.26,
+    "start": 365.18,
     "mode": "hidden"
   },
   {
-    "start": 365.34,
+    "start": 374.52,
     "mode": "cornerBR"
   },
   {
-    "start": 368.88,
+    "start": 377.62,
     "mode": "hidden"
   },
   {
-    "start": 377.34,
+    "start": 388.3,
     "mode": "cornerBR"
   },
   {
-    "start": 382.22,
+    "start": 393.18,
     "mode": "hidden"
   },
   {
-    "start": 393.76,
+    "start": 419.88,
     "mode": "cornerBR"
   },
   {
-    "start": 398.5,
+    "start": 422.54,
     "mode": "hidden"
   },
   {
-    "start": 409.48,
+    "start": 433.8,
     "mode": "cornerBR"
   },
   {
-    "start": 414.36,
+    "start": 436.08,
     "mode": "hidden"
   },
   {
-    "start": 422.26,
+    "start": 453.52,
     "mode": "cornerBR"
   },
   {
-    "start": 425.84,
+    "start": 455.86,
     "mode": "hidden"
   },
   {
-    "start": 444.46,
+    "start": 474.26,
     "mode": "cornerBR"
   },
   {
-    "start": 448.24,
+    "start": 477.34,
     "mode": "hidden"
   },
   {
-    "start": 455.58,
+    "start": 488.42,
     "mode": "cornerBR"
   },
   {
-    "start": 458.72,
+    "start": 493.3,
     "mode": "hidden"
   },
   {
-    "start": 466.86,
+    "start": 517.34,
     "mode": "cornerBR"
   },
   {
-    "start": 471.24,
+    "start": 520.96,
     "mode": "hidden"
   },
   {
-    "start": 481.45,
+    "start": 537.88,
     "mode": "cornerBR"
   },
   {
-    "start": 483.94,
+    "start": 541.92,
     "mode": "hidden"
   },
   {
-    "start": 503.16,
+    "start": 550.44,
     "mode": "cornerBR"
   },
   {
-    "start": 506.42,
+    "start": 554.5,
     "mode": "hidden"
   },
   {
-    "start": 520.68,
+    "start": 569.14,
     "mode": "cornerBR"
   },
   {
-    "start": 524.52,
+    "start": 571.52,
     "mode": "hidden"
   },
   {
-    "start": 541.64,
+    "start": 579.76,
     "mode": "cornerBR"
   },
   {
-    "start": 543.8,
+    "start": 583.12,
     "mode": "hidden"
   },
   {
-    "start": 554.22,
+    "start": 598.6,
     "mode": "cornerBR"
   },
   {
-    "start": 556.84,
+    "start": 601.32,
     "mode": "hidden"
   },
   {
-    "start": 571.24,
+    "start": 611.66,
     "mode": "cornerBR"
   },
   {
-    "start": 576.02,
+    "start": 614.9,
     "mode": "hidden"
   },
   {
-    "start": 590.96,
+    "start": 621.26,
     "mode": "cornerBR"
   },
   {
-    "start": 594.8,
+    "start": 625.5,
     "mode": "hidden"
   },
   {
-    "start": 601.04,
+    "start": 640.76,
     "mode": "cornerBR"
   },
   {
-    "start": 603.36,
+    "start": 643.4,
     "mode": "hidden"
   },
   {
-    "start": 614.62,
+    "start": 661.34,
     "mode": "cornerBR"
   },
   {
-    "start": 616.96,
+    "start": 663.78,
     "mode": "hidden"
   },
   {
-    "start": 625.62,
+    "start": 673.42,
     "mode": "cornerBR"
   },
   {
-    "start": 627.86,
+    "start": 676.26,
     "mode": "hidden"
   },
   {
-    "start": 635.86,
+    "start": 685.92,
     "mode": "cornerBR"
   },
   {
-    "start": 638.94,
+    "start": 690.58,
     "mode": "hidden"
   },
   {
-    "start": 645.08,
+    "start": 701.68,
     "mode": "cornerBR"
   },
   {
-    "start": 649.96,
+    "start": 706.56,
     "mode": "hidden"
   },
   {
-    "start": 668.04,
+    "start": 727.58,
     "mode": "cornerBR"
   },
   {
-    "start": 670.38,
+    "start": 732.46,
     "mode": "hidden"
   },
   {
-    "start": 678.8,
+    "start": 741.8,
     "mode": "cornerBR"
   },
   {
-    "start": 683.68,
-    "mode": "hidden"
-  },
-  {
-    "start": 695.64,
-    "mode": "cornerBR"
-  },
-  {
-    "start": 698.96,
-    "mode": "hidden"
-  },
-  {
-    "start": 719.78,
-    "mode": "cornerBR"
-  },
-  {
-    "start": 723.88,
-    "mode": "hidden"
-  },
-  {
-    "start": 735.98,
-    "mode": "cornerBR"
-  },
-  {
-    "start": 739.1,
-    "mode": "hidden"
-  },
-  {
-    "start": 747.86,
-    "mode": "cornerBR"
-  },
-  {
-    "start": 750.14,
+    "start": 744.26,
     "mode": "hidden"
   },
   {
@@ -387,171 +355,155 @@ export const AVATAR_WINDOWS: AvatarWindow[] = [
     "mode": "hidden"
   },
   {
-    "start": 801.86,
+    "start": 797.8,
     "mode": "cornerBR"
   },
   {
-    "start": 805.28,
+    "start": 799.88,
     "mode": "hidden"
   },
   {
-    "start": 814.02,
+    "start": 808.1,
     "mode": "cornerBR"
   },
   {
-    "start": 816,
+    "start": 810.9,
     "mode": "hidden"
   },
   {
-    "start": 825.5,
+    "start": 827.92,
     "mode": "cornerBR"
   },
   {
-    "start": 828.2,
+    "start": 830.62,
     "mode": "hidden"
   },
   {
-    "start": 836.36,
+    "start": 838.36,
     "mode": "cornerBR"
   },
   {
-    "start": 838.64,
+    "start": 840.72,
     "mode": "hidden"
   },
   {
-    "start": 846.74,
+    "start": 851.8,
     "mode": "cornerBR"
   },
   {
-    "start": 851.62,
+    "start": 854.22,
     "mode": "hidden"
   },
   {
-    "start": 859.58,
+    "start": 862.38,
     "mode": "cornerBR"
   },
   {
-    "start": 862.66,
+    "start": 865.12,
     "mode": "hidden"
   },
   {
-    "start": 875.58,
+    "start": 900.32,
     "mode": "cornerBR"
   },
   {
-    "start": 877.62,
+    "start": 903.36,
     "mode": "hidden"
   },
   {
-    "start": 892.6,
+    "start": 909.82,
     "mode": "cornerBR"
   },
   {
-    "start": 895.14,
+    "start": 914.7,
     "mode": "hidden"
   },
   {
-    "start": 903.08,
+    "start": 923.82,
     "mode": "cornerBR"
   },
   {
-    "start": 905.36,
+    "start": 926.9,
     "mode": "hidden"
   },
   {
-    "start": 915.06,
+    "start": 936.66,
     "mode": "cornerBR"
   },
   {
-    "start": 917.46,
+    "start": 939,
     "mode": "hidden"
   },
   {
-    "start": 926.62,
+    "start": 945.76,
     "mode": "cornerBR"
   },
   {
-    "start": 931.5,
+    "start": 950.16,
     "mode": "hidden"
   },
   {
-    "start": 938.72,
+    "start": 958.22,
     "mode": "cornerBR"
   },
   {
-    "start": 942.12,
+    "start": 961.04,
     "mode": "hidden"
   },
   {
-    "start": 949.88,
+    "start": 980.04,
     "mode": "cornerBR"
   },
   {
-    "start": 952.26,
+    "start": 983.44,
     "mode": "hidden"
   },
   {
-    "start": 970.96,
+    "start": 999.16,
     "mode": "cornerBR"
   },
   {
-    "start": 973.66,
+    "start": 1003.44,
     "mode": "hidden"
   },
   {
-    "start": 992.64,
+    "start": 1011.62,
     "mode": "cornerBR"
   },
   {
-    "start": 995.02,
+    "start": 1014.04,
     "mode": "hidden"
   },
   {
-    "start": 1003.16,
+    "start": 1022.6,
     "mode": "cornerBR"
   },
   {
-    "start": 1005.38,
+    "start": 1025.84,
     "mode": "hidden"
   },
   {
-    "start": 1013.76,
+    "start": 1036.68,
     "mode": "cornerBR"
   },
   {
-    "start": 1017.24,
+    "start": 1038.84,
     "mode": "hidden"
   },
   {
-    "start": 1025.56,
+    "start": 1047.48,
     "mode": "cornerBR"
   },
   {
-    "start": 1029.58,
+    "start": 1051.6,
     "mode": "hidden"
   },
   {
-    "start": 1038.56,
+    "start": 1069.42,
     "mode": "cornerBR"
   },
   {
-    "start": 1042.48,
-    "mode": "hidden"
-  },
-  {
-    "start": 1059.18,
-    "mode": "cornerBR"
-  },
-  {
-    "start": 1062,
-    "mode": "hidden"
-  },
-  {
-    "start": 1071.6,
-    "mode": "cornerBR"
-  },
-  {
-    "start": 1076.48,
+    "start": 1071.88,
     "mode": "hidden"
   },
   {
