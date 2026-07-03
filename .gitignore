@@ -60,3 +60,5 @@ telegram_bot*
 .tg_userbot
 tg_creds.txt
 .tg_delivery
+.tg_bridge_state.json
+.tg_bridge.log
