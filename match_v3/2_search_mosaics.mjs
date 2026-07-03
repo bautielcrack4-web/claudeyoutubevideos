@@ -14,6 +14,10 @@ if (!beatsArg || !outArg) { console.error("Uso: node 2_search_mosaics.mjs <beats
 const NCAND = +(ncArg || 3), NFRAG = +(nfArg || 2);
 const beats = JSON.parse(fs.readFileSync(beatsArg, "utf8").replace(/^﻿/, ""));
 fs.mkdirSync(outArg, { recursive: true });
+// IDEMPOTENTE: si ya hay un manifest previo con candidatos, no lo pisamos con vacío (un reintento
+// rate-limiteado no debe borrar lo bueno). Reusamos entradas previas cuando la nueva corrida no trae nada.
+const manifestPath = path.join(outArg, "_manifest.json");
+const prevManifest = fs.existsSync(manifestPath) ? JSON.parse(fs.readFileSync(manifestPath, "utf8")) : {};
 
 const ytBeats = beats.filter((b) => (b.src || "youtube") === "youtube" && (b.queries || []).length);
 console.log(`${beats.length} beats · ${ytBeats.length} a YouTube (resto stock/foto) · NCAND=${NCAND} NFRAG=${NFRAG}`);
@@ -48,12 +52,20 @@ for (const b of ytBeats) {
     for (let fi = 0; fi < Math.min(NFRAG, sb.fragments.length); fi++) {
       const base = fi * sb.columns * sb.rows;
       const fn = `${b.name}__c${ci}__${cand.id}__f${fi}__c${sb.columns}r${sb.rows}_int${interval.toFixed(1)}_base${base}.png`;
-      if (curl(sb.fragments[fi].url, path.join(outArg, fn))) frags.push(fn);
+      const dest = path.join(outArg, fn);
+      if (fs.existsSync(dest) && fs.statSync(dest).size > 500) frags.push(fn);        // ya bajado → reusar
+      else if (curl(sb.fragments[fi].url, dest)) frags.push(fn);
     }
     if (frags.length) entry.candidates.push({ rank: ci, id: cand.id, title: cand.title, cols: sb.columns, rows: sb.rows, interval: +interval.toFixed(2), duration, frags });
   }
-  manifest[b.name] = entry;
-  console.log(`  ${b.name}: ${entry.candidates.length} cands con mosaico`);
+  // si esta corrida no trajo candidatos pero había una previa buena, conservar la previa
+  if (!entry.candidates.length && prevManifest[b.name]?.candidates?.length) {
+    manifest[b.name] = prevManifest[b.name];
+    console.log(`  ${b.name}: 0 nuevos → conservo manifest previo (${prevManifest[b.name].candidates.length} cands)`);
+  } else {
+    manifest[b.name] = entry;
+    console.log(`  ${b.name}: ${entry.candidates.length} cands con mosaico`);
+  }
 }
 fs.writeFileSync(path.join(outArg, "_manifest.json"), JSON.stringify(manifest, null, 2));
 console.log(`\nqueries únicas (≈ búsquedas API): ${searchStats().uniqueQueries}`);
