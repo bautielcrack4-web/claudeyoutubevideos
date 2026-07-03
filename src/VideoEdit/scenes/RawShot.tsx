@@ -16,6 +16,9 @@ export const RawShot: React.FC<{
   zoom?: [number, number];
   kicker?: string; // optional small top-left tag; omit for fully raw
   accent?: string;
+  // BUG 2: "blur" = clip vertical/baja-res → fondo blureado (cover) + clip real
+  // centrado con object-fit:contain a su tamaño nativo (NO se estira → no pixela).
+  fit?: "cover" | "blur";
 }> = ({
   durationInFrames,
   src,
@@ -25,6 +28,7 @@ export const RawShot: React.FC<{
   zoom,
   kicker,
   accent = COLORS.accent,
+  fit = "cover",
 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
@@ -47,7 +51,10 @@ export const RawShot: React.FC<{
     [1.04, 1.008], // out medio
   ];
   const ORIGINS = ["50% 50%", "32% 30%", "70% 38%", "38% 70%", "66% 62%", "30% 55%", "60% 30%", "50% 72%"];
-  const motion = zoom ?? MOTIONS[seed % MOTIONS.length];
+  // BUG 2: en blur-fill, el clip real va contain a tamaño nativo → un Ken-Burns
+  // que agranda lo pixelaría igual. Usamos un movimiento MÍNIMO y muy suave.
+  const blurFill = fit === "blur";
+  const motion = zoom ?? (blurFill ? [1.0, 1.02] : MOTIONS[seed % MOTIONS.length]);
   const camOrigin = ORIGINS[(seed >> 3) % ORIGINS.length];
   return (
     <SceneFrame
@@ -57,6 +64,7 @@ export const RawShot: React.FC<{
       image={src}
       imageBlur={blur}
       imageDarken={darken}
+      imageFit={blurFill ? "blur" : "cover"}
       zoom={motion}
       camOrigin={camOrigin}
       noReveal

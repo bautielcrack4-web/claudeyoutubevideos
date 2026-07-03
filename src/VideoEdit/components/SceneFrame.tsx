@@ -25,6 +25,7 @@ export const SceneFrame: React.FC<{
   imageBlur?: number;
   imageDarken?: number;
   imageTint?: string;
+  imageFit?: "cover" | "blur"; // "blur" = blur-fill para clips verticales/baja-res
   noReveal?: boolean; // RawShot: HARD-CUT, sin fade/blur de entrada NI salida (regla del nicho)
   camOrigin?: string; // origen del Ken-Burns (varía el "punto" del zoom/pan). def centro
 }> = ({
@@ -41,6 +42,7 @@ export const SceneFrame: React.FC<{
   imageBlur,
   imageDarken,
   imageTint,
+  imageFit = "cover",
   noReveal = false,
   camOrigin = "center center",
 }) => {
@@ -69,6 +71,7 @@ export const SceneFrame: React.FC<{
             blur={imageBlur}
             darken={imageDarken}
             tint={imageTint}
+            fit={imageFit}
             durationInFrames={durationInFrames}
           />
         ) : bg === "black" || bg === "white" ? (

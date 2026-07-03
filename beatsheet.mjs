@@ -185,6 +185,7 @@ function renderEl(b) {
         (b.darken != null ? ` darken={${b.darken}}` : ``) +
         (b.blur != null ? ` blur={${b.blur}}` : ``) +
         (b.zoom != null ? ` zoom={${j(b.zoom)}}` : ``) +
+        (b.fit ? ` fit=${j(b.fit)}` : ``) +
         ` />`
       );
     case "diagram": {

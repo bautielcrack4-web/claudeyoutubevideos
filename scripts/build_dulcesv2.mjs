@@ -11,9 +11,36 @@
 // Encima: componentes bespoke (topdulce/fichadulce/citaabuela/ingredientesflotan/
 // antesahora/numerodulce/teasecards) portados de v1, re-anclados al ms real de v2.
 import fs from "fs";
+import { execFileSync } from "child_process";
 
 const R = "public/";
 const has = (rel) => fs.existsSync(R + rel);
+
+// ── ffprobe: resolución de cada clip (BUG 2: verticales/baja-res → blur-fill) ──
+// Los clips verticales (h>w) o de ancho < 1280 se estiraban a full-width con
+// objectFit:cover + SAFE_CROP zoom → pixelado. Detectamos su tamaño nativo acá
+// y marcamos fit:"blur" (fondo blureado + clip real contain) en el beat.
+const FFPROBE = "node_modules/@remotion/compositor-win32-x64-msvc/ffprobe.exe";
+const _resCache = {};
+function clipRes(rel) {
+  if (rel in _resCache) return _resCache[rel];
+  let r = null;
+  try {
+    const out = execFileSync(FFPROBE, ["-v", "error", "-select_streams", "v:0",
+      "-show_entries", "stream=width,height", "-of", "csv=p=0", R + rel], { encoding: "utf8" }).trim();
+    const [w, h] = out.split(",").map(Number);
+    if (w && h) r = { w, h };
+  } catch { r = null; }
+  _resCache[rel] = r;
+  return r;
+}
+// ¿este clip necesita blur-fill? vertical (h>w) o ancho nativo < 1280.
+function needsBlurFill(rel) {
+  if (!/\.(mp4|webm|mov)$/i.test(rel)) return false; // solo clips; fotos van aparte
+  const r = clipRes(rel);
+  if (!r) return false; // si no se pudo medir, no arriesgamos (se trata como full-res)
+  return r.h > r.w || r.w < 1280;
+}
 const match = JSON.parse(fs.readFileSync("public/broll/match_dulcesv2.json", "utf8"));
 const matchedArr = JSON.parse(fs.readFileSync("public/broll/clips_dulcesv2_matched.json", "utf8"));
 const v1 = JSON.parse(fs.readFileSync("beatsheet/dulces.json", "utf8"));
@@ -76,20 +103,26 @@ const VINTAGE = ["vintage_cocina1_1.jpg", "vintage_cocina2_1.jpg", "vintage_abue
   "vintage_familia1_2.jpg", "vintage_manos_2.jpg", "vintage_cocina2_2.jpg"].filter((f) => has("real/" + f));
 
 // ── beats crudos (raw) anclados al ms de cada frase ──────────────────────────
-const SAFE = [1.08, 1.11]; // SAFE_CROP anti-marca en clips full-bleed
+// SAFE_CROP anti-marca. BUG 2: bajado de 1.08-1.11 a 1.04-1.06 para empujar
+// logos de esquina SIN magnificar tanto (menos pixelado). Solo para clips
+// full-res horizontales; a los verticales/blur-fill NO se les mete zoom extra.
+const SAFE = [1.04, 1.06];
 const beats = [];
 let cRot = 0, aRot = 0, vRot = 0;
 const dRot = {}; // rotación de clip/foto por dulce
 
-// dur = gap hasta el próximo ms (clamp 2.2..7). Último clamp a fin de audio.
+// BUG 1 (huecos en blanco): la capa RAW es b-roll de FONDO y debe ser CONTINUA.
+// Antes dur = min(gap, 7) → beats cortos dejaban 291s de fondo ámbar visible entre
+// frases muy espaciadas. Ahora dur = hueco EXACTO hasta el START del próximo beat
+// de b-roll (contiguo, sin tope). Los OVERLAYS (topdulce/quote/…) van encima y no
+// cuentan como b-roll. Último beat estira hasta fin de audio.
 const AUDIO_END = 1605;
 function durFor(i) {
   const cur = match[i].ms / 1000;
   const nxt = i + 1 < match.length ? match[i + 1].ms / 1000 : AUDIO_END;
   const gap = nxt - cur;
-  // no solapar NUNCA: la dur = hueco exacto hasta la próxima frase (corte limpio
-  // pegado al ms real), con techo 7s por si hay un silencio largo al final.
-  const d = Math.max(0.5, Math.min(gap, 7));
+  // contiguo: sin techo. Piso mínimo por si dos frases caen en el mismo ms.
+  const d = Math.max(0.5, gap);
   return +d.toFixed(2);
 }
 
@@ -121,7 +154,13 @@ for (let i = 0; i < match.length; i++) {
   }
 
   const beat = { id: b.name, kind: "raw", src, start, dur, hue: "amber" };
-  if (isClip) beat.zoom = SAFE; // anti-marca solo en clips full-bleed
+  if (isClip) {
+    // BUG 2: si el clip es vertical o de baja resolución → blur-fill (contain
+    // sobre copia blureada) y SIN zoom SAFE_CROP (no magnificar → no pixelar).
+    // Solo a clips full-res horizontales les damos el SAFE_CROP (ahora suave).
+    if (needsBlurFill(src)) beat.fit = "blur";
+    else beat.zoom = SAFE;
+  }
   beats.push(beat);
 }
 

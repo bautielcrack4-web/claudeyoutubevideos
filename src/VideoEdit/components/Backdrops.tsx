@@ -12,7 +12,11 @@ export const ImageBackdrop: React.FC<{
   darken?: number; // 0..1 black overlay
   tint?: string; // e.g. "rgba(255,178,62,0.18)" warm amber wash
   durationInFrames?: number;
-}> = ({ src, blur = 7, darken = 0.55, tint, durationInFrames = 300 }) => {
+  // "blur" = blur-fill: fondo = copia del clip escalada a cubrir + blur fuerte +
+  // oscurecida; el clip real va CENTRADO con object-fit:contain (no se estira →
+  // no pixela). Para clips verticales/baja-res.
+  fit?: "cover" | "blur";
+}> = ({ src, blur = 7, darken = 0.55, tint, durationInFrames = 300, fit = "cover" }) => {
   const frame = useCurrentFrame();
   // casi estático: el movimiento principal lo da el Ken-Burns suave de SceneFrame.
   // (antes 1.08→1.18 se SUMABA al Ken-Burns y los zooms quedaban muy fuertes/rápidos)
@@ -38,6 +42,32 @@ export const ImageBackdrop: React.FC<{
   const gradeFilter = "";
   const blurFilter = !useBaked && blur > 0 ? `blur(${blur}px)` : "";
   const mediaFilter = [blurFilter, gradeFilter].filter(Boolean).join(" ") || undefined;
+
+  // ── BLUR-FILL (clips verticales / baja-res) ────────────────────────────────
+  // Fondo: MISMO clip escalado a cubrir + blur fuerte + oscurecido (así los
+  // laterales no quedan negros). Encima: el clip real CENTRADO con contain, a su
+  // relación de aspecto nativa → nunca se estira a 1920 ni se magnifica → 0 pixelado.
+  if (fit === "blur") {
+    return (
+      <AbsoluteFill>
+        <AbsoluteFill style={{ transform: `scale(${scale * 1.12})` }}>
+          <Media
+            src={src}
+            style={{ width: "100%", height: "100%", objectFit: "cover", filter: "blur(28px) saturate(0.9)" }}
+          />
+        </AbsoluteFill>
+        <AbsoluteFill style={{ background: "rgba(0,0,0,0.42)" }} />
+        <AbsoluteFill style={{ alignItems: "center", justifyContent: "center" }}>
+          <Media
+            src={src}
+            style={{ width: "100%", height: "100%", objectFit: "contain" }}
+          />
+        </AbsoluteFill>
+        <AbsoluteFill style={{ background: `rgba(0,0,0,${darken})` }} />
+      </AbsoluteFill>
+    );
+  }
+
   return (
     <AbsoluteFill>
       <AbsoluteFill style={{ transform: `scale(${scale})` }}>
