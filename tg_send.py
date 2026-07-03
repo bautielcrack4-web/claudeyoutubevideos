@@ -65,9 +65,6 @@ def main():
 
     if not exists(args.video):
         print("no existe --video:", args.video); sys.exit(1)
-    if not exists(SESSION + ".session"):
-        print(f"✗ falta la sesión {SESSION}.session — corré UNA vez:  python3 tg_login.py")
-        sys.exit(3)
 
     api_id, api_hash = load_creds()
     mb = os.path.getsize(args.video) / 1024 / 1024
@@ -81,11 +78,21 @@ def main():
         pct = sent * 100 // total if total else 0
         print(f"\r  subiendo… {pct:3d}%  ({sent/1024/1024:.1f}/{total/1024/1024:.1f} MB)", end="", flush=True)
 
+    # Conexión MANUAL (no el `with` sync, que dispararía un login interactivo si no está
+    # autorizado). Si la sesión no está logueada → salimos limpio con 3, sin colgar.
+    client = TelegramClient(SESSION, api_id, api_hash)
+    client.connect()
+    if not client.is_user_authorized():
+        client.disconnect()
+        print(f"✗ sesión sin autorizar — corré UNA vez a mano:  python3 tg_login.py")
+        sys.exit(3)
     print(f"userbot → {args.to} · {basename(args.video)} ({mb:.1f} MB, {w or '?'}x{h or '?'}, {dur or '?'}s)")
-    with TelegramClient(SESSION, api_id, api_hash) as client:
+    try:
         client.send_file(args.to, args.video, caption=caption,
                          supports_streaming=True, thumb=thumb, attributes=attrs,
                          progress_callback=prog)
+    finally:
+        client.disconnect()
     print()
     if thumb and not args.thumb:
         try: os.remove(thumb)
