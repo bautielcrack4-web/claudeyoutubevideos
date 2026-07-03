@@ -59,3 +59,4 @@ telegram_bot*
 *.session-journal
 .tg_userbot
 tg_creds.txt
+.tg_delivery
