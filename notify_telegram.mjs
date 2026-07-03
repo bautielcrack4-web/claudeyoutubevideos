@@ -99,17 +99,18 @@ async function main() {
     if (thumb) fs.rmSync(thumb, { force: true });
     console.log(`✔ enviado inline a Telegram (message_id ${res.message_id})`);
   } else {
-    // ── >50 MB: primero probamos el USERBOT (Telethon) → sube el video ENTERO con
-    //    streaming nativo hasta 2 GB, sin el tope de 50 MB del bot. Si no hay sesión
-    //    (tg_send.py sale 3) o falla, caemos al fallback miniatura + link. ──
-    console.log(`video ${mb} MB > 50 MB → intento userbot (Telethon, streaming nativo)…`);
+    // ── >50 MB: entrega por el BOT a tu chat (userbot sube al canal privado → el bot
+    //    hace copyMessage). El video llega al chat del bot, NO a Mensajes guardados, y sin
+    //    el tope de 50 MB. Si falta sesión/canal (sale 3) o falla → fallback miniatura+link.
+    //    (Para mandar a Mensajes guardados en su lugar, existe tg_send.py.) ──
+    console.log(`video ${mb} MB > 50 MB → entrega por BOT (userbot→canal→copyMessage)…`);
     const ub = spawnSync(process.env.PYTHON || "python3",
-      [join(process.cwd(), "tg_send.py"), "--video", video, "--title", title, ...(desc ? ["--desc", desc] : []), ...(args.to ? ["--to", args.to] : [])],
+      [join(process.cwd(), "tg_deliver_bot.py"), "--video", video, "--title", title, ...(desc ? ["--desc", desc] : []), ...(args.buttons ? ["--buttons"] : [])],
       { stdio: "inherit" });
-    if (ub.status === 0) { console.log("✔ enviado por userbot (sin límite de 50 MB)"); return; }
+    if (ub.status === 0) { console.log("✔ entregado por el bot a tu chat (sin límite de 50 MB)"); return; }
     console.warn(ub.status === 3
-      ? "userbot sin sesión → corré una vez  python3 tg_login.py . Caigo a miniatura + link."
-      : `userbot no disponible (status ${ub.status}) → caigo a miniatura + link.`);
+      ? "falta sesión/canal → corré  python3 tg_login.py  y  python3 tg_channel_setup.py . Caigo a miniatura + link."
+      : `entrega por bot no disponible (status ${ub.status}) → caigo a miniatura + link.`);
     // ── fallback >50 MB: miniatura + título + desc + LINK (streamea del link) ──
     const link = args.link;
     const capLink = `🎬 ${title}${desc ? `\n${desc}` : ""}` +
