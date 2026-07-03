@@ -7,6 +7,7 @@ import { MainTick, TOTAL_FRAMES_TICK } from "./VideoEdit/Main_tick";
 import { MainMeriendas, TOTAL_FRAMES_MER } from "./VideoEdit/Main_meriendas";
 import { MainPostres, TOTAL_FRAMES_POS } from "./VideoEdit/Main_postres";
 import { MainDulces, TOTAL_FRAMES_DUL } from "./VideoEdit/Main_dulces";
+import { MainDulcesV2, TOTAL_FRAMES_DULV2 } from "./VideoEdit/Main_dulcesv2";
 import { MainDomingos, TOTAL_FRAMES_DOM } from "./VideoEdit/Main_domingos";
 import { MainCocina, TOTAL_FRAMES_COC } from "./VideoEdit/Main_cocina";
 import { MainEstufaRocket, TOTAL_FRAMES_ER } from "./VideoEdit/Main_estufarocket";
@@ -338,6 +339,15 @@ export const RemotionRoot: React.FC = () => {
         id="Dulces"
         component={MainDulces}
         durationInFrames={TOTAL_FRAMES_DUL}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
+      {/* VIDEO ACTIVO v2 — 20 Dulces (clips pegados a cada frase, sin marca) */}
+      <Composition
+        id="Dulcesv2"
+        component={MainDulcesV2}
+        durationInFrames={TOTAL_FRAMES_DULV2}
         fps={30}
         width={1920}
         height={1080}
