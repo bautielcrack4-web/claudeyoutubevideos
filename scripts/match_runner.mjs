@@ -168,22 +168,33 @@ const analyze = async (cand, beat, tag) => {
   const coarseStep = explicitWindow ? (beat.step || 2) : Math.max(2, +(span / COARSE).toFixed(2));
   const coarse = extract(proxy, a0, coarseStep, Math.ceil(span / coarseStep) + 2, tag + "_c");
   if (!coarse.length) return null;
-  let bf = { c: -1, t: a0 };
+  let bf = { fs: -1, c: -1, t: a0, text: 0 };
   let texty = 0, total = 0, markHi = 0;
-  for (const fr of coarse) { const r = await scoreFrame(fr.file, beat.concept); total++; if (r.text > 0.12) texty++; markHi = Math.max(markHi, r.mark); if (r.c > bf.c) bf = { c: r.c, t: fr.t }; }
+  // framePen = qué tan LIMPIO está ESTE frame (elige el MOMENTO sin cartel dentro del clip,
+  // no el pico de concepto que suele caer justo sobre un título). CLIP rara vez pasa ~0.30 en
+  // "texto en pantalla", así que pegamos desde 0.10 y a 0.32 ya vale ×0.12.
+  const framePen = (tx) => curve(tx, 0.10, 0.32, 0.12);
+  const scan = (r, t) => {
+    total++; if (r.text > 0.10) texty++; markHi = Math.max(markHi, r.mark);
+    const fs = r.c * framePen(r.text);            // score del frame = concepto × limpieza
+    if (fs > bf.fs) bf = { fs, c: r.c, t, text: r.text };
+  };
+  for (const fr of coarse) { const r = await scoreFrame(fr.file, beat.concept); scan(r, fr.t); }
   if (coarseStep > FINE) {
     const fa = Math.max(a0, +(bf.t - coarseStep).toFixed(2));
     const fb = Math.min(end, +(bf.t + coarseStep).toFixed(2));
     const fine = extract(proxy, fa, FINE, Math.ceil((fb - fa) / FINE) + 2, tag + "_x", fa - a0);
-    for (const fr of fine) { const r = await scoreFrame(fr.file, beat.concept); total++; if (r.text > 0.12) texty++; markHi = Math.max(markHi, r.mark); if (r.c > bf.c) bf = { c: r.c, t: fr.t }; }
+    for (const fr of fine) { const r = await scoreFrame(fr.file, beat.concept); scan(r, fr.t); }
   }
-  // TEXTO a nivel VENTANA: la fracción de frames con texto quemado RANKEA candidatos
-  // (preferir el más limpio) SIN destruir el score de concepto → el filtro por _score sigue
-  // siendo "qué tan on-topic" (no perdemos densidad). winPen SUAVE: full-texty ⇒ ×0.3 (demota).
+  // TEXTO a nivel VENTANA: la fracción de frames con texto quemado RANKEA candidatos (preferir
+  // el más limpio) SIN destruir el _score de concepto → el filtro por _score sigue siendo "qué
+  // tan on-topic". DURO (los _score de concepto saturan ~1.0, así que winPen es EL discriminador):
+  // 10% de frames texty ya demota; ≥45% ⇒ ×0.06 → un clip texty pierde contra uno limpio.
   const frac = total ? texty / total : 0;
-  const winPen = curve(frac, 0.25, 0.65, 0.3);
+  const winPen = curve(frac, 0.10, 0.45, 0.06);
   const markPen = WM ? curve(markHi, 0.05, 0.14, 0.05) : 1; // logo/marca: solo fauna, en el RANK
-  return { score: +bf.c.toFixed(4), rank: +(bf.c * winPen * markPen).toFixed(4), t: bf.t, url: cand.url, id: cand.id, text: +frac.toFixed(2) };
+  // rank = concepto × limpieza-del-momento × limpieza-de-la-ventana × marca (elige limpio+on-topic)
+  return { score: +bf.c.toFixed(4), rank: +(bf.fs * winPen * markPen).toFixed(4), t: bf.t, url: cand.url, id: cand.id, text: +frac.toFixed(2) };
 };
 
 const results = [];
