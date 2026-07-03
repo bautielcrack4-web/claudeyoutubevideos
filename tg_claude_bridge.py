@@ -26,7 +26,13 @@ STATE_FILE = expanduser("~/.tg_bridge_state.json")
 WORKDIR = os.path.dirname(os.path.abspath(__file__))          # ~/video2: contexto FULL (memoria+skills)
 CHAT_DIR = os.environ.get("BRIDGE_CHAT_DIR", expanduser("~/.tg_chat"))  # contexto LIVIANO para charla
 CLAUDE = os.environ.get("CLAUDE_BIN", "claude")
+NODE = os.environ.get("NODE_BIN", "node")
 TASK_TIMEOUT = int(os.environ.get("BRIDGE_TIMEOUT", "3600"))  # tareas largas (render, etc.)
+RESEARCH_TIMEOUT = int(os.environ.get("RESEARCH_TIMEOUT", "700"))
+
+# ── triggers del GRUPO (coordinación Investigador ↔ Productor) ──
+RESEARCH_RE = re.compile(r"(pr[oó]ximo\s+(video|tema)|investig\w+|research|busc\w+\s+tema)", re.I)
+PRODUCE_RE = re.compile(r"(hac[eé]\s+(ese|el|lo)\b|hacelo|dale\s+con|produc[ií]\w*|arranc\w+\s+ese|dale\s+ese)", re.I)
 
 # ── Ruteo de modelo: charla casual = Haiku (barato ~$0.03/msg); tarea real = Opus.
 CHAT_MODEL = os.environ.get("BRIDGE_CHAT_MODEL", "claude-haiku-4-5-20251001")
@@ -69,31 +75,40 @@ PERSONA = (
 )
 
 
-def load_bot():
-    token = os.environ.get("TELEGRAM_BOT_TOKEN")
-    chat = os.environ.get("TELEGRAM_CHAT_ID")
-    f = os.environ.get("TELEGRAM_BOT_FILE", expanduser("~/.telegram_bot"))
-    if (not token or not chat) and exists(f):
-        for line in open(f, encoding="utf-8"):
-            if "=" not in line:
-                continue
-            k, v = line.strip().split("=", 1)
-            if k == "TELEGRAM_BOT_TOKEN" and not token:
-                token = v
-            if k == "TELEGRAM_CHAT_ID" and not chat:
-                chat = v
-    if not token or not chat:
-        sys.exit("faltan TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID (~/.telegram_bot)")
-    return token, str(chat)
+def _read_kv(path):
+    d = {}
+    if exists(path):
+        for line in open(path, encoding="utf-8"):
+            if "=" in line and not line.strip().startswith("#"):
+                k, v = line.strip().split("=", 1)
+                d[k.strip()] = v.strip()
+    return d
 
 
-TOKEN, ALLOWED_CHAT = load_bot()
-API = f"https://api.telegram.org/bot{TOKEN}/"
+def load_bots():
+    """1 solo cerebro/poller (Productor) que habla por 2 tokens. Config en ~/.tg_bots;
+    fallback al viejo ~/.telegram_bot para el Productor + chat privado."""
+    c = _read_kv(expanduser("~/.tg_bots"))
+    prod = c.get("PRODUCTOR_TOKEN")
+    inv = c.get("INVESTIGADOR_TOKEN")
+    group = c.get("GROUP_CHAT_ID")
+    private = c.get("PRIVATE_CHAT_ID")
+    if not prod or not private:
+        old = _read_kv(expanduser("~/.telegram_bot"))
+        prod = prod or old.get("TELEGRAM_BOT_TOKEN")
+        private = private or old.get("TELEGRAM_CHAT_ID")
+    if not prod or not private:
+        sys.exit("faltan PRODUCTOR_TOKEN / PRIVATE_CHAT_ID (~/.tg_bots)")
+    return prod, inv, (str(group) if group else None), str(private)
 
 
-def api(method, params=None, timeout=70):
+PRODUCTOR_TOKEN, INVESTIGADOR_TOKEN, GROUP_CHAT, PRIVATE_CHAT = load_bots()
+
+
+def api(method, params=None, token=None, timeout=70):
+    token = token or PRODUCTOR_TOKEN
     data = urllib.parse.urlencode(params or {}).encode()
-    req = urllib.request.Request(API + method, data=data)
+    req = urllib.request.Request(f"https://api.telegram.org/bot{token}/{method}", data=data)
     try:
         with urllib.request.urlopen(req, timeout=timeout) as r:
             return json.load(r)
@@ -120,9 +135,9 @@ def save_state(st):
     json.dump(st, open(STATE_FILE, "w"))
 
 
-def send(chat, text):
+def send(chat, text, token=None):
     # Telegram corta en 4096; partimos por saltos de línea, texto plano (sin parse_mode
-    # para no romper por markdown inválido de Claude).
+    # para no romper por markdown inválido de Claude). token = qué VOZ habla (Prod/Investigador).
     LIM = 4000
     while text:
         if len(text) <= LIM:
@@ -132,19 +147,20 @@ def send(chat, text):
             if cut < LIM // 2:
                 cut = LIM
             chunk, text = text[:cut], text[cut:].lstrip("\n")
-        api("sendMessage", {"chat_id": chat, "text": chunk})
+        api("sendMessage", {"chat_id": chat, "text": chunk}, token=token)
 
 
 class Typing:
     """Muestra 'typing…' hasta que termine la tarea (se renueva cada 4s)."""
-    def __init__(self, chat):
+    def __init__(self, chat, token=None):
         self.chat = chat
+        self.token = token
         self._stop = threading.Event()
         self._t = threading.Thread(target=self._run, daemon=True)
 
     def _run(self):
         while not self._stop.is_set():
-            api("sendChatAction", {"chat_id": self.chat, "action": "typing"})
+            api("sendChatAction", {"chat_id": self.chat, "action": "typing"}, token=self.token)
             self._stop.wait(4)
 
     def __enter__(self):
@@ -185,25 +201,94 @@ def ask_claude(chat, prompt, st, model, track, cwd):
     return d.get("result") or "listo"
 
 
+# ══════════ COORDINACIÓN DEL GRUPO (1 poller, 2 voces) ══════════
+def run_research(chan):
+    """Corre el analizador REAL y devuelve el last_report.json fresco (o None)."""
+    rep_path = os.path.join(WORKDIR, "analizador/last_report.json")
+    try: os.remove(rep_path)
+    except OSError: pass
+    args = [NODE, "analizador/investigar.mjs"] + ([chan] if chan else [])
+    try:
+        subprocess.run(args, cwd=WORKDIR, capture_output=True, text=True, timeout=RESEARCH_TIMEOUT)
+    except subprocess.TimeoutExpired:
+        print("[research] timeout", flush=True)
+    try:
+        return json.load(open(rep_path))
+    except Exception:
+        return None
+
+
+def do_research(chat, chan, st):
+    # VOZ Investigador: ack + corre el análisis real + postea el hallazgo
+    send(chat, "buscando en el nicho, dame un cachito", token=INVESTIGADOR_TOKEN)
+    with Typing(chat, token=INVESTIGADOR_TOKEN):
+        rep = run_research(chan)
+    if not rep or not rep.get("fresh"):
+        send(chat, "no pesqué nada fresco esta vez (o se me cayo el scraping). probá de nuevo en un rato", token=INVESTIGADOR_TOKEN)
+        return
+    top = rep["fresh"][0]
+    p = top.get("propuesta") or {}
+    items = " · ".join(f"{i+1}. {x}" for i, x in enumerate(p.get("items", [])))
+    dup = ""
+    if rep.get("dups"):
+        dup = "\n\ndescarté por ya-hechos: " + ", ".join(f"{d.get('titulo_en')} (={d.get('slug')})" for d in rep["dups"][:3])
+    body = (f"encontré uno que explotó:\n\n"
+            f"{top.get('titulo_en')}\n{top.get('views'):,} views · {top.get('ratio')}x sus subs · hace {top.get('age')}d\n{top.get('url')}\n\n"
+            f"por qué pegó: {top.get('por_que_exploto','')}\n\n"
+            f"propuesta crónicas:\n- titulo: {p.get('titulo')}\n- miniatura: {p.get('miniatura')}\n- {items}"
+            f"{dup}")
+    send(chat, body, token=INVESTIGADOR_TOKEN)
+    st["pending"] = {"titulo": p.get("titulo"), "url": top.get("url"), "titulo_en": top.get("titulo_en")}
+    save_state(st)
+    # VOZ Productor: responde en el grupo (secuencial, después del Investigador)
+    send(chat, f"buena, ese tiene {top.get('ratio')}x. si te copa lo arranco — decime 'hacé ese' y le meto", token=PRODUCTOR_TOKEN)
+
+
+def do_produce(chat, text, st):
+    pend = st.get("pending")
+    if not pend:
+        send(chat, "no tengo tema pendiente. tirá 'próximo video' y te traigo uno", token=PRODUCTOR_TOKEN)
+        return
+    send(chat, f"dale, arranco con: {pend.get('titulo')}. te voy avisando por acá", token=PRODUCTOR_TOKEN)
+    prompt = (f"Arrancá la producción del video de Crónicas Perdidas: '{pend.get('titulo')}' "
+              f"(referencia viral: {pend.get('url')}). Seguí el pipeline del canal (guion→tts→…→render). "
+              f"Avisá avances cortos.")
+    with Typing(chat, token=PRODUCTOR_TOKEN):
+        reply = ask_claude(chat, prompt, st, TASK_MODEL, "task", WORKDIR)
+    send(chat, reply, token=PRODUCTOR_TOKEN)
+
+
+def handle_group(msg, st):
+    text = (msg.get("text") or msg.get("caption") or "").strip()
+    chat = str(msg["chat"]["id"])
+    if RESEARCH_RE.search(text):
+        m = re.search(r"@[\w.-]+", text)
+        do_research(chat, m.group(0) if m else None, st)
+    elif PRODUCE_RE.search(text):
+        do_produce(chat, text, st)
+    # else: mensaje del grupo sin trigger → ignorar (no spamear)
+
+
 def handle_message(msg, st):
     chat = str(msg["chat"]["id"])
-    if chat != ALLOWED_CHAT:
-        return  # solo el dueño
-    text = msg.get("text") or msg.get("caption")
-    if not text:
-        send(chat, "por ahora te leo solo texto")
-        return
-    model, track, cwd, prompt = pick_route(text)
-    with Typing(chat):
-        reply = ask_claude(chat, prompt, st, model, track, cwd)
-    send(chat, reply)
+    if chat == PRIVATE_CHAT:
+        text = msg.get("text") or msg.get("caption")
+        if not text:
+            send(chat, "por ahora te leo solo texto"); return
+        model, track, cwd, prompt = pick_route(text)
+        with Typing(chat):
+            reply = ask_claude(chat, prompt, st, model, track, cwd)
+        send(chat, reply)
+    elif GROUP_CHAT and chat == GROUP_CHAT:
+        handle_group(msg, st)
+    # else: chat no autorizado → ignorar
 
 
 def handle_callback(cq, st):
     chat = str(cq["message"]["chat"]["id"])
     data = cq.get("data", "")
     api("answerCallbackQuery", {"callback_query_id": cq["id"], "text": "dale, procesando…"})
-    if chat != ALLOWED_CHAT:
+    if chat != PRIVATE_CHAT:
         return
     # Los botones ✅ Publicar / 🔄 Rehacer entran como instrucción natural a Claude.
     action = data.split(":", 1)[0]
@@ -224,7 +309,7 @@ def main():
     if drain.get("ok") and drain.get("result"):
         st["offset"] = drain["result"][-1]["update_id"] + 1
         save_state(st)
-    print(f"[bridge] arriba · workdir {WORKDIR} · chat {ALLOWED_CHAT} · offset {st['offset']}", flush=True)
+    print(f"[bridge] arriba · privado={PRIVATE_CHAT} · grupo={GROUP_CHAT} · investigador={'sí' if INVESTIGADOR_TOKEN else 'no'} · offset {st['offset']}", flush=True)
     while True:
         try:
             upd = api("getUpdates", {"offset": st["offset"], "timeout": 50,

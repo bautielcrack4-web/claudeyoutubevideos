@@ -180,3 +180,11 @@ for (const r of j.resultados) {
   }
 }
 console.log(`\n${n} propuesta(s) fresca(s) lista(s).`);
+
+// ── dump JSON para el router del grupo (mensaje del Investigador) ──
+const fresh = j.resultados
+  .filter((r) => r.nicho_fit && r.dedup !== "done" && r.propuesta)
+  .map((r) => { const c = cands[r.i] || {}; return { titulo_en: r.titulo_en, url: c.url, views: c.views, ratio: +(c.ratio || 0).toFixed(1), age: c.age, channel: c.channel, dedup: r.dedup, por_que_exploto: r.por_que_exploto, propuesta: r.propuesta }; })
+  .sort((a, b) => b.ratio - a.ratio);
+const dups = j.resultados.filter((r) => r.dedup === "done").map((r) => ({ titulo_en: r.titulo_en, slug: r.dedup_slug }));
+fs.writeFileSync(path.join(DIR, "last_report.json"), JSON.stringify({ generated: TODAY, fresh, dups }, null, 2));

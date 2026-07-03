@@ -63,3 +63,5 @@ tg_creds.txt
 .tg_bridge_state.json
 .tg_bridge.log
 analizador/cache/
+.tg_bots
+analizador/last_report.json
