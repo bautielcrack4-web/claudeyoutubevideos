@@ -1,4 +1,4 @@
-// Entry solo-Cemento para Remotion Studio. Uso: npx remotion studio src/index_cemento.tsx
+// Entry MÍNIMO solo-Cemento para Remotion Studio. Uso: npx remotion studio src/index_cemento.tsx
 import "./index.css";
 import { registerRoot, Composition } from "remotion";
 import { MainCemento, TOTAL_FRAMES_CEMENTO } from "./VideoEdit/Main_cemento";

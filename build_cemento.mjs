@@ -1,9 +1,9 @@
 // build_cemento.mjs — CLIPS-FIRST DENSO (Constructor Libre, "El Constructor Libre").
-// Remake re-angulado: "SECRETO PERDIDO — por qué el cemento romano duró 2000 años y el tuyo
-// se agrieta en dos: el ingrediente perdido, la CAL". Avatar Tomás + b-roll dominante REAL:
-// clips YouTube (matchfarm proxies) + cientos de imágenes web (fetch_bing). AI solo diagramas.
-// Queries ANALIZADAS del guion (específicas, EN inglés, ancladas al TEMA: cemento/grietas/
-// cal/curado/puzolana/romanos) — no random. Pacing ~4.5s (denso). REGLA #0: cada beat al ms exacto.
+// Video "cemento": por qué las paredes viejas duran 100 años y las nuevas se rajan — el
+// secreto de la CAL y el CURADO. Avatar Tomás + b-roll dominante REAL: clips YouTube
+// (matchfarm proxies) + cientos de imágenes web (fetch_bing). AI solo diagramas. Queries
+// ANALIZADAS del guion (específicas, EN inglés, ancladas al TEMA: construcción, albañilería,
+// cemento, cal, arena, curado) — no random. Pacing ~4-5s. REGLA #0: cada beat al ms exacto.
 // Modos:  node build_cemento.mjs match  |  node build_cemento.mjs
 import fs from "fs";
 
@@ -32,264 +32,176 @@ const dg = (name, desc) => { DIAGRAMS.push({ name, prompt: DP(desc) }); return `
 const HUES = ["amber", "red", "blue"];
 
 const SECTIONS = [
-  // ░░ 1) COLD OPEN — Roma 2000 años vs tu vereda ░░
-  { a: "mira bien esto", start: 0, beats: [
-    C("cm_colosseum_ancient", "roman colosseum ancient concrete standing 2000 years", "the Colosseum of Rome, standing for 2000 years", { at: "mira bien esto" }),
-    C("cm_pantheon_dome_concrete", "roman pantheon concrete dome interior ancient unreinforced", "the Pantheon dome, biggest unreinforced concrete, intact", { at: "el coliseo de roma dos mil anos parado" }),
-    C("cm_roman_aqueduct_valley", "roman aqueduct crossing valley ancient concrete standing", "the roman aqueducts still crossing valleys, still standing", { at: "los acueductos romanos todavia cruzando valles" }),
-    C("cm_your_cracked_sidewalk", "cracked concrete sidewalk crumbling split backyard", "and next to it, your sidewalk, made two summers ago", { at: "y al lado tu vereda" }),
-    C("cm_smooth_slab_now_split", "smooth concrete slab cracked from end to end weathered", "smoothed nice and already split from end to end", { at: "la alisaste bien prolija" }),
-    C("cm_same_rain_same_concrete", "concrete surface in rain weathering comparison outdoors", "the same material, more or less, the same rain", { at: "el mismo material mas o menos" }),
-    C("cm_why_one_lasts", "hairline cracks concrete shrinkage forming on slab", "why does one last 2000 years and the other cracks in two", { at: "por que una cosa dura dos mil anos y la otra se te agrieta en dos" }),
-    I("cm_homeowner_cracked_worry", "homeowner inspecting cracked concrete wall worried", "you're here because some concrete of yours is cracking", { at: "es porque tenes algo de cemento que se esta rajando" }),
-    C("cm_wall_render_spider_cracks", "wall render full of spider web cracks plaster crazing", "the wall render full of spider-web cracks", { at: "el revoque de una pared que ya esta lleno de telaranas de grietas" }),
-    C("cm_laundry_sink_lost_chunk", "homemade concrete laundry sink chipped lost a chunk", "the laundry sink you made, already lost a piece", { at: "la pileta de lavar que hiciste vos y ya perdio un pedazo" }),
-    C("cm_old_folks_knew", "old mason hands working lime mortar traditional method", "the old folks knew something nobody taught you", { at: "la gente de antes sabia algo que a vos nadie te enseno" }),
-    G("cm_tomas_hook", { kicker: "Lo que la industria no quiere que sepas" }),
+  // ░░ 1) COLD OPEN — pared vieja sana vs nueva rajada ░░
+  { a: "fijate un segundo en la pared de una casa vieja", start: 0, beats: [
+    C("ce_old_healthy_wall", "old country house wall seventy years old solid no cracks exterior", "the wall of an old house, seventy or eighty years old", { at: "de esas de 70 u 80 anos" }),
+    I("ce_old_wall_no_crack", "old plaster wall smooth intact not a single crack close up", "solid and almost never a single crack", { at: "esta sana y casi siempre sin ni una sola grieta" }),
+    C("ce_new_cracked_wall", "cracked peeling plaster wall house only five years old damp stains", "a five-year-old build already cracked and peeling", { at: "y ahora mira una construccion de hace apenas cinco anos" }),
+    I("ce_damp_stain_wall", "ugly damp humidity stains spreading on a house wall interior", "cracked, flaking, with ugly damp stains", { at: "toda rajada y descascarada y con esas manchas feas de humedad" }),
+    C("ce_why_this_happens", "man puzzled looking at cracked wall wondering why exterior", "and why does this happen?", { at: "y por que pasa esto" }),
+    C("ce_material_not_magic", "old bag of cement and lime on a jobsite nothing magic close up", "it's not that the old material was magic", { at: "no es que el material de antes fuera magico" }),
+    C("ce_old_masons_knew", "old experienced mason working a wall with trowel knew a secret", "the old masons knew something", { at: "los viejos albaniles sabian algo" }),
+    C("ce_cement_factory_hide", "cement bags stacked in a factory warehouse industry rows", "something the cement factory would rather you didn't know", { at: "que la fabrica de cemento prefiere que vos no sepas" }),
+    C("ce_sell_expensive_bag", "buying an expensive bag of cement at a hardware counter", "it suits them to sell you the bag and have you use it wrong", { at: "les conviene venderte la bolsa cara y que la uses mal" }),
+    G("ce_tomas_hook", { kicker: "Por qué la pared de antes no se rajaba" }),
+    I("ce_one_dollar_bill", "a single one dollar bill held in a working hand close up", "and what they knew costs you, literally, one dollar", { at: "te cuesta literalmente un dolar" }),
   ]},
-  // ░░ 2) LAS 3-4 COSAS / promesa ░░
-  { a: "hacian tres o cuatro cosas", beats: [
-    C("cm_cheap_simple_methods", "simple cheap ways to make concrete last decades no cracks", "three or four simple, dirt-cheap things, decades without a crack", { at: "hacian tres o cuatro cosas" }),
-    I("cm_fake_internet_advice", "phone screen fake concrete hack video online skeptical", "the internet is full of people who just tell you", { at: "internet esta lleno de gente que te cuenta" }),
-    C("cm_two_mortar_samples_hand", "two mortar test blocks in hands comparison same day", "look at these two samples of mortar", { at: "mira estas dos muestras" }),
-    C("cm_both_mortar_outside", "two concrete blocks left outdoors same corner weathering", "both mortar, both made the same day, both left outside", { at: "las dos son mortero" }),
-    C("cm_pure_cement_loaded", "pouring pure cement heavy mix for strength trowel", "this one made like most do today: pure, heavy cement", { at: "cemento puro bien cargado de cemento" }),
-    C("cm_crumbles_in_hand", "concrete edge crumbling to powder in bare hand spalling", "press the edge and it crumbles, turns to dust in the hand", { at: "y si aprieto aca en el borde" }),
-    I("cm_lost_ingredient_recipe", "old bricklayer recipe adding lime to mortar mix", "this one with the old recipe, a lost ingredient", { at: "con un ingrediente que la industria dejo de recomendarte" }),
-    C("cm_hard_like_stone_sound", "solid sound concrete block hard like stone no cracks", "hard as a stone, sounds solid, not a single crack", { at: "y esta dura como una piedra" }),
-    C("cm_cheap_bag_of_lime", "cheap bag of builders lime at a hardware yard", "the only difference: that cheap ingredient", { at: "la unica diferencia entre las dos" }),
-    C("cm_stay_until_end", "finger pointing keep watching screen reminder", "stay till the end: the one error that ruins it all", { at: "quedate hasta el final" }),
+  // ░░ 2) PROMESA — qué vas a aprender ░░
+  { a: "asi que hoy te lo paso enterito", beats: [
+    C("ce_pass_it_whole", "old mason teaching a younger one on a jobsite passing knowledge", "so today I hand it over whole", { at: "asi que hoy te lo paso enterito" }),
+    C("ce_why_wall_cracks", "crack spreading across a plaster wall understanding why", "you'll understand why your wall cracks", { at: "vas a entender por que se te raja la pared" }),
+    I("ce_lime_bag_ingredient", "bag of hydrated lime construction one dollar ingredient close up", "the one-dollar ingredient the old ones added to the mix", { at: "cual es ese ingrediente de un dolar" }),
+    C("ce_almost_nobody_uses", "modern mason mixing plain cement no lime rushed jobsite", "and that almost nobody uses today", { at: "y que hoy ya casi nadie usa" }),
+    C("ce_thirty_second_mistake", "mason making a quick careless mistake mixing cement 30 seconds", "and the 30-second mistake almost everyone makes", { at: "y tambien el error de 30 segundos" }),
+    C("ce_ruins_best_cement", "expensive premium cement bag ruined by bad use jobsite", "that ruins even the most expensive cement", { at: "que te arruina hasta el cemento mas caro que compres" }),
+    C("ce_wall_100_years", "very old stone and lime wall standing a hundred years intact", "the difference between a wall that lasts 100 years", { at: "una pared que te dura 100 anos" }),
+    C("ce_wall_falls_apart", "modern wall crumbling and falling apart in chunks exterior", "and one that falls apart on you", { at: "y una que se te cae a pedazos" }),
   ]},
-  // ░░ 3) SOY TOMÁS ░░
-  { a: "soy tomas y esto es lo que la industria del cemento no quiere que sepas", full: true, beats: [] },
-  // ░░ 4) STAKES — lo que el cemento rajado te costó ░░
-  { a: "pensa un segundo en lo que el cemento rajado ya te costo", beats: [
-    C("cm_sidewalk_split_weekend", "concrete sidewalk split in half grass growing through crack", "the sidewalk you leveled a whole weekend, split by year two", { at: "hablo de la vereda que emparejaste todo un fin de semana" }),
-    C("cm_wall_render_map_cracks", "wall render covered in map-like cracks blowing off falling", "the wall render that filled with cracks like a map, then fell", { at: "del revoque de la pared que quedo lindo liso" }),
-    C("cm_step_edge_chipped", "concrete entry step chipped and broken at the corner", "the step you made that chipped right at the edge", { at: "del escalon que hiciste con toda la ilusion" }),
-    C("cm_subfloor_cracked_tiles", "cracked concrete subfloor lifting tiles above it", "the subfloor you cracked that now lifts the tiles above", { at: "del contrapiso que rajaste" }),
-    C("cm_crack_doesnt_stop", "concrete crack spreading growing wider over time treacherous", "the treacherous thing about a crack: it doesn't stay still", { at: "no se queda quieta" }),
-    C("cm_hairline_crack_thin", "hairline crack in concrete thin as a hair barely visible", "it starts as a hairline you can barely see", { at: "empieza como una linea de pelo" }),
-    C("cm_water_freezes_pushes", "water entering concrete crack freezing pushing widening", "water gets in, freezes, pushes, dirt enters, the crack grows", { at: "el agua entra se congela empuja entra tierra la grieta crece" }),
-    I("cm_crack_split_slab", "open crack that split a concrete slab letting water inside", "one day it's an open split that broke the slab", { at: "esa linea se abre un poquito mas" }),
-    C("cm_buy_material_again", "buying new bags of cement to redo cracked work store", "you end up buying material again and working double", { at: "y vos terminas comprando material de nuevo" }),
+  // ░░ 3) EL CEMENTO NO SE SECA, SE CURA ░░
+  { a: "y arranquemos por entender que es el cemento", beats: [
+    C("ce_what_is_cement", "wet fresh cement being poured and worked on a jobsite close up", "let's start by understanding what cement is", { at: "y arranquemos por entender que es el cemento" }),
+    C("ce_people_think_dries", "fresh cement left to dry in the sun like mud misconception", "a lot of people think cement dries", { at: "un monton de gente cree que el cemento se seca" }),
+    I("ce_mud_dries_sun", "cracked dried mud in the sun ground pattern like clay", "you think it dries like mud in the sun", { at: "como el barro al sol" }),
+    C("ce_that_is_a_lie", "cracked wall proving the drying idea wrong exterior", "and that's a lie, the mistake that costs you the wall", { at: "y eso es mentira" }),
+    X({ kind: "diagram", at: "porque el cemento no se seca el cemento se cura", eyebrow: "El cemento no se seca: se cura", slides: [{ image: dg("dg_ce_cure", "Diagrama en corte de cemento fresco curandose: NO es que pierde agua al aire, sino que el agua ADENTRO reacciona quimicamente con el cemento formando cristales entrelazados que dan la dureza. A la izquierda 'MITO: se seca como el barro' con el agua evaporandose y quedando debil. A la derecha 'REAL: se cura' con gotas de agua adentro y cristales que crecen y traban. Etiquetas 'necesita agua adentro varios dias', 'reaccion quimica, no evaporacion'. Transmite que el agua es amiga, no enemiga."), eyebrow: "Reacción química con agua adentro, no evaporación" }] }),
+    C("ce_chemical_reaction", "hardened cement setting like stone chemical curing macro", "it's a chemical reaction, it needs water inside for days", { at: "es una reaccion quimica" }),
+    C("ce_dries_too_fast", "fresh cement drying too fast in hot sun weak surface", "if it dries too fast, it stays forever at half its strength", { at: "si se te seca demasiado rapido" }),
+    I("ce_half_strength_forever", "weak crumbly cement surface low strength never recovers close up", "and never recovers it, not ever", { at: "no la recupera nunca mas" }),
   ]},
-  // ░░ 5) EL SECRETO — por qué se raja (razón física) ░░
-  { a: "el secreto", beats: [
-    G("cm_tomas_secreto", { kicker: "Tan simple que da bronca" }),
-    C("cm_so_simple_anger", "hardware store selling cement bags without explaining", "so simple it's maddening they don't explain it when you buy the bag", { at: "y es tan simple que da bronca" }),
-    C("cm_one_physical_reason", "concrete cracking single physical cause explainer", "cement cracks for one physical reason, only one", { at: "el cemento se raja por una razon fisica una sola" }),
-    C("cm_portland_bag_hard", "bag of portland cement at hardware yard very hard rigid", "modern Portland cement from the yard is very hard", { at: "el cemento portland que compras en el corralon" }),
-    C("cm_rigid_brittle_no_flex", "rigid brittle concrete strong for load but no flexibility", "strong for load, yes, but rigid, brittle, no flexibility", { at: "es fuerte para aguantar peso si pero es rigido" }),
-    X({ kind: "diagram", at: "todo se mueve siempre aunque no lo veas", eyebrow: "El cemento rígido no acompaña el movimiento", slides: [{ image: dg("dg_cm_rigid_vs_flex", "Diagrama comparativo de dos bloques de revoque sobre una pared que se mueve (flechas de dilatación y contracción a los lados). Izquierda: CEMENTO PURO, bloque gris RÍGIDO que ante el movimiento se PARTE con una grieta marcada en rojo ('rígido = se raja'). Derecha: MEZCLA CON CAL, bloque más claro y FLEXIBLE que se estira y acompaña el movimiento sin romperse ('flexible = respira, acompaña'). Etiquetas 'el cemento puro es rígido: se parte', 'la cal es flexible: acompaña'. Transmite que todo se mueve y solo lo flexible sobrevive."), eyebrow: "Cemento puro: se parte · Con cal: acompaña" }] }),
-    C("cm_wall_moves_expands", "wall expanding with heat contracting with cold movement", "walls, sidewalks, render, they all move, expand and contract", { at: "se dilatan con el calor se contraen con el frio" }),
-    C("cm_everything_moves", "house settling ground shifting concrete always moving", "everything moves, always, even if you don't see it", { at: "todo se mueve siempre aunque no lo veas" }),
-    C("cm_it_snaps_not_stretch", "rigid concrete snapping cracking instead of stretching", "so it snaps, it doesn't stretch: it cracks", { at: "se parte no se estira se raja" }),
-    C("cm_key_that_was_lost", "lost knowledge of flexible lime mortar old builders", "that's the key that was lost", { at: "esa es la clave que se perdio" }),
+  // ░░ 4) EL CURADO — mojar la pared ░░
+  { a: "y esto los viejos lo sabian en el cuerpo", beats: [
+    C("ce_old_ones_knew_body", "old mason instinctively caring for a fresh wall jobsite", "the old ones knew this in their bones", { at: "y esto los viejos lo sabian en el cuerpo" }),
+    C("ce_mason_wetting_wall", "mason wetting a fresh concrete block wall with a hose curing", "ever seen an old mason wetting the fresh wall day after day?", { at: "nunca viste a un albanil de los de antes que andaba mojando la pared" }),
+    I("ce_bucket_wet_wall", "man splashing water from a bucket onto a new brick wall", "with a hose, or with a bucket", { at: "con la manguera o con un balde" }),
+    C("ce_young_laughs_habit", "young worker laughing thinking it's an old man's quirk jobsite", "the younger one laughs, thinks it's an old man's quirk", { at: "y el mas joven se rie" }),
+    C("ce_secret_number_one", "old mason confidently soaking a fresh wall the number one secret", "but it's no quirk: it's secret number one, and it's free", { at: "es el secreto numero uno y encima es gratis" }),
+    I("ce_water_finishes_reaction", "water soaking into fresh cement finishing the reaction close up", "giving the cement the water it needs to finish the reaction", { at: "para terminar bien la reaccion" }),
+    C("ce_hard_as_stone", "cured concrete wall hard as stone solid finished surface", "and end up hard as a stone", { at: "quedar duro como una piedra" }),
   ]},
-  // ░░ 6) RETRACCIÓN — más cemento = más grietas ░░
-  { a: "y hay algo mas todavia peor", beats: [
-    C("cm_something_worse", "concrete shrinking as it cures losing volume cracks", "and there's something worse still", { at: "y hay algo mas todavia peor" }),
-    X({ kind: "diagram", at: "y cuanto mas cemento le pongas a la mezcla", eyebrow: "Más cemento = más retracción = más grietas", slides: [{ image: dg("dg_cm_shrinkage", "Diagrama de dos losas de mortero secándose. Izquierda: mezcla con POCO cemento, encoge apenas, superficie sana ('poco cemento = poca retracción'). Derecha: mezcla con MUCHO cemento, flechas que tiran hacia adentro desde los cuatro lados (retracción fuerte) y una red de grietas finas en toda la cara ('más cemento = más se encoge = se raja solo'). Etiquetas 'el cemento al fraguar se encoge', 'cuanto más cemento, más tira de sí mismo y se agrieta solo'. Transmite que el exceso de cemento causa las fisuras."), eyebrow: "El cemento al secar se encoge y tira de sí mismo" }] }),
-    C("cm_cement_shrinks_curing", "cement shrinking retracting losing volume as it sets", "cement, when it sets and dries, shrinks, loses volume", { at: "y cuanto mas cemento le pongas a la mezcla" }),
-    C("cm_pulls_cracks_itself", "concrete pulling on itself cracking on its own drying", "the more cement, the more it pulls on itself and cracks alone", { at: "y mas tira de si mismo hasta que se agrieta solo" }),
-    C("cm_fine_cracks_fresh_render", "fine hairline cracks on a freshly made render wall", "those fine cracks on fresh render aren't from too little cement", { at: "por eso las fisuras finitas que ves en un revoque recien hecho" }),
-    C("cm_too_much_cement", "overloaded cement mix causing shrinkage cracks", "they're because there was too much of it", { at: "son porque le sobro" }),
+  // ░░ 5) LA BOLSA NUNCA TE LO DICE — 7 días ░░
+  { a: "y la bolsa de cemento nunca te lo dice", beats: [
+    I("ce_cement_bag_instructions", "printed mixing instructions on a bag of cement close up", "the cement bag never tells you this", { at: "y la bolsa de cemento nunca te lo dice" }),
+    C("ce_only_mixing_printed", "reading the small print on a cement sack mixing directions", "it prints how to mix it", { at: "te trae las instrucciones de como mezclarlo" }),
+    C("ce_keep_it_moist", "keeping a fresh cement wall damp and moist after finishing", "but doesn't shout the one thing: keep it moist", { at: "lo tenes que mantener humedo" }),
+    X({ kind: "diagram", at: "siete dias como minimo mojandolo la manana y a la tarde", eyebrow: "El curado: 7 días mínimo", slides: [{ image: dg("dg_ce_7days", "Diagrama tipo calendario de 7 dias en fila, cada dia con dos gotas de agua (una manana con sol suave, una tarde). Un albanil mojando la pared recien hecha. Arriba un gran '7 DIAS'. A un costado dos enemigos ilustrados: un SOL FUERTE y VIENTO con lineas, con una flecha que muestra que le chupan el agua al cemento y aparecen grietas. Etiquetas '7 dias minimo, manana y tarde', 'mas si hace calor o viento', 'el sol y el viento son los enemigos'. Transmite rutina simple y gratis."), eyebrow: "Mañana y tarde · más si hay sol o viento" }] }),
+    C("ce_seven_days_minimum", "watering a new concrete wall morning and evening seven days", "seven days minimum, morning and evening", { at: "siete dias como minimo" }),
+    C("ce_more_if_hot_windy", "hot sun and strong wind blowing over a drying wall jobsite", "and more if it's very hot or windy", { at: "y mas todavia si hace mucho calor o corre viento" }),
+    C("ce_sun_wind_enemies", "strong sun and wind pulling moisture from fresh cement wall", "those two are the enemies: the strong sun and the wind", { at: "el sol fuerte y el viento" }),
+    C("ce_cracks_appear", "cracks appearing all over a wall that dried too fast exterior", "and that's when all the cracks come out", { at: "y ahi es cuando te salen todas las grietas" }),
   ]},
-  // ░░ 7) LOS ROMANOS — flexible, no más duro ░░
-  { a: "el hormigon romano no era mas duro que el tuyo", beats: [
-    C("cm_roman_concrete_not_harder", "roman concrete ancient structure softer but flexible", "roman concrete wasn't harder than yours", { at: "el hormigon romano no era mas duro que el tuyo" }),
-    C("cm_roman_softer_flexible", "flexible ancient roman mortar softer than modern cement", "often it was softer, but it was flexible", { at: "al reves muchas veces era mas blando" }),
-    C("cm_didnt_crack_over_time", "ancient roman concrete intact not crumbling over centuries", "and above all, it didn't crack or fall apart over time", { at: "no se cuarteaba y no se desarmaba con el tiempo" }),
-    C("cm_lasted_2000_years", "roman concrete structure lasting two thousand years intact", "it lasted 2000 years, built to live with water and movement", { at: "duro dos mil anos" }),
-    C("cm_old_neighborhood_houses", "old thick-render neighborhood houses 100 years sound walls", "the old thick-render houses in your neighborhood, still sound", { at: "y las casas viejas de tu barrio" }),
-    C("cm_not_pure_cement_other", "old builders using lime instead of pure cement render", "they didn't use pure cement, they used something else", { at: "no usaban cemento puro usaban otra cosa" }),
+  // ░░ 6) INJERTO 1 — la guía / manual ░░
+  { a: "esto del curado es uno de los secretos que fui juntando en una guia", beats: [
+    C("ce_curing_one_secret", "handwritten notebook of old building tricks and measures", "this curing thing is one of the secrets I gathered in a guide", { at: "esto del curado es uno de los secretos que fui juntando en una guia" }),
+    C("ce_years_writing_tricks", "man writing down each old builder trick in a notebook years", "for years I wrote down each of these old-timers' tricks", { at: "yo durante anos me dedique a anotar cada uno de estos trucos de los viejos" }),
+    I("ce_wood_no_rot_notes", "old wood beam that doesn't rot and a rusty iron bar notes", "the cement, the wood that doesn't rot, the wall that doesn't leak", { at: "el de la madera que no se pudre" }),
+    C("ce_carpenter_mason_showed", "old carpenter and mason showing a craft trick on a jobsite", "each thing an old mason or carpenter showed me", { at: "cada cosa que un albanil o un carpintero viejo me llegaba a mostrar" }),
+    I("ce_exact_measures_proportions", "handwriting exact measures and proportions each step repair", "with exact measures, proportions, every step", { at: "con las medidas exactas y las proporciones y cada paso" }),
+    I("ce_forty_fixes_manual", "home repair manual with forty cheap fixes on a table", "I gathered 40 of those fixes in a single manual", { at: "termine juntando 40 de esos arreglos en un solo manual" }),
+    C("ce_industry_hides_fixes", "industry preferring people not learn cheap repairs alone", "the one-to-five-dollar fixes the industry hides", { at: "que la industria preferiria que vos no sepas hacer solo" }),
   ]},
-  // ░░ 8) LA CAL — el ingrediente perdido ░░
-  { a: "por que el revoque de antes duraba cien anos", beats: [
-    C("cm_why_old_render_lasted", "old lime render wall lasting a hundred years sound", "why did the old render last 100 years and yours cracks in two", { at: "por que el revoque de antes duraba cien anos" }),
-    C("cm_they_used_lime", "bag of builders lime and old mason mixing lime mortar", "the old folks barely used pure cement: they used lime", { at: "usaban cal" }),
-    C("cm_lime_sand_little_cement", "lime sand and small part of cement mixed in a trough", "lime, sand and a small part of cement, or none at all", { at: "cal arena y una parte chica de cemento" }),
-    C("cm_lime_opposite_flexible", "flexible lime mortar breathing letting water vapor through", "lime is the opposite of cement: flexible, soft, it breathes", { at: "y la cal es todo lo contrario del cemento" }),
-    X({ kind: "diagram", at: "el mortero de cal se cura solo", eyebrow: "El mortero de cal se autorrepara", slides: [{ image: dg("dg_cm_self_heal", "Diagrama en tres pasos de una microfisura en un revoque de cal que se cierra sola. Paso 1: aparece una MICROFISURA fina en el revoque ('aparece una microfisura'). Paso 2: del aire entra un poco de DIÓXIDO DE CARBONO y humedad hacia la fisura (flechas y gotitas) ('la humedad del aire mete CO2'). Paso 3: la cal vuelve a formar CARBONATO DE CALCIO justo en la fisura y la CIERRA, cristales blancos sellando la grieta ('la cal se autorrepara, cierra la fisura sola'). Transmite que la cal cura sus propias grietas, algo que el cemento puro no hace."), eyebrow: "La microfisura se cierra sola con carbonato de calcio" }] }),
-    C("cm_lime_self_heals", "lime mortar self healing microcrack closing calcium carbonate", "the lime mortar heals itself, it closes the microcrack", { at: "el mortero de cal se cura solo" }),
-    C("cm_co2_forms_carbonate", "calcium carbonate crystals forming inside a lime crack macro", "air moisture brings CO2 and it forms calcium carbonate right there", { at: "la humedad del aire mete adentro un poco de dioxido de carbono" }),
-    C("cm_pure_cement_stays_cracked", "pure cement crack that stays cracked forever no healing", "pure cement does none of that, it cracks and stays cracked forever", { at: "se raja y se queda rajado para siempre" }),
-    C("cm_lost_secret_flexible", "old builder mixing flexible lime mortar the lost secret", "that's the lost secret: they mixed it flexible, with lime", { at: "ese es el secreto que se perdio" }),
-    C("cm_you_pour_pure_leave", "person pouring pure cement smoothing and leaving problem", "today you pour pure cement, smooth it, leave, and there it starts", { at: "vos hoy tiras cemento puro" }),
+  // ░░ 7) LA CAL — el ingrediente de un dólar ░░
+  { a: "el ingrediente de un dolar que es la cal", beats: [
+    I("ce_lime_the_star", "open bag of hydrated lime white powder the star ingredient", "the star ingredient, the one-dollar one: lime", { at: "el ingrediente de un dolar que es la cal" }),
+    C("ce_ask_lime_hardware", "asking for a bag of lime at a building supply yard corralon", "go to any yard, ask for a bag of lime, costs two coins", { at: "anda a cualquier corralon y pedi una bolsa de cal" }),
+    C("ce_lime_in_every_mix", "old mason adding lime to mortar for plaster and bricks", "the old ones put it in nearly every mix", { at: "y eso es lo que los viejos le metian a casi toda mezcla" }),
+    I("ce_lime_for_bricks", "laying bricks with lime mortar between them close up trowel", "to plaster, to lay bricks, for everything", { at: "para asentar los ladrillos" }),
+    C("ce_industry_all_in_one", "modern all-in-one fast cement bags on a store shelf", "the industry sells all-in-one, pure fast cement", { at: "la industria te vende esas mezclas todo en uno" }),
+    C("ce_sets_in_two_days", "fast cement setting hard in two days rushed jobsite", "it sets in two days so you keep working right away", { at: "que fragua en dos dias y te deja seguir la obra enseguida" }),
+    C("ce_bad_for_the_wall", "convenient but poor fast cement cracking on a wall", "convenient for the rushed, but terrible for the wall", { at: "pero es pesimo para la pared" }),
   ]},
-  // ░░ 9) REGLA MADRE — no es más cemento ░░
-  { a: "asi que la regla numero uno", beats: [
-    C("cm_rule_number_one", "rule number one lime less water keep it wet curing", "rule one, take it even if you forget everything else", { at: "asi que la regla numero uno" }),
-    C("cm_never_more_cement", "myth that more cement is stronger busted", "it was never more cement", { at: "nunca fue mas cemento" }),
-    C("cm_lime_little_water_wet", "lime little water keeping concrete wet while it sets", "it's lime, little water, and keeping it wet while it sets", { at: "es cal poca agua" }),
-    C("cm_repeat_opposite_sold", "opposite of what they sold you about cement", "repeat it, it's the reverse of everything they sold you", { at: "repetila porque es al reves de todo lo que te vendieron" }),
-    C("cm_old_folks_all_did_this", "old builders doing the same in different ways lime curing", "everything the old folks did was that, in different ways", { at: "todo lo que hacian los viejos era eso" }),
+  // ░░ 8) POR QUÉ LA CAL ES MÁGICA — 3 razones ░░
+  { a: "y por que la cal es tan magica", beats: [
+    C("ce_why_lime_magic", "lime powder poured into mortar three reasons it works", "and why is lime so magic? For three reasons", { at: "y por que la cal es tan magica" }),
+    I("ce_lime_flexible_mix", "flexible lime mortar bending slightly without cracking close up", "first: lime makes the mix much more flexible", { at: "la cal te hace la mezcla mucho mas flexible" }),
+    C("ce_pure_cement_brittle", "cracked brittle pure cement panel like glass shattered", "pure cement is rigid, hard but brittle, like glass", { at: "el cemento puro es rigido es duro pero fragil" }),
+    C("ce_movement_temp_cracks", "wall cracking from house movement and temperature change", "any movement or temperature change and it cracks", { at: "cualquier movimiento de la casa o cualquier cambio de temperatura y se te raja" }),
+    C("ce_lime_lets_wall_move", "lime wall flexing slightly without breaking elasticity", "lime gives it elasticity to move a bit without breaking", { at: "la cal le da una elasticidad" }),
   ]},
-  // ░░ 10) MÉTODO 1 — la cal (OVL kicker) ░░
-  { a: "de mas simple a mas poderosa", beats: [
-    C("cm_simplest_to_strongest", "from simplest to strongest concrete methods lineup", "let's go one by one, from simplest to strongest", { at: "de mas simple a mas poderosa" }),
-    I("cm_lime_lost_ingredient", "bag of lime the lost ingredient for mortar", "the first and most important: the lost ingredient, lime", { at: "la cal" }),
-    C("cm_add_lime_to_mix", "adding lime powder to a cement and sand mix trowel", "putting lime in the mix", { at: "meter cal en la mezcla" }),
-    X({ kind: "diagram", at: "cuando le metes cal cambia todo", eyebrow: "La cal le da plasticidad y flexibilidad", slides: [{ image: dg("dg_cm_lime_plasticity", "Diagrama de dos porciones de mezcla en una fratacho. Izquierda: SOLO cemento y arena, masa gris áspera y rígida, se cuartea ('cemento + arena: dura pero rígida, áspera, se cuartea'). Derecha: MEZCLA CON CAL, masa cremosa que se estira como manteca sobre la pared, queda flexible ('con cal: plástica, se trabaja como manteca, agarra, queda flexible y respira'). Etiquetas 'sin cal: rígida y se raja', 'con cal: plástica y flexible'. Transmite que la cal transforma la mezcla."), eyebrow: "Sin cal: áspera y rígida · Con cal: plástica y flexible" }] }),
-    C("cm_lime_changes_everything", "creamy plastic lime mortar spreading like butter on wall", "when you add lime, everything changes, it works like butter", { at: "cuando le metes cal cambia todo" }),
-    C("cm_render_lasts_generations", "old lime render wall lasting generations sound", "it's the ingredient that made old render last generations", { at: "es el ingrediente que hacia que el reboque de antes durara generaciones" }),
-    C("cm_cheap_bag_lime_yard", "cheap bag of lime at a hardware yard for coins", "you buy the bag of lime at any yard, for coins", { at: "y lo compras en cualquier corralon la bolsa de cal por monedas" }),
+  // ░░ 9) LA CAL SE CURA SOLA ░░
+  { a: "la cal se cura sola", beats: [
+    C("ce_lime_self_heals", "lime wall micro crack closing itself over time self healing", "second, incredible: lime cures itself", { at: "la cal se cura sola" }),
+    X({ kind: "diagram", at: "cuando aparece una microfisura", eyebrow: "La cal sella la fisura sola", slides: [{ image: dg("dg_ce_selfheal", "Diagrama en tres pasos de una microfisura en una pared de cal que se sella sola. Paso 1: aparece una GRIETA CHIQUITA en la pared de cal. Paso 2: le entra HUMEDAD y AIRE (gotas y flechas), y la cal REACCIONA. Paso 3: con el tiempo la grieta se CIERRA sola, sellada. Al costado, en contraste, el CEMENTO PURO con una grieta que en vez de cerrarse se agranda cada vez mas. Etiquetas 'la cal reacciona con humedad y aire', 'vuelve a cerrar la grieta sola', 'el cemento puro solo se agranda'. Transmite el auto-reparado."), eyebrow: "Con humedad y aire, la cal vuelve a cerrarla" }] }),
+    I("ce_micro_crack_humidity", "tiny hairline micro crack in a wall with moisture entering", "when a micro-crack appears and a bit of humidity and air get in", { at: "cuando aparece una microfisura" }),
+    C("ce_lime_closes_crack", "lime reacting and closing a crack in a wall over time", "the lime reacts and closes that crack on its own", { at: "la cal reacciona" }),
+    C("ce_seals_itself", "lime wall sealing its own crack self repairing surface", "it seals itself, a lime wall literally repairs itself", { at: "que se sella a si misma" }),
+    C("ce_pure_cement_crack_grows", "small crack in pure cement growing bigger never stopping", "pure cement does none of that: a small crack keeps growing", { at: "una grieta chiquita se te va agrandando" }),
   ]},
-  // ░░ 11) LA RECETA — 1:1:6 (LayeredReveal la maneja aparte) ░░
-  { a: "para un reboque flexible y sano", beats: [
-    C("cm_old_recipe_roughly", "old mortar recipe measured in a builders trough", "how it's done roughly, for a flexible healthy render", { at: "para un reboque flexible y sano" }),
-    X({ kind: "diagram", at: "una parte de cemento una parte de cal y seis partes de arena", eyebrow: "La mezcla clásica: 1 cemento · 1 cal · 6 arena", slides: [{ image: dg("dg_cm_recipe_116", "Diagrama de la receta clásica del revoque que no se raja, tres montoncitos etiquetados en fila: 1 balde de CEMENTO ('agarre y velocidad'), 1 balde de CAL ('flexibilidad y se cura sola'), 6 baldes de ARENA ('el cuerpo'). Debajo un signo de suma y una porción de revoque sano sin grietas. Etiquetas grandes '1 : 1 : 6', 'cemento : cal : arena'. Transmite la proporción clásica del revoque flexible que respira."), eyebrow: "1 cemento : 1 cal : 6 arena" }] }),
-    C("cm_one_cement_one_lime_six", "measuring one cement one lime six sand in buckets", "one part cement, one part lime, six parts sand", { at: "una parte de cemento una parte de cal y seis partes de arena" }),
-    C("cm_classic_proportion", "classic mortar proportion render that breathes no cracks", "that's the classic proportion of render that breathes", { at: "esa es la proporcion clasica del reboque" }),
-    C("cm_cement_grip_speed", "cement giving grip and speed to a mortar mix", "the cement gives grip and speed", { at: "el cemento le da agarre y velocidad" }),
-    C("cm_sand_is_body", "sand as the body of a mortar mix pile", "and the sand is the body", { at: "y la arena es el cuerpo" }),
-    C("cm_never_pure_cement_render", "pure cement render crazing a crack machine warning", "but never go to pure cement for a render, it's a crack machine", { at: "el reboque de puro cemento es una maquina de hacer grietas" }),
+  // ░░ 10) LA CAL DEJA RESPIRAR ░░
+  { a: "y la tercera es que la cal deja respirar la pared", beats: [
+    C("ce_lime_lets_breathe", "lime wall breathing letting moisture vapor pass outward", "and third: lime lets the wall breathe", { at: "y la tercera es que la cal deja respirar la pared" }),
+    X({ kind: "diagram", at: "el cemento puro en cambio te sella todo", eyebrow: "La cal respira, el cemento atrapa", slides: [{ image: dg("dg_ce_breathe", "Diagrama comparativo de dos paredes en corte. Izquierda 'PARED DE CAL': porosa, con flechas de VAPOR de humedad saliendo para afuera, pared seca y sana. Derecha 'CEMENTO PURO': sellado, la humedad queda ATRAPADA adentro, y aparecen MANCHAS, SALITRE blanco y PINTURA que se hincha y se cae. Etiquetas 'la cal deja pasar el vapor', 'el cemento atrapa la humedad', 'manchas, salitre, pintura hinchada'. Transmite por que la pared de cal no se pudre."), eyebrow: "El cemento atrapa la humedad: manchas y salitre" }] }),
+    I("ce_salitre_white_stain", "white efflorescence salitre and blistering paint on damp wall", "then come the stains, the white salitre, the paint that blisters", { at: "esas manchas y ese salitre blanco" }),
+    C("ce_lime_wall_stays_dry", "healthy dry lime wall breathing not rotting inside", "the lime wall breathes, stays dry, doesn't rot inside", { at: "la pared de cal respira y se mantiene seca" }),
+    C("ce_lime_walls_centuries", "hundreds of years old lime wall still standing solid", "there are lime walls hundreds of years old still standing", { at: "hay paredes de cal de hace cientos de anos que siguen paradas" }),
   ]},
-  // ░░ 12) INJERTO 1 — manual (ManualCard en OVL, ~38%) ░░
-  { a: "las tengo todas anotadas", beats: [
-    C("cm_exact_proportions_noted", "handwritten exact mortar proportions notebook manual", "the exact proportions for each job, I have them all written", { at: "las tengo todas anotadas" }),
-    C("cm_mixed_by_eye_failed", "mixing mortar by eye first time cracked lesson", "I mixed by eye the first time and it cracked anyway", { at: "porque a mi me paso de mezclar a ojo la primera vez" }),
-    C("cm_start_today_nothing", "starting to mix with lime today basic supplies", "for today you need nothing, with 1:1:6 you can already start", { at: "con esta proporcion" }),
-    C("cm_keep_watching_curing", "keep watching curing and the error that ruins all", "keep watching: the curing and the error come", { at: "segui mirando" }),
+  // ░░ 11) LOS ROMANOS — 2000 años ░░
+  { a: "los romanos construian con cal", beats: [
+    C("ce_romans_built_lime", "ancient roman concrete wall ruins colosseum standing", "the Romans built with lime, their works stand after 2000 years", { at: "los romanos construian con cal" }),
+    I("ce_roman_ruins_intact", "roman aqueduct or pantheon dome intact after two thousand years", "two thousand years", { at: "despues de dos mil anos" }),
+    C("ce_believe_crack_in_five", "modern wall cracking in just five years unbelievable", "and they want you to believe a wall cracking in five is normal", { at: "que una pared es normal que se raje en cinco" }),
+    C("ce_not_time_problem", "old lime wall vs new cracked wall time is not the problem", "time isn't the problem", { at: "no es el tiempo el problema" }),
+    C("ce_removed_lime_speed", "removing lime from the mix to sell speed pure cement", "they took the lime out to sell you speed", { at: "le sacaron la cal para poder venderte rapidez" }),
   ]},
-  // ░░ 13) LÍMITE de la cal — endurece más lento ░░
-  { a: "la cal endurece mas lento que el cemento", beats: [
-    C("cm_lime_hardens_slower", "lime render taking more days to fully harden patience", "the limit: lime hardens slower than cement", { at: "la cal endurece mas lento que el cemento" }),
-    C("cm_not_for_two_hours", "not for when you need it to set in two hours lime", "it's not for when you want it to set in two hours", { at: "no es para cuando queres que frague en dos horas" }),
+  // ░░ 12) CÓMO SE USA — la proporción 1-1-6 ░░
+  { a: "en lugar de hacer la mezcla solamente con cemento y arena", beats: [
+    C("ce_cement_sand_only", "mixing plain cement and sand only on a jobsite shovel", "instead of just cement and sand", { at: "en lugar de hacer la mezcla solamente con cemento y arena" }),
+    C("ce_add_the_lime", "adding a scoop of lime into the cement and sand mix", "you add the lime, a proportion that never fails", { at: "le sumas la cal" }),
+    X({ kind: "diagram", at: "es una parte de cemento", eyebrow: "La proporción que nunca falla", slides: [{ image: dg("dg_ce_ratio", "Diagrama de la proporcion de mezcla con tres baldes o pilas en fila. 1 BALDE de CEMENTO (gris) etiquetado 'fuerza'. 1 BALDE de CAL (blanca) etiquetado 'flexible, respira, se repara'. 5 a 6 BALDES de ARENA (dorada) etiquetado 'relleno'. Arriba un titulo grande '1 : 1 : 5-6'. Una cuchara de albanil al costado. Etiquetas 'cemento para agarrar fuerza', 'cal para todo lo bueno', 'arena como relleno', 'sirve para revocar y para asentar'. Transmite receta simple y memorable."), eyebrow: "1 cemento · 1 cal · 5-6 arena" }] }),
+    I("ce_one_part_cement", "one bucket of grey cement for the mix strength close up", "one part cement so it grabs strength", { at: "es una parte de cemento" }),
+    C("ce_one_part_lime_sand", "one part lime and five parts sand measured in buckets", "one part lime, and five or six of sand", { at: "una parte de cal y una cinco o seis de arena" }),
+    C("ce_sand_as_filler", "pile of construction sand shovel as filler in the mix", "the sand as filler", { at: "y la arena como relleno" }),
+    C("ce_grandparents_houses", "old grandparents house still standing built with lime mortar", "and there's a reason our grandparents' houses still stand", { at: "las casas de nuestros abuelos siguen paradas" }),
   ]},
-  // ░░ 14) MÉTODO 2 — el curado ░░
-  { a: "este segundo metodo no es un ingrediente", beats: [
-    C("cm_second_method_free", "curing concrete keeping wet no ingredient free method", "the second method costs nothing, yet 90% fail at it", { at: "este segundo metodo no es un ingrediente" }),
-    C("cm_this_is_curing", "curing concrete slab keeping it damp covered", "it's the curing", { at: "es el curado" }),
-    X({ kind: "diagram", at: "el cemento no se seca el cemento fragua", eyebrow: "Secar ≠ fraguar: la reacción necesita agua", slides: [{ image: dg("dg_cm_cure_vs_dry", "Diagrama de dos losas comparadas. Izquierda: SECARSE, una losa al sol con el agua evaporándose rápido y grietas de retracción ('secarse = perder agua = se raja'). Derecha: FRAGUAR, una losa tapada y húmeda donde el agua reacciona por dentro (engranajes/reacción química) y queda maciza y sana ('fraguar = reacción química que necesita agua y días'). Etiquetas 'secarse: perder agua rápido', 'fraguar: reacción que tarda días'. Transmite que el cemento no se seca, fragua, y que apurar el secado lo arruina."), eyebrow: "Secarse: perder agua · Fraguar: reacción química" }] }),
-    C("cm_cement_doesnt_dry_sets", "cement setting curing chemical reaction not drying", "cement doesn't dry, cement sets, two different things", { at: "el cemento no se seca el cemento fragua" }),
-    C("cm_setting_chemical_reaction", "cement chemical reaction needing water to harden", "setting is a chemical reaction, cement needs water to harden", { at: "fraguar es una reaccion quimica" }),
-    C("cm_water_leaves_too_fast", "sun and wind drying concrete too fast before it sets", "if the water leaves too fast, at the sun, wind, heat", { at: "si vos dejas que el agua se le vaya rapido" }),
-    C("cm_weak_porous_cracks", "weak porous concrete shrinking cracking all over drying", "it stays weak, porous, and cracks all over", { at: "queda debil poroso" }),
-    C("cm_drying_crack_hot_sun", "drying shrinkage cracks appearing next day hot sun slab", "the drying crack you see next day on a slab made in hot sun", { at: "la grieta de secado" }),
-    C("cm_keep_wet_several_days", "curing concrete keeping wet several days on purpose", "the old folks do the opposite: they keep it wet for days", { at: "en vez de dejar que el cemento se seque rapido lo mantienen humedo varios dias" }),
-    C("cm_water_cover_shade", "watering covering and shading fresh concrete curing", "they water it, cover it, shade it on purpose", { at: "a proposito le tiran agua lo tapan le hacen sombra" }),
-    C("cm_cured_wet_stronger", "wet-cured covered concrete much stronger no cracks", "concrete cured wet, covered a few days, comes out much stronger", { at: "un cemento curado humedo tapado unos dias queda mucho mas fuerte y sin grietas" }),
-    C("cm_same_bag_different_care", "same bag of cement one dried one cured comparison", "same material, same bag, one dried in the sun, one was cared for", { at: "el mismo material la misma bolsa" }),
+  // ░░ 13) LA ARENA — limpia y grano medio ░░
+  { a: "y ahora vamos con la arena", beats: [
+    C("ce_now_the_sand", "close up of a pile of construction sand being shoveled", "now the sand, it seems minor but it isn't at all", { at: "y ahora vamos con la arena" }),
+    C("ce_sand_must_be_clean", "clean washed construction sand fine even grain close up", "the sand has to be clean", { at: "la arena tiene que estar limpia" }),
+    I("ce_dirty_sand_roots", "dirty sand with soil clay and root debris weakens mix", "if it has soil, clay or roots, that dirt weakens the mix", { at: "porque si viene con tierra o con barro o con restos de raices" }),
+    C("ce_old_ones_sieved_sand", "old mason sieving and washing sand with a screen before use", "the old ones washed it or sieved it before using it", { at: "por eso los viejos la lavaban o la zarandeaban" }),
+    C("ce_medium_grain_sand", "even medium grain construction sand not too fine not coarse", "not too fine like dust, not too coarse: even, medium grain", { at: "ni tampoco muy gruesa" }),
+    C("ce_bad_sand_ruins_mix", "poor gritty sand ruining an otherwise good mortar mix", "bad sand ruins even the best of mixes", { at: "una arena mala te arruina hasta la mejor de las mezclas" }),
   ]},
-  // ░░ 15) CÓMO CURAR — pasos (LayeredReveal aparte) ░░
-  { a: "apenas el cemento tomo", beats: [
-    C("cm_once_it_takes", "concrete just set no longer marks with finger start curing", "once it's set, no longer marks with a finger, you start caring", { at: "apenas el cemento tomo" }),
-    C("cm_cover_it", "covering fresh concrete with plastic burlap wet sack", "and above all, don't leave it in bare sun or wind: cover it", { at: "lo tapas" }),
-    C("cm_plastic_burlap_wet_sack", "concrete covered with plastic sheet or wet burlap sack curing", "with plastic, burlap, a wet sack, damp cardboard, whatever", { at: "con un plastico con una arpillera o una bolsa mojada" }),
-    C("cm_shade_it", "shading fresh concrete slab from the sun while curing", "if you can, keep it in shade or make shade yourself", { at: "si podes lo dejas a la sombra" }),
-    C("cm_keep_wet_days", "keeping concrete wet and covered for several days curing", "keep it wet and covered several days: three, five, seven", { at: "y asi lo mantenes humedo y tapado varios dias" }),
-    C("cm_more_days_stronger", "more days of moisture stronger sounder concrete curing", "the more days of moisture, the stronger and sounder it gets", { at: "cuanto mas dias de humedad" }),
-    C("cm_cheapest_water_tarp", "cheapest curing water and a tarp on concrete", "it's the cheapest thing there is: water and a tarp", { at: "es lo mas barato que existe" }),
+  // ░░ 14) EL ERROR — demasiada agua ░░
+  { a: "y ahora si llegamos al error", beats: [
+    C("ce_now_the_error", "mason about to make the big mixing mistake pouring water", "and now the mistake, the one that ruins even the priciest cement", { at: "y ahora si llegamos al error" }),
+    C("ce_error_is_water", "pouring too much water into a cement mix in a wheelbarrow", "the error is water: putting too much water in the mix", { at: "el error es el agua meterle demasiada agua a la mezcla" }),
+    C("ce_soupy_easy_mix", "runny soupy wet mortar easy to spread with a trowel", "people over-water so it's soft and easy to spread", { at: "porque asi la mezcla queda bien blandita y chirle" }),
+    C("ce_comfortable_poison", "comfortable to work but ruinous over-watered cement mix", "comfortable to work, and it's poison", { at: "comoda para trabajar y es veneno" }),
+    X({ kind: "diagram", at: "cuando el cemento cura se termina evaporando", eyebrow: "El agua de más te deja aire adentro", slides: [{ image: dg("dg_ce_water", "Diagrama comparativo en corte de dos paredes. Izquierda 'MEZCLA FIRME': llena de PIEDRA solida, densa, fuerte. Derecha 'MEZCLA CON AGUA DE MAS': cuando el agua sobrante se EVAPORA al curar, deja HUECOS, POROS y BURBUJAS por dentro, una pared llena de AIRE. Flechas de agua evaporandose dejando agujeros. Etiquetas 'firme = llena de piedra', 'agua de mas = llena de aire, debil y porosa', 'chupa humedad y se raja al primer frio'. Transmite piedra vs aire."), eyebrow: "Se evapora y deja huecos, poros y burbujas" }] }),
+    I("ce_holes_pores_inside", "porous cement full of holes air pockets and bubbles inside", "all that extra water evaporates and leaves holes and pores inside", { at: "y te deja huecos y poros y burbujas por dentro" }),
+    C("ce_wall_full_of_air", "weak porous wall full of air instead of stone cross section", "a wall full of air instead of stone", { at: "en vez de estar llena de piedra esta llena de aire" }),
+    C("ce_cracks_first_cold", "porous wall cracking at the first cold snap winter exterior", "weak, porous, cracks at the first cold", { at: "se te raja el primer frio que venga" }),
   ]},
-  // ░░ 16) LÍMITE del curado — hay que hacerlo ░░
-  { a: "no hay atajo", beats: [
-    C("cm_no_shortcut_curing", "no shortcut watering and covering concrete a few days", "no shortcut, a few days of watering and keeping it covered", { at: "no hay atajo" }),
-    C("cm_sound_20_years", "sound concrete sidewalk lasting twenty years vs cracked", "the difference between a slab sound 20 years and one cracked the first summer", { at: "pero es la diferencia entre una vereda sana veinte anos y una rajada en el primer verano" }),
+  // ░░ 15) LA MEZCLA SECA Y FIRME ░░
+  { a: "la mezcla en realidad tiene que quedar mas bien seca y firme", beats: [
+    I("ce_firm_dry_mix_trowel", "stiff firm mortar holding on a trowel without dripping", "the mix should be drier and firm, holding on the trowel", { at: "la mezcla en realidad tiene que quedar mas bien seca y firme" }),
+    C("ce_more_arm_work", "mason working stiff mortar harder sweating a bit more effort", "yes, it takes more arm to work it that way", { at: "te cuesta un poco mas de brazo trabajarla asi" }),
+    C("ce_stone_vs_air_wall", "solid stone wall versus a weak airy porous wall compared", "that's the difference between a stone wall and an air wall", { at: "una pared de piedra y una pared de aire" }),
+    C("ce_old_ones_sweated", "old masons working hard firm mortar their walls still standing", "the old ones made it hard on purpose, and their walls still stand", { at: "los viejos la hacian dura a proposito" }),
   ]},
-  // ░░ 17) MÉTODO 3 — menos agua ░░
-  { a: "el tercer metodo es el del agua", beats: [
-    C("cm_third_method_water", "controlling water in a concrete mix less water method", "the third method is water, against everything people believe: less water", { at: "el tercer metodo es el del agua" }),
-    C("cm_people_add_too_much", "person adding too much water to a soupy cement mix", "most people add too much water when they mix", { at: "casi todos le tiran agua de mas" }),
-    C("cm_soupy_mix_easy_disaster", "soupy runny cement mix easy to work a disaster", "a wet mix is softer, easier to work, comfortable, and a disaster", { at: "porque una mezcla con mucha agua es mas blanda mas chirle" }),
-    X({ kind: "diagram", at: "esa mezcla queda llena de agujeros microscopicos", eyebrow: "El agua de más se evapora y deja poros", slides: [{ image: dg("dg_cm_water_pores", "Diagrama en corte de dos morteros fraguados. Izquierda: mezcla con MUCHA agua, al fraguar el agua sobrante se evapora (vapor subiendo) y deja HUEQUITOS y poros por dentro, queda porosa y débil ('agua de más = poros = débil y se desgrana'). Derecha: mezcla con POCA agua, densa y maciza, sin huecos ('poca agua = macizo y fuerte'). Etiquetas 'cada gotita de más deja un poro', 'menos agua = más fuerte y menos grietas'. Transmite que el exceso de agua debilita el mortero."), eyebrow: "Agua de más: poroso y débil · Poca agua: macizo" }] }),
-    C("cm_water_evaporates_leaves", "excess water evaporating from curing cement leaving voids", "all that extra water evaporates and leaves a hole, a pore", { at: "toda esa agua de mas cuando el cemento fragua no se usa" }),
-    C("cm_porous_weak_crumbles", "porous weak concrete full of microscopic holes crumbling", "the mix ends full of microscopic holes: porous, weak", { at: "esa mezcla queda llena de agujeros microscopicos" }),
-    C("cm_mix_as_dry_as_workable", "stiff mortar mix as dry as can still be worked firm", "the old rule is the opposite: as dry as can still be worked", { at: "la mezcla justa va lo mas seca que se pueda trabajar" }),
-    C("cm_less_water_stronger", "less water denser stronger concrete no cracks", "the less water, the stronger and more solid, and the less it cracks", { at: "cuanta menos agua" }),
-    C("cm_water_to_set_not_easy", "adding water little by little to the right firm point", "water is to make it set, not to make it easy to pour", { at: "el agua es para que frague no para que sea facil de tirar" }),
-    C("cm_right_point_semi_dry", "mortar at the right semi-dry firm point workable not soup", "that just-right point, semi-dry, is the one that lasts", { at: "ese punto justo" }),
+  // ░░ 16) REPASO / PLAN COMPLETO ░░
+  { a: "hagamos un repaso rapido de todo el plan completo", beats: [
+    C("ce_quick_recap_plan", "mason reviewing the full plan before mixing next batch", "let's do a quick recap, the complete plan", { at: "hagamos un repaso rapido de todo el plan completo" }),
+    C("ce_first_cement_cures", "watering a fresh wall remembering cement cures not dries", "first: cement doesn't dry, it cures", { at: "el cemento no se seca sino que se cura" }),
+    C("ce_wet_wall_seven_days", "wetting the fresh wall morning and evening for seven days", "so wet the fresh wall seven days, morning and evening", { at: "asi que moja la pared recien hecha durante siete dias" }),
+    C("ce_second_add_lime", "adding lime to the mix second step of the plan", "second: add the lime to the mix", { at: "lo segundo es meterle la cal a la mezcla" }),
+    C("ce_ratio_one_one_six", "measuring one cement one lime five sand proportion buckets", "with that one cement, one lime, five or six sand ratio", { at: "con esa proporcion de una de cemento una de cal y cinco o seis de arena" }),
+    C("ce_third_clean_sand", "using clean even grain sand no soil third step recap", "third: clean, even-grain sand, no dirt", { at: "lo tercero es usar arena linca y de grano parejo" }),
+    C("ce_fourth_never_water", "never overdoing the water firm mix fourth step of the plan", "and fourth, the error: never overdo the water", { at: "es no pasarte nunca con el agua" }),
+    C("ce_less_water_more_stone", "firm self-supporting mortar less water more stone strength", "firm mix that holds itself: less water, more stone", { at: "mezcla firme que se sostenga sola" }),
   ]},
-  // ░░ 18) MÉTODO 4 / puzolana — el hormigón romano ░░
-  { a: "y aca aparece la ultima pieza", beats: [
-    C("cm_last_piece_roman", "roman concrete combining lime ash time and water legendary", "here's the last piece, what made roman concrete legendary", { at: "y aca aparece la ultima pieza" }),
-    C("cm_volcanic_ash_pozzolana", "roman aqueduct pozzolana concrete volcanic ash gathered", "besides lime, the Romans added volcanic ash, pozzolana", { at: "le metian a la mezcla ceniza volcanica" }),
-    X({ kind: "diagram", at: "y esa ceniza hacia algo increible", eyebrow: "La puzolana hace el hormigón MÁS fuerte con el tiempo", slides: [{ image: dg("dg_cm_pozzolana", "Diagrama de una línea de tiempo de un bloque de hormigón romano bajo agua de mar. A la izquierda 'hoy', bloque sano; flechas hacia la derecha marcando 'años, décadas, siglos' y el bloque se ve cada vez MÁS DURO y macizo, con cristales creciendo por dentro por la reacción de la CENIZA VOLCÁNICA (puzolana) + CAL + AGUA. Al final, un puerto romano bajo el agua salada más duro que nunca. Etiquetas 'ceniza + cal + agua', 'en vez de debilitarse, se hace más fuerte con el tiempo'. Transmite que la puzolana endurece el hormigón durante siglos."), eyebrow: "Ceniza + cal + agua: más fuerte con los siglos" }] }),
-    C("cm_reacted_stronger_over_time", "roman concrete getting stronger with seawater over time", "that ash reacted with lime and water and made it stronger", { at: "y esa ceniza hacia algo increible" }),
-    C("cm_roman_ports_underwater", "roman harbor concrete underwater 2000 years harder", "the roman ports underwater 2000 years got harder, not weaker", { at: "los puertos romanos que estuvieron dos mil anos bajo el agua salada" }),
-    C("cm_pozzolanic_cement_today", "pozzolanic cement bag sold at hardware yard today", "today it's imitated by pozzolanic cement or added ashes", { at: "como cemento pusolanico" }),
-    C("cm_lime_ash_time_moisture", "lime ash time and moisture working together vs rigid cement", "keep the idea: lime, ash, time and moisture working together", { at: "la cal la ceniza el tiempo y la humedad trabajando" }),
+  // ░░ 17) CIERRE — la industria / manual ░░
+  { a: "y antes de que te vayas dejame cerrar con esto", beats: [
+    C("ce_before_you_go_close", "old mason speaking directly to camera closing thought jobsite", "before you go, let me close with this", { at: "y antes de que te vayas dejame cerrar con esto" }),
+    C("ce_lime_curing_water", "lime bag hose and firm mortar the three lessons together", "the lime, the curing, the right water: knowledge that worked", { at: "todo lo que viste hoy la cal y el curado y el agua justa" }),
+    C("ce_lost_being_too_good", "old building knowledge fading lost because it was too good", "it wasn't lost for being bad, but for being too good and cheap", { at: "se perdio justamente por ser demasiado bueno y demasiado barato" }),
+    C("ce_wall_hundred_years_dollar", "hundred year wall anyone can build with a one dollar lime bag", "industry hates a wall that lasts 100 years for a dollar of lime", { at: "una pared que dura cien anos" }),
+    C("ce_sell_expensive_fast", "expensive fast cement that cracks right on time to resell", "they'd rather sell the pricey fast one that cracks on schedule", { at: "venderte el producto caro y rapido" }),
+    I("ce_manual_constructor_libre", "the Constructor Libre home building manual on a workbench cover", "that's why I gathered the 40 secrets in the Constructor Libre Manual", { at: "que es el manual del constructor libre" }),
+    C("ce_no_depend_on_anyone", "independent builder not needing hardware store or specialist", "so you don't depend on anyone, not the yard, not the specialist", { at: "lo arme para que no dependas de nadie" }),
+    C("ce_next_water_out_wall", "old trick keeping water out of a wall lime render dry house", "next: the old secret to keep water out of a wall for good", { at: "para que el agua no entre nunca mas a una pared" }),
+    C("ce_independence_built", "self-reliant builder one fix at a time constructing independence", "independence isn't bought, it's built, one fix at a time", { at: "la independencia no se compra se construye" }),
   ]},
-  // ░░ 19) INJERTO 2 — por qué no te lo cuentan (chips + splitlist) ░░
-  { a: "dejame parar un segundo porque esto es lo mismo de siempre", beats: [
-    G("cm_tomas_pausa", { kicker: "Nadie te lo cuenta" }),
-    C("cm_none_expensive", "cheap lime free water less material nobody explains yard", "none of this is expensive: lime is cheap, curing water is free", { at: "ninguna de estas cosas es cara" }),
-    X({ kind: "chips", at: "le conviene venderte cemento y mas cemento", title: "Por qué no te lo cuentan", chips: ["Al negocio no le conviene", "que tu revoque dure 50 años", "le conviene venderte más cemento"], hue: "red", imageDarken: 0.6, _bg: { name: "cm_cement_bags_upsell_bg", query: "stacked bags of cement for sale at a hardware store yard", concept: "cement bags being sold to redo cracked work" }, image: "real/cm_cement_bags_upsell_bg.png" }),
-    C("cm_more_cement_more_cracks", "more cement more shrinkage more cracks the big lie", "more cement is more retraction, more rigidity, more cracks", { at: "mas cemento es mas retraccion" }),
-    X({ kind: "splitlist", at: "por eso cuando arme el manual lo dividi justo asi", title: "Los 40 arreglos, divididos así", items: ["Madera y metal que no se arruinan", "Plagas por centavos", "Goteras y humedad", "Arreglos del hogar y el auto"], palette: "A" }),
-  ]},
-  // === INJERTO 2 — punto de inserción del video-CTA ===
-  // El beat anterior cubre "cuando armé el manual, lo dividí justo así... cuarenta arreglos,
-  // todos con el mismo criterio: lo barato que funciona, y lo que la industria te oculta para
-  // que sigas pagando." Aquí, entre esa frase y el siguiente beat ("Bien. Llegamos a lo que te
-  // prometí al principio..."), se insertará después un clip aparte (video-CTA). NO editar de
-  // forma rara: este comentario marca el límite exacto.
-  // ░░ 20) EL ERROR — mucho cemento + mucha agua + secado rápido ░░
-  { a: "bien llegamos a lo que te prometi al principio", beats: [
-    C("cm_arrive_promised_error", "the one error that ruins all concrete work reveal", "we reach what I promised: the error that ruins it all", { at: "bien llegamos a lo que te prometi al principio" }),
-    X({ kind: "diagram", at: "los tres juntos", eyebrow: "El error: 3 fuerzas tirando de la mezcla a la vez", slides: [{ image: dg("dg_cm_error_three", "Diagrama de una losa de mortero con TRES flechas rojas grandes tirando de ella al mismo tiempo, cada una etiquetada: 1) MUCHO CEMENTO → retracción, 2) MUCHA AGUA → porosidad, 3) SECADO RÁPIDO AL SOL → grietas de secado. En el centro la losa cuarteada con una red de grietas. Título grande 'la máquina perfecta de hacer grietas'. Transmite que el error común son las tres cosas juntas."), eyebrow: "Mucho cemento + mucha agua + secado al sol" }] }),
-    C("cm_error_three_together", "too much cement too much water fast sun drying together", "the error: too much cement, too much water, fast sun drying", { at: "el error es este" }),
-    C("cm_perfect_crack_machine", "perfect crack machine three forces on a concrete slab", "the three together, the perfect crack machine", { at: "los tres juntos" }),
-    C("cm_puts_lots_of_cement", "person loading lots of cement thinking it'll be strong", "the common person thinks: I'll put lots of cement so it's strong", { at: "le pongo bien de cemento" }),
-    C("cm_adds_more_water", "adding more water so the mix goes on easy and smooth", "then adds more water so it goes on easy: watered and weak", { at: "le tiro un poco mas de agua" }),
-    C("cm_sun_wind_suck_water", "sun and wind sucking water from fresh slab in hours", "sun and wind suck the water in hours, before it sets", { at: "y el sol y el viento le chupan el agua en horas antes de que frague" }),
-    C("cm_three_forces_pulling", "three forces pulling on a cracking concrete slab at once", "three forces pulling on the mix at the same time", { at: "las tres fuerzas tirando de la mezcla al mismo tiempo" }),
-    C("cm_cracked_before_enjoy", "concrete slab cracked before you finish enjoying it", "that slab is cracked before you even finish enjoying it", { at: "esa vereda esta rajada antes de que la termines de disfrutar" }),
-  ]},
-  // ░░ 21) ES AL REVÉS — la regla más importante ░░
-  { a: "es todo al reves de lo que te dijeron", beats: [
-    I("cm_its_all_backwards", "everything backwards from what they told you about cement", "it's all backwards from what they told you", { at: "es todo al reves de lo que te dijeron" }),
-    C("cm_more_cement_more_cracks2", "more cement means more cracks not more strength", "more cement isn't stronger: it's more cracks", { at: "mas cemento no es mas fuerte es mas grietas" }),
-    C("cm_more_water_weaker", "more water means weaker porous concrete not better", "more water isn't easier and better: it's weaker", { at: "mas agua no es mas facil y mejor es mas debil" }),
-    C("cm_strong_mix_lime_less", "strong mix lime little cement little water then cured wet", "the strong mix has lime, little cement, little water, then cured wet", { at: "la mezcla fuerte es la que tiene cal poco cemento" }),
-    C("cm_boring_doesnt_sell_bags", "the boring method that doesn't sell bags of cement", "the boring stuff, the stuff that doesn't sell bags", { at: "lo aburrido lo que no vende bolsas" }),
-    C("cm_the_most_important_rule", "the single most important rule engrave it lime less water", "the rule, the most important of the whole video, engrave it", { at: "entonces la regla y es la mas importante de todo el video" }),
-  ]},
-  // ░░ 22) REPARAR GRIETAS — flexible vs rígido ░░
-  { a: "y una cosa mas sobre reparar", beats: [
-    C("cm_one_more_on_repair", "repairing concrete cracks the wrong way smearing cement", "one more thing on repairing, because many cracks are fixed wrong", { at: "y una cosa mas sobre reparar" }),
-    C("cm_moving_crack_rigid_fails", "rigid cement patch on a moving crack cracking again", "patching a moving crack with rigid cement is throwing away the work", { at: "tapar una grieta que se mueve con cemento rigido es tirar el trabajo" }),
-    C("cm_open_crack_wedge", "opening a crack into a wedge shape so filler grips", "you open a moving crack into a wedge so it grips", { at: "la abris un poco en forma de cuna para que agarre" }),
-    C("cm_flexible_filler_lime", "filling a crack with flexible lime mortar or sealant", "fill it with something elastic: lime mortar or a flexible sealer", { at: "y la rellenas con un material que tenga algo de elasticidad" }),
-    C("cm_opens_closes_flexibility", "crack that opens and closes needing flexible filler", "if it opens and closes, you need flexibility, no way around it", { at: "si se abre y se cierra necesitas flexibilidad si o si" }),
-  ]},
-  // ░░ 23) HONESTIDAD FINAL — lo estructural NO ░░
-  { a: "una ultima honestidad", beats: [
-    C("cm_final_honesty", "honest builder disclaimer no snake oil concrete", "one last honesty, because I don't sell smoke, and this matters", { at: "una ultima honestidad" }),
-    C("cm_for_render_floors_steps", "render floors sidewalks subfloors steps home repairs", "all this is for render, floors, sidewalks, steps and repairs", { at: "todo lo que te dije hoy es para reboques" }),
-    C("cm_structural_columns_beams", "reinforced concrete columns beams slabs structural engineering", "but structural concrete, columns, beams, slabs with rebar, is not a home recipe", { at: "pero el hormigon que sostiene la casa las columnas" }),
-    C("cm_structural_is_engineering", "structural concrete engineering calculation rebar placement", "that's engineering, with calculation and rebar in its place", { at: "eso es ingenieria con calculo" }),
-    C("cm_structural_crack_warning", "wide structural crack crossing a beam growing warning", "if a crack is structural, growing, crossing a beam, don't patch it", { at: "y si una grieta que tenes es estructural" }),
-    C("cm_call_a_professional", "calling a structural engineer to inspect a serious crack", "there you call a professional, someone who looks at it seriously", { at: "ahi llamas a un profesional" }),
-    C("cm_dont_gamble_roof", "don't gamble with what holds the roof over your head", "don't gamble with what holds the roof over your head", { at: "no te la juegues con lo que aguanta el techo sobre tu cabeza" }),
-  ]},
-  // ░░ 24) RECAP ░░
-  { a: "no era mejor material nada mas era que lo hacian flexible y lo cuidaban", beats: [
-    C("cm_recap_flexible_cared", "montage lime little water curing flexible concrete recap", "not better material, they made it flexible and cared for it", { at: "no era mejor material nada mas era que lo hacian flexible y lo cuidaban" }),
-    C("cm_lime_breathe_recap", "lime mortar breathing flexible not cracking recap", "the lime, the lost ingredient, so it breathes and doesn't crack", { at: "la cal el ingrediente perdido para que respire y no se raje" }),
-    C("cm_less_water_solid_recap", "less water making concrete solid and strong recap", "little water, so it comes out solid and strong", { at: "poca agua para que quede macizo y fuerte" }),
-    X({ kind: "checklist", at: "con esto solo ya podes hacer una vereda", title: "El plan contra las grietas", items: [{ text: "No es más cemento: es cal, poca agua y curado", state: "done" }, { text: "La cal: flexible, respira y se cura sola", state: "done" }, { text: "Menos agua: más macizo y fuerte", state: "done" }, { text: "Curar húmedo y tapado varios días", state: "done" }, { text: "El error: mucho cemento, mucha agua, secado al sol", state: "done" }] }),
-    C("cm_save_sidewalk_render", "sound concrete sidewalk render step subfloor no cracks", "with this alone you can make a sidewalk that won't crack", { at: "con esto solo ya podes hacer una vereda" }),
-    C("cm_last_years_not_months", "repairs lasting years not months like the old builders", "your repairs will last years, not months, like the old folks", { at: "como las de los viejos como las de los romanos a su manera" }),
-  ]},
-  // ░░ 25) INJERTO 3 + CIERRE ░░
-  { a: "la casa entera esta llena de estos secretos que se perdieron", beats: [
-    C("cm_house_full_lost_secrets", "old house full of cheap lost repair secrets damp rust wood", "the whole house is full of these lost secrets", { at: "la casa entera esta llena de estos secretos que se perdieron" }),
-    C("cm_rust_eats_iron", "rust eating an old iron pipe cheap fix", "the rust that eats iron", { at: "el oxido que se come el hierro" }),
-    C("cm_rising_damp_wall", "rising damp climbing a wall peeling paint cheap fix", "the damp that climbs the wall, cut for five pesos", { at: "la humedad que sube por la pared" }),
-    C("cm_gathered_40_manual", "home repair manual with exact measures gathered forty fixes", "so I gathered the forty in the Manual, with exact measures", { at: "junte los 40 en el manual de reparaciones caseras" }),
-    C("cm_curing_days_noted", "curing days and mortar proportions noted in a manual", "including the curing days and the exact cement, lime and sand", { at: "y los dias de curado" }),
-    C("cm_cheaper_than_bag", "home repair manual cheaper than a single bag of cement", "it costs less than one bag of material you were going to waste", { at: "cuesta menos que una sola bolsa de material" }),
-    C("cm_even_if_never_grab", "person mixing lime less water covering slab today", "even if you never grab it, do today's thing: add lime, less water", { at: "pero escuchame incluso si nunca lo agarras hacelo de hoy" }),
-    C("cm_wall_pocket_thank_you", "restored concrete sidewalk lasting your pocket thanks you", "that render will last years it wasn't going to, your pocket too", { at: "tu pared te lo va a agradecer y tu bolsillo tambien" }),
-  ]},
-  // ░░ 26) PRÓXIMO ░░
-  { a: "en el proximo video te voy a mostrar por que las casas de antes eran frescas en verano", beats: [
-    C("cm_next_cool_houses", "old house naturally cool in summer no air conditioning", "next: why old houses were cool in summer with no air conditioning", { at: "en el proximo video te voy a mostrar por que las casas de antes eran frescas en verano" }),
-    C("cm_lost_when_ac_came", "traditional passive cooling lost when air conditioning arrived", "all we lost when air conditioning came and told us there was no other way", { at: "todo lo que perdimos cuando llego el aire acondicionado" }),
-  ]},
-  { a: "se construye un arreglo a la vez", full: true, beats: [] },
 ];
 
 // ── motor (anclaje + placement + salida + avatar windows) ───────────────────
@@ -348,297 +260,152 @@ for (let si = 0; si < SEC.length; si++) {
 beats.sort((a, b) => a.start - b.start);
 
 // ── OVERLAYS A MEDIDA encima del clip vivo (overlay:true → no roban slot, el clip corre detrás borroso) ──
-// Diversificado a propósito: MUCHOS componentes DISTINTOS repartidos, casi nunca dos
-// iguales seguidos. HEROES PROPIOS DE CEMENTO (CementoPolish): cmrecipe (1:1:6),
-// cmyears (5 vs 2000), cmselfheal (autorreparación de la cal), cmcure (secar≠fraguar),
-// cmerror (la máquina de grietas). Se reutilizan los genéricos que SÍ aplican del kit de
-// madera (mdslider/mdname/mdtwoplanks(=2 muestras)/mdrecap/mdkicker/mdrulestamp/mdendcard/
-// mdtrans + ox*/manualcard), re-angulados a cemento/cal/curado. Los kinds de madera fuera
-// de tema (mdrotinside/mdfungus/mdsealtrap) fueron REEMPLAZADOS por los cm* on-topic.
 const OVL = [
-  // ── HOOK — comparador Roma vs tu vereda (hero) ──
-  { kind: "mdslider", at: "por que una cosa dura dos mil anos y la otra se te agrieta en dos", dur: 5.2, beforeImg: "real/cm_your_cracked_sidewalk.png", afterImg: "real/cm_colosseum_ancient.png", beforeLabel: "Tu vereda", afterLabel: "Roma", beforeYears: "2 años", afterYears: "2000 años", eyebrow: "El mismo material, la misma lluvia", accent: "amber" },
-  // ── SOY TOMÁS — lower-third rústico ──
-  { kind: "mdname", at: "soy tomas y esto es lo que la industria del cemento no quiere que sepas", dur: 4.2, name: "Tomás", role: "El Constructor Libre", accent: "green" },
-  // ── PRUEBA — las 2 muestras de mortero (el momento más viral) ──
-  { kind: "mdtwoplanks", at: "mira estas dos muestras", dur: 6.5, title: "Del mismo día, mismo rincón", buried: "misma lluvia y sol", note: "La única diferencia: la cal", accent: "green" },
-  // ── STAKES — la grieta que crece (cubierta por oxstat + STRUCT annotated; sin hero de madera acá) ──
-  { kind: "oxstat", at: "esa linea se abre un poquito mas", dur: 4.0, value: 0, prefix: "", suffix: "", label: "una fisura de pelo termina siendo una raja que te parte la losa", glyph: "🧱", accent: "red" },
-  // ── EL SECRETO / razón física ──
-  { kind: "oxrule", at: "el cemento se raja por una razon fisica una sola", dur: 4.6, text: "El cemento no se raja por mala suerte. Se raja por *una razón física*: es rígido.", accent: "amber" },
-  // ── RETRACCIÓN → más cemento = más grietas (cubierta por diagram dg_cm_shrinkage + STRUCT) ──
-  // ── LA CAL — sello de tinta (regla) ──
-  { kind: "mdrulestamp", at: "usaban cal", dur: 5.0, text: "NO ES MÁS CEMENTO. ES CAL.", num: "1", label: "Regla", accent: "amber" },
-  { kind: "oxrule", at: "es cal poca agua", dur: 4.4, text: "La regla madre: *cal, poca agua, y mantenerlo húmedo mientras fragua*.", accent: "blue" },
-  // ── POR QUÉ ANTES DURABA — barra de años (HERO cemento: 5 vs 2000, count-up) + panel ──
-  { kind: "cmyears", at: "por que el revoque de antes duraba cien anos", dur: 5.4, title: "Cuánto dura, según cómo lo mezcles", low: { label: "Cemento puro, hoy", years: 5 }, high: { label: "Con cal, como los romanos", years: 2000 }, accent: "amber" },
-  { kind: "oxside", at: "y la cal es todo lo contrario del cemento", dur: 5.2, image: "real/cm_old_neighborhood_houses.png", title: "Por qué antes duraba", lines: ["Antes: cal, flexible, respira, se cura sola", "Hoy: cemento puro, rígido, se raja solo", "No es mejor material: es cómo lo mezclaban"], side: "right", accent: "amber" },
-  // ── LA CAL SE AUTORREPARA — HERO cemento: microfisura que se cierra sola con carbonato ──
-  { kind: "cmselfheal", at: "el mortero de cal se cura solo", dur: 5.2, title: "La cal se cura sola", accent: "green" },
-  // ── MÉTODO 1 — kicker de capítulo + ficha ──
-  { kind: "mdkicker", at: "la cal", dur: 3.4, num: "1", kicker: "Método", title: "La cal", glyph: "🧱", accent: "amber" },
-  { kind: "oxmethod", at: "es el ingrediente que hacia que el reboque de antes durara generaciones", dur: 4.6, num: "01", title: "La cal", chips: ["Le da plasticidad y flexibilidad", "Respira y no se raja", "Se cura sola: cierra microfisuras"], cost: "monedas la bolsa", accent: "amber" },
-  { kind: "oxtag", at: "cuando le metes cal cambia todo", dur: 4.0, name: "La cal", what: "Convierte una masa rígida y áspera en una mezcla plástica y flexible que respira", side: "left", accent: "amber" },
-  // ── LA RECETA 1:1:6 — HERO cemento: 3 baldes que se llenan (cemento → CAL secreto → arena).
-  //    Se ancla al INTRO de la receta (justo antes del LayeredReveal que baja al detalle con fotos). ──
-  { kind: "cmrecipe", at: "para un reboque flexible y sano", dur: 5.0, title: "La mezcla vieja del revoque", note: "1 : 1 : 6 — el revoque que no se raja", accent: "blue" },
-  { kind: "oxrule", at: "el reboque de puro cemento es una maquina de hacer grietas", dur: 4.4, text: "El revoque de *puro cemento* es una máquina de hacer grietas. Nunca vayas a cemento puro.", accent: "red" },
+  // ── HOOK — vieja sana vs nueva rajada ──
+  { kind: "oxbefore", at: "y ahora mira una construccion de hace apenas cinco anos", dur: 4.6, before: "real/ce_old_wall_no_crack.png", after: "real/ce_damp_stain_wall.png", accent: "red" },
+  // ── PROMESA — 100 años vs se cae a pedazos ──
+  { kind: "oxstat", at: "una pared que te dura 100 anos", dur: 4.2, value: 100, suffix: " años", label: "vs una que se raja en 5: la diferencia no es la plata, es lo que sabés", glyph: "🧱", accent: "green" },
+  // ── EL CEMENTO SE CURA ──
+  { kind: "oxrule", at: "porque el cemento no se seca el cemento se cura", dur: 4.6, text: "El cemento *no se seca*: se *cura*. Es una reacción química que necesita agua adentro.", accent: "amber" },
+  // ── EL CURADO ──
+  { kind: "oxrule", at: "es el secreto numero uno y encima es gratis", dur: 4.4, text: "Mojá la pared recién hecha, día tras otro. Es el secreto Nº1 y encima es *gratis*.", accent: "green" },
+  { kind: "oxstat", at: "siete dias como minimo", dur: 4.4, value: 7, suffix: " días", label: "curando la pared, mañana y tarde: más si hay sol fuerte o viento", glyph: "💧", accent: "blue" },
+  { kind: "oxside", at: "el sol fuerte y el viento", dur: 5.0, image: "real/ce_sun_wind_enemies.png", title: "Los enemigos del curado", lines: ["El sol fuerte le chupa el agua", "El viento la evapora", "Sin agua adentro: aparecen las grietas"], side: "right", accent: "red" },
   // ── INJERTO 1 — manual (mid, sin chip) ──
-  { kind: "manualcard", at: "en un manual que arme", dur: 6.0, image: "real/manual_cover.png", title: "Manual de Reparaciones Caseras", desc: "Los 40 arreglos de $1 a $5 del hogar, con las proporciones justas de cemento, cal y arena y los días de curado.", accent: "amber" },
-  // ── MÉTODO 2 — kicker de capítulo + curado ──
-  { kind: "mdkicker", at: "es el curado", dur: 3.2, num: "2", kicker: "Método", title: "El curado", glyph: "💧", accent: "blue" },
-  // ── EL CURADO — HERO cemento: secar (sol → grietas) vs fraguar (húmedo tapado → maciza) ──
-  { kind: "cmcure", at: "el cemento no se seca el cemento fragua", dur: 5.4, title: "Secar ≠ fraguar", accent: "blue" },
-  { kind: "mdchar", at: "en vez de dejar que el cemento se seque rapido lo mantienen humedo varios dias", dur: 5.0, title: "Curar = mantenerlo húmedo", chips: ["Lo mojás varias veces por día", "Lo tapás: plástico, arpillera, cartón", "Sombra, varios días"], accent: "blue" },
-  { kind: "oxstat", at: "cuanto mas dias de humedad", dur: 4.0, value: 7, suffix: " días", label: "curado húmedo y tapado: cuantos más días, más fuerte y sano queda", glyph: "💧", accent: "blue" },
-  // ── MÉTODO 3 — kicker + regla del agua ──
-  { kind: "mdkicker", at: "el tercer metodo es el del agua", dur: 3.4, num: "3", kicker: "Método", title: "Menos agua", glyph: "🚱", accent: "green" },
-  { kind: "oxrule", at: "el agua es para que frague no para que sea facil de tirar", dur: 4.6, text: "El agua es para que *fragüe*, no para que sea fácil de tirar. Cuanta menos, más fuerte.", accent: "green" },
-  // ── MÉTODO 4 / puzolana — kicker + dato romano ──
-  { kind: "mdkicker", at: "y aca aparece la ultima pieza", dur: 3.4, num: "4", kicker: "Método", title: "La puzolana romana", glyph: "🌋", accent: "amber" },
-  { kind: "oxstat", at: "los puertos romanos que estuvieron dos mil anos bajo el agua salada", dur: 4.2, value: 2000, suffix: " años", label: "los puertos romanos bajo el agua salada se pusieron más duros, no menos", glyph: "🌊", accent: "amber" },
-  // ── EL ERROR — clímax educativo ──
-  { kind: "oxrule", at: "el error es este", dur: 4.8, text: "El error: *mucho cemento, mucha agua y secado rápido al sol*. Las tres fuerzas juntas.", accent: "red" },
-  // ── EL ERROR — HERO cemento: 3 fuerzas rojas tirando de la losa → red de grietas + sello ──
-  { kind: "cmerror", at: "esa vereda esta rajada antes de que la termines de disfrutar", dur: 6.2, title: "La máquina perfecta de hacer grietas", accent: "red" },
-  // ── LA REGLA — sello de tinta (2da del set) ──
-  { kind: "mdrulestamp", at: "entonces la regla y es la mas importante de todo el video", dur: 5.0, text: "CAL · POCA AGUA · CURADO HÚMEDO", num: "★", label: "La regla madre", accent: "green" },
-  // ── CIERRE conceptual — sello de tinta (3ra del set) ──
-  { kind: "mdrulestamp", at: "no era mejor material nada mas era que lo hacian flexible y lo cuidaban", dur: 4.8, text: "NO ERA MEJOR MATERIAL. LO HACÍAN FLEXIBLE.", num: "✓", label: "La lección", accent: "amber" },
-  // ── RECAP de los métodos como fichas ──
-  { kind: "mdrecap", at: "poca agua para que quede macizo y fuerte", dur: 5.4, title: "El secreto, en una", methods: [{ num: "1", name: "La cal", use: "flexible, respira, se cura sola", glyph: "🧱" }, { num: "2", name: "El curado", use: "húmedo y tapado varios días", glyph: "💧" }, { num: "3", name: "Menos agua", use: "macizo y fuerte, no una sopa", glyph: "🚱" }, { num: "4", name: "El orden", use: "cal, poco cemento, curado", glyph: "🛡" }], accent: "amber" },
-  // ── CIERRE — manual ──
-  { kind: "manualcard", at: "junte los 40 en el manual de reparaciones caseras", dur: 6.0, image: "real/manual_cover.png", title: "Manual de Reparaciones Caseras", desc: "Los 40 arreglos, incluidas las proporciones justas de cemento, cal y arena y los días de curado para cada trabajo.", chip: "Accedé en la descripción", accent: "amber" },
-  // ── CIERRE PREMIUM — endcard combinado libro 3D + próximo video + lema ──
-  { kind: "mdendcard", at: "en el proximo video te voy a mostrar por que las casas de antes eran frescas en verano", dur: 7.0, manualImg: "real/manual_cover.png", nextImg: "real/cm_next_cool_houses.png", manualTitle: "Manual de Reparaciones Caseras", nextKicker: "En el próximo video", nextTitle: "Casas frescas sin aire acondicionado", motto: "La independencia no se compra, se construye.", cta: "Accedé en la descripción", accent: "green" },
+  { kind: "manualcard", at: "esto del curado es uno de los secretos que fui juntando en una guia", dur: 6.0, image: "real/manual_cover.png", title: "Manual del Constructor Libre", desc: "Los 40 arreglos de $1 a $5 del hogar, con los pasos y las medidas exactas.", accent: "amber" },
+  // ── LA CAL — ingrediente de un dólar ──
+  { kind: "oxtag", at: "el ingrediente de un dolar que es la cal", dur: 4.2, name: "La cal", what: "El ingrediente de un dólar que los viejos le metían a casi toda mezcla", side: "left", accent: "green" },
+  { kind: "oxside", at: "y por que la cal es tan magica", dur: 5.4, image: "real/ce_lime_bag_ingredient.png", title: "Lo que la cal te da", lines: ["Flexible: la pared se mueve sin partirse", "Se auto-repara: sella la fisura sola", "Deja respirar: no atrapa la humedad"], side: "right", accent: "green" },
+  // ── SE CURA SOLA ──
+  { kind: "oxrule", at: "que se sella a si misma", dur: 4.4, text: "Una pared con cal *se repara sola*: sella la microfisura. El cemento puro solo la agranda.", accent: "green" },
+  // ── LOS ROMANOS ──
+  { kind: "oxstat", at: "despues de dos mil anos", dur: 4.2, value: 2000, suffix: " años", label: "las obras romanas de cal siguen enteras: no es el tiempo, es la cal", glyph: "🏛️", accent: "amber" },
+  // ── LA PROPORCIÓN ──
+  { kind: "oxmethod", at: "es una parte de cemento", dur: 4.8, num: "1·1·6", title: "La proporción que nunca falla", chips: ["1 de cemento: fuerza", "1 de cal: lo bueno", "5-6 de arena: relleno"], cost: "$1 la cal", accent: "green" },
+  // ── LA ARENA ──
+  { kind: "oxrule", at: "la arena tiene que estar limpia", dur: 4.4, text: "Arena *limpia* y de grano *parejo*. La tierra y las raíces te debilitan la mezcla.", accent: "blue" },
+  // ── EL ERROR — agua de más ──
+  { kind: "oxrule", at: "el error es el agua meterle demasiada agua a la mezcla", dur: 4.8, text: "El error más común: *demasiada agua*. Cómoda de tirar, pero es veneno para la pared.", accent: "red" },
+  { kind: "oxstat", at: "en vez de estar llena de piedra esta llena de aire", dur: 4.2, value: 0, prefix: "Aire", suffix: "", label: "el agua de más se evapora y deja huecos: pared débil, porosa, que se raja", glyph: "🫧", accent: "red" },
+  // ── MEZCLA FIRME ──
+  { kind: "oxrule", at: "los viejos la hacian dura a proposito", dur: 4.4, text: "Mezcla *seca y firme* que se sostenga sola. Cuanta menos agua, más piedra vas a tener.", accent: "amber" },
+  // ── CIERRE ──
+  { kind: "manualcard", at: "el link lo tenes abajo en la descripcion y en el comentario que deje fijado", dur: 6.0, image: "real/manual_cover.png", title: "Manual del Constructor Libre", desc: "Los 40 arreglos, incluido el de la cal y el curado, con las medidas exactas.", chip: "Accedé en la descripción", accent: "amber" },
 ];
 let nOv = 0;
 for (const o of OVL) { const s = atc(o.at); if (s == null) continue; const { kind, at: _a, dur = 4.2, ...props } = o; beats.push({ id: `ov_${kind}_${Math.round(s)}`, start: +s.toFixed(2), dur, kind, overlay: true, hue: "amber", ...props }); nOv++; }
-beats.sort((a, b) => a.start - b.start);
-
-// ── TRANSICIONES DE MARCA entre capítulos (overlay corto, ~0.42s). SOLO en 6 saltos
-// de sección. Se ancla al ARRANQUE de cada capítulo y arranca un pelín antes (offset).
-// Variantes rotadas. NO tapan contenido.
-const TRANS = [
-  { at: "el secreto", variant: "ink", accent: "amber" },                        // → EL SECRETO
-  { at: "de mas simple a mas poderosa", variant: "grain", accent: "amber" },     // → MÉTODOS
-  { at: "es el curado", variant: "grain", accent: "blue" },                      // → curado
-  { at: "el tercer metodo es el del agua", variant: "paper", accent: "green" },  // → agua
-  { at: "bien llegamos a lo que te prometi al principio", variant: "ink", accent: "red" }, // → EL ERROR
-  { at: "la casa entera esta llena de estos secretos que se perdieron", variant: "paper", accent: "green" }, // → cierre
-];
-let nTr = 0;
-for (const tr of TRANS) { const s = atc(tr.at); if (s == null) continue; const st = +Math.max(0, s - 0.12).toFixed(2); beats.push({ id: `tr_${tr.variant}_${Math.round(s)}`, start: st, dur: 0.42, kind: "mdtrans", overlay: true, hue: "amber", variant: tr.variant, accent: tr.accent }); nTr++; }
 beats.sort((a, b) => a.start - b.start);
 
 // ── MAXIMUM DENSITY: imágenes ancladas en CADA mini-frase del shotlist aún sin cubrir ──
 // [name, query EN visual, concept resuelto al contexto, frase ancla exacta de captions]
 const FILL = [
   // ── COLD OPEN ──
-  ["cm_fill_pantheon_dome_inside", "roman pantheon concrete dome from inside oculus ancient", "the Pantheon dome intact after twenty centuries", "el coliseo de roma dos mil anos parado"],
-  ["cm_fill_sidewalk_two_summers", "concrete sidewalk cracked after two summers backyard", "your sidewalk, made two summers ago, already split", "y al lado tu vereda"],
-  ["cm_fill_front_sidewalk_crack", "cracked front sidewalk of a house split concrete", "the front sidewalk", "el revoque de una pared que ya esta lleno de telaranas de grietas"],
-  ["cm_fill_subfloor_step", "cracked concrete subfloor and chipped entry step corner", "the subfloor, the entry step chipped at the corner", "la pileta de lavar que hiciste vos y ya perdio un pedazo"],
-  ["cm_fill_right_place", "reassuring old mason teaching how to mix mortar right", "you're in the right place, this is not bad luck", "la gente de antes sabia algo que a vos nadie te enseno"],
-  ["cm_fill_copy_today_no_extra", "man copying an old cheap mortar method at home today", "to copy today, no extra bags, no pricey brand additives", "hacian tres o cuatro cosas"],
-  ["cm_fill_prove_it_now", "man about to prove it with two mortar samples demo", "I'll prove it right now, in front of you", "internet esta lleno de gente que te cuenta"],
-  ["cm_fill_both_same_corner", "two mortar blocks in the same backyard corner weathering", "both made the same day, both in the same corner", "las dos son mortero"],
-  ["cm_fill_all_crazed_face", "concrete sample crazed with fine cracks all over the face", "all crazed, cracks across the whole face", "cemento puro bien cargado de cemento"],
-  ["cm_fill_old_recipe_masons", "old bricklayers recipe adding lime the way they used to", "the old recipe the bricklayers of before used", "con un ingrediente que la industria dejo de recomendarte"],
-  ["cm_fill_one_more_free", "something done while curing that cost nothing extra", "and one more thing I did while it cured, for free", "la unica diferencia entre las dos"],
-  ["cm_fill_error_ruins_all", "concrete cracking the one error that ruins all work", "the one error that cracks your wall for sure", "quedate hasta el final"],
-  // ── STAKES ──
-  ["cm_fill_not_just_money", "pile of wasted cement bags money lost redo cracked work", "what cracked cement cost you, not just money", "pensa un segundo en lo que el cemento rajado ya te costo"],
-  ["cm_fill_render_blows_off", "wall render blowing off and falling in pieces damaged", "the render that filled with cracks and fell in pieces", "del revoque de la pared que quedo lindo liso"],
-  ["cm_fill_step_first_step", "concrete step chipped the first day someone stepped hard", "the step that chipped the first day someone stepped on it", "del escalon que hiciste con toda la ilusion"],
-  ["cm_fill_crack_treacherous", "concrete crack spreading treacherous growing wider", "here's the treacherous thing about a concrete crack", "no se queda quieta"],
-  ["cm_fill_wall_healthy_redo", "sound wall now a job of chipping it all and starting over", "a sound wall becomes chipping it all and starting over", "y vos terminas comprando material de nuevo"],
-  // ── EL SECRETO ──
-  ["cm_fill_da_bronca_bag", "hardware store cement bag no instructions maddening", "so simple it's maddening they don't explain it", "y es tan simple que da bronca"],
-  ["cm_fill_modern_cement_hard", "modern portland cement very hard rigid gray block", "modern cement is very hard", "el cemento portland que compras en el corralon"],
-  ["cm_fill_no_flexibility", "rigid brittle concrete no flexibility snapping", "brittle, no flexibility at all", "no tiene nada de flexibilidad"],
-  ["cm_fill_ground_settles", "ground settling under a slab a millimeter house breathing", "the ground settles a millimeter, the house breathes", "todo se mueve siempre aunque no lo veas"],
-  // ── RETRACCIÓN ──
-  ["cm_fill_shrinks_retracts", "cement shrinking retracting losing volume as it dries", "cement shrinks, retracts, loses volume as it sets", "y hay algo mas todavia peor"],
-  ["cm_fill_cracks_on_its_own", "concrete cracking on its own from shrinkage no load", "it pulls on itself and cracks alone, just from drying", "y mas tira de si mismo hasta que se agrieta solo"],
-  ["cm_fill_fresh_render_cracks", "hairline shrinkage cracks on a freshly plastered wall", "the fine cracks on fresh render", "por eso las fisuras finitas que ves en un revoque recien hecho"],
-  // ── ROMANOS ──
-  ["cm_fill_lived_with_water", "roman concrete built to live with water and movement", "built to live with water and movement, not fight it", "duro dos mil anos"],
-  ["cm_fill_old_thick_render", "old house thick lime render 100 years still sound wall", "the old thick-render houses, still sound at 100 years", "y las casas viejas de tu barrio"],
-  // ── LA CAL ──
-  ["cm_fill_lime_breathes", "flexible lime render breathing water vapor passing through", "lime breathes, lets water vapor pass, accompanies movement", "y la cal es todo lo contrario del cemento"],
-  ["cm_fill_seems_like_magic", "lime mortar self healing seems like magic but isn't", "it has something that seems like magic and isn't", "el mortero de cal se cura solo"],
-  ["cm_fill_you_leave_problem", "person smoothing pure cement leaving and the problem starts", "you smooth it, you leave, and there your problem starts", "vos hoy tiras cemento puro"],
-  // ── REGLA MADRE ──
-  ["cm_fill_repeat_reverse", "the rule reversed from what they sold you about cement", "repeat it, it's the reverse of what they sold you", "repetila porque es al reves de todo lo que te vendieron"],
-  ["cm_fill_all_did_this", "old builders all doing lime and curing in different ways", "everything the old folks did was that", "todo lo que hacian los viejos era eso"],
-  // ── MÉTODO 1 cal ──
-  ["cm_fill_first_most_important", "adding lime the first and most important lost ingredient", "the first and most important: the lost ingredient", "meter cal en la mezcla"],
-  ["cm_fill_works_like_butter", "creamy lime mortar spreading like butter gripping wall", "it works like butter, grips better, stays flexible", "cuando le metes cal cambia todo"],
-  ["cm_fill_cheapest_there_is", "cheap bag of builders lime one of the cheapest things", "it's one of the cheapest things there is", "y lo compras en cualquier corralon la bolsa de cal por monedas"],
-  // ── RECETA ──
-  ["cm_fill_how_its_done", "how the old mortar mix is done in a builders trough", "how it's done, where almost nobody knows the option exists", "para un reboque flexible y sano"],
-  ["cm_fill_one_one_six", "one cement one lime six sand measured in buckets", "one of cement, one of lime, six of sand", "una parte de cemento una parte de cal y seis partes de arena"],
-  ["cm_fill_softer_more_lime", "adjusting mix softer more lime for an old moving wall", "want softer, drop cement and raise lime", "bajas el cemento y subis la cal"],
+  ["ce_fill_material_before", "old bag of cement on a jobsite the material of before close up", "it's not that the material of before was magic", "no es que el material de antes fuera magico"],
+  ["ce_fill_verdad_no_conviene", "cement industry counter sale it doesn't suit them to tell you", "the truth is it doesn't suit them", "porque la verdad es que no le conviene"],
+  ["ce_fill_use_bag_wrong", "worker misusing cement from an expensive bag jobsite", "sell you the bag and have you use it wrong", "y que la uses mal"],
+  ["ce_fill_fix_all_again", "cracked wall being torn down and redone five years later", "in five years you fix it all again and buy again", "arreglar todo de nuevo y volves a comprar"],
+  // ── PROMESA ──
+  ["ce_fill_ingredient_mix", "adding a scoop of lime into a mortar mix on a jobsite", "the ingredient the old ones put in the mix", "que los viejos le metian a la mezcla"],
+  ["ce_fill_stay_until_end", "old mason gesturing keep watching until the end jobsite", "stay until the end, that last point makes the difference", "quedate hasta el final"],
+  ["ce_fill_first_deception", "reading a bag of cement realizing the first trick close up", "let's understand cement, here's the first deception", "porque aca ya esta el primer engano"],
+  // ── EL CEMENTO SE CURA ──
+  ["ce_fill_throw_it_wait", "throwing fresh cement and waiting for it to dry misconception", "you throw it and wait for it to dry", "o sea que lo tiras"],
+  ["ce_fill_costs_you_wall", "cracked wall the mistake that costs you the whole wall", "and that's the mistake that will cost you the wall", "el error que te va a costar la pared"],
+  ["ce_fill_water_days_strength", "water soaking into curing cement gaining full strength days", "it needs water inside for days to grab all its strength", "para agarrar toda su fuerza"],
+  ["ce_fill_half_resistance", "weak low strength cement stuck at half its resistance forever", "it stays forever at half the resistance it should have", "con la mitad de la resistencia que tendria que tener"],
+  // ── EL CURADO ──
+  ["ce_fill_day_after_day", "mason wetting a fresh wall day after day with a hose", "wetting the fresh wall a day after the other", "un dia tras otro"],
+  ["ce_fill_not_a_quirk", "old mason soaking a wall proving it's no old-man quirk", "but it's no quirk", "pero no es ninguna mania"],
+  ["ce_fill_giving_the_water", "hose giving fresh cement the water it needs to react", "what he's doing is giving the cement the water it needs", "lo que esta haciendo es darle al cemento el agua que necesita"],
+  // ── LA BOLSA / 7 DÍAS ──
+  ["ce_fill_never_shouts", "small print on cement bag never shouting the key thing", "it doesn't shout the one thing that really matters", "lo unico que de verdad importa"],
+  ["ce_fill_before_it_cures", "sun and wind pulling water before the cement can cure", "they suck the water from the cement before it cures", "antes de que llegue a curar"],
   // ── INJERTO 1 ──
-  ["cm_fill_gathered_measures", "handwritten mortar measures gathered exact amounts manual", "I gathered those measures with the exact amounts", "porque a mi me paso de mezclar a ojo la primera vez"],
-  ["cm_fill_nothing_needed_today", "man starting a lime mix today needing nothing extra", "for today you need nothing, you can start already", "con esta proporcion"],
-  // ── LÍMITE cal ──
-  ["cm_fill_patience_pays", "patience with lime pays off for lasting render walls", "for what really lasts, the patience with lime pays off", "no es para cuando queres que frague en dos horas"],
-  // ── CURADO ──
-  ["cm_fill_even_good_material", "even people with good material failing at curing concrete", "even those who buy good material fail here", "es el curado"],
-  ["cm_fill_drying_is_losing", "concrete just losing water drying vs the chemical set", "drying is losing water and done", "fraguar es una reaccion quimica"],
-  ["cm_fill_reaction_takes_days", "cement hydration reaction taking days to finish", "that reaction takes days to do its work", "si vos dejas que el agua se le vaya rapido"],
-  ["cm_fill_half_way_weak", "cement left half-set weak porous from drying too fast", "the cement stays half-way, weak and porous", "queda debil poroso"],
-  ["cm_fill_give_reaction_time", "giving the cement reaction time with all the water it needs", "they give the reaction time to finish, no rush", "a proposito le tiran agua lo tapan le hacen sombra"],
-  ["cm_fill_one_dried_one_cared", "same bag one dried in sun one cured wet comparison", "one dried in the sun, the other was cared for", "el mismo material la misma bolsa"],
-  // ── CÓMO CURAR ──
-  ["cm_fill_no_finger_mark", "concrete surface no longer marks with a finger set enough", "once it no longer marks with a finger, start caring for it", "apenas el cemento tomo"],
-  ["cm_fill_water_soft_times", "watering fresh concrete softly several times a day curing", "wet it, softly, several times a day", "con un plastico con una arpillera o una bolsa mojada"],
-  ["cm_fill_shade_it_yourself", "making shade over a fresh concrete slab while curing", "keep it in shade or make shade yourself", "si podes lo dejas a la sombra"],
-  ["cm_fill_seven_days_important", "keeping a slab wet seven days for something important", "three, five, seven days if it's important like a sidewalk", "y asi lo mantenes humedo y tapado varios dias"],
-  ["cm_fill_most_prevents_cracks", "curing that prevents the most cracks water and a tarp", "it's what prevents the most cracks in your life", "es lo mas barato que existe"],
-  // ── AGUA ──
-  ["cm_fill_soupy_comfortable", "soupy wet cement mix comfortable to work but weak", "a wet mix is comfortable, and a disaster", "casi todos le tiran agua de mas"],
-  ["cm_fill_each_drop_pore", "each drop of extra water leaving a pore inside concrete", "each little drop that leaves makes a hole, a pore", "toda esa agua de mas cuando el cemento fragua no se usa"],
-  ["cm_fill_stiff_not_soup", "stiff plastic mortar workable but firm not a soup", "damp, plastic, workable, yes, but not a soup", "cuanta menos agua"],
-  ["cm_fill_add_water_slowly", "adding water little by little to the right firm point mix", "add water little by little, stop when it's workable but firm", "ese punto justo"],
-  // ── PUZOLANA ──
-  ["cm_fill_ash_near_volcanoes", "volcanic ash gathered near volcanoes for roman concrete", "an earth they gathered near the volcanoes: pozzolana", "le metian a la mezcla ceniza volcanica"],
-  ["cm_fill_kept_hardening", "roman concrete kept hardening for years decades centuries", "it kept hardening for years, decades, centuries", "y esa ceniza hacia algo increible"],
-  ["cm_fill_pozzolanic_bag", "bag of pozzolanic cement sold at hardware yard today", "today it's imitated by pozzolanic cement or added ashes", "como cemento pusolanico"],
-  // ── INJERTO 2 ──
-  ["cm_fill_lime_cheap_free", "cheap lime and free curing water nobody explains yard", "lime is cheap, curing water is free, less water costs nothing", "ninguna de estas cosas es cara"],
-  ["cm_fill_biggest_lie", "the biggest lie that more cement is stronger busted", "that more cement is stronger is the biggest lie of all", "mas cemento es mas retraccion"],
-  ["cm_fill_sells_you_redo", "cracked work makes you buy cement again to redo it business", "it cracks, you buy again to redo it: that's the business", "por eso cuando arme el manual lo dividi justo asi"],
-  // ── EL ERROR ──
-  ["cm_fill_thinks_stronger", "person thinking more cement makes it stronger mistake", "the common person thinks: lots of cement so it's strong", "le pongo bien de cemento"],
-  ["cm_fill_started_wrong", "overloaded cement mix already set to shrink and crack", "already started wrong: too much, it'll retract and crack", "le tiro un poco mas de agua"],
-  ["cm_fill_watered_porous", "watering the mix made it porous and weak mistake", "worse: watered it, made it porous and weak", "y el sol y el viento le chupan el agua en horas antes de que frague"],
-  ["cm_fill_sun_day_leaves", "applying mortar on a hot sunny day leaving it in the open", "applies it on a sunny day, leaves it in the open, walks away", "esa vereda esta rajada antes de que la termines de disfrutar"],
-  // ── ES AL REVÉS ──
-  ["cm_fill_engrave_the_rule", "engrave the rule lime little water keep it wet curing", "if you remember only that phrase, you'll beat 90% of people", "entonces la regla y es la mas importante de todo el video"],
-  // ── REPARAR ──
-  ["cm_fill_smear_cement_wrong", "smearing cement over a moving crack the wrong repair", "if you smear cement over a moving crack and leave it", "tapar una grieta que se mueve con cemento rigido es tirar el trabajo"],
-  ["cm_fill_fine_still_crack", "a fine still hairline crack taken well by lime mortar", "a fine, still crack, lime mortar takes it well", "y la rellenas con un material que tenga algo de elasticidad"],
-  // ── ESTRUCTURAL ──
-  ["cm_fill_your_hands_home", "home concrete work with your own hands render floors steps", "for what you do at home, with your hands", "todo lo que te dije hoy es para reboques"],
-  ["cm_fill_no_eyeball_video", "structural concrete not done by eye or copying a video", "structural is not done by eye or copying a video", "eso es ingenieria con calculo"],
-  ["cm_fill_crack_crosses_beam", "structural crack crossing a beam or column growing warning", "if it crosses a beam or column, appears big and sudden", "y si una grieta que tenes es estructural"],
-  ["cm_fill_crack_is_warning", "structural crack a warning not a finishing problem", "a structural crack is a warning, not a finishing problem", "ahi llamas a un profesional"],
-  // ── RECAP ──
-  ["cm_fill_and_the_error", "the error mucho cemento mucha agua secado rapido recap", "and above all, the error that ruins it all", "la cal el ingrediente perdido para que respire y no se raje"],
-  ["cm_fill_wont_crack_winter", "sidewalk render step that won't crack the first winter", "a sidewalk, render, step or subfloor that won't crack", "con esto solo ya podes hacer una vereda"],
+  ["ce_fill_wall_no_leak", "old lime rendered wall that doesn't leak water notebook", "the wall that doesn't leak, the iron that doesn't rust", "el de la pared que no filtra"],
+  ["ce_fill_iron_no_rust", "old iron bar treated so it doesn't rust builder trick", "the iron that doesn't rust", "el del hierro que no se oxida"],
+  ["ce_fill_link_below_pinned", "phone showing link in description and pinned comment guide", "the link is below, in the description and pinned comment", "el link esta abajo en la descripcion y en el comentario que deje fijado"],
+  // ── LA CAL ──
+  ["ce_fill_two_coins_bag", "a cheap bag of lime costing two coins at a supply yard", "a bag of lime that costs you two coins", "que te va a salir dos monedas"],
+  ["ce_fill_to_plaster", "mason plastering a wall with lime mortar smooth render", "to plaster, to lay bricks, for everything", "para revocar"],
+  ["ce_fill_nobody_uses_now", "modern jobsite where almost nobody uses lime anymore", "and today almost nobody uses it", "y hoy ya casi nadie la usa"],
+  ["ce_fill_rushed_worker", "worker in a hurry choosing fast pure cement convenient", "convenient for whoever's in a rush", "que es comodo para el que anda con apuro"],
+  // ── POR QUÉ LA CAL ──
+  ["ce_fill_three_reasons", "lime poured into mortar three reasons it changes the house", "for three reasons that change the whole house", "por tres razones que te cambian la casa entera"],
+  ["ce_fill_move_without_break", "lime wall flexing slightly moving without splitting apart", "lets the wall move a little without splitting", "moverse un poquito sin llegar a partirse"],
+  ["ce_fill_second_incredible", "lime wall micro crack sealing itself second incredible reason", "the second is incredible: lime cures itself", "la segunda es increible"],
+  ["ce_fill_repairs_itself", "lime wall literally repairing its own crack over time", "a lime wall literally repairs itself", "una pared hecha con cal literalmente se repara sola"],
+  // ── RESPIRAR ──
+  ["ce_fill_vapor_outward", "moisture vapor passing outward through a breathing lime wall", "it lets the moisture vapor pass outward", "el vapor de la humedad para afuera"],
+  ["ce_fill_traps_humidity", "pure cement wall sealing and trapping humidity inside damp", "pure cement seals it all and traps the humidity inside", "y te atrapa la humedad adentro"],
+  ["ce_fill_paint_blisters", "paint blistering swelling and falling off a damp cement wall", "the paint that blisters and ends up falling", "esa pintura que se hincha y se termina cayendo"],
+  ["ce_fill_no_rot_inside", "healthy dry lime wall not rotting from the inside", "stays dry and doesn't rot inside", "y no se te pudre por dentro"],
+  // ── ROMANOS ──
+  ["ce_fill_hundreds_years", "hundreds of years old lime wall still standing solid", "there are lime walls hundreds of years old still up", "de hace cientos de anos que siguen paradas"],
+  ["ce_fill_two_thousand_years", "roman ruins standing whole after two thousand years intact", "two thousand years", "dos mil anos"],
+  // ── PROPORCIÓN ──
+  ["ce_fill_never_fails_ratio", "a mortar proportion that never fails for plaster and bricks", "a proportion that never fails, for plaster and for laying", "una proporcion que nunca te falla"],
+  ["ce_fill_cement_grabs", "grey cement giving the mix its strength grabbing hard", "a bit of cement so it grabs strength", "un poco de cemento para que agarre fuerza"],
+  ["ce_fill_same_mix_always", "the same lime mortar mix masons used their whole lives", "that same mix masons used all their lives", "esa misma mezcla la usaron los albaniles toda la vida"],
+  // ── ARENA ──
+  ["ce_fill_seems_minor", "a pile of sand that seems a minor detail but isn't jobsite", "it seems a minor detail and it isn't at all", "que parece un detalle sin importancia y no lo es para nada"],
+  ["ce_fill_dirt_weakens", "soil and clay in sand weakening the mortar mix close up", "all that dirt weakens the mix", "toda esa suciedad te debilita la mezcla"],
+  ["ce_fill_not_like_dust", "very fine dusty sand not good for mortar too powdery", "not too fine like dust", "ni muy fina como si fuera polvo"],
+  ["ce_fill_dont_neglect_it", "checking sand quality carefully don't neglect it jobsite", "so don't neglect it", "asi que no la descuides"],
+  // ── ERROR / AGUA ──
+  ["ce_fill_most_common_all", "over-watering the mix the most common mistake of all", "pay attention, it's the most common of all", "es el mas comun de todos"],
+  ["ce_fill_easy_to_throw", "runny wet mortar easy to throw and smooth with trowel", "easy to throw and smooth with the trowel", "y facil de tirar y de emparejar con la cuchara"],
+  ["ce_fill_weak_and_porous", "weak porous cement wall sucking humidity cross section", "weak and porous, it sucks up humidity", "asi que es debil y porosa y te chupa la humedad"],
+  ["ce_fill_holds_no_drip", "firm mortar holding itself on the trowel without dripping", "that holds itself on the trowel without dripping", "que se sostenga sola en la cuchara sin chorrear"],
+  ["ce_fill_walls_still_up", "old masons' firm walls still standing there today exterior", "and that's why their walls are still standing there", "y por eso las paredes de ellos siguen ahi paradas"],
+  // ── REPASO ──
+  ["ce_fill_free_changes_most", "free wall watering the thing that changes the result most", "it's free and it's what changes the result most", "es gratis y es lo que mas te va a cambiar el resultado"],
+  ["ce_fill_dollar_a_bag", "one dollar bag of lime cheap ingredient for the mix", "and it costs barely a dollar a bag", "y te cuesta apenas un dolar la bolsa"],
+  ["ce_fill_four_things_no_crack", "four simple steps a wall that doesn't crack recap jobsite", "with those four things, your wall doesn't crack", "y con esas cuatro cosas no mas tu pared no se raja"],
+  ["ce_fill_neighbor_picks_cracks", "neighbor chipping his wall to patch cracks five years later", "the neighbor will be chipping it all to patch cracks", "va a estar picando todo para tapar las grietas"],
+  ["ce_fill_its_what_you_know", "confident builder the difference is what you know not money", "the difference was never money, it's what you know", "esta en lo que sabes"],
   // ── CIERRE ──
-  ["cm_fill_wood_rots_borax", "wood rotting and ants gone with a bit of borax cheap fixes", "wood that rots, ants and woodworm gone with borax", "el oxido que se come el hierro"],
-  ["cm_fill_leak_mason_trick", "roof leak sealed for good with an old bricklayer trick", "the leak sealed for good with the old mason's trick", "la humedad que sube por la pared"],
-  ["cm_fill_no_rewind_notes", "manual so you don't stop the video to write down amounts", "so you don't have to stop the video and rewind for amounts", "y los dias de curado"],
-  ["cm_fill_all_one_place", "forty cheap home repairs gathered in one ordered manual", "gathered in one place, ordered for the day you need it", "cuesta menos que una sola bolsa de material"],
-  ["cm_fill_add_lime_less_water", "next mix add lime less water keep it wet and covered", "next mix: add lime, less water, keep it wet and covered a few days", "tu pared te lo va a agradecer y tu bolsillo tambien"],
-  ["cm_fill_orient_house_walls", "old house orientation thick walls roof detail keeping cool", "how they oriented the house, the walls, that roof detail", "todo lo que perdimos cuando llego el aire acondicionado"],
+  ["ce_fill_proven_generations", "old building knowledge proven over whole generations lime", "knowledge proven over whole generations, and lost", "durante generaciones enteras y se perdio"],
+  ["ce_fill_too_durable", "too good too cheap too durable old method being buried", "lost for being too good, too cheap, too durable", "demasiado bueno y demasiado barato y demasiado duradero"],
+  ["ce_fill_hardware_corralon", "not depending on the hardware store or the supply yard", "not the hardware store, not the yard, not the one who overcharges", "ni de la ferreteria ni del corralon"],
+  ["ce_fill_less_than_a_bag", "the manual costing less than a single bag of pricey cement", "it costs less than one bag of the expensive cement, with a guarantee", "y te sale menos que una sola bolsa del cemento caro y encima tiene garantia"],
+  ["ce_fill_water_from_rain", "old trick keeping rain water out of a wall lime render", "so water never gets in, from rain outside or damp rising", "ni por la lluvia de afuera ni por la humedad que sube desde abajo"],
+  ["ce_fill_lime_render_dry", "lime render keeping a house dry inside for decades trick", "the lime and render trick that keeps the house dry for decades", "el truco de la cal y del reboque que te mantiene la casa seca por dentro durante decadas"],
+  ["ce_fill_one_fix_at_time", "self-reliant builder one fix at a time see you next time", "one fix at a time, see you in the next one", "un arreglo a la vez"],
 ];
 for (const [name, query, concept, ph] of FILL) { const s = atc(ph); if (s == null) continue; beats.push({ id: name, start: +s.toFixed(2), dur: 3, kind: "raw", src: `real/${name}.png`, darken: 0, hue: HUES[Math.round(s) % 3] }); addB(name, query, concept); }
 beats.sort((a, b) => a.start - b.start);
 
 // ── BURSTS extra (oxstack) para flashes sub-1s en momentos de lista ──
 const BURSTS = [
-  { at: "hacian tres o cuatro cosas", images: ["real/cm_lime_lost_ingredient.png", "real/cm_water_cover_shade.png", "real/cm_mix_as_dry_as_workable.png"], captions: ["La cal", "El curado", "Menos agua"], accent: "amber" },
-  { at: "aca hay tres cosas que se perdieron", images: ["real/cm_add_lime_to_mix.png", "real/cm_keep_wet_several_days.png", "real/cm_less_water_stronger.png"], captions: ["La mezcla justa", "El curado", "El agua"], accent: "blue" },
-  { at: "una parte de cemento una parte de cal y seis partes de arena", images: ["real/cm_pure_cement_loaded.png", "real/cm_cheap_bag_of_lime.png", "real/cm_sand_is_body.png"], captions: ["1 cemento", "1 cal", "6 arena"], accent: "blue" },
-  { at: "los tres juntos", images: ["real/cm_puts_lots_of_cement.png", "real/cm_adds_more_water.png", "real/cm_sun_wind_suck_water.png"], captions: ["Mucho cemento", "Mucha agua", "Secado al sol"], accent: "red" },
+  { at: "por tres razones que te cambian la casa entera", images: ["real/ce_lime_flexible_mix.png", "real/ce_lime_self_heals.png", "real/ce_lime_lets_breathe.png"], captions: ["Flexible", "Se cura sola", "Deja respirar"], accent: "green" },
+  { at: "es una parte de cemento", images: ["real/ce_one_part_cement.png", "real/ce_lime_bag_ingredient.png", "real/ce_sand_as_filler.png"], captions: ["1 cemento", "1 cal", "5-6 arena"], accent: "amber" },
+  { at: "hagamos un repaso rapido de todo el plan completo", images: ["real/ce_wet_wall_seven_days.png", "real/ce_add_the_lime.png", "real/ce_firm_dry_mix_trowel.png"], captions: ["Curá 7 días", "Metele cal", "Mezcla firme"], accent: "blue" },
 ];
 for (const b of BURSTS) { const s = atc(b.at); if (s == null) continue; beats.push({ id: `burst_${Math.round(s)}`, start: +s.toFixed(2), dur: 4.2, kind: "oxstack", overlay: true, hue: "amber", images: b.images, captions: b.captions, accent: b.accent }); }
 beats.sort((a, b) => a.start - b.start);
 
 // ── STRUCT — formatos estructurados (gate de variedad: ≥6 tipos, ≥6% peso, bars≥2) ──
 const STRUCT = [
-  { kind: "bars", at: "eso justamente es el negocio", hue: "red", title: "Lo que te cuesta el cemento rajado", bars: [{ label: "Picar todo y rehacerlo de nuevo", value: 100, display: "$$$", tone: "danger" }, { label: "Meterle cal y curarlo", value: 3, display: "monedas", winner: true }] },
-  { kind: "bars", at: "por que el revoque de antes duraba cien anos", hue: "amber", title: "Antes vs hoy: cuánto dura", bars: [{ label: "Revoque de antes, con cal", value: 100, display: "100 años", winner: true }, { label: "Tu revoque de cemento puro", value: 5, display: "2 años", tone: "danger" }] },
-  { kind: "bars", at: "un cemento curado humedo tapado unos dias queda mucho mas fuerte y sin grietas", hue: "blue", title: "El mismo material, curado o no", bars: [{ label: "Secado al sol", value: 20, display: "débil, rajado", tone: "danger" }, { label: "Curado húmedo", value: 100, display: "macizo, sano", winner: true }] },
-  { kind: "process", at: "de mas simple a mas poderosa", hue: "amber", title: "Los métodos, de más simple a más poderoso", eyebrow: "Cada uno arregla un problema distinto", steps: [{ title: "La cal", desc: "flexibilidad: no se raja con el movimiento" }, { title: "El curado", desc: "mantenerlo húmedo mientras fragua" }, { title: "Menos agua", desc: "macizo y fuerte, no una sopa" }, { title: "La puzolana", desc: "cal + ceniza + tiempo, el truco romano" }] },
-  { kind: "process", at: "no es mas cemento", hue: "blue", title: "La regla madre (al revés de lo que te vendieron)", eyebrow: "No es más cemento", steps: [{ title: "Cal", desc: "para que respire y acompañe el movimiento" }, { title: "Poca agua", desc: "para que quede macizo y no poroso" }, { title: "Curado húmedo", desc: "mantenerlo tapado y húmedo unos días" }] },
-  { kind: "aged", at: "esa es la clave que se perdio", hue: "blue", heading: "LA RAZÓN FÍSICA", eyebrow: "Todo se mueve, siempre", lines: ["El cemento puro es rígido y frágil", "No acompaña el movimiento de la pared", { text: "Se parte, no se estira: se raja", mark: true }] },
-  { kind: "aged", at: "el error es este", hue: "red", heading: "EL ERROR FATAL", eyebrow: "Justo cuando creés que la hacés más fuerte", lines: ["Mucho cemento: retracción", "Mucha agua: porosa y débil", { text: "Secado rápido al sol: rajada antes de disfrutarla", mark: true }] },
-  // foto CON PARTES señaladas (AnnotatedImage) — la telaraña de grietas
-  { kind: "annotated", at: "el revoque de una pared que ya esta lleno de telaranas de grietas", hue: "red", image: "real/cm_wall_render_spider_cracks.png", eyebrow: "El revoque que ya te está avisando", caption: "Las telarañas de grietas: el cemento se cuarteó al secar", annotations: [{ kind: "circle", x: 0.5, y: 0.5, w: 0.22, label: "fisuras de retracción", color: "danger" }] },
-  { kind: "callout", at: "el mortero de cal se cura solo", figure: "Se cura sola", caption: "La cal vuelve a formar carbonato de calcio en la fisura y la cierra sola.", accent: "good", image: "real/cm_lime_self_heals.png" },
-  { kind: "callout", at: "son porque le sobro", figure: "Le sobró", caption: "Las fisuras finitas de un revoque nuevo no son por falta de cemento: son por exceso.", accent: "danger", image: "real/cm_fine_cracks_fresh_render.png" },
-  // cal = ecuación de 3 ingredientes (IngredientEquation, terrosa)
-  { kind: "ingredients", at: "una parte de cemento una parte de cal y seis partes de arena", items: [{ image: "real/cm_pure_cement_loaded.png", label: "Cemento" }, { image: "real/cm_cheap_bag_of_lime.png", label: "Cal" }, { image: "real/cm_sand_is_body.png", label: "Arena" }], resultLabel: "1 : 1 : 6, el revoque que no se raja" },
-  // dato duro de los romanos (StatBig, terrosa)
-  { kind: "stat", at: "seguia endureciendo durante anos decadas siglos", value: 2000, suffix: " años", eyebrow: "Hormigón romano con puzolana", label: "bajo el agua salada se hizo más duro, no menos", accent: "amber", hue: "amber" },
-  { kind: "callout", at: "cuesta menos que una sola bolsa de material", figure: "< 1 bolsa", caption: "El manual cuesta menos que una sola bolsa de material que ibas a tirar rehaciendo la pared.", accent: "good", image: "real/manual_cover.png" },
-  // el error como REGLA numerada (RuleNumberScene, terrosa)
-  { kind: "rule", at: "es todo al reves de lo que te dijeron", number: "!", title: "Es todo al revés", label: "más cemento no es más fuerte: es más grietas", hue: "red" },
-  // reparar lo que se mueve = tarjeta-número (NumberCard, terrosa)
-  { kind: "numcard", at: "si se abre y se cierra necesitas flexibilidad si o si", number: "±", name: "Grieta que se mueve", eyebrow: "Rellenala flexible", total: "1", bg: "real/cm_flexible_filler_lime.png", accent: "good" },
-  { kind: "checklist", at: "como las de los viejos como las de los romanos a su manera", hue: "blue", title: "El plan contra las grietas", items: [{ text: "No es más cemento: es cal, poca agua y curado", state: "done" }, { text: "La cal: flexible, respira y se cura sola", state: "done" }, { text: "Menos agua: más macizo y fuerte", state: "done" }, { text: "Curar húmedo y tapado varios días", state: "done" }, { text: "El error: mucho cemento, mucha agua, secado al sol", state: "done" }] },
-  { kind: "callout", at: "el cemento no se seca el cemento fragua", figure: "Fragua", caption: "El cemento no se seca: fragua. Es una reacción química que necesita agua y tiempo.", accent: "danger", image: "real/cm_cement_doesnt_dry_sets.png" },
-  { kind: "splitlist", at: "no te la juegues con lo que aguanta el techo sobre tu cabeza", title: "Lo estructural NO es receta casera", items: ["Columnas, vigas y losas: ingeniería", "Con cálculo y el hierro en su lugar", "Grieta estructural = un aviso", "Ahí llamás a un profesional"], palette: "D" },
-  { kind: "cross", at: "esa mezcla queda llena de agujeros microscopicos", hue: "cold", title: "Por qué el agua de más debilita", eyebrow: "En corte", layers: [{ label: "Poca agua", depth: "macizo, sin poros", color: "#c9b28a" }, { label: "Agua de más", depth: "el agua se evapora", color: "#7a8ca0" }, { label: "Resultado", depth: "poroso: se desgrana", color: "#c94f4f" }] },
+  { kind: "vs", at: "una que se te cae a pedazos", hue: "amber", title: "Cuánto te dura la pared", left: { label: "Con cal", value: "100 años", sub: "la pared de los viejos", good: true }, right: { label: "Sin cal", value: "5 años", sub: "y ya se raja" } },
+  { kind: "vs", at: "si se te seca demasiado rapido", hue: "red", title: "El cemento no se seca, se cura", left: { label: "Curada 7 días", value: "100% fuerza", sub: "dura como piedra", good: true }, right: { label: "Seca muy rápido", value: "la mitad", sub: "débil para siempre" } },
+  { kind: "vs", at: "en vez de estar llena de piedra esta llena de aire", hue: "red", title: "El agua de la mezcla", left: { label: "Mezcla firme", value: "llena de piedra", sub: "fuerte y sana", good: true }, right: { label: "Agua de más", value: "llena de aire", sub: "porosa, se raja" } },
+  { kind: "process", at: "es el secreto numero uno y encima es gratis", hue: "blue", title: "El curado, paso a paso", eyebrow: "Gratis, y es lo que más cambia el resultado", steps: [{ title: "Mojá la pared recién hecha", desc: "a la mañana y a la tarde, con manguera o balde" }, { title: "Siete días mínimo", desc: "más todavía si hace calor o corre viento" }, { title: "Queda dura como piedra", desc: "el agua adentro termina la reacción química" }] },
+  { kind: "process", at: "en lugar de hacer la mezcla solamente con cemento y arena", hue:"cold", title: "La mezcla con cal", eyebrow: "La proporción que nunca falla", steps: [{ title: "1 parte de cemento", desc: "para que la mezcla agarre fuerza" }, { title: "1 parte de cal", desc: "flexible, se auto-repara y deja respirar la pared" }, { title: "5 a 6 partes de arena", desc: "limpia y de grano parejo, como relleno" }] },
+  { kind: "aged", at: "porque el cemento no se seca el cemento se cura", hue: "amber", heading: "EL PRIMER ENGAÑO", eyebrow: "El cemento no se seca: se cura", lines: ["No se seca como el barro al sol", "Es una reacción química con agua adentro", { text: "Si se seca rápido, pierde la mitad de su fuerza", mark: true }] },
+  { kind: "aged", at: "el error es el agua meterle demasiada agua a la mezcla", hue: "red", heading: "EL ERROR MÁS COMÚN", eyebrow: "Demasiada agua = una pared de aire", lines: ["Queda blandita y cómoda de tirar", "El agua de más se evapora y deja huecos", { text: "Pared débil y porosa que se raja al primer frío", mark: true }] },
+  { kind: "callout", at: "te cuesta literalmente un dolar", figure: "$1", caption: "Lo que los viejos sabían te cuesta, literalmente, un dólar.", accent: "good", image: "real/ce_one_dollar_bill.png" },
+  { kind: "callout", at: "quedar duro como una piedra", figure: "El curado", caption: "Darle al cemento el agua para terminar la reacción y quedar duro como piedra.", accent: "cold", image: "real/ce_water_finishes_reaction.png" },
+  { kind: "callout", at: "que se sella a si misma", figure: "Se repara sola", caption: "Una pared de cal sella la microfisura ella sola con la humedad y el aire.", accent: "good", image: "real/ce_seals_itself.png" },
+  { kind: "callout", at: "esa pintura que se hincha y se termina cayendo", figure: "Salitre", caption: "El cemento puro atrapa la humedad: salitre, manchas y pintura que se cae.", accent: "danger", image: "real/ce_salitre_white_stain.png" },
+  { kind: "callout", at: "que una pared es normal que se raje en cinco", figure: "2000 años", caption: "Las obras romanas de cal siguen enteras. No es el tiempo: es la cal.", accent: "good", image: "real/ce_roman_ruins_intact.png" },
+  { kind: "callout", at: "una arena mala te arruina hasta la mejor de las mezclas", figure: "Arena limpia", caption: "Con tierra o raíces, la arena te arruina hasta la mejor de las mezclas.", accent: "danger", image: "real/ce_dirty_sand_roots.png" },
+  { kind: "checklist", at: "hagamos un repaso rapido de todo el plan completo", hue: "blue", title: "El plan completo", items: [{ text: "Curá: mojá la pared 7 días, mañana y tarde", state: "done" }, { text: "Metele cal: 1 cemento, 1 cal, 5-6 arena", state: "done" }, { text: "Arena limpia y de grano parejo, sin tierra", state: "done" }, { text: "Nunca te pases con el agua: mezcla firme", state: "done" }, { text: "Menos agua, más piedra vas a tener", state: "done" }] },
+  { kind: "callout", at: "una pared que dura cien anos", figure: "La industria", caption: "No le sirve una pared que dura 100 años y se hace con $1 de cal.", accent: "danger", image: "real/ce_wall_hundred_years_dollar.png" },
+  { kind: "callout", at: "que es el manual del constructor libre", figure: "40 arreglos", caption: "Los 40 secretos de los viejos en el Manual del Constructor Libre.", accent: "good", image: "real/ce_manual_constructor_libre.png" },
+  { kind: "splitlist", at: "por tres razones que te cambian la casa entera", title: "Lo que la cal te da", items: ["Flexible: la pared se mueve sin rajarse", "Se cura sola: sella la microfisura", "Deja respirar: no atrapa la humedad", "Cuesta apenas un dólar la bolsa"], palette: "A" },
+  { kind: "cross", at: "es una parte de cemento", hue:"amber", title: "La mezcla, en 3 ingredientes", eyebrow: "1 : 1 : 5-6", layers: [{ label: "Cemento (1)", depth: "para que agarre fuerza", color: "#8a8f96" }, { label: "Cal (1)", depth: "flexible, respira, se repara", color: "#e8e2d2" }, { label: "Arena (5-6)", depth: "limpia, grano parejo, relleno", color: "#c9a25f" }] },
 ];
 for (const s of STRUCT) { const t = atc(s.at); if (t == null) continue; const { kind, at: _a, image, ...props } = s; const beat = { id: `cmp_${kind}_st_${Math.round(t)}`, start: +t.toFixed(2), dur: 6.5, kind, hue: s.hue || "blue", ...props, ...(image ? { image } : {}) }; if (kind === "aged" && Array.isArray(beat.lines)) beat.lines = beat.lines.map((l) => (typeof l === "string" ? { text: l } : l)); if (kind === "checklist" && Array.isArray(beat.items)) beat.items = beat.items.map((it) => (typeof it === "string" ? { text: it, state: "done" } : it)); beats.push(beat); }
-beats.sort((a, b) => a.start - b.start);
-
-// ── LAYERED REVEALS — momentos "hero" de REVELADO POR CAPAS con zoom (LayeredReveal) ──
-// Patrón canónico (receta del bórax en madera → acá LA RECETA del revoque y los PASOS del curado):
-// imagen PRINCIPAL con ken-burns zoom IN → cuando se nombra cada elemento, la principal hace
-// zoom OUT + blur + rack-focus y entra UNA sub-imagen por vez (cada una anclada a SU palabra
-// exacta en captions). Full-screen, opaco, y con avatar OCULTO (ver LAYERED_WINDOWS abajo).
-const LR_MAX = 16; // s — techo de un revelado por capas
-const LAYERED_WINDOWS = []; // [start,end] para ocultar el avatar grande en estos momentos
-const LAYERS = [
-  // 1) LA RECETA — cemento → cal → arena (patrón bórax de madera, aplicado a la mezcla)
-  {
-    at: "una parte de cemento una parte de cal y seis partes de arena", accent: "blue", tail: 2.2,
-    eyebrow: "La mezcla vieja: 1 cemento · 1 cal · 6 arena",
-    main: { image: "real/cm_old_recipe_roughly.png", caption: "La mezcla que no se raja" },
-    subs: [
-      { at: "el cemento le da agarre y velocidad", image: "real/cm_pure_cement_loaded.png", caption: "Cemento: agarre y velocidad" },
-      { at: "la cal le da la flexibilidad", image: "real/cm_cheap_bag_of_lime.png", caption: "Cal: flexibilidad y se cura sola" },
-      { at: "y la arena es el cuerpo", image: "real/cm_sand_is_body.png", caption: "Arena: el cuerpo" },
-    ],
-  },
-  // 2) EL CURADO — mojar → tapar → sombra (los pasos, escalonados)
-  {
-    at: "empezas a cuidarlo", accent: "blue", tail: 2.4,
-    eyebrow: "El curado: cómo se hace, gratis",
-    main: { image: "real/cm_this_is_curing.png", caption: "Curar: mantenerlo húmedo" },
-    subs: [
-      { at: "con un plastico con una arpillera o una bolsa mojada", image: "real/cm_plastic_burlap_wet_sack.png", caption: "Tapalo: plástico, arpillera, bolsa" },
-      { at: "si podes lo dejas a la sombra", image: "real/cm_shade_it.png", caption: "Sombra, para que no pierda agua" },
-      { at: "y asi lo mantenes humedo y tapado varios dias", image: "real/cm_keep_wet_days.png", caption: "Húmedo y tapado, varios días" },
-    ],
-  },
-  // 3) EL COMBO ROMANO — cal → ceniza → tiempo/humedad
-  {
-    at: "y aca aparece la ultima pieza", accent: "amber", tail: 2.4,
-    eyebrow: "El hormigón romano: por qué era legendario",
-    main: { image: "real/cm_last_piece_roman.png", caption: "Cal + ceniza + tiempo + humedad" },
-    subs: [
-      { at: "le metian a la mezcla ceniza volcanica", image: "real/cm_volcanic_ash_pozzolana.png", caption: "Ceniza volcánica: la puzolana" },
-      { at: "los puertos romanos que estuvieron dos mil anos bajo el agua salada", image: "real/cm_roman_ports_underwater.png", caption: "Bajo el agua salada, más duro" },
-    ],
-  },
-];
-for (const L of LAYERS) {
-  const t0 = atc(L.at);
-  if (t0 == null) continue;
-  const t = t0;
-  const subs = [];
-  for (const s of L.subs) {
-    const sa = atc(s.at);
-    if (sa == null) continue;
-    const off = +(sa - t).toFixed(2);
-    if (off < -0.05 || off > LR_MAX - 1.2) continue; // fuera del cap → se descarta
-    subs.push({ image: s.image, caption: s.caption, atFrame: Math.max(0, Math.round(off * 30)) });
-  }
-  subs.sort((a, b) => a.atFrame - b.atFrame);
-  const lastSub = subs.length ? Math.max(...subs.map((x) => x.atFrame)) / 30 : 0.5;
-  const dur = +Math.min(lastSub + (L.tail || 2.0), LR_MAX).toFixed(2);
-  beats.push({ id: `layered_${Math.round(t)}`, start: +t.toFixed(2), dur, kind: "layered", hue: L.accent || "amber", main: L.main, subs, accent: L.accent || "amber", eyebrow: L.eyebrow });
-  LAYERED_WINDOWS.push([+t.toFixed(2), +(t + dur).toFixed(2)]);
-}
 beats.sort((a, b) => a.start - b.start);
 
 fs.mkdirSync("public/broll", { recursive: true }); fs.mkdirSync("public/real", { recursive: true }); fs.mkdirSync("public/img", { recursive: true });
@@ -668,16 +435,8 @@ const inAvf = (t) => AVF.some(([s, e]) => t >= s - 1e-6 && t < e - 1e-6);
 // cobertura por beats raw; en huecos SIN clip el avatar va FULL (nunca negro)
 const cov = beats.filter((b) => b.kind === "raw").map((b) => [b.start, b.start + b.dur]).sort((a, b) => a[0] - b[0]);
 const covered = (t) => cov.some(([s, e]) => t >= s - 1e-6 && t < e - 1e-6);
-// ★ HIDE: ventanas donde un COMPONENTE PROMINENTE manda a PANTALLA COMPLETA y el
-// avatar GRANDE NO debe tapar/duplicar (DIAGRAMAS, LAYERED REVEALS, y el set de pulido
-// hero de pantalla completa). Tiene PRIORIDAD MÁXIMA en modeAt y sus bordes entran en `pts`.
-const PROMINENT = new Set(["diagram", "layered", "mdtwoplanks", "mdrulestamp", "mdslider", "mdkicker", "mdendcard", "cmrecipe", "cmyears", "cmselfheal", "cmcure", "cmerror"]);
-const HIDE = [
-  ...beats.filter((b) => PROMINENT.has(b.kind)).map((b) => [b.start, +(b.start + b.dur).toFixed(2)]),
-].sort((a, b) => a[0] - b[0]);
-const inHide = (t) => HIDE.some(([s, e]) => t >= s - 1e-6 && t < e - 1e-6);
-const modeAt = (t) => { if (inHide(t)) return "hidden"; if (t < firstClip - 1e-6) return "full"; if (inAvf(t)) return "full"; if (!covered(t)) return "full"; const p = pip.find(([s, e]) => t >= s - 1e-6 && t < e - 1e-6); return p ? p[2] : "hidden"; };
-const pts = [...new Set([0, firstClip, ...AVF.flat(), ...pip.flatMap((p) => [p[0], p[1]]), ...cov.flat(), ...HIDE.flat(), TOTAL].map((x) => +(+x).toFixed(2)))].sort((a, b) => a - b);
+const modeAt = (t) => { if (t < firstClip - 1e-6) return "full"; if (inAvf(t)) return "full"; if (!covered(t)) return "full"; const p = pip.find(([s, e]) => t >= s - 1e-6 && t < e - 1e-6); return p ? p[2] : "hidden"; };
+const pts = [...new Set([0, firstClip, ...AVF.flat(), ...pip.flatMap((p) => [p[0], p[1]]), ...cov.flat(), TOTAL].map((x) => +(+x).toFixed(2)))].sort((a, b) => a - b);
 const windows = []; let cur = null;
 for (const t of pts) { if (t >= TOTAL - 1e-6) break; const m = modeAt(t); if (m !== cur) { windows.push({ start: +t.toFixed(2), mode: m }); cur = m; } }
 windows.push({ start: TOTAL, mode: "hidden" });

@@ -6,9 +6,10 @@ import { CinematicWrap } from "./components/CinematicWrap";
 import { CUES, OVERLAYS } from "./cues_cemento.gen";
 import { AVATAR_WINDOWS, TOTAL_CEMENTO } from "./avatar_cemento.gen";
 
-// ── "Por Qué El Cemento Romano Duró 2000 Años" — Constructor Libre · Tomás ──
-// CLIPS-FIRST: clips reales (match farm nube) + imágenes Z-Image + diagramas.
-// Componentes hero CementoPolish (receta cal, 5 vs 2000 años, autorreparación, curado, error).
+// ── "Los Cemento Del Auto Como Nuevos" — Constructor Libre · Tomás ──
+// CLIPS-FIRST DENSO: clips reales de YouTube + cientos de imágenes web + diagramas.
+// Densidad máxima (cada mini-frase + ráfagas + flashes <1s). SIN filtros. Cada beat
+// anclado al ms exacto del Whisper. OVERLAYS a medida encima del clip vivo.
 export const TOTAL_FRAMES_CEMENTO = Math.round(TOTAL_CEMENTO * 30);
 
 export const MainCemento: React.FC = () => {

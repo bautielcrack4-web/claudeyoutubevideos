@@ -499,6 +499,14 @@ function renderEl(b) {
         (b.hue ? ` hue=${j(b.hue)}` : ``) +
         ` />`
       );
+    case "vs":
+      return (
+        `<VsCard durationInFrames={d} left={${j(b.left || {})}} right={${j(b.right || {})}}` +
+        (b.eyebrow ? ` eyebrow=${j(b.eyebrow)}` : ``) +
+        (b.title ? ` title=${j(b.title)}` : ``) +
+        (b.hue ? ` hue=${j(b.hue)}` : ``) +
+        ` />`
+      );
     case "bars":
       return (
         `<BarCompare durationInFrames={d} bars={${j(b.bars || [])}}` +
@@ -1273,6 +1281,7 @@ if (kinds.has("float")) imports.push(`import { FloatingInsert } from "./scenes/F
 if (kinds.has("headline")) imports.push(`import { KineticHeadline } from "./scenes/KineticHeadline";`);
 if (kinds.has("aged")) imports.push(`import { AgedDoc } from "./scenes/AgedDoc";`);
 if (kinds.has("bars")) imports.push(`import { BarCompare } from "./scenes/BarCompare";`);
+if (kinds.has("vs")) imports.push(`import { VsCard } from "./scenes/VsCard";`);
 if (kinds.has("cross")) imports.push(`import { CrossSection } from "./scenes/CrossSection";`);
 if (kinds.has("process")) imports.push(`import { ProcessSteps } from "./scenes/ProcessSteps";`);
 if (kinds.has("checklist")) imports.push(`import { Checklist } from "./scenes/Checklist";`);
