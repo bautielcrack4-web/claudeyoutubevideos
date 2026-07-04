@@ -58,7 +58,8 @@ Por CADA clip devolvé un veredicto. RECHAZÁ (keep:false) si:
 - NO muestra el concepto pedido (off-topic respecto al guion).
 ACEPTÁ (keep:true) el metraje real y limpio que muestra el concepto: objetos de museo, ruinas, excavaciones, primeros planos, aéreas, laboratorio real, reconstrucciones cinematográficas SIN texto.
 Si rechazás por off-topic, sugerí en "requery" una query en INGLÉS (2-4 palabras) concreta y filmable para re-buscar ESE slot.
-Devolvé SOLO JSON (sin markdown): {"v":[{"n":"w001","keep":true,"text":false,"topic":true,"why":"...","requery":""}, ...]} un item por clip del sheet.`;
+Si hay texto, indicá en "loc" DÓNDE está: "bottom" (franja/subtítulo inferior), "top" (encabezado), "corner" (esquina/watermark), "full" (slide/infografía que ocupa toda la pantalla), "none" (sin texto). Esto define si el clip se puede SALVAR recortando (band=bottom/top/corner) o no (full).
+Devolvé SOLO JSON (sin markdown): {"v":[{"n":"w001","keep":true,"text":false,"topic":true,"loc":"none","why":"...","requery":""}, ...]} un item por clip del sheet.`;
 
 function askSheet(sheetPath, items) {
   const list = items.map((it) => `${it.name}: "${(concepts[it.name] || "?").slice(0, 90)}"`).join("\n");
@@ -90,7 +91,7 @@ for (let b = 0; b < clips.length; b += BATCH) {
   for (const g of group) {
     const x = byN[g.name] || {};
     const keep = x.keep !== false && x.text !== true;
-    verdicts.push({ name: g.name, keep, has_text: !!x.text, on_topic: x.topic !== false, reason: x.why || "(sin veredicto)", requery: x.requery || "" });
+    verdicts.push({ name: g.name, keep, has_text: !!x.text, on_topic: x.topic !== false, loc: x.loc || (x.text ? "full" : "none"), reason: x.why || "(sin veredicto)", requery: x.requery || "" });
   }
   const kept = group.filter((g) => (byN[g.name] || {}).keep !== false && (byN[g.name] || {}).text !== true).length;
   console.log(`  lote ${b}-${b + group.length - 1}: ${kept}/${group.length} keep`);
