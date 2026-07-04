@@ -3,6 +3,7 @@
 // storyboards de i.ytimg (CDN, no bloqueado), geometría de tiles. NO decide con CLIP.
 import fs from "fs";
 import path from "path";
+import { fileURLToPath } from "url";
 import { spawnSync } from "child_process";
 
 // ── .env (raíz del repo video2) ──
@@ -26,6 +27,26 @@ export const FF = process.env.FFMPEG || "ffmpeg";
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const jitter = (b, s) => b + Math.floor(Math.random() * s);
 export const vidId = (u) => (String(u).match(/(?:v=|youtu\.be\/|shorts\/|embed\/)([A-Za-z0-9_-]{11})/) || String(u).match(/([A-Za-z0-9_-]{11})/) || [])[1];
+
+// ── BLOCKLIST persistente (match_v3/blocklist.json) ─────────────────────────
+// Videos/canales que un juez o verificador ya reprobó una vez NO vuelven a
+// aparecer como candidatos en NINGÚN video futuro. La escriben 5_apply_verdicts
+// y (a mano) cualquier auditoría. { videos: ["id",...], channels: ["nombre",...] }
+const BL_PATH = path.join(path.dirname(fileURLToPath(import.meta.url)), "blocklist.json");
+export function loadBlocklist() {
+  try {
+    const b = JSON.parse(fs.readFileSync(BL_PATH, "utf8").replace(/^﻿/, ""));
+    return { videos: new Set(b.videos || []), channels: new Set((b.channels || []).map((c) => c.toLowerCase())) };
+  } catch { return { videos: new Set(), channels: new Set() }; }
+}
+export function appendBlocklist({ videos = [], channels = [] }) {
+  let cur = { videos: [], channels: [] };
+  try { cur = JSON.parse(fs.readFileSync(BL_PATH, "utf8").replace(/^﻿/, "")); } catch {}
+  cur.videos = [...new Set([...(cur.videos || []), ...videos])];
+  cur.channels = [...new Set([...(cur.channels || []), ...channels])];
+  fs.writeFileSync(BL_PATH, JSON.stringify(cur, null, 2));
+  return cur;
+}
 
 // ── YouTube Data API con retry + multi-key + failover ──
 let keyPtr = 0;
@@ -64,10 +85,11 @@ const qNorm = (q) => (q || "").trim().toLowerCase().replace(/\s+/g, " ");
 let ytSearchOff = false;
 export function ytSearch(q, n = 20) {
   const r = spawnSync(YTDLP, [`ytsearch${n}:${q}`, "--flat-playlist", "--no-warnings",
-    "--print", "%(id)s\t%(title)s", "--socket-timeout", "30"], { encoding: "utf8", maxBuffer: 1 << 24 });
+    "--print", "%(id)s\t%(channel)s\t%(duration)s\t%(title)s", "--socket-timeout", "30"], { encoding: "utf8", maxBuffer: 1 << 24 });
   if (r.status !== 0 || !r.stdout) return [];
   return r.stdout.trim().split("\n").map((line) => {
-    const [id, ...t] = line.split("\t"); return { id: (id || "").trim(), title: (t.join("\t") || "").trim() };
+    const [id, channel, dur, ...t] = line.split("\t");
+    return { id: (id || "").trim(), channel: (channel || "").trim(), duration: +dur || 0, title: (t.join("\t") || "").trim() };
   }).filter((x) => x.id && x.id.length === 11);
 }
 
@@ -76,9 +98,16 @@ export async function apiSearch(q, maxResults = 20) {
   if (searchCache.has(key)) return searchCache.get(key);
   let rows = null;
   if (!ytSearchOff && !process.env.FORCE_YTSEARCH) {
-    const j = await apiGet((k) => `https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&maxResults=${maxResults}`
+    // videoEmbeddable descarta streams/miembros; NO se pide videoDefinition=high
+    // (mataría footage casero real bueno de 480p que igual filtra fetch_clips).
+    const j = await apiGet((k) => `https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&videoEmbeddable=true&maxResults=${maxResults}`
       + `&relevanceLanguage=es&q=${encodeURIComponent(q)}&key=${k}`, `search "${q}"`);
-    if (j) rows = (j.items || []).map((it) => ({ id: it.id?.videoId, title: it.snippet?.title || "" })).filter((r) => r.id);
+    if (j) rows = (j.items || []).map((it) => ({
+      id: it.id?.videoId,
+      title: it.snippet?.title || "",
+      channel: it.snippet?.channelTitle || "",
+      live: it.snippet?.liveBroadcastContent && it.snippet.liveBroadcastContent !== "none",
+    })).filter((r) => r.id);
   }
   // API vacía/muerta (429 en masa o quota) → caer a ytsearch (IP de casa, sin límite)
   if (rows == null) {
@@ -106,21 +135,63 @@ export async function apiDurations(ids) {
   return out;
 }
 
-// re-rank léxico por título + filtro BAD (mismo criterio que match_sb)
-const STOP = new Set(("a an the de la el los las un una y o para con por en al del que se su su lo".split(" ")));
+// ── FILTRO DURO pre-juez ─────────────────────────────────────────────────────
+// La basura del video "ventilador" (youtubers cara-a-cámara, shorts, compilaciones)
+// entró porque ganaba el orden crudo de la Search API. Acá se filtra EN CÓDIGO,
+// antes de gastar mosaicos y ojos del juez.
+const BAD = /(reaction|react|podcast|full episode|interview|tier list|gameplay|trailer|unboxing|vlog|prank|lyric|music video|official music|\bsong\b|cover|remix|karaoke|instrumental|playlist|relaj|sue[ñn]o|dormir|8 horas|asmr sleep|meditaci|#shorts|\bshorts?\b|reacci[óo]n|reaccion(a|o|amos)|prob[ée] |probando |top \d|los \d+ (mejores|peores)|recopilaci[óo]n|compilaci[óo]n|compilation|en vivo|\blive\b|directo\b|stream|storytime|story time|mi opini[óo]n|debate|charla|entrevista|noticias?\b|resumen semanal|q ?& ?a|preguntas y respuestas|challenge|reto\b|24 horas|48 horas|vlogmas|rutina de|un d[íi]a (conmigo|en mi vida)|day in (the|my) life)/i;
+const BADCHAN = /(podcast|vlogs?\b|noticias|news\b|tv\b|radio\b|oficial? music|topic\b|gaming|juegos|reacciona)/i;
+// duración: <60s = Shorts/clips basura · >40min = streams/documentales enteros
+// (para docs largos está docextract, que escanea el video entero a propósito).
+export const DUR_MIN = +(process.env.V3_DUR_MIN || 60);
+export const DUR_MAX = +(process.env.V3_DUR_MAX || 2400);
+
+const STOP = new Set(("a an the de la el los las un una y o para con por en al del que se su lo".split(" ")));
 const kw = (s) => [...new Set((s || "").toLowerCase().replace(/[^a-z0-9áéíóúñ\s]/g, " ").split(/\s+/).filter((w) => w.length > 2 && !STOP.has(w)))];
-const BAD = /(reaction|react|podcast|full episode|interview|tier list|gameplay|trailer|unboxing|vlog|prank|lyric|music video|official music|\bsong\b|cover|remix|karaoke|instrumental|playlist|relaj|sue[ñn]o|dormir|8 horas|asmr sleep|meditaci)/i;
-export function rerank(rows, queries, limit) {
+
+// rows: [{id,title,channel,duration?,live?}] · durMap: Map(id→sec) (de apiDurations)
+// Devuelve hasta `limit` candidatos LIMPIOS, rankeados por léxico título↔queries.
+export function filterAndRank(rows, queries, limit, durMap = new Map(), blocklist = loadBlocklist()) {
   const want = new Set(queries.flatMap(kw));
   const seen = new Map();
-  rows.forEach(({ id, title = "" }, ri) => {
-    if (!id || seen.has(id)) { if (seen.has(id)) seen.get(id).rank = Math.min(seen.get(id).rank, ri); return; }
+  const dropped = { bad: 0, chan: 0, dur: 0, block: 0, live: 0 };
+  rows.forEach((r, ri) => {
+    const { id, title = "", channel = "" } = r;
+    if (!id) return;
+    if (seen.has(id)) { seen.get(id).rank = Math.min(seen.get(id).rank, ri); return; }
+    if (blocklist.videos.has(id)) { dropped.block++; return; }
+    if (channel && blocklist.channels.has(channel.toLowerCase())) { dropped.block++; return; }
+    if (r.live) { dropped.live++; return; }
+    if (BAD.test(title)) { dropped.bad++; return; }
+    if (channel && BADCHAN.test(channel)) { dropped.chan++; return; }
+    const dur = r.duration || durMap.get(id) || 0;
+    if (dur && (dur < DUR_MIN || dur > DUR_MAX)) { dropped.dur++; return; }
     const t = title.toLowerCase();
     const lex = [...want].reduce((n, w) => n + (t.includes(w) ? 1 : 0), 0);
-    const pen = BAD.test(t) ? 5 : 0;
-    seen.set(id, { id, title, rank: ri, lex: lex - pen });
+    seen.set(id, { id, title, channel, duration: dur, rank: ri, lex });
   });
-  return [...seen.values()].sort((a, b) => (b.lex - a.lex) || (a.rank - b.rank)).slice(0, limit);
+  const out = [...seen.values()].sort((a, b) => (b.lex - a.lex) || (a.rank - b.rank)).slice(0, limit);
+  out._dropped = dropped;
+  return out;
+}
+// compat: firma vieja (sin filtro de duración/canal). Preferí filterAndRank.
+export function rerank(rows, queries, limit) { return filterAndRank(rows, queries, limit, new Map(), { videos: new Set(), channels: new Set() }); }
+
+// ── ANCLA DE SUJETO en código (regla #1 de match_v3, antes solo prompt) ──────
+// Toda query DEBE contener al menos un término del ancla (el nombre del sujeto).
+// Si no lo tiene, se le antepone el ancla — el fix automático vale más que el warning.
+const deaccent = (s) => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+export function enforceAnchor(queries, anchorTerms) {
+  const terms = (anchorTerms || []).map(deaccent).filter(Boolean);
+  if (!terms.length) return { queries, fixed: 0 };
+  let fixed = 0;
+  const out = (queries || []).map((q) => {
+    const qn = deaccent(q);
+    if (terms.some((t) => qn.includes(t))) return q;
+    fixed++;
+    return `${anchorTerms[0]} ${q}`;
+  });
+  return { queries: out, fixed };
 }
 
 // ── STORYBOARD ──
@@ -136,9 +207,52 @@ export function pickStoryboard(info) {
   sbs.sort((a, b) => (a.format_id === "sb0" ? -1 : b.format_id === "sb0" ? 1 : (b.columns * b.rows * b.fragments.length) - (a.columns * a.rows * a.fragments.length)));
   return sbs[0];
 }
+
+// ── GEOMETRÍA REAL por fragmento (fix del bug de interval) ──────────────────
+// El cálculo viejo `interval = duration / (cols*rows*nFrags)` asume que TODOS los
+// mosaicos vienen llenos; el último casi siempre está a medias → interval chico →
+// el ts calculado caía ANTES del momento que el juez eligió (decenas de segundos
+// de error en fragmentos altos). yt-dlp trae `duration` POR fragmento: usarla.
+// Devuelve por fragmento { start, interval } (start = suma de durs previas).
+export function sbGeometry(sb, videoDuration) {
+  const per = sb.columns * sb.rows;
+  const frags = [];
+  let start = 0;
+  const fallback = videoDuration && sb.fragments.length ? videoDuration / sb.fragments.length : 0;
+  for (const f of sb.fragments) {
+    const fdur = +f.duration || fallback || per; // último recurso: 1s/tile
+    frags.push({ start: +start.toFixed(2), interval: +(fdur / per).toFixed(4), dur: +fdur.toFixed(2) });
+    start += fdur;
+  }
+  return { cols: sb.columns, rows: sb.rows, frags };
+}
+// ts exacto de un tile: fragmento fi, fila r, col c (0-based)
+export const tileTsFrag = (geo, fi, r, c) => {
+  const f = geo.frags[Math.min(fi, geo.frags.length - 1)];
+  return +(f.start + (r * geo.cols + c + 0.5) * f.interval).toFixed(1);
+};
+// compat: índice global con interval uniforme (SOLO para archivos viejos)
+export const tileTs = (globalIdx, interval) => +((globalIdx + 0.5) * interval).toFixed(1);
+
 export function curl(url, dest) {
   const r = spawnSync("curl", ["-s", "-L", "--max-time", "30", url, "-o", dest], { encoding: "utf8", timeout: 40000 });
   return r.status === 0 && fs.existsSync(dest) && fs.statSync(dest).size > 500;
 }
-// timestamp de un tile (0-idx global, row-major desde 0) dado interval
-export const tileTs = (globalIdx, interval) => +((globalIdx + 0.5) * interval).toFixed(1);
+
+// ── ffprobe local (gate técnico de clips bajados) ────────────────────────────
+export function ffprobePath() {
+  const remotion = path.join(process.cwd(), "node_modules", "@remotion", "compositor-win32-x64-msvc", "ffprobe.exe");
+  if (fs.existsSync(remotion)) return remotion;
+  return process.env.FFPROBE || "ffprobe";
+}
+export function probeMedia(file) {
+  const r = spawnSync(ffprobePath(), ["-v", "error", "-select_streams", "v:0",
+    "-show_entries", "stream=width,height,duration:format=duration", "-of", "json", file],
+    { encoding: "utf8", timeout: 20000 });
+  if (r.status !== 0 || !r.stdout) return null;
+  try {
+    const j = JSON.parse(r.stdout);
+    const s = (j.streams || [])[0] || {};
+    return { width: +s.width || 0, height: +s.height || 0, duration: +(s.duration || j.format?.duration) || 0 };
+  } catch { return null; }
+}
