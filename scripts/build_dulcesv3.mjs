@@ -108,8 +108,27 @@ const VINTAGE = ["vintage_cocina1_1.jpg", "vintage_cocina2_1.jpg", "vintage_abue
 // full-res horizontales; a los verticales/blur-fill NO se les mete zoom extra.
 const SAFE = [1.04, 1.06];
 const beats = [];
-let cRot = 0, aRot = 0, vRot = 0;
-const dRot = {}; // rotación de clip/foto por dulce
+
+// ── POOL ON-TOPIC por dulce (variedad sin off-topic) ─────────────────────────
+// Para cada dulce combinamos TODOS sus assets on-topic: clips reales matcheados
+// (broll/sNN_*.mp4 en disco) + clips v1 del dulce + fotos del dulce. Los beats sin
+// clip propio rotan por el MENOS usado de ese pool → sin repetir un mismo clip 10×.
+const dPool = {};
+for (let n = 1; n <= 20; n++) {
+  const pad = "s" + String(n).padStart(2, "0") + "_";
+  const real = match.filter((b) => b.name.startsWith(pad) && has("broll/" + b.name + ".mp4")).map((b) => "broll/" + b.name + ".mp4");
+  const v1c = (DCLIPS[n] || []).filter(has);
+  const phs = (DPHOTOS[n] || [DPHOTO[n]]).map((p) => "real/" + p).filter(has);
+  dPool[n] = [...new Set([...real, ...v1c, ...phs])];
+}
+const AMB_POOL = [...AMB_CLIPS, ...VINTAGE.map((v) => "real/" + v)];
+const useCount = {};
+function pickLeast(pool) {
+  let best = null, bn = Infinity;
+  for (const a of pool) { const c = useCount[a] || 0; if (c < bn) { bn = c; best = a; } }
+  if (best) useCount[best] = (useCount[best] || 0) + 1;
+  return best;
+}
 
 // BUG 1 (huecos en blanco): la capa RAW es b-roll de FONDO y debe ser CONTINUA.
 // Antes dur = min(gap, 7) → beats cortos dejaban 291s de fondo ámbar visible entre
@@ -135,22 +154,14 @@ for (let i = 0; i < match.length; i++) {
   let src, isClip = false;
 
   if (has("broll/" + b.name + ".mp4")) {
-    // 1) clip matcheado propio de esta frase
-    src = "broll/" + b.name + ".mp4"; isClip = true;
-  } else if (dnum != null) {
-    // 2) dulce sin clip → clip v1 del mismo dulce (rotando) o foto del dulce
-    const clips = DCLIPS[dnum] || [];
-    if (clips.length) {
-      dRot[dnum] = (dRot[dnum] || 0);
-      src = clips[dRot[dnum] % clips.length]; dRot[dnum]++; isClip = true;
-    } else {
-      const ph = DPHOTOS[dnum] || [DPHOTO[dnum]];
-      src = "real/" + ph[(dRot[dnum] = (dRot[dnum] || 0) + 1) % ph.length];
-    }
+    // 1) clip matcheado propio de esta frase (verificado limpio o recuperado)
+    src = "broll/" + b.name + ".mp4"; isClip = true; useCount[src] = (useCount[src] || 0) + 1;
+  } else if (dnum != null && dPool[dnum] && dPool[dnum].length) {
+    // 2) dulce sin clip → MENOS usado del pool on-topic del dulce (clip real + v1 + foto)
+    src = pickLeast(dPool[dnum]); isClip = /\.(mp4|webm|mov)$/i.test(src);
   } else {
-    // 3) intro/cierre/extras/amb sin clip → amb clip v1 o vintage (alternando)
-    if ((i % 2 === 0) && AMB_CLIPS.length) { src = AMB_CLIPS[aRot++ % AMB_CLIPS.length]; isClip = true; }
-    else { src = "real/" + VINTAGE[vRot++ % VINTAGE.length]; }
+    // 3) intro/cierre/extras sin clip → menos usado de amb-clip + vintage (on-theme)
+    src = pickLeast(AMB_POOL) || ("real/" + VINTAGE[0]); isClip = /\.(mp4|webm|mov)$/i.test(src);
   }
 
   const beat = { id: b.name, kind: "raw", src, start, dur, hue: "amber" };
