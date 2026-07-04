@@ -57,13 +57,34 @@ async function apiGet(buildUrl, ctx) {
 
 const searchCache = new Map();
 const qNorm = (q) => (q || "").trim().toLowerCase().replace(/\s+/g, " ");
+
+// Fallback SIN API: yt-dlp ytsearch por la IP de casa (no toca cuota ni el rate-limit
+// per-IP de la Data API). Más lento y algo menos preciso, pero no se traba cuando la
+// API está saturada (429 en masa). flat-playlist = rápido (no extrae cada video).
+let ytSearchOff = false;
+export function ytSearch(q, n = 20) {
+  const r = spawnSync(YTDLP, [`ytsearch${n}:${q}`, "--flat-playlist", "--no-warnings",
+    "--print", "%(id)s\t%(title)s", "--socket-timeout", "30"], { encoding: "utf8", maxBuffer: 1 << 24 });
+  if (r.status !== 0 || !r.stdout) return [];
+  return r.stdout.trim().split("\n").map((line) => {
+    const [id, ...t] = line.split("\t"); return { id: (id || "").trim(), title: (t.join("\t") || "").trim() };
+  }).filter((x) => x.id && x.id.length === 11);
+}
+
 export async function apiSearch(q, maxResults = 20) {
   const key = qNorm(q);
   if (searchCache.has(key)) return searchCache.get(key);
-  const j = await apiGet((k) => `https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&maxResults=${maxResults}`
-    + `&relevanceLanguage=es&q=${encodeURIComponent(q)}&key=${k}`, `search "${q}"`);
-  if (!j) return null;
-  const rows = (j.items || []).map((it) => ({ id: it.id?.videoId, title: it.snippet?.title || "" })).filter((r) => r.id);
+  let rows = null;
+  if (!ytSearchOff && !process.env.FORCE_YTSEARCH) {
+    const j = await apiGet((k) => `https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&maxResults=${maxResults}`
+      + `&relevanceLanguage=es&q=${encodeURIComponent(q)}&key=${k}`, `search "${q}"`);
+    if (j) rows = (j.items || []).map((it) => ({ id: it.id?.videoId, title: it.snippet?.title || "" })).filter((r) => r.id);
+  }
+  // API vacía/muerta (429 en masa o quota) → caer a ytsearch (IP de casa, sin límite)
+  if (rows == null) {
+    if (!ytSearchOff && !process.env.FORCE_YTSEARCH) { console.error(`  [API→ytsearch] "${q}"`); ytSearchOff = true; }
+    rows = ytSearch(q, maxResults);
+  }
   searchCache.set(key, rows);
   return rows;
 }

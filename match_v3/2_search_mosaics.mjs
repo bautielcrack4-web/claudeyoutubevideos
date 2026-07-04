@@ -26,7 +26,8 @@ console.log(`${beats.length} beats · ${ytBeats.length} a YouTube (resto stock/f
 const perBeat = {};
 for (const b of ytBeats) {
   const rows = [];
-  for (const q of b.queries) { const r = await apiSearch(q); if (r) rows.push(...r); }
+  const qs = process.env.MAXQ ? b.queries.slice(0, +process.env.MAXQ) : b.queries;
+  for (const q of qs) { const r = await apiSearch(q); if (r) rows.push(...r); }
   const cands = rerank(rows, b.queries, NCAND);
   perBeat[b.name] = cands;
   console.log(`  ${b.name}: ${cands.length} cands  «${b.phrase.slice(0, 50)}»`);

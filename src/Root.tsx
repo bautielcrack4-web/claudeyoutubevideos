@@ -8,6 +8,7 @@ import { MainMeriendas, TOTAL_FRAMES_MER } from "./VideoEdit/Main_meriendas";
 import { MainPostres, TOTAL_FRAMES_POS } from "./VideoEdit/Main_postres";
 import { MainDulces, TOTAL_FRAMES_DUL } from "./VideoEdit/Main_dulces";
 import { MainDulcesV2, TOTAL_FRAMES_DULV2 } from "./VideoEdit/Main_dulcesv2";
+import { MainDulcesV3, TOTAL_FRAMES_DULV3 } from "./VideoEdit/Main_dulcesv3";
 import { MainDomingos, TOTAL_FRAMES_DOM } from "./VideoEdit/Main_domingos";
 import { MainCocina, TOTAL_FRAMES_COC } from "./VideoEdit/Main_cocina";
 import { MainEstufaRocket, TOTAL_FRAMES_ER } from "./VideoEdit/Main_estufarocket";
@@ -60,6 +61,7 @@ import { MainCemento, TOTAL_FRAMES_CEMENTO } from "./VideoEdit/Main_cemento";
 import { MainSalitre, TOTAL_FRAMES_SALITRE } from "./VideoEdit/Main_salitre";
 import { MainAcauto, TOTAL_FRAMES_ACAUTO } from "./VideoEdit/Main_acauto";
 import { MainRayones, TOTAL_FRAMES_RAYONES } from "./VideoEdit/Main_rayones";
+import { MainVentilador, TOTAL_FRAMES_VENTILADOR } from "./VideoEdit/Main_ventilador";
 import { MainKitPreview, TOTAL_FRAMES_KIT } from "./VideoEdit/KitPreview";
 // import { MainCafe, TOTAL_FRAMES_CAFE } from "./VideoEdit/Main_cafe"; // untracked: rompe el farm
 // import { MainAmish, TOTAL_FRAMES_AMISH } from "./VideoEdit/Main_amish"; // untracked: rompe el farm
@@ -352,6 +354,15 @@ export const RemotionRoot: React.FC = () => {
         width={1920}
         height={1080}
       />
+      {/* VIDEO ACTIVO v3 — 20 Dulces (hook corregido + matcheo editado a mano match_v3) */}
+      <Composition
+        id="Dulcesv3"
+        component={MainDulcesV3}
+        durationInFrames={TOTAL_FRAMES_DULV3}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
       {/* VIDEO ACTIVO — 15 Costumbres de los Domingos (Video 3 cadena) */}
       <Composition id="Domingos" component={MainDomingos} durationInFrames={TOTAL_FRAMES_DOM} fps={30} width={1920} height={1080} />
       {/* VIDEO ACTIVO — Así se Cocinaba Antes de los Supermercados (Video 4 cadena) */}
@@ -370,6 +381,8 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="Faros" component={MainFaros} durationInFrames={TOTAL_FRAMES_FAROS} fps={30} width={1920} height={1080} />
       {/* VIDEO 6 Constructor Libre — "Rayones del auto: el truco de $5" · AVATAR Tomás · clips-first */}
       <Composition id="Rayones" component={MainRayones} durationInFrames={TOTAL_FRAMES_RAYONES} fps={30} width={1920} height={1080} />
+      {/* Constructor Libre — "Ventilador viejo -> aire acondicionado con 2 botellas congeladas" · AVATAR Tomás · clips-first */}
+      <Composition id="Ventilador" component={MainVentilador} durationInFrames={TOTAL_FRAMES_VENTILADOR} fps={30} width={1920} height={1080} />
       {/* REMAKE hit madera — "Por Qué La Madera De Antes Duraba 100 Años" · AVATAR Tomás · clips-first */}
       <Composition id="Madera" component={MainMadera} durationInFrames={TOTAL_FRAMES_MADERA} fps={30} width={1920} height={1080} />
       {/* VIDEO 1 veta "los viejos sabían" — "El cemento que no se raja ($1 la cal)" · AVATAR Tomás · clips-first */}
