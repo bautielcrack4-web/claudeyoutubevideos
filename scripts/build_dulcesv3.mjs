@@ -53,7 +53,7 @@ const DPHOTO = {
   1: "alfajores_maicena_1.jpg", 2: "dulce_de_leche_1.jpg", 3: "arroz_con_leche_1.jpg",
   4: "mazamorra_1.jpg", 5: "bocaditos_coco_1.jpg", 6: "turron_quaker_1.jpg",
   7: "mantecol_1.jpg", 8: "cascaritas_naranja_1.jpg", 9: "colacion_1.jpg",
-  10: "alfeniques_1.jpg", 11: "dulce_membrillo_1.jpg", 12: "arrope_1.jpg",
+  10: "alfeniques_2.jpg", 11: "dulce_membrillo_1.jpg", 12: "arrope_1.jpg",
   13: "melcocha_1.jpg", 14: "caramelos_leche_1.jpg", 15: "ambrosia_1.jpg",
   16: "bombones_caseros_1.jpg", 17: "chupetines_1.jpg", 18: "frutas_abrillantadas_1.jpg",
   19: "conitos_ddl_1.jpg", 20: "quesillo_arrope_1.jpg",
@@ -113,11 +113,16 @@ const beats = [];
 // Para cada dulce combinamos TODOS sus assets on-topic: clips reales matcheados
 // (broll/sNN_*.mp4 en disco) + clips v1 del dulce + fotos del dulce. Los beats sin
 // clip propio rotan por el MENOS usado de ese pool → sin repetir un mismo clip 10×.
+// ★ CLEAN PASS (auditor round 2): los clips v1 (matcher VIEJO sin verificador) traían texto
+// quemado de canales de recetas. Un verificador Haiku los revisó 1×1 → SOLO los LIMPIOS
+// (_v3_v1clean.json, 50/76) vuelven al pool. Fallback = clips reales verif + v1 LIMPIOS +
+// fotos limpias del dulce. Así queda limpio Y variado.
+const V1CLEAN = new Set(JSON.parse(fs.readFileSync("_v3_v1clean.json", "utf8")));
 const dPool = {};
 for (let n = 1; n <= 20; n++) {
   const pad = "s" + String(n).padStart(2, "0") + "_";
   const real = match.filter((b) => b.name.startsWith(pad) && has("broll/" + b.name + ".mp4")).map((b) => "broll/" + b.name + ".mp4");
-  const v1c = (DCLIPS[n] || []).filter(has);
+  const v1c = (DCLIPS[n] || []).filter((c) => V1CLEAN.has(c) && has(c));
   const phs = (DPHOTOS[n] || [DPHOTO[n]]).map((p) => "real/" + p).filter(has);
   dPool[n] = [...new Set([...real, ...v1c, ...phs])];
 }
