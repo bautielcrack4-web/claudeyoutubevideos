@@ -1,7 +1,15 @@
-# match_v3 — prompts de los 2 agentes (el "cerebro")
+# match_v3 — prompts de los agentes (el "equipo de editorial")
 
-Los pasos mecánicos son scripts. Estos 2 son los que necesitan LLM/visión. Se corren con el tool `Agent`
-(uno por sección para paralelizar). Contratos de entrada/salida en JSON estricto.
+Los pasos mecánicos son scripts. Los agentes son los que necesitan LLM/visión. Se corren con el tool
+`Agent` (varios en paralelo, uno por sección/batch). Contratos de entrada/salida en JSON estricto.
+
+**Filosofía**: el video se siente "editado a mano" porque hay MUCHOS agentes especializados, cada uno
+con un propósito, en distintas etapas — no un solo matcher. Roster: autoría → juez visual →
+verificador → (variedad/ritmo) → componentes → QA final.
+
+**MODELO**: juez y verificador corren en **Haiku por default** (`Agent` con `model:"haiku"`) — son
+tareas de visión acotadas y de alto volumen (~20 por video). Subí a Opus solo secciones difíciles.
+La autoría (creativa, 1 por sección) puede ir en Sonnet/Opus.
 
 ---
 
@@ -62,3 +70,28 @@ Manifest: {MANIFEST_JSON}
 Devolvé SOLO un JSON { "<beat>": {"id":"<videoId>","ts":<segundos>,"reason":"<3-6 palabras>"} | {"src":"stock"} }.
 ```
 **Salida**: `picks.json` → `3_assemble.mjs`.
+
+---
+
+## AGENTE 3 — VERIFICADOR post-descarga (Haiku, visión)
+**Cuándo**: DESPUÉS de bajar los clips (`fetch_clips`) y sacar stills (`4_stills.mjs`). Cierra la brecha
+entre "la miniatura de storyboard se veía bien" y "el clip real de 5 s sirve" — caza marcas de agua/
+texto que la miniatura de baja-res no mostraba, o que la acción no está en ese segundo.
+
+**Entrada**: `_stills.json` (de `4_stills.mjs`) + los JPG de stills reales de cada clip.
+
+**Prompt** (rellenar `{STILLS_JSON}`, adjuntar los JPG con Read):
+```
+Sos el control de calidad de una edición. Para cada clip mirá sus stills REALES (inicio/medio/fin del
+recorte que va a salir al aire) y decidí si sirve para su frase.
+
+Rechazá (ok:false) si: hay marca de agua/logo grande, texto/subtítulo quemado, cara hablando a cámara,
+está borroso/pixelado, o la ACCIÓN de la frase no aparece en ninguno de los stills. Si dudás, rechazá.
+- action:"retry" si el tema es correcto pero el momento/toma es flojo (conviene otro candidato del mismo tema).
+- action:"stock" si no hay footage limpio esperable (mejor stock/foto).
+
+Clips (JSON con desc/phrase/stills): {STILLS_JSON}
+
+Devolvé SOLO un JSON { "<beat>": {"ok":true} | {"ok":false,"action":"retry"|"stock","reason":"<pocas palabras>"} }.
+```
+**Salida**: `verdicts.json` → `5_apply_verdicts.mjs` (deja los aprobados, manda los reprobados a stock/re-match).

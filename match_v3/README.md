@@ -24,10 +24,17 @@ node match_v3/2_search_mosaics.mjs _v3_<slug>_authored.json _v3_<slug>_mosaics 3
 # 5. Ensamblar → matched.json (formato de match_sb)
 node match_v3/3_assemble.mjs _v3_<slug>_authored.json _v3_<slug>_picks.json public/broll/clips_<slug>_matched.json
 
-# 6. Bajar + afinar segundo + stock para lo que faltó
+# 6. Bajar + afinar segundo
 node scripts/fetch_parallel.mjs public/broll/clips_<slug>_matched.json          # baja ganadores
 node match_sb.mjs --refine public/broll/clips_<slug>_matched.json                # segundo exacto (local)
-node scripts/stockfallback.mjs <slug>                                            # _needstock → Pexels/Pixabay
+
+# 7. VERIFICAR el footage REAL (cierra brecha storyboard→clip) — ver PROMPTS.md §3
+node match_v3/4_stills.mjs public/broll/clips_<slug>_matched.json _v3_<slug>_stills   # stills reales
+#    → agente VERIFICADOR (Haiku, visión) mira stills → _v3_<slug>_verdicts.json
+node match_v3/5_apply_verdicts.mjs public/broll/clips_<slug>_matched.json _v3_<slug>_verdicts.json  # filtra
+
+# 8. Stock para lo reprobado + lo que no tenía footage
+node scripts/stockfallback.mjs <slug>                                            # _needstock + _reject → Pexels/Pixabay
 ```
 
 ## Reglas incrustadas (no negociar)
