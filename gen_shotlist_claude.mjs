@@ -78,7 +78,11 @@ REGLAS:
 - NUNCA uses la palabra literal del narrador; traducí la IDEA (ya resuelta en contexto) a una imagen concreta y filmable.
 - Específica, visual, en INGLÉS (para buscar en YouTube), 2-5 palabras. Metraje real que exista: lugares, objetos, gente trabajando, aéreas, primeros planos.
 - Coherencia con el TEMA y con la SECCIÓN que se viene narrando.
-Devolvé SOLO JSON (sin markdown): {"items":[{"i":<indice>,"c":"<concepto visual en inglés, resuelto en contexto>","q":["query1","query2"]}, ...]} un item por fragmento, en orden.`;
+CLASIFICÁ cada fragmento con "k" (tipo de beat) — esto define si va un clip o no:
+- "object" = hay un objeto/lugar/acción FILMABLE concreto → clip normal.
+- "abstract" = frase emocional/retórica/de transición SIN objeto filmable ("no deberían existir", "quedate hasta el final", "algo no cierra", "y no es el único"). ⚠ NUNCA inventes una emoción como query (eso trae reacciones/deportes/stock genérico). En su lugar, el concepto DEBE ser el SUJETO CONCRETO de la sección que se está narrando (el artefacto/lugar del momento). Ej: si estamos en la sección del mecanismo de Antikythera y la frase es "no debería existir", c="Antikythera mechanism bronze gears", NO "stunned amazement".
+- "data" = número/comparación/estadística ("mil cuatrocientos años", "el 90%") → va un componente gráfico; igual dá un c/q de respaldo del sujeto de la sección.
+Devolvé SOLO JSON (sin markdown): {"items":[{"i":<indice>,"k":"object|abstract|data","c":"<concepto visual en inglés, resuelto en contexto>","q":["query1","query2"]}, ...]} un item por fragmento, en orden.`;
 
 function batch(items, ctxText) {
   const user = `TEMA DEL VIDEO: ${topic}\n\n` +
@@ -112,7 +116,7 @@ const RB = 50;
 for (let i = 0; i < indexed.length; i += RB) {
   const chunk = indexed.slice(i, i + RB).map((w) => ({ ...w, c: (out.get(w.i) || {}).c || topic }));
   const fixes = repair(chunk);
-  for (const f of fixes) if (f && f.i != null && out.has(f.i) && f.c) { out.set(f.i, { i: f.i, c: f.c, q: Array.isArray(f.q) && f.q.length ? f.q : [f.c] }); fixed++; }
+  for (const f of fixes) if (f && f.i != null && out.has(f.i) && f.c) { out.set(f.i, { ...out.get(f.i), i: f.i, c: f.c, q: Array.isArray(f.q) && f.q.length ? f.q : [f.c] }); fixed++; }
   process.stdout.write(`\r  coherencia ${Math.min(i + RB, indexed.length)}/${indexed.length} · ${fixed} corregidos`);
 }
 console.log("");
@@ -123,8 +127,9 @@ for (let i = 0; i < wins.length; i++) {
   const name = "w" + String(i + 1).padStart(3, "0");
   const start = +w.start.toFixed(2), dur = +Math.max(1.5, w.end - w.start).toFixed(2);
   const q = Array.isArray(it.q) && it.q.length ? it.q : [it.c || topic];
-  cues.push({ name, start, dur });
-  match.push({ name, query: q, concept: it.c || topic, dur: Math.max(4, Math.ceil(dur) + 1) });
+  const kind = ["object", "abstract", "data"].includes(it.k) ? it.k : "object";
+  cues.push({ name, start, dur, kind });
+  match.push({ name, query: q, concept: it.c || topic, dur: Math.max(4, Math.ceil(dur) + 1), kind });
 }
 fs.mkdirSync("public/broll", { recursive: true });
 fs.writeFileSync(`public/broll/match_${slug}.json`, JSON.stringify(match, null, 1));
