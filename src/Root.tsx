@@ -33,6 +33,7 @@ import { MainMoho, TOTAL_FRAMES_MOHO } from "./VideoEdit/Main_moho";
 import { MainAcpipe, TOTAL_FRAMES_ACPIPE } from "./VideoEdit/Main_acpipe";
 import { MainSandia, TOTAL_FRAMES_SANDIA } from "./VideoEdit/Main_sandia";
 import { MainRampump, TOTAL_FRAMES_RAMPUMP } from "./VideoEdit/Main_rampump";
+import { MainRampump2, TOTAL_FRAMES_RAMPUMP2 } from "./VideoEdit/Main_rampump2";
 import { MainZeer, TOTAL_FRAMES_ZEER } from "./VideoEdit/Main_zeer";
 import { MainCalor, TOTAL_FRAMES_CALOR } from "./VideoEdit/Main_calor";
 import { MainCarne, TOTAL_FRAMES_CARNE } from "./VideoEdit/Main_carne";
@@ -164,6 +165,15 @@ export const RemotionRoot: React.FC = () => {
         id="Rampump"
         component={MainRampump}
         durationInFrames={TOTAL_FRAMES_RAMPUMP}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
+      {/* VIDEO ACTIVO — Ariete REMAKE ($40 how-to · claudio yoder · EN · 43 clips + 57 IA Modal) */}
+      <Composition
+        id="Rampump2"
+        component={MainRampump2}
+        durationInFrames={TOTAL_FRAMES_RAMPUMP2}
         fps={30}
         width={1920}
         height={1080}
