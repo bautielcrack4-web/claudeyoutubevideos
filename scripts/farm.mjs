@@ -62,9 +62,14 @@ if (pref && pref.startsWith("@")) {
 }
 fs.writeFileSync("_assets_list.txt", items.join("\n"));
 console.log(`empaquetando ${items.length} entradas → ${tar} ...`);
-// --force-local: si TAR_DIR es una ruta Windows (D:\...), tar la trataría como host
-// remoto por el ":" → forzamos local para poder escribir el .tar en otro disco.
-execFileSync("tar", ["--force-local", "-cf", tar, "-C", "public", "-T", "_assets_list.txt"], { stdio: "inherit" });
+// El tar de Windows (bsdtar) maneja rutas D:\ nativamente y NO soporta --force-local
+// (eso es de GNU tar). Detectamos cuál hay: si es bsdtar, sin --force-local.
+let tarArgs = ["-cf", tar, "-C", "public", "-T", "_assets_list.txt"];
+try {
+  const help = execSync("tar --version", { encoding: "utf8" });
+  if (/GNU tar/i.test(help)) tarArgs = ["--force-local", ...tarArgs]; // solo GNU lo necesita/soporta
+} catch { /* asumimos bsdtar */ }
+execFileSync("tar", tarArgs, { stdio: "inherit" });
 fs.rmSync("_assets_list.txt");
 
 // 2) subir como release asset (reemplaza si ya existe)

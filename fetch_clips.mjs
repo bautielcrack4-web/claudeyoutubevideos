@@ -28,6 +28,7 @@
 import fs from "fs";
 import path from "path";
 import { spawnSync } from "child_process";
+import { probeMedia } from "./match_v3/lib.mjs";
 
 const YTDLP = path.join(process.cwd(), "bin", "yt-dlp.exe");
 const FFDIR = path.join(process.cwd(), "node_modules", "@remotion", "compositor-win32-x64-msvc");
@@ -85,8 +86,10 @@ const vttToSec = (t) => {
 };
 
 // baja (una vez por id) los subs y devuelve [{start, text}]
+// `ci` = índice de toma → usa la MISMA cuenta+IP que la descarga (pareja cuenta↔IP;
+// antes iba todo por la cuenta 0 y concentraba los pedidos en un solo proxy).
 const subsCache = new Map();
-const getSubs = (url) => {
+const getSubs = (url, ci = 0) => {
   const id = vidId(url);
   if (!id) return [];
   if (subsCache.has(id)) return subsCache.get(id);
@@ -94,7 +97,7 @@ const getSubs = (url) => {
   let vtt = fs.readdirSync(SUBDIR).find((f) => f.startsWith(id) && f.endsWith(".vtt"));
   if (!vtt) {
     spawnSync(YTDLP, [
-      url, ...cookieArg(0), ...proxyArg(0), "--skip-download", "--write-auto-subs", "--write-subs",
+      url, ...cookieArg(ci), ...proxyArg(ci), "--skip-download", "--write-auto-subs", "--write-subs",
       "--sub-langs", "en.*,es.*", "--sub-format", "vtt", "--convert-subs", "vtt",
       "--no-playlist", "-o", path.join(SUBDIR, "%(id)s.%(ext)s"),
       "--quiet", "--no-warnings",
@@ -120,9 +123,9 @@ const getSubs = (url) => {
 };
 
 // ubica el primer momento (después de `after` seg) donde se dice alguna keyword
-const findMoment = (url, find, lead, after = 0) => {
+const findMoment = (url, find, lead, after = 0, ci = 0) => {
   const keys = (Array.isArray(find) ? find : [find]).map(norm);
-  const cues = getSubs(url);
+  const cues = getSubs(url, ci);
   for (const c of cues) {
     if (c.start < after) continue; // saltea intro/menciones tempranas
     const t = norm(c.text);
@@ -131,18 +134,37 @@ const findMoment = (url, find, lead, after = 0) => {
   return null;
 };
 
+// ── GATE TÉCNICO de lo bajado (antes: éxito = exit 0 + el archivo existe → un mp4
+// truncado de 50KB contaba como OK y quedaba para siempre por el skip-si-existe).
+const MIN_H = +(process.env.FETCH_MIN_HEIGHT || 480);
+const validClip = (file, wantDur) => {
+  const m = probeMedia(file);
+  if (!m) return "ffprobe falló";
+  if (m.duration < Math.min(wantDur * 0.7, wantDur - 1.5)) return `truncado ${m.duration.toFixed(1)}s de ${wantDur}s`;
+  if (m.width && m.height && m.width < m.height) return `vertical ${m.width}x${m.height}`;
+  if (m.height && m.height < MIN_H) return `baja res ${m.width}x${m.height}`;
+  return null;
+};
+
 let ok = 0, fail = 0, refound = 0, _ci = -1;
+const badList = [];
 for (const c of clips) {
   _ci++;
   const { name, url, dur = 6, find, lead = 1.2, after = 0 } = c;
   if (!name || !url) { console.warn("Toma inválida:", JSON.stringify(c)); continue; }
   const dest = path.join(OUT, `${name}.mp4`);
-  if (fs.existsSync(dest) && !FORCE) { console.log(`• ${name}  (ya existe, salteo)`); ok++; continue; }
+  if (fs.existsSync(dest) && !FORCE) {
+    // revalidar lo ya bajado: un clip roto en disco no puede "aprobar" por existir
+    const why = validClip(dest, toSec(dur));
+    if (!why) { console.log(`• ${name}  (ya existe, válido, salteo)`); ok++; continue; }
+    console.log(`• ${name}  (existía pero ${why} → re-bajo)`);
+    fs.rmSync(dest, { force: true });
+  }
 
   let s = toSec(c.start ?? 0);
   let how = "start";
   if (find) {
-    const m = findMoment(url, find, lead, after);
+    const m = findMoment(url, find, lead, after, _ci);
     if (m != null) { s = +m.toFixed(2); how = `find:"${Array.isArray(find) ? find.join("|") : find}"`; refound++; }
     else how = `start (find sin subs/match)`;
   }
@@ -154,7 +176,9 @@ for (const c of clips) {
     ...cookieArg(_ci), ...proxyArg(_ci),
     "--download-sections", `*${s}-${e}`,
     "--force-keyframes-at-cuts",
-    "-f", "bv*[height<=1080]+ba/b[height<=1080]/b",
+    // piso de resolución: sin fuente ≥480p el download FALLA → el beat cae a stock
+    // (quality-first: mejor un Pexels limpio que un 240p pixelado al aire)
+    "-f", `bv*[height<=1080][height>=${MIN_H}]+ba/b[height<=1080][height>=${MIN_H}]`,
     "--ffmpeg-location", FFDIR,
     "--merge-output-format", "mp4",
     "--no-playlist",
@@ -171,12 +195,27 @@ for (const c of clips) {
   // ★ auto-cooldown: si YouTube tira rate-limit, espero antes de seguir (no quema más la cuenta)
   if (r.status !== 0 && /rate.?limit/i.test(r.stderr || "")) { const cd = +(process.env.FETCH_COOLDOWN || 30); Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, cd * 1000); }
   if (r.status === 0 && fs.existsSync(dest)) {
-    const kb = (fs.statSync(dest).size / 1024).toFixed(0);
-    console.log(`✓ broll/${name}.mp4  (${kb} KB)`);
-    ok++;
+    const why = validClip(dest, toSec(dur));
+    if (why) {
+      console.log(`✗ bajó pero ${why} → descartado`);
+      fs.rmSync(dest, { force: true });
+      badList.push({ name, concept: c.concept || "", query: c.query, dur, why });
+      fail++;
+    } else {
+      const kb = (fs.statSync(dest).size / 1024).toFixed(0);
+      console.log(`✓ broll/${name}.mp4  (${kb} KB)`);
+      ok++;
+    }
   } else {
     console.log(`✗ ${(r.stderr || "").trim().split("\n").slice(-1)[0] || "error"}`);
+    badList.push({ name, concept: c.concept || "", query: c.query, dur, why: "descarga falló" });
     fail++;
   }
+}
+// los fallidos/descartados quedan listos para la cascada de stock
+if (badList.length) {
+  const failPath = LIST.replace(/\.json$/, "_failed.json");
+  fs.writeFileSync(failPath, JSON.stringify(badList, null, 2));
+  console.log(`\n${badList.length} tomas sin clip válido → ${failPath} (correr stockfallback/fetchstock sobre esa lista)`);
 }
 console.log(`\n=== ${ok} OK · ${fail} fallos · ${refound} ubicados por subtítulos ===  → ${OUT}`);

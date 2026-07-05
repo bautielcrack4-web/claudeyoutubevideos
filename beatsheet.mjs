@@ -65,6 +65,7 @@
 // }
 import fs from "fs";
 import path from "path";
+import { probeMedia } from "./match_v3/lib.mjs";
 
 const bsArg = process.argv[2];
 if (!bsArg) {
@@ -78,7 +79,61 @@ if (!fs.existsSync(bsArg)) {
 const bs = JSON.parse(fs.readFileSync(bsArg, "utf8"));
 const VIDEO = bs.video || path.basename(bsArg).replace(/\.json$/, "");
 const AVATAR = bs.avatar || "avatar.mp4";
-const beats = bs.beats || [];
+let beats = bs.beats || [];
+
+// ── DURACIÓN REAL de cada clip (ffprobe, cache por mtime) ────────────────────
+// Alimenta el anti-congelado de Media: si el beat en el timeline es más largo que
+// el archivo, el playbackRate se adapta o se loopea — nunca más un frame clavado.
+const PROBE_CACHE = path.join("public", "broll", "_probe_cache.json");
+let _probeCache = {};
+try { _probeCache = JSON.parse(fs.readFileSync(PROBE_CACHE, "utf8")); } catch {}
+let _probeDirty = false;
+const clipDurOf = (rel) => {
+  if (!/\.(mp4|webm|mov)$/i.test(rel || "")) return null;
+  const abs = path.join("public", rel);
+  if (!fs.existsSync(abs)) return null;
+  const key = `${rel}:${Math.round(fs.statSync(abs).mtimeMs)}`;
+  if (_probeCache[key] != null) return _probeCache[key];
+  const m = probeMedia(abs);
+  const d = m ? +m.duration.toFixed(2) : null;
+  _probeCache[key] = d; _probeDirty = true;
+  return d;
+};
+
+// ── GRADE de normalización por clip (lo escribe scripts/probe_grade.mjs) ─────
+// {"<asset sin ext>": "brightness(1.03) saturate(0.97)"} — corrige el salto de
+// exposición/saturación entre fuentes; NO es un look (regla: colores naturales).
+let gradeMap = {};
+try { gradeMap = JSON.parse(fs.readFileSync(path.join("public", "broll", `_grade_${VIDEO}.json`), "utf8")); } catch {}
+const gradeOf = (rel) => gradeMap[path.basename(rel || "").replace(/\.[^.]+$/, "")] || null;
+
+// ── AUTOSPLIT de pacing (opt-in con "maxRawDur" en el beatsheet) ──────────────
+// Un plano raw más largo que maxRawDur se parte en tomas A/B/C del MISMO asset con
+// Ken-Burns distinto (kbPhase) → el corte "respira" sin cambiar el footage. Fix del
+// patrón medido en ventilador.mp4: planos de 24-41s clavados matando la retención.
+const MAX_RAW = +bs.maxRawDur || 0;
+if (MAX_RAW > 0) {
+  const out = [];
+  let nsplit = 0;
+  for (const b of beats) {
+    if (b.kind !== "raw" || !b.dur || b.dur <= MAX_RAW * 1.25 || b.noSplit) { out.push(b); continue; }
+    const parts = Math.min(5, Math.ceil(b.dur / MAX_RAW));
+    const step = +(b.dur / parts).toFixed(2);
+    for (let p = 0; p < parts; p++) {
+      out.push({
+        ...b,
+        id: `${b.id}_${"abc"[p]}`,
+        start: +(b.start + p * step).toFixed(2),
+        dur: p === parts - 1 ? +(b.dur - step * (parts - 1)).toFixed(2) : step,
+        kbPhase: p + 1,
+        ...(p > 0 ? { trans: 0, kicker: undefined } : {}),
+      });
+    }
+    nsplit++;
+  }
+  if (nsplit) console.log(`✂ autosplit: ${nsplit} planos raw > ${MAX_RAW}s partidos en tomas A/B (kbPhase)`);
+  beats = out;
+}
 
 // ── 1+2) extraer assets a generar (dedup por nombre) ─────────────────────────
 const images = new Map(); // name -> {name,prompt,width?,height?}
@@ -112,12 +167,26 @@ const cueBeats = beats.filter((b) => b.kind && b.kind !== "talk");
 const sorted = [...cueBeats].filter((b) => b.kind !== "float" && !b.overlay).sort((a, b) => a.start - b.start);
 for (let i = 1; i < sorted.length; i++) {
   const prevEnd = sorted[i - 1].start + sorted[i - 1].dur;
-  if (sorted[i].start < prevEnd - 1e-6) {
+  // hasta 0.35s de solape es INTENCIONAL (overlap anti-flash del build) → no avisar
+  if (sorted[i].start < prevEnd - 0.35) {
     warnings.push(
       `solapan: ${sorted[i - 1].id} (${sorted[i - 1].start}–${prevEnd.toFixed(1)}) y ${sorted[i].id} (desde ${sorted[i].start})`
     );
   }
 }
+// ── GATE DE PACING (dato medido: en ventilador.mp4 los cortes/min cayeron de 15 a 4
+// en la 2ª mitad y hubo planos de 30-41s → retención muerta). Aviso duro acá; el fix
+// automático es "maxRawDur" (autosplit) o partir el beat en el build.
+{
+  const rawBeats = beats.filter((b) => b.kind === "raw" && b.dur);
+  const longs = rawBeats.filter((b) => b.dur > 12);
+  if (longs.length) warnings.push(`PACING: ${longs.length} planos raw >12s (${longs.slice(0, 6).map((b) => `${b.id}:${b.dur}s`).join(", ")}${longs.length > 6 ? "…" : ""}) → poné "maxRawDur": 8 en el beatsheet o partilos`);
+  if (rawBeats.length) {
+    const avg = rawBeats.reduce((a, b) => a + b.dur, 0) / rawBeats.length;
+    if (avg > 7) warnings.push(`PACING: plano raw medio ${avg.toFixed(1)}s (regla del nicho ~4.5-5s)`);
+  }
+}
+
 // assets referenciados que no se generan ni existen en disco
 const exists = (rel) => fs.existsSync(path.join("public", rel));
 const refs = [];
@@ -164,7 +233,7 @@ const KIT = {
   pxamber: "PxAmberDecay", pxgnats: "PxGnatsLift", pxwater: "PxWaterRevive", pxcost: "PxCostCart",
   pxforge: "PxMoleculeForge", pxdrown: "PxDrownedPlant", pxmyth: "PxMythStamp", pxseven: "PxSevenSeal",
 };
-const KIT_SYS = new Set(["id", "start", "dur", "kind", "overlay", "gen", "anec", "darken", "reframe", "t", "src"]);
+const KIT_SYS = new Set(["id", "start", "dur", "kind", "overlay", "gen", "anec", "darken", "reframe", "t", "src", "focus", "trans", "grade", "kbPhase", "noSplit", "sfx"]);
 const cleanSlides = (slides) =>
   (slides || []).map((s) => {
     const o = {};
@@ -176,7 +245,9 @@ const cleanSlides = (slides) =>
 
 function renderEl(b) {
   switch (b.kind) {
-    case "raw":
+    case "raw": {
+      const cd = clipDurOf(b.src);
+      const gr = b.grade ?? gradeOf(b.src);
       return (
         `<RawShot durationInFrames={d} src=${j(b.src)}` +
         (b.hue ? ` hue=${j(b.hue)}` : ``) +
@@ -186,8 +257,14 @@ function renderEl(b) {
         (b.blur != null ? ` blur={${b.blur}}` : ``) +
         (b.zoom != null ? ` zoom={${j(b.zoom)}}` : ``) +
         (b.fit ? ` fit=${j(b.fit)}` : ``) +
+        (cd != null ? ` clipDur={${cd}}` : ``) +
+        (b.focus ? ` focus=${j(b.focus)}` : ``) +
+        (b.trans ? ` trans={${b.trans === true ? 9 : b.trans}}` : ``) +
+        (gr ? ` grade=${j(gr)}` : ``) +
+        (b.kbPhase != null ? ` kbPhase={${b.kbPhase}}` : ``) +
         ` />`
       );
+    }
     case "diagram": {
       // DIAGRAMA ESTÁTICO (regla dura del nicho): DiagramBoard = lámina quieta +
       // avatar PiP esquina, hard-cut entre páginas, SIN zoom/Ken-Burns. Calmo y pro.
@@ -1158,6 +1235,19 @@ function renderEl(b) {
       return (`<AcCircuit durationInFrames={d}` + (b.title ? ` title=${j(b.title)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
     case "acname":
       return (`<AcNameTag durationInFrames={d}` + (b.name ? ` name=${j(b.name)}` : ``) + (b.role ? ` role=${j(b.role)}` : ``) + (b.accent ? ` accent=${j(b.accent)}` : ``) + ` />`);
+    // ── SET DE PULIDO "ventilador" (VentiladorKit): 22 heroes del ventilador+botellas ──
+    case "eyebrowkicker": case "frictioncard": case "secretsealcard": case "promisechecklist":
+    case "fanfailproof": case "evaporationphysics": case "fanbottleassembly": case "wrongvsrightplacement":
+    case "bottlesizegauge": case "saltphysicsdiagram": case "stepbystepbuild": case "driptraycallout":
+    case "rotationcyclediagram": case "oldtimersstamp": case "mythbustercard": case "distancelimitwarning":
+    case "threelegsdiagram": case "nightdaycycle": case "costvscard": case "recapnumberedlist":
+    case "manualctacard": case "nextvideoteaser": {
+      const VT_MAP = { eyebrowkicker: "EyebrowKicker", frictioncard: "FrictionCard", secretsealcard: "SecretSealCard", promisechecklist: "PromiseChecklist", fanfailproof: "FanFailProof", evaporationphysics: "EvaporationPhysics", fanbottleassembly: "FanBottleAssembly", wrongvsrightplacement: "WrongVsRightPlacement", bottlesizegauge: "BottleSizeGauge", saltphysicsdiagram: "SaltPhysicsDiagram", stepbystepbuild: "StepByStepBuild", driptraycallout: "DripTrayCallout", rotationcyclediagram: "RotationCycleDiagram", oldtimersstamp: "OldTimersStamp", mythbustercard: "MythBusterCard", distancelimitwarning: "DistanceLimitWarning", threelegsdiagram: "ThreeLegsDiagram", nightdaycycle: "NightDayCycle", costvscard: "CostVsCard", recapnumberedlist: "RecapNumberedList", manualctacard: "ManualCTACard", nextvideoteaser: "NextVideoTeaser" };
+      const Comp = VT_MAP[b.kind];
+      const rest = {}; for (const k of Object.keys(b)) if (!KIT_SYS.has(k)) rest[k] = b[k];
+      delete rest.kind;
+      return `<${Comp} {...({ durationInFrames: d, ...${j(rest)} } as any)} />`;
+    }
     // ── BESPOKE "dulces" (canal Abuela Rosa) — cocina de la abuela, cálido ──
     case "fichadulce":
       return (
@@ -1207,6 +1297,23 @@ function renderEl(b) {
         (b.eyebrow ? ` eyebrow=${j(b.eyebrow)}` : ``) +
         ` />`
       );
+    // ── KIT PREMIUM (src/VideoEdit/kit/premium/) — catálogo themeable genérico.
+    // beat: { kind:"premium", comp:"VsDuel", theme:"earth", zone:"topLeft", overlay:true, ...props }
+    // `comp` = nombre EXACTO exportado por kit/premium/index.ts (VsDuel, BigStatReveal,
+    // NumberedSteps, ChecklistReveal, FlowSteps, MythTruth, CtaCard, etc). `zone` posiciona
+    // el componente (full-bleed por diseño) dentro de una caja recortada en zona segura vía
+    // PremiumOverlay (topLeft|left|top|full) para que el b-roll siga viéndose alrededor y
+    // no tape el avatar PiP abajo-derecha. Todas las demás props pasan tal cual al componente.
+    case "premium": {
+      const rest = {}; for (const k of Object.keys(b)) if (!KIT_SYS.has(k) && k !== "comp" && k !== "zone" && k !== "theme") rest[k] = b[k];
+      const themeConst = `THEME_${(b.theme || "earth").toUpperCase()}`;
+      const zoneAttr = b.zone ? ` zone=${j(b.zone)}` : "";
+      return (
+        `<PremiumOverlay durationInFrames={d}${zoneAttr} theme={${themeConst}}>` +
+        `<${b.comp} durationInFrames={d} theme={${themeConst}} {...(${j(rest)} as any)} />` +
+        `</PremiumOverlay>`
+      );
+    }
     default: {
       if (KIT[b.kind]) {
         const rest = {}; for (const k of Object.keys(b)) if (!KIT_SYS.has(k)) rest[k] = b[k];
@@ -1372,12 +1479,80 @@ if (kinds.has("manualcard")) imports.push(`import { ManualCard } from "./overlay
 { const acMap = { acgauge: "AcGauge", acports: "AcPorts", acoverfill: "AcOverfill", acsteps: "AcSteps", accircuit: "AcCircuit", acname: "AcNameTag" };
   const acUsed = Object.entries(acMap).filter(([k]) => kinds.has(k)).map(([, v]) => v);
   if (acUsed.length) imports.push(`import { ${acUsed.join(", ")} } from "./overlays/AcautoPolish";`); }
+{ const vtMap = { eyebrowkicker: "EyebrowKicker", frictioncard: "FrictionCard", secretsealcard: "SecretSealCard", promisechecklist: "PromiseChecklist", fanfailproof: "FanFailProof", evaporationphysics: "EvaporationPhysics", fanbottleassembly: "FanBottleAssembly", wrongvsrightplacement: "WrongVsRightPlacement", bottlesizegauge: "BottleSizeGauge", saltphysicsdiagram: "SaltPhysicsDiagram", stepbystepbuild: "StepByStepBuild", driptraycallout: "DripTrayCallout", rotationcyclediagram: "RotationCycleDiagram", oldtimersstamp: "OldTimersStamp", mythbustercard: "MythBusterCard", distancelimitwarning: "DistanceLimitWarning", threelegsdiagram: "ThreeLegsDiagram", nightdaycycle: "NightDayCycle", costvscard: "CostVsCard", recapnumberedlist: "RecapNumberedList", manualctacard: "ManualCTACard", nextvideoteaser: "NextVideoTeaser" };
+  const vtUsed = Object.entries(vtMap).filter(([k]) => kinds.has(k)).map(([, v]) => v);
+  if (vtUsed.length) imports.push(`import { ${vtUsed.join(", ")} } from "./overlays/VentiladorKit";`); }
 { const duMap = { fichadulce: "FichaDulce", antesahora: "AntesAhora", citaabuela: "CitaAbuela", ingredientesflotan: "IngredientesFlotan", topdulce: "TopDulce", numerodulce: "NumeroDulce" };
   const duUsed = Object.entries(duMap).filter(([k]) => kinds.has(k)).map(([, v]) => v);
   if (duUsed.length) imports.push(`import { ${duUsed.join(", ")} } from "./components/DulcesCards";`); }
+// ── KIT PREMIUM (themeable) — componentes usados vía kind:"premium" + comp:"X" ──
+if (kinds.has("premium")) {
+  imports.push(`import { PremiumOverlay } from "./scenes/PremiumOverlay";`);
+  const premiumBeats = beats.filter((b) => b.kind === "premium");
+  const compsUsed = [...new Set(premiumBeats.map((b) => b.comp).filter(Boolean))];
+  const themesUsed = [...new Set(premiumBeats.map((b) => `THEME_${(b.theme || "earth").toUpperCase()}`))];
+  if (compsUsed.length) imports.push(`import { ${[...compsUsed, ...themesUsed].join(", ")} } from "./kit/premium";`);
+  else if (themesUsed.length) imports.push(`import { ${themesUsed.join(", ")} } from "./kit/premium";`);
+}
 const palLine = usedPal.size
   ? `\nconst ${[...usedPal].map((t) => `${t} = ${palTok[t]}`).join(", ")};\n`
   : "";
+
+// ── AUDIO: cama de música con ducking (Whisper) + riel de SFX ────────────────
+// bs.music = { "src": "music/bed_x.mp3", "base"?: 0.13, "duck"?: 0.05 }
+// La actividad de voz sale de public/captions_<slug>.json (o bs.captions): palabras
+// con ms exactos → intervalos de habla mergeados (gap ≤ 350ms) → AudioBed duckea ahí.
+let audioBedLit = "null";
+if (bs.music?.src) {
+  // Los timestamps de palabra de Whisper NO tienen pausas (estira los bordes) → la
+  // actividad de voz se mide del AUDIO REAL del avatar con silencedetect (ffmpeg
+  // completo). Silencios ≥0.35s a -32dB = respiraciones/pausas donde la música asoma.
+  let spans = [];
+  const avatarPath = path.join("public", bs.musicVoice || AVATAR);
+  const winget = path.join(process.env.LOCALAPPDATA || "", "Microsoft", "WinGet", "Links", "ffmpeg.exe");
+  const FFULL = process.env.FFMPEG || (fs.existsSync(winget) ? winget : "ffmpeg");
+  if (fs.existsSync(avatarPath)) {
+    const { spawnSync } = await import("child_process");
+    const r = spawnSync(FFULL, ["-hide_banner", "-i", avatarPath, "-af", "silencedetect=noise=-32dB:d=0.35", "-f", "null", "-"], { encoding: "utf8", maxBuffer: 1 << 24, timeout: 300000 });
+    const txt = (r.stderr || "") + (r.stdout || "");
+    const sil = [];
+    const reS = /silence_start: ([\d.]+)/g, reE = /silence_end: ([\d.]+)/g;
+    let m; const starts = [], ends = [];
+    while ((m = reS.exec(txt))) starts.push(+m[1]);
+    while ((m = reE.exec(txt))) ends.push(+m[1]);
+    for (let i = 0; i < starts.length; i++) sil.push([starts[i], ends[i] ?? Infinity]);
+    const durM = txt.match(/Duration: (\d+):(\d+):(\d+\.\d+)/);
+    const aDur = durM ? +durM[1] * 3600 + +durM[2] * 60 + +durM[3] : 0;
+    // complemento: voz = todo lo que no es silencio
+    let t = 0;
+    for (const [a, b] of sil) { if (a - t > 0.1) spans.push([+t.toFixed(2), +a.toFixed(2)]); t = Math.min(b, aDur || b); }
+    if (aDur && aDur - t > 0.1) spans.push([+t.toFixed(2), +aDur.toFixed(2)]);
+    if (!spans.length) warnings.push(`music: silencedetect no devolvió nada sobre ${avatarPath} → ducking constante`);
+  } else {
+    warnings.push(`music: no encontré ${avatarPath} → AudioBed sin ducking (base fijo)`);
+  }
+  const totalSec = bs.total || (beats.length ? Math.max(...beats.map((b) => (b.start || 0) + (b.dur || 0))) : 60);
+  audioBedLit = j({ src: bs.music.src, activity: spans, base: bs.music.base ?? 0.13, duck: bs.music.duck ?? 0.05, totalSec: +(+totalSec).toFixed(2), loop: bs.music.loop !== false });
+}
+// SFX automáticos (desactivar con "sfx": false): pop suave cuando entra un componente
+// gráfico, transición suave en los cambios de sección (beats con trans). Cap 1/2s.
+const sfxCues = [];
+if (bs.sfx !== false) {
+  const OVERLAY_ROLE = { raw: null, talk: null };
+  let lastAt = -99;
+  for (const b of [...beats].sort((a, c) => (a.start || 0) - (c.start || 0))) {
+    if (b.sfx === false) continue;
+    let role = typeof b.sfx === "string" ? b.sfx : null;
+    if (!role) {
+      if (b.kind === "raw" && b.trans) role = "transition";
+      else if (b.kind !== "raw" && b.kind !== "talk" && OVERLAY_ROLE[b.kind] !== null) role = "popUp";
+    }
+    if (!role) continue;
+    if (b.start - lastAt < 2) continue;
+    lastAt = b.start;
+    sfxCues.push({ at: +(+b.start).toFixed(2), role, vol: role === "transition" ? 0.3 : 0.32 });
+  }
+}
 
 const header = `// cues_${VIDEO}.gen.tsx — GENERADO por beatsheet.mjs desde ${path.basename(bsArg)}.
 // NO editar a mano: cambiá el beatsheet y re-corré  node beatsheet.mjs ${bsArg}
@@ -1394,6 +1569,12 @@ export const REFRAME: { start: number; end: number }[] = ${j(reframe)};
 export const OVERLAYS: Cue[] = [
 ${overlayLines.join("\n")}
 ];
+
+// cama de música (AudioBed) — null si el beatsheet no define "music"
+export const AUDIO_BED: { src: string; activity: [number, number][]; base: number; duck: number; totalSec: number; loop: boolean } | null = ${audioBedLit};
+
+// riel de SFX suaves (SfxRail) — [] si "sfx": false
+export const SFX_CUES: { at: number; role: string; vol?: number }[] = ${j(sfxCues)};
 `;
 
 const outTsx = path.join("src", "VideoEdit", `cues_${VIDEO}.gen.tsx`);
@@ -1406,8 +1587,11 @@ const clipsPath = path.join("public", "vid", `clips_${VIDEO}.json`);
 fs.writeFileSync(promptsPath, JSON.stringify(imgList, null, 2));
 fs.writeFileSync(clipsPath, JSON.stringify(clipList, null, 2));
 
+if (_probeDirty) { try { fs.mkdirSync(path.dirname(PROBE_CACHE), { recursive: true }); fs.writeFileSync(PROBE_CACHE, JSON.stringify(_probeCache, null, 1)); } catch {} }
+
 // ── resumen ──────────────────────────────────────────────────────────────────
 console.log(`=== beatsheet ${VIDEO} ===`);
+if (bs.music?.src) console.log(`música: ${bs.music.src} (ducking silencedetect del avatar) · sfx auto: ${sfxCues.length}`);
 console.log(`beats: ${beats.length}  ·  cues: ${cueLines.length}  ·  reframe: ${reframe.length}`);
 console.log(`imágenes a generar: ${imgList.length}  ·  clips: ${clipList.length}`);
 console.log(`→ ${outTsx}`);

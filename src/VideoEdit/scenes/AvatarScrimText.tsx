@@ -15,10 +15,13 @@ export const AvatarScrimText: React.FC<{
   impact: string;       // línea grande (acento)
   impactAccent?: AccentKey;
   fontSize?: number;
-}> = ({ durationInFrames, setup, impact, impactAccent = "amber", fontSize = 150 }) => {
+  accentColor?: string; // override directo del color de acento (ej. teal clínico)
+  font?: string;        // override de la tipografía (ej. Inter para el look médico)
+}> = ({ durationInFrames, setup, impact, impactAccent = "amber", fontSize = 150, accentColor, font }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const accent = COLORS[impactAccent];
+  const accent = accentColor ?? COLORS[impactAccent];
+  const FONT = font ?? FONT_STACK;
   // fade in/out suave del scrim+texto (sin animar la imagen del avatar)
   const inP = interpolate(frame, [0, 14], [0, 1], { extrapolateRight: "clamp", easing: Easing.out(Easing.cubic) });
   const outP = interpolate(frame, [durationInFrames - 12, durationInFrames], [1, 0], { extrapolateLeft: "clamp" });
@@ -35,12 +38,12 @@ export const AvatarScrimText: React.FC<{
       <AbsoluteFill style={{ background: `radial-gradient(120% 90% at 50% 56%, rgba(20,16,10,0.74) 0%, rgba(20,16,10,0.6) 45%, rgba(20,16,10,0.5) 100%)` }} />
       <AbsoluteFill style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 18, padding: "0 12%" }}>
         {setup && (
-          <div style={{ fontFamily: FONT_STACK, fontStyle: "italic", fontSize: 46, color: "rgba(255,247,232,0.92)", textAlign: "center", textShadow: "0 2px 18px rgba(0,0,0,0.8)" }}>
+          <div style={{ fontFamily: FONT, fontStyle: "italic", fontSize: 46, color: "rgba(255,247,232,0.92)", textAlign: "center", textShadow: "0 2px 18px rgba(0,0,0,0.8)" }}>
             {setup}
           </div>
         )}
         <div style={{ position: "relative", transform: `translateY(${ty}px)`, filter: `blur(${blur}px)` }}>
-          <div style={{ fontFamily: FONT_STACK, fontWeight: 800, fontSize, lineHeight: 1.02, color: accent, textAlign: "center", textShadow: "0 4px 30px rgba(0,0,0,0.85), 0 0 2px rgba(0,0,0,0.6)" }}>
+          <div style={{ fontFamily: FONT, fontWeight: 800, fontSize, lineHeight: 1.02, color: accent, textAlign: "center", textShadow: "0 4px 30px rgba(0,0,0,0.85), 0 0 2px rgba(0,0,0,0.6)" }}>
             {impact}
           </div>
           {/* subrayado que se dibuja */}

@@ -1,3 +1,8 @@
+// ⛔ DEPRECADO (jul 2026): este script es del pipeline v3 VIEJO de la raíz. Usar la
+// carpeta match_v3/ (lib+2_search_mosaics+split_judge+3_assemble+4_stills+5_apply_verdicts),
+// que tiene los fixes de geometría por fragmento, filtro duro pre-juez, blocklist y
+// verificación obligatoria. Este archivo queda solo por compatibilidad con corridas viejas.
+console.error('⛔ DEPRECADO: usá la carpeta match_v3/ (ver match_v3/README.md). Este script raíz tiene bugs ya corregidos allá.');
 // match_v3_dlsb.mjs — baja los MOSAICOS de storyboard de IDs YA conocidos (sin API/quota).
 // Sirve para (a) el flujo search-local→score-farm (candidatos pre-buscados) y (b) testear
 // el juez-VLM sin gastar cuota. Escribe el MISMO _probe.json + PNGs que match_v3_probe.mjs.

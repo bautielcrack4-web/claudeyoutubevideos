@@ -1,3 +1,8 @@
+// ⛔ DEPRECADO (jul 2026): este script es del pipeline v3 VIEJO de la raíz. Usar la
+// carpeta match_v3/ (lib+2_search_mosaics+split_judge+3_assemble+4_stills+5_apply_verdicts),
+// que tiene los fixes de geometría por fragmento, filtro duro pre-juez, blocklist y
+// verificación obligatoria. Este archivo queda solo por compatibilidad con corridas viejas.
+console.error('⛔ DEPRECADO: usá la carpeta match_v3/ (ver match_v3/README.md). Este script raíz tiene bugs ya corregidos allá.');
 // match_v3_assemble.mjs — arma clips_<slug>_matched.json a partir de las decisiones del
 // JUEZ-VLM (que miró los mosaicos de storyboard) + la geometría de _probe.json.
 //

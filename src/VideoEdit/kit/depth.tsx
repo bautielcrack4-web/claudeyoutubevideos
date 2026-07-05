@@ -197,8 +197,11 @@ export const Odometer: React.FC<{
         return (
           <span key={i} style={{ display: "inline-block", height: cellH, width: size * 0.62, overflow: "hidden", position: "relative", textAlign: "center" }}>
             <span style={{ position: "absolute", top: -off, left: 0, right: 0, transition: "none" }}>
+              {/* reel plano 0..9 repetido; el scroll (off) ya incorpora `target` vía `roll`,
+                  así que el contenido NO debe volver a sumarlo (antes: (d+target)%10 duplicaba
+                  el corrimiento y el dígito final mostrado quedaba mal, ej. target=4 → mostraba 8). */}
               {Array.from({ length: 20 }, (_, d) => (
-                <span key={d} style={{ display: "block", height: cellH }}>{(d + target) % 10}</span>
+                <span key={d} style={{ display: "block", height: cellH }}>{d % 10}</span>
               ))}
             </span>
           </span>

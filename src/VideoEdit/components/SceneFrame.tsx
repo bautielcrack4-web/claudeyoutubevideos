@@ -28,6 +28,13 @@ export const SceneFrame: React.FC<{
   imageFit?: "cover" | "blur"; // "blur" = blur-fill para clips verticales/baja-res
   noReveal?: boolean; // RawShot: HARD-CUT, sin fade/blur de entrada NI salida (regla del nicho)
   camOrigin?: string; // origen del Ken-Burns (varía el "punto" del zoom/pan). def centro
+  clipDur?: number; // duración real del mp4 (s) → anti-congelado (Media)
+  beatDur?: number; // duración del beat en timeline (s)
+  grade?: string; // normalización por clip (probe_grade) — no es un look
+  // ★ TRANSICIÓN DE SECCIÓN (opt-in): N frames de fade-in SOLO cuando el build lo pide
+  // (primer beat de un capítulo). Los cortes internos siguen siendo secos (regla del
+  // nicho); esto es el "respiro" entre bloques, tasteful, no un crossfade en cada beat.
+  fadeIn?: number;
 }> = ({
   durationInFrames,
   children,
@@ -45,14 +52,20 @@ export const SceneFrame: React.FC<{
   imageFit = "cover",
   noReveal = false,
   camOrigin = "center center",
+  clipDur,
+  beatDur,
+  grade,
+  fadeIn = 0,
 }) => {
   const frame = useCurrentFrame();
   // ★ CORTE LIMPIO UNIVERSAL (feedback usuario jun 2026: "los cambios de un frame a otro
   // no deben tener animaciones... que quede limpio"). NADA de fade/scale/blur de entrada o
   // salida en NINGUNA escena — cada beat es un corte seco. Se conserva SOLO el Ken-Burns
-  // interno (cam), que es movimiento vivo, no una transición que se corta a medias.
+  // interno (cam) y el fadeIn OPT-IN de cambio de sección.
   void noReveal;
-  const opacity = 1;
+  const opacity = fadeIn > 0
+    ? Math.min(1, Math.max(0, frame / fadeIn))
+    : 1;
   const scale = 1;
   const blur = 0;
   const cam = kenBurns(frame, durationInFrames, zoom[0], zoom[1]);
@@ -73,6 +86,9 @@ export const SceneFrame: React.FC<{
             tint={imageTint}
             fit={imageFit}
             durationInFrames={durationInFrames}
+            clipDur={clipDur}
+            beatDur={beatDur}
+            grade={grade}
           />
         ) : bg === "black" || bg === "white" ? (
           <PlainBackdrop
