@@ -26,6 +26,8 @@ function walk(f) {
   seen.add(f);
   let src;
   try { src = fs.readFileSync(f, "utf8"); } catch { return; }
+  // sacar comentarios de línea y de bloque (evita matchear imports de ejemplo en comentarios)
+  src = src.replace(/\/\*[\s\S]*?\*\//g, "").replace(/(^|[^:])\/\/.*$/gm, "$1");
   const re = /from\s+"(\.[^"]+)"/g;
   let m;
   while ((m = re.exec(src))) {

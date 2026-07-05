@@ -9,6 +9,7 @@ import { MainPostres, TOTAL_FRAMES_POS } from "./VideoEdit/Main_postres";
 import { MainDulces, TOTAL_FRAMES_DUL } from "./VideoEdit/Main_dulces";
 import { MainDulcesV2, TOTAL_FRAMES_DULV2 } from "./VideoEdit/Main_dulcesv2";
 import { MainDulcesV3, TOTAL_FRAMES_DULV3 } from "./VideoEdit/Main_dulcesv3";
+import { MainComidas, TOTAL_FRAMES_COMIDAS } from "./VideoEdit/Main_comidas";
 import { MainDomingos, TOTAL_FRAMES_DOM } from "./VideoEdit/Main_domingos";
 import { MainCocina, TOTAL_FRAMES_COC } from "./VideoEdit/Main_cocina";
 import { MainEstufaRocket, TOTAL_FRAMES_ER } from "./VideoEdit/Main_estufarocket";
@@ -364,6 +365,8 @@ export const RemotionRoot: React.FC = () => {
         width={1920}
         height={1080}
       />
+      {/* VIDEO ACTIVO — 25 Comidas Olvidadas (Abuela Rosa · clip-forward match_v3) */}
+      <Composition id="Comidas" component={MainComidas} durationInFrames={TOTAL_FRAMES_COMIDAS} fps={30} width={1920} height={1080} />
       {/* VIDEO ACTIVO — 15 Costumbres de los Domingos (Video 3 cadena) */}
       <Composition id="Domingos" component={MainDomingos} durationInFrames={TOTAL_FRAMES_DOM} fps={30} width={1920} height={1080} />
       {/* VIDEO ACTIVO — Así se Cocinaba Antes de los Supermercados (Video 4 cadena) */}
