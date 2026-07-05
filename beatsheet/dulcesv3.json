@@ -651,7 +651,7 @@
   {
    "id": "s03_arrozleche_03",
    "kind": "raw",
-   "src": "broll/d03_arrozleche_beauty.mp4",
+   "src": "broll/s03_arrozleche_03.mp4",
    "start": 235.81,
    "dur": 7.55,
    "hue": "amber",
@@ -699,7 +699,7 @@
   {
    "id": "s03_arrozleche_04",
    "kind": "raw",
-   "src": "broll/d03_arrozleche_proc.mp4",
+   "src": "broll/d03_arrozleche_beauty.mp4",
    "start": 243.36,
    "dur": 3.56,
    "hue": "amber",
@@ -711,7 +711,7 @@
   {
    "id": "s03_arrozleche_05",
    "kind": "raw",
-   "src": "broll/d03_arrozleche_serve.mp4",
+   "src": "broll/d03_arrozleche_proc.mp4",
    "start": 246.92,
    "dur": 6.96,
    "hue": "amber",
@@ -723,7 +723,7 @@
   {
    "id": "s03_arrozleche_06",
    "kind": "raw",
-   "src": "broll/d03_arrozleche_close.mp4",
+   "src": "broll/d03_arrozleche_serve.mp4",
    "start": 253.88,
    "dur": 5.08,
    "hue": "amber",
@@ -735,15 +735,19 @@
   {
    "id": "s03_arrozleche_07",
    "kind": "raw",
-   "src": "real/arroz_con_leche_1.jpg",
+   "src": "broll/d03_arrozleche_close.mp4",
    "start": 258.96,
    "dur": 4.56,
-   "hue": "amber"
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
   },
   {
    "id": "s03_arrozleche_08",
    "kind": "raw",
-   "src": "real/arroz_con_leche_3.jpg",
+   "src": "real/arroz_con_leche_1.jpg",
    "start": 263.52,
    "dur": 5.39,
    "hue": "amber"
@@ -751,7 +755,7 @@
   {
    "id": "s03_arrozleche_09",
    "kind": "raw",
-   "src": "real/card_d03.jpg",
+   "src": "real/arroz_con_leche_3.jpg",
    "start": 268.91,
    "dur": 3.49,
    "hue": "amber"
@@ -759,14 +763,10 @@
   {
    "id": "s03_arrozleche_10",
    "kind": "raw",
-   "src": "broll/s03_arrozleche_01.mp4",
+   "src": "real/card_d03.jpg",
    "start": 272.4,
    "dur": 4.76,
-   "hue": "amber",
-   "zoom": [
-    1.04,
-    1.06
-   ]
+   "hue": "amber"
   },
   {
    "id": "top_v2_4",
@@ -1007,7 +1007,7 @@
   {
    "id": "s05_coco_03",
    "kind": "raw",
-   "src": "broll/s05_coco_04.mp4",
+   "src": "broll/s05_coco_05.mp4",
    "start": 351.19,
    "dur": 2.65,
    "hue": "amber",
@@ -1019,7 +1019,7 @@
   {
    "id": "s05_coco_04",
    "kind": "raw",
-   "src": "broll/s05_coco_04.mp4",
+   "src": "broll/d05_coco.mp4",
    "start": 353.84,
    "dur": 6.63,
    "hue": "amber",
@@ -1103,7 +1103,7 @@
   {
    "id": "s05_coco_06",
    "kind": "raw",
-   "src": "broll/d05_coco.mp4",
+   "src": "broll/d05_coco_close.mp4",
    "start": 364.68,
    "dur": 5.31,
    "hue": "amber",
@@ -1115,7 +1115,7 @@
   {
    "id": "s05_coco_07",
    "kind": "raw",
-   "src": "broll/d05_coco_close.mp4",
+   "src": "broll/d05_coco_ingr.mp4",
    "start": 369.99,
    "dur": 5.62,
    "hue": "amber",
@@ -1127,19 +1127,15 @@
   {
    "id": "s05_coco_08",
    "kind": "raw",
-   "src": "broll/d05_coco_ingr.mp4",
+   "src": "real/bocaditos_coco_1.jpg",
    "start": 375.61,
    "dur": 6.59,
-   "hue": "amber",
-   "zoom": [
-    1.04,
-    1.06
-   ]
+   "hue": "amber"
   },
   {
    "id": "s05_coco_09",
    "kind": "raw",
-   "src": "real/bocaditos_coco_1.jpg",
+   "src": "real/card_d05.jpg",
    "start": 382.2,
    "dur": 5.31,
    "hue": "amber"
@@ -1147,15 +1143,19 @@
   {
    "id": "s05_coco_10",
    "kind": "raw",
-   "src": "real/card_d05.jpg",
+   "src": "broll/d05_coco.mp4",
    "start": 387.51,
    "dur": 7.45,
-   "hue": "amber"
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
   },
   {
    "id": "s05_coco_11",
    "kind": "raw",
-   "src": "broll/s05_coco_05.mp4",
+   "src": "broll/d05_coco_close.mp4",
    "start": 394.96,
    "dur": 4.77,
    "hue": "amber",
@@ -1170,7 +1170,7 @@
    "index": 6,
    "total": 20,
    "title": "Turrón de quaker",
-   "image": "broll/s06_turronquaker_11.mp4",
+   "image": "broll/d06_turronquaker.mp4",
    "start": 398.53,
    "dur": 4,
    "overlay": true
@@ -1178,7 +1178,7 @@
   {
    "id": "s06_turronquaker_01",
    "kind": "raw",
-   "src": "broll/s06_turronquaker_11.mp4",
+   "src": "broll/d06_turronquaker_proc.mp4",
    "start": 399.73,
    "dur": 3.79,
    "hue": "amber",
@@ -1190,14 +1190,10 @@
   {
    "id": "s06_turronquaker_02",
    "kind": "raw",
-   "src": "broll/d06_turronquaker_proc.mp4",
+   "src": "real/turron_quaker_1.jpg",
    "start": 403.52,
    "dur": 7.25,
-   "hue": "amber",
-   "zoom": [
-    1.04,
-    1.06
-   ]
+   "hue": "amber"
   },
   {
    "id": "ingredientesflotan_v2_6_6",
@@ -1221,7 +1217,7 @@
   {
    "id": "s06_turronquaker_03",
    "kind": "raw",
-   "src": "real/turron_quaker_1.jpg",
+   "src": "real/turron_quaker_2.jpg",
    "start": 410.77,
    "dur": 6.66,
    "hue": "amber"
@@ -1229,7 +1225,7 @@
   {
    "id": "s06_turronquaker_04",
    "kind": "raw",
-   "src": "real/turron_quaker_2.jpg",
+   "src": "real/card_d06.jpg",
    "start": 417.43,
    "dur": 4.63,
    "hue": "amber"
@@ -1237,15 +1233,19 @@
   {
    "id": "s06_turronquaker_05",
    "kind": "raw",
-   "src": "real/card_d06.jpg",
+   "src": "broll/d05_coco_ingr.mp4",
    "start": 422.06,
    "dur": 3.78,
-   "hue": "amber"
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
   },
   {
    "id": "s06_turronquaker_06",
    "kind": "raw",
-   "src": "broll/s06_turronquaker_11.mp4",
+   "src": "broll/d06_turronquaker_proc.mp4",
    "start": 425.84,
    "dur": 6.62,
    "hue": "amber",
@@ -1257,31 +1257,23 @@
   {
    "id": "s06_turronquaker_07",
    "kind": "raw",
-   "src": "broll/d05_coco_ingr.mp4",
+   "src": "real/turron_quaker_1.jpg",
    "start": 432.46,
    "dur": 7.54,
-   "hue": "amber",
-   "zoom": [
-    1.04,
-    1.06
-   ]
+   "hue": "amber"
   },
   {
    "id": "s06_turronquaker_08",
    "kind": "raw",
-   "src": "broll/d06_turronquaker_proc.mp4",
+   "src": "real/turron_quaker_2.jpg",
    "start": 440,
    "dur": 5.99,
-   "hue": "amber",
-   "zoom": [
-    1.04,
-    1.06
-   ]
+   "hue": "amber"
   },
   {
    "id": "s06_turronquaker_09",
    "kind": "raw",
-   "src": "real/turron_quaker_1.jpg",
+   "src": "real/card_d06.jpg",
    "start": 445.99,
    "dur": 5.45,
    "hue": "amber"
@@ -1289,15 +1281,19 @@
   {
    "id": "s06_turronquaker_10",
    "kind": "raw",
-   "src": "real/turron_quaker_2.jpg",
+   "src": "broll/d05_coco_ingr.mp4",
    "start": 451.44,
    "dur": 7.44,
-   "hue": "amber"
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
   },
   {
    "id": "s06_turronquaker_11",
    "kind": "raw",
-   "src": "broll/s06_turronquaker_11.mp4",
+   "src": "broll/d06_turronquaker_proc.mp4",
    "start": 458.88,
    "dur": 6.16,
    "hue": "amber",
@@ -1332,7 +1328,7 @@
   {
    "id": "s07_mantecol_02",
    "kind": "raw",
-   "src": "broll/s07_mantecol_12.mp4",
+   "src": "broll/s07_mantecol_02.mp4",
    "start": 470.98,
    "dur": 5.98,
    "hue": "amber",
@@ -1361,7 +1357,7 @@
   {
    "id": "s07_mantecol_03",
    "kind": "raw",
-   "src": "broll/d07_mantecol_proc.mp4",
+   "src": "broll/s07_mantecol_04.mp4",
    "start": 476.96,
    "dur": 2.44,
    "hue": "amber",
@@ -1373,11 +1369,14 @@
   {
    "id": "s07_mantecol_04",
    "kind": "raw",
-   "src": "broll/d07_mantecol_serve.mp4",
+   "src": "broll/s07_mantecol_04.mp4",
    "start": 479.4,
    "dur": 4.78,
    "hue": "amber",
-   "fit": "blur"
+   "zoom": [
+    1.04,
+    1.06
+   ]
   },
   {
    "id": "citaabuela_v2_7_18.6",
@@ -1426,23 +1425,31 @@
   {
    "id": "s07_mantecol_05",
    "kind": "raw",
-   "src": "real/mantecol_1.jpg",
+   "src": "broll/s07_mantecol_08.mp4",
    "start": 484.18,
    "dur": 3.78,
-   "hue": "amber"
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
   },
   {
    "id": "s07_mantecol_06",
    "kind": "raw",
-   "src": "real/card_d07.jpg",
+   "src": "broll/s07_mantecol_12.mp4",
    "start": 487.96,
    "dur": 4.97,
-   "hue": "amber"
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
   },
   {
    "id": "s07_mantecol_07",
    "kind": "raw",
-   "src": "broll/s07_mantecol_01.mp4",
+   "src": "broll/d07_mantecol_proc.mp4",
    "start": 492.93,
    "dur": 4.73,
    "hue": "amber",
@@ -1454,7 +1461,7 @@
   {
    "id": "s07_mantecol_08",
    "kind": "raw",
-   "src": "broll/s07_mantecol_12.mp4",
+   "src": "broll/s07_mantecol_08.mp4",
    "start": 497.66,
    "dur": 3.7,
    "hue": "amber",
@@ -1466,28 +1473,24 @@
   {
    "id": "s07_mantecol_09",
    "kind": "raw",
-   "src": "broll/d07_mantecol_proc.mp4",
+   "src": "broll/d07_mantecol_serve.mp4",
    "start": 501.36,
    "dur": 5.52,
-   "hue": "amber",
-   "zoom": [
-    1.04,
-    1.06
-   ]
-  },
-  {
-   "id": "s07_mantecol_10",
-   "kind": "raw",
-   "src": "broll/d07_mantecol_serve.mp4",
-   "start": 506.88,
-   "dur": 5.44,
    "hue": "amber",
    "fit": "blur"
   },
   {
-   "id": "s07_mantecol_11",
+   "id": "s07_mantecol_10",
    "kind": "raw",
    "src": "real/mantecol_1.jpg",
+   "start": 506.88,
+   "dur": 5.44,
+   "hue": "amber"
+  },
+  {
+   "id": "s07_mantecol_11",
+   "kind": "raw",
+   "src": "real/card_d07.jpg",
    "start": 512.32,
    "dur": 5.28,
    "hue": "amber"
@@ -1565,7 +1568,7 @@
   {
    "id": "s08_cascaritas_04",
    "kind": "raw",
-   "src": "broll/d08_cascaritas.mp4",
+   "src": "broll/s08_cascaritas_04.mp4",
    "start": 544.79,
    "dur": 7.95,
    "hue": "amber",
@@ -1577,7 +1580,7 @@
   {
    "id": "s08_cascaritas_05",
    "kind": "raw",
-   "src": "broll/d08_cascaritas_ingr.mp4",
+   "src": "broll/d08_cascaritas.mp4",
    "start": 552.74,
    "dur": 5.9,
    "hue": "amber",
@@ -1589,7 +1592,7 @@
   {
    "id": "s08_cascaritas_06",
    "kind": "raw",
-   "src": "broll/d08_cascaritas_proc.mp4",
+   "src": "broll/d08_cascaritas_ingr.mp4",
    "start": 558.64,
    "dur": 5.34,
    "hue": "amber",
@@ -1601,24 +1604,28 @@
   {
    "id": "s08_cascaritas_07",
    "kind": "raw",
-   "src": "broll/d08_cascaritas_serve.mp4",
+   "src": "broll/d08_cascaritas_proc.mp4",
    "start": 563.98,
    "dur": 7.14,
    "hue": "amber",
-   "fit": "blur"
+   "zoom": [
+    1.04,
+    1.06
+   ]
   },
   {
    "id": "s08_cascaritas_08",
    "kind": "raw",
-   "src": "real/cascaritas_naranja_1.jpg",
+   "src": "broll/d08_cascaritas_serve.mp4",
    "start": 571.12,
    "dur": 4.6,
-   "hue": "amber"
+   "hue": "amber",
+   "fit": "blur"
   },
   {
    "id": "s08_cascaritas_09",
    "kind": "raw",
-   "src": "real/card_d08.jpg",
+   "src": "real/cascaritas_naranja_1.jpg",
    "start": 575.72,
    "dur": 4.84,
    "hue": "amber"
@@ -1626,14 +1633,10 @@
   {
    "id": "s08_cascaritas_10",
    "kind": "raw",
-   "src": "broll/s08_cascaritas_03.mp4",
+   "src": "real/card_d08.jpg",
    "start": 580.56,
    "dur": 6.78,
-   "hue": "amber",
-   "zoom": [
-    1.04,
-    1.06
-   ]
+   "hue": "amber"
   },
   {
    "id": "top_v2_9",
@@ -1796,7 +1799,7 @@
    "index": 10,
    "total": 20,
    "title": "Alfeñiques",
-   "image": "broll/s10_alfeniques_01.mp4",
+   "image": "broll/s10_alfeniques_03.mp4",
    "start": 641.44,
    "dur": 4,
    "overlay": true
@@ -1804,23 +1807,23 @@
   {
    "id": "s10_alfeniques_01",
    "kind": "raw",
-   "src": "broll/s10_alfeniques_01.mp4",
+   "src": "broll/s10_alfeniques_03.mp4",
    "start": 642.64,
    "dur": 5,
+   "hue": "amber",
+   "fit": "blur"
+  },
+  {
+   "id": "s10_alfeniques_02",
+   "kind": "raw",
+   "src": "broll/s10_alfeniques_04.mp4",
+   "start": 647.64,
+   "dur": 4.8,
    "hue": "amber",
    "zoom": [
     1.04,
     1.06
    ]
-  },
-  {
-   "id": "s10_alfeniques_02",
-   "kind": "raw",
-   "src": "broll/s10_alfeniques_03.mp4",
-   "start": 647.64,
-   "dur": 4.8,
-   "hue": "amber",
-   "fit": "blur"
   },
   {
    "id": "citaabuela_v2_10_6",
@@ -1890,7 +1893,7 @@
   {
    "id": "s10_alfeniques_04",
    "kind": "raw",
-   "src": "broll/d10_alfeniques.mp4",
+   "src": "broll/s10_alfeniques_04.mp4",
    "start": 659.07,
    "dur": 7.05,
    "hue": "amber",
@@ -1902,16 +1905,19 @@
   {
    "id": "s10_alfeniques_05",
    "kind": "raw",
-   "src": "broll/d10_alfeniques_ingr.mp4",
+   "src": "broll/s10_alfeniques_09.mp4",
    "start": 666.12,
    "dur": 5.52,
    "hue": "amber",
-   "fit": "blur"
+   "zoom": [
+    1.04,
+    1.06
+   ]
   },
   {
    "id": "s10_alfeniques_06",
    "kind": "raw",
-   "src": "broll/d10_alfeniques_proc.mp4",
+   "src": "broll/d10_alfeniques.mp4",
    "start": 671.64,
    "dur": 6.4,
    "hue": "amber",
@@ -1923,7 +1929,7 @@
   {
    "id": "s10_alfeniques_07",
    "kind": "raw",
-   "src": "broll/d10_alfeniques_serve.mp4",
+   "src": "broll/d10_alfeniques_ingr.mp4",
    "start": 678.04,
    "dur": 7.24,
    "hue": "amber",
@@ -1932,51 +1938,51 @@
   {
    "id": "s10_alfeniques_08",
    "kind": "raw",
-   "src": "real/alfeniques_2.jpg",
+   "src": "broll/d10_alfeniques_proc.mp4",
    "start": 685.28,
    "dur": 6.48,
-   "hue": "amber"
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
   },
   {
    "id": "s10_alfeniques_09",
    "kind": "raw",
-   "src": "real/card_d10.jpg",
+   "src": "broll/s10_alfeniques_09.mp4",
    "start": 691.76,
    "dur": 4.4,
-   "hue": "amber"
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
   },
   {
    "id": "s10_alfeniques_10",
    "kind": "raw",
-   "src": "broll/s10_alfeniques_01.mp4",
+   "src": "broll/d10_alfeniques_serve.mp4",
    "start": 696.16,
    "dur": 7.31,
    "hue": "amber",
-   "zoom": [
-    1.04,
-    1.06
-   ]
+   "fit": "blur"
   },
   {
    "id": "s10_alfeniques_11",
    "kind": "raw",
-   "src": "broll/d10_alfeniques.mp4",
+   "src": "real/alfeniques_1.jpg",
    "start": 703.47,
    "dur": 3.77,
-   "hue": "amber",
-   "zoom": [
-    1.04,
-    1.06
-   ]
+   "hue": "amber"
   },
   {
    "id": "s10_alfeniques_12",
    "kind": "raw",
-   "src": "broll/d10_alfeniques_ingr.mp4",
+   "src": "real/alfeniques_2.jpg",
    "start": 707.24,
    "dur": 5.6,
-   "hue": "amber",
-   "fit": "blur"
+   "hue": "amber"
   },
   {
    "id": "top_v2_11",
@@ -2140,7 +2146,7 @@
    "index": 12,
    "total": 20,
    "title": "Arrope",
-   "image": "broll/s12_arrope_02.mp4",
+   "image": "broll/s12_arrope_10.mp4",
    "start": 784.76,
    "dur": 4,
    "overlay": true
@@ -2148,7 +2154,7 @@
   {
    "id": "s12_arrope_01",
    "kind": "raw",
-   "src": "broll/s12_arrope_02.mp4",
+   "src": "broll/s12_arrope_10.mp4",
    "start": 785.96,
    "dur": 5.23,
    "hue": "amber",
@@ -2160,7 +2166,7 @@
   {
    "id": "s12_arrope_02",
    "kind": "raw",
-   "src": "broll/s12_arrope_02.mp4",
+   "src": "broll/d12_arrope_ingr.mp4",
    "start": 791.19,
    "dur": 7.29,
    "hue": "amber",
@@ -2228,7 +2234,7 @@
   {
    "id": "s12_arrope_03",
    "kind": "raw",
-   "src": "broll/s12_arrope_03.mp4",
+   "src": "broll/d12_arrope_proc.mp4",
    "start": 798.48,
    "dur": 7.62,
    "hue": "amber",
@@ -2240,7 +2246,7 @@
   {
    "id": "s12_arrope_04",
    "kind": "raw",
-   "src": "broll/d12_arrope_ingr.mp4",
+   "src": "broll/d12_arrope_serve.mp4",
    "start": 806.1,
    "dur": 5.45,
    "hue": "amber",
@@ -2252,21 +2258,25 @@
   {
    "id": "s12_arrope_05",
    "kind": "raw",
-   "src": "broll/d12_arrope_proc.mp4",
+   "src": "real/arrope_1.jpg",
    "start": 811.55,
    "dur": 7.24,
-   "hue": "amber",
-   "zoom": [
-    1.04,
-    1.06
-   ]
+   "hue": "amber"
   },
   {
    "id": "s12_arrope_06",
    "kind": "raw",
-   "src": "broll/d12_arrope_serve.mp4",
+   "src": "real/arrope_2.jpg",
    "start": 818.79,
    "dur": 6.25,
+   "hue": "amber"
+  },
+  {
+   "id": "s12_arrope_07",
+   "kind": "raw",
+   "src": "broll/s12_arrope_10.mp4",
+   "start": 825.04,
+   "dur": 6.86,
    "hue": "amber",
    "zoom": [
     1.04,
@@ -2274,25 +2284,21 @@
    ]
   },
   {
-   "id": "s12_arrope_07",
-   "kind": "raw",
-   "src": "real/arrope_1.jpg",
-   "start": 825.04,
-   "dur": 6.86,
-   "hue": "amber"
-  },
-  {
    "id": "s12_arrope_08",
    "kind": "raw",
-   "src": "real/arrope_2.jpg",
+   "src": "broll/d12_arrope_ingr.mp4",
    "start": 831.9,
    "dur": 5.01,
-   "hue": "amber"
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
   },
   {
    "id": "s12_arrope_09",
    "kind": "raw",
-   "src": "broll/s12_arrope_03.mp4",
+   "src": "broll/d12_arrope_proc.mp4",
    "start": 836.91,
    "dur": 4.96,
    "hue": "amber",
@@ -2304,7 +2310,7 @@
   {
    "id": "s12_arrope_10",
    "kind": "raw",
-   "src": "broll/d12_arrope_ingr.mp4",
+   "src": "broll/s12_arrope_10.mp4",
    "start": 841.87,
    "dur": 5.75,
    "hue": "amber",
@@ -2319,7 +2325,7 @@
    "index": 13,
    "total": 20,
    "title": "Melcocha",
-   "image": "broll/s13_melcocha_11.mp4",
+   "image": "broll/s13_melcocha_04.mp4",
    "start": 846.42,
    "dur": 4,
    "overlay": true
@@ -2327,7 +2333,7 @@
   {
    "id": "s13_melcocha_01",
    "kind": "raw",
-   "src": "broll/s13_melcocha_11.mp4",
+   "src": "broll/s13_melcocha_04.mp4",
    "start": 847.62,
    "dur": 7.6,
    "hue": "amber",
@@ -2339,7 +2345,7 @@
   {
    "id": "fichadulce_v2_13_6",
    "kind": "fichadulce",
-   "bg": "broll/s13_melcocha_11.mp4",
+   "bg": "broll/s13_melcocha_04.mp4",
    "title": "Melcocha",
    "notes": [
     "Miel o azúcar",
@@ -2356,7 +2362,7 @@
   {
    "id": "s13_melcocha_02",
    "kind": "raw",
-   "src": "broll/d13_melcocha_close.mp4",
+   "src": "broll/s13_melcocha_10.mp4",
    "start": 855.22,
    "dur": 4.55,
    "hue": "amber",
@@ -2368,7 +2374,7 @@
   {
    "id": "s13_melcocha_03",
    "kind": "raw",
-   "src": "broll/d13_melcocha_proc.mp4",
+   "src": "broll/d13_melcocha_close.mp4",
    "start": 859.77,
    "dur": 6.59,
    "hue": "amber",
@@ -2380,23 +2386,31 @@
   {
    "id": "s13_melcocha_04",
    "kind": "raw",
-   "src": "real/melcocha_1.jpg",
+   "src": "broll/s13_melcocha_04.mp4",
    "start": 866.36,
    "dur": 4.56,
-   "hue": "amber"
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
   },
   {
    "id": "s13_melcocha_05",
    "kind": "raw",
-   "src": "real/melcocha_2.jpg",
+   "src": "broll/d13_melcocha_proc.mp4",
    "start": 870.92,
    "dur": 6.52,
-   "hue": "amber"
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
   },
   {
    "id": "s13_melcocha_06",
    "kind": "raw",
-   "src": "real/card_d13.jpg",
+   "src": "real/melcocha_1.jpg",
    "start": 877.44,
    "dur": 7,
    "hue": "amber"
@@ -2404,31 +2418,23 @@
   {
    "id": "s13_melcocha_07",
    "kind": "raw",
-   "src": "broll/s13_melcocha_11.mp4",
+   "src": "real/melcocha_2.jpg",
    "start": 884.44,
    "dur": 6.2,
-   "hue": "amber",
-   "zoom": [
-    1.04,
-    1.06
-   ]
+   "hue": "amber"
   },
   {
    "id": "s13_melcocha_08",
    "kind": "raw",
-   "src": "broll/d13_melcocha_close.mp4",
+   "src": "real/card_d13.jpg",
    "start": 890.64,
    "dur": 7.28,
-   "hue": "amber",
-   "zoom": [
-    1.04,
-    1.06
-   ]
+   "hue": "amber"
   },
   {
    "id": "s13_melcocha_09",
    "kind": "raw",
-   "src": "broll/d12_arrope_serve.mp4",
+   "src": "broll/s13_melcocha_10.mp4",
    "start": 897.92,
    "dur": 5.01,
    "hue": "amber",
@@ -2440,7 +2446,7 @@
   {
    "id": "s13_melcocha_10",
    "kind": "raw",
-   "src": "broll/d13_melcocha_proc.mp4",
+   "src": "broll/s13_melcocha_10.mp4",
    "start": 902.93,
    "dur": 5.51,
    "hue": "amber",
@@ -2452,7 +2458,7 @@
   {
    "id": "s13_melcocha_11",
    "kind": "raw",
-   "src": "broll/s13_melcocha_11.mp4",
+   "src": "broll/d13_melcocha_close.mp4",
    "start": 908.44,
    "dur": 6,
    "hue": "amber",
@@ -2670,7 +2676,7 @@
   {
    "id": "s15_ambrosia_02",
    "kind": "raw",
-   "src": "broll/s15_ambrosia_06.mp4",
+   "src": "broll/d15_ambrosia.mp4",
    "start": 981.98,
    "dur": 6.38,
    "hue": "amber",
@@ -2682,7 +2688,7 @@
   {
    "id": "s15_ambrosia_03",
    "kind": "raw",
-   "src": "broll/d15_ambrosia.mp4",
+   "src": "broll/d15_ambrosia_ingr.mp4",
    "start": 988.36,
    "dur": 7.24,
    "hue": "amber",
@@ -2694,19 +2700,15 @@
   {
    "id": "s15_ambrosia_04",
    "kind": "raw",
-   "src": "broll/d15_ambrosia_ingr.mp4",
+   "src": "real/ambrosia_1.jpg",
    "start": 995.6,
    "dur": 7.58,
-   "hue": "amber",
-   "zoom": [
-    1.04,
-    1.06
-   ]
+   "hue": "amber"
   },
   {
    "id": "s15_ambrosia_05",
    "kind": "raw",
-   "src": "real/ambrosia_1.jpg",
+   "src": "real/ambrosia_2.jpg",
    "start": 1003.18,
    "dur": 4.63,
    "hue": "amber"
@@ -2714,9 +2716,17 @@
   {
    "id": "s15_ambrosia_06",
    "kind": "raw",
-   "src": "broll/s15_ambrosia_06.mp4",
+   "src": "real/card_d15.jpg",
    "start": 1007.81,
    "dur": 5.74,
+   "hue": "amber"
+  },
+  {
+   "id": "s15_ambrosia_07",
+   "kind": "raw",
+   "src": "broll/s15_ambrosia_01.mp4",
+   "start": 1013.55,
+   "dur": 6.67,
    "hue": "amber",
    "zoom": [
     1.04,
@@ -2724,25 +2734,21 @@
    ]
   },
   {
-   "id": "s15_ambrosia_07",
-   "kind": "raw",
-   "src": "real/ambrosia_2.jpg",
-   "start": 1013.55,
-   "dur": 6.67,
-   "hue": "amber"
-  },
-  {
    "id": "s15_ambrosia_08",
    "kind": "raw",
-   "src": "real/card_d15.jpg",
+   "src": "broll/d15_ambrosia.mp4",
    "start": 1020.22,
    "dur": 7.54,
-   "hue": "amber"
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
   },
   {
    "id": "s15_ambrosia_09",
    "kind": "raw",
-   "src": "broll/s15_ambrosia_01.mp4",
+   "src": "broll/d15_ambrosia_ingr.mp4",
    "start": 1027.76,
    "dur": 5.69,
    "hue": "amber",
@@ -2754,14 +2760,10 @@
   {
    "id": "s15_ambrosia_10",
    "kind": "raw",
-   "src": "broll/d15_ambrosia.mp4",
+   "src": "real/ambrosia_1.jpg",
    "start": 1033.45,
    "dur": 6.98,
-   "hue": "amber",
-   "zoom": [
-    1.04,
-    1.06
-   ]
+   "hue": "amber"
   },
   {
    "id": "top_v2_16",
@@ -2988,7 +2990,7 @@
   {
    "id": "s17_chupetines_03",
    "kind": "raw",
-   "src": "broll/s17_chupetines_03.mp4",
+   "src": "broll/s17_chupetines_06.mp4",
    "start": 1117.48,
    "dur": 6.86,
    "hue": "amber",
@@ -3000,7 +3002,7 @@
   {
    "id": "s17_chupetines_04",
    "kind": "raw",
-   "src": "broll/s17_chupetines_06.mp4",
+   "src": "broll/s17_chupetines_09.mp4",
    "start": 1124.34,
    "dur": 8.02,
    "hue": "amber",
@@ -3012,14 +3014,11 @@
   {
    "id": "s17_chupetines_05",
    "kind": "raw",
-   "src": "broll/s17_chupetines_09.mp4",
+   "src": "broll/s17_chupetines_10.mp4",
    "start": 1132.36,
    "dur": 5.2,
    "hue": "amber",
-   "zoom": [
-    1.04,
-    1.06
-   ]
+   "fit": "blur"
   },
   {
    "id": "s17_chupetines_06",
@@ -3036,16 +3035,15 @@
   {
    "id": "s17_chupetines_07",
    "kind": "raw",
-   "src": "broll/s17_chupetines_10.mp4",
+   "src": "real/chupetines_1.jpg",
    "start": 1144.08,
    "dur": 4.64,
-   "hue": "amber",
-   "fit": "blur"
+   "hue": "amber"
   },
   {
    "id": "s17_chupetines_08",
    "kind": "raw",
-   "src": "real/chupetines_1.jpg",
+   "src": "real/chupetines_2.jpg",
    "start": 1148.72,
    "dur": 7.37,
    "hue": "amber"
@@ -3408,16 +3406,19 @@
   {
    "id": "s20_quesillo_02",
    "kind": "raw",
-   "src": "broll/s20_quesillo_02.mp4",
+   "src": "broll/s20_quesillo_07.mp4",
    "start": 1304.73,
    "dur": 7.55,
    "hue": "amber",
-   "fit": "blur"
+   "zoom": [
+    1.04,
+    1.06
+   ]
   },
   {
    "id": "s20_quesillo_03",
    "kind": "raw",
-   "src": "broll/s20_quesillo_07.mp4",
+   "src": "broll/d20_quesillo.mp4",
    "start": 1312.28,
    "dur": 7.57,
    "hue": "amber",
@@ -3457,35 +3458,32 @@
   {
    "id": "s20_quesillo_04",
    "kind": "raw",
-   "src": "broll/d20_quesillo.mp4",
+   "src": "broll/d20_quesillo_close.mp4",
    "start": 1319.85,
    "dur": 7.65,
-   "hue": "amber",
-   "zoom": [
-    1.04,
-    1.06
-   ]
-  },
-  {
-   "id": "s20_quesillo_05",
-   "kind": "raw",
-   "src": "broll/d20_quesillo_close.mp4",
-   "start": 1327.5,
-   "dur": 6.64,
    "hue": "amber",
    "fit": "blur"
   },
   {
-   "id": "s20_quesillo_06",
+   "id": "s20_quesillo_05",
    "kind": "raw",
    "src": "broll/d20_quesillo_ingr.mp4",
-   "start": 1334.14,
-   "dur": 5.15,
+   "start": 1327.5,
+   "dur": 6.64,
    "hue": "amber",
    "zoom": [
     1.04,
     1.06
    ]
+  },
+  {
+   "id": "s20_quesillo_06",
+   "kind": "raw",
+   "src": "broll/d20_quesillo_serve.mp4",
+   "start": 1334.14,
+   "dur": 5.15,
+   "hue": "amber",
+   "fit": "blur"
   },
   {
    "id": "s20_quesillo_07",
@@ -3502,11 +3500,10 @@
   {
    "id": "s20_quesillo_08",
    "kind": "raw",
-   "src": "broll/d20_quesillo_serve.mp4",
+   "src": "real/quesillo_arrope_1.jpg",
    "start": 1346.82,
    "dur": 7.27,
-   "hue": "amber",
-   "fit": "blur"
+   "hue": "amber"
   },
   {
    "id": "extras_01",
@@ -3523,15 +3520,19 @@
   {
    "id": "extras_02",
    "kind": "raw",
-   "src": "real/vintage_cocina1_1.jpg",
+   "src": "broll/extras_02.mp4",
    "start": 1361.5,
    "dur": 8.03,
-   "hue": "amber"
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
   },
   {
    "id": "extras_03",
    "kind": "raw",
-   "src": "real/vintage_cocina2_1.jpg",
+   "src": "real/vintage_cocina1_1.jpg",
    "start": 1369.53,
    "dur": 6.49,
    "hue": "amber"
@@ -3539,7 +3540,7 @@
   {
    "id": "extras_04",
    "kind": "raw",
-   "src": "real/vintage_abuela_1.jpg",
+   "src": "real/vintage_cocina2_1.jpg",
    "start": 1376.02,
    "dur": 7.53,
    "hue": "amber"
@@ -3559,7 +3560,7 @@
   {
    "id": "extras_06",
    "kind": "raw",
-   "src": "real/vintage_familia1_1.jpg",
+   "src": "real/vintage_abuela_1.jpg",
    "start": 1390.8,
    "dur": 7.32,
    "hue": "amber"
@@ -3567,7 +3568,7 @@
   {
    "id": "extras_07",
    "kind": "raw",
-   "src": "real/vintage_manos_1.jpg",
+   "src": "real/vintage_familia1_1.jpg",
    "start": 1398.12,
    "dur": 7.37,
    "hue": "amber"
@@ -3575,7 +3576,7 @@
   {
    "id": "extras_08",
    "kind": "raw",
-   "src": "real/vintage_cocina1_3.jpg",
+   "src": "real/vintage_manos_1.jpg",
    "start": 1405.49,
    "dur": 7.05,
    "hue": "amber"
@@ -3583,7 +3584,7 @@
   {
    "id": "extras_09",
    "kind": "raw",
-   "src": "real/vintage_abuela_2.jpg",
+   "src": "real/vintage_cocina1_3.jpg",
    "start": 1412.54,
    "dur": 5.84,
    "hue": "amber"
@@ -3603,7 +3604,7 @@
   {
    "id": "extras_11",
    "kind": "raw",
-   "src": "real/vintage_familia1_2.jpg",
+   "src": "real/vintage_abuela_2.jpg",
    "start": 1423.02,
    "dur": 5.45,
    "hue": "amber"
@@ -3611,7 +3612,7 @@
   {
    "id": "extras_12",
    "kind": "raw",
-   "src": "real/vintage_manos_2.jpg",
+   "src": "real/vintage_familia1_2.jpg",
    "start": 1428.47,
    "dur": 7.63,
    "hue": "amber"
@@ -3619,7 +3620,7 @@
   {
    "id": "extras_13",
    "kind": "raw",
-   "src": "real/vintage_cocina2_2.jpg",
+   "src": "real/vintage_manos_2.jpg",
    "start": 1436.1,
    "dur": 7.64,
    "hue": "amber"
@@ -3627,19 +3628,15 @@
   {
    "id": "extras_14",
    "kind": "raw",
-   "src": "broll/amb_abuela_cocina1.mp4",
+   "src": "real/vintage_cocina2_2.jpg",
    "start": 1443.74,
    "dur": 6.8,
-   "hue": "amber",
-   "zoom": [
-    1.04,
-    1.06
-   ]
+   "hue": "amber"
   },
   {
    "id": "extras_15",
    "kind": "raw",
-   "src": "broll/amb_abuela_cocina2.mp4",
+   "src": "broll/amb_abuela_cocina1.mp4",
    "start": 1450.54,
    "dur": 4.93,
    "hue": "amber",
@@ -3651,7 +3648,7 @@
   {
    "id": "extras_16",
    "kind": "raw",
-   "src": "broll/amb_almibar.mp4",
+   "src": "broll/amb_abuela_cocina2.mp4",
    "start": 1455.47,
    "dur": 6.06,
    "hue": "amber",
@@ -3663,7 +3660,7 @@
   {
    "id": "extras_17",
    "kind": "raw",
-   "src": "broll/amb_azucar_caramelo1.mp4",
+   "src": "broll/amb_almibar.mp4",
    "start": 1461.53,
    "dur": 7.39,
    "hue": "amber",
@@ -3675,7 +3672,7 @@
   {
    "id": "extras_18",
    "kind": "raw",
-   "src": "broll/amb_cuchara_madera.mp4",
+   "src": "broll/amb_azucar_caramelo1.mp4",
    "start": 1468.92,
    "dur": 7.22,
    "hue": "amber",
@@ -3687,16 +3684,19 @@
   {
    "id": "extras_19",
    "kind": "raw",
-   "src": "broll/amb_cocina_vieja1.mp4",
+   "src": "broll/amb_cuchara_madera.mp4",
    "start": 1476.14,
    "dur": 7.32,
    "hue": "amber",
-   "fit": "blur"
+   "zoom": [
+    1.04,
+    1.06
+   ]
   },
   {
    "id": "cierre_01",
    "kind": "raw",
-   "src": "broll/amb_manos_viejas1.mp4",
+   "src": "broll/amb_cocina_vieja1.mp4",
    "start": 1483.46,
    "dur": 5.08,
    "hue": "amber",
@@ -3705,19 +3705,16 @@
   {
    "id": "cierre_02",
    "kind": "raw",
-   "src": "broll/amb_manos_viejas2.mp4",
+   "src": "broll/amb_manos_viejas1.mp4",
    "start": 1488.54,
    "dur": 6.26,
    "hue": "amber",
-   "zoom": [
-    1.04,
-    1.06
-   ]
+   "fit": "blur"
   },
   {
    "id": "cierre_03",
    "kind": "raw",
-   "src": "broll/intro_caramelo.mp4",
+   "src": "broll/amb_manos_viejas2.mp4",
    "start": 1494.8,
    "dur": 5.83,
    "hue": "amber",
@@ -3729,7 +3726,7 @@
   {
    "id": "cierre_04",
    "kind": "raw",
-   "src": "broll/amb_campo_fruta.mp4",
+   "src": "broll/intro_caramelo.mp4",
    "start": 1500.63,
    "dur": 5,
    "hue": "amber",
@@ -3741,15 +3738,19 @@
   {
    "id": "cierre_05",
    "kind": "raw",
-   "src": "real/vintage_cocina1_1.jpg",
+   "src": "broll/amb_campo_fruta.mp4",
    "start": 1505.63,
    "dur": 7.6,
-   "hue": "amber"
+   "hue": "amber",
+   "zoom": [
+    1.04,
+    1.06
+   ]
   },
   {
    "id": "cierre_06",
    "kind": "raw",
-   "src": "real/vintage_cocina2_1.jpg",
+   "src": "real/vintage_cocina1_1.jpg",
    "start": 1513.23,
    "dur": 6.56,
    "hue": "amber"
@@ -3757,7 +3758,7 @@
   {
    "id": "cierre_07",
    "kind": "raw",
-   "src": "real/vintage_abuela_1.jpg",
+   "src": "real/vintage_cocina2_1.jpg",
    "start": 1519.79,
    "dur": 6.1,
    "hue": "amber"
@@ -3805,7 +3806,7 @@
   {
    "id": "cierre_08",
    "kind": "raw",
-   "src": "real/vintage_familia1_1.jpg",
+   "src": "real/vintage_abuela_1.jpg",
    "start": 1525.89,
    "dur": 7.39,
    "hue": "amber"
@@ -3813,7 +3814,7 @@
   {
    "id": "cierre_09",
    "kind": "raw",
-   "src": "real/vintage_manos_1.jpg",
+   "src": "real/vintage_familia1_1.jpg",
    "start": 1533.28,
    "dur": 4.83,
    "hue": "amber"
@@ -3821,7 +3822,7 @@
   {
    "id": "cierre_10",
    "kind": "raw",
-   "src": "real/vintage_cocina1_3.jpg",
+   "src": "real/vintage_manos_1.jpg",
    "start": 1538.11,
    "dur": 5.39,
    "hue": "amber"
@@ -3829,7 +3830,7 @@
   {
    "id": "cierre_11",
    "kind": "raw",
-   "src": "real/vintage_abuela_2.jpg",
+   "src": "real/vintage_cocina1_3.jpg",
    "start": 1543.5,
    "dur": 6.19,
    "hue": "amber"
@@ -3837,7 +3838,7 @@
   {
    "id": "cierre_12",
    "kind": "raw",
-   "src": "real/vintage_familia1_2.jpg",
+   "src": "real/vintage_abuela_2.jpg",
    "start": 1549.69,
    "dur": 6.12,
    "hue": "amber"
@@ -3845,7 +3846,7 @@
   {
    "id": "cierre_13",
    "kind": "raw",
-   "src": "real/vintage_manos_2.jpg",
+   "src": "real/vintage_familia1_2.jpg",
    "start": 1555.81,
    "dur": 7.08,
    "hue": "amber"
@@ -3853,7 +3854,7 @@
   {
    "id": "cierre_14",
    "kind": "raw",
-   "src": "real/vintage_cocina2_2.jpg",
+   "src": "real/vintage_manos_2.jpg",
    "start": 1562.89,
    "dur": 6.26,
    "hue": "amber"
@@ -3861,19 +3862,15 @@
   {
    "id": "cierre_15",
    "kind": "raw",
-   "src": "broll/amb_abuela_cocina1.mp4",
+   "src": "real/vintage_cocina2_2.jpg",
    "start": 1569.15,
    "dur": 8.15,
-   "hue": "amber",
-   "zoom": [
-    1.04,
-    1.06
-   ]
+   "hue": "amber"
   },
   {
    "id": "cierre_16",
    "kind": "raw",
-   "src": "broll/amb_abuela_cocina2.mp4",
+   "src": "broll/amb_abuela_cocina1.mp4",
    "start": 1577.3,
    "dur": 7.4,
    "hue": "amber",
@@ -3885,7 +3882,7 @@
   {
    "id": "cierre_17",
    "kind": "raw",
-   "src": "broll/amb_almibar.mp4",
+   "src": "broll/amb_abuela_cocina2.mp4",
    "start": 1584.7,
    "dur": 6.45,
    "hue": "amber",
@@ -3897,7 +3894,7 @@
   {
    "id": "cierre_18",
    "kind": "raw",
-   "src": "broll/amb_azucar_caramelo1.mp4",
+   "src": "broll/amb_almibar.mp4",
    "start": 1591.15,
    "dur": 4.58,
    "hue": "amber",
@@ -3909,7 +3906,7 @@
   {
    "id": "cierre_19",
    "kind": "raw",
-   "src": "broll/amb_cuchara_madera.mp4",
+   "src": "broll/amb_azucar_caramelo1.mp4",
    "start": 1595.73,
    "dur": 8.27,
    "hue": "amber",
