@@ -1297,6 +1297,14 @@ function renderEl(b) {
         (b.eyebrow ? ` eyebrow=${j(b.eyebrow)}` : ``) +
         ` />`
       );
+    case "dishgrid":
+      return (
+        `<DishGrid durationInFrames={d} images={${j(b.images || [])}}` +
+        (b.cols != null ? ` cols={${b.cols}}` : ``) +
+        (b.title ? ` title=${j(b.title)}` : ``) +
+        (b.eyebrow ? ` eyebrow=${j(b.eyebrow)}` : ``) +
+        ` />`
+      );
     // ── KIT PREMIUM (src/VideoEdit/kit/premium/) — catálogo themeable genérico.
     // beat: { kind:"premium", comp:"VsDuel", theme:"earth", zone:"topLeft", overlay:true, ...props }
     // `comp` = nombre EXACTO exportado por kit/premium/index.ts (VsDuel, BigStatReveal,
@@ -1485,6 +1493,7 @@ if (kinds.has("manualcard")) imports.push(`import { ManualCard } from "./overlay
 { const duMap = { fichadulce: "FichaDulce", antesahora: "AntesAhora", citaabuela: "CitaAbuela", ingredientesflotan: "IngredientesFlotan", topdulce: "TopDulce", numerodulce: "NumeroDulce" };
   const duUsed = Object.entries(duMap).filter(([k]) => kinds.has(k)).map(([, v]) => v);
   if (duUsed.length) imports.push(`import { ${duUsed.join(", ")} } from "./components/DulcesCards";`); }
+if (kinds.has("dishgrid")) imports.push(`import { DishGrid } from "./components/DishGrid";`);
 // ── KIT PREMIUM (themeable) — componentes usados vía kind:"premium" + comp:"X" ──
 if (kinds.has("premium")) {
   imports.push(`import { PremiumOverlay } from "./scenes/PremiumOverlay";`);
