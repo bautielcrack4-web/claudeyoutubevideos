@@ -18,6 +18,9 @@ import { BlurExplainer } from "./scenes/BlurExplainer";
 import { DocNameCard } from "./scenes/DocNameCard";
 import { BenefitLockReveal } from "./scenes/BenefitLockReveal";
 import { Pizarra } from "./scenes/Pizarra";
+import { StudyMagazine, NewspaperStudy, HighlightData, CitationCard } from "./scenes/RecalRich";
+
+const STUDY_RE = /carcinogenesis|harvard|efsa|lancet|toxicology|iarc|oms|journal|revista|estudio|an[aá]lisis|food chemistry|nutrition/i;
 
 const BENEFIT_IDX: Record<string, number> = { arrugas: 0, varices: 1, dolores: 2 };
 
@@ -107,6 +110,13 @@ export function renderRecalComp(b: any, d: number): React.ReactNode {
       return <BigStatReveal durationInFrames={d} theme={T} eyebrow={b.eyebrow} value={Number(b.value) || 0} prefix={b.prefix || ""} suffix={b.suffix || ""} support={b.label || b.support || ""} />;
     case "headline": {
       const toks: string[] = Array.isArray(b.tokens) ? b.tokens : String(b.text || "").split(" ");
+      const txt = toks.join(" ");
+      // estudios/revistas → tapa de revista o recorte de diario (alterna por longitud)
+      if (STUDY_RE.test(txt)) {
+        if (txt.length > 16 && txt.length % 2 === 0)
+          return <NewspaperStudy durationInFrames={d} source={toks[0]} headline={toks.slice(1).join(" ") || txt} body="Estudio revisado por pares publicado en la literatura científica que documenta el riesgo asociado." highlight="riesgo asociado" />;
+        return <StudyMagazine durationInFrames={d} journal={txt} title="Riesgo documentado y revisado por pares" stat="" />;
+      }
       const key = b.key || toks[toks.length - 1];
       return <HookCaption durationInFrames={d} theme={T} words={toks.map((w: string) => ({ text: w, boxed: w === key }))} sub={b.eyebrow} />;
     }

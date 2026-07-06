@@ -9,7 +9,8 @@ import { F_INTER } from "./kit/premium/theme";
 import { renderRecalComp } from "./FedererComponents";
 import { RECAL_BROLL } from "./recalentados_broll";
 import { RECAL_COMPS } from "./recalentados_beats";
-import { RECAL_SCRIMS, RECAL_EMPH, RECAL_ENDCARD, RECAL_END } from "./recalentados_hooks";
+import { RECAL_SCRIMS, RECAL_EMPH, RECAL_FOODS, RECAL_ENDCARD, RECAL_END } from "./recalentados_hooks";
+import { FoodLockReveal } from "./scenes/FoodLockReveal";
 
 // ── FEDERER SALUD · "Recalentados" ──────────────────────────────────────────
 // Plan visual segundo-a-segundo (6 agentes Haiku + densificado). 3 capas:
@@ -27,6 +28,17 @@ function buildWindows(): AvatarWindow[] {
   for (const b of RECAL_BROLL) pts.push({ start: b.start, mode: CORNER, pr: 0 });
   for (const c of RECAL_COMPS) pts.push({ start: c.start, mode: "hidden", pr: 1 });
   pts.push({ start: 2.0, mode: CORNER, pr: 2 }); // tras abrir full ~2s
+  // ★ avatar vuelve a PANTALLA COMPLETA cada ~57s por ~4s (donde no hay componente ni
+  // emphasis) — para que no quede siempre en la esquina. Momento "cara a cámara".
+  const compRanges = RECAL_COMPS.map((c: any) => [c.start - 0.5, c.start + c.dur + 0.5]);
+  const emphRanges = RECAL_EMPH.map((e) => [e.from - 0.5, e.to + 0.5]);
+  const busy = (a: number, b: number) => [...compRanges, ...emphRanges].some(([x, y]) => a < y && b > x);
+  for (let t = 55; t < RECAL_END - 8; t += 57) {
+    let s = t;
+    // buscar una ventana de ~4s libre cerca de t
+    for (let k = 0; k < 20 && busy(s, s + 4.2); k++) s += 2;
+    if (!busy(s, s + 4.2)) { pts.push({ start: +s.toFixed(2), mode: "full", pr: 2 }); pts.push({ start: +(s + 4).toFixed(2), mode: CORNER, pr: 1.5 }); }
+  }
   pts.sort((a, b) => a.start - b.start || b.pr - a.pr);
   const w: AvatarWindow[] = [];
   let last = "";
@@ -59,6 +71,13 @@ export const MainRecalentados: React.FC = () => {
       {RECAL_SCRIMS.map((s, i) => (
         <Sequence key={`s_${i}`} from={sec(s.start)} durationInFrames={sec(Math.max(1.4, s.dur))} layout="none">
           <AvatarScrimText durationInFrames={sec(Math.max(1.4, s.dur))} impact={s.word} accentColor={s.accent === "coral" ? CORAL : TEAL} font={F_INTER} fontSize={150} />
+        </Sequence>
+      ))}
+
+      {/* REVELACIÓN DE ALIMENTOS — mapa de candados zigzag (número uno/dos/...) */}
+      {RECAL_FOODS.map((f, i) => (
+        <Sequence key={`food_${i}`} from={sec(f.start)} durationInFrames={sec(f.dur)} layout="none">
+          <FoodLockReveal durationInFrames={sec(f.dur)} index={f.index} />
         </Sequence>
       ))}
 
