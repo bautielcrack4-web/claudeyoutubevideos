@@ -38,9 +38,12 @@ jobs:
             ~/.cache/pip
             ~/.cache/whisper
           key: align-${{ runner.os }}-${{ github.event.inputs.model }}-v1
-      - name: install stable-ts (torch CPU-only — sin CUDA no hace falta la build pesada)
+      # torch Y torchaudio del indice CPU-only (si torchaudio se resuelve del PyPI
+      # normal via stable-ts trae una build linkeada a CUDA -> "libcudart.so.13" no
+      # existe en el runner y explota al importar).
+      - name: install stable-ts (torch+torchaudio CPU-only — sin CUDA no hace falta la build pesada)
         run: |
-          pip install torch --index-url https://download.pytorch.org/whl/cpu
+          pip install torch torchaudio --index-url https://download.pytorch.org/whl/cpu
           pip install stable-ts
       - name: download audio + guion
         env:
