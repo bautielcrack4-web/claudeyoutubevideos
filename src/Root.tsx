@@ -13,6 +13,7 @@ import { MainComidas, TOTAL_FRAMES_COMIDAS } from "./VideoEdit/Main_comidas";
 import { MainDomingos, TOTAL_FRAMES_DOM } from "./VideoEdit/Main_domingos";
 import { MainCocina, TOTAL_FRAMES_COC } from "./VideoEdit/Main_cocina";
 import { MainEstufaRocket, TOTAL_FRAMES_ER } from "./VideoEdit/Main_estufarocket";
+import { MainMaderaRest, TOTAL_FRAMES_MR } from "./VideoEdit/Main_maderarest";
 import { MainFederer, TOTAL_FRAMES_FED } from "./VideoEdit/Main_federer";
 import { MainRecalentados, TOTAL_FRAMES_RECAL } from "./VideoEdit/Main_recalentados";
 import { MainBorax, TOTAL_FRAMES_BX } from "./VideoEdit/Main_borax";
@@ -389,6 +390,8 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="Cocina" component={MainCocina} durationInFrames={TOTAL_FRAMES_COC} fps={30} width={1920} height={1080} />
       {/* VIDEO 1 · EL CONSTRUCTOR LIBRE — Calenté toda mi casa con ramitas (avatar Tomás) */}
       <Composition id="EstufaRocket" component={MainEstufaRocket} durationInFrames={TOTAL_FRAMES_ER} fps={30} width={1920} height={1080} />
+      {/* SUBNICHO MADERA · EL CONSTRUCTOR LIBRE — Oculta desde 1932: madera como nueva (avatar Tomás) */}
+      <Composition id="MaderaRest" component={MainMaderaRest} durationInFrames={TOTAL_FRAMES_MR} fps={30} width={1920} height={1080} />
       {/* VIDEO 2 · EL CONSTRUCTOR LIBRE — Madera sin termitas (bórax + aceite) */}
       <Composition id="Borax" component={MainBorax} durationInFrames={TOTAL_FRAMES_BX} fps={30} width={1920} height={1080} />
       {/* VIDEO 3 · EL CONSTRUCTOR LIBRE — 2 metales = 0 plagas (barrera galvánica) */}
