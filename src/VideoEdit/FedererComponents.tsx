@@ -86,3 +86,45 @@ export function renderFedererComp(beat: any, d: number): React.ReactNode {
 
 // kinds que son COMPONENTES (no b-roll ni talk)
 export const COMP_KINDS = new Set(["headline", "stat", "quote", "chips", "splitlist", "checklist", "process", "ingredients", "annotated", "diagram", "rule", "nametag", "blurexplainer", "pizarra"]);
+
+// ── mapeador para el video RECALENTADOS (datos del plan de los agentes Haiku) ──
+function recalDiagram(concept: string, title: string, d: number): React.ReactNode {
+  const c = (concept || "generic").toLowerCase();
+  if (c.includes("nitros"))
+    return <FlowSteps durationInFrames={d} theme={T} title={title || "Formación de nitrosaminas"} nodes={[{ label: "Nitratos", sub: "en la verdura" }, { label: "Nitritos", sub: "en la heladera" }, { label: "Nitrosaminas", sub: "al recalentar" }]} />;
+  if (c.includes("oxid"))
+    return <FlowSteps durationInFrames={d} theme={T} title={title || "Oxidación"} nodes={[{ label: "Grasa/proteína", sub: "expuesta al O₂" }, { label: "Se desestabiliza", sub: "en la heladera" }, { label: "Peróxidos", sub: "dañan el ADN" }]} />;
+  if (c.includes("mail"))
+    return <FlowSteps durationInFrames={d} theme={T} title={title || "Reacción de Maillard"} nodes={[{ label: "Proteína + azúcar" }, { label: "Calor repetido" }, { label: "AGEs", sub: "inflamación" }]} />;
+  if (c.includes("dna") || c.includes("adn"))
+    return <CutawayCallouts durationInFrames={d} theme={T} title={title || "Daño al ADN"} callouts={[{ text: "Compuesto reactivo", tx: 0.3, ty: 0.35 }, { text: "Se une al ADN", tx: 0.6, ty: 0.6 }, { text: "Mutación", tx: 0.5, ty: 0.8 }]} />;
+  return <BulletCascade durationInFrames={d} theme={T} eyebrow={title || "Mecanismo"} bullets={[{ key: "Reacción química" }, { pre: "Riesgo de ", key: "cáncer" }]} />;
+}
+
+export function renderRecalComp(b: any, d: number): React.ReactNode {
+  switch (b.kind) {
+    case "stat":
+      return <BigStatReveal durationInFrames={d} theme={T} eyebrow={b.eyebrow} value={Number(b.value) || 0} prefix={b.prefix || ""} suffix={b.suffix || ""} support={b.label || b.support || ""} />;
+    case "headline": {
+      const toks: string[] = Array.isArray(b.tokens) ? b.tokens : String(b.text || "").split(" ");
+      const key = b.key || toks[toks.length - 1];
+      return <HookCaption durationInFrames={d} theme={T} words={toks.map((w: string) => ({ text: w, boxed: w === key }))} sub={b.eyebrow} />;
+    }
+    case "checklist":
+      return <ChecklistReveal durationInFrames={d} theme={T} title={b.title} items={(b.items || []).map((i: any) => (typeof i === "string" ? i : i.text))} />;
+    case "diagram":
+      return recalDiagram(b.concept, b.title, d);
+    case "pizarra": {
+      const slides = (b.slides || []).map((s: any) => {
+        const k = s.kind || (s.items ? "bullets" : "phrase");
+        if (k === "phrase") return { kind: "phrase", eyebrow: b.title, heading: s.heading || s.text || s.title || "" };
+        if (k === "steps") return { kind: "steps", eyebrow: b.title, steps: (s.steps || s.items || []).map((x: any) => (typeof x === "string" ? { title: x } : x)) };
+        if (k === "imgtext") return { kind: "imgtext", eyebrow: b.title, body: s.body || s.text || "" };
+        return { kind: "bullets", eyebrow: b.title, items: (s.items || []).map((x: any) => (typeof x === "string" ? x : x.text || x.title)) };
+      });
+      return <Pizarra durationInFrames={d} title={b.title} slides={slides.length ? slides : [{ kind: "phrase", eyebrow: b.title, heading: b.title || "" }]} />;
+    }
+    default:
+      return null;
+  }
+}
