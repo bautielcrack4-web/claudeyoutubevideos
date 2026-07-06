@@ -23,8 +23,6 @@ import { F_INTER } from "../kit/premium/theme";
 
 const TEAL = "#12B3AE";
 const TEALD = "#0c8f8b";
-const INK = "#12222B";
-const CORAL = "#E0523E";
 const VH = 1080;
 const VW = 1920;
 
