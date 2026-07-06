@@ -19,6 +19,7 @@ import { DocNameCard } from "./scenes/DocNameCard";
 import { BenefitLockReveal } from "./scenes/BenefitLockReveal";
 import { Pizarra } from "./scenes/Pizarra";
 import { StudyMagazine, NewspaperStudy, HighlightData, CitationCard } from "./scenes/RecalRich";
+import { ScrollDoc } from "./scenes/ScrollDoc";
 
 const STUDY_RE = /carcinogenesis|harvard|efsa|lancet|toxicology|iarc|oms|journal|revista|estudio|an[aá]lisis|food chemistry|nutrition/i;
 
@@ -104,20 +105,34 @@ function recalDiagram(concept: string, title: string, d: number): React.ReactNod
   return <BulletCascade durationInFrames={d} theme={T} eyebrow={title || "Mecanismo"} bullets={[{ key: "Reacción química" }, { pre: "Riesgo de ", key: "cáncer" }]} />;
 }
 
-export function renderRecalComp(b: any, d: number): React.ReactNode {
+export function renderRecalComp(b: any, d: number, idx = 0): React.ReactNode {
   switch (b.kind) {
-    case "stat":
-      return <BigStatReveal durationInFrames={d} theme={T} eyebrow={b.eyebrow} value={Number(b.value) || 0} prefix={b.prefix || ""} suffix={b.suffix || ""} support={b.label || b.support || ""} />;
+    case "scrolldoc":
+      return <ScrollDoc durationInFrames={d} panels={b.panels || []} />;
+    case "stat": {
+      // rotación UNIFORME por índice → los componentes ricos aparecen seguido:
+      // 0,1 resaltador amarillo · 2 cita con check · 3 stat grande (1 de cada 4).
+      const pick = idx % 4;
+      const val = Number(b.value) || 0, pre = b.prefix || "", suf = b.suffix || "", lab = b.label || b.support || "";
+      if (pick === 3)
+        return <BigStatReveal durationInFrames={d} theme={T} eyebrow={b.eyebrow} value={val} prefix={pre} suffix={suf} support={lab} />;
+      if (pick === 2)
+        return <CitationCard durationInFrames={d} journal="Literatura científica revisada por pares" finding={b.eyebrow || lab} stat={val} statPrefix={pre} statSuffix={suf} statLabel={lab} />;
+      return <HighlightData durationInFrames={d} pre={pre} highlight={`${val}${suf}`} post={lab} source="Dato documentado" />;
+    }
     case "headline": {
       const toks: string[] = Array.isArray(b.tokens) ? b.tokens : String(b.text || "").split(" ");
       const txt = toks.join(" ");
-      // estudios/revistas → tapa de revista o recorte de diario (alterna por longitud)
+      // estudios/revistas → tapa de revista o recorte de diario (alterna)
       if (STUDY_RE.test(txt)) {
-        if (txt.length > 16 && txt.length % 2 === 0)
+        if (idx % 2 === 0)
           return <NewspaperStudy durationInFrames={d} source={toks[0]} headline={toks.slice(1).join(" ") || txt} body="Estudio revisado por pares publicado en la literatura científica que documenta el riesgo asociado." highlight="riesgo asociado" />;
         return <StudyMagazine durationInFrames={d} journal={txt} title="Riesgo documentado y revisado por pares" stat="" />;
       }
-      const key = b.key || toks[toks.length - 1];
+      // no-estudio: mayoría resaltador amarillo, 1 de cada 3 caption cinético
+      const key = b.key && toks.includes(b.key) ? b.key : toks[toks.length - 1];
+      if (idx % 3 !== 0)
+        return <HighlightData durationInFrames={d} pre={toks.slice(0, -1).join(" ")} highlight={toks[toks.length - 1]} post="" source={b.eyebrow} />;
       return <HookCaption durationInFrames={d} theme={T} words={toks.map((w: string) => ({ text: w, boxed: w === key }))} sub={b.eyebrow} />;
     }
     case "checklist":

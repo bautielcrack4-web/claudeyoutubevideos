@@ -81,11 +81,15 @@ export const AvatarLayer: React.FC<{
   const toGeom: Geom = curMode === "hidden" ? { ...geomOf(prevMode), op: 0 } : geomOf(curMode);
   const fromGeom: Geom = prevMode === "hidden" ? { ...geomOf(curMode), op: 0 } : geomOf(prevMode);
 
-  const p = interpolate(t - starts[i], [0, TRANS], [0, 1], {
-    extrapolateLeft: "clamp",
-    extrapolateRight: "clamp",
-    easing: Easing.inOut(Easing.cubic),
-  });
+  // ★ Volver a PANTALLA COMPLETA = CORTE DURO (sin animación de transición): la
+  // geometría salta directo a full (p=1). El slide suave solo aplica al resto de modos.
+  const p = curMode === "full"
+    ? 1
+    : interpolate(t - starts[i], [0, TRANS], [0, 1], {
+        extrapolateLeft: "clamp",
+        extrapolateRight: "clamp",
+        easing: Easing.inOut(Easing.cubic),
+      });
 
   const x = lerp(fromGeom.x, toGeom.x, p);
   const y = lerp(fromGeom.y, toGeom.y, p);

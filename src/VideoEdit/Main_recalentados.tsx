@@ -47,6 +47,13 @@ function buildWindows(): AvatarWindow[] {
 }
 const AVATAR_WINDOWS = buildWindows();
 
+// ordinal POR TIPO de cada componente (stat #0,#1,… headline #0,#1,…) → rotación
+// uniforme de los componentes ricos dentro de cada familia.
+const KIND_ORD: number[] = (() => {
+  const seen: Record<string, number> = {};
+  return RECAL_COMPS.map((c: any) => (seen[c.kind] = (seen[c.kind] ?? -1) + 1));
+})();
+
 export const MainRecalentados: React.FC = () => {
   return (
     <AbsoluteFill style={{ backgroundColor: BG }}>
@@ -63,7 +70,7 @@ export const MainRecalentados: React.FC = () => {
       {/* CAPA 3 — componentes premium (stat/headline/pizarra/diagram/checklist) */}
       {RECAL_COMPS.map((c: any, i: number) => (
         <Sequence key={`c_${c.id || i}`} from={sec(c.start)} durationInFrames={Math.max(1, sec(c.dur))}>
-          {renderRecalComp(c, Math.max(1, sec(c.dur)))}
+          {renderRecalComp(c, Math.max(1, sec(c.dur)), KIND_ORD[i])}
         </Sequence>
       ))}
 
