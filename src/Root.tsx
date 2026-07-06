@@ -14,6 +14,7 @@ import { MainDomingos, TOTAL_FRAMES_DOM } from "./VideoEdit/Main_domingos";
 import { MainCocina, TOTAL_FRAMES_COC } from "./VideoEdit/Main_cocina";
 import { MainEstufaRocket, TOTAL_FRAMES_ER } from "./VideoEdit/Main_estufarocket";
 import { MainFederer, TOTAL_FRAMES_FED } from "./VideoEdit/Main_federer";
+import { MainRecalentados, TOTAL_FRAMES_RECAL } from "./VideoEdit/Main_recalentados";
 import { MainBorax, TOTAL_FRAMES_BX } from "./VideoEdit/Main_borax";
 import { MainBarrera, TOTAL_FRAMES_BRR } from "./VideoEdit/Main_barrera";
 import { MainJabon, TOTAL_FRAMES_JABON } from "./VideoEdit/Main_jabon";
@@ -380,6 +381,8 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="Comidas" component={MainComidas} durationInFrames={TOTAL_FRAMES_COMIDAS} fps={30} width={1920} height={1080} />
       {/* Dr. Federer — El truco del ROMERO */}
       <Composition id="Federer" component={MainFederer} durationInFrames={TOTAL_FRAMES_FED} fps={30} width={1920} height={1080} />
+      {/* Federer Salud — Recalentados */}
+      <Composition id="Recalentados" component={MainRecalentados} durationInFrames={TOTAL_FRAMES_RECAL} fps={30} width={1920} height={1080} />
       {/* VIDEO ACTIVO — 15 Costumbres de los Domingos (Video 3 cadena) */}
       <Composition id="Domingos" component={MainDomingos} durationInFrames={TOTAL_FRAMES_DOM} fps={30} width={1920} height={1080} />
       {/* VIDEO ACTIVO — Así se Cocinaba Antes de los Supermercados (Video 4 cadena) */}
