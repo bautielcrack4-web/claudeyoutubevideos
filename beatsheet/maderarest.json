@@ -400,7 +400,7 @@
   {
    "id": "tres_0",
    "start": 136.6,
-   "dur": 2.26,
+   "dur": 2.44,
    "kind": "splitlist",
    "title": "Cada una hace algo distinto",
    "items": [
@@ -413,8 +413,8 @@
   },
   {
    "id": "tres_1",
-   "start": 138.86,
-   "dur": 3.07,
+   "start": 139.04,
+   "dur": 3.34,
    "kind": "raw",
    "src": "vid/mr_tres_frascos_close.mp4",
    "hue": "amber",
@@ -426,21 +426,19 @@
   },
   {
    "id": "tres_2",
-   "start": 141.93,
-   "dur": 2.67,
-   "kind": "infzoom",
-   "images": [
-    {
-     "src": "img/mr_tres_frascos_mesa.png"
-    },
-    {
-     "src": "img/mr_tres_frascos_close.png"
-    },
-    {
-     "src": "img/mr_liquido_macro.png"
-    }
+   "start": 142.38,
+   "dur": 2.22,
+   "kind": "chips",
+   "bg": "image",
+   "image": "vid/mr_tres_frascos_mesa.mp4",
+   "imageDarken": 0.6,
+   "title": "Cada una hace algo distinto",
+   "chips": [
+    "Vinagre despierta",
+    "Linaza nutre",
+    "Trementina penetra"
    ],
-   "hue": "red"
+   "hue": "amber"
   },
   {
    "id": "vinagre_0",
@@ -1171,29 +1169,24 @@
    "id": "aplicacion_0",
    "start": 500.86,
    "dur": 4.62,
-   "kind": "process",
-   "title": "Cómo se aplica",
-   "eyebrow": "Paso a paso",
-   "steps": [
+   "kind": "checklist",
+   "title": "Cómo se aplica — 4 pasos",
+   "items": [
     {
-     "title": "Limpiar",
-     "desc": "vinagre + cepillo, secar",
-     "image": "img/mr_p1_limpiar.png"
+     "text": "Limpiar: vinagre + cepillo, secar",
+     "state": "done"
     },
     {
-     "title": "Aplicar",
-     "desc": "la mezcla, en la veta",
-     "image": "img/mr_p2_aplicar.png"
+     "text": "Aplicar la mezcla, en la veta",
+     "state": "done"
     },
     {
-     "title": "Retirar",
-     "desc": "el sobrante a los 20 min",
-     "image": "img/mr_p3_retirar.png"
+     "text": "Retirar el sobrante a los 20 min",
+     "state": "done"
     },
     {
-     "title": "Secar",
-     "desc": "un día por mano",
-     "image": "img/mr_p4_secar.png"
+     "text": "Secar un día por mano",
+     "state": "done"
     }
    ],
    "hue": "amber"
@@ -1576,57 +1569,16 @@
   {
    "id": "cierre_0",
    "start": 688.6,
-   "dur": 4.99,
-   "kind": "journey",
-   "eyebrow": "De gris a como nueva",
-   "title": "Tu madera revive",
-   "waypoints": [
-    {
-     "x": 0,
-     "y": 0,
-     "z": 0,
-     "image": "img/mr_j_gris.png",
-     "label": "Madera gris",
-     "num": "1",
-     "dwell": 2.4,
-     "travel": 1.5
-    },
-    {
-     "x": 1.2,
-     "y": -0.4,
-     "z": 0.3,
-     "image": "img/mr_j_vinagre.png",
-     "label": "Vinagre",
-     "num": "2",
-     "dwell": 2.4,
-     "travel": 1.5
-    },
-    {
-     "x": 2.4,
-     "y": 0.3,
-     "z": -0.2,
-     "image": "img/mr_j_aceite.png",
-     "label": "El aceite",
-     "num": "3",
-     "dwell": 2.4,
-     "travel": 1.5
-    },
-    {
-     "x": 3.6,
-     "y": -0.2,
-     "z": 0.2,
-     "image": "img/mr_j_nueva.png",
-     "label": "Como nueva",
-     "num": "4",
-     "dwell": 3,
-     "travel": 1.4
-    }
-   ]
+   "dur": 2.7,
+   "kind": "quote",
+   "image": "img/mr_j_nueva.png",
+   "text": "La independencia no se compra. Se *prepara con las manos*.",
+   "hue": "red"
   },
   {
    "id": "cierre_1",
-   "start": 693.59,
-   "dur": 1.92,
+   "start": 691.3,
+   "dur": 2.56,
    "kind": "headline",
    "tokens": [
     {
@@ -1647,8 +1599,8 @@
   },
   {
    "id": "cierre_2",
-   "start": 695.51,
-   "dur": 4.9,
+   "start": 693.86,
+   "dur": 6.55,
    "kind": "raw",
    "src": "img/mr_tomas_firma.png",
    "hue": "amber",
@@ -1710,22 +1662,6 @@
    "prompt": "Foto documental muy realista, 16:9. flattened dried stiff rags laid outside safely after use, correct disposal. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
   },
   {
-   "name": "mr_p1_limpiar",
-   "prompt": "Foto documental muy realista, 16:9. cleaning gray wood with vinegar and a brush, lifting the gray, step one. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
-  },
-  {
-   "name": "mr_p2_aplicar",
-   "prompt": "Foto documental muy realista, 16:9. brushing the oil mixture onto wood along the grain, color returning, step two. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
-  },
-  {
-   "name": "mr_p3_retirar",
-   "prompt": "Foto documental muy realista, 16:9. wiping excess oil off wood with a dry cloth, step three. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
-  },
-  {
-   "name": "mr_p4_secar",
-   "prompt": "Foto documental muy realista, 16:9. a freshly oiled wooden board drying in soft light, rich color, step four. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
-  },
-  {
    "name": "mr_madera_humeda",
    "prompt": "Foto documental muy realista, 16:9. a wet damp wooden board, water on the surface, the wrong moment to oil it. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
   },
@@ -1756,18 +1692,6 @@
   {
    "name": "mr_manual_celular",
    "prompt": "Foto documental muy realista, 16:9. a phone showing an open ebook home-repair manual on a wooden workbench, warm light. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
-  },
-  {
-   "name": "mr_j_gris",
-   "prompt": "Foto documental muy realista, 16:9. a gray dead weathered wood board, the starting point. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
-  },
-  {
-   "name": "mr_j_vinagre",
-   "prompt": "Foto documental muy realista, 16:9. vinegar being wiped on gray wood, waking the fiber. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
-  },
-  {
-   "name": "mr_j_aceite",
-   "prompt": "Foto documental muy realista, 16:9. the oil mixture soaking into wood, color returning. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
   },
   {
    "name": "mr_j_nueva",

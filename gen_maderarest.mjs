@@ -85,7 +85,7 @@ const SECTIONS = [
   { key: "tres", phrase: "son tres cosas", beats: [
     c("splitlist", { title: "Cada una hace algo distinto", items: ["Vinagre — despierta la fibra", "Linaza — nutre por dentro", "Trementina — empuja el aceite"], palette: "A" }),
     r("mr_tres_frascos_close", "close-up of three labeled bottles side by side on a wood table: white vinegar, boiled linseed oil, turpentine"),
-    c("infzoom", { images: [{ src: "img/mr_tres_frascos_mesa.png" }, { src: "img/mr_tres_frascos_close.png" }, { src: "img/mr_liquido_macro.png" }] }),
+    c("chips", { bg: "image", image: "img/mr_tres_frascos_mesa.png", imageDarken: 0.6, title: "Cada una hace algo distinto", chips: ["Vinagre despierta", "Linaza nutre", "Trementina penetra"], hue: "amber" }),
   ]},
   // ░░ INGREDIENTE 1 — VINAGRE ░░
   { key: "vinagre", phrase: "la primera vinagre", beats: [
@@ -186,11 +186,11 @@ const SECTIONS = [
   ]},
   // ░░ APLICACIÓN — paso a paso ░░
   { key: "aplicacion", phrase: "la parte linda", beats: [
-    c("process", { title: "Cómo se aplica", eyebrow: "Paso a paso", steps: [
-      { title: "Limpiar", desc: "vinagre + cepillo, secar", image: r("mr_p1_limpiar", "cleaning gray wood with vinegar and a brush, lifting the gray, step one").gen.name, _genImg: "mr_p1_limpiar", _prompt: P("cleaning gray wood with vinegar and a brush, lifting the gray, step one") },
-      { title: "Aplicar", desc: "la mezcla, en la veta", image: r("mr_p2_aplicar", "brushing the oil mixture onto wood along the grain, color returning, step two").gen.name, _genImg: "mr_p2_aplicar", _prompt: P("brushing the oil mixture onto wood along the grain, color returning, step two") },
-      { title: "Retirar", desc: "el sobrante a los 20 min", image: r("mr_p3_retirar", "wiping excess oil off wood with a dry cloth, step three").gen.name, _genImg: "mr_p3_retirar", _prompt: P("wiping excess oil off wood with a dry cloth, step three") },
-      { title: "Secar", desc: "un día por mano", image: r("mr_p4_secar", "a freshly oiled wooden board drying in soft light, rich color, step four").gen.name, _genImg: "mr_p4_secar", _prompt: P("a freshly oiled wooden board drying in soft light, rich color, step four") } ] }),
+    c("checklist", { title: "Cómo se aplica — 4 pasos", items: [
+      { text: "Limpiar: vinagre + cepillo, secar", state: "done" },
+      { text: "Aplicar la mezcla, en la veta", state: "done" },
+      { text: "Retirar el sobrante a los 20 min", state: "done" },
+      { text: "Secar un día por mano", state: "done" } ] }),
   ]},
   // ░░ PASO 1 ░░
   { key: "paso1", phrase: "uno limpias el", beats: [
@@ -248,11 +248,7 @@ const SECTIONS = [
   ]},
   // ░░ CIERRE ░░
   { key: "cierre", phrase: "la independencia no se", beats: [
-    c("journey", { eyebrow: "De gris a como nueva", title: "Tu madera revive", waypoints: [
-      { x: 0, y: 0, z: 0, image: r("mr_j_gris", "a gray dead weathered wood board, the starting point").gen.name, label: "Madera gris", num: "1", dwell: 2.4, travel: 1.5, _genImg: "mr_j_gris", _prompt: P("a gray dead weathered wood board, the starting point") },
-      { x: 1.2, y: -0.4, z: 0.3, image: r("mr_j_vinagre", "vinegar being wiped on gray wood, waking the fiber").gen.name, label: "Vinagre", num: "2", dwell: 2.4, travel: 1.5, _genImg: "mr_j_vinagre", _prompt: P("vinegar being wiped on gray wood, waking the fiber") },
-      { x: 2.4, y: 0.3, z: -0.2, image: r("mr_j_aceite", "the oil mixture soaking into wood, color returning").gen.name, label: "El aceite", num: "3", dwell: 2.4, travel: 1.5, _genImg: "mr_j_aceite", _prompt: P("the oil mixture soaking into wood, color returning") },
-      { x: 3.6, y: -0.2, z: 0.2, image: r("mr_j_nueva", "a fully restored rich glowing wooden surface like new, warm light").gen.name, label: "Como nueva", num: "4", dwell: 3.0, travel: 1.4, _genImg: "mr_j_nueva", _prompt: P("a fully restored rich glowing wooden surface like new, warm light") } ] }),
+    c("quote", { image: "mr_j_nueva", text: "La independencia no se compra. Se *prepara con las manos*.", _genImg: "mr_j_nueva", _prompt: P("a fully restored rich glowing wooden surface like new, warm light") }),
     c("headline", { tokens: ["Cuidá", "tu", { t: "madera" }], eyebrow: "La independencia se prepara con las manos", bg: "image", image: r("mr_madera_dorada", "a beautiful richly restored wooden surface glowing in golden hour light, a hand touching the grain").gen.name, _genImg: "mr_madera_dorada", _prompt: P("a beautiful richly restored wooden surface glowing in golden hour light, a hand touching the grain") }),
     rav("mr_tomas_firma", "looking warmly at camera at his workshop door with restored wood around him, closing the video, golden hour", { hold: true }),
   ]},
