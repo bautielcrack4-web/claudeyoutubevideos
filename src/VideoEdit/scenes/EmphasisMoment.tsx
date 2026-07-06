@@ -20,7 +20,8 @@ export const EmphasisMoment: React.FC<{
   durationInFrames: number;
   avatarFromSec: number; // seg globales donde empieza la ventana (para seekear el avatar)
   text: string;
-}> = ({ durationInFrames: D, avatarFromSec, text }) => {
+  avatarSrc?: string; // mp4 del avatar (default federer)
+}> = ({ durationInFrames: D, avatarFromSec, text, avatarSrc = "federer_opt.mp4" }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const cl = { extrapolateLeft: "clamp" as const, extrapolateRight: "clamp" as const };
@@ -32,7 +33,7 @@ export const EmphasisMoment: React.FC<{
   return (
     <AbsoluteFill style={{ opacity: op }}>
       <OffthreadVideo
-        src={staticFile("federer_opt.mp4")}
+        src={staticFile(avatarSrc)}
         trimBefore={Math.max(0, Math.round(avatarFromSec * fps))}
         muted
         style={{ width: "100%", height: "100%", objectFit: "cover" }}

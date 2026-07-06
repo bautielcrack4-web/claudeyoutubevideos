@@ -65,7 +65,7 @@ export const MainRecalentados: React.FC = () => {
       {/* OVERLAY — emphasis (avatar full + frase grande) */}
       {RECAL_EMPH.map((e, i) => (
         <Sequence key={`e_${i}`} from={sec(e.from)} durationInFrames={sec(Math.max(1.4, e.to - e.from))} layout="none">
-          <EmphasisMoment durationInFrames={sec(Math.max(1.4, e.to - e.from))} avatarFromSec={e.from} text={e.text} />
+          <EmphasisMoment durationInFrames={sec(Math.max(1.4, e.to - e.from))} avatarFromSec={e.from} text={e.text} avatarSrc="recalentados_opt.mp4" />
         </Sequence>
       ))}
 
