@@ -115,9 +115,27 @@ const beats = [];
 // clip propio rotan por el MENOS usado de ese pool → sin repetir un mismo clip 10×.
 // ★ CLEAN PASS (auditor round 2): los clips v1 (matcher VIEJO sin verificador) traían texto
 // quemado de canales de recetas. Un verificador Haiku los revisó 1×1 → SOLO los LIMPIOS
-// (_v3_v1clean.json, 50/76) vuelven al pool. Fallback = clips reales verif + v1 LIMPIOS +
-// fotos limpias del dulce. Así queda limpio Y variado.
-const V1CLEAN = new Set(JSON.parse(fs.readFileSync("_v3_v1clean.json", "utf8")));
+// (50/76) vuelven al pool. Fallback = clips reales verif + v1 LIMPIOS + fotos limpias del
+// dulce. Así queda limpio Y variado. (Whitelist HORNEADA acá — antes _v3_v1clean.json.)
+const V1CLEAN = new Set([
+  "broll/d01_alfajores_close.mp4","broll/d01_alfajores_serve.mp4","broll/d02_dulceleche.mp4",
+  "broll/d02_dulceleche_close.mp4","broll/d02_dulceleche_proc.mp4","broll/d03_arrozleche_beauty.mp4",
+  "broll/d03_arrozleche_proc.mp4","broll/d03_arrozleche_serve.mp4","broll/d03_arrozleche_close.mp4",
+  "broll/d04_mazamorra_proc.mp4","broll/d05_coco.mp4","broll/d05_coco_close.mp4","broll/d05_coco_ingr.mp4",
+  "broll/d06_turronquaker_proc.mp4","broll/d07_mantecol_proc.mp4","broll/d07_mantecol_serve.mp4",
+  "broll/d08_cascaritas.mp4","broll/d08_cascaritas_ingr.mp4","broll/d08_cascaritas_proc.mp4",
+  "broll/d08_cascaritas_serve.mp4","broll/d09_colacion_ingr.mp4","broll/d10_alfeniques.mp4",
+  "broll/d10_alfeniques_ingr.mp4","broll/d10_alfeniques_proc.mp4","broll/d10_alfeniques_serve.mp4",
+  "broll/d11_membrillo.mp4","broll/d11_membrillo_close.mp4","broll/d11_membrillo_ingr.mp4",
+  "broll/d11_membrillo_proc.mp4","broll/d11_membrillo_serve.mp4","broll/d12_arrope_ingr.mp4",
+  "broll/d12_arrope_proc.mp4","broll/d12_arrope_serve.mp4","broll/d13_melcocha_close.mp4",
+  "broll/d13_melcocha_proc.mp4","broll/d14_caramelosleche.mp4","broll/d14_caramelosleche_ingr.mp4",
+  "broll/d14_caramelosleche_proc.mp4","broll/d15_ambrosia.mp4","broll/d15_ambrosia_ingr.mp4",
+  "broll/d16_bombones_ingr.mp4","broll/d16_bombones_proc.mp4","broll/d16_bombones_serve.mp4",
+  "broll/d18_frutasabrillantadas_ingr.mp4","broll/d18_frutasabrillantadas_proc.mp4",
+  "broll/d19_conitos_ingr.mp4","broll/d20_quesillo.mp4","broll/d20_quesillo_close.mp4",
+  "broll/d20_quesillo_ingr.mp4","broll/d20_quesillo_serve.mp4",
+]);
 const dPool = {};
 for (let n = 1; n <= 20; n++) {
   const pad = "s" + String(n).padStart(2, "0") + "_";

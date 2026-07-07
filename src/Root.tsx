@@ -15,6 +15,7 @@ import { MainCocina, TOTAL_FRAMES_COC } from "./VideoEdit/Main_cocina";
 import { MainEstufaRocket, TOTAL_FRAMES_ER } from "./VideoEdit/Main_estufarocket";
 import { MainMaderaRest, TOTAL_FRAMES_MR } from "./VideoEdit/Main_maderarest";
 import { MainFederer, TOTAL_FRAMES_FED } from "./VideoEdit/Main_federer";
+import { MainFederer2, TOTAL_FRAMES_FED2 } from "./VideoEdit/Main_federer2";
 import { MainRecalentados, TOTAL_FRAMES_RECAL } from "./VideoEdit/Main_recalentados";
 import { MainBorax, TOTAL_FRAMES_BX } from "./VideoEdit/Main_borax";
 import { MainBarrera, TOTAL_FRAMES_BRR } from "./VideoEdit/Main_barrera";
@@ -69,6 +70,7 @@ import { MainRayones, TOTAL_FRAMES_RAYONES } from "./VideoEdit/Main_rayones";
 import { MainVentilador, TOTAL_FRAMES_VENTILADOR } from "./VideoEdit/Main_ventilador";
 import { MainTechocalor, TOTAL_FRAMES_TECHOCALOR } from "./VideoEdit/Main_techocalor";
 import { MainKitPreview, TOTAL_FRAMES_KIT } from "./VideoEdit/KitPreview";
+import { MainSvalbard, TOTAL_FRAMES_SVB } from "./VideoEdit/Main_svalbard"; // TEST pipeline end-to-end (nube: TTS+align+fotos reales), solo render local
 // import { MainCafe, TOTAL_FRAMES_CAFE } from "./VideoEdit/Main_cafe"; // untracked: rompe el farm
 // import { MainAmish, TOTAL_FRAMES_AMISH } from "./VideoEdit/Main_amish"; // untracked: rompe el farm
 
@@ -84,6 +86,8 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="KitPreviewPx" component={MainKitPreviewPx} durationInFrames={TOTAL_FRAMES_KITPX} fps={30} width={1920} height={1080} />
       {/* PREVIEW DEL KIT — los 30 componentes genéricos en secuencia (90 frames c/u) */}
       <Composition id="KitPreview" component={MainKitPreview} durationInFrames={TOTAL_FRAMES_KIT} fps={30} width={1920} height={1080} />
+      {/* TEST pipeline end-to-end — Svalbard, guion inventado, TTS+align en la nube, fotos reales */}
+      <Composition id="Svalbard" component={MainSvalbard} durationInFrames={TOTAL_FRAMES_SVB} fps={30} width={1920} height={1080} />
       {/* VIDEO ACTIVO — Crónicas Perdidas · "7 Barcos…" (SLICE 1) · faceless · voz clonada */}
       <Composition id="Barcos" component={MainBarcos} durationInFrames={TOTAL_FRAMES_BAR} fps={30} width={1920} height={1080} />
       {/* VIDEO ACTIVO — Documental fauna · "El Hurón de Patas Negras" · faceless · voz clonada */}
@@ -382,6 +386,8 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="Comidas" component={MainComidas} durationInFrames={TOTAL_FRAMES_COMIDAS} fps={30} width={1920} height={1080} />
       {/* Dr. Federer — El truco del ROMERO */}
       <Composition id="Federer" component={MainFederer} durationInFrames={TOTAL_FRAMES_FED} fps={30} width={1920} height={1080} />
+      {/* Dr. Federer — CAFÉ sin azúcar después de los 60 */}
+      <Composition id="Federer2" component={MainFederer2} durationInFrames={TOTAL_FRAMES_FED2} fps={30} width={1920} height={1080} />
       {/* Federer Salud — Recalentados */}
       <Composition id="Recalentados" component={MainRecalentados} durationInFrames={TOTAL_FRAMES_RECAL} fps={30} width={1920} height={1080} />
       {/* VIDEO ACTIVO — 15 Costumbres de los Domingos (Video 3 cadena) */}

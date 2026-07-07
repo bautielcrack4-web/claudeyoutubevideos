@@ -2,6 +2,8 @@ node_modules
 dist
 .DS_Store
 .env
+__pycache__/
+*.pyc
 
 # Ignore the output video from Git but not videos you import into src/.
 out
@@ -22,11 +24,14 @@ chunks/
 img_index*.json
 vid_index*.json
 .gh_token2
+.flowaccounts.json
 
 # venv + cuda build + binarios pesados (NO trackear — inflan el push)
 ttsenv/
 whisper_cuda/
 youtube/meta/*.png
+youtube/client_secret.json
+youtube/tokens/
 *.tar
 
 # temp/working dirs (matchfarm, fetch, diag, stills)
@@ -41,7 +46,7 @@ _check_*.png
 _assets_list.txt
 lista_*.txt
 _*_tts*.log
-cookies/_*/
+cookies/
 _v3*
 _v3out*/
 _sb_*/

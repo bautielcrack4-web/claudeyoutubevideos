@@ -1,0 +1,1488 @@
+{
+ "video": "federer2",
+ "avatar": "federer2_opt.mp4",
+ "theme": "medico",
+ "beats": [
+  {
+   "id": "hook_0",
+   "start": 1.3,
+   "dur": 3.98,
+   "key": "hook",
+   "kind": "talk"
+  },
+  {
+   "id": "hook_1",
+   "start": 5.28,
+   "dur": 5.72,
+   "key": "hook",
+   "kind": "raw",
+   "src": "broll/fe2_manos_frias.mp4",
+   "kicker": "¿Manos frías?"
+  },
+  {
+   "id": "hook_2",
+   "start": 11,
+   "dur": 5.26,
+   "key": "hook",
+   "kind": "raw",
+   "src": "broll/fe2_pies_hielo.mp4"
+  },
+  {
+   "id": "hook_3",
+   "start": 16.26,
+   "dur": 12.92,
+   "key": "hook",
+   "kind": "raw",
+   "src": "broll/fe2_piernas_pesadas.mp4"
+  },
+  {
+   "id": "hook_4",
+   "start": 29.18,
+   "dur": 7.54,
+   "key": "hook",
+   "kind": "raw",
+   "src": "img/fe2_vecino_consejo.png",
+   "kicker": "«Dejá el café»",
+   "gen": {
+    "type": "image",
+    "name": "fe2_vecino_consejo",
+    "prompt": "Foto documental muy realista, 16:9. una persona mayor sana de unos 70 años, a worried adult child telling an older parent to stop drinking coffee, kitchen, luz natural suave de interior. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "hook_5",
+   "start": 36.72,
+   "dur": 2.58,
+   "key": "hook",
+   "kind": "raw",
+   "src": "img/fe2_taza_negra_hook.png",
+   "hold": true,
+   "gen": {
+    "type": "image",
+    "name": "fe2_taza_negra_hook",
+    "prompt": "Foto documental muy realista, 16:9. a single cup of black coffee steaming on a table, morning light, inviting. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "detalle_0",
+   "start": 39.3,
+   "dur": 19.69,
+   "key": "detalle",
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "No"
+    },
+    {
+     "t": "es"
+    },
+    {
+     "t": "solo"
+    },
+    {
+     "t": "el"
+    },
+    {
+     "t": "azúcar",
+     "hl": true
+    }
+   ],
+   "eyebrow": "El detalle que casi nadie sabe",
+   "bg": "image",
+   "image": "img/fe2_taza_negra_hook.png"
+  },
+  {
+   "id": "detalle_1",
+   "start": 58.99,
+   "dur": 21.65,
+   "key": "detalle",
+   "kind": "chips",
+   "bg": "image",
+   "image": "img/fe2_cafe_rutina.png",
+   "imageDarken": 0.6,
+   "title": "Cada mañana, sin pensarlo",
+   "chips": [
+    "Cómo lo tomás",
+    "Cuándo lo tomás",
+    "Cuál café tomás"
+   ]
+  },
+  {
+   "id": "promesa_0",
+   "start": 80.64,
+   "dur": 9.38,
+   "key": "promesa",
+   "kind": "raw",
+   "src": "img/fe2_taza_vapor_i.png",
+   "gen": {
+    "type": "image",
+    "name": "fe2_taza_vapor_i",
+    "prompt": "Foto documental muy realista, 16:9. a close macro of steam rising from a hot cup of black coffee, dark background. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "promesa_1",
+   "start": 90.02,
+   "dur": 6.26,
+   "key": "promesa",
+   "kind": "stat",
+   "value": 3,
+   "prefix": "",
+   "suffix": " o 4 errores",
+   "label": "que hacés con tu café sin darte cuenta",
+   "eyebrow": "Y se corrigen desde mañana"
+  },
+  {
+   "id": "presenta_0",
+   "start": 96.28,
+   "dur": 4.81,
+   "key": "presenta",
+   "kind": "talk"
+  },
+  {
+   "id": "presenta_1",
+   "start": 101.09,
+   "dur": 5.69,
+   "key": "presenta",
+   "kind": "nametag",
+   "name": "Dr. Federer",
+   "role": "Médico · más de una década de consultorio"
+  },
+  {
+   "id": "presenta_2",
+   "start": 106.78,
+   "dur": 6.56,
+   "key": "presenta",
+   "kind": "raw",
+   "src": "img/fe2_consultorio.png",
+   "gen": {
+    "type": "image",
+    "name": "fe2_consultorio",
+    "prompt": "Foto documental muy realista, 16:9. a warm doctor's consulting room with a desk and a window, natural light, welcoming. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "confieso_0",
+   "start": 113.34,
+   "dur": 12.37,
+   "key": "confieso",
+   "kind": "raw",
+   "src": "img/fe2_federer_cafe.png",
+   "kicker": "Yo también lo tomo, sin culpa",
+   "gen": {
+    "type": "image",
+    "name": "fe2_federer_cafe",
+    "prompt": "Foto documental muy realista, 16:9. a friendly 38 year old doctor calmly drinking a cup of black coffee at his desk, white coat, natural light. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "confieso_1",
+   "start": 125.71,
+   "dur": 8.25,
+   "key": "confieso",
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "La"
+    },
+    {
+     "t": "ciencia"
+    },
+    {
+     "t": "de"
+    },
+    {
+     "t": "HOY."
+    },
+    {
+     "t": "No"
+    },
+    {
+     "t": "la"
+    },
+    {
+     "t": "de"
+    },
+    {
+     "t": "hace"
+    },
+    {
+     "t": "20 años",
+     "hl": true
+    }
+   ],
+   "eyebrow": "Lo que cambió",
+   "bg": "image",
+   "image": "img/fe2_consultorio.png"
+  },
+  {
+   "id": "pacientes_0",
+   "start": 133.96,
+   "dur": 19.65,
+   "key": "pacientes",
+   "kind": "raw",
+   "src": "img/fe2_paciente_susurro.png",
+   "kicker": "«Doctor, ¿puedo seguir tomando café?»",
+   "gen": {
+    "type": "image",
+    "name": "fe2_paciente_susurro",
+    "prompt": "Foto documental muy realista, 16:9. una persona mayor sana de unos 70 años, an older patient leaning in and asking the doctor a question quietly, almost ashamed, clinic, luz natural suave de interior. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "pacientes_1",
+   "start": 153.61,
+   "dur": 13.75,
+   "key": "pacientes",
+   "kind": "quote",
+   "image": "img/fe2_paciente_culpa.png",
+   "text": "Como si estuviera pidiendo *permiso* para algo malo."
+  },
+  {
+   "id": "angulo_0",
+   "start": 167.36,
+   "dur": 10.52,
+   "key": "angulo",
+   "kind": "splitlist",
+   "title": "El ángulo que casi nunca escuchás",
+   "items": [
+    "No QUÉ le echás",
+    "Sino CÓMO lo tomás",
+    "CUÁNDO y CUÁL café"
+   ],
+   "palette": "G"
+  },
+  {
+   "id": "circ60_0",
+   "start": 177.88,
+   "dur": 9.96,
+   "key": "circ60",
+   "kind": "raw",
+   "src": "img/fe2_circ_40vs60.png",
+   "gen": {
+    "type": "image",
+    "name": "fe2_circ_40vs60",
+    "prompt": "Foto documental muy realista, 16:9. una persona mayor sana de unos 70 años, a thoughtful older person looking at their hands, contemplative, window light, luz natural suave de interior. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "circ60_1",
+   "start": 187.84,
+   "dur": 6.64,
+   "key": "circ60",
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "A"
+    },
+    {
+     "t": "los"
+    },
+    {
+     "t": "60"
+    },
+    {
+     "t": "no"
+    },
+    {
+     "t": "es"
+    },
+    {
+     "t": "como"
+    },
+    {
+     "t": "a"
+    },
+    {
+     "t": "los"
+    },
+    {
+     "t": "40",
+     "hl": true
+    }
+   ],
+   "eyebrow": "Tu circulación cambió",
+   "bg": "image",
+   "image": "img/fe2_circ_40vs60.png"
+  },
+  {
+   "id": "arterias_0",
+   "start": 194.48,
+   "dur": 7.68,
+   "key": "arterias",
+   "kind": "diagram",
+   "eyebrow": "Qué le pasa a tus arterias",
+   "slides": [
+    {
+     "image": "img/dg_fe2_arteria_rigida.png",
+     "eyebrow": "Pierden elasticidad, se vuelven rígidas"
+    }
+   ]
+  },
+  {
+   "id": "arterias_1",
+   "start": 202.16,
+   "dur": 4.8,
+   "key": "arterias",
+   "kind": "raw",
+   "src": "img/fe2_goma_sol.png",
+   "gen": {
+    "type": "image",
+    "name": "fe2_goma_sol",
+    "prompt": "Foto documental muy realista, 16:9. an old rubber band left in the sun, dried and stiff, macro on a wooden surface. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "endotelio_0",
+   "start": 206.96,
+   "dur": 12.64,
+   "key": "endotelio",
+   "kind": "annotated",
+   "image": "img/fe2_endotelio_ins.png",
+   "eyebrow": "El endotelio",
+   "caption": "La capa que recubre cada arteria, más fina que un papel",
+   "annotations": [
+    {
+     "kind": "circle",
+     "x": 50,
+     "y": 50,
+     "label": "Endotelio"
+    }
+   ]
+  },
+  {
+   "id": "tuberia_0",
+   "start": 219.6,
+   "dur": 20.84,
+   "key": "tuberia",
+   "kind": "blurexplainer",
+   "clip": "img/fe2_tuberia_bg.png",
+   "image": "img/fe2_placa_ins.png",
+   "eyebrow": "Aterosclerosis",
+   "title": "Como una cañería que se tapa",
+   "body": "La grasa y el calcio se pegan a la pared. Es la 1ª causa de infartos y ACV.",
+   "side": "right"
+  },
+  {
+   "id": "tuberia_1",
+   "start": 240.44,
+   "dur": 17.86,
+   "key": "tuberia",
+   "kind": "diagram",
+   "eyebrow": "Tubería lisa vs. tapada",
+   "slides": [
+    {
+     "image": "img/dg_fe2_placa.png",
+     "eyebrow": "Cuando se tapa: aterosclerosis"
+    }
+   ]
+  },
+  {
+   "id": "oxidonitrico_0",
+   "start": 258.3,
+   "dur": 24.7,
+   "key": "oxidonitrico",
+   "kind": "diagram",
+   "eyebrow": "El endotelio está vivo",
+   "slides": [
+    {
+     "image": "img/dg_fe2_no1.png",
+     "eyebrow": "Óxido nítrico: abre la arteria"
+    },
+    {
+     "image": "img/dg_fe2_no2.png",
+     "eyebrow": "Sin él: manos frías, tensión alta"
+    }
+   ]
+  },
+  {
+   "id": "oxidonitrico_1",
+   "start": 283,
+   "dur": 15.44,
+   "key": "oxidonitrico",
+   "kind": "raw",
+   "src": "img/fe2_manos_calientes.png",
+   "gen": {
+    "type": "image",
+    "name": "fe2_manos_calientes",
+    "prompt": "Foto documental muy realista, 16:9. una persona mayor sana de unos 70 años, an older person's hands feeling warm and comfortable, relaxed, warm light, luz natural suave de interior. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "menosno_0",
+   "start": 298.44,
+   "dur": 9.06,
+   "key": "menosno",
+   "kind": "board",
+   "eyebrow": "El endotelio decide",
+   "title": "Qué hace el óxido nítrico",
+   "side": "left",
+   "items": [
+    {
+     "image": "img/fe2_manos_calientes.png",
+     "title": "Con óxido nítrico",
+     "sub": "la arteria se abre · manos y pies calientes",
+     "tone": "teal"
+    },
+    {
+     "image": "img/fe2_dedos_frios.png",
+     "title": "Sin óxido nítrico",
+     "sub": "la arteria se cierra · manos frías, tensión alta",
+     "tone": "coral"
+    },
+    {
+     "title": "Después de los 60",
+     "sub": "tu cuerpo fabrica cada vez menos, solo",
+     "tone": "blue"
+    }
+   ]
+  },
+  {
+   "id": "aguanta_0",
+   "start": 307.5,
+   "dur": 9.99,
+   "key": "aguanta",
+   "kind": "rule",
+   "number": "01",
+   "title": "El café y tu endotelio",
+   "w": 3.4
+  },
+  {
+   "id": "aguanta_1",
+   "start": 317.49,
+   "dur": 4.41,
+   "key": "aguanta",
+   "kind": "raw",
+   "src": "img/fe2_taza_ciencia.png",
+   "gen": {
+    "type": "image",
+    "name": "fe2_taza_ciencia",
+    "prompt": "Foto documental muy realista, 16:9. a cup of black coffee next to a subtle science notebook, warm desk, no legible text. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "compuestos_0",
+   "start": 321.9,
+   "dur": 15.04,
+   "key": "compuestos",
+   "kind": "stat",
+   "value": 1000,
+   "suffix": "+",
+   "label": "compuestos distintos en una sola taza de café",
+   "eyebrow": "No es solo cafeína"
+  },
+  {
+   "id": "compuestos_1",
+   "start": 336.94,
+   "dur": 19.56,
+   "key": "compuestos",
+   "kind": "annotated",
+   "image": "img/fe2_grano_macro.png",
+   "eyebrow": "El ácido clorogénico",
+   "caption": "Un polifenol de la familia del vino tinto y el aceite de oliva",
+   "annotations": [
+    {
+     "kind": "circle",
+     "x": 50,
+     "y": 50,
+     "label": "Ácido clorogénico"
+    }
+   ]
+  },
+  {
+   "id": "revision20_0",
+   "start": 356.5,
+   "dur": 5.17,
+   "key": "revision20",
+   "kind": "bars",
+   "title": "Lo que dicen los estudios",
+   "unit": "",
+   "bars": [
+    {
+     "label": "Estudios revisados",
+     "value": 20,
+     "tone": "cold"
+    },
+    {
+     "label": "Mejoran el endotelio",
+     "value": 17,
+     "winner": true
+    }
+   ]
+  },
+  {
+   "id": "revision20_1",
+   "start": 361.67,
+   "dur": 4.13,
+   "key": "revision20",
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "Mejora"
+    },
+    {
+     "t": "la"
+    },
+    {
+     "t": "función"
+    },
+    {
+     "t": "del"
+    },
+    {
+     "t": "endotelio",
+     "hl": true
+    }
+   ],
+   "eyebrow": "La mayoría de los estudios",
+   "bg": "image",
+   "image": "img/fe2_estudios_bg.png"
+  },
+  {
+   "id": "microvasos_0",
+   "start": 365.8,
+   "dur": 13.03,
+   "key": "microvasos",
+   "kind": "diagram",
+   "eyebrow": "Los microvasos",
+   "slides": [
+    {
+     "image": "img/dg_fe2_microvasos.png",
+     "eyebrow": "Dedos, pies, riñones, retina"
+    }
+   ]
+  },
+  {
+   "id": "microvasos_1",
+   "start": 378.83,
+   "dur": 16.29,
+   "key": "microvasos",
+   "kind": "board",
+   "eyebrow": "Donde se nota primero",
+   "title": "Los microvasos que fallan",
+   "side": "left",
+   "items": [
+    {
+     "title": "Los dedos de las manos",
+     "sub": "se enfrían, se entumecen",
+     "tone": "teal"
+    },
+    {
+     "title": "Los pies",
+     "sub": "helados aunque haga calor",
+     "tone": "teal"
+    },
+    {
+     "title": "Los riñones",
+     "sub": "filtran menos que antes",
+     "tone": "blue"
+    },
+    {
+     "title": "La vista",
+     "sub": "la retina se cansa",
+     "tone": "blue"
+    }
+   ]
+  },
+  {
+   "id": "marta_0",
+   "start": 395.12,
+   "dur": 32.95,
+   "key": "marta",
+   "kind": "raw",
+   "src": "img/fe2_marta_retrato.png",
+   "kicker": "Marta, 66 años",
+   "hold": true,
+   "gen": {
+    "type": "image",
+    "name": "fe2_marta_retrato",
+    "prompt": "Foto documental muy realista, 16:9. una persona mayor sana de unos 70 años, a documentary portrait of a 66 year old widow, kind tired face, sitting in a clinic, luz natural suave de interior. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "marta_1",
+   "start": 428.07,
+   "dur": 19.39,
+   "key": "marta",
+   "kind": "raw",
+   "src": "img/fe2_marta_medias.png",
+   "gen": {
+    "type": "image",
+    "name": "fe2_marta_medias",
+    "prompt": "Foto documental muy realista, 16:9. una persona mayor sana de unos 70 años, an older woman wearing two pairs of thick socks in summer, feet cold, bedroom, luz natural suave de interior. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "marta_2",
+   "start": 447.46,
+   "dur": 11.52,
+   "key": "marta",
+   "kind": "quote",
+   "image": "img/fe2_marta_sonrisa.png",
+   "text": "Doctor, ya no necesito las medias en *enero*."
+  },
+  {
+   "id": "cyp1a2_0",
+   "start": 458.98,
+   "dur": 31.79,
+   "key": "cyp1a2",
+   "kind": "diagram",
+   "eyebrow": "Por qué a cada uno le cae distinto",
+   "slides": [
+    {
+     "image": "img/dg_fe2_cyp1a2.png",
+     "eyebrow": "Metabolizador rápido vs. lento"
+    }
+   ]
+  },
+  {
+   "id": "cyp1a2_1",
+   "start": 490.77,
+   "dur": 14.57,
+   "key": "cyp1a2",
+   "kind": "callout",
+   "image": "img/fe2_cafe_tarde_desvela.png",
+   "figure": "La pista",
+   "caption": "Si un café a la tarde te desvela, sos de los lentos."
+  },
+  {
+   "id": "tension_duda_0",
+   "start": 505.34,
+   "dur": 24.55,
+   "key": "tension_duda",
+   "kind": "rule",
+   "number": "02",
+   "title": "El café y la tensión",
+   "w": 3.4
+  },
+  {
+   "id": "tension_duda_1",
+   "start": 529.89,
+   "dur": 10.83,
+   "key": "tension_duda",
+   "kind": "raw",
+   "src": "img/fe2_tensiometro.png",
+   "gen": {
+    "type": "image",
+    "name": "fe2_tensiometro",
+    "prompt": "Foto documental muy realista, 16:9. una persona mayor sana de unos 70 años, a blood pressure cuff on an older person's arm, home health check, soft light, luz natural suave de interior. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "tolerancia_0",
+   "start": 540.72,
+   "dur": 6.9,
+   "key": "tolerancia",
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "El"
+    },
+    {
+     "t": "cuerpo"
+    },
+    {
+     "t": "desarrolla"
+    },
+    {
+     "t": "tolerancia",
+     "hl": true
+    }
+   ],
+   "eyebrow": "En cuestión de días",
+   "bg": "image",
+   "image": "img/fe2_picante.png"
+  },
+  {
+   "id": "estudios_tension_0",
+   "start": 547.62,
+   "dur": 14.1,
+   "key": "estudios_tension",
+   "kind": "bars",
+   "title": "Consumo habitual y tensión alta",
+   "unit": "",
+   "bars": [
+    {
+     "label": "Seguimiento (mil personas)",
+     "value": 100,
+     "tone": "cold"
+    },
+    {
+     "label": "Años de seguimiento",
+     "value": 10,
+     "tone": "cold"
+    },
+    {
+     "label": "Riesgo si tomás más café",
+     "value": 0,
+     "winner": true,
+     "note": "menor, no mayor"
+    }
+   ]
+  },
+  {
+   "id": "estudios_tension_1",
+   "start": 561.72,
+   "dur": 11.28,
+   "key": "estudios_tension",
+   "kind": "stat",
+   "value": 25,
+   "suffix": " estudios",
+   "label": "más café se asoció a un riesgo algo MENOR de tensión alta",
+   "eyebrow": "Un análisis de"
+  },
+  {
+   "id": "matiz_hora_0",
+   "start": 573,
+   "dur": 28.48,
+   "key": "matiz_hora",
+   "kind": "diagram",
+   "eyebrow": "El factor que sí importa: la HORA",
+   "slides": [
+    {
+     "image": "img/dg_fe2_hora.png",
+     "eyebrow": "Un café de las 5 sigue a las 11 de la noche"
+    }
+   ]
+  },
+  {
+   "id": "matiz_hora_1",
+   "start": 601.48,
+   "dur": 17.8,
+   "key": "matiz_hora",
+   "kind": "raw",
+   "src": "vid/fe2_cafe_tarde_clip.mp4",
+   "gen": {
+    "type": "clip",
+    "image": "fe2_cafe_tarde_clip",
+    "prompt": "Foto documental muy realista, 16:9. a cup of coffee on a table late afternoon, long shadows, warm. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 75
+   }
+  },
+  {
+   "id": "dormir_0",
+   "start": 619.28,
+   "dur": 35.67,
+   "key": "dormir",
+   "kind": "diagram",
+   "eyebrow": "El sueño repara tus arterias",
+   "slides": [
+    {
+     "image": "img/dg_fe2_sueno.png",
+     "eyebrow": "Dormir mal = tensión peor controlada"
+    }
+   ]
+  },
+  {
+   "id": "dormir_1",
+   "start": 654.95,
+   "dur": 22.29,
+   "key": "dormir",
+   "kind": "raw",
+   "src": "broll/fe2_dormir_mal.mp4"
+  },
+  {
+   "id": "regla_hora_0",
+   "start": 677.24,
+   "dur": 25.16,
+   "key": "regla_hora",
+   "kind": "checklist",
+   "title": "La regla del horario",
+   "items": [
+    {
+     "text": "Café de la mañana al mediodía",
+     "state": "done"
+    },
+    {
+     "text": "Después de las 3-4 pm: mejor no",
+     "state": "warn"
+    },
+    {
+     "text": "Tensión muy alta o arritmia: consultá",
+     "state": "warn"
+    }
+   ]
+  },
+  {
+   "id": "deshidrata_0",
+   "start": 702.4,
+   "dur": 41.46,
+   "key": "deshidrata",
+   "kind": "rule",
+   "number": "03",
+   "title": "El mito de que deshidrata",
+   "w": 4
+  },
+  {
+   "id": "deshidrata_1",
+   "start": 743.86,
+   "dur": 10.36,
+   "key": "deshidrata",
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "«El"
+    },
+    {
+     "t": "café"
+    },
+    {
+     "t": "te"
+    },
+    {
+     "t": "quita"
+    },
+    {
+     "t": "agua",
+     "hl": true
+    },
+    {
+     "t": "»"
+    }
+   ],
+   "eyebrow": "El mito de siempre",
+   "bg": "image",
+   "image": "img/fe2_vaso_agua_cafe.png"
+  },
+  {
+   "id": "sangre_espesa_0",
+   "start": 754.22,
+   "dur": 22.55,
+   "key": "sangre_espesa",
+   "kind": "diagram",
+   "eyebrow": "Por qué importa a tu edad",
+   "slides": [
+    {
+     "image": "img/dg_fe2_espesa.png",
+     "eyebrow": "Sangre espesa = mala circulación"
+    }
+   ]
+  },
+  {
+   "id": "sangre_espesa_1",
+   "start": 776.77,
+   "dur": 14.09,
+   "key": "sangre_espesa",
+   "kind": "raw",
+   "src": "img/fe2_toma_agua.png",
+   "kicker": "El café suma agua, no resta",
+   "gen": {
+    "type": "image",
+    "name": "fe2_toma_agua",
+    "prompt": "Foto documental muy realista, 16:9. una persona mayor sana de unos 70 años, an older person drinking a glass of water at home, healthy habit, daylight, luz natural suave de interior. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "acv_0",
+   "start": 790.86,
+   "dur": 25.36,
+   "key": "acv",
+   "kind": "rule",
+   "number": "04",
+   "title": "El café y el ACV",
+   "w": 3.4
+  },
+  {
+   "id": "acv_1",
+   "start": 816.22,
+   "dur": 17.9,
+   "key": "acv",
+   "kind": "diagram",
+   "eyebrow": "La circulación más delicada",
+   "slides": [
+    {
+     "image": "img/dg_fe2_cerebro.png",
+     "eyebrow": "Vasos finísimos que se deterioran"
+    }
+   ]
+  },
+  {
+   "id": "acv_menor_0",
+   "start": 834.12,
+   "dur": 14.37,
+   "key": "acv_menor",
+   "kind": "stat",
+   "value": 1,
+   "prefix": "",
+   "suffix": "",
+   "label": "consumo moderado = riesgo algo MENOR de ACV que no tomar nada",
+   "eyebrow": "Cientos de miles de personas"
+  },
+  {
+   "id": "acv_menor_1",
+   "start": 848.49,
+   "dur": 15.81,
+   "key": "acv_menor",
+   "kind": "splitlist",
+   "title": "Por qué protege",
+   "items": [
+    "Cuida el endotelio",
+    "Baja la inflamación",
+    "Menos riesgo de diabetes"
+   ],
+   "palette": "G"
+  },
+  {
+   "id": "moderado_0",
+   "start": 864.3,
+   "dur": 9.6,
+   "key": "moderado",
+   "kind": "stat",
+   "value": 3,
+   "prefix": "",
+   "suffix": " tazas",
+   "label": "unas pocas al día: más NO es más protección",
+   "eyebrow": "La palabra clave: moderado"
+  },
+  {
+   "id": "moderado_1",
+   "start": 873.9,
+   "dur": 14.4,
+   "key": "moderado",
+   "kind": "raw",
+   "src": "img/fe2_dos_tazas.png",
+   "gen": {
+    "type": "image",
+    "name": "fe2_dos_tazas",
+    "prompt": "Foto documental muy realista, 16:9. una persona mayor sana de unos 70 años, two cups of coffee on a table through the day, moderate amount, warm home light, luz natural suave de interior. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "descafeinado_0",
+   "start": 888.3,
+   "dur": 25.18,
+   "key": "descafeinado",
+   "kind": "callout",
+   "image": "img/fe2_descafeinado.png",
+   "figure": "Descafeinado",
+   "caption": "Conserva casi todos los polifenoles: se saca la cafeína, no el beneficio."
+  },
+  {
+   "id": "hierro_0",
+   "start": 913.48,
+   "dur": 34.32,
+   "key": "hierro",
+   "kind": "rule",
+   "number": "05",
+   "title": "El café y el hierro",
+   "w": 3.4
+  },
+  {
+   "id": "hierro_1",
+   "start": 947.8,
+   "dur": 24.22,
+   "key": "hierro",
+   "kind": "diagram",
+   "eyebrow": "El error silencioso",
+   "slides": [
+    {
+     "image": "img/dg_fe2_hierro.png",
+     "eyebrow": "Bloquea el hierro de la comida"
+    }
+   ]
+  },
+  {
+   "id": "hierro_2",
+   "start": 972.02,
+   "dur": 15.14,
+   "key": "hierro",
+   "kind": "raw",
+   "src": "broll/fe2_verduras_hierro.mp4"
+  },
+  {
+   "id": "delia_0",
+   "start": 987.16,
+   "dur": 24.41,
+   "key": "delia",
+   "kind": "raw",
+   "src": "img/fe2_delia_cansada.png",
+   "kicker": "Delia, 72 años · cansancio sin causa",
+   "gen": {
+    "type": "image",
+    "name": "fe2_delia_cansada",
+    "prompt": "Foto documental muy realista, 16:9. una persona mayor sana de unos 70 años, a tired 72 year old woman with low energy sitting at home, pale, honest light, luz natural suave de interior. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "delia_1",
+   "start": 1011.57,
+   "dur": 16.27,
+   "key": "delia",
+   "kind": "stat",
+   "value": 1,
+   "prefix": "",
+   "suffix": " hora",
+   "label": "de diferencia entre comer y el café: el hierro mejoró solo",
+   "eyebrow": "La solución sencilla"
+  },
+  {
+   "id": "medicacion_0",
+   "start": 1027.84,
+   "dur": 24.53,
+   "key": "medicacion",
+   "kind": "checklist",
+   "title": "Café y pastillas: separalos",
+   "items": [
+    {
+     "text": "Tiroides (levotiroxina) en ayunas",
+     "state": "warn"
+    },
+    {
+     "text": "Esperá 30-45 min antes del café",
+     "state": "done"
+    },
+    {
+     "text": "Tensión/corazón: consultá siempre",
+     "state": "warn"
+    }
+   ]
+  },
+  {
+   "id": "medicacion_1",
+   "start": 1052.37,
+   "dur": 30.67,
+   "key": "medicacion",
+   "kind": "raw",
+   "src": "broll/fe2_pastillas.mp4"
+  },
+  {
+   "id": "diabetes_0",
+   "start": 1083.04,
+   "dur": 32.36,
+   "key": "diabetes",
+   "kind": "bars",
+   "title": "Café habitual y diabetes tipo 2",
+   "unit": "",
+   "bars": [
+    {
+     "label": "No toma café",
+     "value": 100,
+     "tone": "danger",
+     "note": "más riesgo"
+    },
+    {
+     "label": "Toma café habitual",
+     "value": 70,
+     "winner": true,
+     "note": "menos riesgo"
+    }
+   ]
+  },
+  {
+   "id": "diabetes_1",
+   "start": 1115.4,
+   "dur": 33.66,
+   "key": "diabetes",
+   "kind": "annotated",
+   "image": "img/fe2_inflamacion_ins.png",
+   "eyebrow": "Menos inflamación",
+   "caption": "El mismo compuesto calma el fueguito inflamatorio de fondo",
+   "annotations": [
+    {
+     "kind": "circle",
+     "x": 50,
+     "y": 50,
+     "label": "Proteína C reactiva ↓"
+    }
+   ]
+  },
+  {
+   "id": "caminata_0",
+   "start": 1149.06,
+   "dur": 16.73,
+   "key": "caminata",
+   "kind": "process",
+   "title": "El truco de la mañana",
+   "eyebrow": "Se recetan juntos",
+   "steps": [
+    {
+     "title": "Café sin azúcar",
+     "desc": "abre los vasos",
+     "image": "img/fe2_cam_cafe.png"
+    },
+    {
+     "title": "Caminar 10 minutos",
+     "desc": "el movimiento lo potencia",
+     "image": "img/fe2_cam_camina.png"
+    }
+   ]
+  },
+  {
+   "id": "caminata_1",
+   "start": 1165.79,
+   "dur": 16.73,
+   "key": "caminata",
+   "kind": "raw",
+   "src": "vid/fe2_caminar_clip.mp4",
+   "kicker": "Lo más barato para la circulación",
+   "gen": {
+    "type": "clip",
+    "image": "fe2_caminar_clip",
+    "prompt": "Foto documental muy realista, 16:9. a senior walking slowly in a park in the morning light, gentle exercise. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 90
+   }
+  },
+  {
+   "id": "coldbrew_0",
+   "start": 1182.52,
+   "dur": 31.44,
+   "key": "coldbrew",
+   "kind": "raw",
+   "src": "img/fe2_coldbrew_i.png",
+   "kicker": "Cold brew: más suave para el estómago",
+   "gen": {
+    "type": "image",
+    "name": "fe2_coldbrew_i",
+    "prompt": "Foto documental muy realista, 16:9. a glass of cold brew coffee over ice on a summer table, condensation, bright. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "mate_0",
+   "start": 1213.96,
+   "dur": 2,
+   "key": "mate",
+   "kind": "splitlist",
+   "title": "¿Y el mate?",
+   "items": [
+    "Comparte los polifenoles del café",
+    "Cafeína más gradual",
+    "El riesgo: el agua muy caliente"
+   ],
+   "palette": "A"
+  },
+  {
+   "id": "mate_1",
+   "start": 1215.96,
+   "dur": 48.94,
+   "key": "mate",
+   "kind": "raw",
+   "src": "vid/fe2_mate_clip.mp4",
+   "kicker": "Mate o café: misma lógica",
+   "gen": {
+    "type": "clip",
+    "image": "fe2_mate_clip",
+    "prompt": "Foto documental muy realista, 16:9. pouring hot water into an argentine mate gourd with a metal straw, close, warm. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible.",
+    "frames": 90
+   }
+  },
+  {
+   "id": "preparacion_0",
+   "start": 1264.9,
+   "dur": 16.51,
+   "key": "preparacion",
+   "kind": "diagram",
+   "eyebrow": "El filtro cuida tu colesterol",
+   "slides": [
+    {
+     "image": "img/dg_fe2_filtro.png",
+     "eyebrow": "Filtrado vs. hervido sin filtrar"
+    }
+   ]
+  },
+  {
+   "id": "preparacion_1",
+   "start": 1281.41,
+   "dur": 20.63,
+   "key": "preparacion",
+   "kind": "board",
+   "eyebrow": "El café que te cuida",
+   "title": "Bien tomado, se resume así",
+   "side": "left",
+   "items": [
+    {
+     "image": "img/fe2_metodos_cafe.png",
+     "title": "De filtro, cápsula o espresso",
+     "sub": "el papel retiene lo que sube el colesterol",
+     "tone": "teal"
+    },
+    {
+     "image": "img/fe2_cafe_ardiendo.png",
+     "title": "Caliente, no ardiendo",
+     "sub": "dejalo reposar 2 minutos (OMS: 65°)",
+     "tone": "coral"
+    },
+    {
+     "image": "img/fe2_descafeinado.png",
+     "title": "¿No tolerás cafeína?",
+     "sub": "el descafeinado conserva los polifenoles",
+     "tone": "blue"
+    }
+   ]
+  },
+  {
+   "id": "temperatura_0",
+   "start": 1302.04,
+   "dur": 20.35,
+   "key": "temperatura",
+   "kind": "stat",
+   "value": 65,
+   "suffix": "°",
+   "label": "arriba de esta temperatura la OMS asocia daño en el esófago",
+   "eyebrow": "Bebidas muy calientes"
+  },
+  {
+   "id": "temperatura_1",
+   "start": 1322.39,
+   "dur": 22.39,
+   "key": "temperatura",
+   "kind": "callout",
+   "image": "img/fe2_cafe_ardiendo.png",
+   "figure": "2 minutos",
+   "caption": "Dejalo reposar. Caliente y rico, pero no ardiendo."
+  },
+  {
+   "id": "azucar_0",
+   "start": 1344.78,
+   "dur": 24.26,
+   "key": "azucar",
+   "kind": "rule",
+   "number": "★",
+   "title": "El azúcar",
+   "w": 2.6
+  },
+  {
+   "id": "azucar_1",
+   "start": 1369.04,
+   "dur": 22.39,
+   "key": "azucar",
+   "kind": "diagram",
+   "eyebrow": "Por qué se anula el beneficio",
+   "slides": [
+    {
+     "image": "img/dg_fe2_azucar.png",
+     "eyebrow": "Antiinflamatorio vs. algo que inflama"
+    }
+   ]
+  },
+  {
+   "id": "azucar_2",
+   "start": 1391.43,
+   "dur": 13.99,
+   "key": "azucar",
+   "kind": "raw",
+   "src": "broll/fe2_azucar_cuchara.mp4",
+   "kicker": "Una montaña de azúcar por día"
+  },
+  {
+   "id": "azucar_frase_0",
+   "start": 1405.42,
+   "dur": 10.96,
+   "key": "azucar_frase",
+   "kind": "quote",
+   "image": "img/fe2_azucar_sabor.png",
+   "text": "Yo creía que tomaba café, y resulta que tomaba *azúcar con sabor a café*."
+  },
+  {
+   "id": "azucar_frase_1",
+   "start": 1416.38,
+   "dur": 10.44,
+   "key": "azucar_frase",
+   "kind": "stat",
+   "value": 1,
+   "prefix": "½ cuchara",
+   "suffix": "/semana",
+   "label": "bajala de a poco: en un mes lo tomás solo",
+   "eyebrow": "Sin sufrir"
+  },
+  {
+   "id": "conjunto_0",
+   "start": 1426.82,
+   "dur": 17.84,
+   "key": "conjunto",
+   "kind": "splitlist",
+   "title": "El café es una pieza",
+   "items": [
+    "Moverte cada día",
+    "Tomar agua",
+    "Dormir bien",
+    "Menos ultraprocesados"
+   ],
+   "palette": "G"
+  },
+  {
+   "id": "conjunto_1",
+   "start": 1444.66,
+   "dur": 24.32,
+   "key": "conjunto",
+   "kind": "raw",
+   "src": "img/fe2_rompecabezas.png",
+   "gen": {
+    "type": "image",
+    "name": "fe2_rompecabezas",
+    "prompt": "Foto documental muy realista, 16:9. puzzle pieces coming together on a table, concept of the whole picture, warm light. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "cierre_emo_0",
+   "start": 1468.98,
+   "dur": 10.49,
+   "key": "cierre_emo",
+   "kind": "talk"
+  },
+  {
+   "id": "cierre_emo_1",
+   "start": 1479.47,
+   "dur": 24.32,
+   "key": "cierre_emo",
+   "kind": "raw",
+   "src": "img/fe2_bar_esquina.png",
+   "hold": true,
+   "gen": {
+    "type": "image",
+    "name": "fe2_bar_esquina",
+    "prompt": "Foto documental muy realista, 16:9. an old neighborhood cafe bar with people chatting over coffee, warm nostalgic light, spain argentina. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "cierre_emo_2",
+   "start": 1503.79,
+   "dur": 10.01,
+   "key": "cierre_emo",
+   "kind": "quote",
+   "image": "img/fe2_cortado_amigos.png",
+   "text": "El café es el ritual que *ordena el día*."
+  },
+  {
+   "id": "sin_culpa_0",
+   "start": 1513.8,
+   "dur": 9.18,
+   "key": "sin_culpa",
+   "kind": "raw",
+   "src": "img/fe2_disfruta_cafe.png",
+   "kicker": "Sin culpa. Te estás cuidando.",
+   "gen": {
+    "type": "image",
+    "name": "fe2_disfruta_cafe",
+    "prompt": "Foto documental muy realista, 16:9. una persona mayor sana de unos 70 años, an older person enjoying a cup of coffee calmly by a window, peaceful, morning light, luz natural suave de interior. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+   }
+  },
+  {
+   "id": "disclaimer_0",
+   "start": 1522.98,
+   "dur": 40.34,
+   "key": "disclaimer",
+   "kind": "checklist",
+   "title": "Importante",
+   "items": [
+    {
+     "text": "Es información general, no un consejo para tu caso",
+     "state": "warn"
+    },
+    {
+     "text": "Tensión alta, arritmia o medicación: tu médico",
+     "state": "warn"
+    },
+    {
+     "text": "Él conoce tu historia clínica",
+     "state": "done"
+    }
+   ]
+  },
+  {
+   "id": "cta_0",
+   "start": 1563.32,
+   "dur": 11.26,
+   "key": "cta",
+   "kind": "chips",
+   "bg": "image",
+   "image": "img/fe2_taza_negra_hook.png",
+   "imageDarken": 0.62,
+   "title": "Si te sirvió",
+   "chips": [
+    "Dale me gusta",
+    "Suscribite",
+    "Compartilo"
+   ]
+  },
+  {
+   "id": "cta_1",
+   "start": 1574.58,
+   "dur": 13.3,
+   "key": "cta",
+   "kind": "nametag",
+   "name": "Dr. Federer",
+   "role": "Cada semana, ciencia real para cuidarte después de los 60"
+  },
+  {
+   "id": "cierre_0",
+   "start": 1587.88,
+   "dur": 6.46,
+   "key": "cierre",
+   "kind": "talk"
+  }
+ ],
+ "extraImages": [
+  {
+   "name": "fe2_cafe_rutina",
+   "prompt": "Foto documental muy realista, 16:9. someone preparing their morning coffee out of habit, kitchen counter. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "fe2_paciente_culpa",
+   "prompt": "Foto documental muy realista, 16:9. an older person looking guilty holding a coffee cup, soft indoor light. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "fe2_endotelio_ins",
+   "prompt": "Foto documental muy realista, 16:9. a soft medical illustration of the smooth inner lining of an artery, thin cell layer, teal tones. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "fe2_tuberia_bg",
+   "prompt": "Foto documental muy realista, 16:9. the inside of an old metal pipe, one half smooth and clean, the other half clogged with buildup, macro. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "fe2_placa_ins",
+   "prompt": "Foto documental muy realista, 16:9. a stylized medical illustration of fatty plaque building up inside an artery wall, teal and coral. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "fe2_grano_macro",
+   "prompt": "Foto documental muy realista, 16:9. a macro shot of a single roasted coffee bean split open, rich detail, warm. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "fe2_estudios_bg",
+   "prompt": "Foto documental muy realista, 16:9. stacked medical research papers on a desk, soft light, no legible text. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "fe2_marta_sonrisa",
+   "prompt": "Foto documental muy realista, 16:9. a 66 year old woman smiling gently and relieved in a clinic, warm light. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "fe2_cafe_tarde_desvela",
+   "prompt": "Foto documental muy realista, 16:9. an older person lying awake in bed at night after an afternoon coffee, alarm clock glowing. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "fe2_picante",
+   "prompt": "Foto documental muy realista, 16:9. a person tasting something spicy for the first time reacting, warm kitchen. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "fe2_vaso_agua_cafe",
+   "prompt": "Foto documental muy realista, 16:9. a glass of water next to a cup of coffee on a table, soft light. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "fe2_descafeinado",
+   "prompt": "Foto documental muy realista, 16:9. a cup of decaf coffee, calm evening table, warm light. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "fe2_inflamacion_ins",
+   "prompt": "Foto documental muy realista, 16:9. a soft medical illustration of low-grade inflammation calming down inside a blood vessel, teal. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "fe2_cam_cafe",
+   "prompt": "Foto documental muy realista, 16:9. a cup of black coffee on a kitchen table in the morning, bright. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "fe2_cam_camina",
+   "prompt": "Foto documental muy realista, 16:9. an older person walking outdoors in the morning, park. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "fe2_cafe_ardiendo",
+   "prompt": "Foto documental muy realista, 16:9. a cup of very hot steaming coffee, someone about to sip, kitchen. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "fe2_azucar_sabor",
+   "prompt": "Foto documental muy realista, 16:9. a very sweet milky coffee with lots of sugar on a table, warm light. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+  },
+  {
+   "name": "fe2_cortado_amigos",
+   "prompt": "Foto documental muy realista, 16:9. two older friends sharing coffee at a cafe table, laughing, warm afternoon. Que se vea como una foto casera real: leve desenfoque en algunas zonas, ligera inclinación de cámara, luz desigual, piel y texturas reales, manos naturales con dedos correctos, fondo algo desordenado, pequeñas imperfecciones, nada perfecto, nada pulido, sin apariencia de IA, estilo documental auténtico, saturación baja, colores suaves y ligeramente apagados. Sin texto legible."
+  }
+ ]
+}
