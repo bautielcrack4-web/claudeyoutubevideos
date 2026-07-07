@@ -31,7 +31,7 @@ import { spawnSync } from "child_process";
 import { probeMedia } from "./match_v3/lib.mjs";
 
 const YTDLP = path.join(process.cwd(), "bin", "yt-dlp.exe");
-const FFDIR = path.join(process.cwd(), "node_modules", "@remotion", "compositor-win32-x64-msvc");
+const FFDIR = process.env.FETCH_FFDIR || path.join(process.cwd(), "node_modules", "@remotion", "compositor-win32-x64-msvc");
 const FORCE = process.env.FORCE === "1";
 // COOKIES de cuentas QUEMADAS (cookies/*.txt) para esquivar throttle. Rota por toma entre
 // cuentas. Sin carpeta cookies/ → baja sin cookies (como antes).
