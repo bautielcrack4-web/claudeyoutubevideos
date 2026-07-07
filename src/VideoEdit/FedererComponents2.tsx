@@ -4,6 +4,7 @@ import { DiagramBoard } from "./scenes/DiagramBoard";
 import { BarCompare } from "./scenes/BarCompare";
 import { CalloutMark } from "./scenes/CalloutMark";
 import { PizarraExplica } from "./scenes/PizarraExplica";
+import { DocNameCard } from "./scenes/DocNameCard";
 
 // Video 2 (CAFÉ) suma kinds que el mapeador del Video 1 no tenía: bars, callout,
 // diagram con IMAGEN gpt-image real (DiagramBoard), y "board" = avatar a la derecha
@@ -55,6 +56,9 @@ export function renderFederer2Comp(beat: any, d: number): React.ReactNode {
           side={beat.side || "left"}
         />
       );
+    case "nametag":
+      // el default de DocNameCard es img/federer_casual.png (video 1, no existe acá) → pasar foto fe2
+      return <DocNameCard durationInFrames={d} name={beat.name} role={beat.role} image="img/fe2_federer_cafe.png" />;
     default:
       return renderFedererComp(beat, d);
   }
