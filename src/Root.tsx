@@ -70,7 +70,7 @@ import { MainRayones, TOTAL_FRAMES_RAYONES } from "./VideoEdit/Main_rayones";
 import { MainVentilador, TOTAL_FRAMES_VENTILADOR } from "./VideoEdit/Main_ventilador";
 import { MainTechocalor, TOTAL_FRAMES_TECHOCALOR } from "./VideoEdit/Main_techocalor";
 import { MainKitPreview, TOTAL_FRAMES_KIT } from "./VideoEdit/KitPreview";
-import { MainSvalbard, TOTAL_FRAMES_SVB } from "./VideoEdit/Main_svalbard"; // TEST pipeline end-to-end (nube: TTS+align+fotos reales), solo render local
+// (Svalbard omitido en la rama de render federer2: archivo no commiteado)
 // import { MainCafe, TOTAL_FRAMES_CAFE } from "./VideoEdit/Main_cafe"; // untracked: rompe el farm
 // import { MainAmish, TOTAL_FRAMES_AMISH } from "./VideoEdit/Main_amish"; // untracked: rompe el farm
 
@@ -86,8 +86,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="KitPreviewPx" component={MainKitPreviewPx} durationInFrames={TOTAL_FRAMES_KITPX} fps={30} width={1920} height={1080} />
       {/* PREVIEW DEL KIT — los 30 componentes genéricos en secuencia (90 frames c/u) */}
       <Composition id="KitPreview" component={MainKitPreview} durationInFrames={TOTAL_FRAMES_KIT} fps={30} width={1920} height={1080} />
-      {/* TEST pipeline end-to-end — Svalbard, guion inventado, TTS+align en la nube, fotos reales */}
-      <Composition id="Svalbard" component={MainSvalbard} durationInFrames={TOTAL_FRAMES_SVB} fps={30} width={1920} height={1080} />
+      {/* Svalbard omitido en la rama de render federer2 */}
       {/* VIDEO ACTIVO — Crónicas Perdidas · "7 Barcos…" (SLICE 1) · faceless · voz clonada */}
       <Composition id="Barcos" component={MainBarcos} durationInFrames={TOTAL_FRAMES_BAR} fps={30} width={1920} height={1080} />
       {/* VIDEO ACTIVO — Documental fauna · "El Hurón de Patas Negras" · faceless · voz clonada */}
