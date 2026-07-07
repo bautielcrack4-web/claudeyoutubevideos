@@ -26,6 +26,7 @@ import { MainMelon, TOTAL_FRAMES_MELON } from "./VideoEdit/Main_melon";
 import { MainGallinas, TOTAL_FRAMES_GALLINAS } from "./VideoEdit/Main_gallinas";
 import { MainOvejas, TOTAL_FRAMES_OVEJAS } from "./VideoEdit/Main_ovejas";
 import { MainCorn, TOTAL_FRAMES_CORN } from "./VideoEdit/Main_corn";
+import { MainSecretos, TOTAL_FRAMES_SECRETOS } from "./VideoEdit/Main_secretos";
 import { MainAbono, TOTAL_FRAMES_ABONO } from "./VideoEdit/Main_abono";
 import { MainChoclo, TOTAL_FRAMES_CHOCLO } from "./VideoEdit/Main_choclo";
 import { MainHugel, TOTAL_FRAMES_HUGEL } from "./VideoEdit/Main_hugel";
@@ -304,6 +305,15 @@ export const RemotionRoot: React.FC = () => {
         id="Corn"
         component={MainCorn}
         durationInFrames={TOTAL_FRAMES_CORN}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
+      {/* VIDEO ACTIVO — 30 Secretos de Jardín Amish (Levi Lapp Jardín · ES · UCNrLx) */}
+      <Composition
+        id="Secretos"
+        component={MainSecretos}
+        durationInFrames={TOTAL_FRAMES_SECRETOS}
         fps={30}
         width={1920}
         height={1080}
