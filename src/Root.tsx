@@ -16,6 +16,7 @@ import { MainEstufaRocket, TOTAL_FRAMES_ER } from "./VideoEdit/Main_estufarocket
 import { MainMaderaRest, TOTAL_FRAMES_MR } from "./VideoEdit/Main_maderarest";
 import { MainImpermeable, TOTAL_FRAMES_IM } from "./VideoEdit/Main_impermeable";
 import { MainQuebracho, TOTAL_FRAMES_QB } from "./VideoEdit/Main_quebracho";
+import { MainAzotea, TOTAL_FRAMES_AZ } from "./VideoEdit/Main_azotea";
 import { MainFederer, TOTAL_FRAMES_FED } from "./VideoEdit/Main_federer";
 import { MainRecalentados, TOTAL_FRAMES_RECAL } from "./VideoEdit/Main_recalentados";
 import { MainBorax, TOTAL_FRAMES_BX } from "./VideoEdit/Main_borax";
@@ -417,7 +418,9 @@ export const RemotionRoot: React.FC = () => {
       {/* SUBNICHO MADERA #3 · Impermeabiliza TODO (silicona + disolvente) */}
       <Composition id="Impermeable" component={MainImpermeable} durationInFrames={TOTAL_FRAMES_IM} fps={30} width={1920} height={1080} />
       {/* SUBNICHO MADERA #2 · Quebracho (la madera que rompe el hacha) */}
-      <Composition id="Quebracho" component={MainQuebracho} durationInFrames={TOTAL_FRAMES_QB} fps={30} width={1920} height={1080} />
+      
+      {/* IMPERMEABILIZACIÓN · Azotea (líquido $2 para siempre) */}
+      <Composition id="Azotea" component={MainAzotea} durationInFrames={TOTAL_FRAMES_AZ} fps={30} width={1920} height={1080} />
       {/* VIDEO 2 · EL CONSTRUCTOR LIBRE — Madera sin termitas (bórax + aceite) */}
       <Composition id="Borax" component={MainBorax} durationInFrames={TOTAL_FRAMES_BX} fps={30} width={1920} height={1080} />
       {/* VIDEO 3 · EL CONSTRUCTOR LIBRE — 2 metales = 0 plagas (barrera galvánica) */}
