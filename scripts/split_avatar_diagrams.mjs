@@ -18,8 +18,8 @@ if (!fs.existsSync(avatar)) { console.error("No existe el avatar:", avatar); pro
 const outDir = "public/avatar_clips";
 fs.mkdirSync(outDir, { recursive: true });
 
-const diagrams = (bs.beats || []).filter((b) => b.kind === "diagram");
-console.log(`diagramas: ${diagrams.length} · avatar: ${avatar}`);
+const diagrams = (bs.beats || []).filter((b) => b.kind === "diagram" || b.kind === "avpizarra");
+console.log(`clips avatar (diagram+avpizarra): ${diagrams.length} · avatar: ${avatar}`);
 
 for (const b of diagrams) {
   const out = `${outDir}/${b.id}.mp4`;

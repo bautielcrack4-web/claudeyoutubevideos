@@ -269,6 +269,18 @@ function renderEl(b) {
       // LIENZO UNIFICADO que scrollea sin cortes (ScrollDoc): cada placa = clip/foto +
       // texto que se tipea sincronizado. Reemplaza tandas de comps sueltos que hacían "fin".
       return `<ScrollDoc durationInFrames={d} panels={${j(b.panels || [])}} />`;
+    case "avpizarra":
+      // PIZARRA SOBRE EL AVATAR VIVO: zoom+dim+blur del clip del avatar + PNG recortado
+      // (transparente) entrando con animación + título/cuerpo + flecha. clip recortado
+      // por split_avatar_diagrams → OffthreadVideo desde frame 0 (no negro en el farm).
+      return (
+        `<AvatarPizarra durationInFrames={d}` +
+        ` clip=${j(`avatar_clips/${b.id}.mp4`)}` +
+        ` items={${j(b.items || [])}}` +
+        (b.side ? ` side=${j(b.side)}` : ``) +
+        (b.eyebrow ? ` eyebrow=${j(b.eyebrow)}` : ``) +
+        ` />`
+      );
     case "diagram": {
       // DIAGRAMA ESTÁTICO (regla dura del nicho): DiagramBoard = lámina quieta +
       // avatar PiP esquina, hard-cut entre páginas, SIN zoom/Ken-Burns. Calmo y pro.
@@ -1365,6 +1377,7 @@ for (const k of kinds) if (KIT[k]) imports.push(`import { ${KIT[k]} } from "./ki
 if (kinds.has("quote")) imports.push(`import { KineticQuote, parseQuote } from "./scenes/KineticQuote";`);
 if (kinds.has("layered")) imports.push(`import { LayeredReveal } from "./scenes/LayeredReveal";`);
 if (kinds.has("scrolldoc")) imports.push(`import { ScrollDoc } from "./scenes/ScrollDoc";`);
+if (kinds.has("avpizarra")) imports.push(`import { AvatarPizarra } from "./scenes/AvatarPizarra";`);
 if (kinds.has("chips")) imports.push(`import { ChipsCluster } from "./scenes/ReframeContent";`);
 if (kinds.has("splitlist")) imports.push(`import { SplitList } from "./scenes/SplitList";`);
 if (kinds.has("struckcards")) imports.push(`import { StruckCards } from "./scenes/StruckCards";`);
