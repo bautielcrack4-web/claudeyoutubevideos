@@ -17,6 +17,7 @@ import { MainMaderaRest, TOTAL_FRAMES_MR } from "./VideoEdit/Main_maderarest";
 import { MainImpermeable, TOTAL_FRAMES_IM } from "./VideoEdit/Main_impermeable";
 import { MainQuebracho, TOTAL_FRAMES_QB } from "./VideoEdit/Main_quebracho";
 import { MainAzotea, TOTAL_FRAMES_AZ } from "./VideoEdit/Main_azotea";
+import { MainSalitre2, TOTAL_FRAMES_SA2 } from "./VideoEdit/Main_salitre2";
 import { MainFederer, TOTAL_FRAMES_FED } from "./VideoEdit/Main_federer";
 import { MainRecalentados, TOTAL_FRAMES_RECAL } from "./VideoEdit/Main_recalentados";
 import { MainBorax, TOTAL_FRAMES_BX } from "./VideoEdit/Main_borax";
@@ -421,6 +422,8 @@ export const RemotionRoot: React.FC = () => {
       
       {/* IMPERMEABILIZACIÓN · Azotea (líquido $2 para siempre) */}
       <Composition id="Azotea" component={MainAzotea} durationInFrames={TOTAL_FRAMES_AZ} fps={30} width={1920} height={1080} />
+      {/* HUMEDAD · Salitre (el error que lo hace volver) */}
+      <Composition id="Salitre2" component={MainSalitre2} durationInFrames={TOTAL_FRAMES_SA2} fps={30} width={1920} height={1080} />
       {/* VIDEO 2 · EL CONSTRUCTOR LIBRE — Madera sin termitas (bórax + aceite) */}
       <Composition id="Borax" component={MainBorax} durationInFrames={TOTAL_FRAMES_BX} fps={30} width={1920} height={1080} />
       {/* VIDEO 3 · EL CONSTRUCTOR LIBRE — 2 metales = 0 plagas (barrera galvánica) */}
