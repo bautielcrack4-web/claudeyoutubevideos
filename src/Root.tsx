@@ -20,6 +20,7 @@ import { MainAzotea, TOTAL_FRAMES_AZ } from "./VideoEdit/Main_azotea";
 import { MainSalitre2, TOTAL_FRAMES_SA2 } from "./VideoEdit/Main_salitre2";
 import { MainFederer, TOTAL_FRAMES_FED } from "./VideoEdit/Main_federer";
 import { MainRecalentados, TOTAL_FRAMES_RECAL } from "./VideoEdit/Main_recalentados";
+import { MainArandano, TOTAL_FRAMES_ARAND } from "./VideoEdit/Main_arandano";
 import { MainBorax, TOTAL_FRAMES_BX } from "./VideoEdit/Main_borax";
 import { MainBarrera, TOTAL_FRAMES_BRR } from "./VideoEdit/Main_barrera";
 import { MainJabon, TOTAL_FRAMES_JABON } from "./VideoEdit/Main_jabon";
@@ -384,6 +385,8 @@ export const RemotionRoot: React.FC = () => {
         width={1920}
         height={1080}
       />
+      {/* Dr. Federer — Arándano/Ojos (imágenes fotorrealistas con avatar de ref) */}
+      <Composition id="Arandano" component={MainArandano} durationInFrames={TOTAL_FRAMES_ARAND} fps={30} width={1920} height={1080} />
       {/* VIDEO ACTIVO v2 — 20 Dulces (clips pegados a cada frase, sin marca) */}
       <Composition
         id="Dulcesv2"
