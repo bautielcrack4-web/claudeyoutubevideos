@@ -47,41 +47,17 @@
   {
    "id": "reframe_0",
    "start": 19.12,
-   "dur": 10.33,
+   "dur": 15.14,
    "key": "reframe",
-   "kind": "headline",
-   "tokens": [
-    {
-     "t": "No"
-    },
-    {
-     "t": "son"
-    },
-    {
-     "t": "tus"
-    },
-    {
-     "t": "ojos."
-    },
-    {
-     "t": "Es"
-    },
-    {
-     "t": "tu"
-    },
-    {
-     "t": "circulación",
-     "hl": true
-    }
-   ],
-   "eyebrow": "Lo que casi nadie te explica",
-   "bg": "image",
-   "image": "img/fe3_ojo_cerca.jpg"
+   "kind": "mitoverdad",
+   "myth": "Es la edad, no hay nada que hacer",
+   "truth": "Es tu circulación de noche",
+   "flipAt": 191
   },
   {
    "id": "reframe_1",
-   "start": 29.45,
-   "dur": 14.45,
+   "start": 34.26,
+   "dur": 9.64,
    "key": "reframe",
    "kind": "raw",
    "src": "img/fe3_espejo_manana.jpg"
@@ -89,10 +65,10 @@
   {
    "id": "danonoche_0",
    "start": 43.9,
-   "dur": 20.42,
+   "dur": 25.41,
    "key": "danonoche",
-   "kind": "headline",
-   "tokens": [
+   "kind": "frasecinetica",
+   "words": [
     {
      "t": "El"
     },
@@ -109,18 +85,24 @@
      "t": "de"
     },
     {
-     "t": "noche",
+     "t": "noche"
+    },
+    {
+     "t": "mientras",
+     "hl": true
+    },
+    {
+     "t": "dormís",
      "hl": true
     }
    ],
-   "eyebrow": "Mientras dormís, en silencio",
-   "bg": "image",
-   "image": "img/fe3_dormir_noche.jpg"
+   "tone": "warn",
+   "perWord": 10
   },
   {
    "id": "danonoche_1",
-   "start": 64.32,
-   "dur": 22.46,
+   "start": 69.31,
+   "dur": 17.47,
    "key": "danonoche",
    "kind": "chips",
    "bg": "image",
@@ -155,7 +137,7 @@
   {
    "id": "mecanismo_0",
    "start": 136.06,
-   "dur": 29.44,
+   "dur": 27.14,
    "key": "mecanismo",
    "kind": "diagram",
    "slides": [
@@ -167,26 +149,21 @@
   },
   {
    "id": "mecanismo_1",
-   "start": 165.5,
-   "dur": 13.5,
+   "start": 163.2,
+   "dur": 18.1,
    "key": "mecanismo",
-   "kind": "annotated",
+   "kind": "freezezoom",
    "image": "img/fe3_ojo_cerca.jpg",
-   "eyebrow": "La retina",
-   "caption": "Al fondo del ojo: convierte la luz en imágenes",
-   "annotations": [
-    {
-     "kind": "circle",
-     "x": 62,
-     "y": 50,
-     "label": "Retina"
-    }
-   ]
+   "x": 0.6,
+   "y": 0.46,
+   "label": "La retina",
+   "zoom": 2,
+   "tone": "teal"
   },
   {
    "id": "mecanismo_2",
-   "start": 179,
-   "dur": 29.44,
+   "start": 181.3,
+   "dur": 27.14,
    "key": "mecanismo",
    "kind": "diagram",
    "slides": [
@@ -305,17 +282,18 @@
   {
    "id": "err6_0",
    "start": 405.99,
-   "dur": 12.52,
+   "dur": 14.05,
    "key": "err6",
-   "kind": "rule",
+   "kind": "errorstinger",
    "number": "06",
    "title": "Irte a dormir deshidratado",
+   "tone": "warn",
    "w": 4
   },
   {
    "id": "err6_1",
-   "start": 418.51,
-   "dur": 7.51,
+   "start": 420.04,
+   "dur": 6.49,
    "key": "err6",
    "kind": "diagram",
    "slides": [
@@ -327,7 +305,7 @@
   },
   {
    "id": "err6_2",
-   "start": 426.02,
+   "start": 426.53,
    "dur": 4.2,
    "key": "err6",
    "kind": "bars",
@@ -407,9 +385,10 @@
    "start": 564.27,
    "dur": 68.12,
    "key": "err5",
-   "kind": "rule",
+   "kind": "errorstinger",
    "number": "05",
    "title": "El café o mate a la hora equivocada",
+   "tone": "warn",
    "w": 4.4
   },
   {
@@ -517,17 +496,18 @@
   {
    "id": "err4_0",
    "start": 771.41,
-   "dur": 27.16,
+   "dur": 31.5,
    "key": "err4",
-   "kind": "rule",
+   "kind": "errorstinger",
    "number": "04",
    "title": "La pantalla y la postura al dormir",
+   "tone": "warn",
    "w": 4.2
   },
   {
    "id": "err4_1",
-   "start": 798.57,
-   "dur": 9.06,
+   "start": 802.91,
+   "dur": 8.07,
    "key": "err4",
    "kind": "raw",
    "src": "img/fe3_celular_cama.jpg",
@@ -535,8 +515,8 @@
   },
   {
    "id": "err4_2",
-   "start": 807.63,
-   "dur": 15.52,
+   "start": 810.98,
+   "dur": 13.85,
    "key": "err4",
    "kind": "diagram",
    "slides": [
@@ -548,8 +528,8 @@
   },
   {
    "id": "err4_3",
-   "start": 823.15,
-   "dur": 15.52,
+   "start": 824.83,
+   "dur": 13.84,
    "key": "err4",
    "kind": "diagram",
    "slides": [
@@ -664,9 +644,10 @@
    "start": 970.07,
    "dur": 12.44,
    "key": "err3",
-   "kind": "rule",
+   "kind": "errorstinger",
    "number": "03",
    "title": "La tensión alta de noche",
+   "tone": "warn",
    "w": 3.8
   },
   {
@@ -756,17 +737,18 @@
   {
    "id": "err2_0",
    "start": 1149.03,
-   "dur": 63.08,
+   "dur": 88.07,
    "key": "err2",
-   "kind": "rule",
+   "kind": "errorstinger",
    "number": "02",
    "title": "Comer los nutrientes del ojo mal",
+   "tone": "warn",
    "w": 4.2
   },
   {
    "id": "err2_1",
-   "start": 1212.11,
-   "dur": 36.04,
+   "start": 1237.1,
+   "dur": 38.71,
    "key": "err2",
    "kind": "diagram",
    "slides": [
@@ -778,39 +760,35 @@
   },
   {
    "id": "err2_2",
-   "start": 1248.15,
-   "dur": 10.86,
+   "start": 1275.81,
+   "dur": 14.53,
    "key": "err2",
-   "kind": "raw",
-   "src": "img/fe3_arandanos_yogur.jpg",
-   "kicker": "Con yogur = bloqueás el beneficio"
+   "kind": "avatarpizarra",
+   "items": [
+    {
+     "image": "img/fe3_arandanos_yogur.jpg",
+     "eyebrow": "El error",
+     "caption": "Sin grasa, casi no se absorbe",
+     "at": 0
+    },
+    {
+     "image": "img/fe3_arandanos_nuez.jpg",
+     "eyebrow": "Lo correcto",
+     "caption": "Con una grasa buena, sí se absorbe",
+     "at": 195
+    },
+    {
+     "image": "img/fe3_palta_aceite.jpg",
+     "caption": "Una nuez, palta o aceite de oliva",
+     "at": 310
+    }
+   ],
+   "clip": "avatar_clips/err2_2.mp4"
   },
   {
    "id": "err2_3",
-   "start": 1259.01,
-   "dur": 18.62,
-   "key": "err2",
-   "kind": "diagram",
-   "slides": [
-    {
-     "image": "img/dg_fe3_calcio_bloquea.jpg",
-     "eyebrow": "El calcio bloquea la absorción (−30%)"
-    }
-   ]
-  },
-  {
-   "id": "err2_4",
-   "start": 1277.63,
-   "dur": 10.86,
-   "key": "err2",
-   "kind": "raw",
-   "src": "img/fe3_arandanos_nuez.jpg",
-   "kicker": "Con una nuez = se absorbe"
-  },
-  {
-   "id": "err2_5",
-   "start": 1288.49,
-   "dur": 9.31,
+   "start": 1301.21,
+   "dur": 8.96,
    "key": "err2",
    "kind": "bars",
    "title": "Absorción de luteína y zeaxantina",
@@ -829,17 +807,9 @@
    ]
   },
   {
-   "id": "err2_6",
-   "start": 1297.8,
-   "dur": 10.87,
-   "key": "err2",
-   "kind": "raw",
-   "src": "img/fe3_palta_aceite.jpg"
-  },
-  {
-   "id": "err2_7",
-   "start": 1308.67,
-   "dur": 18.62,
+   "id": "err2_4",
+   "start": 1310.17,
+   "dur": 17.93,
    "key": "err2",
    "kind": "diagram",
    "slides": [
@@ -850,17 +820,17 @@
    ]
   },
   {
-   "id": "err2_8",
-   "start": 1327.29,
-   "dur": 10.86,
+   "id": "err2_5",
+   "start": 1328.1,
+   "dur": 10.45,
    "key": "err2",
    "kind": "raw",
    "src": "img/fe3_espinaca_plato.jpg"
   },
   {
-   "id": "err2_9",
-   "start": 1338.15,
-   "dur": 10.86,
+   "id": "err2_6",
+   "start": 1338.55,
+   "dur": 10.46,
    "key": "err2",
    "kind": "raw",
    "src": "img/fe3_leche_cereal.jpg"
@@ -868,24 +838,41 @@
   {
    "id": "err1_0",
    "start": 1349.01,
-   "dur": 37.8,
+   "dur": 9.72,
    "key": "err1",
-   "kind": "rule",
+   "kind": "errorstinger",
    "number": "★",
    "title": "El pico de azúcar de la noche",
+   "tone": "warn",
    "w": 3.6
   },
   {
    "id": "err1_1",
-   "start": 1386.81,
-   "dur": 35.69,
+   "start": 1358.73,
+   "dur": 2.8,
+   "key": "err1",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "GLICACIÓN",
+     "sub": "el azúcar opaca el cristalino",
+     "tone": "warn",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/err1_1.mp4"
+  },
+  {
+   "id": "err1_2",
+   "start": 1386.18,
+   "dur": 35.89,
    "key": "err1",
    "kind": "pizaraglic"
   },
   {
-   "id": "err1_2",
-   "start": 1422.5,
-   "dur": 25.2,
+   "id": "err1_3",
+   "start": 1422.07,
+   "dur": 25.34,
    "key": "err1",
    "kind": "diagram",
    "slides": [
@@ -896,9 +883,9 @@
    ]
   },
   {
-   "id": "err1_3",
-   "start": 1447.7,
-   "dur": 11.55,
+   "id": "err1_4",
+   "start": 1447.41,
+   "dur": 11.61,
    "key": "err1",
    "kind": "callout",
    "image": "img/fe3_postre_noche.jpg",
@@ -906,25 +893,25 @@
    "caption": "Azúcar de noche → el cristalino se glica en silencio."
   },
   {
-   "id": "err1_4",
-   "start": 1459.25,
-   "dur": 14.69,
+   "id": "err1_5",
+   "start": 1459.02,
+   "dur": 14.78,
    "key": "err1",
    "kind": "raw",
    "src": "img/fe3_postre_noche.jpg"
   },
   {
-   "id": "err1_5",
-   "start": 1473.94,
-   "dur": 14.7,
+   "id": "err1_6",
+   "start": 1473.8,
+   "dur": 14.78,
    "key": "err1",
    "kind": "raw",
    "src": "img/fe3_galletitas_te.jpg"
   },
   {
-   "id": "err1_6",
-   "start": 1488.64,
-   "dur": 11.55,
+   "id": "err1_7",
+   "start": 1488.58,
+   "dur": 11.61,
    "key": "err1",
    "kind": "annotated",
    "image": "img/fe3_pan_fideos.jpg",
@@ -940,7 +927,7 @@
    ]
   },
   {
-   "id": "err1_7",
+   "id": "err1_8",
    "start": 1500.19,
    "dur": 13.85,
    "key": "err1",
@@ -948,7 +935,7 @@
    "src": "img/fe3_pan_fideos.jpg"
   },
   {
-   "id": "err1_8",
+   "id": "err1_9",
    "start": 1514.04,
    "dur": 10.39,
    "key": "err1",
@@ -960,7 +947,7 @@
    "eyebrow": "Por eso es tan grave"
   },
   {
-   "id": "err1_9",
+   "id": "err1_10",
    "start": 1524.43,
    "dur": 15.77,
    "key": "err1",
@@ -969,7 +956,7 @@
    "kicker": "Cena liviana, sin azúcar de noche"
   },
   {
-   "id": "err1_10",
+   "id": "err1_11",
    "start": 1540.2,
    "dur": 15.77,
    "key": "err1",
@@ -1008,7 +995,7 @@
   {
    "id": "pasos_0",
    "start": 1617.15,
-   "dur": 15.08,
+   "dur": 12.83,
    "key": "pasos",
    "kind": "process",
    "title": "El protocolo de la noche",
@@ -1038,46 +1025,54 @@
   },
   {
    "id": "pasos_1",
-   "start": 1632.23,
-   "dur": 16.45,
+   "start": 1629.98,
+   "dur": 35.01,
    "key": "pasos",
-   "kind": "checklist",
-   "title": "Antes de apagar la luz",
+   "kind": "guardaesto",
+   "title": "Tu rutina de la noche",
    "items": [
     {
+     "text": "Cena liviana, sin azúcar",
+     "image": "img/fe3_cena_liviana.jpg"
+    },
+    {
+     "text": "Último vaso de agua 45 min antes",
+     "image": "img/fe3_toma_ultimo_vaso.jpg"
+    },
+    {
+     "text": "Frutos rojos + una nuez",
+     "image": "img/fe3_arandanos_nuez.jpg"
+    },
+    {
      "text": "Pantallas apagadas, luz cálida",
-     "state": "done"
+     "image": "img/fe3_apaga_celular.jpg"
     },
     {
-     "text": "Dormí boca arriba o de costado",
-     "state": "done"
-    },
-    {
-     "text": "Un vaso de agua a mano",
-     "state": "done"
+     "text": "Caminata de 10-15 min",
+     "image": "img/fe3_camina_noche.jpg"
     }
    ]
   },
   {
    "id": "pasos_2",
-   "start": 1648.68,
-   "dur": 19.2,
+   "start": 1664.99,
+   "dur": 16.33,
    "key": "pasos",
    "kind": "raw",
    "src": "img/fe3_frutos_rojos_mesa.jpg"
   },
   {
    "id": "pasos_3",
-   "start": 1667.88,
-   "dur": 19.19,
+   "start": 1681.32,
+   "dur": 16.33,
    "key": "pasos",
    "kind": "raw",
    "src": "img/fe3_chocolate_amargo.jpg"
   },
   {
    "id": "pasos_4",
-   "start": 1687.07,
-   "dur": 19.2,
+   "start": 1697.65,
+   "dur": 16.34,
    "key": "pasos",
    "kind": "raw",
    "src": "img/fe3_camina_noche.jpg",
@@ -1085,16 +1080,16 @@
   },
   {
    "id": "pasos_5",
-   "start": 1706.27,
-   "dur": 19.19,
+   "start": 1713.99,
+   "dur": 16.33,
    "key": "pasos",
    "kind": "raw",
    "src": "img/fe3_apaga_celular.jpg"
   },
   {
    "id": "pasos_6",
-   "start": 1725.46,
-   "dur": 32.63,
+   "start": 1730.32,
+   "dur": 27.77,
    "key": "pasos",
    "kind": "raw",
    "src": "img/fe3_duerme_tranquila.jpg",
@@ -1103,7 +1098,18 @@
   {
    "id": "disclaimer_0",
    "start": 1758.09,
-   "dur": 44.56,
+   "dur": 25.46,
+   "key": "disclaimer",
+   "kind": "lowerthird",
+   "title": "Consultá con tu médico",
+   "tone": "warn",
+   "kicker": "Importante",
+   "desc": "Vista que empeora, manchas o destellos: al oftalmólogo."
+  },
+  {
+   "id": "disclaimer_1",
+   "start": 1783.55,
+   "dur": 19.1,
    "key": "disclaimer",
    "kind": "checklist",
    "title": "Importante",

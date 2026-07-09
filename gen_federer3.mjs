@@ -13,9 +13,20 @@ const dg = (name, eyebrow, o = {}) => ({ t: "diagram", slides: [{ image: `img/${
 const oj = (o = {}) => ({ t: "pizarraojo", ...o });             // explainer animado del mecanismo
 const gl = (o = {}) => ({ t: "pizaraglic", ...o });             // explainer animado de la glicación (error #1)
 const rl = (o = {}) => ({ t: "relojnoche", ...o });             // reloj/ventana de reparación de la noche
+// ── KIT PREMIUM (jul 2026) ──
+const es = (number, title, o = {}) => ({ t: "errorstinger", number, title, tone: o.tone || "warn", ...o });
+const mv = (myth, truth, o = {}) => ({ t: "mitoverdad", myth, truth, ...o }); // o.flipPhrase = frase donde hace el flip
+const fc = (words, o = {}) => ({ t: "frasecinetica", words, tone: o.tone || "warn", perWord: o.perWord || 10, ...o });
+const ak = (items, o = {}) => ({ t: "avatarkeyword", items, ...o, at: o.at || (items[0] && items[0].atPhrase) }); // items:[{word,sub?,image?,tone,atPhrase}]
+const ap = (items, o = {}) => ({ t: "avatarpizarra", items, ...o, at: o.at || (items[0] && items[0].atPhrase) }); // items:[{image?,caption?,card?,sub?,atPhrase}]
+const lt = (title, o = {}) => ({ t: "lowerthird", title, tone: o.tone || "teal", ...o });
+const ge = (title, items, o = {}) => ({ t: "guardaesto", title, items, ...o });
+const fz = (image, o = {}) => ({ t: "freezezoom", image: `img/${image}.jpg`, ...o });
 const ANIM = new Set(["pizarraojo", "pizaraglic", "relojnoche"]);
+const KIT = new Set(["errorstinger", "mitoverdad", "frasecinetica", "avatarkeyword", "avatarpizarra", "lowerthird", "guardaesto", "freezezoom"]);
 
-const W = { raw: 1.4, quote: 1.1, headline: 1.0, rule: 1.0, stat: 1.05, checklist: 1.2, splitlist: 1.1, bars: 1.2, callout: 1.1, chips: 1.1, diagram: 2.4, board: 3.0, nametag: 1.3, pizarraojo: 3.4, pizaraglic: 3.4, relojnoche: 3.2, talk: 1.0 };
+const W = { raw: 1.4, quote: 1.1, headline: 1.0, rule: 1.0, stat: 1.05, checklist: 1.2, splitlist: 1.1, bars: 1.2, callout: 1.1, chips: 1.1, diagram: 2.4, board: 3.0, nametag: 1.3, pizarraojo: 3.4, pizaraglic: 3.4, relojnoche: 3.2, talk: 1.0,
+  errorstinger: 1.3, mitoverdad: 2.2, frasecinetica: 1.6, avatarkeyword: 2.6, avatarpizarra: 3.4, lowerthird: 1.6, guardaesto: 3.0, freezezoom: 1.6 };
 
 // ── SECCIONES (ancladas a frases reales del transcript) ──────────────────────
 const SECTIONS = [
@@ -28,11 +39,11 @@ const SECTIONS = [
     r("fe3_taza_cafe_manana", { hold: true }),
   ]},
   { key: "reframe", phrase: "mucha gente cree que la vista borrosa", beats: [
-    c("headline", { tokens: ["No", "son", "tus", "ojos.", "Es", "tu", { t: "circulación" }], eyebrow: "Lo que casi nadie te explica", bg: "image", image: "img/fe3_ojo_cerca.jpg" }),
+    mv("Es la edad, no hay nada que hacer", "Es tu circulación de noche", { flipPhrase: "esta en tu circulacion" }),
     r("fe3_espejo_manana", {}),
   ]},
   { key: "danonoche", phrase: "el dano mas serio en tus ojos", beats: [
-    c("headline", { tokens: ["El", "daño", "se", "hace", "de", { t: "noche" }], eyebrow: "Mientras dormís, en silencio", bg: "image", image: "img/fe3_dormir_noche.jpg" }),
+    fc([{ t: "El" }, { t: "daño" }, { t: "se" }, { t: "hace" }, { t: "de" }, { t: "noche" }, { t: "mientras", hl: true }, { t: "dormís", hl: true }], { tone: "warn" }),
     c("chips", { bg: "image", image: "img/fe3_ojos_pesados.jpg", imageDarken: 0.6, title: "Hoy vas a entender", chips: ["Por qué se te nubla", "Los 6 errores de la noche", "Cómo corregirlos hoy"] }),
   ]},
   // ░░ IDENTIDAD ░░
@@ -43,7 +54,7 @@ const SECTIONS = [
   // ░░ MECANISMO ░░ — la parte más importante
   { key: "mecanismo", phrase: "tus ojos y sobre todo la retina", beats: [
     dg("dg_fe3_retina_oxigeno", "La retina consume muchísimo oxígeno"),
-    c("annotated", { image: "img/fe3_ojo_cerca.jpg", eyebrow: "La retina", caption: "Al fondo del ojo: convierte la luz en imágenes", annotations: [{ kind: "circle", x: 62, y: 50, label: "Retina" }] }),
+    fz("fe3_ojo_cerca", { x: 0.6, y: 0.46, label: "La retina", zoom: 2.0, tone: "teal", at: "recubriendo cada" }),
     dg("dg_fe3_capilares_retina", "Se lo llevan capilares finísimos"),
   ]},
   { key: "taller", phrase: "la noche es el taller de reparacion", beats: [
@@ -69,7 +80,7 @@ const SECTIONS = [
   ]},
   // ░░ ERROR 6 · deshidratación ░░
   { key: "err6", phrase: "error numero 6", beats: [
-    c("rule", { number: "06", title: "Irte a dormir deshidratado", w: 4.0 }),
+    es("06", "Irte a dormir deshidratado", { w: 4.0 }),
     dg("dg_fe3_sangre_espesa", "Poca agua = sangre espesa"),
     c("bars", { title: "Cómo circula la sangre de noche", unit: "", bars: [
       { label: "Bien hidratado (fluida)", value: 100, winner: true },
@@ -83,7 +94,7 @@ const SECTIONS = [
   ]},
   // ░░ ERROR 5 · café/mate tarde ░░
   { key: "err5", phrase: "error numero 5", beats: [
-    c("rule", { number: "05", title: "El café o mate a la hora equivocada", w: 4.4 }),
+    es("05", "El café o mate a la hora equivocada", { w: 4.4 }),
     r("fe3_cafe_tarde", { at: "cafeina tomada a media tarde" }),
     dg("dg_fe3_cafeina_tiempo", "La cafeína dura 5-6 horas en la sangre"),
     dg("dg_fe3_fases_sueno", "Te roba el sueño profundo (donde se repara el ojo)"),
@@ -100,7 +111,7 @@ const SECTIONS = [
   ]},
   // ░░ ERROR 4 · pantalla + postura ░░
   { key: "err4", phrase: "error numero 4", beats: [
-    c("rule", { number: "04", title: "La pantalla y la postura al dormir", w: 4.2 }),
+    es("04", "La pantalla y la postura al dormir", { w: 4.2 }),
     r("fe3_celular_cama", { at: "mirar el celular en la cama", kicker: "Luz azul a 10 cm de la cara" }),
     dg("dg_fe3_luz_azul", "La luz azul frena la melatonina"),
     dg("dg_fe3_melatonina_antiox", "Y la melatonina protege el ojo"),
@@ -119,7 +130,7 @@ const SECTIONS = [
   ]},
   // ░░ ERROR 3 · tensión nocturna ░░
   { key: "err3", phrase: "error numero 3", beats: [
-    c("rule", { number: "03", title: "La tensión alta de noche", w: 3.8 }),
+    es("03", "La tensión alta de noche", { w: 3.8 }),
     r("fe3_tensiometro_brazo", { at: "la tension controlada" }),
     dg("dg_fe3_tension_capilares", "Tensión alta = capilares de la retina dañados"),
     r("fe3_dolor_nuca", { at: "dolor de cabeza al despertar" }),
@@ -133,22 +144,24 @@ const SECTIONS = [
   ]},
   // ░░ ERROR 2 · absorción ░░
   { key: "err2", phrase: "error numero 2", beats: [
-    c("rule", { number: "02", title: "Comer los nutrientes del ojo mal", w: 4.2 }),
+    es("02", "Comer los nutrientes del ojo mal", { w: 4.2 }),
     dg("dg_fe3_luteina_macula", "Luteína y zeaxantina: el filtro de la mácula"),
-    r("fe3_arandanos_yogur", { at: "junto con lacteos", kicker: "Con yogur = bloqueás el beneficio" }),
-    dg("dg_fe3_calcio_bloquea", "El calcio bloquea la absorción (−30%)"),
-    r("fe3_arandanos_nuez", { at: "una grasa saludable", kicker: "Con una nuez = se absorbe" }),
+    ap([
+      { image: "img/fe3_arandanos_yogur.jpg", eyebrow: "El error", caption: "Sin grasa, casi no se absorbe", atPhrase: "sin nada de grasa" },
+      { image: "img/fe3_arandanos_nuez.jpg", eyebrow: "Lo correcto", caption: "Con una grasa buena, sí se absorbe", atPhrase: "un poquito de grasa buena" },
+      { image: "img/fe3_palta_aceite.jpg", caption: "Una nuez, palta o aceite de oliva", atPhrase: "una nuez un poco" },
+    ], {}),
     c("bars", { title: "Absorción de luteína y zeaxantina", unit: "%", bars: [
       { label: "Con lácteos / sin grasa", value: 70, tone: "danger" },
       { label: "Con una grasa buena", value: 100, winner: true } ] }),
-    r("fe3_palta_aceite", {}),
     dg("dg_fe3_grasa_absorcion", "Con grasa buena = mucha más absorción"),
     r("fe3_espinaca_plato", {}),
     r("fe3_leche_cereal", {}),
   ]},
   // ░░ ERROR 1 · azúcar / glicación ░░
   { key: "err1", phrase: "error numero uno", beats: [
-    c("rule", { number: "★", title: "El pico de azúcar de la noche", w: 3.6 }),
+    es("★", "El pico de azúcar de la noche", { w: 3.6 }),
+    ak([{ word: "GLICACIÓN", sub: "el azúcar opaca el cristalino", tone: "warn", atPhrase: "se llama glicacion" }], {}),
     gl({}), // PizarraGlicacion — el cristalino que se opaca (avatar afuera)
     dg("dg_fe3_glicacion", "El azúcar se pega al cristalino y lo opaca"),
     c("callout", { image: "img/fe3_postre_noche.jpg", figure: "El error #1", caption: "Azúcar de noche → el cristalino se glica en silencio." }),
@@ -174,10 +187,13 @@ const SECTIONS = [
       { title: "Último vaso de agua", desc: "45 min antes", image: "img/fe3_toma_ultimo_vaso.jpg" },
       { title: "Frutos rojos + nuez", desc: "lejos de lácteos", image: "img/fe3_frutos_rojos_mesa.jpg" },
       { title: "Caminá 10-15 min", desc: "después de cenar", image: "img/fe3_camina_noche.jpg" } ] }),
-    c("checklist", { title: "Antes de apagar la luz", items: [
-      { text: "Pantallas apagadas, luz cálida", state: "done" },
-      { text: "Dormí boca arriba o de costado", state: "done" },
-      { text: "Un vaso de agua a mano", state: "done" } ] }),
+    ge("Tu rutina de la noche", [
+      { text: "Cena liviana, sin azúcar", image: "img/fe3_cena_liviana.jpg" },
+      { text: "Último vaso de agua 45 min antes", image: "img/fe3_toma_ultimo_vaso.jpg" },
+      { text: "Frutos rojos + una nuez", image: "img/fe3_arandanos_nuez.jpg" },
+      { text: "Pantallas apagadas, luz cálida", image: "img/fe3_apaga_celular.jpg" },
+      { text: "Caminata de 10-15 min", image: "img/fe3_camina_noche.jpg" },
+    ], { at: "cinco pasos" }),
     r("fe3_frutos_rojos_mesa", {}),
     r("fe3_chocolate_amargo", {}),
     r("fe3_camina_noche", { at: "camina diez o quince minutos", kicker: "Café/cena + caminata" }),
@@ -186,6 +202,7 @@ const SECTIONS = [
   ]},
   // ░░ DISCLAIMER (corto) ░░
   { key: "disclaimer", phrase: "y antes de despedirme", beats: [
+    lt("Consultá con tu médico", { kicker: "Importante", desc: "Vista que empeora, manchas o destellos: al oftalmólogo.", tone: "warn", at: "es informacion general" }),
     c("checklist", { title: "Importante", items: [
       { text: "Es información general, no un diagnóstico", state: "warn" },
       { text: "Vista que empeora rápido, manchas o destellos: al oftalmólogo", state: "warn" },
@@ -278,6 +295,34 @@ for (let si = 0; si < SECTIONS.length; si++) {
     beats.push(beat);
   });
 }
+
+// ── POST-PASS "MILIMÉTRICO": resolver sub-ítems al ms EXACTO del avatar ───────
+const KIT_CLIPS = []; // avatarpizarra/keyword → clip de avatar pre-extraído (farm-safe)
+for (const beat of beats) {
+  if (beat.kind === "avatarpizarra" || beat.kind === "avatarkeyword") {
+    let last = 0;
+    beat.items = (beat.items || []).map((it) => {
+      let atF = 0;
+      if (it.atPhrase) { const ms = findMs(it.atPhrase, beat.start - 1); if (ms != null) atF = Math.max(0, Math.round((ms - beat.start) * 30)); }
+      last = Math.max(last, atF);
+      const { atPhrase, ...rest } = it; return { ...rest, at: atF };
+    });
+    const hold = beat.kind === "avatarpizarra" ? 4.2 : 2.8;
+    beat.dur = +(last / 30 + hold).toFixed(2); // la duración la marcan los ÍTEMS, no la sección
+    beat.clip = `avatar_clips/${beat.id}.mp4`; // el avatar de este tramo, pre-extraído
+    KIT_CLIPS.push({ name: beat.id, start: +beat.start.toFixed(2), dur: +(beat.dur + 0.4).toFixed(2) });
+  }
+  if (beat.kind === "mitoverdad" && beat.flipPhrase) {
+    const ms = findMs(beat.flipPhrase, beat.start - 1);
+    const lastSafe = Math.round(beat.dur * 30) - 26; // el flip debe caber DENTRO del beat + hold para leer la verdad
+    let f = ms != null ? Math.round((ms - beat.start) * 30) : Math.round(beat.dur * 30 * 0.42);
+    if (f < 8 || f > lastSafe) f = Math.round(beat.dur * 30 * 0.42); // fuera de rango → fallback 42%
+    beat.flipAt = f;
+    delete beat.flipPhrase;
+  }
+  if (beat.at) delete beat.at; // ya se usó para anclar; no debe llegar al render
+}
+fs.writeFileSync("public/avatar_clips_federer3.json", JSON.stringify(KIT_CLIPS, null, 1));
 
 // ── PISO DE DURACIÓN de componentes ──
 const COMPK = new Set(["headline", "stat", "quote", "chips", "splitlist", "checklist", "callout", "bars", "diagram", "rule", "nametag", "board", "pizarraojo", "pizaraglic", "relojnoche", "annotated", "cross", "process"]);

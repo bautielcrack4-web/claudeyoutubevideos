@@ -29,6 +29,7 @@ const STRUCT = ["bars", "vs", "cross", "process", "journey", "infzoom", "annotat
   "perox", "bigstat", "statgrid", "bulletlist", "numberedsteps", "timeline", "comparetwo", "barchart", "rankingbars", "donutstat",
   "partsdiagram", "crosssection", "flowarrows", "cyclediagram", "mappin", "annotatedphoto", "quotecard", "equation", "ingredientscard",
   "costtally", "gaugemeter", "stampreveal", "labelcallout", "splitpanel", "processgrid", "closingcard",
+  "mitoverdad", "guardaesto", "avatarpizarra",
   "pxbottle", "pxsoil", "pxseed", "pxrescue", "pxmildew", "pxsun", "pxdose", "pxfizz", "pxamber", "pxgnats",
   "pxwater", "pxcost", "pxforge", "pxdrown", "pxmyth", "pxseven"];
 const structKinds = STRUCT.filter((k) => count[k] > 0);
