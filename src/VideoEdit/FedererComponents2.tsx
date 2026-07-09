@@ -57,8 +57,9 @@ export function renderFederer2Comp(beat: any, d: number): React.ReactNode {
         />
       );
     case "nametag":
-      // el default de DocNameCard es img/federer_casual.png (video 1, no existe acá) → pasar foto fe2
-      return <DocNameCard durationInFrames={d} name={beat.name} role={beat.role} image="img/fe2_federer_cafe.png" />;
+      // el default de DocNameCard es img/federer_casual.png (video 1, no existe acá).
+      // Cada video pasa su propia foto del doctor por beat.image (fe2/fe3); fallback fe2.
+      return <DocNameCard durationInFrames={d} name={beat.name} role={beat.role} image={beat.image || "img/fe2_federer_cafe.png"} />;
     default:
       return renderFedererComp(beat, d);
   }

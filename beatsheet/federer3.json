@@ -140,7 +140,8 @@
    "key": "presenta",
    "kind": "nametag",
    "name": "Dr. Federer",
-   "role": "Médico · más de una década de consultorio"
+   "role": "Médico · más de una década de consultorio",
+   "image": "img/fe3_medico_consultorio.jpg"
   },
   {
    "id": "presenta_1",
@@ -1185,7 +1186,8 @@
    "key": "cta",
    "kind": "nametag",
    "name": "Dr. Federer",
-   "role": "Cada semana, ciencia real para cuidarte después de los 60"
+   "role": "Cada semana, ciencia real para cuidarte después de los 60",
+   "image": "img/fe3_medico_consultorio.jpg"
   },
   {
    "id": "close_0",

@@ -37,7 +37,7 @@ const SECTIONS = [
   ]},
   // ░░ IDENTIDAD ░░
   { key: "presenta", phrase: "federer hace mas de", beats: [
-    c("nametag", { name: "Dr. Federer", role: "Médico · más de una década de consultorio" }),
+    c("nametag", { name: "Dr. Federer", role: "Médico · más de una década de consultorio", image: "img/fe3_medico_consultorio.jpg" }),
     r("fe3_paciente_consulta", { at: "veo cada vez mas borroso", kicker: "«Doctor, veo cada vez más borroso»" }),
   ]},
   // ░░ MECANISMO ░░ — la parte más importante
@@ -202,7 +202,7 @@ const SECTIONS = [
   // ░░ CTA ░░
   { key: "cta", phrase: "si esto te sirvio", beats: [
     c("chips", { bg: "image", image: "img/fe3_duerme_tranquila.jpg", imageDarken: 0.62, title: "Si te sirvió", chips: ["Dale me gusta", "Suscribite", "Compartilo"] }),
-    c("nametag", { name: "Dr. Federer", role: "Cada semana, ciencia real para cuidarte después de los 60" }),
+    c("nametag", { name: "Dr. Federer", role: "Cada semana, ciencia real para cuidarte después de los 60", image: "img/fe3_medico_consultorio.jpg" }),
   ]},
   { key: "close", phrase: "federer cuidate la vista", beats: [
     c("talk", {}),
