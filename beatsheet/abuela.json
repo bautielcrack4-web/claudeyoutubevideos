@@ -6,7 +6,7 @@
   {
    "id": "b374",
    "kind": "raw",
-   "src": "real/e_viejo_come_1_1.jpg",
+   "src": "img/ab_06_madre_sirve.png",
    "start": 6,
    "dur": 2.6,
    "hue": "amber",
@@ -20,7 +20,7 @@
   {
    "id": "b375",
    "kind": "raw",
-   "src": "real/e_abuela_cocina_1_2.jpg",
+   "src": "real/e_viejo_come_1_1.jpg",
    "start": 8.6,
    "dur": 2.6,
    "hue": "amber",
@@ -34,7 +34,7 @@
   {
    "id": "b376",
    "kind": "raw",
-   "src": "real/e_manos_viejas_1_1.jpg",
+   "src": "img/ab_13_alacena.png",
    "start": 11.2,
    "dur": 2.6,
    "hue": "amber",
@@ -43,12 +43,12 @@
     1.15
    ],
    "kbPhase": 0,
-   "avhide": true
+   "avpos": "cornerTR"
   },
   {
    "id": "b377",
    "kind": "raw",
-   "src": "real/e_cocina_vieja_1_3.jpg",
+   "src": "real/e_abuela_cocina_1_2.jpg",
    "start": 13.8,
    "dur": 2.6,
    "hue": "amber",
@@ -62,7 +62,7 @@
   {
    "id": "b378",
    "kind": "raw",
-   "src": "real/e_abuela_cocina_1_3.jpg",
+   "src": "img/ab_18_huerta_invierno.png",
    "start": 16.4,
    "dur": 2.6,
    "hue": "amber",
@@ -76,7 +76,7 @@
   {
    "id": "b379",
    "kind": "raw",
-   "src": "real/e_manos_viejas_1_6.jpg",
+   "src": "real/e_manos_viejas_1_1.jpg",
    "start": 19,
    "dur": 2.6,
    "hue": "amber",
@@ -146,7 +146,7 @@
   {
    "id": "b380",
    "kind": "raw",
-   "src": "real/e_cocina_vieja_1_6.jpg",
+   "src": "img/ab_23_chicos_comen.png",
    "start": 21.6,
    "dur": 2.6,
    "hue": "amber",
@@ -160,7 +160,7 @@
   {
    "id": "b381",
    "kind": "raw",
-   "src": "real/e_abuela_cocina_1_6.jpg",
+   "src": "real/e_cocina_vieja_1_3.jpg",
    "start": 24.2,
    "dur": 2.6,
    "hue": "amber",
@@ -174,7 +174,7 @@
   {
    "id": "b382",
    "kind": "raw",
-   "src": "real/e_manos_viejas_1_8.jpg",
+   "src": "real/e_abuela_cocina_1_3.jpg",
    "start": 26.8,
    "dur": 2.6,
    "hue": "amber",
@@ -188,7 +188,7 @@
   {
    "id": "b383",
    "kind": "raw",
-   "src": "real/e_cocina_vieja_1_7.jpg",
+   "src": "img/ab_29_madre_rostro.png",
    "start": 29.4,
    "dur": 2.6,
    "hue": "amber",
@@ -202,7 +202,7 @@
   {
    "id": "b384",
    "kind": "raw",
-   "src": "real/e_abuela_cocina_2_3.jpg",
+   "src": "real/e_manos_viejas_1_6.jpg",
    "start": 32,
    "dur": 2.6,
    "hue": "amber",
@@ -216,7 +216,7 @@
   {
    "id": "b385",
    "kind": "raw",
-   "src": "real/e_manos_viejas_2_2.jpg",
+   "src": "img/ab_36_contar_pesos.png",
    "start": 34.6,
    "dur": 2.6,
    "hue": "amber",
@@ -225,12 +225,12 @@
     1.05
    ],
    "kbPhase": 1,
-   "avhide": true
+   "avpos": "cornerTR"
   },
   {
    "id": "b386",
    "kind": "raw",
-   "src": "real/e_cocina_vieja_1_8.jpg",
+   "src": "real/e_cocina_vieja_1_6.jpg",
    "start": 37.2,
    "dur": 2.6,
    "hue": "amber",
@@ -244,7 +244,7 @@
   {
    "id": "b387",
    "kind": "raw",
-   "src": "real/e_abuela_cocina_2_8.jpg",
+   "src": "real/e_abuela_cocina_1_6.jpg",
    "start": 39.8,
    "dur": 2.6,
    "hue": "amber",
@@ -258,7 +258,7 @@
   {
    "id": "b388",
    "kind": "raw",
-   "src": "real/e_manos_viejas_2_3.jpg",
+   "src": "img/ab_43_comer_sola.png",
    "start": 42.4,
    "dur": 2.6,
    "hue": "amber",
@@ -267,12 +267,12 @@
     1.15
    ],
    "kbPhase": 0,
-   "avhide": true
+   "avpos": "cornerTR"
   },
   {
    "id": "b389",
    "kind": "raw",
-   "src": "real/e_cocina_vieja_2_1.jpg",
+   "src": "real/e_manos_viejas_1_8.jpg",
    "start": 45,
    "dur": 2.6,
    "hue": "amber",
@@ -286,7 +286,7 @@
   {
    "id": "b390",
    "kind": "raw",
-   "src": "real/e_manos_viejas_2_4.jpg",
+   "src": "real/e_cocina_vieja_1_7.jpg",
    "start": 47.6,
    "dur": 2.6,
    "hue": "amber",
@@ -300,7 +300,7 @@
   {
    "id": "b391",
    "kind": "raw",
-   "src": "real/e_cocina_vieja_2_2.jpg",
+   "src": "img/ab_50_olla_fuego.png",
    "start": 50.2,
    "dur": 2.6,
    "hue": "amber",
@@ -309,12 +309,12 @@
     1.05
    ],
    "kbPhase": 3,
-   "avhide": true
+   "avpos": "cornerTR"
   },
   {
    "id": "b392",
    "kind": "raw",
-   "src": "real/e_manos_viejas_2_7.jpg",
+   "src": "real/e_abuela_cocina_2_3.jpg",
    "start": 52.8,
    "dur": 2.6,
    "hue": "amber",
@@ -328,7 +328,7 @@
   {
    "id": "b393",
    "kind": "raw",
-   "src": "real/e_cocina_vieja_2_2.jpg",
+   "src": "real/e_manos_viejas_2_2.jpg",
    "start": 55.4,
    "dur": 2.6,
    "hue": "amber",
@@ -342,7 +342,7 @@
   {
    "id": "b394",
    "kind": "raw",
-   "src": "real/e_cocina_vieja_2_3.jpg",
+   "src": "img/ab_58_manos_pan.png",
    "start": 58,
    "dur": 2.6,
    "hue": "amber",
@@ -351,12 +351,12 @@
     1.15
    ],
    "kbPhase": 2,
-   "avhide": true
+   "avpos": "cornerTR"
   },
   {
    "id": "b395",
    "kind": "raw",
-   "src": "real/e_cocina_vieja_2_3.jpg",
+   "src": "real/e_cocina_vieja_1_8.jpg",
    "start": 60.6,
    "dur": 2.6,
    "hue": "amber",
@@ -370,7 +370,7 @@
   {
    "id": "b396",
    "kind": "raw",
-   "src": "real/e_cocina_vieja_2_4.jpg",
+   "src": "real/e_abuela_cocina_2_8.jpg",
    "start": 63.2,
    "dur": 2.6,
    "hue": "amber",
@@ -384,7 +384,7 @@
   {
    "id": "b397",
    "kind": "raw",
-   "src": "real/e_cocina_vieja_2_4.jpg",
+   "src": "real/e_manos_viejas_2_3.jpg",
    "start": 65.8,
    "dur": 2.6,
    "hue": "amber",
@@ -398,7 +398,7 @@
   {
    "id": "b398",
    "kind": "raw",
-   "src": "real/e_cocina_vieja_2_5.jpg",
+   "src": "real/e_cocina_vieja_2_1.jpg",
    "start": 68.4,
    "dur": 2.6,
    "hue": "amber",
@@ -412,7 +412,7 @@
   {
    "id": "b399",
    "kind": "raw",
-   "src": "real/e_cocina_vieja_2_6.jpg",
+   "src": "real/e_manos_viejas_2_4.jpg",
    "start": 71,
    "dur": 2.6,
    "hue": "amber",
@@ -426,7 +426,7 @@
   {
    "id": "b400",
    "kind": "raw",
-   "src": "real/e_cocina_vieja_2_6.jpg",
+   "src": "real/e_cocina_vieja_2_2.jpg",
    "start": 73.6,
    "dur": 2.6,
    "hue": "amber",
@@ -440,7 +440,7 @@
   {
    "id": "b401",
    "kind": "raw",
-   "src": "real/e_cocina_vieja_2_7.jpg",
+   "src": "real/e_manos_viejas_2_7.jpg",
    "start": 76.2,
    "dur": 2.6,
    "hue": "amber",
@@ -454,7 +454,7 @@
   {
    "id": "b402",
    "kind": "raw",
-   "src": "real/e_cocina_vieja_2_7.jpg",
+   "src": "real/e_cocina_vieja_2_2.jpg",
    "start": 78.8,
    "dur": 2.6,
    "hue": "amber",
@@ -468,7 +468,7 @@
   {
    "id": "b403",
    "kind": "raw",
-   "src": "real/e_cocina_vieja_2_8.jpg",
+   "src": "real/e_cocina_vieja_2_3.jpg",
    "start": 81.4,
    "dur": 2.6,
    "hue": "amber",
@@ -482,79 +482,85 @@
   {
    "id": "b404",
    "kind": "raw",
-   "src": "broll/cc_sopapan_1.mp4",
+   "src": "real/e_cocina_vieja_2_3.jpg",
    "start": 84,
    "dur": 2.6,
    "hue": "amber",
    "zoom": [
-    1.02,
-    1.05
+    1.05,
+    1.15
    ],
+   "kbPhase": 0,
    "avpos": "cornerTR"
   },
   {
    "id": "b405",
    "kind": "raw",
-   "src": "broll/cc_fideosmanteca_2.mp4",
+   "src": "real/e_cocina_vieja_2_4.jpg",
    "start": 86.6,
    "dur": 2.6,
    "hue": "amber",
    "zoom": [
-    1.02,
+    1.15,
     1.05
    ],
+   "kbPhase": 1,
    "avpos": "cornerTR"
   },
   {
    "id": "b406",
    "kind": "raw",
-   "src": "broll/cc_arrozhuevo_1.mp4",
+   "src": "real/e_cocina_vieja_2_4.jpg",
    "start": 89.2,
    "dur": 2.6,
    "hue": "amber",
    "zoom": [
-    1.02,
-    1.05
+    1.05,
+    1.15
    ],
+   "kbPhase": 2,
    "avhide": true
   },
   {
    "id": "b407",
    "kind": "raw",
-   "src": "broll/cc_polenta_1.mp4",
+   "src": "real/e_cocina_vieja_2_5.jpg",
    "start": 91.8,
    "dur": 2.6,
    "hue": "amber",
    "zoom": [
-    1.02,
+    1.15,
     1.05
    ],
+   "kbPhase": 3,
    "avpos": "cornerTR"
   },
   {
    "id": "b408",
    "kind": "raw",
-   "src": "broll/cc_zapallo_1.mp4",
+   "src": "real/e_cocina_vieja_2_6.jpg",
    "start": 94.4,
    "dur": 2.6,
    "hue": "amber",
    "zoom": [
-    1.02,
-    1.05
+    1.05,
+    1.15
    ],
+   "kbPhase": 0,
    "avpos": "cornerTR"
   },
   {
    "id": "b409",
    "kind": "raw",
-   "src": "broll/cc_arrozguisado_1.mp4",
+   "src": "real/e_cocina_vieja_2_6.jpg",
    "start": 97,
    "dur": 2.6,
    "hue": "amber",
    "zoom": [
-    1.02,
+    1.15,
     1.05
    ],
+   "kbPhase": 1,
    "avhide": true
   },
   {
@@ -583,33 +589,35 @@
   {
    "id": "b410",
    "kind": "raw",
-   "src": "broll/cc_tortillapapa_2.mp4",
+   "src": "real/e_cocina_vieja_2_7.jpg",
    "start": 99.6,
    "dur": 2.6,
    "hue": "amber",
    "zoom": [
-    1.02,
-    1.05
+    1.05,
+    1.15
    ],
+   "kbPhase": 2,
    "avpos": "cornerTR"
   },
   {
    "id": "b411",
    "kind": "raw",
-   "src": "broll/cc_lentejas_1.mp4",
+   "src": "real/e_cocina_vieja_2_7.jpg",
    "start": 102.2,
    "dur": 2.6,
    "hue": "amber",
    "zoom": [
-    1.02,
+    1.15,
     1.05
    ],
+   "kbPhase": 3,
    "avpos": "cornerTR"
   },
   {
    "id": "b412",
    "kind": "raw",
-   "src": "real/vh_alacena_vacia.jpg",
+   "src": "real/e_cocina_vieja_2_8.jpg",
    "start": 104.8,
    "dur": 2.6,
    "hue": "amber",
@@ -623,119 +631,111 @@
   {
    "id": "b413",
    "kind": "raw",
-   "src": "real/vh_chicos_mesa.jpg",
+   "src": "broll/cc_sopapan_1.mp4",
    "start": 107.4,
    "dur": 2.6,
    "hue": "amber",
    "zoom": [
-    1.15,
+    1.02,
     1.05
    ],
-   "kbPhase": 1,
    "avpos": "cornerTR"
   },
   {
    "id": "b414",
    "kind": "raw",
-   "src": "real/vh_cocina_llena.jpg",
+   "src": "broll/cc_fideosmanteca_2.mp4",
    "start": 110,
    "dur": 2.6,
    "hue": "amber",
    "zoom": [
-    1.05,
-    1.15
+    1.02,
+    1.05
    ],
-   "kbPhase": 2,
    "avpos": "cornerTR"
   },
   {
    "id": "b415",
    "kind": "raw",
-   "src": "real/vh_contar_monedas.png",
+   "src": "broll/cc_arrozhuevo_1.mp4",
    "start": 112.6,
    "dur": 2.6,
    "hue": "amber",
    "zoom": [
-    1.15,
+    1.02,
     1.05
    ],
-   "kbPhase": 3,
    "avhide": true
   },
   {
    "id": "b416",
    "kind": "raw",
-   "src": "real/vh_cuaderno_recetas.jpg",
+   "src": "broll/cc_polenta_1.mp4",
    "start": 115.2,
    "dur": 2.6,
    "hue": "amber",
    "zoom": [
-    1.05,
-    1.15
+    1.02,
+    1.05
    ],
-   "kbPhase": 0,
    "avpos": "cornerTR"
   },
   {
    "id": "b417",
    "kind": "raw",
-   "src": "real/vh_familia_50s.jpg",
+   "src": "broll/cc_zapallo_1.mp4",
    "start": 117.8,
    "dur": 2.6,
    "hue": "amber",
    "zoom": [
-    1.15,
+    1.02,
     1.05
    ],
-   "kbPhase": 1,
    "avpos": "cornerTR"
   },
   {
    "id": "b418",
    "kind": "raw",
-   "src": "real/vh_foto_boda.png",
+   "src": "broll/cc_arrozguisado_1.mp4",
    "start": 120.4,
    "dur": 2.6,
    "hue": "amber",
    "zoom": [
-    1.05,
-    1.15
+    1.02,
+    1.05
    ],
-   "kbPhase": 2,
    "avhide": true
   },
   {
    "id": "b419",
    "kind": "raw",
-   "src": "real/vh_huerta_invierno.jpg",
+   "src": "broll/cc_tortillapapa_2.mp4",
    "start": 123,
    "dur": 2.6,
    "hue": "amber",
    "zoom": [
-    1.15,
+    1.02,
     1.05
    ],
-   "kbPhase": 3,
    "avpos": "cornerTR"
   },
   {
    "id": "b420",
    "kind": "raw",
-   "src": "real/vh_madre_olla.jpg",
+   "src": "broll/cc_lentejas_1.mp4",
    "start": 125.6,
    "dur": 2.6,
    "hue": "amber",
    "zoom": [
-    1.05,
-    1.15
+    1.02,
+    1.05
    ],
-   "kbPhase": 0,
    "avpos": "cornerTR"
   },
   {
    "id": "b421",
    "kind": "raw",
-   "src": "real/vh_manos_pan.jpg",
+   "src": "real/vh_alacena_vacia.jpg",
    "start": 128.2,
    "dur": 2.6,
    "hue": "amber",
@@ -749,7 +749,7 @@
   {
    "id": "b422",
    "kind": "raw",
-   "src": "real/vh_olla_leña.jpg",
+   "src": "real/vh_chicos_mesa.jpg",
    "start": 130.8,
    "dur": 2.6,
    "hue": "amber",
@@ -763,7 +763,7 @@
   {
    "id": "b423",
    "kind": "raw",
-   "src": "real/vh_vieja_sola.jpg",
+   "src": "real/vh_cocina_llena.jpg",
    "start": 133.4,
    "dur": 2.6,
    "hue": "amber",
@@ -777,7 +777,7 @@
   {
    "id": "b424",
    "kind": "raw",
-   "src": "real/e_viejo_come_1_1.jpg",
+   "src": "real/vh_contar_monedas.png",
    "start": 136,
    "dur": 2.6,
    "hue": "amber",
@@ -791,7 +791,7 @@
   {
    "id": "b425",
    "kind": "raw",
-   "src": "real/e_abuela_cocina_1_2.jpg",
+   "src": "real/vh_cuaderno_recetas.jpg",
    "start": 138.6,
    "dur": 2.6,
    "hue": "amber",
@@ -805,7 +805,7 @@
   {
    "id": "b426",
    "kind": "raw",
-   "src": "real/e_manos_viejas_1_1.jpg",
+   "src": "real/vh_familia_50s.jpg",
    "start": 141.2,
    "dur": 2.3,
    "hue": "amber",
@@ -819,9 +819,9 @@
   {
    "id": "b427",
    "kind": "raw",
-   "src": "real/vh_alacena_vacia.jpg",
-   "start": 151.5,
-   "dur": 3.4,
+   "src": "img/ab_155_cocina_llena.png",
+   "start": 155,
+   "dur": 3.6,
    "hue": "amber",
    "zoom": [
     1.15,
@@ -833,9 +833,9 @@
   {
    "id": "b428",
    "kind": "raw",
-   "src": "real/vh_chicos_mesa.jpg",
-   "start": 167.5,
-   "dur": 3.4,
+   "src": "img/ab_168_foto_boda.png",
+   "start": 168,
+   "dur": 3.6,
    "hue": "amber",
    "zoom": [
     1.05,
@@ -929,11 +929,39 @@
    ]
   },
   {
+   "id": "b432",
+   "kind": "raw",
+   "src": "real/vh_alacena_vacia.jpg",
+   "start": 191.5,
+   "dur": 3.2,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 0,
+   "avhide": true
+  },
+  {
    "id": "b429",
    "kind": "raw",
-   "src": "real/vh_cocina_llena.jpg",
-   "start": 183.5,
-   "dur": 3.4,
+   "src": "img/ab_198_nieta.png",
+   "start": 198,
+   "dur": 3.6,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 1,
+   "avhide": true
+  },
+  {
+   "id": "b433",
+   "kind": "raw",
+   "src": "real/vh_chicos_mesa.jpg",
+   "start": 211.5,
+   "dur": 3.2,
    "hue": "amber",
    "zoom": [
     1.15,
@@ -945,9 +973,9 @@
   {
    "id": "b430",
    "kind": "raw",
-   "src": "real/vh_contar_monedas.png",
-   "start": 199.5,
-   "dur": 3.4,
+   "src": "img/ab_235_cuaderno.png",
+   "start": 235,
+   "dur": 3.6,
    "hue": "amber",
    "zoom": [
     1.05,
@@ -959,43 +987,15 @@
   {
    "id": "b431",
    "kind": "raw",
-   "src": "real/vh_cuaderno_recetas.jpg",
-   "start": 215.5,
-   "dur": 3.4,
+   "src": "img/ab_250_heladera_guia.png",
+   "start": 250,
+   "dur": 3.6,
    "hue": "amber",
    "zoom": [
     1.15,
     1.05
    ],
    "kbPhase": 3,
-   "avhide": true
-  },
-  {
-   "id": "b432",
-   "kind": "raw",
-   "src": "real/vh_familia_50s.jpg",
-   "start": 231.5,
-   "dur": 3.4,
-   "hue": "amber",
-   "zoom": [
-    1.05,
-    1.15
-   ],
-   "kbPhase": 0,
-   "avhide": true
-  },
-  {
-   "id": "b433",
-   "kind": "raw",
-   "src": "real/vh_foto_boda.png",
-   "start": 247.5,
-   "dur": 3.4,
-   "hue": "amber",
-   "zoom": [
-    1.15,
-    1.05
-   ],
-   "kbPhase": 1,
    "avhide": true
   },
   {

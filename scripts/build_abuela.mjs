@@ -89,19 +89,25 @@ for (let i = 0; i < order.length; i++) {
 const vintage = fs.readdirSync(R + "real").filter((f) => /^vh_/.test(f) && /\.(jpg|jpeg|png|webp)$/i.test(f)).map((f) => "real/" + f);
 const genImgs = fs.existsSync(R + "img") ? fs.readdirSync(R + "img").filter((f) => /^ab_/.test(f) && /\.png$/i.test(f)).map((f) => "img/" + f) : [];
 const teaserImgs = []; for (let n = 25; n >= 1; n--) { if (clipPool[n][0]) teaserImgs.push(clipPool[n][0]); }
-// on-brand primero (emocional nostálgico + teasers de comida), luego generadas y vintage
-const hookPool = [...emoPhotos, ...teaserImgs, ...genImgs, ...vintage];
+// imágenes generadas con la cara de la abuela, ancladas a su `at` (momento donde lo dice)
+const genAt = (() => { try { return JSON.parse(fs.readFileSync(R + "img/prompts_abuela_ref.json", "utf8")).map((p) => ({ src: "img/" + p.name + ".png", at: p.at })).filter((g) => fs.existsSync(R + g.src)); } catch { return []; } })();
+const genUsed = new Set();
+const fillerPool = [...emoPhotos, ...teaserImgs, ...vintage]; // relleno on-brand entre las generadas
 {
-  let t = OPEN, hi = 0, cyc = 0;
+  let t = OPEN, fi = 0, cyc = 0;
   while (t < HOOK_END - 0.3) {
     const dur = Math.min(2.6, HOOK_END - t);
-    push(hookPool[hi++ % hookPool.length], t, dur, (cyc++ % 3 === 2) ? "hidden" : "cornerTR");
-    t += dur;
+    // ¿hay una imagen generada cuyo `at` cae en esta ranura? → va esa (con la abuela en PiP)
+    const g = genAt.find((x) => !genUsed.has(x.src) && x.at >= t - 1.4 && x.at < t + dur);
+    if (g) { genUsed.add(g.src); push(g.src, t, dur, "cornerTR"); }
+    else push(fillerPool[fi++ % fillerPool.length], t, dur, (cyc % 3 === 2) ? "hidden" : "cornerTR");
+    cyc++; t += dur;
   }
-  // intro (auto-presentación) + CTA: cutaways puntuales, resto abuela full
-  const cutaways = [...vintage, ...genImgs].filter(Boolean);
-  let ci = 0;
-  for (let tt = HOOK_END + 8; tt < M[25] - 8; tt += 16) { push(cutaways[ci++ % cutaways.length], tt, 3.4, "hidden"); }
+  // intro (auto-presentación) + CTA: las generadas con at>=HOOK_END en su momento + cutaways vintage
+  const introGen = genAt.filter((x) => x.at >= HOOK_END);
+  for (const g of introGen) push(g.src, g.at, 3.6, "hidden");
+  const cutaways = [...vintage].filter(Boolean); let ci = 0;
+  for (let tt = HOOK_END + 8; tt < M[25] - 8; tt += 20) { if (!introGen.some((x) => Math.abs(x.at - tt) < 4)) push(cutaways[ci++ % cutaways.length], tt, 3.2, "hidden"); }
 }
 
 // ── overlays: grilla al arrancar el countdown + contador por comida ──
