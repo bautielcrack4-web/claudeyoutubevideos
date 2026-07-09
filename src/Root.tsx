@@ -16,6 +16,7 @@ import { MainEstufaRocket, TOTAL_FRAMES_ER } from "./VideoEdit/Main_estufarocket
 import { MainMaderaRest, TOTAL_FRAMES_MR } from "./VideoEdit/Main_maderarest";
 import { MainFederer, TOTAL_FRAMES_FED } from "./VideoEdit/Main_federer";
 import { MainFederer2, TOTAL_FRAMES_FED2 } from "./VideoEdit/Main_federer2";
+import { MainFederer3, TOTAL_FRAMES_FED3 } from "./VideoEdit/Main_federer3";
 import { MainRecalentados, TOTAL_FRAMES_RECAL } from "./VideoEdit/Main_recalentados";
 import { MainBorax, TOTAL_FRAMES_BX } from "./VideoEdit/Main_borax";
 import { MainBarrera, TOTAL_FRAMES_BRR } from "./VideoEdit/Main_barrera";
@@ -387,6 +388,8 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="Federer" component={MainFederer} durationInFrames={TOTAL_FRAMES_FED} fps={30} width={1920} height={1080} />
       {/* Dr. Federer — CAFÉ sin azúcar después de los 60 */}
       <Composition id="Federer2" component={MainFederer2} durationInFrames={TOTAL_FRAMES_FED2} fps={30} width={1920} height={1080} />
+      {/* Dr. Federer — Los 6 errores de la noche que te roban la vista */}
+      <Composition id="Federer3" component={MainFederer3} durationInFrames={TOTAL_FRAMES_FED3} fps={30} width={1920} height={1080} />
       {/* Federer Salud — Recalentados */}
       <Composition id="Recalentados" component={MainRecalentados} durationInFrames={TOTAL_FRAMES_RECAL} fps={30} width={1920} height={1080} />
       {/* VIDEO ACTIVO — 15 Costumbres de los Domingos (Video 3 cadena) */}
