@@ -565,13 +565,16 @@
    "title": "3 que te van a frenar el corazón",
    "cards": [
     {
-     "label": "N.º 20 · unos centavos"
+     "label": "N.º 20 · unos centavos",
+     "src": "real/d13_pangrasa_1_1.jpg"
     },
     {
-     "label": "N.º 12 · cuando alguien se enfermaba"
+     "label": "N.º 12 · cuando alguien se enfermaba",
+     "src": "real/d14_sopaverdura_1_1.jpg"
     },
     {
-     "label": "N.º 1 · la que hago por Antonio"
+     "label": "N.º 1 · la que hago por Antonio",
+     "src": "real/d09_puchero_1_1.jpg"
     }
    ],
    "overlay": true,

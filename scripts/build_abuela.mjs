@@ -127,7 +127,11 @@ for (const c of comps) {
   c.text = clean(c.text); c.title = clean(c.title); c.eyebrow = clean(c.eyebrow); c.name = clean(c.name); c.role = clean(c.role);
   if (Array.isArray(c.items)) c.items = c.items.map(clean);
   if (Array.isArray(c.words)) c.words = c.words.map((w) => ({ ...w, t: clean(w.t) }));
-  if (Array.isArray(c.cards)) c.cards = c.cards.map((x) => (typeof x === "string" ? clean(x) : { ...x, label: clean(x.label) }));
+  if (Array.isArray(c.cards)) c.cards = c.cards.map((x, i) => {
+    const o = typeof x === "string" ? { label: clean(x) } : { ...x, label: clean(x.label) };
+    if (!o.src) { const mm = String(o.label || "").match(/\bN\.?º?\s*(\d+)/); const n = mm ? +mm[1] : 0; o.src = (photoPool[n] && photoPool[n][0]) || gridImgs[i % gridImgs.length] || emoPhotos[i % emoPhotos.length]; }
+    return o;
+  });
   if ((c.kind === "ingredientesflotan" || c.kind === "fichadulce" || c.kind === "citaabuela") && !c.image) {
     const n = mealAt(c.start); const p = (photoPool[n] && photoPool[n][0]) || (clipPool[n] && clipPool[n][0]) || emoPhotos[Math.round(c.start) % emoPhotos.length]; if (p) c.image = p;
   }
