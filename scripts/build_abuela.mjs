@@ -24,7 +24,8 @@ const verdicts = JSON.parse(fs.readFileSync("_v3/comidas_photo_verdicts.json", "
 const drop = new Set((() => { try { return JSON.parse(fs.readFileSync("_v3/comidas_clip_drop.json", "utf8")).descartar || []; } catch { return []; } })());
 
 const END = S.end || 2309.9;
-const OPEN = M[25] - 6;            // avatar full hasta ~6s antes del primer plato (hook+intro+CTA)
+const OPEN = 6;                    // abuela abre FULL 6s; después el hook va con imágenes generadas + teasers (PiP)
+const HOOK_END = (S.selfIntro || 143.5); // fin del hook denso (arranca la auto-presentación)
 const MID = S.midpoint || 1195.8;  // re-hook de la mitad
 const PUCHERO = M[1];              // #1: avatar full (remate emotivo) → cierre
 const AV_FULL = [[MID, M[12]], [PUCHERO, END]]; // full en la mitad y del puchero al final
@@ -82,6 +83,27 @@ for (let i = 0; i < order.length; i++) {
   }
 }
 
+// ── HOOK DENSO (6..HOOK_END): imágenes vintage + generadas + emocionales + teasers, cortes
+// ~2.6s, abuela en PiP (a veces hidden). Ilustra lo que va contando (su madre, la familia,
+// la alacena, comer solo). Después la auto-presentación/CTA con cutaways puntuales. ──
+const vintage = fs.readdirSync(R + "real").filter((f) => /^vh_/.test(f) && /\.(jpg|jpeg|png|webp)$/i.test(f)).map((f) => "real/" + f);
+const genImgs = fs.existsSync(R + "img") ? fs.readdirSync(R + "img").filter((f) => /^ab_/.test(f) && /\.png$/i.test(f)).map((f) => "img/" + f) : [];
+const teaserImgs = []; for (let n = 25; n >= 1; n--) { if (clipPool[n][0]) teaserImgs.push(clipPool[n][0]); }
+// on-brand primero (emocional nostálgico + teasers de comida), luego generadas y vintage
+const hookPool = [...emoPhotos, ...teaserImgs, ...genImgs, ...vintage];
+{
+  let t = OPEN, hi = 0, cyc = 0;
+  while (t < HOOK_END - 0.3) {
+    const dur = Math.min(2.6, HOOK_END - t);
+    push(hookPool[hi++ % hookPool.length], t, dur, (cyc++ % 3 === 2) ? "hidden" : "cornerTR");
+    t += dur;
+  }
+  // intro (auto-presentación) + CTA: cutaways puntuales, resto abuela full
+  const cutaways = [...vintage, ...genImgs].filter(Boolean);
+  let ci = 0;
+  for (let tt = HOOK_END + 8; tt < M[25] - 8; tt += 16) { push(cutaways[ci++ % cutaways.length], tt, 3.4, "hidden"); }
+}
+
 // ── overlays: grilla al arrancar el countdown + contador por comida ──
 const overlays = [];
 const gridImgs = []; for (let n = 1; n <= 25; n++) { const p = photoPool[n]; if (p && p.length) gridImgs.push(p[p.length > 1 ? 1 : 0]); }
@@ -89,7 +111,33 @@ overlays.push({ id: "dishgrid", kind: "dishgrid", images: gridImgs.slice(0, 25),
 const mealTitle = { 25: "Sopa de pan", 24: "Fideos con manteca", 23: "Arroz con huevo", 22: "Polenta", 21: "Zapallo", 20: "Pan con grasa", 19: "Buñuelos de acelga", 18: "Revuelto de zapallitos", 17: "Tortas fritas", 16: "Fideos guisados", 15: "Croquetas", 14: "Papa con manteca", 13: "Ensalada de lentejas", 12: "Sopa de verduras", 11: "Postre de maicena", 10: "Budín de pan", 9: "Arroz guisado", 8: "Tortilla de papas", 7: "Locro", 6: "Mate cocido", 5: "Pastel de papa", 4: "Albóndigas", 3: "Guiso de arroz", 2: "Guiso de lentejas", 1: "Puchero" };
 for (let n = 25; n >= 1; n--) { const img = photoPool[n][0] || emoPhotos[0]; overlays.push({ id: `top_${n}`, kind: "topdulce", index: n, total: 25, title: mealTitle[n], image: img, start: +Math.max(0, M[n] - 0.6).toFixed(2), dur: 3.6, overlay: true }); }
 
-const all = [...raw, ...overlays.filter((o) => o.start + (o.dur || 4) <= END)];
+// ── COMPONENTES autorados por los agentes (ingredientesflotan/citaabuela/teasecards/…) ──
+const mealAt = (t) => { let best = 0, bt = -1; for (let n = 1; n <= 25; n++) { if (M[n] <= t + 0.3 && M[n] > bt) { bt = M[n]; best = n; } } return best; };
+const comps = [];
+for (const f of fs.readdirSync("_v3").filter((x) => /^abuela_comp_[A-F]\.json$/.test(x))) {
+  try { for (const c of JSON.parse(fs.readFileSync("_v3/" + f, "utf8"))) comps.push(c); } catch { /* skip */ }
+}
+const CO_OK = new Set(["ingredientesflotan", "fichadulce", "citaabuela", "teasecards", "keyphrase", "antesahora", "numerodulce"]);
+for (const c of comps) {
+  if (!CO_OK.has(c.kind)) { c._drop = true; continue; }  // lowerthird u otros que no encajan → fuera
+  c.overlay = true;
+  if (!c.id) c.id = `${c.kind}_${Math.round(c.start)}`;
+  // sanitizar comillas dobles (rompen el JSX en modo atributo text="...")
+  const clean = (s) => typeof s === "string" ? s.replace(/["“”]/g, "") : s;
+  c.text = clean(c.text); c.title = clean(c.title); c.eyebrow = clean(c.eyebrow); c.name = clean(c.name); c.role = clean(c.role);
+  if (Array.isArray(c.items)) c.items = c.items.map(clean);
+  if (Array.isArray(c.words)) c.words = c.words.map((w) => ({ ...w, t: clean(w.t) }));
+  if (Array.isArray(c.cards)) c.cards = c.cards.map((x) => (typeof x === "string" ? clean(x) : { ...x, label: clean(x.label) }));
+  if ((c.kind === "ingredientesflotan" || c.kind === "fichadulce" || c.kind === "citaabuela") && !c.image) {
+    const n = mealAt(c.start); const p = (photoPool[n] && photoPool[n][0]) || (clipPool[n] && clipPool[n][0]) || emoPhotos[Math.round(c.start) % emoPhotos.length]; if (p) c.image = p;
+  }
+  if (c.kind === "citaabuela" && c.text && !c.words) {
+    const ws = c.text.split(/\s+/); const per = (c.dur || 4.5) / ws.length;
+    c.words = ws.map((t, i) => ({ t, at: +(i * per).toFixed(2) }));
+  }
+}
+
+const all = [...raw, ...overlays.filter((o) => o.start + (o.dur || 4) <= END), ...comps.filter((c) => !c._drop && c.start + (c.dur || 4) <= END)];
 const seen = new Set(); const out = [];
 for (const b of all.sort((a, z) => a.start - z.start)) { let id = b.id, k = 1; while (seen.has(id)) id = `${b.id}_${k++}`; seen.add(id); out.push({ ...b, id }); }
 fs.mkdirSync("beatsheet", { recursive: true });

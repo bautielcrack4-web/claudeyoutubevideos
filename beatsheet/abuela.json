@@ -4,6 +4,998 @@
  "clipsfirst": true,
  "beats": [
   {
+   "id": "b374",
+   "kind": "raw",
+   "src": "real/e_viejo_come_1_1.jpg",
+   "start": 6,
+   "dur": 2.6,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 2,
+   "avpos": "cornerTR"
+  },
+  {
+   "id": "b375",
+   "kind": "raw",
+   "src": "real/e_abuela_cocina_1_2.jpg",
+   "start": 8.6,
+   "dur": 2.6,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 3,
+   "avpos": "cornerTR"
+  },
+  {
+   "id": "b376",
+   "kind": "raw",
+   "src": "real/e_manos_viejas_1_1.jpg",
+   "start": 11.2,
+   "dur": 2.6,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 0,
+   "avhide": true
+  },
+  {
+   "id": "b377",
+   "kind": "raw",
+   "src": "real/e_cocina_vieja_1_3.jpg",
+   "start": 13.8,
+   "dur": 2.6,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 1,
+   "avpos": "cornerTR"
+  },
+  {
+   "id": "b378",
+   "kind": "raw",
+   "src": "real/e_abuela_cocina_1_3.jpg",
+   "start": 16.4,
+   "dur": 2.6,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 2,
+   "avpos": "cornerTR"
+  },
+  {
+   "id": "b379",
+   "kind": "raw",
+   "src": "real/e_manos_viejas_1_6.jpg",
+   "start": 19,
+   "dur": 2.6,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 3,
+   "avhide": true
+  },
+  {
+   "kind": "citaabuela",
+   "start": 20.9,
+   "dur": 5,
+   "text": "ninguno de nosotros se fue a dormir con la panza vacía",
+   "fontSize": 72,
+   "overlay": true,
+   "id": "citaabuela_21",
+   "image": "real/e_cocina_vieja_2_3.jpg",
+   "words": [
+    {
+     "t": "ninguno",
+     "at": 0
+    },
+    {
+     "t": "de",
+     "at": 0.45
+    },
+    {
+     "t": "nosotros",
+     "at": 0.91
+    },
+    {
+     "t": "se",
+     "at": 1.36
+    },
+    {
+     "t": "fue",
+     "at": 1.82
+    },
+    {
+     "t": "a",
+     "at": 2.27
+    },
+    {
+     "t": "dormir",
+     "at": 2.73
+    },
+    {
+     "t": "con",
+     "at": 3.18
+    },
+    {
+     "t": "la",
+     "at": 3.64
+    },
+    {
+     "t": "panza",
+     "at": 4.09
+    },
+    {
+     "t": "vacía",
+     "at": 4.55
+    }
+   ]
+  },
+  {
+   "id": "b380",
+   "kind": "raw",
+   "src": "real/e_cocina_vieja_1_6.jpg",
+   "start": 21.6,
+   "dur": 2.6,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 0,
+   "avpos": "cornerTR"
+  },
+  {
+   "id": "b381",
+   "kind": "raw",
+   "src": "real/e_abuela_cocina_1_6.jpg",
+   "start": 24.2,
+   "dur": 2.6,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 1,
+   "avpos": "cornerTR"
+  },
+  {
+   "id": "b382",
+   "kind": "raw",
+   "src": "real/e_manos_viejas_1_8.jpg",
+   "start": 26.8,
+   "dur": 2.6,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 2,
+   "avhide": true
+  },
+  {
+   "id": "b383",
+   "kind": "raw",
+   "src": "real/e_cocina_vieja_1_7.jpg",
+   "start": 29.4,
+   "dur": 2.6,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 3,
+   "avpos": "cornerTR"
+  },
+  {
+   "id": "b384",
+   "kind": "raw",
+   "src": "real/e_abuela_cocina_2_3.jpg",
+   "start": 32,
+   "dur": 2.6,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 0,
+   "avpos": "cornerTR"
+  },
+  {
+   "id": "b385",
+   "kind": "raw",
+   "src": "real/e_manos_viejas_2_2.jpg",
+   "start": 34.6,
+   "dur": 2.6,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 1,
+   "avhide": true
+  },
+  {
+   "id": "b386",
+   "kind": "raw",
+   "src": "real/e_cocina_vieja_1_8.jpg",
+   "start": 37.2,
+   "dur": 2.6,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 2,
+   "avpos": "cornerTR"
+  },
+  {
+   "id": "b387",
+   "kind": "raw",
+   "src": "real/e_abuela_cocina_2_8.jpg",
+   "start": 39.8,
+   "dur": 2.6,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 3,
+   "avpos": "cornerTR"
+  },
+  {
+   "id": "b388",
+   "kind": "raw",
+   "src": "real/e_manos_viejas_2_3.jpg",
+   "start": 42.4,
+   "dur": 2.6,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 0,
+   "avhide": true
+  },
+  {
+   "id": "b389",
+   "kind": "raw",
+   "src": "real/e_cocina_vieja_2_1.jpg",
+   "start": 45,
+   "dur": 2.6,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 1,
+   "avpos": "cornerTR"
+  },
+  {
+   "id": "b390",
+   "kind": "raw",
+   "src": "real/e_manos_viejas_2_4.jpg",
+   "start": 47.6,
+   "dur": 2.6,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 2,
+   "avpos": "cornerTR"
+  },
+  {
+   "id": "b391",
+   "kind": "raw",
+   "src": "real/e_cocina_vieja_2_2.jpg",
+   "start": 50.2,
+   "dur": 2.6,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 3,
+   "avhide": true
+  },
+  {
+   "id": "b392",
+   "kind": "raw",
+   "src": "real/e_manos_viejas_2_7.jpg",
+   "start": 52.8,
+   "dur": 2.6,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 0,
+   "avpos": "cornerTR"
+  },
+  {
+   "id": "b393",
+   "kind": "raw",
+   "src": "real/e_cocina_vieja_2_2.jpg",
+   "start": 55.4,
+   "dur": 2.6,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 1,
+   "avpos": "cornerTR"
+  },
+  {
+   "id": "b394",
+   "kind": "raw",
+   "src": "real/e_cocina_vieja_2_3.jpg",
+   "start": 58,
+   "dur": 2.6,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 2,
+   "avhide": true
+  },
+  {
+   "id": "b395",
+   "kind": "raw",
+   "src": "real/e_cocina_vieja_2_3.jpg",
+   "start": 60.6,
+   "dur": 2.6,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 3,
+   "avpos": "cornerTR"
+  },
+  {
+   "id": "b396",
+   "kind": "raw",
+   "src": "real/e_cocina_vieja_2_4.jpg",
+   "start": 63.2,
+   "dur": 2.6,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 0,
+   "avpos": "cornerTR"
+  },
+  {
+   "id": "b397",
+   "kind": "raw",
+   "src": "real/e_cocina_vieja_2_4.jpg",
+   "start": 65.8,
+   "dur": 2.6,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 1,
+   "avhide": true
+  },
+  {
+   "id": "b398",
+   "kind": "raw",
+   "src": "real/e_cocina_vieja_2_5.jpg",
+   "start": 68.4,
+   "dur": 2.6,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 2,
+   "avpos": "cornerTR"
+  },
+  {
+   "id": "b399",
+   "kind": "raw",
+   "src": "real/e_cocina_vieja_2_6.jpg",
+   "start": 71,
+   "dur": 2.6,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 3,
+   "avpos": "cornerTR"
+  },
+  {
+   "id": "b400",
+   "kind": "raw",
+   "src": "real/e_cocina_vieja_2_6.jpg",
+   "start": 73.6,
+   "dur": 2.6,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 0,
+   "avhide": true
+  },
+  {
+   "id": "b401",
+   "kind": "raw",
+   "src": "real/e_cocina_vieja_2_7.jpg",
+   "start": 76.2,
+   "dur": 2.6,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 1,
+   "avpos": "cornerTR"
+  },
+  {
+   "id": "b402",
+   "kind": "raw",
+   "src": "real/e_cocina_vieja_2_7.jpg",
+   "start": 78.8,
+   "dur": 2.6,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 2,
+   "avpos": "cornerTR"
+  },
+  {
+   "id": "b403",
+   "kind": "raw",
+   "src": "real/e_cocina_vieja_2_8.jpg",
+   "start": 81.4,
+   "dur": 2.6,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 3,
+   "avhide": true
+  },
+  {
+   "id": "b404",
+   "kind": "raw",
+   "src": "broll/cc_sopapan_1.mp4",
+   "start": 84,
+   "dur": 2.6,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ],
+   "avpos": "cornerTR"
+  },
+  {
+   "id": "b405",
+   "kind": "raw",
+   "src": "broll/cc_fideosmanteca_2.mp4",
+   "start": 86.6,
+   "dur": 2.6,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ],
+   "avpos": "cornerTR"
+  },
+  {
+   "id": "b406",
+   "kind": "raw",
+   "src": "broll/cc_arrozhuevo_1.mp4",
+   "start": 89.2,
+   "dur": 2.6,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ],
+   "avhide": true
+  },
+  {
+   "id": "b407",
+   "kind": "raw",
+   "src": "broll/cc_polenta_1.mp4",
+   "start": 91.8,
+   "dur": 2.6,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ],
+   "avpos": "cornerTR"
+  },
+  {
+   "id": "b408",
+   "kind": "raw",
+   "src": "broll/cc_zapallo_1.mp4",
+   "start": 94.4,
+   "dur": 2.6,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ],
+   "avpos": "cornerTR"
+  },
+  {
+   "id": "b409",
+   "kind": "raw",
+   "src": "broll/cc_arrozguisado_1.mp4",
+   "start": 97,
+   "dur": 2.6,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ],
+   "avhide": true
+  },
+  {
+   "kind": "teasecards",
+   "start": 98.7,
+   "dur": 6,
+   "eyebrow": "Quedate hasta el final",
+   "title": "3 que te van a frenar el corazón",
+   "cards": [
+    {
+     "label": "N.º 20 · unos centavos"
+    },
+    {
+     "label": "N.º 12 · cuando alguien se enfermaba"
+    },
+    {
+     "label": "N.º 1 · la que hago por Antonio"
+    }
+   ],
+   "overlay": true,
+   "id": "teasecards_99"
+  },
+  {
+   "id": "b410",
+   "kind": "raw",
+   "src": "broll/cc_tortillapapa_2.mp4",
+   "start": 99.6,
+   "dur": 2.6,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ],
+   "avpos": "cornerTR"
+  },
+  {
+   "id": "b411",
+   "kind": "raw",
+   "src": "broll/cc_lentejas_1.mp4",
+   "start": 102.2,
+   "dur": 2.6,
+   "hue": "amber",
+   "zoom": [
+    1.02,
+    1.05
+   ],
+   "avpos": "cornerTR"
+  },
+  {
+   "id": "b412",
+   "kind": "raw",
+   "src": "real/vh_alacena_vacia.jpg",
+   "start": 104.8,
+   "dur": 2.6,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 0,
+   "avhide": true
+  },
+  {
+   "id": "b413",
+   "kind": "raw",
+   "src": "real/vh_chicos_mesa.jpg",
+   "start": 107.4,
+   "dur": 2.6,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 1,
+   "avpos": "cornerTR"
+  },
+  {
+   "id": "b414",
+   "kind": "raw",
+   "src": "real/vh_cocina_llena.jpg",
+   "start": 110,
+   "dur": 2.6,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 2,
+   "avpos": "cornerTR"
+  },
+  {
+   "id": "b415",
+   "kind": "raw",
+   "src": "real/vh_contar_monedas.png",
+   "start": 112.6,
+   "dur": 2.6,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 3,
+   "avhide": true
+  },
+  {
+   "id": "b416",
+   "kind": "raw",
+   "src": "real/vh_cuaderno_recetas.jpg",
+   "start": 115.2,
+   "dur": 2.6,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 0,
+   "avpos": "cornerTR"
+  },
+  {
+   "id": "b417",
+   "kind": "raw",
+   "src": "real/vh_familia_50s.jpg",
+   "start": 117.8,
+   "dur": 2.6,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 1,
+   "avpos": "cornerTR"
+  },
+  {
+   "id": "b418",
+   "kind": "raw",
+   "src": "real/vh_foto_boda.png",
+   "start": 120.4,
+   "dur": 2.6,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 2,
+   "avhide": true
+  },
+  {
+   "id": "b419",
+   "kind": "raw",
+   "src": "real/vh_huerta_invierno.jpg",
+   "start": 123,
+   "dur": 2.6,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 3,
+   "avpos": "cornerTR"
+  },
+  {
+   "id": "b420",
+   "kind": "raw",
+   "src": "real/vh_madre_olla.jpg",
+   "start": 125.6,
+   "dur": 2.6,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 0,
+   "avpos": "cornerTR"
+  },
+  {
+   "id": "b421",
+   "kind": "raw",
+   "src": "real/vh_manos_pan.jpg",
+   "start": 128.2,
+   "dur": 2.6,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 1,
+   "avhide": true
+  },
+  {
+   "id": "b422",
+   "kind": "raw",
+   "src": "real/vh_olla_leña.jpg",
+   "start": 130.8,
+   "dur": 2.6,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 2,
+   "avpos": "cornerTR"
+  },
+  {
+   "id": "b423",
+   "kind": "raw",
+   "src": "real/vh_vieja_sola.jpg",
+   "start": 133.4,
+   "dur": 2.6,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 3,
+   "avpos": "cornerTR"
+  },
+  {
+   "id": "b424",
+   "kind": "raw",
+   "src": "real/e_viejo_come_1_1.jpg",
+   "start": 136,
+   "dur": 2.6,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 0,
+   "avhide": true
+  },
+  {
+   "id": "b425",
+   "kind": "raw",
+   "src": "real/e_abuela_cocina_1_2.jpg",
+   "start": 138.6,
+   "dur": 2.6,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 1,
+   "avpos": "cornerTR"
+  },
+  {
+   "id": "b426",
+   "kind": "raw",
+   "src": "real/e_manos_viejas_1_1.jpg",
+   "start": 141.2,
+   "dur": 2.3,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 2,
+   "avpos": "cornerTR"
+  },
+  {
+   "id": "b427",
+   "kind": "raw",
+   "src": "real/vh_alacena_vacia.jpg",
+   "start": 151.5,
+   "dur": 3.4,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 3,
+   "avhide": true
+  },
+  {
+   "id": "b428",
+   "kind": "raw",
+   "src": "real/vh_chicos_mesa.jpg",
+   "start": 167.5,
+   "dur": 3.4,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 0,
+   "avhide": true
+  },
+  {
+   "kind": "citaabuela",
+   "start": 173,
+   "dur": 5,
+   "text": "no hay ninguna vergüenza en una mesa puesta para uno",
+   "fontSize": 72,
+   "overlay": true,
+   "id": "citaabuela_173",
+   "image": "real/e_cocina_vieja_2_4.jpg",
+   "words": [
+    {
+     "t": "no",
+     "at": 0
+    },
+    {
+     "t": "hay",
+     "at": 0.5
+    },
+    {
+     "t": "ninguna",
+     "at": 1
+    },
+    {
+     "t": "vergüenza",
+     "at": 1.5
+    },
+    {
+     "t": "en",
+     "at": 2
+    },
+    {
+     "t": "una",
+     "at": 2.5
+    },
+    {
+     "t": "mesa",
+     "at": 3
+    },
+    {
+     "t": "puesta",
+     "at": 3.5
+    },
+    {
+     "t": "para",
+     "at": 4
+    },
+    {
+     "t": "uno",
+     "at": 4.5
+    }
+   ]
+  },
+  {
+   "kind": "citaabuela",
+   "start": 181.7,
+   "dur": 4,
+   "text": "te mereces el plato bueno",
+   "fontSize": 80,
+   "overlay": true,
+   "id": "citaabuela_182",
+   "image": "real/e_manos_viejas_1_1.jpg",
+   "words": [
+    {
+     "t": "te",
+     "at": 0
+    },
+    {
+     "t": "mereces",
+     "at": 0.8
+    },
+    {
+     "t": "el",
+     "at": 1.6
+    },
+    {
+     "t": "plato",
+     "at": 2.4
+    },
+    {
+     "t": "bueno",
+     "at": 3.2
+    }
+   ]
+  },
+  {
+   "id": "b429",
+   "kind": "raw",
+   "src": "real/vh_cocina_llena.jpg",
+   "start": 183.5,
+   "dur": 3.4,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 1,
+   "avhide": true
+  },
+  {
+   "id": "b430",
+   "kind": "raw",
+   "src": "real/vh_contar_monedas.png",
+   "start": 199.5,
+   "dur": 3.4,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 2,
+   "avhide": true
+  },
+  {
+   "id": "b431",
+   "kind": "raw",
+   "src": "real/vh_cuaderno_recetas.jpg",
+   "start": 215.5,
+   "dur": 3.4,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 3,
+   "avhide": true
+  },
+  {
+   "id": "b432",
+   "kind": "raw",
+   "src": "real/vh_familia_50s.jpg",
+   "start": 231.5,
+   "dur": 3.4,
+   "hue": "amber",
+   "zoom": [
+    1.05,
+    1.15
+   ],
+   "kbPhase": 0,
+   "avhide": true
+  },
+  {
+   "id": "b433",
+   "kind": "raw",
+   "src": "real/vh_foto_boda.png",
+   "start": 247.5,
+   "dur": 3.4,
+   "hue": "amber",
+   "zoom": [
+    1.15,
+    1.05
+   ],
+   "kbPhase": 1,
+   "avhide": true
+  },
+  {
    "id": "dishgrid",
    "kind": "dishgrid",
    "images": [
@@ -76,6 +1068,29 @@
     1.05
    ],
    "avpos": "cornerTR"
+  },
+  {
+   "kind": "ingredientesflotan",
+   "start": 277.3,
+   "dur": 6,
+   "title": "Sopa de pan",
+   "items": [
+    "Pan duro",
+    "Grasa",
+    "Un diente de ajo",
+    "Agua o caldo",
+    "Un huevo"
+   ],
+   "atsec": [
+    0,
+    0.8,
+    1.6,
+    2.4,
+    3.2
+   ],
+   "overlay": true,
+   "id": "ingredientesflotan_277",
+   "image": "real/d01_sopapan_1_1.jpg"
   },
   {
    "id": "b2",
@@ -206,6 +1221,54 @@
     1.05
    ],
    "avpos": "cornerTR"
+  },
+  {
+   "kind": "citaabuela",
+   "start": 320.8,
+   "dur": 4.5,
+   "text": "que te recuerde que el consuelo nunca fue caro",
+   "fontSize": 70,
+   "overlay": true,
+   "id": "citaabuela_321",
+   "image": "real/d01_sopapan_1_1.jpg",
+   "words": [
+    {
+     "t": "que",
+     "at": 0
+    },
+    {
+     "t": "te",
+     "at": 0.5
+    },
+    {
+     "t": "recuerde",
+     "at": 1
+    },
+    {
+     "t": "que",
+     "at": 1.5
+    },
+    {
+     "t": "el",
+     "at": 2
+    },
+    {
+     "t": "consuelo",
+     "at": 2.5
+    },
+    {
+     "t": "nunca",
+     "at": 3
+    },
+    {
+     "t": "fue",
+     "at": 3.5
+    },
+    {
+     "t": "caro",
+     "at": 4
+    }
+   ]
   },
   {
    "id": "b12",
@@ -360,6 +1423,25 @@
     1.05
    ],
    "avhide": true
+  },
+  {
+   "kind": "ingredientesflotan",
+   "start": 369.4,
+   "dur": 6,
+   "title": "Fideos con manteca",
+   "items": [
+    "Un puñado de fideos",
+    "Un buen trozo de manteca",
+    "Queso rallado"
+   ],
+   "atsec": [
+    0,
+    0.8,
+    1.6
+   ],
+   "overlay": true,
+   "id": "ingredientesflotan_369",
+   "image": "real/d06_fideosmanteca_1_1.jpg"
   },
   {
    "id": "b23",
@@ -594,6 +1676,25 @@
    "avpos": "cornerBL"
   },
   {
+   "kind": "ingredientesflotan",
+   "start": 444.2,
+   "dur": 6,
+   "title": "Arroz con huevo",
+   "items": [
+    "Arroz blanco bien suelto",
+    "Un huevo frito",
+    "Un poco de grasa"
+   ],
+   "atsec": [
+    0,
+    0.8,
+    1.6
+   ],
+   "overlay": true,
+   "id": "ingredientesflotan_444",
+   "image": "real/d05_arrozhuevo_1_1.jpg"
+  },
+  {
    "id": "b40",
    "kind": "raw",
    "src": "broll/cc_arrozhuevo_3.mp4",
@@ -802,6 +1903,70 @@
    "avpos": "cornerBL"
   },
   {
+   "kind": "citaabuela",
+   "start": 518.1,
+   "dur": 4.5,
+   "text": "son las que hacen que una comida de pobre te sepa a hogar",
+   "fontSize": 66,
+   "overlay": true,
+   "id": "citaabuela_518",
+   "image": "real/d05_arrozhuevo_1_1.jpg",
+   "words": [
+    {
+     "t": "son",
+     "at": 0
+    },
+    {
+     "t": "las",
+     "at": 0.35
+    },
+    {
+     "t": "que",
+     "at": 0.69
+    },
+    {
+     "t": "hacen",
+     "at": 1.04
+    },
+    {
+     "t": "que",
+     "at": 1.38
+    },
+    {
+     "t": "una",
+     "at": 1.73
+    },
+    {
+     "t": "comida",
+     "at": 2.08
+    },
+    {
+     "t": "de",
+     "at": 2.42
+    },
+    {
+     "t": "pobre",
+     "at": 2.77
+    },
+    {
+     "t": "te",
+     "at": 3.12
+    },
+    {
+     "t": "sepa",
+     "at": 3.46
+    },
+    {
+     "t": "a",
+     "at": 3.81
+    },
+    {
+     "t": "hogar",
+     "at": 4.15
+    }
+   ]
+  },
+  {
    "id": "b56",
    "kind": "raw",
    "src": "broll/cc_arrozhuevo_1.mp4",
@@ -850,6 +2015,27 @@
     1.05
    ],
    "avpos": "cornerTR"
+  },
+  {
+   "kind": "ingredientesflotan",
+   "start": 533.9,
+   "dur": 6,
+   "title": "Polenta",
+   "items": [
+    "Harina de maíz",
+    "Agua",
+    "Sal",
+    "Manteca"
+   ],
+   "atsec": [
+    0,
+    0.8,
+    1.6,
+    2.4
+   ],
+   "overlay": true,
+   "id": "ingredientesflotan_534",
+   "image": "real/d03_polenta_1_1.jpg"
   },
   {
    "id": "b59",
@@ -1034,6 +2220,30 @@
    "avpos": "cornerTR"
   },
   {
+   "kind": "citaabuela",
+   "start": 597.2,
+   "dur": 4.5,
+   "text": "pobres, pero ricos",
+   "fontSize": 80,
+   "overlay": true,
+   "id": "citaabuela_597",
+   "image": "real/d03_polenta_1_1.jpg",
+   "words": [
+    {
+     "t": "pobres,",
+     "at": 0
+    },
+    {
+     "t": "pero",
+     "at": 1.5
+    },
+    {
+     "t": "ricos",
+     "at": 3
+    }
+   ]
+  },
+  {
    "id": "b73",
    "kind": "raw",
    "src": "broll/cc_polenta_5.mp4",
@@ -1134,6 +2344,25 @@
     1.05
    ],
    "avhide": true
+  },
+  {
+   "kind": "ingredientesflotan",
+   "start": 626.9,
+   "dur": 6,
+   "title": "Puré de zapallo",
+   "items": [
+    "Zapallo",
+    "Manteca",
+    "Sal"
+   ],
+   "atsec": [
+    0,
+    0.8,
+    1.6
+   ],
+   "overlay": true,
+   "id": "ingredientesflotan_627",
+   "image": "real/d08_zapallo_1_1.jpg"
   },
   {
    "id": "b80",
@@ -1483,6 +2712,31 @@
    "avhide": true
   },
   {
+   "kind": "ingredientesflotan",
+   "start": 736.6,
+   "dur": 6,
+   "title": "Buñuelos de acelga",
+   "items": [
+    "acelga de la huerta",
+    "harina",
+    "un huevo",
+    "un poco de agua",
+    "sal",
+    "aceite bien caliente"
+   ],
+   "atsec": [
+    0,
+    0.8,
+    1.6,
+    2.4,
+    3.2,
+    4
+   ],
+   "overlay": true,
+   "id": "ingredientesflotan_737",
+   "image": "real/d12_bunuelos_1_1.jpg"
+  },
+  {
    "id": "b104",
    "kind": "raw",
    "src": "broll/cs_veg_into_pot.mp4",
@@ -1675,6 +2929,50 @@
    "avhide": true
   },
   {
+   "kind": "citaabuela",
+   "start": 802.8,
+   "dur": 4.5,
+   "text": "la huerta era la despensa de los pobres",
+   "fontSize": 70,
+   "overlay": true,
+   "id": "citaabuela_803",
+   "image": "real/d12_bunuelos_1_1.jpg",
+   "words": [
+    {
+     "t": "la",
+     "at": 0
+    },
+    {
+     "t": "huerta",
+     "at": 0.56
+    },
+    {
+     "t": "era",
+     "at": 1.13
+    },
+    {
+     "t": "la",
+     "at": 1.69
+    },
+    {
+     "t": "despensa",
+     "at": 2.25
+    },
+    {
+     "t": "de",
+     "at": 2.81
+    },
+    {
+     "t": "los",
+     "at": 3.38
+    },
+    {
+     "t": "pobres",
+     "at": 3.94
+    }
+   ]
+  },
+  {
    "id": "b118",
    "kind": "raw",
    "src": "real/d12_bunuelos_1_1.jpg",
@@ -1726,6 +3024,27 @@
    ],
    "kbPhase": 0,
    "avpos": "cornerTR"
+  },
+  {
+   "kind": "ingredientesflotan",
+   "start": 813.8,
+   "dur": 6,
+   "title": "Revuelto de zapallitos",
+   "items": [
+    "zapallitos de la huerta",
+    "una cebolla",
+    "dos huevos",
+    "sal"
+   ],
+   "atsec": [
+    0,
+    0.9,
+    1.8,
+    2.7
+   ],
+   "overlay": true,
+   "id": "ingredientesflotan_814",
+   "image": "real/d18_zapallitos_1_1.jpg"
   },
   {
    "id": "b121",
@@ -1916,6 +3235,27 @@
    ],
    "kbPhase": 1,
    "avhide": true
+  },
+  {
+   "kind": "ingredientesflotan",
+   "start": 875.2,
+   "dur": 6,
+   "title": "Tortas fritas",
+   "items": [
+    "harina",
+    "un poco de grasa",
+    "agua tibia",
+    "sal"
+   ],
+   "atsec": [
+    0,
+    0.9,
+    1.8,
+    2.7
+   ],
+   "overlay": true,
+   "id": "ingredientesflotan_875",
+   "image": "real/d11_tortasfritas_1_1.jpg"
   },
   {
    "id": "b134",
@@ -2152,6 +3492,58 @@
    "avhide": true
   },
   {
+   "kind": "citaabuela",
+   "start": 951.1,
+   "dur": 4.5,
+   "text": "la paciencia siempre fue el ingrediente que no se compra",
+   "fontSize": 70,
+   "overlay": true,
+   "id": "citaabuela_951",
+   "image": "real/d11_tortasfritas_1_1.jpg",
+   "words": [
+    {
+     "t": "la",
+     "at": 0
+    },
+    {
+     "t": "paciencia",
+     "at": 0.45
+    },
+    {
+     "t": "siempre",
+     "at": 0.9
+    },
+    {
+     "t": "fue",
+     "at": 1.35
+    },
+    {
+     "t": "el",
+     "at": 1.8
+    },
+    {
+     "t": "ingrediente",
+     "at": 2.25
+    },
+    {
+     "t": "que",
+     "at": 2.7
+    },
+    {
+     "t": "no",
+     "at": 3.15
+    },
+    {
+     "t": "se",
+     "at": 3.6
+    },
+    {
+     "t": "compra",
+     "at": 4.05
+    }
+   ]
+  },
+  {
    "id": "b151",
    "kind": "raw",
    "src": "broll/cs_ladle_soup.mp4",
@@ -2216,6 +3608,27 @@
    ],
    "kbPhase": 2,
    "avpos": "cornerBL"
+  },
+  {
+   "kind": "ingredientesflotan",
+   "start": 970,
+   "dur": 6,
+   "title": "Fideos guisados",
+   "items": [
+    "fideos",
+    "un poco de salsa",
+    "verduras que sobraron",
+    "un poco de caldo"
+   ],
+   "atsec": [
+    0,
+    0.9,
+    1.8,
+    2.7
+   ],
+   "overlay": true,
+   "id": "ingredientesflotan_970",
+   "image": "real/d23_fideosguisados_1_1.jpg"
   },
   {
    "id": "b155",
@@ -2381,6 +3794,29 @@
    "avpos": "cornerTR"
   },
   {
+   "kind": "ingredientesflotan",
+   "start": 1018.5,
+   "dur": 6,
+   "title": "Croquetas",
+   "items": [
+    "sobras del puchero",
+    "carne y verduras",
+    "una papa",
+    "un huevo",
+    "pan rallado"
+   ],
+   "atsec": [
+    0,
+    0.9,
+    1.8,
+    2.7,
+    3.6
+   ],
+   "overlay": true,
+   "id": "ingredientesflotan_1019",
+   "image": "real/d15_croquetas_1_1.jpg"
+  },
+  {
    "id": "b166",
    "kind": "raw",
    "src": "broll/cs_old_man_eating.mp4",
@@ -2477,6 +3913,54 @@
    "avpos": "cornerTR"
   },
   {
+   "kind": "citaabuela",
+   "start": 1051,
+   "dur": 4.5,
+   "text": "esa maña era todo lo que teníamos y alcanzaba",
+   "fontSize": 70,
+   "overlay": true,
+   "id": "citaabuela_1051",
+   "image": "real/d15_croquetas_1_1.jpg",
+   "words": [
+    {
+     "t": "esa",
+     "at": 0
+    },
+    {
+     "t": "maña",
+     "at": 0.5
+    },
+    {
+     "t": "era",
+     "at": 1
+    },
+    {
+     "t": "todo",
+     "at": 1.5
+    },
+    {
+     "t": "lo",
+     "at": 2
+    },
+    {
+     "t": "que",
+     "at": 2.5
+    },
+    {
+     "t": "teníamos",
+     "at": 3
+    },
+    {
+     "t": "y",
+     "at": 3.5
+    },
+    {
+     "t": "alcanzaba",
+     "at": 4
+    }
+   ]
+  },
+  {
    "id": "b173",
    "kind": "raw",
    "src": "real/d15_croquetas_2_1.jpg",
@@ -2502,6 +3986,27 @@
     1.05
    ],
    "avpos": "cornerTR"
+  },
+  {
+   "kind": "ingredientesflotan",
+   "start": 1059.8,
+   "dur": 6,
+   "title": "Papa con manteca",
+   "items": [
+    "papas hervidas calientes",
+    "un buen trozo de manteca",
+    "sal",
+    "perejil de la maceta"
+   ],
+   "atsec": [
+    0,
+    0.9,
+    1.8,
+    2.7
+   ],
+   "overlay": true,
+   "id": "ingredientesflotan_1060",
+   "image": "real/d15_croquetas_1_1.jpg"
   },
   {
    "id": "b175",
@@ -2637,6 +4142,27 @@
    ],
    "kbPhase": 3,
    "avhide": true
+  },
+  {
+   "kind": "ingredientesflotan",
+   "start": 1098.4,
+   "dur": 6,
+   "title": "Papas de una sola olla",
+   "items": [
+    "Dos papas",
+    "Una nuez de manteca",
+    "Un poco de grasa",
+    "Rodajas doradas en la sartén"
+   ],
+   "atsec": [
+    0,
+    1.6,
+    3.2,
+    4.6
+   ],
+   "overlay": true,
+   "id": "ingredientesflotan_1098",
+   "image": "real/d25_papamanteca_1_1.jpg"
   },
   {
    "id": "b184",
@@ -2843,6 +4369,29 @@
    "avpos": "cornerBL"
   },
   {
+   "kind": "ingredientesflotan",
+   "start": 1159.7,
+   "dur": 6,
+   "title": "Ensalada de lentejas",
+   "items": [
+    "Lentejas cocidas y escurridas",
+    "Cebolla picada finita",
+    "Un huevo duro en trozos",
+    "Un chorro de aceite y sal",
+    "Un tomate, un morrón"
+   ],
+   "atsec": [
+    0,
+    1.3,
+    2.5,
+    3.6,
+    4.7
+   ],
+   "overlay": true,
+   "id": "ingredientesflotan_1160",
+   "image": "real/d20_ensladalentejas_1_1.jpg"
+  },
+  {
    "id": "b198",
    "kind": "raw",
    "src": "broll/cs_steam_soup.mp4",
@@ -2953,6 +4502,58 @@
    "avpos": "cornerBL"
   },
   {
+   "kind": "citaabuela",
+   "start": 1193,
+   "dur": 4.5,
+   "text": "todo tenía una segunda vida en esa cocina",
+   "fontSize": 70,
+   "overlay": true,
+   "id": "citaabuela_1193",
+   "image": "real/d20_ensladalentejas_1_1.jpg",
+   "words": [
+    {
+     "t": "todo",
+     "at": 0
+    },
+    {
+     "t": "tenía",
+     "at": 0.56
+    },
+    {
+     "t": "una",
+     "at": 1.13
+    },
+    {
+     "t": "segunda",
+     "at": 1.69
+    },
+    {
+     "t": "vida",
+     "at": 2.25
+    },
+    {
+     "t": "en",
+     "at": 2.81
+    },
+    {
+     "t": "esa",
+     "at": 3.38
+    },
+    {
+     "t": "cocina",
+     "at": 3.94
+    }
+   ]
+  },
+  {
+   "kind": "keyphrase",
+   "start": 1212.6,
+   "dur": 4,
+   "text": "Poné me acuerdo en los comentarios",
+   "overlay": true,
+   "id": "keyphrase_1213"
+  },
+  {
    "id": "top_12",
    "kind": "topdulce",
    "index": 12,
@@ -3031,6 +4632,29 @@
    ],
    "kbPhase": 2,
    "avhide": true
+  },
+  {
+   "kind": "ingredientesflotan",
+   "start": 1265.2,
+   "dur": 6,
+   "title": "Sopa de verduras",
+   "items": [
+    "Una zanahoria",
+    "Media cebolla",
+    "Las últimas papas",
+    "Un poco de fideo fino",
+    "Todo en un caldo suave"
+   ],
+   "atsec": [
+    0,
+    1.2,
+    2.4,
+    3.6,
+    4.8
+   ],
+   "overlay": true,
+   "id": "ingredientesflotan_1265",
+   "image": "real/d14_sopaverdura_1_1.jpg"
   },
   {
    "id": "b211",
@@ -3143,6 +4767,50 @@
    "avhide": true
   },
   {
+   "kind": "citaabuela",
+   "start": 1305.8,
+   "dur": 4.5,
+   "text": "hay comida que cura más que el cuerpo",
+   "fontSize": 70,
+   "overlay": true,
+   "id": "citaabuela_1306",
+   "image": "real/d14_sopaverdura_1_1.jpg",
+   "words": [
+    {
+     "t": "hay",
+     "at": 0
+    },
+    {
+     "t": "comida",
+     "at": 0.56
+    },
+    {
+     "t": "que",
+     "at": 1.13
+    },
+    {
+     "t": "cura",
+     "at": 1.69
+    },
+    {
+     "t": "más",
+     "at": 2.25
+    },
+    {
+     "t": "que",
+     "at": 2.81
+    },
+    {
+     "t": "el",
+     "at": 3.38
+    },
+    {
+     "t": "cuerpo",
+     "at": 3.94
+    }
+   ]
+  },
+  {
    "id": "b219",
    "kind": "raw",
    "src": "real/d14_sopaverdura_2_3.jpg",
@@ -3194,6 +4862,27 @@
    ],
    "kbPhase": 1,
    "avpos": "cornerTR"
+  },
+  {
+   "kind": "ingredientesflotan",
+   "start": 1318.6,
+   "dur": 6,
+   "title": "Postre de maicena",
+   "items": [
+    "Maicena disuelta en la leche",
+    "Un poco de azúcar",
+    "Revolver sobre el fuego",
+    "Una lluvia de canela"
+   ],
+   "atsec": [
+    0,
+    1.5,
+    3,
+    4.5
+   ],
+   "overlay": true,
+   "id": "ingredientesflotan_1319",
+   "image": "real/d22_maicena_1_2.jpg"
   },
   {
    "id": "b222",
@@ -3441,6 +5130,27 @@
    "avhide": true
   },
   {
+   "kind": "ingredientesflotan",
+   "start": 1394.2,
+   "dur": 6,
+   "title": "Budín de pan",
+   "items": [
+    "Pan duro en trozos",
+    "Remojado en leche con huevo",
+    "Azúcar y esencia de vainilla",
+    "Un caramelo en el fondo"
+   ],
+   "atsec": [
+    0,
+    1.5,
+    3,
+    4.5
+   ],
+   "overlay": true,
+   "id": "ingredientesflotan_1394",
+   "image": "real/d21_budinpan_1_1.jpg"
+  },
+  {
    "id": "b239",
    "kind": "raw",
    "src": "broll/cs_grandma_cook.mp4",
@@ -3494,6 +5204,46 @@
    ],
    "kbPhase": 2,
    "avhide": true
+  },
+  {
+   "kind": "citaabuela",
+   "start": 1414.1,
+   "dur": 4.5,
+   "text": "el que no desperdicia nunca pasa necesidad",
+   "fontSize": 70,
+   "overlay": true,
+   "id": "citaabuela_1414",
+   "image": "real/d21_budinpan_1_1.jpg",
+   "words": [
+    {
+     "t": "el",
+     "at": 0
+    },
+    {
+     "t": "que",
+     "at": 0.64
+    },
+    {
+     "t": "no",
+     "at": 1.29
+    },
+    {
+     "t": "desperdicia",
+     "at": 1.93
+    },
+    {
+     "t": "nunca",
+     "at": 2.57
+    },
+    {
+     "t": "pasa",
+     "at": 3.21
+    },
+    {
+     "t": "necesidad",
+     "at": 3.86
+    }
+   ]
   },
   {
    "id": "b243",
@@ -3612,6 +5362,27 @@
     1.05
    ],
    "avpos": "cornerBL"
+  },
+  {
+   "kind": "ingredientesflotan",
+   "start": 1447.3,
+   "dur": 6,
+   "title": "Arroz guisado",
+   "items": [
+    "Una cebolla rehogada",
+    "Medio chorizo si era día de suerte",
+    "Le tirabas el arroz",
+    "Un poco de caldo"
+   ],
+   "atsec": [
+    0,
+    1.5,
+    3,
+    4.5
+   ],
+   "overlay": true,
+   "id": "ingredientesflotan_1447",
+   "image": "real/d07_arrozguisado_1_1.jpg"
   },
   {
    "id": "b251",
@@ -4016,6 +5787,27 @@
    "avhide": true
   },
   {
+   "kind": "ingredientesflotan",
+   "start": 1576,
+   "dur": 6,
+   "title": "Locro",
+   "items": [
+    "Maíz",
+    "Zapallo",
+    "Porotos",
+    "Recortes de carne"
+   ],
+   "atsec": [
+    0,
+    0.8,
+    1.6,
+    2.4
+   ],
+   "overlay": true,
+   "id": "ingredientesflotan_1576",
+   "image": "real/d17_locro_1_1.jpg"
+  },
+  {
    "id": "b280",
    "kind": "raw",
    "src": "real/d17_locro_1_5.jpg",
@@ -4124,6 +5916,70 @@
     1.05
    ],
    "avhide": true
+  },
+  {
+   "kind": "citaabuela",
+   "start": 1614.2,
+   "dur": 4.5,
+   "text": "el locro no era una receta, era una manera de decir estamos todos",
+   "fontSize": 70,
+   "overlay": true,
+   "id": "citaabuela_1614",
+   "image": "real/d17_locro_1_1.jpg",
+   "words": [
+    {
+     "t": "el",
+     "at": 0
+    },
+    {
+     "t": "locro",
+     "at": 0.35
+    },
+    {
+     "t": "no",
+     "at": 0.69
+    },
+    {
+     "t": "era",
+     "at": 1.04
+    },
+    {
+     "t": "una",
+     "at": 1.38
+    },
+    {
+     "t": "receta,",
+     "at": 1.73
+    },
+    {
+     "t": "era",
+     "at": 2.08
+    },
+    {
+     "t": "una",
+     "at": 2.42
+    },
+    {
+     "t": "manera",
+     "at": 2.77
+    },
+    {
+     "t": "de",
+     "at": 3.12
+    },
+    {
+     "t": "decir",
+     "at": 3.46
+    },
+    {
+     "t": "estamos",
+     "at": 3.81
+    },
+    {
+     "t": "todos",
+     "at": 4.15
+    }
+   ]
   },
   {
    "id": "b288",
@@ -4301,6 +6157,29 @@
    ],
    "kbPhase": 3,
    "avpos": "cornerBL"
+  },
+  {
+   "kind": "ingredientesflotan",
+   "start": 1666,
+   "dur": 6,
+   "title": "Mate cocido con pan",
+   "items": [
+    "Hierba",
+    "Agua",
+    "Leche",
+    "Azúcar",
+    "Pan"
+   ],
+   "atsec": [
+    0,
+    0.7,
+    1.4,
+    2.1,
+    2.8
+   ],
+   "overlay": true,
+   "id": "ingredientesflotan_1666",
+   "image": "real/d24_matecocido_1_1.jpg"
   },
   {
    "id": "b300",
@@ -4493,6 +6372,25 @@
    "avhide": true
   },
   {
+   "kind": "ingredientesflotan",
+   "start": 1725.3,
+   "dur": 6,
+   "title": "Pastel de papa",
+   "items": [
+    "Carne picada",
+    "Cebolla",
+    "Puré de papas"
+   ],
+   "atsec": [
+    0,
+    0.9,
+    1.8
+   ],
+   "overlay": true,
+   "id": "ingredientesflotan_1725",
+   "image": "real/d16_pastelpapa_1_2.jpg"
+  },
+  {
    "id": "b313",
    "kind": "raw",
    "src": "broll/cs_veg_into_pot.mp4",
@@ -4630,6 +6528,58 @@
    "avhide": true
   },
   {
+   "kind": "citaabuela",
+   "start": 1768,
+   "dur": 4.5,
+   "text": "eso no es cocinar, eso es una forma de amar",
+   "fontSize": 70,
+   "overlay": true,
+   "id": "citaabuela_1768",
+   "image": "real/d16_pastelpapa_1_2.jpg",
+   "words": [
+    {
+     "t": "eso",
+     "at": 0
+    },
+    {
+     "t": "no",
+     "at": 0.45
+    },
+    {
+     "t": "es",
+     "at": 0.9
+    },
+    {
+     "t": "cocinar,",
+     "at": 1.35
+    },
+    {
+     "t": "eso",
+     "at": 1.8
+    },
+    {
+     "t": "es",
+     "at": 2.25
+    },
+    {
+     "t": "una",
+     "at": 2.7
+    },
+    {
+     "t": "forma",
+     "at": 3.15
+    },
+    {
+     "t": "de",
+     "at": 3.6
+    },
+    {
+     "t": "amar",
+     "at": 4.05
+    }
+   ]
+  },
+  {
    "id": "b323",
    "kind": "raw",
    "src": "real/d16_pastelpapa_1_3.jpg",
@@ -4749,6 +6699,29 @@
    ],
    "kbPhase": 2,
    "avpos": "cornerTR"
+  },
+  {
+   "kind": "ingredientesflotan",
+   "start": 1806.9,
+   "dur": 6,
+   "title": "Albóndigas",
+   "items": [
+    "Carne picada",
+    "Pan remojado",
+    "Huevo",
+    "Cebolla",
+    "Salsa de tomate"
+   ],
+   "atsec": [
+    0,
+    0.7,
+    1.4,
+    2.1,
+    2.8
+   ],
+   "overlay": true,
+   "id": "ingredientesflotan_1807",
+   "image": "real/d19_albondigas_1_1.jpg"
   },
   {
    "id": "b331",
@@ -4955,6 +6928,27 @@
    "avhide": true
   },
   {
+   "kind": "ingredientesflotan",
+   "start": 1872.9,
+   "dur": 6,
+   "title": "Guiso de arroz",
+   "items": [
+    "Arroz",
+    "Papas",
+    "Arvejas",
+    "Carne o chorizo"
+   ],
+   "atsec": [
+    0,
+    0.8,
+    1.6,
+    2.4
+   ],
+   "overlay": true,
+   "id": "ingredientesflotan_1873",
+   "image": "real/d10_guisoarroz_1_1.jpg"
+  },
+  {
    "id": "b345",
    "kind": "raw",
    "src": "broll/cs_grating_cheese.mp4",
@@ -5037,6 +7031,46 @@
    "avhide": true
   },
   {
+   "kind": "citaabuela",
+   "start": 1900.6,
+   "dur": 4.5,
+   "text": "era la comida de aguantar y aguantamos",
+   "fontSize": 70,
+   "overlay": true,
+   "id": "citaabuela_1901",
+   "image": "real/d10_guisoarroz_1_1.jpg",
+   "words": [
+    {
+     "t": "era",
+     "at": 0
+    },
+    {
+     "t": "la",
+     "at": 0.64
+    },
+    {
+     "t": "comida",
+     "at": 1.29
+    },
+    {
+     "t": "de",
+     "at": 1.93
+    },
+    {
+     "t": "aguantar",
+     "at": 2.57
+    },
+    {
+     "t": "y",
+     "at": 3.21
+    },
+    {
+     "t": "aguantamos",
+     "at": 3.86
+    }
+   ]
+  },
+  {
    "id": "b351",
    "kind": "raw",
    "src": "real/d10_guisoarroz_2_3.jpg",
@@ -5088,6 +7122,74 @@
    "avpos": "cornerBL"
   },
   {
+   "kind": "citaabuela",
+   "start": 1912.3,
+   "dur": 4.5,
+   "text": "un plato de lentejas es un abrazo que se puede poner en la mesa",
+   "fontSize": 70,
+   "overlay": true,
+   "id": "citaabuela_1912",
+   "image": "real/d02_lentejas_1_1.jpg",
+   "words": [
+    {
+     "t": "un",
+     "at": 0
+    },
+    {
+     "t": "plato",
+     "at": 0.32
+    },
+    {
+     "t": "de",
+     "at": 0.64
+    },
+    {
+     "t": "lentejas",
+     "at": 0.96
+    },
+    {
+     "t": "es",
+     "at": 1.29
+    },
+    {
+     "t": "un",
+     "at": 1.61
+    },
+    {
+     "t": "abrazo",
+     "at": 1.93
+    },
+    {
+     "t": "que",
+     "at": 2.25
+    },
+    {
+     "t": "se",
+     "at": 2.57
+    },
+    {
+     "t": "puede",
+     "at": 2.89
+    },
+    {
+     "t": "poner",
+     "at": 3.21
+    },
+    {
+     "t": "en",
+     "at": 3.54
+    },
+    {
+     "t": "la",
+     "at": 3.86
+    },
+    {
+     "t": "mesa",
+     "at": 4.18
+    }
+   ]
+  },
+  {
    "id": "b354",
    "kind": "raw",
    "src": "broll/cc_lentejas_3.mp4",
@@ -5099,6 +7201,29 @@
     1.05
    ],
    "avpos": "cornerBL"
+  },
+  {
+   "kind": "ingredientesflotan",
+   "start": 1918,
+   "dur": 6,
+   "title": "Guiso de lentejas",
+   "items": [
+    "Lentejas",
+    "Cebolla",
+    "Zanahoria",
+    "Papas",
+    "Chorizo colorado"
+   ],
+   "atsec": [
+    0,
+    0.7,
+    1.4,
+    2.1,
+    2.8
+   ],
+   "overlay": true,
+   "id": "ingredientesflotan_1918",
+   "image": "real/d02_lentejas_1_1.jpg"
   },
   {
    "id": "b355",
@@ -5357,6 +7482,151 @@
    "start": 2005.9,
    "dur": 3.6,
    "overlay": true
+  },
+  {
+   "kind": "ingredientesflotan",
+   "start": 2028.9,
+   "dur": 6,
+   "title": "Puchero",
+   "items": [
+    "Carne barata",
+    "Huesos con carne",
+    "Choclo",
+    "Batata",
+    "Zapallo",
+    "Papa"
+   ],
+   "atsec": [
+    0,
+    0.7,
+    1.4,
+    2.1,
+    2.8,
+    3.5
+   ],
+   "overlay": true,
+   "id": "ingredientesflotan_2029",
+   "image": "real/d09_puchero_1_1.jpg"
+  },
+  {
+   "kind": "citaabuela",
+   "start": 2203.9,
+   "dur": 5,
+   "text": "una comida nunca fue de verdad por la comida, el punto era el no estar solo",
+   "fontSize": 72,
+   "overlay": true,
+   "id": "citaabuela_2204",
+   "image": "real/d09_puchero_1_1.jpg",
+   "words": [
+    {
+     "t": "una",
+     "at": 0
+    },
+    {
+     "t": "comida",
+     "at": 0.31
+    },
+    {
+     "t": "nunca",
+     "at": 0.63
+    },
+    {
+     "t": "fue",
+     "at": 0.94
+    },
+    {
+     "t": "de",
+     "at": 1.25
+    },
+    {
+     "t": "verdad",
+     "at": 1.56
+    },
+    {
+     "t": "por",
+     "at": 1.88
+    },
+    {
+     "t": "la",
+     "at": 2.19
+    },
+    {
+     "t": "comida,",
+     "at": 2.5
+    },
+    {
+     "t": "el",
+     "at": 2.81
+    },
+    {
+     "t": "punto",
+     "at": 3.13
+    },
+    {
+     "t": "era",
+     "at": 3.44
+    },
+    {
+     "t": "el",
+     "at": 3.75
+    },
+    {
+     "t": "no",
+     "at": 4.06
+    },
+    {
+     "t": "estar",
+     "at": 4.38
+    },
+    {
+     "t": "solo",
+     "at": 4.69
+    }
+   ]
+  },
+  {
+   "kind": "citaabuela",
+   "start": 2260.2,
+   "dur": 3,
+   "text": "vos te merecés una mesa puesta",
+   "fontSize": 72,
+   "overlay": true,
+   "id": "citaabuela_2260",
+   "image": "real/d09_puchero_1_1.jpg",
+   "words": [
+    {
+     "t": "vos",
+     "at": 0
+    },
+    {
+     "t": "te",
+     "at": 0.5
+    },
+    {
+     "t": "merecés",
+     "at": 1
+    },
+    {
+     "t": "una",
+     "at": 1.5
+    },
+    {
+     "t": "mesa",
+     "at": 2
+    },
+    {
+     "t": "puesta",
+     "at": 2.5
+    }
+   ]
+  },
+  {
+   "kind": "keyphrase",
+   "start": 2263.8,
+   "dur": 4,
+   "text": "Guía de las 25 recetas · GRATIS en la descripción",
+   "overlay": true,
+   "id": "keyphrase_2264"
   }
  ]
 }
