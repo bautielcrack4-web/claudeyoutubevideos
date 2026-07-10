@@ -44,6 +44,7 @@ import { MainSandia, TOTAL_FRAMES_SANDIA } from "./VideoEdit/Main_sandia";
 import { MainRampump, TOTAL_FRAMES_RAMPUMP } from "./VideoEdit/Main_rampump";
 import { MainRampump2, TOTAL_FRAMES_RAMPUMP2 } from "./VideoEdit/Main_rampump2";
 import { MainEvapcooler, TOTAL_FRAMES_EVAPCOOLER } from "./VideoEdit/Main_evapcooler";
+import { MainHuevos, TOTAL_FRAMES_HUEVOS } from "./VideoEdit/Main_huevos";
 import { MainZeer, TOTAL_FRAMES_ZEER } from "./VideoEdit/Main_zeer";
 import { MainCalor, TOTAL_FRAMES_CALOR } from "./VideoEdit/Main_calor";
 import { MainCarne, TOTAL_FRAMES_CARNE } from "./VideoEdit/Main_carne";
@@ -184,6 +185,15 @@ export const RemotionRoot: React.FC = () => {
         id="Rampump2"
         component={MainRampump2}
         durationInFrames={TOTAL_FRAMES_RAMPUMP2}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
+      {/* VIDEO ACTIVO — Huevos un año sin heladera (claudio yoder · EN · water glassing · voz Claudio clonada) */}
+      <Composition
+        id="Huevos"
+        component={MainHuevos}
+        durationInFrames={TOTAL_FRAMES_HUEVOS}
         fps={30}
         width={1920}
         height={1080}
