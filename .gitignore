@@ -51,3 +51,8 @@ _v3*
 _v3out*/
 _sb_*/
 _v3probe/
+
+# modelos whisper (grandes, no van al repo)
+whisper_cpu/
+whisper_cuda/
+*.bin

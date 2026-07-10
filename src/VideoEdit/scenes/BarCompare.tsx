@@ -6,6 +6,7 @@ import {
   spring,
 } from "remotion";
 import { COLORS, FONT_STACK, SPRING_SOFT, SPRING_SNAPPY, sec } from "../theme";
+import { F_INTER } from "../kit/premium/theme";
 import { SceneFrame } from "../components/SceneFrame";
 import { SfxCue, SFX } from "../components/Sfx";
 import { followCam } from "../lib/followcam";
@@ -35,6 +36,23 @@ const TONES = {
   danger: COLORS.danger,
 } as const;
 
+// Paleta clínica teal (Dr. Federer médico). Se activa con `medico`; por defecto la
+// terrosa de COLORS queda intacta para los canales earthy que usan BarCompare directo.
+const MED = {
+  text: "#14232B",
+  textSoft: "rgba(20,35,43,0.66)",
+  textDim: "rgba(20,35,43,0.40)",
+  track: "rgba(20,35,43,0.06)",
+  tones: { accent: "#12B3AE", amber: "#E6A23C", good: "#2FA36B", cold: "#2E7DB0", danger: "#E4141B" },
+} as const;
+const EARTH = {
+  text: COLORS.text,
+  textSoft: COLORS.textSoft,
+  textDim: COLORS.textDim,
+  track: "rgba(42,38,32,0.05)",
+  tones: TONES,
+} as const;
+
 const BOX_W = 1560;
 const BOX_H = 820;
 
@@ -49,6 +67,7 @@ export const BarCompare: React.FC<{
   hue?: "blue" | "cold" | "amber" | "red";
   startAt?: number; // frame the staggered reveal begins (default sec(0.4))
   stagger?: number; // frames between each bar (default sec(0.7))
+  medico?: boolean; // paleta clínica teal (canal Dr. Federer); def earthy
 }> = ({
   durationInFrames,
   eyebrow,
@@ -60,11 +79,14 @@ export const BarCompare: React.FC<{
   hue = "cold",
   startAt = sec(0.6),
   stagger = sec(1.5),
+  medico = false,
 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const head = spring({ frame, fps, config: SPRING_SOFT });
-  const C = TONES[accent];
+  const P = medico ? MED : EARTH;
+  const FONT = medico ? F_INTER : FONT_STACK;
+  const C = P.tones[accent];
 
   const maxVal = Math.max(...bars.map((b) => b.value), 1);
   const horizontal = orientation === "horizontal";
@@ -85,20 +107,20 @@ export const BarCompare: React.FC<{
   const cam = followCam({ frame, fps, targets: camTargets, cx: BOX_W / 2, cy: BOX_H / 2, hold: 1.0, zPunch: 1.26, zHold: 1.14, zTravel: 1.03, endHold: 1.2 });
 
   return (
-    <SceneFrame durationInFrames={durationInFrames} hue={hue} glowY={42} drift={0.5}>
-      <div style={{ width: BOX_W, height: BOX_H, position: "relative", fontFamily: FONT_STACK }}>
+    <SceneFrame durationInFrames={durationInFrames} hue={hue} bg={medico ? "white" : "grid"} glowY={42} drift={0.5}>
+      <div style={{ width: BOX_W, height: BOX_H, position: "relative", fontFamily: FONT }}>
         {/* SFX: soft whoosh as the chart title/frame enters */}
         <SfxCue at={Math.max(0, startAt - sec(0.3))} src={SFX.transition} volume={0.4} />
 
         {(eyebrow || title) && (
           <div style={{ position: "absolute", top: 0, left: 0, right: 0, textAlign: "center", zIndex: 5, opacity: head, transform: `translateY(${(1 - head) * -14}px)` }}>
             {eyebrow && (
-              <div style={{ letterSpacing: 6, fontSize: 19, fontWeight: 700, textTransform: "uppercase", color: COLORS.textDim }}>
+              <div style={{ letterSpacing: 6, fontSize: 19, fontWeight: 700, textTransform: "uppercase", color: P.textDim }}>
                 {eyebrow}
               </div>
             )}
             {title && (
-              <div style={{ fontSize: 52, fontWeight: 800, color: COLORS.text, marginTop: 8 }}>{title}</div>
+              <div style={{ fontSize: 52, fontWeight: 800, color: P.text, marginTop: 8 }}>{title}</div>
             )}
           </div>
         )}
@@ -110,7 +132,7 @@ export const BarCompare: React.FC<{
             y1={horizontal ? plotTop : plotBottom}
             x2={horizontal ? plotLeft : plotRight}
             y2={plotBottom}
-            stroke={COLORS.textDim}
+            stroke={P.textDim}
             strokeWidth={2}
             opacity={head * 0.6}
           />
@@ -121,7 +143,7 @@ export const BarCompare: React.FC<{
             const appear = interpolate(grow, [0, 0.001], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
             // continuous shimmer once grown
             const shimmer = 0.5 + 0.5 * Math.sin((frame - t0) / 16 + i);
-            const barColor = b.tone ? TONES[b.tone] : b.winner ? C : COLORS.textSoft;
+            const barColor = b.tone ? P.tones[b.tone] : b.winner ? C : P.textSoft;
             const lit = b.winner ? 1 : 0.82 + 0.18 * shimmer;
             const ratio = b.value / maxVal;
             const counted = Math.round(b.value * grow);
@@ -136,7 +158,7 @@ export const BarCompare: React.FC<{
               return (
                 <g key={i} opacity={appear}>
                   {/* track */}
-                  <rect x={plotLeft} y={cy - thick / 2} width={plotW} height={thick} rx={thick / 2} fill="rgba(42,38,32,0.05)" />
+                  <rect x={plotLeft} y={cy - thick / 2} width={plotW} height={thick} rx={thick / 2} fill={P.track} />
                   {/* bar */}
                   <rect x={plotLeft} y={cy - thick / 2} width={len} height={thick} rx={thick / 2} fill={barColor} opacity={lit} style={{ filter: `drop-shadow(0 6px 18px ${barColor}55)` }} />
                   {/* LÍQUIDO: gloss superior + barrido specular + menisco en el borde */}
@@ -153,12 +175,12 @@ export const BarCompare: React.FC<{
                     </>
                   )}
                   {/* row label (left) */}
-                  <text x={plotLeft - 28} y={cy + 8} textAnchor="end" fontSize={30} fontWeight={800} fill={COLORS.text} fontFamily={FONT_STACK}>{b.label}</text>
+                  <text x={plotLeft - 28} y={cy + 8} textAnchor="end" fontSize={30} fontWeight={800} fill={P.text} fontFamily={FONT}>{b.label}</text>
                   {b.sub && (
-                    <text x={plotLeft - 28} y={cy + 36} textAnchor="end" fontSize={19} fontWeight={600} fill={COLORS.textDim} fontFamily={FONT_STACK}>{b.sub}</text>
+                    <text x={plotLeft - 28} y={cy + 36} textAnchor="end" fontSize={19} fontWeight={600} fill={P.textDim} fontFamily={FONT}>{b.sub}</text>
                   )}
                   {/* value (end of bar) */}
-                  <text x={plotLeft + len + 18} y={cy + 12} textAnchor="start" fontSize={36} fontWeight={900} fill={barColor} fontFamily={FONT_STACK} opacity={grow}>{valText}</text>
+                  <text x={plotLeft + len + 18} y={cy + 12} textAnchor="start" fontSize={36} fontWeight={900} fill={barColor} fontFamily={FONT} opacity={grow}>{valText}</text>
                 </g>
               );
             }
@@ -168,15 +190,15 @@ export const BarCompare: React.FC<{
             return (
               <g key={i} opacity={appear}>
                 {/* track */}
-                <rect x={cx - thick / 2} y={plotTop} width={thick} height={plotH} rx={thick / 4} fill="rgba(42,38,32,0.05)" />
+                <rect x={cx - thick / 2} y={plotTop} width={thick} height={plotH} rx={thick / 4} fill={P.track} />
                 {/* bar (grows up from baseline) */}
                 <rect x={cx - thick / 2} y={plotBottom - h} width={thick} height={h} rx={thick / 4} fill={barColor} opacity={lit} style={{ filter: `drop-shadow(0 8px 22px ${barColor}55)` }} />
                 {/* value on top */}
-                <text x={cx} y={plotBottom - h - 22} textAnchor="middle" fontSize={44} fontWeight={900} fill={barColor} fontFamily={FONT_STACK} opacity={grow}>{valText}</text>
+                <text x={cx} y={plotBottom - h - 22} textAnchor="middle" fontSize={44} fontWeight={900} fill={barColor} fontFamily={FONT} opacity={grow}>{valText}</text>
                 {/* column label below baseline */}
-                <text x={cx} y={plotBottom + 42} textAnchor="middle" fontSize={28} fontWeight={800} fill={COLORS.text} fontFamily={FONT_STACK}>{b.label}</text>
+                <text x={cx} y={plotBottom + 42} textAnchor="middle" fontSize={28} fontWeight={800} fill={P.text} fontFamily={FONT}>{b.label}</text>
                 {b.sub && (
-                  <text x={cx} y={plotBottom + 70} textAnchor="middle" fontSize={19} fontWeight={600} fill={COLORS.textDim} fontFamily={FONT_STACK}>{b.sub}</text>
+                  <text x={cx} y={plotBottom + 70} textAnchor="middle" fontSize={19} fontWeight={600} fill={P.textDim} fontFamily={FONT}>{b.sub}</text>
                 )}
               </g>
             );

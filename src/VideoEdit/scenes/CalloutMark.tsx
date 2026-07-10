@@ -6,6 +6,7 @@ import {
 } from "remotion";
 import { loadFont } from "@remotion/google-fonts/Caveat";
 import { COLORS, FONT_STACK, SPRING_SOFT, sec } from "../theme";
+import { F_INTER } from "../kit/premium/theme";
 import { SceneFrame } from "../components/SceneFrame";
 import { SfxCue, SFX } from "../components/Sfx";
 import { Media } from "../components/Media";
@@ -37,6 +38,7 @@ export const CalloutMark: React.FC<{
   accent?: keyof typeof TONES;
   hue?: "blue" | "cold" | "amber" | "red";
   startAt?: number;
+  medico?: boolean; // acento teal clínico + tipografía Inter (canal Dr. Federer)
 }> = ({
   durationInFrames,
   figure,
@@ -46,10 +48,13 @@ export const CalloutMark: React.FC<{
   accent = "accent",
   hue = "amber",
   startAt = sec(0.5),
+  medico = false,
 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const C = TONES[accent];
+  const C = medico ? "#12B3AE" : TONES[accent];
+  const FONT = medico ? F_INTER : FONT_STACK;
+  const FIG_FONT = medico ? F_INTER : HAND;
 
   // photo Ken Burns (always running) + fade-in
   const photoIn = interpolate(frame, [0, sec(0.8)], [0, 1], { extrapolateRight: "clamp" });
@@ -74,8 +79,8 @@ export const CalloutMark: React.FC<{
   const cap = spring({ frame: frame - capStart, fps, config: SPRING_SOFT });
 
   return (
-    <SceneFrame durationInFrames={durationInFrames} hue={hue} glowY={50} drift={0.4}>
-      <div style={{ width: BOX_W, height: BOX_H, position: "relative", fontFamily: FONT_STACK, overflow: "hidden", borderRadius: 26 }}>
+    <SceneFrame durationInFrames={durationInFrames} hue={hue} bg={medico ? "white" : "grid"} glowY={50} drift={0.4}>
+      <div style={{ width: BOX_W, height: BOX_H, position: "relative", fontFamily: FONT, overflow: "hidden", borderRadius: 26 }}>
         {/* vintage photo background (or sepia fallback) with Ken Burns */}
         <div style={{ position: "absolute", inset: 0, transform: `scale(${kb})`, opacity: photoIn }}>
           {image ? (
@@ -109,7 +114,7 @@ export const CalloutMark: React.FC<{
           <div style={{ position: "relative", transform: `rotate(-3deg) scale(${0.9 + figSettle * 0.1})` }}>
             <div
               style={{
-                fontFamily: HAND,
+                fontFamily: FIG_FONT,
                 fontSize: 280,
                 fontWeight: 700,
                 color: "#FFFFFF",

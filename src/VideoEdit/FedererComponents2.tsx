@@ -13,7 +13,13 @@ export const COMP2_KINDS = new Set<string>([...COMP_KINDS, "bars", "callout", "b
 // board mantiene el avatar VISIBLE a un lado (no lo oculta) → el Main lo pone en "right"/"left"
 export const BOARD_KINDS = new Set<string>(["board"]);
 
-export function renderFederer2Comp(beat: any, d: number): React.ReactNode {
+// `opts.medico` → los kinds compartidos con los canales EARTHY (bars/callout/diagram)
+// se renderizan con la paleta clínica teal (THEME_MEDICO) en vez de la terrosa. Por
+// DEFECTO es earthy (undefined) → NO cambia nada para los canales earthy que llaman a
+// estos componentes directo desde cues_*.gen.tsx. Solo los Main MÉDICO (federer2/
+// federer3/vet1) pasan {medico:true}.
+export function renderFederer2Comp(beat: any, d: number, opts: { medico?: boolean } = {}): React.ReactNode {
+  const medico = !!opts.medico;
   switch (beat.kind) {
     case "diagram": {
       // láminas gpt-image reales (DiagramBoard corta seco entre pages). Rutas CRUDAS
@@ -22,7 +28,7 @@ export function renderFederer2Comp(beat: any, d: number): React.ReactNode {
         .filter((s: any) => s && s.image)
         .map((s: any) => ({ image: s.image, eyebrow: s.eyebrow || beat.eyebrow }));
       if (!pages.length) return null;
-      return <DiagramBoard durationInFrames={d} pages={pages} />;
+      return <DiagramBoard durationInFrames={d} pages={pages} medico={medico} />;
     }
     case "bars":
       return (
@@ -32,6 +38,7 @@ export function renderFederer2Comp(beat: any, d: number): React.ReactNode {
           eyebrow={beat.eyebrow}
           unit={beat.unit}
           accent="accent"
+          medico={medico}
           bars={(beat.bars || []).map((b: any) => ({ label: b.label, value: b.value, tone: b.tone, winner: b.winner, note: b.note }))}
         />
       );
@@ -44,6 +51,7 @@ export function renderFederer2Comp(beat: any, d: number): React.ReactNode {
           image={beat.image}
           eyebrow={beat.eyebrow}
           accent="accent"
+          medico={medico}
         />
       );
     case "board":

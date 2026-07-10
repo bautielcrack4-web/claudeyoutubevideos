@@ -81,7 +81,7 @@ export const MainFederer2: React.FC = () => {
       {/* CAPA 4 — COMPONENTES premium MEDICO por encima */}
       {compBeats.map((b: any) => (
         <Sequence key={`comp_${b.id}`} from={sec(b.start)} durationInFrames={Math.max(1, sec(b.dur))} layout="none">
-          {renderFederer2Comp(b, Math.max(1, sec(b.dur)))}
+          {renderFederer2Comp(b, Math.max(1, sec(b.dur)), { medico: true })}
         </Sequence>
       ))}
 
