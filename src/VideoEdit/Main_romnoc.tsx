@@ -23,30 +23,39 @@ export const TOTAL_FRAMES_ROMNOC = Math.round(ROMNOC_END * 30);
 
 function buildWindows(): AvatarWindow[] {
   const CORNER: AvatarWindow["mode"] = "cornerTR";
-  // El avatar es lo MEJOR del video → full a cámara TODO el hook, y vuelve a full
-  // seguido (no lo mandamos a la esquina enseguida).
-  const HOOK = 6; // segundos de apertura con el avatar en PANTALLA COMPLETA
-  const pts: { start: number; mode: AvatarWindow["mode"]; pr: number }[] = [{ start: 0, mode: "full", pr: 3 }];
-  // b-roll normal → avatar en PiP; imagen-con-doctor (av) → avatar OCULTO (evita doble).
-  // Durante el hook NO cortamos a esquina (el b-roll queda debajo, se ve al terminar).
-  for (const b of ROMNOC_BROLL) { if (b.start < HOOK) continue; pts.push({ start: b.start, mode: (b as any).av ? "hidden" : CORNER, pr: 0 }); }
-  // takeover (pantalla completa) → oculta avatar; overlays (lowerthird/alerta/ticker/dato/callout) → NO.
-  for (const c of ROMNOC_COMPS) if (!OVERLAY_KINDS.has(c.kind)) pts.push({ start: c.start, mode: "hidden", pr: 1 });
-  pts.push({ start: HOOK, mode: CORNER, pr: 2 }); // recién al terminar el hook → esquina
-  // avatar vuelve a PANTALLA COMPLETA cada ~34s por ~6s (donde no hay componente ni
-  // emphasis) — mucho más presente en full, no siempre en la esquina.
-  const compRanges = ROMNOC_COMPS.map((c: any) => [c.start - 0.5, c.start + c.dur + 0.5]);
-  const emphRanges = ROMNOC_EMPH.map((e) => [e.from - 0.5, e.to + 0.5]);
-  const busy = (a: number, b: number) => [...compRanges, ...emphRanges].some(([x, y]) => a < y && b > x);
-  for (let t = HOOK + 22; t < ROMNOC_END - 8; t += 34) {
-    let s = t;
-    for (let k = 0; k < 24 && busy(s, s + 6.2); k++) s += 2;
-    if (!busy(s, s + 6.2)) { pts.push({ start: +s.toFixed(2), mode: "full", pr: 2 }); pts.push({ start: +(s + 6).toFixed(2), mode: CORNER, pr: 1.5 }); }
+  const HOOK = 6; // apertura con el avatar en PANTALLA COMPLETA
+  // ── modo del avatar por COBERTURA de pantalla (fix: FULL cuando no hay imagen/clip) ──
+  //   hidden = takeover/emphasis tapan todo · corner = hay b-roll detrás · full = nada más → él es el contenido
+  // b-roll con `av` (imagen-con-doctor) también oculta el avatar (evita doble).
+  const brollIv: [number, number][] = [];
+  for (const b of ROMNOC_BROLL) { if ((b as any).av) continue; brollIv.push([b.start, b.start + b.dur]); }
+  brollIv.sort((a, b) => a[0] - b[0]);
+  // fusionar b-roll con huecos < 1.5s (para que el avatar NO parpadee full↔corner)
+  const mergedBroll: [number, number][] = [];
+  for (const iv of brollIv) {
+    const last = mergedBroll[mergedBroll.length - 1];
+    if (last && iv[0] - last[1] < 1.5) last[1] = Math.max(last[1], iv[1]);
+    else mergedBroll.push([iv[0], iv[1]]);
   }
-  pts.sort((a, b) => a.start - b.start || b.pr - a.pr);
+  const hideIv: [number, number][] = [
+    ...ROMNOC_COMPS.filter((c: any) => !OVERLAY_KINDS.has(c.kind) || (c as any).av).map((c: any) => [c.start, c.start + c.dur] as [number, number]),
+    ...ROMNOC_BROLL.filter((b: any) => b.av).map((b: any) => [b.start, b.start + b.dur] as [number, number]),
+    ...ROMNOC_EMPH.map((e) => [e.from, e.to] as [number, number]),
+  ];
+  const inAny = (ivs: [number, number][], t: number) => ivs.some(([a, b]) => t >= a && t < b);
+  const modeAt = (t: number): AvatarWindow["mode"] => {
+    if (t < HOOK) return "full";
+    if (inAny(hideIv, t)) return "hidden";
+    if (inAny(mergedBroll, t)) return CORNER;
+    return "full"; // ← hueco sin b-roll: avatar a PANTALLA COMPLETA (no PiP sobre fondo azul)
+  };
+  const pts = new Set<number>([0, HOOK]);
+  for (const [a, b] of [...mergedBroll, ...hideIv]) { pts.add(a); pts.add(b); }
+  const sorted = [...pts].filter((t) => t >= 0 && t < ROMNOC_END).sort((a, b) => a - b);
   const w: AvatarWindow[] = [];
   let last = "";
-  for (const p of pts) { if (p.mode !== last) { w.push({ start: p.start, mode: p.mode }); last = p.mode; } }
+  for (const t of sorted) { const m = modeAt(t + 0.02); if (m !== last) { w.push({ start: +t.toFixed(2), mode: m }); last = m; } }
+  if (!w.length || w[0].start > 0) w.unshift({ start: 0, mode: "full" });
   return w;
 }
 const AVATAR_WINDOWS = buildWindows();

@@ -312,3 +312,11 @@ img/rnf_batalla.png
 img/rnf_fed_examina.png
 img/rnf_repara.png
 img/rnf_circul.png
+img/fed_intro1.png
+img/fed_intro2.png
+img/fed_guia.png
+img/step_frasco.png
+img/step_sumergir.png
+img/step_reposar.png
+img/step_bano.png
+img/step_colar.png
