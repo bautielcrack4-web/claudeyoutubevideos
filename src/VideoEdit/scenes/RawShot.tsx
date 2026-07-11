@@ -34,6 +34,7 @@ export const RawShot: React.FC<{
   trans?: number; // frames de fade-in (cambio de sección)
   grade?: string;
   kbPhase?: number; // fuerza variante de Ken-Burns (para splits A/B del mismo asset)
+  kbBoost?: number; // multiplica la magnitud del Ken-Burns (cámara más viva); default 1
 }> = ({
   durationInFrames,
   src,
@@ -49,6 +50,7 @@ export const RawShot: React.FC<{
   trans,
   grade,
   kbPhase,
+  kbBoost = 1,
 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
@@ -59,7 +61,8 @@ export const RawShot: React.FC<{
 
   const durSec = durationInFrames / fps;
   // magnitud por duración: ~0.9%/s de zoom, clamp [2%, 10%] punta a punta.
-  const span = Math.min(0.10, Math.max(0.02, 0.009 * durSec));
+  // kbBoost sube la magnitud (cámara más viva) — clamp más alto cuando hay boost.
+  const span = Math.min(0.10 * Math.max(1, kbBoost), Math.max(0.02 * kbBoost, 0.009 * durSec * kbBoost));
   const zoomIn = seed % 2 === 0; // dirección alternada estable por asset
   const base = 1.01 + ((seed >> 4) % 4) * 0.005; // punto de partida levemente variado
   const blurFill = fit === "blur";

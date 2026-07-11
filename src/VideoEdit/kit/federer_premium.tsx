@@ -321,7 +321,8 @@ export const AvatarExplain: React.FC<{
     <AbsoluteFill style={{ fontFamily: F_INTER, backgroundColor: INK0, overflow: "hidden" }}>
       {/* AVATAR full con zoom */}
       <AbsoluteFill style={{ transform: `scale(${scale}) translateY(${ty}px)`, transformOrigin: "50% 46%" }}>
-        <Video src={staticFile(avatarSrc)} startFrom={startFrom} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+        {/* muted: la voz la da el AvatarLayer off-screen (evita voz doblada/eco) */}
+        <Video src={staticFile(avatarSrc)} startFrom={startFrom} muted style={{ width: "100%", height: "100%", objectFit: "cover" }} />
       </AbsoluteFill>
 
       {/* scrim lateral para legibilidad de la tarjeta */}

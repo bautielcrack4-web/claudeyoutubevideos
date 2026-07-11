@@ -1,4 +1,4 @@
-import { AbsoluteFill, Sequence } from "remotion";
+import { AbsoluteFill, Sequence, Audio, staticFile, interpolate } from "remotion";
 import { sec } from "./theme";
 import { AvatarLayer, AvatarWindow } from "./scenes/AvatarLayer";
 import { AvatarScrimText } from "./scenes/AvatarScrimText";
@@ -63,7 +63,7 @@ export const MainRomnoc: React.FC = () => {
       {/* CAPA 1 — b-roll denso */}
       {ROMNOC_BROLL.map((b) => (
         <Sequence key={b.name} from={sec(b.start)} durationInFrames={Math.max(1, sec(b.dur))}>
-          <RawShot durationInFrames={Math.max(1, sec(b.dur))} src={b.src} hue="cold" />
+          <RawShot durationInFrames={Math.max(1, sec(b.dur))} src={b.src} hue="cold" kbBoost={1.9} />
         </Sequence>
       ))}
 
@@ -95,6 +95,22 @@ export const MainRomnoc: React.FC = () => {
       <Sequence from={sec(ROMNOC_ENDCARD)} durationInFrames={sec(Math.max(2, ROMNOC_END - ROMNOC_ENDCARD))} layout="none">
         <Endcard durationInFrames={sec(Math.max(2, ROMNOC_END - ROMNOC_ENDCARD))} />
       </Sequence>
+
+      {/* ── DISEÑO DE SONIDO (firma Federer) ───────────────────────────────── */}
+      {/* Música "New Horizon": fuerte en la apertura, DUCKEADA bien baja bajo la voz, sale ~66s */}
+      <Audio src={staticFile("sfx/music_federer.mp3")} volume={(f) => interpolate(f / 30, [0, 2, 4, 56, 66], [0, 0.24, 0.085, 0.085, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} />
+      {/* Rumble grave constante en el intro (0-15s) */}
+      <Sequence from={0} durationInFrames={sec(15)} layout="none">
+        <Audio src={staticFile("sfx/rumble_const.mp3")} loop volume={(f) => interpolate(f / 30, [0, 1, 12, 15], [0, 0.09, 0.09, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} />
+      </Sequence>
+      {/* Golpe cuando aparece "DR. FEDERER" (~6s) — la cola resuena libre */}
+      <Sequence from={Math.max(0, sec(6) - 9)} layout="none"><Audio src={staticFile("sfx/impacto_hit.mp3")} volume={0.55} /></Sequence>
+      {/* Whoosh en cada cambio de sección fuerte */}
+      {[56, 88, 360, 420, 548, 950].map((t, i) => (
+        <Sequence key={"wh" + i} from={Math.max(0, sec(t) - 5)} layout="none"><Audio src={staticFile("sfx/whoosh.mp3")} volume={0.4} /></Sequence>
+      ))}
+      {/* Música vuelve suave en el cierre / CTA */}
+      <Sequence from={sec(ROMNOC_ENDCARD)} layout="none"><Audio src={staticFile("sfx/music_federer.mp3")} startFrom={sec(20)} volume={(f) => interpolate(f / 30, [0, 2, 34, 42], [0, 0.13, 0.13, 0.03], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} /></Sequence>
     </AbsoluteFill>
   );
 };
