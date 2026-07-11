@@ -6,7 +6,7 @@ import { EmphasisMoment } from "./scenes/EmphasisMoment";
 import { Endcard } from "./scenes/Endcard";
 import { RawShot } from "./scenes/RawShot";
 import { F_INTER } from "./kit/premium/theme";
-import { renderRecalComp } from "./FedererComponents";
+import { renderRecalComp, OVERLAY_KINDS } from "./FedererComponents";
 import { ROMNOC_BROLL } from "./romnoc_broll";
 import { ROMNOC_COMPS } from "./romnoc_beats";
 import { ROMNOC_SCRIMS, ROMNOC_EMPH, ROMNOC_ENDCARD, ROMNOC_END } from "./romnoc_hooks";
@@ -23,20 +23,25 @@ export const TOTAL_FRAMES_ROMNOC = Math.round(ROMNOC_END * 30);
 
 function buildWindows(): AvatarWindow[] {
   const CORNER: AvatarWindow["mode"] = "cornerTR";
+  // El avatar es lo MEJOR del video → full a cámara TODO el hook, y vuelve a full
+  // seguido (no lo mandamos a la esquina enseguida).
+  const HOOK = 13; // segundos de apertura con el avatar en PANTALLA COMPLETA
   const pts: { start: number; mode: AvatarWindow["mode"]; pr: number }[] = [{ start: 0, mode: "full", pr: 3 }];
   // b-roll normal → avatar en PiP; imagen-con-doctor (av) → avatar OCULTO (evita doble).
-  for (const b of ROMNOC_BROLL) pts.push({ start: b.start, mode: (b as any).av ? "hidden" : CORNER, pr: 0 });
-  for (const c of ROMNOC_COMPS) pts.push({ start: c.start, mode: "hidden", pr: 1 });
-  pts.push({ start: 2.0, mode: CORNER, pr: 2 });
-  // avatar vuelve a PANTALLA COMPLETA cada ~57s por ~4s (donde no hay componente ni
-  // emphasis) — para que no quede siempre en la esquina.
+  // Durante el hook NO cortamos a esquina (el b-roll queda debajo, se ve al terminar).
+  for (const b of ROMNOC_BROLL) { if (b.start < HOOK) continue; pts.push({ start: b.start, mode: (b as any).av ? "hidden" : CORNER, pr: 0 }); }
+  // takeover (pantalla completa) → oculta avatar; overlays (lowerthird/alerta/ticker/dato/callout) → NO.
+  for (const c of ROMNOC_COMPS) if (!OVERLAY_KINDS.has(c.kind)) pts.push({ start: c.start, mode: "hidden", pr: 1 });
+  pts.push({ start: HOOK, mode: CORNER, pr: 2 }); // recién al terminar el hook → esquina
+  // avatar vuelve a PANTALLA COMPLETA cada ~34s por ~6s (donde no hay componente ni
+  // emphasis) — mucho más presente en full, no siempre en la esquina.
   const compRanges = ROMNOC_COMPS.map((c: any) => [c.start - 0.5, c.start + c.dur + 0.5]);
   const emphRanges = ROMNOC_EMPH.map((e) => [e.from - 0.5, e.to + 0.5]);
   const busy = (a: number, b: number) => [...compRanges, ...emphRanges].some(([x, y]) => a < y && b > x);
-  for (let t = 55; t < ROMNOC_END - 8; t += 57) {
+  for (let t = HOOK + 22; t < ROMNOC_END - 8; t += 34) {
     let s = t;
-    for (let k = 0; k < 20 && busy(s, s + 4.2); k++) s += 2;
-    if (!busy(s, s + 4.2)) { pts.push({ start: +s.toFixed(2), mode: "full", pr: 2 }); pts.push({ start: +(s + 4).toFixed(2), mode: CORNER, pr: 1.5 }); }
+    for (let k = 0; k < 24 && busy(s, s + 6.2); k++) s += 2;
+    if (!busy(s, s + 6.2)) { pts.push({ start: +s.toFixed(2), mode: "full", pr: 2 }); pts.push({ start: +(s + 6).toFixed(2), mode: CORNER, pr: 1.5 }); }
   }
   pts.sort((a, b) => a.start - b.start || b.pr - a.pr);
   const w: AvatarWindow[] = [];

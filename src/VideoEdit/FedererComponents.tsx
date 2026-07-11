@@ -20,6 +20,8 @@ import { BenefitLockReveal } from "./scenes/BenefitLockReveal";
 import { Pizarra } from "./scenes/Pizarra";
 import { StudyMagazine, NewspaperStudy, HighlightData, CitationCard } from "./scenes/RecalRich";
 import { ScrollDoc } from "./scenes/ScrollDoc";
+import { LowerThirdFederer, AlertaCorner, TickerAlerta, AntesDespues, MitoVsRealidad, DatoClaveBadge, CalloutFlecha } from "./kit/federer_broadcast";
+import { PremiumLowerThird, PremiumStatRing, PremiumAuthorityQuote, PremiumChapter, PremiumProtocol, AvatarExplain } from "./kit/federer_premium";
 
 const STUDY_RE = /carcinogenesis|harvard|efsa|lancet|toxicology|iarc|oms|journal|revista|estudio|an[aá]lisis|food chemistry|nutrition/i;
 
@@ -89,7 +91,19 @@ export function renderFedererComp(beat: any, d: number): React.ReactNode {
 }
 
 // kinds que son COMPONENTES (no b-roll ni talk)
-export const COMP_KINDS = new Set(["headline", "stat", "quote", "chips", "splitlist", "checklist", "process", "ingredients", "annotated", "diagram", "rule", "nametag", "blurexplainer", "pizarra"]);
+export const COMP_KINDS = new Set(["headline", "stat", "quote", "chips", "splitlist", "checklist", "process", "ingredients", "annotated", "diagram", "rule", "nametag", "blurexplainer", "pizarra", "scrolldoc",
+  // broadcast
+  "lowerthird", "alerta", "ticker", "antesdespues", "mito", "dato", "callout",
+  // premium
+  "plt", "pstat", "pquote", "pchapter", "pprotocol", "avexplain"]);
+
+// KIT canónico del nicho Federer (para el gate ≥90% de variedad por video)
+export const FEDERER_KIT_KINDS = ["headline", "stat", "quote", "chips", "splitlist", "checklist", "process", "ingredients", "annotated", "diagram", "pizarra", "scrolldoc",
+  "lowerthird", "alerta", "ticker", "antesdespues", "mito", "dato", "callout",
+  "plt", "pstat", "pquote", "pchapter", "pprotocol", "avexplain"];
+
+// OVERLAYS = se dibujan ENCIMA del avatar/b-roll (no lo tapan). El resto son takeover pantalla completa.
+export const OVERLAY_KINDS = new Set(["lowerthird", "plt", "alerta", "ticker", "dato", "callout"]);
 
 // ── mapeador para el video RECALENTADOS (datos del plan de los agentes Haiku) ──
 function recalDiagram(concept: string, title: string, d: number): React.ReactNode {
@@ -149,6 +163,47 @@ export function renderRecalComp(b: any, d: number, idx = 0): React.ReactNode {
       });
       return <Pizarra durationInFrames={d} title={b.title} slides={slides.length ? slides : [{ kind: "phrase", eyebrow: b.title, heading: b.title || "" }]} />;
     }
+    // ── base premium que faltaban en el ruteo ──
+    case "quote":
+      return <PullQuote durationInFrames={d} theme={T} quote={strip(b.text)} image={sf(b.image)} />;
+    case "splitlist":
+      return <BulletCascade durationInFrames={d} theme={T} eyebrow={b.title} bullets={(b.items || []).map((i: string) => ({ key: i }))} />;
+    case "ingredients":
+      return <FlowSteps durationInFrames={d} theme={T} title={b.title} nodes={(b.items || []).map((i: any) => ({ label: i.name, sub: i.amount, image: sf(i.image) }))} />;
+    case "process":
+      return <NumberedSteps durationInFrames={d} theme={T} eyebrow={b.eyebrow} title={b.title} steps={(b.steps || []).map((s: any) => ({ title: s.title, sub: s.desc, image: sf(s.image) }))} />;
+    case "chips":
+      return <SplitPanel durationInFrames={d} theme={T} title={b.title} image={sf(b.image)} bullets={b.chips || []} />;
+    case "annotated":
+      return <CutawayCallouts durationInFrames={d} theme={T} eyebrow={b.eyebrow} title={b.caption} image={sf(b.image)} callouts={(b.annotations || []).map((a: any) => ({ text: a.label, tx: a.x / 100, ty: a.y / 100 }))} />;
+    // ── KIT BROADCAST Federer ──
+    case "lowerthird":
+      return <LowerThirdFederer title={b.title} subtitle={b.subtitle} kicker={b.kicker} />;
+    case "alerta":
+      return <AlertaCorner tag={b.tag} headline={b.headline || b.title} desc={b.desc || b.body} />;
+    case "ticker":
+      return <TickerAlerta tag={b.tag} items={b.items || []} />;
+    case "antesdespues":
+      return <AntesDespues before={b.before} after={b.after} labelA={b.labelA} labelB={b.labelB} />;
+    case "mito":
+      return <MitoVsRealidad myth={b.myth} fact={b.fact} />;
+    case "dato":
+      return <DatoClaveBadge value={Number(b.value) || 0} suffix={b.suffix} label={b.label} corner={b.corner} />;
+    case "callout":
+      return <CalloutFlecha text={b.text || b.title} tx={b.tx} ty={b.ty} from={b.from} />;
+    // ── KIT PREMIUM Federer ──
+    case "plt":
+      return <PremiumLowerThird name={b.name} credential={b.credential} title={b.title} />;
+    case "pstat":
+      return <PremiumStatRing value={Number(b.value) || 0} suffix={b.suffix} eyebrow={b.eyebrow} support={b.support || b.label} pct={b.pct} />;
+    case "pquote":
+      return <PremiumAuthorityQuote quote={strip(b.quote || b.text)} by={b.by} role={b.role} />;
+    case "pchapter":
+      return <PremiumChapter index={b.index} kicker={b.kicker} title={b.title} />;
+    case "pprotocol":
+      return <PremiumProtocol title={b.title} steps={(b.steps || []).map((s: any) => ({ title: s.title, sub: s.desc || s.sub }))} zoom={b.zoom} />;
+    case "avexplain":
+      return <AvatarExplain avatarSrc={b.avatarSrc || "romnoc_opt.mp4"} image={b.image} kicker={b.kicker} title={b.title} body={b.body} side={b.side} mode={b.mode} startFrom={Math.round((b.start || 0) * 30)} appearAt={b.appearAt} />;
     default:
       return null;
   }
