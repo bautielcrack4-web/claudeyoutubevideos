@@ -1,5 +1,5 @@
 import React from "react";
-import { AbsoluteFill, OffthreadVideo, staticFile, interpolate, spring, useCurrentFrame, useVideoConfig } from "remotion";
+import { AbsoluteFill, OffthreadVideo, Img, staticFile, interpolate, spring, useCurrentFrame, useVideoConfig } from "remotion";
 import { F_INTER } from "./premium/theme";
 
 // ═══════════════════════════════════════════════════════════════════════════
@@ -301,31 +301,73 @@ export const PremiumProtocol: React.FC<{ title?: string; steps: { title: string;
 // costado y sube la retención. mode: "imgtext" | "text".
 // ─────────────────────────────────────────────────────────────────────────
 export const AvatarExplain: React.FC<{
-  avatarSrc: string; image?: string; kicker?: string; title: string; body?: string;
-  side?: "left" | "right"; mode?: "imgtext" | "text"; startFrom?: number; appearAt?: number;
-}> = ({ avatarSrc, image, kicker = "EN DETALLE", title, body, side = "right", mode = "imgtext", startFrom = 0, appearAt = 10 }) => {
+  avatarSrc: string; image?: string; kicker?: string; title: string; body?: string; bullets?: string[];
+  side?: "left" | "right"; mode?: "imgtext" | "text" | "split"; blur?: boolean; startFrom?: number; appearAt?: number;
+}> = ({ avatarSrc, image, kicker = "EN DETALLE", title, body, bullets, side = "right", mode = "imgtext", blur = false, startFrom = 0, appearAt = 10 }) => {
   const frame = useCurrentFrame();
   const { durationInFrames } = useVideoConfig();
-  // zoom lento tipo Ken Burns sobre el avatar
+  const inp = spring({ frame: frame - appearAt, fps: 30, config: { damping: 200, mass: 0.7 } });
+  const isImg = (p?: string) => !!p && /\.(png|jpe?g|webp)$/i.test(p);
+  const mediaEl = (src: string, style: React.CSSProperties) =>
+    isImg(src) ? <Img src={staticFile(src)} style={style} /> : <OffthreadVideo src={staticFile(src)} muted style={style} />;
+
+  // ── MODO SPLIT: pizarra un lado, Federer (vivo, muteado) el otro ──
+  if (mode === "split") {
+    const avRight = side !== "left"; // por defecto Federer DERECHA, pizarra IZQUIERDA
+    const avatarPanel = (
+      <div style={{ flex: "0 0 44%", position: "relative", overflow: "hidden" }}>
+        <OffthreadVideo src={staticFile(avatarSrc)} startFrom={startFrom} muted style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "50% 28%" }} />
+        <div style={{ position: "absolute", inset: 0, boxShadow: "inset 0 0 130px rgba(4,13,16,0.55)" }} />
+        <div style={{ position: "absolute", top: 0, bottom: 0, [avRight ? "left" : "right"]: 0, width: 3, background: `linear-gradient(180deg, ${TEALhi}, ${TEALd})`, boxShadow: `0 0 26px ${TEAL}` } as React.CSSProperties} />
+      </div>
+    );
+    const pizarra = (
+      <div style={{ flex: 1, padding: "0 72px", display: "flex", flexDirection: "column", justifyContent: "center", opacity: inp }}>
+        <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 18 }}>
+          <div style={{ width: 34, height: 3, background: `linear-gradient(90deg, ${GOLD}, ${GOLDd})`, borderRadius: 2 }} />
+          <Label color={GOLD}>{kicker}</Label>
+        </div>
+        <div style={{ color: W, fontWeight: 900, fontSize: 54, lineHeight: 1.05, letterSpacing: -0.8, marginBottom: 30 }}>{title}</div>
+        <div style={{ display: "flex", flexDirection: "column", gap: 18 }}>
+          {(bullets || []).map((bt, i) => {
+            const bi = spring({ frame: frame - (appearAt + 8 + i * 7), fps: 30, config: { damping: 200, mass: 0.6 } });
+            return (
+              <div key={i} style={{ display: "flex", alignItems: "center", gap: 16, opacity: bi, transform: `translateX(${interpolate(bi, [0, 1], [-26, 0])}px)` }}>
+                <div style={{ width: 32, height: 32, borderRadius: "50%", background: `linear-gradient(135deg, ${TEAL}, ${TEALd})`, flexShrink: 0, display: "flex", alignItems: "center", justifyContent: "center", color: W, fontWeight: 900, fontSize: 17 }}>✓</div>
+                <div style={{ color: W, fontWeight: 600, fontSize: 31, lineHeight: 1.2 }}>{bt}</div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    );
+    return (
+      <AbsoluteFill style={{ fontFamily: F_INTER, display: "flex", flexDirection: "row", backgroundColor: INK0 }}>
+        <PremiumBackdrop />
+        {avRight ? <>{pizarra}{avatarPanel}</> : <>{avatarPanel}{pizarra}</>}
+      </AbsoluteFill>
+    );
+  }
+
+  // ── MODOS full: imgtext / text — con opción BLUR (Federer se desenfoca al explicar) ──
   const zp = interpolate(frame, [0, durationInFrames], [0, 1], { extrapolateRight: "clamp" });
   const scale = interpolate(zp, [0, 1], [1.03, 1.12]);
-  const ty = interpolate(zp, [0, 1], [0, -18]);
-  // entrada de la tarjeta lateral
-  const inp = spring({ frame: frame - appearAt, fps: 30, config: { damping: 200, mass: 0.7 } });
+  const tyk = interpolate(zp, [0, 1], [0, -18]);
+  const blurPx = blur ? interpolate(frame, [appearAt, appearAt + 16], [0, 12], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }) : 0;
   const dx = interpolate(inp, [0, 1], [side === "right" ? 90 : -90, 0]);
   const isR = side === "right";
   const CARD_W = 560;
 
   return (
     <AbsoluteFill style={{ fontFamily: F_INTER, backgroundColor: INK0, overflow: "hidden" }}>
-      {/* AVATAR full con zoom */}
-      <AbsoluteFill style={{ transform: `scale(${scale}) translateY(${ty}px)`, transformOrigin: "50% 46%" }}>
+      {/* AVATAR full con zoom (se DESENFOCA si blur) */}
+      <AbsoluteFill style={{ transform: `scale(${scale}) translateY(${tyk}px)`, transformOrigin: "50% 46%", filter: blurPx > 0.3 ? `blur(${blurPx}px)` : undefined }}>
         {/* OffthreadVideo + muted: la voz la da el AvatarLayer off-screen (evita voz cruzada) */}
         <OffthreadVideo src={staticFile(avatarSrc)} startFrom={startFrom} muted style={{ width: "100%", height: "100%", objectFit: "cover" }} />
       </AbsoluteFill>
 
-      {/* scrim lateral para legibilidad de la tarjeta */}
-      <AbsoluteFill style={{ background: `linear-gradient(${isR ? "270deg" : "90deg"}, rgba(4,13,16,0.82) 0%, rgba(4,13,16,0.5) 28%, transparent 52%)`, opacity: inp }} />
+      {/* scrim: blur→oscurece todo; si no, degradé lateral */}
+      <AbsoluteFill style={{ background: blur ? `rgba(4,13,16,${0.5 * inp})` : `linear-gradient(${isR ? "270deg" : "90deg"}, rgba(4,13,16,0.82) 0%, rgba(4,13,16,0.5) 28%, transparent 52%)`, opacity: inp }} />
 
       {/* TARJETA LATERAL */}
       <div style={{ position: "absolute", top: 150, [isR ? "right" : "left"]: 90, width: CARD_W, opacity: inp, transform: `translateX(${dx}px)` } as React.CSSProperties}>
@@ -337,7 +379,7 @@ export const AvatarExplain: React.FC<{
           <div style={{ ...glass(24), padding: 12, marginBottom: 20 }}>
             <div style={{ width: "100%", height: 360, borderRadius: 16, overflow: "hidden", position: "relative", boxShadow: "inset 0 0 0 1px rgba(255,255,255,0.08)" }}>
               {image
-                ? <OffthreadVideo src={staticFile(image)} muted style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                ? mediaEl(image, { width: "100%", height: "100%", objectFit: "cover" })
                 : <div style={{ width: "100%", height: "100%", background: `radial-gradient(120% 100% at 40% 30%, #16323b, #061318)` }} />}
               <div style={{ position: "absolute", inset: 0, boxShadow: `inset 0 -40px 60px rgba(4,13,16,0.5)` }} />
             </div>

@@ -100,7 +100,7 @@ export const COMP_KINDS = new Set(["headline", "stat", "quote", "chips", "splitl
 // KIT canónico del nicho Federer (para el gate ≥90% de variedad por video)
 export const FEDERER_KIT_KINDS = ["headline", "stat", "quote", "chips", "splitlist", "checklist", "process", "ingredients", "annotated", "diagram", "pizarra", "scrolldoc",
   "lowerthird", "alerta", "ticker", "antesdespues", "mito", "dato", "callout",
-  "plt", "pstat", "pquote", "pchapter", "pprotocol", "avexplain"];
+  "plt", "pstat", "pquote", "pchapter", "pprotocol", "avexplain", "avblur", "avsplit"];
 
 // OVERLAYS = se dibujan ENCIMA del avatar/b-roll (no lo tapan). El resto son takeover pantalla completa.
 export const OVERLAY_KINDS = new Set(["lowerthird", "plt", "alerta", "ticker", "dato", "callout"]);
@@ -204,6 +204,10 @@ export function renderRecalComp(b: any, d: number, idx = 0): React.ReactNode {
       return <PremiumProtocol title={b.title} steps={(b.steps || []).map((s: any) => ({ title: s.title, sub: s.desc || s.sub }))} zoom={b.zoom} />;
     case "avexplain":
       return <AvatarExplain avatarSrc={b.avatarSrc || "romnoc_opt.mp4"} image={b.image} kicker={b.kicker} title={b.title} body={b.body} side={b.side} mode={b.mode} startFrom={Math.round((b.start || 0) * 30)} appearAt={b.appearAt} />;
+    case "avblur": // Federer se DESENFOCA + imagen con texto al lado
+      return <AvatarExplain avatarSrc={b.avatarSrc || "romnoc_opt.mp4"} image={b.image} kicker={b.kicker} title={b.title} body={b.body} side={b.side || "left"} mode="imgtext" blur startFrom={Math.round((b.start || 0) * 30)} appearAt={b.appearAt} />;
+    case "avsplit": // PIZARRA un lado + Federer (vivo) el otro
+      return <AvatarExplain avatarSrc={b.avatarSrc || "romnoc_opt.mp4"} kicker={b.kicker} title={b.title} bullets={b.bullets} side={b.side || "right"} mode="split" startFrom={Math.round((b.start || 0) * 30)} appearAt={b.appearAt} />;
     default:
       return null;
   }

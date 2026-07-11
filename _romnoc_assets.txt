@@ -310,3 +310,5 @@ img/rnf_noche.png
 img/rnf_cremas.png
 img/rnf_batalla.png
 img/rnf_fed_examina.png
+img/rnf_repara.png
+img/rnf_circul.png
