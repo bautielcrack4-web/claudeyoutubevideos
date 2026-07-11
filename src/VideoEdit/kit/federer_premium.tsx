@@ -1,6 +1,5 @@
 import React from "react";
-import { AbsoluteFill, staticFile, interpolate, spring, useCurrentFrame, useVideoConfig } from "remotion";
-import { Video } from "@remotion/media";
+import { AbsoluteFill, OffthreadVideo, staticFile, interpolate, spring, useCurrentFrame, useVideoConfig } from "remotion";
 import { F_INTER } from "./premium/theme";
 
 // ═══════════════════════════════════════════════════════════════════════════
@@ -321,8 +320,8 @@ export const AvatarExplain: React.FC<{
     <AbsoluteFill style={{ fontFamily: F_INTER, backgroundColor: INK0, overflow: "hidden" }}>
       {/* AVATAR full con zoom */}
       <AbsoluteFill style={{ transform: `scale(${scale}) translateY(${ty}px)`, transformOrigin: "50% 46%" }}>
-        {/* muted: la voz la da el AvatarLayer off-screen (evita voz doblada/eco) */}
-        <Video src={staticFile(avatarSrc)} startFrom={startFrom} muted style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+        {/* OffthreadVideo + muted: la voz la da el AvatarLayer off-screen (evita voz cruzada) */}
+        <OffthreadVideo src={staticFile(avatarSrc)} startFrom={startFrom} muted style={{ width: "100%", height: "100%", objectFit: "cover" }} />
       </AbsoluteFill>
 
       {/* scrim lateral para legibilidad de la tarjeta */}
@@ -338,7 +337,7 @@ export const AvatarExplain: React.FC<{
           <div style={{ ...glass(24), padding: 12, marginBottom: 20 }}>
             <div style={{ width: "100%", height: 360, borderRadius: 16, overflow: "hidden", position: "relative", boxShadow: "inset 0 0 0 1px rgba(255,255,255,0.08)" }}>
               {image
-                ? <Video src={staticFile(image)} startFrom={0} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                ? <OffthreadVideo src={staticFile(image)} muted style={{ width: "100%", height: "100%", objectFit: "cover" }} />
                 : <div style={{ width: "100%", height: "100%", background: `radial-gradient(120% 100% at 40% 30%, #16323b, #061318)` }} />}
               <div style={{ position: "absolute", inset: 0, boxShadow: `inset 0 -40px 60px rgba(4,13,16,0.5)` }} />
             </div>

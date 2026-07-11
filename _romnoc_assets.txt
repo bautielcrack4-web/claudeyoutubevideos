@@ -302,3 +302,11 @@ sfx/music_federer.mp3
 sfx/rumble_const.mp3
 sfx/whoosh.mp3
 sfx/impacto_hit.mp3
+img/rnf_espejo.png
+img/rnf_mancha.png
+img/rnf_crema.png
+img/rnf_vuelve.png
+img/rnf_noche.png
+img/rnf_cremas.png
+img/rnf_batalla.png
+img/rnf_fed_examina.png

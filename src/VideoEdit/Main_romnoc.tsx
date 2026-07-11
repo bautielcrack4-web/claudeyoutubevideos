@@ -25,7 +25,7 @@ function buildWindows(): AvatarWindow[] {
   const CORNER: AvatarWindow["mode"] = "cornerTR";
   // El avatar es lo MEJOR del video → full a cámara TODO el hook, y vuelve a full
   // seguido (no lo mandamos a la esquina enseguida).
-  const HOOK = 13; // segundos de apertura con el avatar en PANTALLA COMPLETA
+  const HOOK = 6; // segundos de apertura con el avatar en PANTALLA COMPLETA
   const pts: { start: number; mode: AvatarWindow["mode"]; pr: number }[] = [{ start: 0, mode: "full", pr: 3 }];
   // b-roll normal → avatar en PiP; imagen-con-doctor (av) → avatar OCULTO (evita doble).
   // Durante el hook NO cortamos a esquina (el b-roll queda debajo, se ve al terminar).
