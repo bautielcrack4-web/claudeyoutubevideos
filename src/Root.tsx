@@ -24,6 +24,7 @@ import { MainRecalentados, TOTAL_FRAMES_RECAL } from "./VideoEdit/Main_recalenta
 import { MainArandano, TOTAL_FRAMES_ARAND } from "./VideoEdit/Main_arandano";
 import { MainRomnoc, TOTAL_FRAMES_ROMNOC } from "./VideoEdit/Main_romnoc";
 import { MainOkra, TOTAL_FRAMES_OKRA } from "./VideoEdit/Main_okra";
+import { MainTeromero, TOTAL_FRAMES_TEROMERO } from "./VideoEdit/Main_teromero";
 import { MainBorax, TOTAL_FRAMES_BX } from "./VideoEdit/Main_borax";
 import { MainBarrera, TOTAL_FRAMES_BRR } from "./VideoEdit/Main_barrera";
 import { MainJabon, TOTAL_FRAMES_JABON } from "./VideoEdit/Main_jabon";
@@ -404,6 +405,7 @@ export const RemotionRoot: React.FC = () => {
       {/* Federer Más Salud — #1 Romero nocturno (melasma/manchas) */}
       <Composition id="Romnoc" component={MainRomnoc} durationInFrames={TOTAL_FRAMES_ROMNOC} fps={30} width={1920} height={1080} />
       <Composition id="Okra" component={MainOkra} durationInFrames={TOTAL_FRAMES_OKRA} fps={30} width={1920} height={1080} />
+      <Composition id="Teromero" component={MainTeromero} durationInFrames={TOTAL_FRAMES_TEROMERO} fps={30} width={1920} height={1080} />
       {/* KIT BROADCAST Federer — preview de componentes nuevos (which: lowerthird/alerta/ticker/antesdespues/mito/dato/callout) */}
       <Composition id="FedBroadcast" component={BroadcastDemo} durationInFrames={90} fps={30} width={1920} height={1080} defaultProps={{ which: "lowerthird" }} />
 
