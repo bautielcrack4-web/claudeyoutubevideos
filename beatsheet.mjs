@@ -735,6 +735,63 @@ function renderEl(b) {
         (b.hue ? ` hue=${j(b.hue)}` : ``) +
         ` />`
       );
+    case "breaking":
+      return (
+        `<BreakingReveal durationInFrames={d} headline=${j(b.headline || "")}` +
+        (b.label ? ` label=${j(b.label)}` : ``) +
+        (b.number ? ` number=${j(b.number)}` : ``) +
+        (b.badge ? ` badge=${j(b.badge)}` : ``) +
+        (b.ticker ? ` ticker=${j(b.ticker)}` : ``) +
+        (b.accent ? ` accent=${j(b.accent)}` : ``) +
+        ` />`
+      );
+    case "presenter":
+      return (
+        `<PresenterTag durationInFrames={d} name=${j(b.name || "")}` +
+        (b.subtitle ? ` subtitle=${j(b.subtitle)}` : ``) +
+        (b.image ? ` image=${j(b.image)}` : ``) +
+        (b.accent ? ` accent=${j(b.accent)}` : ``) +
+        ` />`
+      );
+    case "ticker":
+      return (
+        `<NewsTicker durationInFrames={d} items={${j(b.items || [])}}` +
+        (b.label ? ` label=${j(b.label)}` : ``) +
+        (b.accent ? ` accent=${j(b.accent)}` : ``) +
+        (b.speed ? ` speed={${Number(b.speed)}}` : ``) +
+        ` />`
+      );
+    case "verified":
+      return (
+        `<VerifiedStamp durationInFrames={d}` +
+        (b.text ? ` text=${j(b.text)}` : ``) +
+        (b.accent ? ` accent=${j(b.accent)}` : ``) +
+        (b.angle != null ? ` angle={${Number(b.angle)}}` : ``) +
+        ` />`
+      );
+    case "steptrack":
+      return (
+        `<StepTracker durationInFrames={d} step={${Number(b.step || 1)}}` +
+        (b.total != null ? ` total={${Number(b.total)}}` : ``) +
+        (b.label ? ` label=${j(b.label)}` : ``) +
+        (b.accent ? ` accent=${j(b.accent)}` : ``) +
+        ` />`
+      );
+    case "statslam":
+      return (
+        `<StatSlam durationInFrames={d} figure=${j(b.figure || "")}` +
+        (b.caption ? ` caption=${j(b.caption)}` : ``) +
+        (b.eyebrow ? ` eyebrow=${j(b.eyebrow)}` : ``) +
+        (b.accent ? ` accent=${j(b.accent)}` : ``) +
+        ` />`
+      );
+    case "alertwipe":
+      return (
+        `<AlertWipe durationInFrames={d}` +
+        (b.text ? ` text=${j(b.text)}` : ``) +
+        (b.accent ? ` accent=${j(b.accent)}` : ``) +
+        ` />`
+      );
     case "callout":
       return (
         `<CalloutMark durationInFrames={d} figure=${j(b.figure || "")}` +
@@ -1375,6 +1432,13 @@ if (themeImports.length) imports.push(`import { ${themeImports.join(", ")} } fro
 if (kinds.has("raw")) imports.push(`import { RawShot } from "./scenes/RawShot";`);
 for (const k of kinds) if (KIT[k]) imports.push(`import { ${KIT[k]} } from "./kit/${KIT[k]}";`);
 if (kinds.has("quote")) imports.push(`import { KineticQuote, parseQuote } from "./scenes/KineticQuote";`);
+if (kinds.has("breaking")) imports.push(`import { BreakingReveal } from "./scenes/BreakingReveal";`);
+if (kinds.has("presenter")) imports.push(`import { PresenterTag } from "./scenes/PresenterTag";`);
+if (kinds.has("ticker")) imports.push(`import { NewsTicker } from "./scenes/NewsTicker";`);
+if (kinds.has("verified")) imports.push(`import { VerifiedStamp } from "./scenes/VerifiedStamp";`);
+if (kinds.has("steptrack")) imports.push(`import { StepTracker } from "./scenes/StepTracker";`);
+if (kinds.has("statslam")) imports.push(`import { StatSlam } from "./scenes/StatSlam";`);
+if (kinds.has("alertwipe")) imports.push(`import { AlertWipe } from "./scenes/AlertWipe";`);
 if (kinds.has("layered")) imports.push(`import { LayeredReveal } from "./scenes/LayeredReveal";`);
 if (kinds.has("scrolldoc")) imports.push(`import { ScrollDoc } from "./scenes/ScrollDoc";`);
 if (kinds.has("avpizarra")) imports.push(`import { AvatarPizarra } from "./scenes/AvatarPizarra";`);
