@@ -7,14 +7,13 @@ import { PresenterTag } from "./scenes/PresenterTag";
 import { NewsTicker } from "./scenes/NewsTicker";
 import { VerifiedStamp } from "./scenes/VerifiedStamp";
 import { StepTracker } from "./scenes/StepTracker";
-import { StatSlam } from "./scenes/StatSlam";
 import { AlertWipe } from "./scenes/AlertWipe";
 import { KineticLine } from "./scenes/KineticLine";
 
 export type Cue = { key: string; start: number; dur: number; kind: string; el: (d: number) => ReactNode };
 
 export const CUES: Cue[] = [
-  { key: "cmp_pres", start: 0.6, dur: 5.5, kind: "presenter", el: (d) => <PresenterTag durationInFrames={d} name="LEVI LAPP" subtitle="Huerta a la vieja usanza · 3ª generación" accent="amber" /> },
+  { key: "s_01", start: 0.6, dur: 6, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="vid/revivir_levi_001.mp4" darken={0} clipDur={3} /> },
   { key: "s_02", start: 6.1, dur: 5.22, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/revivir_s_02.png" darken={0} /> },
   { key: "s_03", start: 10.82, dur: 4.02, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/revivir_s_03.png" darken={0} /> },
   { key: "s_04", start: 14.34, dur: 4.42, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="vid/revivir_levi_002.mp4" darken={0} clipDur={3} /> },
@@ -230,7 +229,7 @@ export const CUES: Cue[] = [
 export const REFRAME: { start: number; end: number }[] = [];
 
 export const OVERLAYS: Cue[] = [
-  { key: "cmp_stat", start: 6.1, dur: 4, kind: "statslam", el: (d) => <StatSlam durationInFrames={d} figure="9 de cada 10" caption="mueren ahogadas, no de sed" eyebrow="El dato que nadie te dice" accent="danger" /> },
+  { key: "cmp_pres", start: 3.36, dur: 4.5, kind: "presenter", el: (d) => <PresenterTag durationInFrames={d} name="LEVI LAPP" subtitle="Huerta a la vieja usanza · 3ª generación" accent="amber" /> },
   { key: "cmp_ticker", start: 52, dur: 7, kind: "ticker", el: (d) => <NewsTicker durationInFrames={d} items={["Agua oxigenada al 3% — cuesta monedas","1½ cucharada por litro para el rescate","Se degrada con la luz: guardala en botella oscura","Nunca al sol fuerte del mediodía"]} label="DATO" accent="danger" /> },
   { key: "cmp_alert", start: 111.72, dur: 1.1, kind: "alertwipe", el: (d) => <AlertWipe durationInFrames={d} text="ATENCIÓN" accent="danger" /> },
   { key: "cmp_break1", start: 241.04, dur: 4, kind: "breaking", el: (d) => <BreakingReveal durationInFrames={d} headline="Estás ahogando tu planta con agua" label="AL DESCUBIERTO" badge="AHORA" ticker="El error que comete casi todo el mundo" accent="danger" /> },
@@ -247,4 +246,4 @@ export const OVERLAYS: Cue[] = [
 export const AUDIO_BED: { src: string; activity: [number, number][]; base: number; duck: number; totalSec: number; loop: boolean } | null = null;
 
 // riel de SFX suaves (SfxRail) — [] si "sfx": false
-export const SFX_CUES: { at: number; role: string; vol?: number }[] = [{"at":0.6,"role":"popUp","vol":0.32},{"at":6.1,"role":"popUp","vol":0.32},{"at":52,"role":"popUp","vol":0.32},{"at":111.72,"role":"popUp","vol":0.32},{"at":241.04,"role":"popUp","vol":0.32},{"at":254.46,"role":"popUp","vol":0.32},{"at":393.16,"role":"popUp","vol":0.32},{"at":465.6,"role":"popUp","vol":0.32},{"at":491.34,"role":"popUp","vol":0.32},{"at":616.34,"role":"popUp","vol":0.32},{"at":694.64,"role":"popUp","vol":0.32},{"at":1008.76,"role":"popUp","vol":0.32}];
+export const SFX_CUES: { at: number; role: string; vol?: number }[] = [{"at":3.36,"role":"popUp","vol":0.32},{"at":52,"role":"popUp","vol":0.32},{"at":111.72,"role":"popUp","vol":0.32},{"at":241.04,"role":"popUp","vol":0.32},{"at":254.46,"role":"popUp","vol":0.32},{"at":393.16,"role":"popUp","vol":0.32},{"at":465.6,"role":"popUp","vol":0.32},{"at":491.34,"role":"popUp","vol":0.32},{"at":616.34,"role":"popUp","vol":0.32},{"at":694.64,"role":"popUp","vol":0.32},{"at":1008.76,"role":"popUp","vol":0.32}];

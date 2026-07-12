@@ -74,7 +74,7 @@ console.log(`beats: ${beats.length} · clips reales: ${nClip} · animados: ${nVi
 const bgOf = (nm) => imgOf(nm) || (leviPool[0]);
 const COMPONENTS = [
   // Placa de presentador al arrancar
-  { t: atc("escucha este dato"), id: "cmp_pres", kind: "presenter", name: "LEVI LAPP", subtitle: "Huerta a la vieja usanza · 3ª generación", accent: "amber", dur: 4.5 },
+  { t: atc("escucha este dato"), id: "cmp_pres", kind: "presenter", name: "LEVI LAPP", subtitle: "Huerta a la vieja usanza · 3ª generación", accent: "amber", dur: 4.5, overlay: true },
   // Stat slam 9 de cada 10
   { t: atc("nueve de cada diez"), id: "cmp_stat", kind: "statslam", eyebrow: "El dato que nadie te dice", figure: "9 de cada 10", caption: "mueren ahogadas, no de sed", accent: "danger", dur: 4.0, overlay: true },
   // Ticker de datos
@@ -118,7 +118,8 @@ for (const c of [...COMPONENTS].sort((a, b) => (a.t ?? 0) - (b.t ?? 0))) {
 
 // ── avatar full: apertura + cierre ──
 const closeStart = atc("no te apures a rendirte") ?? (TOTAL - 40);
-const AV_FULL = [[0, OPEN], [closeStart, TOTAL]];
+const OPEN_FULL = atc("los tres pasos exactos") ?? 7.0;  // avatar full hasta el fin del hook
+const AV_FULL = [[0, OPEN_FULL], [closeStart, TOTAL]];
 avStartsPH.push(...AV_FULL.map(([s]) => s));
 
 // tiling
