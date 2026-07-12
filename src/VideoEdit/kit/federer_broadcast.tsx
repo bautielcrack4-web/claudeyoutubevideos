@@ -219,7 +219,8 @@ export const CalloutFlecha: React.FC<{ text: string; tx?: number; ty?: number; f
   const draw = interpolate(p, [0, 1], [0, 1]);
   const W_ = 1920, H_ = 1080;
   const X = tx * W_, Y = ty * H_;
-  const off = { tl: [-260, -170], tr: [260, -170], bl: [-260, 170], br: [260, 170] }[from];
+  const OFF: Record<string, [number, number]> = { tl: [-260, -170], tr: [260, -170], bl: [-260, 170], br: [260, 170], top: [0, -230], bottom: [0, 230], left: [-320, 0], right: [320, 0] };
+  const off = OFF[from as string] || OFF.tr;
   const lx = X + off[0], ly = Y + off[1];
   return (
     <AbsoluteFill style={{ fontFamily: F_INTER }}>
