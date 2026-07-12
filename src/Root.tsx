@@ -25,6 +25,9 @@ import { MainArandano, TOTAL_FRAMES_ARAND } from "./VideoEdit/Main_arandano";
 import { MainRomnoc, TOTAL_FRAMES_ROMNOC } from "./VideoEdit/Main_romnoc";
 import { MainOkra, TOTAL_FRAMES_OKRA } from "./VideoEdit/Main_okra";
 import { MainTeromero, TOTAL_FRAMES_TEROMERO } from "./VideoEdit/Main_teromero";
+import { MainGuante, TOTAL_FRAMES_GUANTE } from "./VideoEdit/Main_guante";
+import { MainJamaica, TOTAL_FRAMES_JAMAICA } from "./VideoEdit/Main_jamaica";
+import { MainPelo, TOTAL_FRAMES_PELO } from "./VideoEdit/Main_pelo";
 import { MainBorax, TOTAL_FRAMES_BX } from "./VideoEdit/Main_borax";
 import { MainBarrera, TOTAL_FRAMES_BRR } from "./VideoEdit/Main_barrera";
 import { MainJabon, TOTAL_FRAMES_JABON } from "./VideoEdit/Main_jabon";
@@ -36,6 +39,7 @@ import { MainGallinas, TOTAL_FRAMES_GALLINAS } from "./VideoEdit/Main_gallinas";
 import { MainOvejas, TOTAL_FRAMES_OVEJAS } from "./VideoEdit/Main_ovejas";
 import { MainCorn, TOTAL_FRAMES_CORN } from "./VideoEdit/Main_corn";
 import { MainSecretos, TOTAL_FRAMES_SECRETOS } from "./VideoEdit/Main_secretos";
+import { BreakingDemo, TOTAL_FRAMES_BREAKINGDEMO } from "./VideoEdit/BreakingDemo";
 import { MainAbono, TOTAL_FRAMES_ABONO } from "./VideoEdit/Main_abono";
 import { MainChoclo, TOTAL_FRAMES_CHOCLO } from "./VideoEdit/Main_choclo";
 import { MainHugel, TOTAL_FRAMES_HUGEL } from "./VideoEdit/Main_hugel";
@@ -328,6 +332,15 @@ export const RemotionRoot: React.FC = () => {
         width={1920}
         height={1080}
       />
+      {/* DEMO — componente BreakingReveal (titular tipo noticiero) */}
+      <Composition
+        id="BreakingDemo"
+        component={BreakingDemo}
+        durationInFrames={TOTAL_FRAMES_BREAKINGDEMO}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
       {/* VIDEO ACTIVO — 30 Secretos de Jardín Amish (Levi Lapp Jardín · ES · UCNrLx) */}
       <Composition
         id="Secretos"
@@ -406,6 +419,9 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="Romnoc" component={MainRomnoc} durationInFrames={TOTAL_FRAMES_ROMNOC} fps={30} width={1920} height={1080} />
       <Composition id="Okra" component={MainOkra} durationInFrames={TOTAL_FRAMES_OKRA} fps={30} width={1920} height={1080} />
       <Composition id="Teromero" component={MainTeromero} durationInFrames={TOTAL_FRAMES_TEROMERO} fps={30} width={1920} height={1080} />
+      <Composition id="Guante" component={MainGuante} durationInFrames={TOTAL_FRAMES_GUANTE} fps={30} width={1920} height={1080} />
+      <Composition id="Jamaica" component={MainJamaica} durationInFrames={TOTAL_FRAMES_JAMAICA} fps={30} width={1920} height={1080} />
+      <Composition id="Pelo" component={MainPelo} durationInFrames={TOTAL_FRAMES_PELO} fps={30} width={1920} height={1080} />
       {/* KIT BROADCAST Federer — preview de componentes nuevos (which: lowerthird/alerta/ticker/antesdespues/mito/dato/callout) */}
       <Composition id="FedBroadcast" component={BroadcastDemo} durationInFrames={90} fps={30} width={1920} height={1080} defaultProps={{ which: "lowerthird" }} />
 
