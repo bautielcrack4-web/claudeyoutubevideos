@@ -39,7 +39,6 @@ import { MainGallinas, TOTAL_FRAMES_GALLINAS } from "./VideoEdit/Main_gallinas";
 import { MainOvejas, TOTAL_FRAMES_OVEJAS } from "./VideoEdit/Main_ovejas";
 import { MainCorn, TOTAL_FRAMES_CORN } from "./VideoEdit/Main_corn";
 import { MainSecretos, TOTAL_FRAMES_SECRETOS } from "./VideoEdit/Main_secretos";
-import { BreakingDemo, TOTAL_FRAMES_BREAKINGDEMO } from "./VideoEdit/BreakingDemo";
 import { MainAbono, TOTAL_FRAMES_ABONO } from "./VideoEdit/Main_abono";
 import { MainChoclo, TOTAL_FRAMES_CHOCLO } from "./VideoEdit/Main_choclo";
 import { MainHugel, TOTAL_FRAMES_HUGEL } from "./VideoEdit/Main_hugel";
@@ -328,15 +327,6 @@ export const RemotionRoot: React.FC = () => {
         id="Corn"
         component={MainCorn}
         durationInFrames={TOTAL_FRAMES_CORN}
-        fps={30}
-        width={1920}
-        height={1080}
-      />
-      {/* DEMO — componente BreakingReveal (titular tipo noticiero) */}
-      <Composition
-        id="BreakingDemo"
-        component={BreakingDemo}
-        durationInFrames={TOTAL_FRAMES_BREAKINGDEMO}
         fps={30}
         width={1920}
         height={1080}
