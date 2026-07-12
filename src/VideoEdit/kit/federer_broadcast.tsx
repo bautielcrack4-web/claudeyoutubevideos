@@ -141,12 +141,12 @@ export const AntesDespues: React.FC<{ before?: string; after?: string; labelA?: 
     <AbsoluteFill style={{ fontFamily: F_INTER, opacity: p }}>
       {/* lado ANTES */}
       <div style={{ position: "absolute", inset: 0, clipPath: `polygon(0 0, ${split}% 0, ${split - 4}% 100%, 0 100%)`, overflow: "hidden" }}>
-        {before ? <Img src={sf(before)!} style={{ width: "100%", height: "100%", objectFit: "cover", filter: "saturate(0.85) brightness(0.9)" }} /> : <div style={half("a")} />}
+        {before && /\.(jpe?g|png|webp)$/i.test(before) ? <Img src={sf(before)!} style={{ width: "100%", height: "100%", objectFit: "cover", filter: "saturate(0.85) brightness(0.9)" }} /> : <div style={half("a")} />}
         <div style={{ position: "absolute", inset: 0, background: "linear-gradient(90deg, rgba(224,82,62,0.12), transparent)" }} />
       </div>
       {/* lado DESPUÉS */}
       <div style={{ position: "absolute", inset: 0, clipPath: `polygon(${split}% 0, 100% 0, 100% 100%, ${split - 4}% 100%)`, overflow: "hidden" }}>
-        {after ? <Img src={sf(after)!} style={{ width: "100%", height: "100%", objectFit: "cover" }} /> : <div style={half("b")} />}
+        {after && /\.(jpe?g|png|webp)$/i.test(after) ? <Img src={sf(after)!} style={{ width: "100%", height: "100%", objectFit: "cover" }} /> : <div style={half("b")} />}
         <div style={{ position: "absolute", inset: 0, background: "linear-gradient(90deg, transparent, rgba(22,199,192,0.14))" }} />
       </div>
       {/* divisor diagonal */}
