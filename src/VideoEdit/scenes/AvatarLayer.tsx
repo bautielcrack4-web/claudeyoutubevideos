@@ -119,7 +119,12 @@ export const AvatarLayer: React.FC<{
   const zoom = curMode === "full" ? fullZoom : kb;
   let coverW = Math.max(w, h * ratio) * zoom;
   let coverH = coverW / ratio;
-  const offX = (w - coverW) / 2;
+  // En SPLIT (halfR/halfL) el presentador está a la IZQUIERDA del cuadro (pizarra a la
+  // derecha) → sesgar el encuadre para que Federer quede CENTRADO en su media pantalla,
+  // no la pizarra. En el resto de los modos, centrado normal.
+  const offX = (curMode === "halfR" || curMode === "halfL")
+    ? (w - coverW) * 0.10
+    : (w - coverW) / 2;
   const offY = (h - coverH) * (0.28 + 0.04 * smallness); // mostrar la cara
 
   if (op < 0.001) {

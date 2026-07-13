@@ -101,6 +101,22 @@ function buildWindows(): AvatarWindow[] {
 }
 const AVATAR_WINDOWS = buildWindows();
 
+// ── SPLIT halfR: durante esas ventanas la imagen se renderiza CENTRADA en la mitad
+//    IZQUIERDA (object-fit cover en un marco de 960px), no la mitad izquierda de una
+//    foto full-screen (que dejaba al sujeto cortado detrás del avatar).
+const HALFR: [number, number][] = [];
+for (let i = 0; i < AVATAR_WINDOWS.length; i++) {
+  if (AVATAR_WINDOWS[i].mode === "halfR") {
+    const s = AVATAR_WINDOWS[i].start;
+    const e = i + 1 < AVATAR_WINDOWS.length ? AVATAR_WINDOWS[i + 1].start : VIDEO_END;
+    HALFR.push([s, e]);
+  }
+}
+const inHalfR = (t: number) => HALFR.some(([s, e]) => t >= s - 0.05 && t < e - 0.1);
+const HalfLeft: React.FC<{ children: React.ReactNode }> = ({ children }) => (
+  <div style={{ position: "absolute", left: 0, top: 0, width: 960, height: 1080, overflow: "hidden", background: "#0E1D23" }}>{children}</div>
+);
+
 const ctaBeat = [...compBeats].reverse().find((b: any) => b.kind === "nametag");
 const CTA_AT = ctaBeat ? ctaBeat.start : VIDEO_END - 12;
 
@@ -120,18 +136,25 @@ export const MainFederer6: React.FC = () => {
   return (
     <AbsoluteFill style={{ backgroundColor: BG }}>
       {/* CAPA 1 — B-ROLL DENSO continuo (si existe) */}
-      {FED6_BROLL.map((b) => (
-        <Sequence key={b.name} from={sec(b.start)} durationInFrames={Math.max(1, sec(b.dur) + 3)} premountFor={30}>
-          <RawShot durationInFrames={Math.max(1, sec(b.dur) + 3)} src={b.src} hue="cold" />
-        </Sequence>
-      ))}
+      {FED6_BROLL.map((b) => {
+        const dd = Math.max(1, sec(b.dur) + 3);
+        const half = inHalfR(b.start);
+        const shot = <RawShot durationInFrames={dd} src={b.src} hue="cold" />;
+        return (
+          <Sequence key={b.name} from={sec(b.start)} durationInFrames={dd} premountFor={30}>
+            {half ? <HalfLeft>{shot}</HalfLeft> : shot}
+          </Sequence>
+        );
+      })}
 
       {/* CAPA 2 — FOTOS fe6_*.png TOPEADAS (~3.6s) */}
       {rawTop.map((b: any) => {
         const d = Math.max(1, sec(Math.min(b.dur, HERO_CAP)));
+        const half = inHalfR(b.start);
+        const shot = <RawShot durationInFrames={d} src={b.src} hue="cold" kicker={b.kicker} />;
         return (
           <Sequence key={b.id} from={sec(b.start)} durationInFrames={d} premountFor={20}>
-            <RawShot durationInFrames={d} src={b.src} hue="cold" kicker={b.kicker} />
+            {half ? <HalfLeft>{shot}</HalfLeft> : shot}
           </Sequence>
         );
       })}

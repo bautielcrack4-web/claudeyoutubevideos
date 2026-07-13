@@ -101,8 +101,8 @@ export const PullQuote: React.FC<{
   durationInFrames,
   theme,
   quote = "Los viejos no tiraban nada porque sabían exactamente cuánto costaba reponerlo.",
-  author = "Don Aurelio",
-  role = "carpintero, 84 años",
+  author,
+  role,
   image,
 }) => {
   const t = useTheme(theme);
@@ -154,13 +154,15 @@ export const PullQuote: React.FC<{
                 {quote}
               </Display>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: 20, marginTop: 36, opacity: authS, transform: `translateX(${(1 - authS) * -20}px)` }}>
-              <div style={{ width: 64, height: 4, background: t.color.gold, borderRadius: 2 }} />
-              <div>
-                <Display theme={t} size={36} color={t.color.gold}>{author}</Display>
-                {role && <Support theme={t} size={25} color={t.color.textDim}>{role}</Support>}
+            {author && (
+              <div style={{ display: "flex", alignItems: "center", gap: 20, marginTop: 36, opacity: authS, transform: `translateX(${(1 - authS) * -20}px)` }}>
+                <div style={{ width: 64, height: 4, background: t.color.gold, borderRadius: 2 }} />
+                <div>
+                  <Display theme={t} size={36} color={t.color.gold}>{author}</Display>
+                  {role && <Support theme={t} size={25} color={t.color.textDim}>{role}</Support>}
+                </div>
               </div>
-            </div>
+            )}
           </div>
         </div>
       </Panel>
