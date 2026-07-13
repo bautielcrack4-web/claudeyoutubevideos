@@ -1,4 +1,6 @@
 import { registerRoot } from "remotion";
-import { RemotionRoot } from "./Root";
+// ── RAMA federer4-render: entry MÍNIMO (solo Federer4) para el farm — bundle limpio,
+//    sin el baggage del Root grande. NO mergear a main.
+import { RootFederer4 } from "./Root_federer4";
 
-registerRoot(RemotionRoot);
+registerRoot(RootFederer4);
