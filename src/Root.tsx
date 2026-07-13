@@ -42,6 +42,7 @@ import { MainSecretos, TOTAL_FRAMES_SECRETOS } from "./VideoEdit/Main_secretos";
 import { MainRevivir, TOTAL_FRAMES_REVIVIR } from "./VideoEdit/Main_revivir";
 import { MainSemillas, TOTAL_FRAMES_SEMILLAS } from "./VideoEdit/Main_semillas";
 import { MainOidio, TOTAL_FRAMES_OIDIO } from "./VideoEdit/Main_oidio";
+import { MainPulgones, TOTAL_FRAMES_PULGONES } from "./VideoEdit/Main_pulgones";
 import { MainAbono, TOTAL_FRAMES_ABONO } from "./VideoEdit/Main_abono";
 import { MainChoclo, TOTAL_FRAMES_CHOCLO } from "./VideoEdit/Main_choclo";
 import { MainHugel, TOTAL_FRAMES_HUGEL } from "./VideoEdit/Main_hugel";
@@ -330,6 +331,15 @@ export const RemotionRoot: React.FC = () => {
         id="Corn"
         component={MainCorn}
         durationInFrames={TOTAL_FRAMES_CORN}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
+      {/* VIDEO ACTIVO — Pulgones / agua oxigenada (Levi Lapp Jardín · ES) */}
+      <Composition
+        id="Pulgones"
+        component={MainPulgones}
+        durationInFrames={TOTAL_FRAMES_PULGONES}
         fps={30}
         width={1920}
         height={1080}
