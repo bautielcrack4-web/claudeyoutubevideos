@@ -41,6 +41,7 @@ import { MainCorn, TOTAL_FRAMES_CORN } from "./VideoEdit/Main_corn";
 import { MainSecretos, TOTAL_FRAMES_SECRETOS } from "./VideoEdit/Main_secretos";
 import { MainRevivir, TOTAL_FRAMES_REVIVIR } from "./VideoEdit/Main_revivir";
 import { MainSemillas, TOTAL_FRAMES_SEMILLAS } from "./VideoEdit/Main_semillas";
+import { MainOidio, TOTAL_FRAMES_OIDIO } from "./VideoEdit/Main_oidio";
 import { MainAbono, TOTAL_FRAMES_ABONO } from "./VideoEdit/Main_abono";
 import { MainChoclo, TOTAL_FRAMES_CHOCLO } from "./VideoEdit/Main_choclo";
 import { MainHugel, TOTAL_FRAMES_HUGEL } from "./VideoEdit/Main_hugel";
@@ -329,6 +330,15 @@ export const RemotionRoot: React.FC = () => {
         id="Corn"
         component={MainCorn}
         durationInFrames={TOTAL_FRAMES_CORN}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
+      {/* VIDEO ACTIVO — Oídio (polvo blanco) / agua oxigenada (Levi Lapp Jardín · ES) */}
+      <Composition
+        id="Oidio"
+        component={MainOidio}
+        durationInFrames={TOTAL_FRAMES_OIDIO}
         fps={30}
         width={1920}
         height={1080}
