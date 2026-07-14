@@ -89,6 +89,7 @@ import { MainRayones, TOTAL_FRAMES_RAYONES } from "./VideoEdit/Main_rayones";
 import { MainVentilador, TOTAL_FRAMES_VENTILADOR } from "./VideoEdit/Main_ventilador";
 import { MainTechocalor, TOTAL_FRAMES_TECHOCALOR } from "./VideoEdit/Main_techocalor";
 import { MainRestaura, TOTAL_FRAMES_RESTAURA } from "./VideoEdit/Main_restaura";
+import { MainSellador, TOTAL_FRAMES_SELLADOR } from "./VideoEdit/Main_sellador";
 import { MainKitPreview, TOTAL_FRAMES_KIT } from "./VideoEdit/KitPreview";
 // import { MainCafe, TOTAL_FRAMES_CAFE } from "./VideoEdit/Main_cafe"; // untracked: rompe el farm
 // import { MainAmish, TOTAL_FRAMES_AMISH } from "./VideoEdit/Main_amish"; // untracked: rompe el farm
@@ -514,6 +515,7 @@ export const RemotionRoot: React.FC = () => {
       {/* Constructor Libre — "Techo trampa $7 / barrera radiante" · AVATAR Tomás · CORE v4 */}
       <Composition id="Techocalor" component={MainTechocalor} durationInFrames={TOTAL_FRAMES_TECHOCALOR} fps={30} width={1920} height={1080} />
       <Composition id="Restaura" component={MainRestaura} durationInFrames={TOTAL_FRAMES_RESTAURA} fps={30} width={1920} height={1080} />
+      <Composition id="Sellador" component={MainSellador} durationInFrames={TOTAL_FRAMES_SELLADOR} fps={30} width={1920} height={1080} />
       {/* REMAKE hit madera — "Por Qué La Madera De Antes Duraba 100 Años" · AVATAR Tomás · clips-first */}
       <Composition id="Madera" component={MainMadera} durationInFrames={TOTAL_FRAMES_MADERA} fps={30} width={1920} height={1080} />
       {/* VIDEO 1 veta "los viejos sabían" — "El cemento que no se raja ($1 la cal)" · AVATAR Tomás · clips-first */}
