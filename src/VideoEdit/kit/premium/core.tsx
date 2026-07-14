@@ -4,9 +4,14 @@ import {
   Img,
   interpolate,
   spring,
+  staticFile,
   useCurrentFrame,
   useVideoConfig,
 } from "remotion";
+
+// Envuelve un path relativo (img/x.png) en staticFile; deja pasar http/data/blob/absolutos.
+const asset = (s: string) =>
+  /^(https?:|data:|blob:|\/)/.test(s) ? s : staticFile(s);
 import { SPR, Theme, useTheme } from "./theme";
 
 // ═══════════════════════════════════════════════════════════════════════════
@@ -366,7 +371,7 @@ export const ImgOr: React.FC<{
   if (src) {
     return (
       <Img
-        src={src}
+        src={asset(src)}
         style={{ width: "100%", height: "100%", objectFit: "cover", ...style }}
       />
     );

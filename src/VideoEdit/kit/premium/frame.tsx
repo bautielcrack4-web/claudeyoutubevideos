@@ -226,7 +226,7 @@ export const CtaCard: React.FC<{
               </div>
             </div>
             <div style={{ display: "flex", alignItems: "center", gap: 44, marginTop: 40 }}>
-              <Odo theme={t} value={price} prefix="$" size={110} color={t.color.gold} at={22} dur={40} grouped={false} />
+              {price > 0 && <Odo theme={t} value={price} prefix="$" size={110} color={t.color.gold} at={22} dur={40} grouped={false} />}
               <div
                 style={{
                   opacity: ctaS,

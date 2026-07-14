@@ -46,3 +46,6 @@ _v3*
 _v3out*/
 _sb_*/
 _v3probe/
+
+.flowprofile/
+.flowaccounts.json
