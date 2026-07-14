@@ -1,4 +1,4 @@
-// avatar_restaura.gen.ts — GENERADO por gen_avatar_windows_restaura.mjs. NO editar a mano.
+// avatar_restaura.gen.ts — GENERADO. NO editar a mano.
 import type { AvatarWindow } from "./scenes/AvatarLayer";
 export const TOTAL_RESTAURA = 1445.74;
 export const AVATAR_WINDOWS: AvatarWindow[] = [

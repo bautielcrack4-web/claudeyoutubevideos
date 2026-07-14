@@ -184,33 +184,33 @@ const PREMIUM = [
   // ══ CtaCard (7 reales; 3 son el Manual con manual:true) — zone "topLeft" ══
   P("CtaCard", "o muy fuerte asi que abrir la descripcion ahi esta la formula con las medidas justas pero primero seguime que te explico", 7.0, "topLeft", {
     eyebrow: "Las 3 recetas, con medidas exactas", title: "Fórmula del percarbonato",
-    bullet: "suave / media / fuerte — todo en la descripción", price: 5, cta: "ABRÍ LA DESCRIPCIÓN",
+    bullet: "suave / media / fuerte — todo en la descripción", price: 0, cta: "ABRÍ LA DESCRIPCIÓN",
   }, 6),
   P("CtaCard", "hoy el tema de recuperar madera vieja es uno de los 40 arreglos que junte a lo largo de los años en un manual lo arme", 7.2, "topLeft", {
     eyebrow: "40 arreglos y secretos de los viejos", title: "Manual del Constructor Libre",
-    bullet: "madera, óxido, humedad, plagas, caños — con medidas exactas", price: 5, cta: "LINK EN LA DESCRIPCIÓN",
+    bullet: "madera, óxido, humedad, plagas, caños — con medidas exactas", price: 0, cta: "LINK EN LA DESCRIPCIÓN",
     image: "img/rst_s_65.png",
   }, 6),
   P("CtaCard", "junta y ordenada el enlace esta arriba de todo en la descripcion sigamos que falta lo mejor ahora si el paso a", 7.0, "topLeft", {
     eyebrow: "Recetas + manual completo", title: "Manual del Constructor Libre",
-    bullet: "proporciones exactas de percarbonato, vinagre y aceite", price: 5, cta: "LINK ARRIBA DE TODO",
+    bullet: "proporciones exactas de percarbonato, vinagre y aceite", price: 0, cta: "LINK ARRIBA DE TODO",
   }, 6),
   P("CtaCard", "tengo reunido junto con otras decenas de arreglos en el manual de reparaciones caseras son 40 soluciones como esta cosas que", 7.2, "topLeft", {
     eyebrow: "40 arreglos y secretos de los viejos", title: "Manual del Constructor Libre",
-    bullet: "40 soluciones caseras, con medidas y pasos, para cuando las necesites", price: 5, cta: "LINK EN LA DESCRIPCIÓN",
+    bullet: "40 soluciones caseras, con medidas y pasos, para cuando las necesites", price: 0, cta: "LINK EN LA DESCRIPCIÓN",
     image: "img/rst_s_102.png",
   }, 6),
   P("CtaCard", "que la necesites el enlace lo tenes arriba de todo en la descripcion y tambien en el comentario fijado cuesta menos que un mueble nuevo", 7.2, "topLeft", {
     eyebrow: "Cuesta menos que un mueble nuevo", title: "Manual de Reparaciones Caseras",
-    bullet: "enlace arriba de todo y en el comentario fijado", price: 5, cta: "LINK EN LA DESCRIPCIÓN",
+    bullet: "enlace arriba de todo y en el comentario fijado", price: 0, cta: "LINK EN LA DESCRIPCIÓN",
   }, 6),
   P("CtaCard", "tuyo gratis es el video entero pero si quieres hacer bien las cosas anda la descripcion ahi abajo vas a encontrar dos", 7.0, "topLeft", {
     eyebrow: "Dos cosas te esperan ahí abajo", title: "Las recetas exactas + el manual completo",
-    bullet: "todo lo que viste hoy, con medidas", price: 5, cta: "ABRÍ LA DESCRIPCIÓN",
+    bullet: "todo lo que viste hoy, con medidas", price: 0, cta: "ABRÍ LA DESCRIPCIÓN",
   }, 6),
   P("CtaCard", "cosas arriba de todo el enlace al manual de reparaciones caseras con los 40 reglos completos medidas y pasos por si quieres tener", 7.2, "topLeft", {
     eyebrow: "40 arreglos y secretos de los viejos", title: "Manual del Constructor Libre",
-    bullet: "40 arreglos completos, medidas y pasos, todo en un solo lugar", price: 5, cta: "LINK EN LA DESCRIPCIÓN",
+    bullet: "40 arreglos completos, medidas y pasos, todo en un solo lugar", price: 0, cta: "LINK EN LA DESCRIPCIÓN",
     image: "img/rst_s_182.png",
   }, 6),
 
@@ -374,25 +374,34 @@ beats.sort((a, b) => a.start - b.start);
 fs.mkdirSync("beatsheet", { recursive: true });
 fs.writeFileSync(`beatsheet/${SLUG}.json`, JSON.stringify({ video: SLUG, avatar: AVATAR, tutorial: true, beats }, null, 1));
 
-// ── AVATAR WINDOWS — full al abrir (~1.6s, sin fade), luego PiP cornerBR quieto
-// sobre el b-roll. No hay overlays zone:"full" en este video (ningún componente
-// suplantó el zócalo de hook), así que el avatar solo se esconde antes de arrancar.
-const OPEN = 1.6;
-// el primer beat (rst_s_01) arranca casi en ms=0 → forzamos el piso de apertura a
-// OPEN igual (regla "avatar abre ≥1.6s sin fade"): el b-roll ya corre atrás desde
-// su propio start, pero el avatar en modo "full" lo tapa hasta que se achica.
-const firstClip = rawBeats.length ? Math.max(OPEN, rawBeats[0].start) : OPEN;
-const premiumPlaced = beats.filter((b) => b.kind === "premium");
-const FULLHIDE = premiumPlaced.filter((b) => b.zone === "full").map((b) => [b.start, +(b.start + b.dur).toFixed(2)]);
-const inFullHide = (t) => FULLHIDE.some(([s, e]) => t >= s - 1e-6 && t < e - 1e-6);
-const pts = [...new Set([0, firstClip, ...FULLHIDE.flat(), TOTAL].map((x) => +(+x).toFixed(2)))].sort((a, b) => a - b);
-const windows = [];
-let cur = null;
-for (const t of pts) {
-  if (t >= TOTAL - 1e-6) break;
-  const mode = t < firstClip - 1e-6 ? "full" : inFullHide(t) ? "hidden" : "cornerBR";
-  if (mode !== cur) { windows.push({ start: +t.toFixed(2), mode }); cur = mode; }
+// ── AVATAR WINDOWS — regla full-o-full (feedback_video_avatar_full_or_fullvisual):
+// NADA de PiP en esquina. El avatar va O a pantalla completa (`full`) O fuera de vista
+// (`hidden`, el b-roll/componente manda full). Alterna: full en el hook + slots de ~6s
+// cada ~55s ubicados en huecos SIN componente (para no tapar overlays), snapeados al
+// inicio de palabra real. `hidden` el resto.
+const HOOK_END = 9, PERIOD = 55, SLOT = 6, SEARCH = 26;
+const comps = beats.filter((b) => b.kind === "premium").map((b) => [b.start, b.start + (b.dur || 3)]);
+const overlapsComp = (a, b) => comps.some(([s, e]) => a < e && b > s);
+const snapWord = (tt) => { for (const c of caps) if (c.startMs / 1000 >= tt - 0.05) return c.startMs / 1000; return tt; };
+const fulls = [[0, snapWord(HOOK_END)]];
+for (let target = HOOK_END + PERIOD; target < TOTAL - 12; target += PERIOD) {
+  for (let t = target; t < target + SEARCH; t += 0.5) {
+    const s = snapWord(t), e = snapWord(s + SLOT);
+    if (e - s >= 4 && e - s <= 9 && !overlapsComp(s, e)) { fulls.push([s, e]); break; }
+  }
 }
+const csw = snapWord(TOTAL - 8);
+if (!overlapsComp(csw, TOTAL)) fulls.push([csw, TOTAL - 0.05]);
+fulls.sort((a, b) => a[0] - b[0]);
+const windows = [];
+let cursor = 0;
+for (const [s, e] of fulls) {
+  if (s > cursor + 0.2) windows.push({ start: +cursor.toFixed(2), mode: "hidden" });
+  windows.push({ start: +s.toFixed(2), mode: "full" });
+  cursor = e;
+}
+if (cursor < TOTAL - 0.1) windows.push({ start: +cursor.toFixed(2), mode: "hidden" });
+if (windows[0].start !== 0) windows.unshift({ start: 0, mode: windows[0].mode });
 windows.push({ start: TOTAL, mode: "hidden" });
 fs.writeFileSync(
   `src/VideoEdit/avatar_${SLUG}.gen.ts`,
