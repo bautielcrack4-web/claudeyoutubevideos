@@ -39,7 +39,7 @@ export const BigStatReveal: React.FC<{
   prefix = "$",
   suffix = "",
   support = "se va por año en calefacción mal aislada",
-  source = "Fuente: ENARGAS 2025",
+  source = "",
 }) => {
   const t = useTheme(theme);
   const { frame, fps, op } = useBeat(durationInFrames);
