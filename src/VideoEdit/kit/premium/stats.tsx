@@ -36,7 +36,7 @@ export const BigStatReveal: React.FC<{
   theme,
   eyebrow = "El dato que nadie mira",
   value = 12400,
-  prefix = "$",
+  prefix = "",
   suffix = "",
   support = "se va por año en calefacción mal aislada",
   source = "",

@@ -522,11 +522,28 @@
    "id": "shou_s_027",
    "start": 178.46,
    "kind": "raw",
-   "src": "broll/shou_s_027.mp4",
+   "src": "img/shou_s_027.png",
    "hue": "amber",
    "darken": 0,
-   "noSplit": true,
-   "dur": 7.72
+   "dur": 3.21
+  },
+  {
+   "id": "shou_s_027_b",
+   "start": 181.37,
+   "kind": "raw",
+   "src": "img/shou_s_027_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.07
+  },
+  {
+   "id": "shou_s_027_c",
+   "start": 184.14,
+   "kind": "raw",
+   "src": "img/shou_s_027_c.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.04
   },
   {
    "id": "shou_s_028",
@@ -963,11 +980,10 @@
    "id": "shou_s_049",
    "start": 323.97,
    "kind": "raw",
-   "src": "broll/shou_s_049.mp4",
+   "src": "img/shou_s_049.png",
    "hue": "amber",
    "darken": 0,
-   "noSplit": true,
-   "dur": 7.69
+   "dur": 3.22
   },
   {
    "id": "ov_bigstatreveal_325",
@@ -982,6 +998,24 @@
    "value": 4,
    "suffix": " enemigos",
    "support": "hongos, insectos, agua y sol — neutralizados de un solo golpe, gratis"
+  },
+  {
+   "id": "shou_s_049_b",
+   "start": 326.89,
+   "kind": "raw",
+   "src": "img/shou_s_049_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.06
+  },
+  {
+   "id": "shou_s_049_c",
+   "start": 329.65,
+   "kind": "raw",
+   "src": "img/shou_s_049_c.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.01
   },
   {
    "id": "shou_s_050",
@@ -1356,11 +1390,19 @@
    "id": "shou_s_071",
    "start": 468.6,
    "kind": "raw",
-   "src": "broll/shou_s_071.mp4",
+   "src": "img/shou_s_071.png",
    "hue": "amber",
    "darken": 0,
-   "noSplit": true,
-   "dur": 7.3
+   "dur": 3.17
+  },
+  {
+   "id": "shou_s_071_b",
+   "start": 471.47,
+   "kind": "raw",
+   "src": "img/shou_s_071_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.43
   },
   {
    "id": "shou_s_072",
@@ -1550,11 +1592,19 @@
    "id": "shou_s_081",
    "start": 538.44,
    "kind": "raw",
-   "src": "broll/shou_s_081.mp4",
+   "src": "img/shou_s_081.png",
    "hue": "amber",
    "darken": 0,
-   "noSplit": true,
-   "dur": 6.1
+   "dur": 2.9
+  },
+  {
+   "id": "shou_s_081_b",
+   "start": 541.04,
+   "kind": "raw",
+   "src": "img/shou_s_081_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.5
   },
   {
    "id": "shou_s_082",
@@ -2034,11 +2084,19 @@
    "id": "shou_s_106",
    "start": 705.52,
    "kind": "raw",
-   "src": "broll/shou_s_106.mp4",
+   "src": "img/shou_s_106.png",
    "hue": "amber",
    "darken": 0,
-   "noSplit": true,
-   "dur": 6.78
+   "dur": 2.96
+  },
+  {
+   "id": "shou_s_106_b",
+   "start": 708.18,
+   "kind": "raw",
+   "src": "img/shou_s_106_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.12
   },
   {
    "id": "shou_s_107",
@@ -2062,11 +2120,19 @@
    "id": "shou_s_108",
    "start": 719.1,
    "kind": "raw",
-   "src": "broll/shou_s_108.mp4",
+   "src": "img/shou_s_108.png",
    "hue": "amber",
    "darken": 0,
-   "noSplit": true,
-   "dur": 6.44
+   "dur": 3.32
+  },
+  {
+   "id": "shou_s_108_b",
+   "start": 722.12,
+   "kind": "raw",
+   "src": "img/shou_s_108_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.42
   },
   {
    "id": "shou_s_109",
@@ -2114,11 +2180,19 @@
    "id": "shou_s_111",
    "start": 738.27,
    "kind": "raw",
-   "src": "broll/shou_s_111.mp4",
+   "src": "img/shou_s_111.png",
    "hue": "amber",
    "darken": 0,
-   "noSplit": true,
-   "dur": 7.19
+   "dur": 3.35
+  },
+  {
+   "id": "shou_s_111_b",
+   "start": 741.32,
+   "kind": "raw",
+   "src": "img/shou_s_111_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.14
   },
   {
    "id": "shou_s_112",
@@ -2487,11 +2561,19 @@
    "id": "shou_s_132",
    "start": 883.6,
    "kind": "raw",
-   "src": "broll/shou_s_132.mp4",
+   "src": "img/shou_s_132.png",
    "hue": "amber",
    "darken": 0,
-   "noSplit": true,
-   "dur": 6.78
+   "dur": 2.96
+  },
+  {
+   "id": "shou_s_132_b",
+   "start": 886.26,
+   "kind": "raw",
+   "src": "img/shou_s_132_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.12
   },
   {
    "id": "ov_mythtruth_886",
@@ -2731,11 +2813,19 @@
    "id": "shou_s_143",
    "start": 957.8,
    "kind": "raw",
-   "src": "broll/shou_s_143.mp4",
+   "src": "img/shou_s_143.png",
    "hue": "amber",
    "darken": 0,
-   "noSplit": true,
-   "dur": 5.9
+   "dur": 2.98
+  },
+  {
+   "id": "shou_s_143_b",
+   "start": 960.48,
+   "kind": "raw",
+   "src": "img/shou_s_143_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.22
   },
   {
    "id": "shou_s_144",
@@ -2795,11 +2885,10 @@
    "id": "shou_s_147",
    "start": 982.48,
    "kind": "raw",
-   "src": "broll/shou_s_147.mp4",
+   "src": "img/shou_s_147.png",
    "hue": "amber",
    "darken": 0,
-   "noSplit": true,
-   "dur": 7.3
+   "dur": 3.06
   },
   {
    "id": "ov_mythtruth_982",
@@ -2812,6 +2901,15 @@
    "zone": "topLeft",
    "myth": "Error 4: saltarse el aceite",
    "truth": "El aceite fija el carbón y multiplica la duración: es el paso que la hace eterna"
+  },
+  {
+   "id": "shou_s_147_b",
+   "start": 985.24,
+   "kind": "raw",
+   "src": "img/shou_s_147_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.54
   },
   {
    "id": "shou_s_148",
@@ -4003,11 +4101,19 @@
    "id": "shou_s_201",
    "start": 1339.15,
    "kind": "raw",
-   "src": "broll/shou_s_201.mp4",
+   "src": "img/shou_s_201.png",
    "hue": "amber",
    "darken": 0,
-   "noSplit": true,
-   "dur": 7.04
+   "dur": 3.36
+  },
+  {
+   "id": "shou_s_201_b",
+   "start": 1342.21,
+   "kind": "raw",
+   "src": "img/shou_s_201_b.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.98
   },
   {
    "id": "shou_s_202",
