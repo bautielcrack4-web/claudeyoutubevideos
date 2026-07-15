@@ -100,9 +100,9 @@ export const PullQuote: React.FC<{
 }> = ({
   durationInFrames,
   theme,
-  quote = "Los viejos no tiraban nada porque sabían exactamente cuánto costaba reponerlo.",
-  author = "Don Aurelio",
-  role = "carpintero, 84 años",
+  quote = "",
+  author,
+  role,
   image,
 }) => {
   const t = useTheme(theme);
@@ -115,22 +115,24 @@ export const PullQuote: React.FC<{
     <Stage theme={t} style={{ opacity: op }}>
       <Panel theme={t} style={{ position: "absolute", inset: 60 }} raysX={20}>
         <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center", gap: 90, padding: "0 130px" }}>
-          {/* retrato con doble anillo + rim */}
-          <div style={{ position: "relative", flexShrink: 0, opacity: portS, transform: `scale(${0.85 + portS * 0.15})` }}>
-            <div
-              style={{
-                width: 380,
-                height: 380,
-                borderRadius: "50%",
-                overflow: "hidden",
-                border: `7px solid ${t.color.gold}`,
-                boxShadow: `0 30px 60px ${t.color.shadow}, 0 0 60px ${t.color.glow}`,
-              }}
-            >
-              <ImgOr src={image} seed={77} theme={t} />
+          {/* retrato con doble anillo + rim — SOLO si hay imagen (evita retrato-placeholder falso) */}
+          {image && (
+            <div style={{ position: "relative", flexShrink: 0, opacity: portS, transform: `scale(${0.85 + portS * 0.15})` }}>
+              <div
+                style={{
+                  width: 380,
+                  height: 380,
+                  borderRadius: "50%",
+                  overflow: "hidden",
+                  border: `7px solid ${t.color.gold}`,
+                  boxShadow: `0 30px 60px ${t.color.shadow}, 0 0 60px ${t.color.glow}`,
+                }}
+              >
+                <ImgOr src={image} seed={77} theme={t} />
+              </div>
+              <div style={{ position: "absolute", inset: -18, borderRadius: "50%", border: `2px dashed ${t.color.line}` }} />
             </div>
-            <div style={{ position: "absolute", inset: -18, borderRadius: "50%", border: `2px dashed ${t.color.line}` }} />
-          </div>
+          )}
           <div style={{ position: "relative", maxWidth: 900 }}>
             {/* comilla gigante de fondo */}
             <div
@@ -154,13 +156,15 @@ export const PullQuote: React.FC<{
                 {quote}
               </Display>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: 20, marginTop: 36, opacity: authS, transform: `translateX(${(1 - authS) * -20}px)` }}>
-              <div style={{ width: 64, height: 4, background: t.color.gold, borderRadius: 2 }} />
-              <div>
-                <Display theme={t} size={36} color={t.color.gold}>{author}</Display>
-                {role && <Support theme={t} size={25} color={t.color.textDim}>{role}</Support>}
+            {author && (
+              <div style={{ display: "flex", alignItems: "center", gap: 20, marginTop: 36, opacity: authS, transform: `translateX(${(1 - authS) * -20}px)` }}>
+                <div style={{ width: 64, height: 4, background: t.color.gold, borderRadius: 2 }} />
+                <div>
+                  <Display theme={t} size={36} color={t.color.gold}>{author}</Display>
+                  {role && <Support theme={t} size={25} color={t.color.textDim}>{role}</Support>}
+                </div>
               </div>
-            </div>
+            )}
           </div>
         </div>
       </Panel>
