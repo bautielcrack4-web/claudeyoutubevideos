@@ -115,10 +115,13 @@ export const AvatarLayer: React.FC<{
   // no sea siempre igual. Le da vida al plano-presentador sin que se note brusco.
   const winEnd = i + 1 < starts.length ? starts[i + 1] : starts[i] + 99999;
   const winLen = winEnd - starts[i];
+  // ★ PUSH a VELOCIDAD CONSTANTE en TODA ventana full (incluidas las cortas de ~2s: headers
+  // de capítulo). ~0.9%/s, clamp 6%. Alterna push-in / pull-out por ventana. Nunca estático.
   let fullZoom = 1;
-  if (curMode === "full" && winLen > fps * 4) {
-    const prog = interpolate(t - starts[i], [0, winLen], [0, 1], { extrapolateRight: "clamp" });
-    fullZoom = i % 2 === 0 ? 1 + 0.05 * prog : 1.05 - 0.05 * prog; // 1.00→1.05 ó 1.05→1.00
+  if (curMode === "full") {
+    const elapsed = (t - starts[i]) / fps; // segundos dentro de la ventana
+    const drift = Math.min(0.06, 0.009 * elapsed);
+    fullZoom = i % 2 === 0 ? 1 + drift : Math.max(1, 1.06 - drift); // 1→1.06  ó  1.06→1
   }
   const zoom = curMode === "full" ? fullZoom : kb;
   let coverW = Math.max(w, h * ratio) * zoom;

@@ -1,6 +1,7 @@
 import "./index.css";
 import { Composition } from "remotion";
 import { MainKitPreviewPx, TOTAL_FRAMES_KITPX } from "./VideoEdit/KitPreviewPx";
+import { MainFoods, TOTAL_FRAMES_FOODS } from "./VideoEdit/Main_foods";
 import { MainEstiercol, TOTAL_FRAMES_EST } from "./VideoEdit/Main_estiercol";
 import { MainWasp, TOTAL_FRAMES_WASP } from "./VideoEdit/Main_wasp";
 import { MainTick, TOTAL_FRAMES_TICK } from "./VideoEdit/Main_tick";
@@ -537,6 +538,8 @@ export const RemotionRoot: React.FC = () => {
         width={1920}
         height={1080}
       />
+      {/* "20 Foods The Amish Never Refrigerated" · AVATAR Claudio (off-grid) · clips-first CORE v4 */}
+      <Composition id="Foods" component={MainFoods} durationInFrames={TOTAL_FRAMES_FOODS} fps={30} width={1920} height={1080} />
     </>
   );
 };
