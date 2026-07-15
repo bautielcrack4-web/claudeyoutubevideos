@@ -26,18 +26,37 @@ const at = (phrase, maxTok = 8) => {
 const atc = (phrase, maxTok) => { const v = at(phrase, maxTok); if (v == null) console.warn("⚠ anchor missing:", phrase.slice(0, 55)); return v; };
 const TOTAL = +((Wc[Wc.length - 1].e) / 1000 + 1.5).toFixed(2);
 
-const srcBeats = JSON.parse(fs.readFileSync(`_v3/${SLUG}_beats.json`, "utf8"));
+// HÍBRIDO: momentos con clip real (good-set) → beat de VIDEO (broll/*.mp4, movimiento,
+// sin split); el resto → tomas imagen ≤3s (las _b/_c de Modal ya paceadas).
+const goodset = new Set(JSON.parse(fs.readFileSync(`_v3/${SLUG}_clip_goodset.json`, "utf8")));
+const moments = JSON.parse(fs.readFileSync(`_v3/${SLUG}_clipbeats.json`, "utf8")); // 218 momentos con phrase
+const momentPhrase = new Map(moments.map((m) => [m.name, m.phrase]));
+const baseName = (n) => n.replace(/_[bc]$/, "");
+
+const srcBeats = JSON.parse(fs.readFileSync(`_v3/${SLUG}_beats.json`, "utf8")); // 472 tomas paceadas
 const rawBeats = [];
+// 1) tomas imagen: solo de momentos SIN clip
 for (const b of srcBeats) {
+  if (goodset.has(baseName(b.name))) continue; // ese momento va con clip
   const t = atc(b.phrase);
   if (t == null) continue;
   rawBeats.push({ id: b.name, start: +t.toFixed(2), kind: "raw", src: `img/${b.name}.png`, hue: "amber", darken: 0 });
+}
+// 2) beats de clip: 1 por momento con good-clip (video, contiguo, sin split)
+let nClip = 0;
+for (const name of goodset) {
+  const ph = momentPhrase.get(name);
+  const t = ph ? atc(ph) : null;
+  if (t == null) continue;
+  rawBeats.push({ id: name, start: +t.toFixed(2), kind: "raw", src: `broll/${name}.mp4`, hue: "amber", darken: 0, noSplit: true });
+  nClip++;
 }
 rawBeats.sort((x, y) => x.start - y.start);
 for (let i = 0; i < rawBeats.length; i++) {
   const next = i + 1 < rawBeats.length ? rawBeats[i + 1].start : TOTAL;
   rawBeats[i].dur = +Math.max(0.8, next - rawBeats[i].start + 0.3).toFixed(2);
 }
+console.log(`b-roll híbrido: ${nClip} clips de video + ${rawBeats.length - nClip} tomas imagen`);
 
 const P = (comp, atPhrase, dur, zone, props = {}, maxTok) => ({ comp, at: atPhrase, dur, zone, props, maxTok });
 
