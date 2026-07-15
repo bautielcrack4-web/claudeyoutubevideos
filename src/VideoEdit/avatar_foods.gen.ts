@@ -96,7 +96,7 @@ export const AVATAR_WINDOWS: AvatarWindow[] = [
   },
   {
     "start": 1088.08,
-    "mode": "right"
+    "mode": "full"
   },
   {
     "start": 1113,
