@@ -26,18 +26,28 @@ const at = (phrase, maxTok = 8) => {
 const atc = (phrase, maxTok) => { const v = at(phrase, maxTok); if (v == null) console.warn("⚠ anchor missing:", phrase.slice(0, 55)); return v; };
 const TOTAL = +((Wc[Wc.length - 1].e) / 1000 + 1.5).toFixed(2);
 
+// HÍBRIDO: la toma BASE de un momento con clip bueno → beat de VIDEO (broll/*.mp4) SIN noSplit
+// → la dur contigua lo capa a ≤3s (cortes rápidos = dinámico); las tomas _b/_c del momento y todo
+// lo demás → imagen ≤3s. Regla nueva: clips ≤3s + avatar full en huecos sin clip.
+const goodset = fs.existsSync(`_v3/${SLUG}_clip_goodset.json`) ? new Set(JSON.parse(fs.readFileSync(`_v3/${SLUG}_clip_goodset.json`, "utf8"))) : new Set();
+const base = (n) => n.replace(/_[bc]$/, "");
 const srcBeats = JSON.parse(fs.readFileSync(`_v3/${SLUG}_beats.json`, "utf8"));
 const rawBeats = [];
+let nClip = 0;
 for (const b of srcBeats) {
   const t = atc(b.phrase);
   if (t == null) continue;
-  rawBeats.push({ id: b.name, start: +t.toFixed(2), kind: "raw", src: `img/${b.name}.png`, hue: "amber", darken: 0 });
+  const isClipBase = goodset.has(b.name) && b.name === base(b.name); // toma base del momento con clip
+  if (isClipBase) { rawBeats.push({ id: b.name, start: +t.toFixed(2), kind: "raw", src: `broll/${b.name}.mp4`, hue: "amber", darken: 0 }); nClip++; }
+  else rawBeats.push({ id: b.name, start: +t.toFixed(2), kind: "raw", src: `img/${b.name}.png`, hue: "amber", darken: 0 });
 }
 rawBeats.sort((x, y) => x.start - y.start);
 for (let i = 0; i < rawBeats.length; i++) {
   const next = i + 1 < rawBeats.length ? rawBeats[i + 1].start : TOTAL;
   rawBeats[i].dur = +Math.max(0.8, next - rawBeats[i].start + 0.3).toFixed(2);
 }
+const clipRanges = rawBeats.filter((b) => /\.mp4$/.test(b.src)).map((b) => [b.start, b.start + b.dur]);
+console.log(`b-roll híbrido: ${nClip} clips de video (≤3s) + ${rawBeats.length - nClip} tomas imagen`);
 
 const P = (comp, atPhrase, dur, zone, props = {}, maxTok) => ({ comp, at: atPhrase, dur, zone, props, maxTok });
 
@@ -218,12 +228,28 @@ beats.sort((a, b) => a.start - b.start);
 fs.mkdirSync("beatsheet", { recursive: true });
 fs.writeFileSync(`beatsheet/${SLUG}.json`, JSON.stringify({ video: SLUG, avatar: AVATAR, tutorial: true, beats }, null, 1));
 
-// ── AVATAR WINDOWS full↔hidden (sin PiP) ──
-const HOOK_END = 9, PERIOD = 55, SLOT = 6, SEARCH = 26;
-const comps = beats.filter((b) => b.kind === "premium").map((b) => [b.start, b.start + (b.dur || 3)]);
+// ── AVATAR WINDOWS full↔hidden (sin PiP) — MÁS avatar en huecos SIN clip ──
+// PERIOD más corto = avatar full más seguido; se evita tapar componentes Y clips, así el avatar
+// full cae en los tramos de IMAGEN (sin clip bueno) → "más avatar hablando cuando no hay clip".
+const HOOK_END = 9, PERIOD = 34, SLOT = 7, SEARCH = 24;
+const comps = [
+  ...beats.filter((b) => b.kind === "premium").map((b) => [b.start, b.start + (b.dur || 3)]),
+  ...clipRanges, // no poner al avatar encima de un clip (los clips ya son dinámicos)
+];
 const overlapsComp = (a, b) => comps.some(([s, e]) => a < e && b > s);
 const snapWord = (tt) => { for (const c of caps) if (c.startMs / 1000 >= tt - 0.05) return c.startMs / 1000; return tt; };
 const fulls = [[0, snapWord(HOOK_END)]];
+// ★ MÁS AVATAR: los momentos "photo" (Don Ernesto/carácter, no filmables y que la IA genera mal)
+// muestran el AVATAR hablando a pantalla completa en vez de una imagen — "avatar cuando no hay clip".
+// Excepción: los momentos del MANUAL/CTA (llevan componente CtaCard) NO se fuerzan a full.
+const photoMoments = JSON.parse(fs.readFileSync(`_v3/${SLUG}_clipbeats.json`, "utf8")).filter((b) => b.src === "photo");
+for (const b of photoMoments) {
+  const s = atc(b.phrase); if (s == null) continue;
+  const isManual = /manual|reparaciones|descripci|enlace|link|arriba de todo/i.test(b.phrase);
+  if (isManual) continue;
+  const e = snapWord(s + 6);
+  if (!overlapsComp(s, e)) fulls.push([+s.toFixed(2), e]);
+}
 for (let target = HOOK_END + PERIOD; target < TOTAL - 12; target += PERIOD) {
   for (let t = target; t < target + SEARCH; t += 0.5) {
     const s = snapWord(t), e = snapWord(s + SLOT);
