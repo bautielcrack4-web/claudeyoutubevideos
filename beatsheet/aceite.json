@@ -7,7 +7,7 @@
    "id": "ace_s_001",
    "start": 0.14,
    "kind": "raw",
-   "src": "broll/ace_s_001.mp4",
+   "src": "img/ace_s_001.png",
    "hue": "amber",
    "darken": 0,
    "dur": 2.93
@@ -25,7 +25,7 @@
    "id": "ace_s_002",
    "start": 7.22,
    "kind": "raw",
-   "src": "broll/ace_s_002.mp4",
+   "src": "img/ace_s_002.png",
    "hue": "amber",
    "darken": 0,
    "dur": 2.96
@@ -116,6 +116,19 @@
    "hue": "amber",
    "darken": 0,
    "dur": 3.18
+  },
+  {
+   "id": "ov_framedphoto_34",
+   "start": 34.36,
+   "dur": 6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "FramedPhoto",
+   "theme": "earth",
+   "zone": "full",
+   "image": "img/aceite_c1.png",
+   "caption": "El galpón de Don Ernesto",
+   "sub": "lo levantó su padre, tabla por tabla"
   },
   {
    "id": "ace_s_006_b",
@@ -225,7 +238,7 @@
    "id": "ace_s_011",
    "start": 68.18,
    "kind": "raw",
-   "src": "broll/ace_s_011.mp4",
+   "src": "img/ace_s_011.png",
    "hue": "amber",
    "darken": 0,
    "dur": 3.28
@@ -291,7 +304,7 @@
    "id": "ace_s_014",
    "start": 88.15,
    "kind": "raw",
-   "src": "broll/ace_s_014.mp4",
+   "src": "img/ace_s_014.png",
    "hue": "amber",
    "darken": 0,
    "dur": 2.97
@@ -455,7 +468,7 @@
    "id": "ace_s_022",
    "start": 135.62,
    "kind": "raw",
-   "src": "broll/ace_s_022.mp4",
+   "src": "img/ace_s_022.png",
    "hue": "amber",
    "darken": 0,
    "dur": 2.93
@@ -533,6 +546,19 @@
    "dur": 3.02
   },
   {
+   "id": "ov_framedphoto_163",
+   "start": 162.76,
+   "dur": 5.8,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "FramedPhoto",
+   "theme": "earth",
+   "zone": "full",
+   "image": "img/aceite_c6.png",
+   "caption": "El banco de trabajo del viejo",
+   "sub": "armado en 1960 y algo — sigue firme"
+  },
+  {
    "id": "ace_s_026_b",
    "start": 164.44,
    "kind": "raw",
@@ -563,7 +589,7 @@
    "id": "ace_s_028",
    "start": 174.36,
    "kind": "raw",
-   "src": "broll/ace_s_028.mp4",
+   "src": "img/ace_s_028.png",
    "hue": "amber",
    "darken": 0,
    "dur": 3.06
@@ -632,7 +658,7 @@
    "id": "ace_s_031",
    "start": 194.36,
    "kind": "raw",
-   "src": "broll/ace_s_031.mp4",
+   "src": "img/ace_s_031.png",
    "hue": "amber",
    "darken": 0,
    "dur": 2.93
@@ -650,7 +676,7 @@
    "id": "ace_s_032",
    "start": 201.38,
    "kind": "raw",
-   "src": "broll/ace_s_032.mp4",
+   "src": "img/ace_s_032.png",
    "hue": "amber",
    "darken": 0,
    "dur": 3.17
@@ -668,7 +694,7 @@
    "id": "ace_s_033",
    "start": 207.4,
    "kind": "raw",
-   "src": "broll/ace_s_033.mp4",
+   "src": "img/ace_s_033.png",
    "hue": "amber",
    "darken": 0,
    "dur": 3.22
@@ -731,7 +757,7 @@
    "id": "ace_s_035",
    "start": 219.52,
    "kind": "raw",
-   "src": "broll/ace_s_035.mp4",
+   "src": "img/ace_s_035.png",
    "hue": "amber",
    "darken": 0,
    "dur": 3.48
@@ -784,7 +810,7 @@
    "id": "ace_s_037",
    "start": 232.4,
    "kind": "raw",
-   "src": "broll/ace_s_037.mp4",
+   "src": "img/ace_s_037.png",
    "hue": "amber",
    "darken": 0,
    "dur": 3.05
@@ -843,7 +869,7 @@
    "id": "ace_s_039",
    "start": 246.97,
    "kind": "raw",
-   "src": "broll/ace_s_039.mp4",
+   "src": "img/ace_s_039.png",
    "hue": "amber",
    "darken": 0,
    "dur": 3.57
@@ -893,7 +919,7 @@
    "id": "ace_s_041",
    "start": 260.98,
    "kind": "raw",
-   "src": "broll/ace_s_041.mp4",
+   "src": "img/ace_s_041.png",
    "hue": "amber",
    "darken": 0,
    "dur": 3.3
@@ -971,6 +997,42 @@
    "dur": 4.93
   },
   {
+   "id": "ov_cutawaycallouts_285",
+   "start": 284.8,
+   "dur": 6.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "CutawayCallouts",
+   "theme": "earth",
+   "zone": "full",
+   "image": "img/aceite_c2.png",
+   "eyebrow": "La madera por dentro",
+   "title": "Por qué se pudre desde adentro",
+   "callouts": [
+    {
+     "text": "Los tubitos",
+     "sub": "antes llevaban la savia",
+     "tx": 0.32,
+     "ty": 0.34,
+     "side": "left"
+    },
+    {
+     "text": "Por acá entra el agua",
+     "sub": "y con ella los hongos",
+     "tx": 0.66,
+     "ty": 0.4,
+     "side": "right"
+    },
+    {
+     "text": "Se pudre de adentro",
+     "sub": "por fuera parece sano",
+     "tx": 0.5,
+     "ty": 0.78,
+     "side": "left"
+    }
+   ]
+  },
+  {
    "id": "ace_s_045",
    "start": 288.24,
    "kind": "raw",
@@ -992,7 +1054,7 @@
    "id": "ace_s_046",
    "start": 293.79,
    "kind": "raw",
-   "src": "broll/ace_s_046.mp4",
+   "src": "img/ace_s_046.png",
    "hue": "amber",
    "darken": 0,
    "dur": 2.99
@@ -1023,6 +1085,34 @@
    "hue": "amber",
    "darken": 0,
    "dur": 4.4
+  },
+  {
+   "id": "ov_bulletcascade_305",
+   "start": 304.56,
+   "dur": 5.8,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BulletCascade",
+   "theme": "earth",
+   "zone": "top",
+   "eyebrow": "La única estrategia que funciona",
+   "bullets": [
+    {
+     "pre": "Sacá el ",
+     "key": "agua",
+     "post": " y la madera es casi eterna"
+    },
+    {
+     "pre": "Tapá los ",
+     "key": "tubitos",
+     "post": " para que no entre"
+    },
+    {
+     "pre": "La protección va ",
+     "key": "adentro",
+     "post": ", no encima"
+    }
+   ]
   },
   {
    "id": "ace_s_048",
@@ -1064,7 +1154,7 @@
    "id": "ace_s_050",
    "start": 319.96,
    "kind": "raw",
-   "src": "broll/ace_s_050.mp4",
+   "src": "img/ace_s_050.png",
    "hue": "amber",
    "darken": 0,
    "dur": 3.19
@@ -1144,7 +1234,7 @@
    "id": "ace_s_053",
    "start": 339.2,
    "kind": "raw",
-   "src": "broll/ace_s_053.mp4",
+   "src": "img/ace_s_053.png",
    "hue": "amber",
    "darken": 0,
    "dur": 2.98
@@ -1162,7 +1252,7 @@
    "id": "ace_s_054",
    "start": 344.22,
    "kind": "raw",
-   "src": "broll/ace_s_054.mp4",
+   "src": "img/ace_s_054.png",
    "hue": "amber",
    "darken": 0,
    "dur": 2.93
@@ -1180,7 +1270,7 @@
    "id": "ace_s_055",
    "start": 349.68,
    "kind": "raw",
-   "src": "broll/ace_s_055.mp4",
+   "src": "img/ace_s_055.png",
    "hue": "amber",
    "darken": 0,
    "dur": 3.07
@@ -1198,7 +1288,7 @@
    "id": "ace_s_056",
    "start": 355.8,
    "kind": "raw",
-   "src": "broll/ace_s_056.mp4",
+   "src": "img/ace_s_056.png",
    "hue": "amber",
    "darken": 0,
    "dur": 3.06
@@ -1216,7 +1306,7 @@
    "id": "ace_s_057",
    "start": 362.85,
    "kind": "raw",
-   "src": "broll/ace_s_057.mp4",
+   "src": "img/ace_s_057.png",
    "hue": "amber",
    "darken": 0,
    "dur": 2.92
@@ -1274,7 +1364,7 @@
    "id": "ace_s_059",
    "start": 377.05,
    "kind": "raw",
-   "src": "broll/ace_s_059.mp4",
+   "src": "img/ace_s_059.png",
    "hue": "amber",
    "darken": 0,
    "dur": 3.05
@@ -1342,7 +1432,7 @@
    "id": "ace_s_062",
    "start": 397.86,
    "kind": "raw",
-   "src": "broll/ace_s_062.mp4",
+   "src": "img/ace_s_062.png",
    "hue": "amber",
    "darken": 0,
    "dur": 2.96
@@ -1405,7 +1495,7 @@
    "id": "ace_s_065",
    "start": 416.4,
    "kind": "raw",
-   "src": "broll/ace_s_065.mp4",
+   "src": "img/ace_s_065.png",
    "hue": "amber",
    "darken": 0,
    "dur": 2.9
@@ -1423,7 +1513,7 @@
    "id": "ace_s_066",
    "start": 422.63,
    "kind": "raw",
-   "src": "broll/ace_s_066.mp4",
+   "src": "img/ace_s_066.png",
    "hue": "amber",
    "darken": 0,
    "dur": 2.94
@@ -1441,7 +1531,7 @@
    "id": "ace_s_067",
    "start": 429.8,
    "kind": "raw",
-   "src": "broll/ace_s_067.mp4",
+   "src": "img/ace_s_067.png",
    "hue": "amber",
    "darken": 0,
    "dur": 3.05
@@ -1481,7 +1571,7 @@
    "id": "ace_s_068",
    "start": 435.4,
    "kind": "raw",
-   "src": "broll/ace_s_068.mp4",
+   "src": "img/ace_s_068.png",
    "hue": "amber",
    "darken": 0,
    "dur": 2.98
@@ -1499,7 +1589,7 @@
    "id": "ace_s_069",
    "start": 440.77,
    "kind": "raw",
-   "src": "broll/ace_s_069.mp4",
+   "src": "img/ace_s_069.png",
    "hue": "amber",
    "darken": 0,
    "dur": 3.16
@@ -1576,7 +1666,7 @@
    "id": "ace_s_072",
    "start": 462.71,
    "kind": "raw",
-   "src": "broll/ace_s_072.mp4",
+   "src": "img/ace_s_072.png",
    "hue": "amber",
    "darken": 0,
    "dur": 2.99
@@ -1594,7 +1684,7 @@
    "id": "ace_s_073",
    "start": 470.09,
    "kind": "raw",
-   "src": "broll/ace_s_073.mp4",
+   "src": "img/ace_s_073.png",
    "hue": "amber",
    "darken": 0,
    "dur": 3
@@ -1627,7 +1717,7 @@
    "id": "ace_s_074",
    "start": 477.2,
    "kind": "raw",
-   "src": "broll/ace_s_074.mp4",
+   "src": "img/ace_s_074.png",
    "hue": "amber",
    "darken": 0,
    "dur": 3.08
@@ -1645,7 +1735,7 @@
    "id": "ace_s_075",
    "start": 482.53,
    "kind": "raw",
-   "src": "broll/ace_s_075.mp4",
+   "src": "img/ace_s_075.png",
    "hue": "amber",
    "darken": 0,
    "dur": 3.08
@@ -1663,7 +1753,7 @@
    "id": "ace_s_076",
    "start": 489.53,
    "kind": "raw",
-   "src": "broll/ace_s_076.mp4",
+   "src": "img/ace_s_076.png",
    "hue": "amber",
    "darken": 0,
    "dur": 3.09
@@ -1681,7 +1771,7 @@
    "id": "ace_s_077",
    "start": 496.68,
    "kind": "raw",
-   "src": "broll/ace_s_077.mp4",
+   "src": "img/ace_s_077.png",
    "hue": "amber",
    "darken": 0,
    "dur": 3.18
@@ -1717,7 +1807,7 @@
    "id": "ace_s_079",
    "start": 510.53,
    "kind": "raw",
-   "src": "broll/ace_s_079.mp4",
+   "src": "img/ace_s_079.png",
    "hue": "amber",
    "darken": 0,
    "dur": 2.99
@@ -1735,10 +1825,29 @@
    "id": "ace_s_080",
    "start": 516.62,
    "kind": "raw",
-   "src": "broll/ace_s_080.mp4",
+   "src": "img/ace_s_080.png",
    "hue": "amber",
    "darken": 0,
    "dur": 3.08
+  },
+  {
+   "id": "ov_splitpanel_518",
+   "start": 518.16,
+   "dur": 6.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "SplitPanel",
+   "theme": "earth",
+   "zone": "full",
+   "image": "img/aceite_c3.png",
+   "eyebrow": "La versión noble del truco",
+   "title": "Aceite de linaza",
+   "bullets": [
+    "Sale de la semilla del lino",
+    "Penetra hondo y alimenta la fibra",
+    "Repele el agua, deja color cálido",
+    "No es tóxico y huele bien"
+   ]
   },
   {
    "id": "ace_s_080_b",
@@ -1762,7 +1871,7 @@
    "id": "ace_s_081",
    "start": 524.14,
    "kind": "raw",
-   "src": "broll/ace_s_081.mp4",
+   "src": "img/ace_s_081.png",
    "hue": "amber",
    "darken": 0,
    "dur": 3.54
@@ -1780,7 +1889,7 @@
    "id": "ace_s_082",
    "start": 531.17,
    "kind": "raw",
-   "src": "broll/ace_s_082.mp4",
+   "src": "img/ace_s_082.png",
    "hue": "amber",
    "darken": 0,
    "dur": 2.97
@@ -1798,7 +1907,7 @@
    "id": "ace_s_083",
    "start": 536.88,
    "kind": "raw",
-   "src": "broll/ace_s_083.mp4",
+   "src": "img/ace_s_083.png",
    "hue": "amber",
    "darken": 0,
    "dur": 2.9
@@ -1840,6 +1949,19 @@
    "dur": 4.76
   },
   {
+   "id": "ov_floatingcutout_548",
+   "start": 547.59,
+   "dur": 5.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "FloatingCutout",
+   "theme": "earth",
+   "zone": "full",
+   "image": "img/aceite_c5.png",
+   "label": "Mangos de herramientas",
+   "sub": "hachas, palas, martillos — la linaza los cuida hace siglos"
+  },
+  {
    "id": "ace_s_085",
    "start": 551.38,
    "kind": "raw",
@@ -1861,7 +1983,7 @@
    "id": "ace_s_086",
    "start": 558.47,
    "kind": "raw",
-   "src": "broll/ace_s_086.mp4",
+   "src": "img/ace_s_086.png",
    "hue": "amber",
    "darken": 0,
    "dur": 3.34
@@ -1888,7 +2010,7 @@
    "id": "ace_s_087",
    "start": 566.16,
    "kind": "raw",
-   "src": "broll/ace_s_087.mp4",
+   "src": "img/ace_s_087.png",
    "hue": "amber",
    "darken": 0,
    "dur": 2.99
@@ -1923,7 +2045,7 @@
    "id": "ace_s_088",
    "start": 572.05,
    "kind": "raw",
-   "src": "broll/ace_s_088.mp4",
+   "src": "img/ace_s_088.png",
    "hue": "amber",
    "darken": 0,
    "dur": 3.29
@@ -1941,7 +2063,7 @@
    "id": "ace_s_089",
    "start": 578.41,
    "kind": "raw",
-   "src": "broll/ace_s_089.mp4",
+   "src": "img/ace_s_089.png",
    "hue": "amber",
    "darken": 0,
    "dur": 3.24
@@ -1968,7 +2090,7 @@
    "id": "ace_s_090",
    "start": 585.8,
    "kind": "raw",
-   "src": "broll/ace_s_090.mp4",
+   "src": "img/ace_s_090.png",
    "hue": "amber",
    "darken": 0,
    "dur": 2.96
@@ -2067,7 +2189,7 @@
    "id": "ace_s_094",
    "start": 612.8,
    "kind": "raw",
-   "src": "broll/ace_s_094.mp4",
+   "src": "img/ace_s_094.png",
    "hue": "amber",
    "darken": 0,
    "dur": 2.97
@@ -2199,7 +2321,7 @@
    "id": "ace_s_100",
    "start": 653.66,
    "kind": "raw",
-   "src": "broll/ace_s_100.mp4",
+   "src": "img/ace_s_100.png",
    "hue": "amber",
    "darken": 0,
    "dur": 3.01
@@ -2214,10 +2336,39 @@
    "dur": 2.73
   },
   {
+   "id": "ov_flowsteps_657",
+   "start": 656.97,
+   "dur": 6.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "FlowSteps",
+   "theme": "earth",
+   "zone": "full",
+   "title": "La fórmula noble, en 3 partes",
+   "nodes": [
+    {
+     "label": "Linaza",
+     "sub": "el alma: penetra y alimenta"
+    },
+    {
+     "label": "Solvente",
+     "sub": "aguarrás: la lleva al fondo"
+    },
+    {
+     "label": "Refuerzo",
+     "sub": "brea o cera: sella y protege"
+    },
+    {
+     "label": "Aplicar",
+     "sub": "en el sentido de la veta"
+    }
+   ]
+  },
+  {
    "id": "ace_s_101",
    "start": 658.8,
    "kind": "raw",
-   "src": "broll/ace_s_101.mp4",
+   "src": "img/ace_s_101.png",
    "hue": "amber",
    "darken": 0,
    "dur": 2.9
@@ -2235,7 +2386,7 @@
    "id": "ace_s_102",
    "start": 664.28,
    "kind": "raw",
-   "src": "broll/ace_s_102.mp4",
+   "src": "img/ace_s_102.png",
    "hue": "amber",
    "darken": 0,
    "dur": 3
@@ -2280,7 +2431,7 @@
    "id": "ace_s_104",
    "start": 679.2,
    "kind": "raw",
-   "src": "broll/ace_s_104.mp4",
+   "src": "img/ace_s_104.png",
    "hue": "amber",
    "darken": 0,
    "dur": 3.25
@@ -2352,7 +2503,7 @@
    "id": "ace_s_107",
    "start": 700.86,
    "kind": "raw",
-   "src": "broll/ace_s_107.mp4",
+   "src": "img/ace_s_107.png",
    "hue": "amber",
    "darken": 0,
    "dur": 3.25
@@ -2397,7 +2548,7 @@
    "id": "ace_s_109",
    "start": 716.04,
    "kind": "raw",
-   "src": "broll/ace_s_109.mp4",
+   "src": "img/ace_s_109.png",
    "hue": "amber",
    "darken": 0,
    "dur": 2.94
@@ -2415,7 +2566,7 @@
    "id": "ace_s_110",
    "start": 721.02,
    "kind": "raw",
-   "src": "broll/ace_s_110.mp4",
+   "src": "img/ace_s_110.png",
    "hue": "amber",
    "darken": 0,
    "dur": 3.18
@@ -2433,10 +2584,41 @@
    "id": "ace_s_111",
    "start": 728.4,
    "kind": "raw",
-   "src": "broll/ace_s_111.mp4",
+   "src": "img/ace_s_111.png",
    "hue": "amber",
    "darken": 0,
    "dur": 3.32
+  },
+  {
+   "id": "ov_duelcolumns_728",
+   "start": 728.4,
+   "dur": 6.2,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "DuelColumns",
+   "theme": "earth",
+   "zone": "left",
+   "title": "¿Cera o brea de pino?",
+   "leftName": "Cera de abeja",
+   "rightName": "Brea de pino",
+   "rows": [
+    {
+     "attr": "Madera de adentro (muebles, mesadas)",
+     "leftWins": true
+    },
+    {
+     "attr": "Deck y madera a la intemperie",
+     "leftWins": false
+    },
+    {
+     "attr": "Acabado sedoso al tacto",
+     "leftWins": true
+    },
+    {
+     "attr": "Poder impermeable brutal",
+     "leftWins": false
+    }
+   ]
   },
   {
    "id": "ace_s_111_b",
@@ -2505,7 +2687,7 @@
    "id": "ace_s_114",
    "start": 750.07,
    "kind": "raw",
-   "src": "broll/ace_s_114.mp4",
+   "src": "img/ace_s_114.png",
    "hue": "amber",
    "darken": 0,
    "dur": 3.11
@@ -2523,7 +2705,7 @@
    "id": "ace_s_115",
    "start": 757.13,
    "kind": "raw",
-   "src": "broll/ace_s_115.mp4",
+   "src": "img/ace_s_115.png",
    "hue": "amber",
    "darken": 0,
    "dur": 3.03
@@ -2541,7 +2723,7 @@
    "id": "ace_s_116",
    "start": 764.42,
    "kind": "raw",
-   "src": "broll/ace_s_116.mp4",
+   "src": "img/ace_s_116.png",
    "hue": "amber",
    "darken": 0,
    "dur": 3.13
@@ -2559,7 +2741,7 @@
    "id": "ace_s_117",
    "start": 770.46,
    "kind": "raw",
-   "src": "broll/ace_s_117.mp4",
+   "src": "img/ace_s_117.png",
    "hue": "amber",
    "darken": 0,
    "dur": 3.24
@@ -2670,7 +2852,7 @@
    "id": "ace_s_121",
    "start": 797.98,
    "kind": "raw",
-   "src": "broll/ace_s_121.mp4",
+   "src": "img/ace_s_121.png",
    "hue": "amber",
    "darken": 0,
    "dur": 3.14
@@ -2706,7 +2888,7 @@
    "id": "ace_s_123",
    "start": 811.82,
    "kind": "raw",
-   "src": "broll/ace_s_123.mp4",
+   "src": "img/ace_s_123.png",
    "hue": "amber",
    "darken": 0,
    "dur": 2.94
@@ -2733,7 +2915,7 @@
    "id": "ace_s_124",
    "start": 819.21,
    "kind": "raw",
-   "src": "broll/ace_s_124.mp4",
+   "src": "img/ace_s_124.png",
    "hue": "amber",
    "darken": 0,
    "dur": 3.14
@@ -2943,7 +3125,7 @@
    "id": "ace_s_132",
    "start": 870.59,
    "kind": "raw",
-   "src": "broll/ace_s_132.mp4",
+   "src": "img/ace_s_132.png",
    "hue": "amber",
    "darken": 0,
    "dur": 3.25
@@ -2979,7 +3161,7 @@
    "id": "ace_s_134",
    "start": 882.18,
    "kind": "raw",
-   "src": "broll/ace_s_134.mp4",
+   "src": "img/ace_s_134.png",
    "hue": "amber",
    "darken": 0,
    "dur": 2.9
@@ -3006,7 +3188,7 @@
    "id": "ace_s_135",
    "start": 889.43,
    "kind": "raw",
-   "src": "broll/ace_s_135.mp4",
+   "src": "img/ace_s_135.png",
    "hue": "amber",
    "darken": 0,
    "dur": 3.16
@@ -3024,7 +3206,7 @@
    "id": "ace_s_136",
    "start": 894.35,
    "kind": "raw",
-   "src": "broll/ace_s_136.mp4",
+   "src": "img/ace_s_136.png",
    "hue": "amber",
    "darken": 0,
    "dur": 2.95
@@ -3081,7 +3263,7 @@
    "id": "ace_s_137",
    "start": 901.54,
    "kind": "raw",
-   "src": "broll/ace_s_137.mp4",
+   "src": "img/ace_s_137.png",
    "hue": "amber",
    "darken": 0,
    "dur": 3.01
@@ -3108,7 +3290,7 @@
    "id": "ace_s_138",
    "start": 909.42,
    "kind": "raw",
-   "src": "broll/ace_s_138.mp4",
+   "src": "img/ace_s_138.png",
    "hue": "amber",
    "darken": 0,
    "dur": 3.05
@@ -3126,7 +3308,7 @@
    "id": "ace_s_139",
    "start": 916.44,
    "kind": "raw",
-   "src": "broll/ace_s_139.mp4",
+   "src": "img/ace_s_139.png",
    "hue": "amber",
    "darken": 0,
    "dur": 3.28
@@ -3162,7 +3344,7 @@
    "id": "ace_s_141",
    "start": 928.18,
    "kind": "raw",
-   "src": "broll/ace_s_141.mp4",
+   "src": "img/ace_s_141.png",
    "hue": "amber",
    "darken": 0,
    "dur": 3.1
@@ -3216,7 +3398,7 @@
    "id": "ace_s_143",
    "start": 942.56,
    "kind": "raw",
-   "src": "broll/ace_s_143.mp4",
+   "src": "img/ace_s_143.png",
    "hue": "amber",
    "darken": 0,
    "dur": 2.98
@@ -3267,7 +3449,7 @@
    "id": "ace_s_145",
    "start": 955.3,
    "kind": "raw",
-   "src": "broll/ace_s_145.mp4",
+   "src": "img/ace_s_145.png",
    "hue": "amber",
    "darken": 0,
    "dur": 3.21
@@ -3350,7 +3532,7 @@
    "id": "ace_s_148",
    "start": 976.61,
    "kind": "raw",
-   "src": "broll/ace_s_148.mp4",
+   "src": "img/ace_s_148.png",
    "hue": "amber",
    "darken": 0,
    "dur": 2.97
@@ -3395,7 +3577,7 @@
    "id": "ace_s_150",
    "start": 988.92,
    "kind": "raw",
-   "src": "broll/ace_s_150.mp4",
+   "src": "img/ace_s_150.png",
    "hue": "amber",
    "darken": 0,
    "dur": 4.02
@@ -3428,6 +3610,19 @@
    "dur": 3.06
   },
   {
+   "id": "ov_framedphoto_1000",
+   "start": 999.91,
+   "dur": 6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "FramedPhoto",
+   "theme": "earth",
+   "zone": "full",
+   "image": "img/aceite_c4.png",
+   "caption": "Deck, galería, postes, pérgola",
+   "sub": "todo se salva con el mismo principio"
+  },
+  {
    "id": "ace_s_151_c",
    "start": 1001.32,
    "kind": "raw",
@@ -3440,7 +3635,7 @@
    "id": "ace_s_152",
    "start": 1003.14,
    "kind": "raw",
-   "src": "broll/ace_s_152.mp4",
+   "src": "img/ace_s_152.png",
    "hue": "amber",
    "darken": 0,
    "dur": 2.98
@@ -3467,7 +3662,7 @@
    "id": "ace_s_153",
    "start": 1010.52,
    "kind": "raw",
-   "src": "broll/ace_s_153.mp4",
+   "src": "img/ace_s_153.png",
    "hue": "amber",
    "darken": 0,
    "dur": 3.06
@@ -3499,7 +3694,7 @@
    "id": "ace_s_154",
    "start": 1016.89,
    "kind": "raw",
-   "src": "broll/ace_s_154.mp4",
+   "src": "img/ace_s_154.png",
    "hue": "amber",
    "darken": 0,
    "dur": 3.32
@@ -3517,7 +3712,7 @@
    "id": "ace_s_155",
    "start": 1022.88,
    "kind": "raw",
-   "src": "broll/ace_s_155.mp4",
+   "src": "img/ace_s_155.png",
    "hue": "amber",
    "darken": 0,
    "dur": 3.05
@@ -3553,7 +3748,7 @@
    "id": "ace_s_157",
    "start": 1036.5,
    "kind": "raw",
-   "src": "broll/ace_s_157.mp4",
+   "src": "img/ace_s_157.png",
    "hue": "amber",
    "darken": 0,
    "dur": 2.92
@@ -3580,7 +3775,7 @@
    "id": "ace_s_158",
    "start": 1043.98,
    "kind": "raw",
-   "src": "broll/ace_s_158.mp4",
+   "src": "img/ace_s_158.png",
    "hue": "amber",
    "darken": 0,
    "dur": 3.41
@@ -3598,7 +3793,7 @@
    "id": "ace_s_159",
    "start": 1051.17,
    "kind": "raw",
-   "src": "broll/ace_s_159.mp4",
+   "src": "img/ace_s_159.png",
    "hue": "amber",
    "darken": 0,
    "dur": 3.17
@@ -3625,7 +3820,7 @@
    "id": "ace_s_160",
    "start": 1058.51,
    "kind": "raw",
-   "src": "broll/ace_s_160.mp4",
+   "src": "img/ace_s_160.png",
    "hue": "amber",
    "darken": 0,
    "dur": 3.01
@@ -3643,7 +3838,7 @@
    "id": "ace_s_161",
    "start": 1065.41,
    "kind": "raw",
-   "src": "broll/ace_s_161.mp4",
+   "src": "img/ace_s_161.png",
    "hue": "amber",
    "darken": 0,
    "dur": 3.24
@@ -3727,7 +3922,7 @@
    "id": "ace_s_164",
    "start": 1086.24,
    "kind": "raw",
-   "src": "broll/ace_s_164.mp4",
+   "src": "img/ace_s_164.png",
    "hue": "amber",
    "darken": 0,
    "dur": 3.25
@@ -3745,7 +3940,7 @@
    "id": "ace_s_165",
    "start": 1092.85,
    "kind": "raw",
-   "src": "broll/ace_s_165.mp4",
+   "src": "img/ace_s_165.png",
    "hue": "amber",
    "darken": 0,
    "dur": 3.16
@@ -3810,7 +4005,7 @@
    "id": "ace_s_167",
    "start": 1105.75,
    "kind": "raw",
-   "src": "broll/ace_s_167.mp4",
+   "src": "img/ace_s_167.png",
    "hue": "amber",
    "darken": 0,
    "dur": 3.5
@@ -3828,7 +4023,7 @@
    "id": "ace_s_168",
    "start": 1112.58,
    "kind": "raw",
-   "src": "broll/ace_s_168.mp4",
+   "src": "img/ace_s_168.png",
    "hue": "amber",
    "darken": 0,
    "dur": 3.24
@@ -3872,7 +4067,7 @@
    "id": "ace_s_169",
    "start": 1118.68,
    "kind": "raw",
-   "src": "broll/ace_s_169.mp4",
+   "src": "img/ace_s_169.png",
    "hue": "amber",
    "darken": 0,
    "dur": 3.24
@@ -4063,7 +4258,7 @@
    "id": "ace_s_178",
    "start": 1176.84,
    "kind": "raw",
-   "src": "broll/ace_s_178.mp4",
+   "src": "img/ace_s_178.png",
    "hue": "amber",
    "darken": 0,
    "dur": 3.18
