@@ -7,6 +7,7 @@ import {
   interpolate, spring, useCurrentFrame, useVideoConfig,
 } from "remotion";
 import LB from "../../public/lobos_beats.json";
+import { TrophicWeb, TravelingTimeline, MigrationArc, AuthorityQuote } from "./FaunaKit";
 
 const FPS = 30;
 export const TOTAL_FRAMES_LOBOS: number = (LB as any).total;
@@ -165,6 +166,10 @@ export const MainLobos: React.FC = () => {
           {b.kind === "avatar" ? (
             <KB src={staticFile("lobos_opt.mp4")} dur={b.dur} avatar trim={b.from} />
           ) : b.kind === "comp" ? (
+            b.comp === "timeline" ? <TravelingTimeline /> :
+            b.comp === "migration" ? <MigrationArc /> :
+            b.comp === "quote" ? <AuthorityQuote /> :
+            b.comp === "trophicweb" ? <TrophicWeb /> :
             <Cascade dur={b.dur} />
           ) : (
             <KB src={clip(b.src)} dur={b.dur} kb={i} />

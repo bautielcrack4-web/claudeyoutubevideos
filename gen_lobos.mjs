@@ -75,14 +75,14 @@ function overlayFor(text) {
 // ── avatar full: frases de dirección + cadencia ────────────────────────────
 const AV_TRIG = /quedate conmigo|tengo que ser honesto|por qué debería importarte|deténganse a pensar|la próxima vez que alguien|contame vos|conocías esta historia|suscr[íi]bete|nos vemos en el próximo|te voló la cabeza|piénsalo|escúchame/i;
 
-// ── componentes wow en puntos narrativos ───────────────────────────────────
-function compFor(text) {
-  const t = text.toLowerCase();
-  if (/cascada tr[óo]fica/.test(t)) return "cascade";
-  if (/m[áa]s de cien lobos viven/.test(t)) return "spreadmap";
-  if (/en 1926, los guardaparques/.test(t)) return "timeline";
-  return null;
-}
+// ── componentes wow (kit FaunaKit) anclados a frases, con HOLD full-screen ──
+const COMPS = [
+  { re: /1926.*(mataron|guardaparqu)|dos [úu]ltimos cachorros/i, comp: "timeline", hold: 285 },
+  { re: /fueron a buscar|monta[ñn]as heladas de canad|capturaron lobos|en alberta/i, comp: "migration", hold: 170 },
+  { re: /con todas las letras|geograf[íi]a f[íi]sica/i, comp: "quote", hold: 140 },
+  { re: /cascada tr[óo]fica/i, comp: "trophicweb", hold: 300 },
+];
+function compFor(text) { for (const c of COMPS) if (c.re.test(text)) return c; return null; }
 
 // ── construir beats ────────────────────────────────────────────────────────
 const use = {}; const inc = (n) => (use[n] = (use[n] || 0) + 1);
@@ -106,7 +106,11 @@ for (let i = 0; i < sents.length; i++) {
   const overlay = overlayFor(s.text);
   const isAvatar = AV_TRIG.test(s.text) || (i > 3 && i % 9 === 4 && !comp); // cadencia ~cada 9 oraciones
   if (comp) {
-    beats.push({ from: S(startMs), dur: durF, kind: "comp", comp, overlay: null, text: s.text.slice(0, 60) });
+    beats.push({ from: S(startMs), dur: comp.hold, kind: "comp", comp: comp.comp, overlay: null, text: s.text.slice(0, 60) });
+    // saltear las oraciones que el componente cubre (no rellenar b-roll debajo)
+    const holdMs = (comp.hold / FPS) * 1000; let j = i;
+    while (j + 1 < sents.length && sents[j + 1].startMs < startMs + holdMs) j++;
+    i = j; continue;
   } else if (isAvatar) {
     beats.push({ from: S(startMs), dur: durF, kind: "avatar", overlay, text: s.text.slice(0, 60) });
   } else {
