@@ -228,6 +228,58 @@ const PREMIUM = [
     eyebrow: "Empezá por el enlace de arriba", title: "Manual del Constructor Libre",
     bullet: "los 40 arreglos completos, medidas y pasos, todo en un lugar", price: 0, cta: "LINK EN LA DESCRIPCIÓN",
   }, 8),
+
+  // ══ COMPONENTES NUEVOS (foto+texto+blur full-screen + variedad pro) ══
+  P("FramedPhoto", "termina guardando el agua adentro le haces un", 6.0, "full", {
+    image: "img/sell_c1.png", caption: "La película, a la intemperie", sub: "se agrieta, entra el agua y queda atrapada abajo",
+  }, 8),
+  P("FramedPhoto", "vos viste un bote de madera que se pele", 5.8, "full", {
+    image: "img/sell_c5.png", caption: "Los botes de Don Vicente", sub: "viven en el agua y no se pelan nunca",
+  }, 8),
+  P("BulletCascade", "un producto que se pela y hay que volver", 5.8, "top", {
+    eyebrow: "Por qué te empujan lo que se pela",
+    bullets: [
+      { pre: "Se pela y lo ", key: "recomprás cada 2 años", post: "" },
+      { pre: "Lijás, comprás lija, ", key: "diluyente, balde caro", post: "" },
+      { pre: "Sos un ", key: "cliente para toda la vida", post: "" },
+    ],
+  }, 8),
+  P("FramedPhoto", "es el mismo error que comete casi todo el", 6.0, "full", {
+    image: "img/sell_c3.png", caption: "Deck, galería, cerco, muebles de jardín", sub: "el mismo error en todos: tapar en vez de penetrar",
+  }, 8),
+  P("DuelColumns", "se dividen en dos grandes familias y son", 6.2, "left", {
+    title: "Película vs. Penetrante", leftName: "Película (barniz)", rightName: "Penetrante (aceite)",
+    rows: [
+      { attr: "Se mueve con la madera", leftWins: false },
+      { attr: "No se pela ni se cuartea", leftWins: false },
+      { attr: "No hay que lijar nunca", leftWins: false },
+      { attr: "Cuesta monedas", leftWins: false },
+    ],
+  }, 8),
+  P("CutawayCallouts", "llena los poros esos tubitos que chupan el", 6.6, "full", {
+    image: "img/sell_c4.png", eyebrow: "El penetrante por dentro", title: "Cómo protege de verdad",
+    callouts: [
+      { text: "Llena los poros", sub: "los tubitos que chupan agua", tx: 0.32, ty: 0.34, side: "left" },
+      { text: "Se mueve con la madera", sub: "flexible, no se cuartea", tx: 0.68, ty: 0.42, side: "right" },
+      { text: "El agua resbala", sub: "no encuentra por dónde entrar", tx: 0.5, ty: 0.8, side: "left" },
+    ],
+  }, 8),
+  P("SplitPanel", "como esta adentro no se puede pelar porque", 6.6, "full", {
+    image: "img/sell_c2.png", eyebrow: "El acabado de los botes", title: "Aceite penetrante",
+    bullets: ["Se mete adentro, no encima", "Flexible: se mueve con la madera", "Llena los poros, el agua hace perlas", "No se pela ni se cuartea"],
+  }, 8),
+  P("FloatingCutout", "le pasas otra mano encima la madera la", 5.6, "full", {
+    image: "img/sell_c6.png", label: "Mantenimiento sin lijar", sub: "otra mano encima, la madera la toma, y listo",
+  }, 8),
+  P("FlowSteps", "otra vez a lijar otra vez a comprar el", 6.6, "full", {
+    title: "El círculo del sellador caro",
+    nodes: [
+      { label: "Lijar", sub: "un finde entero" },
+      { label: "Sellar", sub: "el balde caro" },
+      { label: "Se pela", sub: "al llegar el verano" },
+      { label: "Repetir", sub: "cada año, sin fin" },
+    ],
+  }, 8),
 ];
 
 // ── ensamblar beats final: raw + premium overlays anclados a su phrase real ──
@@ -266,7 +318,7 @@ fs.writeFileSync(`beatsheet/${SLUG}.json`, JSON.stringify({ video: SLUG, avatar:
 
 // ── AVATAR WINDOWS — regla full-o-full (sin PiP): full en hook + slots ~6s cada ~55s
 // en huecos SIN componente (snapeados a palabra), hidden el resto. ──
-const HOOK_END = 9, PERIOD = 55, SLOT = 6, SEARCH = 26;
+const HOOK_END = 9, PERIOD = 20, SLOT = 4, SEARCH = 15;
 const comps = beats.filter((b) => b.kind === "premium").map((b) => [b.start, b.start + (b.dur || 3)]);
 const overlapsComp = (a, b) => comps.some(([s, e]) => a < e && b > s);
 const snapWord = (tt) => { for (const c of caps) if (c.startMs / 1000 >= tt - 0.05) return c.startMs / 1000; return tt; };
@@ -274,7 +326,7 @@ const fulls = [[0, snapWord(HOOK_END)]];
 for (let target = HOOK_END + PERIOD; target < TOTAL - 12; target += PERIOD) {
   for (let t = target; t < target + SEARCH; t += 0.5) {
     const s = snapWord(t), e = snapWord(s + SLOT);
-    if (e - s >= 4 && e - s <= 9 && !overlapsComp(s, e)) { fulls.push([s, e]); break; }
+    if (e - s >= 3 && e - s <= 6 && !overlapsComp(s, e)) { fulls.push([s, e]); break; }
   }
 }
 const csw = snapWord(TOTAL - 8);

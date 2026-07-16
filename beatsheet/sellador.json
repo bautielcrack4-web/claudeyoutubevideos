@@ -198,6 +198,35 @@
    "dur": 4.51
   },
   {
+   "id": "ov_flowsteps_61",
+   "start": 60.64,
+   "dur": 6.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "FlowSteps",
+   "theme": "earth",
+   "zone": "full",
+   "title": "El círculo del sellador caro",
+   "nodes": [
+    {
+     "label": "Lijar",
+     "sub": "un finde entero"
+    },
+    {
+     "label": "Sellar",
+     "sub": "el balde caro"
+    },
+    {
+     "label": "Se pela",
+     "sub": "al llegar el verano"
+    },
+    {
+     "label": "Repetir",
+     "sub": "cada año, sin fin"
+    }
+   ]
+  },
+  {
    "id": "sel_s_010",
    "start": 63.77,
    "kind": "raw",
@@ -346,6 +375,19 @@
    "hue": "amber",
    "darken": 0,
    "dur": 2.98
+  },
+  {
+   "id": "ov_framedphoto_106",
+   "start": 106.11,
+   "dur": 5.8,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "FramedPhoto",
+   "theme": "earth",
+   "zone": "full",
+   "image": "img/sell_c5.png",
+   "caption": "Los botes de Don Vicente",
+   "sub": "viven en el agua y no se pelan nunca"
   },
   {
    "id": "sel_s_016_b",
@@ -598,6 +640,19 @@
    "dur": 3.15
   },
   {
+   "id": "ov_framedphoto_180",
+   "start": 180.39,
+   "dur": 6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "FramedPhoto",
+   "theme": "earth",
+   "zone": "full",
+   "image": "img/sell_c3.png",
+   "caption": "Deck, galería, cerco, muebles de jardín",
+   "sub": "el mismo error en todos: tapar en vez de penetrar"
+  },
+  {
    "id": "sel_s_026_c",
    "start": 182.57,
    "kind": "raw",
@@ -731,6 +786,37 @@
    "hue": "amber",
    "darken": 0,
    "dur": 4.5
+  },
+  {
+   "id": "ov_duelcolumns_223",
+   "start": 223,
+   "dur": 6.2,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "DuelColumns",
+   "theme": "earth",
+   "zone": "left",
+   "title": "Película vs. Penetrante",
+   "leftName": "Película (barniz)",
+   "rightName": "Penetrante (aceite)",
+   "rows": [
+    {
+     "attr": "Se mueve con la madera",
+     "leftWins": false
+    },
+    {
+     "attr": "No se pela ni se cuartea",
+     "leftWins": false
+    },
+    {
+     "attr": "No hay que lijar nunca",
+     "leftWins": false
+    },
+    {
+     "attr": "Cuesta monedas",
+     "leftWins": false
+    }
+   ]
   },
   {
    "id": "sel_s_033",
@@ -1003,6 +1089,19 @@
    "dur": 3.14
   },
   {
+   "id": "ov_framedphoto_302",
+   "start": 302.13,
+   "dur": 6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "FramedPhoto",
+   "theme": "earth",
+   "zone": "full",
+   "image": "img/sell_c1.png",
+   "caption": "La película, a la intemperie",
+   "sub": "se agrieta, entra el agua y queda atrapada abajo"
+  },
+  {
    "id": "sel_s_044_b",
    "start": 304.43,
    "kind": "raw",
@@ -1088,6 +1187,34 @@
    "hue": "amber",
    "darken": 0,
    "dur": 4.57
+  },
+  {
+   "id": "ov_bulletcascade_324",
+   "start": 324.08,
+   "dur": 5.8,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BulletCascade",
+   "theme": "earth",
+   "zone": "top",
+   "eyebrow": "Por qué te empujan lo que se pela",
+   "bullets": [
+    {
+     "pre": "Se pela y lo ",
+     "key": "recomprás cada 2 años",
+     "post": ""
+    },
+    {
+     "pre": "Lijás, comprás lija, ",
+     "key": "diluyente, balde caro",
+     "post": ""
+    },
+    {
+     "pre": "Sos un ",
+     "key": "cliente para toda la vida",
+     "post": ""
+    }
+   ]
   },
   {
    "id": "sel_s_048",
@@ -1198,6 +1325,42 @@
    "dur": 3.03
   },
   {
+   "id": "ov_cutawaycallouts_364",
+   "start": 363.88,
+   "dur": 6.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "CutawayCallouts",
+   "theme": "earth",
+   "zone": "full",
+   "image": "img/sell_c4.png",
+   "eyebrow": "El penetrante por dentro",
+   "title": "Cómo protege de verdad",
+   "callouts": [
+    {
+     "text": "Llena los poros",
+     "sub": "los tubitos que chupan agua",
+     "tx": 0.32,
+     "ty": 0.34,
+     "side": "left"
+    },
+    {
+     "text": "Se mueve con la madera",
+     "sub": "flexible, no se cuartea",
+     "tx": 0.68,
+     "ty": 0.42,
+     "side": "right"
+    },
+    {
+     "text": "El agua resbala",
+     "sub": "no encuentra por dónde entrar",
+     "tx": 0.5,
+     "ty": 0.8,
+     "side": "left"
+    }
+   ]
+  },
+  {
    "id": "sel_s_053_c",
    "start": 366.61,
    "kind": "raw",
@@ -1223,6 +1386,25 @@
    "hue": "amber",
    "darken": 0,
    "dur": 2.9
+  },
+  {
+   "id": "ov_splitpanel_371",
+   "start": 371.15,
+   "dur": 6.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "SplitPanel",
+   "theme": "earth",
+   "zone": "full",
+   "image": "img/sell_c2.png",
+   "eyebrow": "El acabado de los botes",
+   "title": "Aceite penetrante",
+   "bullets": [
+    "Se mete adentro, no encima",
+    "Flexible: se mueve con la madera",
+    "Llena los poros, el agua hace perlas",
+    "No se pela ni se cuartea"
+   ]
   },
   {
    "id": "sel_s_054_c",
@@ -1295,6 +1477,19 @@
    "hue": "amber",
    "darken": 0,
    "dur": 2.9
+  },
+  {
+   "id": "ov_floatingcutout_393",
+   "start": 392.89,
+   "dur": 5.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "FloatingCutout",
+   "theme": "earth",
+   "zone": "full",
+   "image": "img/sell_c6.png",
+   "label": "Mantenimiento sin lijar",
+   "sub": "otra mano encima, la madera la toma, y listo"
   },
   {
    "id": "sel_s_057_c",
