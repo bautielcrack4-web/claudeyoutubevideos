@@ -184,7 +184,7 @@
    "id": "ace_s_010",
    "start": 60.67,
    "kind": "raw",
-   "src": "broll/ace_s_010.mp4",
+   "src": "img/ace_s_010.png",
    "hue": "amber",
    "darken": 0,
    "dur": 3.09
@@ -3332,7 +3332,7 @@
    "id": "ace_s_147",
    "start": 969.43,
    "kind": "raw",
-   "src": "broll/ace_s_147.mp4",
+   "src": "img/ace_s_147.png",
    "hue": "amber",
    "darken": 0,
    "dur": 3.62
@@ -3535,7 +3535,7 @@
    "id": "ace_s_156",
    "start": 1029.99,
    "kind": "raw",
-   "src": "broll/ace_s_156.mp4",
+   "src": "img/ace_s_156.png",
    "hue": "amber",
    "darken": 0,
    "dur": 3.05

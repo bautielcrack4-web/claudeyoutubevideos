@@ -2,7 +2,6 @@ broll/ace_s_001.mp4
 broll/ace_s_002.mp4
 broll/ace_s_005.mp4
 broll/ace_s_009.mp4
-broll/ace_s_010.mp4
 broll/ace_s_011.mp4
 broll/ace_s_014.mp4
 broll/ace_s_020.mp4
@@ -101,14 +100,12 @@ broll/ace_s_143.mp4
 broll/ace_s_144.mp4
 broll/ace_s_145.mp4
 broll/ace_s_146.mp4
-broll/ace_s_147.mp4
 broll/ace_s_148.mp4
 broll/ace_s_150.mp4
 broll/ace_s_152.mp4
 broll/ace_s_153.mp4
 broll/ace_s_154.mp4
 broll/ace_s_155.mp4
-broll/ace_s_156.mp4
 broll/ace_s_157.mp4
 broll/ace_s_158.mp4
 broll/ace_s_159.mp4
@@ -153,6 +150,8 @@ img/ace_s_008_b.png
 img/ace_s_008_b_blur.jpg
 img/ace_s_009_b.png
 img/ace_s_009_b_blur.jpg
+img/ace_s_010.png
+img/ace_s_010_blur.jpg
 img/ace_s_010_b.png
 img/ace_s_010_b_blur.jpg
 img/ace_s_010_c.png
@@ -561,6 +560,8 @@ img/ace_s_145_b.png
 img/ace_s_145_b_blur.jpg
 img/ace_s_146_b.png
 img/ace_s_146_b_blur.jpg
+img/ace_s_147.png
+img/ace_s_147_blur.jpg
 img/ace_s_147_b.png
 img/ace_s_147_b_blur.jpg
 img/ace_s_148_b.png
@@ -589,6 +590,8 @@ img/ace_s_154_b.png
 img/ace_s_154_b_blur.jpg
 img/ace_s_155_b.png
 img/ace_s_155_b_blur.jpg
+img/ace_s_156.png
+img/ace_s_156_blur.jpg
 img/ace_s_156_b.png
 img/ace_s_156_b_blur.jpg
 img/ace_s_157_b.png
