@@ -94,6 +94,7 @@ import { MainSellador, TOTAL_FRAMES_SELLADOR } from "./VideoEdit/Main_sellador";
 import { MainAceite, TOTAL_FRAMES_ACEITE } from "./VideoEdit/Main_aceite";
 import { MainShou, TOTAL_FRAMES_SHOU } from "./VideoEdit/Main_shou";
 import { MainKitPreview, TOTAL_FRAMES_KIT } from "./VideoEdit/KitPreview";
+import { MainFedtrailer, TOTAL_FRAMES_FEDTRAILER } from "./VideoEdit/Main_fedtrailer";
 // import { MainCafe, TOTAL_FRAMES_CAFE } from "./VideoEdit/Main_cafe"; // untracked: rompe el farm
 // import { MainAmish, TOTAL_FRAMES_AMISH } from "./VideoEdit/Main_amish"; // untracked: rompe el farm
 
@@ -540,6 +541,8 @@ export const RemotionRoot: React.FC = () => {
       />
       {/* "20 Foods The Amish Never Refrigerated" · AVATAR Claudio (off-grid) · clips-first CORE v4 */}
       <Composition id="Foods" component={MainFoods} durationInFrames={TOTAL_FRAMES_FOODS} fps={30} width={1920} height={1080} />
+      {/* TRAILER cinematográfico "La Circulación" · Dr. Federer · 60s */}
+      <Composition id="FedererTrailer" component={MainFedtrailer} durationInFrames={TOTAL_FRAMES_FEDTRAILER} fps={30} width={1920} height={1080} />
     </>
   );
 };
