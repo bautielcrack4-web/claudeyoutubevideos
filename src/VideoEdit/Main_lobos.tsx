@@ -18,7 +18,7 @@ const clip = (n: string) => staticFile(`broll/${n}.mp4`);
 const aud = (n: string) => staticFile(`audio/${n}`);
 
 // ── Ken-Burns b-roll full (natural, cross-dissolve entry) ──────────────────
-const KB: React.FC<{ src: string; dur: number; kb?: number; avatar?: boolean; trim?: number }> = ({ src, dur, kb = 0, avatar, trim }) => {
+const KB: React.FC<{ src: string; dur: number; kb?: number; avatar?: boolean; trim?: number; fadeF?: number }> = ({ src, dur, kb = 0, avatar, trim, fadeF = 8 }) => {
   const f = useCurrentFrame();
   const p = interpolate(f, [0, dur], [0, 1], { extrapolateRight: "clamp" });
   const dir = kb % 4;
@@ -28,7 +28,7 @@ const KB: React.FC<{ src: string; dur: number; kb?: number; avatar?: boolean; tr
   if (dir === 2) scale = interpolate(p, [0, 1], [1.14, 1.05]);
   if (dir === 3) { scale = 1.12; tx = interpolate(p, [0, 1], [2.5, -2.5]); }
   if (avatar) scale = interpolate(p, [0, 1], [1.02, 1.08]); // push lento
-  const fade = interpolate(f, [0, 8], [0, 1], { extrapolateRight: "clamp" });
+  const fade = interpolate(f, [0, fadeF], [0, 1], { extrapolateRight: "clamp" });
   return (
     <AbsoluteFill style={{ backgroundColor: "#000", opacity: fade }}>
       <OffthreadVideo src={src} muted toneMapped={false} trimBefore={trim && trim > 0 ? trim : undefined}
@@ -153,6 +153,16 @@ function sfxEvents() {
 }
 const SFX_EV = sfxEvents();
 
+// fundido de entrada/salida para los componentes wow (que no entren/salgan de golpe)
+const CompFade: React.FC<{ dur: number; children: React.ReactNode }> = ({ dur, children }) => {
+  const f = useCurrentFrame();
+  const op = Math.min(
+    interpolate(f, [0, 16], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }),
+    interpolate(f, [dur - 16, dur], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })
+  );
+  return <AbsoluteFill style={{ opacity: op }}>{children}</AbsoluteFill>;
+};
+
 export const MainLobos: React.FC = () => {
   const f = useCurrentFrame();
   const compBeat = BEATS.find((b) => b.kind === "comp");
@@ -162,17 +172,19 @@ export const MainLobos: React.FC = () => {
     <AbsoluteFill style={{ backgroundColor: "#000", fontFamily: FONT }}>
       {/* VISUAL BEATS */}
       {BEATS.map((b, i) => (
-        <Sequence key={i} from={b.from} durationInFrames={b.dur + 8}>
+        <Sequence key={i} from={b.from} durationInFrames={b.dur + (b.trans === "diss" ? 16 : b.kind === "comp" ? 16 : 4)}>
           {b.kind === "avatar" ? (
-            <KB src={staticFile("lobos_opt.mp4")} dur={b.dur} avatar trim={b.from} />
+            <KB src={staticFile("lobos_opt.mp4")} dur={b.dur} avatar trim={b.from} fadeF={16} />
           ) : b.kind === "comp" ? (
-            b.comp === "timeline" ? <TravelingTimeline /> :
-            b.comp === "migration" ? <MigrationArc /> :
-            b.comp === "quote" ? <AuthorityQuote /> :
-            b.comp === "trophicweb" ? <TrophicWeb /> :
-            <Cascade dur={b.dur} />
+            <CompFade dur={b.dur}>
+              {b.comp === "timeline" ? <TravelingTimeline /> :
+               b.comp === "migration" ? <MigrationArc /> :
+               b.comp === "quote" ? <AuthorityQuote /> :
+               b.comp === "trophicweb" ? <TrophicWeb /> :
+               <Cascade dur={b.dur} />}
+            </CompFade>
           ) : (
-            <KB src={clip(b.src)} dur={b.dur} kb={i} />
+            <KB src={clip(b.src)} dur={b.dur} kb={i} fadeF={b.trans === "diss" ? 16 : 4} />
           )}
           {b.overlay?.type === "stat" && <StatTag value={b.overlay.value} label={b.overlay.label} dur={b.dur} />}
           {b.overlay?.type === "loc" && <LocationTag label={b.overlay.label} dur={b.dur} />}

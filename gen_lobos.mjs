@@ -86,25 +86,32 @@ function compFor(text) { for (const c of COMPS) if (c.re.test(text)) return c; r
 
 // ── construir beats ────────────────────────────────────────────────────────
 const use = {}; const inc = (n) => (use[n] = (use[n] || 0) + 1);
+const recent = []; // últimos clips usados → no repetir dentro de esta ventana
 function pick(pool, prev) {
-  let cands = POOLS[pool] && POOLS[pool].length ? POOLS[pool] : POOLS.default;
-  cands = cands.filter(n => n !== prev);
+  const base = POOLS[pool] && POOLS[pool].length ? POOLS[pool] : POOLS.default;
+  let cands = base.filter(n => n !== prev && !recent.includes(n));
+  if (!cands.length) cands = base.filter(n => n !== prev);      // relajar recencia
+  if (!cands.length) cands = POOLS.default.filter(n => n !== prev);
   if (!cands.length) cands = POOLS.default;
   cands.sort((a, b) => (use[a] || 0) - (use[b] || 0));
   const min = use[cands[0]] || 0;
   const top = cands.filter(n => (use[n] || 0) <= min + 1);
-  return top[Math.floor((top.length) * ((use._n = (use._n || 0) + 0.61803) % 1))]; // jitter determinista
+  const chosen = top[Math.floor((top.length) * ((use._n = (use._n || 0) + 0.61803) % 1))];
+  recent.push(chosen); if (recent.length > 26) recent.shift(); // ~1.5-2 min sin repetir
+  return chosen;
 }
 
+// plan de re-match frase→clip (agentes Haiku); honra el match, gen hace fallback si falta
+let PLAN = {}; try { PLAN = JSON.parse(fs.readFileSync("_v3/plan_lobos.json", "utf8")); } catch { }
 const beats = [];
-let prev = null;
+let prev = null; let lastScene = null;
 for (let i = 0; i < sents.length; i++) {
   const s = sents[i];
   const startMs = s.startMs, endMs = (sents[i + 1]?.startMs ?? s.endMs);
   const durF = Math.max(12, S(endMs) - S(startMs));
   const comp = compFor(s.text);
   const overlay = overlayFor(s.text);
-  const isAvatar = AV_TRIG.test(s.text) || (i > 3 && i % 9 === 4 && !comp); // cadencia ~cada 9 oraciones
+  const isAvatar = AV_TRIG.test(s.text) || (i > 3 && i % 6 === 3 && !comp); // avatar más seguido (~cada 6)
   if (comp) {
     beats.push({ from: S(startMs), dur: comp.hold, kind: "comp", comp: comp.comp, overlay: null, text: s.text.slice(0, 60) });
     // saltear las oraciones que el componente cubre (no rellenar b-roll debajo)
@@ -112,15 +119,23 @@ for (let i = 0; i < sents.length; i++) {
     while (j + 1 < sents.length && sents[j + 1].startMs < startMs + holdMs) j++;
     i = j; continue;
   } else if (isAvatar) {
-    beats.push({ from: S(startMs), dur: durF, kind: "avatar", overlay, text: s.text.slice(0, 60) });
+    beats.push({ from: S(startMs), dur: durF, kind: "avatar", trans: "diss", overlay, text: s.text.slice(0, 60) });
+    lastScene = "avatar";
   } else {
     const pool = poolFor(s.text);
-    // partir oraciones largas: cada toma ≤~3.8s (evita cortes internos del clip + más dinámico)
+    // dissolve SOLO al cambiar de escena/tema; corte duro DENTRO de la misma escena
+    const sceneChange = pool !== lastScene; lastScene = pool;
     const parts = Math.max(1, Math.ceil(durF / S(3800)));
     const seg = Math.floor(durF / parts);
+    const planned = PLAN[i] && have.has(PLAN[i]) && !BLOCK.has(PLAN[i]) ? PLAN[i] : null; // clip del re-match (excluye bloqueados)
     for (let p = 0; p < parts; p++) {
-      const src = pick(pool, prev); inc(src); prev = src;
-      beats.push({ from: S(startMs) + p * seg, dur: p === parts - 1 ? durF - seg * p : seg, kind: "broll", src, pool, overlay: p === 0 ? overlay : null, text: s.text.slice(0, 50) });
+      let src;
+      if (p === 0 && planned && planned !== prev) { src = planned; recent.push(src); if (recent.length > 26) recent.shift(); }
+      else { src = pick(pool, prev); }
+      inc(src); prev = src;
+      // dissolve SOLO en paisaje/escenas lentas al cambiar; la ACCIÓN (lobos/caza/ciervos) = corte duro
+      const trans = (p === 0 && sceneChange && ["land", "forest", "snow", "river", "beaver"].includes(pool)) ? "diss" : "cut";
+      beats.push({ from: S(startMs) + p * seg, dur: p === parts - 1 ? durF - seg * p : seg, kind: "broll", src, pool, trans, overlay: p === 0 ? overlay : null, text: s.text.slice(0, 50) });
     }
   }
 }
