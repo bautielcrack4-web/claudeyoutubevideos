@@ -58,6 +58,19 @@
    "dur": 4.74
   },
   {
+   "id": "ov_framedphoto_24",
+   "start": 24.09,
+   "dur": 6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "FramedPhoto",
+   "theme": "earth",
+   "zone": "full",
+   "image": "img/rest_c1.png",
+   "caption": "El juego de madera de Don Aldo",
+   "sub": "se lo construyó a sus nietos, tabla por tabla"
+  },
+  {
    "id": "rst_s_04_b",
    "start": 26.6,
    "kind": "raw",
@@ -220,6 +233,19 @@
    "dur": 3.01
   },
   {
+   "id": "ov_framedphoto_95",
+   "start": 94.52,
+   "dur": 5.8,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "FramedPhoto",
+   "theme": "earth",
+   "zone": "full",
+   "image": "img/rest_c2.png",
+   "caption": "Bajo el gris, la madera sana",
+   "sub": "la cáscara muerta es un milímetro de nada"
+  },
+  {
    "id": "rst_s_14",
    "start": 96.53,
    "kind": "raw",
@@ -335,6 +361,19 @@
    "beforeImage": "img/rst_s_04.png",
    "afterImage": "img/rst_s_18.png",
    "caption": "De la basura a como nuevo"
+  },
+  {
+   "id": "ov_framedphoto_129",
+   "start": 129.44,
+   "dur": 6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "FramedPhoto",
+   "theme": "earth",
+   "zone": "full",
+   "image": "img/rest_c5.png",
+   "caption": "La misma madera, restaurada",
+   "sub": "sin lijar horas, sin cambiar una tabla"
   },
   {
    "id": "rst_s_18_b",
@@ -619,6 +658,42 @@
    "support": "una capa finita — no es la madera, es la superficie que quemó el sol"
   },
   {
+   "id": "ov_cutawaycallouts_227",
+   "start": 227.12,
+   "dur": 6.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "CutawayCallouts",
+   "theme": "earth",
+   "zone": "full",
+   "image": "img/rest_c6.png",
+   "eyebrow": "La madera por fuera",
+   "title": "Por qué se pone gris",
+   "callouts": [
+    {
+     "text": "El sol rompe la lignina",
+     "sub": "la que pega las fibras",
+     "tx": 0.3,
+     "ty": 0.32,
+     "side": "left"
+    },
+    {
+     "text": "Las fibras se sueltan",
+     "sub": "y la lluvia las lava",
+     "tx": 0.68,
+     "ty": 0.4,
+     "side": "right"
+    },
+    {
+     "text": "Queda la capa gris muerta",
+     "sub": "menos de 1 mm",
+     "tx": 0.5,
+     "ty": 0.78,
+     "side": "left"
+    }
+   ]
+  },
+  {
    "id": "rst_s_32",
    "start": 229.67,
    "kind": "raw",
@@ -761,6 +836,34 @@
    "dur": 4.64
   },
   {
+   "id": "ov_bulletcascade_267",
+   "start": 266.88,
+   "dur": 5.8,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BulletCascade",
+   "theme": "earth",
+   "zone": "top",
+   "eyebrow": "Madera gris ≠ madera para tirar",
+   "bullets": [
+    {
+     "pre": "No está ",
+     "key": "podrida",
+     "post": ", solo gris en la superficie"
+    },
+    {
+     "pre": "La capa muerta es ",
+     "key": "un milímetro",
+     "post": " de nada"
+    },
+    {
+     "pre": "Abajo hay ",
+     "key": "años de vida",
+     "post": " todavía"
+    }
+   ]
+  },
+  {
    "id": "rst_s_37_b",
    "start": 270.54,
    "kind": "raw",
@@ -845,6 +948,19 @@
    "highlight": "apretá un destornillador contra la madera",
    "post": "en las zonas más sospechosas.",
    "note": "la prueba de los 10 segundos"
+  },
+  {
+   "id": "ov_floatingcutout_296",
+   "start": 296.32,
+   "dur": 5.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "FloatingCutout",
+   "theme": "earth",
+   "zone": "full",
+   "image": "img/rest_c4.png",
+   "label": "La prueba del destornillador",
+   "sub": "si se hunde como corcho hay pudrición; si está firme, se recupera"
   },
   {
    "id": "rst_s_41_b",
@@ -992,6 +1108,35 @@
    "dur": 3.19
   },
   {
+   "id": "ov_flowsteps_346",
+   "start": 346.4,
+   "dur": 6.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "FlowSteps",
+   "theme": "earth",
+   "zone": "full",
+   "title": "De gris a nueva, sin lijar",
+   "nodes": [
+    {
+     "label": "Mojar",
+     "sub": "percarbonato en agua"
+    },
+    {
+     "label": "Dejar actuar",
+     "sub": "levanta el gris solo"
+    },
+    {
+     "label": "Cepillar",
+     "sub": "sale la fibra muerta"
+    },
+    {
+     "label": "Enjuagar y aceitar",
+     "sub": "vuelve el color"
+    }
+   ]
+  },
+  {
    "id": "rst_s_48",
    "start": 347.57,
    "kind": "raw",
@@ -1017,6 +1162,37 @@
    "hue": "amber",
    "darken": 0,
    "dur": 4.84
+  },
+  {
+   "id": "ov_duelcolumns_355",
+   "start": 355.08,
+   "dur": 6.2,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "DuelColumns",
+   "theme": "earth",
+   "zone": "left",
+   "title": "¿Lijar o percarbonato?",
+   "leftName": "Lijadora",
+   "rightName": "Percarbonato",
+   "rows": [
+    {
+     "attr": "Llega a rincones y molduras",
+     "leftWins": false
+    },
+    {
+     "attr": "Sin horas de esfuerzo ni polvo",
+     "leftWins": false
+    },
+    {
+     "attr": "Resultado parejo",
+     "leftWins": false
+    },
+    {
+     "attr": "No desgasta la madera buena",
+     "leftWins": false
+    }
+   ]
   },
   {
    "id": "rst_s_49_b",
@@ -1162,6 +1338,25 @@
    "hue": "amber",
    "darken": 0,
    "dur": 3.51
+  },
+  {
+   "id": "ov_splitpanel_406",
+   "start": 405.84,
+   "dur": 6.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "SplitPanel",
+   "theme": "earth",
+   "zone": "full",
+   "image": "img/rest_c3.png",
+   "eyebrow": "El ingrediente que casi nadie usa",
+   "title": "Percarbonato de sodio",
+   "bullets": [
+    "Está en los quitamanchas 'oxígeno activo'",
+    "Baratísimo y sin olor fuerte",
+    "No es tóxico como la lavandina",
+    "Levanta el gris sin lijar"
+   ]
   },
   {
    "id": "rst_s_56",

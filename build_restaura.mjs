@@ -338,6 +338,58 @@ const PREMIUM = [
   P("HighlightSweep", "que casi nadie te nombra porque cuesta monedas y no le deja ganancia a nadie te va a sorprender no te lo pierdas acordate", 5.8, "top", {
     pre: "Lo que se viene", highlight: "cuesta monedas y no le deja ganancia a nadie contarlo", post: "— no te lo pierdas.", note: "en el próximo video",
   }, 6),
+
+  // ══ COMPONENTES NUEVOS (foto+texto+blur full-screen + variedad pro) ══
+  P("FramedPhoto", "tenia en el fondo de la casa un juego de madera", 6.0, "full", {
+    image: "img/rest_c1.png", caption: "El juego de madera de Don Aldo", sub: "se lo construyó a sus nietos, tabla por tabla",
+  }, 8),
+  P("FramedPhoto", "en una tabla raspe apenas la superficie gris", 5.8, "full", {
+    image: "img/rest_c2.png", caption: "Bajo el gris, la madera sana", sub: "la cáscara muerta es un milímetro de nada",
+  }, 8),
+  P("CutawayCallouts", "los rayos del sol los ultravioletas van rompiendo", 6.6, "full", {
+    image: "img/rest_c6.png", eyebrow: "La madera por fuera", title: "Por qué se pone gris",
+    callouts: [
+      { text: "El sol rompe la lignina", sub: "la que pega las fibras", tx: 0.3, ty: 0.32, side: "left" },
+      { text: "Las fibras se sueltan", sub: "y la lluvia las lava", tx: 0.68, ty: 0.4, side: "right" },
+      { text: "Queda la capa gris muerta", sub: "menos de 1 mm", tx: 0.5, ty: 0.78, side: "left" },
+    ],
+  }, 8),
+  P("BulletCascade", "no esta para tirar esta para recuperar tiene", 5.8, "top", {
+    eyebrow: "Madera gris ≠ madera para tirar",
+    bullets: [
+      { pre: "No está ", key: "podrida", post: ", solo gris en la superficie" },
+      { pre: "La capa muerta es ", key: "un milímetro", post: " de nada" },
+      { pre: "Abajo hay ", key: "años de vida", post: " todavía" },
+    ],
+  }, 8),
+  P("FloatingCutout", "agarras un destornillador o una llave y apretas", 5.6, "full", {
+    image: "img/rest_c4.png", label: "La prueba del destornillador", sub: "si se hunde como corcho hay pudrición; si está firme, se recupera",
+  }, 8),
+  P("FlowSteps", "como sacar esa capa muerta y devolverle la", 6.6, "full", {
+    title: "De gris a nueva, sin lijar",
+    nodes: [
+      { label: "Mojar", sub: "percarbonato en agua" },
+      { label: "Dejar actuar", sub: "levanta el gris solo" },
+      { label: "Cepillar", sub: "sale la fibra muerta" },
+      { label: "Enjuagar y aceitar", sub: "vuelve el color" },
+    ],
+  }, 8),
+  P("DuelColumns", "lo primero que hace la gente cuando quiere", 6.2, "left", {
+    title: "¿Lijar o percarbonato?", leftName: "Lijadora", rightName: "Percarbonato",
+    rows: [
+      { attr: "Llega a rincones y molduras", leftWins: false },
+      { attr: "Sin horas de esfuerzo ni polvo", leftWins: false },
+      { attr: "Resultado parejo", leftWins: false },
+      { attr: "No desgasta la madera buena", leftWins: false },
+    ],
+  }, 8),
+  P("SplitPanel", "el percarbonato de sodio el percarbonato es lo", 6.6, "full", {
+    image: "img/rest_c3.png", eyebrow: "El ingrediente que casi nadie usa", title: "Percarbonato de sodio",
+    bullets: ["Está en los quitamanchas 'oxígeno activo'", "Baratísimo y sin olor fuerte", "No es tóxico como la lavandina", "Levanta el gris sin lijar"],
+  }, 8),
+  P("FramedPhoto", "volvio a la vida volvio a tener el color", 6.0, "full", {
+    image: "img/rest_c5.png", caption: "La misma madera, restaurada", sub: "sin lijar horas, sin cambiar una tabla",
+  }, 8),
 ];
 
 // ── ensamblar beats final: raw + premium overlays anclados a su phrase real ──
@@ -379,7 +431,7 @@ fs.writeFileSync(`beatsheet/${SLUG}.json`, JSON.stringify({ video: SLUG, avatar:
 // (`hidden`, el b-roll/componente manda full). Alterna: full en el hook + slots de ~6s
 // cada ~55s ubicados en huecos SIN componente (para no tapar overlays), snapeados al
 // inicio de palabra real. `hidden` el resto.
-const HOOK_END = 9, PERIOD = 55, SLOT = 6, SEARCH = 26;
+const HOOK_END = 9, PERIOD = 20, SLOT = 4, SEARCH = 15;
 const comps = beats.filter((b) => b.kind === "premium").map((b) => [b.start, b.start + (b.dur || 3)]);
 const overlapsComp = (a, b) => comps.some(([s, e]) => a < e && b > s);
 const snapWord = (tt) => { for (const c of caps) if (c.startMs / 1000 >= tt - 0.05) return c.startMs / 1000; return tt; };
@@ -387,7 +439,7 @@ const fulls = [[0, snapWord(HOOK_END)]];
 for (let target = HOOK_END + PERIOD; target < TOTAL - 12; target += PERIOD) {
   for (let t = target; t < target + SEARCH; t += 0.5) {
     const s = snapWord(t), e = snapWord(s + SLOT);
-    if (e - s >= 4 && e - s <= 9 && !overlapsComp(s, e)) { fulls.push([s, e]); break; }
+    if (e - s >= 3 && e - s <= 6 && !overlapsComp(s, e)) { fulls.push([s, e]); break; }
   }
 }
 const csw = snapWord(TOTAL - 8);
