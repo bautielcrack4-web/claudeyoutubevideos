@@ -7,7 +7,7 @@
   {
    "id": "c_darvaza_stat",
    "start": 0,
-   "dur": 12.42,
+   "dur": 5.4,
    "kind": "numcard",
    "hue": "amber",
    "number": "55",
@@ -37,7 +37,7 @@
   },
   {
    "id": "hook_3",
-   "start": 19.04,
+   "start": 19.34,
    "kind": "raw",
    "src": "img/hook_darvaza3.png",
    "hue": "amber",
@@ -47,11 +47,11 @@
     "name": "hook_darvaza3",
     "prompt": "Realistic documentary photo, 16:9. Extreme close-up of fire and flames glowing deep inside a circular crater in the desert at night. Natural daylight, slightly imperfect handheld framing, muted colors, authentic travel-documentary look, no text, no watermark, no people looking at camera."
    },
-   "dur": 3.7
+   "dur": 3.4
   },
   {
    "id": "intro_1",
-   "start": 22.44,
+   "start": 22.74,
    "kind": "raw",
    "src": "img/intro_mapa1.png",
    "hue": "amber",
@@ -61,11 +61,11 @@
     "name": "intro_mapa1",
     "prompt": "Realistic documentary photo, 16:9. An old weathered hand-drawn map on a wooden desk, vintage ink annotations, warm lamp light, close up. Natural daylight, slightly imperfect handheld framing, muted colors, authentic travel-documentary look, no text, no watermark, no people looking at camera."
    },
-   "dur": 5.2
+   "dur": 4.9
   },
   {
    "id": "intro_2",
-   "start": 27.34,
+   "start": 27.64,
    "kind": "raw",
    "src": "img/intro_mapa2.png",
    "hue": "amber",
@@ -75,11 +75,11 @@
     "name": "intro_mapa2",
     "prompt": "Realistic documentary photo, 16:9. Close up of handwritten notes and circles in ink on an antique paper map. Natural daylight, slightly imperfect handheld framing, muted colors, authentic travel-documentary look, no text, no watermark, no people looking at camera."
    },
-   "dur": 7.28
+   "dur": 6.98
   },
   {
    "id": "intro_3",
-   "start": 34.32,
+   "start": 34.62,
    "kind": "raw",
    "src": "img/intro_mundo.png",
    "hue": "amber",
@@ -89,11 +89,11 @@
     "name": "intro_mundo",
     "prompt": "Realistic documentary photo, 16:9. A vintage style world map with several pinned locations and a red route line connecting them. Natural daylight, slightly imperfect handheld framing, muted colors, authentic travel-documentary look, no text, no watermark, no people looking at camera."
    },
-   "dur": 11.82
+   "dur": 11.52
   },
   {
    "id": "richat_1",
-   "start": 45.84,
+   "start": 46.14,
    "kind": "raw",
    "src": "img/richat_1.png",
    "hue": "amber",
@@ -103,12 +103,12 @@
     "name": "richat_1",
     "prompt": "Realistic documentary photo, 16:9. Vast golden Sahara desert sand dunes from above, endless and empty. Natural daylight, slightly imperfect handheld framing, muted colors, authentic travel-documentary look, no text, no watermark, no people looking at camera."
    },
-   "dur": 3.38
+   "dur": 3.08
   },
   {
    "id": "c_richat_map",
-   "start": 48.92,
-   "dur": 3.38,
+   "start": 49.22,
+   "dur": 6,
    "kind": "mapzoom",
    "hue": "amber",
    "image": "img/richat_2.png",
@@ -125,8 +125,8 @@
   },
   {
    "id": "c_richat_stat",
-   "start": 52.3,
-   "dur": 8.08,
+   "start": 55.22,
+   "dur": 5.2,
    "kind": "numcard",
    "hue": "amber",
    "number": "100",
@@ -137,7 +137,7 @@
   },
   {
    "id": "richat_4",
-   "start": 60.38,
+   "start": 60.42,
    "kind": "raw",
    "src": "img/richat_4.png",
    "hue": "amber",
@@ -147,11 +147,11 @@
     "name": "richat_4",
     "prompt": "Realistic documentary photo, 16:9. Close up of exposed layered rock strata eroded in a desert landscape. Natural daylight, slightly imperfect handheld framing, muted colors, authentic travel-documentary look, no text, no watermark, no people looking at camera."
    },
-   "dur": 16.74
+   "dur": 16.7
   },
   {
    "id": "stonehenge_1",
-   "start": 76.82,
+   "start": 77.12,
    "kind": "raw",
    "src": "img/stonehenge_1.png",
    "hue": "amber",
@@ -161,11 +161,11 @@
     "name": "stonehenge_1",
     "prompt": "Realistic documentary photo, 16:9. Stonehenge megalithic stone circle in England at sunrise, dramatic sky. Natural daylight, slightly imperfect handheld framing, muted colors, authentic travel-documentary look, no text, no watermark, no people looking at camera."
    },
-   "dur": 4.32
+   "dur": 4.02
   },
   {
    "id": "stonehenge_2",
-   "start": 80.84,
+   "start": 81.14,
    "kind": "raw",
    "src": "img/stonehenge_2.png",
    "hue": "amber",
@@ -175,12 +175,12 @@
     "name": "stonehenge_2",
     "prompt": "Realistic documentary photo, 16:9. Massive gray standing stones close up, weathered texture, English countryside. Natural daylight, slightly imperfect handheld framing, muted colors, authentic travel-documentary look, no text, no watermark, no people looking at camera."
    },
-   "dur": 2.96
+   "dur": 2.66
   },
   {
    "id": "c_stonehenge_bars",
-   "start": 83.5,
-   "dur": 14.08,
+   "start": 83.8,
+   "dur": 6.4,
    "kind": "bars",
    "hue": "amber",
    "title": "Cómo movieron piedras de varias toneladas",
@@ -221,7 +221,7 @@
   },
   {
    "id": "zimbabue_1",
-   "start": 105.66,
+   "start": 105.96,
    "kind": "raw",
    "src": "img/zimbabue_1.png",
    "hue": "blue",
@@ -231,12 +231,12 @@
     "name": "zimbabue_1",
     "prompt": "Realistic documentary photo, 16:9. Great Zimbabwe stone ruins, massive dry-stacked granite walls, aerial view, African savanna. Natural daylight, slightly imperfect handheld framing, muted colors, authentic travel-documentary look, no text, no watermark, no people looking at camera."
    },
-   "dur": 9.74
+   "dur": 9.44
   },
   {
    "id": "c_zimbabue_vs",
-   "start": 115.1,
-   "dur": 19.12,
+   "start": 115.4,
+   "dur": 6.2,
    "kind": "vs",
    "hue": "blue",
    "title": "Sin una gota de mortero",
@@ -270,8 +270,8 @@
   },
   {
    "id": "c_nazca_num",
-   "start": 146.6,
-   "dur": 7.04,
+   "start": 146.9,
+   "dur": 5.6,
    "kind": "numcard",
    "hue": "amber",
    "number": "300",
@@ -283,7 +283,7 @@
   {
    "id": "c_nazca_checklist",
    "start": 153.64,
-   "dur": 9.94,
+   "dur": 5.6,
    "kind": "checklist",
    "hue": "amber",
    "title": "Las figuras de Nazca",
@@ -307,7 +307,7 @@
   {
    "id": "c_nazca_quote",
    "start": 163.58,
-   "dur": 11.48,
+   "dur": 5.8,
    "kind": "quote",
    "hue": "amber",
    "image": "img/nazca_3.png",
@@ -319,7 +319,7 @@
   {
    "id": "c_atacama_num",
    "start": 175.06,
-   "dur": 19.64,
+   "dur": 5.4,
    "kind": "numcard",
    "hue": "amber",
    "number": "1000+",
@@ -349,7 +349,7 @@
   },
   {
    "id": "gobekli_1",
-   "start": 200.44,
+   "start": 200.74,
    "kind": "raw",
    "src": "img/gobekli_1.png",
    "hue": "amber",
@@ -359,12 +359,12 @@
     "name": "gobekli_1",
     "prompt": "Realistic documentary photo, 16:9. Gobekli Tepe ancient stone pillar site in Turkey, circular arrangement of carved megaliths. Natural daylight, slightly imperfect handheld framing, muted colors, authentic travel-documentary look, no text, no watermark, no people looking at camera."
    },
-   "dur": 8.26
+   "dur": 7.96
   },
   {
    "id": "c_gobekli_bars",
-   "start": 208.4,
-   "dur": 16.9,
+   "start": 208.7,
+   "dur": 6.6,
    "kind": "bars",
    "hue": "amber",
    "title": "Qué es más viejo que Göbekli Tepe",
@@ -405,8 +405,8 @@
   },
   {
    "id": "c_newgrange_num",
-   "start": 234.82,
-   "dur": 14.54,
+   "start": 235.12,
+   "dur": 5.4,
    "kind": "numcard",
    "hue": "cold",
    "number": "5000",
@@ -423,7 +423,7 @@
   {
    "id": "c_newgrange_aged",
    "start": 249.36,
-   "dur": 15.48,
+   "dur": 6.6,
    "kind": "aged",
    "hue": "cold",
    "heading": "Newgrange, Irlanda",
@@ -463,7 +463,7 @@
   },
   {
    "id": "silbury_1",
-   "start": 280.48,
+   "start": 280.78,
    "kind": "raw",
    "src": "img/silbury_1.png",
    "hue": "blue",
@@ -473,11 +473,11 @@
     "name": "silbury_1",
     "prompt": "Realistic documentary photo, 16:9. Silbury Hill, a large grassy artificial mound rising from the English countryside, aerial view. Natural daylight, slightly imperfect handheld framing, muted colors, authentic travel-documentary look, no text, no watermark, no people looking at camera."
    },
-   "dur": 18.66
+   "dur": 18.36
   },
   {
    "id": "rehook_1",
-   "start": 298.84,
+   "start": 299.14,
    "kind": "raw",
    "src": "img/rehook_1.png",
    "hue": "amber",
@@ -487,11 +487,11 @@
     "name": "rehook_1",
     "prompt": "Realistic documentary photo, 16:9. A hand tracing a route with a finger across an old paper map covered in pins. Natural daylight, slightly imperfect handheld framing, muted colors, authentic travel-documentary look, no text, no watermark, no people looking at camera."
    },
-   "dur": 18.78
+   "dur": 18.48
   },
   {
    "id": "derinkuyu_1",
-   "start": 317.32,
+   "start": 317.62,
    "kind": "raw",
    "src": "img/derinkuyu_1.png",
    "hue": "amber",
@@ -501,12 +501,12 @@
     "name": "derinkuyu_1",
     "prompt": "Realistic documentary photo, 16:9. Derinkuyu underground city, carved tunnels and rock chambers descending into darkness, Cappadocia Turkey. Natural daylight, slightly imperfect handheld framing, muted colors, authentic travel-documentary look, no text, no watermark, no people looking at camera."
    },
-   "dur": 12.26
+   "dur": 11.96
   },
   {
    "id": "c_derinkuyu_process",
-   "start": 329.28,
-   "dur": 6.34,
+   "start": 329.58,
+   "dur": 7.2,
    "kind": "process",
    "hue": "amber",
    "title": "Derinkuyu, ciudad bajo tierra",
@@ -532,8 +532,8 @@
   },
   {
    "id": "c_derinkuyu_quote",
-   "start": 335.62,
-   "dur": 12.64,
+   "start": 336.78,
+   "dur": 5,
    "kind": "quote",
    "hue": "amber",
    "image": "img/derinkuyu_3.png",
@@ -563,8 +563,8 @@
   },
   {
    "id": "c_pumapunku_vs",
-   "start": 352.94,
-   "dur": 16.02,
+   "start": 353.24,
+   "dur": 6,
    "kind": "vs",
    "hue": "cold",
    "title": "Precisión imposible",
@@ -598,7 +598,7 @@
   },
   {
    "id": "machupicchu_1",
-   "start": 374.4,
+   "start": 374.7,
    "kind": "raw",
    "src": "img/machupicchu_1.png",
    "hue": "blue",
@@ -608,12 +608,12 @@
     "name": "machupicchu_1",
     "prompt": "Realistic documentary photo, 16:9. Machu Picchu Inca citadel among green misty mountains at sunrise, wide aerial view. Natural daylight, slightly imperfect handheld framing, muted colors, authentic travel-documentary look, no text, no watermark, no people looking at camera."
    },
-   "dur": 10.78
+   "dur": 10.48
   },
   {
    "id": "c_machupicchu_num",
-   "start": 384.88,
-   "dur": 7.68,
+   "start": 385.18,
+   "dur": 5.4,
    "kind": "numcard",
    "hue": "blue",
    "number": "0",
@@ -638,7 +638,7 @@
   },
   {
    "id": "sacsayhuaman_1",
-   "start": 399.46,
+   "start": 399.76,
    "kind": "raw",
    "src": "img/sacsayhuaman_1.png",
    "hue": "blue",
@@ -648,12 +648,12 @@
     "name": "sacsayhuaman_1",
     "prompt": "Realistic documentary photo, 16:9. Sacsayhuaman massive zigzag stone walls made of huge fitted boulders, Cusco Peru. Natural daylight, slightly imperfect handheld framing, muted colors, authentic travel-documentary look, no text, no watermark, no people looking at camera."
    },
-   "dur": 4
+   "dur": 3.7
   },
   {
    "id": "c_sacsayhuaman_num",
-   "start": 403.16,
-   "dur": 12.3,
+   "start": 403.46,
+   "dur": 5.6,
    "kind": "numcard",
    "hue": "blue",
    "number": "100+",
@@ -665,7 +665,7 @@
   {
    "id": "c_tiwanaku_map",
    "start": 415.46,
-   "dur": 21.1,
+   "dur": 5.8,
    "kind": "mapzoom",
    "hue": "cold",
    "image": "img/tiwanaku_1.png",
@@ -696,8 +696,8 @@
   },
   {
    "id": "c_yonaguni_vs",
-   "start": 450.3,
-   "dur": 10.4,
+   "start": 450.6,
+   "dur": 6.4,
    "kind": "vs",
    "hue": "cold",
    "title": "¿Natural o construido?",
@@ -718,7 +718,7 @@
   {
    "id": "c_bimini_aged",
    "start": 460.7,
-   "dur": 14.86,
+   "dur": 6,
    "kind": "aged",
    "hue": "cold",
    "heading": "Camino de Bimini, Bahamas",
@@ -758,8 +758,8 @@
   },
   {
    "id": "c_bermuda_stat",
-   "start": 486.24,
-   "dur": 16.82,
+   "start": 486.54,
+   "dur": 5.8,
    "kind": "stat",
    "hue": "cold",
    "value": 0,
@@ -772,7 +772,7 @@
   {
    "id": "c_baltico_map",
    "start": 503.06,
-   "dur": 22.76,
+   "dur": 5.8,
    "kind": "mapzoom",
    "hue": "cold",
    "image": "img/baltico_1.png",
@@ -803,8 +803,8 @@
   },
   {
    "id": "c_pascua_chips",
-   "start": 536.82,
-   "dur": 6.72,
+   "start": 537.12,
+   "dur": 5.6,
    "kind": "chips",
    "hue": "amber",
    "bg": "image",
@@ -837,8 +837,8 @@
   },
   {
    "id": "c_malta_bars",
-   "start": 559.5,
-   "dur": 24.92,
+   "start": 559.8,
+   "dur": 6,
    "kind": "bars",
    "hue": "amber",
    "title": "Más viejos que las pirámides",
@@ -867,7 +867,7 @@
   {
    "id": "c_nanmadol_chips",
    "start": 584.42,
-   "dur": 24.4,
+   "dur": 5.6,
    "kind": "chips",
    "hue": "blue",
    "bg": "image",
@@ -887,7 +887,7 @@
   {
    "id": "c_skarabrae_quote",
    "start": 608.82,
-   "dur": 28.42,
+   "dur": 5.8,
    "kind": "quote",
    "hue": "cold",
    "image": "img/skarabrae_1.png",
@@ -917,8 +917,8 @@
   },
   {
    "id": "c_asia_split",
-   "start": 662.32,
-   "dur": 14.86,
+   "start": 662.62,
+   "dur": 6.4,
    "kind": "splitlist",
    "hue": "amber",
    "title": "Tres sitios, un mismo misterio",
@@ -945,7 +945,7 @@
   },
   {
    "id": "rehook_2",
-   "start": 694.2,
+   "start": 694.5,
    "kind": "raw",
    "src": "img/rehook_2.png",
    "hue": "blue",
@@ -955,11 +955,11 @@
     "name": "rehook_2",
     "prompt": "Realistic documentary photo, 16:9. A dense green jungle canopy seen from above with mist rising between the trees. Natural daylight, slightly imperfect handheld framing, muted colors, authentic travel-documentary look, no text, no watermark, no people looking at camera."
    },
-   "dur": 8.22
+   "dur": 7.92
   },
   {
    "id": "angkor_1",
-   "start": 702.12,
+   "start": 702.42,
    "kind": "raw",
    "src": "img/angkor_1.png",
    "hue": "blue",
@@ -969,12 +969,12 @@
     "name": "angkor_1",
     "prompt": "Realistic documentary photo, 16:9. Angkor temple ruins in Cambodia covered by giant tree roots growing over the stone walls, jungle. Natural daylight, slightly imperfect handheld framing, muted colors, authentic travel-documentary look, no text, no watermark, no people looking at camera."
    },
-   "dur": 4.28
+   "dur": 3.98
   },
   {
    "id": "c_angkor_process",
-   "start": 706.1,
-   "dur": 20.04,
+   "start": 706.4,
+   "dur": 6.6,
    "kind": "process",
    "hue": "blue",
    "title": "Cómo la selva se comió Angkor",
@@ -1006,7 +1006,7 @@
   {
    "id": "c_angkor_quote",
    "start": 726.14,
-   "dur": 4.68,
+   "dur": 5.4,
    "kind": "quote",
    "hue": "blue",
    "image": "img/angkor_3.png",
@@ -1022,8 +1022,8 @@
   },
   {
    "id": "c_cierre_journey",
-   "start": 730.82,
-   "dur": 7.16,
+   "start": 731.54,
+   "dur": 7,
    "kind": "journey",
    "hue": "blue",
    "dark": true,
@@ -1059,7 +1059,7 @@
   },
   {
    "id": "close_hook_darvaza1",
-   "start": 737.98,
+   "start": 738.54,
    "dur": 1.3,
    "kind": "raw",
    "src": "img/hook_darvaza1.png",
@@ -1069,7 +1069,7 @@
   },
   {
    "id": "close_stonehenge_1",
-   "start": 739.28,
+   "start": 739.84,
    "dur": 1.3,
    "kind": "raw",
    "src": "img/stonehenge_1.png",
@@ -1079,7 +1079,7 @@
   },
   {
    "id": "close_nazca_1",
-   "start": 740.58,
+   "start": 741.14,
    "dur": 1.3,
    "kind": "raw",
    "src": "img/nazca_1.png",
@@ -1089,7 +1089,7 @@
   },
   {
    "id": "close_machupicchu_1",
-   "start": 741.88,
+   "start": 742.44,
    "dur": 1.3,
    "kind": "raw",
    "src": "img/machupicchu_1.png",
@@ -1099,7 +1099,7 @@
   },
   {
    "id": "close_angkor_1",
-   "start": 743.18,
+   "start": 743.74,
    "dur": 1.3,
    "kind": "raw",
    "src": "img/angkor_1.png",
@@ -1109,8 +1109,8 @@
   },
   {
    "id": "close_card",
-   "start": 744.48,
-   "dur": 4.5,
+   "start": 745.04,
+   "dur": 3.94,
    "kind": "headline",
    "hue": "amber",
    "bg": "image",

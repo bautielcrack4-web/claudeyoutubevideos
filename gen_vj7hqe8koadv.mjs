@@ -219,18 +219,34 @@ const rawFiltered = rawBeats.filter((r) => !compRanges.some(([s, e]) => r.start 
 // (más simple y seguro: descartar raw cuyo START cae DENTRO de un rango de componente)
 const rawFinal = rawBeats.filter((r) => !compRanges.some(([s, e]) => r.start >= s - 0.05 && r.start < e - 0.05));
 
-// re-tiling: recalcular dur del raw anterior al componente para que llegue justo hasta el componente
+// re-tiling: los RAW se auto-tilean para llegar justo hasta el próximo beat (como antes).
+// ★ FIX (bug detectado por el AUDITOR): los COMPONENTES NUNCA estiran su dur — se
+// quedaban en pantalla decenas de segundos de más (hasta el próximo beat sobreviviente),
+// desincronizados de la narración que ya había avanzado a otro sitio. Ahora cada comp
+// dura EXACTO lo que se lo authoreó, y el cursor avanza en serie: si el beat siguiente
+// (raw o comp) estaba anclado ANTES de que el actual termine, se corre apenas al frente
+// (J-cut leve, nunca atrás) — nunca se pisan dos planos ni queda un componente clavado.
 const timeline = [...rawFinal.map((r) => ({ ...r, _t: "raw" })), ...compBeats.map((c) => ({ ...c, _t: "comp" }))].sort((a, b) => a.start - b.start);
-for (let i = 0; i < timeline.length; i++) {
-  const next = i + 1 < timeline.length ? timeline[i + 1].start : REAL_END;
-  timeline[i].dur = +Math.max(1.2, next - timeline[i].start + (timeline[i]._t === "comp" ? 0 : 0.3)).toFixed(2);
-  delete timeline[i]._t;
+{
+  let cursor = 0;
+  for (let i = 0; i < timeline.length; i++) {
+    const b = timeline[i];
+    const anchored = b.start;
+    const displayStart = Math.max(anchored, cursor);
+    const nextAnchored = i + 1 < timeline.length ? timeline[i + 1].start : REAL_END;
+    const dur = b._t === "comp" ? b.dur : Math.max(1.2, nextAnchored - displayStart + 0.3);
+    b.start = +displayStart.toFixed(2);
+    b.dur = +dur.toFixed(2);
+    cursor = displayStart + dur;
+    delete b._t;
+  }
 }
 
 // ── CIERRE SILENCIOSO (sin voz nueva): recap rápido + tarjeta de suscripción ─
 const closingImgs = ["hook_darvaza1", "stonehenge_1", "nazca_1", "machupicchu_1", "angkor_1"];
 const closingBeats = [];
-let cursor = REAL_END;
+const lastEnd = timeline.length ? timeline[timeline.length - 1].start + timeline[timeline.length - 1].dur : REAL_END;
+let cursor = Math.max(REAL_END, lastEnd);
 for (const img of closingImgs) {
   closingBeats.push({ id: `close_${img}`, start: +cursor.toFixed(2), dur: 1.3, kind: "raw", src: `img/${img}.png`, hue: "amber", darken: 0.35, noSplit: true });
   cursor += 1.3;
@@ -251,14 +267,19 @@ fs.writeFileSync(`beatsheet/${SLUG}.json`, JSON.stringify({ video: SLUG, avatar:
 console.log(`beats ${beats.length} (raw ${rawFinal.length} · comp ${compBeats.length} · cierre ${closingBeats.length}) · REAL_END ${REAL_END}s · TOTAL ${TOTAL}s`);
 
 // ── AVATAR WINDOWS (full ↔ hidden, sin PiP de esquina) ───────────────────────
+// Usa el timeline YA REACOMODADO (start/dur finales, post cursor-fix) — no los
+// anchors originales — para que las ventanas de avatar coincidan con lo que
+// realmente se ve en pantalla.
 // comps = rangos que DEBEN verse (componentes gráficos) → avatar hidden ahí.
 // El resto (planos raw = b-roll genérico) son candidatos a full-avatar (variedad).
-const comps2 = compBeats.map((c) => [c.start, c.start + c.dur]);
+const timelineRaw = timeline.filter((b) => b.kind === "raw");
+const timelineComp = timeline.filter((b) => b.kind !== "raw");
+const comps2 = timelineComp.map((c) => [c.start, c.start + c.dur]);
 const overlapsComp = (a, b) => comps2.some(([s, e]) => a < e && b > s);
 const snapWord = (tt) => { for (const c of caps) if (c.startMs / 1000 >= tt - 0.05) return c.startMs / 1000; return tt; };
 const HOOK_END = 11, PERIOD = 22, SLOT = 4.5, SEARCH = 16;
 const fulls = [[0, snapWord(HOOK_END)]];
-for (const r of rawFinal) {
+for (const r of timelineRaw) {
   if (/^(intro_|rehook_)/.test(r.id)) continue; // dejamos esos como visual (mapa/transición)
   const s = r.start, e = snapWord(s + 4);
   if (e - s >= 2 && !overlapsComp(s, e)) fulls.push([+s.toFixed(2), e]);
