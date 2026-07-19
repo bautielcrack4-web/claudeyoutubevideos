@@ -134,4 +134,5 @@ jobs:
           gh release create "chunks-${{ github.event.inputs.slug }}" chunk_*.mp4 --title "chunks-${{ github.event.inputs.slug }}" --notes "chunks para re-render parcial" || gh release upload "chunks-${{ github.event.inputs.slug }}" chunk_*.mp4 --clobber
       - name: progreso 100 (Bagasy)
         continue-on-error: true
-        run: curl -s -X POST "${{ secrets.SB_URL }}/rest/v1/rpc/render_bump" -H "apikey: ${{ secrets.SB_ANON }}" -H "Authorization: Bearer ${{ secrets.SB_ANON }}" -H "Content-Type: application/json" -d '{"p_slug":"${{ github.event.inputs.slug }}","p_delta":100}' || true
+        run: |
+          curl -s -X POST "${{ secrets.SB_URL }}/rest/v1/rpc/render_bump" -H "apikey: ${{ secrets.SB_ANON }}" -H "Authorization: Bearer ${{ secrets.SB_ANON }}" -H "Content-Type: application/json" -d '{"p_slug":"${{ github.event.inputs.slug }}","p_delta":100}' || true
