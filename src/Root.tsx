@@ -1,5 +1,6 @@
 import "./index.css";
 import { Composition } from "remotion";
+import { MainVj7hqe8koadv, TOTAL_FRAMES_VJ7HQE8KOADV } from "./VideoEdit/Main_vj7hqe8koadv";
 import { MainKitPreviewPx, TOTAL_FRAMES_KITPX } from "./VideoEdit/KitPreviewPx";
 import { MainFoods, TOTAL_FRAMES_FOODS } from "./VideoEdit/Main_foods";
 import { MainEstiercol, TOTAL_FRAMES_EST } from "./VideoEdit/Main_estiercol";
@@ -546,6 +547,8 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="FedererTrailer" component={MainFedtrailer} durationInFrames={TOTAL_FRAMES_FEDTRAILER} fps={30} width={1920} height={1080} />
       {/* Documental "14 Lobos de Yellowstone" · Planeta Reconstruido · ~16min */}
       <Composition id="Lobos" component={MainLobos} durationInFrames={TOTAL_FRAMES_LOBOS} fps={30} width={1920} height={1080} />
+      {/* Crónicas Perdidas — "Los 50 Sitios Más Misteriosos" · AVATAR (guion truncado por HeyGen, cierre visual mudo) */}
+      <Composition id="Vj7hqe8koadv" component={MainVj7hqe8koadv} durationInFrames={TOTAL_FRAMES_VJ7HQE8KOADV} fps={30} width={1920} height={1080} />
     </>
   );
 };

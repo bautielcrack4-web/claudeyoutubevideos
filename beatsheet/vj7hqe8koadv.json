@@ -1,0 +1,1139 @@
+{
+ "video": "vj7hqe8koadv",
+ "avatar": "vj7hqe8koadv_opt.mp4",
+ "maxRawDur": 6,
+ "total": 748.98,
+ "beats": [
+  {
+   "id": "c_darvaza_stat",
+   "start": 0,
+   "dur": 12.42,
+   "kind": "numcard",
+   "hue": "amber",
+   "number": "55",
+   "name": "años ardiendo sin parar",
+   "bg": "img/hook_darvaza1.png",
+   "eyebrow": "Cráter de Darvaza · Turkmenistán",
+   "total": "desde 1971",
+   "gen": {
+    "type": "image",
+    "name": "hook_darvaza1",
+    "prompt": "Realistic documentary photo, 16:9. A massive glowing orange gas crater burning at night in the middle of the desert, seen from a distance, smoke rising. Natural daylight, slightly imperfect handheld framing, muted colors, authentic travel-documentary look, no text, no watermark, no people looking at camera."
+   }
+  },
+  {
+   "id": "hook_2",
+   "start": 12.42,
+   "kind": "raw",
+   "src": "img/hook_darvaza2.png",
+   "hue": "amber",
+   "darken": 0.14,
+   "gen": {
+    "type": "image",
+    "name": "hook_darvaza2",
+    "prompt": "Realistic documentary photo, 16:9. Two scientists in protective suits standing cautiously near the glowing edge of a huge burning crater at night. Natural daylight, slightly imperfect handheld framing, muted colors, authentic travel-documentary look, no text, no watermark, no people looking at camera."
+   },
+   "dur": 6.92
+  },
+  {
+   "id": "hook_3",
+   "start": 19.04,
+   "kind": "raw",
+   "src": "img/hook_darvaza3.png",
+   "hue": "amber",
+   "darken": 0.14,
+   "gen": {
+    "type": "image",
+    "name": "hook_darvaza3",
+    "prompt": "Realistic documentary photo, 16:9. Extreme close-up of fire and flames glowing deep inside a circular crater in the desert at night. Natural daylight, slightly imperfect handheld framing, muted colors, authentic travel-documentary look, no text, no watermark, no people looking at camera."
+   },
+   "dur": 3.7
+  },
+  {
+   "id": "intro_1",
+   "start": 22.44,
+   "kind": "raw",
+   "src": "img/intro_mapa1.png",
+   "hue": "amber",
+   "darken": 0.14,
+   "gen": {
+    "type": "image",
+    "name": "intro_mapa1",
+    "prompt": "Realistic documentary photo, 16:9. An old weathered hand-drawn map on a wooden desk, vintage ink annotations, warm lamp light, close up. Natural daylight, slightly imperfect handheld framing, muted colors, authentic travel-documentary look, no text, no watermark, no people looking at camera."
+   },
+   "dur": 5.2
+  },
+  {
+   "id": "intro_2",
+   "start": 27.34,
+   "kind": "raw",
+   "src": "img/intro_mapa2.png",
+   "hue": "amber",
+   "darken": 0.14,
+   "gen": {
+    "type": "image",
+    "name": "intro_mapa2",
+    "prompt": "Realistic documentary photo, 16:9. Close up of handwritten notes and circles in ink on an antique paper map. Natural daylight, slightly imperfect handheld framing, muted colors, authentic travel-documentary look, no text, no watermark, no people looking at camera."
+   },
+   "dur": 7.28
+  },
+  {
+   "id": "intro_3",
+   "start": 34.32,
+   "kind": "raw",
+   "src": "img/intro_mundo.png",
+   "hue": "amber",
+   "darken": 0.14,
+   "gen": {
+    "type": "image",
+    "name": "intro_mundo",
+    "prompt": "Realistic documentary photo, 16:9. A vintage style world map with several pinned locations and a red route line connecting them. Natural daylight, slightly imperfect handheld framing, muted colors, authentic travel-documentary look, no text, no watermark, no people looking at camera."
+   },
+   "dur": 11.82
+  },
+  {
+   "id": "richat_1",
+   "start": 45.84,
+   "kind": "raw",
+   "src": "img/richat_1.png",
+   "hue": "amber",
+   "darken": 0.14,
+   "gen": {
+    "type": "image",
+    "name": "richat_1",
+    "prompt": "Realistic documentary photo, 16:9. Vast golden Sahara desert sand dunes from above, endless and empty. Natural daylight, slightly imperfect handheld framing, muted colors, authentic travel-documentary look, no text, no watermark, no people looking at camera."
+   },
+   "dur": 3.38
+  },
+  {
+   "id": "c_richat_map",
+   "start": 48.92,
+   "dur": 3.38,
+   "kind": "mapzoom",
+   "hue": "amber",
+   "image": "img/richat_2.png",
+   "pinX": 0.42,
+   "pinY": 0.5,
+   "label": "Estructura de Richat · Mauritania",
+   "eyebrow": "El Ojo del Sahara",
+   "zoom": 1.15,
+   "gen": {
+    "type": "image",
+    "name": "richat_2",
+    "prompt": "Realistic documentary photo, 16:9. Aerial satellite view of the Richat Structure, concentric circular rock rings in the middle of the desert, Mauritania. Natural daylight, slightly imperfect handheld framing, muted colors, authentic travel-documentary look, no text, no watermark, no people looking at camera."
+   }
+  },
+  {
+   "id": "c_richat_stat",
+   "start": 52.3,
+   "dur": 8.08,
+   "kind": "numcard",
+   "hue": "amber",
+   "number": "100",
+   "name": "km de anillos concéntricos",
+   "bg": "img/richat_3.png",
+   "eyebrow": "Escala real",
+   "total": "en pleno desierto"
+  },
+  {
+   "id": "richat_4",
+   "start": 60.38,
+   "kind": "raw",
+   "src": "img/richat_4.png",
+   "hue": "amber",
+   "darken": 0.14,
+   "gen": {
+    "type": "image",
+    "name": "richat_4",
+    "prompt": "Realistic documentary photo, 16:9. Close up of exposed layered rock strata eroded in a desert landscape. Natural daylight, slightly imperfect handheld framing, muted colors, authentic travel-documentary look, no text, no watermark, no people looking at camera."
+   },
+   "dur": 16.74
+  },
+  {
+   "id": "stonehenge_1",
+   "start": 76.82,
+   "kind": "raw",
+   "src": "img/stonehenge_1.png",
+   "hue": "amber",
+   "darken": 0.14,
+   "gen": {
+    "type": "image",
+    "name": "stonehenge_1",
+    "prompt": "Realistic documentary photo, 16:9. Stonehenge megalithic stone circle in England at sunrise, dramatic sky. Natural daylight, slightly imperfect handheld framing, muted colors, authentic travel-documentary look, no text, no watermark, no people looking at camera."
+   },
+   "dur": 4.32
+  },
+  {
+   "id": "stonehenge_2",
+   "start": 80.84,
+   "kind": "raw",
+   "src": "img/stonehenge_2.png",
+   "hue": "amber",
+   "darken": 0.14,
+   "gen": {
+    "type": "image",
+    "name": "stonehenge_2",
+    "prompt": "Realistic documentary photo, 16:9. Massive gray standing stones close up, weathered texture, English countryside. Natural daylight, slightly imperfect handheld framing, muted colors, authentic travel-documentary look, no text, no watermark, no people looking at camera."
+   },
+   "dur": 2.96
+  },
+  {
+   "id": "c_stonehenge_bars",
+   "start": 83.5,
+   "dur": 14.08,
+   "kind": "bars",
+   "hue": "amber",
+   "title": "Cómo movieron piedras de varias toneladas",
+   "eyebrow": "Stonehenge, Inglaterra",
+   "bars": [
+    {
+     "label": "Distancia recorrida",
+     "value": 200,
+     "display": "200 km"
+    },
+    {
+     "label": "Ruedas disponibles",
+     "value": 0
+    },
+    {
+     "label": "Metal disponible",
+     "value": 0
+    },
+    {
+     "label": "Animales de carga",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "id": "stonehenge_4",
+   "start": 97.58,
+   "kind": "raw",
+   "src": "img/stonehenge_4.png",
+   "hue": "amber",
+   "darken": 0.14,
+   "gen": {
+    "type": "image",
+    "name": "stonehenge_4",
+    "prompt": "Realistic documentary photo, 16:9. The sun rising perfectly aligned between ancient standing stones, golden light, solstice. Natural daylight, slightly imperfect handheld framing, muted colors, authentic travel-documentary look, no text, no watermark, no people looking at camera."
+   },
+   "dur": 8.38
+  },
+  {
+   "id": "zimbabue_1",
+   "start": 105.66,
+   "kind": "raw",
+   "src": "img/zimbabue_1.png",
+   "hue": "blue",
+   "darken": 0.14,
+   "gen": {
+    "type": "image",
+    "name": "zimbabue_1",
+    "prompt": "Realistic documentary photo, 16:9. Great Zimbabwe stone ruins, massive dry-stacked granite walls, aerial view, African savanna. Natural daylight, slightly imperfect handheld framing, muted colors, authentic travel-documentary look, no text, no watermark, no people looking at camera."
+   },
+   "dur": 9.74
+  },
+  {
+   "id": "c_zimbabue_vs",
+   "start": 115.1,
+   "dur": 19.12,
+   "kind": "vs",
+   "hue": "blue",
+   "title": "Sin una gota de mortero",
+   "eyebrow": "Gran Zimbabue",
+   "left": {
+    "label": "Gran Zimbabue",
+    "value": "800 años en pie",
+    "sub": "granito apilado a seco, sin una gota de mortero",
+    "good": true
+   },
+   "right": {
+    "label": "Construcción moderna",
+    "value": "necesita mortero",
+    "sub": "y refuerzo estructural para durar",
+    "good": false
+   }
+  },
+  {
+   "id": "nazca_1",
+   "start": 134.22,
+   "kind": "raw",
+   "src": "img/nazca_1.png",
+   "hue": "amber",
+   "darken": 0.14,
+   "gen": {
+    "type": "image",
+    "name": "nazca_1",
+    "prompt": "Realistic documentary photo, 16:9. Aerial view of giant line drawings etched into the desert floor of Peru, Nazca lines. Natural daylight, slightly imperfect handheld framing, muted colors, authentic travel-documentary look, no text, no watermark, no people looking at camera."
+   },
+   "dur": 12.68
+  },
+  {
+   "id": "c_nazca_num",
+   "start": 146.6,
+   "dur": 7.04,
+   "kind": "numcard",
+   "hue": "amber",
+   "number": "300",
+   "name": "metros de largo",
+   "bg": "img/nazca_2.png",
+   "eyebrow": "Líneas de Nazca",
+   "total": "solo se entiende desde el aire"
+  },
+  {
+   "id": "c_nazca_checklist",
+   "start": 153.64,
+   "dur": 9.94,
+   "kind": "checklist",
+   "hue": "amber",
+   "title": "Las figuras de Nazca",
+   "items": [
+    {
+     "text": "Un colibrí de decenas de metros"
+    },
+    {
+     "text": "Una araña gigante"
+    },
+    {
+     "text": "Un mono de 300 metros de largo"
+    }
+   ],
+   "gen": {
+    "type": "image",
+    "name": "nazca_3",
+    "prompt": "Realistic documentary photo, 16:9. A lone tiny figure walking across a vast empty desert line, seen from far above. Natural daylight, slightly imperfect handheld framing, muted colors, authentic travel-documentary look, no text, no watermark, no people looking at camera."
+   }
+  },
+  {
+   "id": "c_nazca_quote",
+   "start": 163.58,
+   "dur": 11.48,
+   "kind": "quote",
+   "hue": "amber",
+   "image": "img/nazca_3.png",
+   "eyebrow": "Líneas de Nazca",
+   "text": "Alguien que dedica su vida a un *dibujo* que nunca va a poder *mirar*.",
+   "accent": "amber",
+   "fontSize": 92
+  },
+  {
+   "id": "c_atacama_num",
+   "start": 175.06,
+   "dur": 19.64,
+   "kind": "numcard",
+   "hue": "amber",
+   "number": "1000+",
+   "name": "años de antigüedad",
+   "bg": "img/atacama_1.png",
+   "eyebrow": "Geoglifos de Atacama",
+   "total": "marcando rutas comerciales",
+   "gen": {
+    "type": "image",
+    "name": "atacama_1",
+    "prompt": "Realistic documentary photo, 16:9. Giant ancient geoglyphs of llama caravans carved into a hillside in the Atacama desert, Chile. Natural daylight, slightly imperfect handheld framing, muted colors, authentic travel-documentary look, no text, no watermark, no people looking at camera."
+   }
+  },
+  {
+   "id": "atacama_2",
+   "start": 194.7,
+   "kind": "raw",
+   "src": "img/atacama_2.png",
+   "hue": "amber",
+   "darken": 0.14,
+   "gen": {
+    "type": "image",
+    "name": "atacama_2",
+    "prompt": "Realistic documentary photo, 16:9. A red rocky Mars-like desert landscape with a small rover vehicle testing equipment. Natural daylight, slightly imperfect handheld framing, muted colors, authentic travel-documentary look, no text, no watermark, no people looking at camera."
+   },
+   "dur": 6.04
+  },
+  {
+   "id": "gobekli_1",
+   "start": 200.44,
+   "kind": "raw",
+   "src": "img/gobekli_1.png",
+   "hue": "amber",
+   "darken": 0.14,
+   "gen": {
+    "type": "image",
+    "name": "gobekli_1",
+    "prompt": "Realistic documentary photo, 16:9. Gobekli Tepe ancient stone pillar site in Turkey, circular arrangement of carved megaliths. Natural daylight, slightly imperfect handheld framing, muted colors, authentic travel-documentary look, no text, no watermark, no people looking at camera."
+   },
+   "dur": 8.26
+  },
+  {
+   "id": "c_gobekli_bars",
+   "start": 208.4,
+   "dur": 16.9,
+   "kind": "bars",
+   "hue": "amber",
+   "title": "Qué es más viejo que Göbekli Tepe",
+   "eyebrow": "Turquía · 6.000 años antes que Stonehenge",
+   "unit": "años atrás",
+   "bars": [
+    {
+     "label": "Göbekli Tepe",
+     "value": 11600
+    },
+    {
+     "label": "La rueda",
+     "value": 6000
+    },
+    {
+     "label": "La escritura",
+     "value": 5200
+    },
+    {
+     "label": "Stonehenge",
+     "value": 5000
+    }
+   ]
+  },
+  {
+   "id": "gobekli_3",
+   "start": 225.3,
+   "kind": "raw",
+   "src": "img/gobekli_3.png",
+   "hue": "amber",
+   "darken": 0.14,
+   "gen": {
+    "type": "image",
+    "name": "gobekli_3",
+    "prompt": "Realistic documentary photo, 16:9. Archaeologists carefully excavating a buried ancient stone structure with brushes and tools. Natural daylight, slightly imperfect handheld framing, muted colors, authentic travel-documentary look, no text, no watermark, no people looking at camera."
+   },
+   "dur": 9.82
+  },
+  {
+   "id": "c_newgrange_num",
+   "start": 234.82,
+   "dur": 14.54,
+   "kind": "numcard",
+   "hue": "cold",
+   "number": "5000",
+   "name": "años de precisión astronómica",
+   "bg": "img/newgrange_1.png",
+   "eyebrow": "Newgrange, Irlanda",
+   "total": "más vieja que Stonehenge",
+   "gen": {
+    "type": "image",
+    "name": "newgrange_1",
+    "prompt": "Realistic documentary photo, 16:9. Newgrange ancient passage tomb mound in Ireland, white quartz stone facade, green hill. Natural daylight, slightly imperfect handheld framing, muted colors, authentic travel-documentary look, no text, no watermark, no people looking at camera."
+   }
+  },
+  {
+   "id": "c_newgrange_aged",
+   "start": 249.36,
+   "dur": 15.48,
+   "kind": "aged",
+   "hue": "cold",
+   "heading": "Newgrange, Irlanda",
+   "eyebrow": "Una sola vez al año",
+   "image": "img/newgrange_2.png",
+   "lines": [
+    {
+     "text": "Cámara de piedra sellada"
+    },
+    {
+     "text": "Solsticio de invierno: el sol entra exacto",
+     "mark": true
+    },
+    {
+     "text": "Construida hace más de 5.000 años"
+    }
+   ],
+   "gen": {
+    "type": "image",
+    "name": "newgrange_2",
+    "prompt": "Realistic documentary photo, 16:9. A thin beam of sunlight entering a dark ancient stone passage tomb corridor. Natural daylight, slightly imperfect handheld framing, muted colors, authentic travel-documentary look, no text, no watermark, no people looking at camera."
+   }
+  },
+  {
+   "id": "carnac_1",
+   "start": 264.84,
+   "kind": "raw",
+   "src": "img/carnac_1.png",
+   "hue": "blue",
+   "darken": 0.14,
+   "gen": {
+    "type": "image",
+    "name": "carnac_1",
+    "prompt": "Realistic documentary photo, 16:9. Long rows of ancient standing stones stretching across a green field in Brittany, France. Natural daylight, slightly imperfect handheld framing, muted colors, authentic travel-documentary look, no text, no watermark, no people looking at camera."
+   },
+   "dur": 15.94
+  },
+  {
+   "id": "silbury_1",
+   "start": 280.48,
+   "kind": "raw",
+   "src": "img/silbury_1.png",
+   "hue": "blue",
+   "darken": 0.14,
+   "gen": {
+    "type": "image",
+    "name": "silbury_1",
+    "prompt": "Realistic documentary photo, 16:9. Silbury Hill, a large grassy artificial mound rising from the English countryside, aerial view. Natural daylight, slightly imperfect handheld framing, muted colors, authentic travel-documentary look, no text, no watermark, no people looking at camera."
+   },
+   "dur": 18.66
+  },
+  {
+   "id": "rehook_1",
+   "start": 298.84,
+   "kind": "raw",
+   "src": "img/rehook_1.png",
+   "hue": "amber",
+   "darken": 0.14,
+   "gen": {
+    "type": "image",
+    "name": "rehook_1",
+    "prompt": "Realistic documentary photo, 16:9. A hand tracing a route with a finger across an old paper map covered in pins. Natural daylight, slightly imperfect handheld framing, muted colors, authentic travel-documentary look, no text, no watermark, no people looking at camera."
+   },
+   "dur": 18.78
+  },
+  {
+   "id": "derinkuyu_1",
+   "start": 317.32,
+   "kind": "raw",
+   "src": "img/derinkuyu_1.png",
+   "hue": "amber",
+   "darken": 0.14,
+   "gen": {
+    "type": "image",
+    "name": "derinkuyu_1",
+    "prompt": "Realistic documentary photo, 16:9. Derinkuyu underground city, carved tunnels and rock chambers descending into darkness, Cappadocia Turkey. Natural daylight, slightly imperfect handheld framing, muted colors, authentic travel-documentary look, no text, no watermark, no people looking at camera."
+   },
+   "dur": 12.26
+  },
+  {
+   "id": "c_derinkuyu_process",
+   "start": 329.28,
+   "dur": 6.34,
+   "kind": "process",
+   "hue": "amber",
+   "title": "Derinkuyu, ciudad bajo tierra",
+   "eyebrow": "Capadocia, Turquía",
+   "steps": [
+    {
+     "title": "Entrada",
+     "desc": "un pozo angosto en la superficie"
+    },
+    {
+     "title": "Establos y bodegas",
+     "desc": "los primeros niveles"
+    },
+    {
+     "title": "Capillas",
+     "desc": "más abajo todavía"
+    },
+    {
+     "title": "Puerta circular",
+     "desc": "se cerraba solo desde adentro"
+    }
+   ]
+  },
+  {
+   "id": "c_derinkuyu_quote",
+   "start": 335.62,
+   "dur": 12.64,
+   "kind": "quote",
+   "hue": "amber",
+   "image": "img/derinkuyu_3.png",
+   "eyebrow": "Derinkuyu, Turquía",
+   "text": "La construyeron para *esconderse* de algo.",
+   "accent": "amber",
+   "fontSize": 96,
+   "gen": {
+    "type": "image",
+    "name": "derinkuyu_3",
+    "prompt": "Realistic documentary photo, 16:9. A dark narrow underground stone corridor descending, lit by a single warm light. Natural daylight, slightly imperfect handheld framing, muted colors, authentic travel-documentary look, no text, no watermark, no people looking at camera."
+   }
+  },
+  {
+   "id": "pumapunku_1",
+   "start": 348.26,
+   "kind": "raw",
+   "src": "img/pumapunku_1.png",
+   "hue": "cold",
+   "darken": 0.14,
+   "gen": {
+    "type": "image",
+    "name": "pumapunku_1",
+    "prompt": "Realistic documentary photo, 16:9. Puma Punku ruins, large precisely cut stone blocks scattered on high altitude Andean ground, Bolivia. Natural daylight, slightly imperfect handheld framing, muted colors, authentic travel-documentary look, no text, no watermark, no people looking at camera."
+   },
+   "dur": 4.98
+  },
+  {
+   "id": "c_pumapunku_vs",
+   "start": 352.94,
+   "dur": 16.02,
+   "kind": "vs",
+   "hue": "cold",
+   "title": "Precisión imposible",
+   "eyebrow": "Puma Punku, Bolivia",
+   "left": {
+    "label": "El corte de los bloques",
+    "value": "ángulos rectos tipo máquina",
+    "sub": "precisión casi milimétrica",
+    "good": false
+   },
+   "right": {
+    "label": "Herramientas de la época",
+    "value": "sin metales duros",
+    "sub": "ni herramientas de precisión conocidas",
+    "good": false
+   }
+  },
+  {
+   "id": "pumapunku_3",
+   "start": 368.96,
+   "kind": "raw",
+   "src": "img/pumapunku_3.png",
+   "hue": "cold",
+   "darken": 0.14,
+   "gen": {
+    "type": "image",
+    "name": "pumapunku_3",
+    "prompt": "Realistic documentary photo, 16:9. Scattered ancient stone blocks of different finishing styles lying unfinished on rocky ground. Natural daylight, slightly imperfect handheld framing, muted colors, authentic travel-documentary look, no text, no watermark, no people looking at camera."
+   },
+   "dur": 5.74
+  },
+  {
+   "id": "machupicchu_1",
+   "start": 374.4,
+   "kind": "raw",
+   "src": "img/machupicchu_1.png",
+   "hue": "blue",
+   "darken": 0.14,
+   "gen": {
+    "type": "image",
+    "name": "machupicchu_1",
+    "prompt": "Realistic documentary photo, 16:9. Machu Picchu Inca citadel among green misty mountains at sunrise, wide aerial view. Natural daylight, slightly imperfect handheld framing, muted colors, authentic travel-documentary look, no text, no watermark, no people looking at camera."
+   },
+   "dur": 10.78
+  },
+  {
+   "id": "c_machupicchu_num",
+   "start": 384.88,
+   "dur": 7.68,
+   "kind": "numcard",
+   "hue": "blue",
+   "number": "0",
+   "name": "mm entre bloques",
+   "bg": "img/machupicchu_2.png",
+   "eyebrow": "Machu Picchu, Perú",
+   "total": "sin argamasa"
+  },
+  {
+   "id": "machupicchu_3",
+   "start": 392.56,
+   "kind": "raw",
+   "src": "img/machupicchu_3.png",
+   "hue": "blue",
+   "darken": 0.14,
+   "gen": {
+    "type": "image",
+    "name": "machupicchu_3",
+    "prompt": "Realistic documentary photo, 16:9. An ancient stone wall standing intact beside cracked modern colonial ruins. Natural daylight, slightly imperfect handheld framing, muted colors, authentic travel-documentary look, no text, no watermark, no people looking at camera."
+   },
+   "dur": 7.2
+  },
+  {
+   "id": "sacsayhuaman_1",
+   "start": 399.46,
+   "kind": "raw",
+   "src": "img/sacsayhuaman_1.png",
+   "hue": "blue",
+   "darken": 0.14,
+   "gen": {
+    "type": "image",
+    "name": "sacsayhuaman_1",
+    "prompt": "Realistic documentary photo, 16:9. Sacsayhuaman massive zigzag stone walls made of huge fitted boulders, Cusco Peru. Natural daylight, slightly imperfect handheld framing, muted colors, authentic travel-documentary look, no text, no watermark, no people looking at camera."
+   },
+   "dur": 4
+  },
+  {
+   "id": "c_sacsayhuaman_num",
+   "start": 403.16,
+   "dur": 12.3,
+   "kind": "numcard",
+   "hue": "blue",
+   "number": "100+",
+   "name": "toneladas por bloque",
+   "bg": "img/sacsayhuaman_1.png",
+   "eyebrow": "Sacsayhuamán, Cusco",
+   "total": "cuesta arriba, sin explicación"
+  },
+  {
+   "id": "c_tiwanaku_map",
+   "start": 415.46,
+   "dur": 21.1,
+   "kind": "mapzoom",
+   "hue": "cold",
+   "image": "img/tiwanaku_1.png",
+   "pinX": 0.3,
+   "pinY": 0.62,
+   "label": "Tiwanaku · Bolivia",
+   "eyebrow": "A orillas del lago Titicaca",
+   "zoom": 1.1,
+   "gen": {
+    "type": "image",
+    "name": "tiwanaku_1",
+    "prompt": "Realistic documentary photo, 16:9. Tiwanaku ruins with the carved stone Gate of the Sun monolith, high altitude plain, Bolivia. Natural daylight, slightly imperfect handheld framing, muted colors, authentic travel-documentary look, no text, no watermark, no people looking at camera."
+   }
+  },
+  {
+   "id": "yonaguni_1",
+   "start": 436.56,
+   "kind": "raw",
+   "src": "img/yonaguni_1.png",
+   "hue": "cold",
+   "darken": 0.14,
+   "gen": {
+    "type": "image",
+    "name": "yonaguni_1",
+    "prompt": "Realistic documentary photo, 16:9. Underwater rock formation with straight stepped edges and terraces, clear blue ocean water, Japan. Natural daylight, slightly imperfect handheld framing, muted colors, authentic travel-documentary look, no text, no watermark, no people looking at camera."
+   },
+   "dur": 14.04
+  },
+  {
+   "id": "c_yonaguni_vs",
+   "start": 450.3,
+   "dur": 10.4,
+   "kind": "vs",
+   "hue": "cold",
+   "title": "¿Natural o construido?",
+   "eyebrow": "Monumento de Yonaguni, Japón",
+   "left": {
+    "label": "Hipótesis natural",
+    "value": "arenisca que se fractura sola",
+    "sub": "así lo explican algunos geólogos",
+    "good": true
+   },
+   "right": {
+    "label": "Hipótesis artificial",
+    "value": "terrazas demasiado perfectas",
+    "sub": "para ser puro azar geológico",
+    "good": false
+   }
+  },
+  {
+   "id": "c_bimini_aged",
+   "start": 460.7,
+   "dur": 14.86,
+   "kind": "aged",
+   "hue": "cold",
+   "heading": "Camino de Bimini, Bahamas",
+   "eyebrow": "Bajo el agua",
+   "image": "img/bimini_1.png",
+   "lines": [
+    {
+     "text": "Bloques rectangulares bajo el agua"
+    },
+    {
+     "text": "Parece una calle empedrada",
+     "mark": true
+    },
+    {
+     "text": "La mayoría de los geólogos: formación natural"
+    }
+   ],
+   "gen": {
+    "type": "image",
+    "name": "bimini_1",
+    "prompt": "Realistic documentary photo, 16:9. Bimini Road, underwater rectangular flat stone blocks arranged like a road, shallow turquoise water. Natural daylight, slightly imperfect handheld framing, muted colors, authentic travel-documentary look, no text, no watermark, no people looking at camera."
+   }
+  },
+  {
+   "id": "bermuda_1",
+   "start": 475.56,
+   "kind": "raw",
+   "src": "img/bermuda_1.png",
+   "hue": "cold",
+   "darken": 0.14,
+   "gen": {
+    "type": "image",
+    "name": "bermuda_1",
+    "prompt": "Realistic documentary photo, 16:9. A stormy dark ocean seen from above, dramatic clouds over open Atlantic water. Natural daylight, slightly imperfect handheld framing, muted colors, authentic travel-documentary look, no text, no watermark, no people looking at camera."
+   },
+   "dur": 10.98
+  },
+  {
+   "id": "c_bermuda_stat",
+   "start": 486.24,
+   "dur": 16.82,
+   "kind": "stat",
+   "hue": "cold",
+   "value": 0,
+   "prefix": "+",
+   "suffix": "% extra",
+   "label": "desapariciones vs. otras rutas marítimas",
+   "eyebrow": "Triángulo de las Bermudas",
+   "accent": "cold"
+  },
+  {
+   "id": "c_baltico_map",
+   "start": 503.06,
+   "dur": 22.76,
+   "kind": "mapzoom",
+   "hue": "cold",
+   "image": "img/baltico_1.png",
+   "pinX": 0.55,
+   "pinY": 0.35,
+   "label": "Anomalía del Báltico",
+   "eyebrow": "Entre Suecia y Finlandia",
+   "zoom": 1.1,
+   "gen": {
+    "type": "image",
+    "name": "baltico_1",
+    "prompt": "Realistic documentary photo, 16:9. A sonar scan screen showing a mysterious large circular shape on the dark seafloor. Natural daylight, slightly imperfect handheld framing, muted colors, authentic travel-documentary look, no text, no watermark, no people looking at camera."
+   }
+  },
+  {
+   "id": "pascua_1",
+   "start": 525.82,
+   "kind": "raw",
+   "src": "img/pascua_1.png",
+   "hue": "amber",
+   "darken": 0.14,
+   "gen": {
+    "type": "image",
+    "name": "pascua_1",
+    "prompt": "Realistic documentary photo, 16:9. Easter Island Moai stone statues standing in a row against the sky, some buried to the neck. Natural daylight, slightly imperfect handheld framing, muted colors, authentic travel-documentary look, no text, no watermark, no people looking at camera."
+   },
+   "dur": 11.3
+  },
+  {
+   "id": "c_pascua_chips",
+   "start": 536.82,
+   "dur": 6.72,
+   "kind": "chips",
+   "hue": "amber",
+   "bg": "image",
+   "image": "img/pascua_2.png",
+   "title": "Los Moái de Isla de Pascua",
+   "chips": [
+    "cuerpo enterrado hasta el cuello",
+    "varias toneladas cada uno",
+    "isla sin un solo árbol"
+   ],
+   "gen": {
+    "type": "image",
+    "name": "pascua_2",
+    "prompt": "Realistic documentary photo, 16:9. A row of large Moai statues on a grassy coastal hill, Easter Island. Natural daylight, slightly imperfect handheld framing, muted colors, authentic travel-documentary look, no text, no watermark, no people looking at camera."
+   }
+  },
+  {
+   "id": "pascua_3",
+   "start": 543.54,
+   "kind": "raw",
+   "src": "img/pascua_3.png",
+   "hue": "amber",
+   "darken": 0.14,
+   "gen": {
+    "type": "image",
+    "name": "pascua_3",
+    "prompt": "Realistic documentary photo, 16:9. A barren treeless volcanic island landscape with rolling green hills, no trees. Natural daylight, slightly imperfect handheld framing, muted colors, authentic travel-documentary look, no text, no watermark, no people looking at camera."
+   },
+   "dur": 16.26
+  },
+  {
+   "id": "c_malta_bars",
+   "start": 559.5,
+   "dur": 24.92,
+   "kind": "bars",
+   "hue": "amber",
+   "title": "Más viejos que las pirámides",
+   "eyebrow": "Templos de Malta",
+   "unit": "años de antigüedad",
+   "bars": [
+    {
+     "label": "Templos de Malta",
+     "value": 5600
+    },
+    {
+     "label": "Pirámides de Egipto",
+     "value": 4500
+    },
+    {
+     "label": "Stonehenge",
+     "value": 5000
+    }
+   ],
+   "gen": {
+    "type": "image",
+    "name": "malta_1",
+    "prompt": "Realistic documentary photo, 16:9. Ancient megalithic limestone temple ruins in Malta, large curved stone blocks. Natural daylight, slightly imperfect handheld framing, muted colors, authentic travel-documentary look, no text, no watermark, no people looking at camera."
+   }
+  },
+  {
+   "id": "c_nanmadol_chips",
+   "start": 584.42,
+   "dur": 24.4,
+   "kind": "chips",
+   "hue": "blue",
+   "bg": "image",
+   "image": "img/nanmadol_1.png",
+   "title": "Nan Madol, Micronesia",
+   "chips": [
+    "casi 100 islotes artificiales",
+    "columnas de basalto de toneladas",
+    "la 'ciudad de los espíritus'"
+   ],
+   "gen": {
+    "type": "image",
+    "name": "nanmadol_1",
+    "prompt": "Realistic documentary photo, 16:9. Nan Madol ruins, tall basalt log walls rising from shallow water among small jungle islets, Micronesia. Natural daylight, slightly imperfect handheld framing, muted colors, authentic travel-documentary look, no text, no watermark, no people looking at camera."
+   }
+  },
+  {
+   "id": "c_skarabrae_quote",
+   "start": 608.82,
+   "dur": 28.42,
+   "kind": "quote",
+   "hue": "cold",
+   "image": "img/skarabrae_1.png",
+   "eyebrow": "Skara Brae, Escocia",
+   "text": "Una *tormenta* de 1850 mostró en un día lo que nadie había visto en *miles de años*.",
+   "accent": "cold",
+   "fontSize": 88,
+   "gen": {
+    "type": "image",
+    "name": "skarabrae_1",
+    "prompt": "Realistic documentary photo, 16:9. Skara Brae ancient stone village ruins on a green coastal cliff in Scotland, stone huts. Natural daylight, slightly imperfect handheld framing, muted colors, authentic travel-documentary look, no text, no watermark, no people looking at camera."
+   }
+  },
+  {
+   "id": "longyou_1",
+   "start": 637.24,
+   "kind": "raw",
+   "src": "img/longyou_1.png",
+   "hue": "amber",
+   "darken": 0.14,
+   "gen": {
+    "type": "image",
+    "name": "longyou_1",
+    "prompt": "Realistic documentary photo, 16:9. Longyou caves, massive man-made underground stone cavern with parallel chisel marks on the walls, warm lighting. Natural daylight, slightly imperfect handheld framing, muted colors, authentic travel-documentary look, no text, no watermark, no people looking at camera."
+   },
+   "dur": 25.38
+  },
+  {
+   "id": "c_asia_split",
+   "start": 662.32,
+   "dur": 14.86,
+   "kind": "splitlist",
+   "hue": "amber",
+   "title": "Tres sitios, un mismo misterio",
+   "palette": "A",
+   "items": [
+    "Longyou (China): cuevas talladas sin un solo registro histórico",
+    "Mohenjo-Daro (Pakistán): cañerías más avanzadas que ciudades de hace un siglo",
+    "Gunung Padang (Indonesia): antigüedad todavía en discusión"
+   ]
+  },
+  {
+   "id": "gunungpadang_1",
+   "start": 677.18,
+   "kind": "raw",
+   "src": "img/gunungpadang_1.png",
+   "hue": "blue",
+   "darken": 0.14,
+   "gen": {
+    "type": "image",
+    "name": "gunungpadang_1",
+    "prompt": "Realistic documentary photo, 16:9. Gunung Padang stepped stone terraces on a misty jungle hillside, Indonesia. Natural daylight, slightly imperfect handheld framing, muted colors, authentic travel-documentary look, no text, no watermark, no people looking at camera."
+   },
+   "dur": 17.32
+  },
+  {
+   "id": "rehook_2",
+   "start": 694.2,
+   "kind": "raw",
+   "src": "img/rehook_2.png",
+   "hue": "blue",
+   "darken": 0.14,
+   "gen": {
+    "type": "image",
+    "name": "rehook_2",
+    "prompt": "Realistic documentary photo, 16:9. A dense green jungle canopy seen from above with mist rising between the trees. Natural daylight, slightly imperfect handheld framing, muted colors, authentic travel-documentary look, no text, no watermark, no people looking at camera."
+   },
+   "dur": 8.22
+  },
+  {
+   "id": "angkor_1",
+   "start": 702.12,
+   "kind": "raw",
+   "src": "img/angkor_1.png",
+   "hue": "blue",
+   "darken": 0.14,
+   "gen": {
+    "type": "image",
+    "name": "angkor_1",
+    "prompt": "Realistic documentary photo, 16:9. Angkor temple ruins in Cambodia covered by giant tree roots growing over the stone walls, jungle. Natural daylight, slightly imperfect handheld framing, muted colors, authentic travel-documentary look, no text, no watermark, no people looking at camera."
+   },
+   "dur": 4.28
+  },
+  {
+   "id": "c_angkor_process",
+   "start": 706.1,
+   "dur": 20.04,
+   "kind": "process",
+   "hue": "blue",
+   "title": "Cómo la selva se comió Angkor",
+   "eyebrow": "Camboya",
+   "steps": [
+    {
+     "title": "Semilla",
+     "desc": "cae sobre la piedra del templo"
+    },
+    {
+     "title": "Raíz",
+     "desc": "se cuela entre las juntas"
+    },
+    {
+     "title": "Crecimiento",
+     "desc": "la raíz se vuelve tronco"
+    },
+    {
+     "title": "Fusión",
+     "desc": "el árbol es parte del muro"
+    }
+   ],
+   "gen": {
+    "type": "image",
+    "name": "angkor_2",
+    "prompt": "Realistic documentary photo, 16:9. Massive tree roots wrapping over an ancient stone temple wall, close up, Ta Prohm style. Natural daylight, slightly imperfect handheld framing, muted colors, authentic travel-documentary look, no text, no watermark, no people looking at camera."
+   }
+  },
+  {
+   "id": "c_angkor_quote",
+   "start": 726.14,
+   "dur": 4.68,
+   "kind": "quote",
+   "hue": "blue",
+   "image": "img/angkor_3.png",
+   "eyebrow": "Angkor, Camboya",
+   "text": "Nunca se había *perdido* para ellos.",
+   "accent": "accent",
+   "fontSize": 92,
+   "gen": {
+    "type": "image",
+    "name": "angkor_3",
+    "prompt": "Realistic documentary photo, 16:9. A local person walking calmly along an ancient jungle temple path, wide shot, back to camera. Natural daylight, slightly imperfect handheld framing, muted colors, authentic travel-documentary look, no text, no watermark, no people looking at camera."
+   }
+  },
+  {
+   "id": "c_cierre_journey",
+   "start": 730.82,
+   "dur": 7.16,
+   "kind": "journey",
+   "hue": "blue",
+   "dark": true,
+   "eyebrow": "El recorrido sigue",
+   "title": "De Angkor a las ruinas Maya",
+   "gen": {
+    "type": "image",
+    "name": "jemermaya_1",
+    "prompt": "Realistic documentary photo, 16:9. A split feeling wide shot of an overgrown ancient stone pyramid rising from dense jungle. Natural daylight, slightly imperfect handheld framing, muted colors, authentic travel-documentary look, no text, no watermark, no people looking at camera."
+   },
+   "waypoints": [
+    {
+     "x": 0.28,
+     "y": 0.42,
+     "z": 0,
+     "image": "img/angkor_1.png",
+     "label": "Angkor, Camboya",
+     "num": "1",
+     "dwell": 2.6,
+     "travel": 1.6
+    },
+    {
+     "x": 0.72,
+     "y": 0.55,
+     "z": 0.3,
+     "image": "img/jemermaya_1.png",
+     "label": "Ruinas Maya, México",
+     "num": "2",
+     "dwell": 2.6,
+     "travel": 1.6
+    }
+   ]
+  },
+  {
+   "id": "close_hook_darvaza1",
+   "start": 737.98,
+   "dur": 1.3,
+   "kind": "raw",
+   "src": "img/hook_darvaza1.png",
+   "hue": "amber",
+   "darken": 0.35,
+   "noSplit": true
+  },
+  {
+   "id": "close_stonehenge_1",
+   "start": 739.28,
+   "dur": 1.3,
+   "kind": "raw",
+   "src": "img/stonehenge_1.png",
+   "hue": "amber",
+   "darken": 0.35,
+   "noSplit": true
+  },
+  {
+   "id": "close_nazca_1",
+   "start": 740.58,
+   "dur": 1.3,
+   "kind": "raw",
+   "src": "img/nazca_1.png",
+   "hue": "amber",
+   "darken": 0.35,
+   "noSplit": true
+  },
+  {
+   "id": "close_machupicchu_1",
+   "start": 741.88,
+   "dur": 1.3,
+   "kind": "raw",
+   "src": "img/machupicchu_1.png",
+   "hue": "amber",
+   "darken": 0.35,
+   "noSplit": true
+  },
+  {
+   "id": "close_angkor_1",
+   "start": 743.18,
+   "dur": 1.3,
+   "kind": "raw",
+   "src": "img/angkor_1.png",
+   "hue": "amber",
+   "darken": 0.35,
+   "noSplit": true
+  },
+  {
+   "id": "close_card",
+   "start": 744.48,
+   "dur": 4.5,
+   "kind": "headline",
+   "hue": "amber",
+   "bg": "image",
+   "image": "img/hook_darvaza1.png",
+   "eyebrow": "Quedan muchos lugares más en el mapa",
+   "tokens": [
+    {
+     "t": "Seguí"
+    },
+    {
+     "t": "el"
+    },
+    {
+     "t": "mapa"
+    },
+    {
+     "t": "—"
+    },
+    {
+     "t": "suscribite",
+     "hl": true
+    }
+   ]
+  }
+ ]
+}
