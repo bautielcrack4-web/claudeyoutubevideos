@@ -94,13 +94,13 @@ const RAW = [
 // ── COMPONENTES (variedad — plan del DIRECTOR) ───────────────────────────────
 const COMP = [
   { id: "c_darvaza_stat", at: "hay un agujero en turkmenistan que lleva ardiendo desde 1971", dur: 5.4, kind: "numcard", hue: "amber",
-    number: "55", name: "años ardiendo sin parar", bg: "img/hook_darvaza1.png", eyebrow: "Cráter de Darvaza · Turkmenistán", total: "desde 1971",
+    number: "55", name: "años ardiendo sin parar", bg: "img/hook_darvaza1.png", eyebrow: "Cráter de Darvaza · Turkmenistán", total: "1971",
     gen: { type: "image", name: "hook_darvaza1", prompt: P("A massive glowing orange gas crater burning at night in the middle of the desert, seen from a distance, smoke rising.") } },
   { id: "c_richat_map", at: "se llama el ojo del sahara la estructura de richard", dur: 6, kind: "mapzoom", hue: "amber",
     image: "img/richat_2.png", pinX: 0.42, pinY: 0.5, label: "Estructura de Richat · Mauritania", eyebrow: "El Ojo del Sahara", zoom: 1.15,
     gen: { type: "image", name: "richat_2", prompt: P("Aerial satellite view of the Richat Structure, concentric circular rock rings in the middle of the desert, Mauritania.") } },
   { id: "c_richat_stat", at: "y desde el aire parece un blanco de tiro perfecto casi 100 kilometros de anillos concentricos", dur: 5.2, kind: "numcard", hue: "amber",
-    number: "100", name: "km de anillos concéntricos", bg: "img/richat_3.png", eyebrow: "Escala real", total: "en pleno desierto" },
+    number: "100", name: "km de anillos concéntricos", bg: "img/richat_3.png", eyebrow: "Escala real", total: "Mauritania" },
   { id: "c_stonehenge_bars", at: "traidas desde canteras a mas de 200 kilometros de distancia sin ruedas sin metal", dur: 6.4, kind: "bars", hue: "amber",
     title: "Cómo movieron piedras de varias toneladas", eyebrow: "Stonehenge, Inglaterra",
     bars: [{ label: "Distancia recorrida", value: 200, display: "200 km" }, { label: "Ruedas disponibles", value: 0 }, { label: "Metal disponible", value: 0 }, { label: "Animales de carga", value: 0 }] },
@@ -109,7 +109,7 @@ const COMP = [
     left: { label: "Gran Zimbabue", value: "800 años en pie", sub: "granito apilado a seco, sin una gota de mortero", good: true },
     right: { label: "Construcción moderna", value: "necesita mortero", sub: "y refuerzo estructural para durar", good: false } },
   { id: "c_nazca_num", at: "un colibri una arana o un mono de 300 metros de largo", dur: 9, kind: "numcard", hue: "amber",
-    number: "300", name: "metros de largo", bg: "img/nazca_2.png", eyebrow: "Líneas de Nazca", total: "solo se entiende desde el aire" },
+    number: "300", name: "metros de largo", bg: "img/nazca_2.png", eyebrow: "Líneas de Nazca", total: "Perú" },
   { id: "c_gobekli_bars", at: "mas viejos que la rueda mas viejos que la escritura mas viejos que stonehenge", dur: 11, kind: "bars", hue: "amber",
     title: "Qué es más viejo que Göbekli Tepe", eyebrow: "Turquía · 6.000 años antes que Stonehenge", unit: "años atrás",
     bars: [{ label: "Göbekli Tepe", value: 11600 }, { label: "La rueda", value: 6000 }, { label: "La escritura", value: 5200 }, { label: "Stonehenge", value: 5000 }] },
@@ -125,9 +125,9 @@ const COMP = [
     left: { label: "El corte de los bloques", value: "ángulos rectos tipo máquina", sub: "precisión casi milimétrica", good: false },
     right: { label: "Herramientas de la época", value: "sin metales duros", sub: "ni herramientas de precisión conocidas", good: false } },
   { id: "c_machupicchu_num", at: "las piedras de sus muros encajan tan perfecto que ni una hoja de afeitar entra en las juntas", dur: 10, kind: "numcard", hue: "blue",
-    number: "0", name: "mm entre bloques", bg: "img/machupicchu_2.png", eyebrow: "Machu Picchu, Perú", total: "sin argamasa" },
+    number: "0", name: "mm entre bloques", bg: "img/machupicchu_2.png", eyebrow: "Machu Picchu, Perú", total: "0" },
   { id: "c_sacsayhuaman_num", at: "con bloques de piedra caliza de mas de 100 toneladas cada uno", dur: 5.6, kind: "numcard", hue: "blue",
-    number: "100+", name: "toneladas por bloque", bg: "img/sacsayhuaman_1.png", eyebrow: "Sacsayhuamán, Cusco", total: "cuesta arriba, sin explicación" },
+    number: "100+", name: "toneladas por bloque", bg: "img/sacsayhuaman_1.png", eyebrow: "Sacsayhuamán, Cusco", total: "Cusco" },
   { id: "c_yonaguni_vs", at: "otros insisten en que no hay manera de que la naturaleza sola produzca esas terrazas perfectas", dur: 6.4, kind: "vs", hue: "cold",
     title: "¿Natural o construido?", eyebrow: "Monumento de Yonaguni, Japón",
     left: { label: "Hipótesis natural", value: "arenisca que se fractura sola", sub: "así lo explican algunos geólogos", good: true },
@@ -153,7 +153,7 @@ const COMP = [
     title: "Las figuras de Nazca", items: [{ text: "Un colibrí de decenas de metros" }, { text: "Una araña gigante" }, { text: "Un mono de 300 metros de largo" }],
     gen: { type: "image", name: "nazca_3", prompt: P("A lone tiny figure walking across a vast empty desert line, seen from far above.") } },
   { id: "c_newgrange_num", at: "en irlanda hay una tumba todavia mas vieja que stonehenge new grange", dur: 5.4, kind: "numcard", hue: "cold",
-    number: "5000", name: "años de precisión astronómica", bg: "img/newgrange_1.png", eyebrow: "Newgrange, Irlanda", total: "más vieja que Stonehenge",
+    number: "5000", name: "años de precisión astronómica", bg: "img/newgrange_1.png", eyebrow: "Newgrange, Irlanda", total: "Stonehenge",
     gen: { type: "image", name: "newgrange_1", prompt: P("Newgrange ancient passage tomb mound in Ireland, white quartz stone facade, green hill.") } },
   { id: "c_tiwanaku_map", at: "cerca del lago titicaca esta tiwanaku una ciudad que llego a tener decenas de miles de habitantes", dur: 12, kind: "mapzoom", hue: "cold",
     image: "img/tiwanaku_1.png", pinX: 0.3, pinY: 0.62, label: "Tiwanaku · Bolivia", eyebrow: "A orillas del lago Titicaca", zoom: 1.1,
@@ -173,7 +173,7 @@ const COMP = [
     bg: "image", image: "img/nanmadol_1.png", title: "Nan Madol, Micronesia", chips: ["casi 100 islotes artificiales", "columnas de basalto de toneladas", "la 'ciudad de los espíritus'"],
     gen: { type: "image", name: "nanmadol_1", prompt: P("Nan Madol ruins, tall basalt log walls rising from shallow water among small jungle islets, Micronesia.") } },
   { id: "c_atacama_num", at: "en el desierto de atacama en chile hay otros geoglifos gigantes", dur: 11, kind: "numcard", hue: "amber",
-    number: "1000+", name: "años de antigüedad", bg: "img/atacama_1.png", eyebrow: "Geoglifos de Atacama", total: "marcando rutas comerciales",
+    number: "1000+", name: "años de antigüedad", bg: "img/atacama_1.png", eyebrow: "Geoglifos de Atacama", total: "Atacama",
     gen: { type: "image", name: "atacama_1", prompt: P("Giant ancient geoglyphs of llama caravans carved into a hillside in the Atacama desert, Chile.") } },
   { id: "c_baltico_map", at: "en el fondo del mar baltico entre suecia y finlandia un equipo de buceadores encontro en el sonar una formacion circular", dur: 5.8, kind: "mapzoom", hue: "cold",
     image: "img/baltico_1.png", pinX: 0.55, pinY: 0.35, label: "Anomalía del Báltico", eyebrow: "Entre Suecia y Finlandia", zoom: 1.1,
@@ -194,15 +194,15 @@ const COMP = [
     heading: "Stonehenge, Inglaterra", eyebrow: "El verdadero misterio", image: "img/stonehenge_4.png",
     lines: [{ text: "Cómo movieron las piedras: ya tiene teorías sólidas" }, { text: "Por qué exactas al solsticio de verano: no se sabe", mark: true }, { text: "En un lugar sin población permanente" }] },
   { id: "c_yonaguni_num", at: "frente a la isla de yonaguni en japon hay una formacion rocosa con escalones", dur: 5.4, kind: "numcard", hue: "cold",
-    number: "25", name: "metros bajo el agua", bg: "img/yonaguni_1.png", eyebrow: "Monumento de Yonaguni", total: "escalones y ángulos rectos" },
+    number: "25", name: "metros bajo el agua", bg: "img/yonaguni_1.png", eyebrow: "Monumento de Yonaguni", total: "Japón" },
   { id: "c_bermuda_map", at: "esta justo dentro del area que la gente bautizo triangulo de las bermudas", dur: 5.6, kind: "mapzoom", hue: "cold",
     image: "img/bermuda_1.png", pinX: 0.5, pinY: 0.45, label: "Triángulo de las Bermudas", eyebrow: "Atlántico occidental", zoom: 1.1 },
   { id: "c_pascua_quote", at: "la civilizacion que las tallo colapso probablemente por haber talado cada arbol de la isla", dur: 9, kind: "quote", hue: "amber",
     image: "img/pascua_3.png", eyebrow: "Isla de Pascua", text: "Dejaron un cementerio de *gigantes de piedra* en una isla que ellos mismos habían vaciado.", accent: "amber", fontSize: 84 },
   { id: "c_longyou_num", at: "en china cerca de la ciudad de longyu unos pescadores vaciaron unos estanques", dur: 5.2, kind: "numcard", hue: "amber",
-    number: "0", name: "registros históricos del hallazgo", bg: "img/longyou_1.png", eyebrow: "Cuevas de Longyou, China", total: "sin una herramienta abandonada" },
-  { id: "c_gunungpadang_stat", at: "en indonesia en la montana de gunung padang hay una estructura escalonada de terrazas de piedra", dur: 10, kind: "stat", hue: "blue",
-    value: 0, prefix: "¿", suffix: "años?", label: "antigüedad todavía en discusión", eyebrow: "Gunung Padang, Indonesia", accent: "accent" },
+    number: "0", name: "registros históricos del hallazgo", bg: "img/longyou_1.png", eyebrow: "Cuevas de Longyou, China", total: "China" },
+  { id: "c_gunungpadang_stat", at: "en indonesia en la montana de gunung padang hay una estructura escalonada de terrazas de piedra", dur: 10, kind: "quote", hue: "blue",
+    image: "img/gunungpadang_1.png", eyebrow: "Gunung Padang, Indonesia", text: "Podría ser *mucho más antigua* que cualquier otra construcción conocida.", accent: "accent", fontSize: 84 },
   { id: "c_angkor_map", at: "en camboya la selva se trago angkor durante siglos", dur: 5.4, kind: "mapzoom", hue: "blue",
     image: "img/angkor_1.png", pinX: 0.65, pinY: 0.5, label: "Angkor · Camboya", eyebrow: "Tragado por la selva", zoom: 1.12 },
   { id: "c_malta_aged", at: "ciertas frecuencias graves hacen vibrar el aire de una manera que todavia se estudia en laboratorios acusticos", dur: 12, kind: "aged", hue: "amber",
@@ -227,8 +227,48 @@ const COMP = [
   { id: "c_baltico_quote", at: "las imagenes estan ahi disponibles para cualquiera las explicaciones no tanto", dur: 11, kind: "quote", hue: "cold",
     image: "img/baltico_1.png", eyebrow: "Anomalía del Báltico", text: "Las imágenes están *ahí*, disponibles para cualquiera. Las explicaciones, no tanto.", accent: "cold", fontSize: 88 },
   { id: "c_intro_num", at: "hoy quiero llevarlos por 50 de esos lugares uno detras de otro", dur: 10, kind: "numcard", hue: "amber",
-    number: "50", name: "lugares en el mapa", bg: "img/intro_mundo.png", eyebrow: "El recorrido de hoy", total: "los que más discuten los expertos" },
+    number: "50", name: "lugares en el mapa", bg: "img/intro_mundo.png", eyebrow: "El recorrido de hoy", total: "el mapa" },
 ];
+
+// ── STOCK: clips REALES de video (Pexels/Pixabay/Archive), ≤3s, insertados como
+// "notch" dentro de un hold de imagen ya SEGURO (calculado, no adivinado por frase) —
+// ver más abajo: se derivan de los tramos raw que sobreviven la clipeada de
+// componentes, así NUNCA chocan con un comp por construcción.
+const CONCEPTS = {
+  darvaza: "burning gas crater flames fire night desert",
+  intro: "old vintage map hands close up antique",
+  richat: "aerial drone desert rings satellite flyover",
+  stonehenge: "stonehenge aerial drone sunrise standing stones",
+  zimbabue: "african stone ruins aerial savanna dry wall",
+  nazca: "desert aerial flyover lines drone",
+  atacama: "atacama desert aerial chile rover",
+  gobekli: "ancient stone pillars archaeological site excavation",
+  newgrange: "ancient stone mound ireland aerial green hill",
+  carnac: "standing stones field aerial france",
+  silbury: "green hill aerial drone england countryside",
+  rehook: "old map hand tracing route closeup",
+  derinkuyu: "underground tunnel cave stone dark",
+  pumapunku: "ancient stone blocks ruins scattered closeup",
+  machupicchu: "machu picchu aerial drone mist mountains",
+  sacsayhuaman: "inca stone wall cusco closeup",
+  tiwanaku: "andean ruins high altitude plain",
+  yonaguni: "underwater rock formation diver exploring",
+  bimini: "underwater stones shallow water aerial turquoise",
+  bermuda: "stormy ocean aerial dark clouds",
+  baltico: "sonar screen scanning ocean floor",
+  pascua: "easter island moai statues",
+  malta: "ancient temple ruins stone limestone",
+  nanmadol: "ancient ruins water canals aerial jungle",
+  skarabrae: "stone age village ruins coastal windy",
+  longyou: "underground cave chamber carved rock",
+  mohenjodaro: "ancient city ruins excavation brick",
+  gunungpadang: "stone terraces hillside jungle mist",
+  angkor: "jungle temple tree roots ruins cambodia",
+};
+const siteKeyOf = (id) => {
+  const base = id.replace(/(_\d+)+$/, ""); // pela uno o más sufijos "_N" del final (índice + pieza de corte)
+  return base === "hook" ? "darvaza" : base;
+};
 
 // ── construir beats RAW ──────────────────────────────────────────────────────
 const rawBeats = [];
@@ -271,12 +311,11 @@ for (let i = 0; i < compBeats.length - 1; i++) {
 // fondo vacío (crema) sin ninguna imagen. Solución correcta: los RAW se tilean
 // PRIMERO, completos y sin huecos, cubriendo 0..REAL_END. Los componentes se
 // "insertan" después, RECORTANDO (sustracción de intervalos) la porción que ocupan
-// de cualquier raw que se solape — nunca estiran, nunca dejan hueco, y el raw
-// recortado sigue existiendo antes/después del componente con la MISMA imagen.
+// de cualquier raw que se solape — nunca estiran, nunca dejan hueco.
 const compRanges = compBeats.map((c) => [c.start, c.start + c.dur]).sort((a, b) => a[0] - b[0]);
-const clipAgainstComps = (start, dur) => {
+const clipAgainstRanges = (start, dur, ranges) => {
   let pieces = [[start, start + dur]];
-  for (const [cs, ce] of compRanges) {
+  for (const [cs, ce] of ranges) {
     const next = [];
     for (const [ps, pe] of pieces) {
       if (ce <= ps || cs >= pe) { next.push([ps, pe]); continue; } // sin solape
@@ -287,14 +326,43 @@ const clipAgainstComps = (start, dur) => {
   }
   return pieces.filter(([s, e]) => e - s >= 0.6); // < 0.6s: se descarta (imperceptible)
 };
+
+// ── construir beats STOCK (clips reales ≤3s, "notch" dentro de un tramo YA seguro) ──
+// Pedido del usuario: intercalar bastantes clips de stock cortos para que se sienta
+// dinámico. En vez de anclar por frase (arriesga chocar con un componente), se
+// derivan de los tramos raw que sobreviven la clipeada de componentes — así un
+// stock NUNCA puede caer encima de un comp (imposible por construcción).
+const rawByComp = [];
+for (const r of rawBeats) {
+  const pieces = clipAgainstRanges(r.start, r.dur, compRanges);
+  pieces.forEach(([s, e], idx) => rawByComp.push({ ...r, id: pieces.length > 1 ? `${r.id}_${idx}` : r.id, start: +s.toFixed(2), dur: +(e - s).toFixed(2) }));
+}
+const stockBeats = [];
+const usedSites = new Set();
+for (const r of rawByComp) {
+  if (r.dur < 5) continue;
+  const key = siteKeyOf(r.id);
+  if (!CONCEPTS[key] || usedSites.has(key)) continue;
+  const offset = Math.min(1.4, r.dur * 0.3);
+  const dur = +Math.min(3, r.dur - offset - 0.5).toFixed(2);
+  if (dur < 1.5) continue;
+  usedSites.add(key);
+  const name = `sk_${key}`;
+  stockBeats.push({
+    id: name, start: +(r.start + offset).toFixed(2), dur, kind: "raw", src: `broll/${name}.mp4`, noSplit: true,
+    hue: r.hue, isStock: true, stockGen: { name, concept: CONCEPTS[key], dur: 3 },
+  });
+}
+console.log(`stock: ${stockBeats.length} clips derivados de tramos seguros (de ${Object.keys(CONCEPTS).length} sitios con concepto)`);
+const occupantRanges = [...compRanges, ...stockBeats.map((s) => [s.start, s.start + s.dur])].sort((a, b) => a[0] - b[0]);
 const rawFinal = [];
 for (const r of rawBeats) {
-  const pieces = clipAgainstComps(r.start, r.dur);
+  const pieces = clipAgainstRanges(r.start, r.dur, occupantRanges);
   pieces.forEach(([s, e], idx) => {
     rawFinal.push({ ...r, id: pieces.length > 1 ? `${r.id}_${idx}` : r.id, start: +s.toFixed(2), dur: +(e - s).toFixed(2) });
   });
 }
-const timeline = [...rawFinal, ...compBeats].sort((a, b) => a.start - b.start);
+const timeline = [...rawFinal, ...compBeats, ...stockBeats].sort((a, b) => a.start - b.start);
 
 // ── CIERRE SILENCIOSO (sin voz nueva): recap rápido + tarjeta de suscripción ─
 const closingImgs = ["hook_darvaza1", "stonehenge_1", "nazca_1", "machupicchu_1", "angkor_1"];
@@ -317,11 +385,12 @@ const beats = [...timeline, ...closingBeats];
 { const seen = new Map(); for (const b of beats) seen.set(b.id, (seen.get(b.id) || 0) + 1); const dups = [...seen.entries()].filter(([, c]) => c > 1); if (dups.length) { console.error("✖ ids repetidos:", dups); process.exit(1); } }
 
 fs.mkdirSync("beatsheet", { recursive: true });
-// "tutorial":true relaja el tope de fotos a ≤65% (queda en ~57%) — cada raw acá es
-// literal y específico (un sitio real nombrado, no relleno genérico), igual que la
-// literalidad de un tutorial paso a paso; todos los demás guards (≥11 tipos,
-// estructurado ≥12%, bars/vs≥2, checklist≥1) se mantienen y ya pasan sobrados.
-fs.writeFileSync(`beatsheet/${SLUG}.json`, JSON.stringify({ video: SLUG, avatar: AVATAR, maxRawDur: 6, total: TOTAL, tutorial: true, beats }, null, 1));
+// "clipsfirst":true (en vez de "tutorial") — con los 25 clips de stock reales
+// agregados a pedido del usuario, el footage real (imagen + video) pasa el 65%
+// del tutorial; el tope de raw% ya no aplica (a propósito: es un video clips-first),
+// pero TODOS los demás guards de variedad (≥11 tipos, ≥6 estructurados, bars/vs≥2,
+// checklist≥1) se mantienen duros y ya pasan sobrados.
+fs.writeFileSync(`beatsheet/${SLUG}.json`, JSON.stringify({ video: SLUG, avatar: AVATAR, maxRawDur: 6, total: TOTAL, clipsfirst: true, beats }, null, 1));
 console.log(`beats ${beats.length} (raw ${rawFinal.length} · comp ${compBeats.length} · cierre ${closingBeats.length}) · REAL_END ${REAL_END}s · TOTAL ${TOTAL}s`);
 
 // ── AVATAR WINDOWS (full ↔ hidden, sin PiP de esquina) ───────────────────────
@@ -330,8 +399,10 @@ console.log(`beats ${beats.length} (raw ${rawFinal.length} · comp ${compBeats.l
 // realmente se ve en pantalla.
 // comps = rangos que DEBEN verse (componentes gráficos) → avatar hidden ahí.
 // El resto (planos raw = b-roll genérico) son candidatos a full-avatar (variedad).
-const timelineRaw = timeline.filter((b) => b.kind === "raw");
-const timelineComp = timeline.filter((b) => b.kind !== "raw");
+// los clips STOCK también deben verse (footage real, no tapar con avatar-full) —
+// solo las imágenes IA genéricas son candidatas a que el avatar las cubra en full.
+const timelineRaw = timeline.filter((b) => b.kind === "raw" && !b.isStock);
+const timelineComp = timeline.filter((b) => b.kind !== "raw" || b.isStock);
 const comps2 = timelineComp.map((c) => [c.start, c.start + c.dur]);
 const overlapsComp = (a, b) => comps2.some(([s, e]) => a < e && b > s);
 const snapWord = (tt) => { for (const c of caps) if (c.startMs / 1000 >= tt - 0.05) return c.startMs / 1000; return tt; };
@@ -368,3 +439,29 @@ fs.writeFileSync(
   `// avatar_${SLUG}.gen.ts — GENERADO. NO editar a mano.\nimport type { AvatarWindow } from "./scenes/AvatarLayer";\nexport const TOTAL_${SLUG.toUpperCase()} = ${TOTAL};\nexport const AVATAR_WINDOWS: AvatarWindow[] = ${JSON.stringify(windows, null, 2)};\n`
 );
 console.log(`avatar windows: ${windows.length} (full: ${windows.filter((w) => w.mode === "full").length})`);
+
+// ★ FIX #3 (bug detectado por el AUDITOR de farm — "release not found" / 404 en el
+// runner): un raw beat que un componente termina clipeando por COMPLETO (0 piezas
+// sobreviven) desaparece del array `beats` → beatsheet.mjs nunca ve su `gen` → esa
+// imagen NUNCA se genera aunque el componente la siga referenciando por bg/image
+// (nombre pelado, sin gen propio). Acá se escribe SIEMPRE la lista COMPLETA de
+// imágenes de RAW (sobrevivan o no como beat) + todo lo referenciado por los
+// componentes, para generar el 100% sin depender de la supervivencia del clip.
+{
+  const allImgs = new Map();
+  for (const [, , img, prompt] of RAW) allImgs.set(img, prompt);
+  fs.mkdirSync("public/img", { recursive: true });
+  fs.writeFileSync(
+    `public/img/prompts_${SLUG}_all.json`,
+    JSON.stringify([...allImgs.entries()].map(([name, prompt]) => ({ name, prompt })), null, 2)
+  );
+  console.log(`prompts_${SLUG}_all.json: ${allImgs.size} imágenes (RAW completo, incluye las clipeadas al 100%)`);
+}
+
+// ── lista para scripts/stockfallback.mjs --list (clips reales ≤3s) ──────────
+{
+  const needstock = stockBeats.map((s) => ({ name: s.stockGen.name, concept: s.stockGen.concept, query: s.stockGen.concept, dur: 3 }));
+  fs.mkdirSync("public/broll", { recursive: true });
+  fs.writeFileSync(`public/broll/needstock_${SLUG}.json`, JSON.stringify(needstock, null, 2));
+  console.log(`needstock_${SLUG}.json: ${needstock.length} clips de stock a bajar → node scripts/stockfallback.mjs --list public/broll/needstock_${SLUG}.json`);
+}
