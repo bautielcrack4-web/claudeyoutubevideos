@@ -27,7 +27,9 @@ if (!slug || !comp || !total) {
 }
 const sh = (c) => execSync(c, { stdio: "inherit" });
 const out = (c) => execSync(c, { encoding: "utf8" }).trim();
+const only = process.env.ONLY_CHUNKS || ""; // re-render PARCIAL: solo estos chunks (reusa el resto; assets ya subidos)
 
+if (!only) { // en re-render parcial NO re-empaquetamos ni re-subimos assets (el release assets-<slug> ya existe)
 // 1) tarball de assets (TAR_DIR redirige el .tar a otro disco — C: se llena con ~1GB)
 const tarDir = process.env.TAR_DIR || ".";
 const tar = `${tarDir}/assets-${slug}.tar`;
@@ -77,10 +79,11 @@ const relTag = `assets-${slug}`;
 try { out(`gh release view ${relTag}`); sh(`gh release delete ${relTag} --yes --cleanup-tag`); } catch { /* no existe */ }
 sh(`gh release create ${relTag} ${tar} --title ${relTag} --notes "assets del render"`);
 fs.rmSync(tar);
+}
 
 // 3) disparar el workflow
-console.log("disparando render.yml ...");
-sh(`gh workflow run render.yml${process.env.FARM_REF ? ` --ref ${process.env.FARM_REF}` : ""} -f slug=${slug} -f comp_id=${comp} -f total_frames=${total} -f chunks=${chunks}`);
+console.log(only ? `disparando render.yml (PARCIAL, chunks ${only}) ...` : "disparando render.yml ...");
+sh(`gh workflow run render.yml${process.env.FARM_REF ? ` --ref ${process.env.FARM_REF}` : ""} -f slug=${slug} -f comp_id=${comp} -f total_frames=${total} -f chunks=${chunks}${only ? ` -f only_chunks=${only}` : ""}`);
 
 // 4) esperar y descargar el mp4 final
 console.log("esperando que aparezca la corrida ...");
