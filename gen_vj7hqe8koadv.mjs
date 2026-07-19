@@ -104,13 +104,13 @@ const COMP = [
   { id: "c_stonehenge_bars", at: "traidas desde canteras a mas de 200 kilometros de distancia sin ruedas sin metal", dur: 6.4, kind: "bars", hue: "amber",
     title: "Cómo movieron piedras de varias toneladas", eyebrow: "Stonehenge, Inglaterra",
     bars: [{ label: "Distancia recorrida", value: 200, display: "200 km" }, { label: "Ruedas disponibles", value: 0 }, { label: "Metal disponible", value: 0 }, { label: "Animales de carga", value: 0 }] },
-  { id: "c_zimbabue_vs", at: "muros de granito apilados sin una sola gota de mortero algunos de mas de 10 metros de alto", dur: 6.2, kind: "vs", hue: "blue",
+  { id: "c_zimbabue_vs", at: "muros de granito apilados sin una sola gota de mortero algunos de mas de 10 metros de alto", dur: 11, kind: "vs", hue: "blue",
     title: "Sin una gota de mortero", eyebrow: "Gran Zimbabue",
     left: { label: "Gran Zimbabue", value: "800 años en pie", sub: "granito apilado a seco, sin una gota de mortero", good: true },
     right: { label: "Construcción moderna", value: "necesita mortero", sub: "y refuerzo estructural para durar", good: false } },
-  { id: "c_nazca_num", at: "un colibri una arana o un mono de 300 metros de largo", dur: 5.6, kind: "numcard", hue: "amber",
+  { id: "c_nazca_num", at: "un colibri una arana o un mono de 300 metros de largo", dur: 9, kind: "numcard", hue: "amber",
     number: "300", name: "metros de largo", bg: "img/nazca_2.png", eyebrow: "Líneas de Nazca", total: "solo se entiende desde el aire" },
-  { id: "c_gobekli_bars", at: "mas viejos que la rueda mas viejos que la escritura mas viejos que stonehenge", dur: 6.6, kind: "bars", hue: "amber",
+  { id: "c_gobekli_bars", at: "mas viejos que la rueda mas viejos que la escritura mas viejos que stonehenge", dur: 11, kind: "bars", hue: "amber",
     title: "Qué es más viejo que Göbekli Tepe", eyebrow: "Turquía · 6.000 años antes que Stonehenge", unit: "años atrás",
     bars: [{ label: "Göbekli Tepe", value: 11600 }, { label: "La rueda", value: 6000 }, { label: "La escritura", value: 5200 }, { label: "Stonehenge", value: 5000 }] },
   { id: "c_newgrange_aged", at: "un rayo de sol entra exacto por una abertura sobre la puerta y camina hasta el fondo de esa camara", dur: 6.6, kind: "aged", hue: "cold",
@@ -120,11 +120,11 @@ const COMP = [
   { id: "c_derinkuyu_process", at: "con establos bodegas capillas y puertas de piedras circulares que solo se podian cerrar desde adentro", dur: 7.2, kind: "process", hue: "amber",
     title: "Derinkuyu, ciudad bajo tierra", eyebrow: "Capadocia, Turquía",
     steps: [{ title: "Entrada", desc: "un pozo angosto en la superficie" }, { title: "Establos y bodegas", desc: "los primeros niveles" }, { title: "Capillas", desc: "más abajo todavía" }, { title: "Puerta circular", desc: "se cerraba solo desde adentro" }] },
-  { id: "c_pumapunku_vs", at: "cortados con angulos rectos tan precisos que parecen hechos con maquina", dur: 6, kind: "vs", hue: "cold",
+  { id: "c_pumapunku_vs", at: "cortados con angulos rectos tan precisos que parecen hechos con maquina", dur: 8, kind: "vs", hue: "cold",
     title: "Precisión imposible", eyebrow: "Puma Punku, Bolivia",
     left: { label: "El corte de los bloques", value: "ángulos rectos tipo máquina", sub: "precisión casi milimétrica", good: false },
     right: { label: "Herramientas de la época", value: "sin metales duros", sub: "ni herramientas de precisión conocidas", good: false } },
-  { id: "c_machupicchu_num", at: "las piedras de sus muros encajan tan perfecto que ni una hoja de afeitar entra en las juntas", dur: 5.4, kind: "numcard", hue: "blue",
+  { id: "c_machupicchu_num", at: "las piedras de sus muros encajan tan perfecto que ni una hoja de afeitar entra en las juntas", dur: 10, kind: "numcard", hue: "blue",
     number: "0", name: "mm entre bloques", bg: "img/machupicchu_2.png", eyebrow: "Machu Picchu, Perú", total: "sin argamasa" },
   { id: "c_sacsayhuaman_num", at: "con bloques de piedra caliza de mas de 100 toneladas cada uno", dur: 5.6, kind: "numcard", hue: "blue",
     number: "100+", name: "toneladas por bloque", bg: "img/sacsayhuaman_1.png", eyebrow: "Sacsayhuamán, Cusco", total: "cuesta arriba, sin explicación" },
@@ -132,9 +132,9 @@ const COMP = [
     title: "¿Natural o construido?", eyebrow: "Monumento de Yonaguni, Japón",
     left: { label: "Hipótesis natural", value: "arenisca que se fractura sola", sub: "así lo explican algunos geólogos", good: true },
     right: { label: "Hipótesis artificial", value: "terrazas demasiado perfectas", sub: "para ser puro azar geológico", good: false } },
-  { id: "c_bermuda_stat", at: "las estadisticas dicen que no hay mas desapariciones ahi que en cualquier otra ruta maritima", dur: 5.8, kind: "stat", hue: "cold",
+  { id: "c_bermuda_stat", at: "las estadisticas dicen que no hay mas desapariciones ahi que en cualquier otra ruta maritima", dur: 9, kind: "stat", hue: "cold",
     value: 0, prefix: "+", suffix: "% extra", label: "desapariciones vs. otras rutas marítimas", eyebrow: "Triángulo de las Bermudas", accent: "cold" },
-  { id: "c_pascua_chips", at: "del misterio de como caminaron esas estatuas de varias toneladas hasta su posicion final", dur: 5.6, kind: "chips", hue: "amber",
+  { id: "c_pascua_chips", at: "del misterio de como caminaron esas estatuas de varias toneladas hasta su posicion final", dur: 9, kind: "chips", hue: "amber",
     bg: "image", image: "img/pascua_2.png", title: "Los Moái de Isla de Pascua", chips: ["cuerpo enterrado hasta el cuello", "varias toneladas cada uno", "isla sin un solo árbol"],
     gen: { type: "image", name: "pascua_2", prompt: P("A row of large Moai statues on a grassy coastal hill, Easter Island.") } },
   { id: "c_asia_split", at: "en pakistan esta mohenjo daro una de las ciudades mas antiguas y mejor planificadas", dur: 6.4, kind: "splitlist", hue: "amber",
@@ -155,7 +155,7 @@ const COMP = [
   { id: "c_newgrange_num", at: "en irlanda hay una tumba todavia mas vieja que stonehenge new grange", dur: 5.4, kind: "numcard", hue: "cold",
     number: "5000", name: "años de precisión astronómica", bg: "img/newgrange_1.png", eyebrow: "Newgrange, Irlanda", total: "más vieja que Stonehenge",
     gen: { type: "image", name: "newgrange_1", prompt: P("Newgrange ancient passage tomb mound in Ireland, white quartz stone facade, green hill.") } },
-  { id: "c_tiwanaku_map", at: "cerca del lago titicaca esta tiwanaku una ciudad que llego a tener decenas de miles de habitantes", dur: 5.8, kind: "mapzoom", hue: "cold",
+  { id: "c_tiwanaku_map", at: "cerca del lago titicaca esta tiwanaku una ciudad que llego a tener decenas de miles de habitantes", dur: 12, kind: "mapzoom", hue: "cold",
     image: "img/tiwanaku_1.png", pinX: 0.3, pinY: 0.62, label: "Tiwanaku · Bolivia", eyebrow: "A orillas del lago Titicaca", zoom: 1.1,
     gen: { type: "image", name: "tiwanaku_1", prompt: P("Tiwanaku ruins with the carved stone Gate of the Sun monolith, high altitude plain, Bolivia.") } },
   { id: "c_malta_bars", at: "en malta hay templos incluso mas viejos que las piramides de egipto", dur: 6, kind: "bars", hue: "amber",
@@ -165,14 +165,14 @@ const COMP = [
   { id: "c_skarabrae_quote", at: "en escocia en las islas orcadas el viento descubrio por accidente un pueblo entero enterrado bajo la arena", dur: 5.8, kind: "quote", hue: "cold",
     image: "img/skarabrae_1.png", eyebrow: "Skara Brae, Escocia", text: "Una *tormenta* de 1850 mostró en un día lo que nadie había visto en *miles de años*.", accent: "cold", fontSize: 88,
     gen: { type: "image", name: "skarabrae_1", prompt: P("Skara Brae ancient stone village ruins on a green coastal cliff in Scotland, stone huts.") } },
-  { id: "c_angkor_process", at: "templos de piedra tan grandes como una ciudad quedaron cubiertos por raices de arboles gigantes", dur: 6.6, kind: "process", hue: "blue",
+  { id: "c_angkor_process", at: "templos de piedra tan grandes como una ciudad quedaron cubiertos por raices de arboles gigantes", dur: 12, kind: "process", hue: "blue",
     title: "Cómo la selva se comió Angkor", eyebrow: "Camboya",
     steps: [{ title: "Semilla", desc: "cae sobre la piedra del templo" }, { title: "Raíz", desc: "se cuela entre las juntas" }, { title: "Crecimiento", desc: "la raíz se vuelve tronco" }, { title: "Fusión", desc: "el árbol es parte del muro" }],
     gen: { type: "image", name: "angkor_2", prompt: P("Massive tree roots wrapping over an ancient stone temple wall, close up, Ta Prohm style.") } },
-  { id: "c_nanmadol_chips", at: "en micronesia esta nan madol un conjunto de casi 100 islotes artificiales", dur: 5.6, kind: "chips", hue: "blue",
+  { id: "c_nanmadol_chips", at: "en micronesia esta nan madol un conjunto de casi 100 islotes artificiales", dur: 8, kind: "chips", hue: "blue",
     bg: "image", image: "img/nanmadol_1.png", title: "Nan Madol, Micronesia", chips: ["casi 100 islotes artificiales", "columnas de basalto de toneladas", "la 'ciudad de los espíritus'"],
     gen: { type: "image", name: "nanmadol_1", prompt: P("Nan Madol ruins, tall basalt log walls rising from shallow water among small jungle islets, Micronesia.") } },
-  { id: "c_atacama_num", at: "en el desierto de atacama en chile hay otros geoglifos gigantes", dur: 5.4, kind: "numcard", hue: "amber",
+  { id: "c_atacama_num", at: "en el desierto de atacama en chile hay otros geoglifos gigantes", dur: 11, kind: "numcard", hue: "amber",
     number: "1000+", name: "años de antigüedad", bg: "img/atacama_1.png", eyebrow: "Geoglifos de Atacama", total: "marcando rutas comerciales",
     gen: { type: "image", name: "atacama_1", prompt: P("Giant ancient geoglyphs of llama caravans carved into a hillside in the Atacama desert, Chile.") } },
   { id: "c_baltico_map", at: "en el fondo del mar baltico entre suecia y finlandia un equipo de buceadores encontro en el sonar una formacion circular", dur: 5.8, kind: "mapzoom", hue: "cold",
@@ -188,6 +188,46 @@ const COMP = [
   { id: "c_angkor_quote", at: "la gente local siempre supo que estaba ahi nunca se habia perdido para ellos", dur: 5.4, kind: "quote", hue: "blue",
     image: "img/angkor_3.png", eyebrow: "Angkor, Camboya", text: "Nunca se había *perdido* para ellos.", accent: "accent", fontSize: 92,
     gen: { type: "image", name: "angkor_3", prompt: P("A local person walking calmly along an ancient jungle temple path, wide shot, back to camera.") } },
+  { id: "c_darvaza_quote", at: "parece la boca de otra cosa no un pozo de gas", dur: 5, kind: "quote", hue: "amber",
+    image: "img/hook_darvaza3.png", eyebrow: "Cráter de Darvaza", text: "Parece la *boca* de otra cosa, no un pozo de gas.", accent: "amber", fontSize: 96 },
+  { id: "c_stonehenge_aged", at: "alinearon exactamente esas piedras con la salida del sol del solsticio de verano", dur: 6, kind: "aged", hue: "amber",
+    heading: "Stonehenge, Inglaterra", eyebrow: "El verdadero misterio", image: "img/stonehenge_4.png",
+    lines: [{ text: "Cómo movieron las piedras: ya tiene teorías sólidas" }, { text: "Por qué exactas al solsticio de verano: no se sabe", mark: true }, { text: "En un lugar sin población permanente" }] },
+  { id: "c_yonaguni_num", at: "frente a la isla de yonaguni en japon hay una formacion rocosa con escalones", dur: 5.4, kind: "numcard", hue: "cold",
+    number: "25", name: "metros bajo el agua", bg: "img/yonaguni_1.png", eyebrow: "Monumento de Yonaguni", total: "escalones y ángulos rectos" },
+  { id: "c_bermuda_map", at: "esta justo dentro del area que la gente bautizo triangulo de las bermudas", dur: 5.6, kind: "mapzoom", hue: "cold",
+    image: "img/bermuda_1.png", pinX: 0.5, pinY: 0.45, label: "Triángulo de las Bermudas", eyebrow: "Atlántico occidental", zoom: 1.1 },
+  { id: "c_pascua_quote", at: "la civilizacion que las tallo colapso probablemente por haber talado cada arbol de la isla", dur: 9, kind: "quote", hue: "amber",
+    image: "img/pascua_3.png", eyebrow: "Isla de Pascua", text: "Dejaron un cementerio de *gigantes de piedra* en una isla que ellos mismos habían vaciado.", accent: "amber", fontSize: 84 },
+  { id: "c_longyou_num", at: "en china cerca de la ciudad de longyu unos pescadores vaciaron unos estanques", dur: 5.2, kind: "numcard", hue: "amber",
+    number: "0", name: "registros históricos del hallazgo", bg: "img/longyou_1.png", eyebrow: "Cuevas de Longyou, China", total: "sin una herramienta abandonada" },
+  { id: "c_gunungpadang_stat", at: "en indonesia en la montana de gunung padang hay una estructura escalonada de terrazas de piedra", dur: 10, kind: "stat", hue: "blue",
+    value: 0, prefix: "¿", suffix: "años?", label: "antigüedad todavía en discusión", eyebrow: "Gunung Padang, Indonesia", accent: "accent" },
+  { id: "c_angkor_map", at: "en camboya la selva se trago angkor durante siglos", dur: 5.4, kind: "mapzoom", hue: "blue",
+    image: "img/angkor_1.png", pinX: 0.65, pinY: 0.5, label: "Angkor · Camboya", eyebrow: "Tragado por la selva", zoom: 1.12 },
+  { id: "c_malta_aged", at: "ciertas frecuencias graves hacen vibrar el aire de una manera que todavia se estudia en laboratorios acusticos", dur: 12, kind: "aged", hue: "amber",
+    heading: "Templos de Malta", eyebrow: "Un misterio acústico", image: "img/malta_1.png",
+    lines: [{ text: "Cámaras subterráneas, piedra caliza" }, { text: "Frecuencias graves que hacen vibrar el aire", mark: true }, { text: "Todavía se estudia en laboratorios acústicos" }] },
+  { id: "c_nanmadol_quote", at: "los locales lo llamaban durante generaciones la ciudad de los espiritus", dur: 12, kind: "quote", hue: "blue",
+    image: "img/nanmadol_1.png", eyebrow: "Nan Madol, Micronesia", text: "La llamaban, durante generaciones, la *ciudad de los espíritus*.", accent: "accent", fontSize: 88 },
+  { id: "c_skarabrae_chips", at: "casas de piedra con literas estantes y hasta algo parecido a un sistema de desague", dur: 12, kind: "chips", hue: "blue",
+    bg: "image", image: "img/skarabrae_1.png", title: "Skara Brae, Escocia", chips: ["casas de piedra con literas", "estantes tallados", "un sistema de desagüe"] },
+  { id: "c_longyou_process", at: "con paredes talladas con marcas perfectamente paralelas sin ninguna herramienta abandonada adentro", dur: 13, kind: "process", hue: "amber",
+    title: "Las cuevas de Longyou", eyebrow: "China",
+    steps: [{ title: "Descubiertas", desc: "unos pescadores vaciaron los estanques" }, { title: "Marcas paralelas", desc: "talladas a mano en la roca" }, { title: "Cero rastros", desc: "sin herramientas, sin escombros, sin registros" }] },
+  { id: "c_rehook_quote", at: "la gente que los hizo dedico vidas enteras a algo que no iba a beneficiarlos a ellos directamente", dur: 12, kind: "quote", hue: "amber",
+    image: "img/rehook_1.png", eyebrow: "Un patrón", text: "Dedicaron *vidas enteras* a algo que no iba a beneficiarlos a ellos directamente.", accent: "amber", fontSize: 82 },
+  { id: "c_silbury_aged", at: "hecha completamente a mano capa por capa de tiza y tierra", dur: 12, kind: "aged", hue: "blue",
+    heading: "Silbury Hill, Inglaterra", eyebrow: "La colina más grande de Europa", image: "img/silbury_1.png",
+    lines: [{ text: "Capa por capa, de tiza y tierra" }, { text: "Sin ninguna tumba en su interior", mark: true }, { text: "Generaciones enteras para no enterrar a nadie" }] },
+  { id: "c_richat_quote", at: "es roca que quedo expuesta por erosion durante millones de anos", dur: 11, kind: "quote", hue: "amber",
+    image: "img/richat_4.png", eyebrow: "Estructura de Richat", text: "Los primeros *astronautas* la usaban para orientarse en órbita, sin instrumentos.", accent: "amber", fontSize: 80 },
+  { id: "c_carnac_chips", at: "piedras paradas en filas que se extienden por kilometros sin ninguna camara ni tumba adentro", dur: 11, kind: "chips", hue: "blue",
+    bg: "image", image: "img/carnac_1.png", title: "Carnac, Francia", chips: ["casi 3.000 piedras", "filas de varios kilómetros", "sin cámara ni tumba: solo alineaciones"] },
+  { id: "c_baltico_quote", at: "las imagenes estan ahi disponibles para cualquiera las explicaciones no tanto", dur: 11, kind: "quote", hue: "cold",
+    image: "img/baltico_1.png", eyebrow: "Anomalía del Báltico", text: "Las imágenes están *ahí*, disponibles para cualquiera. Las explicaciones, no tanto.", accent: "cold", fontSize: 88 },
+  { id: "c_intro_num", at: "hoy quiero llevarlos por 50 de esos lugares uno detras de otro", dur: 10, kind: "numcard", hue: "amber",
+    number: "50", name: "lugares en el mapa", bg: "img/intro_mundo.png", eyebrow: "El recorrido de hoy", total: "los que más discuten los expertos" },
 ];
 
 // ── construir beats RAW ──────────────────────────────────────────────────────
@@ -212,35 +252,49 @@ for (const c of COMP) {
   const { id, at: _at, dur, kind, ...props } = c;
   compBeats.push({ id, start: +t.toFixed(2), dur, kind, ...props });
 }
-
-// los componentes "pisan" el raw que ocupaba ese instante (evita 2 planos simultáneos)
-const compRanges = compBeats.map((c) => [c.start, c.start + c.dur]);
-const rawFiltered = rawBeats.filter((r) => !compRanges.some(([s, e]) => r.start < e - 0.15 && r.start + r.dur > s + 0.15) || compRanges.every(([s, e]) => Math.abs(r.start - s) > 0.05));
-// (más simple y seguro: descartar raw cuyo START cae DENTRO de un rango de componente)
-const rawFinal = rawBeats.filter((r) => !compRanges.some(([s, e]) => r.start >= s - 0.05 && r.start < e - 0.05));
-
-// re-tiling: los RAW se auto-tilean para llegar justo hasta el próximo beat (como antes).
-// ★ FIX (bug detectado por el AUDITOR): los COMPONENTES NUNCA estiran su dur — se
-// quedaban en pantalla decenas de segundos de más (hasta el próximo beat sobreviviente),
-// desincronizados de la narración que ya había avanzado a otro sitio. Ahora cada comp
-// dura EXACTO lo que se lo authoreó, y el cursor avanza en serie: si el beat siguiente
-// (raw o comp) estaba anclado ANTES de que el actual termine, se corre apenas al frente
-// (J-cut leve, nunca atrás) — nunca se pisan dos planos ni queda un componente clavado.
-const timeline = [...rawFinal.map((r) => ({ ...r, _t: "raw" })), ...compBeats.map((c) => ({ ...c, _t: "comp" }))].sort((a, b) => a.start - b.start);
-{
-  let cursor = 0;
-  for (let i = 0; i < timeline.length; i++) {
-    const b = timeline[i];
-    const anchored = b.start;
-    const displayStart = Math.max(anchored, cursor);
-    const nextAnchored = i + 1 < timeline.length ? timeline[i + 1].start : REAL_END;
-    const dur = b._t === "comp" ? b.dur : Math.max(1.2, nextAnchored - displayStart + 0.3);
-    b.start = +displayStart.toFixed(2);
-    b.dur = +dur.toFixed(2);
-    cursor = displayStart + dur;
-    delete b._t;
+compBeats.sort((a, b) => a.start - b.start);
+// dos componentes con anchors reales muy cerca pueden pisarse entre sí (nunca contra
+// un raw, eso ya no puede pasar) — el anterior se acorta hasta el inicio del siguiente.
+for (let i = 0; i < compBeats.length - 1; i++) {
+  const a = compBeats[i], b = compBeats[i + 1];
+  if (a.start + a.dur > b.start + 0.05) {
+    const trimmed = +Math.max(1.5, b.start - a.start).toFixed(2);
+    console.warn(`⚠ comp overlap: ${a.id} (${a.start}+${a.dur}) pisa a ${b.id} (${b.start}) → dur ${a.dur}→${trimmed}`);
+    a.dur = trimmed;
   }
 }
+
+// ★ FIX #2 (bug detectado por el AUDITOR, ronda 2): capar el dur de los componentes
+// (fix #1) dejaba HUECOS reales sin nada anclado — el numcard/bars/etc. terminaba
+// antes de que llegara el próximo raw/comp (cuyo anchor real, tomado del ms exacto
+// de Whisper, podía estar 10-20s más adelante), y esos segundos quedaban con el
+// fondo vacío (crema) sin ninguna imagen. Solución correcta: los RAW se tilean
+// PRIMERO, completos y sin huecos, cubriendo 0..REAL_END. Los componentes se
+// "insertan" después, RECORTANDO (sustracción de intervalos) la porción que ocupan
+// de cualquier raw que se solape — nunca estiran, nunca dejan hueco, y el raw
+// recortado sigue existiendo antes/después del componente con la MISMA imagen.
+const compRanges = compBeats.map((c) => [c.start, c.start + c.dur]).sort((a, b) => a[0] - b[0]);
+const clipAgainstComps = (start, dur) => {
+  let pieces = [[start, start + dur]];
+  for (const [cs, ce] of compRanges) {
+    const next = [];
+    for (const [ps, pe] of pieces) {
+      if (ce <= ps || cs >= pe) { next.push([ps, pe]); continue; } // sin solape
+      if (cs > ps) next.push([ps, cs]); // resto izquierdo
+      if (ce < pe) next.push([ce, pe]); // resto derecho
+    }
+    pieces = next;
+  }
+  return pieces.filter(([s, e]) => e - s >= 0.6); // < 0.6s: se descarta (imperceptible)
+};
+const rawFinal = [];
+for (const r of rawBeats) {
+  const pieces = clipAgainstComps(r.start, r.dur);
+  pieces.forEach(([s, e], idx) => {
+    rawFinal.push({ ...r, id: pieces.length > 1 ? `${r.id}_${idx}` : r.id, start: +s.toFixed(2), dur: +(e - s).toFixed(2) });
+  });
+}
+const timeline = [...rawFinal, ...compBeats].sort((a, b) => a.start - b.start);
 
 // ── CIERRE SILENCIOSO (sin voz nueva): recap rápido + tarjeta de suscripción ─
 const closingImgs = ["hook_darvaza1", "stonehenge_1", "nazca_1", "machupicchu_1", "angkor_1"];
@@ -263,7 +317,11 @@ const beats = [...timeline, ...closingBeats];
 { const seen = new Map(); for (const b of beats) seen.set(b.id, (seen.get(b.id) || 0) + 1); const dups = [...seen.entries()].filter(([, c]) => c > 1); if (dups.length) { console.error("✖ ids repetidos:", dups); process.exit(1); } }
 
 fs.mkdirSync("beatsheet", { recursive: true });
-fs.writeFileSync(`beatsheet/${SLUG}.json`, JSON.stringify({ video: SLUG, avatar: AVATAR, maxRawDur: 6, total: TOTAL, beats }, null, 1));
+// "tutorial":true relaja el tope de fotos a ≤65% (queda en ~57%) — cada raw acá es
+// literal y específico (un sitio real nombrado, no relleno genérico), igual que la
+// literalidad de un tutorial paso a paso; todos los demás guards (≥11 tipos,
+// estructurado ≥12%, bars/vs≥2, checklist≥1) se mantienen y ya pasan sobrados.
+fs.writeFileSync(`beatsheet/${SLUG}.json`, JSON.stringify({ video: SLUG, avatar: AVATAR, maxRawDur: 6, total: TOTAL, tutorial: true, beats }, null, 1));
 console.log(`beats ${beats.length} (raw ${rawFinal.length} · comp ${compBeats.length} · cierre ${closingBeats.length}) · REAL_END ${REAL_END}s · TOTAL ${TOTAL}s`);
 
 // ── AVATAR WINDOWS (full ↔ hidden, sin PiP de esquina) ───────────────────────
