@@ -45,7 +45,7 @@ const image = (name: string): MediaAsset => ({src: `img/${name}.png`, type: 'ima
 const video = (name: string): MediaAsset => ({src: `broll/${name}.mp4`, type: 'video'});
 const frames = (seconds: number) => Math.round(seconds * FPS);
 
-const WINDOWS: VisualWindow[] = [
+const DIRECTOR_WINDOWS: VisualWindow[] = [
   {
     start: 0,
     duration: 13,
@@ -277,6 +277,33 @@ const WINDOWS: VisualWindow[] = [
   },
 ];
 
+const WINDOWS: VisualWindow[] = DIRECTOR_WINDOWS
+  .filter(({start}) => [0, 78, 118, 146, 174, 318, 455, 849].includes(start))
+  .map((window) => {
+    if (window.start === 118) {
+      return {...window, media: [image('vbb_fine_lines_window'), image('vbb_spots_macro')]};
+    }
+    if (window.start === 146) {
+      return {...window, media: [image('vbb_spots_macro'), image('vbb_pigment_diagram')]};
+    }
+    if (window.start === 174) {
+      return {...window, duration: 16, media: [image('vbb_rosemary_lab'), image('vbb_rosemary_macro')]};
+    }
+    if (window.start === 318) {
+      return {...window, duration: 8, media: [image('vbb2_wash_sprig')]};
+    }
+    if (window.start === 455) {
+      return {
+        ...window,
+        duration: 11,
+        kicker: 'EL SOL PUEDE INTENSIFICARLAS',
+        title: 'La protección cambia el resultado',
+        media: [image('vbb_spots_macro'), image('vbb_pigment_diagram')],
+      };
+    }
+    return window;
+  });
+
 const MediaShot: React.FC<{asset: MediaAsset; index: number}> = ({asset, index}) => {
   const frame = useCurrentFrame();
   const drift = interpolate(frame, [0, SHOT_FRAMES], [1.015, 1.075], {
@@ -402,7 +429,7 @@ const AvatarBase: React.FC = () => {
   );
 };
 
-const COMPONENT_SCENES = [
+const DIRECTOR_COMPONENT_SCENES = [
   {
     start: 17,
     node: (
@@ -508,6 +535,171 @@ const COMPONENT_SCENES = [
         hot={['Protegé']}
         sub="El hábito es el héroe. El romero puede ser un complemento."
         buttonLabel="Suscribite para más consejos"
+        image={staticFile('img/vbb_rosemary_macro.png')}
+        accent={GOLD}
+        mood="gold"
+      />
+    ),
+  },
+];
+
+const checklistScene = (
+  start: number,
+  kicker: string,
+  title: string,
+  items: string[],
+  accent: string = TEAL,
+): {start: number; node: React.ReactNode} => ({
+  start,
+  node: (
+    <FedChecklist
+      kicker={kicker}
+      title={title}
+      hot={title.split(' ').slice(-1)}
+      items={items}
+      accent={accent}
+      mood={accent === RED ? 'cool' : 'warmdark'}
+    />
+  ),
+});
+
+const COMPONENT_SCENES: {start: number; node: React.ReactNode}[] = [
+  ...DIRECTOR_COMPONENT_SCENES.filter(({start}) => [17, 109, 209].includes(start)),
+  checklistScene(72, 'Frente al espejo', 'Diferenciá lo que ves', [
+    'Líneas finas por sequedad',
+    'Surcos visibles en reposo',
+    'Mancha estable',
+    'Lesión nueva o cambiante',
+  ]),
+  checklistScene(116, 'No son lo mismo', 'Arruga ≠ mancha', [
+    'Textura superficial',
+    'Pliegue profundo',
+    'Cambio de pigmento',
+    'Lesión que requiere evaluación',
+  ], GOLD),
+  checklistScene(190, 'Tres contextos distintos', 'No confundas evidencia', [
+    'Compuesto bajo estudio',
+    'Fórmula cosmética estable',
+    'Infusión preparada en casa',
+    'Resultados no equivalentes',
+  ]),
+  checklistScene(238, 'Antes y después', 'La cámara también cambia', [
+    'Luz',
+    'Ángulo',
+    'Expresión',
+    'Distancia',
+  ], GOLD),
+  checklistScene(326, 'Preparación prudente', 'Simple y medible', [
+    '1 ramita o 1 cucharadita',
+    '1 taza de agua caliente',
+    'Reposar 10 minutos',
+    'Colar y dejar enfriar',
+  ], GOLD),
+  checklistScene(357, 'No la conviertas en una mezcla', 'No agregues nada más', [
+    'Sin aceite esencial',
+    'Sin alcohol ni perfume',
+    'Sin limón ni vinagre',
+    'Sin bicarbonato ni agua oxigenada',
+  ], RED),
+  checklistScene(373, 'Higiene doméstica', 'Usala fresca', [
+    'Prepará poca cantidad',
+    'Recipiente limpio',
+    'No la guardes varios días',
+    'Descartá lo que sobre',
+  ]),
+  checklistScene(397, 'Antes de acercarla al rostro', 'Prueba de parche', [
+    'Zona pequeña del antebrazo',
+    'Piel intacta',
+    'Observá la reacción',
+    'Suspendé si molesta',
+  ], GOLD),
+  checklistScene(428, 'Si la piel la tolera', 'Contacto breve y suave', [
+    'Gasa limpia',
+    'Zona pequeña',
+    'Dos o tres minutos',
+    'Sin frotar',
+  ]),
+  checklistScene(466, 'El paso decisivo', 'Protección solar diaria', [
+    'Amplio espectro',
+    'SPF 30 o más',
+    'Cantidad suficiente',
+    'Reaplicá al aire libre',
+  ], GOLD),
+  checklistScene(507, 'Rutina sostenible', 'Cuatro pilares', [
+    'Limpieza suave',
+    'Hidratación',
+    'Protección solar',
+    'Un activo a la vez',
+  ], GOLD),
+  checklistScene(533, 'Cada mañana', 'Tres pasos bastan', [
+    'Limpiá con suavidad',
+    'Hidratá si lo necesitás',
+    'Protector solar',
+    'Sin mezclar novedades',
+  ]),
+  checklistScene(563, 'Seguimiento realista', 'Treinta días', [
+    'Semana 1: tolerancia',
+    'Semana 2: comodidad',
+    'Semana 3: constancia',
+    'Semana 4: fotos comparables',
+  ], GOLD),
+  checklistScene(598, 'Si no ves mejoría', 'Seis a ocho semanas', [
+    'No aumentes la concentración',
+    'Revisá el diagnóstico',
+    'Consultá opciones con evidencia',
+    'Cambiá una sola cosa a la vez',
+  ]),
+  checklistScene(637, 'Señales de alarma', 'No lo trates en casa', [
+    'Cambia de forma o color',
+    'Crece o tiene bordes irregulares',
+    'Sangra o no cicatriza',
+    'Duele o pica de forma persistente',
+  ], RED),
+  checklistScene(660, 'Piel especialmente sensible', 'Durante un brote: no', [
+    'Rosácea o eczema activos',
+    'Heridas o quemadura solar',
+    'Alergia a fragancias',
+    'Reacciones frecuentes',
+  ], RED),
+  checklistScene(686, 'Concentraciones distintas', 'Aceite esencial ≠ infusión', [
+    'Es un producto concentrado',
+    'Puede irritar',
+    'No se aplica puro',
+    'No se mide con cucharas de cocina',
+  ], RED),
+  checklistScene(713, 'La suma falsa', 'Romero + limón + bicarbonato', [
+    'No aclara de forma segura',
+    'Puede inflamar',
+    'El sol puede empeorarlo',
+    'La fricción suma daño',
+  ], RED),
+  checklistScene(797, 'Ardor, picazón o quemazón', 'Si arde, pará', [
+    'Retirá el producto',
+    'Enjuagá con agua',
+    'Volvé a una rutina simple',
+    'Revisá antes de reintentar',
+  ], RED),
+  checklistScene(824, 'Criterio antes que curiosidad', 'El verdadero truco', [
+    'Evitar irritaciones',
+    'Hidratar',
+    'Proteger del sol',
+    'Consultar si algo cambia',
+  ], GOLD),
+  checklistScene(878, 'Una promesa honesta', 'Un mes de buenos hábitos', [
+    'Limpieza suave',
+    'Hidratación constante',
+    'Protector cada mañana',
+    'Nada que queme',
+  ], GOLD),
+  {
+    start: 910,
+    node: (
+      <FedCta
+        kicker="Tu próximo paso"
+        title="¿Querés una rutina simple?"
+        hot={['rutina']}
+        sub="Escribí ROMERO en los comentarios y compartí este video."
+        buttonLabel="ESCRIBÍ ROMERO"
         image={staticFile('img/vbb_rosemary_macro.png')}
         accent={GOLD}
         mood="gold"
