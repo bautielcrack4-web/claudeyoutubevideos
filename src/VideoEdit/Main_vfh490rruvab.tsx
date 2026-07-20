@@ -71,19 +71,43 @@ const WINDOWS: VisualWindow[] = [
   },
   {
     start: 505.92,
-    duration: 109.3,
-    kicker: 'MÉTODOS 1-3',
-    title: 'Etiqueta, agua, cepillado',
+    duration: 39.66,
+    kicker: 'MÉTODO 1',
+    title: 'Revise la etiqueta',
     accent: TEAL,
-    media: [image('etiqueta_inci_shampoo'), video('vfh_stock_shower'), image('ducha_agua_tibia'), image('cepillado_cerdas_suaves'), video('vfh_stock_brush')],
+    media: [image('etiqueta_inci_shampoo')],
+  },
+  {
+    start: 545.58,
+    duration: 37.38,
+    kicker: 'MÉTODO 2',
+    title: 'Agua tibia, no caliente',
+    accent: TEAL,
+    media: [image('ducha_agua_tibia'), video('vfh_stock_shower')],
+  },
+  {
+    start: 582.96,
+    duration: 32.26,
+    kicker: 'MÉTODO 3',
+    title: 'Cepille antes de mojar',
+    accent: TEAL,
+    media: [image('cepillado_cerdas_suaves'), video('vfh_stock_brush')],
   },
   {
     start: 615.22,
-    duration: 85.76,
-    kicker: 'MÉTODOS 4-5',
-    title: 'Sol y frecuencia',
+    duration: 44.78,
+    kicker: 'MÉTODO 4',
+    title: 'Proteja la raya del pelo',
     accent: GOLD,
-    media: [image('gorro_proteccion_solar'), video('vfh_stock_hat'), video('vfh_stock_shower')],
+    media: [image('gorro_proteccion_solar'), video('vfh_stock_hat')],
+  },
+  {
+    start: 660.0,
+    duration: 40.98,
+    kicker: 'MÉTODO 5',
+    title: 'Día por medio, no a diario',
+    accent: GOLD,
+    media: [video('vfh_stock_shower'), image('ducha_agua_tibia')],
   },
   {
     start: 739.28,
@@ -91,7 +115,7 @@ const WINDOWS: VisualWindow[] = [
     kicker: 'MÉTODO 6',
     title: 'El tiempo de contacto',
     accent: RED,
-    media: [video('vfh_stock_massage'), image('masaje_capilar_dos_manos'), video('vfh_stock_shower')],
+    media: [image('masaje_capilar_dos_manos'), video('vfh_stock_shower')],
   },
   {
     start: 822.4,
@@ -107,7 +131,15 @@ const WINDOWS: VisualWindow[] = [
     kicker: 'RECAPITULEMOS',
     title: 'Los 7 pasos, otra vez',
     accent: TEAL,
-    media: [image('etiqueta_inci_shampoo'), image('masaje_capilar_dos_manos'), image('gorro_proteccion_solar'), video('vfh_stock_routine')],
+    media: [
+      image('etiqueta_inci_shampoo'),
+      image('ducha_agua_tibia'),
+      image('cepillado_cerdas_suaves'),
+      image('gorro_proteccion_solar'),
+      image('masaje_capilar_dos_manos'),
+      image('niacinamida_pantenol_argan'),
+      video('vfh_stock_routine'),
+    ],
   },
 ];
 
@@ -318,6 +350,7 @@ const COMPONENT_SCENES: {start: number; node: React.ReactNode}[] = [
         kicker="El número que nadie dice"
         value={120}
         prefix="$"
+        suffix=""
         label="por 30 ml de sérum de lujo"
         sub="El extracto puro cuesta una fracción de eso"
         image={staticFile('img/frasco_lujo_vs_extracto.png')}
@@ -600,6 +633,21 @@ const COMPONENT_SCENES: {start: number; node: React.ReactNode}[] = [
     ),
   },
   {
+    start: 957.0,
+    node: (
+      <FedHero
+        kicker="Ricardo, seis semanas después"
+        title="La misma planilla, una fila nueva"
+        hot={['nueva']}
+        sub="Ingeniero jubilado, 68 años"
+        image={staticFile('img/ricardo_planilla_carpeta.png')}
+        accent={GOLD}
+        mood="warmdark"
+        side="right"
+      />
+    ),
+  },
+  {
     start: 985.0,
     node: (
       <FedChecklist
@@ -689,6 +737,19 @@ const COMPONENT_SCENES: {start: number; node: React.ReactNode}[] = [
         sub="La rutina completa, paso a paso, sin promesas milagrosas"
         buttonLabel="Más información en la descripción"
         image={staticFile('img/romero_macro_planta.png')}
+        accent={GOLD}
+        mood="gold"
+      />
+    ),
+  },
+  {
+    start: 1158.0,
+    node: (
+      <FedChapter
+        kicker="La próxima vez"
+        index="—"
+        title="Un ingrediente de su cocina"
+        sub="Puede estar acelerando sus arrugas sin que lo sepa"
         accent={GOLD}
         mood="gold"
       />
