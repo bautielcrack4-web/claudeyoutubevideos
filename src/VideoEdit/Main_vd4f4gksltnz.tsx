@@ -210,12 +210,13 @@ export const MainVd4f4gksltnz: React.FC = () => {
 
       <Shot start={271.88} end={304.9} name="factor sol">
         {(d) => (
-          <FullBleedBroll
+          <StatCard
             duration={d}
-            src="broll/t_sunrise_window.mp4"
-            title="LA FORMA CONVEXA RECIBE MÁS SOL DE FRENTE"
-            sub="Años de exposición directa sobre la zona más exigida."
+            kicker="El primer factor"
+            big="MÁS SOL DE FRENTE"
+            sub="La forma convexa de la nariz recibe la luz solar casi perpendicular. Años de esa exposición directa suman fotoenvejecimiento extra."
             accent="#E8A06A"
+            side="right"
           />
         )}
       </Shot>
@@ -368,7 +369,7 @@ export const MainVd4f4gksltnz: React.FC = () => {
         )}
       </Shot>
 
-      <Shot start={742.96} end={787.46} name="lo que no hace">
+      <Shot start={742.96} end={778} name="lo que no hace">
         {(d) => (
           <WarningCard
             duration={d}
