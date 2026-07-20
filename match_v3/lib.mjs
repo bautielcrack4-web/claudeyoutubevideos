@@ -195,11 +195,19 @@ export function enforceAnchor(queries, anchorTerms) {
 }
 
 // ── STORYBOARD ──
+// MEMOIZADO por id: el mismo video suele ser candidato de VARIOS beats, y cada ytInfo
+// es un spawn de yt-dlp de segundos. Medido: 660 llamadas para 345 ids únicos → 48% eran
+// re-probes del MISMO video. Mismo patrón que searchCache, arriba.
+const infoCache = new Map();
 export function ytInfo(id) {
+  if (infoCache.has(id)) return infoCache.get(id);
   const r = spawnSync(YTDLP, [`https://youtu.be/${id}`, "-J", "--skip-download", "--no-warnings", "--socket-timeout", "30"],
     { encoding: "utf8", maxBuffer: 1 << 28, timeout: 60000, killSignal: "SIGKILL" });
-  if (r.status !== 0 || !r.stdout) return null;
-  try { return JSON.parse(r.stdout); } catch { return null; }
+  let out = null;
+  if (r.status === 0 && r.stdout) { try { out = JSON.parse(r.stdout); } catch { out = null; } }
+  // cacheamos también el null: un id que no resolvió no mejora reintentándolo en la misma corrida
+  infoCache.set(id, out);
+  return out;
 }
 export function pickStoryboard(info) {
   const sbs = (info.formats || []).filter((f) => String(f.format_id || "").startsWith("sb") && (f.fragments || []).length && f.columns && f.rows);

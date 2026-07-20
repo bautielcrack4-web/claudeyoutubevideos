@@ -73,8 +73,14 @@ jobs:
       - name: download assets
         env: { GH_TOKEN: "${{ github.token }}" }
         run: |
-          gh release download "assets-${{ github.event.inputs.slug }}" \
-            --pattern "assets-${{ github.event.inputs.slug }}.tar" --dir .
+          # 20-24 runners bajan el MISMO tar a la vez; sin reintento, uno que rebota mata la corrida
+          # ENTERA después de que los demás chunks ya pagaron minutos de render. Mismo criterio que npm ci.
+          n=0
+          until gh release download "assets-${{ github.event.inputs.slug }}" -R "${{ github.repository }}" \
+                  --pattern "assets-${{ github.event.inputs.slug }}.tar" --dir . --clobber; do
+            n=$((n+1)); [ "$n" -ge 4 ] && { echo "no pude bajar los assets tras $n intentos"; exit 1; }
+            echo "reintento $n de la descarga de assets"; sleep $((10 * n))
+          done
           mkdir -p public
           tar -xf "assets-${{ github.event.inputs.slug }}.tar" -C public
       - name: frame range
@@ -113,6 +119,11 @@ jobs:
   stitch:
     needs: render
     runs-on: ubuntu-latest
+    # contents:write es OBLIGATORIO: los permisos por defecto del repo son READ, así que sin esto el
+    # release chunks-<slug> NO se puede crear. Era la causa de que la persistencia de chunks nunca
+    # funcionara (0 releases chunks-* en 156) y de que TODO re-render parcial saliera truncado.
+    permissions:
+      contents: write
     steps:
       - uses: actions/download-artifact@v4
         with: { path: chunks, pattern: "chunk-*", merge-multiple: true }
@@ -120,7 +131,8 @@ jobs:
         continue-on-error: true
         env: { GH_TOKEN: "${{ github.token }}" }
         run: |
-          gh release download "chunks-${{ github.event.inputs.slug }}" --dir prev --pattern "*.mp4" || true
+          # -R explícito: este job NO hace checkout, así que gh no puede inferir el repo del .git
+          gh release download "chunks-${{ github.event.inputs.slug }}" -R "${{ github.repository }}" --dir prev --pattern "*.mp4" || true
           if [ -d prev ]; then cp -n prev/*.mp4 chunks/ 2>/dev/null || true; fi
       - name: install ffmpeg
         run: sudo apt-get update && sudo apt-get install -y ffmpeg
@@ -142,8 +154,10 @@ jobs:
         env: { GH_TOKEN: "${{ github.token }}" }
         run: |
           cd chunks
-          gh release delete "chunks-${{ github.event.inputs.slug }}" --yes --cleanup-tag 2>/dev/null || true
-          gh release create "chunks-${{ github.event.inputs.slug }}" chunk_*.mp4 --title "chunks-${{ github.event.inputs.slug }}" --notes "chunks para re-render parcial" || gh release upload "chunks-${{ github.event.inputs.slug }}" chunk_*.mp4 --clobber
+          R="${{ github.repository }}"   # sin -R falla: el job stitch no hace checkout
+          gh release delete "chunks-${{ github.event.inputs.slug }}" -R "$R" --yes --cleanup-tag 2>/dev/null || true
+          gh release create "chunks-${{ github.event.inputs.slug }}" chunk_*.mp4 -R "$R" --title "chunks-${{ github.event.inputs.slug }}" --notes "chunks para re-render parcial" \
+            || gh release upload "chunks-${{ github.event.inputs.slug }}" chunk_*.mp4 -R "$R" --clobber
       - name: progreso 100 (Bagasy)
         continue-on-error: true
         run: |

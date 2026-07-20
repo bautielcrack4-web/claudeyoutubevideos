@@ -1,0 +1,94 @@
+# AUDITORÍA PREVIA (barata) — saca N frames sueltos del build y arma una cuadrícula de contacto.
+# Sentido: auditar ANTES de rendear. Un render completo son ~20 jobs y varios minutos; esto es 1 job
+# de ~2 min. Si algo está mal (frame negro, asset faltante, avatar ausente en los primeros 2s, visual
+# fuera de tema) te enterás ACÁ y corregís, en vez de pagar un render entero para descubrirlo.
+#
+#   gh workflow run stills.yml -f slug=fly -f comp_id=Fly -f total_frames=43380 [-f entry=src/index_fly.tsx]
+name: stills
+
+on:
+  workflow_dispatch:
+    inputs:
+      slug:         { description: "slug del video", required: true }
+      comp_id:      { description: "id de composicion Remotion", required: true }
+      total_frames: { description: "frames totales", required: true }
+      entry:        { description: "entry propio (ej src/index_<slug>.tsx). vacio = Root.tsx", required: false, default: "" }
+      count:        { description: "cuantos frames muestrear", required: false, default: "12" }
+
+jobs:
+  stills:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: "20", cache: "npm" }
+      - name: cache node_modules + chromium
+        uses: actions/cache@v4
+        with:
+          path: |
+            node_modules
+            ~/.cache/remotion
+          key: rmn-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
+          restore-keys: rmn-${{ runner.os }}-
+      - name: install deps (si no vinieron del cache)
+        run: |
+          if [ -d node_modules ] && node -e "require('@rspack/binding')" 2>/dev/null; then
+            echo "deps cacheadas ✓"
+          else
+            n=0
+            until npm ci; do n=$((n+1)); [ "$n" -ge 4 ] && { echo "npm ci fallo tras $n"; exit 1; }; rm -rf node_modules; sleep 20; done
+          fi
+      - name: download assets
+        env: { GH_TOKEN: "${{ github.token }}" }
+        run: |
+          n=0
+          until gh release download "assets-${{ github.event.inputs.slug }}" -R "${{ github.repository }}" \
+                  --pattern "assets-${{ github.event.inputs.slug }}.tar" --dir . --clobber; do
+            n=$((n+1)); [ "$n" -ge 4 ] && { echo "no pude bajar los assets tras $n intentos"; exit 1; }
+            echo "reintento $n"; sleep $((10 * n))
+          done
+          mkdir -p public
+          tar -xf "assets-${{ github.event.inputs.slug }}.tar" -C public
+      - name: bundle UNA vez
+        id: b
+        run: |
+          ENTRY="${{ github.event.inputs.entry }}"
+          # bundleamos una sola vez y despues cada still sale contra ese bundle (si no, re-bundlea por frame)
+          if [ -n "$ENTRY" ]; then OUT=$(npx remotion bundle "$ENTRY" --out-dir=bundle); else OUT=$(npx remotion bundle --out-dir=bundle); fi
+          echo "bundle listo"
+      - name: sacar frames
+        run: |
+          mkdir -p stills
+          TOTAL=${{ github.event.inputs.total_frames }}
+          N=${{ github.event.inputs.count }}
+          # 15 y 45 SIEMPRE: son los frames que verifican que el video abra con el avatar hablando (regla dura)
+          FRAMES=$(node -e "
+            const total=+process.argv[1], n=+process.argv[2];
+            const s=new Set([15,45]);
+            for(let i=0;i<n;i++) s.add(Math.min(total-2, Math.round(total*i/n)));
+            console.log([...s].filter(f=>f>=0&&f<total).sort((a,b)=>a-b).join(' '));
+          " "$TOTAL" "$N")
+          echo "frames: $FRAMES"
+          i=0
+          for f in $FRAMES; do
+            NUM=$(printf "%03d" $i)
+            npx remotion still bundle "${{ github.event.inputs.comp_id }}" "stills/f${NUM}_frame${f}.png" --frame=$f --scale=0.5 || echo "fallo el frame $f"
+            i=$((i+1))
+          done
+          ls -la stills
+      - name: armar la cuadricula de contacto
+        run: |
+          sudo apt-get update && sudo apt-get install -y ffmpeg
+          COLS=4
+          # etiqueta cada frame con su numero y los pega en una grilla
+          ffmpeg -y -pattern_type glob -i 'stills/*.png' \
+            -filter_complex "scale=640:-1,tile=${COLS}x0:margin=8:padding=6:color=black" \
+            -frames:v 1 "grid-${{ github.event.inputs.slug }}.jpg"
+          ls -la "grid-${{ github.event.inputs.slug }}.jpg"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: stills-${{ github.event.inputs.slug }}
+          path: |
+            stills/*.png
+            grid-*.jpg
+          retention-days: 3

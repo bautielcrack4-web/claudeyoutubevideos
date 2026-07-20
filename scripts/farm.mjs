@@ -35,6 +35,40 @@ const sh = (c) => execSync(c, { stdio: "inherit" });
 const out = (c) => execSync(c, { encoding: "utf8" }).trim();
 const only = process.env.ONLY_CHUNKS || ""; // re-render PARCIAL: solo estos chunks (reusa el resto; assets ya subidos)
 
+// ── PRE-VUELO (milisegundos, todo local) ────────────────────────────────────────────────
+// Sin esto se sube ~1 GB de assets y se encienden 20-24 runners para que recién ADENTRO del
+// render Remotion descubra que la composición no está en el commit pusheado. Medido: 8.9 min
+// de farm por corrida tirados, varias veces. Chequeamos ANTES de gastar un solo byte.
+{
+  const ref = process.env.FARM_REF;
+  const entryFile = process.env.ENTRY;
+  if (entryFile && !fs.existsSync(entryFile)) {
+    console.error(`✗ PRE-VUELO: ENTRY=${entryFile} no existe en el disco.`); process.exit(1);
+  }
+  if (ref) {
+    let remoto = "";
+    try { remoto = out(`git rev-parse ${ref}`); } catch { /* la rama todavía no existe local */ }
+    const local = out("git rev-parse HEAD");
+    if (remoto && remoto !== local) {
+      console.error(`✗ PRE-VUELO: la rama ${ref} apunta a ${remoto.slice(0, 7)} pero tu HEAD es ${local.slice(0, 7)}.`);
+      console.error(`  El farm rendearía un commit VIEJO. Sincronizá: git push -f origin HEAD:${ref}`);
+      process.exit(1);
+    }
+    // el entry tiene que estar EN el commit que va a rendear, no solo en tu working dir
+    if (entryFile && remoto) {
+      try { out(`git show ${ref}:${entryFile.replace(/\\/g, "/")}`); }
+      catch { console.error(`✗ PRE-VUELO: ${entryFile} no está commiteado en ${ref}. Commitealo y pusheá.`); process.exit(1); }
+    }
+  }
+  // la composición tiene que estar declarada en el entry (o en Root.tsx si no hay entry)
+  const src = entryFile || "src/Root.tsx";
+  if (fs.existsSync(src) && !fs.readFileSync(src, "utf8").includes(`"${comp}"`)) {
+    console.error(`✗ PRE-VUELO: la composición "${comp}" no aparece en ${src}. Con entry propio, registrala ahí.`);
+    process.exit(1);
+  }
+  console.log("pre-vuelo ✓ (ref sincronizado, entry commiteado, composición declarada)");
+}
+
 if (!only) { // en re-render parcial NO re-empaquetamos ni re-subimos assets (el release assets-<slug> ya existe)
 // 1) tarball de assets (TAR_DIR redirige el .tar a otro disco — C: se llena con ~1GB)
 const tarDir = process.env.TAR_DIR || ".";
