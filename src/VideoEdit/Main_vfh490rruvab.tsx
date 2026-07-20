@@ -83,7 +83,7 @@ const WINDOWS: VisualWindow[] = [
     kicker: 'MÉTODO 2',
     title: 'Agua tibia, no caliente',
     accent: TEAL,
-    media: [image('ducha_agua_tibia'), video('vfh_stock_shower')],
+    media: [image('ducha_agua_tibia'), video('vfh_stock_mirror')],
   },
   {
     start: 582.96,
@@ -107,7 +107,7 @@ const WINDOWS: VisualWindow[] = [
     kicker: 'MÉTODO 5',
     title: 'Día por medio, no a diario',
     accent: GOLD,
-    media: [video('vfh_stock_shower'), image('ducha_agua_tibia')],
+    media: [image('ducha_agua_tibia'), video('vfh_stock_routine')],
   },
   {
     start: 739.28,
@@ -115,7 +115,7 @@ const WINDOWS: VisualWindow[] = [
     kicker: 'MÉTODO 6',
     title: 'El tiempo de contacto',
     accent: RED,
-    media: [image('masaje_capilar_dos_manos'), video('vfh_stock_shower')],
+    media: [image('masaje_capilar_dos_manos'), video('vfh_stock_brush')],
   },
   {
     start: 822.4,

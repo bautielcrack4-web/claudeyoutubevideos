@@ -11,16 +11,22 @@
 //   - estar parado en la raíz del repo
 //
 // Uso:
-//   node scripts/farm.mjs <slug> <comp_id> <total_frames> [chunks=24] [prefijoAssets]
-//   ej:  node scripts/farm.mjs fly Fly 43380 24 fl
+//   node scripts/farm.mjs <slug> <comp_id> <total_frames> [chunks=20] [prefijoAssets]
+//   ej:  node scripts/farm.mjs fly Fly 43380 20 fl
 // (prefijoAssets opcional:
 //   - "@archivo.txt"  → lista EXPLÍCITA de entradas (rutas relativas a public/, una por línea)
 //   - "pref"          → solo img/<pref>* y vid/<pref>* + diagramas dg_*
 //   - sin pref        → empaqueta img/ y vid/ enteros.)
 import { execSync, execFileSync } from "node:child_process";
 import fs from "node:fs";
+import path from "node:path";
+import os from "node:os";
 
-const [slug, comp, total, chunks = "24", pref] = process.argv.slice(2);
+// chunks por defecto = 20 (NO 24): el tope de jobs concurrentes de la cuenta free son 20. Con 24 chunks
+// entran 20 en la 1ª tanda y quedan 4 para una 2ª tanda con 16 slots ociosos → pagás el doble de tiempo
+// por 4 pedazos. Con 20 va todo en UNA tanda (~40% más rápido, misma calidad).
+// Si hay VARIOS videos rendeando a la vez, repartí: chunks ≈ techo_de_slots / videos_en_curso.
+const [slug, comp, total, chunks = "20", pref] = process.argv.slice(2);
 if (!slug || !comp || !total) {
   console.error("Uso: node scripts/farm.mjs <slug> <comp_id> <total_frames> [chunks] [prefijo]");
   process.exit(1);
@@ -81,6 +87,38 @@ sh(`gh release create ${relTag} ${tar} --title ${relTag} --notes "assets del ren
 fs.rmSync(tar);
 }
 
+// 2.5) CANDADO DE RENDER — la cuenta tiene 20 jobs concurrentes en total. Si dos videos rendean a la
+// vez se reparten los slots y los DOS tardan el doble. Serializando, cada render usa los 20 a pleno y
+// el throughput total es mayor. El resto del pipeline (guion, Modal, b-roll) sigue en paralelo: esto
+// solo hace cola en el render. Desactivable con FARM_NO_LOCK=1.
+const LOCK = path.join(os.tmpdir(), "bagasy-render.lock");
+const LOCK_STALE_MS = 90 * 60 * 1000; // si el dueño se colgó, a los 90' el candado se considera vencido
+const napMs = (ms) => execSync(`sleep ${Math.round(ms / 1000)} 2>/dev/null || ping -n ${Math.round(ms / 1000) + 1} 127.0.0.1 >NUL`, { stdio: "ignore", shell: true });
+function lockOwner() { // devuelve el dueño VIVO del candado, o null si está libre/vencido/huérfano
+  try {
+    const j = JSON.parse(fs.readFileSync(LOCK, "utf8"));
+    if (Date.now() - j.at > LOCK_STALE_MS) return null;    // vencido
+    try { process.kill(j.pid, 0); } catch { return null; } // el proceso dueño ya no existe
+    return j;
+  } catch { return null; }
+}
+function releaseLock() {
+  try { if (JSON.parse(fs.readFileSync(LOCK, "utf8")).pid === process.pid) fs.rmSync(LOCK, { force: true }); } catch { /* no es mío o no está */ }
+}
+if (!process.env.FARM_NO_LOCK) {
+  let avisado = false;
+  for (;;) {
+    const dueño = lockOwner();
+    if (!dueño) { try { fs.rmSync(LOCK, { force: true }); } catch { /* ya no está */ } }
+    try { fs.writeFileSync(LOCK, JSON.stringify({ pid: process.pid, slug, at: Date.now() }), { flag: "wx" }); break; }
+    catch {
+      if (!avisado) { console.log(`⏳ hay otro render en curso (${dueño?.slug || "otro video"}) — espero mi turno para usar los 20 slots enteros...`); avisado = true; }
+      napMs(30_000);
+    }
+  }
+  process.on("exit", releaseLock);
+}
+
 // 3) disparar el workflow
 console.log(only ? `disparando render.yml (PARCIAL, chunks ${only}) ...` : "disparando render.yml ...");
 // ENTRY=src/index_<slug>.tsx → cada video rendea con SU entry y no comparte Root.tsx con los otros agentes
@@ -90,7 +128,9 @@ sh(`gh workflow run render.yml${process.env.FARM_REF ? ` --ref ${process.env.FAR
 // 4) esperar y descargar el mp4 final
 console.log("esperando que aparezca la corrida ...");
 execSync("sleep 8 2>/dev/null || ping -n 9 127.0.0.1 >NUL", { stdio: "ignore", shell: true });
-const runId = out(`gh run list --workflow=render.yml --limit 1 --json databaseId --jq ".[0].databaseId"`);
+// OJO: filtrar por LA RAMA de este video. Sin -b, con varios videos en curso agarrás la corrida más
+// reciente del repo — que puede ser la de OTRO agente, y terminás mirando y bajando su render.
+const runId = out(`gh run list --workflow=render.yml${process.env.FARM_REF ? ` -b ${process.env.FARM_REF}` : ""} --limit 1 --json databaseId --jq ".[0].databaseId"`);
 console.log("corrida:", runId, "— siguiendo (esto tarda según los pedazos)...");
 try { sh(`gh run watch ${runId} --exit-status`); } catch { console.error("la corrida fallo; revisá: gh run view " + runId); process.exit(1); }
 // destino fijo en el disco grande (D:) para no quedarse sin espacio en C: al
