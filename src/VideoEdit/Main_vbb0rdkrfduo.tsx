@@ -158,7 +158,7 @@ const ShotTitle: React.FC<{kicker: string; label: string; accent: string; varian
 }) => {
   const frame = useCurrentFrame();
   const enter = interpolate(frame, [0, 8], [0, 1], clamp);
-  const leave = interpolate(frame, [Math.max(10, duration - 7), duration], [1, 0], clamp);
+  const leave = interpolate(frame, [Math.max(0, duration - 7), Math.max(1, duration)], [1, 0], clamp);
   const opacity = Math.min(enter, leave);
   const slide = interpolate(enter, [0, 1], [variant % 2 === 0 ? -42 : 42, 0], clamp);
   const isRight = variant === 2;
