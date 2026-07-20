@@ -83,14 +83,22 @@ jobs:
       - name: render chunk
         run: |
           mkdir -p out
-          # con entry propio por video, dos renders en paralelo no comparten Root.tsx y no se pisan
-          ENTRY=""
-          if [ -n "${{ github.event.inputs.entry }}" ]; then ENTRY="--entry=${{ github.event.inputs.entry }}"; fi
-          TMPDIR=/dev/shm npx remotion render "${{ github.event.inputs.comp_id }}" \
-            "out/chunk_${{ matrix.idx }}.mp4" \
-            $ENTRY \
-            --frames=${{ steps.r.outputs.start }}-${{ steps.r.outputs.end }} \
-            --concurrency=4 --timeout=120000 --crf=23
+          # con entry propio por video, dos renders en paralelo no comparten Root.tsx y no se pisan.
+          # OJO: el entry-point de `remotion render` es un ARGUMENTO POSICIONAL (va ANTES del
+          # comp-id), no un flag --entry=... (ese flag no existe y se ignora en silencio, cayendo
+          # al entry por defecto src/index.ts — compartido y pisado por otros agentes).
+          ENTRY="${{ github.event.inputs.entry }}"
+          if [ -n "$ENTRY" ]; then
+            TMPDIR=/dev/shm npx remotion render "$ENTRY" "${{ github.event.inputs.comp_id }}" \
+              "out/chunk_${{ matrix.idx }}.mp4" \
+              --frames=${{ steps.r.outputs.start }}-${{ steps.r.outputs.end }} \
+              --concurrency=4 --timeout=120000 --crf=23
+          else
+            TMPDIR=/dev/shm npx remotion render "${{ github.event.inputs.comp_id }}" \
+              "out/chunk_${{ matrix.idx }}.mp4" \
+              --frames=${{ steps.r.outputs.start }}-${{ steps.r.outputs.end }} \
+              --concurrency=4 --timeout=120000 --crf=23
+          fi
       - name: reportar progreso del chunk (Bagasy)
         continue-on-error: true
         run: |
