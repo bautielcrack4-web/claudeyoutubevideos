@@ -380,6 +380,7 @@ const COMPONENT_SCENES: {start: number; node: React.ReactNode}[] = [
           {label: 'Daño oxidativo ↓'},
           {label: 'Colágeno ↑'},
         ]}
+        image={staticFile('img/romero_macro_planta.png')}
         accent={TEAL}
         mood="science"
       />
@@ -577,6 +578,7 @@ const COMPONENT_SCENES: {start: number; node: React.ReactNode}[] = [
         suffix=" SEMANAS"
         label="para notar los primeros cambios"
         sub="Con la rutina completa, aplicada con constancia"
+        image={staticFile('img/mujer_madura_rutina_espejo.png')}
         accent={GOLD}
         mood="gold"
       />
@@ -671,6 +673,7 @@ const COMPONENT_SCENES: {start: number; node: React.ReactNode}[] = [
         value={7}
         suffix=" PASOS"
         label="Ninguno exige perfección. Todos exigen constancia."
+        image={staticFile('img/etiqueta_inci_shampoo.png')}
         accent={TEAL}
         mood="cool"
       />
