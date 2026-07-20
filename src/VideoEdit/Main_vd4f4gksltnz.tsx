@@ -160,7 +160,7 @@ export const MainVd4f4gksltnz: React.FC = () => {
         )}
       </Shot>
 
-      <Shot start={121.94} end={158.54} name="es la nariz">
+      <Shot start={121.94} end={141} name="es la nariz">
         {(d) => (
           <FullBleedBroll
             duration={d}
@@ -188,7 +188,7 @@ export const MainVd4f4gksltnz: React.FC = () => {
         )}
       </Shot>
 
-      <Shot start={196.62} end={230.66} name="zona T">
+      <Shot start={196.62} end={220} name="zona T">
         {(d) => <TZoneDiagram duration={d} />}
       </Shot>
 
@@ -233,7 +233,7 @@ export const MainVd4f4gksltnz: React.FC = () => {
         )}
       </Shot>
 
-      <Shot start={329.88} end={383.52} name="modelo de negocio">
+      <Shot start={329.88} end={365} name="modelo de negocio">
         {(d) => (
           <WarningCard
             duration={d}
@@ -281,11 +281,11 @@ export const MainVd4f4gksltnz: React.FC = () => {
         )}
       </Shot>
 
-      <Shot start={497.18} end={529.0} name="paso 1 limpieza">
+      <Shot start={497.18} end={527.5} name="paso 1 limpieza">
         {(d) => (
           <FullBleedBroll
             duration={d}
-            src="broll/va_gentle_cleanse.mp4"
+            src="broll/vbb_stock_cleanse.mp4"
             title="PASO 1 · LIMPIEZA SUAVE"
             sub="Dos veces al día, sin fricción."
             accent="#A8D5C6"
@@ -345,10 +345,10 @@ export const MainVd4f4gksltnz: React.FC = () => {
 
       <Shot start={692.34} end={715.72} name="paso 6 foto mensual">
         {(d) => (
-          <FullBleedBroll
+          <AvatarCallout
             duration={d}
-            src="broll/vbb_stock_mirror.mp4"
-            title="PASO 6 · UNA FOTO POR MES"
+            kicker="Paso 6 · Registro"
+            title="UNA FOTO POR MES"
             sub="El mismo registro que tuvo Marta, sin saberlo, a los 43."
             accent="#D8B56D"
           />
