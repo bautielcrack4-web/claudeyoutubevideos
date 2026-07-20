@@ -8,10 +8,6 @@ import {
   MainVbb0rdkrfduo,
   TOTAL_FRAMES_VBB0RDKRFDUO,
 } from "./VideoEdit/Main_vbb0rdkrfduo";
-import {
-  MainVbrhdsvzlyw5,
-  TOTAL_FRAMES_VBRHDSVZLYW5,
-} from "./VideoEdit/Main_vbrhdsvzlyw5";
 
 export const VallerAceites7Root: React.FC = () => (
   <>
@@ -27,14 +23,6 @@ export const VallerAceites7Root: React.FC = () => (
       id="VallerAceites7"
       component={MainVallerAceites7}
       durationInFrames={TOTAL_FRAMES_VALLER_ACEITES7}
-      fps={30}
-      width={1920}
-      height={1080}
-    />
-    <Composition
-      id="Vbrhdsvzlyw5"
-      component={MainVbrhdsvzlyw5}
-      durationInFrames={TOTAL_FRAMES_VBRHDSVZLYW5}
       fps={30}
       width={1920}
       height={1080}
