@@ -11,20 +11,20 @@ import {
   useVideoConfig,
 } from "remotion";
 
-const INK = "#071014";
-const IVORY = "#F5F1E8";
-const MINT = "#A8D5C6";
-const GOLD = "#D8B56D";
-const CLAMP = {extrapolateLeft: "clamp", extrapolateRight: "clamp"} as const;
-const EASE = Easing.bezier(0.16, 1, 0.3, 1);
+export const INK = "#071014";
+export const IVORY = "#F5F1E8";
+export const MINT = "#A8D5C6";
+export const GOLD = "#D8B56D";
+export const CLAMP = {extrapolateLeft: "clamp", extrapolateRight: "clamp"} as const;
+export const EASE = Easing.bezier(0.16, 1, 0.3, 1);
 
-const rgba = (hex: string, alpha: number) => {
+export const rgba = (hex: string, alpha: number) => {
   const raw = hex.replace("#", "");
   const n = Number.parseInt(raw.length === 3 ? raw.split("").map((c) => c + c).join("") : raw, 16);
   return `rgba(${(n >> 16) & 255},${(n >> 8) & 255},${n & 255},${alpha})`;
 };
 
-const fade = (frame: number, duration: number, edge = 16) =>
+export const fade = (frame: number, duration: number, edge = 16) =>
   interpolate(frame, [0, edge, Math.max(edge + 1, duration - edge), duration], [0, 1, 1, 0], CLAMP);
 
 export const VallerFilmLayers: React.FC<{accent?: string}> = ({accent = MINT}) => {
@@ -63,7 +63,7 @@ export const VallerFilmLayers: React.FC<{accent?: string}> = ({accent = MINT}) =
   );
 };
 
-const Eyebrow: React.FC<{children: React.ReactNode; accent?: string; dark?: boolean}> = ({
+export const Eyebrow: React.FC<{children: React.ReactNode; accent?: string; dark?: boolean}> = ({
   children,
   accent = MINT,
   dark = false,
@@ -85,7 +85,7 @@ const Eyebrow: React.FC<{children: React.ReactNode; accent?: string; dark?: bool
   </div>
 );
 
-const MediaMotion: React.FC<{
+export const MediaMotion: React.FC<{
   src: string;
   type?: "image" | "video";
   duration: number;
@@ -245,20 +245,23 @@ export const TruthCard: React.FC<{duration: number}> = ({duration}) => {
 };
 
 const OILS = [
-  {n: "01", name: "GIRASOL", tag: "Barrera y suavidad", note: "Rico en ácido linoleico", accent: "#F2C94C", plate: "img/va_oils_1_4.png", x: 13},
-  {n: "02", name: "CÁRTAMO", tag: "Ligero y reparador", note: "Ideal para piel seca", accent: "#E88B46", plate: "img/va_oils_1_4.png", x: 38},
-  {n: "03", name: "COCO VIRGEN", tag: "Oclusivo y nutritivo", note: "Mejor en zonas muy secas", accent: "#EDE4CF", plate: "img/va_oils_1_4.png", x: 62},
-  {n: "04", name: "ARGÁN", tag: "Sedoso y antioxidante", note: "Unas gotas son suficientes", accent: "#D8A45A", plate: "img/va_oils_1_4.png", x: 87},
-  {n: "05", name: "ALMENDRAS", tag: "Flexible y emoliente", note: "Haz prueba de parche", accent: "#C98B55", plate: "img/va_oils_5_olive.png", x: 13},
-  {n: "06", name: "SEMILLA DE UVA", tag: "Textura muy ligera", note: "Buena opción para el día", accent: "#A48AD4", plate: "img/va_oils_5_olive.png", x: 38},
-  {n: "07", name: "AGUACATE", tag: "Denso y nutritivo", note: "Para áreas ásperas", accent: "#99B96B", plate: "img/va_oils_5_olive.png", x: 63},
+  {n: "01", name: "GIRASOL", tag: "Barrera y suavidad", note: "Rico en ácido linoleico", accent: "#F2C94C", plate: "img/va_oils_1_4.png", image: "img/va_card_sunflower.jpg", x: 13},
+  {n: "02", name: "CÁRTAMO", tag: "Ligero y reparador", note: "Ideal para piel seca", accent: "#E88B46", plate: "img/va_oils_1_4.png", image: "img/va_card_safflower.jpg", x: 38},
+  {n: "03", name: "COCO VIRGEN", tag: "Oclusivo y nutritivo", note: "Mejor en zonas muy secas", accent: "#EDE4CF", plate: "img/va_oils_1_4.png", image: "img/va_card_coconut.jpg", x: 62},
+  {n: "04", name: "ARGÁN", tag: "Sedoso y antioxidante", note: "Unas gotas son suficientes", accent: "#D8A45A", plate: "img/va_oils_1_4.png", image: "img/va_card_argan.jpg", x: 87},
+  {n: "05", name: "ALMENDRAS", tag: "Flexible y emoliente", note: "Haz prueba de parche", accent: "#C98B55", plate: "img/va_oils_5_olive.png", image: "img/va_card_almond.jpg", x: 13},
+  {n: "06", name: "SEMILLA DE UVA", tag: "Textura muy ligera", note: "Buena opción para el día", accent: "#A48AD4", plate: "img/va_oils_5_olive.png", image: "img/va_card_grapeseed.jpg", x: 38},
+  {n: "07", name: "AGUACATE", tag: "Denso y nutritivo", note: "Para áreas ásperas", accent: "#99B96B", plate: "img/va_oils_5_olive.png", image: "img/va_card_avocado.jpg", x: 63},
 ] as const;
 
 export const SevenOilOrbit: React.FC<{duration: number}> = ({duration}) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
   const appear = spring({frame, fps, config: {damping: 19, stiffness: 92}, durationInFrames: 40});
-  const active = Math.min(6, Math.floor(interpolate(frame, [26, Math.max(27, duration - 24)], [0, 7], CLAMP)));
+  const revealStart = 18;
+  const revealEnd = Math.max(revealStart + 6, duration - 42);
+  const revealStep = (revealEnd - revealStart) / 6;
+  const active = Math.max(0, Math.min(6, Math.floor((frame - revealStart + revealStep * 0.2) / revealStep)));
   const plateSwitch = interpolate(frame, [duration * 0.46, duration * 0.54], [0, 1], CLAMP);
   return (
     <AbsoluteFill style={{opacity: fade(frame, duration), background: INK, overflow: "hidden", perspective: 1200}}>
@@ -278,32 +281,58 @@ export const SevenOilOrbit: React.FC<{duration: number}> = ({duration}) => {
           const gap = row === 0 ? 58 : 90;
           const totalW = count * w + (count - 1) * gap;
           const left = (1730 - totalW) / 2 + col * (w + gap);
-          const isActive = index === active;
-          const pulse = isActive ? 1 + Math.sin(frame / 8) * 0.012 : 1;
+          const revealAt = revealStart + index * revealStep;
+          const reveal = interpolate(frame, [revealAt - 8, revealAt + 16], [0, 1], {...CLAMP, easing: EASE});
+          const isActive = index === active && reveal > 0.05;
+          const isPast = index < active;
+          const isFuture = !isActive && !isPast;
+          const pulse = isActive ? 1 + Math.sin(frame / 8) * 0.014 : 1;
+          const floatY = Math.sin((frame + index * 21) / (isActive ? 24 : 31)) * (isActive ? 4 : 9);
+          const depth = isActive ? interpolate(reveal, [0, 1], [-75, 132], CLAMP) : isPast ? 0 : -78 - index * 3;
+          const imageBlur = isActive ? (1 - reveal) * 18 : isPast ? 2.4 : 18;
+          const imageBrightness = isActive ? interpolate(reveal, [0, 1], [0.36, 1.08], CLAMP) : isPast ? 0.62 : 0.34;
+          const imageSaturation = isActive ? interpolate(reveal, [0, 1], [0.35, 1.08], CLAMP) : isPast ? 0.72 : 0.32;
+          const sweepX = ((frame * 5.2 + index * 137) % 560) - 180;
           return (
             <div
               key={oil.n}
               style={{
                 position: "absolute",
                 left,
-                top: row * 322 + Math.sin((frame + index * 18) / 28) * (isActive ? 5 : 11),
+                top: row * 322 + floatY,
                 width: w,
-                height: 260,
+                height: 286,
                 borderRadius: 22,
                 overflow: "hidden",
-                opacity: appear * (isActive ? 1 : 0.52),
-                transform: `translateZ(${isActive ? 120 : -40}px) rotateX(${row ? -4 : 4}deg) rotateY(${(col - (count - 1) / 2) * -3.5}deg) scale(${pulse})`,
-                background: isActive ? IVORY : "rgba(12,22,25,.72)",
+                opacity: appear * (isActive ? 1 : isPast ? 0.7 : 0.44),
+                transform: `translateZ(${depth}px) rotateX(${row ? -4 : 4}deg) rotateY(${(col - (count - 1) / 2) * -3.5 + Math.sin((frame + index * 27) / 90) * 0.7}deg) scale(${pulse})`,
+                background: isActive ? IVORY : "rgba(12,22,25,.82)",
                 border: `1px solid ${isActive ? rgba(oil.accent, 0.82) : "rgba(255,255,255,.1)"}`,
                 boxShadow: isActive ? `0 34px 90px rgba(0,0,0,.64),0 0 50px ${rgba(oil.accent, 0.28)}` : "0 22px 55px rgba(0,0,0,.38)",
               }}
             >
-              <div style={{position: "absolute", inset: 0, background: `radial-gradient(circle at 80% 20%,${rgba(oil.accent, isActive ? 0.28 : 0.12)},transparent 42%)`}} />
-              <div style={{position: "absolute", left: 24, top: 21, fontFamily: "Arial, sans-serif", fontSize: 62, fontWeight: 950, color: isActive ? rgba(INK, 0.12) : "rgba(255,255,255,.1)"}}>{oil.n}</div>
-              <div style={{position: "absolute", left: 24, right: 20, bottom: 26}}>
-                <div style={{fontFamily: "Arial, sans-serif", fontSize: oil.name.length > 13 ? 26 : 31, fontWeight: 900, lineHeight: 1, color: isActive ? INK : "white"}}>{oil.name}</div>
-                <div style={{marginTop: 12, fontFamily: "Georgia, serif", fontSize: 18, fontStyle: "italic", color: isActive ? "rgba(7,16,20,.64)" : "rgba(255,255,255,.56)"}}>{oil.tag}</div>
+              <div style={{position: "absolute", left: 0, right: 0, top: 0, height: 148, overflow: "hidden", background: "#071014"}}>
+                <Img
+                  src={staticFile(oil.image)}
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "cover",
+                    transform: `scale(${isActive ? 1.06 + Math.sin(frame / 35) * 0.012 : isPast ? 1.09 : 1.2}) translateX(${Math.sin((frame + index * 31) / 52) * (isActive ? 4 : 8)}px)`,
+                    filter: `blur(${imageBlur}px) brightness(${imageBrightness}) saturate(${imageSaturation}) contrast(1.08)`,
+                  }}
+                />
+                <div style={{position: "absolute", inset: 0, background: `linear-gradient(180deg,rgba(3,8,10,.08),rgba(3,8,10,.82)),radial-gradient(circle at 76% 16%,${rgba(oil.accent, isActive ? 0.33 : 0.1)},transparent 44%)`}} />
+                {isActive ? <div style={{position: "absolute", top: -40, left: sweepX, width: 72, height: 230, transform: "rotate(18deg)", background: "linear-gradient(90deg,transparent,rgba(255,255,255,.2),transparent)", filter: "blur(4px)"}} /> : null}
               </div>
+              <div style={{position: "absolute", left: 20, top: 18, fontFamily: "Arial, sans-serif", fontSize: 58, fontWeight: 950, color: isActive ? "white" : "rgba(255,255,255,.34)", textShadow: "0 4px 22px rgba(0,0,0,.72)"}}>{oil.n}</div>
+              <div style={{position: "absolute", left: 0, right: 0, top: 145, height: 4, background: isActive ? oil.accent : isPast ? rgba(oil.accent, 0.42) : "rgba(255,255,255,.08)", boxShadow: isActive ? `0 0 24px ${rgba(oil.accent, .72)}` : "none", transformOrigin: "left center", transform: `scaleX(${isActive ? reveal : isPast ? 1 : 0.18})`}} />
+              <div style={{position: "absolute", inset: "148px 0 0", background: `radial-gradient(circle at 86% 18%,${rgba(oil.accent, isActive ? 0.22 : 0.08)},transparent 48%)`}} />
+              <div style={{position: "absolute", left: 22, right: 20, bottom: 24, opacity: isFuture ? interpolate(reveal, [0.55, 1], [0, 1], CLAMP) : 1, filter: `blur(${isFuture ? (1 - reveal) * 13 : 0}px)`, transform: `translateY(${(1 - reveal) * 7}px)`}}>
+                <div style={{fontFamily: "Arial, sans-serif", fontSize: oil.name.length > 13 ? 25 : 30, fontWeight: 900, lineHeight: 1, color: isActive ? INK : "white"}}>{oil.name}</div>
+                <div style={{marginTop: 11, fontFamily: "Georgia, serif", fontSize: 17, fontStyle: "italic", color: isActive ? "rgba(7,16,20,.64)" : "rgba(255,255,255,.58)"}}>{oil.tag}</div>
+              </div>
+              {isFuture ? <div style={{position: "absolute", left: 22, right: 22, bottom: 31, opacity: 0.62 * (1 - reveal), filter: "blur(4px)"}}><div style={{height: 18, width: "72%", borderRadius: 99, background: "rgba(255,255,255,.18)"}} /><div style={{marginTop: 13, height: 10, width: "46%", borderRadius: 99, background: "rgba(255,255,255,.1)"}} /></div> : null}
             </div>
           );
         })}
@@ -390,14 +419,14 @@ export const OilRibbon: React.FC<{duration: number; index: number}> = ({duration
   );
 };
 
-export const FullBleedBroll: React.FC<{duration: number; src: string; title: string; sub?: string; accent?: string; position?: string}> = ({duration, src, title, sub, accent = MINT, position}) => {
+export const FullBleedBroll: React.FC<{duration: number; src: string; title: string; sub?: string; accent?: string; position?: string; type?: "image" | "video"; eyebrow?: string}> = ({duration, src, title, sub, accent = MINT, position, type = "video", eyebrow = "Aplicación real"}) => {
   const frame = useCurrentFrame();
   const enter = interpolate(frame, [6, 28], [0, 1], {...CLAMP, easing: EASE});
   return (
     <AbsoluteFill style={{opacity: fade(frame, duration), overflow: "hidden", background: INK}}>
-      <MediaMotion src={src} duration={duration} position={position} dim={0.18} />
+      <MediaMotion src={src} type={type} duration={duration} position={position} dim={0.18} />
       <div style={{position: "absolute", left: 105, bottom: 105, width: 910, opacity: enter, transform: `translateY(${(1 - enter) * 55}px)`}}>
-        <Eyebrow accent={accent}>Aplicación real</Eyebrow>
+        <Eyebrow accent={accent}>{eyebrow}</Eyebrow>
         <div style={{marginTop: 18, fontFamily: "Arial, sans-serif", fontSize: 64, fontWeight: 900, lineHeight: .98, letterSpacing: -2.7, color: "white"}}>{title}</div>
         {sub ? <div style={{marginTop: 19, fontFamily: "Georgia, serif", fontSize: 25, fontStyle: "italic", color: "rgba(255,255,255,.7)"}}>{sub}</div> : null}
       </div>
@@ -517,35 +546,6 @@ export const AvatarCallout: React.FC<{duration: number; kicker: string; title: s
         {sub ? <div style={{marginTop: 14, fontFamily: "Georgia, serif", fontSize: 20, fontStyle: "italic", lineHeight: 1.35, color: "rgba(255,255,255,.64)"}}>{sub}</div> : null}
       </div>
     </AbsoluteFill>
-  );
-};
-
-export type WordCaption = {text: string; startMs: number; endMs: number};
-
-export const VallerCaptions: React.FC<{words: WordCaption[]; hide?: boolean}> = ({words, hide = false}) => {
-  const frame = useCurrentFrame();
-  const {fps} = useVideoConfig();
-  if (hide) return null;
-  const now = (frame / fps) * 1000;
-  let lo = 0;
-  let hi = words.length - 1;
-  while (lo <= hi) {
-    const mid = (lo + hi) >> 1;
-    if (words[mid].endMs < now) lo = mid + 1;
-    else hi = mid - 1;
-  }
-  const center = Math.min(words.length - 1, Math.max(0, lo));
-  let start = center;
-  while (start > 0 && center - start < 3 && words[start - 1].startMs > now - 1400) start--;
-  let end = center;
-  while (end < words.length - 1 && end - start < 6 && words[end + 1].endMs < now + 1200) end++;
-  const visible = words.slice(start, end + 1);
-  const active = visible.findIndex((w) => now >= w.startMs && now <= w.endMs);
-  if (!visible.length || now < visible[0].startMs - 450 || now > visible[visible.length - 1].endMs + 600) return null;
-  return (
-    <div style={{position: "absolute", left: "50%", bottom: 38, width: 1220, transform: "translateX(-50%)", display: "flex", justifyContent: "center", flexWrap: "wrap", gap: "0 10px", padding: "13px 24px 15px", borderRadius: 18, background: "rgba(2,7,9,.68)", backdropFilter: "blur(14px)", boxShadow: "0 14px 45px rgba(0,0,0,.28)", fontFamily: "Arial, sans-serif", fontSize: 31, lineHeight: 1.22, fontWeight: 800, letterSpacing: -0.4, color: "rgba(255,255,255,.76)", pointerEvents: "none"}}>
-      {visible.map((word, i) => <span key={`${word.startMs}-${i}`} style={{color: i === active ? MINT : "rgba(255,255,255,.8)", textShadow: i === active ? `0 0 24px ${rgba(MINT,.5)}` : "0 3px 10px rgba(0,0,0,.35)"}}>{word.text.trim()}</span>)}
-    </div>
   );
 };
 
