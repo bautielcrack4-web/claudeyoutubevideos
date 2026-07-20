@@ -1,7 +1,6 @@
 import "./index.css";
 import { Composition } from "remotion";
 import { MainVj7hqe8koadv, TOTAL_FRAMES_VJ7HQE8KOADV } from "./VideoEdit/Main_vj7hqe8koadv";
-import { MainVfh490rruvab, TOTAL_FRAMES_VFH490RRUVAB } from "./VideoEdit/Main_vfh490rruvab";
 import { MainFederer886, TOTAL_FRAMES_FED886 } from "./VideoEdit/Main_federer886";
 import { MainVbb0rdkrfduo, TOTAL_FRAMES_VBB0RDKRFDUO } from "./VideoEdit/Main_vbb0rdkrfduo";
 import { MainKitPreviewPx, TOTAL_FRAMES_KITPX } from "./VideoEdit/KitPreviewPx";
@@ -556,8 +555,6 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="Lobos" component={MainLobos} durationInFrames={TOTAL_FRAMES_LOBOS} fps={30} width={1920} height={1080} />
       {/* Crónicas Perdidas — "Los 50 Sitios Más Misteriosos" · AVATAR (guion truncado por HeyGen, cierre visual mudo) */}
       <Composition id="Vj7hqe8koadv" component={MainVj7hqe8koadv} durationInFrames={TOTAL_FRAMES_VJ7HQE8KOADV} fps={30} width={1920} height={1080} />
-      {/* DR. VALLER · shampoo con romero reafirma la piel · avatar full + visuales full-screen */}
-      <Composition id="Vfh490rruvab" component={MainVfh490rruvab} durationInFrames={TOTAL_FRAMES_VFH490RRUVAB} fps={30} width={1920} height={1080} />
     </>
   );
 };

@@ -15,6 +15,7 @@ on:
       total_frames: { description: "frames totales", required: true }
       chunks:      { description: "en cuantos pedazos partir", required: false, default: "24" }
       only_chunks: { description: "solo estos chunks (ej 3 | 3,4 | 3-5). vacio = todos", required: false, default: "" }
+      entry:       { description: "entry propio del video (ej src/index_<slug>.tsx). vacio = Root.tsx compartido", required: false, default: "" }
 
 jobs:
   prepare:
@@ -82,8 +83,12 @@ jobs:
       - name: render chunk
         run: |
           mkdir -p out
+          # con entry propio por video, dos renders en paralelo no comparten Root.tsx y no se pisan
+          ENTRY=""
+          if [ -n "${{ github.event.inputs.entry }}" ]; then ENTRY="--entry=${{ github.event.inputs.entry }}"; fi
           TMPDIR=/dev/shm npx remotion render "${{ github.event.inputs.comp_id }}" \
             "out/chunk_${{ matrix.idx }}.mp4" \
+            $ENTRY \
             --frames=${{ steps.r.outputs.start }}-${{ steps.r.outputs.end }} \
             --concurrency=4 --timeout=120000 --crf=23
       - name: reportar progreso del chunk (Bagasy)
