@@ -115,3 +115,14 @@
   El primer minuto se diseña frase por frase en una cuadrícula de retención; debe alternar avatar full,
   stock full y componentes variados. El stock tiene que mostrar el sujeto, la acción y el contexto exactos
   de la frase, sin logos, y no se repite un mismo template o visual genérico como recurso dominante.
+- **2026-07-20 (vbb0rdkrfduo, corrección posterior):** la regla de 3 segundos NO es un techo rígido. La
+  duración de cada toma la manda la frase y su función; un componente debe permanecer el tiempo necesario
+  para leerse y entenderse. Priorizar calce semántico y temporal exacto sobre velocidad. No cortar una idea
+  a mitad ni mostrar el visual de la frase siguiente. No repetir clips de stock dentro del mismo video.
+- **2026-07-20 (vbb0rdkrfduo, nuevo guion):** para remedios caseros y naturales, evitar enfoques genéricos.
+  Usar una historia concreta como cold-open, recetas cuantificadas paso a paso, modos de uso, errores,
+  contraindicaciones y señales de alarma. Se puede tomar la estructura de retención de un video viral, pero
+  las afirmaciones médicas deben verificarse y reescribirse; nunca copiar sus exageraciones como hechos.
+- **2026-07-20 (dirección creativa):** las referencias y preferencias creativas del creador son un punto de
+  partida, no una jaula. El agente debe actuar como director autónomo, proponer y ejecutar soluciones mejores
+  cuando las detecte. Las únicas rejas son seguridad médica, precisión, requisitos técnicos duros y auditoría.

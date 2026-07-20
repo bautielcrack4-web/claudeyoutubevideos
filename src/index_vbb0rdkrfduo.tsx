@@ -3,7 +3,7 @@ import {Composition, registerRoot} from 'remotion';
 import {
   MainVbb0rdkrfduo,
   TOTAL_FRAMES_VBB0RDKRFDUO,
-} from './VideoEdit/Main_vbb0rdkrfduo';
+} from "./VideoEdit/Main_vbb0rdkrfduo";
 
 const Vbb0rdkrfduoRoot: React.FC = () => (
   <Composition
