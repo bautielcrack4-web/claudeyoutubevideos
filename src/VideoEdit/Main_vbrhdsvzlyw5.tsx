@@ -174,7 +174,7 @@ export const MainVbrhdsvzlyw5: React.FC = () => {
           <SplitCompare
             duration={d}
             kicker="Por qué casi nadie se lo cuenta"
-            heading="EL FRASCO DE OCHENTA DÓLARES VS. LA FLOR"
+            heading="EL SÉRUM CARO VS. LA FLOR DE SU PATIO"
             left={{label: "Sérum con un AHA sintético", big: "$50–100", sub: "Dura 6 a 8 semanas de uso diario", accent: "#C98B6E"}}
             right={{label: "Bolsa de flor de Jamaica seca", big: "UNA FRACCIÓN", sub: "Rinde meses, para tomar y aplicar", accent: CARMIN}}
           />
@@ -338,7 +338,7 @@ export const MainVbrhdsvzlyw5: React.FC = () => {
         )}
       </Shot>
 
-      <Shot start={781.9} end={791.9} name="recap receta y error">
+      <Shot start={781.9} end={790.4} name="recap receta y error">
         {(d) => (
           <RecipeSteps
             duration={d}
