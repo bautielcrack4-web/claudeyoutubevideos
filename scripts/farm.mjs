@@ -161,10 +161,18 @@ sh(`gh workflow run render.yml${process.env.FARM_REF ? ` --ref ${process.env.FAR
 
 // 4) esperar y descargar el mp4 final
 console.log("esperando que aparezca la corrida ...");
+// FARM_NOWAIT=1 → dispara y SALE, imprimiendo el run id. Sirve para que el AGENTE no se quede
+// bloqueado 10-15 min adentro de su turno (consumiendo un slot de paralelismo y cuota sin hacer
+// nada): emite "WAIT_RUN: <id>", cierra el turno, y el WORKER espera el render por él y lo despierta.
 execSync("sleep 8 2>/dev/null || ping -n 9 127.0.0.1 >NUL", { stdio: "ignore", shell: true });
 // OJO: filtrar por LA RAMA de este video. Sin -b, con varios videos en curso agarrás la corrida más
 // reciente del repo — que puede ser la de OTRO agente, y terminás mirando y bajando su render.
 const runId = out(`gh run list --workflow=render.yml${process.env.FARM_REF ? ` -b ${process.env.FARM_REF}` : ""} --limit 1 --json databaseId --jq ".[0].databaseId"`);
+if (process.env.FARM_NOWAIT) {
+  console.log(`WAIT_RUN: ${runId}`);
+  console.log("(disparado sin esperar: el worker vigila el render y te despierta cuando termine)");
+  process.exit(0);
+}
 console.log("corrida:", runId, "— siguiendo (esto tarda según los pedazos)...");
 try { sh(`gh run watch ${runId} --exit-status`); } catch { console.error("la corrida fallo; revisá: gh run view " + runId); process.exit(1); }
 // destino fijo en el disco grande (D:) para no quedarse sin espacio en C: al
