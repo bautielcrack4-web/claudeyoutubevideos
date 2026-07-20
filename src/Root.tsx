@@ -1,6 +1,8 @@
 import "./index.css";
 import { Composition } from "remotion";
 import { MainVj7hqe8koadv, TOTAL_FRAMES_VJ7HQE8KOADV } from "./VideoEdit/Main_vj7hqe8koadv";
+import { MainFederer886, TOTAL_FRAMES_FED886 } from "./VideoEdit/Main_federer886";
+import { MainVbb0rdkrfduo, TOTAL_FRAMES_VBB0RDKRFDUO } from "./VideoEdit/Main_vbb0rdkrfduo";
 import { MainKitPreviewPx, TOTAL_FRAMES_KITPX } from "./VideoEdit/KitPreviewPx";
 import { MainFoods, TOTAL_FRAMES_FOODS } from "./VideoEdit/Main_foods";
 import { MainEstiercol, TOTAL_FRAMES_EST } from "./VideoEdit/Main_estiercol";
@@ -108,6 +110,10 @@ import { MainLobos, TOTAL_FRAMES_LOBOS } from "./VideoEdit/Main_lobos";
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      {/* DR. VALLER · romero, arrugas y manchas · avatar + visuales full-screen */}
+      <Composition id="Vbb0rdkrfduo" component={MainVbb0rdkrfduo} durationInFrames={TOTAL_FRAMES_VBB0RDKRFDUO} fps={30} width={1920} height={1080} />
+      {/* DR. FEDERER · cansancio persistente después de los 60 · avatar + kit cinematográfico */}
+      <Composition id="Federer886" component={MainFederer886} durationInFrames={TOTAL_FRAMES_FED886} fps={30} width={1920} height={1080} />
       {/* Hoja de contactos — 16 componentes bespoke del video de peróxido */}
       <Composition id="KitPreviewPx" component={MainKitPreviewPx} durationInFrames={TOTAL_FRAMES_KITPX} fps={30} width={1920} height={1080} />
       {/* PREVIEW DEL KIT — los 30 componentes genéricos en secuencia (90 frames c/u) */}
