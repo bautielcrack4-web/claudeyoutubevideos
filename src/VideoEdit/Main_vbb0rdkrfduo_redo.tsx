@@ -47,7 +47,7 @@ const frames = (seconds: number) => Math.round(seconds * FPS);
 const WINDOWS: VisualWindow[] = [
   {
     start: 8,
-    duration: 50,
+    duration: 27,
     kicker: 'SIGLO XIV',
     title: 'La leyenda de Isabel de Polonia',
     accent: GOLD,
@@ -123,7 +123,7 @@ const WINDOWS: VisualWindow[] = [
     kicker: 'PROMESA 3',
     title: 'Ojeras: la compresa fría',
     accent: TEAL,
-    media: [image('vbb_gauze_cheek')],
+    media: [image('cold_compress_eyes')],
   },
   {
     start: 949,
@@ -451,9 +451,9 @@ const COMPONENT_SCENES: {start: number; node: React.ReactNode}[] = [
       <FedStep
         step={6}
         total={8}
-        title="Vuelve al baño María con la cera"
+        title="Agrega la cera"
         hot={['cera']}
-        sub="Fuego mínimo hasta que se derrita por completo"
+        sub="De vuelta al baño María, fuego mínimo hasta que se derrita"
         image={staticFile('img/melting_wax_oil.png')}
         accent={TEAL}
         mood="cool"
