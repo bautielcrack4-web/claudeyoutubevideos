@@ -29,11 +29,14 @@ const Slide: React.FC<{ item: PizItem; enter: number }> = ({ item, enter }) => {
   const lineW = interpolate(enter, [0.3, 1], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   return (
     <AbsoluteFill>
-      {/* fondo blureado de ESTE ítem — corte limpio (constante mientras el ítem está) */}
+      {/* fondo blureado de ESTE ítem — CONFINADO al panel IZQUIERDO (nunca sangra bajo el
+          avatar de la derecha). Fix de raíz: el media va contenido en su mitad, no full-bleed. */}
       {item.image && (
-        <AbsoluteFill>
-          <Media src={item.image} style={{ width: "100%", height: "100%", objectFit: "cover", filter: "blur(38px) brightness(0.48) saturate(1.05)", transform: "scale(1.2)" }} />
-        </AbsoluteFill>
+        <div style={{ position: "absolute", left: 0, top: 0, width: AV_X - 15, height: 1080, overflow: "hidden" }}>
+          <Media src={item.image} style={{ width: "100%", height: "100%", objectFit: "cover", filter: "blur(38px) brightness(0.44) saturate(1.05)", transform: "scale(1.2)" }} />
+          {/* divisor sutil entre panel y avatar */}
+          <div style={{ position: "absolute", right: 0, top: 0, width: 2, height: "100%", background: "linear-gradient(180deg, transparent, rgba(18,179,174,0.35), transparent)" }} />
+        </div>
       )}
       <div style={{ position: "absolute", left: 70, top: 0, width: BOARD_R - 70, height: 1080, display: "flex", flexDirection: "column", justifyContent: "center", gap: 32 }}>
         {item.eyebrow && (

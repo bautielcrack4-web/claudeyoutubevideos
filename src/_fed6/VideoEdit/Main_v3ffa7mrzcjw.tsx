@@ -106,8 +106,14 @@ for (let i = 0; i < AVATAR_WINDOWS.length; i++) {
   }
 }
 const inHalfR = (t: number) => HALFR.some(([s, e]) => t >= s - 0.05 && t < e - 0.1);
+// SPLIT: el media va CONTENIDO y centrado en su mitad IZQUIERDA (cover), nunca full-bleed
+// bajo el avatar. Divisor + viñeta interna → lee como panel deliberado, no como fondo tapado.
 const HalfLeft: React.FC<{ children: React.ReactNode }> = ({ children }) => (
-  <div style={{ position: "absolute", left: 0, top: 0, width: 960, height: 1080, overflow: "hidden", background: "#0E1D23" }}>{children}</div>
+  <div style={{ position: "absolute", left: 0, top: 0, width: 960, height: 1080, overflow: "hidden", background: "#0E1D23" }}>
+    {children}
+    <div style={{ position: "absolute", inset: 0, pointerEvents: "none", boxShadow: "inset -40px 0 80px rgba(0,0,0,0.45)" }} />
+    <div style={{ position: "absolute", right: 0, top: 0, width: 3, height: "100%", background: "linear-gradient(180deg, transparent, rgba(18,179,174,0.4), transparent)" }} />
+  </div>
 );
 
 const ctaBeat = [...compBeats].reverse().find((b: any) => b.kind === "nametag");
