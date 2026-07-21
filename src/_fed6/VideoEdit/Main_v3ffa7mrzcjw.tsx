@@ -17,6 +17,7 @@ import { FEDZ_BEATS } from "./federer_v3ffa7mrzcjw_beats";
 import { FEDZ_BROLL } from "./federer_v3ffa7mrzcjw_broll";
 import { TALKSZ } from "./federer_v3ffa7mrzcjw_hooks";
 import { renderFederer2Comp, COMP2_KINDS } from "./FedererComponents2";
+import { FedWhiteboard, SCENE_PIEL_9 } from "../../FedWhiteboard";
 
 // ── CANAL "Federer Consejos" · 9 SEÑALES DE LA PIEL ───────────────────────────
 // Avatar en 3 modos, CERO recuadro (feedback): FULL · HIDDEN (visual full) · SPLIT halfR.
@@ -175,6 +176,13 @@ export const MainV3z: React.FC = () => {
           </Sequence>
         );
       })}
+
+      {/* CAPA 5 — PIZARRA 9 SEÑALES (recap 24:38): las 9 señales como grilla de módulos
+          construida una por una, ABCDE con lasso→flecha al lunar. Cubre todo (opaca);
+          el audio lo sigue dando el AvatarLayer global (el PiP de la pizarra va muted). */}
+      <Sequence from={sec(1477.74)} durationInFrames={sec(54.9)} layout="none">
+        <FedWhiteboard scene={SCENE_PIEL_9} theme="white" />
+      </Sequence>
 
       {/* HOOK — texto sobre el avatar oscurecido (arranca recién al segundo 2.2) */}
       <Sequence from={sec(hookStart)} durationInFrames={sec(hookDur)} layout="none">
