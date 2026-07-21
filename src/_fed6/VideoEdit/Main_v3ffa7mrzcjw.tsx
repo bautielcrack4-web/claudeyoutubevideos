@@ -106,6 +106,10 @@ for (let i = 0; i < AVATAR_WINDOWS.length; i++) {
   }
 }
 const inHalfR = (t: number) => HALFR.some(([s, e]) => t >= s - 0.05 && t < e - 0.1);
+// SPLIT robusto: el media va a la mitad IZQUIERDA sólo si el avatar está en halfR durante
+// TODO el span del clip. Si el clip cruza a "hidden" (por un comp/overlay que parte la ventana),
+// va FULL-SCREEN → la derecha NUNCA queda negra (avatar desaparecido). Fix del bug reportado.
+const spanHalfR = (start: number, dur: number) => HALFR.some(([s, e]) => start >= s - 0.05 && start + dur <= e + 0.05);
 // SPLIT: el media va CONTENIDO y centrado en su mitad IZQUIERDA (cover), nunca full-bleed
 // bajo el avatar. Divisor + viñeta interna → lee como panel deliberado, no como fondo tapado.
 const HalfLeft: React.FC<{ children: React.ReactNode }> = ({ children }) => (
@@ -138,7 +142,7 @@ export const MainV3z: React.FC = () => {
       {/* CAPA 1 — B-ROLL DENSO continuo */}
       {FEDZ_BROLL.map((b) => {
         const dd = Math.max(1, sec(b.dur) + 3);
-        const half = inHalfR(b.start);
+        const half = spanHalfR(b.start, b.dur);
         const shot = <RawShot durationInFrames={dd} src={b.src} hue="cold" />;
         return (
           <Sequence key={b.name} from={sec(b.start)} durationInFrames={dd} premountFor={30}>
@@ -150,7 +154,7 @@ export const MainV3z: React.FC = () => {
       {/* CAPA 2 — FOTOS p_*.png TOPEADAS (~3.6s) */}
       {rawTop.map((b: any) => {
         const d = Math.max(1, sec(Math.min(b.dur, HERO_CAP)));
-        const half = inHalfR(b.start);
+        const half = spanHalfR(b.start, Math.min(b.dur, HERO_CAP));
         const shot = <RawShot durationInFrames={d} src={b.src} hue="cold" kicker={b.kicker} />;
         return (
           <Sequence key={b.id} from={sec(b.start)} durationInFrames={d} premountFor={20}>
