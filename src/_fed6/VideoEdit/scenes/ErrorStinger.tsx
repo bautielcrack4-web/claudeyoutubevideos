@@ -15,7 +15,8 @@ export const ErrorStinger: React.FC<{
   number: string;   // "04" o "★"
   title: string;
   tone?: "teal" | "warn";
-}> = ({ durationInFrames, number, title, tone = "teal" }) => {
+  eyebrow?: string; // "ERROR" | "BENEFICIO" | "PASO" | "EL ESTUDIO" …
+}> = ({ durationInFrames, number, title, tone = "teal", eyebrow = "Error" }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const accent = tone === "warn" ? RED : TEAL;
@@ -35,7 +36,7 @@ export const ErrorStinger: React.FC<{
 
       <AbsoluteFill style={{ alignItems: "center", justifyContent: "center", transform: `translateX(${shake}px)` }}>
         <div style={{ textAlign: "center" }}>
-          <div style={{ fontSize: 44, fontWeight: 900, letterSpacing: 10, textTransform: "uppercase", color: CREAM, opacity: titSp }}>Error</div>
+          <div style={{ fontSize: 44, fontWeight: 900, letterSpacing: 10, textTransform: "uppercase", color: CREAM, opacity: titSp }}>{eyebrow}</div>
           <div style={{ fontSize: 340, fontWeight: 900, lineHeight: 0.9, color: "#fff", opacity: numSp, transform: `scale(${interpolate(numSp, [0, 1], [1.4, 1])})`, textShadow: `0 0 60px ${accent}` }}>{number}</div>
           <div style={{ fontSize: 74, fontWeight: 900, color: CREAM, letterSpacing: -0.5, opacity: titSp, transform: `translateY(${(1 - titSp) * 24}px)` }}>{title}</div>
         </div>

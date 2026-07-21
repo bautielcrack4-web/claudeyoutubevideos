@@ -344,6 +344,15 @@ for (const beat of beats) {
     if (f < 8 || f > lastSafe) f = Math.round(beat.dur * 30 * 0.42);
     beat.flipAt = f; delete beat.flipPhrase;
   }
+  // eyebrow del ErrorStinger según la sección (no todo es "ERROR")
+  if (beat.kind === "errorstinger") {
+    const k = beat.key || "";
+    beat.eyebrow = /^ben[1-5]$/.test(k) ? "Beneficio"
+      : /^paso[1-5]$/.test(k) ? "Paso"
+      : /^err[1-3]$/.test(k) ? "Error"
+      : k === "resultados" ? "El estudio"
+      : "Dato";
+  }
   if (beat.at) delete beat.at;
 }
 fs.writeFileSync("public/avatar_clips_federer7.json", JSON.stringify(KIT_CLIPS, null, 1));
