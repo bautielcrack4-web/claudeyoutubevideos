@@ -51,7 +51,6 @@ import {
   interpolate,
   OffthreadVideo,
   random,
-  registerRoot,
   spring,
   staticFile,
   useCurrentFrame,
@@ -941,6 +940,6 @@ export const RemotionRoot: React.FC = () => (
   </>
 );
 
-registerRoot(RemotionRoot);
-
-// touch 1784617067
+// ⚠️ registerRoot() NO se llama acá: este archivo se IMPORTA como componente desde
+// otros Main (ej. Main_v3ffa7mrzcjw embebe la pizarra). El registerRoot vive en el
+// entry standalone `src/FedWhiteboard.entry.tsx` (studio/still de la pizarra sola).
