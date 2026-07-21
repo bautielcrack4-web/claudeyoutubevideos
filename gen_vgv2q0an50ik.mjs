@@ -93,7 +93,7 @@ const SECTIONS = [
     c("bars", { title: "Músculo construido con la MISMA proteína", unit: "%", bars: [
       { label: "Huevo entero (con yema)", value: 100, winner: true, note: "+40% de síntesis muscular" },
       { label: "Solo la clara", value: 60, tone: "danger" } ] }),
-    ap([{ word: "+40%", sub: "más músculo, con la misma proteína — la única diferencia era la yema", tone: "teal", atPhrase: "un cuarenta por ciento mas de musculo" }], {}),
+    ak([{ word: "+40%", sub: "más músculo, con la misma proteína — la única diferencia era la yema", tone: "teal", atPhrase: "un cuarenta por ciento mas de musculo" }], {}),
   ]},
   { key: "porque_yema", phrase: "la yema no es grasa", beats: [
     c("splitlist", { title: "La yema no es grasa inútil", items: ["Trae vitaminas y grasas buenas", "Da la señal COMPLETA para usar la proteína", "La clara sola es media orden"], palette: "T" }),
