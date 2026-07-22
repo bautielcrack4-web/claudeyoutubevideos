@@ -1,5 +1,6 @@
-import { AbsoluteFill, Sequence } from "remotion";
+import { AbsoluteFill, Sequence, staticFile } from "remotion";
 import { sec } from "./theme";
+import { FedWhiteboard } from "../../FedWhiteboard";
 import { AvatarLayer, AvatarWindow } from "./scenes/AvatarLayer";
 import { AvatarScrimText } from "./scenes/AvatarScrimText";
 import { RawShot } from "./scenes/RawShot";
@@ -55,12 +56,15 @@ FEDZ_BEATS.filter((b: any) => /^(gancho|error_intro|error1|error2|error3|protoco
 function buildWindows(): AvatarWindow[] {
   type Pt = { start: number; mode: AvatarWindow["mode"]; pr: number };
   const pts: Pt[] = [];
-  let flip = false;
   const content = [...FEDZ_BROLL.map((b: any) => ({ start: b.start, src: b.src })), ...rawTop.map((b: any) => ({ start: b.start, src: b.src }))].sort((a, b) => a.start - b.start);
+  // El SPLIT (halfR) se usa POCO: dominante = HIDDEN (visual full). Solo 1 de cada 6 clips de
+  // contenido va a split, y nunca en los primeros 40s. El resto, imagen a pantalla completa.
+  let ci = 0;
   for (const b of content) {
     const forceHidden = /libro|guia|federer_|nota_especialista|analisis_vitd/.test(b.src || "");
-    const mode: AvatarWindow["mode"] = forceHidden ? "hidden" : (flip ? "halfR" : "hidden");
-    if (!forceHidden) flip = !flip;
+    const wantHalf = !forceHidden && b.start > 40 && ci % 6 === 5;
+    const mode: AvatarWindow["mode"] = wantHalf ? "halfR" : "hidden";
+    ci++;
     pts.push({ start: b.start, mode, pr: 0 });
   }
   for (const b of compBeats) {
@@ -106,9 +110,11 @@ for (let i = 0; i < AVATAR_WINDOWS.length; i++) {
   }
 }
 const spanHalfR = (start: number, dur: number) => HALFR.some(([s, e]) => start >= s - 0.05 && start + dur <= e + 0.05);
+// SPLIT izquierdo: el media se renderiza a 1920 (RawShot) → lo desplazamos -480 para mostrar la
+// FRANJA CENTRAL (el sujeto queda centrado en la mitad de 960), no la esquina izquierda descentrada.
 const HalfLeft: React.FC<{ children: React.ReactNode }> = ({ children }) => (
   <div style={{ position: "absolute", left: 0, top: 0, width: 960, height: 1080, overflow: "hidden", background: "#0E1D23" }}>
-    {children}
+    <div style={{ position: "absolute", left: -480, top: 0, width: 1920, height: 1080 }}>{children}</div>
     <div style={{ position: "absolute", inset: 0, pointerEvents: "none", boxShadow: "inset -40px 0 80px rgba(0,0,0,0.45)" }} />
     <div style={{ position: "absolute", right: 0, top: 0, width: 3, height: "100%", background: "linear-gradient(180deg, transparent, rgba(18,179,174,0.4), transparent)" }} />
   </div>
@@ -116,6 +122,26 @@ const HalfLeft: React.FC<{ children: React.ReactNode }> = ({ children }) => (
 
 const ctaBeat = [...compBeats].reverse().find((b: any) => b.kind === "nametag");
 const CTA_AT = ctaBeat ? ctaBeat.start : VIDEO_END - 12;
+
+// ── PIZARRA del MECANISMO (VDR / llave-cerradura) — se dibuja elemento por elemento.
+// Va en el beat del "por qué funciona" (~515s), avatar como PiP muted (audio = AvatarLayer global).
+const WB_AT = 515.2;
+const WB_DUR = 24;
+const SCENE_VDR = {
+  avatarSrc: staticFile("avatar_clips/fedvitd/wb_vdr.mp4"),
+  muted: true,
+  elements: [
+    { t: "title" as const, x: 6, y: 6, text: "Por qué te sostiene las piernas", start: 0.5 },
+    { t: "card" as const, x: 6, y: 30, w: 24, src: staticFile("img/p_fedvitd_musculo_pierna_flojo.png"), label: "Tu músculo", caption: "tiene cerraduras:\nlos receptores VDR", start: 2 },
+    { t: "note" as const, x: 39, y: 26, w: 22, text: "VITAMINA D = la LLAVE", start: 6, highlight: true, align: "center" as const },
+    { t: "lasso" as const, x: 50, y: 33, w: 26, h: 20, start: 7.2, rot: -3 },
+    { t: "arrow" as const, from: [31, 40] as [number, number], to: [39, 37] as [number, number], start: 9, curve: -0.2 },
+    { t: "note" as const, x: 66, y: 24, w: 30, text: "Abre → músculo FUERTE", start: 12, box: true },
+    { t: "note" as const, x: 66, y: 45, w: 30, text: "Cerrada → se afloja", start: 17, fill: true },
+    { t: "arrow" as const, from: [52, 35] as [number, number], to: [65, 30] as [number, number], start: 11.5, curve: 0.2 },
+    { t: "arrow" as const, from: [52, 42] as [number, number], to: [65, 51] as [number, number], start: 16.5, curve: -0.15 },
+  ],
+};
 
 const renderComp = (b: any, d: number) =>
   b.kind === "avatarpizarra" ? <AvatarPizarra durationInFrames={d} items={b.items} avatar={b.clip || AVA} avatarFrom={b.clip ? 0 : Math.round(b.start * 30)} />
@@ -157,8 +183,9 @@ export const MainFedvitd: React.FC = () => {
         );
       })}
 
-      {/* CAPA 3 — AVATAR (full / hidden / split halfR, cero recuadro) */}
-      <AvatarLayer src={AVA} windows={AVATAR_WINDOWS} accent={TEAL} />
+      {/* CAPA 3 — AVATAR (full / hidden / split halfR, cero recuadro).
+          avatarFocus centra la cara de Federer (x~0.52 del frame) en su media pantalla en los splits. */}
+      <AvatarLayer src={AVA} windows={AVATAR_WINDOWS} accent={TEAL} avatarFocus={{ x: 0.52, y: 0.4, splitZoom: 1.18 }} />
 
       {/* CAPA 4 — COMPONENTES / diagramas, TOPEADOS */}
       {compBeats.map((b: any) => {
@@ -169,6 +196,12 @@ export const MainFedvitd: React.FC = () => {
           </Sequence>
         );
       })}
+
+      {/* CAPA 5 — PIZARRA del mecanismo (VDR): se construye a mano; cubre b-roll/comps en su ventana.
+          El audio lo sigue dando el AvatarLayer global (el PiP de la pizarra va muted). */}
+      <Sequence from={sec(WB_AT)} durationInFrames={sec(WB_DUR)} layout="none">
+        <FedWhiteboard scene={SCENE_VDR} theme="dark" />
+      </Sequence>
 
       {/* HOOK — texto sobre el avatar oscurecido (arranca al segundo 2.2) */}
       <Sequence from={sec(hookStart)} durationInFrames={sec(hookDur)} layout="none">
