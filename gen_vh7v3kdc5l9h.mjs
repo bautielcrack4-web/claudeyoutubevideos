@@ -26,21 +26,38 @@ const P = (n) => `p_${SLUG}_${n}`;   // foto hero
 const D = (n) => `dg_${SLUG}_${n}`;  // diagrama
 
 const SECTIONS = [
-  // ░░ COLD-OPEN — 3 de la madrugada ░░
+  // ░░ COLD-OPEN CINE — 3 de la madrugada (primer minuto irresistible) ░░
   { key: "hook", phrase: null, start: 1.3, beats: [
-    c("talk", {}),
-    r(P("hombre_despierta_3am"), { at: "sentis que la lengua", kicker: "Las 3 de la madrugada" }),
-    r(P("vaso_agua_mesaluz"), { at: "ni una gota de saliva" }),
+    c("talk", {}),                                                     // avatar full 0-2.2 + scrim
+    r(P("ojos_abren"), { at: "abri los ojos", kicker: "Las 3 de la madrugada" }),
+    r(P("lengua_seca_macro"), { at: "la lengua se te pego" }),
+    r(P("labios_secos_macro"), { at: "la boca seca aspera" }),
+    r(P("arena_cae"), { at: "arena adentro" }),
+    r(P("mano_vaso_vacio"), { at: "ni una gota de saliva" }),
+    r(P("hombre_techo_resignado"), { at: "es la edad", hold: true }),  // resignación
   ]},
-  { key: "aviso", phrase: "es un aviso", beats: [
-    ak([{ word: "NO ES LA EDAD", sub: "es tu cuerpo prendiendo una lucecita en el tablero", tone: "warn", atPhrase: "una lucecita en el tablero" }], {}),
-    mv("La boca seca de noche es la edad", "Es un aviso: puede ser una de 5 cosas", { flipPhrase: "una de 5 cosas" }),
+  { key: "noesedad", phrase: "no es la edad", beats: [
+    ak([{ word: "NO ES LA EDAD", sub: "esa boca seca es un aviso de tu cuerpo", tone: "teal", atPhrase: "no es la edad" }], {}),
+  ]},
+  { key: "tablero", phrase: "lucecita en el tablero", beats: [
+    r(P("tablero_luz_roja"), { at: "lucecita en el tablero", kicker: "Una luz en el tablero", hold: true }),
+    fc([{ t: "Es" }, { t: "un" }, { t: "aviso", hl: true }], { tone: "warn", at: "es un aviso" }),
+  ]},
+  { key: "elerror_hook", phrase: "tomando un vaso de agua", beats: [
+    r(P("hombre_despierta_3am"), { at: "volviendose a dormir" }),
+  ]},
+  { key: "cinco", phrase: "una de 5 cosas", beats: [
+    es("5", "5 causas de la boca seca", { tone: "teal", w: 3.4 }),
+  ]},
+  { key: "loop_pinchazo", phrase: "pinchazo en el dedo", beats: [
+    r(P("gota_sangre_dedo"), { at: "pinchazo en el dedo" }),
+    c("looplock", { title: "La quinta causa", sub: "la que menos perdona — te la digo al final", at: "para el final" }),
   ]},
   { key: "confirma", phrase: "9 de cada 10 personas", beats: [
     c("stat", { big: "9 de 10", unit: "", label: "creen que la boca seca de noche es normal por la edad. Casi nunca lo es.", tone: "teal" }),
   ]},
   { key: "promesa", phrase: "quedate conmigo estos minutos", beats: [
-    c("chips", { bg: "image", image: `img/${P("hombre_despierta_3am")}.png`, imageDarken: 0.62, title: "5 causas de la boca seca después de los 60", chips: ["Deshidratación · Medicamentos", "Respirar por la boca · Azúcar", "Y una que va al médico"] }),
+    c("chips", { bg: "image", image: `img/${P("hombre_techo_resignado")}.png`, imageDarken: 0.62, title: "5 causas de la boca seca después de los 60", chips: ["Deshidratación · Medicamentos", "Respirar por la boca · Azúcar", "Y una que va al médico"] }),
   ]},
   // ░░ HISTORIA DE DON ALBERTO (emotiva) ░░
   { key: "story", phrase: "don alberto", beats: [

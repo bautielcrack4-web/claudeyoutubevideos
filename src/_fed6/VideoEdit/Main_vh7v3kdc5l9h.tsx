@@ -13,6 +13,7 @@ import { ErrorStinger } from "./scenes/ErrorStinger";
 import { GuardaEsto } from "./scenes/GuardaEsto";
 import { FreezeZoom } from "./scenes/FreezeZoom";
 import { FocusCardsVh7 } from "./FocusCards_vh7v3kdc5l9h";
+import { LoopLockVh7 } from "./LoopLock_vh7v3kdc5l9h";
 import { F_INTER } from "./kit/premium/theme";
 import { FEDZ_BEATS } from "./federer_vh7v3kdc5l9h_beats";
 import { FEDZ_BROLL } from "./federer_vh7v3kdc5l9h_broll";
@@ -25,7 +26,7 @@ const TEAL = "#12B3AE";
 const BG = "#0E1D23";
 const AVA = "vh7v3kdc5l9h_opt.mp4";
 
-const NEWFULL = new Set(["avatarpizarra", "avatarkeyword", "mitoverdad", "errorstinger", "guardaesto", "freezezoom", "focuscards"]);
+const NEWFULL = new Set(["avatarpizarra", "avatarkeyword", "mitoverdad", "errorstinger", "guardaesto", "freezezoom", "focuscards", "looplock"]);
 const OVERLAY = new Set(["lowerthird", "frasecinetica"]);
 const NOCAP = new Set(["avatarpizarra", "avatarkeyword", "focuscards"]);
 const isComp = (k: string) => COMP2_KINDS.has(k) || NEWFULL.has(k) || OVERLAY.has(k);
@@ -56,11 +57,16 @@ FEDZ_BEATS.filter((b: any) => /^(hook|story|principio|causa1|causa2|causa3|causa
 function buildWindows(): AvatarWindow[] {
   type Pt = { start: number; mode: AvatarWindow["mode"]; pr: number };
   const pts: Pt[] = [];
-  // CERO split 50/50 (halfR): Federer queda mal encuadrado al compartir pantalla (feedback creador).
-  // Todo contenido → avatar HIDDEN (visual full), alternando con los FULL de talks/arranques.
+  // SPLIT 50/50 (halfR) CENTRADO: el avatar comparte pantalla con la imagen, pero queda CENTRADO en
+  // su mitad vía avatarFocus en el AvatarLayer (arregla el mal encuadre). Alterna halfR/hidden.
+  // Libro/guía/Federer-cocina/listas → SIEMPRE hidden (full-screen, nunca split).
+  let flip = false;
   const content = [...FEDZ_BROLL.map((b: any) => ({ start: b.start, src: b.src })), ...rawTop.map((b: any) => ({ start: b.start, src: b.src }))].sort((a, b) => a.start - b.start);
   for (const b of content) {
-    pts.push({ start: b.start, mode: "hidden", pr: 0 });
+    const forceHidden = /federer|guia|celular|dentadura|lista_medic|analisis/.test(b.src || "");
+    const mode: AvatarWindow["mode"] = forceHidden ? "hidden" : (flip ? "halfR" : "hidden");
+    if (!forceHidden) flip = !flip;
+    pts.push({ start: b.start, mode, pr: 0 });
   }
   for (const b of compBeats) {
     const d = compDur(b);
@@ -126,6 +132,7 @@ const renderComp = (b: any, d: number) =>
   : b.kind === "guardaesto" ? <GuardaEsto durationInFrames={d} title={b.title} items={b.items} tag={b.tag} />
   : b.kind === "freezezoom" ? <FreezeZoom durationInFrames={d} image={b.image} x={b.x} y={b.y} label={b.label} zoom={b.zoom} tone={b.tone} />
   : b.kind === "focuscards" ? <FocusCardsVh7 durationInFrames={d} items={b.items} title={b.title} />
+  : b.kind === "looplock" ? <LoopLockVh7 durationInFrames={d} title={b.title} sub={b.sub} />
   : renderFederer2Comp(b, d, { medico: true });
 
 export const MainVh7: React.FC = () => {
@@ -158,7 +165,7 @@ export const MainVh7: React.FC = () => {
       })}
 
       {/* CAPA 3 — AVATAR (full / hidden / split halfR, cero recuadro) */}
-      <AvatarLayer src={AVA} windows={AVATAR_WINDOWS} accent={TEAL} />
+      <AvatarLayer src={AVA} windows={AVATAR_WINDOWS} accent={TEAL} avatarFocus={{ x: 0.5, y: 0.4, splitZoom: 1.12 }} />
 
       {/* CAPA 4 — COMPONENTES / diagramas, TOPEADOS */}
       {compBeats.map((b: any) => {
