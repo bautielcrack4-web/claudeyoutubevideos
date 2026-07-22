@@ -12,6 +12,7 @@ import { FraseCinetica } from "./scenes/FraseCinetica";
 import { ErrorStinger } from "./scenes/ErrorStinger";
 import { GuardaEsto } from "./scenes/GuardaEsto";
 import { FreezeZoom } from "./scenes/FreezeZoom";
+import { FocusCardsVh7 } from "./FocusCards_vh7v3kdc5l9h";
 import { F_INTER } from "./kit/premium/theme";
 import { FEDZ_BEATS } from "./federer_vh7v3kdc5l9h_beats";
 import { FEDZ_BROLL } from "./federer_vh7v3kdc5l9h_broll";
@@ -24,9 +25,9 @@ const TEAL = "#12B3AE";
 const BG = "#0E1D23";
 const AVA = "vh7v3kdc5l9h_opt.mp4";
 
-const NEWFULL = new Set(["avatarpizarra", "avatarkeyword", "mitoverdad", "errorstinger", "guardaesto", "freezezoom"]);
+const NEWFULL = new Set(["avatarpizarra", "avatarkeyword", "mitoverdad", "errorstinger", "guardaesto", "freezezoom", "focuscards"]);
 const OVERLAY = new Set(["lowerthird", "frasecinetica"]);
-const NOCAP = new Set(["avatarpizarra", "avatarkeyword"]);
+const NOCAP = new Set(["avatarpizarra", "avatarkeyword", "focuscards"]);
 const isComp = (k: string) => COMP2_KINDS.has(k) || NEWFULL.has(k) || OVERLAY.has(k);
 
 const HERO_CAP = 3.6;
@@ -124,6 +125,7 @@ const renderComp = (b: any, d: number) =>
   : b.kind === "errorstinger" ? <ErrorStinger durationInFrames={d} number={b.number} title={b.title} tone={b.tone} />
   : b.kind === "guardaesto" ? <GuardaEsto durationInFrames={d} title={b.title} items={b.items} tag={b.tag} />
   : b.kind === "freezezoom" ? <FreezeZoom durationInFrames={d} image={b.image} x={b.x} y={b.y} label={b.label} zoom={b.zoom} tone={b.tone} />
+  : b.kind === "focuscards" ? <FocusCardsVh7 durationInFrames={d} items={b.items} title={b.title} />
   : renderFederer2Comp(b, d, { medico: true });
 
 export const MainVh7: React.FC = () => {

@@ -225,13 +225,13 @@ const SECTIONS = [
   // ░░ RECAP ░░
   { key: "recap", phrase: "hagamos el repaso", beats: [
     c("talk", {}),
-    ge("Las 5 causas (guardá esto)", [
-      { text: "Deshidratación — agua a sorbos todo el día", image: `img/${P("vaso_agua_dia")}.png` },
-      { text: "Remedios — la lista al médico", image: `img/${P("lista_medicamentos_medico")}.png` },
-      { text: "Respirás por la boca — dormí de costado", image: `img/${P("dormir_costado")}.png` },
-      { text: "Azúcar — análisis de glucosa YA", image: `img/${P("glucometro_dedo")}.png` },
-      { text: "Glándulas / Sjögren — boca + ojos secos", image: `img/${P("ojos_secos_gotas")}.png` },
-    ], { at: "escucha cual es tu caso" }),
+    c("focuscards", { title: "¿Cuál es tu caso?", items: [
+      { image: `img/${P("vaso_agua_dia")}.png`, label: "Deshidratación", atPhrase: "deshidratacion silenciosa" },
+      { image: `img/${P("lista_medicamentos_medico")}.png`, label: "Tus remedios", atPhrase: "tus remedios" },
+      { image: `img/${P("dormir_costado")}.png`, label: "Respirás por la boca", atPhrase: "respiras por la boca" },
+      { image: `img/${P("glucometro_dedo")}.png`, label: "El azúcar en sangre", atPhrase: "el azucar en sangre" },
+      { image: `img/${P("ojos_secos_gotas")}.png`, label: "Glándulas · Sjögren", atPhrase: "las glandulas mismas" },
+    ], at: "escucha cual es tu caso" }),
   ]},
   { key: "recap_error", phrase: "arriba de todo el error", beats: [
     c("splitlist", { title: "El error a corregir esta noche", items: ["Nada de enjuague con alcohol", "Nada de un litro de agua antes de dormir", "Humidificador + chicle sin azúcar mientras tanto"], palette: "G" }),
@@ -345,6 +345,16 @@ for (const beat of beats) {
     beat.dur = +(last / 30 + hold).toFixed(2);
     beat.clip = `avatar_clips/${SLUG}/${beat.id}.mp4`;
     KIT_CLIPS.push({ name: beat.id, start: +beat.start.toFixed(2), dur: +(beat.dur + 0.4).toFixed(2) });
+  }
+  if (beat.kind === "focuscards") {
+    let last = 0;
+    beat.items = (beat.items || []).map((it) => {
+      let atF = 0;
+      if (it.atPhrase) { const ms = findMs(it.atPhrase, beat.start - 1); if (ms != null) atF = Math.max(0, Math.round((ms - beat.start) * 30)); }
+      last = Math.max(last, atF);
+      const { atPhrase, ...rest } = it; return { ...rest, at: atF };
+    });
+    beat.dur = +(last / 30 + 4.5).toFixed(2); // hold ~4.5s tras enfocar la última tarjeta
   }
   if (beat.kind === "mitoverdad" && beat.flipPhrase) {
     const ms = findMs(beat.flipPhrase, beat.start - 1);
