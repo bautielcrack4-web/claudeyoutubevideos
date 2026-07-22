@@ -12,6 +12,7 @@ import { FraseCinetica } from "./scenes/FraseCinetica";
 import { ErrorStinger } from "./scenes/ErrorStinger";
 import { GuardaEsto } from "./scenes/GuardaEsto";
 import { FreezeZoom } from "./scenes/FreezeZoom";
+import { FocusCardsVtio } from "./FocusCards_vtio42jf5tzj";
 import { F_INTER } from "./kit/premium/theme";
 import { FEDZ_BEATS } from "./federer_vtio42jf5tzj_beats";
 import { FEDZ_BROLL } from "./federer_vtio42jf5tzj_broll";
@@ -24,9 +25,9 @@ const TEAL = "#12B3AE";
 const BG = "#0E1D23";
 const AVA = "vtio42jf5tzj_opt.mp4";
 
-const NEWFULL = new Set(["avatarpizarra", "avatarkeyword", "mitoverdad", "errorstinger", "guardaesto", "freezezoom"]);
+const NEWFULL = new Set(["avatarpizarra", "avatarkeyword", "mitoverdad", "errorstinger", "guardaesto", "freezezoom", "focuscards"]);
 const OVERLAY = new Set(["lowerthird", "frasecinetica"]);
-const NOCAP = new Set(["avatarpizarra", "avatarkeyword"]);
+const NOCAP = new Set(["avatarpizarra", "avatarkeyword", "focuscards"]);
 const isComp = (k: string) => COMP2_KINDS.has(k) || NEWFULL.has(k) || OVERLAY.has(k);
 
 const HERO_CAP = 3.6;
@@ -55,13 +56,11 @@ FEDZ_BEATS.filter((b: any) => /^(hook|story|principio|porque60|reveal|comparacio
 function buildWindows(): AvatarWindow[] {
   type Pt = { start: number; mode: AvatarWindow["mode"]; pr: number };
   const pts: Pt[] = [];
-  let flip = false;
   const content = [...FEDZ_BROLL.map((b: any) => ({ start: b.start, src: b.src })), ...rawTop.map((b: any) => ({ start: b.start, src: b.src }))].sort((a, b) => a.start - b.start);
   for (const b of content) {
-    const forceHidden = /federer|guia|celular|dentadura|lista_medic|analisis/.test(b.src || "");
-    const mode: AvatarWindow["mode"] = forceHidden ? "hidden" : (flip ? "halfR" : "hidden");
-    if (!forceHidden) flip = !flip;
-    pts.push({ start: b.start, mode, pr: 0 });
+    // ⛔ CERO halfR en este canal (feedback creador): el avatar comparte MAL encuadrado.
+    // Todas las ventanas de contenido = HIDDEN (visual a pantalla completa). Solo full/hidden.
+    pts.push({ start: b.start, mode: "hidden", pr: 0 });
   }
   for (const b of compBeats) {
     const d = compDur(b);
@@ -126,6 +125,7 @@ const renderComp = (b: any, d: number) =>
   : b.kind === "errorstinger" ? <ErrorStinger durationInFrames={d} number={b.number} title={b.title} tone={b.tone} />
   : b.kind === "guardaesto" ? <GuardaEsto durationInFrames={d} title={b.title} items={b.items} tag={b.tag} />
   : b.kind === "freezezoom" ? <FreezeZoom durationInFrames={d} image={b.image} x={b.x} y={b.y} label={b.label} zoom={b.zoom} tone={b.tone} />
+  : b.kind === "focuscards" ? <FocusCardsVtio durationInFrames={d} items={b.items} title={b.title} />
   : renderFederer2Comp(b, d, { medico: true });
 
 export const MainVtio: React.FC = () => {

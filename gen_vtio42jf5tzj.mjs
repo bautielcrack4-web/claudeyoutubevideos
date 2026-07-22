@@ -17,6 +17,7 @@ const ak = (items, o = {}) => ({ t: "avatarkeyword", items, ...o, at: o.at || (i
 const ap = (items, o = {}) => ({ t: "avatarpizarra", items, ...o, at: o.at || (items[0] && items[0].atPhrase) });
 const lt = (title, o = {}) => ({ t: "lowerthird", title, tone: o.tone || "teal", ...o });
 const ge = (title, items, o = {}) => ({ t: "guardaesto", title, items, ...o });
+const fcards = (title, items, o = {}) => ({ t: "focuscards", title, items, ...o, at: o.at || (items[0] && items[0].atPhrase) });
 const fz = (image, o = {}) => ({ t: "freezezoom", image: `img/${image}.png`, ...o });
 
 const W = { raw: 1.4, quote: 1.1, headline: 1.0, rule: 1.0, stat: 1.05, checklist: 1.2, splitlist: 1.1, bars: 1.2, callout: 1.1, chips: 1.1, diagram: 2.4, board: 3.0, nametag: 1.3, annotated: 1.3, cross: 1.6, process: 2.6, talk: 1.0,
@@ -260,10 +261,10 @@ const SECTIONS = [
     c("splitlist", { title: "Sanísimo… para un riñón joven", items: ["Banana, espinaca cruda a lo bestia", "Jugo de naranja de litro, agua de coco", "Poroto y palta en exceso"], palette: "G" }),
   ]},
   // ░░ ENEMIGO ░░
-  { key: "incomodar", phrase: "que te va a incomodar", beats: [
-    ak([{ word: "¿QUIÉN TE LO METE?", sub: "el que te vende el polvito y la licuadora de mil dólares", tone: "warn", atPhrase: "la industria del" }], {}),
+  { key: "incomodar", phrase: "el polvito la licuadora", beats: [
+    ak([{ word: "¿QUIÉN TE LO METE?", sub: "el que te vende el polvito y la licuadora de mil dólares", tone: "warn", atPhrase: "el polvito la licuadora" }], {}),
   ]},
-  { key: "wellness", phrase: "la industria del", beats: [
+  { key: "wellness", phrase: "verduleria no le deja", beats: [
     mv("Necesitás suplementos caros para el riñón", "Un morrón no le deja plata a nadie: por eso nadie te lo cuenta", { flipPhrase: "nadie te lo cuenta" }),
   ]},
   { key: "simple", phrase: "la salud simple", beats: [
@@ -271,14 +272,13 @@ const SECTIONS = [
     r(P("morron_heladera"), { at: "el cajon de abajo" }),
   ]},
   // ░░ RECAP ░░
-  { key: "recap", phrase: "vamos al repaso", beats: [
-    c("talk", {}),
-    ge("El plan (guardá esto)", [
-      { text: "Creatinina alta = filtro lento, es el aviso", image: `img/${P("analisis_creatinina")}.png` },
-      { text: "Verdura #1: morrón rojo, crudo y rojo", image: `img/${P("morron_rojo")}.png` },
-      { text: "Agua, menos sal, proteína medida, caminar", image: `img/${P("vaso_agua_dia")}.png` },
-      { text: "No confundas sano con bueno para tu riñón", image: `img/${P("jugo_verde_licuadora")}.png` },
-      { text: "Con creatinina alta: va de la mano del médico", image: `img/${P("nefrologo_consulta")}.png` },
+  { key: "recap", phrase: "para que te quede grabado", beats: [
+    fcards("El plan en 5", [
+      { label: "Creatinina alta = filtro lento, el aviso", image: `img/${P("analisis_creatinina")}.png`, atPhrase: "la creatinina alta no" },
+      { label: "Verdura #1: morrón rojo, crudo y rojo", image: `img/${P("morron_rojo")}.png`, atPhrase: "la verdura numero uno es" },
+      { label: "Agua, menos sal, proteína, caminar", image: `img/${P("vaso_agua_dia")}.png`, atPhrase: "acompanalo con agua" },
+      { label: "No confundas sano con bueno p/ tu riñón", image: `img/${P("jugo_verde_licuadora")}.png`, atPhrase: "no confundas sano" },
+      { label: "Con creatinina alta, va con el médico", image: `img/${P("nefrologo_consulta")}.png`, atPhrase: "el mas importante de todos" },
     ], { at: "para que te quede grabado" }),
   ]},
   // ░░ CTA COMENTARIOS ░░
@@ -387,6 +387,23 @@ for (const beat of beats) {
     beat.dur = +(last / 30 + hold).toFixed(2);
     beat.clip = `avatar_clips/${SLUG}/${beat.id}.mp4`;
     KIT_CLIPS.push({ name: beat.id, start: +beat.start.toFixed(2), dur: +(beat.dur + 0.4).toFixed(2) });
+  }
+  if (beat.kind === "focuscards") {
+    const n = beat.items.length;
+    // ms exacto de cada número (frames rel al inicio del beat); null si Whisper lo omitió
+    const raw = beat.items.map((it) => { if (it.atPhrase) { const ms = findMs(it.atPhrase, beat.start - 0.5); if (ms != null) return Math.max(0, Math.round((ms - beat.start) * 30)); } return null; });
+    // rellenar los null por interpolación monótona entre anclas conocidas
+    for (let i = 0; i < n; i++) {
+      if (raw[i] == null) {
+        const prev = i > 0 ? raw[i - 1] : 0;
+        let nj = i + 1; while (nj < n && raw[nj] == null) nj++;
+        raw[i] = nj < n && raw[nj] != null ? Math.round(prev + (raw[nj] - prev) / (nj - (i - 1))) : prev + 60;
+      }
+      if (i > 0 && raw[i] <= raw[i - 1]) raw[i] = raw[i - 1] + 36; // monotonía (mín 1.2s entre tarjetas)
+    }
+    beat.items = beat.items.map((it, i) => { const { atPhrase, ...rest } = it; return { ...rest, at: raw[i] }; });
+    beat.dur = +(raw[n - 1] / 30 + 3.2).toFixed(2); // 3.2s de hold tras enfocar la última
+    beat.focusAnchored = raw.filter((_, i) => beat.items[i]).length;
   }
   if (beat.kind === "mitoverdad" && beat.flipPhrase) {
     const ms = findMs(beat.flipPhrase, beat.start - 1);
