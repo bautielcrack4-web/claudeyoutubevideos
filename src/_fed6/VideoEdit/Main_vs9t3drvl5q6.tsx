@@ -93,7 +93,28 @@ function buildWindows(): AvatarWindow[] {
   post.sort((a, b) => a.start - b.start);
   const out: AvatarWindow[] = [];
   for (const x of post) { if (!out.length || out[out.length - 1].mode !== x.mode) out.push(x); }
-  return out;
+
+  // ── GAP-FILL anti-negro: donde NO hay contenido (b-roll ralo del tramo final), el avatar va FULL,
+  // nunca fondo pelado. Preserva `out` idéntico donde SÍ hay cobertura (el tramo denso no cambia).
+  const cov: [number, number][] = [];
+  for (const b of FEDZ_BROLL as any[]) cov.push([b.start, b.start + b.dur + 0.2]);
+  for (const b of rawTop as any[]) cov.push([b.start, b.start + Math.min(b.dur, HERO_CAP) + 0.2]);
+  for (const b of compBeats as any[]) cov.push([b.start, b.start + compDur(b) + 0.2]);
+  cov.sort((a, c) => a[0] - c[0]);
+  const merged: [number, number][] = [];
+  for (const [s, e] of cov) { const l = merged[merged.length - 1]; if (l && s <= l[1] + 0.2) l[1] = Math.max(l[1], e); else merged.push([s, e]); }
+  const gaps: [number, number][] = [];
+  let prev = 0;
+  for (const [s, e] of merged) { if (s - prev > 0.6) gaps.push([prev, s]); prev = Math.max(prev, e); }
+  if (VIDEO_END - prev > 0.6) gaps.push([prev, VIDEO_END]);
+  const modeAt = (t: number): AvatarWindow["mode"] => { let m = out[0].mode; for (const w of out) { if (w.start <= t + 1e-6) m = w.mode; else break; } return m; };
+  const inGap = (t: number) => t >= 7.6 && gaps.some(([s, e]) => t >= Math.max(s, 7.6) - 1e-6 && t < e - 1e-6);
+  const bounds = new Set<number>(out.map((w) => w.start));
+  for (const [s, e] of gaps) { if (e <= 7.6) continue; bounds.add(+Math.max(s, 7.6).toFixed(2)); bounds.add(+e.toFixed(2)); }
+  const sb = [...bounds].sort((a, b) => a - b);
+  const out2: AvatarWindow[] = [];
+  for (const t of sb) { const mode: AvatarWindow["mode"] = inGap(t) ? "full" : modeAt(t); if (!out2.length || out2[out2.length - 1].mode !== mode) out2.push({ start: t, mode }); }
+  return out2;
 }
 const AVATAR_WINDOWS = buildWindows();
 
