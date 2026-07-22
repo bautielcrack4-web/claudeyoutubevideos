@@ -12,6 +12,7 @@ import { FraseCinetica } from "./scenes/FraseCinetica";
 import { ErrorStinger } from "./scenes/ErrorStinger";
 import { GuardaEsto } from "./scenes/GuardaEsto";
 import { FreezeZoom } from "./scenes/FreezeZoom";
+import { FocusCardsVlnl } from "./FocusCards_vlnljrhb5gbv";
 import { F_INTER } from "./kit/premium/theme";
 import { FEDZ_BEATS } from "./federer_vlnljrhb5gbv_beats";
 import { FEDZ_BROLL } from "./federer_vlnljrhb5gbv_broll";
@@ -24,9 +25,9 @@ const TEAL = "#12B3AE";
 const BG = "#0E1D23";
 const AVA = "vlnljrhb5gbv_opt.mp4";
 
-const NEWFULL = new Set(["avatarpizarra", "avatarkeyword", "mitoverdad", "errorstinger", "guardaesto", "freezezoom"]);
+const NEWFULL = new Set(["avatarpizarra", "avatarkeyword", "mitoverdad", "errorstinger", "guardaesto", "freezezoom", "focuscards"]);
 const OVERLAY = new Set(["lowerthird", "frasecinetica"]);
-const NOCAP = new Set(["avatarpizarra", "avatarkeyword"]);
+const NOCAP = new Set(["avatarpizarra", "avatarkeyword", "focuscards"]);
 const isComp = (k: string) => COMP2_KINDS.has(k) || NEWFULL.has(k) || OVERLAY.has(k);
 
 const HERO_CAP = 3.6;
@@ -65,6 +66,13 @@ function buildWindows(): AvatarWindow[] {
     const d = compDur(b);
     pts.push({ start: b.start, mode: "hidden", pr: 3 });
     pts.push({ start: b.start + d, mode: "hidden", pr: 1 });
+  }
+  // Holds largos de b-roll (un clip que quedaría >8s en pantalla sin nada encima) → avatar FULL tras 5s.
+  // El doctor hablando SIEMPRE encaja con lo que se dice; evita que un clip loopee monótono.
+  for (let i = 0; i < FEDZ_BROLL.length; i++) {
+    const bb = FEDZ_BROLL[i];
+    const nxt = i + 1 < FEDZ_BROLL.length ? FEDZ_BROLL[i + 1].start : VIDEO_END;
+    if (nxt - bb.start > 8) pts.push({ start: +(bb.start + 5).toFixed(2), mode: "full", pr: 2 });
   }
   for (const s of FULL_AT) { pts.push({ start: s, mode: "full", pr: 4 }); pts.push({ start: +(s + 2.6).toFixed(2), mode: "hidden", pr: 2 }); }
   pts.sort((a, b) => a.start - b.start || b.pr - a.pr);
@@ -124,6 +132,7 @@ const renderComp = (b: any, d: number) =>
   : b.kind === "errorstinger" ? <ErrorStinger durationInFrames={d} number={b.number} title={b.title} tone={b.tone} />
   : b.kind === "guardaesto" ? <GuardaEsto durationInFrames={d} title={b.title} items={b.items} tag={b.tag} />
   : b.kind === "freezezoom" ? <FreezeZoom durationInFrames={d} image={b.image} x={b.x} y={b.y} label={b.label} zoom={b.zoom} tone={b.tone} />
+  : b.kind === "focuscards" ? <FocusCardsVlnl durationInFrames={d} items={b.items} title={b.title} />
   : renderFederer2Comp(b, d, { medico: true });
 
 export const MainVlnl: React.FC = () => {

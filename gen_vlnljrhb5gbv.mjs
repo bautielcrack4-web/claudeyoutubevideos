@@ -17,12 +17,13 @@ const mv = (myth, truth, o = {}) => ({ t: "mitoverdad", myth, truth, ...o });
 const fc = (words, o = {}) => ({ t: "frasecinetica", words, tone: o.tone || "teal", perWord: o.perWord || 10, ...o });
 const ak = (items, o = {}) => ({ t: "avatarkeyword", items, ...o, at: o.at || (items[0] && items[0].atPhrase) });
 const ap = (items, o = {}) => ({ t: "avatarpizarra", items, ...o, at: o.at || (items[0] && items[0].atPhrase) });
+const focc = (items, o = {}) => ({ t: "focuscards", items, title: o.title, ...o, at: o.at || (items[0] && items[0].atPhrase) });
 const lt = (title, o = {}) => ({ t: "lowerthird", title, tone: o.tone || "teal", ...o });
 const ge = (title, items, o = {}) => ({ t: "guardaesto", title, items, ...o });
 const fz = (image, o = {}) => ({ t: "freezezoom", image: `img/${image}.png`, ...o });
 
 const W = { raw: 1.4, quote: 1.1, headline: 1.0, rule: 1.0, stat: 1.05, checklist: 1.2, splitlist: 1.1, bars: 1.2, callout: 1.1, chips: 1.1, diagram: 2.4, board: 3.0, nametag: 1.3, annotated: 1.3, cross: 1.6, process: 2.6, talk: 1.0,
-  errorstinger: 1.3, mitoverdad: 2.2, frasecinetica: 1.6, avatarkeyword: 2.6, avatarpizarra: 3.4, lowerthird: 1.6, guardaesto: 3.0, freezezoom: 1.6 };
+  errorstinger: 1.3, mitoverdad: 2.2, frasecinetica: 1.6, avatarkeyword: 2.6, avatarpizarra: 3.4, lowerthird: 1.6, guardaesto: 3.0, freezezoom: 1.6, focuscards: 6.0 };
 
 const P = (n) => `p_${SLUG}_${n}`;   // foto hero
 const D = (n) => `dg_${SLUG}_${n}`;  // diagrama
@@ -342,14 +343,14 @@ const SECTIONS = [
   // ░░ RECAP — los 6 puntos ░░
   { key: "recap", phrase: "vamos a repasar", beats: [
     c("talk", {}),
-    ge("Guardá esto: los 6 puntos", [
-      { text: "1. Proteína lenta antes de dormir (~30 g)", image: `img/${P("requeson_tazon_hero")}.png` },
-      { text: "2. Un puñado de nueces arriba", image: `img/${P("nueces_encima")}.png` },
-      { text: "3. Vitamina D: sol y suplemento si indican", image: `img/${P("sol_manana_brazos")}.png` },
-      { text: "4. Magnesio + caldo con glicina", image: `img/${P("caldo_huesos_olla")}.png` },
-      { text: "5. Repartí la proteína en 4 momentos", image: `img/${P("cuatro_comidas")}.png` },
-      { text: "6. Mové las piernas todos los días", image: `img/${P("sentadilla_silla")}.png` },
-    ], { at: "para que te quede grabado" }),
+    focc([
+      { image: `img/${P("requeson_tazon_hero")}.png`, label: "Proteína lenta antes de dormir", atPhrase: "una porción de proteína" },
+      { image: `img/${P("nueces_encima")}.png`, label: "Un puñado de nueces arriba", atPhrase: "un puñado chico de nueces" },
+      { image: `img/${P("sol_manana_brazos")}.png`, label: "Vitamina D: sol + suplemento", atPhrase: "cuidá la vitamina" },
+      { image: `img/${P("caldo_huesos_olla")}.png`, label: "Magnesio + caldo con glicina", atPhrase: "sumá magnesio" },
+      { image: `img/${P("cuatro_comidas")}.png`, label: "Repartí la proteína en 4 momentos", atPhrase: "repartí la proteína" },
+      { image: `img/${P("sentadilla_silla")}.png`, label: "Mové las piernas todos los días", atPhrase: "mové las piernas todos" },
+    ], { title: "Los 6 puntos", at: "para que te quede grabado" }),
   ]},
   { key: "recap_mov", phrase: "move las piernas todos", beats: [
     c("stat", { big: "10 × 2", unit: "sentadillas", label: "Levantate de la silla 10 veces, 2 veces al día. Caminá hasta la esquina.", tone: "teal" }),
@@ -469,6 +470,17 @@ for (const beat of beats) {
     beat.dur = +(last / 30 + hold).toFixed(2);
     beat.clip = `avatar_clips/${SLUG}/${beat.id}.mp4`;
     KIT_CLIPS.push({ name: beat.id, start: +beat.start.toFixed(2), dur: +(beat.dur + 0.4).toFixed(2) });
+  }
+  if (beat.kind === "focuscards") {
+    const n = (beat.items || []).length;
+    const spanF = Math.max(30, Math.round(beat.dur * 30));
+    beat.items = (beat.items || []).map((it, i) => {
+      let atF = null;
+      if (it.atPhrase) { const ms = findMs(it.atPhrase, beat.start - 0.5); if (ms != null) atF = Math.round((ms - beat.start) * 30); }
+      if (atF == null || atF < 0 || atF > spanF) atF = Math.round(((i + 0.5) / n) * spanF); // fallback: reparto parejo
+      const { atPhrase, ...rest } = it; return { ...rest, at: atF };
+    });
+    for (let i = 1; i < beat.items.length; i++) if (beat.items[i].at <= beat.items[i - 1].at) beat.items[i].at = beat.items[i - 1].at + Math.round(spanF / (n + 1));
   }
   if (beat.kind === "mitoverdad" && beat.flipPhrase) {
     const ms = findMs(beat.flipPhrase, beat.start - 1);
