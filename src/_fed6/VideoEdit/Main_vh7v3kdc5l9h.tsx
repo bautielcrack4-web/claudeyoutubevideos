@@ -165,7 +165,7 @@ export const MainVh7: React.FC = () => {
       })}
 
       {/* CAPA 3 — AVATAR (full / hidden / split halfR, cero recuadro) */}
-      <AvatarLayer src={AVA} windows={AVATAR_WINDOWS} accent={TEAL} avatarFocus={{ x: 0.5, y: 0.4, splitZoom: 1.12 }} />
+      <AvatarLayer src={AVA} windows={AVATAR_WINDOWS} accent={TEAL} avatarFocus={{ x: 0.6, y: 0.42, splitZoom: 1.12 }} />
 
       {/* CAPA 4 — COMPONENTES / diagramas, TOPEADOS */}
       {compBeats.map((b: any) => {
