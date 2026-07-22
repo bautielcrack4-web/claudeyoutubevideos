@@ -55,13 +55,11 @@ FEDZ_BEATS.filter((b: any) => /^(hook|story|principio|causa1|causa2|causa3|causa
 function buildWindows(): AvatarWindow[] {
   type Pt = { start: number; mode: AvatarWindow["mode"]; pr: number };
   const pts: Pt[] = [];
-  let flip = false;
+  // CERO split 50/50 (halfR): Federer queda mal encuadrado al compartir pantalla (feedback creador).
+  // Todo contenido → avatar HIDDEN (visual full), alternando con los FULL de talks/arranques.
   const content = [...FEDZ_BROLL.map((b: any) => ({ start: b.start, src: b.src })), ...rawTop.map((b: any) => ({ start: b.start, src: b.src }))].sort((a, b) => a.start - b.start);
   for (const b of content) {
-    const forceHidden = /federer|guia|celular|dentadura|lista_medic|analisis/.test(b.src || "");
-    const mode: AvatarWindow["mode"] = forceHidden ? "hidden" : (flip ? "halfR" : "hidden");
-    if (!forceHidden) flip = !flip;
-    pts.push({ start: b.start, mode, pr: 0 });
+    pts.push({ start: b.start, mode: "hidden", pr: 0 });
   }
   for (const b of compBeats) {
     const d = compDur(b);
