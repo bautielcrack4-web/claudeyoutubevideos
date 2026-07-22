@@ -53,7 +53,12 @@ export const AvatarLayer: React.FC<{
   windows: AvatarWindow[]; // ordenadas por start
   accent?: string;
   wav?: string; // wav para el borde audio-reactive; default = derivado del src
-}> = ({ src, windows, accent = COLORS.accent, wav }) => {
+  // Encuadre del presentador POR VIDEO (el clip del avatar cambia entre videos). focusX/focusY =
+  // dónde está su CARA en el frame fuente (0=izq/arriba .. 1=der/abajo); splitZoom = zoom extra en
+  // el split 50/50. Si NO se pasa → comportamiento anterior EXACTO (cero regresión). Sirve para que
+  // en halfR/halfL Federer quede CENTRADO en su media pantalla y no cortado contra el borde.
+  avatarFocus?: { x?: number; y?: number; splitZoom?: number };
+}> = ({ src, windows, accent = COLORS.accent, wav, avatarFocus }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const t = frame; // frames
@@ -116,28 +121,31 @@ export const AvatarLayer: React.FC<{
     const prog = interpolate(t - starts[i], [0, winLen], [0, 1], { extrapolateRight: "clamp" });
     fullZoom = i % 2 === 0 ? 1 + 0.05 * prog : 1.05 - 0.05 * prog; // 1.00→1.05 ó 1.05→1.00
   }
-  const zoom = curMode === "full" ? fullZoom : kb;
+  const isSplit = curMode === "halfR" || curMode === "halfL";
+  // zoom extra SOLO en split y SOLO si el video lo pide (default 1 → sin cambio)
+  const splitZoom = isSplit && avatarFocus?.splitZoom ? avatarFocus.splitZoom : 1;
+  const zoom = (curMode === "full" ? fullZoom : kb) * splitZoom;
   let coverW = Math.max(w, h * ratio) * zoom;
   let coverH = coverW / ratio;
-  // En SPLIT (halfR/halfL) el presentador está a la IZQUIERDA del cuadro (pizarra a la
-  // derecha) → sesgar el encuadre para que Federer quede CENTRADO en su media pantalla,
-  // no la pizarra. En el resto de los modos, centrado normal.
-  const offX = (curMode === "halfR" || curMode === "halfL")
-    ? (w - coverW) * 0.10
+  const clampOff = (v: number, lo: number, hi: number) => Math.min(hi, Math.max(lo, v));
+  // ENCUADRE del split (halfR/halfL): centrar la CARA de Federer en su media pantalla.
+  //  · Si el video pasa avatarFocus.x (0..1 = dónde está su cara en ESE clip) → offX la centra ahí,
+  //    con clamp para que el video SIEMPRE cubra la caja (nunca borde vacío ni corte al costado).
+  //  · Si NO lo pasa → se mantiene el sesgo anterior (0.10): comportamiento idéntico a antes.
+  const offX = isSplit
+    ? (avatarFocus?.x != null
+        ? clampOff(w / 2 - avatarFocus.x * coverW, w - coverW, 0)
+        : (w - coverW) * 0.10)
     : (w - coverW) / 2;
-  const offY = (h - coverH) * (0.28 + 0.04 * smallness); // mostrar la cara
+  const offY = (isSplit && avatarFocus?.y != null)
+    ? clampOff(h / 2 - avatarFocus.y * coverH, h - coverH, 0)
+    : (h - coverH) * (0.28 + 0.04 * smallness); // mostrar la cara
 
-  if (op < 0.001) {
-    // invisible: igual hay que renderizar el Video para que SUENE la narración
-    return (
-      <AbsoluteFill style={{ pointerEvents: "none" }}>
-        <div style={{ position: "absolute", left: -9999, top: 0, width: 384, height: 512, overflow: "hidden" }}>
-          <Video src={staticFile(src)} style={{ width: 683, height: 384 }} />
-        </div>
-      </AbsoluteFill>
-    );
-  }
-
+  // ★ AUDIO CONTINUO (fix del corte de oración): UN SOLO <Video>, SIEMPRE montado en la MISMA
+  // posición del árbol. Antes había DOS ramas (oculto/visible) con <Video> distintos → al cambiar
+  // de modo React lo RE-MONTABA y el audio glitcheaba/cortaba la oración justo en el cambio de
+  // escena. Ahora nunca se desmonta: cuando está "oculto" solo baja la opacidad a 0 (sigue sonando).
+  const visible = op >= 0.001;
   return (
     <AbsoluteFill style={{ pointerEvents: "none" }}>
       <div
@@ -149,23 +157,22 @@ export const AvatarLayer: React.FC<{
           height: h,
           borderRadius: r,
           overflow: "hidden",
-          opacity: op,
-          // PiP "inset" limpio: sombra suave + hairline crema fino + glow de acento
-          // MUY sutil que respira con la voz (sin anillo neón pulsante).
+          opacity: op, // 0 = invisible pero el Video sigue montado y SONANDO (narración continua)
+          // PiP "inset" limpio: sombra + hairline + glow de acento — SOLO cuando se ve.
           boxShadow:
-            chrome > 0.02
+            visible && chrome > 0.02
               ? `0 ${26 * chrome}px ${70 * chrome}px rgba(0,0,0,${0.5 * chrome}), 0 0 0 ${1.5 * chrome}px rgba(255,247,232,${0.5 * chrome}), 0 0 ${(8 + amp * 18) * chrome}px ${accent}${Math.round(amp * 70).toString(16).padStart(2, "0")}`
               : "none",
-          border: chrome > 0.02 ? `1px solid rgba(42,38,32,${0.22 * chrome})` : "none",
-          willChange: "left, top, width, height",
+          border: visible && chrome > 0.02 ? `1px solid rgba(42,38,32,${0.22 * chrome})` : "none",
+          willChange: "left, top, width, height, opacity",
         }}
       >
         <Video
           src={staticFile(src)}
           style={{ position: "absolute", left: offX, top: offY, width: coverW, height: coverH }}
         />
-        {/* viñeta interna suave cuando es recuadro */}
-        {chrome > 0.02 && (
+        {/* viñeta interna suave cuando es recuadro (solo si se ve) */}
+        {visible && chrome > 0.02 && (
           <div style={{ position: "absolute", inset: 0, boxShadow: `inset 0 -70px 90px rgba(0,0,0,${0.4 * chrome})` }} />
         )}
       </div>
