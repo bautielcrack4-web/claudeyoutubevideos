@@ -62,7 +62,7 @@ function buildWindows(): AvatarWindow[] {
   let ci = 0;
   for (const b of content) {
     const forceHidden = /libro|guia|federer_|nota_especialista|analisis_vitd/.test(b.src || "");
-    const wantHalf = !forceHidden && b.start > 40 && ci % 6 === 5;
+    const wantHalf = !forceHidden && b.start > 40 && ci % 8 === 5;
     const mode: AvatarWindow["mode"] = wantHalf ? "halfR" : "hidden";
     ci++;
     pts.push({ start: b.start, mode, pr: 0 });
@@ -200,7 +200,7 @@ export const MainFedvitd: React.FC = () => {
       {/* CAPA 5 — PIZARRA del mecanismo (VDR): se construye a mano; cubre b-roll/comps en su ventana.
           El audio lo sigue dando el AvatarLayer global (el PiP de la pizarra va muted). */}
       <Sequence from={sec(WB_AT)} durationInFrames={sec(WB_DUR)} layout="none">
-        <FedWhiteboard scene={SCENE_VDR} theme="dark" />
+        <FedWhiteboard scene={SCENE_VDR} theme="white" />
       </Sequence>
 
       {/* HOOK — texto sobre el avatar oscurecido (arranca al segundo 2.2) */}
