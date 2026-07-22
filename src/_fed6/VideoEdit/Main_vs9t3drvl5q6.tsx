@@ -99,7 +99,9 @@ function buildWindows(): AvatarWindow[] {
   const cov: [number, number][] = [];
   for (const b of FEDZ_BROLL as any[]) cov.push([b.start, b.start + b.dur + 0.2]);
   for (const b of rawTop as any[]) cov.push([b.start, b.start + Math.min(b.dur, HERO_CAP) + 0.2]);
-  for (const b of compBeats as any[]) cov.push([b.start, b.start + compDur(b) + 0.2]);
+  // OVERLAY (lowerthird/frasecinetica) son TRANSPARENTES: no cubren la pantalla → NO cuentan como
+  // cobertura, así el avatar va FULL detrás del cartel (nunca fondo pelado detrás de un overlay).
+  for (const b of compBeats as any[]) if (!OVERLAY.has(b.kind)) cov.push([b.start, b.start + compDur(b) + 0.2]);
   cov.sort((a, c) => a[0] - c[0]);
   const merged: [number, number][] = [];
   for (const [s, e] of cov) { const l = merged[merged.length - 1]; if (l && s <= l[1] + 0.2) l[1] = Math.max(l[1], e); else merged.push([s, e]); }
