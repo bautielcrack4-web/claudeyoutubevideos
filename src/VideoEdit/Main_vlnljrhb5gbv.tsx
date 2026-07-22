@@ -1,3 +1,4 @@
+// @ts-nocheck
 // SHIM de density_gate para vlnljrhb5gbv — NO se importa en el render (el build real vive en
 // src/_fed6/VideoEdit/Main_vlnljrhb5gbv.tsx). Inlinea las refs REALES de _beats.ts/_broll.ts para
 // que la compuerta de densidad (que lee un solo archivo) cuente lo que el video efectivamente tiene.

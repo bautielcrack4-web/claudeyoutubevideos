@@ -55,13 +55,11 @@ FEDZ_BEATS.filter((b: any) => /^(hook|story|principio|causa1|causa2|causa3|causa
 function buildWindows(): AvatarWindow[] {
   type Pt = { start: number; mode: AvatarWindow["mode"]; pr: number };
   const pts: Pt[] = [];
-  let flip = false;
   const content = [...FEDZ_BROLL.map((b: any) => ({ start: b.start, src: b.src })), ...rawTop.map((b: any) => ({ start: b.start, src: b.src }))].sort((a, b) => a.start - b.start);
   for (const b of content) {
-    const forceHidden = /federer|guia|celular|requeson_tazon_hero|analisis_sangre/.test(b.src || "");
-    const mode: AvatarWindow["mode"] = forceHidden ? "hidden" : (flip ? "halfR" : "hidden");
-    if (!forceHidden) flip = !flip;
-    pts.push({ start: b.start, mode, pr: 0 });
+    // Canal Federer Archivos: CERO split 50/50 (halfR) — el avatar va SOLO full o hidden.
+    // Toda ventana de contenido (b-roll/foto) va a HIDDEN (visual a pantalla completa).
+    pts.push({ start: b.start, mode: "hidden", pr: 0 });
   }
   for (const b of compBeats) {
     const d = compDur(b);
@@ -137,7 +135,7 @@ export const MainVlnl: React.FC = () => {
       {FEDZ_BROLL.map((b) => {
         const dd = Math.max(1, sec(b.dur) + 3);
         const half = spanHalfR(b.start, b.dur);
-        const shot = <RawShot durationInFrames={dd} src={b.src} hue="cold" />;
+        const shot = <RawShot durationInFrames={dd} src={b.src} hue="cold" clipDur={(b as any).clipDur} />;
         return (
           <Sequence key={b.name} from={sec(b.start)} durationInFrames={dd} premountFor={30}>
             {half ? <HalfLeft>{shot}</HalfLeft> : shot}
