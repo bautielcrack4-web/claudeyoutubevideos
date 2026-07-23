@@ -94,6 +94,34 @@ const FALLBACK_CHAPTERS: ReadonlyArray<readonly [number, string]> = [
   [46000, "img/vxnee2w76sqi/vxnee2w76sqi_i128_three_kitchen_dangers_teaser.png"],
 ];
 
+const BLACK_COVER_RANGES: ReadonlyArray<readonly [number, number]> = [
+  [2617, 2718],
+  [2991, 3056],
+  [3300, 3405],
+  [10219, 10323],
+  [12731, 12830],
+  [14131, 14232],
+  [14956, 15075],
+  [16879, 16972],
+  [17497, 17583],
+  [19150, 19238],
+  [19541, 19642],
+  [24104, 24211],
+  [25410, 25491],
+  [26570, 26634],
+  [26752, 26838],
+  [28201, 28287],
+  [31182, 31283],
+  [33485, 33585],
+  [36294, 36363],
+  [38305, 38378],
+  [39844, 39946],
+  [41730, 41829],
+  [43570, 43639],
+  [44041, 44117],
+  [45333, 45434],
+];
+
 type MediaBeatProps = {
   durationInFrames: number;
   beat: number;
@@ -135,6 +163,7 @@ const AvatarStageVxnee2w76sqi: React.FC = () => {
 
 const StoryFallbackBedVxnee2w76sqi: React.FC = () => {
   const frame = useCurrentFrame();
+  const active = BLACK_COVER_RANGES.some(([start, end]) => frame >= start && frame < end);
   const chapter =
     [...FALLBACK_CHAPTERS].reverse().find(([start]) => frame >= start) ??
     FALLBACK_CHAPTERS[0];
@@ -144,7 +173,7 @@ const StoryFallbackBedVxnee2w76sqi: React.FC = () => {
   });
 
   return (
-    <AbsoluteFill style={{backgroundColor: "#172326", overflow: "hidden"}}>
+    <AbsoluteFill style={{backgroundColor: "#172326", overflow: "hidden", opacity: active ? 1 : 0}}>
       <Img
         src={staticFile(chapter[1])}
         style={{
