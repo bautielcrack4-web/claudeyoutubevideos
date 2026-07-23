@@ -82,6 +82,18 @@ const AVATAR_RANGES: ReadonlyArray<readonly [number, number]> = [
   [47153, 47494],
 ];
 
+const FALLBACK_CHAPTERS: ReadonlyArray<readonly [number, string]> = [
+  [0, "img/vxnee2w76sqi/vxnee2w76sqi_i005_rosemary_wrinkles_spots_theme.png"],
+  [6000, "img/vxnee2w76sqi/vxnee2w76sqi_i031_three_products_table.png"],
+  [12000, "img/vxnee2w76sqi/vxnee2w76sqi_i054_forearm_patch_application.png"],
+  [18000, "img/vxnee2w76sqi/vxnee2w76sqi_i068_fine_lines_less_visible.png"],
+  [24000, "img/vxnee2w76sqi/vxnee2w76sqi_i078_tinted_sunscreen_iron_oxides.png"],
+  [30000, "img/vxnee2w76sqi/vxnee2w76sqi_i098_rosmarinic_carnosic_molecules.png"],
+  [36000, "img/vxnee2w76sqi/vxnee2w76sqi_i123_final_family_gathering.png"],
+  [42000, "img/vxnee2w76sqi/vxnee2w76sqi_i127_rinse_and_protect_safety.png"],
+  [46000, "img/vxnee2w76sqi/vxnee2w76sqi_i128_three_kitchen_dangers_teaser.png"],
+];
+
 type MediaBeatProps = {
   durationInFrames: number;
   beat: number;
@@ -115,6 +127,38 @@ const AvatarStageVxnee2w76sqi: React.FC = () => {
           transformOrigin: "50% 38%",
           scale,
           translate: `${x}% ${y}%`,
+        }}
+      />
+    </AbsoluteFill>
+  );
+};
+
+const StoryFallbackBedVxnee2w76sqi: React.FC = () => {
+  const frame = useCurrentFrame();
+  const chapter =
+    [...FALLBACK_CHAPTERS].reverse().find(([start]) => frame >= start) ??
+    FALLBACK_CHAPTERS[0];
+  const scale = interpolate(frame % 600, [0, 599], [1.025, 1.07], {
+    extrapolateLeft: "clamp",
+    extrapolateRight: "clamp",
+  });
+
+  return (
+    <AbsoluteFill style={{backgroundColor: "#172326", overflow: "hidden"}}>
+      <Img
+        src={staticFile(chapter[1])}
+        style={{
+          width: "100%",
+          height: "100%",
+          objectFit: "cover",
+          scale,
+          filter: "brightness(0.76) saturate(0.9)",
+        }}
+      />
+      <AbsoluteFill
+        style={{
+          background:
+            "linear-gradient(110deg, rgba(4,13,15,0.3), rgba(4,13,15,0.05) 52%, rgba(4,13,15,0.36))",
         }}
       />
     </AbsoluteFill>
@@ -374,6 +418,7 @@ export const MainVxnee2w76sqi: React.FC = () => {
   return (
     <AbsoluteFill style={{backgroundColor: "#061013"}}>
       <DensityManifestVxnee2w76sqi />
+      <StoryFallbackBedVxnee2w76sqi />
       <Sequence from={0} durationInFrames={124} premountFor={15}><MomentMarker beat={1} kind="avatar" /></Sequence>
       <Sequence from={124} durationInFrames={130} premountFor={15}><MediaBeat durationInFrames={130} beat={2} kind="image" src="img/vxnee2w76sqi/vxnee2w76sqi_i001_amber_bottle_sink.png" /></Sequence>
       <Sequence from={254} durationInFrames={224} premountFor={15}><MediaBeat durationInFrames={224} beat={3} kind="video" src="broll/vxnee2w76sqi/d000.mp4" secondaryImage="img/vxnee2w76sqi/vxnee2w76sqi_i002_elena_1017_night.png" /></Sequence>
